@@ -1,0 +1,6804 @@
+[
+ {
+  "id": "war-of-the-pacific",
+  "name": "War of the Pacific",
+  "start": 1879,
+  "end": 1884,
+  "kind": "war",
+  "summary": "Chile fought Bolivia and Peru over the nitrate-rich Atacama coast after Bolivia raised taxes on a Chilean nitrate company. Chile won control of the sea, took the southern deserts and occupied Lima, then beat down a long guerrilla resistance in the Andes. Peru lost Tarapaca and Bolivia lost its whole coastline, leaving it landlocked to this day.",
+  "sides": [
+   {
+    "name": "Chile",
+    "color": "#c0473a",
+    "leaders": [
+     "Manuel Baquedano",
+     "Patricio Lynch",
+     "Juan Williams Rebolledo",
+     "Arturo Prat"
+    ]
+   },
+   {
+    "name": "Peru and Bolivia",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Miguel Grau",
+     "Andres Avelino Caceres",
+     "Nicolas de Pierola",
+     "Hilarion Daza",
+     "Francisco Bolognesi"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -70.0,
+    "lat": -20.5,
+    "r": 6
+   },
+   {
+    "lon": -76.5,
+    "lat": -11.0,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1879,
+    "label": "Feb 1879",
+    "title": "Seizure of Antofagasta",
+    "text": "Bolivia raised a tax on the Chilean nitrate company in Antofagasta and moved to seize its property. Chilean troops landed and took the port without a fight on 14 February 1879. Peru was bound to Bolivia by a secret alliance, so Chile declared war on both in April.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chile"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Peru",
+       "Bolivia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Emilio Sotomayor",
+      "label": "Landing at Antofagasta",
+      "path": [
+       [
+        -71.62,
+        -33.05
+       ],
+       [
+        -72.0,
+        -28.0
+       ],
+       [
+        -70.4,
+        -23.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Occupation of Antofagasta",
+      "kind": "event",
+      "lon": -70.4,
+      "lat": -23.65,
+      "year": 1879,
+      "winner": 0,
+      "text": "Chilean troops occupy the Bolivian port, starting the war."
+     }
+    ]
+   },
+   {
+    "year": 1879,
+    "label": "May to Oct 1879",
+    "title": "War at sea",
+    "text": "Neither side could march an army across the Atacama, so the war began as a fight for the sea. Arturo Prat died aboard the Esmeralda at Iquique, but Peru lost its ironclad Independencia the same day. Miguel Grau's Huascar raided the Chilean coast for months until it was trapped and captured off Punta Angamos, giving Chile command of the sea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chile"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Peru",
+       "Bolivia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Miguel Grau",
+      "label": "Huascar raids",
+      "path": [
+       [
+        -77.15,
+        -12.05
+       ],
+       [
+        -71.5,
+        -16.5
+       ],
+       [
+        -70.15,
+        -20.21
+       ],
+       [
+        -70.4,
+        -23.65
+       ],
+       [
+        -70.85,
+        -27.07
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Galvarino Riveros",
+      "label": "Chilean ironclads",
+      "path": [
+       [
+        -71.62,
+        -33.05
+       ],
+       [
+        -71.2,
+        -28.0
+       ],
+       [
+        -70.6,
+        -23.1
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Iquique",
+      "kind": "battle",
+      "lon": -70.17,
+      "lat": -20.22,
+      "year": 1879,
+      "winner": null,
+      "text": "Prat's Esmeralda is sunk, but Peru loses the Independencia at nearby Punta Gruesa."
+     },
+     {
+      "name": "Battle of Angamos",
+      "kind": "battle",
+      "lon": -70.55,
+      "lat": -23.05,
+      "year": 1879,
+      "winner": 0,
+      "text": "The Huascar is captured and Grau killed; Chile now controls the coast."
+     }
+    ]
+   },
+   {
+    "year": 1879,
+    "label": "Nov 1879",
+    "title": "Tarapaca campaign",
+    "text": "With the sea secure, Chile landed an army at Pisagua and beat the allies at San Francisco (Dolores). Bolivian President Daza marched from Tacna to help but turned back at Camarones. The allies won a rearguard fight at Tarapaca yet had to abandon the nitrate province and fall back on Arica and Tacna.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chile"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Peru",
+       "Bolivia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -70.27,
+        -19.0
+       ],
+       [
+        -69.6,
+        -19.1
+       ],
+       [
+        -69.0,
+        -19.3
+       ]
+      ],
+      "label": "Front, Dec 1879"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Erasmo Escala",
+      "label": "Landing at Pisagua",
+      "path": [
+       [
+        -70.4,
+        -23.65
+       ],
+       [
+        -70.6,
+        -21.5
+       ],
+       [
+        -70.21,
+        -19.6
+       ],
+       [
+        -69.95,
+        -19.62
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Juan Buendia",
+      "label": "Allied retreat",
+      "path": [
+       [
+        -70.15,
+        -20.21
+       ],
+       [
+        -69.51,
+        -19.92
+       ],
+       [
+        -69.8,
+        -19.0
+       ],
+       [
+        -70.31,
+        -18.48
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hilarion Daza",
+      "label": "Bolivian march, turned back",
+      "path": [
+       [
+        -70.25,
+        -18.01
+       ],
+       [
+        -70.1,
+        -18.9
+       ],
+       [
+        -70.0,
+        -19.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Landing at Pisagua",
+      "kind": "battle",
+      "lon": -70.21,
+      "lat": -19.6,
+      "year": 1879,
+      "winner": 0,
+      "text": "Chilean troops storm ashore and open the way into Tarapaca."
+     },
+     {
+      "name": "Battle of San Francisco",
+      "kind": "battle",
+      "lon": -69.95,
+      "lat": -19.62,
+      "year": 1879,
+      "winner": 0,
+      "text": "The allied army breaks and Iquique falls."
+     },
+     {
+      "name": "Battle of Tarapaca",
+      "kind": "battle",
+      "lon": -69.51,
+      "lat": -19.92,
+      "year": 1879,
+      "winner": 1,
+      "text": "Peruvians win the fight but must still retreat north."
+     }
+    ]
+   },
+   {
+    "year": 1880,
+    "label": "May to Jun 1880",
+    "title": "Tacna and Arica",
+    "text": "General Manuel Baquedano landed at Ilo and marched on Tacna, where he routed the combined Peruvian and Bolivian army. Bolivia effectively left the war. Days later Chilean infantry stormed the headland of Arica, where Colonel Francisco Bolognesi died refusing to surrender.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chile"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Peru",
+       "Bolivia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -70.6,
+        -17.9
+       ],
+       [
+        -70.25,
+        -17.85
+       ],
+       [
+        -69.9,
+        -17.7
+       ]
+      ],
+      "label": "Front, May 1880"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Manuel Baquedano",
+      "label": "Ilo to Tacna",
+      "path": [
+       [
+        -71.34,
+        -17.64
+       ],
+       [
+        -70.9,
+        -17.75
+       ],
+       [
+        -70.25,
+        -18.01
+       ],
+       [
+        -70.31,
+        -18.48
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Narciso Campero",
+      "label": "Bolivians withdraw",
+      "path": [
+       [
+        -70.25,
+        -18.01
+       ],
+       [
+        -69.5,
+        -17.3
+       ],
+       [
+        -68.15,
+        -16.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Tacna",
+      "kind": "battle",
+      "lon": -70.27,
+      "lat": -17.97,
+      "year": 1880,
+      "winner": 0,
+      "text": "The allied army is destroyed at the Alto de la Alianza."
+     },
+     {
+      "name": "Battle of Arica",
+      "kind": "battle",
+      "lon": -70.32,
+      "lat": -18.48,
+      "year": 1880,
+      "winner": 0,
+      "text": "The Morro of Arica is stormed in under an hour."
+     }
+    ]
+   },
+   {
+    "year": 1881,
+    "label": "Jan 1881",
+    "title": "Fall of Lima",
+    "text": "Chile shipped about 26,000 men north, landing at Pisco and Lurin. Baquedano broke Pierola's defence lines at Chorrillos and Miraflores in January 1881 and occupied Lima. Pierola fled to the highlands and Peru had no national government that would accept Chile's terms.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chile"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Peru",
+       "Bolivia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -77.03,
+        -12.2
+       ],
+       [
+        -76.98,
+        -12.16
+       ],
+       [
+        -76.93,
+        -12.12
+       ]
+      ],
+      "label": "Peruvian lines south of Lima"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Manuel Baquedano",
+      "label": "Expedition to Lima",
+      "path": [
+       [
+        -70.31,
+        -18.48
+       ],
+       [
+        -75.0,
+        -15.0
+       ],
+       [
+        -76.2,
+        -13.71
+       ],
+       [
+        -76.87,
+        -12.27
+       ],
+       [
+        -77.03,
+        -12.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Nicolas de Pierola",
+      "label": "Flight to the sierra",
+      "path": [
+       [
+        -77.03,
+        -12.05
+       ],
+       [
+        -75.5,
+        -12.4
+       ],
+       [
+        -74.22,
+        -13.16
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Chorrillos",
+      "kind": "battle",
+      "lon": -77.02,
+      "lat": -12.17,
+      "year": 1881,
+      "winner": 0,
+      "text": "The first Peruvian line falls after heavy fighting."
+     },
+     {
+      "name": "Battle of Miraflores",
+      "kind": "battle",
+      "lon": -77.03,
+      "lat": -12.12,
+      "year": 1881,
+      "winner": 0,
+      "text": "The last defence of Lima collapses; Chile enters the capital."
+     }
+    ]
+   },
+   {
+    "year": 1882,
+    "label": "1882 to 1883",
+    "title": "Campaign of the Brena",
+    "text": "From the Andes, Andres Avelino Caceres led a guerrilla war of soldiers and highland villagers against the occupation. His men wiped out a Chilean garrison at Concepcion in July 1882. A year later Colonel Alejandro Gorostiaga caught and crushed Caceres's army at Huamachuco, ending organised resistance.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chile"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Peru",
+       "Bolivia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -78.6,
+        -8.3
+       ],
+       [
+        -77.3,
+        -10.3
+       ],
+       [
+        -76.4,
+        -12.0
+       ],
+       [
+        -75.8,
+        -13.6
+       ]
+      ],
+      "label": "Occupied coast vs Andean resistance, c. 1882"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Andres Avelino Caceres",
+      "label": "Guerrilla war in the sierra",
+      "path": [
+       [
+        -75.21,
+        -12.07
+       ],
+       [
+        -75.31,
+        -11.92
+       ],
+       [
+        -76.5,
+        -9.5
+       ],
+       [
+        -78.05,
+        -7.81
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alejandro Gorostiaga",
+      "label": "Pursuit north",
+      "path": [
+       [
+        -77.03,
+        -12.05
+       ],
+       [
+        -77.5,
+        -10.0
+       ],
+       [
+        -78.05,
+        -7.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Concepcion",
+      "kind": "battle",
+      "lon": -75.31,
+      "lat": -11.92,
+      "year": 1882,
+      "winner": 1,
+      "text": "A Chilean company is annihilated by Caceres's forces."
+     },
+     {
+      "name": "Battle of Huamachuco",
+      "kind": "battle",
+      "lon": -78.05,
+      "lat": -7.81,
+      "year": 1883,
+      "winner": 0,
+      "text": "Caceres's army is destroyed, ending large-scale resistance."
+     }
+    ]
+   },
+   {
+    "year": 1884,
+    "label": "1883 to 1884",
+    "title": "Ancon and Valparaiso",
+    "text": "Peru signed the Treaty of Ancon in October 1883, ceding Tarapaca and leaving Tacna and Arica under Chilean control. Chilean troops then left Lima. Bolivia signed a truce at Valparaiso in April 1884 that handed its coastal province to Chile and cut it off from the sea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chile"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Peru",
+       "Bolivia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Patricio Lynch",
+      "label": "Occupation army leaves Peru",
+      "path": [
+       [
+        -77.03,
+        -12.05
+       ],
+       [
+        -74.5,
+        -18.0
+       ],
+       [
+        -72.5,
+        -26.0
+       ],
+       [
+        -71.62,
+        -33.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Ancon",
+      "kind": "treaty",
+      "lon": -77.17,
+      "lat": -11.77,
+      "year": 1883,
+      "winner": 0,
+      "text": "Peru cedes Tarapaca; Tacna and Arica pass to Chilean rule."
+     },
+     {
+      "name": "Truce of Valparaiso",
+      "kind": "treaty",
+      "lon": -71.62,
+      "lat": -33.05,
+      "year": 1884,
+      "winner": 0,
+      "text": "Bolivia loses its Litoral province and becomes landlocked."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "anglo-zulu-war",
+  "name": "Anglo-Zulu War",
+  "start": 1879,
+  "end": 1879,
+  "kind": "war",
+  "summary": "Britain invaded the Zulu kingdom in 1879 to force it into a South African confederation under British control. The Zulu army destroyed a British column at Isandlwana, one of the worst colonial defeats of the era, but British reinforcements and firepower won at Ulundi six months later. King Cetshwayo was captured and his kingdom broken into 13 chiefdoms.",
+  "sides": [
+   {
+    "name": "British Empire",
+    "color": "#c0473a",
+    "leaders": [
+     "Lord Chelmsford",
+     "Garnet Wolseley",
+     "Evelyn Wood",
+     "Charles Pearson"
+    ]
+   },
+   {
+    "name": "Zulu Kingdom",
+    "color": "#3d8a5a",
+    "leaders": [
+     "Cetshwayo kaMpande",
+     "Ntshingwayo kaMahole",
+     "Dabulamanzi kaMpande",
+     "Mnyamana Buthelezi"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 30.9,
+    "lat": -28.4,
+    "r": 2.2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1879,
+    "label": "Jan 1879",
+    "title": "Invasion",
+    "text": "High Commissioner Bartle Frere sent Cetshwayo an ultimatum he could not accept, including disbanding the Zulu army. When it expired, Lord Chelmsford invaded with three columns: Pearson along the coast, the centre column at Rorke's Drift and Evelyn Wood in the north. Cetshwayo gathered his regiments at Ulundi.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Natal",
+       "Cape Colony",
+       "Transvaal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zululand"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.49,
+        -29.22
+       ],
+       [
+        30.95,
+        -28.98
+       ],
+       [
+        30.75,
+        -28.78
+       ],
+       [
+        30.536,
+        -28.35
+       ],
+       [
+        30.45,
+        -27.9
+       ],
+       [
+        30.85,
+        -27.45
+       ]
+      ],
+      "label": "Natal and Zululand border"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lord Chelmsford",
+      "label": "Centre column",
+      "path": [
+       [
+        30.23,
+        -28.17
+       ],
+       [
+        30.536,
+        -28.35
+       ],
+       [
+        30.652,
+        -28.359
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles Pearson",
+      "label": "Coastal column",
+      "path": [
+       [
+        31.42,
+        -29.18
+       ],
+       [
+        31.53,
+        -28.98
+       ],
+       [
+        31.47,
+        -28.89
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Evelyn Wood",
+      "label": "Northern column",
+      "path": [
+       [
+        30.33,
+        -27.66
+       ],
+       [
+        30.6,
+        -27.8
+       ],
+       [
+        30.9,
+        -27.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "British ultimatum expires",
+      "kind": "event",
+      "lon": 31.42,
+      "lat": -29.18,
+      "year": 1879,
+      "winner": null,
+      "text": "The ultimatum expires on 11 January and the columns cross into Zululand."
+     }
+    ]
+   },
+   {
+    "year": 1879,
+    "label": "22 Jan 1879",
+    "title": "Isandlwana",
+    "text": "While Chelmsford split his force to chase a decoy, about 20,000 Zulu warriors under Ntshingwayo overran his camp at Isandlwana, killing some 1,300 men. That night a Zulu reserve under Dabulamanzi failed to take the small post at Rorke's Drift. On the coast, Pearson won at Nyezane but was then besieged at Eshowe.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Natal",
+       "Cape Colony",
+       "Transvaal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zululand"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.49,
+        -29.22
+       ],
+       [
+        30.95,
+        -28.98
+       ],
+       [
+        30.75,
+        -28.78
+       ],
+       [
+        30.536,
+        -28.35
+       ],
+       [
+        30.45,
+        -27.9
+       ],
+       [
+        30.85,
+        -27.45
+       ]
+      ],
+      "label": "Natal and Zululand border"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ntshingwayo kaMahole",
+      "label": "Main Zulu army",
+      "path": [
+       [
+        31.43,
+        -28.31
+       ],
+       [
+        31.0,
+        -28.3
+       ],
+       [
+        30.652,
+        -28.359
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Dabulamanzi kaMpande",
+      "label": "Reserve to Rorke's Drift",
+      "path": [
+       [
+        30.652,
+        -28.359
+       ],
+       [
+        30.58,
+        -28.38
+       ],
+       [
+        30.536,
+        -28.35
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lord Chelmsford",
+      "label": "Retreat to Natal",
+      "path": [
+       [
+        30.75,
+        -28.45
+       ],
+       [
+        30.652,
+        -28.359
+       ],
+       [
+        30.536,
+        -28.35
+       ],
+       [
+        30.23,
+        -28.17
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Isandlwana",
+      "kind": "battle",
+      "lon": 30.652,
+      "lat": -28.359,
+      "year": 1879,
+      "winner": 1,
+      "text": "The Zulu army destroys the British centre column's camp."
+     },
+     {
+      "name": "Defence of Rorke's Drift",
+      "kind": "battle",
+      "lon": 30.536,
+      "lat": -28.35,
+      "year": 1879,
+      "winner": 0,
+      "text": "About 150 defenders hold the mission station overnight."
+     },
+     {
+      "name": "Siege of Eshowe",
+      "kind": "siege",
+      "lon": 31.47,
+      "lat": -28.89,
+      "year": 1879,
+      "winner": 0,
+      "text": "Pearson's column is cut off at Eshowe until April."
+     }
+    ]
+   },
+   {
+    "year": 1879,
+    "label": "Mar to Apr 1879",
+    "title": "Kambula and Eshowe",
+    "text": "Reinforcements poured into Natal. In the north, Wood's raid on Hlobane was beaten back, but the next day the main Zulu army broke itself against his fortified camp at Kambula. On the coast Chelmsford beat the Zulu at Gingindlovu and relieved Eshowe, and the war turned against Cetshwayo.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Natal",
+       "Cape Colony",
+       "Transvaal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zululand"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.49,
+        -29.22
+       ],
+       [
+        30.95,
+        -28.98
+       ],
+       [
+        30.75,
+        -28.78
+       ],
+       [
+        30.536,
+        -28.35
+       ],
+       [
+        30.45,
+        -27.9
+       ],
+       [
+        30.85,
+        -27.45
+       ]
+      ],
+      "label": "Natal and Zululand border"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mnyamana Buthelezi",
+      "label": "Zulu army attacks Kambula",
+      "path": [
+       [
+        31.43,
+        -28.31
+       ],
+       [
+        31.0,
+        -28.0
+       ],
+       [
+        30.64,
+        -27.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lord Chelmsford",
+      "label": "Relief of Eshowe",
+      "path": [
+       [
+        31.42,
+        -29.18
+       ],
+       [
+        31.58,
+        -29.02
+       ],
+       [
+        31.47,
+        -28.89
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Evelyn Wood",
+      "label": "Raid on Hlobane",
+      "path": [
+       [
+        30.64,
+        -27.7
+       ],
+       [
+        31.02,
+        -27.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Hlobane",
+      "kind": "battle",
+      "lon": 31.02,
+      "lat": -27.7,
+      "year": 1879,
+      "winner": 1,
+      "text": "Wood's mounted troops are driven off the mountain."
+     },
+     {
+      "name": "Battle of Kambula",
+      "kind": "battle",
+      "lon": 30.64,
+      "lat": -27.7,
+      "year": 1879,
+      "winner": 0,
+      "text": "The decisive defeat of the Zulu army in the north."
+     },
+     {
+      "name": "Battle of Gingindlovu",
+      "kind": "battle",
+      "lon": 31.58,
+      "lat": -29.02,
+      "year": 1879,
+      "winner": 0,
+      "text": "Chelmsford's square repulses the Zulu and Eshowe is relieved."
+     }
+    ]
+   },
+   {
+    "year": 1879,
+    "label": "Jun to Jul 1879",
+    "title": "Ulundi",
+    "text": "Chelmsford invaded again with a much larger army, the 2nd Division and Wood's column marching on the royal kraal while the 1st Division moved up the coast. On 4 July his infantry formed a great square on the plain at Ulundi; the Zulu charges failed against rifles, artillery and Gatlings. The royal homestead was burned.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Natal",
+       "Cape Colony",
+       "Transvaal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zululand"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.49,
+        -29.22
+       ],
+       [
+        30.95,
+        -28.98
+       ],
+       [
+        30.75,
+        -28.78
+       ],
+       [
+        30.536,
+        -28.35
+       ],
+       [
+        30.45,
+        -27.9
+       ],
+       [
+        30.85,
+        -27.45
+       ]
+      ],
+      "label": "Natal and Zululand border"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lord Chelmsford",
+      "label": "2nd Division and Flying Column",
+      "path": [
+       [
+        30.18,
+        -28.05
+       ],
+       [
+        30.75,
+        -28.12
+       ],
+       [
+        31.2,
+        -28.25
+       ],
+       [
+        31.43,
+        -28.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Henry Crealock",
+      "label": "1st Division on the coast",
+      "path": [
+       [
+        31.42,
+        -29.18
+       ],
+       [
+        31.75,
+        -28.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Cetshwayo kaMpande",
+      "label": "Last stand at oNdini",
+      "path": [
+       [
+        31.6,
+        -28.2
+       ],
+       [
+        31.43,
+        -28.31
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ulundi",
+      "kind": "battle",
+      "lon": 31.43,
+      "lat": -28.31,
+      "year": 1879,
+      "winner": 0,
+      "text": "The Zulu army is defeated and oNdini is burned."
+     }
+    ]
+   },
+   {
+    "year": 1879,
+    "label": "Aug to Sep 1879",
+    "title": "Capture and partition",
+    "text": "Cetshwayo fled north and was captured in the Ngome forest on 28 August. Garnet Wolseley, who had replaced Chelmsford, split Zululand among 13 appointed chiefs, a settlement that led to civil war. Britain annexed what was left in 1887.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Natal",
+       "Cape Colony",
+       "Transvaal"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "Zululand"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Garnet Wolseley",
+      "label": "Hunt for the king",
+      "path": [
+       [
+        31.43,
+        -28.31
+       ],
+       [
+        31.45,
+        -28.05
+       ],
+       [
+        31.42,
+        -27.83
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Cetshwayo",
+      "kind": "event",
+      "lon": 31.42,
+      "lat": -27.83,
+      "year": 1879,
+      "winner": 0,
+      "text": "The king is taken in the Ngome forest and sent into exile."
+     },
+     {
+      "name": "Wolseley settlement",
+      "kind": "treaty",
+      "lon": 31.43,
+      "lat": -28.31,
+      "year": 1879,
+      "winner": 0,
+      "text": "Zululand is divided into 13 chiefdoms under British oversight."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "conquest-of-the-desert",
+  "name": "Conquest of the Desert",
+  "start": 1878,
+  "end": 1885,
+  "kind": "war",
+  "summary": "Argentina's army, led by Julio Argentino Roca, pushed the frontier from the Buenos Aires pampas to the Rio Negro and then into the Andes and Patagonia. Armed with Remington rifles and the telegraph, it broke the Mapuche, Ranquel and Tehuelche chiefdoms; thousands were killed and some 14,000 captured and deported. The campaign doubled Argentina's effective territory and opened the south to ranching and immigration.",
+  "sides": [
+   {
+    "name": "Argentina",
+    "color": "#3b8fc4",
+    "leaders": [
+     "Julio Argentino Roca",
+     "Conrado Villegas",
+     "Lorenzo Vintter",
+     "Napoleon Uriburu"
+    ]
+   },
+   {
+    "name": "Indigenous peoples of the Pampas and Patagonia",
+    "color": "#b5793a",
+    "leaders": [
+     "Manuel Namuncura",
+     "Valentin Sayhueque",
+     "Vicente Pincen",
+     "Baigorrita",
+     "Inacayal"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -65.5,
+    "lat": -38.5,
+    "r": 6
+   },
+   {
+    "lon": -70.0,
+    "lat": -42.0,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1878,
+    "label": "1876 to 1878",
+    "title": "Alsina's ditch",
+    "text": "Under Adolfo Alsina the army had dug a long ditch and line of forts across the pampas to stop raids on frontier ranches. After Alsina's death, War Minister Julio Argentino Roca argued for a full offensive. In 1878 raids broke the Salinero and Ranquel camps and captured the chief Pincen, and Congress funded an advance to the Rio Negro.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pampas cultures",
+       "Mapuche",
+       "Patagonian shellfish and marine mammal hunters"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -63.78,
+        -34.79
+       ],
+       [
+        -62.73,
+        -35.97
+       ],
+       [
+        -62.42,
+        -37.01
+       ],
+       [
+        -62.76,
+        -37.18
+       ],
+       [
+        -62.77,
+        -37.55
+       ],
+       [
+        -62.27,
+        -38.72
+       ]
+      ],
+      "label": "Zanja de Alsina frontier, 1878"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Conrado Villegas",
+      "label": "Raids into the pampas",
+      "path": [
+       [
+        -62.73,
+        -35.97
+       ],
+       [
+        -63.4,
+        -36.6
+       ],
+       [
+        -63.6,
+        -37.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Law 947",
+      "kind": "event",
+      "lon": -58.38,
+      "lat": -34.6,
+      "year": 1878,
+      "winner": 0,
+      "text": "Congress approves funds to push the frontier to the Rio Negro."
+     }
+    ]
+   },
+   {
+    "year": 1879,
+    "label": "Apr to Jun 1879",
+    "title": "March to the Rio Negro",
+    "text": "In April 1879 about 6,000 soldiers advanced in five divisions converging on the Rio Negro. Roca's own column marched from Azul via Carhue and reached Choele Choel on 25 May, while Uriburu's division came down from Mendoza to the Neuquen confluence. The riverline became the new frontier, cutting the pampas off from Patagonia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pampas cultures",
+       "Mapuche",
+       "Patagonian shellfish and marine mammal hunters"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -62.78,
+        -41.03
+       ],
+       [
+        -62.98,
+        -40.8
+       ],
+       [
+        -65.66,
+        -39.29
+       ],
+       [
+        -67.58,
+        -39.03
+       ],
+       [
+        -68.06,
+        -38.95
+       ],
+       [
+        -70.27,
+        -37.38
+       ]
+      ],
+      "label": "Rio Negro and Neuquen line, 1879"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Julio Argentino Roca",
+      "label": "1st Division",
+      "path": [
+       [
+        -59.86,
+        -36.78
+       ],
+       [
+        -62.76,
+        -37.18
+       ],
+       [
+        -64.3,
+        -38.4
+       ],
+       [
+        -65.66,
+        -39.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon Uriburu",
+      "label": "4th Division",
+      "path": [
+       [
+        -68.33,
+        -34.62
+       ],
+       [
+        -69.6,
+        -36.4
+       ],
+       [
+        -70.27,
+        -37.38
+       ],
+       [
+        -68.06,
+        -38.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Eduardo Racedo",
+      "label": "3rd Division",
+      "path": [
+       [
+        -65.46,
+        -33.68
+       ],
+       [
+        -65.4,
+        -35.5
+       ],
+       [
+        -65.4,
+        -36.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Roca reaches Choele Choel",
+      "kind": "event",
+      "lon": -65.66,
+      "lat": -39.29,
+      "year": 1879,
+      "winner": 0,
+      "text": "The army reaches the Rio Negro on 25 May, Argentina's national day."
+     }
+    ]
+   },
+   {
+    "year": 1882,
+    "label": "1881 to 1883",
+    "title": "Into the Andes",
+    "text": "Conrado Villegas led columns up the Limay to Lake Nahuel Huapi in 1881 and swept Neuquen in the 1882 to 1883 Andes campaign. At the same time Chile was occupying Araucania across the mountains, so Mapuche communities were squeezed from both sides. The 1881 boundary treaty split Patagonia between the two states along the Andes.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -68.06,
+        -38.95
+       ],
+       [
+        -69.0,
+        -39.4
+       ],
+       [
+        -70.0,
+        -40.1
+       ],
+       [
+        -71.0,
+        -40.9
+       ]
+      ],
+      "label": "Limay frontier, 1881"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Conrado Villegas",
+      "label": "Nahuel Huapi expedition",
+      "path": [
+       [
+        -65.66,
+        -39.29
+       ],
+       [
+        -68.06,
+        -38.95
+       ],
+       [
+        -70.0,
+        -40.1
+       ],
+       [
+        -71.3,
+        -41.1
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Valentin Sayhueque",
+      "label": "Retreat south",
+      "path": [
+       [
+        -70.8,
+        -40.3
+       ],
+       [
+        -70.6,
+        -42.3
+       ],
+       [
+        -70.4,
+        -44.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Villegas reaches Nahuel Huapi",
+      "kind": "event",
+      "lon": -71.31,
+      "lat": -41.13,
+      "year": 1881,
+      "winner": 0,
+      "text": "Argentine troops reach the great Andean lake."
+     },
+     {
+      "name": "Boundary Treaty of 1881",
+      "kind": "treaty",
+      "lon": -58.38,
+      "lat": -34.6,
+      "year": 1881,
+      "winner": null,
+      "text": "Argentina and Chile divide Patagonia along the Andes watershed."
+     },
+     {
+      "name": "Combat of Apeleg",
+      "kind": "battle",
+      "lon": -71.0,
+      "lat": -44.7,
+      "year": 1883,
+      "winner": 0,
+      "text": "c. Feb 1883: an Argentine patrol defeats a Tehuelche and Mapuche force in Chubut."
+     }
+    ]
+   },
+   {
+    "year": 1885,
+    "label": "1884 to 1885",
+    "title": "Surrender of Sayhueque",
+    "text": "Lorenzo Vintter's columns hunted the last free bands across Neuquen and Chubut. Namuncura surrendered in 1884 and Inacayal and Foyel were captured that autumn. On 1 January 1885 Valentin Sayhueque surrendered at Junin de los Andes; survivors were deported to Martin Garcia island, forced labour or reservations, and their lands sold off.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lorenzo Vintter",
+      "label": "Final campaign",
+      "path": [
+       [
+        -65.66,
+        -39.29
+       ],
+       [
+        -67.58,
+        -39.03
+       ],
+       [
+        -68.06,
+        -38.95
+       ],
+       [
+        -71.07,
+        -39.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Valentin Sayhueque",
+      "label": "Last retreat",
+      "path": [
+       [
+        -70.4,
+        -44.3
+       ],
+       [
+        -70.9,
+        -42.5
+       ],
+       [
+        -71.07,
+        -39.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Surrender of Sayhueque",
+      "kind": "treaty",
+      "lon": -71.07,
+      "lat": -39.95,
+      "year": 1885,
+      "winner": 0,
+      "text": "The last great Patagonian chief lays down his arms."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "first-sino-japanese-war",
+  "name": "First Sino-Japanese War",
+  "start": 1894,
+  "end": 1895,
+  "kind": "war",
+  "summary": "Japan and Qing China fought over control of Korea after both sent troops to put down the Donghak rebellion. Japan's modernised army and navy swept the Chinese out of Korea, into Manchuria and Shandong, and destroyed the Beiyang Fleet. The Treaty of Shimonoseki ended Chinese suzerainty over Korea, gave Japan Taiwan and made it the leading power in East Asia.",
+  "sides": [
+   {
+    "name": "Empire of Japan",
+    "color": "#c0473a",
+    "leaders": [
+     "Yamagata Aritomo",
+     "Oyama Iwao",
+     "Ito Sukeyuki",
+     "Nozu Michitsura"
+    ]
+   },
+   {
+    "name": "Qing China",
+    "color": "#d4a72c",
+    "leaders": [
+     "Li Hongzhang",
+     "Ding Ruchang",
+     "Ye Zhichao",
+     "Zuo Baogui"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 124.5,
+    "lat": 38.8,
+    "r": 4.5
+   },
+   {
+    "lon": 121.0,
+    "lat": 24.0,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1894,
+    "label": "Jul 1894",
+    "title": "Showdown in Korea",
+    "text": "Both powers sent troops to Korea during the Donghak peasant rebellion and then refused to leave. Japanese troops seized the royal palace in Seoul on 23 July, and two days later Japanese cruisers sank the transport Kowshing off Pungdo. General Oshima Yoshimasa beat the Chinese at Seonghwan, and war was declared on 1 August.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire",
+       "Taiwan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Oshima Yoshimasa",
+      "label": "Seoul to Seonghwan",
+      "path": [
+       [
+        126.98,
+        37.57
+       ],
+       [
+        127.05,
+        37.2
+       ],
+       [
+        127.13,
+        36.92
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ye Zhichao",
+      "label": "Retreat to Pyongyang",
+      "path": [
+       [
+        127.0,
+        36.79
+       ],
+       [
+        127.8,
+        37.6
+       ],
+       [
+        126.6,
+        38.5
+       ],
+       [
+        125.75,
+        39.02
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Pungdo",
+      "kind": "battle",
+      "lon": 126.38,
+      "lat": 37.12,
+      "year": 1894,
+      "winner": 0,
+      "text": "Japanese cruisers sink a troopship and drive off its escorts."
+     },
+     {
+      "name": "Battle of Seonghwan",
+      "kind": "battle",
+      "lon": 127.13,
+      "lat": 36.92,
+      "year": 1894,
+      "winner": 0,
+      "text": "The first land battle; the Chinese fall back north."
+     }
+    ]
+   },
+   {
+    "year": 1894,
+    "label": "Sep 1894",
+    "title": "Pyongyang and the Yalu",
+    "text": "Yamagata Aritomo's First Army converged on Pyongyang and took it on 15 September, driving the Qing out of Korea. Two days later Admiral Ito Sukeyuki's fleet beat Ding Ruchang's Beiyang Fleet off the mouth of the Yalu, sinking five ships. The survivors withdrew to port and China lost control of the Yellow Sea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire",
+       "Taiwan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        124.35,
+        40.0
+       ],
+       [
+        124.9,
+        40.4
+       ],
+       [
+        125.5,
+        40.8
+       ],
+       [
+        126.3,
+        41.2
+       ],
+       [
+        127.2,
+        41.45
+       ]
+      ],
+      "label": "Yalu River, Oct 1894"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Yamagata Aritomo",
+      "label": "First Army",
+      "path": [
+       [
+        126.98,
+        37.57
+       ],
+       [
+        126.6,
+        38.3
+       ],
+       [
+        125.75,
+        39.02
+       ],
+       [
+        124.53,
+        40.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ito Sukeyuki",
+      "label": "Combined Fleet",
+      "path": [
+       [
+        125.0,
+        38.1
+       ],
+       [
+        124.2,
+        38.9
+       ],
+       [
+        123.4,
+        39.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ding Ruchang",
+      "label": "Beiyang Fleet",
+      "path": [
+       [
+        122.12,
+        37.5
+       ],
+       [
+        121.6,
+        38.92
+       ],
+       [
+        123.4,
+        39.4
+       ],
+       [
+        121.25,
+        38.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Pyongyang",
+      "kind": "battle",
+      "lon": 125.75,
+      "lat": 39.02,
+      "year": 1894,
+      "winner": 0,
+      "text": "The Qing army is routed and flees across the Yalu."
+     },
+     {
+      "name": "Battle of the Yalu River",
+      "kind": "battle",
+      "lon": 123.4,
+      "lat": 39.4,
+      "year": 1894,
+      "winner": 0,
+      "text": "Japan wins the decisive naval battle of the war."
+     }
+    ]
+   },
+   {
+    "year": 1894,
+    "label": "Oct to Nov 1894",
+    "title": "Into Manchuria, Port Arthur",
+    "text": "The First Army crossed the Yalu at Jiuliancheng and pushed into Manchuria. Oyama Iwao's Second Army landed on the Liaodong Peninsula, took Jinzhou and Dalian and stormed the fortress of Port Arthur on 21 November, where his troops then massacred much of the town's population.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire",
+       "Taiwan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        122.25,
+        40.35
+       ],
+       [
+        122.75,
+        40.85
+       ],
+       [
+        123.4,
+        40.95
+       ],
+       [
+        124.1,
+        40.85
+       ]
+      ],
+      "label": "Front in Liaodong, winter 1894"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Yamagata Aritomo",
+      "label": "Across the Yalu",
+      "path": [
+       [
+        124.53,
+        40.2
+       ],
+       [
+        124.4,
+        40.15
+       ],
+       [
+        124.07,
+        40.45
+       ],
+       [
+        122.75,
+        40.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Oyama Iwao",
+      "label": "Second Army",
+      "path": [
+       [
+        122.5,
+        39.6
+       ],
+       [
+        121.71,
+        39.1
+       ],
+       [
+        121.25,
+        38.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Jiuliancheng",
+      "kind": "battle",
+      "lon": 124.4,
+      "lat": 40.15,
+      "year": 1894,
+      "winner": 0,
+      "text": "Japan crosses the Yalu into China."
+     },
+     {
+      "name": "Fall of Port Arthur",
+      "kind": "battle",
+      "lon": 121.25,
+      "lat": 38.81,
+      "year": 1894,
+      "winner": 0,
+      "text": "China's main northern naval base falls in a day."
+     }
+    ]
+   },
+   {
+    "year": 1895,
+    "label": "Jan to Feb 1895",
+    "title": "Weihaiwei",
+    "text": "The Second Army landed on the tip of Shandong and took the land forts of Weihaiwei from behind, while torpedo boats raided the trapped Beiyang Fleet. Admiral Ding Ruchang surrendered the fleet on 12 February and took his own life. Japanese armies also advanced on Yingkou in Manchuria, and Beijing sued for peace.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire",
+       "Taiwan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Oyama Iwao",
+      "label": "Shandong landing",
+      "path": [
+       [
+        121.6,
+        38.92
+       ],
+       [
+        122.5,
+        37.6
+       ],
+       [
+        122.42,
+        37.17
+       ],
+       [
+        122.12,
+        37.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nozu Michitsura",
+      "label": "Advance on Yingkou",
+      "path": [
+       [
+        122.75,
+        40.85
+       ],
+       [
+        122.24,
+        40.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Weihaiwei",
+      "kind": "siege",
+      "lon": 122.12,
+      "lat": 37.5,
+      "year": 1895,
+      "winner": 0,
+      "text": "The Beiyang Fleet surrenders; China has no navy left in the north."
+     }
+    ]
+   },
+   {
+    "year": 1895,
+    "label": "Apr to Oct 1895",
+    "title": "Shimonoseki and Taiwan",
+    "text": "Li Hongzhang signed the Treaty of Shimonoseki on 17 April: China recognised Korea's independence, ceded Taiwan, the Pescadores and Liaodong, and paid 200 million taels. Within days Russia, France and Germany forced Japan to hand back Liaodong. Japanese troops then fought for months to crush the short-lived Republic of Formosa.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea",
+       "Taiwan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Prince Kitashirakawa Yoshihisa",
+      "label": "Conquest of Taiwan",
+      "path": [
+       [
+        121.74,
+        25.13
+       ],
+       [
+        121.56,
+        25.04
+       ],
+       [
+        120.68,
+        24.15
+       ],
+       [
+        120.2,
+        23.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Shimonoseki",
+      "kind": "treaty",
+      "lon": 130.94,
+      "lat": 33.96,
+      "year": 1895,
+      "winner": 0,
+      "text": "China cedes Taiwan and gives up its claim over Korea."
+     },
+     {
+      "name": "Triple Intervention",
+      "kind": "event",
+      "lon": 121.25,
+      "lat": 38.81,
+      "year": 1895,
+      "winner": null,
+      "text": "Russia, France and Germany force Japan to return Liaodong."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "spanish-american-war",
+  "name": "Spanish-American War",
+  "start": 1898,
+  "end": 1898,
+  "kind": "war",
+  "summary": "The United States went to war with Spain in 1898 over Cuba, where Cubans had been fighting for independence since 1895. American fleets destroyed both Spanish squadrons, at Manila Bay and Santiago de Cuba, and US troops with Cuban and Filipino insurgents took Santiago, Puerto Rico and Manila. Spain lost the last of its American and Pacific empire and the United States became an overseas colonial power.",
+  "sides": [
+   {
+    "name": "United States, with Cuban and Filipino insurgents",
+    "color": "#3b6fb6",
+    "leaders": [
+     "William McKinley",
+     "George Dewey",
+     "William Shafter",
+     "William Sampson",
+     "Calixto Garcia",
+     "Emilio Aguinaldo"
+    ]
+   },
+   {
+    "name": "Spain",
+    "color": "#d4a72c",
+    "leaders": [
+     "Pascual Cervera",
+     "Patricio Montojo",
+     "Arsenio Linares",
+     "Ramon Blanco"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -77.5,
+    "lat": 21.0,
+    "r": 7
+   },
+   {
+    "lon": 121.0,
+    "lat": 14.5,
+    "r": 3
+   }
+  ],
+  "steps": [
+   {
+    "year": 1898,
+    "label": "Feb to Apr 1898",
+    "title": "Remember the Maine",
+    "text": "Cuban rebels had fought Spanish rule since 1895, and the brutal reconcentration camps outraged US opinion. On 15 February the battleship USS Maine blew up in Havana harbour, killing 260 men. Congress declared war in April; Admiral Sampson blockaded Cuba while Admiral Cervera's squadron sailed from the Cape Verde Islands for the Caribbean.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Philippines"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William Sampson",
+      "label": "Blockade of Cuba",
+      "path": [
+       [
+        -81.8,
+        24.55
+       ],
+       [
+        -82.0,
+        23.4
+       ],
+       [
+        -82.35,
+        23.14
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Pascual Cervera",
+      "label": "Atlantic squadron",
+      "path": [
+       [
+        -24.98,
+        16.89
+       ],
+       [
+        -61.02,
+        14.6
+       ],
+       [
+        -68.9,
+        12.1
+       ],
+       [
+        -75.83,
+        20.02
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sinking of the USS Maine",
+      "kind": "event",
+      "lon": -82.35,
+      "lat": 23.14,
+      "year": 1898,
+      "winner": null,
+      "text": "The explosion in Havana harbour sweeps the US into war."
+     }
+    ]
+   },
+   {
+    "year": 1898,
+    "label": "May to Jun 1898",
+    "title": "Manila Bay",
+    "text": "Commodore George Dewey's Asiatic Squadron sailed from Mirs Bay near Hong Kong and on 1 May destroyed Admiral Montojo's older ships off Cavite without losing a man. Dewey brought Emilio Aguinaldo back from exile, and Filipino forces swept the Spanish from much of Luzon. Aguinaldo declared Philippine independence on 12 June.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Philippines"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "George Dewey",
+      "label": "Asiatic Squadron",
+      "path": [
+       [
+        114.45,
+        22.5
+       ],
+       [
+        118.0,
+        17.5
+       ],
+       [
+        120.6,
+        14.4
+       ],
+       [
+        120.9,
+        14.48
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Emilio Aguinaldo",
+      "label": "Return from exile",
+      "path": [
+       [
+        114.17,
+        22.3
+       ],
+       [
+        120.9,
+        14.44
+       ],
+       [
+        121.0,
+        14.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Manila Bay",
+      "kind": "battle",
+      "lon": 120.9,
+      "lat": 14.48,
+      "year": 1898,
+      "winner": 0,
+      "text": "The Spanish Pacific squadron is destroyed in a morning."
+     },
+     {
+      "name": "Philippine Declaration of Independence",
+      "kind": "event",
+      "lon": 120.9,
+      "lat": 14.44,
+      "year": 1898,
+      "winner": null,
+      "text": "Aguinaldo proclaims the Philippines independent at Kawit."
+     }
+    ]
+   },
+   {
+    "year": 1898,
+    "label": "Jun to Jul 1898",
+    "title": "Santiago de Cuba",
+    "text": "General Shafter's V Corps landed at Daiquiri and Siboney with Cuban help and stormed El Caney and the San Juan Heights on 1 July, Theodore Roosevelt's Rough Riders among them. Trapped, Cervera's squadron ran out of the harbour on 3 July and was destroyed along the coast. Santiago surrendered on 17 July.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Philippines"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -75.82,
+        20.07
+       ],
+       [
+        -75.79,
+        20.03
+       ],
+       [
+        -75.8,
+        19.99
+       ]
+      ],
+      "label": "Siege lines at Santiago, Jul 1898"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William Shafter",
+      "label": "V Corps",
+      "path": [
+       [
+        -82.46,
+        27.95
+       ],
+       [
+        -79.0,
+        22.5
+       ],
+       [
+        -75.65,
+        19.92
+       ],
+       [
+        -75.7,
+        19.96
+       ],
+       [
+        -75.8,
+        20.02
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Calixto Garcia",
+      "label": "Cuban insurgents",
+      "path": [
+       [
+        -76.3,
+        20.4
+       ],
+       [
+        -75.9,
+        20.15
+       ],
+       [
+        -75.77,
+        20.06
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Pascual Cervera",
+      "label": "Breakout",
+      "path": [
+       [
+        -75.87,
+        19.97
+       ],
+       [
+        -76.3,
+        19.95
+       ],
+       [
+        -76.9,
+        19.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of San Juan Hill",
+      "kind": "battle",
+      "lon": -75.8,
+      "lat": 20.02,
+      "year": 1898,
+      "winner": 0,
+      "text": "US troops take the heights overlooking Santiago."
+     },
+     {
+      "name": "Battle of Santiago de Cuba",
+      "kind": "battle",
+      "lon": -76.1,
+      "lat": 19.95,
+      "year": 1898,
+      "winner": 0,
+      "text": "Cervera's whole squadron is sunk or beached."
+     },
+     {
+      "name": "Surrender of Santiago",
+      "kind": "siege",
+      "lon": -75.83,
+      "lat": 20.02,
+      "year": 1898,
+      "winner": 0,
+      "text": "The Spanish garrison in eastern Cuba surrenders."
+     }
+    ]
+   },
+   {
+    "year": 1898,
+    "label": "Jul to Aug 1898",
+    "title": "Puerto Rico and Manila",
+    "text": "General Nelson Miles landed at Guanica on 25 July and advanced across Puerto Rico against light resistance. An armistice was signed on 12 August, but news had not reached Manila, where US troops under Wesley Merritt took the city the next day in a largely staged battle. Filipino forces were kept out of the city, souring relations with Aguinaldo.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Philippines"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nelson Miles",
+      "label": "Puerto Rico campaign",
+      "path": [
+       [
+        -75.15,
+        19.95
+       ],
+       [
+        -70.0,
+        17.6
+       ],
+       [
+        -66.91,
+        17.97
+       ],
+       [
+        -66.61,
+        18.01
+       ],
+       [
+        -66.36,
+        18.08
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wesley Merritt",
+      "label": "Eighth Corps",
+      "path": [
+       [
+        120.9,
+        14.48
+       ],
+       [
+        120.99,
+        14.5
+       ],
+       [
+        120.98,
+        14.59
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Landing at Guanica",
+      "kind": "event",
+      "lon": -66.91,
+      "lat": 17.97,
+      "year": 1898,
+      "winner": 0,
+      "text": "US troops land on Puerto Rico's south coast."
+     },
+     {
+      "name": "Battle of Manila",
+      "kind": "battle",
+      "lon": 120.98,
+      "lat": 14.59,
+      "year": 1898,
+      "winner": 0,
+      "text": "Manila surrenders after a token defence."
+     },
+     {
+      "name": "Armistice protocol",
+      "kind": "treaty",
+      "lon": -77.04,
+      "lat": 38.9,
+      "year": 1898,
+      "winner": 0,
+      "text": "Fighting ends on 12 August."
+     }
+    ]
+   },
+   {
+    "year": 1898,
+    "label": "Dec 1898",
+    "title": "Treaty of Paris",
+    "text": "By the Treaty of Paris on 10 December, Spain gave up Cuba and ceded Puerto Rico, Guam and the Philippines to the United States for 20 million dollars. Cuba came under US military rule until 1902. Filipinos who had fought for independence turned on their new rulers in February 1899, starting the Philippine American War.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America",
+       "Philippines"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Adolfo Jimenez Castellanos",
+      "label": "Spanish army leaves Cuba",
+      "path": [
+       [
+        -82.35,
+        23.14
+       ],
+       [
+        -60.0,
+        30.0
+       ],
+       [
+        -30.0,
+        36.0
+       ],
+       [
+        -6.29,
+        36.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Paris",
+      "kind": "treaty",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1898,
+      "winner": 0,
+      "text": "Spain loses Cuba, Puerto Rico, Guam and the Philippines."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "second-boer-war",
+  "name": "Second Boer War",
+  "start": 1899,
+  "end": 1902,
+  "kind": "war",
+  "summary": "Britain and the two Boer republics, the Transvaal and the Orange Free State, went to war over British supremacy in South Africa and the rights of foreign gold miners on the Witwatersrand. The Boers won early victories and besieged three towns, but a huge British army took both capitals in 1900. Two more years of guerrilla war ended only after scorched earth and concentration camps, and the republics became British colonies, later part of the Union of South Africa.",
+  "sides": [
+   {
+    "name": "British Empire",
+    "color": "#c0473a",
+    "leaders": [
+     "Lord Roberts",
+     "Lord Kitchener",
+     "Redvers Buller",
+     "Lord Methuen",
+     "John French"
+    ]
+   },
+   {
+    "name": "Boer republics",
+    "color": "#d39b2a",
+    "leaders": [
+     "Paul Kruger",
+     "Piet Joubert",
+     "Louis Botha",
+     "Christiaan de Wet",
+     "Koos de la Rey",
+     "Piet Cronje"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 27.0,
+    "lat": -28.0,
+    "r": 5
+   },
+   {
+    "lon": 21.0,
+    "lat": -31.0,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1899,
+    "label": "Oct to Nov 1899",
+    "title": "Boer offensive and sieges",
+    "text": "The Boers struck first after their ultimatum expired on 11 October 1899. Piet Joubert's commandos invaded Natal and, after Talana Hill, bottled up the main British field force in Ladysmith. In the west, Cronje and the Free Staters laid siege to Kimberley and Mafeking, and General Buller arrived at Cape Town with an army corps.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cape Colony",
+       "Natal",
+       "Griqualand West"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Transvaal",
+       "Orange Free State"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Piet Joubert",
+      "label": "Invasion of Natal",
+      "path": [
+       [
+        29.88,
+        -27.37
+       ],
+       [
+        30.23,
+        -28.17
+       ],
+       [
+        29.78,
+        -28.56
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Piet Cronje",
+      "label": "Western commandos",
+      "path": [
+       [
+        27.1,
+        -26.71
+       ],
+       [
+        26.16,
+        -26.15
+       ],
+       [
+        25.64,
+        -25.86
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Free State commandos",
+      "label": "Siege of Kimberley",
+      "path": [
+       [
+        25.24,
+        -28.54
+       ],
+       [
+        24.76,
+        -28.74
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Redvers Buller",
+      "label": "Army corps arrives",
+      "path": [
+       [
+        18.42,
+        -33.92
+       ],
+       [
+        25.0,
+        -36.0
+       ],
+       [
+        31.03,
+        -29.86
+       ],
+       [
+        29.77,
+        -28.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Ladysmith",
+      "kind": "siege",
+      "lon": 29.78,
+      "lat": -28.56,
+      "year": 1899,
+      "winner": null,
+      "text": "About 13,000 British troops are encircled in northern Natal."
+     },
+     {
+      "name": "Siege of Kimberley",
+      "kind": "siege",
+      "lon": 24.76,
+      "lat": -28.74,
+      "year": 1899,
+      "winner": null,
+      "text": "The diamond town, with Cecil Rhodes inside, is cut off."
+     },
+     {
+      "name": "Siege of Mafeking",
+      "kind": "siege",
+      "lon": 25.64,
+      "lat": -25.86,
+      "year": 1899,
+      "winner": null,
+      "text": "Baden-Powell's small garrison holds out for 217 days."
+     }
+    ]
+   },
+   {
+    "year": 1899,
+    "label": "Dec 1899",
+    "title": "Black Week",
+    "text": "Three British relief attempts failed within a week. Gatacre was beaten at Stormberg, Methuen's Highland Brigade was cut down before Koos de la Rey's trenches at Magersfontein, and Buller's frontal assault across the Tugela at Colenso collapsed. Shocked, London sent Lord Roberts with Kitchener as chief of staff.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cape Colony",
+       "Natal",
+       "Griqualand West"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Transvaal",
+       "Orange Free State"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.45,
+        -28.68
+       ],
+       [
+        29.6,
+        -28.72
+       ],
+       [
+        29.82,
+        -28.73
+       ],
+       [
+        30.0,
+        -28.72
+       ]
+      ],
+      "label": "Tugela line, Dec 1899"
+     },
+     {
+      "path": [
+       [
+        24.45,
+        -29.05
+       ],
+       [
+        24.7,
+        -28.95
+       ],
+       [
+        24.9,
+        -28.9
+       ]
+      ],
+      "label": "Modder River line, Dec 1899"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lord Methuen",
+      "label": "Kimberley relief column",
+      "path": [
+       [
+        24.2,
+        -29.65
+       ],
+       [
+        24.62,
+        -29.04
+       ],
+       [
+        24.7,
+        -28.98
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Redvers Buller",
+      "label": "Natal Field Force",
+      "path": [
+       [
+        29.77,
+        -28.88
+       ],
+       [
+        29.82,
+        -28.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William Gatacre",
+      "label": "Stormberg",
+      "path": [
+       [
+        26.36,
+        -31.4
+       ],
+       [
+        26.6,
+        -31.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Stormberg",
+      "kind": "battle",
+      "lon": 26.6,
+      "lat": -31.3,
+      "year": 1899,
+      "winner": 1,
+      "text": "A night march goes wrong and Gatacre is routed."
+     },
+     {
+      "name": "Battle of Magersfontein",
+      "kind": "battle",
+      "lon": 24.7,
+      "lat": -28.95,
+      "year": 1899,
+      "winner": 1,
+      "text": "Hidden Boer trenches shatter the Highland Brigade."
+     },
+     {
+      "name": "Battle of Colenso",
+      "kind": "battle",
+      "lon": 29.82,
+      "lat": -28.73,
+      "year": 1899,
+      "winner": 1,
+      "text": "Buller fails to cross the Tugela and loses ten guns."
+     }
+    ]
+   },
+   {
+    "year": 1900,
+    "label": "Feb to Mar 1900",
+    "title": "Roberts turns the tide",
+    "text": "Roberts swung his army east of the Boer lines: John French's cavalry relieved Kimberley and Cronje, caught in retreat, surrendered 4,000 men at Paardeberg on 27 February. In Natal, Buller was beaten again at Spion Kop but finally broke through and relieved Ladysmith on 28 February. Roberts entered Bloemfontein on 13 March.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cape Colony",
+       "Natal",
+       "Griqualand West"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Transvaal",
+       "Orange Free State"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lord Roberts",
+      "label": "Main army",
+      "path": [
+       [
+        24.62,
+        -29.04
+       ],
+       [
+        25.1,
+        -29.0
+       ],
+       [
+        25.7,
+        -29.05
+       ],
+       [
+        26.21,
+        -29.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John French",
+      "label": "Cavalry to Kimberley",
+      "path": [
+       [
+        24.62,
+        -29.04
+       ],
+       [
+        24.95,
+        -29.1
+       ],
+       [
+        24.76,
+        -28.74
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Redvers Buller",
+      "label": "Relief of Ladysmith",
+      "path": [
+       [
+        29.82,
+        -28.73
+       ],
+       [
+        29.52,
+        -28.65
+       ],
+       [
+        29.9,
+        -28.65
+       ],
+       [
+        29.78,
+        -28.56
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Piet Cronje",
+      "label": "Retreat from Magersfontein",
+      "path": [
+       [
+        24.7,
+        -28.95
+       ],
+       [
+        25.1,
+        -29.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Spion Kop",
+      "kind": "battle",
+      "lon": 29.52,
+      "lat": -28.65,
+      "year": 1900,
+      "winner": 1,
+      "text": "British troops seize the hilltop but are shot to pieces and withdraw."
+     },
+     {
+      "name": "Battle of Paardeberg",
+      "kind": "siege",
+      "lon": 25.1,
+      "lat": -29.0,
+      "year": 1900,
+      "winner": 0,
+      "text": "Cronje's army is surrounded and surrenders."
+     },
+     {
+      "name": "Relief of Ladysmith",
+      "kind": "battle",
+      "lon": 29.78,
+      "lat": -28.56,
+      "year": 1900,
+      "winner": 0,
+      "text": "Buller's army breaks through after 118 days."
+     }
+    ]
+   },
+   {
+    "year": 1900,
+    "label": "May to Sep 1900",
+    "title": "Johannesburg and Pretoria",
+    "text": "Roberts marched up the railway, taking Johannesburg on 31 May and Pretoria on 5 June, while a flying column relieved Mafeking. Britain annexed both republics. After Louis Botha's last pitched battle at Bergendal, the aged President Kruger left for Europe through Lourenco Marques.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cape Colony",
+       "Natal",
+       "Griqualand West",
+       "Transvaal",
+       "Orange Free State"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lord Roberts",
+      "label": "March on Pretoria",
+      "path": [
+       [
+        26.21,
+        -29.12
+       ],
+       [
+        27.23,
+        -27.65
+       ],
+       [
+        28.05,
+        -26.2
+       ],
+       [
+        28.19,
+        -25.75
+       ],
+       [
+        30.03,
+        -25.69
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bryan Mahon",
+      "label": "Relief of Mafeking",
+      "path": [
+       [
+        24.76,
+        -28.74
+       ],
+       [
+        24.75,
+        -27.2
+       ],
+       [
+        25.64,
+        -25.86
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Paul Kruger",
+      "label": "Into exile",
+      "path": [
+       [
+        28.19,
+        -25.75
+       ],
+       [
+        30.03,
+        -25.69
+       ],
+       [
+        31.95,
+        -25.43
+       ],
+       [
+        32.57,
+        -25.97
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Relief of Mafeking",
+      "kind": "siege",
+      "lon": 25.64,
+      "lat": -25.86,
+      "year": 1900,
+      "winner": 0,
+      "text": "The siege is lifted on 17 May to wild celebrations in Britain."
+     },
+     {
+      "name": "Fall of Pretoria",
+      "kind": "battle",
+      "lon": 28.19,
+      "lat": -25.75,
+      "year": 1900,
+      "winner": 0,
+      "text": "The Transvaal capital falls almost without a fight."
+     },
+     {
+      "name": "Battle of Bergendal",
+      "kind": "battle",
+      "lon": 30.03,
+      "lat": -25.69,
+      "year": 1900,
+      "winner": 0,
+      "text": "The last set-piece battle; the Boers turn to guerrilla war."
+     }
+    ]
+   },
+   {
+    "year": 1901,
+    "label": "1901",
+    "title": "Guerrilla war and blockhouses",
+    "text": "Mounted commandos under De Wet, De la Rey, Botha and Jan Smuts raided railways and columns across the veld, and Smuts rode deep into the Cape Colony. Kitchener answered with farm burning, thousands of blockhouses strung along barbed wire and drives to sweep the country. Boer families were herded into concentration camps where about 26,000 Boer women and children and at least 20,000 Black Africans died.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cape Colony",
+       "Natal",
+       "Griqualand West",
+       "Transvaal",
+       "Orange Free State"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        26.21,
+        -29.12
+       ],
+       [
+        27.23,
+        -27.65
+       ],
+       [
+        27.93,
+        -26.67
+       ],
+       [
+        28.05,
+        -26.2
+       ],
+       [
+        28.19,
+        -25.75
+       ]
+      ],
+      "label": "Blockhouse line along the central railway"
+     },
+     {
+      "path": [
+       [
+        28.19,
+        -25.75
+       ],
+       [
+        29.47,
+        -25.77
+       ],
+       [
+        30.03,
+        -25.69
+       ],
+       [
+        31.95,
+        -25.43
+       ]
+      ],
+      "label": "Blockhouse line along the eastern railway"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Jan Smuts",
+      "label": "Raid into the Cape",
+      "path": [
+       [
+        27.6,
+        -26.5
+       ],
+       [
+        27.1,
+        -30.6
+       ],
+       [
+        26.26,
+        -32.0
+       ],
+       [
+        19.77,
+        -31.47
+       ],
+       [
+        17.88,
+        -29.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Christiaan de Wet",
+      "label": "Invasion of the Cape",
+      "path": [
+       [
+        26.21,
+        -29.8
+       ],
+       [
+        25.6,
+        -30.4
+       ],
+       [
+        24.47,
+        -30.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John French",
+      "label": "Eastern Transvaal drive",
+      "path": [
+       [
+        28.19,
+        -25.75
+       ],
+       [
+        29.98,
+        -26.53
+       ],
+       [
+        30.8,
+        -27.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Bakenlaagte",
+      "kind": "battle",
+      "lon": 29.17,
+      "lat": -26.33,
+      "year": 1901,
+      "winner": 1,
+      "text": "Botha's commandos overrun a British column's rearguard."
+     },
+     {
+      "name": "Concentration camps",
+      "kind": "event",
+      "lon": 26.21,
+      "lat": -29.12,
+      "year": 1901,
+      "winner": null,
+      "text": "Disease and hunger in the camps cause a scandal led by Emily Hobhouse."
+     }
+    ]
+   },
+   {
+    "year": 1902,
+    "label": "May 1902",
+    "title": "Peace of Vereeniging",
+    "text": "Worn down, the Boer leaders met at Vereeniging and signed the peace in Pretoria on 31 May 1902. The republics became British colonies with a promise of self-government and money to rebuild farms. In 1910 they joined the Cape and Natal in the Union of South Africa.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cape Colony",
+       "Natal",
+       "Griqualand West",
+       "Transvaal",
+       "Orange Free State"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Koos de la Rey",
+      "label": "Boer delegates to Vereeniging",
+      "path": [
+       [
+        26.16,
+        -26.15
+       ],
+       [
+        27.1,
+        -26.71
+       ],
+       [
+        27.93,
+        -26.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Vereeniging",
+      "kind": "treaty",
+      "lon": 27.93,
+      "lat": -26.67,
+      "year": 1902,
+      "winner": 0,
+      "text": "The Boer republics accept British sovereignty."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "boxer-rebellion",
+  "name": "Boxer Rebellion",
+  "start": 1899,
+  "end": 1901,
+  "kind": "war",
+  "summary": "The Boxers, an anti-foreign and anti-Christian peasant movement in north China, killed missionaries and converts and in 1900 besieged the foreign legations in Beijing with the backing of the Qing court. An Eight-Nation Alliance of Japan, Russia, Britain, France, the United States, Germany, Italy and Austria-Hungary fought its way to Beijing and lifted the siege, while Russia overran Manchuria. The Boxer Protocol imposed a crushing indemnity and foreign garrisons, further weakening the dynasty.",
+  "sides": [
+   {
+    "name": "Eight-Nation Alliance",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Edward Seymour",
+     "Alfred Gaselee",
+     "Nikolai Linevich",
+     "Adna Chaffee",
+     "Yamaguchi Motoomi",
+     "Alfred von Waldersee"
+    ]
+   },
+   {
+    "name": "Boxers and Qing forces",
+    "color": "#d4a72c",
+    "leaders": [
+     "Empress Dowager Cixi",
+     "Ronglu",
+     "Dong Fuxiang",
+     "Nie Shicheng",
+     "Prince Duan"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 116.8,
+    "lat": 39.4,
+    "r": 2.5
+   },
+   {
+    "lon": 125.0,
+    "lat": 45.0,
+    "r": 6
+   }
+  ],
+  "steps": [
+   {
+    "year": 1899,
+    "label": "1899",
+    "title": "Rise of the Boxers",
+    "text": "In drought-stricken Shandong, the Righteous and Harmonious Fists blamed missionaries, converts and foreigners for the province's ills. After clashes with Qing troops at Senluo Temple in October 1899, Yuan Shikai crushed them in Shandong, but the bands spread into Zhili toward Beijing under the slogan Support the Qing, destroy the foreign.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "Imperial Japan",
+       "United Kingdom of Great Britain and Ireland",
+       "United States of America",
+       "Germany",
+       "France",
+       "Italy",
+       "Austria Hungary"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Boxer bands",
+      "label": "Spread into Zhili",
+      "path": [
+       [
+        116.43,
+        37.17
+       ],
+       [
+        115.9,
+        38.0
+       ],
+       [
+        115.46,
+        38.87
+       ],
+       [
+        116.4,
+        39.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Senluo Temple clash",
+      "kind": "event",
+      "lon": 116.35,
+      "lat": 37.2,
+      "year": 1899,
+      "winner": null,
+      "text": "Boxers fight Qing troops in Pingyuan county, Shandong."
+     }
+    ]
+   },
+   {
+    "year": 1900,
+    "label": "Jun 1900",
+    "title": "Siege of the Legations",
+    "text": "Boxers poured into Beijing and Tianjin, burning churches and railway stations. Admiral Seymour's 2,000-man relief column was stopped at Langfang and driven back. After allied ships seized the Dagu Forts, the court declared war on the powers on 21 June, and Boxers and imperial troops under Dong Fuxiang laid siege to the legation quarter.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "Imperial Japan",
+       "United Kingdom of Great Britain and Ireland",
+       "United States of America",
+       "Germany",
+       "France",
+       "Italy",
+       "Austria Hungary"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        116.39,
+        39.905
+       ],
+       [
+        116.405,
+        39.907
+       ],
+       [
+        116.415,
+        39.903
+       ]
+      ],
+      "label": "Legation Quarter perimeter"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Edward Seymour",
+      "label": "Seymour expedition",
+      "path": [
+       [
+        117.2,
+        39.13
+       ],
+       [
+        116.9,
+        39.35
+       ],
+       [
+        116.7,
+        39.52
+       ],
+       [
+        116.95,
+        39.3
+       ],
+       [
+        117.2,
+        39.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Allied squadron",
+      "label": "Dagu Forts",
+      "path": [
+       [
+        118.5,
+        38.7
+       ],
+       [
+        117.85,
+        38.95
+       ],
+       [
+        117.7,
+        38.97
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Dong Fuxiang",
+      "label": "Gansu Braves into Beijing",
+      "path": [
+       [
+        116.2,
+        39.75
+       ],
+       [
+        116.4,
+        39.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of the Legations",
+      "kind": "siege",
+      "lon": 116.405,
+      "lat": 39.903,
+      "year": 1900,
+      "winner": null,
+      "text": "About 900 foreigners and 3,000 Chinese Christians hold out for 55 days."
+     },
+     {
+      "name": "Battle of the Dagu Forts",
+      "kind": "battle",
+      "lon": 117.7,
+      "lat": 38.97,
+      "year": 1900,
+      "winner": 0,
+      "text": "Allied ships take the forts guarding the river to Tianjin."
+     },
+     {
+      "name": "Battle of Langfang",
+      "kind": "battle",
+      "lon": 116.7,
+      "lat": 39.52,
+      "year": 1900,
+      "winner": 1,
+      "text": "Seymour's column is halted and forced to retreat."
+     }
+    ]
+   },
+   {
+    "year": 1900,
+    "label": "Jul 1900",
+    "title": "Tianjin and Manchuria",
+    "text": "Allied troops stormed the walled city of Tianjin on 13 to 14 July, securing a base for the march on Beijing. In the north, Boxers attacked the Russian railway in Manchuria and Qing guns shelled Blagoveshchensk, where Russian forces then drowned thousands of Chinese residents in the Amur. Russian columns invaded Manchuria from three directions.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "Imperial Japan",
+       "United Kingdom of Great Britain and Ireland",
+       "United States of America",
+       "Germany",
+       "France",
+       "Italy",
+       "Austria Hungary"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Allied commanders",
+      "label": "Storming of Tianjin",
+      "path": [
+       [
+        117.7,
+        38.97
+       ],
+       [
+        117.45,
+        39.05
+       ],
+       [
+        117.2,
+        39.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Paul von Rennenkampf",
+      "label": "Amur to Qiqihar",
+      "path": [
+       [
+        127.53,
+        50.27
+       ],
+       [
+        127.48,
+        49.97
+       ],
+       [
+        125.6,
+        48.5
+       ],
+       [
+        123.97,
+        47.35
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikolai Grodekov",
+      "label": "Ussuri to Harbin",
+      "path": [
+       [
+        135.07,
+        48.48
+       ],
+       [
+        131.0,
+        46.5
+       ],
+       [
+        126.64,
+        45.76
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Russian Kwantung forces",
+      "label": "North to Mukden",
+      "path": [
+       [
+        121.25,
+        38.81
+       ],
+       [
+        122.24,
+        40.67
+       ],
+       [
+        123.43,
+        41.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Tianjin",
+      "kind": "battle",
+      "lon": 117.2,
+      "lat": 39.13,
+      "year": 1900,
+      "winner": 0,
+      "text": "The allies take Tianjin after heavy losses."
+     },
+     {
+      "name": "Blagoveshchensk massacre",
+      "kind": "event",
+      "lon": 127.53,
+      "lat": 50.27,
+      "year": 1900,
+      "winner": null,
+      "text": "Russian forces drive thousands of Chinese residents into the Amur."
+     }
+    ]
+   },
+   {
+    "year": 1900,
+    "label": "Aug 1900",
+    "title": "Relief of Peking",
+    "text": "About 20,000 allied troops, half of them Japanese and Russian, marched from Tianjin on 4 August, winning at Beicang and Yangcun. They reached Beijing on 14 August and lifted the siege. Empress Dowager Cixi and the emperor fled in disguise to Xi'an, and foreign troops looted the capital.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "Imperial Japan",
+       "United Kingdom of Great Britain and Ireland",
+       "United States of America",
+       "Germany",
+       "France",
+       "Italy",
+       "Austria Hungary"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alfred Gaselee and Nikolai Linevich",
+      "label": "Relief expedition",
+      "path": [
+       [
+        117.2,
+        39.13
+       ],
+       [
+        117.06,
+        39.37
+       ],
+       [
+        116.66,
+        39.91
+       ],
+       [
+        116.4,
+        39.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Empress Dowager Cixi",
+      "label": "Flight to Xi'an",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        115.5,
+        39.6
+       ],
+       [
+        112.55,
+        37.87
+       ],
+       [
+        108.94,
+        34.34
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Yangcun",
+      "kind": "battle",
+      "lon": 117.06,
+      "lat": 39.37,
+      "year": 1900,
+      "winner": 0,
+      "text": "The allies break the Qing line on the road to Beijing."
+     },
+     {
+      "name": "Relief of the Legations",
+      "kind": "battle",
+      "lon": 116.405,
+      "lat": 39.903,
+      "year": 1900,
+      "winner": 0,
+      "text": "Allied troops storm the city gates and end the siege."
+     }
+    ]
+   },
+   {
+    "year": 1901,
+    "label": "1900 to 1901",
+    "title": "Punitive expeditions and the Boxer Protocol",
+    "text": "German Field Marshal von Waldersee arrived to lead punitive expeditions across Zhili, while Russia kept its grip on Manchuria. The Boxer Protocol of 7 September 1901 forced China to pay 450 million taels, execute officials who backed the Boxers and accept foreign troops in Beijing. Russia's refusal to leave Manchuria set it on course for war with Japan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "Imperial Japan",
+       "United Kingdom of Great Britain and Ireland",
+       "United States of America",
+       "Germany",
+       "France",
+       "Italy",
+       "Austria Hungary"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alfred von Waldersee",
+      "label": "Expedition to Baoding",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        116.0,
+        39.4
+       ],
+       [
+        115.46,
+        38.87
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Boxer Protocol",
+      "kind": "treaty",
+      "lon": 116.4,
+      "lat": 39.9,
+      "year": 1901,
+      "winner": 0,
+      "text": "China accepts a huge indemnity and permanent foreign garrisons."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "russo-japanese-war",
+  "name": "Russo-Japanese War",
+  "start": 1904,
+  "end": 1905,
+  "kind": "war",
+  "summary": "Russia and Japan fought over Manchuria and Korea after Russia refused to withdraw its troops from Manchuria. Japan struck first at Port Arthur, won a series of bloody land battles culminating at Mukden and annihilated Russia's Baltic Fleet at Tsushima. It was the first modern victory of an Asian power over a European one; Japan took control of Korea and southern Manchuria, and defeat helped spark the 1905 revolution in Russia.",
+  "sides": [
+   {
+    "name": "Empire of Japan",
+    "color": "#c0473a",
+    "leaders": [
+     "Oyama Iwao",
+     "Nogi Maresuke",
+     "Kuroki Tamemoto",
+     "Oku Yasukata",
+     "Togo Heihachiro"
+    ]
+   },
+   {
+    "name": "Russian Empire",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Aleksey Kuropatkin",
+     "Anatoly Stessel",
+     "Stepan Makarov",
+     "Zinovy Rozhestvensky"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 123.5,
+    "lat": 40.5,
+    "r": 4
+   },
+   {
+    "lon": 129.5,
+    "lat": 34.5,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1904,
+    "label": "Feb 1904",
+    "title": "Surprise at Port Arthur",
+    "text": "On the night of 8 February 1904, before war was declared, Admiral Togo's destroyers torpedoed the Russian Pacific Squadron at Port Arthur. Next day Japanese ships sank two Russian vessels at Chemulpo, and General Kuroki's First Army landed in Korea and marched north to the Yalu.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Togo Heihachiro",
+      "label": "Combined Fleet",
+      "path": [
+       [
+        129.72,
+        33.16
+       ],
+       [
+        126.0,
+        35.5
+       ],
+       [
+        123.5,
+        37.5
+       ],
+       [
+        121.25,
+        38.81
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Kuroki Tamemoto",
+      "label": "First Army",
+      "path": [
+       [
+        126.62,
+        37.47
+       ],
+       [
+        126.98,
+        37.57
+       ],
+       [
+        125.75,
+        39.02
+       ],
+       [
+        124.53,
+        40.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Attack on Port Arthur",
+      "kind": "battle",
+      "lon": 121.25,
+      "lat": 38.81,
+      "year": 1904,
+      "winner": 0,
+      "text": "A surprise torpedo attack damages Russia's best battleships."
+     },
+     {
+      "name": "Battle of Chemulpo Bay",
+      "kind": "battle",
+      "lon": 126.55,
+      "lat": 37.45,
+      "year": 1904,
+      "winner": 0,
+      "text": "The cruiser Varyag and gunboat Korietz are scuttled."
+     }
+    ]
+   },
+   {
+    "year": 1904,
+    "label": "May to Aug 1904",
+    "title": "Yalu, Nanshan and the siege",
+    "text": "Kuroki forced the Yalu on 1 May, the first major land battle. General Oku's Second Army landed on the Liaodong Peninsula, stormed Nanshan and cut Port Arthur off, and General Nogi's Third Army closed the siege. When the Russian squadron tried to break out to Vladivostok on 10 August, Togo turned it back in the Battle of the Yellow Sea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        121.1,
+        38.88
+       ],
+       [
+        121.25,
+        38.89
+       ],
+       [
+        121.4,
+        38.83
+       ]
+      ],
+      "label": "Siege lines at Port Arthur"
+     },
+     {
+      "path": [
+       [
+        122.6,
+        40.6
+       ],
+       [
+        123.0,
+        40.9
+       ],
+       [
+        123.6,
+        41.0
+       ]
+      ],
+      "label": "Liaoyang approaches, Aug 1904"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Kuroki Tamemoto",
+      "label": "Across the Yalu",
+      "path": [
+       [
+        124.53,
+        40.2
+       ],
+       [
+        124.4,
+        40.13
+       ],
+       [
+        124.07,
+        40.45
+       ],
+       [
+        123.6,
+        41.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Oku Yasukata",
+      "label": "Second Army",
+      "path": [
+       [
+        122.3,
+        39.45
+       ],
+       [
+        121.75,
+        39.1
+       ],
+       [
+        122.0,
+        40.0
+       ],
+       [
+        122.5,
+        40.63
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nogi Maresuke",
+      "label": "Third Army",
+      "path": [
+       [
+        121.6,
+        38.92
+       ],
+       [
+        121.4,
+        38.9
+       ],
+       [
+        121.25,
+        38.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Yalu River",
+      "kind": "battle",
+      "lon": 124.4,
+      "lat": 40.13,
+      "year": 1904,
+      "winner": 0,
+      "text": "Japan drives the Russians back across the river."
+     },
+     {
+      "name": "Battle of Nanshan",
+      "kind": "battle",
+      "lon": 121.75,
+      "lat": 39.1,
+      "year": 1904,
+      "winner": 0,
+      "text": "Port Arthur is cut off by land."
+     },
+     {
+      "name": "Battle of the Yellow Sea",
+      "kind": "battle",
+      "lon": 122.5,
+      "lat": 38.2,
+      "year": 1904,
+      "winner": 0,
+      "text": "The Russian breakout fails and the squadron returns to port."
+     }
+    ]
+   },
+   {
+    "year": 1904,
+    "label": "Aug to Oct 1904",
+    "title": "Liaoyang and the Shaho",
+    "text": "Field Marshal Oyama's three armies attacked General Kuropatkin's fortified positions at Liaoyang in late August. Kuroki's flanking move across the Taizi River unnerved Kuropatkin, who withdrew to Mukden. A Russian counteroffensive on the Shaho in October ended in stalemate, and both armies dug in for the winter.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        121.1,
+        38.88
+       ],
+       [
+        121.25,
+        38.89
+       ],
+       [
+        121.4,
+        38.83
+       ]
+      ],
+      "label": "Siege lines at Port Arthur"
+     },
+     {
+      "path": [
+       [
+        123.0,
+        41.6
+       ],
+       [
+        123.35,
+        41.6
+       ],
+       [
+        123.75,
+        41.62
+       ]
+      ],
+      "label": "Shaho front, winter 1904"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Oyama Iwao",
+      "label": "Converging attack",
+      "path": [
+       [
+        122.5,
+        40.63
+       ],
+       [
+        122.95,
+        41.1
+       ],
+       [
+        123.17,
+        41.27
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Kuroki Tamemoto",
+      "label": "Flank across the Taizi",
+      "path": [
+       [
+        123.6,
+        41.0
+       ],
+       [
+        123.5,
+        41.25
+       ],
+       [
+        123.4,
+        41.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Aleksey Kuropatkin",
+      "label": "Withdrawal to Mukden",
+      "path": [
+       [
+        123.17,
+        41.27
+       ],
+       [
+        123.3,
+        41.55
+       ],
+       [
+        123.43,
+        41.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Liaoyang",
+      "kind": "battle",
+      "lon": 123.17,
+      "lat": 41.27,
+      "year": 1904,
+      "winner": 0,
+      "text": "Kuropatkin abandons Liaoyang after costly fighting."
+     },
+     {
+      "name": "Battle of the Shaho",
+      "kind": "battle",
+      "lon": 123.35,
+      "lat": 41.55,
+      "year": 1904,
+      "winner": null,
+      "text": "A Russian counterattack stalls; both sides entrench."
+     }
+    ]
+   },
+   {
+    "year": 1905,
+    "label": "Dec 1904 to Jan 1905",
+    "title": "Fall of Port Arthur",
+    "text": "Nogi's men took 203 Metre Hill on 5 December at enormous cost, and their heavy guns sank the fleet in the harbour. General Stessel surrendered Port Arthur on 2 January 1905. Meanwhile Russia's Baltic Fleet under Rozhestvensky was steaming around Africa, and the Bloody Sunday massacre in St Petersburg set off revolution at home.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        123.0,
+        41.6
+       ],
+       [
+        123.35,
+        41.6
+       ],
+       [
+        123.75,
+        41.62
+       ]
+      ],
+      "label": "Shaho front, winter 1904"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nogi Maresuke",
+      "label": "Third Army moves north",
+      "path": [
+       [
+        121.25,
+        38.81
+       ],
+       [
+        121.71,
+        39.1
+       ],
+       [
+        122.5,
+        40.63
+       ],
+       [
+        123.17,
+        41.27
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Zinovy Rozhestvensky",
+      "label": "Second Pacific Squadron",
+      "path": [
+       [
+        21.0,
+        56.5
+       ],
+       [
+        10.6,
+        57.9
+       ],
+       [
+        -8.0,
+        46.0
+       ],
+       [
+        -17.6,
+        14.7
+       ],
+       [
+        18.5,
+        -35.5
+       ],
+       [
+        48.3,
+        -13.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of 203 Metre Hill",
+      "kind": "battle",
+      "lon": 121.21,
+      "lat": 38.84,
+      "year": 1904,
+      "winner": 0,
+      "text": "The key height above the harbour falls after weeks of assaults."
+     },
+     {
+      "name": "Surrender of Port Arthur",
+      "kind": "siege",
+      "lon": 121.25,
+      "lat": 38.81,
+      "year": 1905,
+      "winner": 0,
+      "text": "Stessel hands over the fortress."
+     },
+     {
+      "name": "Bloody Sunday",
+      "kind": "event",
+      "lon": 30.31,
+      "lat": 59.94,
+      "year": 1905,
+      "winner": null,
+      "text": "Troops fire on marchers in St Petersburg, starting the 1905 Revolution."
+     }
+    ]
+   },
+   {
+    "year": 1905,
+    "label": "Feb to Mar 1905",
+    "title": "Mukden",
+    "text": "About 600,000 men fought along a 150 km front around Mukden, the largest battle in history up to then. Nogi's army swung around the Russian western flank and Kuropatkin retreated north to Tieling and Siping after losing some 90,000 men. Japan, near the end of its manpower and money, could not pursue.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        123.9,
+        43.1
+       ],
+       [
+        124.35,
+        43.17
+       ],
+       [
+        124.9,
+        43.2
+       ]
+      ],
+      "label": "Front after Mukden, Mar 1905"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nogi Maresuke",
+      "label": "Western envelopment",
+      "path": [
+       [
+        123.17,
+        41.27
+       ],
+       [
+        122.8,
+        41.6
+       ],
+       [
+        122.95,
+        42.0
+       ],
+       [
+        123.3,
+        42.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Oyama Iwao",
+      "label": "Main attack",
+      "path": [
+       [
+        123.35,
+        41.55
+       ],
+       [
+        123.43,
+        41.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Aleksey Kuropatkin",
+      "label": "Retreat north",
+      "path": [
+       [
+        123.43,
+        41.8
+       ],
+       [
+        123.84,
+        42.3
+       ],
+       [
+        124.35,
+        43.17
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Mukden",
+      "kind": "battle",
+      "lon": 123.43,
+      "lat": 41.8,
+      "year": 1905,
+      "winner": 0,
+      "text": "The last great land battle ends in a Russian retreat."
+     }
+    ]
+   },
+   {
+    "year": 1905,
+    "label": "May 1905",
+    "title": "Tsushima",
+    "text": "After a voyage of some 18,000 nautical miles, Rozhestvensky's fleet tried to slip through the Tsushima Strait to Vladivostok. On 27 to 28 May Togo crossed its path and sank or captured almost all of it, losing only three torpedo boats. Russia's naval power in the Pacific was gone.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Zinovy Rozhestvensky",
+      "label": "Final leg",
+      "path": [
+       [
+        48.3,
+        -13.3
+       ],
+       [
+        80.0,
+        -2.0
+       ],
+       [
+        99.5,
+        3.5
+       ],
+       [
+        109.3,
+        11.9
+       ],
+       [
+        122.5,
+        21.0
+       ],
+       [
+        129.85,
+        34.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Togo Heihachiro",
+      "label": "Combined Fleet",
+      "path": [
+       [
+        129.2,
+        35.1
+       ],
+       [
+        129.6,
+        34.6
+       ],
+       [
+        129.85,
+        34.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Tsushima",
+      "kind": "battle",
+      "lon": 129.85,
+      "lat": 34.3,
+      "year": 1905,
+      "winner": 0,
+      "text": "The Baltic Fleet is annihilated in the decisive naval battle."
+     }
+    ]
+   },
+   {
+    "year": 1905,
+    "label": "Jul to Sep 1905",
+    "title": "Treaty of Portsmouth",
+    "text": "Japan occupied Sakhalin in July to strengthen its hand. President Theodore Roosevelt mediated peace at Portsmouth, New Hampshire, signed on 5 September. Russia ceded southern Sakhalin and its lease of Port Arthur and the South Manchuria Railway and recognised Korea as a Japanese sphere; Japan made Korea a protectorate that year and annexed it in 1910.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan",
+       "Korea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Haraguchi Kensai",
+      "label": "Invasion of Sakhalin",
+      "path": [
+       [
+        141.0,
+        45.0
+       ],
+       [
+        142.78,
+        46.64
+       ],
+       [
+        142.7,
+        48.5
+       ],
+       [
+        142.16,
+        50.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Portsmouth",
+      "kind": "treaty",
+      "lon": -70.76,
+      "lat": 43.07,
+      "year": 1905,
+      "winner": 0,
+      "text": "Russia gives up southern Sakhalin, Port Arthur and its claims in Korea."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "xinhai-revolution",
+  "name": "Xinhai Revolution",
+  "start": 1911,
+  "end": 1912,
+  "kind": "war",
+  "summary": "A mutiny of New Army soldiers at Wuchang in October 1911 set off a wave of provincial revolts against the Qing dynasty. Revolutionaries held the south and the Yangtze while the Beiyang Army under Yuan Shikai held the north, until a deal made Yuan president in return for the abdication of the child emperor Puyi. The revolution ended more than 2,000 years of imperial rule and founded the Republic of China.",
+  "sides": [
+   {
+    "name": "Revolutionaries",
+    "color": "#c0473a",
+    "leaders": [
+     "Sun Yat-sen",
+     "Huang Xing",
+     "Li Yuanhong",
+     "Song Jiaoren"
+    ]
+   },
+   {
+    "name": "Qing dynasty",
+    "color": "#d4a72c",
+    "leaders": [
+     "Yuan Shikai",
+     "Prince Chun (Zaifeng)",
+     "Feng Guozhang",
+     "Yinchang",
+     "Empress Dowager Longyu"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 114.5,
+    "lat": 31.0,
+    "r": 7
+   },
+   {
+    "lon": 110.0,
+    "lat": 26.0,
+    "r": 7
+   }
+  ],
+  "steps": [
+   {
+    "year": 1911,
+    "label": "Apr to Sep 1911",
+    "title": "Guangzhou and the Railway Crisis",
+    "text": "Huang Xing's uprising in Guangzhou on 27 April 1911 failed, and 72 revolutionaries were buried as martyrs. That summer a plan to nationalise private railways and sell them to foreign banks set off the Railway Protection Movement in Sichuan. When troops fired on protesters in Chengdu, the court sent Hubei New Army units under Duanfang to Sichuan, thinning the garrison at Wuchang.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Duanfang",
+      "label": "Hubei troops to Sichuan",
+      "path": [
+       [
+        114.31,
+        30.55
+       ],
+       [
+        111.29,
+        30.69
+       ],
+       [
+        106.55,
+        29.56
+       ],
+       [
+        104.85,
+        29.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Huanghuagang Uprising",
+      "kind": "battle",
+      "lon": 113.26,
+      "lat": 23.13,
+      "year": 1911,
+      "winner": 1,
+      "text": "The Guangzhou rising is crushed within a day."
+     },
+     {
+      "name": "Chengdu shootings",
+      "kind": "event",
+      "lon": 104.07,
+      "lat": 30.67,
+      "year": 1911,
+      "winner": null,
+      "text": "Troops fire on railway protesters and Sichuan rises in revolt."
+     }
+    ]
+   },
+   {
+    "year": 1911,
+    "label": "Oct 1911",
+    "title": "Wuchang Uprising",
+    "text": "On 10 October, after a bomb accident exposed their plot, revolutionary soldiers of the New Army seized Wuchang and made Colonel Li Yuanhong military governor of Hubei. Hankou and Hanyang joined within days. The panicked court recalled Yuan Shikai and sent the Beiyang Army south along the Beijing to Hankou railway.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        113.95,
+        30.68
+       ],
+       [
+        114.27,
+        30.6
+       ],
+       [
+        114.6,
+        30.75
+       ]
+      ],
+      "label": "Yangtze front at Wuhan"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Feng Guozhang",
+      "label": "Beiyang Army south",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        113.65,
+        34.75
+       ],
+       [
+        114.07,
+        32.13
+       ],
+       [
+        113.92,
+        30.92
+       ],
+       [
+        114.28,
+        30.59
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Huang Xing",
+      "label": "To Wuhan",
+      "path": [
+       [
+        121.47,
+        31.23
+       ],
+       [
+        118.78,
+        32.06
+       ],
+       [
+        117.05,
+        30.52
+       ],
+       [
+        115.99,
+        29.71
+       ],
+       [
+        114.31,
+        30.55
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Wuchang Uprising",
+      "kind": "battle",
+      "lon": 114.31,
+      "lat": 30.55,
+      "year": 1911,
+      "winner": 0,
+      "text": "The New Army garrison revolts and takes the city."
+     }
+    ]
+   },
+   {
+    "year": 1911,
+    "label": "Oct to Dec 1911",
+    "title": "Provinces secede",
+    "text": "Feng Guozhang's Beiyang troops retook and burned Hankou and then Hanyang in fierce fighting with Huang Xing's volunteers. But province after province declared independence, 15 in all, from Hunan and Shaanxi to Shanghai and Guangdong. Revolutionary armies from Jiangsu and Zhejiang captured Nanjing on 2 December, and Yuan agreed to a ceasefire.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        113.95,
+        30.68
+       ],
+       [
+        114.27,
+        30.6
+       ],
+       [
+        114.6,
+        30.75
+       ]
+      ],
+      "label": "Yangtze front at Wuhan"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Feng Guozhang",
+      "label": "Counterattack at Wuhan",
+      "path": [
+       [
+        113.92,
+        30.92
+       ],
+       [
+        114.28,
+        30.59
+       ],
+       [
+        114.27,
+        30.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Xu Shaozhen",
+      "label": "Jiangsu and Zhejiang army",
+      "path": [
+       [
+        121.47,
+        31.23
+       ],
+       [
+        120.3,
+        31.57
+       ],
+       [
+        119.45,
+        32.2
+       ],
+       [
+        118.78,
+        32.06
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Yangxia",
+      "kind": "battle",
+      "lon": 114.27,
+      "lat": 30.57,
+      "year": 1911,
+      "winner": 1,
+      "text": "Qing forces retake Hankou and Hanyang but cannot cross to Wuchang."
+     },
+     {
+      "name": "Capture of Nanjing",
+      "kind": "battle",
+      "lon": 118.78,
+      "lat": 32.06,
+      "year": 1911,
+      "winner": 0,
+      "text": "The revolutionaries take the old southern capital."
+     }
+    ]
+   },
+   {
+    "year": 1912,
+    "label": "Jan 1912",
+    "title": "Republic proclaimed",
+    "text": "Sun Yat-sen returned from exile and was inaugurated in Nanjing on 1 January 1912 as provisional president of the Republic of China. Revolutionaries prepared a northern expedition while envoys bargained with Yuan Shikai in Shanghai. Outer Mongolia and Tibet used the collapse to throw off Qing rule.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        113.95,
+        30.68
+       ],
+       [
+        114.27,
+        30.6
+       ],
+       [
+        114.6,
+        30.75
+       ]
+      ],
+      "label": "Yangtze front at Wuhan"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Sun Yat-sen",
+      "label": "To Nanjing",
+      "path": [
+       [
+        121.47,
+        31.23
+       ],
+       [
+        120.3,
+        31.57
+       ],
+       [
+        118.78,
+        32.06
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Republic of China founded",
+      "kind": "event",
+      "lon": 118.78,
+      "lat": 32.06,
+      "year": 1912,
+      "winner": 0,
+      "text": "Sun Yat-sen takes office as provisional president."
+     }
+    ]
+   },
+   {
+    "year": 1912,
+    "label": "Feb to Mar 1912",
+    "title": "Abdication",
+    "text": "Yuan Shikai pressed the court to give up, and on 12 February 1912 Empress Dowager Longyu issued the edict by which the six-year-old Puyi abdicated. Sun resigned in Yuan's favour, and an envoy led by Cai Yuanpei went north to escort him south, but Yuan stayed in Beijing and was sworn in there on 10 March.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cai Yuanpei",
+      "label": "Delegation to Yuan Shikai",
+      "path": [
+       [
+        118.78,
+        32.06
+       ],
+       [
+        121.47,
+        31.23
+       ],
+       [
+        122.5,
+        35.0
+       ],
+       [
+        117.7,
+        38.97
+       ],
+       [
+        116.4,
+        39.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Abdication of Puyi",
+      "kind": "treaty",
+      "lon": 116.4,
+      "lat": 39.9,
+      "year": 1912,
+      "winner": 0,
+      "text": "The last emperor abdicates and the Qing dynasty ends."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "balkan-wars",
+  "name": "Balkan Wars",
+  "start": 1912,
+  "end": 1913,
+  "kind": "war",
+  "summary": "In 1912 Bulgaria, Serbia, Greece and Montenegro joined to drive the Ottoman Empire out of its last European provinces, and within weeks pushed it back to the gates of Constantinople. In 1913 the victors fell out over Macedonia: Bulgaria attacked Serbia and Greece and was beaten when Romania and the Ottomans joined in. The wars redrew the Balkans, created Albania and left grievances that fed into the First World War.",
+  "sides": [
+   {
+    "name": "Bulgaria",
+    "color": "#3d8a5a",
+    "leaders": [
+     "Tsar Ferdinand",
+     "Mihail Savov",
+     "Radko Dimitriev",
+     "Nikola Ivanov"
+    ]
+   },
+   {
+    "name": "Serbia, Greece, Montenegro (and Romania in 1913)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Radomir Putnik",
+     "Crown Prince Constantine",
+     "Crown Prince Alexander",
+     "King Nicholas I",
+     "Pavlos Kountouriotis"
+    ]
+   },
+   {
+    "name": "Ottoman Empire",
+    "color": "#c0473a",
+    "leaders": [
+     "Nazim Pasha",
+     "Enver Pasha",
+     "Sukru Pasha",
+     "Zeki Pasha",
+     "Esad Pasha"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 23.5,
+    "lat": 41.5,
+    "r": 4.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1912,
+    "label": "Oct 1912",
+    "title": "The League strikes",
+    "text": "Montenegro opened the war on 8 October and its allies followed ten days later, attacking the Ottomans on every side. Bulgaria's main armies under Radko Dimitriev broke through in Thrace at Kirk Kilisse and Lule Burgas; the Serbs routed Zeki Pasha's Vardar Army at Kumanovo; and Crown Prince Constantine's Greeks forced the Sarantaporo pass.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Bulgaria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Serbia",
+       "Greece",
+       "Montenegro"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Radko Dimitriev",
+      "label": "Thrace offensive",
+      "path": [
+       [
+        26.5,
+        42.48
+       ],
+       [
+        27.22,
+        41.73
+       ],
+       [
+        27.36,
+        41.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Crown Prince Alexander",
+      "label": "Serbian First Army",
+      "path": [
+       [
+        21.9,
+        42.55
+       ],
+       [
+        21.72,
+        42.13
+       ],
+       [
+        21.43,
+        42.0
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Crown Prince Constantine",
+      "label": "Army of Thessaly",
+      "path": [
+       [
+        22.19,
+        39.89
+       ],
+       [
+        22.04,
+        40.04
+       ],
+       [
+        21.79,
+        40.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kumanovo",
+      "kind": "battle",
+      "lon": 21.72,
+      "lat": 42.13,
+      "year": 1912,
+      "winner": 1,
+      "text": "Serbia destroys the Ottoman hold on northern Macedonia."
+     },
+     {
+      "name": "Battle of Lule Burgas",
+      "kind": "battle",
+      "lon": 27.36,
+      "lat": 41.4,
+      "year": 1912,
+      "winner": 0,
+      "text": "The largest battle in Europe since 1871 sends the Ottomans reeling."
+     },
+     {
+      "name": "Battle of Sarantaporo",
+      "kind": "battle",
+      "lon": 22.04,
+      "lat": 40.04,
+      "year": 1912,
+      "winner": 1,
+      "text": "The Greeks force the pass into Macedonia."
+     }
+    ]
+   },
+   {
+    "year": 1912,
+    "label": "Nov to Dec 1912",
+    "title": "Salonika, Monastir and Catalca",
+    "text": "The Greeks entered Salonika on 8 November, a day ahead of a Bulgarian division. The Serbs took Monastir and reached the Adriatic, Montenegro besieged Scutari, and Albania proclaimed independence at Vlore. Bulgaria's assault on the Catalca lines before Constantinople failed, Adrianople held out under siege, and an armistice was signed on 3 December.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Bulgaria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Serbia",
+       "Greece",
+       "Montenegro"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        28.45,
+        41.37
+       ],
+       [
+        28.47,
+        41.15
+       ],
+       [
+        28.58,
+        41.02
+       ]
+      ],
+      "label": "Catalca lines"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Crown Prince Constantine",
+      "label": "March on Salonika",
+      "path": [
+       [
+        21.79,
+        40.3
+       ],
+       [
+        22.41,
+        40.79
+       ],
+       [
+        22.94,
+        40.64
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Radomir Putnik",
+      "label": "Serbs to Monastir",
+      "path": [
+       [
+        21.43,
+        42.0
+       ],
+       [
+        21.55,
+        41.35
+       ],
+       [
+        21.33,
+        41.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mihail Savov",
+      "label": "Advance on Constantinople",
+      "path": [
+       [
+        27.36,
+        41.4
+       ],
+       [
+        27.8,
+        41.16
+       ],
+       [
+        28.4,
+        41.15
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "King Nicholas I",
+      "label": "Siege of Scutari",
+      "path": [
+       [
+        19.26,
+        42.44
+       ],
+       [
+        19.51,
+        42.07
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Salonika",
+      "kind": "battle",
+      "lon": 22.94,
+      "lat": 40.64,
+      "year": 1912,
+      "winner": 1,
+      "text": "Hasan Tahsin Pasha surrenders the city to the Greeks."
+     },
+     {
+      "name": "Battle of Monastir",
+      "kind": "battle",
+      "lon": 21.33,
+      "lat": 41.03,
+      "year": 1912,
+      "winner": 1,
+      "text": "The Serbs break the last Ottoman army in Macedonia."
+     },
+     {
+      "name": "First Battle of Catalca",
+      "kind": "battle",
+      "lon": 28.46,
+      "lat": 41.14,
+      "year": 1912,
+      "winner": 2,
+      "text": "The Ottoman lines stop the Bulgarians before Constantinople."
+     }
+    ]
+   },
+   {
+    "year": 1913,
+    "label": "Jan to May 1913",
+    "title": "Adrianople and the Treaty of London",
+    "text": "Enver Pasha seized power in Constantinople in January and the war resumed. The Greeks took Ioannina, Bulgarian and Serbian troops stormed Adrianople on 26 March, and Scutari surrendered to Montenegro in April. The Treaty of London on 30 May left the Ottomans only a strip of Thrace behind the Enos to Midia line.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Bulgaria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Serbia",
+       "Greece",
+       "Montenegro"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        26.08,
+        40.72
+       ],
+       [
+        27.0,
+        41.2
+       ],
+       [
+        28.09,
+        41.63
+       ]
+      ],
+      "label": "Enos to Midia line"
+     },
+     {
+      "path": [
+       [
+        28.45,
+        41.37
+       ],
+       [
+        28.47,
+        41.15
+       ],
+       [
+        28.58,
+        41.02
+       ]
+      ],
+      "label": "Catalca lines"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nikola Ivanov",
+      "label": "Second Army",
+      "path": [
+       [
+        25.55,
+        41.93
+       ],
+       [
+        26.56,
+        41.68
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Stepa Stepanovic",
+      "label": "Serbian Second Army",
+      "path": [
+       [
+        22.5,
+        42.3
+       ],
+       [
+        24.7,
+        42.15
+       ],
+       [
+        26.56,
+        41.68
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Crown Prince Constantine",
+      "label": "Epirus army",
+      "path": [
+       [
+        20.98,
+        39.16
+       ],
+       [
+        20.83,
+        39.6
+       ],
+       [
+        20.85,
+        39.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Adrianople",
+      "kind": "siege",
+      "lon": 26.56,
+      "lat": 41.68,
+      "year": 1913,
+      "winner": 0,
+      "text": "Sukru Pasha surrenders the fortress after a five-month siege."
+     },
+     {
+      "name": "Battle of Bizani",
+      "kind": "battle",
+      "lon": 20.83,
+      "lat": 39.6,
+      "year": 1913,
+      "winner": 1,
+      "text": "The Greeks take the forts and Ioannina surrenders."
+     },
+     {
+      "name": "Treaty of London",
+      "kind": "treaty",
+      "lon": -0.13,
+      "lat": 51.51,
+      "year": 1913,
+      "winner": null,
+      "text": "The Ottomans give up almost all of Europe."
+     }
+    ]
+   },
+   {
+    "year": 1913,
+    "label": "Jun to Jul 1913",
+    "title": "Second Balkan War",
+    "text": "Unhappy with its share of Macedonia, Bulgaria attacked its Serbian and Greek allies on the night of 29 June. The Serbs held at Bregalnica and the Greeks won at Kilkis and pushed north toward Kresna. Romania invaded from the north and marched almost to Sofia, and Enver Pasha's Ottomans walked back into Adrianople.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Bulgaria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Serbia",
+       "Greece",
+       "Montenegro",
+       "Romania"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.6,
+        42.1
+       ],
+       [
+        22.25,
+        41.82
+       ],
+       [
+        22.1,
+        41.5
+       ]
+      ],
+      "label": "Bregalnica front, Jul 1913"
+     },
+     {
+      "path": [
+       [
+        22.9,
+        41.75
+       ],
+       [
+        23.16,
+        41.77
+       ],
+       [
+        23.4,
+        41.6
+       ]
+      ],
+      "label": "Greek front, late Jul 1913"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Crown Prince Constantine",
+      "label": "Greek advance north",
+      "path": [
+       [
+        22.94,
+        40.64
+       ],
+       [
+        22.87,
+        41.0
+       ],
+       [
+        22.73,
+        41.18
+       ],
+       [
+        23.16,
+        41.77
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Alexandru Averescu",
+      "label": "Romanian invasion",
+      "path": [
+       [
+        24.5,
+        43.77
+       ],
+       [
+        23.55,
+        43.21
+       ],
+       [
+        23.43,
+        42.69
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Enver Pasha",
+      "label": "Recapture of Adrianople",
+      "path": [
+       [
+        28.45,
+        41.14
+       ],
+       [
+        27.8,
+        41.16
+       ],
+       [
+        27.36,
+        41.4
+       ],
+       [
+        26.56,
+        41.68
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mihail Savov",
+      "label": "Bulgarian attack",
+      "path": [
+       [
+        22.7,
+        42.28
+       ],
+       [
+        22.19,
+        41.74
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Bregalnica",
+      "kind": "battle",
+      "lon": 22.25,
+      "lat": 41.82,
+      "year": 1913,
+      "winner": 1,
+      "text": "The Serbs repel the Bulgarian surprise attack."
+     },
+     {
+      "name": "Battle of Kilkis",
+      "kind": "battle",
+      "lon": 22.87,
+      "lat": 41.0,
+      "year": 1913,
+      "winner": 1,
+      "text": "The Greeks drive the Bulgarians out of southern Macedonia."
+     },
+     {
+      "name": "Recapture of Adrianople",
+      "kind": "event",
+      "lon": 26.56,
+      "lat": 41.68,
+      "year": 1913,
+      "winner": 2,
+      "text": "Ottoman troops retake the city unopposed."
+     }
+    ]
+   },
+   {
+    "year": 1913,
+    "label": "Aug to Sep 1913",
+    "title": "Treaty of Bucharest",
+    "text": "Surrounded, Bulgaria signed the Treaty of Bucharest on 10 August. Serbia and Greece split most of Macedonia, Romania gained Southern Dobruja and Bulgaria kept only a narrow outlet to the Aegean in Western Thrace. A separate treaty in September returned Adrianople to the Ottomans.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Bulgaria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Serbia",
+       "Greece",
+       "Montenegro",
+       "Romania"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Romanian Fifth Corps",
+      "label": "Occupation of Southern Dobruja",
+      "path": [
+       [
+        27.26,
+        44.12
+       ],
+       [
+        27.83,
+        43.57
+       ],
+       [
+        28.16,
+        43.41
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Bucharest",
+      "kind": "treaty",
+      "lon": 26.1,
+      "lat": 44.43,
+      "year": 1913,
+      "winner": 1,
+      "text": "Bulgaria loses most of its gains from the first war."
+     },
+     {
+      "name": "Treaty of Constantinople",
+      "kind": "treaty",
+      "lon": 28.98,
+      "lat": 41.01,
+      "year": 1913,
+      "winner": 2,
+      "text": "Bulgaria recognises Ottoman rule over Adrianople."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mexican-revolution",
+  "name": "Mexican Revolution",
+  "start": 1910,
+  "end": 1920,
+  "kind": "war",
+  "summary": "A revolt against the long dictatorship of Porfirio Diaz grew into a decade of civil wars among shifting factions: Madero's democrats, Huerta's counter-revolution, Carranza's Constitutionalists, Pancho Villa's northern army and Emiliano Zapata's peasant movement in the south. Perhaps a million people died or fled. The Constitutionalists won, writing the 1917 Constitution with its land reform and labour rights, and the Sonoran generals led by Obregon took power in 1920.",
+  "sides": [
+   {
+    "name": "Revolutionaries, then Constitutionalists",
+    "color": "#3d8a5a",
+    "leaders": [
+     "Francisco Madero",
+     "Venustiano Carranza",
+     "Alvaro Obregon",
+     "Pablo Gonzalez"
+    ]
+   },
+   {
+    "name": "Federal regime (Diaz, then Huerta)",
+    "color": "#7a5aa8",
+    "leaders": [
+     "Porfirio Diaz",
+     "Victoriano Huerta",
+     "Pascual Orozco"
+    ]
+   },
+   {
+    "name": "Villa and Zapata (Convention)",
+    "color": "#c0473a",
+    "leaders": [
+     "Pancho Villa",
+     "Emiliano Zapata",
+     "Felipe Angeles"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -103.0,
+    "lat": 25.0,
+    "r": 7
+   },
+   {
+    "lon": -99.0,
+    "lat": 19.5,
+    "r": 3
+   }
+  ],
+  "steps": [
+   {
+    "year": 1911,
+    "label": "Nov 1910 to May 1911",
+    "title": "Madero's revolt",
+    "text": "Francisco Madero, cheated in the 1910 election, called for revolt in his Plan of San Luis Potosi. Pascual Orozco and Pancho Villa raised the mountains of Chihuahua and took Ciudad Juarez in May 1911, while Emiliano Zapata's peasants rose in Morelos and took Cuautla. Porfirio Diaz resigned after 35 years in power and sailed into exile.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Pascual Orozco and Pancho Villa",
+      "label": "Chihuahua rising",
+      "path": [
+       [
+        -107.48,
+        28.55
+       ],
+       [
+        -106.09,
+        28.63
+       ],
+       [
+        -106.9,
+        30.3
+       ],
+       [
+        -106.45,
+        31.73
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Emiliano Zapata",
+      "label": "Morelos rising",
+      "path": [
+       [
+        -98.98,
+        18.76
+       ],
+       [
+        -98.95,
+        18.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ciudad Juarez",
+      "kind": "battle",
+      "lon": -106.45,
+      "lat": 31.73,
+      "year": 1911,
+      "winner": 0,
+      "text": "The rebels take the border city, breaking the regime's nerve."
+     },
+     {
+      "name": "Battle of Cuautla",
+      "kind": "battle",
+      "lon": -98.95,
+      "lat": 18.81,
+      "year": 1911,
+      "winner": 0,
+      "text": "Zapata's forces take the town after a week of fighting."
+     },
+     {
+      "name": "Treaty of Ciudad Juarez",
+      "kind": "treaty",
+      "lon": -106.45,
+      "lat": 31.73,
+      "year": 1911,
+      "winner": 0,
+      "text": "Diaz agrees to resign and leave the country."
+     }
+    ]
+   },
+   {
+    "year": 1913,
+    "label": "1911 to Feb 1913",
+    "title": "Madero falls",
+    "text": "Madero's slow reforms disappointed his allies: Zapata rejected him in the Plan of Ayala, and Orozco rebelled in the north before General Victoriano Huerta crushed him. In February 1913 a revolt in Mexico City became the Ten Tragic Days, during which Huerta betrayed Madero, seized power and had him murdered.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Victoriano Huerta",
+      "label": "Campaign against Orozco",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -103.41,
+        25.54
+       ],
+       [
+        -104.5,
+        26.9
+       ],
+       [
+        -106.09,
+        28.63
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Second Battle of Rellano",
+      "kind": "battle",
+      "lon": -104.5,
+      "lat": 26.9,
+      "year": 1912,
+      "winner": 1,
+      "text": "Huerta's federal army defeats Orozco's rebels."
+     },
+     {
+      "name": "Ten Tragic Days",
+      "kind": "event",
+      "lon": -99.13,
+      "lat": 19.43,
+      "year": 1913,
+      "winner": 1,
+      "text": "Huerta seizes power; Madero is murdered on 22 February."
+     }
+    ]
+   },
+   {
+    "year": 1914,
+    "label": "1913 to Aug 1914",
+    "title": "Constitutionalist war",
+    "text": "Governor Venustiano Carranza of Coahuila refused to recognise Huerta and raised the Constitutionalist Army. Villa's Division of the North won at Torreon and smashed the federals at Zacatecas, Obregon fought down the west coast to Guadalajara, and Pablo Gonzalez took Monterrey and Tampico. US forces occupied Veracruz in April 1914, and Huerta resigned in July.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -106.4,
+        23.2
+       ],
+       [
+        -103.5,
+        22.3
+       ],
+       [
+        -102.6,
+        22.6
+       ],
+       [
+        -100.98,
+        22.15
+       ],
+       [
+        -97.86,
+        22.0
+       ]
+      ],
+      "label": "Front, Jun 1914"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Pancho Villa",
+      "label": "Division of the North",
+      "path": [
+       [
+        -106.09,
+        28.63
+       ],
+       [
+        -103.41,
+        25.54
+       ],
+       [
+        -102.58,
+        22.77
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alvaro Obregon",
+      "label": "Army of the Northwest",
+      "path": [
+       [
+        -110.96,
+        29.07
+       ],
+       [
+        -107.39,
+        24.8
+       ],
+       [
+        -104.89,
+        21.5
+       ],
+       [
+        -103.35,
+        20.67
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Pablo Gonzalez",
+      "label": "Army of the Northeast",
+      "path": [
+       [
+        -100.31,
+        25.67
+       ],
+       [
+        -98.5,
+        23.7
+       ],
+       [
+        -97.86,
+        22.25
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Zacatecas",
+      "kind": "battle",
+      "lon": -102.58,
+      "lat": 22.77,
+      "year": 1914,
+      "winner": 2,
+      "text": "Villa destroys Huerta's last major army."
+     },
+     {
+      "name": "US occupation of Veracruz",
+      "kind": "event",
+      "lon": -96.13,
+      "lat": 19.2,
+      "year": 1914,
+      "winner": null,
+      "text": "US Marines and sailors hold the port from April to November."
+     },
+     {
+      "name": "Treaties of Teoloyucan",
+      "kind": "treaty",
+      "lon": -99.18,
+      "lat": 19.75,
+      "year": 1914,
+      "winner": 0,
+      "text": "The federal army surrenders and Obregon enters Mexico City."
+     }
+    ]
+   },
+   {
+    "year": 1914,
+    "label": "Oct to Dec 1914",
+    "title": "The winners split",
+    "text": "The Convention of Aguascalientes failed to reconcile the revolutionary chiefs. Villa and Zapata backed the Convention and occupied Mexico City in December, while Carranza withdrew to Veracruz after the Americans left. Obregon stayed loyal to Carranza.",
+    "territories": [
+     {
+      "side": 2,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -98.5,
+        20.2
+       ],
+       [
+        -98.4,
+        19.3
+       ],
+       [
+        -98.6,
+        18.6
+       ]
+      ],
+      "label": "Convention vs Carranza, Dec 1914"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Pancho Villa",
+      "label": "March on the capital",
+      "path": [
+       [
+        -102.58,
+        22.77
+       ],
+       [
+        -102.29,
+        21.88
+       ],
+       [
+        -100.39,
+        20.59
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Emiliano Zapata",
+      "label": "From Morelos",
+      "path": [
+       [
+        -99.23,
+        18.92
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Venustiano Carranza",
+      "label": "Withdrawal to Veracruz",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -96.13,
+        19.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Convention of Aguascalientes",
+      "kind": "event",
+      "lon": -102.29,
+      "lat": 21.88,
+      "year": 1914,
+      "winner": 2,
+      "text": "The chiefs fail to agree and the revolution divides."
+     },
+     {
+      "name": "Villa and Zapata in Mexico City",
+      "kind": "event",
+      "lon": -99.13,
+      "lat": 19.43,
+      "year": 1914,
+      "winner": 2,
+      "text": "The two popular leaders meet at Xochimilco and parade through the capital."
+     }
+    ]
+   },
+   {
+    "year": 1915,
+    "label": "Jan to Jul 1915",
+    "title": "Celaya",
+    "text": "Obregon retook Puebla and Mexico City and led his army into the Bajio. At Celaya in April he met Villa's famous cavalry charges with trenches, barbed wire and machine guns learned from the war in Europe, and destroyed the Division of the North. Defeats at Leon and Aguascalientes followed, and the United States recognised Carranza in October.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -100.9,
+        20.7
+       ],
+       [
+        -100.9,
+        20.35
+       ]
+      ],
+      "label": "Celaya, Apr 1915"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alvaro Obregon",
+      "label": "Bajio campaign",
+      "path": [
+       [
+        -96.13,
+        19.2
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -100.39,
+        20.59
+       ],
+       [
+        -100.82,
+        20.52
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Pancho Villa",
+      "label": "Attack and retreat",
+      "path": [
+       [
+        -101.35,
+        20.67
+       ],
+       [
+        -100.82,
+        20.52
+       ],
+       [
+        -101.68,
+        21.12
+       ],
+       [
+        -102.29,
+        21.88
+       ],
+       [
+        -103.41,
+        25.54
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battles of Celaya",
+      "kind": "battle",
+      "lon": -100.82,
+      "lat": 20.52,
+      "year": 1915,
+      "winner": 0,
+      "text": "Villa's army is shattered in two battles in April."
+     },
+     {
+      "name": "Battle of Trinidad",
+      "kind": "battle",
+      "lon": -101.6,
+      "lat": 21.1,
+      "year": 1915,
+      "winner": 0,
+      "text": "Obregon loses an arm but wins the war's longest battle near Leon."
+     }
+    ]
+   },
+   {
+    "year": 1917,
+    "label": "1916 to 1917",
+    "title": "Columbus raid and the Constitution",
+    "text": "Reduced to a guerrilla band, Villa raided Columbus, New Mexico, in March 1916, and General Pershing's Punitive Expedition chased him through Chihuahua for ten months without catching him. Pablo Gonzalez burned his way through Zapata's Morelos. In February 1917 a congress at Queretaro adopted a new constitution promising land reform, labour rights and limits on the Church.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Pancho Villa",
+      "label": "Raid on Columbus",
+      "path": [
+       [
+        -106.9,
+        29.5
+       ],
+       [
+        -107.5,
+        31.0
+       ],
+       [
+        -107.64,
+        31.83
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Pablo Gonzalez",
+      "label": "Campaign in Morelos",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -99.23,
+        18.92
+       ],
+       [
+        -98.95,
+        18.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Raid on Columbus",
+      "kind": "event",
+      "lon": -107.64,
+      "lat": 31.83,
+      "year": 1916,
+      "winner": null,
+      "text": "Villa's men attack a US border town, provoking a US invasion."
+     },
+     {
+      "name": "Constitution of 1917",
+      "kind": "treaty",
+      "lon": -100.39,
+      "lat": 20.59,
+      "year": 1917,
+      "winner": 0,
+      "text": "The new constitution is proclaimed at Queretaro on 5 February."
+     }
+    ]
+   },
+   {
+    "year": 1920,
+    "label": "1919 to 1920",
+    "title": "Agua Prieta",
+    "text": "Zapata was lured into an ambush and killed at Chinameca in April 1919. When Carranza tried to impose a civilian successor in 1920, Obregon and the Sonoran generals rose under the Plan of Agua Prieta; Carranza fled the capital and was killed in the Puebla mountains. Villa made peace that July, and Obregon's election as president closed the armed revolution.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Plutarco Elias Calles",
+      "label": "Sonoran rebellion",
+      "path": [
+       [
+        -109.55,
+        31.33
+       ],
+       [
+        -110.96,
+        29.07
+       ],
+       [
+        -104.89,
+        21.5
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Venustiano Carranza",
+      "label": "Flight from the capital",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -98.14,
+        19.41
+       ],
+       [
+        -97.53,
+        19.08
+       ],
+       [
+        -97.85,
+        20.3
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Pancho Villa",
+      "label": "Surrender",
+      "path": [
+       [
+        -104.5,
+        28.5
+       ],
+       [
+        -101.12,
+        27.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Assassination of Zapata",
+      "kind": "event",
+      "lon": -98.99,
+      "lat": 18.62,
+      "year": 1919,
+      "winner": null,
+      "text": "Zapata is shot in an ambush set by Carrancista officers."
+     },
+     {
+      "name": "Death of Carranza",
+      "kind": "event",
+      "lon": -97.85,
+      "lat": 20.3,
+      "year": 1920,
+      "winner": null,
+      "text": "Carranza is killed at Tlaxcalantongo while fleeing to Veracruz."
+     },
+     {
+      "name": "Villa surrenders at Sabinas",
+      "kind": "treaty",
+      "lon": -101.12,
+      "lat": 27.85,
+      "year": 1920,
+      "winner": 0,
+      "text": "Villa retires to a hacienda in Durango."
+     }
+    ]
+   }
+  ]
+ }
+]

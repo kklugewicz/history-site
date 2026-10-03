@@ -1,0 +1,7008 @@
+[
+ {
+  "id": "napoleonic-wars",
+  "name": "Napoleonic Wars",
+  "start": 1803,
+  "end": 1815,
+  "kind": "conflict",
+  "summary": "Napoleon's French Empire and its satellites fought a series of coalitions financed by Britain and fielded mainly by Austria, Russia and Prussia. Napoleon dominated the continent after Austerlitz, Jena and Friedland, but the Peninsular War and the disaster in Russia in 1812 broke his power, and he was defeated at Leipzig, forced to abdicate in 1814 and finally beaten at Waterloo in 1815. The wars spread French law and administration, awakened nationalism and left Britain the leading world power after the Congress of Vienna.",
+  "sides": [
+   {
+    "name": "French Empire and allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Napoleon Bonaparte",
+     "Marshal Davout",
+     "Marshal Soult",
+     "Marshal Ney",
+     "Marshal Massena"
+    ]
+   },
+   {
+    "name": "Coalition powers",
+    "color": "#c0473a",
+    "leaders": [
+     "Duke of Wellington",
+     "Horatio Nelson",
+     "Mikhail Kutuzov",
+     "Archduke Charles",
+     "Gebhard von Blucher",
+     "Prince Schwarzenberg"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 11,
+    "lat": 49,
+    "r": 11
+   },
+   {
+    "lon": -5,
+    "lat": 40,
+    "r": 6
+   },
+   {
+    "lon": 30,
+    "lat": 55,
+    "r": 8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1805,
+    "label": "1805",
+    "title": "War of the Third Coalition",
+    "text": "Britain had been at war with France again since 1803, and Napoleon, crowned emperor in 1804, gathered an invasion army at Boulogne. When Austria and Russia joined Britain he marched the Grande Armee to the Danube, trapped Mack's Austrians at Ulm and took Vienna, while Nelson destroyed the Franco-Spanish fleet at Trafalgar. At Austerlitz Napoleon routed the Russian and Austrian armies, and Austria made peace at Pressburg.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Batavian Republic",
+       "Austrian Netherlands",
+       "Luxembourg",
+       "Helvetic Republic",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Parma",
+       "Modena",
+       "Tuscany",
+       "Lucca",
+       "Spain",
+       "Bavaria",
+       "Baden",
+       "Württemberg"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Austrian Empire",
+       "Venetia",
+       "Russian Empire",
+       "Sweden",
+       "Kingdom of the Two Sicilies"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.2,
+        50.1
+       ],
+       [
+        16.6,
+        49.6
+       ],
+       [
+        16.85,
+        49.1
+       ],
+       [
+        17.0,
+        48.3
+       ],
+       [
+        16.4,
+        47.3
+       ]
+      ],
+      "label": "Front, Dec 1805"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Grande Armee, Boulogne to Austerlitz",
+      "path": [
+       [
+        1.61,
+        50.72
+       ],
+       [
+        7.75,
+        48.58
+       ],
+       [
+        9.99,
+        48.4
+       ],
+       [
+        16.37,
+        48.21
+       ],
+       [
+        16.7,
+        49.12
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mack",
+      "label": "Austrian advance into Bavaria",
+      "path": [
+       [
+        13.04,
+        48.25
+       ],
+       [
+        11.57,
+        48.14
+       ],
+       [
+        10.05,
+        48.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Kutuzov",
+      "label": "Russian army falls back to Olmutz",
+      "path": [
+       [
+        13.04,
+        48.25
+       ],
+       [
+        15.6,
+        48.4
+       ],
+       [
+        17.25,
+        49.59
+       ],
+       [
+        16.85,
+        49.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Villeneuve",
+      "label": "Franco-Spanish fleet leaves Cadiz",
+      "path": [
+       [
+        -6.29,
+        36.53
+       ],
+       [
+        -6.4,
+        36.4
+       ],
+       [
+        -6.2,
+        36.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Nelson",
+      "label": "British fleet",
+      "path": [
+       [
+        -7.4,
+        36.6
+       ],
+       [
+        -6.8,
+        36.4
+       ],
+       [
+        -6.25,
+        36.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Ulm",
+      "kind": "siege",
+      "lon": 9.99,
+      "lat": 48.4,
+      "year": 1805,
+      "winner": 0,
+      "text": "Napoleon encircled Mack's army, which surrendered with about 25,000 men."
+     },
+     {
+      "name": "Battle of Trafalgar",
+      "kind": "battle",
+      "lon": -6.2,
+      "lat": 36.3,
+      "year": 1805,
+      "winner": 1,
+      "text": "Nelson destroyed the Franco-Spanish fleet and died in the battle, ending any French hope of invading Britain."
+     },
+     {
+      "name": "Battle of Austerlitz",
+      "kind": "battle",
+      "lon": 16.76,
+      "lat": 49.13,
+      "year": 1805,
+      "winner": 0,
+      "text": "Napoleon broke the allied centre on the Pratzen Heights in his most celebrated victory."
+     }
+    ]
+   },
+   {
+    "year": 1806,
+    "label": "1806 to 1807",
+    "title": "War of the Fourth Coalition",
+    "text": "Napoleon replaced the Holy Roman Empire with his Confederation of the Rhine, and Prussia went to war. In one day at Jena and Auerstedt the Prussian army was destroyed and Napoleon entered Berlin, then pushed into Poland against the Russians. After a bloody draw at Eylau he won at Friedland, and the Treaties of Tilsit made Tsar Alexander his ally.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Batavian Republic",
+       "Austrian Netherlands",
+       "Luxembourg",
+       "Helvetic Republic",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Parma",
+       "Modena",
+       "Tuscany",
+       "Lucca",
+       "Venetia",
+       "Kingdom of the Two Sicilies",
+       "Spain",
+       "Bavaria",
+       "Baden",
+       "Württemberg",
+       "Swabia",
+       "Saxony",
+       "Thuringia",
+       "Mecklenburg-Strelitz",
+       "Hanover",
+       "Brunswick",
+       "Anhalt",
+       "Oldenburg",
+       "Bremen",
+       "Hamburg",
+       "Lübeck"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Prussia",
+       "Russian Empire",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        19.9,
+        54.45
+       ],
+       [
+        20.1,
+        53.9
+       ],
+       [
+        20.8,
+        53.2
+       ],
+       [
+        21.5,
+        52.6
+       ]
+      ],
+      "label": "Front, winter 1807"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Through Thuringia to Berlin and Poland",
+      "path": [
+       [
+        10.89,
+        49.89
+       ],
+       [
+        11.59,
+        50.93
+       ],
+       [
+        13.4,
+        52.52
+       ],
+       [
+        16.93,
+        52.41
+       ],
+       [
+        21.01,
+        52.23
+       ],
+       [
+        21.01,
+        54.44
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Davout",
+      "label": "III Corps to Auerstedt",
+      "path": [
+       [
+        10.89,
+        49.89
+       ],
+       [
+        11.8,
+        51.15
+       ],
+       [
+        11.58,
+        51.11
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Duke of Brunswick",
+      "label": "Prussian main army",
+      "path": [
+       [
+        12.37,
+        51.34
+       ],
+       [
+        11.9,
+        51.1
+       ],
+       [
+        11.58,
+        51.11
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Bennigsen",
+      "label": "Russian army in East Prussia",
+      "path": [
+       [
+        23.9,
+        54.9
+       ],
+       [
+        22.0,
+        54.6
+       ],
+       [
+        20.64,
+        54.39
+       ],
+       [
+        21.01,
+        54.44
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Jena-Auerstedt",
+      "kind": "battle",
+      "lon": 11.55,
+      "lat": 51.0,
+      "year": 1806,
+      "winner": 0,
+      "text": "Twin French victories destroyed the Prussian army in a single day."
+     },
+     {
+      "name": "Battle of Friedland",
+      "kind": "battle",
+      "lon": 21.01,
+      "lat": 54.44,
+      "year": 1807,
+      "winner": 0,
+      "text": "Napoleon routed Bennigsen's Russians and forced the Tsar to seek peace."
+     },
+     {
+      "name": "Treaties of Tilsit",
+      "kind": "treaty",
+      "lon": 21.87,
+      "lat": 55.08,
+      "year": 1807,
+      "winner": 0,
+      "text": "Russia became France's ally and Prussia lost half its territory."
+     }
+    ]
+   },
+   {
+    "year": 1808,
+    "label": "1808",
+    "title": "The Peninsular War begins",
+    "text": "Napoleon occupied Portugal, then deposed the Spanish Bourbons and made his brother Joseph king of Spain, setting off a national uprising. A Spanish army forced a French corps to surrender at Bailen and Wellesley's British army freed Portugal, so Napoleon came in person, retook Madrid and chased Sir John Moore's army to Corunna. The war in Iberia became a running sore that drained French strength for six years.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Batavian Republic",
+       "Austrian Netherlands",
+       "Luxembourg",
+       "Helvetic Republic",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Parma",
+       "Modena",
+       "Tuscany",
+       "Lucca",
+       "Venetia",
+       "Kingdom of the Two Sicilies",
+       "Bavaria",
+       "Baden",
+       "Württemberg",
+       "Swabia",
+       "Saxony",
+       "Thuringia",
+       "Mecklenburg-Strelitz",
+       "Hanover",
+       "Brunswick",
+       "Anhalt",
+       "Oldenburg",
+       "Bremen",
+       "Hamburg",
+       "Lübeck"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Spain",
+       "Portugal",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -3.0,
+        43.2
+       ],
+       [
+        -2.7,
+        42.6
+       ],
+       [
+        -1.6,
+        42.1
+       ],
+       [
+        -0.9,
+        41.65
+       ],
+       [
+        0.6,
+        41.0
+       ]
+      ],
+      "label": "French fall back to the Ebro, Aug 1808"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Dupont",
+      "label": "Dupont's corps into Andalusia",
+      "path": [
+       [
+        -3.7,
+        40.42
+       ],
+       [
+        -3.6,
+        39.0
+       ],
+       [
+        -4.05,
+        38.04
+       ],
+       [
+        -3.77,
+        38.09
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wellesley",
+      "label": "British landing in Portugal",
+      "path": [
+       [
+        -8.86,
+        40.15
+       ],
+       [
+        -9.15,
+        39.4
+       ],
+       [
+        -9.32,
+        39.18
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Napoleon retakes Madrid",
+      "path": [
+       [
+        -1.47,
+        43.49
+       ],
+       [
+        -2.67,
+        42.85
+       ],
+       [
+        -3.7,
+        42.34
+       ],
+       [
+        -3.58,
+        41.13
+       ],
+       [
+        -3.7,
+        40.42
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sir John Moore",
+      "label": "Moore's advance and retreat to Corunna",
+      "path": [
+       [
+        -9.14,
+        38.72
+       ],
+       [
+        -5.66,
+        40.96
+       ],
+       [
+        -5.03,
+        42.37
+       ],
+       [
+        -6.06,
+        42.46
+       ],
+       [
+        -8.41,
+        43.36
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Bailen",
+      "kind": "battle",
+      "lon": -3.77,
+      "lat": 38.09,
+      "year": 1808,
+      "winner": 1,
+      "text": "Castanos forced Dupont's corps to surrender, the first defeat of a Napoleonic army in the field."
+     },
+     {
+      "name": "Napoleon enters Madrid",
+      "kind": "event",
+      "lon": -3.7,
+      "lat": 40.42,
+      "year": 1808,
+      "winner": 0,
+      "text": "Napoleon smashed the Spanish armies and reinstalled Joseph in the capital."
+     },
+     {
+      "name": "Battle of Corunna",
+      "kind": "battle",
+      "lon": -8.41,
+      "lat": 43.36,
+      "year": 1809,
+      "winner": 1,
+      "text": "Moore held off Soult so his army could escape by sea, but was killed."
+     }
+    ]
+   },
+   {
+    "year": 1809,
+    "label": "1809",
+    "title": "War of the Fifth Coalition",
+    "text": "With Napoleon's best troops in Spain, Austria struck again. Napoleon beat Archduke Charles in Bavaria and took Vienna, but his attempt to cross the Danube was thrown back at Aspern-Essling, his first personal defeat. Six weeks later he crossed in force and won the huge battle of Wagram, and Austria made peace and gave Napoleon an archduchess as wife, while Wellesley won at Talavera in Spain.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Batavian Republic",
+       "Austrian Netherlands",
+       "Luxembourg",
+       "Helvetic Republic",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Parma",
+       "Modena",
+       "Tuscany",
+       "Lucca",
+       "Venetia",
+       "Kingdom of the Two Sicilies",
+       "Papal States",
+       "Spain",
+       "Bavaria",
+       "Baden",
+       "Württemberg",
+       "Swabia",
+       "Saxony",
+       "Thuringia",
+       "Mecklenburg-Strelitz",
+       "Hanover",
+       "Brunswick",
+       "Anhalt",
+       "Oldenburg",
+       "Bremen",
+       "Hamburg",
+       "Lübeck"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Portugal"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.6,
+        48.4
+       ],
+       [
+        16.37,
+        48.24
+       ],
+       [
+        16.55,
+        48.19
+       ],
+       [
+        17.0,
+        48.14
+       ]
+      ],
+      "label": "Danube line, May to Jul 1809"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Archduke Charles",
+      "label": "Austrian invasion of Bavaria and retreat to the Marchfeld",
+      "path": [
+       [
+        13.4,
+        49.2
+       ],
+       [
+        12.1,
+        49.01
+       ],
+       [
+        12.18,
+        48.84
+       ],
+       [
+        13.5,
+        49.2
+       ],
+       [
+        15.5,
+        48.8
+       ],
+       [
+        16.5,
+        48.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Napoleon to Vienna and across the Danube",
+      "path": [
+       [
+        11.42,
+        48.76
+       ],
+       [
+        12.18,
+        48.84
+       ],
+       [
+        14.29,
+        48.31
+       ],
+       [
+        16.37,
+        48.21
+       ],
+       [
+        16.52,
+        48.18
+       ],
+       [
+        16.57,
+        48.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wellesley",
+      "label": "Wellesley from Oporto into Spain",
+      "path": [
+       [
+        -8.61,
+        41.15
+       ],
+       [
+        -6.97,
+        39.0
+       ],
+       [
+        -5.7,
+        40.0
+       ],
+       [
+        -4.83,
+        39.96
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Aspern-Essling",
+      "kind": "battle",
+      "lon": 16.48,
+      "lat": 48.22,
+      "year": 1809,
+      "winner": 1,
+      "text": "Archduke Charles threw Napoleon back across the Danube."
+     },
+     {
+      "name": "Battle of Wagram",
+      "kind": "battle",
+      "lon": 16.57,
+      "lat": 48.3,
+      "year": 1809,
+      "winner": 0,
+      "text": "Napoleon won a two-day battle of over 300,000 men and forced Austria to make peace."
+     },
+     {
+      "name": "Battle of Talavera",
+      "kind": "battle",
+      "lon": -4.83,
+      "lat": 39.96,
+      "year": 1809,
+      "winner": 1,
+      "text": "Wellesley repulsed the French and was made Viscount Wellington."
+     }
+    ]
+   },
+   {
+    "year": 1812,
+    "label": "1810 to 1812",
+    "title": "Invasion of Russia",
+    "text": "In Iberia Wellington held Massena at the Lines of Torres Vedras in 1810 and won at Salamanca in 1812. Meanwhile Russia broke with the Continental System, and Napoleon crossed the Niemen with over 600,000 men. The Russians retreated, fought at Borodino and abandoned Moscow, which burned; when the Tsar would not negotiate, the Grande Armee retreated through the winter and was almost destroyed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Batavian Republic",
+       "Austrian Netherlands",
+       "Luxembourg",
+       "Helvetic Republic",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Parma",
+       "Modena",
+       "Tuscany",
+       "Lucca",
+       "Venetia",
+       "Kingdom of the Two Sicilies",
+       "Papal States",
+       "Spain",
+       "Prussia",
+       "Austrian Empire",
+       "Bavaria",
+       "Baden",
+       "Württemberg",
+       "Swabia",
+       "Saxony",
+       "Thuringia",
+       "Mecklenburg-Strelitz",
+       "Hanover",
+       "Brunswick",
+       "Anhalt",
+       "Oldenburg",
+       "Bremen",
+       "Hamburg",
+       "Lübeck"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Portugal",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        21.2,
+        55.7
+       ],
+       [
+        23.0,
+        55.0
+       ],
+       [
+        23.9,
+        54.9
+       ],
+       [
+        24.0,
+        53.8
+       ],
+       [
+        23.6,
+        52.1
+       ]
+      ],
+      "label": "Niemen frontier, Jun 1812"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Grande Armee to Moscow",
+      "path": [
+       [
+        23.9,
+        54.9
+       ],
+       [
+        25.28,
+        54.69
+       ],
+       [
+        30.2,
+        55.19
+       ],
+       [
+        32.05,
+        54.78
+       ],
+       [
+        35.82,
+        55.52
+       ],
+       [
+        37.62,
+        55.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "The retreat from Moscow",
+      "path": [
+       [
+        37.62,
+        55.75
+       ],
+       [
+        36.47,
+        55.01
+       ],
+       [
+        34.3,
+        55.21
+       ],
+       [
+        32.05,
+        54.78
+       ],
+       [
+        28.35,
+        54.3
+       ],
+       [
+        25.28,
+        54.69
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Barclay de Tolly and Bagration",
+      "label": "Russian armies fall back",
+      "path": [
+       [
+        25.28,
+        54.69
+       ],
+       [
+        28.0,
+        55.75
+       ],
+       [
+        30.2,
+        55.19
+       ],
+       [
+        32.05,
+        54.78
+       ],
+       [
+        35.82,
+        55.52
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Kutuzov",
+      "label": "Kutuzov's pursuit",
+      "path": [
+       [
+        37.62,
+        55.75
+       ],
+       [
+        37.0,
+        55.0
+       ],
+       [
+        36.47,
+        55.01
+       ],
+       [
+        34.3,
+        55.21
+       ],
+       [
+        31.1,
+        54.56
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wellington",
+      "label": "Wellington to Salamanca and Madrid",
+      "path": [
+       [
+        -6.53,
+        40.6
+       ],
+       [
+        -5.66,
+        40.96
+       ],
+       [
+        -4.73,
+        41.65
+       ],
+       [
+        -3.7,
+        40.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Salamanca",
+      "kind": "battle",
+      "lon": -5.6,
+      "lat": 40.9,
+      "year": 1812,
+      "winner": 1,
+      "text": "Wellington routed Marmont's army in a swift flank attack."
+     },
+     {
+      "name": "Battle of Borodino",
+      "kind": "battle",
+      "lon": 35.82,
+      "lat": 55.52,
+      "year": 1812,
+      "winner": 0,
+      "text": "The bloodiest day of the wars left Napoleon the field and the road to Moscow, but not a decisive victory."
+     },
+     {
+      "name": "Crossing of the Berezina",
+      "kind": "battle",
+      "lon": 28.35,
+      "lat": 54.3,
+      "year": 1812,
+      "winner": null,
+      "text": "Napoleon escaped across the river on improvised bridges but lost tens of thousands."
+     }
+    ]
+   },
+   {
+    "year": 1813,
+    "label": "1813",
+    "title": "War of the Sixth Coalition",
+    "text": "Prussia and then Austria and Sweden joined Russia and Britain. Napoleon rebuilt an army and won at Lutzen, Bautzen and Dresden, but three allied armies closed on him at Leipzig, where the Battle of the Nations drove him out of Germany. In Spain Wellington broke Joseph's army at Vitoria and pushed the French back to the Pyrenees.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Batavian Republic",
+       "Austrian Netherlands",
+       "Luxembourg",
+       "Helvetic Republic",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Parma",
+       "Modena",
+       "Tuscany",
+       "Lucca",
+       "Venetia",
+       "Kingdom of the Two Sicilies",
+       "Papal States",
+       "Saxony",
+       "Thuringia",
+       "Hamburg",
+       "Bavaria",
+       "Württemberg",
+       "Baden"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire",
+       "Prussia",
+       "Austrian Empire",
+       "Sweden",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Portugal",
+       "Spain"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        9.9,
+        53.55
+       ],
+       [
+        11.6,
+        52.6
+       ],
+       [
+        12.6,
+        51.9
+       ],
+       [
+        13.74,
+        51.05
+       ],
+       [
+        14.6,
+        50.85
+       ]
+      ],
+      "label": "Elbe line, autumn 1813"
+     },
+     {
+      "path": [
+       [
+        -1.8,
+        43.37
+       ],
+       [
+        -1.3,
+        43.05
+       ],
+       [
+        -0.5,
+        42.85
+       ]
+      ],
+      "label": "Pyrenees, autumn 1813"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Napoleon from Dresden to Leipzig",
+      "path": [
+       [
+        12.13,
+        51.24
+       ],
+       [
+        14.42,
+        51.18
+       ],
+       [
+        13.74,
+        51.05
+       ],
+       [
+        12.41,
+        51.31
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Schwarzenberg",
+      "label": "Army of Bohemia",
+      "path": [
+       [
+        14.42,
+        50.08
+       ],
+       [
+        13.83,
+        50.64
+       ],
+       [
+        13.0,
+        50.9
+       ],
+       [
+        12.4,
+        51.25
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Blucher",
+      "label": "Army of Silesia",
+      "path": [
+       [
+        17.04,
+        51.11
+       ],
+       [
+        14.42,
+        51.18
+       ],
+       [
+        12.78,
+        51.82
+       ],
+       [
+        12.4,
+        51.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Bernadotte",
+      "label": "Army of the North",
+      "path": [
+       [
+        13.4,
+        52.52
+       ],
+       [
+        12.65,
+        51.87
+       ],
+       [
+        12.45,
+        51.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wellington",
+      "label": "Wellington to the Pyrenees",
+      "path": [
+       [
+        -5.66,
+        40.96
+       ],
+       [
+        -3.7,
+        42.34
+       ],
+       [
+        -2.67,
+        42.85
+       ],
+       [
+        -1.78,
+        43.34
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Vitoria",
+      "kind": "battle",
+      "lon": -2.67,
+      "lat": 42.85,
+      "year": 1813,
+      "winner": 1,
+      "text": "Wellington broke Joseph Bonaparte's army and ended French rule in Spain."
+     },
+     {
+      "name": "Battle of Dresden",
+      "kind": "battle",
+      "lon": 13.74,
+      "lat": 51.05,
+      "year": 1813,
+      "winner": 0,
+      "text": "Napoleon's last great victory in Germany drove back the Army of Bohemia."
+     },
+     {
+      "name": "Battle of Leipzig",
+      "kind": "battle",
+      "lon": 12.41,
+      "lat": 51.31,
+      "year": 1813,
+      "winner": 1,
+      "text": "The Battle of the Nations, the largest battle in Europe before 1914, drove Napoleon out of Germany."
+     }
+    ]
+   },
+   {
+    "year": 1814,
+    "label": "1814",
+    "title": "The fall of Paris",
+    "text": "The allies invaded France from the east while Wellington crossed the Pyrenees in the south. Napoleon won a string of brilliant victories in the Six Days' Campaign but could not stop the converging armies, and Paris fell on 31 March. His marshals refused to fight on, and he abdicated at Fontainebleau and was exiled to Elba as the Bourbons returned.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Parma",
+       "Modena",
+       "Tuscany",
+       "Lucca"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russian Empire",
+       "Prussia",
+       "Austrian Empire",
+       "Sweden",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Portugal",
+       "Spain",
+       "Batavian Republic",
+       "Austrian Netherlands",
+       "Helvetic Republic",
+       "Venetia",
+       "Kingdom of the Two Sicilies",
+       "Bavaria",
+       "Baden",
+       "Württemberg",
+       "Swabia",
+       "Saxony",
+       "Thuringia",
+       "Mecklenburg-Strelitz",
+       "Hanover",
+       "Brunswick",
+       "Anhalt",
+       "Oldenburg",
+       "Bremen",
+       "Hamburg",
+       "Lübeck"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        4.1,
+        49.6
+       ],
+       [
+        3.9,
+        49.0
+       ],
+       [
+        3.6,
+        48.5
+       ],
+       [
+        3.7,
+        48.1
+       ],
+       [
+        4.4,
+        47.6
+       ]
+      ],
+      "label": "Allied front, Feb 1814"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Schwarzenberg",
+      "label": "Army of Bohemia via Basel",
+      "path": [
+       [
+        7.59,
+        47.56
+       ],
+       [
+        5.33,
+        47.86
+       ],
+       [
+        4.07,
+        48.3
+       ],
+       [
+        2.96,
+        48.39
+       ],
+       [
+        2.4,
+        48.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Blucher",
+      "label": "Army of Silesia across the Rhine",
+      "path": [
+       [
+        7.77,
+        50.09
+       ],
+       [
+        6.18,
+        48.69
+       ],
+       [
+        4.53,
+        48.39
+       ],
+       [
+        3.54,
+        48.87
+       ],
+       [
+        3.62,
+        49.56
+       ],
+       [
+        2.45,
+        48.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Napoleon strikes between the allied armies",
+      "path": [
+       [
+        4.36,
+        48.96
+       ],
+       [
+        4.53,
+        48.39
+       ],
+       [
+        3.54,
+        48.87
+       ],
+       [
+        2.96,
+        48.39
+       ],
+       [
+        4.95,
+        48.64
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wellington",
+      "label": "Wellington into southern France",
+      "path": [
+       [
+        -1.47,
+        43.49
+       ],
+       [
+        -0.77,
+        43.49
+       ],
+       [
+        0.1,
+        43.3
+       ],
+       [
+        1.44,
+        43.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Six Days' Campaign",
+      "kind": "battle",
+      "lon": 3.54,
+      "lat": 48.87,
+      "year": 1814,
+      "winner": 0,
+      "text": "Napoleon beat Blucher's scattered corps at Champaubert, Montmirail and Vauchamps."
+     },
+     {
+      "name": "Battle of Paris",
+      "kind": "battle",
+      "lon": 2.34,
+      "lat": 48.89,
+      "year": 1814,
+      "winner": 1,
+      "text": "The allies stormed the heights around Paris and the city capitulated."
+     },
+     {
+      "name": "Abdication at Fontainebleau",
+      "kind": "event",
+      "lon": 2.7,
+      "lat": 48.4,
+      "year": 1814,
+      "winner": 1,
+      "text": "Napoleon gave up his throne and was sent to Elba."
+     }
+    ]
+   },
+   {
+    "year": 1815,
+    "label": "Mar to Jun 1815",
+    "title": "The Hundred Days and Waterloo",
+    "text": "Napoleon escaped from Elba and marched on Paris as the army rallied to him, while Murat in Naples rose in his support and was crushed. He struck into Belgium and beat the Prussians at Ligny, but at Waterloo Wellington's army held until Blucher arrived, and the French army collapsed. Napoleon was exiled to Saint Helena and the Congress of Vienna redrew the map of Europe.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Kingdom of the Two Sicilies"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "Prussia",
+       "Austrian Empire",
+       "Russian Empire",
+       "Hanover",
+       "Bavaria",
+       "Württemberg",
+       "Baden",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Venetia",
+       "Spain",
+       "Portugal",
+       "Sweden–Norway",
+       "Switzerland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.9,
+        50.75
+       ],
+       [
+        3.9,
+        50.45
+       ],
+       [
+        4.45,
+        50.4
+       ],
+       [
+        5.6,
+        50.5
+       ]
+      ],
+      "label": "Belgian frontier, Jun 1815"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Escape from Elba",
+      "path": [
+       [
+        10.33,
+        42.81
+       ],
+       [
+        8.8,
+        43.3
+       ],
+       [
+        7.08,
+        43.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "March on Paris",
+      "path": [
+       [
+        7.08,
+        43.55
+       ],
+       [
+        6.23,
+        44.09
+       ],
+       [
+        5.72,
+        45.19
+       ],
+       [
+        4.83,
+        45.76
+       ],
+       [
+        2.35,
+        48.86
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon",
+      "label": "Armee du Nord into Belgium",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        3.3,
+        49.6
+       ],
+       [
+        4.44,
+        50.41
+       ],
+       [
+        4.41,
+        50.66
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Blucher",
+      "label": "Prussians from Wavre",
+      "path": [
+       [
+        4.61,
+        50.72
+       ],
+       [
+        4.5,
+        50.69
+       ],
+       [
+        4.44,
+        50.67
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wellington",
+      "label": "Wellington from Brussels",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        4.4,
+        50.72
+       ],
+       [
+        4.41,
+        50.69
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ligny",
+      "kind": "battle",
+      "lon": 4.57,
+      "lat": 50.52,
+      "year": 1815,
+      "winner": 0,
+      "text": "Napoleon defeated Blucher, but the Prussian army withdrew intact."
+     },
+     {
+      "name": "Battle of Waterloo",
+      "kind": "battle",
+      "lon": 4.41,
+      "lat": 50.68,
+      "year": 1815,
+      "winner": 1,
+      "text": "Wellington's army held until the Prussians arrived, and Napoleon's army broke."
+     },
+     {
+      "name": "Congress of Vienna",
+      "kind": "treaty",
+      "lon": 16.37,
+      "lat": 48.21,
+      "year": 1815,
+      "winner": 1,
+      "text": "The victors restored monarchies and set a balance of power that lasted decades."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "serbian-greek-independence",
+  "name": "Serbian Revolution and Greek War of Independence",
+  "start": 1804,
+  "end": 1830,
+  "kind": "conflict",
+  "summary": "Between 1804 and 1830 Serbs and then Greeks rose against Ottoman rule in the first national revolutions of the Balkans. Serbia won autonomy after two uprisings, and the Greek revolt, near defeat after Egypt intervened, was saved when Britain, France and Russia destroyed the Ottoman-Egyptian fleet at Navarino and Russia beat the Ottomans in 1828 to 1829. Autonomous Serbia and an independent Greece began the long break-up of Ottoman Europe.",
+  "sides": [
+   {
+    "name": "Serbian and Greek insurgents",
+    "color": "#2f8f6f",
+    "leaders": [
+     "Karadjordje Petrovic",
+     "Milos Obrenovic",
+     "Alexandros Ypsilantis",
+     "Theodoros Kolokotronis",
+     "Andreas Miaoulis"
+    ]
+   },
+   {
+    "name": "Ottoman Empire and Egypt",
+    "color": "#b5452f",
+    "leaders": [
+     "Sultan Mahmud II",
+     "Mahmud Dramali Pasha",
+     "Ibrahim Pasha",
+     "Resid Mehmed Pasha"
+    ]
+   },
+   {
+    "name": "Britain, France and Russia",
+    "color": "#6a5acd",
+    "leaders": [
+     "Edward Codrington",
+     "Henri de Rigny",
+     "Lodewijk van Heyden",
+     "Hans Karl von Diebitsch"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 21.5,
+    "lat": 43.8,
+    "r": 3.5
+   },
+   {
+    "lon": 23.0,
+    "lat": 38.3,
+    "r": 3.5
+   },
+   {
+    "lon": 26.5,
+    "lat": 43.5,
+    "r": 3.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1804,
+    "label": "1804 to 1806",
+    "title": "The First Serbian Uprising",
+    "text": "In the Pashalik of Belgrade, renegade janissaries murdered Serbian notables, and in 1804 the Serbs rose under the livestock trader Karadjordje. A revolt against local tyrants became a war against the Sultan: the rebels beat Ottoman armies at Ivankovac and Misar and took Belgrade. When Russia went to war with the Ottomans in 1806 it backed the Serbs.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        19.2,
+        44.6
+       ],
+       [
+        19.6,
+        44.0
+       ],
+       [
+        20.6,
+        43.75
+       ],
+       [
+        21.6,
+        43.65
+       ],
+       [
+        22.6,
+        44.3
+       ]
+      ],
+      "label": "Rebel Serbia, 1806"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Karadjordje",
+      "label": "Rising spreads from the Sumadija",
+      "path": [
+       [
+        20.59,
+        44.33
+       ],
+       [
+        20.93,
+        44.66
+       ],
+       [
+        20.46,
+        44.82
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hafiz Pasha",
+      "label": "Ottoman army from Nis",
+      "path": [
+       [
+        21.9,
+        43.32
+       ],
+       [
+        21.6,
+        43.7
+       ],
+       [
+        21.33,
+        43.93
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Kulin Kapetan",
+      "label": "Bosnian army over the Drina",
+      "path": [
+       [
+        19.1,
+        44.4
+       ],
+       [
+        19.35,
+        44.6
+       ],
+       [
+        19.65,
+        44.73
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Orasac assembly",
+      "kind": "event",
+      "lon": 20.59,
+      "lat": 44.33,
+      "year": 1804,
+      "winner": null,
+      "text": "Serbian leaders chose Karadjordje to lead the uprising."
+     },
+     {
+      "name": "Battle of Ivankovac",
+      "kind": "battle",
+      "lon": 21.33,
+      "lat": 43.93,
+      "year": 1805,
+      "winner": 0,
+      "text": "The first rebel victory over a regular Ottoman army turned the revolt into a war with the Sultan."
+     },
+     {
+      "name": "Battle of Misar",
+      "kind": "battle",
+      "lon": 19.65,
+      "lat": 44.73,
+      "year": 1806,
+      "winner": 0,
+      "text": "Karadjordje defeated the Bosnian army, and Belgrade fell to the rebels that winter."
+     }
+    ]
+   },
+   {
+    "year": 1815,
+    "label": "1809 to 1817",
+    "title": "Defeat and the Second Uprising",
+    "text": "Napoleon's invasion pulled Russia out of the war in 1812, and in 1813 Ottoman armies converged on Serbia from three sides, retook Belgrade and drove Karadjordje into exile. In 1815 Milos Obrenovic raised a second uprising at Takovo and won a negotiated autonomy, becoming prince of Serbia. Karadjordje returned in 1817 and was murdered on Milos's orders.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hursid Pasha",
+      "label": "Ottoman reconquest from Nis",
+      "path": [
+       [
+        21.9,
+        43.32
+       ],
+       [
+        21.37,
+        43.93
+       ],
+       [
+        20.93,
+        44.66
+       ],
+       [
+        20.46,
+        44.82
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ottoman army of Vidin",
+      "label": "Ottoman reconquest from Vidin",
+      "path": [
+       [
+        22.87,
+        43.99
+       ],
+       [
+        22.53,
+        44.23
+       ],
+       [
+        21.5,
+        44.4
+       ],
+       [
+        20.46,
+        44.82
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Milos Obrenovic",
+      "label": "Second uprising spreads",
+      "path": [
+       [
+        20.43,
+        44.03
+       ],
+       [
+        20.35,
+        43.89
+       ],
+       [
+        20.7,
+        44.1
+       ],
+       [
+        20.46,
+        44.82
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Cegar",
+      "kind": "battle",
+      "lon": 21.93,
+      "lat": 43.33,
+      "year": 1809,
+      "winner": 1,
+      "text": "Stevan Sindjelic blew up his own redoubt; the Ottomans built the Skull Tower from the dead."
+     },
+     {
+      "name": "Fall of Belgrade",
+      "kind": "siege",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 1813,
+      "winner": 1,
+      "text": "The Ottoman reconquest ended the first uprising and Karadjordje fled to Austria."
+     },
+     {
+      "name": "Takovo uprising",
+      "kind": "event",
+      "lon": 20.43,
+      "lat": 44.03,
+      "year": 1815,
+      "winner": 0,
+      "text": "Milos Obrenovic launched the second revolt, which won Serbian autonomy."
+     }
+    ]
+   },
+   {
+    "year": 1821,
+    "label": "1821 to 1822",
+    "title": "The Greek Revolution",
+    "text": "The secret Filiki Eteria launched the revolt: Ypsilantis crossed into Moldavia but was crushed at Dragasani, while the Peloponnese rose in March 1821. Kolokotronis took Tripolitsa, the Greek fleet ruled the Aegean, and Dramali Pasha's great army was destroyed in the passes at Dervenakia. The Ottomans massacred the islanders of Chios, a crime that turned European opinion toward the Greeks.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        20.75,
+        38.95
+       ],
+       [
+        21.6,
+        39.05
+       ],
+       [
+        22.6,
+        38.85
+       ],
+       [
+        23.3,
+        38.6
+       ]
+      ],
+      "label": "Insurgent frontier in Roumeli, 1822"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexandros Ypsilantis",
+      "label": "Sacred Band in the Danubian Principalities",
+      "path": [
+       [
+        27.6,
+        47.16
+       ],
+       [
+        26.1,
+        44.43
+       ],
+       [
+        24.26,
+        44.66
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Theodoros Kolokotronis",
+      "label": "Siege of Tripolitsa",
+      "path": [
+       [
+        22.12,
+        37.04
+       ],
+       [
+        22.24,
+        37.3
+       ],
+       [
+        22.37,
+        37.51
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mahmud Dramali Pasha",
+      "label": "Dramali invades the Morea",
+      "path": [
+       [
+        22.42,
+        39.64
+       ],
+       [
+        22.54,
+        38.8
+       ],
+       [
+        22.93,
+        37.94
+       ],
+       [
+        22.72,
+        37.63
+       ],
+       [
+        22.77,
+        37.82
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Tripolitsa",
+      "kind": "siege",
+      "lon": 22.37,
+      "lat": 37.51,
+      "year": 1821,
+      "winner": 0,
+      "text": "Kolokotronis stormed the Ottoman capital of the Morea, followed by a massacre of its Muslim and Jewish inhabitants."
+     },
+     {
+      "name": "Chios massacre",
+      "kind": "event",
+      "lon": 26.13,
+      "lat": 38.37,
+      "year": 1822,
+      "winner": 1,
+      "text": "Ottoman troops killed or enslaved most of the island's Greek population."
+     },
+     {
+      "name": "Battle of Dervenakia",
+      "kind": "battle",
+      "lon": 22.77,
+      "lat": 37.82,
+      "year": 1822,
+      "winner": 0,
+      "text": "Kolokotronis trapped and destroyed Dramali's army in the mountain passes."
+     }
+    ]
+   },
+   {
+    "year": 1825,
+    "label": "1825 to 1827",
+    "title": "Ibrahim Pasha and Missolonghi",
+    "text": "Divided by civil war, the Greeks faced a new enemy when the Sultan called in Muhammad Ali of Egypt. His son Ibrahim Pasha landed a modern army in the Morea in 1825 and laid waste to it, while Resid Mehmed Pasha besieged Missolonghi, which fell after a desperate breakout in April 1826. By 1827 Athens had fallen too and the revolt seemed lost.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ibrahim Pasha",
+      "label": "Egyptian fleet to the Morea",
+      "path": [
+       [
+        29.92,
+        31.2
+       ],
+       [
+        26.0,
+        34.5
+       ],
+       [
+        24.1,
+        35.5
+       ],
+       [
+        21.7,
+        36.82
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ibrahim Pasha",
+      "label": "Ibrahim ravages the Morea",
+      "path": [
+       [
+        21.7,
+        36.82
+       ],
+       [
+        22.12,
+        37.04
+       ],
+       [
+        22.37,
+        37.51
+       ],
+       [
+        22.1,
+        38.05
+       ],
+       [
+        21.43,
+        38.37
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Resid Mehmed Pasha",
+      "label": "Ottoman army to Missolonghi",
+      "path": [
+       [
+        20.85,
+        39.66
+       ],
+       [
+        21.15,
+        39.0
+       ],
+       [
+        21.43,
+        38.37
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Ibrahim lands at Methoni",
+      "kind": "event",
+      "lon": 21.7,
+      "lat": 36.82,
+      "year": 1825,
+      "winner": 1,
+      "text": "Egyptian regulars arrived and began reconquering the Peloponnese."
+     },
+     {
+      "name": "Fall of Missolonghi",
+      "kind": "siege",
+      "lon": 21.43,
+      "lat": 38.37,
+      "year": 1826,
+      "winner": 1,
+      "text": "After a year-long siege the starving defenders broke out and most were killed."
+     },
+     {
+      "name": "Fall of the Acropolis",
+      "kind": "siege",
+      "lon": 23.73,
+      "lat": 37.97,
+      "year": 1827,
+      "winner": 1,
+      "text": "Resid Mehmed took Athens, the last Greek stronghold north of the Gulf of Corinth."
+     }
+    ]
+   },
+   {
+    "year": 1827,
+    "label": "1827 to 1828",
+    "title": "Navarino",
+    "text": "Britain, France and Russia agreed in the Treaty of London to impose an armistice and sent their fleets to Greece. At Navarino Bay their ships under Codrington destroyed the Ottoman-Egyptian fleet in an afternoon, cutting Ibrahim off from Egypt. A French expedition under Maison landed in the Morea in 1828 and Ibrahim's army sailed home.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Egypt"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "France",
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Edward Codrington",
+      "label": "Allied fleets enter Navarino Bay",
+      "path": [
+       [
+        14.51,
+        35.9
+       ],
+       [
+        18.0,
+        37.0
+       ],
+       [
+        20.9,
+        37.78
+       ],
+       [
+        21.66,
+        36.93
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Nicolas Joseph Maison",
+      "label": "French Morea expedition",
+      "path": [
+       [
+        5.37,
+        43.29
+       ],
+       [
+        12.0,
+        38.5
+       ],
+       [
+        18.0,
+        37.0
+       ],
+       [
+        21.93,
+        36.96
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ibrahim Pasha",
+      "label": "Ibrahim's army evacuated to Egypt",
+      "path": [
+       [
+        21.7,
+        36.82
+       ],
+       [
+        24.1,
+        35.5
+       ],
+       [
+        29.92,
+        31.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Navarino",
+      "kind": "battle",
+      "lon": 21.68,
+      "lat": 36.92,
+      "year": 1827,
+      "winner": 2,
+      "text": "The allied fleets sank most of the Ottoman-Egyptian fleet, the last great battle of sailing ships."
+     },
+     {
+      "name": "Morea expedition",
+      "kind": "event",
+      "lon": 21.93,
+      "lat": 36.96,
+      "year": 1828,
+      "winner": 2,
+      "text": "French troops landed at Petalidi and oversaw the departure of the Egyptian army."
+     }
+    ]
+   },
+   {
+    "year": 1829,
+    "label": "1828 to 1830",
+    "title": "Russia forces the peace",
+    "text": "Russia declared war on the Ottoman Empire in 1828. Diebitsch beat the Grand Vizier at Kulevcha, crossed the Balkan mountains and took Adrianople within striking distance of Constantinople. The Treaty of Adrianople confirmed Serbian autonomy and Greek self-rule, and in 1830 the London Protocol recognised Greece as an independent kingdom while Milos became hereditary prince of Serbia.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Russian Empire",
+       "United Kingdom of Great Britain and Ireland",
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Hans Karl von Diebitsch",
+      "label": "Russian army over the Balkan mountains",
+      "path": [
+       [
+        27.26,
+        44.12
+       ],
+       [
+        27.1,
+        43.2
+       ],
+       [
+        27.3,
+        42.75
+       ],
+       [
+        27.47,
+        42.5
+       ],
+       [
+        26.56,
+        41.68
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Ivan Paskevich",
+      "label": "Russian Caucasus army to Erzurum",
+      "path": [
+       [
+        43.84,
+        40.79
+       ],
+       [
+        43.1,
+        40.61
+       ],
+       [
+        42.2,
+        40.1
+       ],
+       [
+        41.27,
+        39.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Resid Mehmed Pasha",
+      "label": "Grand Vizier's army from Shumen",
+      "path": [
+       [
+        26.93,
+        43.27
+       ],
+       [
+        27.1,
+        43.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kulevcha",
+      "kind": "battle",
+      "lon": 27.1,
+      "lat": 43.2,
+      "year": 1829,
+      "winner": 2,
+      "text": "Diebitsch routed the Grand Vizier and opened the road over the mountains."
+     },
+     {
+      "name": "Treaty of Adrianople",
+      "kind": "treaty",
+      "lon": 26.56,
+      "lat": 41.68,
+      "year": 1829,
+      "winner": 2,
+      "text": "The Sultan accepted Serbian autonomy and Greek self-government under Russian pressure."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "spanish-american-independence",
+  "name": "Spanish American wars of independence",
+  "start": 1808,
+  "end": 1826,
+  "kind": "war",
+  "summary": "When Napoleon seized Spain in 1808, juntas across Spanish America took power in the king's name, and the revolts of 1810 grew into wars for independence. After royalist armies crushed the first republics, Jose de San Martin crossed the Andes to free Chile, Simon Bolivar crossed them to free New Granada and Venezuela, Mexico broke away in 1821, and the last royalist army in Peru surrendered at Ayacucho in 1824. Spain lost all its mainland American empire, which split into new republics.",
+  "sides": [
+   {
+    "name": "Patriots (independence movements)",
+    "color": "#2f8f6f",
+    "leaders": [
+     "Simon Bolivar",
+     "Jose de San Martin",
+     "Antonio Jose de Sucre",
+     "Bernardo O'Higgins",
+     "Miguel Hidalgo",
+     "Agustin de Iturbide"
+    ]
+   },
+   {
+    "name": "Royalists (Spanish Crown)",
+    "color": "#c0473a",
+    "leaders": [
+     "Pablo Morillo",
+     "Felix Calleja",
+     "Jose de la Serna",
+     "Jose de Canterac",
+     "Mariano Osorio"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -100.5,
+    "lat": 20.5,
+    "r": 5
+   },
+   {
+    "lon": -71,
+    "lat": 6,
+    "r": 9
+   },
+   {
+    "lon": -70,
+    "lat": -22,
+    "r": 14
+   }
+  ],
+  "steps": [
+   {
+    "year": 1810,
+    "label": "1808 to 1811",
+    "title": "The revolutions of 1810",
+    "text": "Napoleon's capture of King Ferdinand VII in 1808 left Spanish America without a legitimate ruler, and in 1810 juntas took power in Caracas, Buenos Aires, Bogota and Santiago. In Mexico the priest Miguel Hidalgo called the people to arms at Dolores and led a vast peasant army to the gates of Mexico City before Calleja destroyed it at Calderon Bridge. Buenos Aires sent an army north into Upper Peru, but it was beaten at Huaqui.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain",
+       "Viceroyalty of New Spain",
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Miguel Hidalgo",
+      "label": "Hidalgo's insurgent army",
+      "path": [
+       [
+        -100.93,
+        21.16
+       ],
+       [
+        -101.26,
+        21.02
+       ],
+       [
+        -101.19,
+        19.7
+       ],
+       [
+        -99.38,
+        19.33
+       ],
+       [
+        -103.35,
+        20.67
+       ],
+       [
+        -103.07,
+        20.62
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Felix Calleja",
+      "label": "Royalist Army of the Centre",
+      "path": [
+       [
+        -100.98,
+        22.15
+       ],
+       [
+        -99.83,
+        20.1
+       ],
+       [
+        -101.26,
+        21.02
+       ],
+       [
+        -103.07,
+        20.62
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Juan Jose Castelli",
+      "label": "Army of the North into Upper Peru",
+      "path": [
+       [
+        -58.38,
+        -34.6
+       ],
+       [
+        -64.18,
+        -31.42
+       ],
+       [
+        -65.2,
+        -26.82
+       ],
+       [
+        -65.75,
+        -19.58
+       ],
+       [
+        -68.8,
+        -16.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Grito de Dolores",
+      "kind": "event",
+      "lon": -100.93,
+      "lat": 21.16,
+      "year": 1810,
+      "winner": 0,
+      "text": "Hidalgo's call to revolt began the Mexican War of Independence."
+     },
+     {
+      "name": "May Revolution",
+      "kind": "event",
+      "lon": -58.38,
+      "lat": -34.6,
+      "year": 1810,
+      "winner": 0,
+      "text": "A junta in Buenos Aires deposed the Spanish viceroy."
+     },
+     {
+      "name": "Battle of Calderon Bridge",
+      "kind": "battle",
+      "lon": -103.07,
+      "lat": 20.62,
+      "year": 1811,
+      "winner": 1,
+      "text": "Calleja routed Hidalgo's army; Hidalgo was captured and executed."
+     }
+    ]
+   },
+   {
+    "year": 1815,
+    "label": "1812 to 1816",
+    "title": "The royalist reconquest",
+    "text": "The first republics fell one by one. Bolivar's Admirable Campaign retook Caracas in 1813, but royalist llaneros under Boves destroyed his Second Republic, Chile's patriots were crushed at Rancagua, and Morelos was executed in Mexico. In 1815 Spain sent Morillo with 10,000 veterans, who took Cartagena and reconquered New Granada, leaving only the Rio de la Plata free, where independence was declared at Tucuman in 1816.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Provinces of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain",
+       "Viceroyalty of New Spain",
+       "Viceroyalty of New Granada",
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Simon Bolivar",
+      "label": "Admirable Campaign, 1813",
+      "path": [
+       [
+        -72.5,
+        7.9
+       ],
+       [
+        -71.15,
+        8.6
+       ],
+       [
+        -70.44,
+        9.37
+       ],
+       [
+        -68.0,
+        10.2
+       ],
+       [
+        -66.9,
+        10.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Pablo Morillo",
+      "label": "Morillo's expedition from Cadiz",
+      "path": [
+       [
+        -6.29,
+        36.53
+       ],
+       [
+        -30.0,
+        20.0
+       ],
+       [
+        -63.9,
+        11.0
+       ],
+       [
+        -75.51,
+        10.39
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mariano Osorio",
+      "label": "Royalist expedition from Peru to Chile",
+      "path": [
+       [
+        -77.15,
+        -12.06
+       ],
+       [
+        -76.0,
+        -25.0
+       ],
+       [
+        -73.12,
+        -36.72
+       ],
+       [
+        -72.1,
+        -36.6
+       ],
+       [
+        -70.74,
+        -34.17
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Rancagua",
+      "kind": "battle",
+      "lon": -70.74,
+      "lat": -34.17,
+      "year": 1814,
+      "winner": 1,
+      "text": "Osorio defeated O'Higgins and ended Chile's first republic."
+     },
+     {
+      "name": "Siege of Cartagena",
+      "kind": "siege",
+      "lon": -75.51,
+      "lat": 10.39,
+      "year": 1815,
+      "winner": 1,
+      "text": "Morillo starved the port into surrender and reconquered New Granada."
+     },
+     {
+      "name": "Congress of Tucuman",
+      "kind": "event",
+      "lon": -65.2,
+      "lat": -26.83,
+      "year": 1816,
+      "winner": 0,
+      "text": "The United Provinces of South America declared independence from Spain."
+     }
+    ]
+   },
+   {
+    "year": 1817,
+    "label": "1817 to 1818",
+    "title": "San Martin crosses the Andes",
+    "text": "San Martin trained the Army of the Andes at Mendoza and in January 1817 led it over passes nearly 4,000 metres high. With O'Higgins he won at Chacabuco and entered Santiago, and after a setback at Cancha Rayada he destroyed Osorio's army at Maipu, securing Chile's independence. Guemes's gaucho guerrillas meanwhile held the royalists back on the northern frontier.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Provinces of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain",
+       "Viceroyalty of New Spain",
+       "Viceroyalty of New Granada",
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -67.0,
+        -23.0
+       ],
+       [
+        -65.3,
+        -23.6
+       ],
+       [
+        -64.0,
+        -23.2
+       ]
+      ],
+      "label": "Salta and Jujuy frontier, held by Guemes"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Jose de San Martin",
+      "label": "Army of the Andes",
+      "path": [
+       [
+        -68.84,
+        -32.89
+       ],
+       [
+        -69.4,
+        -32.6
+       ],
+       [
+        -70.0,
+        -32.45
+       ],
+       [
+        -70.68,
+        -32.95
+       ],
+       [
+        -70.65,
+        -33.45
+       ],
+       [
+        -70.76,
+        -33.51
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mariano Osorio",
+      "label": "Royalist counteroffensive from the south",
+      "path": [
+       [
+        -73.12,
+        -36.72
+       ],
+       [
+        -71.66,
+        -35.43
+       ],
+       [
+        -71.0,
+        -34.3
+       ],
+       [
+        -70.76,
+        -33.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Chacabuco",
+      "kind": "battle",
+      "lon": -70.68,
+      "lat": -32.95,
+      "year": 1817,
+      "winner": 0,
+      "text": "The Army of the Andes beat the royalists and opened the road to Santiago."
+     },
+     {
+      "name": "Battle of Maipu",
+      "kind": "battle",
+      "lon": -70.76,
+      "lat": -33.51,
+      "year": 1818,
+      "winner": 0,
+      "text": "San Martin destroyed Osorio's army and sealed Chilean independence."
+     }
+    ]
+   },
+   {
+    "year": 1819,
+    "label": "1819",
+    "title": "Bolivar crosses the Andes",
+    "text": "With Morillo holding northern Venezuela, Bolivar struck where he was not expected. In the rainy season he led his army from the llanos over the frozen Paramo de Pisba into New Granada, beat the royalists at Boyaca and marched into Bogota. The Congress of Angostura then proclaimed the Republic of Colombia, uniting Venezuela and New Granada.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Provinces of the Río de la Plata",
+       "Viceroyalty of New Granada"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain",
+       "Viceroyalty of New Spain",
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -71.5,
+        8.3
+       ],
+       [
+        -69.0,
+        8.6
+       ],
+       [
+        -66.5,
+        8.9
+       ],
+       [
+        -64.5,
+        9.0
+       ]
+      ],
+      "label": "Venezuelan front, 1819"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Simon Bolivar",
+      "label": "Bolivar over the Andes to Bogota",
+      "path": [
+       [
+        -63.55,
+        8.12
+       ],
+       [
+        -69.15,
+        7.55
+       ],
+       [
+        -71.73,
+        6.46
+       ],
+       [
+        -72.5,
+        5.8
+       ],
+       [
+        -73.36,
+        5.45
+       ],
+       [
+        -74.07,
+        4.71
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jose Maria Barreiro",
+      "label": "Royalist army of New Granada",
+      "path": [
+       [
+        -72.93,
+        5.72
+       ],
+       [
+        -73.2,
+        5.6
+       ],
+       [
+        -73.36,
+        5.45
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Boyaca",
+      "kind": "battle",
+      "lon": -73.36,
+      "lat": 5.45,
+      "year": 1819,
+      "winner": 0,
+      "text": "Bolivar captured most of Barreiro's army and freed New Granada."
+     },
+     {
+      "name": "Gran Colombia proclaimed",
+      "kind": "event",
+      "lon": -63.55,
+      "lat": 8.12,
+      "year": 1819,
+      "winner": 0,
+      "text": "The Congress of Angostura united Venezuela and New Granada as one republic."
+     }
+    ]
+   },
+   {
+    "year": 1821,
+    "label": "1821 to 1822",
+    "title": "Carabobo, Lima and Mexico",
+    "text": "A liberal revolt in Spain in 1820 stopped reinforcements. Bolivar destroyed the royalist army of Venezuela at Carabobo, San Martin sailed from Chile with Cochrane's fleet and entered Lima, and Sucre freed Quito at Pichincha. In Mexico the royalist officer Iturbide changed sides, and the Treaty of Cordoba recognised Mexican independence in 1821.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Provinces of the Río de la Plata",
+       "Viceroyalty of New Granada",
+       "Viceroyalty of New Spain"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain",
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Simon Bolivar",
+      "label": "Bolivar to Carabobo and Caracas",
+      "path": [
+       [
+        -72.5,
+        7.9
+       ],
+       [
+        -70.2,
+        8.62
+       ],
+       [
+        -68.6,
+        9.66
+       ],
+       [
+        -68.13,
+        10.08
+       ],
+       [
+        -66.9,
+        10.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jose de San Martin",
+      "label": "Liberating Expedition of Peru with Cochrane's fleet",
+      "path": [
+       [
+        -71.62,
+        -33.05
+       ],
+       [
+        -75.0,
+        -25.0
+       ],
+       [
+        -76.2,
+        -13.71
+       ],
+       [
+        -77.03,
+        -12.05
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Antonio Jose de Sucre",
+      "label": "Sucre's campaign to Quito",
+      "path": [
+       [
+        -79.9,
+        -2.19
+       ],
+       [
+        -79.0,
+        -2.9
+       ],
+       [
+        -78.65,
+        -1.67
+       ],
+       [
+        -78.52,
+        -0.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Agustin de Iturbide",
+      "label": "Army of the Three Guarantees",
+      "path": [
+       [
+        -99.54,
+        18.35
+       ],
+       [
+        -96.93,
+        18.88
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Carabobo",
+      "kind": "battle",
+      "lon": -68.13,
+      "lat": 10.08,
+      "year": 1821,
+      "winner": 0,
+      "text": "Bolivar's victory decided the independence of Venezuela."
+     },
+     {
+      "name": "Treaty of Cordoba",
+      "kind": "treaty",
+      "lon": -96.93,
+      "lat": 18.88,
+      "year": 1821,
+      "winner": 0,
+      "text": "The last Spanish viceroy accepted Mexican independence."
+     },
+     {
+      "name": "Battle of Pichincha",
+      "kind": "battle",
+      "lon": -78.52,
+      "lat": -0.2,
+      "year": 1822,
+      "winner": 0,
+      "text": "Sucre won on the slopes of the volcano above Quito and freed Ecuador."
+     }
+    ]
+   },
+   {
+    "year": 1824,
+    "label": "1823 to 1826",
+    "title": "Junin and Ayacucho",
+    "text": "San Martin withdrew after meeting Bolivar at Guayaquil, and the royalists still held highland Peru under Viceroy La Serna. Bolivar and Sucre marched over the Andes and won the cavalry battle of Junin, and on 9 December 1824 Sucre destroyed the last royalist army at Ayacucho, capturing the viceroy. Upper Peru became Bolivia, and the last Spanish garrison at Callao surrendered in January 1826.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Provinces of the Río de la Plata",
+       "Viceroyalty of New Granada",
+       "Viceroyalty of New Spain",
+       "Viceroyalty of Peru"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Spain"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Simon Bolivar",
+      "label": "United Liberating Army over the Andes",
+      "path": [
+       [
+        -79.03,
+        -8.11
+       ],
+       [
+        -78.0,
+        -9.5
+       ],
+       [
+        -76.26,
+        -10.68
+       ],
+       [
+        -76.0,
+        -11.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Antonio Jose de Sucre",
+      "label": "Sucre to Ayacucho",
+      "path": [
+       [
+        -76.0,
+        -11.1
+       ],
+       [
+        -75.3,
+        -12.07
+       ],
+       [
+        -74.22,
+        -13.16
+       ],
+       [
+        -74.14,
+        -13.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jose de la Serna",
+      "label": "Viceroy's army from Cuzco",
+      "path": [
+       [
+        -71.97,
+        -13.53
+       ],
+       [
+        -72.88,
+        -13.63
+       ],
+       [
+        -73.8,
+        -13.4
+       ],
+       [
+        -74.14,
+        -13.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jose de Canterac",
+      "label": "Canterac retreats after Junin",
+      "path": [
+       [
+        -76.0,
+        -11.1
+       ],
+       [
+        -75.4,
+        -11.78
+       ],
+       [
+        -74.22,
+        -13.16
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Junin",
+      "kind": "battle",
+      "lon": -76.0,
+      "lat": -11.1,
+      "year": 1824,
+      "winner": 0,
+      "text": "Patriot cavalry routed Canterac's horsemen in a fight fought entirely with lances and sabres."
+     },
+     {
+      "name": "Battle of Ayacucho",
+      "kind": "battle",
+      "lon": -74.14,
+      "lat": -13.05,
+      "year": 1824,
+      "winner": 0,
+      "text": "Sucre destroyed the last royalist army and captured Viceroy La Serna."
+     },
+     {
+      "name": "Surrender of Callao",
+      "kind": "siege",
+      "lon": -77.15,
+      "lat": -12.06,
+      "year": 1826,
+      "winner": 0,
+      "text": "The last Spanish stronghold on the South American mainland gave up after a long siege."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "war-of-1812",
+  "name": "War of 1812",
+  "start": 1812,
+  "end": 1815,
+  "kind": "war",
+  "summary": "The United States declared war on Britain in 1812 over the seizure of American sailors, trade restrictions and British support for Native resistance in the Northwest, hoping to conquer Canada. American invasions of Canada failed, British raids burned Washington but were repulsed at Baltimore and Plattsburgh, and the Treaty of Ghent restored the prewar borders. The war secured Canada for Britain, boosted American nationalism and destroyed Tecumseh's Native confederacy.",
+  "sides": [
+   {
+    "name": "United States",
+    "color": "#3b6fb6",
+    "leaders": [
+     "James Madison",
+     "William Henry Harrison",
+     "Oliver Hazard Perry",
+     "Andrew Jackson",
+     "Thomas Macdonough"
+    ]
+   },
+   {
+    "name": "British Empire and Native allies",
+    "color": "#c0473a",
+    "leaders": [
+     "Isaac Brock",
+     "Tecumseh",
+     "Sir George Prevost",
+     "Robert Ross",
+     "Edward Pakenham"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -80,
+    "lat": 43,
+    "r": 6
+   },
+   {
+    "lon": -76.5,
+    "lat": 38.8,
+    "r": 2.5
+   },
+   {
+    "lon": -89.5,
+    "lat": 30.0,
+    "r": 2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1812,
+    "label": "1812",
+    "title": "The invasion of Canada fails",
+    "text": "Expecting Canada to fall easily, the United States attacked across the border. Instead General Hull, outmanoeuvred by Isaac Brock and Tecumseh, surrendered Detroit without a fight, and an American crossing of the Niagara was beaten at Queenston Heights, where Brock was killed. At sea the frigate USS Constitution gave the Americans a morale-lifting victory over HMS Guerriere.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America",
+       "Luisiana"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Quebec",
+       "Acadian Peninsula (UK)",
+       "Rupert's Land"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -83.15,
+        42.05
+       ],
+       [
+        -83.05,
+        42.33
+       ],
+       [
+        -82.42,
+        43.0
+       ]
+      ],
+      "label": "Detroit frontier"
+     },
+     {
+      "path": [
+       [
+        -78.9,
+        42.88
+       ],
+       [
+        -79.02,
+        43.08
+       ],
+       [
+        -79.06,
+        43.26
+       ]
+      ],
+      "label": "Niagara frontier"
+     },
+     {
+      "path": [
+       [
+        -76.4,
+        44.2
+       ],
+       [
+        -75.5,
+        44.7
+       ],
+       [
+        -74.7,
+        45.0
+       ],
+       [
+        -73.4,
+        45.0
+       ]
+      ],
+      "label": "St Lawrence and Champlain frontier"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William Hull",
+      "label": "Hull's Army of the Northwest",
+      "path": [
+       [
+        -83.75,
+        40.11
+       ],
+       [
+        -83.6,
+        41.1
+       ],
+       [
+        -83.05,
+        42.33
+       ],
+       [
+        -83.04,
+        42.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Isaac Brock",
+      "label": "Brock and Tecumseh to Detroit",
+      "path": [
+       [
+        -79.38,
+        43.65
+       ],
+       [
+        -80.2,
+        42.6
+       ],
+       [
+        -83.11,
+        42.1
+       ],
+       [
+        -83.05,
+        42.33
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Stephen Van Rensselaer",
+      "label": "Crossing at Queenston",
+      "path": [
+       [
+        -79.04,
+        43.17
+       ],
+       [
+        -79.05,
+        43.16
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Surrender of Detroit",
+      "kind": "siege",
+      "lon": -83.05,
+      "lat": 42.33,
+      "year": 1812,
+      "winner": 1,
+      "text": "Hull surrendered his army and Michigan to a smaller British and Native force."
+     },
+     {
+      "name": "USS Constitution vs HMS Guerriere",
+      "kind": "battle",
+      "lon": -55.8,
+      "lat": 41.7,
+      "year": 1812,
+      "winner": 0,
+      "text": "The American frigate shattered a British warship and earned the name Old Ironsides."
+     },
+     {
+      "name": "Battle of Queenston Heights",
+      "kind": "battle",
+      "lon": -79.05,
+      "lat": 43.16,
+      "year": 1812,
+      "winner": 1,
+      "text": "The Niagara invasion was thrown back, but Brock was killed."
+     }
+    ]
+   },
+   {
+    "year": 1813,
+    "label": "1813",
+    "title": "The Great Lakes",
+    "text": "Both sides raced to build fleets on the lakes. Americans raided York, the capital of Upper Canada, and Oliver Hazard Perry won control of Lake Erie, forcing the British to abandon Detroit. Harrison caught the retreating British and Native army at the Thames, where Tecumseh was killed, but an American drive on Montreal failed at Crysler's Farm.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America",
+       "Luisiana"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Quebec",
+       "Acadian Peninsula (UK)",
+       "Rupert's Land"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -78.9,
+        42.88
+       ],
+       [
+        -79.02,
+        43.08
+       ],
+       [
+        -79.06,
+        43.26
+       ]
+      ],
+      "label": "Niagara frontier"
+     },
+     {
+      "path": [
+       [
+        -76.4,
+        44.2
+       ],
+       [
+        -75.5,
+        44.7
+       ],
+       [
+        -74.7,
+        45.0
+       ]
+      ],
+      "label": "St Lawrence frontier"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Oliver Hazard Perry",
+      "label": "Perry's Lake Erie squadron",
+      "path": [
+       [
+        -80.09,
+        42.13
+       ],
+       [
+        -81.5,
+        41.8
+       ],
+       [
+        -82.82,
+        41.65
+       ],
+       [
+        -82.9,
+        41.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William Henry Harrison",
+      "label": "Harrison's invasion of Upper Canada",
+      "path": [
+       [
+        -83.65,
+        41.55
+       ],
+       [
+        -82.9,
+        41.95
+       ],
+       [
+        -83.11,
+        42.1
+       ],
+       [
+        -82.4,
+        42.32
+       ],
+       [
+        -81.85,
+        42.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Henry Procter and Tecumseh",
+      "label": "British and Native retreat",
+      "path": [
+       [
+        -83.11,
+        42.1
+       ],
+       [
+        -82.4,
+        42.32
+       ],
+       [
+        -81.85,
+        42.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "James Wilkinson",
+      "label": "Drive down the St Lawrence on Montreal",
+      "path": [
+       [
+        -76.12,
+        43.95
+       ],
+       [
+        -75.7,
+        44.5
+       ],
+       [
+        -75.18,
+        44.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Lake Erie",
+      "kind": "battle",
+      "lon": -82.83,
+      "lat": 41.7,
+      "year": 1813,
+      "winner": 0,
+      "text": "Perry captured the whole British squadron: we have met the enemy and they are ours."
+     },
+     {
+      "name": "Battle of the Thames",
+      "kind": "battle",
+      "lon": -81.85,
+      "lat": 42.55,
+      "year": 1813,
+      "winner": 0,
+      "text": "Tecumseh's death broke the Native confederacy."
+     },
+     {
+      "name": "Battle of Crysler's Farm",
+      "kind": "battle",
+      "lon": -75.18,
+      "lat": 44.9,
+      "year": 1813,
+      "winner": 1,
+      "text": "A small British force turned back the American advance on Montreal."
+     }
+    ]
+   },
+   {
+    "year": 1814,
+    "label": "1814",
+    "title": "Britain strikes back",
+    "text": "With Napoleon defeated, Britain sent veteran troops across the Atlantic. On the Niagara the Americans fought well at Chippawa and Lundy's Lane, but in August a British force under Ross and Cochrane routed militia at Bladensburg and burned Washington. The tide turned in September: Baltimore's Fort McHenry withstood bombardment, and Macdonough's naval victory at Plattsburgh sent Prevost's invasion army back to Canada.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America",
+       "Luisiana"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Quebec",
+       "Acadian Peninsula (UK)",
+       "Rupert's Land"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -78.9,
+        42.88
+       ],
+       [
+        -79.02,
+        43.08
+       ],
+       [
+        -79.06,
+        43.26
+       ]
+      ],
+      "label": "Niagara frontier"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Robert Ross",
+      "label": "Chesapeake raid on Washington",
+      "path": [
+       [
+        -76.0,
+        37.0
+       ],
+       [
+        -76.4,
+        38.0
+       ],
+       [
+        -76.69,
+        38.51
+       ],
+       [
+        -76.94,
+        38.94
+       ],
+       [
+        -77.03,
+        38.89
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Alexander Cochrane",
+      "label": "British fleet up the Chesapeake to Baltimore",
+      "path": [
+       [
+        -76.4,
+        38.0
+       ],
+       [
+        -76.35,
+        38.7
+       ],
+       [
+        -76.45,
+        39.15
+       ],
+       [
+        -76.58,
+        39.25
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sir George Prevost",
+      "label": "Invasion down Lake Champlain",
+      "path": [
+       [
+        -73.57,
+        45.5
+       ],
+       [
+        -73.4,
+        45.05
+       ],
+       [
+        -73.45,
+        44.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jacob Brown",
+      "label": "Niagara campaign",
+      "path": [
+       [
+        -78.88,
+        42.89
+       ],
+       [
+        -79.0,
+        42.95
+       ],
+       [
+        -79.05,
+        43.05
+       ],
+       [
+        -79.09,
+        43.09
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Burning of Washington",
+      "kind": "event",
+      "lon": -77.03,
+      "lat": 38.89,
+      "year": 1814,
+      "winner": 1,
+      "text": "British troops burned the Capitol and the White House."
+     },
+     {
+      "name": "Battle of Plattsburgh",
+      "kind": "battle",
+      "lon": -73.45,
+      "lat": 44.7,
+      "year": 1814,
+      "winner": 0,
+      "text": "Macdonough destroyed the British lake squadron and Prevost retreated."
+     },
+     {
+      "name": "Battle of Baltimore",
+      "kind": "battle",
+      "lon": -76.58,
+      "lat": 39.26,
+      "year": 1814,
+      "winner": 0,
+      "text": "Fort McHenry held through the night, inspiring The Star-Spangled Banner."
+     }
+    ]
+   },
+   {
+    "year": 1815,
+    "label": "Dec 1814 to Jan 1815",
+    "title": "Ghent and New Orleans",
+    "text": "Negotiators at Ghent signed a peace on Christmas Eve 1814 that restored the prewar borders. News travelled slowly, and a British army under Pakenham attacked New Orleans in January 1815, only to be shattered by Andrew Jackson's entrenched mixed force. The victory made Jackson a national hero and let Americans remember the war as a triumph.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Canada",
+       "United Kingdom of Great Britain and Ireland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -89.995,
+        29.955
+       ],
+       [
+        -89.985,
+        29.94
+       ],
+       [
+        -89.98,
+        29.925
+       ]
+      ],
+      "label": "Jackson's line at Chalmette"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Edward Pakenham",
+      "label": "British expedition from Jamaica",
+      "path": [
+       [
+        -76.8,
+        17.97
+       ],
+       [
+        -84.0,
+        25.5
+       ],
+       [
+        -88.8,
+        30.0
+       ],
+       [
+        -89.6,
+        30.05
+       ],
+       [
+        -89.99,
+        29.93
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Andrew Jackson",
+      "label": "Jackson from Mobile to New Orleans",
+      "path": [
+       [
+        -88.04,
+        30.69
+       ],
+       [
+        -89.0,
+        30.35
+       ],
+       [
+        -90.07,
+        29.95
+       ],
+       [
+        -89.99,
+        29.94
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Ghent",
+      "kind": "treaty",
+      "lon": 3.72,
+      "lat": 51.05,
+      "year": 1814,
+      "winner": null,
+      "text": "The peace restored all conquests and settled none of the original grievances."
+     },
+     {
+      "name": "Battle of New Orleans",
+      "kind": "battle",
+      "lon": -89.99,
+      "lat": 29.94,
+      "year": 1815,
+      "winner": 0,
+      "text": "Jackson's defenders inflicted about 2,000 casualties and killed Pakenham."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "opium-wars",
+  "name": "Opium Wars",
+  "start": 1839,
+  "end": 1860,
+  "kind": "conflict",
+  "summary": "Two wars in which Britain, joined by France in the second, used naval and military power to force Qing China to accept the opium trade and open to Western commerce. The First Opium War (1839 to 1842) ended with the Treaty of Nanking, which ceded Hong Kong and opened five treaty ports; the Second (1856 to 1860) ended with the occupation of Beijing and the burning of the Old Summer Palace. China remembers them as the start of its century of humiliation.",
+  "sides": [
+   {
+    "name": "Britain (with France, 1856 to 1860)",
+    "color": "#c0473a",
+    "leaders": [
+     "Charles Elliot",
+     "Hugh Gough",
+     "Henry Pottinger",
+     "Lord Elgin",
+     "James Hope Grant",
+     "Cousin-Montauban"
+    ]
+   },
+   {
+    "name": "Qing China",
+    "color": "#d4a017",
+    "leaders": [
+     "Daoguang Emperor",
+     "Lin Zexu",
+     "Qishan",
+     "Ye Mingchen",
+     "Sengge Rinchen"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 113.6,
+    "lat": 22.8,
+    "r": 2
+   },
+   {
+    "lon": 120.5,
+    "lat": 30.5,
+    "r": 3.5
+   },
+   {
+    "lon": 117.3,
+    "lat": 39.3,
+    "r": 1.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1839,
+    "label": "1839",
+    "title": "Lin Zexu and the opium crisis",
+    "text": "British merchants were smuggling vast amounts of Indian opium into China. The emperor sent Lin Zexu to Canton, where he forced the foreign merchants to hand over their stocks and destroyed over 1,000 tonnes of opium at Humen. The British superintendent Charles Elliot withdrew to the waters off Hong Kong, and clashes with Chinese war junks at Kowloon and Chuenpi began the war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "British East India Company"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles Elliot",
+      "label": "British merchants withdraw from Canton",
+      "path": [
+       [
+        113.26,
+        23.13
+       ],
+       [
+        113.54,
+        22.2
+       ],
+       [
+        114.15,
+        22.28
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles Elliot",
+      "label": "British frigates at the Bogue",
+      "path": [
+       [
+        114.15,
+        22.28
+       ],
+       [
+        113.8,
+        22.5
+       ],
+       [
+        113.65,
+        22.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Destruction of opium at Humen",
+      "kind": "event",
+      "lon": 113.67,
+      "lat": 22.82,
+      "year": 1839,
+      "winner": 1,
+      "text": "Lin Zexu had the seized opium mixed with lime and salt and washed into the sea."
+     },
+     {
+      "name": "First Battle of Chuenpi",
+      "kind": "battle",
+      "lon": 113.63,
+      "lat": 22.79,
+      "year": 1839,
+      "winner": 0,
+      "text": "Two British frigates beat a fleet of Chinese war junks at the mouth of the Pearl River."
+     }
+    ]
+   },
+   {
+    "year": 1840,
+    "label": "1840 to 1841",
+    "title": "The British expedition",
+    "text": "A British fleet arrived from India in 1840, blockaded Canton, seized Zhoushan island and sailed north to the Peiho, frightening the court into talks. Elliot's Convention of Chuenpi ceded Hong Kong, but both governments rejected it; the British stormed the Bogue forts and attacked Canton, which paid a ransom to be spared.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "British East India Company",
+       "Hong Kong"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "George Elliot",
+      "label": "British fleet north to the Peiho",
+      "path": [
+       [
+        114.2,
+        22.2
+       ],
+       [
+        119.5,
+        26.0
+       ],
+       [
+        122.1,
+        30.0
+       ],
+       [
+        123.0,
+        36.8
+       ],
+       [
+        120.0,
+        38.3
+       ],
+       [
+        117.75,
+        38.97
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Hugh Gough",
+      "label": "Attack up the Pearl River on Canton",
+      "path": [
+       [
+        114.17,
+        22.28
+       ],
+       [
+        113.65,
+        22.8
+       ],
+       [
+        113.4,
+        23.0
+       ],
+       [
+        113.26,
+        23.13
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Yishan",
+      "label": "Qing reinforcements to Canton",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        114.3,
+        30.6
+       ],
+       [
+        113.0,
+        25.8
+       ],
+       [
+        113.26,
+        23.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Zhoushan",
+      "kind": "battle",
+      "lon": 122.1,
+      "lat": 30.02,
+      "year": 1840,
+      "winner": 0,
+      "text": "The British took Dinghai as a base near the Yangtze mouth."
+     },
+     {
+      "name": "Battle of the Bogue",
+      "kind": "battle",
+      "lon": 113.63,
+      "lat": 22.8,
+      "year": 1841,
+      "winner": 0,
+      "text": "British ships and troops destroyed the forts guarding the Pearl River."
+     },
+     {
+      "name": "Battle of Canton",
+      "kind": "battle",
+      "lon": 113.26,
+      "lat": 23.13,
+      "year": 1841,
+      "winner": 0,
+      "text": "With the city at their mercy the British accepted a ransom of six million dollars."
+     }
+    ]
+   },
+   {
+    "year": 1842,
+    "label": "1841 to 1842",
+    "title": "Up the Yangtze to Nanking",
+    "text": "Henry Pottinger replaced Elliot and took the war north: Amoy, Ningbo and Zhapu fell, and a Qing counteroffensive at Ningbo failed. In 1842 the British fleet entered the Yangtze, stormed Zhenjiang and cut the Grand Canal, then anchored off Nanjing. The Treaty of Nanking ceded Hong Kong, opened five ports to trade and imposed a large indemnity.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "British East India Company",
+       "Hong Kong"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Hugh Gough and William Parker",
+      "label": "British offensive up the coast and the Yangtze",
+      "path": [
+       [
+        114.17,
+        22.28
+       ],
+       [
+        118.08,
+        24.48
+       ],
+       [
+        121.55,
+        29.87
+       ],
+       [
+        121.5,
+        31.38
+       ],
+       [
+        119.43,
+        32.2
+       ],
+       [
+        118.78,
+        32.06
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Yijing",
+      "label": "Qing counteroffensive at Ningbo",
+      "path": [
+       [
+        120.15,
+        30.27
+       ],
+       [
+        121.0,
+        30.0
+       ],
+       [
+        121.55,
+        29.87
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Chinkiang",
+      "kind": "battle",
+      "lon": 119.43,
+      "lat": 32.2,
+      "year": 1842,
+      "winner": 0,
+      "text": "Manchu bannermen fought to the death, but the city fell and the Grand Canal was cut."
+     },
+     {
+      "name": "Treaty of Nanking",
+      "kind": "treaty",
+      "lon": 118.78,
+      "lat": 32.06,
+      "year": 1842,
+      "winner": 0,
+      "text": "China ceded Hong Kong and opened Canton, Amoy, Fuzhou, Ningbo and Shanghai."
+     }
+    ]
+   },
+   {
+    "year": 1856,
+    "label": "1856 to 1857",
+    "title": "The Arrow War",
+    "text": "With China weakened by the Taiping Rebellion, Britain seized on the boarding of the ship Arrow at Canton to reopen the war, and France joined over the execution of a missionary. Lord Elgin and Baron Gros led an Anglo-French force that captured Canton in late 1857 and carried off its governor, Ye Mingchen.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "British East India Company",
+       "Hong Kong",
+       "France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Michael Seymour",
+      "label": "British squadron bombards Canton",
+      "path": [
+       [
+        114.17,
+        22.28
+       ],
+       [
+        113.65,
+        22.8
+       ],
+       [
+        113.26,
+        23.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lord Elgin and Baron Gros",
+      "label": "Anglo-French assault on Canton",
+      "path": [
+       [
+        114.17,
+        22.28
+       ],
+       [
+        113.5,
+        22.7
+       ],
+       [
+        113.3,
+        23.05
+       ],
+       [
+        113.26,
+        23.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Arrow incident",
+      "kind": "event",
+      "lon": 113.26,
+      "lat": 23.12,
+      "year": 1856,
+      "winner": null,
+      "text": "Chinese officers boarded a Hong Kong registered ship, giving Britain its pretext."
+     },
+     {
+      "name": "Capture of Canton",
+      "kind": "battle",
+      "lon": 113.26,
+      "lat": 23.13,
+      "year": 1857,
+      "winner": 0,
+      "text": "Anglo-French troops stormed the city and captured Ye Mingchen."
+     }
+    ]
+   },
+   {
+    "year": 1858,
+    "label": "1858 to 1859",
+    "title": "Taku Forts and Tientsin",
+    "text": "The allied fleet sailed north, took the Taku Forts guarding the Peiho and reached Tianjin, where the Qing signed treaties opening more ports, the Yangtze and Beijing itself to foreign envoys. When the envoys returned in 1859 to ratify them, Sengge Rinchen's rebuilt forts beat off Admiral Hope's attack.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "British East India Company",
+       "Hong Kong",
+       "France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lord Elgin and Baron Gros",
+      "label": "Allied fleet to the Peiho and Tianjin",
+      "path": [
+       [
+        114.2,
+        22.2
+       ],
+       [
+        121.5,
+        31.3
+       ],
+       [
+        123.0,
+        36.8
+       ],
+       [
+        117.75,
+        38.97
+       ],
+       [
+        117.2,
+        39.13
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sengge Rinchen",
+      "label": "Sengge Rinchen fortifies the Peiho",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        117.2,
+        39.13
+       ],
+       [
+        117.7,
+        38.97
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "First Battle of Taku Forts",
+      "kind": "battle",
+      "lon": 117.7,
+      "lat": 38.97,
+      "year": 1858,
+      "winner": 0,
+      "text": "Allied gunboats silenced the forts and opened the river."
+     },
+     {
+      "name": "Treaty of Tientsin",
+      "kind": "treaty",
+      "lon": 117.2,
+      "lat": 39.13,
+      "year": 1858,
+      "winner": 0,
+      "text": "China agreed to open ports, legations in Beijing and legal opium imports."
+     },
+     {
+      "name": "Second Battle of Taku Forts",
+      "kind": "battle",
+      "lon": 117.7,
+      "lat": 38.97,
+      "year": 1859,
+      "winner": 1,
+      "text": "Qing gunners sank several British gunboats and repulsed the landing."
+     }
+    ]
+   },
+   {
+    "year": 1860,
+    "label": "1860",
+    "title": "The march on Beijing",
+    "text": "Britain and France sent a large army under Hope Grant and Cousin-Montauban, which landed at Beitang, took the Taku Forts from the rear and advanced on Beijing. Sengge Rinchen's cavalry was destroyed at Baliqiao, the emperor fled, and after Chinese captors killed allied prisoners Elgin ordered the Old Summer Palace burned. The Convention of Peking ratified the treaties and ceded Kowloon.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom of Great Britain and Ireland",
+       "British East India Company",
+       "Hong Kong",
+       "France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "James Hope Grant",
+      "label": "British army from Beitang to Beijing",
+      "path": [
+       [
+        117.72,
+        39.1
+       ],
+       [
+        117.7,
+        38.97
+       ],
+       [
+        117.2,
+        39.13
+       ],
+       [
+        116.73,
+        39.9
+       ],
+       [
+        116.4,
+        39.93
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Cousin-Montauban",
+      "label": "French army to the Summer Palace",
+      "path": [
+       [
+        117.72,
+        39.1
+       ],
+       [
+        117.2,
+        39.13
+       ],
+       [
+        116.7,
+        39.88
+       ],
+       [
+        116.3,
+        40.01
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sengge Rinchen",
+      "label": "Qing army falls back on Beijing",
+      "path": [
+       [
+        117.6,
+        39.0
+       ],
+       [
+        117.2,
+        39.13
+       ],
+       [
+        116.73,
+        39.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Third Battle of Taku Forts",
+      "kind": "battle",
+      "lon": 117.7,
+      "lat": 38.97,
+      "year": 1860,
+      "winner": 0,
+      "text": "The allies stormed the northern fort and the rest surrendered."
+     },
+     {
+      "name": "Battle of Baliqiao",
+      "kind": "battle",
+      "lon": 116.73,
+      "lat": 39.88,
+      "year": 1860,
+      "winner": 0,
+      "text": "Allied firepower destroyed Sengge Rinchen's Mongol cavalry outside Beijing."
+     },
+     {
+      "name": "Convention of Peking",
+      "kind": "treaty",
+      "lon": 116.4,
+      "lat": 39.91,
+      "year": 1860,
+      "winner": 0,
+      "text": "China ratified the treaties and ceded Kowloon after the Old Summer Palace was burned."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "french-conquest-algeria",
+  "name": "French conquest of Algeria",
+  "start": 1830,
+  "end": 1847,
+  "kind": "war",
+  "summary": "France invaded the Regency of Algiers in 1830, took the city in three weeks and then spent seventeen years conquering the interior. The emir Abd al-Qadir built an Algerian state and led a long resistance until Marshal Bugeaud's campaigns of devastation, a war with Morocco and the loss of his support forced his surrender in 1847. Algeria became France's largest colony, at a heavy cost in Algerian lives.",
+  "sides": [
+   {
+    "name": "France",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Louis de Bourmont",
+     "Bertrand Clauzel",
+     "Sylvain Charles Valee",
+     "Thomas Robert Bugeaud",
+     "Duke of Aumale",
+     "Lamoriciere"
+    ]
+   },
+   {
+    "name": "Algiers, Algerian resistance and Morocco",
+    "color": "#2f8f6f",
+    "leaders": [
+     "Hussein Dey",
+     "Abd al-Qadir",
+     "Ahmed Bey of Constantine",
+     "Sultan Abd al-Rahman"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 2.0,
+    "lat": 35.8,
+    "r": 5
+   },
+   {
+    "lon": -5.5,
+    "lat": 33.5,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1830,
+    "label": "1830",
+    "title": "The fall of Algiers",
+    "text": "Using an insult to the French consul as pretext, the government of Charles X sent a fleet and 34,000 troops under Bourmont. The army landed at Sidi Ferruch, beat the Dey's forces at Staoueli and forced Algiers to capitulate on 5 July 1830. Hussein Dey went into exile, and France found itself holding a coast whose interior it did not control.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Algiers"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Louis de Bourmont",
+      "label": "Invasion fleet from Toulon",
+      "path": [
+       [
+        5.93,
+        43.12
+       ],
+       [
+        5.0,
+        40.0
+       ],
+       [
+        3.5,
+        37.5
+       ],
+       [
+        2.85,
+        36.77
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Louis de Bourmont",
+      "label": "March on Algiers",
+      "path": [
+       [
+        2.85,
+        36.77
+       ],
+       [
+        2.88,
+        36.75
+       ],
+       [
+        3.0,
+        36.76
+       ],
+       [
+        3.06,
+        36.77
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ibrahim Agha",
+      "label": "Dey's army from Algiers",
+      "path": [
+       [
+        3.06,
+        36.77
+       ],
+       [
+        2.95,
+        36.76
+       ],
+       [
+        2.88,
+        36.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Staoueli",
+      "kind": "battle",
+      "lon": 2.88,
+      "lat": 36.75,
+      "year": 1830,
+      "winner": 0,
+      "text": "French troops routed the Dey's army a few days after landing."
+     },
+     {
+      "name": "Capture of Algiers",
+      "kind": "siege",
+      "lon": 3.06,
+      "lat": 36.77,
+      "year": 1830,
+      "winner": 0,
+      "text": "The Dey surrendered the city and its treasury after the Fort l'Empereur was blown up."
+     }
+    ]
+   },
+   {
+    "year": 1835,
+    "label": "1832 to 1837",
+    "title": "Abd al-Qadir and Constantine",
+    "text": "In the west the tribes chose the young Abd al-Qadir as emir, and he built a state and army around Mascara, routing a French column at La Macta in 1835. In the east Ahmed Bey held Constantine and threw back a first French assault in 1836. France then made peace with Abd al-Qadir at the Tafna, recognising his rule over two thirds of Algeria, and stormed Constantine in 1837.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Algiers"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.2,
+        36.6
+       ],
+       [
+        2.8,
+        36.45
+       ],
+       [
+        3.5,
+        36.6
+       ],
+       [
+        3.9,
+        36.8
+       ]
+      ],
+      "label": "French enclave around Algiers, 1837"
+     },
+     {
+      "path": [
+       [
+        -1.0,
+        35.6
+       ],
+       [
+        -0.6,
+        35.5
+       ],
+       [
+        -0.2,
+        35.8
+       ]
+      ],
+      "label": "French enclave around Oran, 1837"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Abd al-Qadir",
+      "label": "Emir's army against the Oran column",
+      "path": [
+       [
+        0.14,
+        35.4
+       ],
+       [
+        0.05,
+        35.6
+       ],
+       [
+        0.08,
+        35.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Sylvain Charles Valee",
+      "label": "Expedition to Constantine",
+      "path": [
+       [
+        7.76,
+        36.9
+       ],
+       [
+        7.43,
+        36.46
+       ],
+       [
+        6.9,
+        36.4
+       ],
+       [
+        6.61,
+        36.36
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of La Macta",
+      "kind": "battle",
+      "lon": 0.08,
+      "lat": 35.75,
+      "year": 1835,
+      "winner": 1,
+      "text": "Abd al-Qadir ambushed and routed General Trezel's column in the marshes."
+     },
+     {
+      "name": "Treaty of Tafna",
+      "kind": "treaty",
+      "lon": -1.48,
+      "lat": 35.3,
+      "year": 1837,
+      "winner": 1,
+      "text": "France recognised Abd al-Qadir's authority over most of western and central Algeria."
+     },
+     {
+      "name": "Siege of Constantine",
+      "kind": "siege",
+      "lon": 6.61,
+      "lat": 36.36,
+      "year": 1837,
+      "winner": 0,
+      "text": "French troops stormed the rock city at the second attempt and ended Ahmed Bey's rule."
+     }
+    ]
+   },
+   {
+    "year": 1841,
+    "label": "1839 to 1843",
+    "title": "Bugeaud's war of devastation",
+    "text": "Abd al-Qadir declared holy war again in 1839 after a French column crossed his territory, and his raiders devastated the Mitidja plain behind Algiers. Bugeaud, governor from 1841, answered with fast columns that burned crops and villages, and took the emir's fortress towns of Tagdempt and Mascara. In 1843 the Duke of Aumale captured the emir's mobile capital, the smala, at Taguin, and Abd al-Qadir fell back toward Morocco.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Algiers"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Thomas Robert Bugeaud",
+      "label": "Bugeaud's columns into the interior",
+      "path": [
+       [
+        0.09,
+        35.93
+       ],
+       [
+        0.7,
+        35.7
+       ],
+       [
+        1.32,
+        35.37
+       ],
+       [
+        0.14,
+        35.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Aumale",
+      "label": "Raid on the smala",
+      "path": [
+       [
+        2.71,
+        35.92
+       ],
+       [
+        2.4,
+        35.6
+       ],
+       [
+        2.03,
+        35.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Abd al-Qadir",
+      "label": "Emir retreats toward Morocco",
+      "path": [
+       [
+        1.32,
+        35.37
+       ],
+       [
+        0.14,
+        35.4
+       ],
+       [
+        -1.32,
+        34.88
+       ],
+       [
+        -1.91,
+        34.68
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of the smala",
+      "kind": "battle",
+      "lon": 2.03,
+      "lat": 35.38,
+      "year": 1843,
+      "winner": 0,
+      "text": "Aumale's cavalry seized the emir's tent city with thousands of followers."
+     },
+     {
+      "name": "Fall of Tagdempt and Mascara",
+      "kind": "event",
+      "lon": 1.32,
+      "lat": 35.37,
+      "year": 1841,
+      "winner": 0,
+      "text": "Bugeaud destroyed the emir's fortified bases."
+     }
+    ]
+   },
+   {
+    "year": 1844,
+    "label": "1844",
+    "title": "War with Morocco",
+    "text": "When the Sultan of Morocco sheltered Abd al-Qadir, France went to war. Prince de Joinville's squadron bombarded Tangier and Mogador, and Bugeaud defeated a large Moroccan army under the Sultan's son at the Isly river near Oujda. The Treaty of Tangier forced Morocco to outlaw the emir.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Algiers"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Morocco"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Thomas Robert Bugeaud",
+      "label": "Bugeaud from Tlemcen to the Isly",
+      "path": [
+       [
+        -1.32,
+        34.88
+       ],
+       [
+        -1.78,
+        34.85
+       ],
+       [
+        -1.85,
+        34.7
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sidi Mohammed",
+      "label": "Moroccan army from Fez",
+      "path": [
+       [
+        -5.0,
+        34.03
+       ],
+       [
+        -4.0,
+        34.21
+       ],
+       [
+        -2.5,
+        34.5
+       ],
+       [
+        -1.85,
+        34.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prince de Joinville",
+      "label": "Naval squadron along the Moroccan coast",
+      "path": [
+       [
+        -5.6,
+        36.0
+       ],
+       [
+        -5.8,
+        35.79
+       ],
+       [
+        -7.6,
+        33.8
+       ],
+       [
+        -9.77,
+        31.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Bombardment of Tangier",
+      "kind": "battle",
+      "lon": -5.8,
+      "lat": 35.78,
+      "year": 1844,
+      "winner": 0,
+      "text": "Joinville's ships destroyed the harbour defences."
+     },
+     {
+      "name": "Battle of Isly",
+      "kind": "battle",
+      "lon": -1.85,
+      "lat": 34.7,
+      "year": 1844,
+      "winner": 0,
+      "text": "Bugeaud's infantry squares broke the Moroccan cavalry."
+     },
+     {
+      "name": "Bombardment of Mogador",
+      "kind": "battle",
+      "lon": -9.77,
+      "lat": 31.51,
+      "year": 1844,
+      "winner": 0,
+      "text": "The French shelled the port and occupied the island off it."
+     }
+    ]
+   },
+   {
+    "year": 1847,
+    "label": "1845 to 1847",
+    "title": "The last resistance",
+    "text": "A great revolt in the Dahra mountains under Bou Maza in 1845 was crushed with brutal methods, including the suffocation of villagers in caves. Abd al-Qadir returned from Morocco and wiped out a French column at Sidi Brahim, but Moroccan troops now hunted him too. Cornered, he surrendered to Lamoriciere in December 1847 and went into exile.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Algiers"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Morocco"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Abd al-Qadir",
+      "label": "Emir's last campaign",
+      "path": [
+       [
+        -2.5,
+        34.9
+       ],
+       [
+        -1.75,
+        35.0
+       ],
+       [
+        -1.4,
+        35.2
+       ],
+       [
+        -1.86,
+        35.09
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lamoriciere",
+      "label": "French columns close the border",
+      "path": [
+       [
+        -0.64,
+        35.7
+       ],
+       [
+        -1.32,
+        34.88
+       ],
+       [
+        -1.86,
+        35.09
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Sidi Brahim",
+      "kind": "battle",
+      "lon": -1.75,
+      "lat": 35.0,
+      "year": 1845,
+      "winner": 1,
+      "text": "Abd al-Qadir destroyed a French column of chasseurs."
+     },
+     {
+      "name": "Surrender of Abd al-Qadir",
+      "kind": "event",
+      "lon": -1.86,
+      "lat": 35.09,
+      "year": 1847,
+      "winner": 0,
+      "text": "The emir gave himself up near Ghazaouet, ending organised resistance in the west."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mexican-american-war",
+  "name": "Mexican–American War",
+  "start": 1846,
+  "end": 1848,
+  "kind": "war",
+  "summary": "After the United States annexed Texas, a border dispute over the Rio Grande led to war with Mexico in 1846. American armies won in northern Mexico, seized New Mexico and California, and Winfield Scott landed at Veracruz and fought his way to Mexico City. In the Treaty of Guadalupe Hidalgo Mexico ceded about half its territory, the future American Southwest, which deepened the American quarrel over slavery.",
+  "sides": [
+   {
+    "name": "United States",
+    "color": "#3b6fb6",
+    "leaders": [
+     "James K. Polk",
+     "Zachary Taylor",
+     "Winfield Scott",
+     "Stephen W. Kearny"
+    ]
+   },
+   {
+    "name": "Mexico",
+    "color": "#2f8f6f",
+    "leaders": [
+     "Antonio Lopez de Santa Anna",
+     "Mariano Arista",
+     "Pedro de Ampudia"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -100,
+    "lat": 24.5,
+    "r": 7
+   },
+   {
+    "lon": -112,
+    "lat": 33.5,
+    "r": 8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1846,
+    "label": "Apr to May 1846",
+    "title": "War on the Rio Grande",
+    "text": "President Polk sent Zachary Taylor's army to the Rio Grande, into land Mexico considered its own. After Mexican cavalry ambushed an American patrol, Taylor beat Arista's larger army at Palo Alto and Resaca de la Palma and crossed into Matamoros, and Congress declared war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of New Spain"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -106.5,
+        31.75
+       ],
+       [
+        -104.5,
+        29.6
+       ],
+       [
+        -101.4,
+        29.77
+       ],
+       [
+        -100.5,
+        28.7
+       ],
+       [
+        -99.5,
+        27.5
+       ],
+       [
+        -97.2,
+        25.95
+       ]
+      ],
+      "label": "Disputed Rio Grande line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Zachary Taylor",
+      "label": "Army of Occupation to the Rio Grande",
+      "path": [
+       [
+        -97.4,
+        27.8
+       ],
+       [
+        -97.6,
+        26.8
+       ],
+       [
+        -97.48,
+        26.02
+       ],
+       [
+        -97.5,
+        25.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mariano Arista",
+      "label": "Mexican Army of the North crosses the river",
+      "path": [
+       [
+        -97.5,
+        25.87
+       ],
+       [
+        -97.55,
+        25.95
+       ],
+       [
+        -97.48,
+        26.02
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Palo Alto",
+      "kind": "battle",
+      "lon": -97.48,
+      "lat": 26.02,
+      "year": 1846,
+      "winner": 0,
+      "text": "American artillery broke up Arista's attacks in the opening battle."
+     },
+     {
+      "name": "Battle of Resaca de la Palma",
+      "kind": "battle",
+      "lon": -97.49,
+      "lat": 25.94,
+      "year": 1846,
+      "winner": 0,
+      "text": "Taylor routed the Mexican army back across the Rio Grande."
+     }
+    ]
+   },
+   {
+    "year": 1846,
+    "label": "Jun 1846 to Jan 1847",
+    "title": "Monterrey, New Mexico and California",
+    "text": "Taylor pushed into northern Mexico and took Monterrey after three days of street fighting. Kearny's Army of the West marched from Fort Leavenworth, took Santa Fe without a fight and crossed the desert to California, where American settlers and naval forces had risen. By January 1847 the United States held New Mexico and California.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of New Spain"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Zachary Taylor",
+      "label": "Taylor into Nuevo Leon",
+      "path": [
+       [
+        -97.5,
+        25.88
+       ],
+       [
+        -98.8,
+        26.38
+       ],
+       [
+        -99.7,
+        25.9
+       ],
+       [
+        -100.31,
+        25.67
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Stephen W. Kearny",
+      "label": "Army of the West",
+      "path": [
+       [
+        -94.92,
+        39.35
+       ],
+       [
+        -103.43,
+        38.04
+       ],
+       [
+        -105.94,
+        35.69
+       ],
+       [
+        -109.5,
+        33.0
+       ],
+       [
+        -114.6,
+        32.73
+       ],
+       [
+        -116.98,
+        33.08
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John C. Fremont and Robert F. Stockton",
+      "label": "Conquest of California",
+      "path": [
+       [
+        -121.89,
+        36.6
+       ],
+       [
+        -120.66,
+        35.28
+       ],
+       [
+        -118.24,
+        34.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Monterrey",
+      "kind": "battle",
+      "lon": -100.31,
+      "lat": 25.67,
+      "year": 1846,
+      "winner": 0,
+      "text": "Ampudia surrendered the city to Taylor after fierce street fighting."
+     },
+     {
+      "name": "Occupation of Santa Fe",
+      "kind": "event",
+      "lon": -105.94,
+      "lat": 35.69,
+      "year": 1846,
+      "winner": 0,
+      "text": "Kearny took New Mexico's capital without firing a shot."
+     },
+     {
+      "name": "Treaty of Cahuenga",
+      "kind": "treaty",
+      "lon": -118.36,
+      "lat": 34.14,
+      "year": 1847,
+      "winner": 0,
+      "text": "Californio forces surrendered, ending the fighting in California."
+     }
+    ]
+   },
+   {
+    "year": 1847,
+    "label": "Feb 1847",
+    "title": "Buena Vista",
+    "text": "Santa Anna, back in power, marched north from San Luis Potosi to destroy Taylor's weakened army. In two days of fighting at Buena Vista near Saltillo the outnumbered Americans held their ground, and Santa Anna withdrew south. It was the last major battle in northern Mexico.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of New Spain"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -101.02,
+        25.38
+       ],
+       [
+        -101.0,
+        25.33
+       ],
+       [
+        -100.98,
+        25.29
+       ]
+      ],
+      "label": "Taylor's line at Buena Vista"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Antonio Lopez de Santa Anna",
+      "label": "Santa Anna's march north",
+      "path": [
+       [
+        -100.98,
+        22.15
+       ],
+       [
+        -100.8,
+        23.6
+       ],
+       [
+        -101.0,
+        24.8
+       ],
+       [
+        -100.98,
+        25.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Zachary Taylor",
+      "label": "Taylor to Agua Nueva and back to Buena Vista",
+      "path": [
+       [
+        -100.31,
+        25.67
+       ],
+       [
+        -101.0,
+        25.42
+       ],
+       [
+        -101.05,
+        25.2
+       ],
+       [
+        -101.0,
+        25.33
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Buena Vista",
+      "kind": "battle",
+      "lon": -101.0,
+      "lat": 25.33,
+      "year": 1847,
+      "winner": 0,
+      "text": "Taylor's army survived Santa Anna's assaults and the Mexican army retreated."
+     }
+    ]
+   },
+   {
+    "year": 1847,
+    "label": "Mar to Sep 1847",
+    "title": "Scott's march on Mexico City",
+    "text": "Winfield Scott made the largest amphibious landing yet seen at Veracruz and took the city after a siege. He beat Santa Anna in the mountain pass at Cerro Gordo, paused at Puebla, then fought his way into the Valley of Mexico. After the storming of Chapultepec castle the capital fell on 14 September 1847.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of New Spain"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Winfield Scott",
+      "label": "Veracruz to Mexico City",
+      "path": [
+       [
+        -96.13,
+        19.19
+       ],
+       [
+        -96.65,
+        19.45
+       ],
+       [
+        -96.92,
+        19.54
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -99.18,
+        19.42
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Antonio Lopez de Santa Anna",
+      "label": "Santa Anna falls back on the capital",
+      "path": [
+       [
+        -96.65,
+        19.45
+       ],
+       [
+        -97.4,
+        19.3
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Veracruz",
+      "kind": "siege",
+      "lon": -96.13,
+      "lat": 19.19,
+      "year": 1847,
+      "winner": 0,
+      "text": "The port surrendered after a heavy bombardment."
+     },
+     {
+      "name": "Battle of Cerro Gordo",
+      "kind": "battle",
+      "lon": -96.65,
+      "lat": 19.45,
+      "year": 1847,
+      "winner": 0,
+      "text": "Scott outflanked Santa Anna's fortified pass and opened the road inland."
+     },
+     {
+      "name": "Battle of Chapultepec",
+      "kind": "battle",
+      "lon": -99.18,
+      "lat": 19.42,
+      "year": 1847,
+      "winner": 0,
+      "text": "American troops stormed the castle and entered Mexico City the next day."
+     }
+    ]
+   },
+   {
+    "year": 1848,
+    "label": "1848",
+    "title": "Guadalupe Hidalgo",
+    "text": "With its capital occupied, Mexico signed the Treaty of Guadalupe Hidalgo in February 1848. It accepted the Rio Grande border and ceded California, New Mexico and the lands between for 15 million dollars, and the American army went home. Gold was found in California the same year.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of New Spain"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -97.15,
+        25.95
+       ],
+       [
+        -99.5,
+        27.5
+       ],
+       [
+        -101.4,
+        29.77
+       ],
+       [
+        -104.5,
+        29.6
+       ],
+       [
+        -106.5,
+        31.78
+       ],
+       [
+        -106.6,
+        32.5
+       ],
+       [
+        -109.0,
+        32.9
+       ],
+       [
+        -112.5,
+        33.0
+       ],
+       [
+        -114.6,
+        32.73
+       ],
+       [
+        -117.12,
+        32.53
+       ]
+      ],
+      "label": "New border, 1848"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William O. Butler",
+      "label": "American army withdraws via Veracruz",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -96.92,
+        19.54
+       ],
+       [
+        -96.13,
+        19.19
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Guadalupe Hidalgo",
+      "kind": "treaty",
+      "lon": -99.12,
+      "lat": 19.48,
+      "year": 1848,
+      "winner": 0,
+      "text": "Mexico ceded about 55 percent of its territory to the United States."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hungarian-revolution-1848",
+  "name": "Hungarian Revolution and War of Independence",
+  "start": 1848,
+  "end": 1849,
+  "kind": "war",
+  "summary": "In the revolutions of 1848 Hungary won self-government from the Habsburgs, and when Vienna moved to take it back the conflict became a war. Hungarian armies under Gorgei and Bem drove the Austrians out in the spring of 1849 and the Diet declared independence, but Russia sent some 200,000 troops to help Austria. Crushed between two empires, the Hungarian army surrendered at Vilagos in August 1849 and Austria imposed harsh reprisals.",
+  "sides": [
+   {
+    "name": "Hungarian revolutionaries",
+    "color": "#2f8f6f",
+    "leaders": [
+     "Lajos Kossuth",
+     "Artur Gorgei",
+     "Jozef Bem",
+     "Gyorgy Klapka"
+    ]
+   },
+   {
+    "name": "Austrian Empire and Russia",
+    "color": "#c0473a",
+    "leaders": [
+     "Alfred Windischgratz",
+     "Josip Jelacic",
+     "Julius von Haynau",
+     "Ivan Paskevich"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 20.0,
+    "lat": 47.3,
+    "r": 4
+   },
+   {
+    "lon": 24.5,
+    "lat": 46.3,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1848,
+    "label": "Mar to Oct 1848",
+    "title": "Revolution and the Croatian invasion",
+    "text": "On 15 March 1848 a revolution in Pest won the April Laws, giving Hungary its own government under the Habsburg crown, with Kossuth as finance minister. Vienna encouraged the Croatian ban Jelacic to invade, but Hungarian forces stopped him at Pakozd and he retreated toward Vienna. A Hungarian army that followed him was beaten at Schwechat, just as Windischgratz crushed the revolution in Vienna.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Josip Jelacic",
+      "label": "Croatian army invades Hungary",
+      "path": [
+       [
+        15.98,
+        45.81
+       ],
+       [
+        16.34,
+        46.31
+       ],
+       [
+        17.4,
+        46.7
+       ],
+       [
+        18.55,
+        47.22
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Janos Moga",
+      "label": "Hungarian army from Pest",
+      "path": [
+       [
+        19.06,
+        47.49
+       ],
+       [
+        18.75,
+        47.3
+       ],
+       [
+        18.55,
+        47.22
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Josip Jelacic",
+      "label": "Jelacic withdraws toward Vienna",
+      "path": [
+       [
+        18.55,
+        47.22
+       ],
+       [
+        17.63,
+        47.69
+       ],
+       [
+        16.47,
+        48.14
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "March Revolution in Pest",
+      "kind": "event",
+      "lon": 19.06,
+      "lat": 47.49,
+      "year": 1848,
+      "winner": 0,
+      "text": "Students and the poet Petofi launched the revolution with the Twelve Points."
+     },
+     {
+      "name": "Battle of Pakozd",
+      "kind": "battle",
+      "lon": 18.55,
+      "lat": 47.22,
+      "year": 1848,
+      "winner": 0,
+      "text": "The new Hungarian army halted Jelacic's advance on Pest."
+     },
+     {
+      "name": "Battle of Schwechat",
+      "kind": "battle",
+      "lon": 16.47,
+      "lat": 48.14,
+      "year": 1848,
+      "winner": 1,
+      "text": "The Hungarians failed to relieve revolutionary Vienna."
+     }
+    ]
+   },
+   {
+    "year": 1849,
+    "label": "Dec 1848 to Feb 1849",
+    "title": "Windischgratz takes Buda-Pest",
+    "text": "Windischgratz invaded Hungary from the west and entered Buda-Pest in January 1849, while the Kossuth government fled to Debrecen behind the Tisza. Gorgei led his army on a winter retreat through the mountains of Upper Hungary, and in Transylvania the Polish general Bem began to drive out the Austrians.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        21.0,
+        48.3
+       ],
+       [
+        20.76,
+        47.62
+       ],
+       [
+        20.2,
+        47.17
+       ],
+       [
+        20.1,
+        46.6
+       ]
+      ],
+      "label": "Tisza line, Feb 1849"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Alfred Windischgratz",
+      "label": "Austrian main army to Buda-Pest",
+      "path": [
+       [
+        16.37,
+        48.21
+       ],
+       [
+        17.11,
+        48.15
+       ],
+       [
+        17.63,
+        47.69
+       ],
+       [
+        18.2,
+        47.38
+       ],
+       [
+        19.04,
+        47.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Artur Gorgei",
+      "label": "Gorgei's winter retreat through Upper Hungary",
+      "path": [
+       [
+        19.04,
+        47.5
+       ],
+       [
+        19.13,
+        47.78
+       ],
+       [
+        18.9,
+        48.45
+       ],
+       [
+        20.3,
+        48.9
+       ],
+       [
+        21.26,
+        48.72
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jozef Bem",
+      "label": "Bem's Transylvanian campaign",
+      "path": [
+       [
+        23.59,
+        47.66
+       ],
+       [
+        23.6,
+        46.77
+       ],
+       [
+        24.4,
+        46.3
+       ],
+       [
+        24.15,
+        45.79
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Buda-Pest",
+      "kind": "event",
+      "lon": 19.04,
+      "lat": 47.5,
+      "year": 1849,
+      "winner": 1,
+      "text": "The Hungarian government abandoned the capital for Debrecen."
+     },
+     {
+      "name": "Battle of Kapolna",
+      "kind": "battle",
+      "lon": 20.24,
+      "lat": 47.76,
+      "year": 1849,
+      "winner": 1,
+      "text": "Windischgratz checked the Hungarian advance and wrongly reported the revolt crushed."
+     }
+    ]
+   },
+   {
+    "year": 1849,
+    "label": "Apr to May 1849",
+    "title": "The Spring Campaign",
+    "text": "Gorgei's reorganised armies struck west and beat the Austrians at Isaszeg and Nagysallo, relieving the fortress of Komarom and forcing them out of almost all of Hungary. On 14 April the Diet at Debrecen declared independence and made Kossuth governor-president, and in May the Hungarians stormed Buda Castle.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        17.1,
+        48.25
+       ],
+       [
+        17.4,
+        47.85
+       ],
+       [
+        17.6,
+        47.4
+       ],
+       [
+        17.0,
+        46.7
+       ]
+      ],
+      "label": "Austrian front, May 1849"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Artur Gorgei",
+      "label": "Spring Campaign",
+      "path": [
+       [
+        20.25,
+        47.7
+       ],
+       [
+        19.67,
+        47.67
+       ],
+       [
+        19.4,
+        47.53
+       ],
+       [
+        19.13,
+        47.78
+       ],
+       [
+        18.53,
+        48.1
+       ],
+       [
+        18.12,
+        47.76
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Artur Gorgei",
+      "label": "Back to Buda",
+      "path": [
+       [
+        18.12,
+        47.76
+       ],
+       [
+        18.7,
+        47.7
+       ],
+       [
+        19.04,
+        47.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Alfred Windischgratz",
+      "label": "Austrian retreat to the frontier",
+      "path": [
+       [
+        19.04,
+        47.5
+       ],
+       [
+        18.4,
+        47.6
+       ],
+       [
+        17.63,
+        47.69
+       ],
+       [
+        17.11,
+        48.15
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Isaszeg",
+      "kind": "battle",
+      "lon": 19.4,
+      "lat": 47.53,
+      "year": 1849,
+      "winner": 0,
+      "text": "Gorgei drove Windischgratz back on Pest."
+     },
+     {
+      "name": "Hungarian Declaration of Independence",
+      "kind": "event",
+      "lon": 21.63,
+      "lat": 47.53,
+      "year": 1849,
+      "winner": 0,
+      "text": "The Diet dethroned the Habsburgs and made Kossuth head of state."
+     },
+     {
+      "name": "Siege of Buda",
+      "kind": "siege",
+      "lon": 19.03,
+      "lat": 47.5,
+      "year": 1849,
+      "winner": 0,
+      "text": "Hungarian troops stormed the castle after a three-week siege."
+     }
+    ]
+   },
+   {
+    "year": 1849,
+    "label": "Jun to Aug 1849",
+    "title": "Russian intervention and Vilagos",
+    "text": "Tsar Nicholas I sent Paskevich over the Carpathians with about 200,000 men, while Haynau's reinforced Austrian army advanced from the west and retook Buda-Pest. Russian troops crushed Bem at Segesvar, where the poet Petofi died, and Haynau beat the main Hungarian army at Temesvar. Gorgei surrendered to the Russians at Vilagos on 13 August; thirteen of his generals were executed at Arad.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ivan Paskevich",
+      "label": "Russian main army over the Dukla Pass",
+      "path": [
+       [
+        21.0,
+        50.1
+       ],
+       [
+        21.68,
+        49.4
+       ],
+       [
+        21.26,
+        48.72
+       ],
+       [
+        20.8,
+        48.1
+       ],
+       [
+        21.63,
+        47.53
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Julius von Haynau",
+      "label": "Austrian army from the west",
+      "path": [
+       [
+        17.11,
+        48.15
+       ],
+       [
+        17.63,
+        47.69
+       ],
+       [
+        19.04,
+        47.5
+       ],
+       [
+        20.15,
+        46.25
+       ],
+       [
+        21.23,
+        45.75
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Alexander von Luders",
+      "label": "Russian army into Transylvania",
+      "path": [
+       [
+        25.9,
+        45.2
+       ],
+       [
+        25.6,
+        45.65
+       ],
+       [
+        24.79,
+        46.22
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Artur Gorgei",
+      "label": "Gorgei's march to Arad",
+      "path": [
+       [
+        18.12,
+        47.76
+       ],
+       [
+        19.13,
+        47.78
+       ],
+       [
+        20.78,
+        48.1
+       ],
+       [
+        21.63,
+        47.53
+       ],
+       [
+        21.31,
+        46.18
+       ],
+       [
+        21.63,
+        46.27
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Segesvar",
+      "kind": "battle",
+      "lon": 24.79,
+      "lat": 46.22,
+      "year": 1849,
+      "winner": 1,
+      "text": "Luders routed Bem's army; Sandor Petofi was killed."
+     },
+     {
+      "name": "Battle of Temesvar",
+      "kind": "battle",
+      "lon": 21.23,
+      "lat": 45.75,
+      "year": 1849,
+      "winner": 1,
+      "text": "Haynau defeated the main southern Hungarian army under Bem."
+     },
+     {
+      "name": "Surrender at Vilagos",
+      "kind": "event",
+      "lon": 21.63,
+      "lat": 46.27,
+      "year": 1849,
+      "winner": 1,
+      "text": "Gorgei laid down arms before the Russians, ending the war."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "crimean-war",
+  "name": "Crimean War",
+  "start": 1853,
+  "end": 1856,
+  "kind": "war",
+  "summary": "Russia's pressure on the Ottoman Empire over the Danubian Principalities and the protection of Orthodox Christians brought war in 1853, and Britain and France joined the Ottomans in 1854 to stop Russian expansion. The allies landed in Crimea and besieged the naval base of Sevastopol for almost a year, at terrible cost from disease and incompetence on all sides. The Treaty of Paris neutralised the Black Sea and checked Russia, which turned to reform after its defeat.",
+  "sides": [
+   {
+    "name": "Russian Empire",
+    "color": "#2f6d8f",
+    "leaders": [
+     "Nicholas I",
+     "Prince Menshikov",
+     "Mikhail Gorchakov",
+     "Pavel Nakhimov",
+     "Nikolay Muravyov"
+    ]
+   },
+   {
+    "name": "Ottoman Empire, France, Britain and Sardinia",
+    "color": "#c0473a",
+    "leaders": [
+     "Omar Pasha",
+     "Lord Raglan",
+     "Marshal Saint-Arnaud",
+     "Aimable Pelissier",
+     "Alfonso La Marmora"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 31.0,
+    "lat": 44.5,
+    "r": 6
+   },
+   {
+    "lon": 43.0,
+    "lat": 40.7,
+    "r": 2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1853,
+    "label": "Jul to Nov 1853",
+    "title": "Russia moves on the Danube",
+    "text": "Tsar Nicholas I sent his army into the Ottoman vassal principalities of Moldavia and Wallachia in July 1853. The Ottomans declared war, and Omar Pasha's troops held the Danube and won at Oltenita. Then the Russian Black Sea Fleet under Nakhimov annihilated an Ottoman squadron at Sinop, which inflamed British and French opinion.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.87,
+        43.99
+       ],
+       [
+        24.9,
+        43.7
+       ],
+       [
+        25.95,
+        43.85
+       ],
+       [
+        27.26,
+        44.12
+       ],
+       [
+        27.95,
+        44.69
+       ],
+       [
+        28.05,
+        45.43
+       ]
+      ],
+      "label": "Danube front, 1853"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mikhail Gorchakov",
+      "label": "Russian occupation of the principalities",
+      "path": [
+       [
+        28.25,
+        46.48
+       ],
+       [
+        27.6,
+        47.16
+       ],
+       [
+        27.2,
+        45.5
+       ],
+       [
+        26.1,
+        44.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Pavel Nakhimov",
+      "label": "Black Sea Fleet to Sinop",
+      "path": [
+       [
+        33.52,
+        44.6
+       ],
+       [
+        34.5,
+        43.5
+       ],
+       [
+        35.15,
+        42.03
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Omar Pasha",
+      "label": "Ottoman army on the Danube",
+      "path": [
+       [
+        26.93,
+        43.27
+       ],
+       [
+        26.3,
+        43.7
+       ],
+       [
+        26.64,
+        44.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Oltenita",
+      "kind": "battle",
+      "lon": 26.64,
+      "lat": 44.09,
+      "year": 1853,
+      "winner": 1,
+      "text": "Omar Pasha's troops repulsed a Russian attack on their Danube bridgehead."
+     },
+     {
+      "name": "Battle of Sinop",
+      "kind": "battle",
+      "lon": 35.15,
+      "lat": 42.03,
+      "year": 1853,
+      "winner": 0,
+      "text": "Russian shell-firing ships destroyed the Ottoman squadron in harbour."
+     }
+    ]
+   },
+   {
+    "year": 1854,
+    "label": "1854",
+    "title": "The allies land in Crimea",
+    "text": "Britain and France declared war in March 1854. The Ottomans held Silistra, and under Austrian pressure Russia withdrew from the principalities, so the allies sailed from Varna to destroy the naval base at Sevastopol. They beat Menshikov at the Alma, survived Russian attacks at Balaklava, where the Light Brigade charged, and at Inkerman, then settled into a winter siege.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Egypt",
+       "France",
+       "United Kingdom of Great Britain and Ireland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        33.47,
+        44.58
+       ],
+       [
+        33.52,
+        44.565
+       ],
+       [
+        33.57,
+        44.575
+       ],
+       [
+        33.62,
+        44.6
+       ]
+      ],
+      "label": "Siege lines at Sevastopol"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lord Raglan and Saint-Arnaud",
+      "label": "Allied expedition from Varna to Crimea",
+      "path": [
+       [
+        27.92,
+        43.21
+       ],
+       [
+        30.5,
+        44.2
+       ],
+       [
+        33.4,
+        45.05
+       ],
+       [
+        33.68,
+        44.83
+       ],
+       [
+        33.6,
+        44.51
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prince Menshikov",
+      "label": "Menshikov falls back to Sevastopol",
+      "path": [
+       [
+        33.68,
+        44.83
+       ],
+       [
+        33.7,
+        44.7
+       ],
+       [
+        33.53,
+        44.62
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Gorchakov",
+      "label": "Russians withdraw from the Danube",
+      "path": [
+       [
+        27.26,
+        44.12
+       ],
+       [
+        26.1,
+        44.43
+       ],
+       [
+        27.6,
+        47.16
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Silistra",
+      "kind": "siege",
+      "lon": 27.26,
+      "lat": 44.12,
+      "year": 1854,
+      "winner": 1,
+      "text": "The Ottoman garrison held out and the Russians abandoned the siege."
+     },
+     {
+      "name": "Battle of the Alma",
+      "kind": "battle",
+      "lon": 33.68,
+      "lat": 44.83,
+      "year": 1854,
+      "winner": 1,
+      "text": "Allied troops stormed the heights above the river and opened the road to Sevastopol."
+     },
+     {
+      "name": "Battle of Balaklava",
+      "kind": "battle",
+      "lon": 33.65,
+      "lat": 44.53,
+      "year": 1854,
+      "winner": null,
+      "text": "The Russians failed to take the British base, remembered for the Charge of the Light Brigade."
+     }
+    ]
+   },
+   {
+    "year": 1855,
+    "label": "1855",
+    "title": "The fall of Sevastopol",
+    "text": "The siege dragged on through a winter of cold, cholera and scandal, until Florence Nightingale's reforms and a new railway eased the British army's suffering. Sardinia sent an army, the allies beat a Russian relief attempt on the Chernaya, and on 8 September the French under MacMahon stormed the Malakoff, forcing the Russians to abandon Sevastopol. In the Caucasus Muravyov starved Kars into surrender.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Egypt",
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Kingdom of Sardinia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        33.47,
+        44.58
+       ],
+       [
+        33.52,
+        44.565
+       ],
+       [
+        33.57,
+        44.575
+       ],
+       [
+        33.62,
+        44.6
+       ]
+      ],
+      "label": "Siege lines at Sevastopol"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mikhail Gorchakov",
+      "label": "Russian relief army on the Chernaya",
+      "path": [
+       [
+        33.8,
+        44.65
+       ],
+       [
+        33.72,
+        44.57
+       ],
+       [
+        33.67,
+        44.53
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Patrice de MacMahon",
+      "label": "Assault on the Malakoff",
+      "path": [
+       [
+        33.58,
+        44.59
+       ],
+       [
+        33.56,
+        44.605
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikolay Muravyov",
+      "label": "Russian Caucasus army besieges Kars",
+      "path": [
+       [
+        43.84,
+        40.79
+       ],
+       [
+        43.4,
+        40.7
+       ],
+       [
+        43.1,
+        40.61
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Chernaya",
+      "kind": "battle",
+      "lon": 33.67,
+      "lat": 44.53,
+      "year": 1855,
+      "winner": 1,
+      "text": "French and Sardinian troops threw back the last Russian attempt to break the siege."
+     },
+     {
+      "name": "Storming of the Malakoff",
+      "kind": "siege",
+      "lon": 33.56,
+      "lat": 44.61,
+      "year": 1855,
+      "winner": 1,
+      "text": "The French took the key fortification and the Russians evacuated Sevastopol."
+     },
+     {
+      "name": "Siege of Kars",
+      "kind": "siege",
+      "lon": 43.1,
+      "lat": 40.61,
+      "year": 1855,
+      "winner": 0,
+      "text": "The starving Ottoman garrison surrendered, giving Russia a bargaining chip."
+     }
+    ]
+   },
+   {
+    "year": 1856,
+    "label": "1856",
+    "title": "The Peace of Paris",
+    "text": "Exhausted, Russia accepted peace after Austria threatened to join the allies. The Treaty of Paris in March 1856 returned Kars and Sevastopol, demilitarised the Black Sea and put the principalities under joint European guarantee. Russia's defeat pushed Tsar Alexander II toward the emancipation of the serfs.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Egypt",
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Kingdom of Sardinia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "William Codrington",
+      "label": "Allied armies evacuate Crimea",
+      "path": [
+       [
+        33.6,
+        44.5
+       ],
+       [
+        31.5,
+        43.0
+       ],
+       [
+        29.0,
+        41.1
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Paris",
+      "kind": "treaty",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1856,
+      "winner": 1,
+      "text": "The Black Sea was neutralised and Russia lost southern Bessarabia."
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,6462 @@
+[
+ {
+  "id": "mongol-conquests",
+  "name": "Mongol conquests",
+  "start": 1206,
+  "end": 1294,
+  "kind": "conflict",
+  "summary": "Genghis Khan united the Mongol tribes in 1206 and launched campaigns that his sons and grandsons carried from Korea and China to Russia, Poland, Hungary and the Middle East. Mobile horse archers, captured siege engineers and deliberate terror built the largest contiguous land empire in history, though Mamluk Egypt, Japan, Dai Viet and Java held them off. The conquests killed millions but also tied East and West together through trade along the Silk Road.",
+  "sides": [
+   {
+    "name": "Mongol Empire and its khanates",
+    "color": "#c0702b",
+    "leaders": [
+     "Genghis Khan",
+     "Ogedei",
+     "Subutai",
+     "Batu",
+     "Hulagu",
+     "Kublai Khan"
+    ]
+   },
+   {
+    "name": "States resisting the Mongols",
+    "color": "#2f6db5",
+    "leaders": [
+     "Muhammad II of Khwarazm",
+     "Jalal al-Din",
+     "Bela IV",
+     "Qutuz and Baibars",
+     "Hojo Tokimune",
+     "Tran Hung Dao"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 105,
+    "lat": 38,
+    "r": 15
+   },
+   {
+    "lon": 122,
+    "lat": 27,
+    "r": 13
+   },
+   {
+    "lon": 58,
+    "lat": 38,
+    "r": 14
+   },
+   {
+    "lon": 32,
+    "lat": 47,
+    "r": 14
+   }
+  ],
+  "steps": [
+   {
+    "year": 1211,
+    "label": "1206 to 1215",
+    "title": "Genghis Khan turns on China",
+    "text": "Temujin was proclaimed Genghis Khan in 1206 and forced Western Xia to submit by 1210. In 1211 he invaded the Jurchen Jin empire of northern China, breaking its main army at Yehuling, and in 1215 the Jin capital Zhongdu near modern Beijing fell and was sacked.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mongol Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Liao",
+       "Xixia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        105.5,
+        41.3
+       ],
+       [
+        109.0,
+        41.6
+       ],
+       [
+        112.0,
+        41.3
+       ],
+       [
+        114.8,
+        41.0
+       ],
+       [
+        118.0,
+        41.4
+       ]
+      ],
+      "label": "Jin frontier, 1211"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Genghis Khan",
+      "label": "Against Western Xia",
+      "path": [
+       [
+        103.0,
+        46.0
+       ],
+       [
+        105.0,
+        42.0
+       ],
+       [
+        106.27,
+        38.47
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Genghis Khan",
+      "label": "Invasion of the Jin",
+      "path": [
+       [
+        109.5,
+        47.5
+       ],
+       [
+        111.8,
+        43.6
+       ],
+       [
+        114.75,
+        40.8
+       ],
+       [
+        116.35,
+        39.87
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jebe",
+      "label": "Flank march to Liaodong",
+      "path": [
+       [
+        114.75,
+        40.8
+       ],
+       [
+        118.9,
+        41.4
+       ],
+       [
+        122.4,
+        41.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Yehuling",
+      "kind": "battle",
+      "lon": 114.75,
+      "lat": 40.8,
+      "year": 1211,
+      "winner": 0,
+      "text": "The Mongols routed the main Jin field army at the Badger Mouth pass."
+     },
+     {
+      "name": "Fall of Zhongdu",
+      "kind": "siege",
+      "lon": 116.35,
+      "lat": 39.87,
+      "year": 1215,
+      "winner": 0,
+      "text": "The Jin capital near modern Beijing fell and was sacked after a long blockade."
+     }
+    ]
+   },
+   {
+    "year": 1220,
+    "label": "1219 to 1223",
+    "title": "Destruction of Khwarazm",
+    "text": "When the Khwarazm Shah's governor at Otrar massacred a Mongol caravan and its envoys, Genghis Khan marched west with perhaps 100,000 riders. Bukhara, Samarkand, Urgench, Merv and Nishapur fell one after another, Jalal al-Din was beaten on the Indus, and Jebe and Subutai rode round the Caspian to crush the Rus and Cumans on the Kalka.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mongol Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kara Khitai Khaganate",
+       "Ghaznavid Emirate",
+       "Buwayhid Emirates",
+       "Georgia",
+       "Cuman Khanates"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Genghis Khan",
+      "label": "Main army via Otrar to Bukhara and Samarkand",
+      "path": [
+       [
+        100.0,
+        47.5
+       ],
+       [
+        86.0,
+        46.5
+       ],
+       [
+        76.0,
+        44.0
+       ],
+       [
+        68.3,
+        42.85
+       ],
+       [
+        64.42,
+        39.77
+       ],
+       [
+        66.96,
+        39.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Genghis Khan",
+      "label": "Pursuit of Jalal al-Din to the Indus",
+      "path": [
+       [
+        66.96,
+        39.65
+       ],
+       [
+        67.1,
+        36.75
+       ],
+       [
+        69.2,
+        34.5
+       ],
+       [
+        72.2,
+        33.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tolui",
+      "label": "Khorasan: Merv and Nishapur",
+      "path": [
+       [
+        66.96,
+        39.65
+       ],
+       [
+        63.0,
+        38.5
+       ],
+       [
+        61.83,
+        37.6
+       ],
+       [
+        58.8,
+        36.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jebe and Subutai",
+      "label": "Great raid round the Caspian",
+      "path": [
+       [
+        58.8,
+        36.2
+       ],
+       [
+        51.4,
+        35.6
+       ],
+       [
+        44.8,
+        41.7
+       ],
+       [
+        48.29,
+        42.06
+       ],
+       [
+        44.0,
+        45.0
+       ],
+       [
+        37.5,
+        47.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Samarkand",
+      "kind": "siege",
+      "lon": 66.96,
+      "lat": 39.65,
+      "year": 1220,
+      "winner": 0,
+      "text": "The great Khwarazmian city surrendered after a short siege and was plundered."
+     },
+     {
+      "name": "Battle of the Indus",
+      "kind": "battle",
+      "lon": 72.2,
+      "lat": 33.9,
+      "year": 1221,
+      "winner": 0,
+      "text": "Genghis Khan destroyed Jalal al-Din's army, though the prince escaped by swimming the river."
+     },
+     {
+      "name": "Battle of the Kalka River",
+      "kind": "battle",
+      "lon": 37.5,
+      "lat": 47.2,
+      "year": 1223,
+      "winner": 0,
+      "text": "Jebe and Subutai crushed an army of Rus princes and Cumans in their first clash with Europe."
+     }
+    ]
+   },
+   {
+    "year": 1234,
+    "label": "1227 to 1234",
+    "title": "Fall of Xia and Jin",
+    "text": "Western Xia was annihilated in 1227, the year Genghis Khan died during the campaign. His son and successor Ogedei renewed the war on the Jin while Tolui swung through Song territory to take the Jin from behind, and in 1234 the last Jin emperor died at Caizhou, besieged by Mongols and their Song allies.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mongol Empire",
+       "Xixia",
+       "Liao",
+       "Kara Khitai Khaganate",
+       "Ghaznavid Emirate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        104.0,
+        34.5
+       ],
+       [
+        108.9,
+        34.4
+       ],
+       [
+        111.5,
+        34.8
+       ],
+       [
+        113.6,
+        35.4
+       ],
+       [
+        116.5,
+        35.2
+       ],
+       [
+        119.2,
+        34.6
+       ]
+      ],
+      "label": "Mongol-Jin front, 1231"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tolui",
+      "label": "Flank march through Song territory",
+      "path": [
+       [
+        107.15,
+        34.36
+       ],
+       [
+        107.03,
+        33.07
+       ],
+       [
+        111.0,
+        32.8
+       ],
+       [
+        113.35,
+        34.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ogedei",
+      "label": "Main army across the Yellow River",
+      "path": [
+       [
+        112.55,
+        37.87
+       ],
+       [
+        112.5,
+        35.5
+       ],
+       [
+        113.35,
+        34.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Subutai",
+      "label": "Siege of Kaifeng and Caizhou",
+      "path": [
+       [
+        113.35,
+        34.1
+       ],
+       [
+        114.3,
+        34.8
+       ],
+       [
+        114.37,
+        33.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Western Xia",
+      "kind": "siege",
+      "lon": 106.27,
+      "lat": 38.47,
+      "year": 1227,
+      "winner": 0,
+      "text": "The Xia capital surrendered and its people were massacred as Genghis Khan lay dying."
+     },
+     {
+      "name": "Battle of Sanfengshan",
+      "kind": "battle",
+      "lon": 113.35,
+      "lat": 34.1,
+      "year": 1232,
+      "winner": 0,
+      "text": "Tolui destroyed the last great Jin field army in a snowstorm."
+     },
+     {
+      "name": "Siege of Caizhou",
+      "kind": "siege",
+      "lon": 114.37,
+      "lat": 33.0,
+      "year": 1234,
+      "winner": 0,
+      "text": "Mongols and Song allies took the last Jin refuge, ending the dynasty."
+     }
+    ]
+   },
+   {
+    "year": 1241,
+    "label": "1237 to 1242",
+    "title": "Rus, Poland and Hungary",
+    "text": "Batu and Subutai led the western campaign, conquering the Volga Bulgars and destroying the principalities of Rus, sacking Ryazan, Vladimir and Kiev. In 1241 one column smashed the Poles and Silesians at Legnica while the main army annihilated the Hungarians at Mohi, but news of Ogedei's death in 1242 drew the Mongols back to the steppe.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mongol Empire",
+       "Xixia",
+       "Liao",
+       "Kara Khitai Khaganate",
+       "Ghaznavid Emirate",
+       "Buwayhid Emirates",
+       "Volga Bulgars",
+       "Cuman Khanates",
+       "Principality of Vladimir-Suzdal",
+       "Other Rus Principalities",
+       "Principality of Kyiv",
+       "Principality of Galicia-Volhynia",
+       "Georgia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Poland",
+       "Hungary"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Batu",
+      "label": "Ryazan and Vladimir, 1237 to 1238",
+      "path": [
+       [
+        49.1,
+        54.98
+       ],
+       [
+        39.7,
+        54.6
+       ],
+       [
+        40.4,
+        56.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Batu and Mongke",
+      "label": "To Kiev, 1240",
+      "path": [
+       [
+        40.4,
+        56.13
+       ],
+       [
+        37.5,
+        52.0
+       ],
+       [
+        30.52,
+        50.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Orda and Baidar",
+      "label": "Northern column into Poland",
+      "path": [
+       [
+        30.52,
+        50.45
+       ],
+       [
+        24.0,
+        50.6
+       ],
+       [
+        19.94,
+        50.06
+       ],
+       [
+        16.23,
+        51.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Batu and Subutai",
+      "label": "Main army into Hungary",
+      "path": [
+       [
+        30.52,
+        50.45
+       ],
+       [
+        24.5,
+        48.9
+       ],
+       [
+        23.0,
+        48.6
+       ],
+       [
+        20.97,
+        47.97
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Kiev",
+      "kind": "siege",
+      "lon": 30.52,
+      "lat": 50.45,
+      "year": 1240,
+      "winner": 0,
+      "text": "The Mongols stormed and devastated the old capital of Rus."
+     },
+     {
+      "name": "Battle of Legnica",
+      "kind": "battle",
+      "lon": 16.23,
+      "lat": 51.15,
+      "year": 1241,
+      "winner": 0,
+      "text": "A Mongol column destroyed the army of Duke Henry II of Silesia."
+     },
+     {
+      "name": "Battle of Mohi",
+      "kind": "battle",
+      "lon": 20.97,
+      "lat": 47.97,
+      "year": 1241,
+      "winner": 0,
+      "text": "Batu and Subutai annihilated the army of King Bela IV of Hungary."
+     }
+    ]
+   },
+   {
+    "year": 1258,
+    "label": "1256 to 1260",
+    "title": "Baghdad and Ain Jalut",
+    "text": "Great Khan Mongke sent his brother Hulagu west. He destroyed the Assassin castles of Alamut and in 1258 sacked Baghdad, killing the last Abbasid caliph, then took Aleppo and Damascus. When Hulagu withdrew most of his army, the Mamluks of Egypt under Qutuz and Baibars destroyed the force left under Kitbuqa at Ain Jalut, and the Euphrates became the frontier.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mongol Empire",
+       "Xixia",
+       "Liao",
+       "Kara Khitai Khaganate",
+       "Ghaznavid Emirate",
+       "Buwayhid Emirates",
+       "Volga Bulgars",
+       "Cuman Khanates",
+       "Principality of Vladimir-Suzdal",
+       "Other Rus Principalities",
+       "Principality of Kyiv",
+       "Principality of Galicia-Volhynia",
+       "Georgia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Fatimid Caliphate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        38.0,
+        37.3
+       ],
+       [
+        38.2,
+        36.5
+       ],
+       [
+        39.0,
+        35.95
+       ],
+       [
+        40.14,
+        35.33
+       ],
+       [
+        40.9,
+        34.45
+       ]
+      ],
+      "label": "Euphrates frontier after 1260"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Hulagu",
+      "label": "Through Persia to Baghdad",
+      "path": [
+       [
+        61.83,
+        37.6
+       ],
+       [
+        58.8,
+        36.2
+       ],
+       [
+        53.5,
+        36.2
+       ],
+       [
+        50.58,
+        36.44
+       ],
+       [
+        48.5,
+        34.8
+       ],
+       [
+        44.4,
+        33.33
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Kitbuqa",
+      "label": "Into Syria",
+      "path": [
+       [
+        44.4,
+        33.33
+       ],
+       [
+        40.0,
+        35.6
+       ],
+       [
+        37.16,
+        36.2
+       ],
+       [
+        36.29,
+        33.51
+       ],
+       [
+        35.37,
+        32.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Qutuz and Baibars",
+      "label": "Mamluk army from Cairo",
+      "path": [
+       [
+        31.24,
+        30.05
+       ],
+       [
+        32.3,
+        30.9
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        35.37,
+        32.55
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Baghdad",
+      "kind": "siege",
+      "lon": 44.4,
+      "lat": 33.33,
+      "year": 1258,
+      "winner": 0,
+      "text": "Hulagu sacked the Abbasid capital and ended five centuries of the caliphate there."
+     },
+     {
+      "name": "Battle of Ain Jalut",
+      "kind": "battle",
+      "lon": 35.37,
+      "lat": 32.55,
+      "year": 1260,
+      "winner": 1,
+      "text": "The Mamluks dealt the Mongols their first great defeat and saved Egypt."
+     }
+    ]
+   },
+   {
+    "year": 1273,
+    "label": "1268 to 1279",
+    "title": "Kublai conquers the Song",
+    "text": "Kublai Khan, who founded the Yuan dynasty in 1271, besieged the twin river fortresses of Xiangyang and Fancheng for five years until Persian counterweight trebuchets broke them. Bayan then drove down the Yangtze to take the Song capital Lin'an in 1276, and the last Song loyalists were destroyed at sea off Yamen in 1279.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mongol Empire",
+       "Xixia",
+       "Liao",
+       "Kara Khitai Khaganate",
+       "Goryeo",
+       "Nan Chao",
+       "Tibet"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Song Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        103.6,
+        30.7
+       ],
+       [
+        106.28,
+        30.0
+       ],
+       [
+        109.5,
+        31.2
+       ],
+       [
+        112.14,
+        32.04
+       ],
+       [
+        116.78,
+        32.58
+       ],
+       [
+        119.6,
+        33.6
+       ]
+      ],
+      "label": "Song defensive line, c. 1268"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Aju and Liu Zheng",
+      "label": "Siege of Xiangyang",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        114.3,
+        36.0
+       ],
+       [
+        113.0,
+        33.8
+       ],
+       [
+        112.14,
+        32.04
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bayan",
+      "label": "Down the Yangtze to Lin'an",
+      "path": [
+       [
+        112.14,
+        32.04
+       ],
+       [
+        114.3,
+        30.6
+       ],
+       [
+        117.0,
+        30.5
+       ],
+       [
+        118.8,
+        32.05
+       ],
+       [
+        120.16,
+        30.27
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Zhang Hongfan",
+      "label": "Pursuit to the south",
+      "path": [
+       [
+        120.16,
+        30.27
+       ],
+       [
+        119.3,
+        26.08
+       ],
+       [
+        116.7,
+        23.4
+       ],
+       [
+        113.07,
+        22.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Xiangyang",
+      "kind": "siege",
+      "lon": 112.14,
+      "lat": 32.04,
+      "year": 1273,
+      "winner": 0,
+      "text": "The fall of the key Song fortress opened the Yangtze to the Mongols."
+     },
+     {
+      "name": "Fall of Lin'an",
+      "kind": "siege",
+      "lon": 120.16,
+      "lat": 30.27,
+      "year": 1276,
+      "winner": 0,
+      "text": "The Song court surrendered its capital to Bayan without a fight."
+     },
+     {
+      "name": "Battle of Yamen",
+      "kind": "battle",
+      "lon": 113.07,
+      "lat": 22.2,
+      "year": 1279,
+      "winner": 0,
+      "text": "The Yuan fleet destroyed the last Song court and fleet, ending the dynasty."
+     }
+    ]
+   },
+   {
+    "year": 1281,
+    "label": "1274 and 1281",
+    "title": "The invasions of Japan",
+    "text": "By now the empire had split into four khanates, but Kublai still sought new conquests. His Mongol, Chinese and Korean fleets landed at Hakata Bay in 1274 and again in 1281, when the Japanese had built a stone wall along the shore; both times the samurai held the beaches and typhoons, the kamikaze or divine wind, wrecked the fleets.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Great Khanate",
+       "Khanate of the Golden Horde",
+       "Ilkhanate",
+       "Chagatai Khanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Shogun Japan (Kamakura)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        130.25,
+        33.58
+       ],
+       [
+        130.33,
+        33.6
+       ],
+       [
+        130.4,
+        33.62
+       ],
+       [
+        130.47,
+        33.66
+       ]
+      ],
+      "label": "Hakata Bay stone wall, 1281"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Hong Dagu and Hindu",
+      "label": "Eastern Route Army from Korea",
+      "path": [
+       [
+        128.57,
+        35.2
+       ],
+       [
+        129.3,
+        34.4
+       ],
+       [
+        129.72,
+        33.8
+       ],
+       [
+        130.38,
+        33.62
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Fan Wenhu",
+      "label": "Southern Route Army from Ningbo, 1281",
+      "path": [
+       [
+        121.9,
+        29.9
+       ],
+       [
+        124.5,
+        31.0
+       ],
+       [
+        127.5,
+        32.6
+       ],
+       [
+        129.7,
+        33.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hojo Tokimune's samurai",
+      "label": "Kyushu defenders",
+      "path": [
+       [
+        130.7,
+        33.1
+       ],
+       [
+        130.5,
+        33.4
+       ],
+       [
+        130.38,
+        33.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "First invasion, Hakata Bay",
+      "kind": "battle",
+      "lon": 130.38,
+      "lat": 33.62,
+      "year": 1274,
+      "winner": 1,
+      "text": "The invaders won ashore but re-embarked and lost many ships to a storm."
+     },
+     {
+      "name": "Second invasion and the kamikaze",
+      "kind": "battle",
+      "lon": 129.75,
+      "lat": 33.42,
+      "year": 1281,
+      "winner": 1,
+      "text": "A typhoon destroyed the huge combined fleet sheltering off Takashima."
+     }
+    ]
+   },
+   {
+    "year": 1288,
+    "label": "1277 to 1294",
+    "title": "The limits of conquest",
+    "text": "In Southeast Asia the Yuan broke the kingdom of Pagan in Burma, but Dai Viet under Tran Hung Dao defeated three invasions, the last on the stakes of the Bach Dang river in 1288. A fleet sent to punish Java in 1293 was turned on and driven out by Raden Wijaya, founder of Majapahit, and when Kublai died in 1294 the age of Mongol expansion was over.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Great Khanate",
+       "Khanate of the Golden Horde",
+       "Ilkhanate",
+       "Chagatai Khanate",
+       "Pagan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Đại Việt",
+       "Champa",
+       "Kediri"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Toghon",
+      "label": "Invasion of Dai Viet",
+      "path": [
+       [
+        108.3,
+        22.8
+       ],
+       [
+        106.75,
+        21.85
+       ],
+       [
+        105.85,
+        21.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Omar",
+      "label": "Yuan river fleet",
+      "path": [
+       [
+        108.6,
+        21.7
+       ],
+       [
+        107.5,
+        21.2
+       ],
+       [
+        106.78,
+        20.92
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Esen Temur",
+      "label": "Invasion of Pagan, 1287",
+      "path": [
+       [
+        100.2,
+        25.6
+       ],
+       [
+        97.5,
+        24.3
+       ],
+       [
+        96.0,
+        22.6
+       ],
+       [
+        94.86,
+        21.17
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ike Mese and Shi Bi",
+      "label": "Fleet to Java, 1292 to 1293",
+      "path": [
+       [
+        118.6,
+        24.9
+       ],
+       [
+        114.0,
+        20.0
+       ],
+       [
+        110.0,
+        11.0
+       ],
+       [
+        108.0,
+        2.0
+       ],
+       [
+        108.5,
+        -3.0
+       ],
+       [
+        112.05,
+        -6.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Pagan",
+      "kind": "siege",
+      "lon": 94.86,
+      "lat": 21.17,
+      "year": 1287,
+      "winner": 0,
+      "text": "The Yuan invasion shattered the Pagan kingdom, which broke into rival states."
+     },
+     {
+      "name": "Battle of Bach Dang",
+      "kind": "battle",
+      "lon": 106.78,
+      "lat": 20.92,
+      "year": 1288,
+      "winner": 1,
+      "text": "Tran Hung Dao trapped the Yuan fleet on iron-tipped stakes planted in the river."
+     },
+     {
+      "name": "Mongol expedition to Java",
+      "kind": "war",
+      "lon": 112.0,
+      "lat": -7.82,
+      "year": 1293,
+      "winner": 1,
+      "text": "Raden Wijaya used the Mongols to defeat Kediri, then attacked and drove them out."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "edward-i-conquest-of-wales",
+  "name": "Edward I's conquest of Wales",
+  "start": 1277,
+  "end": 1283,
+  "kind": "war",
+  "summary": "Llywelyn ap Gruffudd, Prince of Wales, ruled most of Wales from his mountain heartland of Gwynedd until he refused homage to Edward I of England. Two English invasions, in 1277 and 1282 to 1283, used sea power and slow coastal advances to strangle Gwynedd, and Llywelyn's death at Orewin Bridge ended independent Welsh rule. Edward secured the conquest with the Statute of Rhuddlan and a ring of great stone castles.",
+  "sides": [
+   {
+    "name": "Kingdom of England",
+    "color": "#c0473a",
+    "leaders": [
+     "Edward I",
+     "Roger Mortimer",
+     "Luke de Tany",
+     "William de Valence"
+    ]
+   },
+   {
+    "name": "Principality of Wales",
+    "color": "#3d8f5a",
+    "leaders": [
+     "Llywelyn ap Gruffudd",
+     "Dafydd ap Gruffudd"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -3.7,
+    "lat": 52.7,
+    "r": 1.4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1277,
+    "label": "1277",
+    "title": "The first war",
+    "text": "Llywelyn refused to do homage, and Edward attacked from three directions: Mortimer from the Marches, Payn de Chaworth in the south, and the king himself along the north coast from Chester, building roads and forts as he went. His fleet seized Anglesey and its harvest, the breadbasket of Gwynedd, and the starving Welsh accepted the Treaty of Aberconwy, which confined Llywelyn to Gwynedd west of the Conwy.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Angevin Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Celtic kingdoms"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -3.83,
+        53.29
+       ],
+       [
+        -3.8,
+        53.09
+       ],
+       [
+        -3.65,
+        52.92
+       ],
+       [
+        -3.8,
+        52.7
+       ],
+       [
+        -4.02,
+        52.55
+       ]
+      ],
+      "label": "Treaty of Aberconwy line, 1277"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Edward I",
+      "label": "Royal army along the north coast",
+      "path": [
+       [
+        -2.89,
+        53.19
+       ],
+       [
+        -3.13,
+        53.25
+       ],
+       [
+        -3.46,
+        53.29
+       ],
+       [
+        -3.8,
+        53.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "English fleet",
+      "label": "Seizure of Anglesey",
+      "path": [
+       [
+        -3.2,
+        53.45
+       ],
+       [
+        -4.0,
+        53.4
+       ],
+       [
+        -4.35,
+        53.27
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Roger Mortimer",
+      "label": "Advance from the Marches",
+      "path": [
+       [
+        -3.15,
+        52.56
+       ],
+       [
+        -3.4,
+        52.5
+       ],
+       [
+        -3.75,
+        52.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Payn de Chaworth",
+      "label": "Campaign in the south",
+      "path": [
+       [
+        -4.31,
+        51.86
+       ],
+       [
+        -4.1,
+        52.1
+       ],
+       [
+        -4.08,
+        52.41
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Aberconwy",
+      "kind": "treaty",
+      "lon": -3.83,
+      "lat": 53.28,
+      "year": 1277,
+      "winner": 0,
+      "text": "Llywelyn kept his title but lost everything east of the Conwy and paid heavy fines."
+     }
+    ]
+   },
+   {
+    "year": 1282,
+    "label": "1282",
+    "title": "Revolt and the death of Llywelyn",
+    "text": "On Palm Sunday 1282 Llywelyn's brother Dafydd stormed Hawarden castle, and all of Wales rose. Edward advanced again along the coast, but Luke de Tany's force crossing a bridge of boats from Anglesey was destroyed at Moel-y-Don. Llywelyn then went south to raise mid Wales, and on 11 December he was killed near Builth at Orewin Bridge.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -3.83,
+        53.29
+       ],
+       [
+        -3.8,
+        53.09
+       ],
+       [
+        -3.65,
+        52.92
+       ]
+      ],
+      "label": "Conwy line, 1282"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Dafydd ap Gruffudd",
+      "label": "Attack on Hawarden",
+      "path": [
+       [
+        -3.5,
+        53.15
+       ],
+       [
+        -3.25,
+        53.17
+       ],
+       [
+        -3.03,
+        53.18
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Edward I",
+      "label": "Royal army to Rhuddlan and the Conwy",
+      "path": [
+       [
+        -2.89,
+        53.19
+       ],
+       [
+        -3.13,
+        53.25
+       ],
+       [
+        -3.46,
+        53.29
+       ],
+       [
+        -3.75,
+        53.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Luke de Tany",
+      "label": "Bridge of boats over the Menai",
+      "path": [
+       [
+        -4.35,
+        53.27
+       ],
+       [
+        -4.27,
+        53.2
+       ],
+       [
+        -4.2,
+        53.17
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Llywelyn ap Gruffudd",
+      "label": "March south into mid Wales",
+      "path": [
+       [
+        -3.95,
+        52.95
+       ],
+       [
+        -3.85,
+        52.6
+       ],
+       [
+        -3.6,
+        52.3
+       ],
+       [
+        -3.46,
+        52.15
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Attack on Hawarden",
+      "kind": "event",
+      "lon": -3.03,
+      "lat": 53.18,
+      "year": 1282,
+      "winner": 1,
+      "text": "Dafydd's surprise attack on the English castle began the final war."
+     },
+     {
+      "name": "Battle of Moel-y-Don",
+      "kind": "battle",
+      "lon": -4.25,
+      "lat": 53.19,
+      "year": 1282,
+      "winner": 1,
+      "text": "The Welsh routed an English force crossing the Menai Strait."
+     },
+     {
+      "name": "Battle of Orewin Bridge",
+      "kind": "battle",
+      "lon": -3.46,
+      "lat": 52.15,
+      "year": 1282,
+      "winner": 0,
+      "text": "Llywelyn, the last native Prince of Wales, was killed and his army broken."
+     }
+    ]
+   },
+   {
+    "year": 1283,
+    "label": "1283 to 1284",
+    "title": "Gwynedd falls",
+    "text": "Edward kept campaigning through the winter. His armies took Dolwyddelan, the Earl of Pembroke captured Castell y Bere, and Dafydd was hunted down in the mountains in June 1283 and executed at Shrewsbury. The Statute of Rhuddlan in 1284 annexed the principality to the English crown, guarded by new castles at Conwy, Caernarfon and Harlech.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Edward I",
+      "label": "Into Snowdonia",
+      "path": [
+       [
+        -3.83,
+        53.28
+       ],
+       [
+        -3.88,
+        53.05
+       ],
+       [
+        -4.05,
+        52.98
+       ],
+       [
+        -4.28,
+        53.14
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William de Valence",
+      "label": "From Aberystwyth to Castell y Bere",
+      "path": [
+       [
+        -4.08,
+        52.41
+       ],
+       [
+        -4.0,
+        52.55
+       ],
+       [
+        -3.97,
+        52.66
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Dafydd ap Gruffudd",
+      "label": "Flight in the mountains",
+      "path": [
+       [
+        -3.97,
+        52.66
+       ],
+       [
+        -3.9,
+        52.85
+       ],
+       [
+        -4.0,
+        53.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Castell y Bere",
+      "kind": "siege",
+      "lon": -3.97,
+      "lat": 52.66,
+      "year": 1283,
+      "winner": 0,
+      "text": "The last major Welsh castle surrendered in April 1283."
+     },
+     {
+      "name": "Capture of Dafydd",
+      "kind": "event",
+      "lon": -4.0,
+      "lat": 53.2,
+      "year": 1283,
+      "winner": 0,
+      "text": "Betrayed and captured near Bera Mawr, Dafydd was executed for treason."
+     },
+     {
+      "name": "Statute of Rhuddlan",
+      "kind": "treaty",
+      "lon": -3.46,
+      "lat": 53.29,
+      "year": 1284,
+      "winner": 0,
+      "text": "Wales was annexed and divided into English-style shires."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hundred-years-war",
+  "name": "Hundred Years' War",
+  "start": 1337,
+  "end": 1453,
+  "kind": "war",
+  "summary": "The English Plantagenet kings fought the French Valois kings for over a century over English lands in France and Edward III's claim to the French crown. England won famous victories at Crecy, Poitiers and Agincourt and under Henry V held northern France, but Joan of Arc and a reformed French army with powerful artillery drove the English out of everything except Calais. The war forged national identities in both countries and helped end the age of the armoured knight.",
+  "sides": [
+   {
+    "name": "England and allies",
+    "color": "#c0473a",
+    "leaders": [
+     "Edward III",
+     "Edward the Black Prince",
+     "Henry V",
+     "John, Duke of Bedford",
+     "John Talbot"
+    ]
+   },
+   {
+    "name": "France and allies",
+    "color": "#2f6db5",
+    "leaders": [
+     "Philip VI",
+     "John II",
+     "Charles V",
+     "Bertrand du Guesclin",
+     "Joan of Arc",
+     "Charles VII"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 0.8,
+    "lat": 48.2,
+    "r": 3.8
+   },
+   {
+    "lon": -0.5,
+    "lat": 45.3,
+    "r": 1.9
+   },
+   {
+    "lon": 2.5,
+    "lat": 50.8,
+    "r": 1.4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1340,
+    "label": "1337 to 1340",
+    "title": "War at sea",
+    "text": "Philip VI confiscated Edward III's duchy of Aquitaine in 1337, and Edward answered by claiming the French crown through his mother. The first great clash came at sea: in 1340 the English fleet caught the French navy packed in the harbour of Sluys and destroyed it, winning control of the Channel for the invasions to come.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Edward III",
+      "label": "English fleet to Flanders",
+      "path": [
+       [
+        1.35,
+        51.9
+       ],
+       [
+        2.4,
+        51.6
+       ],
+       [
+        3.3,
+        51.38
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Sluys",
+      "kind": "battle",
+      "lon": 3.35,
+      "lat": 51.33,
+      "year": 1340,
+      "winner": 0,
+      "text": "English archers and men-at-arms destroyed the French fleet at anchor."
+     }
+    ]
+   },
+   {
+    "year": 1346,
+    "label": "1346 to 1347",
+    "title": "Crecy and Calais",
+    "text": "Edward III landed in Normandy, sacked Caen and marched toward Flanders with Philip VI in pursuit. At Crecy the English longbowmen shattered wave after wave of French cavalry, and Edward went on to take Calais after an eleven-month siege; England would hold it for two centuries.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Edward III",
+      "label": "Landing and chevauchee through Normandy",
+      "path": [
+       [
+        -1.27,
+        49.59
+       ],
+       [
+        -0.36,
+        49.18
+       ],
+       [
+        1.1,
+        49.3
+       ],
+       [
+        2.04,
+        48.93
+       ],
+       [
+        1.88,
+        50.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Edward III",
+      "label": "To Calais",
+      "path": [
+       [
+        1.88,
+        50.25
+       ],
+       [
+        1.6,
+        50.6
+       ],
+       [
+        1.86,
+        50.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Philip VI",
+      "label": "French royal army",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        2.3,
+        49.9
+       ],
+       [
+        1.88,
+        50.25
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Crecy",
+      "kind": "battle",
+      "lon": 1.88,
+      "lat": 50.25,
+      "year": 1346,
+      "winner": 0,
+      "text": "English longbows and dismounted knights crushed the French army."
+     },
+     {
+      "name": "Siege of Calais",
+      "kind": "siege",
+      "lon": 1.86,
+      "lat": 50.95,
+      "year": 1347,
+      "winner": 0,
+      "text": "Calais surrendered after an eleven-month siege."
+     }
+    ]
+   },
+   {
+    "year": 1356,
+    "label": "1355 to 1360",
+    "title": "Poitiers and Bretigny",
+    "text": "Edward the Black Prince led destructive raids from English Gascony. Caught near Poitiers by King John II, he won a crushing victory and captured the French king, and the Treaty of Bretigny in 1360 gave England a greatly enlarged, fully sovereign Aquitaine.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -2.0,
+        47.1
+       ],
+       [
+        0.1,
+        46.9
+       ],
+       [
+        1.7,
+        46.4
+       ],
+       [
+        2.5,
+        45.3
+       ],
+       [
+        2.3,
+        44.0
+       ],
+       [
+        1.4,
+        43.1
+       ],
+       [
+        -0.3,
+        42.9
+       ]
+      ],
+      "label": "Aquitaine frontier after Bretigny, 1360"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Edward the Black Prince",
+      "label": "Chevauchee from Bordeaux",
+      "path": [
+       [
+        -0.58,
+        44.84
+       ],
+       [
+        0.72,
+        45.18
+       ],
+       [
+        1.26,
+        45.83
+       ],
+       [
+        1.0,
+        46.9
+       ],
+       [
+        0.4,
+        46.53
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "John II",
+      "label": "French royal army",
+      "path": [
+       [
+        1.49,
+        48.45
+       ],
+       [
+        1.0,
+        47.6
+       ],
+       [
+        0.4,
+        46.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Poitiers",
+      "kind": "battle",
+      "lon": 0.4,
+      "lat": 46.53,
+      "year": 1356,
+      "winner": 0,
+      "text": "The Black Prince defeated and captured John II of France."
+     },
+     {
+      "name": "Treaty of Bretigny",
+      "kind": "treaty",
+      "lon": 1.62,
+      "lat": 48.45,
+      "year": 1360,
+      "winner": 0,
+      "text": "Edward dropped his claim to the crown in exchange for a sovereign Aquitaine and Calais."
+     }
+    ]
+   },
+   {
+    "year": 1372,
+    "label": "1369 to 1380",
+    "title": "The French recovery",
+    "text": "Charles V renewed the war and, guided by Bertrand du Guesclin, avoided pitched battles while retaking towns one by one. A Castilian fleet allied to France destroyed an English fleet off La Rochelle in 1372, English raids marched through empty countryside, and by 1380 England held little beyond Calais and the coast from Bordeaux to Bayonne.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland",
+       "Castile"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -1.2,
+        45.6
+       ],
+       [
+        -0.2,
+        45.0
+       ],
+       [
+        0.2,
+        44.4
+       ],
+       [
+        -0.3,
+        43.8
+       ],
+       [
+        -1.0,
+        43.4
+       ]
+      ],
+      "label": "English Gascony, c. 1380"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Bertrand du Guesclin",
+      "label": "Reconquest of Poitou",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        1.0,
+        47.4
+       ],
+       [
+        0.34,
+        46.58
+       ],
+       [
+        -0.6,
+        45.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John of Gaunt",
+      "label": "Great chevauchee, 1373",
+      "path": [
+       [
+        1.86,
+        50.95
+       ],
+       [
+        3.9,
+        49.3
+       ],
+       [
+        4.0,
+        47.0
+       ],
+       [
+        2.0,
+        45.5
+       ],
+       [
+        -0.58,
+        44.84
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ambrosio Boccanegra",
+      "label": "Castilian fleet",
+      "path": [
+       [
+        -3.8,
+        43.6
+       ],
+       [
+        -2.5,
+        45.2
+       ],
+       [
+        -1.25,
+        46.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of La Rochelle",
+      "kind": "battle",
+      "lon": -1.25,
+      "lat": 46.13,
+      "year": 1372,
+      "winner": 1,
+      "text": "A Castilian fleet allied to France destroyed an English fleet and its pay chests."
+     }
+    ]
+   },
+   {
+    "year": 1415,
+    "label": "1415 to 1420",
+    "title": "Agincourt and Troyes",
+    "text": "Henry V revived the war while France was torn by civil war between Armagnacs and Burgundians. After taking Harfleur he marched for Calais and won an astonishing victory at Agincourt, then conquered Normandy, and with Burgundy now his ally the Treaty of Troyes in 1420 made him heir to the French throne.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland",
+       "Castile"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Henry V",
+      "label": "Invasion fleet to Harfleur",
+      "path": [
+       [
+        -1.3,
+        50.75
+       ],
+       [
+        -0.5,
+        50.2
+       ],
+       [
+        0.1,
+        49.52
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Henry V",
+      "label": "March toward Calais",
+      "path": [
+       [
+        0.19,
+        49.5
+       ],
+       [
+        1.1,
+        49.95
+       ],
+       [
+        2.9,
+        49.8
+       ],
+       [
+        2.14,
+        50.46
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Charles d'Albret",
+      "label": "French army shadows the English",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        2.4,
+        49.9
+       ],
+       [
+        2.14,
+        50.46
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Agincourt",
+      "kind": "battle",
+      "lon": 2.14,
+      "lat": 50.46,
+      "year": 1415,
+      "winner": 0,
+      "text": "Henry V's archers destroyed a much larger French army in the mud."
+     },
+     {
+      "name": "Treaty of Troyes",
+      "kind": "treaty",
+      "lon": 4.07,
+      "lat": 48.3,
+      "year": 1420,
+      "winner": 0,
+      "text": "Charles VI disinherited his son and named Henry V heir to France."
+     }
+    ]
+   },
+   {
+    "year": 1429,
+    "label": "1428 to 1429",
+    "title": "Joan of Arc",
+    "text": "The English and Burgundians held all of northern France and besieged Orleans, the gateway to the south still loyal to the Dauphin Charles. Joan of Arc helped lift the siege in nine days, the French routed the English at Patay, and Charles was crowned at Reims, turning the tide of the war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland",
+       "Castile"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -0.55,
+        47.47
+       ],
+       [
+        0.69,
+        47.39
+       ],
+       [
+        1.33,
+        47.59
+       ],
+       [
+        1.9,
+        47.9
+       ],
+       [
+        2.63,
+        47.69
+       ],
+       [
+        3.57,
+        47.8
+       ],
+       [
+        4.2,
+        47.1
+       ]
+      ],
+      "label": "Line of the Loire, 1428"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Earl of Salisbury",
+      "label": "English army to Orleans",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        1.9,
+        48.45
+       ],
+       [
+        1.9,
+        47.92
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Joan of Arc",
+      "label": "Relief of Orleans",
+      "path": [
+       [
+        0.24,
+        47.17
+       ],
+       [
+        1.33,
+        47.59
+       ],
+       [
+        1.9,
+        47.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Charles VII and Joan",
+      "label": "March to the coronation at Reims",
+      "path": [
+       [
+        1.9,
+        47.9
+       ],
+       [
+        3.57,
+        47.8
+       ],
+       [
+        4.07,
+        48.3
+       ],
+       [
+        4.03,
+        49.26
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Orleans",
+      "kind": "siege",
+      "lon": 1.9,
+      "lat": 47.9,
+      "year": 1429,
+      "winner": 1,
+      "text": "Joan of Arc's relief force broke the English siege."
+     },
+     {
+      "name": "Battle of Patay",
+      "kind": "battle",
+      "lon": 1.69,
+      "lat": 48.05,
+      "year": 1429,
+      "winner": 1,
+      "text": "French cavalry caught the English archers before they could deploy and captured Talbot."
+     },
+     {
+      "name": "Coronation at Reims",
+      "kind": "event",
+      "lon": 4.03,
+      "lat": 49.26,
+      "year": 1429,
+      "winner": 1,
+      "text": "Charles VII was crowned, undermining the English claim."
+     }
+    ]
+   },
+   {
+    "year": 1450,
+    "label": "1435 to 1450",
+    "title": "Normandy lost",
+    "text": "Burgundy made peace with Charles VII at Arras in 1435 and Paris returned to France the next year. Charles built a standing army and a powerful artillery train under the Bureau brothers, and in 1449 to 1450 reconquered Normandy, destroying the last English relief army at Formigny.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland",
+       "Castile"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        1.8,
+        50.1
+       ],
+       [
+        1.78,
+        49.28
+       ],
+       [
+        1.48,
+        49.09
+       ],
+       [
+        0.93,
+        48.74
+       ],
+       [
+        0.09,
+        48.43
+       ],
+       [
+        -1.51,
+        48.64
+       ]
+      ],
+      "label": "Normandy front, 1449"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Charles VII and Dunois",
+      "label": "Reconquest of Normandy",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        1.1,
+        49.44
+       ],
+       [
+        -0.36,
+        49.18
+       ],
+       [
+        -0.9,
+        49.34
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Thomas Kyriell",
+      "label": "English relief army from Cherbourg",
+      "path": [
+       [
+        -1.62,
+        49.64
+       ],
+       [
+        -1.1,
+        49.3
+       ],
+       [
+        -0.9,
+        49.34
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Peace of Arras",
+      "kind": "treaty",
+      "lon": 2.78,
+      "lat": 50.29,
+      "year": 1435,
+      "winner": 1,
+      "text": "Burgundy abandoned the English alliance and reconciled with Charles VII."
+     },
+     {
+      "name": "Battle of Formigny",
+      "kind": "battle",
+      "lon": -0.9,
+      "lat": 49.34,
+      "year": 1450,
+      "winner": 1,
+      "text": "French troops and cannon destroyed the English relief army in Normandy."
+     }
+    ]
+   },
+   {
+    "year": 1453,
+    "label": "1451 to 1453",
+    "title": "Castillon",
+    "text": "French armies overran Gascony in 1451, ending three centuries of English rule in Bordeaux. The townspeople invited the English back, but in 1453 John Talbot attacked the French artillery camp at Castillon and was killed with much of his army, and Bordeaux surrendered for good. Only Calais remained English.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Scotland",
+       "Castile"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -1.2,
+        45.6
+       ],
+       [
+        -0.4,
+        45.0
+       ],
+       [
+        -0.04,
+        44.85
+       ],
+       [
+        -0.3,
+        44.4
+       ]
+      ],
+      "label": "Gascony front, 1453"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "John Talbot",
+      "label": "Relief army from Bordeaux",
+      "path": [
+       [
+        -0.58,
+        44.84
+       ],
+       [
+        -0.24,
+        44.89
+       ],
+       [
+        -0.04,
+        44.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jean Bureau",
+      "label": "French siege army",
+      "path": [
+       [
+        0.72,
+        45.18
+       ],
+       [
+        0.3,
+        45.0
+       ],
+       [
+        -0.04,
+        44.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Castillon",
+      "kind": "battle",
+      "lon": -0.04,
+      "lat": 44.85,
+      "year": 1453,
+      "winner": 1,
+      "text": "French artillery killed Talbot and broke the last English army in Gascony."
+     },
+     {
+      "name": "Surrender of Bordeaux",
+      "kind": "siege",
+      "lon": -0.58,
+      "lat": 44.84,
+      "year": 1453,
+      "winner": 1,
+      "text": "The fall of Bordeaux ended the war, leaving England only Calais."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rise-of-the-ottoman-empire",
+  "name": "Rise of the Ottoman Empire",
+  "start": 1354,
+  "end": 1529,
+  "kind": "conflict",
+  "summary": "From a small frontier principality in northwest Anatolia, the Ottoman dynasty crossed into Europe in 1354 and over the next two centuries conquered the Balkans, Constantinople, Syria, Egypt and Hungary. Disciplined Janissary infantry, early mastery of gunpowder and capable sultans overcame Serbs, crusaders, Byzantines, Mamluks and Hungarians, surviving even a crushing defeat by Timur in 1402. The advance was finally checked at the walls of Vienna in 1529.",
+  "sides": [
+   {
+    "name": "Ottoman Empire",
+    "color": "#3d8f5a",
+    "leaders": [
+     "Orhan",
+     "Murad I",
+     "Bayezid I",
+     "Murad II",
+     "Mehmed II",
+     "Selim I",
+     "Suleiman the Magnificent"
+    ]
+   },
+   {
+    "name": "Christian states",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Lazar of Serbia",
+     "Sigismund of Hungary",
+     "John Hunyadi",
+     "Constantine XI",
+     "Louis II",
+     "Ferdinand I"
+    ]
+   },
+   {
+    "name": "Eastern Muslim rivals",
+    "color": "#b07a2a",
+    "leaders": [
+     "Timur",
+     "Uzun Hasan",
+     "Shah Ismail",
+     "Qansuh al-Ghawri",
+     "Tuman Bay"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 23,
+    "lat": 44,
+    "r": 7
+   },
+   {
+    "lon": 32,
+    "lat": 39,
+    "r": 6
+   },
+   {
+    "lon": 35,
+    "lat": 32,
+    "r": 5
+   },
+   {
+    "lon": 42,
+    "lat": 38,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1354,
+    "label": "1354 to 1371",
+    "title": "Crossing into Europe",
+    "text": "Orhan's Ottomans, already masters of Bithynia, crossed the Dardanelles as mercenaries in Byzantine civil wars, and in 1354 his son Suleyman Pasha occupied Gallipoli after an earthquake ruined its walls. Murad I pushed into Thrace, made Adrianople (Edirne) his base, and in 1371 destroyed the Serbian lords on the Maritsa.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire",
+       "Bulgar Khanate",
+       "Raška"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Suleyman Pasha",
+      "label": "Across the Dardanelles",
+      "path": [
+       [
+        29.06,
+        40.19
+       ],
+       [
+        27.9,
+        40.35
+       ],
+       [
+        26.9,
+        40.35
+       ],
+       [
+        26.67,
+        40.41
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Murad I",
+      "label": "Into Thrace",
+      "path": [
+       [
+        26.67,
+        40.41
+       ],
+       [
+        26.9,
+        41.0
+       ],
+       [
+        26.56,
+        41.68
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Gallipoli taken",
+      "kind": "event",
+      "lon": 26.67,
+      "lat": 40.41,
+      "year": 1354,
+      "winner": 0,
+      "text": "The Ottomans gained their first permanent foothold in Europe."
+     },
+     {
+      "name": "Edirne taken",
+      "kind": "siege",
+      "lon": 26.56,
+      "lat": 41.68,
+      "year": 1369,
+      "winner": 0,
+      "text": "Adrianople became the Ottoman capital in Europe."
+     },
+     {
+      "name": "Battle of the Maritsa",
+      "kind": "battle",
+      "lon": 26.22,
+      "lat": 41.73,
+      "year": 1371,
+      "winner": 0,
+      "text": "Murad's forces annihilated the army of the Serbian despots in Macedonia."
+     }
+    ]
+   },
+   {
+    "year": 1389,
+    "label": "1389",
+    "title": "Kosovo",
+    "text": "Murad I marched up the Balkan valleys against Prince Lazar of Serbia and his allies. On the Field of Blackbirds both rulers died, Murad stabbed by a Serbian noble and Lazar executed after the battle, but the Ottoman army held the field and Serbia became a tributary vassal under Murad's son Bayezid I.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire",
+       "Bulgar Khanate",
+       "Raška",
+       "Hungary"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Murad I",
+      "label": "Up the Maritsa and Morava valleys",
+      "path": [
+       [
+        26.56,
+        41.68
+       ],
+       [
+        24.75,
+        42.15
+       ],
+       [
+        23.32,
+        42.7
+       ],
+       [
+        21.9,
+        43.32
+       ],
+       [
+        21.13,
+        42.71
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Prince Lazar",
+      "label": "Serbian and Bosnian army",
+      "path": [
+       [
+        21.33,
+        43.58
+       ],
+       [
+        21.2,
+        43.1
+       ],
+       [
+        21.13,
+        42.71
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kosovo",
+      "kind": "battle",
+      "lon": 21.13,
+      "lat": 42.71,
+      "year": 1389,
+      "winner": 0,
+      "text": "Both rulers died, but Serbia's power was broken and it became an Ottoman vassal."
+     }
+    ]
+   },
+   {
+    "year": 1396,
+    "label": "1393 to 1396",
+    "title": "Nicopolis",
+    "text": "Bayezid I, called the Thunderbolt, annexed Bulgaria in 1393 and began blockading Constantinople. King Sigismund of Hungary led a great crusade of Hungarians, French and Burgundian knights down the Danube, but at Nicopolis the reckless French charge broke on Ottoman stakes and infantry and Bayezid destroyed the crusade.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Bulgar Khanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire",
+       "Hungary"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        19.0,
+        44.9
+       ],
+       [
+        20.46,
+        44.82
+       ],
+       [
+        22.4,
+        44.6
+       ],
+       [
+        22.87,
+        43.99
+       ],
+       [
+        24.9,
+        43.7
+       ],
+       [
+        27.9,
+        44.1
+       ]
+      ],
+      "label": "Danube frontier, 1396"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Sigismund of Hungary",
+      "label": "Crusade down the Danube",
+      "path": [
+       [
+        19.04,
+        47.5
+       ],
+       [
+        20.3,
+        45.6
+       ],
+       [
+        22.4,
+        44.72
+       ],
+       [
+        22.87,
+        43.99
+       ],
+       [
+        24.9,
+        43.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bayezid I",
+      "label": "From the siege of Constantinople",
+      "path": [
+       [
+        28.95,
+        41.02
+       ],
+       [
+        26.56,
+        41.68
+       ],
+       [
+        25.63,
+        43.08
+       ],
+       [
+        24.9,
+        43.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Conquest of Tarnovo",
+      "kind": "siege",
+      "lon": 25.63,
+      "lat": 43.08,
+      "year": 1393,
+      "winner": 0,
+      "text": "The Bulgarian capital fell and Bulgaria was annexed."
+     },
+     {
+      "name": "Battle of Nicopolis",
+      "kind": "battle",
+      "lon": 24.9,
+      "lat": 43.7,
+      "year": 1396,
+      "winner": 0,
+      "text": "Bayezid destroyed the largest crusade of the age."
+     }
+    ]
+   },
+   {
+    "year": 1402,
+    "label": "1402 to 1413",
+    "title": "Ankara and the Interregnum",
+    "text": "Bayezid's expansion into eastern Anatolia collided with Timur. At Ankara in 1402 the Anatolian vassals deserted, Timur crushed the Ottoman army and captured the sultan, who died in captivity. Bayezid's sons fought a decade-long civil war until Mehmed I reunited the state in 1413.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire",
+       "Bulgar Khanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire",
+       "Kingdom of Hungary"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Timurid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Timur",
+      "label": "From Sivas to Ankara",
+      "path": [
+       [
+        37.02,
+        39.75
+       ],
+       [
+        35.48,
+        38.73
+       ],
+       [
+        33.9,
+        39.4
+       ],
+       [
+        32.95,
+        40.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bayezid I",
+      "label": "Ottoman army",
+      "path": [
+       [
+        29.06,
+        40.19
+       ],
+       [
+        31.5,
+        40.0
+       ],
+       [
+        33.6,
+        40.3
+       ],
+       [
+        32.95,
+        40.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ankara",
+      "kind": "battle",
+      "lon": 32.95,
+      "lat": 40.0,
+      "year": 1402,
+      "winner": 2,
+      "text": "Timur destroyed the Ottoman army and took Bayezid prisoner."
+     },
+     {
+      "name": "Ottoman Interregnum ends",
+      "kind": "war",
+      "lon": 26.56,
+      "lat": 41.68,
+      "year": 1413,
+      "winner": 0,
+      "text": "Mehmed I defeated his brothers and restored a single Ottoman state."
+     }
+    ]
+   },
+   {
+    "year": 1444,
+    "label": "1443 to 1448",
+    "title": "Varna",
+    "text": "Under Murad II the empire recovered, and Hungary answered with new crusades led by the general John Hunyadi. In 1444 King Wladyslaw of Poland and Hungary marched to the Black Sea coast, but Murad hurried back from Anatolia and won at Varna, where the young king was killed; Hunyadi was beaten again at the second battle of Kosovo in 1448.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire",
+       "Bulgar Khanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kingdom of Hungary",
+       "Poland-Lithuania",
+       "Principality of Wallachia",
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        19.0,
+        44.9
+       ],
+       [
+        20.46,
+        44.82
+       ],
+       [
+        22.4,
+        44.6
+       ],
+       [
+        22.87,
+        43.99
+       ],
+       [
+        24.9,
+        43.7
+       ],
+       [
+        27.9,
+        44.1
+       ]
+      ],
+      "label": "Danube frontier, 1444"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Wladyslaw III and Hunyadi",
+      "label": "Crusade of Varna",
+      "path": [
+       [
+        20.46,
+        44.82
+       ],
+       [
+        22.87,
+        43.99
+       ],
+       [
+        24.9,
+        43.7
+       ],
+       [
+        26.5,
+        43.5
+       ],
+       [
+        27.9,
+        43.21
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Murad II",
+      "label": "From Anatolia across the Bosporus",
+      "path": [
+       [
+        29.9,
+        40.75
+       ],
+       [
+        29.06,
+        41.08
+       ],
+       [
+        27.5,
+        42.2
+       ],
+       [
+        27.9,
+        43.21
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Varna",
+      "kind": "battle",
+      "lon": 27.9,
+      "lat": 43.21,
+      "year": 1444,
+      "winner": 0,
+      "text": "Murad II crushed the crusaders and King Wladyslaw was killed."
+     },
+     {
+      "name": "Second Battle of Kosovo",
+      "kind": "battle",
+      "lon": 21.13,
+      "lat": 42.71,
+      "year": 1448,
+      "winner": 0,
+      "text": "Hunyadi's Hungarian army was defeated after three days of fighting."
+     }
+    ]
+   },
+   {
+    "year": 1453,
+    "label": "1453",
+    "title": "The fall of Constantinople",
+    "text": "Mehmed II built the fortress of Rumelihisari to close the Bosporus, then besieged Constantinople with some 80,000 men and enormous bombards. His ships were dragged overland into the Golden Horn, and on 29 May the Janissaries broke through the land walls; Constantine XI died in the fighting and the city became the Ottoman capital.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire",
+       "Bulgar Khanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire",
+       "Kingdom of Hungary"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        28.923,
+        40.993
+       ],
+       [
+        28.92,
+        41.01
+       ],
+       [
+        28.925,
+        41.025
+       ],
+       [
+        28.94,
+        41.04
+       ]
+      ],
+      "label": "Theodosian land walls"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mehmed II",
+      "label": "Army from Edirne",
+      "path": [
+       [
+        26.56,
+        41.68
+       ],
+       [
+        27.5,
+        41.4
+       ],
+       [
+        28.5,
+        41.1
+       ],
+       [
+        28.91,
+        41.02
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Baltaoglu Suleyman",
+      "label": "Ottoman fleet from Gallipoli",
+      "path": [
+       [
+        26.67,
+        40.41
+       ],
+       [
+        27.5,
+        40.7
+       ],
+       [
+        28.6,
+        40.95
+       ],
+       [
+        29.0,
+        41.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Giovanni Giustiniani",
+      "label": "Genoese reinforcements",
+      "path": [
+       [
+        26.1,
+        38.4
+       ],
+       [
+        26.0,
+        39.6
+       ],
+       [
+        26.2,
+        40.0
+       ],
+       [
+        27.7,
+        40.75
+       ],
+       [
+        28.98,
+        41.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Constantinople",
+      "kind": "siege",
+      "lon": 28.95,
+      "lat": 41.02,
+      "year": 1453,
+      "winner": 0,
+      "text": "The thousand-year Byzantine Empire ended when the city fell on 29 May."
+     }
+    ]
+   },
+   {
+    "year": 1461,
+    "label": "1456 to 1480",
+    "title": "Mehmed the Conqueror",
+    "text": "Hunyadi threw Mehmed back from Belgrade in 1456, holding the Danube for seventy years. Mehmed instead swallowed the remaining Balkan and Greek states: Serbia in 1459, the Byzantine Morea in 1460, Trebizond in 1461 and Bosnia in 1463, and in 1473 he defeated the eastern Turkmen ruler Uzun Hasan at Otlukbeli.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire",
+       "Bulgar Khanate",
+       "Byzantine Empire",
+       "Bosnia",
+       "Trebizond"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kingdom of Hungary",
+       "Principality of Wallachia",
+       "Venice"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        19.0,
+        44.9
+       ],
+       [
+        20.46,
+        44.82
+       ],
+       [
+        22.4,
+        44.6
+       ],
+       [
+        22.87,
+        43.99
+       ],
+       [
+        24.9,
+        43.7
+       ],
+       [
+        27.9,
+        44.1
+       ]
+      ],
+      "label": "Danube frontier, 1460s"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mehmed II",
+      "label": "Failed siege of Belgrade, 1456",
+      "path": [
+       [
+        26.56,
+        41.68
+       ],
+       [
+        23.32,
+        42.7
+       ],
+       [
+        21.9,
+        43.32
+       ],
+       [
+        20.46,
+        44.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mehmed II",
+      "label": "Conquest of Trebizond, 1461",
+      "path": [
+       [
+        29.06,
+        40.19
+       ],
+       [
+        33.8,
+        41.0
+       ],
+       [
+        36.33,
+        41.29
+       ],
+       [
+        39.72,
+        41.0
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Uzun Hasan",
+      "label": "Aq Qoyunlu invasion of Anatolia",
+      "path": [
+       [
+        44.3,
+        38.1
+       ],
+       [
+        41.3,
+        39.9
+       ],
+       [
+        40.4,
+        39.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Belgrade",
+      "kind": "siege",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 1456,
+      "winner": 1,
+      "text": "Hunyadi and the friar John of Capistrano broke the Ottoman siege."
+     },
+     {
+      "name": "Fall of Trebizond",
+      "kind": "siege",
+      "lon": 39.72,
+      "lat": 41.0,
+      "year": 1461,
+      "winner": 0,
+      "text": "The last Byzantine successor state surrendered to Mehmed."
+     },
+     {
+      "name": "Battle of Otlukbeli",
+      "kind": "battle",
+      "lon": 40.4,
+      "lat": 39.8,
+      "year": 1473,
+      "winner": 0,
+      "text": "Ottoman guns defeated Uzun Hasan and secured eastern Anatolia."
+     }
+    ]
+   },
+   {
+    "year": 1516,
+    "label": "1514 to 1517",
+    "title": "Selim conquers the Middle East",
+    "text": "Selim I first crushed the new Safavid Shah Ismail at Chaldiran in 1514 with artillery and Janissary muskets. In 1516 he turned on the Mamluks, killing Sultan Qansuh al-Ghawri at Marj Dabiq north of Aleppo, and in January 1517 took Cairo after victory at Ridaniya, making the Ottomans masters of Syria, Egypt and the holy cities of Arabia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Imperial Hungary",
+       "Venice"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Mamluke Sultanate",
+       "Emirate of the White Sheep Turks"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Selim I",
+      "label": "Against the Safavids, 1514",
+      "path": [
+       [
+        28.98,
+        41.01
+       ],
+       [
+        32.86,
+        39.93
+       ],
+       [
+        37.02,
+        39.75
+       ],
+       [
+        41.27,
+        39.9
+       ],
+       [
+        44.0,
+        39.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Selim I",
+      "label": "Against the Mamluks, 1516 to 1517",
+      "path": [
+       [
+        37.27,
+        36.53
+       ],
+       [
+        36.29,
+        33.51
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        32.3,
+        30.9
+       ],
+       [
+        31.3,
+        30.08
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Qansuh al-Ghawri",
+      "label": "Mamluk army from Cairo",
+      "path": [
+       [
+        31.24,
+        30.05
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        36.29,
+        33.51
+       ],
+       [
+        37.27,
+        36.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Chaldiran",
+      "kind": "battle",
+      "lon": 44.0,
+      "lat": 39.1,
+      "year": 1514,
+      "winner": 0,
+      "text": "Ottoman cannon and muskets routed Shah Ismail's cavalry."
+     },
+     {
+      "name": "Battle of Marj Dabiq",
+      "kind": "battle",
+      "lon": 37.27,
+      "lat": 36.53,
+      "year": 1516,
+      "winner": 0,
+      "text": "The Mamluk sultan was killed and Syria fell to the Ottomans."
+     },
+     {
+      "name": "Battle of Ridaniya",
+      "kind": "battle",
+      "lon": 31.3,
+      "lat": 30.08,
+      "year": 1517,
+      "winner": 0,
+      "text": "Selim took Cairo and ended the Mamluk Sultanate."
+     }
+    ]
+   },
+   {
+    "year": 1526,
+    "label": "1521 to 1526",
+    "title": "Mohacs",
+    "text": "Suleiman the Magnificent took Belgrade, the key to Hungary, in 1521 and expelled the Knights of St John from Rhodes in 1522. In 1526 he marched up the Danube with about 60,000 men and at Mohacs annihilated the Hungarian army in under two hours; King Louis II drowned in the retreat, and the Hungarian kingdom split between rival claimants.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire",
+       "Mamluke Sultanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Imperial Hungary",
+       "Holy Roman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        18.9,
+        45.2
+       ],
+       [
+        19.86,
+        45.25
+       ],
+       [
+        21.0,
+        45.2
+       ],
+       [
+        22.4,
+        44.72
+       ]
+      ],
+      "label": "Hungarian southern frontier, 1526"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Suleiman",
+      "label": "Up the Danube",
+      "path": [
+       [
+        28.98,
+        41.01
+       ],
+       [
+        26.56,
+        41.68
+       ],
+       [
+        23.32,
+        42.7
+       ],
+       [
+        20.46,
+        44.82
+       ],
+       [
+        19.86,
+        45.25
+       ],
+       [
+        18.68,
+        45.94
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Louis II",
+      "label": "Hungarian royal army",
+      "path": [
+       [
+        19.04,
+        47.5
+       ],
+       [
+        18.9,
+        46.9
+       ],
+       [
+        18.79,
+        46.42
+       ],
+       [
+        18.68,
+        45.99
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Belgrade",
+      "kind": "siege",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 1521,
+      "winner": 0,
+      "text": "Suleiman took the fortress that had blocked the Ottomans since 1456."
+     },
+     {
+      "name": "Siege of Rhodes",
+      "kind": "siege",
+      "lon": 28.23,
+      "lat": 36.45,
+      "year": 1522,
+      "winner": 0,
+      "text": "The Knights of St John surrendered the island after a six-month siege."
+     },
+     {
+      "name": "Battle of Mohacs",
+      "kind": "battle",
+      "lon": 18.68,
+      "lat": 45.94,
+      "year": 1526,
+      "winner": 0,
+      "text": "The Hungarian army was destroyed and King Louis II was killed."
+     }
+    ]
+   },
+   {
+    "year": 1529,
+    "label": "1529",
+    "title": "The siege of Vienna",
+    "text": "Backing John Zapolya against the Habsburg Ferdinand I for the Hungarian crown, Suleiman retook Buda and pushed on to Vienna in September 1529. Heavy rains had forced him to leave his big guns behind, the garrison under Niklas Salm held the walls, and after three weeks and a failed final assault the Ottomans withdrew, marking the high-water mark of their advance in that era.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire",
+       "Mamluke Sultanate",
+       "Imperial Hungary"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Suleiman",
+      "label": "To Buda and Vienna",
+      "path": [
+       [
+        20.46,
+        44.82
+       ],
+       [
+        18.68,
+        45.99
+       ],
+       [
+        19.04,
+        47.5
+       ],
+       [
+        17.64,
+        47.69
+       ],
+       [
+        16.37,
+        48.2
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Niklas Salm",
+      "label": "Habsburg garrison of Vienna",
+      "path": [
+       [
+        16.0,
+        48.4
+       ],
+       [
+        16.3,
+        48.25
+       ],
+       [
+        16.37,
+        48.21
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Buda retaken",
+      "kind": "siege",
+      "lon": 19.04,
+      "lat": 47.5,
+      "year": 1529,
+      "winner": 0,
+      "text": "Suleiman installed his vassal John Zapolya as king of Hungary."
+     },
+     {
+      "name": "Siege of Vienna",
+      "kind": "siege",
+      "lon": 16.37,
+      "lat": 48.21,
+      "year": 1529,
+      "winner": 1,
+      "text": "The defenders held, and the Ottomans withdrew before winter."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "timur-conquests",
+  "name": "Timur's conquests",
+  "start": 1370,
+  "end": 1405,
+  "kind": "war",
+  "summary": "Timur (Tamerlane), a Turkic-Mongol emir from near Samarkand, seized power in Transoxiana in 1370 and spent 35 years campaigning from Anatolia to India. He broke the Golden Horde, sacked Delhi, Baghdad and Damascus, and captured the Ottoman sultan at Ankara, killing perhaps millions along the way. His empire did not long survive him, but it crippled the Golden Horde and the Delhi Sultanate and gave the Ottomans a decade of civil war.",
+  "sides": [
+   {
+    "name": "Timur's empire",
+    "color": "#8a5cb0",
+    "leaders": [
+     "Timur",
+     "Miran Shah",
+     "Shah Rukh"
+    ]
+   },
+   {
+    "name": "Opponents",
+    "color": "#c0702b",
+    "leaders": [
+     "Tokhtamysh",
+     "Nasir-ud-Din Mahmud",
+     "Faraj of Egypt",
+     "Bayezid I"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 60,
+    "lat": 38,
+    "r": 12
+   },
+   {
+    "lon": 47,
+    "lat": 48,
+    "r": 8
+   },
+   {
+    "lon": 75,
+    "lat": 30,
+    "r": 6
+   },
+   {
+    "lon": 37,
+    "lat": 37,
+    "r": 6
+   }
+  ],
+  "steps": [
+   {
+    "year": 1370,
+    "label": "1360 to 1380",
+    "title": "Lord of Samarkand",
+    "text": "Timur, a minor noble of the Barlas tribe, rose through the chaotic wars of the western Chagatai Khanate. In 1370 he besieged his former ally Amir Husayn at Balkh, took power and made Samarkand his capital, ruling as emir in the name of puppet Chagatayid khans and spending the next decade subduing Khwarazm and Moghulistan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chagatai Khanate"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Against Amir Husayn",
+      "path": [
+       [
+        66.83,
+        39.06
+       ],
+       [
+        67.0,
+        37.5
+       ],
+       [
+        66.9,
+        36.76
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Conquest of Khwarazm",
+      "path": [
+       [
+        66.96,
+        39.65
+       ],
+       [
+        64.42,
+        39.77
+       ],
+       [
+        62.0,
+        40.8
+       ],
+       [
+        60.6,
+        41.55
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Balkh",
+      "kind": "siege",
+      "lon": 66.9,
+      "lat": 36.76,
+      "year": 1370,
+      "winner": 0,
+      "text": "Timur defeated Amir Husayn and was proclaimed ruler of Transoxiana."
+     },
+     {
+      "name": "Fall of Urgench",
+      "kind": "siege",
+      "lon": 60.6,
+      "lat": 41.55,
+      "year": 1379,
+      "winner": 0,
+      "text": "Timur took the capital of Khwarazm after repeated campaigns."
+     }
+    ]
+   },
+   {
+    "year": 1386,
+    "label": "1381 to 1387",
+    "title": "Conquest of Persia",
+    "text": "With Persia split among petty dynasties after the fall of the Ilkhanate, Timur took Herat in 1381 and swept west through Khorasan, Azerbaijan and Georgia. When Isfahan rebelled in 1387 his troops massacred its people and built towers of skulls. Meanwhile his former protege Tokhtamysh, now khan of the Golden Horde, sacked Tabriz and turned into his greatest rival.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chagatai Khanate",
+       "Ilkhanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Khanate of the Golden Horde"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Herat and Khorasan",
+      "path": [
+       [
+        66.96,
+        39.65
+       ],
+       [
+        64.5,
+        37.0
+       ],
+       [
+        62.2,
+        34.35
+       ],
+       [
+        58.8,
+        36.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Three-year campaign in the west",
+      "path": [
+       [
+        58.8,
+        36.2
+       ],
+       [
+        51.4,
+        35.6
+       ],
+       [
+        46.3,
+        38.08
+       ],
+       [
+        44.8,
+        41.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "South to Isfahan and Shiraz",
+      "path": [
+       [
+        46.3,
+        38.08
+       ],
+       [
+        48.5,
+        34.8
+       ],
+       [
+        51.67,
+        32.65
+       ],
+       [
+        52.53,
+        29.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tokhtamysh",
+      "label": "Raid on Tabriz, 1385",
+      "path": [
+       [
+        48.29,
+        42.06
+       ],
+       [
+        48.0,
+        40.4
+       ],
+       [
+        46.3,
+        38.08
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Herat",
+      "kind": "siege",
+      "lon": 62.2,
+      "lat": 34.35,
+      "year": 1381,
+      "winner": 0,
+      "text": "The Kartid capital surrendered, opening Persia to Timur."
+     },
+     {
+      "name": "Sack of Tabriz",
+      "kind": "siege",
+      "lon": 46.3,
+      "lat": 38.08,
+      "year": 1385,
+      "winner": 1,
+      "text": "Tokhtamysh's raid on Tabriz began the war between the former allies."
+     },
+     {
+      "name": "Massacre of Isfahan",
+      "kind": "siege",
+      "lon": 51.67,
+      "lat": 32.65,
+      "year": 1387,
+      "winner": 0,
+      "text": "After a revolt Timur ordered the city's people killed, reportedly 70,000."
+     }
+    ]
+   },
+   {
+    "year": 1395,
+    "label": "1391 to 1396",
+    "title": "Breaking the Golden Horde",
+    "text": "Timur marched across the steppe in 1391 and beat Tokhtamysh on the Kondurcha River near the Volga. When the khan struck again, Timur came through the Caucasus in 1395, crushed him on the Terek and then sacked the Horde's great trading cities of Sarai, Astrakhan and Tana, wrecking its economy for good; he came within reach of Moscow at Yelets before turning back.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chagatai Khanate",
+       "Ilkhanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Khanate of the Golden Horde"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Steppe march, 1391",
+      "path": [
+       [
+        69.24,
+        41.3
+       ],
+       [
+        67.0,
+        47.0
+       ],
+       [
+        58.0,
+        51.5
+       ],
+       [
+        50.6,
+        53.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Through the Caucasus, 1395",
+      "path": [
+       [
+        46.3,
+        38.08
+       ],
+       [
+        48.29,
+        42.06
+       ],
+       [
+        44.7,
+        43.5
+       ],
+       [
+        45.0,
+        48.6
+       ],
+       [
+        38.5,
+        52.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tokhtamysh",
+      "label": "Golden Horde army",
+      "path": [
+       [
+        45.0,
+        48.6
+       ],
+       [
+        45.5,
+        46.0
+       ],
+       [
+        44.7,
+        43.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Kondurcha River",
+      "kind": "battle",
+      "lon": 50.6,
+      "lat": 53.6,
+      "year": 1391,
+      "winner": 0,
+      "text": "Timur defeated Tokhtamysh deep in the steppe."
+     },
+     {
+      "name": "Battle of the Terek River",
+      "kind": "battle",
+      "lon": 44.7,
+      "lat": 43.5,
+      "year": 1395,
+      "winner": 0,
+      "text": "Timur shattered the Golden Horde's main army."
+     },
+     {
+      "name": "Sack of Sarai",
+      "kind": "siege",
+      "lon": 45.0,
+      "lat": 48.6,
+      "year": 1395,
+      "winner": 0,
+      "text": "The Golden Horde capital was burned along with Astrakhan and Tana."
+     }
+    ]
+   },
+   {
+    "year": 1398,
+    "label": "1398 to 1399",
+    "title": "The sack of Delhi",
+    "text": "Claiming the Delhi sultans were too tolerant of their Hindu subjects, Timur crossed the Hindu Kush and the Indus in 1398. Outside Delhi he had his Indian prisoners killed, beat Sultan Nasir-ud-Din Mahmud's army and its war elephants, and sacked the city for days before withdrawing with vast loot and craftsmen; the Delhi Sultanate never recovered its power.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chagatai Khanate",
+       "Ilkhanate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Sultanate of Delhi"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Over the Hindu Kush to Delhi",
+      "path": [
+       [
+        66.96,
+        39.65
+       ],
+       [
+        69.17,
+        34.53
+       ],
+       [
+        72.24,
+        33.9
+       ],
+       [
+        74.3,
+        29.6
+       ],
+       [
+        77.2,
+        28.62
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Return north",
+      "path": [
+       [
+        77.2,
+        28.62
+       ],
+       [
+        77.7,
+        29.0
+       ],
+       [
+        78.16,
+        29.95
+       ],
+       [
+        74.86,
+        32.73
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mallu Iqbal",
+      "label": "Delhi army with war elephants",
+      "path": [
+       [
+        77.25,
+        28.65
+       ],
+       [
+        77.2,
+        28.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Delhi",
+      "kind": "battle",
+      "lon": 77.2,
+      "lat": 28.62,
+      "year": 1398,
+      "winner": 0,
+      "text": "Timur routed the sultan's army and sacked Delhi."
+     }
+    ]
+   },
+   {
+    "year": 1401,
+    "label": "1399 to 1401",
+    "title": "Syria and Baghdad",
+    "text": "Timur's seven-year campaign in the west began against the Mamluk Sultanate. He stormed Aleppo in 1400, defeated the Mamluk army and took Damascus in 1401, carrying off its craftsmen to Samarkand, then returned east to storm rebellious Baghdad, where his soldiers were ordered to bring back heads.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Timurid Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Mamluke Sultanate",
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "From Sivas into Syria",
+      "path": [
+       [
+        37.02,
+        39.75
+       ],
+       [
+        38.3,
+        38.35
+       ],
+       [
+        37.16,
+        36.2
+       ],
+       [
+        36.29,
+        33.51
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "Back to Baghdad",
+      "path": [
+       [
+        36.29,
+        33.51
+       ],
+       [
+        38.5,
+        35.0
+       ],
+       [
+        40.9,
+        34.45
+       ],
+       [
+        44.4,
+        33.33
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Faraj",
+      "label": "Mamluk army from Cairo",
+      "path": [
+       [
+        31.24,
+        30.05
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        36.29,
+        33.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Aleppo",
+      "kind": "siege",
+      "lon": 37.16,
+      "lat": 36.2,
+      "year": 1400,
+      "winner": 0,
+      "text": "Timur stormed the city after defeating its Mamluk garrison."
+     },
+     {
+      "name": "Fall of Damascus",
+      "kind": "siege",
+      "lon": 36.29,
+      "lat": 33.51,
+      "year": 1401,
+      "winner": 0,
+      "text": "The Mamluk sultan withdrew and Damascus was looted and burned."
+     },
+     {
+      "name": "Sack of Baghdad",
+      "kind": "siege",
+      "lon": 44.4,
+      "lat": 33.33,
+      "year": 1401,
+      "winner": 0,
+      "text": "Timur stormed Baghdad and massacred its people."
+     }
+    ]
+   },
+   {
+    "year": 1402,
+    "label": "1402",
+    "title": "Ankara",
+    "text": "The rivalry with Bayezid I came to a head when Timur marched into Anatolia. He outmanoeuvred the Ottoman army, cut it off from water near Ankara, and when the Anatolian vassals and Tatars changed sides he won a total victory and captured the sultan. He then took Smyrna from the Knights of St John and restored the Anatolian beyliks.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Timurid Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Mamluke Sultanate"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "From Sivas to Ankara",
+      "path": [
+       [
+        37.02,
+        39.75
+       ],
+       [
+        35.48,
+        38.73
+       ],
+       [
+        33.9,
+        39.4
+       ],
+       [
+        32.95,
+        40.0
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Bayezid I",
+      "label": "Ottoman army",
+      "path": [
+       [
+        29.06,
+        40.19
+       ],
+       [
+        31.5,
+        40.0
+       ],
+       [
+        33.6,
+        40.3
+       ],
+       [
+        32.95,
+        40.05
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "To Smyrna",
+      "path": [
+       [
+        32.95,
+        40.0
+       ],
+       [
+        30.5,
+        39.4
+       ],
+       [
+        28.0,
+        38.6
+       ],
+       [
+        27.14,
+        38.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ankara",
+      "kind": "battle",
+      "lon": 32.95,
+      "lat": 40.0,
+      "year": 1402,
+      "winner": 0,
+      "text": "Timur destroyed the Ottoman army and captured Bayezid."
+     },
+     {
+      "name": "Siege of Smyrna",
+      "kind": "siege",
+      "lon": 27.14,
+      "lat": 38.42,
+      "year": 1402,
+      "winner": 0,
+      "text": "Timur took the Hospitaller fortress in two weeks."
+     }
+    ]
+   },
+   {
+    "year": 1405,
+    "label": "1404 to 1405",
+    "title": "The last campaign",
+    "text": "Back in Samarkand, the aged Timur gathered a great army to invade Ming China and set out in the depth of winter. He fell ill and died at Otrar in February 1405. His sons and grandsons fought over the succession, and his vast conquests shrank to a Timurid realm in Persia and Central Asia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Timurid Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Great Khanate"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Timur",
+      "label": "March on China",
+      "path": [
+       [
+        66.96,
+        39.65
+       ],
+       [
+        68.0,
+        41.5
+       ],
+       [
+        68.3,
+        42.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Death of Timur",
+      "kind": "event",
+      "lon": 68.3,
+      "lat": 42.85,
+      "year": 1405,
+      "winner": null,
+      "text": "Timur died at Otrar and the invasion of China was abandoned."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "hussite-wars",
+  "name": "Hussite Wars",
+  "start": 1419,
+  "end": 1434,
+  "kind": "war",
+  "summary": "After the reformer Jan Hus was burned at the Council of Constance, his Czech followers rose against the Church and Emperor Sigismund, heir to the Bohemian crown. Hussite armies of peasants and townsmen, led by Jan Zizka and later Prokop the Great, used armoured war wagons and handguns to defeat five crusades and raid deep into Germany and Hungary. The movement split, and moderate Utraquist and Catholic nobles destroyed the radicals at Lipany in 1434, opening the way to a compromise with Rome.",
+  "sides": [
+   {
+    "name": "Hussites",
+    "color": "#c0702b",
+    "leaders": [
+     "Jan Zizka",
+     "Prokop the Great",
+     "Prokop the Lesser"
+    ]
+   },
+   {
+    "name": "Sigismund and the crusaders",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Emperor Sigismund",
+     "Frederick of Brandenburg",
+     "Cardinal Giuliano Cesarini"
+    ]
+   },
+   {
+    "name": "Lords' league (1434)",
+    "color": "#8a5cb0",
+    "leaders": [
+     "Divis Borek of Miletinek",
+     "Oldrich of Rozmberk"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 14.6,
+    "lat": 49.9,
+    "r": 3.4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1420,
+    "label": "1419 to 1420",
+    "title": "Defenestration and the first crusade",
+    "text": "In July 1419 radical Hussites threw Catholic councillors from the windows of Prague's New Town Hall, and King Wenceslas IV died weeks later. When his brother Sigismund claimed the throne, the Pope proclaimed a crusade. Jan Zizka led his followers to the new fortress town of Tabor, then back to Prague, where his men beat the crusaders on Vitkov Hill and Sigismund had to retreat.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Kingdom of Hungary"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Sigismund",
+      "label": "First crusade from Silesia",
+      "path": [
+       [
+        17.04,
+        51.11
+       ],
+       [
+        15.83,
+        50.21
+       ],
+       [
+        15.27,
+        49.95
+       ],
+       [
+        14.5,
+        50.07
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jan Zizka",
+      "label": "From Plzen to Tabor",
+      "path": [
+       [
+        13.38,
+        49.75
+       ],
+       [
+        14.15,
+        49.31
+       ],
+       [
+        14.66,
+        49.41
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jan Zizka",
+      "label": "To the relief of Prague",
+      "path": [
+       [
+        14.66,
+        49.41
+       ],
+       [
+        14.7,
+        49.75
+       ],
+       [
+        14.45,
+        50.09
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Defenestration of Prague",
+      "kind": "event",
+      "lon": 14.42,
+      "lat": 50.08,
+      "year": 1419,
+      "winner": 0,
+      "text": "Hussites threw the town councillors from the windows, starting the revolt."
+     },
+     {
+      "name": "Battle of Vitkov Hill",
+      "kind": "battle",
+      "lon": 14.45,
+      "lat": 50.09,
+      "year": 1420,
+      "winner": 0,
+      "text": "Zizka's small force drove the crusaders off the heights above Prague."
+     }
+    ]
+   },
+   {
+    "year": 1422,
+    "label": "1421 to 1422",
+    "title": "War wagons victorious",
+    "text": "A second crusade from Saxony and the Rhineland fled from Zatec in 1421 as Hussite armies approached. Sigismund then invaded from Moravia and took Kutna Hora, but the blind Zizka broke out of encirclement with his wagon fort and in January 1422 routed the royal army at Nemecky Brod.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Kingdom of Hungary"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Electors of Saxony and the Rhine",
+      "label": "Second crusade to Zatec",
+      "path": [
+       [
+        12.9,
+        50.6
+       ],
+       [
+        13.4,
+        50.45
+       ],
+       [
+        13.55,
+        50.33
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sigismund",
+      "label": "Invasion from Moravia",
+      "path": [
+       [
+        16.61,
+        49.2
+       ],
+       [
+        15.59,
+        49.4
+       ],
+       [
+        15.27,
+        49.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jan Zizka",
+      "label": "Counterattack and pursuit",
+      "path": [
+       [
+        14.42,
+        50.08
+       ],
+       [
+        15.27,
+        49.95
+       ],
+       [
+        15.45,
+        49.75
+       ],
+       [
+        15.58,
+        49.61
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kutna Hora",
+      "kind": "battle",
+      "lon": 15.27,
+      "lat": 49.95,
+      "year": 1421,
+      "winner": null,
+      "text": "Sigismund took the town, but Zizka's wagon fort broke out at night."
+     },
+     {
+      "name": "Battle of Nemecky Brod",
+      "kind": "battle",
+      "lon": 15.58,
+      "lat": 49.61,
+      "year": 1422,
+      "winner": 0,
+      "text": "Zizka routed the royal army, which lost hundreds drowning in the river."
+     }
+    ]
+   },
+   {
+    "year": 1427,
+    "label": "1424 to 1427",
+    "title": "Prokop the Great",
+    "text": "Zizka died of plague in 1424, and the radical armies of Tabor and the Orphans came under the priest Prokop the Great. In 1426 the Hussites destroyed a Saxon army at Usti nad Labem, and in 1427 a third crusade led by Frederick of Brandenburg and Cardinal Beaufort panicked and fled at Tachov before battle was even joined.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Kingdom of Hungary"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        12.1,
+        50.3
+       ],
+       [
+        12.5,
+        49.9
+       ],
+       [
+        12.9,
+        49.4
+       ],
+       [
+        13.4,
+        49.1
+       ],
+       [
+        13.9,
+        48.8
+       ]
+      ],
+      "label": "Bohemian border"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Saxon army",
+      "label": "Relief of Usti",
+      "path": [
+       [
+        13.74,
+        51.05
+       ],
+       [
+        13.9,
+        50.85
+       ],
+       [
+        14.03,
+        50.66
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Frederick of Brandenburg",
+      "label": "Third crusade",
+      "path": [
+       [
+        11.08,
+        49.45
+       ],
+       [
+        12.0,
+        49.7
+       ],
+       [
+        12.99,
+        49.75
+       ],
+       [
+        12.63,
+        49.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prokop the Great",
+      "label": "Hussite field armies",
+      "path": [
+       [
+        14.42,
+        50.08
+       ],
+       [
+        13.38,
+        49.75
+       ],
+       [
+        12.99,
+        49.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Usti nad Labem",
+      "kind": "battle",
+      "lon": 14.03,
+      "lat": 50.66,
+      "year": 1426,
+      "winner": 0,
+      "text": "The Hussites crushed a large Saxon army."
+     },
+     {
+      "name": "Battle of Tachov",
+      "kind": "battle",
+      "lon": 12.63,
+      "lat": 49.8,
+      "year": 1427,
+      "winner": 0,
+      "text": "The crusaders fled in panic as the Hussites approached."
+     }
+    ]
+   },
+   {
+    "year": 1430,
+    "label": "1428 to 1433",
+    "title": "The beautiful rides",
+    "text": "Now on the offensive, Prokop led great raids, called the beautiful rides, into Silesia, Austria, Hungary, Saxony and Franconia, living off the land and forcing towns to pay ransom. The winter raid of 1429 to 1430 reached the edges of Leipzig, Bamberg and Nuremberg, and in 1433 a Hussite army fighting alongside Poland against the Teutonic Order reached the Baltic.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Kingdom of Hungary"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Prokop the Great",
+      "label": "Winter raid into Saxony and Franconia",
+      "path": [
+       [
+        14.42,
+        50.08
+       ],
+       [
+        13.74,
+        51.05
+       ],
+       [
+        12.4,
+        51.3
+       ],
+       [
+        12.13,
+        50.5
+       ],
+       [
+        10.89,
+        49.89
+       ],
+       [
+        11.08,
+        49.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Hussite army",
+      "label": "Raid into Hungary, 1428",
+      "path": [
+       [
+        14.42,
+        50.08
+       ],
+       [
+        16.61,
+        49.2
+       ],
+       [
+        17.11,
+        48.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jan Capek of San",
+      "label": "To the Baltic, 1433",
+      "path": [
+       [
+        15.83,
+        50.21
+       ],
+       [
+        17.04,
+        51.11
+       ],
+       [
+        18.0,
+        53.12
+       ],
+       [
+        18.56,
+        54.41
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Great raid of 1429 to 1430",
+      "kind": "war",
+      "lon": 11.5,
+      "lat": 50.2,
+      "year": 1430,
+      "winner": 0,
+      "text": "Hussite armies plundered Saxony and Franconia and extorted heavy ransoms."
+     },
+     {
+      "name": "Hussites reach the Baltic",
+      "kind": "event",
+      "lon": 18.56,
+      "lat": 54.41,
+      "year": 1433,
+      "winner": 0,
+      "text": "The Hussite army filled its flasks with seawater near Gdansk as a sign of victory."
+     }
+    ]
+   },
+   {
+    "year": 1431,
+    "label": "1431 to 1433",
+    "title": "Domazlice and Basel",
+    "text": "A fifth crusade of perhaps 100,000 men under Frederick of Brandenburg and Cardinal Cesarini crossed into western Bohemia in August 1431. At Domazlice the crusaders broke and fled when they heard the Hussite wagons and their battle hymn approaching. Unable to win by force, the Church invited the Hussites to the Council of Basel, which in 1433 granted the Utraquist moderates their key demand of communion in both kinds.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Kingdom of Hungary"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        12.1,
+        50.3
+       ],
+       [
+        12.5,
+        49.9
+       ],
+       [
+        12.9,
+        49.4
+       ],
+       [
+        13.4,
+        49.1
+       ],
+       [
+        13.9,
+        48.8
+       ]
+      ],
+      "label": "Bohemian border"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Cardinal Cesarini",
+      "label": "Fifth crusade",
+      "path": [
+       [
+        11.08,
+        49.45
+       ],
+       [
+        12.1,
+        49.3
+       ],
+       [
+        12.84,
+        49.31
+       ],
+       [
+        12.93,
+        49.44
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prokop the Great",
+      "label": "Hussite army",
+      "path": [
+       [
+        14.42,
+        50.08
+       ],
+       [
+        13.38,
+        49.75
+       ],
+       [
+        12.93,
+        49.44
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Domazlice",
+      "kind": "battle",
+      "lon": 12.93,
+      "lat": 49.44,
+      "year": 1431,
+      "winner": 0,
+      "text": "The last crusade fled before the battle, abandoning its baggage."
+     },
+     {
+      "name": "Compacts of Basel",
+      "kind": "treaty",
+      "lon": 7.59,
+      "lat": 47.56,
+      "year": 1433,
+      "winner": null,
+      "text": "The Council granted the moderates communion in both kinds, splitting the Hussites."
+     }
+    ]
+   },
+   {
+    "year": 1434,
+    "label": "1434",
+    "title": "Lipany",
+    "text": "The compromise split the Hussites. A league of Utraquist and Catholic lords seized Prague's New Town and met the radical Taborites and Orphans at Lipany in May 1434. Feigning retreat, they lured the radicals out of their wagon fort and destroyed them, killing Prokop the Great; in 1436 Bohemia accepted Sigismund as king.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Kingdom of Hungary"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Divis Borek of Miletinek",
+      "label": "Lords' league army",
+      "path": [
+       [
+        14.42,
+        50.08
+       ],
+       [
+        14.75,
+        50.05
+       ],
+       [
+        14.97,
+        50.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prokop the Great",
+      "label": "Taborites and Orphans",
+      "path": [
+       [
+        15.17,
+        50.15
+       ],
+       [
+        15.05,
+        50.09
+       ],
+       [
+        14.97,
+        50.03
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Lipany",
+      "kind": "battle",
+      "lon": 14.97,
+      "lat": 50.03,
+      "year": 1434,
+      "winner": 2,
+      "text": "The moderates destroyed the radical Hussite armies and killed Prokop the Great."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "wars-of-the-roses",
+  "name": "Wars of the Roses",
+  "start": 1455,
+  "end": 1487,
+  "kind": "war",
+  "summary": "Two branches of the royal house of Plantagenet, Lancaster and York, fought for the English throne after the weak Henry VI lost France and his mind. Short, bloody campaigns saw the crown change hands repeatedly between Henry VI, Edward IV and Richard III, while great nobles such as Warwick the Kingmaker switched sides. Henry Tudor's victory at Bosworth in 1485 and at Stoke in 1487 ended the wars and founded the Tudor dynasty.",
+  "sides": [
+   {
+    "name": "Lancaster and Tudor",
+    "color": "#c0473a",
+    "leaders": [
+     "Henry VI",
+     "Margaret of Anjou",
+     "Duke of Somerset",
+     "Henry Tudor (Henry VII)"
+    ]
+   },
+   {
+    "name": "York",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Richard, Duke of York",
+     "Edward IV",
+     "Earl of Warwick",
+     "Richard III"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -1.6,
+    "lat": 52.6,
+    "r": 2.8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1455,
+    "label": "1455",
+    "title": "First St Albans",
+    "text": "Richard, Duke of York, shut out of power by Queen Margaret of Anjou and the Duke of Somerset, marched south with the Nevilles, Salisbury and his son Warwick. They caught the king's party in the streets of St Albans, killed Somerset and took control of Henry VI and the government.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Richard, Duke of York",
+      "label": "Yorkist lords march south",
+      "path": [
+       [
+        -1.08,
+        53.96
+       ],
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -0.25,
+        52.2
+       ],
+       [
+        -0.03,
+        51.81
+       ],
+       [
+        -0.34,
+        51.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Henry VI and Somerset",
+      "label": "Royal household from London",
+      "path": [
+       [
+        -0.13,
+        51.5
+       ],
+       [
+        -0.4,
+        51.66
+       ],
+       [
+        -0.34,
+        51.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "First Battle of St Albans",
+      "kind": "battle",
+      "lon": -0.34,
+      "lat": 51.75,
+      "year": 1455,
+      "winner": 1,
+      "text": "York's men broke into the town, killed Somerset and captured the king."
+     }
+    ]
+   },
+   {
+    "year": 1461,
+    "label": "1459 to 1461",
+    "title": "Wakefield and Towton",
+    "text": "Open war followed. The Yorkists captured Henry VI at Northampton in 1460, but York himself was killed at Wakefield and Margaret's northern army marched on London. York's son Edward won at Mortimer's Cross, was proclaimed Edward IV in London, and destroyed the Lancastrians at Towton in a snowstorm, the bloodiest battle ever fought on English soil.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "Scotland"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Margaret of Anjou",
+      "label": "Northern army marches south",
+      "path": [
+       [
+        -1.49,
+        53.66
+       ],
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -0.34,
+        51.75
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Edward of York",
+      "label": "From Mortimer's Cross to London",
+      "path": [
+       [
+        -2.86,
+        52.27
+       ],
+       [
+        -2.2,
+        51.86
+       ],
+       [
+        -1.26,
+        51.75
+       ],
+       [
+        -0.13,
+        51.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Edward IV and Warwick",
+      "label": "North to Towton",
+      "path": [
+       [
+        -0.13,
+        51.5
+       ],
+       [
+        -0.7,
+        52.6
+       ],
+       [
+        -1.15,
+        53.1
+       ],
+       [
+        -1.27,
+        53.84
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Wakefield",
+      "kind": "battle",
+      "lon": -1.49,
+      "lat": 53.66,
+      "year": 1460,
+      "winner": 0,
+      "text": "Richard of York was killed attacking a larger Lancastrian army."
+     },
+     {
+      "name": "Battle of Towton",
+      "kind": "battle",
+      "lon": -1.27,
+      "lat": 53.84,
+      "year": 1461,
+      "winner": 1,
+      "text": "Edward IV crushed the Lancastrians in a snowstorm, securing the crown."
+     }
+    ]
+   },
+   {
+    "year": 1471,
+    "label": "1469 to 1471",
+    "title": "Barnet and Tewkesbury",
+    "text": "Warwick the Kingmaker fell out with Edward IV, allied with his old enemy Margaret under French sponsorship, and in 1470 drove Edward into exile and restored Henry VI. Edward landed at Ravenspurn in March 1471, killed Warwick at Barnet in the fog, then raced west to catch Margaret's army at Tewkesbury, where her son was killed; Henry VI died in the Tower soon after.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Edward IV",
+      "label": "From Ravenspurn to Barnet",
+      "path": [
+       [
+        0.11,
+        53.6
+       ],
+       [
+        -1.08,
+        53.96
+       ],
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -1.51,
+        52.41
+       ],
+       [
+        -0.13,
+        51.5
+       ],
+       [
+        -0.2,
+        51.66
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Earl of Warwick",
+      "label": "Lancastrian army from Coventry",
+      "path": [
+       [
+        -1.51,
+        52.41
+       ],
+       [
+        -0.9,
+        52.0
+       ],
+       [
+        -0.2,
+        51.66
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Margaret of Anjou",
+      "label": "Landing at Weymouth",
+      "path": [
+       [
+        -2.46,
+        50.61
+       ],
+       [
+        -2.59,
+        51.45
+       ],
+       [
+        -2.16,
+        51.99
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Edward IV",
+      "label": "Race to Tewkesbury",
+      "path": [
+       [
+        -0.13,
+        51.5
+       ],
+       [
+        -1.26,
+        51.75
+       ],
+       [
+        -2.2,
+        51.86
+       ],
+       [
+        -2.16,
+        51.99
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Barnet",
+      "kind": "battle",
+      "lon": -0.2,
+      "lat": 51.66,
+      "year": 1471,
+      "winner": 1,
+      "text": "Warwick was killed when the Lancastrians mistook their own allies in the fog."
+     },
+     {
+      "name": "Battle of Tewkesbury",
+      "kind": "battle",
+      "lon": -2.16,
+      "lat": 51.99,
+      "year": 1471,
+      "winner": 1,
+      "text": "The Lancastrian heir Edward of Westminster was killed and the cause seemed finished."
+     }
+    ]
+   },
+   {
+    "year": 1483,
+    "label": "1483",
+    "title": "Richard III seizes the throne",
+    "text": "When Edward IV died in April 1483, his brother Richard of Gloucester intercepted the boy king Edward V at Stony Stratford and took him to the Tower, where he and his brother disappeared. Richard was crowned in July. The Duke of Buckingham's rebellion that autumn collapsed in floods and he was executed, while the last Lancastrian claimant, Henry Tudor, waited in exile in Brittany.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "Britany"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Richard of Gloucester",
+      "label": "From Yorkshire to London",
+      "path": [
+       [
+        -1.81,
+        54.28
+       ],
+       [
+        -1.08,
+        53.96
+       ],
+       [
+        -0.85,
+        52.06
+       ],
+       [
+        -0.13,
+        51.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Buckingham",
+      "label": "Failed rising from Brecon",
+      "path": [
+       [
+        -3.39,
+        51.95
+       ],
+       [
+        -2.8,
+        51.98
+       ],
+       [
+        -2.72,
+        52.06
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Henry Tudor",
+      "label": "Abortive crossing from Brittany",
+      "path": [
+       [
+        -3.45,
+        48.75
+       ],
+       [
+        -4.0,
+        49.6
+       ],
+       [
+        -4.2,
+        50.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Usurpation of Richard III",
+      "kind": "event",
+      "lon": -0.08,
+      "lat": 51.51,
+      "year": 1483,
+      "winner": 1,
+      "text": "Edward V and his brother vanished in the Tower as Richard took the crown."
+     },
+     {
+      "name": "Buckingham's rebellion fails",
+      "kind": "event",
+      "lon": -1.8,
+      "lat": 51.07,
+      "year": 1483,
+      "winner": 1,
+      "text": "Buckingham was betrayed and beheaded at Salisbury."
+     }
+    ]
+   },
+   {
+    "year": 1485,
+    "label": "1485",
+    "title": "Bosworth",
+    "text": "With French money and troops, Henry Tudor sailed from Harfleur and landed at Mill Bay near Milford Haven in August 1485, gathering Welsh support on his march through Shrewsbury. Richard III met him near Market Bosworth; when the Stanleys finally intervened against him, Richard was killed charging at Henry, who was crowned Henry VII.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "English territory"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Henry Tudor",
+      "label": "Fleet from Harfleur",
+      "path": [
+       [
+        0.18,
+        49.5
+       ],
+       [
+        -2.0,
+        49.9
+       ],
+       [
+        -4.6,
+        50.3
+       ],
+       [
+        -5.17,
+        51.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Henry Tudor",
+      "label": "March through Wales",
+      "path": [
+       [
+        -5.17,
+        51.7
+       ],
+       [
+        -4.08,
+        52.41
+       ],
+       [
+        -3.15,
+        52.66
+       ],
+       [
+        -2.75,
+        52.71
+       ],
+       [
+        -1.83,
+        52.68
+       ],
+       [
+        -1.43,
+        52.58
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Richard III",
+      "label": "Royal army from Nottingham",
+      "path": [
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -1.13,
+        52.64
+       ],
+       [
+        -1.4,
+        52.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Bosworth",
+      "kind": "battle",
+      "lon": -1.43,
+      "lat": 52.58,
+      "year": 1485,
+      "winner": 0,
+      "text": "Richard III was killed and Henry Tudor took the crown."
+     }
+    ]
+   },
+   {
+    "year": 1487,
+    "label": "1487",
+    "title": "Stoke Field",
+    "text": "Yorkist exiles crowned a boy, Lambert Simnel, in Dublin as Edward VI. Led by the Earl of Lincoln with German mercenaries paid by Margaret of Burgundy and Irish troops, they landed in Furness and crossed the Pennines, but Henry VII destroyed them at Stoke near Newark, the last battle of the Wars of the Roses.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "English territory"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Earl of Lincoln",
+      "label": "From Dublin via Furness",
+      "path": [
+       [
+        -6.26,
+        53.35
+       ],
+       [
+        -4.5,
+        53.9
+       ],
+       [
+        -3.17,
+        54.06
+       ],
+       [
+        -1.66,
+        54.22
+       ],
+       [
+        -1.2,
+        53.6
+       ],
+       [
+        -0.83,
+        53.04
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Henry VII",
+      "label": "Royal army from Kenilworth",
+      "path": [
+       [
+        -1.58,
+        52.35
+       ],
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -0.83,
+        53.04
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Stoke Field",
+      "kind": "battle",
+      "lon": -0.83,
+      "lat": 53.04,
+      "year": 1487,
+      "winner": 0,
+      "text": "Henry VII crushed the last Yorkist army, and Lincoln was killed."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "siamese-khmer-wars",
+  "name": "Siamese-Khmer wars and the sack of Angkor",
+  "start": 1350,
+  "end": 1431,
+  "kind": "war",
+  "summary": "The Thai kingdom of Ayutthaya, founded in 1351 in the lower Chao Phraya valley, fought the declining Khmer Empire for control of mainland Southeast Asia. According to the chronicles Siamese armies took Angkor more than once before King Borommarachathirat II captured and sacked it in 1431. The Khmer court abandoned the great city and moved south toward Phnom Penh, and Ayutthaya became the leading power of the region.",
+  "sides": [
+   {
+    "name": "Ayutthaya (Siam)",
+    "color": "#c0473a",
+    "leaders": [
+     "Uthong (Ramathibodi I)",
+     "Ramesuan",
+     "Borommarachathirat II"
+    ]
+   },
+   {
+    "name": "Khmer Empire",
+    "color": "#3d8f8a",
+    "leaders": [
+     "Lampong",
+     "Ponhea Yat"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 102.3,
+    "lat": 13.8,
+    "r": 3.2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1351,
+    "label": "c. 1350 to 1351",
+    "title": "Founding of Ayutthaya",
+    "text": "The Thai ruler Uthong united the old Mon and Khmer influenced centres of Lavo (Lopburi) and Suphanburi and in 1351 founded Ayutthaya on an island in the Chao Phraya river. Sitting on the main trade route between the interior and the sea, the new kingdom immediately claimed the western lands that had once belonged to Angkor.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Luva",
+       "Sukhothai"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Khmer Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        103.8,
+        15.4
+       ],
+       [
+        102.6,
+        14.7
+       ],
+       [
+        102.3,
+        13.8
+       ],
+       [
+        102.1,
+        12.9
+       ],
+       [
+        101.9,
+        12.4
+       ]
+      ],
+      "label": "Siam-Khmer frontier, c. 1351"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Uthong",
+      "label": "From Suphanburi to the new capital",
+      "path": [
+       [
+        100.12,
+        14.47
+       ],
+       [
+        100.35,
+        14.4
+       ],
+       [
+        100.57,
+        14.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Founding of Ayutthaya",
+      "kind": "event",
+      "lon": 100.57,
+      "lat": 14.35,
+      "year": 1351,
+      "winner": 0,
+      "text": "Uthong was crowned as King Ramathibodi I of a new Siamese kingdom."
+     }
+    ]
+   },
+   {
+    "year": 1352,
+    "label": "c. 1352 to 1357",
+    "title": "First attack on Angkor",
+    "text": "According to the Ayutthaya chronicles, Uthong's son Prince Ramesuan led an army east and besieged Angkor around 1352, and the city fell after a long siege. Khmer princes recovered their capital within a few years, but the raid showed how far the Khmer had declined.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Luva",
+       "Sukhothai"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Khmer Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        103.8,
+        15.4
+       ],
+       [
+        102.6,
+        14.7
+       ],
+       [
+        102.3,
+        13.8
+       ],
+       [
+        102.1,
+        12.9
+       ],
+       [
+        101.9,
+        12.4
+       ]
+      ],
+      "label": "Siam-Khmer frontier, c. 1352"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Prince Ramesuan",
+      "label": "Siamese army to Angkor",
+      "path": [
+       [
+        100.57,
+        14.35
+       ],
+       [
+        101.37,
+        14.05
+       ],
+       [
+        102.07,
+        13.82
+       ],
+       [
+        102.97,
+        13.59
+       ],
+       [
+        103.86,
+        13.44
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Khmer royal army",
+      "label": "Defence of the capital",
+      "path": [
+       [
+        104.5,
+        13.0
+       ],
+       [
+        104.2,
+        13.3
+       ],
+       [
+        103.86,
+        13.44
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "First capture of Angkor",
+      "kind": "siege",
+      "lon": 103.86,
+      "lat": 13.44,
+      "year": 1352,
+      "winner": 0,
+      "text": "The chronicles record Angkor taken by the Siamese, though the Khmer soon recovered it."
+     }
+    ]
+   },
+   {
+    "year": 1394,
+    "label": "c. 1369 to 1394",
+    "title": "Angkor taken again",
+    "text": "Ayutthaya kept up the pressure while also forcing Sukhothai to submit in 1378. Ramesuan, now king, marched on Angkor again and according to the chronicles took it around 1393 to 1394, carrying off thousands of captives and placing a son on the Khmer throne. Once more the Khmer drove the Siamese out, but Angkor's western provinces around Chanthaburi and Korat were slipping away.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Luva",
+       "Sukhothai"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Khmer Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        104.0,
+        15.0
+       ],
+       [
+        103.0,
+        14.4
+       ],
+       [
+        102.7,
+        13.7
+       ],
+       [
+        102.5,
+        13.0
+       ],
+       [
+        102.3,
+        12.3
+       ]
+      ],
+      "label": "Siam-Khmer frontier, c. 1394"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "King Ramesuan",
+      "label": "Second invasion",
+      "path": [
+       [
+        100.57,
+        14.35
+       ],
+       [
+        101.37,
+        14.05
+       ],
+       [
+        102.07,
+        13.82
+       ],
+       [
+        102.97,
+        13.59
+       ],
+       [
+        103.86,
+        13.44
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Siamese army",
+      "label": "Chanthaburi coast",
+      "path": [
+       [
+        100.57,
+        14.35
+       ],
+       [
+        101.0,
+        13.3
+       ],
+       [
+        101.6,
+        12.75
+       ],
+       [
+        102.1,
+        12.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Second capture of Angkor",
+      "kind": "siege",
+      "lon": 103.86,
+      "lat": 13.44,
+      "year": 1394,
+      "winner": 0,
+      "text": "The chronicles say Ramesuan took the city and deported many of its people."
+     }
+    ]
+   },
+   {
+    "year": 1431,
+    "label": "1431",
+    "title": "The sack of Angkor",
+    "text": "King Borommarachathirat II of Ayutthaya invaded again and besieged Angkor for months. In 1431 the city fell; its treasures, Brahmin priests and many of its people were carried off to Ayutthaya, where Khmer court culture shaped Siamese kingship for centuries.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ayutthaya",
+       "Sukhothai"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Khmer Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        104.0,
+        14.6
+       ],
+       [
+        103.4,
+        14.1
+       ],
+       [
+        103.2,
+        13.6
+       ],
+       [
+        102.9,
+        12.9
+       ],
+       [
+        102.6,
+        12.2
+       ]
+      ],
+      "label": "Siam-Khmer frontier, 1431"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Borommarachathirat II",
+      "label": "Siege army to Angkor",
+      "path": [
+       [
+        100.57,
+        14.35
+       ],
+       [
+        101.37,
+        14.05
+       ],
+       [
+        102.07,
+        13.82
+       ],
+       [
+        102.97,
+        13.59
+       ],
+       [
+        103.86,
+        13.44
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ponhea Yat",
+      "label": "Khmer defenders",
+      "path": [
+       [
+        104.3,
+        13.2
+       ],
+       [
+        104.0,
+        13.35
+       ],
+       [
+        103.86,
+        13.44
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Angkor",
+      "kind": "siege",
+      "lon": 103.86,
+      "lat": 13.44,
+      "year": 1431,
+      "winner": 0,
+      "text": "Siamese troops took and plundered the Khmer capital after a long siege."
+     }
+    ]
+   },
+   {
+    "year": 1432,
+    "label": "1431 to c. 1434",
+    "title": "Angkor abandoned",
+    "text": "King Ponhea Yat judged Angkor too exposed to Siamese attack and moved the court south and east, first to Srei Santhor and then to Phnom Penh at the meeting of the Mekong and Tonle Sap rivers. The temples were left largely to monks and the jungle, and Cambodia would spend the next centuries squeezed between Siam and Vietnam.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ayutthaya",
+       "Sukhothai"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Khmer Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        104.0,
+        14.6
+       ],
+       [
+        103.4,
+        14.1
+       ],
+       [
+        103.2,
+        13.6
+       ],
+       [
+        102.9,
+        12.9
+       ],
+       [
+        102.6,
+        12.2
+       ]
+      ],
+      "label": "Siam-Khmer frontier, c. 1432"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ponhea Yat",
+      "label": "Khmer court moves south",
+      "path": [
+       [
+        103.86,
+        13.44
+       ],
+       [
+        104.4,
+        12.7
+       ],
+       [
+        104.9,
+        12.0
+       ],
+       [
+        105.07,
+        11.83
+       ],
+       [
+        104.92,
+        11.56
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Court moves to Phnom Penh",
+      "kind": "event",
+      "lon": 104.92,
+      "lat": 11.56,
+      "year": 1432,
+      "winner": null,
+      "text": "The Khmer capital left Angkor for the safer river country to the south."
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,5351 @@
+[
+ {
+  "id": "reconquista",
+  "name": "Reconquista",
+  "start": 722,
+  "end": 1492,
+  "kind": "conflict",
+  "summary": "For nearly eight centuries the Christian kingdoms of northern Iberia fought and bargained with the Muslim states of al-Andalus, pushing the frontier south from the Cantabrian mountains to the Duero, the Tagus, the Guadalquivir and finally Granada. The fall of Granada in 1492 completed the conquest and made Castile and Aragon, soon to be Spain, a crusading Catholic power on the eve of its overseas empire.",
+  "sides": [
+   {
+    "name": "Christian kingdoms",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Pelagius",
+     "Alfonso VI",
+     "Alfonso VIII",
+     "Ferdinand III",
+     "Isabella and Ferdinand"
+    ]
+   },
+   {
+    "name": "Al-Andalus and its allies",
+    "color": "#2e8b57",
+    "leaders": [
+     "Abd al-Rahman III",
+     "Almanzor",
+     "Yusuf ibn Tashfin",
+     "Muhammad al-Nasir",
+     "Muhammad XII (Boabdil)"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -4.5,
+    "lat": 40.0,
+    "r": 6.0
+   }
+  ],
+  "steps": [
+   {
+    "year": 722,
+    "label": "722",
+    "title": "Covadonga",
+    "text": "After the Umayyads overran Visigothic Spain in 711, Christian holdouts gathered in the Asturian mountains under the noble Pelagius. Around 722 he ambushed a Muslim column in the valley of Covadonga, and the small Kingdom of Asturias survived behind the Cantabrian range. Later chroniclers made this skirmish the starting point of the Reconquista.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Visigothic Kingdom"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Umayyad Caliphate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -8.5,
+        42.6
+       ],
+       [
+        -6.5,
+        42.85
+       ],
+       [
+        -4.5,
+        43.0
+       ],
+       [
+        -2.5,
+        43.0
+       ]
+      ],
+      "label": "Cantabrian mountains, c. 722"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Alqama",
+      "label": "Umayyad column",
+      "path": [
+       [
+        -5.57,
+        42.6
+       ],
+       [
+        -5.3,
+        43.0
+       ],
+       [
+        -5.07,
+        43.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Pelagius",
+      "label": "Asturian rebels",
+      "path": [
+       [
+        -5.85,
+        43.36
+       ],
+       [
+        -5.4,
+        43.35
+       ],
+       [
+        -5.07,
+        43.31
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Covadonga",
+      "kind": "battle",
+      "lon": -5.07,
+      "lat": 43.31,
+      "year": 722,
+      "winner": 0,
+      "text": "Pelagius's mountaineers routed an Umayyad force, securing an independent Christian kingdom in Asturias."
+     }
+    ]
+   },
+   {
+    "year": 997,
+    "label": "910 to 1002",
+    "title": "The Duero frontier and Almanzor",
+    "text": "Asturias pushed its frontier south to the Duero and moved its capital to León in 910. Abd al-Rahman III proclaimed a caliphate in Córdoba but was beaten by Ramiro II at Simancas in 939. At the end of the century the chamberlain Almanzor struck back with yearly raids, sacking Barcelona in 985 and Santiago de Compostela in 997.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Asturias"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Emirate of Córdoba"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -8.6,
+        41.15
+       ],
+       [
+        -6.8,
+        41.3
+       ],
+       [
+        -5.75,
+        41.5
+       ],
+       [
+        -4.6,
+        41.55
+       ],
+       [
+        -3.69,
+        41.67
+       ],
+       [
+        -2.47,
+        41.76
+       ]
+      ],
+      "label": "Duero frontier, 10th century"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ramiro II",
+      "label": "Leonese army",
+      "path": [
+       [
+        -5.57,
+        42.6
+       ],
+       [
+        -5.2,
+        42.1
+       ],
+       [
+        -4.83,
+        41.59
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Almanzor",
+      "label": "Raid on Santiago",
+      "path": [
+       [
+        -4.78,
+        37.88
+       ],
+       [
+        -6.0,
+        39.5
+       ],
+       [
+        -7.0,
+        41.0
+       ],
+       [
+        -8.0,
+        42.2
+       ],
+       [
+        -8.54,
+        42.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Simancas",
+      "kind": "battle",
+      "lon": -4.83,
+      "lat": 41.59,
+      "year": 939,
+      "winner": 0,
+      "text": "Ramiro II of León defeated Caliph Abd al-Rahman III, holding the Duero line."
+     },
+     {
+      "name": "Sack of Santiago",
+      "kind": "event",
+      "lon": -8.54,
+      "lat": 42.88,
+      "year": 997,
+      "winner": 1,
+      "text": "Almanzor burned the shrine city of Santiago, the height of Córdoba's power."
+     }
+    ]
+   },
+   {
+    "year": 1085,
+    "label": "1031 to 1086",
+    "title": "Taifas, Toledo and the Almoravids",
+    "text": "The caliphate of Córdoba collapsed in 1031 into rival taifa kingdoms that paid tribute to Christian kings. Alfonso VI of León and Castile took the old Visigothic capital of Toledo in 1085, carrying the frontier to the Tagus. Alarmed, the taifa kings called in the Almoravids of Morocco, whose emir Yusuf ibn Tashfin crushed Alfonso at Sagrajas in 1086.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "León",
+       "Castilla",
+       "Navarre",
+       "Aragón"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Caliphate of Córdoba"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -8.6,
+        40.2
+       ],
+       [
+        -6.5,
+        39.9
+       ],
+       [
+        -4.0,
+        39.7
+       ],
+       [
+        -2.5,
+        40.3
+       ],
+       [
+        -1.2,
+        41.3
+       ],
+       [
+        0.5,
+        41.9
+       ],
+       [
+        1.5,
+        41.6
+       ]
+      ],
+      "label": "Frontier after Toledo, 1085"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alfonso VI",
+      "label": "Castilian army",
+      "path": [
+       [
+        -3.7,
+        42.34
+       ],
+       [
+        -4.0,
+        41.0
+       ],
+       [
+        -4.02,
+        39.86
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Yusuf ibn Tashfin",
+      "label": "Almoravid army",
+      "path": [
+       [
+        -5.45,
+        36.13
+       ],
+       [
+        -5.98,
+        37.39
+       ],
+       [
+        -6.5,
+        38.3
+       ],
+       [
+        -6.92,
+        38.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Toledo",
+      "kind": "siege",
+      "lon": -4.02,
+      "lat": 39.86,
+      "year": 1085,
+      "winner": 0,
+      "text": "Alfonso VI took Toledo, the first great Muslim city to fall for good."
+     },
+     {
+      "name": "Battle of Sagrajas",
+      "kind": "battle",
+      "lon": -6.92,
+      "lat": 38.88,
+      "year": 1086,
+      "winner": 1,
+      "text": "Yusuf ibn Tashfin routed Alfonso VI and brought al-Andalus under Almoravid rule."
+     }
+    ]
+   },
+   {
+    "year": 1147,
+    "label": "1086 to 1147",
+    "title": "Zaragoza and Lisbon",
+    "text": "The Almoravids reunited al-Andalus and retook Valencia after El Cid's death, but could not regain Toledo. In the Ebro valley Alfonso I of Aragon, the Battler, captured Zaragoza in 1118. In the west Afonso Henriques made Portugal a kingdom and in 1147, helped by crusaders sailing to the Holy Land, took Lisbon.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "León",
+       "Castilla",
+       "Navarre",
+       "Aragón"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Almoravid dynasty"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -9.3,
+        39.2
+       ],
+       [
+        -8.0,
+        39.5
+       ],
+       [
+        -5.5,
+        39.6
+       ],
+       [
+        -4.0,
+        39.6
+       ],
+       [
+        -2.0,
+        40.6
+       ],
+       [
+        -0.5,
+        41.0
+       ],
+       [
+        0.6,
+        40.8
+       ]
+      ],
+      "label": "Tagus and Ebro frontier, c. 1147"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alfonso I of Aragon",
+      "label": "Aragonese army",
+      "path": [
+       [
+        -0.55,
+        42.57
+       ],
+       [
+        -0.41,
+        42.14
+       ],
+       [
+        -0.88,
+        41.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Afonso Henriques",
+      "label": "Portuguese and crusaders",
+      "path": [
+       [
+        -8.43,
+        40.2
+       ],
+       [
+        -8.68,
+        39.24
+       ],
+       [
+        -9.14,
+        38.72
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Zaragoza",
+      "kind": "siege",
+      "lon": -0.88,
+      "lat": 41.65,
+      "year": 1118,
+      "winner": 0,
+      "text": "Alfonso the Battler took Zaragoza, opening the Ebro valley to Aragon."
+     },
+     {
+      "name": "Siege of Lisbon",
+      "kind": "siege",
+      "lon": -9.14,
+      "lat": 38.72,
+      "year": 1147,
+      "winner": 0,
+      "text": "Portuguese and northern crusaders captured Lisbon, the future capital of Portugal."
+     }
+    ]
+   },
+   {
+    "year": 1212,
+    "label": "1195 to 1212",
+    "title": "Las Navas de Tolosa",
+    "text": "The Almohads, a new Moroccan dynasty, replaced the Almoravids and crushed Alfonso VIII of Castile at Alarcos in 1195. The pope proclaimed a crusade, and in 1212 Alfonso VIII, Peter II of Aragon and Sancho VII of Navarre crossed the Sierra Morena through a hidden pass. They destroyed the army of Caliph Muhammad al-Nasir at Las Navas de Tolosa, breaking Almohad power in Spain.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Castilla",
+       "León",
+       "Portugal",
+       "Navarre",
+       "Aragón"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Almohad Caliphate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -8.9,
+        38.0
+       ],
+       [
+        -7.0,
+        38.7
+       ],
+       [
+        -5.0,
+        38.8
+       ],
+       [
+        -3.6,
+        38.4
+       ],
+       [
+        -2.0,
+        38.9
+       ],
+       [
+        -1.2,
+        39.8
+       ],
+       [
+        -0.2,
+        40.3
+       ]
+      ],
+      "label": "Frontier before Las Navas, 1212"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alfonso VIII",
+      "label": "Crusader army",
+      "path": [
+       [
+        -4.02,
+        39.86
+       ],
+       [
+        -3.83,
+        39.07
+       ],
+       [
+        -3.6,
+        38.6
+       ],
+       [
+        -3.58,
+        38.28
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Muhammad al-Nasir",
+      "label": "Almohad army",
+      "path": [
+       [
+        -5.98,
+        37.39
+       ],
+       [
+        -4.78,
+        37.88
+       ],
+       [
+        -3.79,
+        37.77
+       ],
+       [
+        -3.58,
+        38.28
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Alarcos",
+      "kind": "battle",
+      "lon": -3.97,
+      "lat": 38.94,
+      "year": 1195,
+      "winner": 1,
+      "text": "The Almohads routed Alfonso VIII and pushed the frontier back toward Toledo."
+     },
+     {
+      "name": "Battle of Las Navas de Tolosa",
+      "kind": "battle",
+      "lon": -3.58,
+      "lat": 38.28,
+      "year": 1212,
+      "winner": 0,
+      "text": "The allied Christian kings shattered the Almohad army, the turning point of the Reconquista."
+     }
+    ]
+   },
+   {
+    "year": 1248,
+    "label": "1228 to 1249",
+    "title": "Córdoba and Seville",
+    "text": "As the Almohad state fell apart, Ferdinand III, who united Castile and León in 1230, took Córdoba in 1236 and Seville in 1248. James I of Aragon conquered Majorca in 1229 and Valencia in 1238, and Portugal reached the Algarve in 1249. Only the Nasrid emirate of Granada survived, as a tribute-paying vassal of Castile.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Castilla",
+       "León",
+       "Portugal",
+       "Navarre",
+       "Aragón"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Almohad Caliphate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -5.6,
+        36.4
+       ],
+       [
+        -5.0,
+        37.0
+       ],
+       [
+        -4.0,
+        37.5
+       ],
+       [
+        -3.0,
+        37.65
+       ],
+       [
+        -2.2,
+        37.6
+       ],
+       [
+        -1.6,
+        37.35
+       ]
+      ],
+      "label": "Border of Granada, c. 1250"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ferdinand III",
+      "label": "Castilian army",
+      "path": [
+       [
+        -4.02,
+        39.86
+       ],
+       [
+        -3.93,
+        38.98
+       ],
+       [
+        -4.78,
+        37.88
+       ],
+       [
+        -5.98,
+        37.39
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "James I of Aragon",
+      "label": "Aragonese army",
+      "path": [
+       [
+        -1.1,
+        40.34
+       ],
+       [
+        -0.6,
+        39.9
+       ],
+       [
+        -0.38,
+        39.47
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "James I of Aragon",
+      "label": "Fleet to Majorca",
+      "path": [
+       [
+        2.17,
+        41.38
+       ],
+       [
+        2.4,
+        40.5
+       ],
+       [
+        2.65,
+        39.57
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Córdoba",
+      "kind": "siege",
+      "lon": -4.78,
+      "lat": 37.88,
+      "year": 1236,
+      "winner": 0,
+      "text": "Ferdinand III took the old caliphal capital and turned its great mosque into a cathedral."
+     },
+     {
+      "name": "Fall of Valencia",
+      "kind": "siege",
+      "lon": -0.38,
+      "lat": 39.47,
+      "year": 1238,
+      "winner": 0,
+      "text": "James I of Aragon captured Valencia after a long siege."
+     },
+     {
+      "name": "Fall of Seville",
+      "kind": "siege",
+      "lon": -5.98,
+      "lat": 37.39,
+      "year": 1248,
+      "winner": 0,
+      "text": "Seville surrendered to Ferdinand III after a sixteen-month siege by land and river."
+     }
+    ]
+   },
+   {
+    "year": 1340,
+    "label": "1275 to 1350",
+    "title": "The Battle of the Strait",
+    "text": "For a century the Marinid sultans of Morocco crossed the Strait of Gibraltar to help Granada. In 1340 Alfonso XI of Castile and Afonso IV of Portugal routed the Marinid sultan Abu al-Hasan and Yusuf I of Granada on the Río Salado near Tarifa. The capture of Algeciras in 1344 closed the strait to further African armies.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Castile",
+       "Portugal",
+       "Aragón"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Granada",
+       "Morocco"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -5.6,
+        36.4
+       ],
+       [
+        -5.0,
+        37.0
+       ],
+       [
+        -4.0,
+        37.5
+       ],
+       [
+        -3.0,
+        37.65
+       ],
+       [
+        -2.2,
+        37.6
+       ],
+       [
+        -1.6,
+        37.35
+       ]
+      ],
+      "label": "Border of Granada, 1340"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Abu al-Hasan",
+      "label": "Marinid army",
+      "path": [
+       [
+        -5.32,
+        35.89
+       ],
+       [
+        -5.45,
+        36.05
+       ],
+       [
+        -5.45,
+        36.13
+       ],
+       [
+        -5.6,
+        36.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alfonso XI",
+      "label": "Castilian and Portuguese army",
+      "path": [
+       [
+        -5.98,
+        37.39
+       ],
+       [
+        -5.8,
+        36.7
+       ],
+       [
+        -5.6,
+        36.03
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Río Salado",
+      "kind": "battle",
+      "lon": -5.62,
+      "lat": 36.05,
+      "year": 1340,
+      "winner": 0,
+      "text": "Castile and Portugal crushed the last great Moroccan army to invade Iberia."
+     },
+     {
+      "name": "Siege of Algeciras",
+      "kind": "siege",
+      "lon": -5.45,
+      "lat": 36.13,
+      "year": 1344,
+      "winner": 0,
+      "text": "Alfonso XI took the key port on the strait after a two-year siege."
+     }
+    ]
+   },
+   {
+    "year": 1491,
+    "label": "1482 to 1492",
+    "title": "The Fall of Granada",
+    "text": "Isabella of Castile and Ferdinand of Aragon, married in 1469, launched the final war on Granada in 1482. Exploiting a civil war between Muhammad XII, known as Boabdil, and his uncle al-Zagal, they took Málaga in 1487 and Baza in 1489, then besieged Granada from their camp city of Santa Fe. Boabdil surrendered the Alhambra on 2 January 1492, ending Muslim rule in Iberia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Castile",
+       "Aragón"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Granada"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -4.4,
+        36.9
+       ],
+       [
+        -4.1,
+        37.3
+       ],
+       [
+        -3.6,
+        37.45
+       ],
+       [
+        -3.0,
+        37.4
+       ],
+       [
+        -2.6,
+        37.1
+       ]
+      ],
+      "label": "Siege lines around Granada, 1491"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ferdinand of Aragon",
+      "label": "Castilian army to Málaga",
+      "path": [
+       [
+        -4.78,
+        37.88
+       ],
+       [
+        -4.15,
+        37.17
+       ],
+       [
+        -4.42,
+        36.72
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ferdinand of Aragon",
+      "label": "Siege of Granada",
+      "path": [
+       [
+        -3.79,
+        37.77
+       ],
+       [
+        -3.72,
+        37.45
+       ],
+       [
+        -3.72,
+        37.19
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Muhammad XII (Boabdil)",
+      "label": "Nasrid garrison",
+      "path": [
+       [
+        -4.42,
+        36.72
+       ],
+       [
+        -3.9,
+        37.0
+       ],
+       [
+        -3.6,
+        37.18
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Málaga",
+      "kind": "siege",
+      "lon": -4.42,
+      "lat": 36.72,
+      "year": 1487,
+      "winner": 0,
+      "text": "The fall of Málaga cut Granada off from help by sea."
+     },
+     {
+      "name": "Surrender of Granada",
+      "kind": "treaty",
+      "lon": -3.59,
+      "lat": 37.18,
+      "year": 1492,
+      "winner": 0,
+      "text": "Boabdil handed over the Alhambra to Isabella and Ferdinand, completing the Reconquista."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "struggle-for-sicily",
+  "name": "Struggle for Sicily and southern Italy",
+  "start": 827,
+  "end": 1091,
+  "kind": "war",
+  "summary": "Aghlabid armies from Tunisia spent 75 years taking Sicily from the Byzantine Empire, which then kept trying to win it back. In the 11th century Norman mercenaries turned conquerors under Robert Guiscard and Roger I, driving the Byzantines out of southern Italy and taking Sicily from its Muslim emirs by 1091. Their conquests became the Kingdom of Sicily, a meeting point of Latin, Greek and Arab culture.",
+  "sides": [
+   {
+    "name": "Muslim Sicily (Aghlabids and Kalbids)",
+    "color": "#2e8b57",
+    "leaders": [
+     "Asad ibn al-Furat",
+     "Ibrahim II",
+     "Kalbid emirs"
+    ]
+   },
+   {
+    "name": "Byzantine Empire",
+    "color": "#8a4fb0",
+    "leaders": [
+     "George Maniakes"
+    ]
+   },
+   {
+    "name": "Normans",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Robert Guiscard",
+     "Roger I of Sicily"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 14.3,
+    "lat": 37.6,
+    "r": 1.8
+   },
+   {
+    "lon": 16.2,
+    "lat": 40.4,
+    "r": 2.0
+   },
+   {
+    "lon": 11.4,
+    "lat": 36.8,
+    "r": 1.3
+   }
+  ],
+  "steps": [
+   {
+    "year": 831,
+    "label": "827 to 831",
+    "title": "The Aghlabid landing",
+    "text": "A rebel Byzantine admiral, Euphemius, invited the Aghlabid emirs of Ifriqiya into Sicily. In 827 the aged jurist Asad ibn al-Furat landed at Mazara with about 10,000 men and marched on Syracuse, but plague broke the siege. Reinforcements took Palermo in 831, which became the capital of Muslim Sicily.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Aghlabid Emirate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        13.95,
+        38.05
+       ],
+       [
+        13.85,
+        37.6
+       ],
+       [
+        13.95,
+        37.1
+       ]
+      ],
+      "label": "Line of conquest, c. 831"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Asad ibn al-Furat",
+      "label": "Aghlabid fleet",
+      "path": [
+       [
+        10.64,
+        35.83
+       ],
+       [
+        11.5,
+        36.8
+       ],
+       [
+        12.59,
+        37.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Asad ibn al-Furat",
+      "label": "March on Syracuse",
+      "path": [
+       [
+        12.59,
+        37.65
+       ],
+       [
+        13.6,
+        37.3
+       ],
+       [
+        14.5,
+        37.0
+       ],
+       [
+        15.29,
+        37.07
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Landing at Mazara",
+      "kind": "event",
+      "lon": 12.59,
+      "lat": 37.65,
+      "year": 827,
+      "winner": 0,
+      "text": "The Aghlabid army came ashore at Mazara and defeated the local Byzantine forces."
+     },
+     {
+      "name": "Fall of Palermo",
+      "kind": "siege",
+      "lon": 13.36,
+      "lat": 38.12,
+      "year": 831,
+      "winner": 0,
+      "text": "Palermo fell after a year-long siege and became the Muslim capital of the island."
+     }
+    ]
+   },
+   {
+    "year": 878,
+    "label": "831 to 878",
+    "title": "Enna and Syracuse",
+    "text": "The conquest went fortress by fortress across the mountainous interior, while Arab raiders also struck mainland Italy and even sacked the outskirts of Rome in 846. Enna, the island's central stronghold, fell in 859. In 878 Syracuse, the Byzantine capital of Sicily, was stormed after a nine-month siege.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Aghlabid Emirate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.1,
+        38.15
+       ],
+       [
+        14.95,
+        37.8
+       ],
+       [
+        15.2,
+        37.6
+       ]
+      ],
+      "label": "Byzantine northeast, c. 878"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Aghlabid governors",
+      "label": "Palermo to Enna",
+      "path": [
+       [
+        13.36,
+        38.12
+       ],
+       [
+        13.9,
+        37.8
+       ],
+       [
+        14.28,
+        37.57
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ja'far ibn Muhammad",
+      "label": "Siege of Syracuse",
+      "path": [
+       [
+        14.28,
+        37.57
+       ],
+       [
+        14.9,
+        37.3
+       ],
+       [
+        15.29,
+        37.07
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Enna",
+      "kind": "siege",
+      "lon": 14.28,
+      "lat": 37.57,
+      "year": 859,
+      "winner": 0,
+      "text": "The Aghlabids took the central fortress of Castrogiovanni through a sewer tunnel."
+     },
+     {
+      "name": "Fall of Syracuse",
+      "kind": "siege",
+      "lon": 15.29,
+      "lat": 37.07,
+      "year": 878,
+      "winner": 0,
+      "text": "Syracuse was stormed and sacked, leaving the Byzantines only the northeast corner."
+     }
+    ]
+   },
+   {
+    "year": 965,
+    "label": "902 to 965",
+    "title": "Taormina and Rometta",
+    "text": "Emir Ibrahim II took Taormina in 902, the last major Byzantine town. Under the Kalbid emirs, governors for the Fatimids, Sicily became a prosperous Arab island with Palermo one of the largest cities in Europe. A Byzantine expedition in 964 to 965 was crushed and the hill fort of Rometta, the last Christian holdout, fell.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Emirate of Sicily",
+       "Aghlabid Emirate"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.6,
+        38.3
+       ],
+       [
+        15.62,
+        38.0
+       ]
+      ],
+      "label": "Strait of Messina"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ibrahim II",
+      "label": "Aghlabid army",
+      "path": [
+       [
+        13.36,
+        38.12
+       ],
+       [
+        14.28,
+        37.57
+       ],
+       [
+        15.0,
+        37.6
+       ],
+       [
+        15.29,
+        37.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Manuel Phokas",
+      "label": "Byzantine relief army",
+      "path": [
+       [
+        15.65,
+        38.11
+       ],
+       [
+        15.55,
+        38.19
+       ],
+       [
+        15.41,
+        38.17
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Taormina",
+      "kind": "siege",
+      "lon": 15.29,
+      "lat": 37.85,
+      "year": 902,
+      "winner": 0,
+      "text": "Ibrahim II stormed Taormina, the last important Byzantine city on the island."
+     },
+     {
+      "name": "Fall of Rometta",
+      "kind": "siege",
+      "lon": 15.41,
+      "lat": 38.17,
+      "year": 965,
+      "winner": 0,
+      "text": "After the Byzantine relief army was destroyed, Rometta surrendered and the conquest was complete."
+     }
+    ]
+   },
+   {
+    "year": 1040,
+    "label": "1038 to 1040",
+    "title": "Maniakes's counterattack",
+    "text": "Exploiting a civil war among the Kalbid emirs, the Byzantine general George Maniakes invaded with a mixed army that included Norman mercenaries and the Varangian Harald Hardrada. He took Messina, won at Troina in 1040 and captured Syracuse. He was then recalled to Constantinople under suspicion, and his gains were soon lost, but the Normans had seen how rich and divided Sicily was.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Emirate of Sicily"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        14.55,
+        38.1
+       ],
+       [
+        14.6,
+        37.6
+       ],
+       [
+        14.95,
+        37.1
+       ]
+      ],
+      "label": "Byzantine advance, 1040"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "George Maniakes",
+      "label": "Byzantine army",
+      "path": [
+       [
+        15.65,
+        38.11
+       ],
+       [
+        15.55,
+        38.19
+       ],
+       [
+        14.6,
+        37.78
+       ],
+       [
+        15.29,
+        37.07
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Troina",
+      "kind": "battle",
+      "lon": 14.6,
+      "lat": 37.78,
+      "year": 1040,
+      "winner": 1,
+      "text": "Maniakes routed the Kalbid army, but Byzantine infighting threw away the victory."
+     }
+    ]
+   },
+   {
+    "year": 1071,
+    "label": "1041 to 1071",
+    "title": "Robert Guiscard takes the mainland",
+    "text": "Normans hired to fight in southern Italy turned on their employers, defeating the Byzantines and in 1053 even a papal army at Civitate. Robert Guiscard, made Duke of Apulia and Calabria by the pope in 1059, took Reggio in 1060. When Bari fell to him in 1071 after a three-year siege, five centuries of Byzantine rule in Italy ended.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Duchy of Benevento"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "Emirate of Sicily"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        16.3,
+        41.45
+       ],
+       [
+        16.6,
+        40.9
+       ],
+       [
+        17.3,
+        40.6
+       ],
+       [
+        18.0,
+        40.2
+       ]
+      ],
+      "label": "Last Byzantine Apulia, 1068"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Robert Guiscard",
+      "label": "Norman army in Calabria",
+      "path": [
+       [
+        15.65,
+        41.0
+       ],
+       [
+        16.25,
+        39.3
+       ],
+       [
+        15.65,
+        38.11
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Robert Guiscard",
+      "label": "Siege of Bari",
+      "path": [
+       [
+        15.65,
+        41.0
+       ],
+       [
+        16.3,
+        41.1
+       ],
+       [
+        16.87,
+        41.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Civitate",
+      "kind": "battle",
+      "lon": 15.25,
+      "lat": 41.73,
+      "year": 1053,
+      "winner": 2,
+      "text": "The Normans crushed Pope Leo IX's army and forced the papacy to accept them."
+     },
+     {
+      "name": "Fall of Bari",
+      "kind": "siege",
+      "lon": 16.87,
+      "lat": 41.12,
+      "year": 1071,
+      "winner": 2,
+      "text": "Robert Guiscard took Bari, the last Byzantine stronghold in Italy."
+     }
+    ]
+   },
+   {
+    "year": 1072,
+    "label": "1061 to 1072",
+    "title": "Roger crosses to Sicily",
+    "text": "Invited by one of the quarrelling emirs, Robert's younger brother Roger crossed the Strait and took Messina in 1061. With a few hundred knights he beat a far larger Muslim army at Cerami in 1063. In 1072 the brothers besieged Palermo by land and sea and took the capital.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Emirate of Sicily"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Duchy of Benevento"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        14.6,
+        38.1
+       ],
+       [
+        14.5,
+        37.6
+       ],
+       [
+        14.8,
+        37.1
+       ]
+      ],
+      "label": "Norman front, 1063"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Roger I",
+      "label": "Norman knights",
+      "path": [
+       [
+        15.65,
+        38.11
+       ],
+       [
+        15.55,
+        38.19
+       ],
+       [
+        14.9,
+        37.95
+       ],
+       [
+        14.51,
+        37.81
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Robert Guiscard",
+      "label": "Norman fleet to Palermo",
+      "path": [
+       [
+        15.65,
+        38.11
+       ],
+       [
+        15.0,
+        38.6
+       ],
+       [
+        14.0,
+        38.3
+       ],
+       [
+        13.36,
+        38.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Cerami",
+      "kind": "battle",
+      "lon": 14.51,
+      "lat": 37.81,
+      "year": 1063,
+      "winner": 2,
+      "text": "Roger's small Norman force routed a much larger Muslim army."
+     },
+     {
+      "name": "Fall of Palermo",
+      "kind": "siege",
+      "lon": 13.36,
+      "lat": 38.12,
+      "year": 1072,
+      "winner": 2,
+      "text": "Robert and Roger took the capital after a five-month siege."
+     }
+    ]
+   },
+   {
+    "year": 1091,
+    "label": "1073 to 1091",
+    "title": "The last emirs",
+    "text": "Roger, now Count of Sicily, spent two more decades reducing the remaining Muslim strongholds in the south and east. The emir Ibn Abbad of Syracuse was killed in a sea battle in 1086, and Noto, the last town, surrendered in 1091, the same year Roger took Malta. Muslim subjects kept their faith under Norman rule, and their skills helped build the Kingdom of Sicily.",
+    "territories": [
+     {
+      "side": 2,
+      "polities": [
+       "Duchy of Benevento",
+       "Emirate of Sicily"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Roger I",
+      "label": "Norman army",
+      "path": [
+       [
+        13.36,
+        38.12
+       ],
+       [
+        14.28,
+        37.57
+       ],
+       [
+        15.29,
+        37.07
+       ],
+       [
+        15.07,
+        36.89
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Syracuse",
+      "kind": "siege",
+      "lon": 15.29,
+      "lat": 37.07,
+      "year": 1086,
+      "winner": 2,
+      "text": "Roger killed Emir Ibn Abbad at sea and took Syracuse."
+     },
+     {
+      "name": "Surrender of Noto",
+      "kind": "siege",
+      "lon": 15.07,
+      "lat": 36.89,
+      "year": 1091,
+      "winner": 2,
+      "text": "The last Muslim town in Sicily surrendered to Roger I."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "basil-ii-bulgarian-wars",
+  "name": "Byzantine-Bulgarian wars of Basil II",
+  "start": 976,
+  "end": 1018,
+  "kind": "war",
+  "summary": "After Byzantium conquered eastern Bulgaria in 971, Tsar Samuel rebuilt the Bulgarian state from Macedonia and raided deep into Greece. Emperor Basil II answered with forty years of campaigning, destroying Samuel's army at Kleidion in 1014 and annexing all of Bulgaria in 1018. The victory earned Basil the name Bulgar-slayer and returned the Danube frontier to Byzantium for the first time in centuries.",
+  "sides": [
+   {
+    "name": "Byzantine Empire",
+    "color": "#8a4fb0",
+    "leaders": [
+     "Basil II",
+     "Nikephoros Ouranos",
+     "Nikephoros Xiphias"
+    ]
+   },
+   {
+    "name": "Bulgarian Empire",
+    "color": "#c0473a",
+    "leaders": [
+     "Tsar Samuel",
+     "Gavril Radomir",
+     "Ivan Vladislav"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 22.6,
+    "lat": 41.8,
+    "r": 3.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 986,
+    "label": "976 to 986",
+    "title": "Samuel's rising and Trajan's Gate",
+    "text": "When John Tzimiskes died in 976, the four Cometopuli brothers led a revolt in western Bulgaria, and Samuel soon emerged as its ruler. He raided Thessaly and took Larissa in 986. The young Basil II marched to besiege Sredets, modern Sofia, but on his retreat Samuel ambushed and routed him in the pass of Trajan's Gate.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Bulgars"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        24.0,
+        44.0
+       ],
+       [
+        23.6,
+        43.0
+       ],
+       [
+        23.4,
+        42.4
+       ],
+       [
+        23.0,
+        41.5
+       ],
+       [
+        22.5,
+        40.8
+       ]
+      ],
+      "label": "Byzantine-Bulgarian line, 986"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Samuel",
+      "label": "Bulgarian army to Larissa",
+      "path": [
+       [
+        20.8,
+        41.12
+       ],
+       [
+        21.5,
+        40.5
+       ],
+       [
+        22.42,
+        39.64
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Basil II",
+      "label": "Byzantine army to Sredets",
+      "path": [
+       [
+        24.75,
+        42.15
+       ],
+       [
+        23.94,
+        42.37
+       ],
+       [
+        23.32,
+        42.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Larissa",
+      "kind": "siege",
+      "lon": 22.42,
+      "lat": 39.64,
+      "year": 986,
+      "winner": 1,
+      "text": "Samuel took the Thessalian city and carried off its people and relics."
+     },
+     {
+      "name": "Battle of the Gates of Trajan",
+      "kind": "battle",
+      "lon": 23.94,
+      "lat": 42.37,
+      "year": 986,
+      "winner": 1,
+      "text": "Samuel ambushed Basil's retreating army, one of the worst Byzantine defeats of the age."
+     }
+    ]
+   },
+   {
+    "year": 997,
+    "label": "987 to 997",
+    "title": "Samuel's high tide and Spercheios",
+    "text": "While Basil fought rebel generals and eastern wars, Samuel retook northeastern Bulgaria and raided as far as the Peloponnese. In 997 the general Nikephoros Ouranos caught Samuel's returning army camped on the Spercheios river in Greece. A night attack across the flooded river destroyed it, and Samuel and his son barely escaped.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Bulgars"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.6,
+        44.6
+       ],
+       [
+        24.5,
+        43.0
+       ],
+       [
+        24.0,
+        42.2
+       ],
+       [
+        22.8,
+        41.2
+       ],
+       [
+        21.8,
+        40.3
+       ]
+      ],
+      "label": "Bulgarian frontier, c. 997"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Samuel",
+      "label": "Raid into Greece",
+      "path": [
+       [
+        20.8,
+        41.12
+       ],
+       [
+        22.42,
+        39.64
+       ],
+       [
+        22.4,
+        38.9
+       ],
+       [
+        22.7,
+        37.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikephoros Ouranos",
+      "label": "Byzantine army",
+      "path": [
+       [
+        22.94,
+        40.64
+       ],
+       [
+        22.42,
+        39.64
+       ],
+       [
+        22.3,
+        38.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Spercheios",
+      "kind": "battle",
+      "lon": 22.3,
+      "lat": 38.88,
+      "year": 997,
+      "winner": 0,
+      "text": "Ouranos destroyed Samuel's army in a surprise attack, ending Bulgarian raids into Greece."
+     }
+    ]
+   },
+   {
+    "year": 1003,
+    "label": "1000 to 1005",
+    "title": "The yearly campaigns",
+    "text": "Basil now campaigned every year to grind down Bulgaria. His generals took the old capitals of Pliska and Preslav in 1000, and Basil himself took Vidin on the Danube after an eight-month siege. In 1004 he beat Samuel near Skopje, leaving the Bulgarian heartland in Macedonia surrounded.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Bulgar Khanate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.6,
+        44.6
+       ],
+       [
+        22.6,
+        43.3
+       ],
+       [
+        22.9,
+        42.3
+       ],
+       [
+        22.6,
+        41.3
+       ],
+       [
+        21.8,
+        40.4
+       ]
+      ],
+      "label": "Byzantine advance, 1004"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Theodorokanos and Xiphias",
+      "label": "Taking Preslav",
+      "path": [
+       [
+        26.56,
+        41.68
+       ],
+       [
+        26.8,
+        42.5
+       ],
+       [
+        26.82,
+        43.16
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Basil II",
+      "label": "Siege of Vidin",
+      "path": [
+       [
+        26.56,
+        41.68
+       ],
+       [
+        25.5,
+        43.1
+       ],
+       [
+        24.0,
+        43.7
+       ],
+       [
+        22.88,
+        43.99
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Basil II",
+      "label": "Thrust to Skopje",
+      "path": [
+       [
+        22.88,
+        43.99
+       ],
+       [
+        22.2,
+        43.0
+       ],
+       [
+        21.43,
+        42.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Vidin",
+      "kind": "siege",
+      "lon": 22.88,
+      "lat": 43.99,
+      "year": 1002,
+      "winner": 0,
+      "text": "Basil took the Danube fortress, cutting Samuel off from the north."
+     },
+     {
+      "name": "Battle of Skopje",
+      "kind": "battle",
+      "lon": 21.43,
+      "lat": 42.0,
+      "year": 1004,
+      "winner": 0,
+      "text": "Basil defeated Samuel on the Vardar and took Skopje."
+     }
+    ]
+   },
+   {
+    "year": 1014,
+    "label": "1014",
+    "title": "Kleidion",
+    "text": "Samuel blocked the Kleidion pass below Mount Belasitsa with a long wall. While Basil attacked the front, Nikephoros Xiphias led troops over the mountain and fell on the Bulgarians from behind. Basil reportedly blinded some 15,000 prisoners and sent them home, and Samuel died of a stroke when they reached him at Prilep.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Bulgar Khanate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.5,
+        43.5
+       ],
+       [
+        22.6,
+        42.3
+       ],
+       [
+        23.0,
+        41.38
+       ],
+       [
+        22.2,
+        40.9
+       ],
+       [
+        21.5,
+        40.2
+       ]
+      ],
+      "label": "Front at Kleidion, 1014"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Basil II",
+      "label": "Main army",
+      "path": [
+       [
+        22.94,
+        40.64
+       ],
+       [
+        23.0,
+        41.1
+       ],
+       [
+        23.0,
+        41.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikephoros Xiphias",
+      "label": "Flanking march",
+      "path": [
+       [
+        23.25,
+        41.15
+       ],
+       [
+        23.2,
+        41.45
+       ],
+       [
+        23.0,
+        41.42
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Samuel",
+      "label": "Bulgarian army",
+      "path": [
+       [
+        21.55,
+        41.35
+       ],
+       [
+        22.4,
+        41.4
+       ],
+       [
+        23.0,
+        41.38
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kleidion",
+      "kind": "battle",
+      "lon": 23.0,
+      "lat": 41.38,
+      "year": 1014,
+      "winner": 0,
+      "text": "Basil's outflanking attack annihilated Samuel's army."
+     },
+     {
+      "name": "Death of Samuel",
+      "kind": "event",
+      "lon": 21.55,
+      "lat": 41.35,
+      "year": 1014,
+      "winner": null,
+      "text": "Samuel collapsed on seeing his blinded soldiers and died two days later."
+     }
+    ]
+   },
+   {
+    "year": 1018,
+    "label": "1015 to 1018",
+    "title": "The end of the First Bulgarian Empire",
+    "text": "Samuel's son Gavril Radomir was murdered by his cousin Ivan Vladislav, who fought on until he was killed besieging Dyrrhachium in 1018. Basil entered Ohrid, the last capital, and the Bulgarian nobles and royal family submitted. Bulgaria became Byzantine provinces for the next 167 years.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Byzantine Empire",
+       "Bulgar Khanate"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ivan Vladislav",
+      "label": "Bulgarian army",
+      "path": [
+       [
+        20.8,
+        41.12
+       ],
+       [
+        20.1,
+        41.2
+       ],
+       [
+        19.45,
+        41.32
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Basil II",
+      "label": "Byzantine army to Ohrid",
+      "path": [
+       [
+        22.94,
+        40.64
+       ],
+       [
+        21.5,
+        41.0
+       ],
+       [
+        20.8,
+        41.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Dyrrhachium",
+      "kind": "siege",
+      "lon": 19.45,
+      "lat": 41.32,
+      "year": 1018,
+      "winner": 0,
+      "text": "Ivan Vladislav was killed attacking the Byzantine port, and Bulgarian resistance collapsed."
+     },
+     {
+      "name": "Submission at Ohrid",
+      "kind": "treaty",
+      "lon": 20.8,
+      "lat": 41.12,
+      "year": 1018,
+      "winner": 0,
+      "text": "The Bulgarian court surrendered to Basil II, ending the First Bulgarian Empire."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "seljuk-conquests",
+  "name": "Seljuk conquests",
+  "start": 1037,
+  "end": 1092,
+  "kind": "war",
+  "summary": "Oghuz Turkish nomads led by the Seljuk brothers Tughril and Chaghri seized Khorasan from the Ghaznavids, then Persia and Iraq, where Tughril entered Baghdad in 1055 as protector of the Abbasid caliph. Alp Arslan's victory at Manzikert in 1071 opened Anatolia to Turkish settlement, and under Malik Shah the empire stretched from Central Asia to the Mediterranean. Its breakup after 1092 left the divided Muslim Levant that the crusaders would find.",
+  "sides": [
+   {
+    "name": "Seljuk Turks",
+    "color": "#b5652f",
+    "leaders": [
+     "Tughril Beg",
+     "Chaghri Beg",
+     "Alp Arslan",
+     "Malik Shah",
+     "Suleiman ibn Qutalmish"
+    ]
+   },
+   {
+    "name": "Ghaznavids, Buyids and Fatimids",
+    "color": "#2e8b57",
+    "leaders": [
+     "Mas'ud of Ghazni",
+     "al-Malik al-Rahim",
+     "al-Basasiri"
+    ]
+   },
+   {
+    "name": "Byzantine Empire",
+    "color": "#8a4fb0",
+    "leaders": [
+     "Romanos IV Diogenes"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 55.0,
+    "lat": 35.5,
+    "r": 9.0
+   },
+   {
+    "lon": 37.5,
+    "lat": 38.0,
+    "r": 6.0
+   }
+  ],
+  "steps": [
+   {
+    "year": 1040,
+    "label": "1037 to 1040",
+    "title": "Dandanaqan",
+    "text": "The Seljuk clan led its Turkmen herds across the Oxus into Ghaznavid Khorasan, and Tughril was proclaimed ruler in Nishapur in 1038. Sultan Mas'ud of Ghazni brought a heavy army with war elephants to drive them out. Near Merv in 1040 the mobile Turkish horse archers cut it off from water and routed it at Dandanaqan, and the Ghaznavids withdrew east.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Ghaznavid Emirate",
+       "Buwayhid Emirates"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        60.5,
+        39.0
+       ],
+       [
+        61.0,
+        37.5
+       ],
+       [
+        60.5,
+        36.0
+       ]
+      ],
+      "label": "Khorasan, 1040"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tughril Beg",
+      "label": "Seljuk horsemen",
+      "path": [
+       [
+        64.42,
+        39.77
+       ],
+       [
+        61.83,
+        37.6
+       ],
+       [
+        58.8,
+        36.21
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mas'ud of Ghazni",
+      "label": "Ghaznavid army",
+      "path": [
+       [
+        68.42,
+        33.55
+       ],
+       [
+        62.2,
+        34.35
+       ],
+       [
+        61.7,
+        37.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Tughril takes Nishapur",
+      "kind": "event",
+      "lon": 58.8,
+      "lat": 36.21,
+      "year": 1038,
+      "winner": 0,
+      "text": "The capital of Khorasan opened its gates and the khutba was read in Tughril's name."
+     },
+     {
+      "name": "Battle of Dandanaqan",
+      "kind": "battle",
+      "lon": 61.7,
+      "lat": 37.4,
+      "year": 1040,
+      "winner": 0,
+      "text": "The Seljuks destroyed the Ghaznavid army, winning Khorasan and an empire."
+     }
+    ]
+   },
+   {
+    "year": 1055,
+    "label": "1041 to 1055",
+    "title": "Persia and Baghdad",
+    "text": "Tughril swept west across the Iranian plateau, making Rayy his capital and taking Isfahan in 1051. The Buyid emirs who controlled the Abbasid caliph were weak and divided, and in 1055 Tughril entered Baghdad at the caliph's invitation. The caliph named him sultan, and the Seljuks became the champions of Sunni Islam against the Shia Fatimids of Egypt.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Buwayhid Emirates"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ghaznavid Emirate",
+       "Fatimid Caliphate"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        60.5,
+        37.5
+       ],
+       [
+        61.3,
+        35.0
+       ],
+       [
+        61.5,
+        33.0
+       ]
+      ],
+      "label": "Ghaznavid border"
+     },
+     {
+      "path": [
+       [
+        38.0,
+        37.5
+       ],
+       [
+        39.5,
+        35.5
+       ],
+       [
+        40.5,
+        33.5
+       ]
+      ],
+      "label": "Fatimid border"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tughril Beg",
+      "label": "Seljuk army",
+      "path": [
+       [
+        58.8,
+        36.21
+       ],
+       [
+        51.43,
+        35.6
+       ],
+       [
+        48.51,
+        34.8
+       ],
+       [
+        44.36,
+        33.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tughril Beg",
+      "label": "Siege of Isfahan",
+      "path": [
+       [
+        51.43,
+        35.6
+       ],
+       [
+        51.6,
+        34.0
+       ],
+       [
+        51.67,
+        32.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Isfahan",
+      "kind": "siege",
+      "lon": 51.67,
+      "lat": 32.65,
+      "year": 1051,
+      "winner": 0,
+      "text": "Tughril took Isfahan after a year-long siege."
+     },
+     {
+      "name": "Tughril enters Baghdad",
+      "kind": "event",
+      "lon": 44.36,
+      "lat": 33.31,
+      "year": 1055,
+      "winner": 0,
+      "text": "The caliph proclaimed Tughril sultan, ending a century of Buyid rule."
+     }
+    ]
+   },
+   {
+    "year": 1071,
+    "label": "1064 to 1071",
+    "title": "Manzikert",
+    "text": "Tughril's nephew Alp Arslan took the Armenian capital Ani in 1064, and Turkmen raiders pushed into Byzantine Anatolia. Emperor Romanos IV Diogenes marched east with a huge army while Alp Arslan was campaigning in Syria. Alp Arslan turned north, and at Manzikert in August 1071 the Byzantine army broke and Romanos was captured.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Buwayhid Emirates",
+       "Armenia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ghaznavid Emirate",
+       "Fatimid Caliphate"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        40.0,
+        41.0
+       ],
+       [
+        41.5,
+        39.6
+       ],
+       [
+        40.2,
+        38.2
+       ],
+       [
+        38.0,
+        37.2
+       ]
+      ],
+      "label": "Byzantine eastern frontier, 1071"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Romanos IV Diogenes",
+      "label": "Byzantine army",
+      "path": [
+       [
+        28.97,
+        41.01
+       ],
+       [
+        32.85,
+        39.93
+       ],
+       [
+        37.0,
+        39.75
+       ],
+       [
+        41.27,
+        39.9
+       ],
+       [
+        42.53,
+        39.14
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alp Arslan",
+      "label": "Seljuk army",
+      "path": [
+       [
+        37.16,
+        36.2
+       ],
+       [
+        40.2,
+        37.9
+       ],
+       [
+        42.49,
+        38.75
+       ],
+       [
+        42.53,
+        39.14
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Ani",
+      "kind": "siege",
+      "lon": 43.57,
+      "lat": 40.51,
+      "year": 1064,
+      "winner": 0,
+      "text": "Alp Arslan stormed the Armenian capital, opening the road west."
+     },
+     {
+      "name": "Battle of Manzikert",
+      "kind": "battle",
+      "lon": 42.53,
+      "lat": 39.14,
+      "year": 1071,
+      "winner": 0,
+      "text": "Alp Arslan routed and captured Romanos IV, leaving Anatolia open to the Turks."
+     }
+    ]
+   },
+   {
+    "year": 1092,
+    "label": "1072 to 1092",
+    "title": "Anatolia, Syria and the peak under Malik Shah",
+    "text": "Byzantium fell into civil war after Manzikert, and Turkmen bands spread across Anatolia. Suleiman ibn Qutalmish made Nicaea, almost in sight of Constantinople, the capital of what became the Sultanate of Rum. In the south the commander Atsiz took Jerusalem in 1073 and Damascus in 1076 from the Fatimids, but when Malik Shah died in 1092 the empire split among his heirs.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Buwayhid Emirates",
+       "Armenia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ghaznavid Emirate",
+       "Fatimid Caliphate"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.5,
+        41.2
+       ],
+       [
+        30.0,
+        40.0
+       ],
+       [
+        29.0,
+        38.5
+       ],
+       [
+        28.0,
+        37.5
+       ]
+      ],
+      "label": "Byzantine-Turkish line, c. 1081"
+     },
+     {
+      "path": [
+       [
+        34.3,
+        31.4
+       ],
+       [
+        35.0,
+        31.2
+       ],
+       [
+        35.6,
+        31.0
+       ]
+      ],
+      "label": "Fatimid border, c. 1090"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Suleiman ibn Qutalmish",
+      "label": "Turkmen of Rum",
+      "path": [
+       [
+        42.53,
+        39.14
+       ],
+       [
+        37.0,
+        39.75
+       ],
+       [
+        32.49,
+        37.87
+       ],
+       [
+        29.72,
+        40.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Atsiz ibn Uvaq",
+      "label": "Turkmen army",
+      "path": [
+       [
+        37.16,
+        36.2
+       ],
+       [
+        36.29,
+        33.51
+       ],
+       [
+        35.23,
+        31.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Suleiman takes Nicaea",
+      "kind": "event",
+      "lon": 29.72,
+      "lat": 40.43,
+      "year": 1081,
+      "winner": 0,
+      "text": "Nicaea became the capital of the Seljuks of Rum, close to Constantinople."
+     },
+     {
+      "name": "Fall of Jerusalem",
+      "kind": "siege",
+      "lon": 35.23,
+      "lat": 31.78,
+      "year": 1073,
+      "winner": 0,
+      "text": "Atsiz took Jerusalem from the Fatimids."
+     },
+     {
+      "name": "Death of Malik Shah",
+      "kind": "event",
+      "lon": 44.36,
+      "lat": 33.31,
+      "year": 1092,
+      "winner": null,
+      "text": "The sultan's death, weeks after his vizier Nizam al-Mulk was murdered, split the empire."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "norman-conquest",
+  "name": "Norman Conquest of England",
+  "start": 1066,
+  "end": 1071,
+  "kind": "war",
+  "summary": "When Edward the Confessor died childless in January 1066, Harold Godwinson took the English crown, but both Harald Hardrada of Norway and William, Duke of Normandy, invaded to claim it. Harold beat the Norwegians at Stamford Bridge and was killed by William at Hastings weeks later, and William crushed English and Danish resistance by 1071. The conquest replaced the Anglo-Saxon elite with a French-speaking Norman aristocracy and tied England to continental Europe.",
+  "sides": [
+   {
+    "name": "Normans",
+    "color": "#3b6fb6",
+    "leaders": [
+     "William the Conqueror",
+     "Odo of Bayeux",
+     "William FitzOsbern"
+    ]
+   },
+   {
+    "name": "Anglo-Saxon England",
+    "color": "#c0473a",
+    "leaders": [
+     "Harold Godwinson",
+     "Edgar Atheling",
+     "Earls Edwin and Morcar",
+     "Hereward"
+    ]
+   },
+   {
+    "name": "Norwegians and Danes",
+    "color": "#c9922e",
+    "leaders": [
+     "Harald Hardrada",
+     "Tostig Godwinson",
+     "Sweyn II of Denmark"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -0.8,
+    "lat": 52.6,
+    "r": 2.8
+   },
+   {
+    "lon": 0.7,
+    "lat": 50.1,
+    "r": 1.1
+   }
+  ],
+  "steps": [
+   {
+    "year": 1066,
+    "label": "Sep 1066",
+    "title": "Fulford and Stamford Bridge",
+    "text": "Harald Hardrada of Norway, joined by Harold's exiled brother Tostig, sailed up the Humber and beat the northern earls at Fulford outside York on 20 September. King Harold, who had spent the summer guarding the south coast, marched north from London in about four days. On 25 September he surprised and destroyed the Norwegians at Stamford Bridge, killing Hardrada and Tostig.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "England"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Denmark-Norway"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Harald Hardrada",
+      "label": "Norwegian fleet",
+      "path": [
+       [
+        5.32,
+        60.39
+       ],
+       [
+        -3.0,
+        59.0
+       ],
+       [
+        -1.0,
+        56.5
+       ],
+       [
+        0.1,
+        54.3
+       ],
+       [
+        -1.06,
+        53.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Harold Godwinson",
+      "label": "Harold's march north",
+      "path": [
+       [
+        -0.13,
+        51.51
+       ],
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -1.26,
+        53.88
+       ],
+       [
+        -0.91,
+        53.99
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Fulford",
+      "kind": "battle",
+      "lon": -1.07,
+      "lat": 53.93,
+      "year": 1066,
+      "winner": 2,
+      "text": "Hardrada defeated Earls Edwin and Morcar and York submitted."
+     },
+     {
+      "name": "Battle of Stamford Bridge",
+      "kind": "battle",
+      "lon": -0.91,
+      "lat": 53.99,
+      "year": 1066,
+      "winner": 1,
+      "text": "Harold destroyed the Norwegian army, ending the Viking age invasions of England."
+     }
+    ]
+   },
+   {
+    "year": 1066,
+    "label": "Oct 1066",
+    "title": "Hastings",
+    "text": "Two days after Stamford Bridge, the wind turned and William's fleet crossed from Saint-Valery to Pevensey. Harold raced back south and gave battle on 14 October on a ridge near Hastings. After a day of Norman cavalry charges and feigned retreats, Harold was killed and the English shield wall broke.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "England"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        0.47,
+        50.905
+       ],
+       [
+        0.5,
+        50.91
+       ],
+       [
+        0.53,
+        50.915
+       ]
+      ],
+      "label": "English shield wall, 14 Oct"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William of Normandy",
+      "label": "Norman fleet",
+      "path": [
+       [
+        -0.1,
+        49.29
+       ],
+       [
+        0.6,
+        49.9
+       ],
+       [
+        1.63,
+        50.18
+       ],
+       [
+        0.9,
+        50.6
+       ],
+       [
+        0.33,
+        50.82
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Harold Godwinson",
+      "label": "Harold's march south",
+      "path": [
+       [
+        -0.91,
+        53.99
+       ],
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -0.13,
+        51.51
+       ],
+       [
+        0.49,
+        50.91
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Landing at Pevensey",
+      "kind": "event",
+      "lon": 0.33,
+      "lat": 50.82,
+      "year": 1066,
+      "winner": 0,
+      "text": "William's army landed unopposed on 28 September."
+     },
+     {
+      "name": "Battle of Hastings",
+      "kind": "battle",
+      "lon": 0.49,
+      "lat": 50.91,
+      "year": 1066,
+      "winner": 0,
+      "text": "Harold was killed and the Anglo-Saxon army destroyed."
+     }
+    ]
+   },
+   {
+    "year": 1066,
+    "label": "Nov to Dec 1066",
+    "title": "Encircling London",
+    "text": "Rather than storm London, William took Dover and Canterbury and then swung west in a wide loop, burning the countryside, and crossed the Thames at Wallingford. At Berkhamsted the English leaders, including the young claimant Edgar Atheling, came out to submit. William was crowned in Westminster Abbey on Christmas Day 1066.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "England"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William the Conqueror",
+      "label": "Loop around London",
+      "path": [
+       [
+        0.49,
+        50.91
+       ],
+       [
+        1.31,
+        51.13
+       ],
+       [
+        1.08,
+        51.28
+       ],
+       [
+        -1.12,
+        51.6
+       ],
+       [
+        -0.56,
+        51.76
+       ],
+       [
+        -0.13,
+        51.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Submission at Berkhamsted",
+      "kind": "event",
+      "lon": -0.56,
+      "lat": 51.76,
+      "year": 1066,
+      "winner": 0,
+      "text": "Edgar Atheling and the English magnates surrendered to William."
+     },
+     {
+      "name": "Coronation of William",
+      "kind": "event",
+      "lon": -0.13,
+      "lat": 51.5,
+      "year": 1066,
+      "winner": 0,
+      "text": "William was crowned King of England at Westminster on Christmas Day."
+     }
+    ]
+   },
+   {
+    "year": 1069,
+    "label": "1068 to 1070",
+    "title": "Northern risings and the Harrying",
+    "text": "Revolts broke out at Exeter in 1068 and across the north, where Edgar Atheling joined the rebels. In 1069 a Danish fleet sent by Sweyn II sailed into the Humber and, with the English, stormed York and killed its Norman garrison. William bought off the Danes and over the winter laid waste to Yorkshire, a famine campaign remembered as the Harrying of the North.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "England"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Denmark-Norway"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -3.0,
+        53.35
+       ],
+       [
+        -2.0,
+        53.45
+       ],
+       [
+        -1.0,
+        53.6
+       ],
+       [
+        0.1,
+        53.65
+       ]
+      ],
+      "label": "Humber line, 1069"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Sweyn II's sons",
+      "label": "Danish fleet",
+      "path": [
+       [
+        10.2,
+        56.15
+       ],
+       [
+        5.0,
+        55.5
+       ],
+       [
+        0.1,
+        53.6
+       ],
+       [
+        -1.08,
+        53.96
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William the Conqueror",
+      "label": "Harrying of the North",
+      "path": [
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -1.08,
+        53.96
+       ],
+       [
+        -1.3,
+        54.5
+       ],
+       [
+        -2.0,
+        54.0
+       ],
+       [
+        -2.89,
+        53.19
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Rising at York",
+      "kind": "siege",
+      "lon": -1.08,
+      "lat": 53.96,
+      "year": 1069,
+      "winner": 1,
+      "text": "English rebels and Danes stormed York and massacred its Norman garrison."
+     },
+     {
+      "name": "Harrying of the North",
+      "kind": "event",
+      "lon": -1.5,
+      "lat": 54.2,
+      "year": 1069,
+      "winner": 0,
+      "text": "William's army burned crops and herds across Yorkshire, killing thousands through famine."
+     }
+    ]
+   },
+   {
+    "year": 1071,
+    "label": "1070 to 1071",
+    "title": "Hereward and the Isle of Ely",
+    "text": "In 1070 King Sweyn arrived in person and, with the rebel Hereward, sacked Peterborough Abbey before accepting a payment to leave. The last rebels gathered on the Isle of Ely, an island in the Fens. William built a causeway across the marsh and took Ely in 1071, and Earl Morcar was captured while Hereward escaped into legend.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "England"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Denmark-Norway"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        0.05,
+        52.5
+       ],
+       [
+        0.25,
+        52.3
+       ],
+       [
+        0.45,
+        52.45
+       ]
+      ],
+      "label": "Fen siege lines, 1071"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Sweyn II",
+      "label": "Danish fleet",
+      "path": [
+       [
+        10.2,
+        56.15
+       ],
+       [
+        4.0,
+        54.5
+       ],
+       [
+        0.3,
+        52.9
+       ],
+       [
+        -0.24,
+        52.57
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William the Conqueror",
+      "label": "Royal army",
+      "path": [
+       [
+        -0.13,
+        51.51
+       ],
+       [
+        0.12,
+        52.2
+       ],
+       [
+        0.26,
+        52.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Peterborough",
+      "kind": "event",
+      "lon": -0.24,
+      "lat": 52.57,
+      "year": 1070,
+      "winner": 1,
+      "text": "Hereward and the Danes plundered the abbey to keep its treasure from the Normans."
+     },
+     {
+      "name": "Siege of Ely",
+      "kind": "siege",
+      "lon": 0.26,
+      "lat": 52.4,
+      "year": 1071,
+      "winner": 0,
+      "text": "The fall of Ely ended organised English resistance."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "crusades",
+  "name": "The Crusades",
+  "start": 1096,
+  "end": 1291,
+  "kind": "conflict",
+  "summary": "Western European Christians launched a series of armed pilgrimages to win and hold Jerusalem and the Holy Land against the Muslim powers of the Near East. The First Crusade founded the crusader states, but Zengi, Saladin and the Mamluks won them back, the Fourth Crusade turned on Christian Constantinople, and the fall of Acre in 1291 ended the crusader presence. The wars deepened the split between Latin and Greek Christians and widened trade and contact between Europe and the Islamic world.",
+  "sides": [
+   {
+    "name": "Crusaders",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Godfrey of Bouillon",
+     "Bohemond",
+     "Richard I",
+     "Louis IX"
+    ]
+   },
+   {
+    "name": "Muslim powers",
+    "color": "#2e8b57",
+    "leaders": [
+     "Kilij Arslan",
+     "Zengi",
+     "Saladin",
+     "Baibars",
+     "al-Ashraf Khalil"
+    ]
+   },
+   {
+    "name": "Byzantine Empire",
+    "color": "#8a4fb0",
+    "leaders": [
+     "Alexios I Komnenos",
+     "Alexios V Doukas"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 35.8,
+    "lat": 33.5,
+    "r": 3.5
+   },
+   {
+    "lon": 31.0,
+    "lat": 38.5,
+    "r": 4.5
+   },
+   {
+    "lon": 31.7,
+    "lat": 30.9,
+    "r": 1.8
+   },
+   {
+    "lon": 20.0,
+    "lat": 41.0,
+    "r": 5.0
+   }
+  ],
+  "steps": [
+   {
+    "year": 1099,
+    "label": "1096 to 1099",
+    "title": "First Crusade",
+    "text": "Answering Pope Urban II's call, armies of French, Norman and Italian knights gathered at Constantinople and crossed into Anatolia, defeating the Seljuk sultan Kilij Arslan at Dorylaeum. After a brutal siege of Antioch they marched down the coast and stormed Jerusalem in July 1099, massacring many of its inhabitants. Four crusader states were founded at Edessa, Antioch, Tripoli and Jerusalem.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Fatimid Caliphate",
+       "Buwayhid Emirates"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        37.5,
+        37.6
+       ],
+       [
+        36.8,
+        36.6
+       ],
+       [
+        36.6,
+        35.2
+       ],
+       [
+        36.3,
+        34.3
+       ],
+       [
+        35.9,
+        33.3
+       ],
+       [
+        35.6,
+        32.5
+       ],
+       [
+        35.5,
+        31.5
+       ],
+       [
+        34.6,
+        31.3
+       ]
+      ],
+      "label": "Inland edge of the crusader states, c. 1100"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Godfrey of Bouillon and Bohemond",
+      "label": "Crusader armies across Anatolia",
+      "path": [
+       [
+        29.2,
+        40.95
+       ],
+       [
+        29.72,
+        40.43
+       ],
+       [
+        30.52,
+        39.78
+       ],
+       [
+        32.49,
+        37.87
+       ],
+       [
+        36.16,
+        36.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Raymond of Toulouse and Godfrey",
+      "label": "March on Jerusalem",
+      "path": [
+       [
+        36.16,
+        36.2
+       ],
+       [
+        36.0,
+        35.0
+       ],
+       [
+        35.6,
+        33.9
+       ],
+       [
+        35.0,
+        32.5
+       ],
+       [
+        35.23,
+        31.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Dorylaeum",
+      "kind": "battle",
+      "lon": 30.52,
+      "lat": 39.78,
+      "year": 1097,
+      "winner": 0,
+      "text": "The crusaders defeated Kilij Arslan's Seljuk army and opened the road across Anatolia."
+     },
+     {
+      "name": "Siege of Antioch",
+      "kind": "siege",
+      "lon": 36.16,
+      "lat": 36.2,
+      "year": 1098,
+      "winner": 0,
+      "text": "After taking the city by treachery, the crusaders broke out and routed Kerbogha's relief army."
+     },
+     {
+      "name": "Siege of Jerusalem",
+      "kind": "siege",
+      "lon": 35.23,
+      "lat": 31.78,
+      "year": 1099,
+      "winner": 0,
+      "text": "The crusaders stormed the city and founded the Kingdom of Jerusalem."
+     }
+    ]
+   },
+   {
+    "year": 1148,
+    "label": "1144 to 1149",
+    "title": "Second Crusade",
+    "text": "Zengi, atabeg of Mosul and Aleppo, captured Edessa in 1144, destroying the first crusader state. Louis VII of France and Conrad III of Germany led a new crusade, but both armies suffered badly crossing Anatolia. Their joint siege of Damascus collapsed after four days, and Zengi's son Nur ad-Din went on to unite Muslim Syria.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Seljuk Empire",
+       "Fatimid Caliphate"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        36.9,
+        36.9
+       ],
+       [
+        36.6,
+        35.2
+       ],
+       [
+        36.3,
+        34.3
+       ],
+       [
+        35.9,
+        33.3
+       ],
+       [
+        35.6,
+        32.5
+       ],
+       [
+        35.5,
+        31.5
+       ],
+       [
+        34.6,
+        31.3
+       ]
+      ],
+      "label": "Crusader frontier after Edessa, 1144"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Zengi",
+      "label": "Zengi takes Edessa",
+      "path": [
+       [
+        43.13,
+        36.34
+       ],
+       [
+        40.7,
+        37.0
+       ],
+       [
+        38.79,
+        37.16
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Louis VII and Conrad III",
+      "label": "Crusaders march on Damascus",
+      "path": [
+       [
+        35.07,
+        32.93
+       ],
+       [
+        35.6,
+        33.2
+       ],
+       [
+        36.29,
+        33.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Edessa",
+      "kind": "siege",
+      "lon": 38.79,
+      "lat": 37.16,
+      "year": 1144,
+      "winner": 1,
+      "text": "Zengi's capture of Edessa triggered the Second Crusade."
+     },
+     {
+      "name": "Siege of Damascus",
+      "kind": "siege",
+      "lon": 36.29,
+      "lat": 33.51,
+      "year": 1148,
+      "winner": 1,
+      "text": "The crusader siege failed within days and the crusade broke up."
+     }
+    ]
+   },
+   {
+    "year": 1187,
+    "label": "1187",
+    "title": "Hattin and the fall of Jerusalem",
+    "text": "Saladin, the Ayyubid sultan, united Egypt and Syria and invaded the Kingdom of Jerusalem. He lured King Guy's army into the waterless hills near Tiberias and destroyed it at the Horns of Hattin. Jerusalem surrendered in October, and within months only Tyre, Tripoli and Antioch were left in crusader hands.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Seljuk Empire",
+       "Fatimid Caliphate"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.6,
+        33.3
+       ],
+       [
+        35.6,
+        32.7
+       ],
+       [
+        35.55,
+        31.8
+       ],
+       [
+        35.4,
+        31.0
+       ],
+       [
+        34.9,
+        30.5
+       ]
+      ],
+      "label": "Frontier of the Kingdom of Jerusalem, July 1187"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Saladin",
+      "label": "Saladin's army",
+      "path": [
+       [
+        36.29,
+        33.51
+       ],
+       [
+        35.9,
+        32.9
+       ],
+       [
+        35.45,
+        32.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Guy of Lusignan",
+      "label": "Army of Jerusalem from Sephoria",
+      "path": [
+       [
+        35.28,
+        32.75
+       ],
+       [
+        35.38,
+        32.78
+       ],
+       [
+        35.45,
+        32.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Saladin",
+      "label": "Saladin to Jerusalem",
+      "path": [
+       [
+        35.45,
+        32.8
+       ],
+       [
+        35.2,
+        32.2
+       ],
+       [
+        35.23,
+        31.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Hattin",
+      "kind": "battle",
+      "lon": 35.45,
+      "lat": 32.8,
+      "year": 1187,
+      "winner": 1,
+      "text": "Saladin destroyed the crusader field army and captured King Guy."
+     },
+     {
+      "name": "Fall of Jerusalem",
+      "kind": "siege",
+      "lon": 35.23,
+      "lat": 31.78,
+      "year": 1187,
+      "winner": 1,
+      "text": "Jerusalem surrendered to Saladin after a short siege."
+     }
+    ]
+   },
+   {
+    "year": 1191,
+    "label": "1189 to 1192",
+    "title": "Third Crusade",
+    "text": "Frederick Barbarossa led a German army across Anatolia but drowned in the Saleph river. Richard I of England, who seized Cyprus on the way, and Philip II of France arrived by sea and took Acre after a two-year siege, and Richard beat Saladin at Arsuf. Neither side could win outright, and the Treaty of Jaffa left Jerusalem to Saladin and the coast to the crusaders.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cyprus"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Seljuk Empire",
+       "Fatimid Caliphate"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.35,
+        33.25
+       ],
+       [
+        35.2,
+        32.7
+       ],
+       [
+        35.0,
+        32.2
+       ],
+       [
+        34.85,
+        31.9
+       ]
+      ],
+      "label": "Coastal kingdom after Jaffa, 1192"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Frederick Barbarossa",
+      "label": "German army",
+      "path": [
+       [
+        26.7,
+        40.35
+       ],
+       [
+        28.52,
+        38.35
+       ],
+       [
+        30.55,
+        38.3
+       ],
+       [
+        32.49,
+        37.87
+       ],
+       [
+        33.95,
+        36.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Richard I",
+      "label": "Richard's fleet via Cyprus",
+      "path": [
+       [
+        15.6,
+        38.1
+       ],
+       [
+        21.5,
+        36.0
+       ],
+       [
+        27.5,
+        35.0
+       ],
+       [
+        33.0,
+        34.8
+       ],
+       [
+        34.95,
+        32.93
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Richard I",
+      "label": "March down the coast",
+      "path": [
+       [
+        35.07,
+        32.93
+       ],
+       [
+        34.9,
+        32.5
+       ],
+       [
+        34.82,
+        32.2
+       ],
+       [
+        34.75,
+        32.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Acre",
+      "kind": "siege",
+      "lon": 35.07,
+      "lat": 32.93,
+      "year": 1191,
+      "winner": 0,
+      "text": "The crusaders captured Acre, which became the new capital of the kingdom."
+     },
+     {
+      "name": "Battle of Arsuf",
+      "kind": "battle",
+      "lon": 34.82,
+      "lat": 32.2,
+      "year": 1191,
+      "winner": 0,
+      "text": "Richard's disciplined march held off Saladin's attacks and then routed his army."
+     },
+     {
+      "name": "Treaty of Jaffa",
+      "kind": "treaty",
+      "lon": 34.75,
+      "lat": 32.05,
+      "year": 1192,
+      "winner": null,
+      "text": "A three-year truce left Jerusalem Muslim but open to Christian pilgrims."
+     }
+    ]
+   },
+   {
+    "year": 1204,
+    "label": "1202 to 1204",
+    "title": "Fourth Crusade",
+    "text": "Short of money to pay Venice for its fleet, the crusaders led by Boniface of Montferrat and Doge Enrico Dandolo were diverted first to Zara and then to Constantinople to restore a Byzantine claimant. When the deal collapsed they stormed the city in April 1204 and sacked it for three days. They set up a Latin Empire there instead of going on to the Holy Land, a wound that never healed between Catholic and Orthodox Christians.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cyprus"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Byzantine Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        28.92,
+        41.0
+       ],
+       [
+        28.93,
+        41.03
+       ],
+       [
+        28.95,
+        41.05
+       ]
+      ],
+      "label": "Land walls of Constantinople, 1204"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Enrico Dandolo",
+      "label": "Venetian fleet",
+      "path": [
+       [
+        12.4,
+        45.3
+       ],
+       [
+        15.23,
+        44.12
+       ],
+       [
+        19.0,
+        40.5
+       ],
+       [
+        22.6,
+        36.2
+       ],
+       [
+        26.15,
+        40.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Boniface of Montferrat",
+      "label": "Through the straits",
+      "path": [
+       [
+        26.2,
+        40.05
+       ],
+       [
+        26.7,
+        40.4
+       ],
+       [
+        27.5,
+        40.6
+       ],
+       [
+        28.95,
+        40.98
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Zara",
+      "kind": "siege",
+      "lon": 15.23,
+      "lat": 44.12,
+      "year": 1202,
+      "winner": 0,
+      "text": "The crusaders sacked the Christian city of Zara for Venice and were excommunicated."
+     },
+     {
+      "name": "Sack of Constantinople",
+      "kind": "siege",
+      "lon": 28.97,
+      "lat": 41.01,
+      "year": 1204,
+      "winner": 0,
+      "text": "Crusaders stormed the Byzantine capital and plundered it for three days."
+     }
+    ]
+   },
+   {
+    "year": 1249,
+    "label": "1217 to 1250",
+    "title": "Crusades against Egypt",
+    "text": "Seeing Egypt as the key to Jerusalem, the Fifth Crusade took Damietta in 1219 but was trapped by the Nile flood. Emperor Frederick II regained Jerusalem by treaty in 1229, but it was lost for good in 1244. Louis IX of France took Damietta again in 1249 and advanced on Cairo, but his army was destroyed at Mansurah and he was captured, and in the turmoil the Mamluks seized power in Egypt.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cyprus"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Fatimid Caliphate",
+       "Buwayhid Emirates"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Louis IX",
+      "label": "Louis IX's fleet from Cyprus",
+      "path": [
+       [
+        33.0,
+        34.6
+       ],
+       [
+        32.3,
+        32.5
+       ],
+       [
+        31.85,
+        31.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Louis IX",
+      "label": "Advance up the Nile",
+      "path": [
+       [
+        31.81,
+        31.42
+       ],
+       [
+        31.6,
+        31.2
+       ],
+       [
+        31.38,
+        31.04
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Damietta",
+      "kind": "siege",
+      "lon": 31.81,
+      "lat": 31.42,
+      "year": 1219,
+      "winner": 0,
+      "text": "The Fifth Crusade took the Nile port after an eighteen-month siege."
+     },
+     {
+      "name": "Battle of Mansurah",
+      "kind": "battle",
+      "lon": 31.38,
+      "lat": 31.04,
+      "year": 1250,
+      "winner": 1,
+      "text": "Ayyubid and Mamluk troops destroyed the crusader army, leading to Louis IX's capture."
+     }
+    ]
+   },
+   {
+    "year": 1291,
+    "label": "1260 to 1291",
+    "title": "Mamluks and the fall of Acre",
+    "text": "The Mamluk sultans of Egypt, having stopped the Mongols at Ain Jalut in 1260, turned on the remaining crusader towns. Baibars took Antioch in 1268, and in 1291 Sultan al-Ashraf Khalil besieged and stormed Acre. The last coastal towns were abandoned within weeks, ending two centuries of crusader states on the mainland, though Cyprus remained in Latin hands.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cyprus"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Mamluke Sultanate"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Baibars",
+      "label": "Baibars to Antioch",
+      "path": [
+       [
+        31.24,
+        30.05
+       ],
+       [
+        33.8,
+        31.1
+       ],
+       [
+        34.5,
+        31.5
+       ],
+       [
+        36.29,
+        33.51
+       ],
+       [
+        36.16,
+        36.2
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "al-Ashraf Khalil",
+      "label": "Al-Ashraf Khalil to Acre",
+      "path": [
+       [
+        31.24,
+        30.05
+       ],
+       [
+        33.8,
+        31.1
+       ],
+       [
+        34.6,
+        31.5
+       ],
+       [
+        35.0,
+        32.2
+       ],
+       [
+        35.12,
+        32.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Antioch",
+      "kind": "siege",
+      "lon": 36.16,
+      "lat": 36.2,
+      "year": 1268,
+      "winner": 1,
+      "text": "Baibars captured and destroyed the crusader Principality of Antioch."
+     },
+     {
+      "name": "Fall of Acre",
+      "kind": "siege",
+      "lon": 35.07,
+      "lat": 32.93,
+      "year": 1291,
+      "winner": 1,
+      "text": "The Mamluks stormed the last great crusader city, ending the crusader states."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "albigensian-crusade",
+  "name": "Albigensian Crusade",
+  "start": 1209,
+  "end": 1229,
+  "kind": "war",
+  "summary": "Pope Innocent III called a crusade against the Cathar heretics of Languedoc and the southern lords who tolerated them, chief among them Count Raymond VI of Toulouse. Northern French barons under Simon de Montfort conquered much of the south, lost it again after his death, and the French crown finished the job under Louis VIII. The Treaty of Paris in 1229 brought Languedoc under the kings of France and the Inquisition then rooted out the Cathars.",
+  "sides": [
+   {
+    "name": "Crusaders and French crown",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Arnaud Amalric",
+     "Simon de Montfort",
+     "Amaury de Montfort",
+     "Louis VIII"
+    ]
+   },
+   {
+    "name": "Occitan lords",
+    "color": "#c9922e",
+    "leaders": [
+     "Raymond VI of Toulouse",
+     "Raymond VII of Toulouse",
+     "Raymond-Roger Trencavel",
+     "Peter II of Aragon"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 2.6,
+    "lat": 43.9,
+    "r": 2.2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1209,
+    "label": "1208 to 1209",
+    "title": "Béziers and Carcassonne",
+    "text": "After a papal legate was murdered in 1208, Innocent III proclaimed a crusade, and a large northern army gathered at Lyon and marched down the Rhône. In July 1209 it stormed Béziers and massacred its people, Catholics and Cathars alike. Carcassonne surrendered weeks later, its lord Raymond-Roger Trencavel died in captivity, and his lands were given to Simon de Montfort.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Kingdom of France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Comté de Toulouse"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Arnaud Amalric",
+      "label": "Crusader army",
+      "path": [
+       [
+        4.83,
+        45.76
+       ],
+       [
+        4.81,
+        43.95
+       ],
+       [
+        3.88,
+        43.61
+       ],
+       [
+        3.22,
+        43.34
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Arnaud Amalric",
+      "label": "On to Carcassonne",
+      "path": [
+       [
+        3.22,
+        43.34
+       ],
+       [
+        2.74,
+        43.3
+       ],
+       [
+        2.35,
+        43.21
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Massacre at Béziers",
+      "kind": "siege",
+      "lon": 3.22,
+      "lat": 43.34,
+      "year": 1209,
+      "winner": 0,
+      "text": "The crusaders stormed Béziers and killed much of its population."
+     },
+     {
+      "name": "Surrender of Carcassonne",
+      "kind": "siege",
+      "lon": 2.35,
+      "lat": 43.21,
+      "year": 1209,
+      "winner": 0,
+      "text": "Trencavel's capital fell after a short siege, and Simon de Montfort took his lands."
+     }
+    ]
+   },
+   {
+    "year": 1213,
+    "label": "1210 to 1213",
+    "title": "Montfort's conquests and Muret",
+    "text": "Simon de Montfort took the Cathar strongholds of Minerve and Lavaur, burning hundreds of heretics, but failed to take Toulouse in 1211. King Peter II of Aragon, overlord of many southern lords, crossed the Pyrenees to protect his vassals and joined Raymond VI. At Muret in September 1213 Montfort's much smaller force charged and killed Peter, and the southern army collapsed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Kingdom of France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Comté de Toulouse",
+       "Aragón"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        1.9,
+        44.2
+       ],
+       [
+        1.8,
+        43.7
+       ],
+       [
+        1.6,
+        43.3
+       ],
+       [
+        1.3,
+        42.9
+       ]
+      ],
+      "label": "Front before Muret, 1213"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Peter II of Aragon",
+      "label": "Aragonese army",
+      "path": [
+       [
+        0.62,
+        41.62
+       ],
+       [
+        0.7,
+        42.3
+       ],
+       [
+        0.75,
+        42.8
+       ],
+       [
+        1.33,
+        43.46
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Raymond VI of Toulouse",
+      "label": "Toulousain militia",
+      "path": [
+       [
+        1.44,
+        43.6
+       ],
+       [
+        1.38,
+        43.53
+       ],
+       [
+        1.33,
+        43.46
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Simon de Montfort",
+      "label": "Crusader knights",
+      "path": [
+       [
+        2.03,
+        43.19
+       ],
+       [
+        1.57,
+        43.24
+       ],
+       [
+        1.33,
+        43.46
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Lavaur",
+      "kind": "siege",
+      "lon": 1.82,
+      "lat": 43.7,
+      "year": 1211,
+      "winner": 0,
+      "text": "Montfort took Lavaur and burned some 400 Cathars."
+     },
+     {
+      "name": "Battle of Muret",
+      "kind": "battle",
+      "lon": 1.33,
+      "lat": 43.46,
+      "year": 1213,
+      "winner": 0,
+      "text": "Peter II was killed and the Aragonese-Occitan army routed."
+     }
+    ]
+   },
+   {
+    "year": 1218,
+    "label": "1215 to 1218",
+    "title": "The siege of Toulouse",
+    "text": "The Fourth Lateran Council in 1215 gave Toulouse to Simon de Montfort and stripped Raymond VI of his lands. Raymond's son, the young Raymond VII, retook Beaucaire on the Rhône in 1216, and in 1217 Raymond VI slipped back into Toulouse, which rose for him. Montfort besieged the city, and in June 1218 a stone from a mangonel worked by the townswomen killed him.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Kingdom of France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Comté de Toulouse"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.6,
+        44.2
+       ],
+       [
+        2.3,
+        43.6
+       ],
+       [
+        2.2,
+        42.9
+       ]
+      ],
+      "label": "Line after Toulouse rose, 1217"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Raymond VII",
+      "label": "Rising at Beaucaire",
+      "path": [
+       [
+        4.81,
+        43.95
+       ],
+       [
+        4.64,
+        43.81
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Raymond VI of Toulouse",
+      "label": "Return to Toulouse",
+      "path": [
+       [
+        1.0,
+        42.7
+       ],
+       [
+        1.2,
+        43.2
+       ],
+       [
+        1.44,
+        43.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Simon de Montfort",
+      "label": "Crusader army",
+      "path": [
+       [
+        4.64,
+        43.81
+       ],
+       [
+        3.0,
+        43.4
+       ],
+       [
+        1.95,
+        43.32
+       ],
+       [
+        1.44,
+        43.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Beaucaire",
+      "kind": "siege",
+      "lon": 4.64,
+      "lat": 43.81,
+      "year": 1216,
+      "winner": 1,
+      "text": "Raymond VII took Beaucaire, the first great southern victory."
+     },
+     {
+      "name": "Siege of Toulouse",
+      "kind": "siege",
+      "lon": 1.44,
+      "lat": 43.6,
+      "year": 1218,
+      "winner": 1,
+      "text": "Simon de Montfort was killed by a stone and the siege was abandoned."
+     }
+    ]
+   },
+   {
+    "year": 1224,
+    "label": "1219 to 1224",
+    "title": "The southern recovery",
+    "text": "Simon's son Amaury de Montfort lacked his father's skill and money, and the southern lords won back town after town. In January 1224 Amaury abandoned Carcassonne and returned north. He handed his rights in the south to King Louis VIII, turning a baronial crusade into a royal conquest.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Kingdom of France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Comté de Toulouse"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Raymond VII",
+      "label": "Occitan army",
+      "path": [
+       [
+        1.44,
+        43.6
+       ],
+       [
+        1.95,
+        43.32
+       ],
+       [
+        2.35,
+        43.21
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Amaury de Montfort",
+      "label": "Retreat north",
+      "path": [
+       [
+        2.35,
+        43.21
+       ],
+       [
+        3.88,
+        43.61
+       ],
+       [
+        4.81,
+        43.95
+       ],
+       [
+        4.83,
+        45.76
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Amaury leaves Carcassonne",
+      "kind": "event",
+      "lon": 2.35,
+      "lat": 43.21,
+      "year": 1224,
+      "winner": 1,
+      "text": "The Trencavel heir returned to Carcassonne as the crusaders withdrew."
+     }
+    ]
+   },
+   {
+    "year": 1229,
+    "label": "1226 to 1229",
+    "title": "The royal crusade and the Treaty of Paris",
+    "text": "Louis VIII led a royal army down the Rhône in 1226 and took Avignon after a three-month siege, and most southern towns submitted. The king died on the way home, but his commander Humbert de Beaujeu kept up a war of devastation around Toulouse. Exhausted, Raymond VII accepted the Treaty of Paris in 1229, giving up much of his land and marrying his heiress to a French prince, which brought Languedoc to the crown.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Kingdom of France",
+       "Comté de Toulouse"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Louis VIII",
+      "label": "Royal army",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        4.3,
+        47.0
+       ],
+       [
+        4.83,
+        45.76
+       ],
+       [
+        4.81,
+        43.95
+       ],
+       [
+        3.88,
+        43.61
+       ],
+       [
+        2.35,
+        43.21
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Humbert de Beaujeu",
+      "label": "War around Toulouse",
+      "path": [
+       [
+        2.35,
+        43.21
+       ],
+       [
+        1.95,
+        43.32
+       ],
+       [
+        1.44,
+        43.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Avignon",
+      "kind": "siege",
+      "lon": 4.81,
+      "lat": 43.95,
+      "year": 1226,
+      "winner": 0,
+      "text": "Avignon fell to Louis VIII and the south largely submitted."
+     },
+     {
+      "name": "Treaty of Paris",
+      "kind": "treaty",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1229,
+      "winner": 0,
+      "text": "Raymond VII submitted, and Languedoc passed to the French crown."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "genpei-war",
+  "name": "Genpei War",
+  "start": 1180,
+  "end": 1185,
+  "kind": "war",
+  "summary": "The Minamoto and Taira warrior clans fought a five-year civil war for control of the Japanese court after Taira no Kiyomori placed his infant grandson on the throne. Minamoto no Yoritomo built a power base in the eastern Kanto while his cousin Yoshinaka and brother Yoshitsune drove the Taira from Kyoto and destroyed them at sea at Dan-no-ura in 1185. Yoritomo then founded the Kamakura shogunate, beginning seven centuries of samurai rule.",
+  "sides": [
+   {
+    "name": "Minamoto",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Minamoto no Yoritomo",
+     "Minamoto no Yoshitsune",
+     "Minamoto no Noriyori",
+     "Minamoto no Yoshinaka"
+    ]
+   },
+   {
+    "name": "Taira",
+    "color": "#c0473a",
+    "leaders": [
+     "Taira no Kiyomori",
+     "Taira no Munemori",
+     "Taira no Koremori",
+     "Taira no Tomomori"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 134.5,
+    "lat": 34.6,
+    "r": 4.0
+   },
+   {
+    "lon": 138.6,
+    "lat": 35.7,
+    "r": 1.8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1180,
+    "label": "1180",
+    "title": "Uji, Ishibashiyama and Fujigawa",
+    "text": "Prince Mochihito called on the Minamoto to rise against Taira no Kiyomori, but he and his ally Minamoto no Yorimasa were killed after the battle at the Uji bridge near Kyoto. In the east Minamoto no Yoritomo raised his banner in Izu, lost at Ishibashiyama, fled by sea and rebuilt his army in the Kanto with Kamakura as his base. A Taira army under Taira no Koremori marched east but fled at night from the Fuji river, reportedly startled by a flock of waterbirds.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Imperial Japan (Fujiwara)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        138.62,
+        35.1
+       ],
+       [
+        138.5,
+        35.6
+       ],
+       [
+        138.3,
+        36.2
+       ],
+       [
+        138.2,
+        36.8
+       ],
+       [
+        138.0,
+        37.3
+       ]
+      ],
+      "label": "Minamoto east, Taira west, late 1180"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Taira no Koremori",
+      "label": "Taira army east",
+      "path": [
+       [
+        135.76,
+        35.01
+       ],
+       [
+        136.9,
+        35.17
+       ],
+       [
+        137.73,
+        34.71
+       ],
+       [
+        138.62,
+        35.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Minamoto no Yoritomo",
+      "label": "Yoritomo's flight and return",
+      "path": [
+       [
+        139.12,
+        35.25
+       ],
+       [
+        139.85,
+        35.0
+       ],
+       [
+        140.12,
+        35.6
+       ],
+       [
+        139.55,
+        35.32
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Uji",
+      "kind": "battle",
+      "lon": 135.8,
+      "lat": 34.89,
+      "year": 1180,
+      "winner": 1,
+      "text": "The Taira crushed the first rising and killed Prince Mochihito."
+     },
+     {
+      "name": "Battle of Ishibashiyama",
+      "kind": "battle",
+      "lon": 139.12,
+      "lat": 35.25,
+      "year": 1180,
+      "winner": 1,
+      "text": "Yoritomo's small force was routed and he escaped by sea to Awa."
+     },
+     {
+      "name": "Battle of Fujigawa",
+      "kind": "battle",
+      "lon": 138.62,
+      "lat": 35.12,
+      "year": 1180,
+      "winner": 0,
+      "text": "The Taira army withdrew without fighting, leaving the east to Yoritomo."
+     }
+    ]
+   },
+   {
+    "year": 1183,
+    "label": "1181 to 1183",
+    "title": "Kurikara and the Taira flight",
+    "text": "Kiyomori died in 1181 and famine stalled the war. In 1183 Yoritomo's cousin Minamoto no Yoshinaka routed a huge Taira army in a night attack at the Kurikara pass, reportedly driving cattle with torches on their horns into the Taira camp. The Taira abandoned Kyoto, taking the child emperor Antoku and the imperial regalia west, and Yoshinaka entered the capital.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan (Fujiwara)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        135.2,
+        35.5
+       ],
+       [
+        135.1,
+        34.7
+       ],
+       [
+        134.5,
+        34.3
+       ]
+      ],
+      "label": "Taira line west of Kyoto, late 1183"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Taira no Koremori",
+      "label": "Taira army north",
+      "path": [
+       [
+        135.76,
+        35.01
+       ],
+       [
+        136.1,
+        35.7
+       ],
+       [
+        136.5,
+        36.3
+       ],
+       [
+        136.82,
+        36.67
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Minamoto no Yoshinaka",
+      "label": "Yoshinaka to Kyoto",
+      "path": [
+       [
+        138.19,
+        36.65
+       ],
+       [
+        137.21,
+        36.7
+       ],
+       [
+        136.82,
+        36.67
+       ],
+       [
+        136.0,
+        35.6
+       ],
+       [
+        135.76,
+        35.01
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taira no Munemori",
+      "label": "Taira flight west",
+      "path": [
+       [
+        135.76,
+        35.01
+       ],
+       [
+        135.19,
+        34.69
+       ],
+       [
+        134.1,
+        34.36
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kurikara",
+      "kind": "battle",
+      "lon": 136.82,
+      "lat": 36.67,
+      "year": 1183,
+      "winner": 0,
+      "text": "Yoshinaka destroyed the main Taira army in the mountains of Etchu."
+     },
+     {
+      "name": "Taira abandon Kyoto",
+      "kind": "event",
+      "lon": 135.76,
+      "lat": 35.01,
+      "year": 1183,
+      "winner": 0,
+      "text": "The Taira fled the capital with the child emperor and the regalia."
+     }
+    ]
+   },
+   {
+    "year": 1184,
+    "label": "1184",
+    "title": "Awazu and Ichi-no-Tani",
+    "text": "Yoshinaka's troops plundered Kyoto and he quarrelled with the court, so Yoritomo sent his brothers Noriyori and Yoshitsune west, and they killed Yoshinaka at Awazu. The Taira had fortified Ichi-no-Tani on the coast near modern Kobe. While Noriyori attacked from the east, Yoshitsune led horsemen down a steep slope behind the camp, and the Taira fled by sea to Yashima on Shikoku.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan (Fujiwara)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        134.9,
+        35.2
+       ],
+       [
+        134.95,
+        34.65
+       ],
+       [
+        134.6,
+        34.2
+       ]
+      ],
+      "label": "Taira line, early 1184"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Minamoto no Yoshitsune",
+      "label": "Yoshitsune's flank march",
+      "path": [
+       [
+        135.76,
+        35.01
+       ],
+       [
+        135.3,
+        35.1
+       ],
+       [
+        135.1,
+        34.95
+       ],
+       [
+        135.08,
+        34.63
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Minamoto no Noriyori",
+      "label": "Noriyori's main army",
+      "path": [
+       [
+        135.76,
+        35.01
+       ],
+       [
+        135.3,
+        34.75
+       ],
+       [
+        135.12,
+        34.68
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taira no Munemori",
+      "label": "Taira escape to Yashima",
+      "path": [
+       [
+        135.08,
+        34.63
+       ],
+       [
+        134.6,
+        34.4
+       ],
+       [
+        134.1,
+        34.36
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Awazu",
+      "kind": "battle",
+      "lon": 135.88,
+      "lat": 34.99,
+      "year": 1184,
+      "winner": 0,
+      "text": "Yoritomo's brothers defeated and killed their rival cousin Yoshinaka."
+     },
+     {
+      "name": "Battle of Ichi-no-Tani",
+      "kind": "battle",
+      "lon": 135.08,
+      "lat": 34.63,
+      "year": 1184,
+      "winner": 0,
+      "text": "Yoshitsune's surprise attack from the hills broke the Taira camp."
+     }
+    ]
+   },
+   {
+    "year": 1185,
+    "label": "1185",
+    "title": "Yashima and Dan-no-ura",
+    "text": "Yoshitsune crossed to Shikoku in a storm and drove the Taira from Yashima, while Noriyori marched along the Inland Sea coast to cut them off from Kyushu. The Taira fleet under Taira no Tomomori made its last stand in the Shimonoseki strait. At Dan-no-ura the tide turned against them, many Taira leaders drowned themselves, and the child emperor Antoku died with the sacred sword.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Imperial Japan (Fujiwara)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        131.0,
+        34.05
+       ],
+       [
+        130.95,
+        33.9
+       ]
+      ],
+      "label": "Shimonoseki strait, April 1185"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Minamoto no Yoshitsune",
+      "label": "Crossing to Shikoku",
+      "path": [
+       [
+        135.45,
+        34.68
+       ],
+       [
+        134.65,
+        34.07
+       ],
+       [
+        134.1,
+        34.36
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Minamoto no Yoshitsune",
+      "label": "Minamoto fleet",
+      "path": [
+       [
+        134.1,
+        34.36
+       ],
+       [
+        133.0,
+        34.2
+       ],
+       [
+        132.0,
+        33.95
+       ],
+       [
+        130.96,
+        33.96
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Minamoto no Noriyori",
+      "label": "Noriyori along the coast",
+      "path": [
+       [
+        135.19,
+        34.69
+       ],
+       [
+        133.92,
+        34.66
+       ],
+       [
+        132.46,
+        34.39
+       ],
+       [
+        131.4,
+        34.1
+       ],
+       [
+        130.9,
+        33.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taira no Tomomori",
+      "label": "Taira fleet",
+      "path": [
+       [
+        134.1,
+        34.36
+       ],
+       [
+        132.5,
+        33.9
+       ],
+       [
+        131.0,
+        33.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Yashima",
+      "kind": "battle",
+      "lon": 134.1,
+      "lat": 34.36,
+      "year": 1185,
+      "winner": 0,
+      "text": "Yoshitsune's surprise landing drove the Taira from their island base."
+     },
+     {
+      "name": "Battle of Dan-no-ura",
+      "kind": "battle",
+      "lon": 130.96,
+      "lat": 33.96,
+      "year": 1185,
+      "winner": 0,
+      "text": "The Taira fleet was destroyed and the clan's leaders died, ending the war."
+     }
+    ]
+   }
+  ]
+ }
+]

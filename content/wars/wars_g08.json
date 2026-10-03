@@ -1,0 +1,6012 @@
+[
+ {
+  "id": "nader-shah-campaigns",
+  "name": "Nader Shah's Campaigns",
+  "start": 1729,
+  "end": 1747,
+  "kind": "conflict",
+  "summary": "Nader, a Turkmen soldier of the Afshar tribe, rescued Persia from Afghan occupation, drove out the Ottomans and Russians, made himself shah in 1736 and then struck east, sacking Delhi in 1739 and subduing the Uzbek khanates. His wars made Persia briefly the strongest power in Asia, but the cost and his growing cruelty led to his murder in 1747, after which his empire fell apart and Ahmad Shah Durrani founded the Afghan state.",
+  "sides": [
+   {
+    "name": "Persia under Nader",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Nader Shah",
+     "Tahmasp II (nominal shah)",
+     "Reza Qoli Mirza"
+    ]
+   },
+   {
+    "name": "Ottoman Empire",
+    "color": "#c0473a",
+    "leaders": [
+     "Topal Osman Pasha",
+     "Koprulu Abdullah Pasha",
+     "Yegen Mehmed Pasha"
+    ]
+   },
+   {
+    "name": "Afghans, Mughals and Uzbeks",
+    "color": "#d39a2c",
+    "leaders": [
+     "Ashraf Hotak",
+     "Hussain Hotak",
+     "Muhammad Shah",
+     "Ilbars Khan of Khiva"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 54,
+    "lat": 36,
+    "r": 12
+   },
+   {
+    "lon": 72,
+    "lat": 31,
+    "r": 7
+   }
+  ],
+  "steps": [
+   {
+    "year": 1729,
+    "label": "1729 to 1730",
+    "title": "Driving out the Afghans",
+    "text": "Since 1722 Ghilzai Afghans had held Isfahan, while Ottomans and Russians carved up western and northern Persia. Nader, now commanding for the exiled Safavid Tahmasp II, marched west from Mashhad, beat Ashraf's Afghans at Damghan and Murcheh Khort and retook Isfahan, then chased them south past Shiraz until their army dissolved.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Safavid Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nader",
+      "label": "Persian army from Khorasan",
+      "path": [
+       [
+        59.6,
+        36.3
+       ],
+       [
+        54.34,
+        36.17
+       ],
+       [
+        51.47,
+        33.08
+       ],
+       [
+        51.67,
+        32.65
+       ],
+       [
+        52.72,
+        29.77
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Ashraf Hotak",
+      "label": "Afghan retreat",
+      "path": [
+       [
+        51.67,
+        32.65
+       ],
+       [
+        52.53,
+        29.6
+       ],
+       [
+        56.0,
+        29.0
+       ],
+       [
+        61.0,
+        31.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Damghan",
+      "kind": "battle",
+      "lon": 54.34,
+      "lat": 36.17,
+      "year": 1729,
+      "winner": 0,
+      "text": "Nader's disciplined musketeers and artillery broke Ashraf's Afghan army in its first clash."
+     },
+     {
+      "name": "Battle of Murcheh Khort",
+      "kind": "battle",
+      "lon": 51.47,
+      "lat": 33.08,
+      "year": 1729,
+      "winner": 0,
+      "text": "A second defeat forced the Afghans to abandon Isfahan, ending seven years of occupation."
+     }
+    ]
+   },
+   {
+    "year": 1733,
+    "label": "1730 to 1735",
+    "title": "War with the Ottomans",
+    "text": "Nader swung west and retook Hamadan and Tabriz, but Tahmasp lost them again while Nader was away, so Nader deposed him in 1732 and ruled as regent for the infant Abbas III. Beaten outside Baghdad by Topal Osman Pasha in 1733, he rebuilt his army in months and killed Osman near Kirkuk. In 1735 he destroyed the main Ottoman army at Yeghevard and recovered the Caucasus, while Russia handed back the Caspian provinces.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Safavid Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        44.8,
+        41.6
+       ],
+       [
+        45.6,
+        39.6
+       ],
+       [
+        46.3,
+        37.6
+       ],
+       [
+        45.9,
+        35.4
+       ],
+       [
+        46.4,
+        33.4
+       ]
+      ],
+      "label": "Persian and Ottoman lines, 1733"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nader",
+      "label": "Persian army on Baghdad",
+      "path": [
+       [
+        48.51,
+        34.8
+       ],
+       [
+        46.4,
+        34.4
+       ],
+       [
+        44.6,
+        33.6
+       ],
+       [
+        44.36,
+        33.31
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Topal Osman Pasha",
+      "label": "Ottoman relief army",
+      "path": [
+       [
+        43.13,
+        36.34
+       ],
+       [
+        43.88,
+        34.2
+       ],
+       [
+        44.36,
+        33.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nader",
+      "label": "Persian army into the Caucasus",
+      "path": [
+       [
+        46.29,
+        38.08
+       ],
+       [
+        45.4,
+        39.3
+       ],
+       [
+        44.58,
+        40.32
+       ],
+       [
+        46.36,
+        40.68
+       ],
+       [
+        44.79,
+        41.72
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kirkuk",
+      "kind": "battle",
+      "lon": 44.39,
+      "lat": 35.47,
+      "year": 1733,
+      "winner": 0,
+      "text": "Nader avenged his defeat at Samarra months earlier, and Topal Osman Pasha was killed."
+     },
+     {
+      "name": "Battle of Yeghevard",
+      "kind": "battle",
+      "lon": 44.58,
+      "lat": 40.32,
+      "year": 1735,
+      "winner": 0,
+      "text": "Nader routed a much larger Ottoman army near Yerevan and won back Armenia and Georgia."
+     }
+    ]
+   },
+   {
+    "year": 1736,
+    "label": "1736 to 1738",
+    "title": "Nader becomes shah and turns east",
+    "text": "At a great assembly on the Mughan plain in 1736 Nader had himself proclaimed shah, ending the Safavid dynasty. He then led perhaps 80,000 men east against the Hotaki Afghans of Kandahar, starved the city out in a year long siege, and pressed on to take Kabul from its Mughal governor.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Safavid Empire"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Mughal Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "Persian army to Kandahar",
+      "path": [
+       [
+        51.67,
+        32.65
+       ],
+       [
+        55.0,
+        31.5
+       ],
+       [
+        61.2,
+        31.0
+       ],
+       [
+        64.5,
+        31.5
+       ],
+       [
+        65.71,
+        31.61
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "March on Kabul",
+      "path": [
+       [
+        65.71,
+        31.61
+       ],
+       [
+        67.3,
+        32.6
+       ],
+       [
+        68.4,
+        33.6
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Nader crowned on the Mughan plain",
+      "kind": "event",
+      "lon": 48.2,
+      "lat": 39.6,
+      "year": 1736,
+      "winner": 0,
+      "text": "An assembly of notables accepted Nader as shah, founding the Afsharid dynasty."
+     },
+     {
+      "name": "Siege of Kandahar",
+      "kind": "siege",
+      "lon": 65.71,
+      "lat": 31.61,
+      "year": 1738,
+      "winner": 0,
+      "text": "The last Hotaki stronghold fell after a year, and many Afghans joined Nader's army."
+     }
+    ]
+   },
+   {
+    "year": 1739,
+    "label": "1738 to 1739",
+    "title": "The sack of Delhi",
+    "text": "Using the shelter given to Afghan fugitives as a pretext, Nader forced the Khyber Pass, took Lahore and met the Mughal emperor Muhammad Shah's far larger army at Karnal, where his cavalry and musketeers won in a few hours. In Delhi a riot against his troops led to a massacre of perhaps 20,000 people, and he carried home the Peacock Throne, the Koh-i-Noor diamond and treasure worth years of Persian taxes.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Safavid Empire"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Mughal Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "Persian army through the Khyber",
+      "path": [
+       [
+        69.17,
+        34.53
+       ],
+       [
+        71.1,
+        34.08
+       ],
+       [
+        71.57,
+        34.01
+       ],
+       [
+        74.34,
+        31.55
+       ],
+       [
+        76.98,
+        29.69
+       ],
+       [
+        77.23,
+        28.65
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Muhammad Shah",
+      "label": "Mughal army",
+      "path": [
+       [
+        77.23,
+        28.65
+       ],
+       [
+        77.0,
+        29.2
+       ],
+       [
+        76.98,
+        29.69
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Karnal",
+      "kind": "battle",
+      "lon": 76.98,
+      "lat": 29.69,
+      "year": 1739,
+      "winner": 0,
+      "text": "Nader shattered the Mughal army in about three hours and captured the emperor."
+     },
+     {
+      "name": "Sack of Delhi",
+      "kind": "event",
+      "lon": 77.23,
+      "lat": 28.65,
+      "year": 1739,
+      "winner": 0,
+      "text": "Persian troops massacred thousands and looted the Mughal treasury, a blow from which the empire never recovered."
+     }
+    ]
+   },
+   {
+    "year": 1740,
+    "label": "1740",
+    "title": "Bukhara and Khiva",
+    "text": "Returning from India, Nader crossed the Oxus with artillery and treasure-fed troops. Abul Fayz Khan of Bukhara submitted without a fight, while Ilbars Khan of Khiva resisted, was defeated and executed, and thousands of Persian slaves held in Khiva were freed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Safavid Empire",
+       "Khiva Khanate"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Mughal Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "Persian army over the Oxus",
+      "path": [
+       [
+        66.9,
+        36.76
+       ],
+       [
+        65.2,
+        37.3
+       ],
+       [
+        63.58,
+        39.07
+       ],
+       [
+        64.42,
+        39.77
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "Down the Oxus to Khiva",
+      "path": [
+       [
+        63.58,
+        39.07
+       ],
+       [
+        62.0,
+        40.2
+       ],
+       [
+        60.36,
+        41.38
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Submission of Bukhara",
+      "kind": "treaty",
+      "lon": 64.42,
+      "lat": 39.77,
+      "year": 1740,
+      "winner": 0,
+      "text": "The khan of Bukhara accepted Persian overlordship and gave the lands south of the Oxus."
+     },
+     {
+      "name": "Fall of Khiva",
+      "kind": "siege",
+      "lon": 60.36,
+      "lat": 41.38,
+      "year": 1740,
+      "winner": 0,
+      "text": "Nader's army took Khiva, executed its khan and freed captives held there."
+     }
+    ]
+   },
+   {
+    "year": 1743,
+    "label": "1741 to 1746",
+    "title": "Overreach in Dagestan and Mesopotamia",
+    "text": "Nader's campaign against the mountain peoples of Dagestan bogged down in guerrilla war, and after an attempt on his life he had his own son Reza Qoli blinded. A second Ottoman war brought failed sieges of Mosul and Kars, but a crushing victory near Kars in 1745 led to the Treaty of Kerden, which restored the old frontier of 1639.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Safavid Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        43.6,
+        41.4
+       ],
+       [
+        44.2,
+        39.8
+       ],
+       [
+        44.8,
+        37.6
+       ],
+       [
+        44.0,
+        35.6
+       ],
+       [
+        45.4,
+        33.6
+       ]
+      ],
+      "label": "Persian and Ottoman lines, 1743 to 1745"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "Persian army into Dagestan",
+      "path": [
+       [
+        48.29,
+        42.06
+       ],
+       [
+        47.5,
+        42.5
+       ],
+       [
+        46.6,
+        42.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "Persian army on Mosul",
+      "path": [
+       [
+        46.29,
+        38.08
+       ],
+       [
+        45.0,
+        37.0
+       ],
+       [
+        43.13,
+        36.34
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nader Shah",
+      "label": "Persian army on Kars",
+      "path": [
+       [
+        44.51,
+        40.18
+       ],
+       [
+        43.6,
+        40.45
+       ],
+       [
+        43.1,
+        40.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Mosul",
+      "kind": "siege",
+      "lon": 43.13,
+      "lat": 36.34,
+      "year": 1743,
+      "winner": 1,
+      "text": "The Ottoman garrison held out for weeks against heavy bombardment and Nader withdrew."
+     },
+     {
+      "name": "Battle of Kars",
+      "kind": "battle",
+      "lon": 43.05,
+      "lat": 40.55,
+      "year": 1745,
+      "winner": 0,
+      "text": "Nader destroyed Yegen Mehmed Pasha's army, his last great victory."
+     }
+    ]
+   },
+   {
+    "year": 1747,
+    "label": "1747",
+    "title": "Murder and collapse",
+    "text": "Increasingly suspicious and brutal, Nader taxed his realm into revolt and executed officials and kin. In June 1747 a group of his own officers killed him in his tent near Quchan. His empire broke apart within months: his Afghan commander Ahmad Shah Durrani rode off with the treasury guard and founded the Durrani Empire, while Persia sank into civil war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Safavid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Ahmad Shah Durrani",
+      "label": "Afghan contingent rides to Kandahar",
+      "path": [
+       [
+        58.51,
+        37.1
+       ],
+       [
+        59.6,
+        36.3
+       ],
+       [
+        62.2,
+        34.35
+       ],
+       [
+        65.71,
+        31.61
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Assassination of Nader Shah",
+      "kind": "event",
+      "lon": 58.51,
+      "lat": 37.1,
+      "year": 1747,
+      "winner": null,
+      "text": "Nader was killed by his own officers at Fathabad, near Quchan."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "seven-years-war",
+  "name": "Seven Years' War",
+  "start": 1754,
+  "end": 1763,
+  "kind": "war",
+  "summary": "A colonial clash in the Ohio Country in 1754 merged with Austria's attempt to win back Silesia from Prussia into a war fought across Europe, North America, the Caribbean, Africa and India. Britain and Prussia faced France, Austria, Russia, Sweden and later Spain; Frederick the Great survived, and Britain took New France, Florida and dominance in India. The war made Britain the leading global power, and its debts helped spark the American and French revolutions.",
+  "sides": [
+   {
+    "name": "Britain, Prussia and allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Frederick the Great",
+     "William Pitt",
+     "James Wolfe",
+     "Robert Clive",
+     "Ferdinand of Brunswick"
+    ]
+   },
+   {
+    "name": "France, Austria, Russia and allies",
+    "color": "#c0473a",
+    "leaders": [
+     "Louis XV",
+     "Maria Theresa",
+     "Marquis de Montcalm",
+     "Leopold von Daun",
+     "Elizabeth of Russia"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 12,
+    "lat": 50.5,
+    "r": 9
+   },
+   {
+    "lon": -72,
+    "lat": 44,
+    "r": 7
+   },
+   {
+    "lon": 83,
+    "lat": 18,
+    "r": 8
+   },
+   {
+    "lon": -78,
+    "lat": 21,
+    "r": 6
+   }
+  ],
+  "steps": [
+   {
+    "year": 1754,
+    "label": "1754 to 1755",
+    "title": "War begins in the Ohio Country",
+    "text": "Britain and France both claimed the Ohio valley. A young George Washington, sent to challenge the French Fort Duquesne, was forced to surrender at Fort Necessity in 1754. The next year General Braddock's British regulars marched on the fort and were ambushed and routed by French troops and their Native allies at the Monongahela.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -73.4,
+        45.0
+       ],
+       [
+        -73.4,
+        43.6
+       ],
+       [
+        -75.5,
+        43.3
+       ],
+       [
+        -78.5,
+        42.1
+       ],
+       [
+        -80.0,
+        40.6
+       ],
+       [
+        -81.2,
+        38.6
+       ]
+      ],
+      "label": "British and French frontier, 1755"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Edward Braddock",
+      "label": "Braddock's expedition",
+      "path": [
+       [
+        -78.76,
+        39.65
+       ],
+       [
+        -79.3,
+        39.8
+       ],
+       [
+        -79.6,
+        40.15
+       ],
+       [
+        -79.87,
+        40.41
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Contrecoeur",
+      "label": "French reinforcements from Canada",
+      "path": [
+       [
+        -73.55,
+        45.5
+       ],
+       [
+        -76.48,
+        44.23
+       ],
+       [
+        -79.05,
+        43.25
+       ],
+       [
+        -80.08,
+        42.12
+       ],
+       [
+        -80.01,
+        40.44
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fort Necessity",
+      "kind": "siege",
+      "lon": -79.59,
+      "lat": 39.81,
+      "year": 1754,
+      "winner": 1,
+      "text": "Washington's Virginians surrendered to a French and Native force."
+     },
+     {
+      "name": "Battle of the Monongahela",
+      "kind": "battle",
+      "lon": -79.87,
+      "lat": 40.41,
+      "year": 1755,
+      "winner": 1,
+      "text": "Braddock was mortally wounded and his column cut to pieces near Fort Duquesne."
+     }
+    ]
+   },
+   {
+    "year": 1757,
+    "label": "1756 to 1757",
+    "title": "Frederick's year of battles",
+    "text": "Austria, France and Russia allied to dismember Prussia, so Frederick struck first, overrunning Saxony in 1756. In 1757 he was beaten at Kolin in Bohemia as French, Imperial, Russian and Swedish armies closed in, but he marched west to rout a Franco-Imperial army at Rossbach, then raced east to crush the Austrians at Leuthen and save Silesia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina",
+       "Rupert's Land",
+       "Prussia",
+       "Brandenburg",
+       "Hanover"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana",
+       "Austrian Empire",
+       "Austrian Netherlands",
+       "Holy Roman Empire",
+       "Tsardom of Muscovy",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        11.4,
+        52.0
+       ],
+       [
+        11.8,
+        50.9
+       ],
+       [
+        13.8,
+        50.7
+       ],
+       [
+        15.6,
+        50.6
+       ],
+       [
+        17.6,
+        50.3
+       ],
+       [
+        18.6,
+        51.0
+       ]
+      ],
+      "label": "Prussian lines, late 1757"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Frederick the Great",
+      "label": "Into Bohemia",
+      "path": [
+       [
+        13.74,
+        51.05
+       ],
+       [
+        14.05,
+        50.52
+       ],
+       [
+        14.42,
+        50.08
+       ],
+       [
+        15.15,
+        50.03
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Soubise",
+      "label": "Franco-Imperial army",
+      "path": [
+       [
+        10.0,
+        50.4
+       ],
+       [
+        11.03,
+        50.98
+       ],
+       [
+        11.92,
+        51.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Frederick the Great",
+      "label": "West to Rossbach, east to Leuthen",
+      "path": [
+       [
+        13.74,
+        51.05
+       ],
+       [
+        11.92,
+        51.25
+       ],
+       [
+        13.4,
+        51.4
+       ],
+       [
+        15.0,
+        51.2
+       ],
+       [
+        16.79,
+        51.13
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Apraksin",
+      "label": "Russian army into East Prussia",
+      "path": [
+       [
+        23.9,
+        54.9
+       ],
+       [
+        22.3,
+        54.7
+       ],
+       [
+        21.45,
+        54.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kolin",
+      "kind": "battle",
+      "lon": 15.15,
+      "lat": 50.03,
+      "year": 1757,
+      "winner": 1,
+      "text": "Daun's Austrians repulsed Frederick, ending his invasion of Bohemia."
+     },
+     {
+      "name": "Battle of Rossbach",
+      "kind": "battle",
+      "lon": 11.92,
+      "lat": 51.25,
+      "year": 1757,
+      "winner": 0,
+      "text": "Frederick routed a Franco-Imperial army twice his size in about ninety minutes."
+     },
+     {
+      "name": "Battle of Leuthen",
+      "kind": "battle",
+      "lon": 16.79,
+      "lat": 51.13,
+      "year": 1757,
+      "winner": 0,
+      "text": "Frederick's oblique attack shattered the Austrians and recovered Silesia."
+     }
+    ]
+   },
+   {
+    "year": 1757,
+    "label": "1757 to 1761",
+    "title": "The struggle for India",
+    "text": "Robert Clive's East India Company troops retook Calcutta and, with the Nawab's commanders bribed to stand aside, defeated Siraj ud-Daulah at Plassey, putting Bengal under Company control. In the south Eyre Coote beat the French under Lally at Wandiwash and took Pondicherry, ending French hopes of an Indian empire.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina",
+       "Rupert's Land",
+       "Prussia",
+       "Brandenburg",
+       "Hanover"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana",
+       "Austrian Empire",
+       "Austrian Netherlands",
+       "Holy Roman Empire",
+       "Tsardom of Muscovy",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Robert Clive",
+      "label": "Company army marches on Plassey",
+      "path": [
+       [
+        88.36,
+        22.57
+       ],
+       [
+        88.37,
+        22.87
+       ],
+       [
+        88.3,
+        23.4
+       ],
+       [
+        88.25,
+        23.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Siraj ud-Daulah",
+      "label": "Bengal army from Murshidabad",
+      "path": [
+       [
+        88.27,
+        24.18
+       ],
+       [
+        88.26,
+        24.0
+       ],
+       [
+        88.25,
+        23.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Eyre Coote",
+      "label": "Coote marches from Madras",
+      "path": [
+       [
+        80.27,
+        13.08
+       ],
+       [
+        79.9,
+        12.8
+       ],
+       [
+        79.62,
+        12.5
+       ],
+       [
+        79.83,
+        11.93
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Plassey",
+      "kind": "battle",
+      "lon": 88.25,
+      "lat": 23.8,
+      "year": 1757,
+      "winner": 0,
+      "text": "Clive defeated Siraj ud-Daulah when key Bengali commanders held back, giving the Company Bengal."
+     },
+     {
+      "name": "Battle of Wandiwash",
+      "kind": "battle",
+      "lon": 79.62,
+      "lat": 12.5,
+      "year": 1760,
+      "winner": 0,
+      "text": "Coote decisively defeated Lally's French army in the Carnatic."
+     },
+     {
+      "name": "Siege of Pondicherry",
+      "kind": "siege",
+      "lon": 79.83,
+      "lat": 11.93,
+      "year": 1761,
+      "winner": 0,
+      "text": "The main French base in India surrendered after a long siege."
+     }
+    ]
+   },
+   {
+    "year": 1758,
+    "label": "1758",
+    "title": "Pitt's war for North America",
+    "text": "William Pitt poured British troops and ships into America while paying Prussia to hold the line in Europe. An amphibious force under Amherst took Louisbourg and opened the St Lawrence, and Forbes forced the French to abandon Fort Duquesne, but Montcalm bloodily repulsed Abercrombie's huge army at Fort Carillon.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina",
+       "Rupert's Land",
+       "Prussia",
+       "Brandenburg",
+       "Hanover"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana",
+       "Austrian Empire",
+       "Austrian Netherlands",
+       "Holy Roman Empire",
+       "Tsardom of Muscovy",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -73.4,
+        45.0
+       ],
+       [
+        -73.4,
+        43.8
+       ],
+       [
+        -75.5,
+        43.6
+       ],
+       [
+        -78.8,
+        43.2
+       ],
+       [
+        -80.0,
+        40.5
+       ]
+      ],
+      "label": "Front, 1758"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Jeffery Amherst",
+      "label": "Fleet and army from Halifax",
+      "path": [
+       [
+        -63.57,
+        44.6
+       ],
+       [
+        -61.5,
+        45.1
+       ],
+       [
+        -59.99,
+        45.92
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "James Abercrombie",
+      "label": "Army via Lake George",
+      "path": [
+       [
+        -73.75,
+        42.65
+       ],
+       [
+        -73.65,
+        43.3
+       ],
+       [
+        -73.45,
+        43.6
+       ],
+       [
+        -73.39,
+        43.84
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John Forbes",
+      "label": "Forbes road to Fort Duquesne",
+      "path": [
+       [
+        -77.19,
+        40.2
+       ],
+       [
+        -78.5,
+        40.02
+       ],
+       [
+        -79.24,
+        40.24
+       ],
+       [
+        -80.01,
+        40.44
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Louisbourg",
+      "kind": "siege",
+      "lon": -59.99,
+      "lat": 45.92,
+      "year": 1758,
+      "winner": 0,
+      "text": "British forces took the great French fortress on Cape Breton Island after seven weeks."
+     },
+     {
+      "name": "Battle of Carillon",
+      "kind": "battle",
+      "lon": -73.39,
+      "lat": 43.84,
+      "year": 1758,
+      "winner": 1,
+      "text": "Montcalm's outnumbered French beat off repeated British assaults at Ticonderoga."
+     }
+    ]
+   },
+   {
+    "year": 1759,
+    "label": "1759",
+    "title": "The year of victories",
+    "text": "Britain's annus mirabilis: Wolfe sailed up the St Lawrence and took Quebec in a battle that killed both him and Montcalm, Ferdinand of Brunswick beat the French at Minden, and Hawke destroyed a French fleet at Quiberon Bay, ending invasion plans. Prussia meanwhile was nearly destroyed by Russians and Austrians at Kunersdorf.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina",
+       "Rupert's Land",
+       "Prussia",
+       "Brandenburg",
+       "Hanover"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana",
+       "Austrian Empire",
+       "Austrian Netherlands",
+       "Holy Roman Empire",
+       "Tsardom of Muscovy",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -71.2,
+        46.9
+       ],
+       [
+        -72.5,
+        46.2
+       ],
+       [
+        -73.4,
+        45.0
+       ],
+       [
+        -73.4,
+        44.1
+       ]
+      ],
+      "label": "Front, 1759"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "James Wolfe",
+      "label": "Up the St Lawrence",
+      "path": [
+       [
+        -59.99,
+        45.92
+       ],
+       [
+        -60.5,
+        47.3
+       ],
+       [
+        -64.5,
+        49.2
+       ],
+       [
+        -68.6,
+        48.5
+       ],
+       [
+        -71.2,
+        46.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ferdinand of Brunswick",
+      "label": "Allied army in Westphalia",
+      "path": [
+       [
+        8.0,
+        51.9
+       ],
+       [
+        8.6,
+        52.2
+       ],
+       [
+        8.92,
+        52.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Edward Hawke",
+      "label": "Western Squadron",
+      "path": [
+       [
+        -4.6,
+        48.3
+       ],
+       [
+        -3.8,
+        47.6
+       ],
+       [
+        -2.95,
+        47.45
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Plains of Abraham",
+      "kind": "battle",
+      "lon": -71.22,
+      "lat": 46.8,
+      "year": 1759,
+      "winner": 0,
+      "text": "Wolfe's army defeated Montcalm outside Quebec, which surrendered days later."
+     },
+     {
+      "name": "Battle of Minden",
+      "kind": "battle",
+      "lon": 8.92,
+      "lat": 52.29,
+      "year": 1759,
+      "winner": 0,
+      "text": "British and German infantry broke the French cavalry and saved Hanover."
+     },
+     {
+      "name": "Battle of Quiberon Bay",
+      "kind": "battle",
+      "lon": -2.95,
+      "lat": 47.45,
+      "year": 1759,
+      "winner": 0,
+      "text": "Hawke chased the French fleet into a rocky bay in a gale and wrecked it."
+     }
+    ]
+   },
+   {
+    "year": 1760,
+    "label": "1760 to 1761",
+    "title": "Canada falls, Prussia at bay",
+    "text": "Three British armies converged on Montreal, and the French governor surrendered all of New France in September 1760. In Europe a Russian raid briefly took Berlin and Frederick, his armies bled white, won a costly victory at Torgau, but by 1761 Prussia was close to collapse.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina",
+       "Rupert's Land",
+       "Prussia",
+       "Brandenburg",
+       "Hanover"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana",
+       "Austrian Empire",
+       "Austrian Netherlands",
+       "Holy Roman Empire",
+       "Tsardom of Muscovy",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        12.0,
+        52.6
+       ],
+       [
+        12.6,
+        51.3
+       ],
+       [
+        13.6,
+        50.8
+       ],
+       [
+        15.6,
+        50.5
+       ],
+       [
+        16.9,
+        50.4
+       ]
+      ],
+      "label": "Prussian lines, 1760"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Jeffery Amherst",
+      "label": "Down the St Lawrence from Oswego",
+      "path": [
+       [
+        -76.5,
+        43.46
+       ],
+       [
+        -75.9,
+        44.3
+       ],
+       [
+        -74.7,
+        45.0
+       ],
+       [
+        -73.55,
+        45.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "James Murray",
+      "label": "Up from Quebec",
+      "path": [
+       [
+        -71.21,
+        46.81
+       ],
+       [
+        -72.5,
+        46.3
+       ],
+       [
+        -73.55,
+        45.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Totleben and Lacy",
+      "label": "Raid on Berlin",
+      "path": [
+       [
+        15.5,
+        52.3
+       ],
+       [
+        14.5,
+        52.4
+       ],
+       [
+        13.4,
+        52.52
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Frederick the Great",
+      "label": "Prussian army to Torgau",
+      "path": [
+       [
+        14.3,
+        51.4
+       ],
+       [
+        13.6,
+        51.5
+       ],
+       [
+        13.0,
+        51.56
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Surrender of Montreal",
+      "kind": "siege",
+      "lon": -73.55,
+      "lat": 45.5,
+      "year": 1760,
+      "winner": 0,
+      "text": "Vaudreuil capitulated, handing all of New France to Britain."
+     },
+     {
+      "name": "Battle of Torgau",
+      "kind": "battle",
+      "lon": 13.0,
+      "lat": 51.56,
+      "year": 1760,
+      "winner": 0,
+      "text": "Frederick beat Daun at terrible cost and kept Saxony."
+     }
+    ]
+   },
+   {
+    "year": 1762,
+    "label": "1762",
+    "title": "Miracle of the House of Brandenburg",
+    "text": "Empress Elizabeth's death in January 1762 brought the pro-Prussian Peter III to the throne; Russia, then Sweden, made peace. Spain entered the war on France's side and paid dearly: British expeditions captured Havana and Manila, and a Spanish invasion of Portugal was beaten back.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina",
+       "Rupert's Land",
+       "Prussia",
+       "Brandenburg",
+       "Hanover",
+       "Portugal",
+       "Cuba (Spain)",
+       "Philippines"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana",
+       "Austrian Empire",
+       "Austrian Netherlands",
+       "Holy Roman Empire",
+       "Spain",
+       "Florida (Spain)"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Earl of Albemarle",
+      "label": "Expedition to Havana",
+      "path": [
+       [
+        -76.8,
+        17.97
+       ],
+       [
+        -74.0,
+        20.5
+       ],
+       [
+        -78.0,
+        23.3
+       ],
+       [
+        -82.36,
+        23.14
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William Draper",
+      "label": "Expedition from Madras",
+      "path": [
+       [
+        80.27,
+        13.08
+       ],
+       [
+        95.0,
+        6.0
+       ],
+       [
+        110.0,
+        9.0
+       ],
+       [
+        120.97,
+        14.59
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Count of Aranda",
+      "label": "Spanish invasion of Portugal",
+      "path": [
+       [
+        -5.66,
+        40.97
+       ],
+       [
+        -6.5,
+        40.85
+       ],
+       [
+        -6.91,
+        40.73
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Havana",
+      "kind": "siege",
+      "lon": -82.36,
+      "lat": 23.14,
+      "year": 1762,
+      "winner": 0,
+      "text": "Britain took Spain's key Caribbean port after a two-month siege."
+     },
+     {
+      "name": "Fall of Manila",
+      "kind": "siege",
+      "lon": 120.97,
+      "lat": 14.59,
+      "year": 1762,
+      "winner": 0,
+      "text": "A British force from India stormed the capital of the Spanish Philippines."
+     },
+     {
+      "name": "Battle of Freiberg",
+      "kind": "battle",
+      "lon": 13.34,
+      "lat": 50.91,
+      "year": 1762,
+      "winner": 0,
+      "text": "Prince Henry of Prussia beat the Austrians in the last big battle in Germany."
+     }
+    ]
+   },
+   {
+    "year": 1763,
+    "label": "1763",
+    "title": "Peace of Paris and Hubertusburg",
+    "text": "The Treaty of Paris gave Britain Canada, Florida and everything east of the Mississippi, and confirmed its lead in India; Havana and Manila went back to Spain, and France ceded Louisiana west of the river to Spain. Days later Prussia and Austria signed peace at Hubertusburg, leaving Silesia with Prussia and the map of Europe unchanged.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "British American colonies",
+       "South Carolina",
+       "Rupert's Land",
+       "Prussia",
+       "Brandenburg",
+       "Hanover",
+       "Portugal",
+       "Florida (Spain)"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France",
+       "Louisiana",
+       "Austrian Empire",
+       "Austrian Netherlands",
+       "Holy Roman Empire",
+       "Spain"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [],
+    "events": [
+     {
+      "name": "Treaty of Paris",
+      "kind": "treaty",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1763,
+      "winner": 0,
+      "text": "France gave up New France and Britain became the leading colonial power."
+     },
+     {
+      "name": "Treaty of Hubertusburg",
+      "kind": "treaty",
+      "lon": 12.94,
+      "lat": 51.28,
+      "year": 1763,
+      "winner": 0,
+      "text": "Austria accepted Prussian possession of Silesia."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "qing-conquest-dzungaria",
+  "name": "Qing Conquest of Dzungaria",
+  "start": 1755,
+  "end": 1758,
+  "kind": "war",
+  "summary": "The Qianlong Emperor exploited a succession struggle in the Dzungar Khanate, the last great nomad empire of the steppe, to send armies west in 1755. When his ally Amursana turned against him, Qianlong ordered the Dzungars destroyed; war, massacre and smallpox killed most of their people by 1758. The conquest, completed in the Tarim Basin in 1759, added Xinjiang to the Qing Empire and ended the age of steppe empires.",
+  "sides": [
+   {
+    "name": "Qing Empire",
+    "color": "#d39a2c",
+    "leaders": [
+     "Qianlong Emperor",
+     "Bandi",
+     "Zhaohui",
+     "Fude"
+    ]
+   },
+   {
+    "name": "Dzungar Khanate",
+    "color": "#8a5cb8",
+    "leaders": [
+     "Dawachi",
+     "Amursana"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 85,
+    "lat": 44,
+    "r": 10
+   }
+  ],
+  "steps": [
+   {
+    "year": 1755,
+    "label": "Spring 1755",
+    "title": "Qing armies march on Ili",
+    "text": "Civil war over the Dzungar throne drove the noble Amursana to seek Qing help against khan Dawachi. Qianlong sent two columns west, Bandi's from Uliastai with Amursana as deputy and another from Barkol. Many Dzungar clans submitted, Ili fell without a major battle, and Dawachi fled over the Tian Shan, where a local beg handed him over at Uch Turpan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "central Asian khanates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        91.5,
+        48.5
+       ],
+       [
+        92.5,
+        46.0
+       ],
+       [
+        93.0,
+        44.0
+       ],
+       [
+        94.5,
+        42.5
+       ]
+      ],
+      "label": "Qing frontier, early 1755"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Bandi and Amursana",
+      "label": "Northern Route army",
+      "path": [
+       [
+        96.84,
+        47.74
+       ],
+       [
+        91.64,
+        48.0
+       ],
+       [
+        86.5,
+        46.5
+       ],
+       [
+        82.98,
+        46.75
+       ],
+       [
+        81.32,
+        43.91
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Yongchang",
+      "label": "Western Route army",
+      "path": [
+       [
+        93.0,
+        43.6
+       ],
+       [
+        89.5,
+        44.0
+       ],
+       [
+        86.0,
+        44.2
+       ],
+       [
+        81.32,
+        43.91
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Dawachi",
+      "label": "Dawachi's flight",
+      "path": [
+       [
+        81.32,
+        43.91
+       ],
+       [
+        80.6,
+        42.4
+       ],
+       [
+        79.23,
+        41.21
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Qing take Ili",
+      "kind": "event",
+      "lon": 81.32,
+      "lat": 43.91,
+      "year": 1755,
+      "winner": 0,
+      "text": "The Dzungar capital fell almost unopposed as clans went over to the Qing."
+     },
+     {
+      "name": "Capture of Dawachi",
+      "kind": "event",
+      "lon": 79.23,
+      "lat": 41.21,
+      "year": 1755,
+      "winner": 0,
+      "text": "The fleeing khan was seized at Uch Turpan and sent to Beijing."
+     }
+    ]
+   },
+   {
+    "year": 1755,
+    "label": "Autumn 1755 to 1756",
+    "title": "Amursana's revolt",
+    "text": "Amursana had hoped to rule the Dzungars himself; when Qianlong instead split them into four vassal khanates, he revolted. Most Qing troops had already gone home, and the small garrison at Ili was overwhelmed, its commander Bandi killing himself. A Qing counter-attack in 1756 drove Amursana into the Kazakh steppe, while a Mongol rebellion in Khalkha distracted the Qing.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "central Asian khanates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        91.0,
+        48.5
+       ],
+       [
+        90.0,
+        46.0
+       ],
+       [
+        89.0,
+        44.2
+       ],
+       [
+        91.0,
+        43.0
+       ]
+      ],
+      "label": "Qing line, winter 1755"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Amursana",
+      "label": "Amursana retakes Ili",
+      "path": [
+       [
+        82.07,
+        44.9
+       ],
+       [
+        81.6,
+        44.3
+       ],
+       [
+        81.32,
+        43.91
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Celeng and Zhaohui",
+      "label": "Qing counter-attack, 1756",
+      "path": [
+       [
+        93.0,
+        43.6
+       ],
+       [
+        87.6,
+        43.8
+       ],
+       [
+        84.0,
+        44.4
+       ],
+       [
+        81.32,
+        43.91
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Amursana",
+      "label": "Flight to the Kazakhs",
+      "path": [
+       [
+        81.32,
+        43.91
+       ],
+       [
+        79.0,
+        45.0
+       ],
+       [
+        76.0,
+        46.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of the Ili garrison",
+      "kind": "event",
+      "lon": 81.32,
+      "lat": 43.91,
+      "year": 1755,
+      "winner": 1,
+      "text": "Amursana's men overran the Qing post and Bandi took his own life."
+     }
+    ]
+   },
+   {
+    "year": 1757,
+    "label": "1757",
+    "title": "Extermination",
+    "text": "Qianlong ordered that the Dzungars be wiped out. Zhaohui and Fude swept the land from the Altai to the Ili, killing men and enslaving women and children, while a smallpox epidemic tore through the survivors. Amursana fled to Russian Siberia and died of smallpox at Tobolsk. Most of a Dzungar population of perhaps 600,000 perished or fled.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "central Asian khanates"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Zhaohui",
+      "label": "Qing army sweeps west",
+      "path": [
+       [
+        93.0,
+        43.6
+       ],
+       [
+        87.6,
+        43.8
+       ],
+       [
+        84.9,
+        44.4
+       ],
+       [
+        82.07,
+        44.9
+       ],
+       [
+        81.32,
+        43.91
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Fude",
+      "label": "Northern sweep",
+      "path": [
+       [
+        91.64,
+        48.0
+       ],
+       [
+        86.0,
+        47.6
+       ],
+       [
+        82.98,
+        46.75
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Amursana",
+      "label": "Escape to Russia",
+      "path": [
+       [
+        82.98,
+        46.75
+       ],
+       [
+        80.23,
+        50.4
+       ],
+       [
+        73.4,
+        54.9
+       ],
+       [
+        68.25,
+        58.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Dzungar genocide",
+      "kind": "event",
+      "lon": 84.0,
+      "lat": 44.5,
+      "year": 1757,
+      "winner": 0,
+      "text": "Qing massacres, famine and smallpox destroyed the Dzungar people as a nation."
+     },
+     {
+      "name": "Death of Amursana",
+      "kind": "event",
+      "lon": 68.25,
+      "lat": 58.2,
+      "year": 1757,
+      "winner": null,
+      "text": "The last Dzungar leader died of smallpox in Russian Tobolsk."
+     }
+    ]
+   },
+   {
+    "year": 1758,
+    "label": "1758 to 1759",
+    "title": "Xinjiang: the Tarim Basin falls",
+    "text": "With Dzungaria emptied, the Khoja brothers who ruled the oasis cities of the Tarim Basin defied the Qing. Zhaohui besieged Kucha, was himself trapped for months at Yarkand at the Black Water Camp, but was relieved and took Kashgar and Yarkand in 1759. The Khojas fled to Badakhshan, where they were killed, and the whole region became the Qing 'New Frontier', Xinjiang.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire",
+       "central Asian khanates"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Zhaohui",
+      "label": "Qing army into the Tarim Basin",
+      "path": [
+       [
+        87.6,
+        43.8
+       ],
+       [
+        86.1,
+        41.75
+       ],
+       [
+        82.96,
+        41.72
+       ],
+       [
+        80.26,
+        41.17
+       ],
+       [
+        77.24,
+        38.41
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Fude",
+      "label": "Relief column",
+      "path": [
+       [
+        80.26,
+        41.17
+       ],
+       [
+        78.5,
+        39.6
+       ],
+       [
+        77.24,
+        38.41
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Kucha",
+      "kind": "siege",
+      "lon": 82.96,
+      "lat": 41.72,
+      "year": 1758,
+      "winner": 0,
+      "text": "The oasis fell after a long siege, though Khoja Jahan escaped."
+     },
+     {
+      "name": "Black Water Camp",
+      "kind": "siege",
+      "lon": 77.24,
+      "lat": 38.41,
+      "year": 1759,
+      "winner": 0,
+      "text": "Zhaohui held out for three months near Yarkand until relief arrived."
+     },
+     {
+      "name": "Fall of Kashgar",
+      "kind": "event",
+      "lon": 75.99,
+      "lat": 39.47,
+      "year": 1759,
+      "winner": 0,
+      "text": "Kashgar and Yarkand submitted and the Tarim Basin passed to the Qing."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "afghan-maratha-war",
+  "name": "Afghan-Maratha War",
+  "start": 1758,
+  "end": 1761,
+  "kind": "war",
+  "summary": "As Mughal power collapsed, the Hindu Maratha Confederacy pushed north to the Indus, colliding with Ahmad Shah Durrani's Afghan empire, which claimed the Punjab. Durrani, backed by the Rohilla Najib ad-Dawla and the Nawab of Oudh, trapped the main Maratha army at Panipat and destroyed it in January 1761, one of the bloodiest battles of the century. Neither victor could hold north India, opening the way for the Sikhs in the Punjab and the British East India Company.",
+  "sides": [
+   {
+    "name": "Durrani Empire and allies",
+    "color": "#4f9a5a",
+    "leaders": [
+     "Ahmad Shah Durrani",
+     "Najib ad-Dawla",
+     "Shuja ud-Daula",
+     "Shah Wali Khan"
+    ]
+   },
+   {
+    "name": "Maratha Confederacy",
+    "color": "#d39a2c",
+    "leaders": [
+     "Sadashivrao Bhau",
+     "Raghunathrao",
+     "Dattaji Shinde",
+     "Malhar Rao Holkar",
+     "Ibrahim Khan Gardi"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 74,
+    "lat": 28,
+    "r": 9
+   }
+  ],
+  "steps": [
+   {
+    "year": 1758,
+    "label": "1758",
+    "title": "The Marathas reach the Indus",
+    "text": "Invited in by the Mughal court's factions, a Maratha army under Raghunathrao and Malhar Rao Holkar swept through the Punjab, took Sirhind and Lahore and drove out Ahmad Shah's son Timur Shah. Maratha outposts at Attock and Peshawar marked the furthest reach of their power, and a direct challenge to Durrani.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Maratha"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        72.3,
+        35.0
+       ],
+       [
+        72.36,
+        33.77
+       ],
+       [
+        71.6,
+        32.2
+       ],
+       [
+        70.8,
+        30.2
+       ]
+      ],
+      "label": "Maratha frontier on the Indus, 1758"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Raghunathrao",
+      "label": "Maratha army into the Punjab",
+      "path": [
+       [
+        77.21,
+        28.66
+       ],
+       [
+        76.38,
+        30.64
+       ],
+       [
+        74.34,
+        31.55
+       ],
+       [
+        72.36,
+        33.77
+       ],
+       [
+        71.57,
+        34.01
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Timur Shah",
+      "label": "Afghan withdrawal",
+      "path": [
+       [
+        74.34,
+        31.55
+       ],
+       [
+        72.36,
+        33.77
+       ],
+       [
+        71.57,
+        34.01
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Maratha capture of Lahore",
+      "kind": "event",
+      "lon": 74.34,
+      "lat": 31.55,
+      "year": 1758,
+      "winner": 1,
+      "text": "Timur Shah's Afghan garrison fled and the Punjab passed to the Marathas."
+     }
+    ]
+   },
+   {
+    "year": 1759,
+    "label": "Late 1759 to 1760",
+    "title": "Ahmad Shah strikes back",
+    "text": "Ahmad Shah crossed the Indus with a large army, swept the thin Maratha garrisons out of the Punjab and joined the Rohilla chief Najib ad-Dawla. North of Delhi he caught Dattaji Shinde at Barari Ghat, where Dattaji was killed, then routed Holkar and camped at Anupshahr on the Ganges, winning over the Nawab of Oudh.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Maratha"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ahmad Shah Durrani",
+      "label": "Afghan army through the Punjab",
+      "path": [
+       [
+        69.17,
+        34.53
+       ],
+       [
+        72.36,
+        33.77
+       ],
+       [
+        74.34,
+        31.55
+       ],
+       [
+        76.38,
+        30.64
+       ],
+       [
+        77.2,
+        28.75
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Dattaji Shinde",
+      "label": "Shinde's army",
+      "path": [
+       [
+        77.95,
+        29.49
+       ],
+       [
+        77.5,
+        29.1
+       ],
+       [
+        77.2,
+        28.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ahmad Shah Durrani",
+      "label": "To Anupshahr",
+      "path": [
+       [
+        77.2,
+        28.75
+       ],
+       [
+        77.7,
+        28.5
+       ],
+       [
+        78.27,
+        28.37
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Barari Ghat",
+      "kind": "battle",
+      "lon": 77.2,
+      "lat": 28.75,
+      "year": 1760,
+      "winner": 0,
+      "text": "Dattaji Shinde was killed as the Afghans crossed the Yamuna north of Delhi."
+     }
+    ]
+   },
+   {
+    "year": 1760,
+    "label": "1760",
+    "title": "Bhau marches north",
+    "text": "The Peshwa sent his cousin Sadashivrao Bhau north with the Maratha field army, French-trained artillery under Ibrahim Khan Gardi and a huge train of pilgrims and followers. Bhau took Delhi and stormed the Afghan post at Kunjpura, but Ahmad Shah crossed the Yamuna at Baghpat behind him, cutting the Marathas off from Delhi and the south. Bhau dug in at Panipat.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Maratha"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        76.85,
+        29.35
+       ],
+       [
+        76.97,
+        29.33
+       ],
+       [
+        77.1,
+        29.34
+       ]
+      ],
+      "label": "Lines at Panipat, Nov 1760"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Sadashivrao Bhau",
+      "label": "Maratha grand army",
+      "path": [
+       [
+        76.6,
+        18.4
+       ],
+       [
+        77.7,
+        23.2
+       ],
+       [
+        78.18,
+        26.22
+       ],
+       [
+        77.21,
+        28.66
+       ],
+       [
+        77.07,
+        29.72
+       ],
+       [
+        76.97,
+        29.39
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ahmad Shah Durrani",
+      "label": "Crossing at Baghpat",
+      "path": [
+       [
+        78.27,
+        28.37
+       ],
+       [
+        77.6,
+        28.8
+       ],
+       [
+        77.22,
+        28.94
+       ],
+       [
+        77.0,
+        29.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Delhi",
+      "kind": "event",
+      "lon": 77.21,
+      "lat": 28.66,
+      "year": 1760,
+      "winner": 1,
+      "text": "Bhau seized the Mughal capital and stripped the Red Fort to pay his troops."
+     },
+     {
+      "name": "Storming of Kunjpura",
+      "kind": "siege",
+      "lon": 77.07,
+      "lat": 29.72,
+      "year": 1760,
+      "winner": 1,
+      "text": "The Marathas destroyed the Afghan garrison and seized its grain stores."
+     }
+    ]
+   },
+   {
+    "year": 1761,
+    "label": "14 Jan 1761",
+    "title": "The Third Battle of Panipat",
+    "text": "After two months of blockade the starving Marathas attacked. Ibrahim Khan Gardi's guns and Bhau's centre at first drove back the Afghans, but Ahmad Shah threw in his reserves and camel-mounted swivel guns, and by afternoon the Maratha army broke. Bhau and the Peshwa's heir Vishwasrao were killed, and tens of thousands of soldiers and camp followers were slaughtered in the rout.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Maratha"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        76.88,
+        29.35
+       ],
+       [
+        76.95,
+        29.36
+       ],
+       [
+        77.03,
+        29.37
+       ]
+      ],
+      "label": "Battle lines, 14 Jan 1761"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Sadashivrao Bhau",
+      "label": "Maratha attack",
+      "path": [
+       [
+        76.97,
+        29.4
+       ],
+       [
+        76.98,
+        29.36
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ahmad Shah Durrani",
+      "label": "Afghan counter-attack",
+      "path": [
+       [
+        76.99,
+        29.3
+       ],
+       [
+        76.98,
+        29.35
+       ],
+       [
+        76.97,
+        29.39
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Third Battle of Panipat",
+      "kind": "battle",
+      "lon": 76.97,
+      "lat": 29.39,
+      "year": 1761,
+      "winner": 0,
+      "text": "The Maratha field army was destroyed in one of the largest battles of the 18th century."
+     }
+    ]
+   },
+   {
+    "year": 1761,
+    "label": "1761 and after",
+    "title": "A victory without a prize",
+    "text": "With his own troops unpaid and restless, Ahmad Shah went home to Kabul within weeks, leaving north India to his allies and to the rising Sikhs in the Punjab. The Peshwa Balaji Baji Rao died months later. The Marathas recovered under Madhavrao and returned to Delhi in 1771, but Panipat had checked them just as the East India Company was expanding from Bengal.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Maratha"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ahmad Shah Durrani",
+      "label": "Return to Kabul",
+      "path": [
+       [
+        77.21,
+        28.66
+       ],
+       [
+        76.38,
+        30.64
+       ],
+       [
+        74.34,
+        31.55
+       ],
+       [
+        71.57,
+        34.01
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Death of Peshwa Balaji Baji Rao",
+      "kind": "event",
+      "lon": 73.86,
+      "lat": 18.52,
+      "year": 1761,
+      "winner": null,
+      "text": "The Maratha leader died in Pune, reportedly broken by the news of Panipat."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "american-revolutionary-war",
+  "name": "American Revolutionary War",
+  "start": 1775,
+  "end": 1783,
+  "kind": "war",
+  "summary": "Thirteen British colonies rebelled against Parliament's taxes and authority, declared independence in 1776 and fought Britain, its Loyalists and German auxiliaries. After the victory at Saratoga brought France, then Spain and the Dutch Republic, into the war, a Franco-American army and French fleet trapped Cornwallis at Yorktown. The Treaty of Paris recognised the United States, whose republic inspired revolutions in France and Latin America.",
+  "sides": [
+   {
+    "name": "United States and France",
+    "color": "#3b6fb6",
+    "leaders": [
+     "George Washington",
+     "Nathanael Greene",
+     "Comte de Rochambeau",
+     "Comte de Grasse",
+     "Bernardo de Galvez"
+    ]
+   },
+   {
+    "name": "Great Britain and Loyalists",
+    "color": "#c0473a",
+    "leaders": [
+     "William Howe",
+     "John Burgoyne",
+     "Henry Clinton",
+     "Charles Cornwallis"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -74,
+    "lat": 41.5,
+    "r": 5
+   },
+   {
+    "lon": -79,
+    "lat": 35,
+    "r": 4.5
+   },
+   {
+    "lon": -62,
+    "lat": 16,
+    "r": 3
+   },
+   {
+    "lon": -5.4,
+    "lat": 36.1,
+    "r": 1.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1775,
+    "label": "1775",
+    "title": "Lexington, Bunker Hill and Canada",
+    "text": "British regulars marching from Boston to seize militia arms at Concord were driven back by swarms of colonial militia, who then besieged Boston. The British took Bunker Hill only at a terrible cost. Congress made George Washington commander of a new Continental Army and sent two forces north, under Montgomery and Arnold, which failed in a snowstorm assault on Quebec.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British American colonies",
+       "South Carolina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Rupert's Land",
+       "Florida (Spain)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -71.16,
+        42.43
+       ],
+       [
+        -71.11,
+        42.38
+       ],
+       [
+        -71.08,
+        42.33
+       ],
+       [
+        -71.03,
+        42.3
+       ]
+      ],
+      "label": "Siege lines around Boston"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Francis Smith",
+      "label": "British column to Concord",
+      "path": [
+       [
+        -71.06,
+        42.36
+       ],
+       [
+        -71.23,
+        42.45
+       ],
+       [
+        -71.35,
+        42.46
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Richard Montgomery",
+      "label": "Invasion of Canada via Montreal",
+      "path": [
+       [
+        -73.39,
+        43.84
+       ],
+       [
+        -73.3,
+        45.3
+       ],
+       [
+        -73.55,
+        45.5
+       ],
+       [
+        -72.5,
+        46.3
+       ],
+       [
+        -71.21,
+        46.81
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Benedict Arnold",
+      "label": "March up the Kennebec",
+      "path": [
+       [
+        -71.11,
+        42.37
+       ],
+       [
+        -69.8,
+        43.9
+       ],
+       [
+        -69.75,
+        44.8
+       ],
+       [
+        -70.3,
+        45.8
+       ],
+       [
+        -71.21,
+        46.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Lexington and Concord",
+      "kind": "battle",
+      "lon": -71.35,
+      "lat": 42.46,
+      "year": 1775,
+      "winner": 0,
+      "text": "Militia drove the British column back to Boston, opening the war."
+     },
+     {
+      "name": "Battle of Bunker Hill",
+      "kind": "battle",
+      "lon": -71.06,
+      "lat": 42.376,
+      "year": 1775,
+      "winner": 1,
+      "text": "The British took the heights but lost over a thousand men killed or wounded."
+     },
+     {
+      "name": "Assault on Quebec",
+      "kind": "battle",
+      "lon": -71.21,
+      "lat": 46.81,
+      "year": 1775,
+      "winner": 1,
+      "text": "Montgomery was killed and Arnold wounded in a failed night attack."
+     }
+    ]
+   },
+   {
+    "year": 1776,
+    "label": "1776",
+    "title": "Independence and the fight for New York",
+    "text": "Cannon hauled from Ticonderoga forced the British out of Boston in March. Congress declared independence on 4 July just as the largest British expedition of the century landed at New York. Howe drove Washington from Long Island, Manhattan and New Jersey, but on the night of 25 December Washington crossed the Delaware and captured the Hessian garrison at Trenton.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British American colonies",
+       "South Carolina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Rupert's Land",
+       "Florida (Spain)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -74.95,
+        40.45
+       ],
+       [
+        -74.85,
+        40.25
+       ],
+       [
+        -74.75,
+        40.1
+       ],
+       [
+        -74.9,
+        39.95
+       ]
+      ],
+      "label": "Front on the Delaware, Dec 1776"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "William Howe",
+      "label": "Fleet from Halifax to New York",
+      "path": [
+       [
+        -63.57,
+        44.6
+       ],
+       [
+        -66.0,
+        42.5
+       ],
+       [
+        -70.0,
+        40.4
+       ],
+       [
+        -73.95,
+        40.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "George Washington",
+      "label": "Retreat across New Jersey",
+      "path": [
+       [
+        -74.0,
+        40.75
+       ],
+       [
+        -74.45,
+        40.49
+       ],
+       [
+        -74.76,
+        40.22
+       ],
+       [
+        -74.9,
+        40.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "George Washington",
+      "label": "Crossing the Delaware",
+      "path": [
+       [
+        -74.9,
+        40.3
+       ],
+       [
+        -74.76,
+        40.22
+       ],
+       [
+        -74.66,
+        40.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Declaration of Independence",
+      "kind": "event",
+      "lon": -75.15,
+      "lat": 39.95,
+      "year": 1776,
+      "winner": 0,
+      "text": "Congress in Philadelphia declared the colonies free and independent states."
+     },
+     {
+      "name": "Battle of Long Island",
+      "kind": "battle",
+      "lon": -73.98,
+      "lat": 40.66,
+      "year": 1776,
+      "winner": 1,
+      "text": "Howe outflanked Washington's army in Brooklyn in the largest battle of the war."
+     },
+     {
+      "name": "Battle of Trenton",
+      "kind": "battle",
+      "lon": -74.76,
+      "lat": 40.22,
+      "year": 1776,
+      "winner": 0,
+      "text": "Washington's surprise attack revived the flagging revolution."
+     }
+    ]
+   },
+   {
+    "year": 1777,
+    "label": "1777",
+    "title": "Saratoga",
+    "text": "Burgoyne pushed south from Canada down Lake Champlain to cut New England off, while Howe sailed instead to the Chesapeake and took Philadelphia after beating Washington at Brandywine. Burgoyne, isolated in the wilderness of upstate New York, was surrounded by Gates's swelling army and surrendered his whole force at Saratoga.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British American colonies",
+       "South Carolina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Rupert's Land",
+       "Florida (Spain)"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "John Burgoyne",
+      "label": "Down Lake Champlain",
+      "path": [
+       [
+        -73.55,
+        45.5
+       ],
+       [
+        -73.4,
+        44.5
+       ],
+       [
+        -73.39,
+        43.84
+       ],
+       [
+        -73.6,
+        43.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "William Howe",
+      "label": "By sea to the Chesapeake",
+      "path": [
+       [
+        -73.9,
+        40.4
+       ],
+       [
+        -74.3,
+        38.0
+       ],
+       [
+        -75.95,
+        37.0
+       ],
+       [
+        -76.3,
+        38.3
+       ],
+       [
+        -75.85,
+        39.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "William Howe",
+      "label": "Takes Philadelphia",
+      "path": [
+       [
+        -75.85,
+        39.55
+       ],
+       [
+        -75.59,
+        39.87
+       ],
+       [
+        -75.17,
+        39.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Brandywine",
+      "kind": "battle",
+      "lon": -75.59,
+      "lat": 39.87,
+      "year": 1777,
+      "winner": 1,
+      "text": "Howe flanked Washington and opened the road to Philadelphia."
+     },
+     {
+      "name": "Battles of Saratoga",
+      "kind": "battle",
+      "lon": -73.64,
+      "lat": 42.99,
+      "year": 1777,
+      "winner": 0,
+      "text": "Gates and Arnold defeated Burgoyne, whose surrender brought France into the war."
+     }
+    ]
+   },
+   {
+    "year": 1778,
+    "label": "1778 to 1779",
+    "title": "A world war",
+    "text": "France signed an alliance with the United States in February 1778, and Spain joined France in 1779, laying siege to Gibraltar. Washington's army, drilled at Valley Forge, fought the British to a draw at Monmouth as they pulled back from Philadelphia to New York, where the northern war settled into stalemate. Britain turned south, taking Savannah and beating off a Franco-American attempt to retake it.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British American colonies",
+       "South Carolina",
+       "France",
+       "Spain",
+       "Louisiana"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Rupert's Land",
+       "Florida (Spain)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -74.3,
+        41.1
+       ],
+       [
+        -73.96,
+        41.39
+       ],
+       [
+        -73.75,
+        41.05
+       ],
+       [
+        -73.6,
+        40.95
+       ]
+      ],
+      "label": "American lines around British New York"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Henry Clinton",
+      "label": "Withdrawal to New York",
+      "path": [
+       [
+        -75.17,
+        39.95
+       ],
+       [
+        -74.75,
+        40.1
+       ],
+       [
+        -74.32,
+        40.26
+       ],
+       [
+        -74.0,
+        40.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "George Washington",
+      "label": "Pursuit from Valley Forge",
+      "path": [
+       [
+        -75.45,
+        40.1
+       ],
+       [
+        -74.9,
+        40.3
+       ],
+       [
+        -74.35,
+        40.28
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Comte d'Estaing",
+      "label": "French fleet to Savannah",
+      "path": [
+       [
+        -61.0,
+        14.6
+       ],
+       [
+        -70.0,
+        24.0
+       ],
+       [
+        -78.5,
+        30.5
+       ],
+       [
+        -81.09,
+        32.08
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Franco-American alliance",
+      "kind": "treaty",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1778,
+      "winner": 0,
+      "text": "France recognised the United States and went to war with Britain."
+     },
+     {
+      "name": "Battle of Monmouth",
+      "kind": "battle",
+      "lon": -74.32,
+      "lat": 40.26,
+      "year": 1778,
+      "winner": null,
+      "text": "A long, hot battle ended in a draw but showed the Continental Army's new discipline."
+     },
+     {
+      "name": "Siege of Savannah",
+      "kind": "siege",
+      "lon": -81.09,
+      "lat": 32.08,
+      "year": 1779,
+      "winner": 1,
+      "text": "British defenders repulsed a bloody French and American assault."
+     }
+    ]
+   },
+   {
+    "year": 1780,
+    "label": "1780 to early 1781",
+    "title": "The war in the South",
+    "text": "Clinton captured Charleston with its entire American garrison, and Cornwallis routed Gates at Camden. But backcountry militia destroyed a Loyalist force at Kings Mountain, and Washington's best general, Nathanael Greene, wore Cornwallis down: Morgan won at Cowpens and Greene's army survived Guilford Courthouse, leaving the British too weak to hold the Carolinas.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British American colonies",
+       "France",
+       "Spain",
+       "Louisiana",
+       "Dutch Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Rupert's Land",
+       "South Carolina",
+       "Florida (Spain)"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Henry Clinton",
+      "label": "Expedition to Charleston",
+      "path": [
+       [
+        -73.9,
+        40.4
+       ],
+       [
+        -74.5,
+        37.5
+       ],
+       [
+        -75.3,
+        35.0
+       ],
+       [
+        -79.85,
+        32.7
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Charles Cornwallis",
+      "label": "Cornwallis's march",
+      "path": [
+       [
+        -79.93,
+        32.78
+       ],
+       [
+        -80.56,
+        34.36
+       ],
+       [
+        -80.84,
+        35.23
+       ],
+       [
+        -79.84,
+        36.13
+       ],
+       [
+        -77.94,
+        34.23
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nathanael Greene",
+      "label": "Race to the Dan",
+      "path": [
+       [
+        -80.84,
+        35.23
+       ],
+       [
+        -80.1,
+        35.8
+       ],
+       [
+        -79.0,
+        36.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Charleston",
+      "kind": "siege",
+      "lon": -79.93,
+      "lat": 32.78,
+      "year": 1780,
+      "winner": 1,
+      "text": "Some 5,000 American troops surrendered, the worst American defeat of the war."
+     },
+     {
+      "name": "Battle of Kings Mountain",
+      "kind": "battle",
+      "lon": -81.39,
+      "lat": 35.14,
+      "year": 1780,
+      "winner": 0,
+      "text": "Patriot frontier militia wiped out Cornwallis's Loyalist flank force."
+     },
+     {
+      "name": "Battle of Cowpens",
+      "kind": "battle",
+      "lon": -81.82,
+      "lat": 35.14,
+      "year": 1781,
+      "winner": 0,
+      "text": "Daniel Morgan's double envelopment destroyed Tarleton's British legion."
+     }
+    ]
+   },
+   {
+    "year": 1781,
+    "label": "Sep to Oct 1781",
+    "title": "Yorktown",
+    "text": "Cornwallis marched into Virginia and fortified Yorktown to await the Royal Navy. Washington and Rochambeau slipped away from New York and marched south, while de Grasse's French fleet sailed up from the Caribbean and beat off the British fleet off the Virginia Capes. Trapped by land and sea, Cornwallis surrendered his army on 19 October.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British American colonies",
+       "France",
+       "Spain",
+       "Louisiana",
+       "Dutch Republic",
+       "Florida (Spain)"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Rupert's Land",
+       "South Carolina"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -76.54,
+        37.22
+       ],
+       [
+        -76.51,
+        37.215
+       ],
+       [
+        -76.49,
+        37.23
+       ]
+      ],
+      "label": "Siege lines at Yorktown"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Washington and Rochambeau",
+      "label": "March from New York",
+      "path": [
+       [
+        -73.75,
+        41.03
+       ],
+       [
+        -74.5,
+        40.5
+       ],
+       [
+        -75.15,
+        39.95
+       ],
+       [
+        -75.85,
+        39.55
+       ],
+       [
+        -76.51,
+        37.24
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Comte de Grasse",
+      "label": "French fleet from Saint-Domingue",
+      "path": [
+       [
+        -72.2,
+        19.85
+       ],
+       [
+        -73.5,
+        22.5
+       ],
+       [
+        -75.0,
+        30.0
+       ],
+       [
+        -75.98,
+        36.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Charles Cornwallis",
+      "label": "Into Virginia",
+      "path": [
+       [
+        -77.94,
+        34.23
+       ],
+       [
+        -77.4,
+        37.23
+       ],
+       [
+        -76.9,
+        37.3
+       ],
+       [
+        -76.51,
+        37.24
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Chesapeake",
+      "kind": "battle",
+      "lon": -75.7,
+      "lat": 36.9,
+      "year": 1781,
+      "winner": 0,
+      "text": "De Grasse's fleet drove off Graves and sealed Cornwallis off from rescue."
+     },
+     {
+      "name": "Siege of Yorktown",
+      "kind": "siege",
+      "lon": -76.51,
+      "lat": 37.24,
+      "year": 1781,
+      "winner": 0,
+      "text": "Cornwallis surrendered some 8,000 men, effectively ending the war in America."
+     }
+    ]
+   },
+   {
+    "year": 1783,
+    "label": "1782 to 1783",
+    "title": "The Saintes, Gibraltar and peace",
+    "text": "The war went on at sea and overseas: Rodney smashed de Grasse's fleet at the Saintes, saving Jamaica, and the great Franco-Spanish assault on Gibraltar failed. With no hope of reconquering America, Britain made peace. The Treaty of Paris of September 1783 recognised the United States with borders reaching the Mississippi.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States of America",
+       "France",
+       "Spain",
+       "Netherlands"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Quebec",
+       "Rupert's Land",
+       "Acadian Peninsula (UK)"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "George Rodney",
+      "label": "British fleet from St Lucia",
+      "path": [
+       [
+        -60.95,
+        14.08
+       ],
+       [
+        -61.3,
+        15.0
+       ],
+       [
+        -61.55,
+        15.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Comte de Grasse",
+      "label": "French fleet from Martinique",
+      "path": [
+       [
+        -61.07,
+        14.6
+       ],
+       [
+        -61.4,
+        15.4
+       ],
+       [
+        -61.55,
+        15.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Richard Howe",
+      "label": "Relief of Gibraltar",
+      "path": [
+       [
+        -9.0,
+        43.0
+       ],
+       [
+        -9.6,
+        38.5
+       ],
+       [
+        -7.5,
+        36.4
+       ],
+       [
+        -5.35,
+        36.14
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Saintes",
+      "kind": "battle",
+      "lon": -61.55,
+      "lat": 15.85,
+      "year": 1782,
+      "winner": 1,
+      "text": "Rodney broke the French line and captured de Grasse."
+     },
+     {
+      "name": "Great Siege of Gibraltar",
+      "kind": "siege",
+      "lon": -5.35,
+      "lat": 36.14,
+      "year": 1782,
+      "winner": 1,
+      "text": "The British garrison destroyed the floating batteries of the grand assault."
+     },
+     {
+      "name": "Treaty of Paris",
+      "kind": "treaty",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1783,
+      "winner": 0,
+      "text": "Britain recognised the independence of the United States."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tupac-amaru-ii-rebellion",
+  "name": "Rebellion of Tupac Amaru II",
+  "start": 1780,
+  "end": 1781,
+  "kind": "war",
+  "summary": "José Gabriel Condorcanqui, a mestizo cacique claiming Inca descent as Tupac Amaru II, rose against abusive Spanish officials and forced labour in the Andes in 1780. The revolt, joined in Upper Peru by Tupac Katari's siege of La Paz, drew in tens of thousands of Indigenous people before Spanish armies crushed it, with perhaps 100,000 dead. It was the largest colonial uprising in Spanish America before the wars of independence and led Spain to suppress Inca symbols and reform colonial rule.",
+  "sides": [
+   {
+    "name": "Andean rebels",
+    "color": "#4f9a5a",
+    "leaders": [
+     "Tupac Amaru II",
+     "Micaela Bastidas",
+     "Tupac Katari",
+     "Diego Cristobal Tupac Amaru"
+    ]
+   },
+   {
+    "name": "Spanish colonial forces",
+    "color": "#c0473a",
+    "leaders": [
+     "Jose del Valle",
+     "Jose Antonio de Areche",
+     "Ignacio Flores",
+     "Jose de Reseguin"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -69.8,
+    "lat": -15.4,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1780,
+    "label": "Nov 1780",
+    "title": "Revolt at Tinta",
+    "text": "On 4 November 1780 Tupac Amaru seized the hated corregidor Antonio de Arriaga, and six days later hanged him before a crowd at Tungasuca. Calling for an end to the forced labour and forced sales of goods, he raised thousands of followers, and on 18 November they destroyed a Spanish militia column from Cusco at Sangarara.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tiburcio Landa",
+      "label": "Militia column from Cusco",
+      "path": [
+       [
+        -71.97,
+        -13.52
+       ],
+       [
+        -71.75,
+        -13.75
+       ],
+       [
+        -71.6,
+        -13.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tupac Amaru II",
+      "label": "Rebel army",
+      "path": [
+       [
+        -71.48,
+        -14.18
+       ],
+       [
+        -71.55,
+        -14.05
+       ],
+       [
+        -71.6,
+        -13.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Execution of Arriaga",
+      "kind": "event",
+      "lon": -71.48,
+      "lat": -14.18,
+      "year": 1780,
+      "winner": 0,
+      "text": "The hanging of the corregidor at Tungasuca launched the rebellion."
+     },
+     {
+      "name": "Battle of Sangarara",
+      "kind": "battle",
+      "lon": -71.6,
+      "lat": -13.95,
+      "year": 1780,
+      "winner": 0,
+      "text": "Rebels destroyed the Spanish column in the burning church where it sheltered."
+     }
+    ]
+   },
+   {
+    "year": 1780,
+    "label": "Dec 1780 to Jan 1781",
+    "title": "Siege of Cusco",
+    "text": "Rather than strike Cusco at once, Tupac Amaru marched south to raise the provinces around Lake Titicaca, while his wife Micaela Bastidas organised supplies and urged a swift attack. When he finally besieged Cusco in early January, loyal Indigenous troops and reinforcements from Lima had arrived, and after days of fighting he withdrew.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -72.03,
+        -13.48
+       ],
+       [
+        -71.97,
+        -13.47
+       ],
+       [
+        -71.91,
+        -13.5
+       ]
+      ],
+      "label": "Rebel lines above Cusco"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tupac Amaru II",
+      "label": "Campaign to Lake Titicaca",
+      "path": [
+       [
+        -71.48,
+        -14.18
+       ],
+       [
+        -70.59,
+        -14.88
+       ],
+       [
+        -70.37,
+        -15.36
+       ],
+       [
+        -70.02,
+        -15.84
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tupac Amaru II",
+      "label": "March on Cusco",
+      "path": [
+       [
+        -71.48,
+        -14.18
+       ],
+       [
+        -71.6,
+        -13.95
+       ],
+       [
+        -71.85,
+        -13.6
+       ],
+       [
+        -71.97,
+        -13.52
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Cusco",
+      "kind": "siege",
+      "lon": -71.97,
+      "lat": -13.52,
+      "year": 1781,
+      "winner": 1,
+      "text": "The city held, and the rebels lost the chance of a quick victory."
+     }
+    ]
+   },
+   {
+    "year": 1781,
+    "label": "Feb to May 1781",
+    "title": "Capture and execution",
+    "text": "José del Valle led some 15,000 troops, many of them Indigenous auxiliaries, south from Cusco. The rebels were beaten near Tinta and Tupac Amaru was betrayed and captured at Langui in April. On 18 May in Cusco's main square, after watching the execution of his wife and son, he was torn by horses and beheaded.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Jose del Valle",
+      "label": "Royal army from Cusco",
+      "path": [
+       [
+        -71.97,
+        -13.52
+       ],
+       [
+        -71.6,
+        -13.95
+       ],
+       [
+        -71.45,
+        -14.03
+       ],
+       [
+        -71.41,
+        -14.14
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tupac Amaru II",
+      "label": "Flight south",
+      "path": [
+       [
+        -71.41,
+        -14.14
+       ],
+       [
+        -71.35,
+        -14.3
+       ],
+       [
+        -71.27,
+        -14.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture at Langui",
+      "kind": "event",
+      "lon": -71.27,
+      "lat": -14.43,
+      "year": 1781,
+      "winner": 1,
+      "text": "Betrayed by his own officers, Tupac Amaru was seized with his family."
+     },
+     {
+      "name": "Execution in Cusco",
+      "kind": "event",
+      "lon": -71.97,
+      "lat": -13.52,
+      "year": 1781,
+      "winner": 1,
+      "text": "Spanish authorities executed Tupac Amaru, Micaela Bastidas and their followers."
+     }
+    ]
+   },
+   {
+    "year": 1781,
+    "label": "Mar to Oct 1781",
+    "title": "Tupac Katari besieges La Paz",
+    "text": "In Upper Peru the Aymara leader Julian Apaza, calling himself Tupac Katari, ringed La Paz with some 40,000 men for over six months, and the city lost perhaps a third of its people to hunger. Andres Tupac Amaru took Sorata by flooding it. Columns under Ignacio Flores and then José de Reseguin finally broke the siege in October.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -68.2,
+        -16.45
+       ],
+       [
+        -68.12,
+        -16.46
+       ],
+       [
+        -68.08,
+        -16.52
+       ],
+       [
+        -68.16,
+        -16.56
+       ]
+      ],
+      "label": "Rebel siege ring around La Paz"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tupac Katari",
+      "label": "Aymara forces close on La Paz",
+      "path": [
+       [
+        -67.83,
+        -17.33
+       ],
+       [
+        -68.0,
+        -17.09
+       ],
+       [
+        -68.12,
+        -16.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jose de Reseguin",
+      "label": "Relief column from Oruro",
+      "path": [
+       [
+        -67.11,
+        -17.97
+       ],
+       [
+        -67.6,
+        -17.5
+       ],
+       [
+        -68.0,
+        -17.0
+       ],
+       [
+        -68.15,
+        -16.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of La Paz",
+      "kind": "siege",
+      "lon": -68.15,
+      "lat": -16.5,
+      "year": 1781,
+      "winner": 1,
+      "text": "The city held out from March to October until relieved."
+     },
+     {
+      "name": "Fall of Sorata",
+      "kind": "siege",
+      "lon": -68.65,
+      "lat": -15.77,
+      "year": 1781,
+      "winner": 0,
+      "text": "Rebels dammed a stream and flooded the town, killing much of its population."
+     }
+    ]
+   },
+   {
+    "year": 1782,
+    "label": "Nov 1781 to 1783",
+    "title": "Defeat and reprisal",
+    "text": "Tupac Katari was betrayed and executed in November 1781, and Diego Cristobal Tupac Amaru accepted a royal pardon at Sicuani in January 1782. The pardon did not last: in 1783 he and many relatives were executed on charges of renewed conspiracy. Spain banned Inca dress, titles and symbols, while abolishing the forced sales that had fuelled the revolt.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Viceroyalty of Peru"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Diego Cristobal Tupac Amaru",
+      "label": "Rebel remnant from Azangaro",
+      "path": [
+       [
+        -70.19,
+        -14.91
+       ],
+       [
+        -70.8,
+        -14.6
+       ],
+       [
+        -71.23,
+        -14.27
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Execution of Tupac Katari",
+      "kind": "event",
+      "lon": -68.15,
+      "lat": -16.5,
+      "year": 1781,
+      "winner": 1,
+      "text": "The Aymara leader was quartered near La Paz."
+     },
+     {
+      "name": "Peace of Sicuani",
+      "kind": "treaty",
+      "lon": -71.23,
+      "lat": -14.27,
+      "year": 1782,
+      "winner": 1,
+      "text": "The last rebel leaders laid down their arms in exchange for a pardon."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "french-revolutionary-wars",
+  "name": "French Revolutionary Wars",
+  "start": 1792,
+  "end": 1802,
+  "kind": "war",
+  "summary": "Revolutionary France went to war in 1792 against the monarchies of Europe, which feared the spread of the Revolution. Mass conscription and talented young generals turned near defeat into conquest of the Low Countries, the Rhineland and Italy, while Bonaparte's campaigns in Italy and Egypt made him famous and led him to power in 1799. The wars ended in the peace of Amiens in 1802, leaving France dominant on the continent and Britain at sea.",
+  "sides": [
+   {
+    "name": "France and sister republics",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Napoleon Bonaparte",
+     "Charles Dumouriez",
+     "Jean-Baptiste Jourdan",
+     "Andre Massena",
+     "Jean Moreau"
+    ]
+   },
+   {
+    "name": "Coalitions",
+    "color": "#c0473a",
+    "leaders": [
+     "Duke of Brunswick",
+     "Archduke Charles",
+     "Alexander Suvorov",
+     "Horatio Nelson"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 7,
+    "lat": 47.5,
+    "r": 8
+   },
+   {
+    "lon": 31.5,
+    "lat": 31,
+    "r": 5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1792,
+    "label": "1792",
+    "title": "Valmy and Jemappes",
+    "text": "France declared war on Austria in April 1792, and in summer a Prussian army under the Duke of Brunswick invaded, taking Longwy and Verdun on the road to Paris. At Valmy Kellermann and Dumouriez's citizen army stood firm under cannon fire and the Prussians turned back. Two days later France became a republic, and in November Dumouriez won at Jemappes and overran the Austrian Netherlands.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "Prussia",
+       "Austrian Netherlands",
+       "Kingdom of Sardinia",
+       "Milano (Austria)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        4.95,
+        49.5
+       ],
+       [
+        4.85,
+        49.15
+       ],
+       [
+        4.9,
+        48.8
+       ]
+      ],
+      "label": "French line in the Argonne, Sept 1792"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Duke of Brunswick",
+      "label": "Prussian invasion",
+      "path": [
+       [
+        7.6,
+        50.36
+       ],
+       [
+        6.64,
+        49.75
+       ],
+       [
+        5.76,
+        49.52
+       ],
+       [
+        5.38,
+        49.16
+       ],
+       [
+        4.85,
+        49.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Dumouriez",
+      "label": "Into the Austrian Netherlands",
+      "path": [
+       [
+        4.77,
+        49.08
+       ],
+       [
+        3.52,
+        50.36
+       ],
+       [
+        3.88,
+        50.45
+       ],
+       [
+        4.35,
+        50.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Valmy",
+      "kind": "battle",
+      "lon": 4.77,
+      "lat": 49.08,
+      "year": 1792,
+      "winner": 0,
+      "text": "A cannonade checked Brunswick's Prussians and saved the Revolution."
+     },
+     {
+      "name": "Battle of Jemappes",
+      "kind": "battle",
+      "lon": 3.88,
+      "lat": 50.45,
+      "year": 1792,
+      "winner": 0,
+      "text": "Dumouriez beat the Austrians and occupied Belgium."
+     }
+    ]
+   },
+   {
+    "year": 1794,
+    "label": "1793 to 1794",
+    "title": "The nation in arms",
+    "text": "The king's execution brought Britain, Spain, the Dutch and others into a First Coalition, and France faced invasion on every frontier plus revolt at home. The Jacobin government decreed a levee en masse that raised over a million men. A young artillery officer, Bonaparte, helped retake Toulon from the British, and Jourdan's victory at Fleurus in 1794 reopened the road to Belgium and the Netherlands.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Austrian Netherlands"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "Prussia",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Spain",
+       "Netherlands",
+       "Kingdom of Sardinia",
+       "Kingdom of the Two Sicilies",
+       "Milano (Austria)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        4.3,
+        51.8
+       ],
+       [
+        5.9,
+        51.8
+       ],
+       [
+        6.2,
+        51.0
+       ],
+       [
+        7.1,
+        50.7
+       ],
+       [
+        7.6,
+        50.3
+       ],
+       [
+        8.2,
+        49.0
+       ]
+      ],
+      "label": "Northern front, late 1794"
+     },
+     {
+      "path": [
+       [
+        -1.8,
+        43.35
+       ],
+       [
+        0.0,
+        42.8
+       ],
+       [
+        1.5,
+        42.5
+       ],
+       [
+        3.2,
+        42.4
+       ]
+      ],
+      "label": "Pyrenees front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Jourdan",
+      "label": "Army of Sambre-et-Meuse",
+      "path": [
+       [
+        4.02,
+        50.2
+       ],
+       [
+        4.55,
+        50.48
+       ],
+       [
+        5.57,
+        50.63
+       ],
+       [
+        6.96,
+        50.94
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Pichegru",
+      "label": "Conquest of the Netherlands",
+      "path": [
+       [
+        3.2,
+        50.6
+       ],
+       [
+        4.35,
+        50.85
+       ],
+       [
+        4.4,
+        51.22
+       ],
+       [
+        4.9,
+        52.37
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Toulon",
+      "kind": "siege",
+      "lon": 5.93,
+      "lat": 43.12,
+      "year": 1793,
+      "winner": 0,
+      "text": "Bonaparte's batteries forced the British fleet out of the great naval base."
+     },
+     {
+      "name": "Battle of Fleurus",
+      "kind": "battle",
+      "lon": 4.55,
+      "lat": 50.48,
+      "year": 1794,
+      "winner": 0,
+      "text": "Jourdan's victory, helped by a reconnaissance balloon, won Belgium for good."
+     }
+    ]
+   },
+   {
+    "year": 1796,
+    "label": "1796 to 1797",
+    "title": "Bonaparte in Italy",
+    "text": "Prussia and Spain made peace in 1795 and Spain soon changed sides. In 1796 the 26 year old Bonaparte took over a ragged army at Nice, split the Piedmontese from the Austrians, took Milan and beat four Austrian armies sent to relieve Mantua, at Arcole and Rivoli among others. Advancing toward Vienna, he forced Austria to sign the Treaty of Campo Formio, giving France Belgium and a client republic in northern Italy.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Austrian Netherlands",
+       "Netherlands",
+       "Spain",
+       "Milano (Austria)",
+       "Modena"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Kingdom of the Two Sicilies",
+       "Portugal"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        10.85,
+        45.9
+       ],
+       [
+        11.0,
+        45.45
+       ],
+       [
+        11.3,
+        45.2
+       ]
+      ],
+      "label": "Adige line, late 1796"
+     },
+     {
+      "path": [
+       [
+        7.6,
+        47.6
+       ],
+       [
+        7.8,
+        48.6
+       ],
+       [
+        8.2,
+        49.0
+       ],
+       [
+        8.4,
+        49.6
+       ],
+       [
+        7.6,
+        50.4
+       ]
+      ],
+      "label": "Rhine front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon Bonaparte",
+      "label": "Army of Italy",
+      "path": [
+       [
+        7.27,
+        43.7
+       ],
+       [
+        8.38,
+        44.47
+       ],
+       [
+        9.5,
+        45.31
+       ],
+       [
+        9.19,
+        45.46
+       ],
+       [
+        10.79,
+        45.16
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon Bonaparte",
+      "label": "Advance on Vienna",
+      "path": [
+       [
+        10.79,
+        45.16
+       ],
+       [
+        12.2,
+        46.0
+       ],
+       [
+        13.5,
+        46.4
+       ],
+       [
+        15.09,
+        47.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Archduke Charles",
+      "label": "Austrian army in Germany",
+      "path": [
+       [
+        11.86,
+        49.44
+       ],
+       [
+        10.8,
+        49.6
+       ],
+       [
+        9.93,
+        49.79
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Arcole",
+      "kind": "battle",
+      "lon": 11.27,
+      "lat": 45.36,
+      "year": 1796,
+      "winner": 0,
+      "text": "Bonaparte broke an Austrian relief army after three days in the marshes."
+     },
+     {
+      "name": "Battle of Rivoli",
+      "kind": "battle",
+      "lon": 10.81,
+      "lat": 45.57,
+      "year": 1797,
+      "winner": 0,
+      "text": "The decisive defeat of the last Austrian attempt to save Mantua."
+     },
+     {
+      "name": "Treaty of Campo Formio",
+      "kind": "treaty",
+      "lon": 13.16,
+      "lat": 46.02,
+      "year": 1797,
+      "winner": 0,
+      "text": "Austria ceded Belgium and accepted French dominance in northern Italy."
+     }
+    ]
+   },
+   {
+    "year": 1798,
+    "label": "1798 to 1801",
+    "title": "Expedition to Egypt",
+    "text": "To strike at Britain's route to India, Bonaparte sailed from Toulon with 35,000 men, took Malta and landed at Alexandria. He routed the Mamluks at the Pyramids, but Nelson destroyed his fleet at Aboukir Bay, stranding the army. An invasion of Syria failed before Acre, and Bonaparte slipped back to France in 1799; the army he left behind surrendered to the British and Ottomans in 1801.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Austrian Netherlands",
+       "Netherlands",
+       "Swiss Confederation",
+       "Milano (Austria)",
+       "Papal States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Russian Empire",
+       "Kingdom of the Two Sicilies"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon Bonaparte",
+      "label": "Armada from Toulon",
+      "path": [
+       [
+        5.93,
+        43.12
+       ],
+       [
+        9.0,
+        39.5
+       ],
+       [
+        14.51,
+        35.9
+       ],
+       [
+        24.0,
+        33.5
+       ],
+       [
+        29.92,
+        31.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Napoleon Bonaparte",
+      "label": "Up the Nile and into Syria",
+      "path": [
+       [
+        29.92,
+        31.2
+       ],
+       [
+        31.21,
+        30.07
+       ],
+       [
+        33.8,
+        31.13
+       ],
+       [
+        34.75,
+        32.05
+       ],
+       [
+        35.07,
+        32.92
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Horatio Nelson",
+      "label": "British fleet",
+      "path": [
+       [
+        15.29,
+        37.07
+       ],
+       [
+        22.0,
+        34.5
+       ],
+       [
+        30.07,
+        31.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Pyramids",
+      "kind": "battle",
+      "lon": 31.21,
+      "lat": 30.07,
+      "year": 1798,
+      "winner": 0,
+      "text": "French squares shattered the Mamluk cavalry and opened Cairo."
+     },
+     {
+      "name": "Battle of the Nile",
+      "kind": "battle",
+      "lon": 30.07,
+      "lat": 31.33,
+      "year": 1798,
+      "winner": 1,
+      "text": "Nelson destroyed the French fleet at anchor in Aboukir Bay."
+     },
+     {
+      "name": "Siege of Acre",
+      "kind": "siege",
+      "lon": 35.07,
+      "lat": 32.92,
+      "year": 1799,
+      "winner": 1,
+      "text": "Ottoman defenders and British sailors held the city and ended the Syrian campaign."
+     }
+    ]
+   },
+   {
+    "year": 1799,
+    "label": "1799",
+    "title": "The Second Coalition",
+    "text": "Austria, Russia, Britain and the Ottomans joined a new coalition. Archduke Charles pushed the French back across the Rhine, while Suvorov's Russians and Austrians swept them out of Italy, winning at the Trebbia and Novi. Masséna saved France at the Second Battle of Zurich, and Suvorov fought his way out over the Alps. In November Bonaparte, back from Egypt, seized power as First Consul.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Austrian Netherlands",
+       "Netherlands",
+       "Swiss Confederation"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "Russian Empire",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Ottoman Empire",
+       "Kingdom of the Two Sicilies",
+       "Kingdom of Sardinia",
+       "Milano (Austria)",
+       "Venetia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        8.0,
+        47.6
+       ],
+       [
+        8.4,
+        47.45
+       ],
+       [
+        8.6,
+        47.2
+       ],
+       [
+        9.0,
+        46.8
+       ]
+      ],
+      "label": "Swiss front, Sept 1799"
+     },
+     {
+      "path": [
+       [
+        7.5,
+        44.4
+       ],
+       [
+        8.5,
+        44.6
+       ],
+       [
+        9.3,
+        44.5
+       ]
+      ],
+      "label": "Apennine front, late 1799"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Alexander Suvorov",
+      "label": "Russians through Italy and over the Alps",
+      "path": [
+       [
+        10.99,
+        45.44
+       ],
+       [
+        9.19,
+        45.46
+       ],
+       [
+        9.65,
+        45.03
+       ],
+       [
+        8.79,
+        44.76
+       ],
+       [
+        8.57,
+        46.56
+       ],
+       [
+        9.06,
+        47.04
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Andre Massena",
+      "label": "Counter-attack at Zurich",
+      "path": [
+       [
+        8.2,
+        47.45
+       ],
+       [
+        8.4,
+        47.4
+       ],
+       [
+        8.54,
+        47.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Archduke Charles",
+      "label": "Austrian advance to the Rhine",
+      "path": [
+       [
+        10.0,
+        48.1
+       ],
+       [
+        9.01,
+        47.85
+       ],
+       [
+        8.54,
+        47.38
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Novi",
+      "kind": "battle",
+      "lon": 8.79,
+      "lat": 44.76,
+      "year": 1799,
+      "winner": 1,
+      "text": "Suvorov's victory completed the Allied reconquest of northern Italy."
+     },
+     {
+      "name": "Second Battle of Zurich",
+      "kind": "battle",
+      "lon": 8.54,
+      "lat": 47.38,
+      "year": 1799,
+      "winner": 0,
+      "text": "Massena crushed Korsakov's Russians before Suvorov could join them."
+     },
+     {
+      "name": "Coup of 18 Brumaire",
+      "kind": "event",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1799,
+      "winner": 0,
+      "text": "Bonaparte overthrew the Directory and became First Consul."
+     }
+    ]
+   },
+   {
+    "year": 1800,
+    "label": "1800",
+    "title": "Marengo and Hohenlinden",
+    "text": "Bonaparte led a reserve army over the snowbound Great St Bernard Pass into the Austrians' rear in Italy. At Marengo he was all but beaten until Desaix's division arrived and turned the battle, and the Austrians gave up northern Italy. In December Moreau destroyed the main Austrian army at Hohenlinden, east of Munich, opening the road to Vienna.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Austrian Netherlands",
+       "Batavian Republic",
+       "Helvetic Republic",
+       "Lombardy",
+       "Kingdom of Sardinia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "Venetia",
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Ottoman Empire",
+       "Kingdom of the Two Sicilies"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        12.1,
+        48.6
+       ],
+       [
+        12.2,
+        48.1
+       ],
+       [
+        12.1,
+        47.7
+       ]
+      ],
+      "label": "Inn front, Dec 1800"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Napoleon Bonaparte",
+      "label": "Over the Great St Bernard",
+      "path": [
+       [
+        6.63,
+        46.52
+       ],
+       [
+        7.17,
+        45.87
+       ],
+       [
+        7.32,
+        45.74
+       ],
+       [
+        9.19,
+        45.46
+       ],
+       [
+        8.66,
+        44.89
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Michael von Melas",
+      "label": "Austrian army in Piedmont",
+      "path": [
+       [
+        8.93,
+        44.41
+       ],
+       [
+        8.61,
+        44.91
+       ],
+       [
+        8.66,
+        44.89
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jean Moreau",
+      "label": "Army of the Rhine",
+      "path": [
+       [
+        7.6,
+        47.6
+       ],
+       [
+        9.0,
+        47.85
+       ],
+       [
+        10.9,
+        48.37
+       ],
+       [
+        11.6,
+        48.14
+       ],
+       [
+        12.0,
+        48.16
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Marengo",
+      "kind": "battle",
+      "lon": 8.66,
+      "lat": 44.89,
+      "year": 1800,
+      "winner": 0,
+      "text": "A late counter-attack turned defeat into victory and secured Bonaparte's rule."
+     },
+     {
+      "name": "Battle of Hohenlinden",
+      "kind": "battle",
+      "lon": 12.0,
+      "lat": 48.16,
+      "year": 1800,
+      "winner": 0,
+      "text": "Moreau's crushing victory forced Austria to seek peace."
+     }
+    ]
+   },
+   {
+    "year": 1801,
+    "label": "1801 to 1802",
+    "title": "Peace of Luneville and Amiens",
+    "text": "Austria accepted the Rhine frontier and French control of northern Italy at Luneville in February 1801. A British army landed in Egypt, beat the French at Alexandria and forced the last French troops there to surrender, while Nelson broke the Danish fleet at Copenhagen. Exhausted, Britain and France signed the Treaty of Amiens in March 1802, a peace that lasted barely a year.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Austrian Netherlands",
+       "Batavian Republic",
+       "Helvetic Republic",
+       "Lombardy",
+       "Kingdom of Sardinia",
+       "Spain"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom",
+       "Kingdom of Ireland",
+       "Ottoman Empire",
+       "Portugal"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ralph Abercromby",
+      "label": "British landing in Egypt",
+      "path": [
+       [
+        28.0,
+        33.0
+       ],
+       [
+        30.07,
+        31.33
+       ],
+       [
+        29.92,
+        31.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Luneville",
+      "kind": "treaty",
+      "lon": 6.5,
+      "lat": 48.59,
+      "year": 1801,
+      "winner": 0,
+      "text": "Austria left the war, ending the Second Coalition on the continent."
+     },
+     {
+      "name": "Battle of Alexandria",
+      "kind": "battle",
+      "lon": 29.95,
+      "lat": 31.25,
+      "year": 1801,
+      "winner": 1,
+      "text": "Abercromby's victory led to the French surrender in Egypt."
+     },
+     {
+      "name": "Treaty of Amiens",
+      "kind": "treaty",
+      "lon": 2.3,
+      "lat": 49.89,
+      "year": 1802,
+      "winner": null,
+      "text": "Britain and France made peace, ending ten years of war."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "haitian-revolution",
+  "name": "Haitian Revolution",
+  "start": 1791,
+  "end": 1804,
+  "kind": "war",
+  "summary": "Enslaved Africans in Saint-Domingue, France's richest colony, rose in 1791, won the abolition of slavery and, under Toussaint Louverture, drove out British and Spanish invaders. When Napoleon sent an army in 1802 to restore French rule and slavery, Jean-Jacques Dessalines led the resistance that, with yellow fever, destroyed it. Haiti declared independence in 1804 as the first nation founded by formerly enslaved people, a shock felt across the slaveholding Americas.",
+  "sides": [
+   {
+    "name": "Haitian revolutionaries",
+    "color": "#4f9a5a",
+    "leaders": [
+     "Toussaint Louverture",
+     "Jean-Jacques Dessalines",
+     "Henri Christophe",
+     "Dutty Boukman"
+    ]
+   },
+   {
+    "name": "France",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Leger-Felicite Sonthonax",
+     "Charles Leclerc",
+     "Vicomte de Rochambeau"
+    ]
+   },
+   {
+    "name": "Britain and Spain",
+    "color": "#c0473a",
+    "leaders": [
+     "Thomas Maitland",
+     "John Whitelocke"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -72.4,
+    "lat": 19.0,
+    "r": 2.8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1791,
+    "label": "Aug 1791",
+    "title": "The great uprising",
+    "text": "After a secret ceremony at Bois Caiman led by the vodou priest Dutty Boukman, tens of thousands of enslaved people on the Northern Plain rose in late August 1791. Within weeks they had burned over a thousand plantations and killed hundreds of planters, while the whites held out in Le Cap. Boukman was killed in November, but leaders such as Jean-Francois and Biassou kept the revolt alive.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -72.3,
+        19.7
+       ],
+       [
+        -72.22,
+        19.69
+       ],
+       [
+        -72.12,
+        19.7
+       ]
+      ],
+      "label": "Rebel lines around Le Cap"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Dutty Boukman",
+      "label": "Uprising on the Northern Plain",
+      "path": [
+       [
+        -72.4,
+        19.7
+       ],
+       [
+        -72.32,
+        19.66
+       ],
+       [
+        -72.24,
+        19.66
+       ],
+       [
+        -72.2,
+        19.72
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Bois Caiman ceremony",
+      "kind": "event",
+      "lon": -72.24,
+      "lat": 19.66,
+      "year": 1791,
+      "winner": 0,
+      "text": "A night gathering launched the coordinated revolt."
+     },
+     {
+      "name": "Burning of the Northern Plain",
+      "kind": "event",
+      "lon": -72.3,
+      "lat": 19.62,
+      "year": 1791,
+      "winner": 0,
+      "text": "Rebels destroyed the plantations that made the colony rich."
+     }
+    ]
+   },
+   {
+    "year": 1793,
+    "label": "1793 to 1794",
+    "title": "Abolition and invasion",
+    "text": "With France at war in Europe, Spain armed the rebels from Santo Domingo, and Toussaint rose to command under the Spanish flag. Britain invaded from Jamaica, taking Jeremie, Saint-Marc and Port-au-Prince. To win the Black population, commissioner Sonthonax abolished slavery in 1793, and when Paris confirmed abolition in 1794 Toussaint switched to the French Republic.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Spain",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -72.75,
+        19.25
+       ],
+       [
+        -72.55,
+        18.9
+       ],
+       [
+        -72.3,
+        18.65
+       ],
+       [
+        -72.4,
+        18.45
+       ]
+      ],
+      "label": "British-held coast, 1794"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "John Whitelocke",
+      "label": "British invasion from Jamaica",
+      "path": [
+       [
+        -76.8,
+        17.97
+       ],
+       [
+        -75.0,
+        18.3
+       ],
+       [
+        -74.12,
+        18.65
+       ],
+       [
+        -72.6,
+        18.7
+       ],
+       [
+        -72.34,
+        18.54
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Toussaint Louverture",
+      "label": "Toussaint turns on the Spanish",
+      "path": [
+       [
+        -72.24,
+        19.53
+       ],
+       [
+        -72.48,
+        19.48
+       ],
+       [
+        -72.69,
+        19.45
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Abolition of slavery",
+      "kind": "event",
+      "lon": -72.2,
+      "lat": 19.76,
+      "year": 1793,
+      "winner": null,
+      "text": "Sonthonax freed the enslaved in the North; the Convention extended it to all French colonies in 1794."
+     },
+     {
+      "name": "British take Port-au-Prince",
+      "kind": "siege",
+      "lon": -72.34,
+      "lat": 18.54,
+      "year": 1794,
+      "winner": 2,
+      "text": "The colonial capital fell to a British expedition."
+     }
+    ]
+   },
+   {
+    "year": 1795,
+    "label": "1795 to 1798",
+    "title": "Toussaint drives out the British",
+    "text": "Spain made peace in 1795 and ceded Santo Domingo to France. Toussaint, now a French general, built a disciplined army and pressed the British, who lost thousands of soldiers to yellow fever. In 1798 their commander Thomas Maitland negotiated a full withdrawal, handing over Port-au-Prince and the Mole Saint-Nicolas to Toussaint.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -72.75,
+        19.35
+       ],
+       [
+        -72.5,
+        19.0
+       ],
+       [
+        -72.2,
+        18.7
+       ]
+      ],
+      "label": "Front against the British, 1797"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Toussaint Louverture",
+      "label": "Toussaint's offensive",
+      "path": [
+       [
+        -72.69,
+        19.45
+       ],
+       [
+        -72.69,
+        19.11
+       ],
+       [
+        -72.34,
+        18.54
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Thomas Maitland",
+      "label": "British evacuation",
+      "path": [
+       [
+        -72.34,
+        18.54
+       ],
+       [
+        -73.38,
+        19.8
+       ],
+       [
+        -75.0,
+        19.0
+       ],
+       [
+        -76.8,
+        17.97
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Santo Domingo ceded to France",
+      "kind": "treaty",
+      "lon": -69.89,
+      "lat": 18.47,
+      "year": 1795,
+      "winner": 1,
+      "text": "By the Peace of Basel Spain gave its half of Hispaniola to France."
+     },
+     {
+      "name": "British evacuation",
+      "kind": "event",
+      "lon": -73.38,
+      "lat": 19.8,
+      "year": 1798,
+      "winner": 0,
+      "text": "Maitland agreed to withdraw all British forces from the colony."
+     }
+    ]
+   },
+   {
+    "year": 1799,
+    "label": "1799 to 1801",
+    "title": "Toussaint rules the island",
+    "text": "Toussaint defeated his rival André Rigaud, who held the South, in the bitter War of the Knives, in which Dessalines besieged Jacmel. In 1801 he marched into Spanish Santo Domingo and abolished slavery there, then issued a constitution making himself governor for life, still nominally under France.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -72.75,
+        18.6
+       ],
+       [
+        -72.6,
+        18.35
+       ],
+       [
+        -72.5,
+        18.2
+       ]
+      ],
+      "label": "Front with Rigaud's South, 1799"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Jean-Jacques Dessalines",
+      "label": "Advance on the South",
+      "path": [
+       [
+        -72.34,
+        18.54
+       ],
+       [
+        -72.53,
+        18.23
+       ],
+       [
+        -73.75,
+        18.19
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Toussaint Louverture",
+      "label": "Into Santo Domingo",
+      "path": [
+       [
+        -72.69,
+        19.45
+       ],
+       [
+        -71.7,
+        19.5
+       ],
+       [
+        -70.7,
+        19.45
+       ],
+       [
+        -69.89,
+        18.47
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Jacmel",
+      "kind": "siege",
+      "lon": -72.53,
+      "lat": 18.23,
+      "year": 1800,
+      "winner": 0,
+      "text": "Dessalines starved Rigaud's stronghold into surrender."
+     },
+     {
+      "name": "Occupation of Santo Domingo",
+      "kind": "event",
+      "lon": -69.89,
+      "lat": 18.47,
+      "year": 1801,
+      "winner": 0,
+      "text": "Toussaint united all of Hispaniola under his command."
+     }
+    ]
+   },
+   {
+    "year": 1802,
+    "label": "1802",
+    "title": "Leclerc's expedition",
+    "text": "Napoleon sent his brother-in-law Charles Leclerc with some 30,000 troops to restore French control. Christophe burned Le Cap rather than surrender it, and the French paid heavily to take the fort of Crete-a-Pierrot, but Toussaint's generals began to yield. Toussaint surrendered, was seized by treachery and deported to France, where he died in 1803. When news came that France had restored slavery in Guadeloupe, the colony rose again, and yellow fever killed Leclerc and much of his army.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -72.75,
+        19.2
+       ],
+       [
+        -72.5,
+        19.12
+       ],
+       [
+        -72.25,
+        19.15
+       ]
+      ],
+      "label": "Front on the Artibonite, Mar 1802"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Charles Leclerc",
+      "label": "French fleet lands at Le Cap",
+      "path": [
+       [
+        -69.3,
+        19.25
+       ],
+       [
+        -71.0,
+        20.0
+       ],
+       [
+        -72.2,
+        19.78
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Charles Leclerc",
+      "label": "Drive on the Artibonite",
+      "path": [
+       [
+        -72.2,
+        19.76
+       ],
+       [
+        -72.48,
+        19.48
+       ],
+       [
+        -72.52,
+        19.11
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jean-Jacques Dessalines",
+      "label": "Defence of Crete-a-Pierrot",
+      "path": [
+       [
+        -72.34,
+        18.54
+       ],
+       [
+        -72.45,
+        18.85
+       ],
+       [
+        -72.52,
+        19.11
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Burning of Le Cap",
+      "kind": "event",
+      "lon": -72.2,
+      "lat": 19.76,
+      "year": 1802,
+      "winner": 0,
+      "text": "Christophe set the city ablaze as the French fleet arrived."
+     },
+     {
+      "name": "Battle of Crete-a-Pierrot",
+      "kind": "siege",
+      "lon": -72.52,
+      "lat": 19.11,
+      "year": 1802,
+      "winner": 1,
+      "text": "The French took the fort after weeks of costly assaults; its garrison broke out."
+     },
+     {
+      "name": "Arrest of Toussaint",
+      "kind": "event",
+      "lon": -72.48,
+      "lat": 19.48,
+      "year": 1802,
+      "winner": 1,
+      "text": "Leclerc's men seized Toussaint near Ennery and shipped him to France."
+     }
+    ]
+   },
+   {
+    "year": 1803,
+    "label": "1803",
+    "title": "Vertieres",
+    "text": "Dessalines united Black and mixed-race commanders at Arcahaie under a new red and blue flag. The war became one of extermination on both sides as Rochambeau, Leclerc's successor, used terror, while renewed war with Britain cut French supply lines by sea. On 18 November Dessalines's army stormed the forts at Vertieres outside Le Cap, and Rochambeau surrendered and evacuated the colony.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -72.3,
+        19.7
+       ],
+       [
+        -72.22,
+        19.73
+       ],
+       [
+        -72.15,
+        19.72
+       ]
+      ],
+      "label": "Siege lines at Le Cap, Nov 1803"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Jean-Jacques Dessalines",
+      "label": "March on Le Cap",
+      "path": [
+       [
+        -72.52,
+        18.77
+       ],
+       [
+        -72.69,
+        19.45
+       ],
+       [
+        -72.4,
+        19.6
+       ],
+       [
+        -72.22,
+        19.74
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "British squadron",
+      "label": "Blockade of Saint-Domingue",
+      "path": [
+       [
+        -76.8,
+        17.97
+       ],
+       [
+        -74.5,
+        19.9
+       ],
+       [
+        -72.2,
+        19.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Congress of Arcahaie",
+      "kind": "event",
+      "lon": -72.52,
+      "lat": 18.77,
+      "year": 1803,
+      "winner": 0,
+      "text": "Revolutionary leaders united under Dessalines and adopted a new flag."
+     },
+     {
+      "name": "Battle of Vertieres",
+      "kind": "battle",
+      "lon": -72.22,
+      "lat": 19.74,
+      "year": 1803,
+      "winner": 0,
+      "text": "The last French army in the colony was defeated and surrendered."
+     }
+    ]
+   },
+   {
+    "year": 1804,
+    "label": "1 Jan 1804",
+    "title": "Independence",
+    "text": "At Gonaives on 1 January 1804 Dessalines declared the independence of Haiti, restoring the island's Taino name. In the following months most of the remaining French population was killed on his orders. The new state, the first born of a successful slave revolt, faced decades of isolation and a crippling indemnity demanded by France in 1825.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Jean-Jacques Dessalines",
+      "label": "To Gonaives",
+      "path": [
+       [
+        -72.22,
+        19.74
+       ],
+       [
+        -72.48,
+        19.6
+       ],
+       [
+        -72.69,
+        19.45
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Declaration of independence",
+      "kind": "event",
+      "lon": -72.69,
+      "lat": 19.45,
+      "year": 1804,
+      "winner": 0,
+      "text": "Haiti became the second independent nation in the Americas."
+     }
+    ]
+   }
+  ]
+ }
+]

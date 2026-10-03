@@ -1,0 +1,5834 @@
+[
+ {
+  "id": "zhou-conquest-of-shang",
+  "name": "Zhou conquest of the Shang",
+  "start": -1050,
+  "end": -1039,
+  "kind": "war",
+  "summary": "The Zhou, a western vassal people of the Wei valley, overthrew the Shang dynasty that had ruled the North China Plain for some five centuries. King Wu of Zhou destroyed the army of the last Shang king, Di Xin, at Muye in c. 1046 BC, and his brother the Duke of Zhou crushed a great Shang revolt a few years later. The victors justified their rule as the Mandate of Heaven, an idea that framed Chinese politics for three thousand years.",
+  "sides": [
+   {
+    "name": "Zhou and allies",
+    "color": "#b8862b",
+    "leaders": [
+     "King Wen of Zhou",
+     "King Wu of Zhou",
+     "Jiang Ziya",
+     "Duke of Zhou"
+    ]
+   },
+   {
+    "name": "Shang",
+    "color": "#5a6fb8",
+    "leaders": [
+     "Di Xin (King Zhou of Shang)",
+     "Wu Geng"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 112.0,
+    "lat": 35.0,
+    "r": 4.5
+   },
+   {
+    "lon": 116.5,
+    "lat": 36.0,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -1050,
+    "label": "c. 1059 to 1050 BC",
+    "title": "Zhou rises in the west",
+    "text": "Under nominal Shang overlordship, King Wen of Zhou built up a power base in the Wei valley, conquered the neighbouring state of Chong and moved his capital east to Feng. He then struck across the mountains at Li in Shanxi, within reach of the Shang heartland, and gathered allied peoples of the west. The map's border data shows the whole Chinese core as one polity, coloured here for the Shang overlord.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Zhoa"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        111.2,
+        36.8
+       ],
+       [
+        111.0,
+        35.5
+       ],
+       [
+        111.3,
+        34.5
+       ],
+       [
+        111.6,
+        33.5
+       ]
+      ],
+      "label": "Zhou and Shang spheres, c. 1050 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "King Wen",
+      "label": "Zhou expansion from Zhouyuan",
+      "path": [
+       [
+        107.8,
+        34.45
+       ],
+       [
+        108.6,
+        34.1
+       ],
+       [
+        108.75,
+        34.22
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "King Wen",
+      "label": "Raid on Li",
+      "path": [
+       [
+        108.75,
+        34.22
+       ],
+       [
+        110.3,
+        34.6
+       ],
+       [
+        111.6,
+        35.4
+       ],
+       [
+        113.1,
+        36.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Zhou conquest of Chong",
+      "kind": "war",
+      "lon": 108.6,
+      "lat": 34.1,
+      "year": -1052,
+      "winner": 0,
+      "text": "King Wen took Chong, a Shang ally guarding the Wei valley, and built his new capital Feng nearby."
+     }
+    ]
+   },
+   {
+    "year": -1048,
+    "label": "c. 1048 BC",
+    "title": "Gathering at Mengjin",
+    "text": "King Wu succeeded his father and led the Zhou army east down the Yellow River to the ford at Mengjin. Tradition says some eight hundred lords gathered there to join him, but Wu judged the moment premature and withdrew. Inside the Shang court, Di Xin was alienating his own nobles and spending his armies on wars against the Eastern Yi.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Zhoa"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        111.6,
+        34.8
+       ],
+       [
+        112.6,
+        34.85
+       ],
+       [
+        113.6,
+        34.95
+       ],
+       [
+        114.4,
+        35.15
+       ]
+      ],
+      "label": "Yellow River line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "King Wu",
+      "label": "March to the Mengjin ford",
+      "path": [
+       [
+        108.75,
+        34.22
+       ],
+       [
+        110.0,
+        34.55
+       ],
+       [
+        110.88,
+        34.62
+       ],
+       [
+        111.8,
+        34.75
+       ],
+       [
+        112.6,
+        34.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Di Xin",
+      "label": "Shang wars in the east",
+      "path": [
+       [
+        114.2,
+        35.6
+       ],
+       [
+        115.6,
+        35.5
+       ],
+       [
+        117.0,
+        35.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Assembly at Mengjin",
+      "kind": "event",
+      "lon": 112.6,
+      "lat": 34.85,
+      "year": -1048,
+      "winner": null,
+      "text": "The allied lords rallied to Zhou at the river crossing, but King Wu turned back to wait."
+     }
+    ]
+   },
+   {
+    "year": -1046,
+    "label": "c. 1046 BC",
+    "title": "Battle of Muye",
+    "text": "Two years later King Wu crossed at Mengjin with his chariots, the commander Jiang Ziya and contingents from western peoples, and marched on the Shang capital at Chaoge. On the plain of Muye the Shang army, much of it pressed captives, broke and turned on its own side. Di Xin set fire to his palace and died, and King Wu proclaimed that Heaven had transferred its mandate to Zhou.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Zhoa"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        113.75,
+        35.35
+       ],
+       [
+        113.95,
+        35.25
+       ],
+       [
+        114.15,
+        35.12
+       ]
+      ],
+      "label": "Muye, the Shang line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "King Wu and Jiang Ziya",
+      "label": "Zhou army crosses and marches on Chaoge",
+      "path": [
+       [
+        112.6,
+        34.85
+       ],
+       [
+        113.0,
+        35.0
+       ],
+       [
+        113.95,
+        35.25
+       ],
+       [
+        114.2,
+        35.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Di Xin",
+      "label": "Shang army goes out to Muye",
+      "path": [
+       [
+        114.2,
+        35.6
+       ],
+       [
+        114.05,
+        35.42
+       ],
+       [
+        113.95,
+        35.25
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Muye",
+      "kind": "battle",
+      "lon": 113.95,
+      "lat": 35.25,
+      "year": -1046,
+      "winner": 0,
+      "text": "The Zhou coalition routed the Shang army in a single day; the traditional date of 1046 BC comes from modern chronology work and is still debated."
+     },
+     {
+      "name": "Fall of Chaoge",
+      "kind": "event",
+      "lon": 114.2,
+      "lat": 35.6,
+      "year": -1046,
+      "winner": 0,
+      "text": "Di Xin burned himself in his palace, ending the Shang dynasty."
+     }
+    ]
+   },
+   {
+    "year": -1042,
+    "label": "c. 1042 to 1039 BC",
+    "title": "Revolt of the Three Guards",
+    "text": "After King Wu died, the Shang prince Wu Geng, left to rule the old capital, rose in revolt with two of Wu's own brothers and the eastern states of Yan and Pugu. The Duke of Zhou, regent for the young King Cheng, led an eastern expedition that took about three years to crush them. Zhou then built a second capital at Chengzhou near Luoyang and settled royal kinsmen across the east as fief holders.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Zhoa"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        113.4,
+        34.2
+       ],
+       [
+        114.0,
+        35.0
+       ],
+       [
+        114.8,
+        35.8
+       ],
+       [
+        115.5,
+        36.6
+       ]
+      ],
+      "label": "Rebel front, c. 1042 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Zhou",
+      "label": "Eastern expedition",
+      "path": [
+       [
+        108.75,
+        34.22
+       ],
+       [
+        110.88,
+        34.62
+       ],
+       [
+        112.45,
+        34.65
+       ],
+       [
+        113.65,
+        34.75
+       ],
+       [
+        114.3,
+        36.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Zhou",
+      "label": "Campaign against Yan and Pugu",
+      "path": [
+       [
+        114.3,
+        36.1
+       ],
+       [
+        115.6,
+        35.8
+       ],
+       [
+        116.99,
+        35.6
+       ],
+       [
+        118.1,
+        37.1
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wu Geng",
+      "label": "Shang rebels and the Three Guards",
+      "path": [
+       [
+        114.3,
+        36.1
+       ],
+       [
+        113.9,
+        35.3
+       ],
+       [
+        113.65,
+        34.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Suppression of Wu Geng",
+      "kind": "war",
+      "lon": 114.3,
+      "lat": 36.1,
+      "year": -1040,
+      "winner": 0,
+      "text": "The Duke of Zhou killed Wu Geng and Prince Guan and exiled Prince Cai, ending Shang resistance."
+     },
+     {
+      "name": "Founding of Chengzhou",
+      "kind": "event",
+      "lon": 112.45,
+      "lat": 34.65,
+      "year": -1038,
+      "winner": 0,
+      "text": "A new eastern capital at Luoyang let Zhou watch over the conquered plain."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "trojan-war",
+  "name": "Trojan War (legend)",
+  "start": -1194,
+  "end": -1184,
+  "kind": "war",
+  "summary": "The Trojan War is a legend, told centuries later in Homer's Iliad and Odyssey: a Greek (Achaean) coalition under Agamemnon besieged Troy for ten years to recover Helen and finally took it by the trick of the wooden horse. Whether a real war lies behind it is unknown, but archaeology at Hisarlik in northwest Turkey shows a rich Bronze Age city that was destroyed more than once around 1250 to 1180 BC, and Hittite letters mention Wilusa (Ilios) and the Ahhiyawa (Achaeans). The dates used here are traditional, after the ancient scholar Eratosthenes.",
+  "sides": [
+   {
+    "name": "Achaeans (Mycenaean Greeks)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Agamemnon",
+     "Achilles",
+     "Odysseus",
+     "Menelaus"
+    ]
+   },
+   {
+    "name": "Troy and allies",
+    "color": "#b5452f",
+    "leaders": [
+     "Priam",
+     "Hector",
+     "Paris",
+     "Aeneas"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 25.0,
+    "lat": 38.8,
+    "r": 3.2
+   }
+  ],
+  "steps": [
+   {
+    "year": -1194,
+    "label": "c. 1194 BC (legend)",
+    "title": "The fleet sails from Aulis",
+    "text": "In the legend, the Trojan prince Paris carried off Helen, wife of Menelaus of Sparta, and Agamemnon of Mycenae raised a fleet of more than a thousand ships at Aulis. The Achaeans crossed the Aegean, landed on the beach below Troy and fortified a camp by their ships. This is myth, not recorded history, though the late Bronze Age Mycenaean kingdoms and Troy were both real.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Phrygians",
+       "Thrace"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Agamemnon",
+      "label": "Achaean fleet",
+      "path": [
+       [
+        23.6,
+        38.43
+       ],
+       [
+        24.55,
+        38.88
+       ],
+       [
+        25.4,
+        39.3
+       ],
+       [
+        26.03,
+        39.82
+       ],
+       [
+        26.17,
+        39.99
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Landing at Troy",
+      "kind": "event",
+      "lon": 26.18,
+      "lat": 40.0,
+      "year": -1194,
+      "winner": 0,
+      "text": "In Homer's story the Achaeans fought their way ashore and beached their ships at the mouth of the Scamander."
+     }
+    ]
+   },
+   {
+    "year": -1185,
+    "label": "c. 1194 to 1185 BC (legend)",
+    "title": "Siege and the Iliad",
+    "text": "The Iliad covers a few weeks in the tenth year of a long stalemate on the plain between the city and the Achaean camp. Hector drove the Achaeans back to their ships while Achilles sulked, until Achilles returned to battle and killed Hector. These scenes are poetry composed around 750 BC; no source confirms them.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Phrygians",
+       "Thrace"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        26.19,
+        40.01
+       ],
+       [
+        26.21,
+        39.98
+       ],
+       [
+        26.22,
+        39.95
+       ]
+      ],
+      "label": "Plain of Troy, legendary lines"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hector",
+      "label": "Trojan attack on the ships",
+      "path": [
+       [
+        26.24,
+        39.96
+       ],
+       [
+        26.21,
+        39.98
+       ],
+       [
+        26.18,
+        40.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Achilles",
+      "label": "Achilles' counterattack",
+      "path": [
+       [
+        26.18,
+        40.0
+       ],
+       [
+        26.21,
+        39.98
+       ],
+       [
+        26.24,
+        39.96
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Death of Hector",
+      "kind": "battle",
+      "lon": 26.23,
+      "lat": 39.96,
+      "year": -1185,
+      "winner": 0,
+      "text": "In the Iliad Achilles killed Hector before the walls of Troy, the climax of Homer's poem."
+     }
+    ]
+   },
+   {
+    "year": -1184,
+    "label": "c. 1184 BC (legend); c. 1180 BC (archaeology)",
+    "title": "Fall of Troy",
+    "text": "In the later legend, the Achaeans pretended to sail away to Tenedos and left a wooden horse with soldiers hidden inside, which the Trojans dragged into their city. That night Troy was opened and burned. At Hisarlik, the layer archaeologists call Troy VIIa was destroyed by fire around 1180 BC, during the wider Late Bronze Age collapse, but who destroyed it is unknown.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Phrygians",
+       "Thrace"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Odysseus",
+      "label": "Feigned withdrawal to Tenedos and return",
+      "path": [
+       [
+        26.17,
+        39.99
+       ],
+       [
+        26.03,
+        39.82
+       ],
+       [
+        26.17,
+        39.99
+       ],
+       [
+        26.24,
+        39.96
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Troy",
+      "kind": "siege",
+      "lon": 26.24,
+      "lat": 39.96,
+      "year": -1184,
+      "winner": 0,
+      "text": "Legend says Troy fell to the wooden horse; archaeology shows a burned city at Hisarlik around 1180 BC."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "assyria-kush-wars",
+  "name": "Assyrian and Kushite wars for Egypt and the Levant",
+  "start": -744,
+  "end": -663,
+  "kind": "war",
+  "summary": "From 744 BC the reformed Neo-Assyrian army of Tiglath-Pileser III and his successors conquered the Aramean and Israelite kingdoms of the Levant, while the Kushite kings of Napata in Nubia made themselves pharaohs of Egypt. For eighty years the two empires fought through the small states between them, until Esarhaddon and Ashurbanipal invaded Egypt itself and sacked Thebes in 663 BC. Kush withdrew to Nubia for good, but Assyria had overstretched, and within fifty years both Egypt and Babylon had broken free and Nineveh had fallen.",
+  "sides": [
+   {
+    "name": "Assyria",
+    "color": "#b5452f",
+    "leaders": [
+     "Tiglath-Pileser III",
+     "Sargon II",
+     "Sennacherib",
+     "Esarhaddon",
+     "Ashurbanipal"
+    ]
+   },
+   {
+    "name": "Kushite Egypt and Levantine allies",
+    "color": "#2f8f83",
+    "leaders": [
+     "Piye",
+     "Shabaka",
+     "Taharqa",
+     "Tantamani",
+     "Hezekiah"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 37.5,
+    "lat": 32.5,
+    "r": 6.5
+   },
+   {
+    "lon": 31.8,
+    "lat": 26.0,
+    "r": 7.0
+   }
+  ],
+  "steps": [
+   {
+    "year": -732,
+    "label": "744 to 732 BC",
+    "title": "Tiglath-Pileser III marches west",
+    "text": "Tiglath-Pileser III seized the Assyrian throne in 745 BC and built a standing army that subdued the Neo-Hittite and Aramean states of Syria. When Damascus and Israel formed a coalition against him, he marched down the coast to the border of Egypt in 734 BC and then took Damascus in 732 BC, deporting its people. In the far south, the Kushite king Kashta already ruled Upper Egypt from Napata.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Assyria",
+       "Hittites",
+       "Arameans"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kingdom of David and Solomon",
+       "Kush"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.9,
+        35.5
+       ],
+       [
+        36.8,
+        34.6
+       ],
+       [
+        37.4,
+        33.6
+       ],
+       [
+        38.0,
+        32.6
+       ]
+      ],
+      "label": "Assyrian advance, 734 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tiglath-Pileser III",
+      "label": "Campaign to Philistia",
+      "path": [
+       [
+        43.33,
+        36.1
+       ],
+       [
+        39.03,
+        36.87
+       ],
+       [
+        38.0,
+        36.83
+       ],
+       [
+        36.2,
+        34.5
+       ],
+       [
+        35.2,
+        33.27
+       ],
+       [
+        34.45,
+        31.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tiglath-Pileser III",
+      "label": "Siege of Damascus",
+      "path": [
+       [
+        34.45,
+        31.5
+       ],
+       [
+        35.6,
+        32.6
+       ],
+       [
+        36.3,
+        33.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Damascus",
+      "kind": "siege",
+      "lon": 36.3,
+      "lat": 33.51,
+      "year": -732,
+      "winner": 0,
+      "text": "Assyria captured Damascus, executed King Rezin and ended the Aramean kingdom."
+     }
+    ]
+   },
+   {
+    "year": -728,
+    "label": "c. 728 BC",
+    "title": "Piye conquers Egypt",
+    "text": "Egypt was split among rival Libyan princes, and Tefnakht of Sais was pushing south up the Nile. The Kushite king Piye sailed and marched north from Napata, took Hermopolis and stormed Memphis, and the Delta rulers submitted to him. Under his brother Shabaka the Kushite 25th Dynasty ruled all of Egypt, putting a new power on Assyria's southwest flank.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Assyria",
+       "Hittites",
+       "Arameans",
+       "Babylonia",
+       "Kingdom of David and Solomon"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kush",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Piye",
+      "label": "Kushite army down the Nile",
+      "path": [
+       [
+        31.83,
+        18.53
+       ],
+       [
+        32.9,
+        21.9
+       ],
+       [
+        32.65,
+        25.7
+       ],
+       [
+        30.8,
+        27.78
+       ],
+       [
+        31.25,
+        29.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Piye",
+      "label": "Submission of the Delta",
+      "path": [
+       [
+        31.25,
+        29.85
+       ],
+       [
+        31.0,
+        30.5
+       ],
+       [
+        30.77,
+        31.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Memphis",
+      "kind": "siege",
+      "lon": 31.25,
+      "lat": 29.85,
+      "year": -728,
+      "winner": 1,
+      "text": "Piye stormed Memphis from the river side, and the princes of the Delta submitted to him."
+     }
+    ]
+   },
+   {
+    "year": -720,
+    "label": "722 to 720 BC",
+    "title": "Samaria and Raphia",
+    "text": "Shalmaneser V and then Sargon II took Samaria after a long siege and deported the people of the northern Kingdom of Israel. When Gaza rebelled with Egyptian help, Sargon defeated the rebels and an Egyptian force at Raphia, the first clash between Assyria and the Nile kingdom.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Assyria",
+       "Hittites",
+       "Arameans",
+       "Kingdom of David and Solomon"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kush",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.2,
+        31.3
+       ],
+       [
+        34.5,
+        30.7
+       ],
+       [
+        34.9,
+        30.0
+       ]
+      ],
+      "label": "Egyptian border, 720 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Sargon II",
+      "label": "Sargon's army to the Egyptian border",
+      "path": [
+       [
+        39.03,
+        36.87
+       ],
+       [
+        38.0,
+        36.83
+       ],
+       [
+        36.3,
+        33.51
+       ],
+       [
+        35.19,
+        32.28
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        34.25,
+        31.29
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Egyptian expeditionary force",
+      "label": "Egyptian army to Gaza",
+      "path": [
+       [
+        31.25,
+        29.85
+       ],
+       [
+        32.57,
+        31.04
+       ],
+       [
+        33.8,
+        31.13
+       ],
+       [
+        34.25,
+        31.29
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Samaria",
+      "kind": "siege",
+      "lon": 35.19,
+      "lat": 32.28,
+      "year": -722,
+      "winner": 0,
+      "text": "Assyria ended the northern Kingdom of Israel and deported much of its population."
+     },
+     {
+      "name": "Battle of Raphia",
+      "kind": "battle",
+      "lon": 34.25,
+      "lat": 31.29,
+      "year": -720,
+      "winner": 0,
+      "text": "Sargon II beat Gaza and its Egyptian allies on the frontier of Egypt."
+     }
+    ]
+   },
+   {
+    "year": -701,
+    "label": "701 BC",
+    "title": "Sennacherib and Hezekiah",
+    "text": "Hezekiah of Judah, Sidon and the Philistine cities rebelled, counting on Kushite Egypt. Sennacherib swept down the coast, defeated the Egyptian and Kushite relief army at Eltekeh and stormed Lachish, then shut Hezekiah up in Jerusalem. Jerusalem was not taken, but Hezekiah paid heavy tribute and the Levant stayed Assyrian.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Assyria",
+       "Hittites",
+       "Arameans",
+       "Babylonia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kingdom of David and Solomon",
+       "Kush",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.7,
+        32.1
+       ],
+       [
+        34.95,
+        31.75
+       ],
+       [
+        34.9,
+        31.3
+       ]
+      ],
+      "label": "Judah's border, 701 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Sennacherib",
+      "label": "Assyrian army down the coast",
+      "path": [
+       [
+        43.15,
+        36.36
+       ],
+       [
+        38.0,
+        36.83
+       ],
+       [
+        36.2,
+        34.5
+       ],
+       [
+        35.2,
+        33.27
+       ],
+       [
+        34.55,
+        31.66
+       ],
+       [
+        34.85,
+        31.565
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taharqa (tradition)",
+      "label": "Kushite and Egyptian relief army",
+      "path": [
+       [
+        31.25,
+        29.85
+       ],
+       [
+        32.57,
+        31.04
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        34.8,
+        31.84
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Rabshakeh",
+      "label": "Blockade of Jerusalem",
+      "path": [
+       [
+        34.85,
+        31.565
+       ],
+       [
+        35.05,
+        31.7
+       ],
+       [
+        35.23,
+        31.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Eltekeh",
+      "kind": "battle",
+      "lon": 34.8,
+      "lat": 31.84,
+      "year": -701,
+      "winner": 0,
+      "text": "Sennacherib defeated the army sent from Egypt to relieve the rebels."
+     },
+     {
+      "name": "Siege of Lachish",
+      "kind": "siege",
+      "lon": 34.85,
+      "lat": 31.565,
+      "year": -701,
+      "winner": 0,
+      "text": "Assyria stormed Judah's second city, a victory carved on the walls of Sennacherib's palace at Nineveh."
+     },
+     {
+      "name": "Blockade of Jerusalem",
+      "kind": "siege",
+      "lon": 35.23,
+      "lat": 31.78,
+      "year": -701,
+      "winner": null,
+      "text": "The city held out, and Hezekiah bought peace with tribute while remaining an Assyrian vassal."
+     }
+    ]
+   },
+   {
+    "year": -671,
+    "label": "674 to 671 BC",
+    "title": "Esarhaddon invades Egypt",
+    "text": "Taharqa, the most powerful Kushite pharaoh, kept stirring revolt in the Levant. A first Assyrian invasion was thrown back at the Egyptian border in 674 BC, but in 671 BC Esarhaddon crossed Sinai with camels supplied by Arab allies and fought his way to Memphis. Memphis fell, Taharqa's family was captured, and Taharqa fled south.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Assyria",
+       "Hittites",
+       "Arameans",
+       "Babylonia",
+       "Kingdom of David and Solomon"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kush",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.6,
+        31.2
+       ],
+       [
+        32.3,
+        30.6
+       ],
+       [
+        31.9,
+        30.1
+       ]
+      ],
+      "label": "Nile Delta front, 671 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Esarhaddon",
+      "label": "Invasion across Sinai",
+      "path": [
+       [
+        34.45,
+        31.5
+       ],
+       [
+        34.25,
+        31.29
+       ],
+       [
+        33.8,
+        31.13
+       ],
+       [
+        32.57,
+        31.04
+       ],
+       [
+        31.7,
+        30.5
+       ],
+       [
+        31.25,
+        29.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taharqa",
+      "label": "Retreat to Thebes and Nubia",
+      "path": [
+       [
+        31.25,
+        29.85
+       ],
+       [
+        30.8,
+        27.78
+       ],
+       [
+        32.65,
+        25.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Assyrian repulse at the border",
+      "kind": "battle",
+      "lon": 32.4,
+      "lat": 31.0,
+      "year": -674,
+      "winner": 1,
+      "text": "Babylonian records note an Assyrian defeat in Egypt, a rare setback for Esarhaddon."
+     },
+     {
+      "name": "Fall of Memphis",
+      "kind": "siege",
+      "lon": 31.25,
+      "lat": 29.85,
+      "year": -671,
+      "winner": 0,
+      "text": "Esarhaddon took Memphis and installed Assyrian governors and vassal princes in Lower Egypt."
+     }
+    ]
+   },
+   {
+    "year": -667,
+    "label": "669 to 666 BC",
+    "title": "Ashurbanipal and Taharqa",
+    "text": "Taharqa returned and retook Memphis, and Esarhaddon died at Harran on his way to deal with him. His son Ashurbanipal sent an army that beat Taharqa in the Delta and pushed up the Nile to Thebes. Assyria ruled Egypt through Delta princes such as Necho I of Sais, whose loyalty was shaky.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Assyria",
+       "Hittites",
+       "Arameans",
+       "Babylonia",
+       "Kingdom of David and Solomon",
+       "Egypt"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kush"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Taharqa",
+      "label": "Kushite return to Memphis",
+      "path": [
+       [
+        32.65,
+        25.7
+       ],
+       [
+        30.8,
+        27.78
+       ],
+       [
+        31.25,
+        29.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ashurbanipal's generals",
+      "label": "Assyrian army to Thebes",
+      "path": [
+       [
+        32.57,
+        31.04
+       ],
+       [
+        31.4,
+        30.6
+       ],
+       [
+        31.25,
+        29.85
+       ],
+       [
+        30.8,
+        27.78
+       ],
+       [
+        32.65,
+        25.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Karbaniti",
+      "kind": "battle",
+      "lon": 31.4,
+      "lat": 30.6,
+      "year": -667,
+      "winner": 0,
+      "text": "Ashurbanipal's army defeated Taharqa in the Delta and retook Memphis; the exact site is unknown."
+     }
+    ]
+   },
+   {
+    "year": -663,
+    "label": "664 to 663 BC",
+    "title": "Sack of Thebes",
+    "text": "Taharqa's successor Tantamani marched north, retook Memphis and killed Necho I. Ashurbanipal answered with a full invasion: Tantamani fled, and the Assyrians sacked Thebes, the ancient religious capital of Egypt, carrying off its treasures. Kush never again ruled Egypt, and Necho's son Psamtik I, at first an Assyrian vassal, soon made Egypt independent.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Assyria",
+       "Hittites",
+       "Arameans",
+       "Babylonia",
+       "Kingdom of David and Solomon",
+       "Egypt"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kush"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tantamani",
+      "label": "Kushite offensive",
+      "path": [
+       [
+        31.83,
+        18.53
+       ],
+       [
+        32.9,
+        21.9
+       ],
+       [
+        32.65,
+        25.7
+       ],
+       [
+        31.25,
+        29.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ashurbanipal",
+      "label": "Assyrian counterattack",
+      "path": [
+       [
+        32.57,
+        31.04
+       ],
+       [
+        31.25,
+        29.85
+       ],
+       [
+        30.8,
+        27.78
+       ],
+       [
+        32.65,
+        25.7
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tantamani",
+      "label": "Flight to Nubia",
+      "path": [
+       [
+        32.65,
+        25.7
+       ],
+       [
+        32.9,
+        21.9
+       ],
+       [
+        31.83,
+        18.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Thebes",
+      "kind": "siege",
+      "lon": 32.65,
+      "lat": 25.7,
+      "year": -663,
+      "winner": 0,
+      "text": "Assyria plundered Thebes, ending Kushite rule in Egypt."
+     },
+     {
+      "name": "Psamtik I in power",
+      "kind": "event",
+      "lon": 30.77,
+      "lat": 31.0,
+      "year": -664,
+      "winner": null,
+      "text": "Assyria's Saite vassal became pharaoh and reunified Egypt, breaking away from Assyria within a decade."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "persian-conquests-cyrus-cambyses",
+  "name": "Persian conquests of Cyrus and Cambyses",
+  "start": -553,
+  "end": -525,
+  "kind": "war",
+  "summary": "Cyrus II, king of the small Persian realm of Anshan, overthrew his Median overlord Astyages in 550 BC and then defeated, one after another, the allied powers that might have stopped him: Lydia in 547 BC and Babylon in 539 BC. His son Cambyses II completed the work by conquering Egypt in 525 BC. In 25 years the Persians built the Achaemenid Empire, the largest state the world had yet seen, stretching from the Aegean to Central Asia and the Nile.",
+  "sides": [
+   {
+    "name": "Persians",
+    "color": "#b5452f",
+    "leaders": [
+     "Cyrus the Great",
+     "Harpagus",
+     "Gobryas",
+     "Cambyses II"
+    ]
+   },
+   {
+    "name": "Media, Lydia, Babylon and Egypt",
+    "color": "#3f8f6f",
+    "leaders": [
+     "Astyages",
+     "Croesus",
+     "Nabonidus",
+     "Psamtik III"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 40.0,
+    "lat": 35.0,
+    "r": 12.0
+   },
+   {
+    "lon": 31.5,
+    "lat": 30.5,
+    "r": 3.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -550,
+    "label": "553 to 550 BC",
+    "title": "Cyrus overthrows Media",
+    "text": "Cyrus, a Persian vassal king of the Medes, rebelled against his grandfather Astyages. When Astyages marched into Persis, part of his army mutinied under the noble Harpagus and handed him over, and Cyrus then took the Median capital Ecbatana with its treasury. The Median lands from the Zagros to the Halys river in Anatolia passed to the Persians.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Elam",
+       "state societies and Aramaean kingdoms",
+       "Urartu",
+       "Assyria",
+       "Hittites"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Phrygians",
+       "Babylonia",
+       "Arameans",
+       "Kingdom of David and Solomon",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        50.0,
+        32.5
+       ],
+       [
+        51.5,
+        31.6
+       ],
+       [
+        53.5,
+        31.4
+       ]
+      ],
+      "label": "Persis and Media, 550 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Astyages",
+      "label": "Median army into Persis",
+      "path": [
+       [
+        48.51,
+        34.8
+       ],
+       [
+        49.8,
+        33.0
+       ],
+       [
+        51.4,
+        31.5
+       ],
+       [
+        53.17,
+        30.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Cyrus",
+      "label": "Persian march on Ecbatana",
+      "path": [
+       [
+        53.17,
+        30.2
+       ],
+       [
+        51.4,
+        31.5
+       ],
+       [
+        49.8,
+        33.0
+       ],
+       [
+        48.51,
+        34.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Pasargadae",
+      "kind": "battle",
+      "lon": 53.17,
+      "lat": 30.2,
+      "year": -550,
+      "winner": 0,
+      "text": "Astyages' army defected to Cyrus, and the Median king was captured."
+     },
+     {
+      "name": "Capture of Ecbatana",
+      "kind": "siege",
+      "lon": 48.51,
+      "lat": 34.8,
+      "year": -550,
+      "winner": 0,
+      "text": "Cyrus took the Median capital and its treasure, inheriting Media's empire."
+     }
+    ]
+   },
+   {
+    "year": -547,
+    "label": "547 to 546 BC",
+    "title": "Croesus and the fall of Sardis",
+    "text": "Croesus of Lydia, allied with Babylon, Egypt and Sparta, crossed the Halys to strike first. After an indecisive battle at Pteria he went home for the winter, but Cyrus followed him straight to Sardis, routed the Lydian cavalry with his camels and took the citadel. Harpagus then subdued the Greek cities of Ionia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Elam",
+       "state societies and Aramaean kingdoms",
+       "Urartu",
+       "Assyria",
+       "Hittites"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Phrygians",
+       "Babylonia",
+       "Arameans",
+       "Kingdom of David and Solomon",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.4,
+        41.4
+       ],
+       [
+        34.1,
+        40.5
+       ],
+       [
+        34.0,
+        39.6
+       ],
+       [
+        34.6,
+        38.8
+       ]
+      ],
+      "label": "Halys river frontier"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Croesus",
+      "label": "Lydian invasion over the Halys",
+      "path": [
+       [
+        28.04,
+        38.49
+       ],
+       [
+        30.5,
+        39.2
+       ],
+       [
+        33.0,
+        39.6
+       ],
+       [
+        35.06,
+        39.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Cyrus",
+      "label": "Persian pursuit to Sardis",
+      "path": [
+       [
+        48.51,
+        34.8
+       ],
+       [
+        43.6,
+        37.5
+       ],
+       [
+        38.5,
+        38.8
+       ],
+       [
+        35.06,
+        39.75
+       ],
+       [
+        31.5,
+        39.0
+       ],
+       [
+        28.04,
+        38.49
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Harpagus",
+      "label": "Conquest of Ionia",
+      "path": [
+       [
+        28.04,
+        38.49
+       ],
+       [
+        27.34,
+        37.94
+       ],
+       [
+        27.28,
+        37.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Pteria",
+      "kind": "battle",
+      "lon": 35.06,
+      "lat": 39.75,
+      "year": -547,
+      "winner": null,
+      "text": "Neither king won outright, and Croesus withdrew to Sardis expecting no winter campaign."
+     },
+     {
+      "name": "Siege of Sardis",
+      "kind": "siege",
+      "lon": 28.04,
+      "lat": 38.49,
+      "year": -546,
+      "winner": 0,
+      "text": "Cyrus took the Lydian capital and captured Croesus, making Anatolia Persian."
+     }
+    ]
+   },
+   {
+    "year": -539,
+    "label": "539 BC",
+    "title": "Fall of Babylon",
+    "text": "After campaigns in the east, Cyrus turned on the Neo-Babylonian Empire, whose king Nabonidus had alienated the priests of Marduk. Cyrus beat the Babylonian army at Opis on the Tigris, Sippar opened its gates, and his general Gobryas entered Babylon without a fight. Syria and Palestine came with it, and Cyrus allowed exiled peoples, including the Jews, to return home.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Elam",
+       "state societies and Aramaean kingdoms",
+       "Urartu",
+       "Assyria",
+       "Hittites",
+       "Phrygians",
+       "Iranian pastoralists"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Babylonia",
+       "Arameans",
+       "Kingdom of David and Solomon",
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        43.9,
+        34.3
+       ],
+       [
+        44.5,
+        33.3
+       ],
+       [
+        45.3,
+        32.6
+       ]
+      ],
+      "label": "Tigris front, 539 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cyrus",
+      "label": "Persian army down the Diyala",
+      "path": [
+       [
+        48.51,
+        34.8
+       ],
+       [
+        46.4,
+        34.4
+       ],
+       [
+        45.2,
+        33.9
+       ],
+       [
+        44.5,
+        33.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gobryas",
+      "label": "Advance on Babylon",
+      "path": [
+       [
+        44.5,
+        33.25
+       ],
+       [
+        44.25,
+        33.06
+       ],
+       [
+        44.42,
+        32.54
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Opis",
+      "kind": "battle",
+      "lon": 44.5,
+      "lat": 33.25,
+      "year": -539,
+      "winner": 0,
+      "text": "Cyrus destroyed the main Babylonian army near the Tigris."
+     },
+     {
+      "name": "Fall of Babylon",
+      "kind": "siege",
+      "lon": 44.42,
+      "lat": 32.54,
+      "year": -539,
+      "winner": 0,
+      "text": "Babylon surrendered almost without fighting, and Cyrus entered as a restorer of order."
+     }
+    ]
+   },
+   {
+    "year": -530,
+    "label": "530 BC",
+    "title": "Death of Cyrus",
+    "text": "Cyrus spent his last years on the steppe frontier of Central Asia. In 530 BC he was killed fighting the Massagetae nomads east of the Caspian, according to Herodotus by the army of their queen Tomyris. His son Cambyses II succeeded him and prepared to attack Egypt, the last great independent power of the Near East.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Elam",
+       "state societies and Aramaean kingdoms",
+       "Urartu",
+       "Assyria",
+       "Hittites",
+       "Phrygians",
+       "Iranian pastoralists",
+       "Babylonia",
+       "Arameans",
+       "Kingdom of David and Solomon"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cyrus",
+      "label": "Campaign against the Massagetae",
+      "path": [
+       [
+        48.51,
+        34.8
+       ],
+       [
+        54.4,
+        36.2
+       ],
+       [
+        58.4,
+        37.9
+       ],
+       [
+        61.0,
+        42.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Death of Cyrus",
+      "kind": "battle",
+      "lon": 61.0,
+      "lat": 42.0,
+      "year": -530,
+      "winner": null,
+      "text": "Cyrus fell in battle with the Massagetae; the site is unknown."
+     }
+    ]
+   },
+   {
+    "year": -525,
+    "label": "525 BC",
+    "title": "Cambyses conquers Egypt",
+    "text": "Cambyses gathered a Phoenician and Cypriot fleet, and Arab chiefs supplied water for his army's crossing of Sinai. At Pelusium on the eastern edge of the Delta he crushed the army of the new pharaoh Psamtik III, then besieged and took Memphis. Egypt became a Persian satrapy, and Libya and Cyrene submitted soon after.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Elam",
+       "state societies and Aramaean kingdoms",
+       "Urartu",
+       "Assyria",
+       "Hittites",
+       "Phrygians",
+       "Iranian pastoralists",
+       "Babylonia",
+       "Arameans",
+       "Kingdom of David and Solomon"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Egypt"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.75,
+        31.2
+       ],
+       [
+        32.55,
+        30.95
+       ],
+       [
+        32.35,
+        30.6
+       ]
+      ],
+      "label": "Pelusium line, 525 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cambyses II",
+      "label": "Persian army across Sinai",
+      "path": [
+       [
+        34.45,
+        31.5
+       ],
+       [
+        34.25,
+        31.29
+       ],
+       [
+        33.8,
+        31.13
+       ],
+       [
+        32.57,
+        31.04
+       ],
+       [
+        31.25,
+        29.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Phoenician fleet",
+      "label": "Fleet along the coast",
+      "path": [
+       [
+        35.0,
+        33.0
+       ],
+       [
+        34.2,
+        31.8
+       ],
+       [
+        33.0,
+        31.3
+       ],
+       [
+        31.9,
+        31.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Pelusium",
+      "kind": "battle",
+      "lon": 32.57,
+      "lat": 31.04,
+      "year": -525,
+      "winner": 0,
+      "text": "Cambyses defeated Psamtik III's army and opened the road to the Nile."
+     },
+     {
+      "name": "Siege of Memphis",
+      "kind": "siege",
+      "lon": 31.25,
+      "lat": 29.85,
+      "year": -525,
+      "winner": 0,
+      "text": "Memphis fell and Psamtik III was captured, ending the 26th Dynasty."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "greco-persian-wars",
+  "name": "Greco-Persian Wars",
+  "start": -499,
+  "end": -449,
+  "kind": "war",
+  "summary": "The Achaemenid Persian Empire fought Athens, Sparta and their allies after the Greek cities of Ionia rebelled against Persian rule with Athenian help. Two Persian invasions of mainland Greece were defeated, at Marathon in 490 BC and at Salamis and Plataea in 480 to 479 BC, and the Athenian-led Delian League then carried the war into Persian waters. The Greek victory preserved the independence of the city-states and opened the classical age of Athens.",
+  "sides": [
+   {
+    "name": "Greek city-states",
+    "color": "#2f6db5",
+    "leaders": [
+     "Miltiades",
+     "Leonidas",
+     "Themistocles",
+     "Pausanias",
+     "Cimon"
+    ]
+   },
+   {
+    "name": "Persian Empire",
+    "color": "#b5452f",
+    "leaders": [
+     "Darius I",
+     "Xerxes I",
+     "Datis and Artaphernes",
+     "Mardonius"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 23.5,
+    "lat": 38.5,
+    "r": 3.5
+   },
+   {
+    "lon": 27.5,
+    "lat": 38.0,
+    "r": 2.5
+   },
+   {
+    "lon": 31.5,
+    "lat": 35.8,
+    "r": 2.8
+   }
+  ],
+  "steps": [
+   {
+    "year": -499,
+    "label": "499 to 494 BC",
+    "title": "Ionian Revolt",
+    "text": "Aristagoras of Miletus led the Greek cities of Ionia in revolt against their Persian-backed tyrants, and Athens and Eretria sent ships. The rebels marched inland and burned Sardis, the seat of the Persian satrap, in 498 BC. Persia slowly recovered the coast, destroyed the Ionian fleet off Lade and sacked Miletus, and Darius swore revenge on Athens.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Aristagoras",
+      "label": "Ionians and Athenians march on Sardis",
+      "path": [
+       [
+        27.34,
+        37.94
+       ],
+       [
+        27.7,
+        38.25
+       ],
+       [
+        28.04,
+        38.49
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Persian fleet",
+      "label": "Phoenician fleet to Miletus",
+      "path": [
+       [
+        32.0,
+        36.2
+       ],
+       [
+        29.0,
+        36.4
+       ],
+       [
+        27.6,
+        37.0
+       ],
+       [
+        27.22,
+        37.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Burning of Sardis",
+      "kind": "event",
+      "lon": 28.04,
+      "lat": 38.49,
+      "year": -498,
+      "winner": 0,
+      "text": "The rebels burned the lower city of Sardis, which made Athens an enemy of Darius."
+     },
+     {
+      "name": "Battle of Lade",
+      "kind": "battle",
+      "lon": 27.22,
+      "lat": 37.5,
+      "year": -494,
+      "winner": 1,
+      "text": "The Persian fleet crushed the Ionian navy after the Samians deserted, ending the revolt."
+     }
+    ]
+   },
+   {
+    "year": -490,
+    "label": "490 BC",
+    "title": "Marathon",
+    "text": "Darius sent a seaborne expedition under Datis and Artaphernes across the Aegean to punish Eretria and Athens. Eretria was betrayed and burned, but on the plain of Marathon the Athenians and Plataeans under Miltiades charged and routed the landing force. The Persian fleet sailed round to Athens, found the army back in the city and went home.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Datis and Artaphernes",
+      "label": "Expedition across the Aegean",
+      "path": [
+       [
+        26.95,
+        37.7
+       ],
+       [
+        25.4,
+        37.1
+       ],
+       [
+        24.4,
+        37.9
+       ],
+       [
+        23.79,
+        38.39
+       ],
+       [
+        23.98,
+        38.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Miltiades",
+      "label": "Athenian army to Marathon",
+      "path": [
+       [
+        23.73,
+        37.98
+       ],
+       [
+        23.85,
+        38.08
+       ],
+       [
+        23.97,
+        38.15
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Eretria",
+      "kind": "siege",
+      "lon": 23.79,
+      "lat": 38.39,
+      "year": -490,
+      "winner": 1,
+      "text": "Eretria fell after six days when traitors opened the gates."
+     },
+     {
+      "name": "Battle of Marathon",
+      "kind": "battle",
+      "lon": 23.97,
+      "lat": 38.15,
+      "year": -490,
+      "winner": 0,
+      "text": "Miltiades' hoplites routed the Persian army on the shore and forced the expedition home."
+     }
+    ]
+   },
+   {
+    "year": -480,
+    "label": "480 BC",
+    "title": "Thermopylae and Artemisium",
+    "text": "Xerxes bridged the Hellespont and led a huge army and fleet along the coast of Thrace and Macedonia, which submitted. The allied Greeks held the narrow pass of Thermopylae on land and the Artemisium strait at sea. After three days a mountain path let the Persians outflank the pass; Leonidas and his Spartans died covering the retreat, and the Greek fleet fell back.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.54,
+        38.8
+       ],
+       [
+        22.85,
+        38.88
+       ],
+       [
+        23.22,
+        39.0
+       ]
+      ],
+      "label": "Thermopylae and Artemisium line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Xerxes I",
+      "label": "Royal army through Thrace",
+      "path": [
+       [
+        28.04,
+        38.49
+       ],
+       [
+        26.4,
+        40.19
+       ],
+       [
+        26.0,
+        40.87
+       ],
+       [
+        22.95,
+        40.64
+       ],
+       [
+        22.4,
+        39.5
+       ],
+       [
+        22.54,
+        38.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Persian fleet",
+      "label": "Fleet along the coast",
+      "path": [
+       [
+        26.4,
+        40.19
+       ],
+       [
+        25.0,
+        40.4
+       ],
+       [
+        23.9,
+        40.0
+       ],
+       [
+        23.4,
+        39.3
+       ],
+       [
+        23.22,
+        39.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Leonidas",
+      "label": "Greek army to Thermopylae",
+      "path": [
+       [
+        22.98,
+        37.93
+       ],
+       [
+        22.9,
+        38.3
+       ],
+       [
+        22.54,
+        38.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Thermopylae",
+      "kind": "battle",
+      "lon": 22.54,
+      "lat": 38.8,
+      "year": -480,
+      "winner": 1,
+      "text": "Leonidas held the pass for three days before being surrounded and killed."
+     },
+     {
+      "name": "Battle of Artemisium",
+      "kind": "battle",
+      "lon": 23.22,
+      "lat": 39.0,
+      "year": -480,
+      "winner": null,
+      "text": "The Greek fleet fought the Persian navy to a standstill, then withdrew when the pass fell."
+     }
+    ]
+   },
+   {
+    "year": -480,
+    "label": "September 480 BC",
+    "title": "Salamis",
+    "text": "The Persians marched through Boeotia and burned an evacuated Athens, while the Peloponnesians walled off the Isthmus of Corinth. Themistocles kept the allied fleet at Salamis and lured the Persian navy into the narrow straits, where it was shattered. Xerxes returned to Asia with much of his army, leaving Mardonius to finish the war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.88,
+        37.97
+       ],
+       [
+        22.98,
+        37.93
+       ],
+       [
+        23.05,
+        37.88
+       ]
+      ],
+      "label": "Isthmus wall"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Xerxes I",
+      "label": "Persians take Athens",
+      "path": [
+       [
+        22.54,
+        38.8
+       ],
+       [
+        22.9,
+        38.5
+       ],
+       [
+        23.3,
+        38.3
+       ],
+       [
+        23.73,
+        37.98
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Persian fleet",
+      "label": "Fleet into the straits",
+      "path": [
+       [
+        23.62,
+        37.9
+       ],
+       [
+        23.53,
+        37.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Themistocles",
+      "label": "Allied fleet at Salamis",
+      "path": [
+       [
+        23.45,
+        37.92
+       ],
+       [
+        23.53,
+        37.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Salamis",
+      "kind": "battle",
+      "lon": 23.53,
+      "lat": 37.95,
+      "year": -480,
+      "winner": 0,
+      "text": "The Greek triremes destroyed the Persian fleet in the narrows, the turning point of the war."
+     }
+    ]
+   },
+   {
+    "year": -479,
+    "label": "479 BC",
+    "title": "Plataea and Mycale",
+    "text": "Mardonius wintered in Thessaly and came south again. The largest Greek army ever assembled, under the Spartan regent Pausanias, met him on the Asopus river and destroyed his army at Plataea, killing Mardonius. On the same day, by tradition, the Greek fleet landed at Mycale in Ionia and burned the Persian ships.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        23.12,
+        38.24
+       ],
+       [
+        23.27,
+        38.21
+       ],
+       [
+        23.42,
+        38.28
+       ]
+      ],
+      "label": "Asopus river line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mardonius",
+      "label": "Persian army returns south",
+      "path": [
+       [
+        22.4,
+        39.5
+       ],
+       [
+        22.6,
+        38.8
+       ],
+       [
+        23.2,
+        38.32
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Pausanias",
+      "label": "Greek army over Cithaeron",
+      "path": [
+       [
+        22.98,
+        37.93
+       ],
+       [
+        23.35,
+        38.05
+       ],
+       [
+        23.27,
+        38.21
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Leotychidas",
+      "label": "Greek fleet to Mycale",
+      "path": [
+       [
+        25.3,
+        37.4
+       ],
+       [
+        26.95,
+        37.7
+       ],
+       [
+        27.2,
+        37.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Plataea",
+      "kind": "battle",
+      "lon": 23.27,
+      "lat": 38.21,
+      "year": -479,
+      "winner": 0,
+      "text": "Mardonius was killed and his army routed, ending the Persian invasion of Greece."
+     },
+     {
+      "name": "Battle of Mycale",
+      "kind": "battle",
+      "lon": 27.2,
+      "lat": 37.65,
+      "year": -479,
+      "winner": 0,
+      "text": "The Greeks destroyed the beached Persian fleet, and Ionia rose again."
+     }
+    ]
+   },
+   {
+    "year": -466,
+    "label": "478 to 466 BC",
+    "title": "Delian League offensive",
+    "text": "Athens organised the Delian League to free the Greek cities of Asia and keep Persia out of the Aegean. Under Cimon the league fleet swept the coast of Asia Minor and won a double victory on land and sea at the Eurymedon river.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cimon",
+      "label": "League fleet along Asia Minor",
+      "path": [
+       [
+        24.0,
+        37.5
+       ],
+       [
+        27.3,
+        36.6
+       ],
+       [
+        28.5,
+        36.35
+       ],
+       [
+        30.3,
+        36.0
+       ],
+       [
+        31.15,
+        36.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Eurymedon",
+      "kind": "battle",
+      "lon": 31.15,
+      "lat": 36.85,
+      "year": -466,
+      "winner": 0,
+      "text": "Cimon destroyed a Persian fleet and then its army at the river mouth in Pamphylia."
+     }
+    ]
+   },
+   {
+    "year": -450,
+    "label": "450 to 449 BC",
+    "title": "Cyprus and the Peace of Callias",
+    "text": "A last Athenian expedition fought for Cyprus, where Cimon died during the siege of Kition. After a victory off Salamis in Cyprus, fighting stopped, and later tradition holds that the Peace of Callias recognised the freedom of the Ionian Greeks.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cimon",
+      "label": "Athenian fleet to Cyprus",
+      "path": [
+       [
+        28.5,
+        36.3
+       ],
+       [
+        31.0,
+        35.9
+       ],
+       [
+        33.0,
+        35.6
+       ],
+       [
+        33.9,
+        35.18
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Salamis in Cyprus",
+      "kind": "battle",
+      "lon": 33.9,
+      "lat": 35.18,
+      "year": -450,
+      "winner": 0,
+      "text": "The Athenians beat a Phoenician and Cilician fleet and its army near Salamis in Cyprus."
+     },
+     {
+      "name": "Peace of Callias",
+      "kind": "treaty",
+      "lon": 23.73,
+      "lat": 37.98,
+      "year": -449,
+      "winner": null,
+      "text": "A peace, attested only by later writers, ended open war between Athens and Persia."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "peloponnesian-war",
+  "name": "Peloponnesian War",
+  "start": -431,
+  "end": -404,
+  "kind": "war",
+  "summary": "Athens, a sea power ruling an Aegean empire, fought Sparta and its Peloponnesian League, a land power, for 27 years. Neither could strike the other's strength until Athens lost a great army in Sicily and Persia began paying for a Spartan fleet, which under Lysander destroyed the Athenian navy at Aegospotami. Athens surrendered in 404 BC, ending its empire, and the war left Greece exhausted and open to Persian, Theban and later Macedonian influence.",
+  "sides": [
+   {
+    "name": "Athens and the Delian League",
+    "color": "#2f6db5",
+    "leaders": [
+     "Pericles",
+     "Cleon",
+     "Demosthenes",
+     "Nicias",
+     "Alcibiades"
+    ]
+   },
+   {
+    "name": "Sparta and the Peloponnesian League",
+    "color": "#b5452f",
+    "leaders": [
+     "Archidamus II",
+     "Brasidas",
+     "Gylippus",
+     "Lysander"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 23.0,
+    "lat": 38.2,
+    "r": 3.0
+   },
+   {
+    "lon": 26.8,
+    "lat": 39.3,
+    "r": 2.0
+   },
+   {
+    "lon": 15.2,
+    "lat": 37.2,
+    "r": 1.3
+   }
+  ],
+  "steps": [
+   {
+    "year": -431,
+    "label": "431 to 430 BC",
+    "title": "Pericles' strategy",
+    "text": "The war began when Thebes, Sparta's ally, attacked Athens' ally Plataea. King Archidamus II led the Peloponnesian army into Attica each summer to burn the farms, while Pericles brought the Athenians inside the Long Walls and sent the fleet to raid the Peloponnese. In 430 BC plague broke out in the crowded city and killed perhaps a quarter of the population, Pericles among them in 429 BC.",
+    "territories": [],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Archidamus II",
+      "label": "Annual invasion of Attica",
+      "path": [
+       [
+        22.43,
+        37.08
+       ],
+       [
+        22.6,
+        37.6
+       ],
+       [
+        22.98,
+        37.93
+       ],
+       [
+        23.4,
+        38.05
+       ],
+       [
+        23.75,
+        38.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Pericles",
+      "label": "Athenian fleet raids the Peloponnese",
+      "path": [
+       [
+        23.64,
+        37.94
+       ],
+       [
+        23.3,
+        37.4
+       ],
+       [
+        23.0,
+        36.6
+       ],
+       [
+        22.2,
+        36.7
+       ],
+       [
+        21.67,
+        36.93
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Invasion of Attica",
+      "kind": "event",
+      "lon": 23.75,
+      "lat": 38.12,
+      "year": -431,
+      "winner": 1,
+      "text": "The Spartans ravaged Attica while the Athenians watched from their walls."
+     },
+     {
+      "name": "Plague of Athens",
+      "kind": "event",
+      "lon": 23.73,
+      "lat": 37.98,
+      "year": -430,
+      "winner": 1,
+      "text": "An epidemic killed tens of thousands inside the overcrowded city."
+     }
+    ]
+   },
+   {
+    "year": -425,
+    "label": "425 BC",
+    "title": "Pylos and Sphacteria",
+    "text": "The Athenian general Demosthenes fortified the headland of Pylos on Sparta's own coast. Spartan troops landed on the island of Sphacteria to blockade him and were cut off by the Athenian fleet; Cleon and Demosthenes then stormed the island. The surrender of 292 men, about 120 of them full Spartan citizens, shocked Greece and gave Athens hostages that ended the invasions of Attica.",
+    "territories": [],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Demosthenes",
+      "label": "Fleet to Pylos",
+      "path": [
+       [
+        23.64,
+        37.94
+       ],
+       [
+        23.3,
+        37.4
+       ],
+       [
+        23.0,
+        36.5
+       ],
+       [
+        21.9,
+        36.7
+       ],
+       [
+        21.67,
+        36.93
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Spartan army",
+      "label": "Spartans rush to Pylos",
+      "path": [
+       [
+        22.43,
+        37.08
+       ],
+       [
+        22.1,
+        37.05
+       ],
+       [
+        21.67,
+        36.93
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Sphacteria",
+      "kind": "battle",
+      "lon": 21.67,
+      "lat": 36.94,
+      "year": -425,
+      "winner": 0,
+      "text": "Athenian light troops forced the surrender of the Spartan garrison on Sphacteria."
+     }
+    ]
+   },
+   {
+    "year": -422,
+    "label": "424 to 421 BC",
+    "title": "Delium, Amphipolis and the Peace of Nicias",
+    "text": "Athens' attempt to knock Boeotia out of the war failed at Delium. The Spartan Brasidas marched through Thessaly to Thrace and took Amphipolis, Athens' key colony, and in 422 BC both Brasidas and Cleon died in the battle to retake it. With the leading hawks gone, the Peace of Nicias in 421 BC restored the prewar position.",
+    "territories": [],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Brasidas",
+      "label": "March to Thrace",
+      "path": [
+       [
+        22.93,
+        37.91
+       ],
+       [
+        22.6,
+        38.9
+       ],
+       [
+        22.4,
+        39.6
+       ],
+       [
+        22.95,
+        40.64
+       ],
+       [
+        23.84,
+        40.82
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Cleon",
+      "label": "Expedition to retake Amphipolis",
+      "path": [
+       [
+        23.64,
+        37.94
+       ],
+       [
+        24.0,
+        38.6
+       ],
+       [
+        24.3,
+        39.8
+       ],
+       [
+        23.84,
+        40.82
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Delium",
+      "kind": "battle",
+      "lon": 23.56,
+      "lat": 38.36,
+      "year": -424,
+      "winner": 1,
+      "text": "The Boeotians routed an Athenian army invading their territory."
+     },
+     {
+      "name": "Battle of Amphipolis",
+      "kind": "battle",
+      "lon": 23.84,
+      "lat": 40.82,
+      "year": -422,
+      "winner": 1,
+      "text": "Brasidas defeated Cleon; both commanders were killed."
+     },
+     {
+      "name": "Peace of Nicias",
+      "kind": "treaty",
+      "lon": 23.73,
+      "lat": 37.98,
+      "year": -421,
+      "winner": null,
+      "text": "A fifty-year peace that in practice lasted only a few years."
+     }
+    ]
+   },
+   {
+    "year": -415,
+    "label": "415 to 413 BC",
+    "title": "The Sicilian Expedition",
+    "text": "Persuaded by Alcibiades, Athens sent a huge fleet and army to conquer Syracuse, the greatest Greek city of Sicily. Alcibiades, recalled to face charges, fled to Sparta and advised it to send Gylippus to lead the defence. Reinforcements under Demosthenes could not break the siege, and in 413 BC the whole force was destroyed in the retreat; Nicias and Demosthenes were executed.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.22,
+        37.1
+       ],
+       [
+        15.25,
+        37.07
+       ],
+       [
+        15.28,
+        37.05
+       ]
+      ],
+      "label": "Siege walls at Syracuse"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nicias and Alcibiades",
+      "label": "Athenian armada",
+      "path": [
+       [
+        23.64,
+        37.94
+       ],
+       [
+        21.0,
+        37.8
+       ],
+       [
+        19.92,
+        39.62
+       ],
+       [
+        17.5,
+        39.3
+       ],
+       [
+        16.1,
+        37.9
+       ],
+       [
+        15.29,
+        37.07
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gylippus",
+      "label": "Spartan relief of Syracuse",
+      "path": [
+       [
+        22.93,
+        37.91
+       ],
+       [
+        20.5,
+        38.3
+       ],
+       [
+        16.5,
+        38.6
+       ],
+       [
+        15.6,
+        38.2
+       ],
+       [
+        15.29,
+        37.07
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nicias and Demosthenes",
+      "label": "Retreat to the Assinarus",
+      "path": [
+       [
+        15.29,
+        37.07
+       ],
+       [
+        15.15,
+        36.98
+       ],
+       [
+        15.07,
+        36.87
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Syracuse",
+      "kind": "siege",
+      "lon": 15.29,
+      "lat": 37.07,
+      "year": -414,
+      "winner": 1,
+      "text": "Gylippus broke the Athenian siege lines, and the Athenian fleet was beaten in the Great Harbour."
+     },
+     {
+      "name": "Disaster at the Assinarus",
+      "kind": "battle",
+      "lon": 15.07,
+      "lat": 36.87,
+      "year": -413,
+      "winner": 1,
+      "text": "The retreating Athenian army was cut down at the river and the survivors sent to the quarries."
+     }
+    ]
+   },
+   {
+    "year": -412,
+    "label": "413 to 411 BC",
+    "title": "Decelea and Persian gold",
+    "text": "On Alcibiades' advice Sparta fortified Decelea in Attica, holding it year round and letting some 20,000 Athenian slaves escape from the silver mines. Athens' allies in Ionia revolted, and the Persian satrap Tissaphernes agreed to fund a Spartan fleet in return for the Greek cities of Asia. Athens rebuilt its navy from its last reserve fund.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Agis II",
+      "label": "Occupation of Decelea",
+      "path": [
+       [
+        22.43,
+        37.08
+       ],
+       [
+        22.98,
+        37.93
+       ],
+       [
+        23.4,
+        38.1
+       ],
+       [
+        23.78,
+        38.16
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Spartan fleet",
+      "label": "Spartan fleet to Ionia",
+      "path": [
+       [
+        22.93,
+        37.91
+       ],
+       [
+        24.5,
+        37.5
+       ],
+       [
+        26.0,
+        38.3
+       ],
+       [
+        27.28,
+        37.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fortification of Decelea",
+      "kind": "event",
+      "lon": 23.78,
+      "lat": 38.16,
+      "year": -413,
+      "winner": 1,
+      "text": "A permanent Spartan fort in Attica cut Athens off from its land and mines."
+     },
+     {
+      "name": "Treaty of Miletus",
+      "kind": "treaty",
+      "lon": 27.28,
+      "lat": 37.53,
+      "year": -412,
+      "winner": 1,
+      "text": "Sparta traded the Greek cities of Asia for Persian money to build a fleet."
+     }
+    ]
+   },
+   {
+    "year": -410,
+    "label": "411 to 406 BC",
+    "title": "Athens strikes back at sea",
+    "text": "The war moved to the Hellespont, through which Athens' grain ships passed. Recalled by the fleet, Alcibiades won a crushing victory at Cyzicus in 410 BC, and in 406 BC the Athenians won again at Arginusae, though they executed six victorious generals for failing to rescue the drowning. Meanwhile Persia's prince Cyrus the Younger gave Lysander's fleet steady pay.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        26.2,
+        40.05
+       ],
+       [
+        26.6,
+        40.3
+       ],
+       [
+        27.2,
+        40.4
+       ]
+      ],
+      "label": "Hellespont grain route"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alcibiades",
+      "label": "Athenian fleet to Cyzicus",
+      "path": [
+       [
+        25.9,
+        40.0
+       ],
+       [
+        26.4,
+        40.19
+       ],
+       [
+        27.4,
+        40.42
+       ],
+       [
+        27.88,
+        40.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mindarus",
+      "label": "Peloponnesian fleet",
+      "path": [
+       [
+        27.28,
+        37.53
+       ],
+       [
+        26.5,
+        38.8
+       ],
+       [
+        26.4,
+        40.19
+       ],
+       [
+        27.88,
+        40.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Athenian generals",
+      "label": "Relief fleet to Arginusae",
+      "path": [
+       [
+        23.64,
+        37.94
+       ],
+       [
+        24.8,
+        38.3
+       ],
+       [
+        26.0,
+        38.8
+       ],
+       [
+        26.75,
+        39.02
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Cyzicus",
+      "kind": "battle",
+      "lon": 27.88,
+      "lat": 40.38,
+      "year": -410,
+      "winner": 0,
+      "text": "Alcibiades destroyed the Peloponnesian fleet and killed its admiral Mindarus."
+     },
+     {
+      "name": "Battle of Arginusae",
+      "kind": "battle",
+      "lon": 26.75,
+      "lat": 39.02,
+      "year": -406,
+      "winner": 0,
+      "text": "Athens won the largest naval battle of the war among Greeks."
+     }
+    ]
+   },
+   {
+    "year": -405,
+    "label": "405 to 404 BC",
+    "title": "Aegospotami and surrender",
+    "text": "Lysander took his Persian-funded fleet to the Hellespont and seized Lampsacus. The Athenian fleet beached opposite at Aegospotami, and Lysander caught most of it on the shore, capturing about 170 ships. Cut off from its grain, Athens was blockaded by land and sea and surrendered in April 404 BC; its Long Walls were torn down and the Thirty Tyrants installed.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Greek city-states",
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lysander",
+      "label": "Spartan fleet to the Hellespont",
+      "path": [
+       [
+        27.3,
+        37.9
+       ],
+       [
+        26.3,
+        39.0
+       ],
+       [
+        26.69,
+        40.35
+       ],
+       [
+        26.6,
+        40.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lysander",
+      "label": "Blockade of Athens",
+      "path": [
+       [
+        26.6,
+        40.3
+       ],
+       [
+        25.4,
+        39.4
+       ],
+       [
+        24.4,
+        38.2
+       ],
+       [
+        23.64,
+        37.94
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Pausanias",
+      "label": "Spartan army before Athens",
+      "path": [
+       [
+        22.43,
+        37.08
+       ],
+       [
+        22.98,
+        37.93
+       ],
+       [
+        23.73,
+        37.98
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Aegospotami",
+      "kind": "battle",
+      "lon": 26.6,
+      "lat": 40.3,
+      "year": -405,
+      "winner": 1,
+      "text": "Lysander captured the Athenian fleet on the beach, deciding the war."
+     },
+     {
+      "name": "Surrender of Athens",
+      "kind": "treaty",
+      "lon": 23.73,
+      "lat": 37.98,
+      "year": -404,
+      "winner": 1,
+      "text": "Athens gave up its fleet and empire and accepted Spartan rule."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "macedon-and-alexander",
+  "name": "Rise of Macedon and the conquests of Alexander",
+  "start": -359,
+  "end": -323,
+  "kind": "war",
+  "summary": "Philip II turned Macedon from a weak frontier kingdom into the dominant power in Greece, crowning his work by defeating Athens and Thebes at Chaeronea in 338 BC. His son Alexander III led the Macedonian army and Greek allies against the Achaemenid Persian Empire, defeated Darius III at the Granicus, Issus and Gaugamela, and marched on to Central Asia and the Indus. When Alexander died at Babylon in 323 BC his empire broke up among his generals, but Greek culture spread from Egypt to India in the Hellenistic age.",
+  "sides": [
+   {
+    "name": "Macedon and Greek allies",
+    "color": "#7a4fb0",
+    "leaders": [
+     "Philip II",
+     "Alexander the Great",
+     "Parmenion",
+     "Craterus",
+     "Nearchus"
+    ]
+   },
+   {
+    "name": "Athens, Thebes and Greek opponents",
+    "color": "#2f8f83",
+    "leaders": [
+     "Demosthenes",
+     "Chares",
+     "Theagenes"
+    ]
+   },
+   {
+    "name": "Persian Empire and eastern rulers",
+    "color": "#b5452f",
+    "leaders": [
+     "Darius III",
+     "Memnon of Rhodes",
+     "Bessus",
+     "Spitamenes",
+     "Porus"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 23.5,
+    "lat": 39.5,
+    "r": 3.5
+   },
+   {
+    "lon": 34.0,
+    "lat": 35.5,
+    "r": 7.0
+   },
+   {
+    "lon": 50.0,
+    "lat": 33.5,
+    "r": 9.0
+   },
+   {
+    "lon": 67.0,
+    "lat": 33.0,
+    "r": 8.0
+   }
+  ],
+  "steps": [
+   {
+    "year": -352,
+    "label": "359 to 348 BC",
+    "title": "Philip builds Macedon",
+    "text": "Philip II took over a kingdom just beaten by the Illyrians and rebuilt its army around the long sarissa pike and the Companion cavalry. He crushed the Illyrian king Bardylis in 358 BC, seized Amphipolis and its gold mines, won Thessaly at the Crocus Field in 352 BC and destroyed Olynthus in 348 BC. In Athens, Demosthenes began warning that Philip meant to master all of Greece.",
+    "territories": [],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Philip II",
+      "label": "Against the Illyrians",
+      "path": [
+       [
+        22.52,
+        40.76
+       ],
+       [
+        21.9,
+        40.9
+       ],
+       [
+        21.4,
+        41.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Philip II",
+      "label": "Amphipolis and the Chalcidice",
+      "path": [
+       [
+        22.52,
+        40.76
+       ],
+       [
+        22.95,
+        40.64
+       ],
+       [
+        23.84,
+        40.82
+       ],
+       [
+        23.36,
+        40.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Philip II",
+      "label": "Into Thessaly",
+      "path": [
+       [
+        22.52,
+        40.76
+       ],
+       [
+        22.3,
+        40.0
+       ],
+       [
+        22.4,
+        39.5
+       ],
+       [
+        22.8,
+        39.15
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Defeat of Bardylis",
+      "kind": "battle",
+      "lon": 21.4,
+      "lat": 41.0,
+      "year": -358,
+      "winner": 0,
+      "text": "Philip's new army killed thousands of Illyrians and secured Upper Macedonia."
+     },
+     {
+      "name": "Battle of the Crocus Field",
+      "kind": "battle",
+      "lon": 22.8,
+      "lat": 39.15,
+      "year": -352,
+      "winner": 0,
+      "text": "Philip defeated the Phocians and became leader of Thessaly."
+     },
+     {
+      "name": "Fall of Olynthus",
+      "kind": "siege",
+      "lon": 23.36,
+      "lat": 40.29,
+      "year": -348,
+      "winner": 0,
+      "text": "Philip razed Olynthus, Athens' ally in the north, and sold its people into slavery."
+     }
+    ]
+   },
+   {
+    "year": -338,
+    "label": "339 to 337 BC",
+    "title": "Chaeronea",
+    "text": "When Philip marched south into central Greece, Demosthenes persuaded Athens and Thebes to stand together. At Chaeronea in Boeotia, Philip drew the Athenians forward with a feigned retreat while the 18-year-old Alexander broke the Theban line and the Sacred Band. Philip then united the Greek cities except Sparta in the League of Corinth, with himself as leader of a planned war on Persia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.8,
+        38.48
+       ],
+       [
+        22.84,
+        38.5
+       ],
+       [
+        22.88,
+        38.52
+       ]
+      ],
+      "label": "Chaeronea battle line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Philip II",
+      "label": "Macedonian army south",
+      "path": [
+       [
+        22.52,
+        40.76
+       ],
+       [
+        22.4,
+        39.5
+       ],
+       [
+        22.54,
+        38.8
+       ],
+       [
+        22.78,
+        38.63
+       ],
+       [
+        22.84,
+        38.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Chares and Theagenes",
+      "label": "Athenians and Thebans",
+      "path": [
+       [
+        23.73,
+        37.98
+       ],
+       [
+        23.32,
+        38.32
+       ],
+       [
+        23.0,
+        38.45
+       ],
+       [
+        22.84,
+        38.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Chaeronea",
+      "kind": "battle",
+      "lon": 22.84,
+      "lat": 38.5,
+      "year": -338,
+      "winner": 0,
+      "text": "Philip and Alexander destroyed the allied army of Athens and Thebes, ending Greek independence."
+     },
+     {
+      "name": "League of Corinth",
+      "kind": "treaty",
+      "lon": 22.93,
+      "lat": 37.91,
+      "year": -337,
+      "winner": 0,
+      "text": "The Greek cities swore alliance under Macedonian leadership for a war against Persia."
+     }
+    ]
+   },
+   {
+    "year": -334,
+    "label": "336 to 334 BC",
+    "title": "Alexander crosses into Asia",
+    "text": "Philip was murdered in 336 BC, and the young Alexander crushed a revolt by razing Thebes. In 334 BC he crossed the Hellespont with about 40,000 men and routed the western satraps at the Granicus river. He marched down the coast freeing the Greek cities and took Halicarnassus, defended by the mercenary general Memnon of Rhodes.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Destruction of Thebes",
+      "path": [
+       [
+        22.52,
+        40.76
+       ],
+       [
+        22.4,
+        39.5
+       ],
+       [
+        22.54,
+        38.8
+       ],
+       [
+        23.32,
+        38.32
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Into Asia",
+      "path": [
+       [
+        22.52,
+        40.76
+       ],
+       [
+        23.84,
+        40.82
+       ],
+       [
+        26.4,
+        40.6
+       ],
+       [
+        26.4,
+        40.19
+       ],
+       [
+        27.25,
+        40.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Down the Ionian coast",
+      "path": [
+       [
+        27.25,
+        40.2
+       ],
+       [
+        28.04,
+        38.49
+       ],
+       [
+        27.28,
+        37.53
+       ],
+       [
+        27.42,
+        37.04
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Destruction of Thebes",
+      "kind": "siege",
+      "lon": 23.32,
+      "lat": 38.32,
+      "year": -335,
+      "winner": 0,
+      "text": "Alexander razed rebel Thebes as a warning to the rest of Greece."
+     },
+     {
+      "name": "Battle of the Granicus",
+      "kind": "battle",
+      "lon": 27.25,
+      "lat": 40.2,
+      "year": -334,
+      "winner": 0,
+      "text": "Alexander led his cavalry across the river and routed the army of the western satraps."
+     },
+     {
+      "name": "Siege of Halicarnassus",
+      "kind": "siege",
+      "lon": 27.42,
+      "lat": 37.04,
+      "year": -334,
+      "winner": 0,
+      "text": "Alexander took the city though Memnon's garrison held out in its citadels."
+     }
+    ]
+   },
+   {
+    "year": -333,
+    "label": "333 BC",
+    "title": "Issus",
+    "text": "After cutting the Gordian knot, Alexander passed through the Cilician Gates to the Syrian coast. Darius III brought the royal army from Babylon and came down behind him, but on the narrow plain of Issus Alexander's cavalry charge broke the Persian line. Darius fled, leaving his mother, wife and children in Macedonian hands.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        36.13,
+        36.95
+       ],
+       [
+        36.2,
+        36.86
+       ],
+       [
+        36.27,
+        36.78
+       ]
+      ],
+      "label": "Pinarus river line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Through Anatolia",
+      "path": [
+       [
+        27.42,
+        37.04
+       ],
+       [
+        30.7,
+        36.9
+       ],
+       [
+        31.99,
+        39.65
+       ],
+       [
+        34.78,
+        37.28
+       ],
+       [
+        36.21,
+        36.84
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Darius III",
+      "label": "Royal army from Babylon",
+      "path": [
+       [
+        44.42,
+        32.54
+       ],
+       [
+        40.1,
+        34.5
+       ],
+       [
+        38.0,
+        35.95
+       ],
+       [
+        36.65,
+        36.5
+       ],
+       [
+        36.21,
+        36.84
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Issus",
+      "kind": "battle",
+      "lon": 36.21,
+      "lat": 36.84,
+      "year": -333,
+      "winner": 0,
+      "text": "Alexander's charge broke the Persian line and Darius fled the field."
+     }
+    ]
+   },
+   {
+    "year": -332,
+    "label": "332 to 331 BC",
+    "title": "Tyre and Egypt",
+    "text": "Rather than chase Darius, Alexander took the Mediterranean ports to neutralise the Persian fleet. Tyre fell after a seven-month siege and a mole built out to the island city, Gaza followed, and Egypt welcomed him as pharaoh. He founded Alexandria and visited the oracle of Ammon at Siwa.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "March down the Levant",
+      "path": [
+       [
+        36.21,
+        36.84
+       ],
+       [
+        35.85,
+        35.5
+       ],
+       [
+        35.2,
+        33.27
+       ],
+       [
+        34.45,
+        31.5
+       ],
+       [
+        31.25,
+        29.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "To Alexandria and Siwa",
+      "path": [
+       [
+        31.25,
+        29.85
+       ],
+       [
+        29.9,
+        31.2
+       ],
+       [
+        27.24,
+        31.35
+       ],
+       [
+        25.52,
+        29.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Tyre",
+      "kind": "siege",
+      "lon": 35.2,
+      "lat": 33.27,
+      "year": -332,
+      "winner": 0,
+      "text": "Alexander built a causeway to the island fortress and stormed it after seven months."
+     },
+     {
+      "name": "Siege of Gaza",
+      "kind": "siege",
+      "lon": 34.45,
+      "lat": 31.5,
+      "year": -332,
+      "winner": 0,
+      "text": "Gaza fell after two months, opening the road to Egypt."
+     },
+     {
+      "name": "Founding of Alexandria",
+      "kind": "event",
+      "lon": 29.9,
+      "lat": 31.2,
+      "year": -331,
+      "winner": 0,
+      "text": "The new city became the greatest port and centre of learning of the Hellenistic world."
+     }
+    ]
+   },
+   {
+    "year": -331,
+    "label": "331 to 330 BC",
+    "title": "Gaugamela and the fall of Persia",
+    "text": "Alexander crossed the Euphrates and Tigris to meet Darius' last great army on open ground near Gaugamela, and his oblique attack split the Persian line. Babylon and Susa surrendered, Alexander forced the Persian Gates and burned the palaces of Persepolis. Darius fled east and was murdered by his own satrap Bessus before Alexander could catch him.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Achaemenid Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        43.4,
+        36.65
+       ],
+       [
+        43.45,
+        36.57
+       ],
+       [
+        43.5,
+        36.49
+       ]
+      ],
+      "label": "Gaugamela battle line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Across Mesopotamia",
+      "path": [
+       [
+        35.2,
+        33.27
+       ],
+       [
+        36.7,
+        34.7
+       ],
+       [
+        38.2,
+        35.95
+       ],
+       [
+        42.0,
+        36.6
+       ],
+       [
+        43.45,
+        36.57
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "To Babylon, Susa and Persepolis",
+      "path": [
+       [
+        43.45,
+        36.57
+       ],
+       [
+        44.42,
+        32.54
+       ],
+       [
+        48.25,
+        32.19
+       ],
+       [
+        51.6,
+        30.65
+       ],
+       [
+        52.89,
+        29.93
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Darius III",
+      "label": "Flight to the east",
+      "path": [
+       [
+        43.45,
+        36.57
+       ],
+       [
+        48.51,
+        34.8
+       ],
+       [
+        52.3,
+        35.5
+       ],
+       [
+        54.3,
+        36.1
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Gaugamela",
+      "kind": "battle",
+      "lon": 43.45,
+      "lat": 36.57,
+      "year": -331,
+      "winner": 0,
+      "text": "The decisive defeat of Darius III, which effectively ended Achaemenid rule."
+     },
+     {
+      "name": "Burning of Persepolis",
+      "kind": "event",
+      "lon": 52.89,
+      "lat": 29.93,
+      "year": -330,
+      "winner": 0,
+      "text": "Alexander's army burned the ceremonial palaces of the Persian kings."
+     },
+     {
+      "name": "Death of Darius III",
+      "kind": "event",
+      "lon": 54.3,
+      "lat": 36.1,
+      "year": -330,
+      "winner": null,
+      "text": "Bessus killed the fleeing king, and Alexander claimed his throne."
+     }
+    ]
+   },
+   {
+    "year": -327,
+    "label": "329 to 326 BC",
+    "title": "Bactria, Sogdiana and India",
+    "text": "Alexander crossed the Hindu Kush, caught Bessus and fought a hard guerrilla war against Spitamenes in Sogdiana, ending it by marrying the Sogdian noblewoman Roxana. He then entered the Punjab, where Taxila submitted, and beat King Porus and his war elephants at the Hydaspes. At the Hyphasis river his exhausted army refused to go further.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Greek city-states",
+       "Achaemenid Empire"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Hindu kingdoms"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        73.5,
+        33.1
+       ],
+       [
+        73.6,
+        32.85
+       ],
+       [
+        73.65,
+        32.6
+       ]
+      ],
+      "label": "Hydaspes river line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Over the Hindu Kush into Sogdiana",
+      "path": [
+       [
+        62.2,
+        34.35
+       ],
+       [
+        69.2,
+        34.5
+       ],
+       [
+        66.9,
+        36.76
+       ],
+       [
+        66.95,
+        39.65
+       ],
+       [
+        69.6,
+        40.28
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Spitamenes",
+      "label": "Sogdian resistance",
+      "path": [
+       [
+        69.6,
+        40.28
+       ],
+       [
+        66.95,
+        39.65
+       ],
+       [
+        64.4,
+        39.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Into the Punjab",
+      "path": [
+       [
+        66.9,
+        36.76
+       ],
+       [
+        69.2,
+        34.5
+       ],
+       [
+        72.83,
+        33.75
+       ],
+       [
+        73.6,
+        32.85
+       ],
+       [
+        75.1,
+        31.6
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Porus",
+      "label": "Indian army at the Hydaspes",
+      "path": [
+       [
+        74.4,
+        32.4
+       ],
+       [
+        73.6,
+        32.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Jaxartes",
+      "kind": "battle",
+      "lon": 69.6,
+      "lat": 40.28,
+      "year": -329,
+      "winner": 0,
+      "text": "Alexander crossed the river under catapult cover and routed the Scythian horse archers."
+     },
+     {
+      "name": "Battle of the Hydaspes",
+      "kind": "battle",
+      "lon": 73.6,
+      "lat": 32.85,
+      "year": -326,
+      "winner": 0,
+      "text": "Alexander crossed the swollen river by night and defeated Porus, whom he kept as a vassal king."
+     },
+     {
+      "name": "Mutiny at the Hyphasis",
+      "kind": "event",
+      "lon": 75.1,
+      "lat": 31.6,
+      "year": -326,
+      "winner": null,
+      "text": "The army refused to march further east, and Alexander turned back."
+     }
+    ]
+   },
+   {
+    "year": -323,
+    "label": "325 to 323 BC",
+    "title": "Return and death",
+    "text": "The army sailed and marched down the Indus, then Alexander led part of it through the Gedrosian desert with heavy losses while Nearchus took the fleet along the coast to the Persian Gulf. Back in Babylon, Alexander planned new campaigns but died there in June 323 BC, aged 32, with no adult heir. His generals divided the empire and fought over it for forty years.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Empire of Alexander"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Down the Indus",
+      "path": [
+       [
+        73.6,
+        32.85
+       ],
+       [
+        71.6,
+        30.0
+       ],
+       [
+        68.9,
+        27.7
+       ],
+       [
+        68.4,
+        25.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Gedrosian desert march",
+      "path": [
+       [
+        68.4,
+        25.4
+       ],
+       [
+        65.5,
+        25.8
+       ],
+       [
+        60.7,
+        27.2
+       ],
+       [
+        57.1,
+        30.0
+       ],
+       [
+        52.89,
+        29.93
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nearchus",
+      "label": "Fleet along the coast",
+      "path": [
+       [
+        67.4,
+        24.4
+       ],
+       [
+        61.5,
+        25.1
+       ],
+       [
+        57.6,
+        25.4
+       ],
+       [
+        56.5,
+        26.5
+       ],
+       [
+        50.0,
+        28.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alexander",
+      "label": "Return to Babylon",
+      "path": [
+       [
+        52.89,
+        29.93
+       ],
+       [
+        48.25,
+        32.19
+       ],
+       [
+        44.42,
+        32.54
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Gedrosian desert march",
+      "kind": "event",
+      "lon": 63.0,
+      "lat": 26.0,
+      "year": -325,
+      "winner": null,
+      "text": "Thirst and heat killed a large part of the army and its followers."
+     },
+     {
+      "name": "Death of Alexander",
+      "kind": "event",
+      "lon": 44.42,
+      "lat": 32.54,
+      "year": -323,
+      "winner": null,
+      "text": "Alexander died of fever at Babylon, and his empire passed to his quarrelling generals."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "warring-states-qin-unification",
+  "name": "Warring States and the Qin unification of China",
+  "start": -475,
+  "end": -221,
+  "kind": "conflict",
+  "summary": "After the Zhou kings lost real power, seven large territorial states, Qin, Chu, Qi, Zhao, Wei, Han and Yan, fought for two and a half centuries with mass infantry armies and ever larger battles. Qin, on the western frontier, reformed itself under Shang Yang into a disciplined war state, broke its rivals one by one under generals such as Bai Qi, and between 230 and 221 BC King Ying Zheng conquered all six. He proclaimed himself Qin Shi Huang, the First Emperor, founding the unified imperial China that lasted two thousand years.",
+  "sides": [
+   {
+    "name": "Qin",
+    "color": "#b5452f",
+    "leaders": [
+     "Duke Xiao and Shang Yang",
+     "Bai Qi",
+     "Ying Zheng (Qin Shi Huang)",
+     "Wang Jian",
+     "Wang Ben"
+    ]
+   },
+   {
+    "name": "The six rival states",
+    "color": "#2f8f83",
+    "leaders": [
+     "Sun Bin",
+     "Yue Yi",
+     "Lian Po",
+     "Li Mu",
+     "Lord Xinling",
+     "Xiang Yan"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 112.5,
+    "lat": 34.8,
+    "r": 6.0
+   },
+   {
+    "lon": 117.5,
+    "lat": 34.5,
+    "r": 4.0
+   },
+   {
+    "lon": 106.5,
+    "lat": 32.0,
+    "r": 3.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -453,
+    "label": "475 to 403 BC",
+    "title": "The partition of Jin",
+    "text": "The old great state of Jin was dominated by rival ministerial clans. In 453 BC the Zhi clan, besieging the Zhao at Jinyang, was betrayed by its allies Han and Wei, who joined Zhao to destroy it. Zhao, Han and Wei divided Jin among themselves and were recognised as states in 403 BC, the usual start of the Warring States era. The map's border data shows all the Chinese states as one polity before the 320s BC.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Zhi Yao",
+      "label": "Zhi siege of Jinyang",
+      "path": [
+       [
+        111.2,
+        35.6
+       ],
+       [
+        111.9,
+        36.6
+       ],
+       [
+        112.48,
+        37.72
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Zhao Xiangzi",
+      "label": "Zhao defence and breakout",
+      "path": [
+       [
+        112.48,
+        37.72
+       ],
+       [
+        112.2,
+        37.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Jinyang",
+      "kind": "war",
+      "lon": 112.48,
+      "lat": 37.72,
+      "year": -453,
+      "winner": null,
+      "text": "Han and Wei turned on the Zhi clan, and the three survivors partitioned Jin."
+     }
+    ]
+   },
+   {
+    "year": -341,
+    "label": "356 to 340 BC",
+    "title": "Shang Yang's reforms and the fall of Wei",
+    "text": "Wei was the strongest state in the early 4th century BC. In Qin, Duke Xiao's minister Shang Yang abolished hereditary privilege, rewarded soldiers by heads taken and organised the peasants into a war economy. Wei's general Pang Juan was then destroyed by the Qi strategist Sun Bin at Maling in 341 BC, and the next year Shang Yang's Qin army took Wei's lands west of the Yellow River.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Pang Juan",
+      "label": "Wei army turns back from Han",
+      "path": [
+       [
+        113.72,
+        34.39
+       ],
+       [
+        114.31,
+        34.8
+       ],
+       [
+        115.0,
+        35.4
+       ],
+       [
+        115.5,
+        35.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sun Bin and Tian Ji",
+      "label": "Qi feint and withdrawal",
+      "path": [
+       [
+        118.35,
+        36.85
+       ],
+       [
+        116.5,
+        36.1
+       ],
+       [
+        115.2,
+        35.4
+       ],
+       [
+        115.5,
+        35.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Shang Yang",
+      "label": "Qin attack on Wei's Hexi lands",
+      "path": [
+       [
+        108.7,
+        34.33
+       ],
+       [
+        110.0,
+        34.8
+       ],
+       [
+        111.15,
+        35.1
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Maling",
+      "kind": "battle",
+      "lon": 115.5,
+      "lat": 35.9,
+      "year": -341,
+      "winner": null,
+      "text": "Sun Bin ambushed and destroyed the Wei army, and Pang Juan was killed; the exact site is disputed."
+     },
+     {
+      "name": "Qin takes Hexi",
+      "kind": "war",
+      "lon": 111.15,
+      "lat": 35.1,
+      "year": -340,
+      "winner": 0,
+      "text": "Shang Yang beat Wei, which soon moved its capital east to Daliang."
+     }
+    ]
+   },
+   {
+    "year": -316,
+    "label": "318 to 316 BC",
+    "title": "Hangu Pass and the conquest of Shu",
+    "text": "Diplomats preached rival strategies: a vertical alliance of the eastern states against Qin, or horizontal alliances with Qin. In 318 BC a coalition led by Wei, Zhao, Han, Yan and Chu attacked the Hangu Pass and was thrown back. In 316 BC the Qin general Sima Cuo crossed the Qinling mountains and conquered Shu and Ba in Sichuan, giving Qin a vast and safe granary.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Qin"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        110.6,
+        35.3
+       ],
+       [
+        110.88,
+        34.62
+       ],
+       [
+        110.9,
+        34.0
+       ]
+      ],
+      "label": "Hangu Pass, 318 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Coalition of five states",
+      "label": "Coalition march on Hangu",
+      "path": [
+       [
+        114.31,
+        34.8
+       ],
+       [
+        113.72,
+        34.39
+       ],
+       [
+        112.45,
+        34.65
+       ],
+       [
+        110.88,
+        34.62
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Sima Cuo",
+      "label": "Conquest of Shu",
+      "path": [
+       [
+        108.7,
+        34.33
+       ],
+       [
+        107.03,
+        33.07
+       ],
+       [
+        105.55,
+        32.2
+       ],
+       [
+        104.07,
+        30.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Coalition defeated at Hangu Pass",
+      "kind": "battle",
+      "lon": 110.88,
+      "lat": 34.62,
+      "year": -318,
+      "winner": 0,
+      "text": "Qin held its eastern gateway and routed the allied armies."
+     },
+     {
+      "name": "Qin conquest of Shu",
+      "kind": "war",
+      "lon": 104.07,
+      "lat": 30.67,
+      "year": -316,
+      "winner": 0,
+      "text": "The rich Sichuan basin became Qin's base for wars against Chu."
+     }
+    ]
+   },
+   {
+    "year": -293,
+    "label": "293 BC",
+    "title": "Bai Qi at Yique",
+    "text": "Qin's greatest general, Bai Qi, first made his name against Han and Wei. At Yique, the gorge south of Luoyang, he defeated their combined army and, by Qin's own count, killed 240,000 men. From now on Qin bit off the Yellow River lands of its eastern neighbours piece by piece.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Qin"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        111.8,
+        35.4
+       ],
+       [
+        112.47,
+        34.55
+       ],
+       [
+        112.2,
+        33.6
+       ]
+      ],
+      "label": "Qin eastern front, 293 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Bai Qi",
+      "label": "Qin army east from Xianyang",
+      "path": [
+       [
+        108.7,
+        34.33
+       ],
+       [
+        110.88,
+        34.62
+       ],
+       [
+        111.8,
+        34.6
+       ],
+       [
+        112.47,
+        34.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Han and Wei generals",
+      "label": "Allied army of Han and Wei",
+      "path": [
+       [
+        113.72,
+        34.39
+       ],
+       [
+        113.0,
+        34.4
+       ],
+       [
+        112.47,
+        34.55
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Yique",
+      "kind": "battle",
+      "lon": 112.47,
+      "lat": 34.55,
+      "year": -293,
+      "winner": 0,
+      "text": "Bai Qi annihilated the allied army of Han and Wei."
+     }
+    ]
+   },
+   {
+    "year": -284,
+    "label": "284 to 279 BC",
+    "title": "Yue Yi breaks Qi",
+    "text": "Qi had grown rich and aggressive under King Min. In 284 BC an alliance of Yan, Qin, Zhao, Wei and Han, led by the Yan general Yue Yi, routed Qi and sacked its capital Linzi, leaving only two Qi cities unconquered. Qi's commander Tian Dan broke out of Jimo in 279 BC with a famous attack by oxen with burning tails and recovered the state, but Qi never again threatened Qin.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Qin"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Yue Yi",
+      "label": "Allied invasion of Qi",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        116.0,
+        38.3
+       ],
+       [
+        116.6,
+        36.7
+       ],
+       [
+        118.35,
+        36.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tian Dan",
+      "label": "Qi counteroffensive from Jimo",
+      "path": [
+       [
+        120.45,
+        36.39
+       ],
+       [
+        119.2,
+        36.6
+       ],
+       [
+        118.35,
+        36.85
+       ],
+       [
+        116.6,
+        36.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Linzi",
+      "kind": "war",
+      "lon": 118.35,
+      "lat": 36.85,
+      "year": -284,
+      "winner": null,
+      "text": "Yue Yi's coalition took the Qi capital, removing the one eastern power that rivalled Qin."
+     },
+     {
+      "name": "Fire oxen of Jimo",
+      "kind": "battle",
+      "lon": 120.45,
+      "lat": 36.39,
+      "year": -279,
+      "winner": null,
+      "text": "Tian Dan routed the Yan besiegers and Qi recovered its lost cities."
+     }
+    ]
+   },
+   {
+    "year": -278,
+    "label": "279 to 278 BC",
+    "title": "Bai Qi sacks Ying",
+    "text": "Qin now turned on Chu, the largest state, attacking down the Han river from the north and from Sichuan in the west. Bai Qi flooded the city of Yan by diverting a river and in 278 BC took the Chu capital Ying, burning the royal tombs. The Chu court fled east to Chen, and Qin held the middle Yangtze.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Qin"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        111.0,
+        32.0
+       ],
+       [
+        112.2,
+        31.2
+       ],
+       [
+        113.2,
+        30.2
+       ]
+      ],
+      "label": "Chu front, 278 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Bai Qi",
+      "label": "Qin invasion of Chu",
+      "path": [
+       [
+        108.7,
+        34.33
+       ],
+       [
+        110.5,
+        33.4
+       ],
+       [
+        111.7,
+        32.5
+       ],
+       [
+        112.26,
+        31.72
+       ],
+       [
+        112.18,
+        30.42
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "King Qingxiang of Chu",
+      "label": "Chu court flees east",
+      "path": [
+       [
+        112.18,
+        30.42
+       ],
+       [
+        113.6,
+        31.6
+       ],
+       [
+        114.88,
+        33.73
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Ying",
+      "kind": "siege",
+      "lon": 112.18,
+      "lat": 30.42,
+      "year": -278,
+      "winner": 0,
+      "text": "Qin captured the Chu capital and turned its lands into Nan commandery."
+     }
+    ]
+   },
+   {
+    "year": -260,
+    "label": "262 to 256 BC",
+    "title": "Changping and the end of Zhou",
+    "text": "Qin and Zhao fought for the Shangdang upland. At Changping, Zhao replaced the cautious Lian Po with the young Zhao Kuo, who attacked, was surrounded by Bai Qi and starved for 46 days; Qin then killed most of the 400,000 prisoners, by tradition. Qin's siege of the Zhao capital Handan was broken in 257 BC by relief armies from Wei and Chu, but in 256 BC Qin ended the last Zhou king's line.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Qin"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        112.75,
+        35.95
+       ],
+       [
+        112.88,
+        35.8
+       ],
+       [
+        113.0,
+        35.65
+       ]
+      ],
+      "label": "Changping lines, 260 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Bai Qi",
+      "label": "Qin army into Shangdang",
+      "path": [
+       [
+        108.7,
+        34.33
+       ],
+       [
+        110.7,
+        35.3
+       ],
+       [
+        112.0,
+        35.7
+       ],
+       [
+        112.88,
+        35.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Zhao Kuo",
+      "label": "Zhao army at Changping",
+      "path": [
+       [
+        114.48,
+        36.6
+       ],
+       [
+        113.7,
+        36.2
+       ],
+       [
+        112.88,
+        35.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lord Xinling",
+      "label": "Wei relief of Handan",
+      "path": [
+       [
+        114.31,
+        34.8
+       ],
+       [
+        114.4,
+        35.6
+       ],
+       [
+        114.48,
+        36.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Changping",
+      "kind": "battle",
+      "lon": 112.88,
+      "lat": 35.8,
+      "year": -260,
+      "winner": 0,
+      "text": "Bai Qi destroyed the main Zhao army, the bloodiest battle of the era."
+     },
+     {
+      "name": "Relief of Handan",
+      "kind": "siege",
+      "lon": 114.48,
+      "lat": 36.6,
+      "year": -257,
+      "winner": 1,
+      "text": "Wei and Chu armies forced Qin to lift its siege of the Zhao capital."
+     },
+     {
+      "name": "End of the Zhou dynasty",
+      "kind": "event",
+      "lon": 112.45,
+      "lat": 34.65,
+      "year": -256,
+      "winner": 0,
+      "text": "Qin absorbed the tiny royal domain, ending the Zhou line after eight centuries."
+     }
+    ]
+   },
+   {
+    "year": -228,
+    "label": "230 to 225 BC",
+    "title": "Han, Zhao and Wei fall",
+    "text": "King Ying Zheng of Qin launched the final wars. Neishi Teng took the Han capital in 230 BC. Wang Jian invaded Zhao, which executed its best general Li Mu after Qin bribery, and Handan fell in 228 BC. In 225 BC Wang Ben flooded the Wei capital Daliang with the Yellow River until its walls collapsed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Qin"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        112.5,
+        38.8
+       ],
+       [
+        114.2,
+        37.5
+       ],
+       [
+        114.7,
+        35.6
+       ],
+       [
+        114.4,
+        34.2
+       ],
+       [
+        113.0,
+        33.0
+       ]
+      ],
+      "label": "Qin front, 228 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Neishi Teng",
+      "label": "Conquest of Han",
+      "path": [
+       [
+        108.7,
+        34.33
+       ],
+       [
+        110.88,
+        34.62
+       ],
+       [
+        112.45,
+        34.65
+       ],
+       [
+        113.72,
+        34.39
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wang Jian",
+      "label": "Invasion of Zhao",
+      "path": [
+       [
+        112.55,
+        37.87
+       ],
+       [
+        113.6,
+        37.6
+       ],
+       [
+        114.48,
+        36.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wang Ben",
+      "label": "Siege of Daliang",
+      "path": [
+       [
+        112.45,
+        34.65
+       ],
+       [
+        113.6,
+        34.8
+       ],
+       [
+        114.31,
+        34.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Handan",
+      "kind": "siege",
+      "lon": 114.48,
+      "lat": 36.6,
+      "year": -228,
+      "winner": 0,
+      "text": "Qin captured the Zhao capital and King Qian of Zhao."
+     },
+     {
+      "name": "Siege of Daliang",
+      "kind": "siege",
+      "lon": 114.31,
+      "lat": 34.8,
+      "year": -225,
+      "winner": 0,
+      "text": "Qin flooded the Wei capital, modern Kaifeng, and forced its surrender."
+     }
+    ]
+   },
+   {
+    "year": -221,
+    "label": "225 to 221 BC",
+    "title": "Chu, Yan and Qi: unification",
+    "text": "Chu destroyed a first Qin invasion under Li Xin, so the king gave the veteran Wang Jian 600,000 men; he waited out Chu in fortified camps, then struck and killed its general Xiang Yan, taking Shouchun in 223 BC. Wang Ben finished off Yan in Liaodong and the Zhao remnant of Dai in 222 BC, and in 221 BC Qi surrendered without a battle. Ying Zheng took the new title Shi Huangdi, the First Emperor.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Qin",
+       "Zhou states"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Wang Jian",
+      "label": "Conquest of Chu",
+      "path": [
+       [
+        114.31,
+        34.8
+       ],
+       [
+        114.88,
+        33.73
+       ],
+       [
+        117.0,
+        33.5
+       ],
+       [
+        116.78,
+        32.58
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wang Ben",
+      "label": "Yan, Liaodong and Dai",
+      "path": [
+       [
+        114.48,
+        36.6
+       ],
+       [
+        116.4,
+        39.9
+       ],
+       [
+        119.75,
+        40.0
+       ],
+       [
+        123.17,
+        41.27
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wang Ben",
+      "label": "March on Qi",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        116.8,
+        38.3
+       ],
+       [
+        118.35,
+        36.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Qinan",
+      "kind": "battle",
+      "lon": 117.0,
+      "lat": 33.5,
+      "year": -224,
+      "winner": 0,
+      "text": "Wang Jian destroyed the main Chu army; Xiang Yan was killed."
+     },
+     {
+      "name": "Fall of Shouchun",
+      "kind": "siege",
+      "lon": 116.78,
+      "lat": 32.58,
+      "year": -223,
+      "winner": 0,
+      "text": "Qin captured the Chu capital and King Fuchu, ending Chu as a state."
+     },
+     {
+      "name": "Surrender of Qi",
+      "kind": "event",
+      "lon": 118.35,
+      "lat": 36.85,
+      "year": -221,
+      "winner": 0,
+      "text": "King Jian of Qi gave up without a fight, completing the unification of China."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "kalinga-war",
+  "name": "Kalinga War",
+  "start": -262,
+  "end": -261,
+  "kind": "war",
+  "summary": "The Mauryan emperor Ashoka invaded Kalinga, an independent kingdom on the Bay of Bengal coast in modern Odisha, around the eighth year of his reign. The conquest succeeded, but by Ashoka's own inscription some 100,000 people were killed and 150,000 deported. Ashoka's remorse turned him toward Buddhism and a policy of rule by dharma that he proclaimed on rock and pillar edicts across India.",
+  "sides": [
+   {
+    "name": "Mauryan Empire",
+    "color": "#c07a2e",
+    "leaders": [
+     "Ashoka"
+    ]
+   },
+   {
+    "name": "Kalinga",
+    "color": "#2f6db5",
+    "leaders": [
+     "Kalinga army (rulers unnamed in the sources)"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 85.0,
+    "lat": 21.5,
+    "r": 4.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -262,
+    "label": "c. 262 BC",
+    "title": "Ashoka turns on Kalinga",
+    "text": "Ashoka had inherited from his father Bindusara and grandfather Chandragupta an empire covering almost all of the subcontinent. Kalinga, a rich coastal kingdom between the Mahanadi and Godavari rivers with its own large army and sea trade, stayed outside it and controlled the routes to the south. The map's border data already includes Kalinga in the Mauryan Empire, so the frontier line marks the independent kingdom.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mauryan Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        87.3,
+        21.7
+       ],
+       [
+        85.8,
+        21.9
+       ],
+       [
+        84.3,
+        21.2
+       ],
+       [
+        83.3,
+        19.6
+       ],
+       [
+        82.2,
+        17.3
+       ]
+      ],
+      "label": "Kalinga frontier, c. 262 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ashoka",
+      "label": "Mauryan army marches from Pataliputra",
+      "path": [
+       [
+        85.14,
+        25.6
+       ],
+       [
+        85.4,
+        24.0
+       ],
+       [
+        85.6,
+        22.5
+       ],
+       [
+        85.7,
+        21.3
+       ]
+      ]
+     }
+    ],
+    "events": []
+   },
+   {
+    "year": -261,
+    "label": "c. 261 BC",
+    "title": "Conquest of Kalinga",
+    "text": "The Mauryan army broke into Kalinga and took its heartland around Tosali, near modern Bhubaneswar. Local tradition places the decisive battle near the Dhauli hills on the Daya river, though no ancient source names the site. Ashoka's thirteenth rock edict counts 150,000 people deported, 100,000 killed and many times that number dead of other causes.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mauryan Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        87.3,
+        21.7
+       ],
+       [
+        85.8,
+        21.9
+       ],
+       [
+        84.3,
+        21.2
+       ],
+       [
+        83.3,
+        19.6
+       ],
+       [
+        82.2,
+        17.3
+       ]
+      ],
+      "label": "Kalinga frontier, c. 262 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ashoka",
+      "label": "Invasion of Kalinga",
+      "path": [
+       [
+        85.7,
+        21.3
+       ],
+       [
+        85.8,
+        20.7
+       ],
+       [
+        85.84,
+        20.19
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Kalinga army",
+      "label": "Kalinga forces fall back on Tosali",
+      "path": [
+       [
+        84.83,
+        19.53
+       ],
+       [
+        85.2,
+        19.9
+       ],
+       [
+        85.84,
+        20.19
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kalinga (Dhauli, by tradition)",
+      "kind": "battle",
+      "lon": 85.84,
+      "lat": 20.19,
+      "year": -261,
+      "winner": 0,
+      "text": "Ashoka's army crushed Kalinga's resistance at enormous human cost."
+     }
+    ]
+   },
+   {
+    "year": -260,
+    "label": "c. 260 BC onward",
+    "title": "Ashoka's remorse",
+    "text": "Kalinga became a Mauryan province governed from Tosali. In his edicts Ashoka wrote that he felt deep sorrow for the suffering of the conquest, renounced further war, and turned to Buddhism and dharma, a code of nonviolence, tolerance and welfare. Edicts carved at Dhauli and Jaugada told Kalinga's officials to treat the people justly, and Ashoka sent Buddhist missions across Asia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mauryan Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ashoka",
+      "label": "Return to Pataliputra",
+      "path": [
+       [
+        85.84,
+        20.19
+       ],
+       [
+        85.6,
+        22.5
+       ],
+       [
+        85.4,
+        24.0
+       ],
+       [
+        85.14,
+        25.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Kalinga edicts",
+      "kind": "event",
+      "lon": 85.84,
+      "lat": 20.19,
+      "year": -260,
+      "winner": null,
+      "text": "Special rock edicts at Dhauli and Jaugada set out Ashoka's new policy for the conquered land."
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,5873 @@
+[
+ {
+  "id": "roman-conquest-of-italy",
+  "name": "Roman conquest of Italy",
+  "start": -390,
+  "end": -264,
+  "kind": "conflict",
+  "summary": "Over about 125 years Rome went from a city sacked by Gauls to the master of the Italian peninsula south of the Po. It beat the Latins, the Samnites and their Etruscan and Gallic allies, and finally the Greek cities of the south and their champion Pyrrhus of Epirus. Rome bound the defeated to it as allies who supplied soldiers, the manpower that would carry it through the wars with Carthage.",
+  "sides": [
+   {
+    "name": "Rome and its allies",
+    "color": "#b5452f",
+    "leaders": [
+     "Camillus",
+     "Fabius Rullianus",
+     "Decius Mus",
+     "Manius Curius Dentatus"
+    ]
+   },
+   {
+    "name": "Gauls, Samnites and Etruscans",
+    "color": "#3f8a5a",
+    "leaders": [
+     "Brennus",
+     "Gavius Pontius",
+     "Gellius Egnatius"
+    ]
+   },
+   {
+    "name": "Pyrrhus and the Italian Greeks",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Pyrrhus of Epirus"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 13.8,
+    "lat": 41.8,
+    "r": 4.5
+   },
+   {
+    "lon": 16.0,
+    "lat": 39.5,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -390,
+    "label": "c. 390 BC",
+    "title": "The Gauls sack Rome",
+    "text": "Rome had just taken its Etruscan rival Veii when a Gallic war band of the Senones under Brennus came south from the Po valley. It routed the Roman army at the Allia river, eleven miles from the city, and sacked Rome, leaving only after it was paid in gold. The disaster pushed Rome to build stronger walls and reorganise its army.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Boii"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Brennus",
+      "label": "Gallic war band",
+      "path": [
+       [
+        11.3,
+        44.4
+       ],
+       [
+        11.95,
+        43.02
+       ],
+       [
+        12.4,
+        42.4
+       ],
+       [
+        12.56,
+        42.03
+       ],
+       [
+        12.48,
+        41.89
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Roman levy",
+      "label": "Roman army to the Allia",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        12.56,
+        42.03
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Allia",
+      "kind": "battle",
+      "lon": 12.56,
+      "lat": 42.03,
+      "year": -390,
+      "winner": 1,
+      "text": "The Gauls broke the Roman army in a single charge north of the city."
+     },
+     {
+      "name": "Gallic sack of Rome",
+      "kind": "event",
+      "lon": 12.48,
+      "lat": 41.89,
+      "year": -390,
+      "winner": 1,
+      "text": "The Gauls plundered Rome and left only after being paid a ransom in gold."
+     }
+    ]
+   },
+   {
+    "year": -343,
+    "label": "343 to 338 BC",
+    "title": "Campania and the Latin War",
+    "text": "Rome answered a call from Capua and fought the Samnites of the Apennines for the rich plain of Campania in the First Samnite War. Its Latin allies then rose against Roman dominance, and the consul Manlius Torquatus crushed them. In the settlement of 338 BC Rome dissolved the Latin League and bound each city to itself, the model for its whole system of Italian alliances.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Samnites"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        13.4,
+        41.9
+       ],
+       [
+        13.85,
+        41.55
+       ],
+       [
+        14.2,
+        41.25
+       ],
+       [
+        14.6,
+        40.9
+       ]
+      ],
+      "label": "Roman and Samnite spheres, 341 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Valerius Corvus",
+      "label": "Roman army into Campania",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        13.3,
+        41.6
+       ],
+       [
+        14.25,
+        41.08
+       ],
+       [
+        14.08,
+        40.86
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Manlius Torquatus",
+      "label": "Against the Latins",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        13.4,
+        41.5
+       ],
+       [
+        13.77,
+        41.26
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Mount Gaurus",
+      "kind": "battle",
+      "lon": 14.08,
+      "lat": 40.86,
+      "year": -342,
+      "winner": 0,
+      "text": "Rome's first victory over the Samnites secured Capua."
+     },
+     {
+      "name": "Battle of Trifanum",
+      "kind": "battle",
+      "lon": 13.77,
+      "lat": 41.26,
+      "year": -338,
+      "winner": 0,
+      "text": "Manlius Torquatus broke the Latin revolt."
+     },
+     {
+      "name": "Latin settlement",
+      "kind": "treaty",
+      "lon": 12.48,
+      "lat": 41.89,
+      "year": -338,
+      "winner": 0,
+      "text": "Rome dissolved the Latin League and tied each city to itself by separate treaty."
+     }
+    ]
+   },
+   {
+    "year": -321,
+    "label": "326 to 304 BC",
+    "title": "The Caudine Forks",
+    "text": "The Second Samnite War was a struggle for central Italy. In 321 BC the Samnite general Gavius Pontius trapped a whole Roman army in the pass of the Caudine Forks and sent it under the yoke. Rome recovered, built the Via Appia toward Campania, allied with the Apulians behind the Samnites and won at Bovianum in 305 BC.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rome"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Sabines"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        13.4,
+        42.1
+       ],
+       [
+        13.9,
+        41.6
+       ],
+       [
+        14.25,
+        41.2
+       ],
+       [
+        14.6,
+        40.85
+       ]
+      ],
+      "label": "Samnite frontier"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Consuls Veturius and Postumius",
+      "label": "Roman army toward Samnium",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        13.4,
+        41.5
+       ],
+       [
+        14.25,
+        41.08
+       ],
+       [
+        14.64,
+        41.06
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gavius Pontius",
+      "label": "Samnite army",
+      "path": [
+       [
+        14.47,
+        41.49
+       ],
+       [
+        14.7,
+        41.25
+       ],
+       [
+        14.64,
+        41.06
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Caudine Forks",
+      "kind": "battle",
+      "lon": 14.64,
+      "lat": 41.06,
+      "year": -321,
+      "winner": 1,
+      "text": "A Roman army surrendered in a mountain pass and was sent home in disgrace."
+     },
+     {
+      "name": "Battle of Bovianum",
+      "kind": "battle",
+      "lon": 14.47,
+      "lat": 41.49,
+      "year": -305,
+      "winner": 0,
+      "text": "Rome took the Samnite capital and forced peace the next year."
+     }
+    ]
+   },
+   {
+    "year": -295,
+    "label": "298 to 290 BC",
+    "title": "Sentinum",
+    "text": "In the Third Samnite War the Samnite leader Gellius Egnatius marched north to join Gauls, Etruscans and Umbrians in a grand coalition against Rome. At Sentinum Fabius Rullianus and Decius Mus, who sacrificed himself in the battle, destroyed the combined army. The Samnites submitted in 290 BC and Rome annexed the Sabine country, cutting Italy in two from sea to sea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        11.6,
+        42.6
+       ],
+       [
+        12.4,
+        43.0
+       ],
+       [
+        13.3,
+        42.7
+       ],
+       [
+        14.0,
+        42.0
+       ],
+       [
+        14.6,
+        41.3
+       ]
+      ],
+      "label": "Line of the coalition, 296 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Gellius Egnatius",
+      "label": "Samnites march north",
+      "path": [
+       [
+        14.47,
+        41.49
+       ],
+       [
+        13.9,
+        42.2
+       ],
+       [
+        13.3,
+        42.9
+       ],
+       [
+        12.86,
+        43.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Fabius Rullianus and Decius Mus",
+      "label": "Consular armies",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        12.6,
+        42.6
+       ],
+       [
+        12.7,
+        43.1
+       ],
+       [
+        12.86,
+        43.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Sentinum",
+      "kind": "battle",
+      "lon": 12.86,
+      "lat": 43.43,
+      "year": -295,
+      "winner": 0,
+      "text": "The largest battle yet fought in Italy broke the Samnite, Gallic and Etruscan alliance."
+     },
+     {
+      "name": "Samnites submit",
+      "kind": "treaty",
+      "lon": 14.47,
+      "lat": 41.49,
+      "year": -290,
+      "winner": 0,
+      "text": "The Samnites accepted alliance on Roman terms."
+     }
+    ]
+   },
+   {
+    "year": -280,
+    "label": "280 to 279 BC",
+    "title": "Pyrrhus lands in Italy",
+    "text": "Tarentum, the richest Greek city in Italy, called in King Pyrrhus of Epirus with a professional army and war elephants. Pyrrhus beat the Romans at Heraclea and Asculum and marched within forty miles of Rome, but his losses were so heavy that a costly win is still called a Pyrrhic victory. Rome refused to negotiate while he stood in Italy.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Greek city-states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        14.9,
+        40.6
+       ],
+       [
+        15.7,
+        40.9
+       ],
+       [
+        16.4,
+        41.1
+       ],
+       [
+        17.0,
+        41.1
+       ]
+      ],
+      "label": "Front in the south, 280 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Pyrrhus",
+      "label": "Epirote army crosses to Tarentum",
+      "path": [
+       [
+        20.98,
+        39.16
+       ],
+       [
+        19.6,
+        39.7
+       ],
+       [
+        17.24,
+        40.47
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Pyrrhus",
+      "label": "March on Rome",
+      "path": [
+       [
+        16.63,
+        40.22
+       ],
+       [
+        15.6,
+        40.9
+       ],
+       [
+        14.25,
+        41.08
+       ],
+       [
+        13.16,
+        41.73
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Valerius Laevinus",
+      "label": "Roman army to Lucania",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        14.25,
+        41.08
+       ],
+       [
+        15.8,
+        40.5
+       ],
+       [
+        16.63,
+        40.22
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Heraclea",
+      "kind": "battle",
+      "lon": 16.63,
+      "lat": 40.22,
+      "year": -280,
+      "winner": 2,
+      "text": "Pyrrhus' phalanx and elephants beat Rome's legions in their first meeting."
+     },
+     {
+      "name": "Battle of Asculum",
+      "kind": "battle",
+      "lon": 15.56,
+      "lat": 41.2,
+      "year": -279,
+      "winner": 2,
+      "text": "Another win at a ruinous cost, the original Pyrrhic victory."
+     }
+    ]
+   },
+   {
+    "year": -275,
+    "label": "275 to 264 BC",
+    "title": "Beneventum and the fall of Tarentum",
+    "text": "Pyrrhus spent three years fighting Carthage in Sicily, then returned to Italy and was checked at Beneventum by Manius Curius Dentatus. He sailed home, Tarentum surrendered in 272 BC, and by 264 BC Rome controlled all of Italy south of the Po. That year a call for help from Messana across the strait drew Rome into Sicily and the First Punic War.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "Greek city-states"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Pyrrhus",
+      "label": "Back from Sicily",
+      "path": [
+       [
+        15.29,
+        37.08
+       ],
+       [
+        15.65,
+        38.1
+       ],
+       [
+        16.5,
+        39.4
+       ],
+       [
+        17.24,
+        40.47
+       ],
+       [
+        15.9,
+        40.95
+       ],
+       [
+        14.78,
+        41.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Manius Curius Dentatus",
+      "label": "Consular army",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        13.6,
+        41.5
+       ],
+       [
+        14.78,
+        41.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Papirius Cursor",
+      "label": "Siege of Tarentum",
+      "path": [
+       [
+        14.78,
+        41.13
+       ],
+       [
+        16.0,
+        40.9
+       ],
+       [
+        17.24,
+        40.47
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Beneventum",
+      "kind": "battle",
+      "lon": 14.78,
+      "lat": 41.13,
+      "year": -275,
+      "winner": 0,
+      "text": "Pyrrhus failed to break the Romans and gave up on Italy."
+     },
+     {
+      "name": "Fall of Tarentum",
+      "kind": "siege",
+      "lon": 17.24,
+      "lat": 40.47,
+      "year": -272,
+      "winner": 0,
+      "text": "The last great Greek city of the south became a Roman ally."
+     },
+     {
+      "name": "Messana appeals to Rome",
+      "kind": "war",
+      "lon": 15.55,
+      "lat": 38.19,
+      "year": -264,
+      "winner": null,
+      "text": "Rome's answer led straight into war with Carthage."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "punic-wars",
+  "name": "Punic Wars",
+  "start": -264,
+  "end": -146,
+  "kind": "conflict",
+  "summary": "Rome and Carthage fought three wars over 118 years for control of the western Mediterranean. Rome won Sicily at sea in the first, survived Hannibal's invasion of Italy across the Alps to win the second at Zama, and destroyed Carthage itself in the third. Victory made Rome the dominant power of the Mediterranean world.",
+  "sides": [
+   {
+    "name": "Rome",
+    "color": "#b5452f",
+    "leaders": [
+     "Scipio Africanus",
+     "Fabius Maximus",
+     "Claudius Nero",
+     "Scipio Aemilianus"
+    ]
+   },
+   {
+    "name": "Carthage",
+    "color": "#6a4fb3",
+    "leaders": [
+     "Hamilcar Barca",
+     "Hannibal",
+     "Hasdrubal Barca"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 12.5,
+    "lat": 40.0,
+    "r": 6
+   },
+   {
+    "lon": 9.5,
+    "lat": 36.5,
+    "r": 3
+   },
+   {
+    "lon": -2.5,
+    "lat": 39.5,
+    "r": 5
+   },
+   {
+    "lon": 6.0,
+    "lat": 44.5,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -264,
+    "label": "264 to 260 BC",
+    "title": "First Punic War: the fight for Sicily",
+    "text": "A dispute over Messana drew Appius Claudius across the strait into Sicily, the first time Roman legions fought outside Italy. Rome won Syracuse over to its side and took the Carthaginian base of Agrigentum, then built its first real war fleet and beat Carthage at sea off Mylae with the corvus boarding bridge.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthaginian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        13.85,
+        38.0
+       ],
+       [
+        13.75,
+        37.6
+       ],
+       [
+        13.65,
+        37.2
+       ]
+      ],
+      "label": "Line in Sicily, 261 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Appius Claudius Caudex",
+      "label": "Legions cross to Messana",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        14.25,
+        40.85
+       ],
+       [
+        16.0,
+        39.3
+       ],
+       [
+        15.65,
+        38.1
+       ],
+       [
+        15.55,
+        38.19
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Postumius and Mamilius",
+      "label": "Advance to Agrigentum",
+      "path": [
+       [
+        15.55,
+        38.19
+       ],
+       [
+        14.5,
+        37.6
+       ],
+       [
+        13.58,
+        37.31
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hanno",
+      "label": "Relief army",
+      "path": [
+       [
+        13.28,
+        37.4
+       ],
+       [
+        13.58,
+        37.31
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Agrigentum",
+      "kind": "siege",
+      "lon": 13.58,
+      "lat": 37.31,
+      "year": -262,
+      "winner": 0,
+      "text": "Rome took and sacked Carthage's main base in southern Sicily."
+     },
+     {
+      "name": "Battle of Mylae",
+      "kind": "battle",
+      "lon": 15.24,
+      "lat": 38.22,
+      "year": -260,
+      "winner": 0,
+      "text": "Rome's first great naval victory, won by boarding Carthaginian ships."
+     }
+    ]
+   },
+   {
+    "year": -256,
+    "label": "256 to 255 BC",
+    "title": "Invasion of Africa",
+    "text": "Rome sent a huge fleet south, smashed the Carthaginian navy off Cape Ecnomus and landed an army under Regulus near Carthage. Carthage hired the Spartan general Xanthippus, whose elephants and cavalry destroyed Regulus' army near Tunis, and storms then wrecked the Roman fleet on the way home.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthaginian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Marcus Atilius Regulus",
+      "label": "Invasion fleet",
+      "path": [
+       [
+        13.9,
+        37.05
+       ],
+       [
+        12.5,
+        36.9
+       ],
+       [
+        11.1,
+        36.85
+       ],
+       [
+        10.6,
+        36.75
+       ],
+       [
+        10.2,
+        36.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Xanthippus",
+      "label": "Carthaginian field army",
+      "path": [
+       [
+        10.32,
+        36.85
+       ],
+       [
+        10.15,
+        36.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Cape Ecnomus",
+      "kind": "battle",
+      "lon": 13.85,
+      "lat": 37.0,
+      "year": -256,
+      "winner": 0,
+      "text": "One of the largest naval battles of antiquity opened the way to Africa."
+     },
+     {
+      "name": "Battle of Tunis",
+      "kind": "battle",
+      "lon": 10.15,
+      "lat": 36.8,
+      "year": -255,
+      "winner": 1,
+      "text": "Xanthippus destroyed Regulus' army and captured him."
+     }
+    ]
+   },
+   {
+    "year": -241,
+    "label": "249 to 241 BC",
+    "title": "Aegates Islands",
+    "text": "The war ground on around the Carthaginian strongholds of western Sicily, where Hamilcar Barca held out on Mount Eryx. Rome lost a fleet at Drepana, but a new fleet paid for by private citizens under Lutatius Catulus destroyed Carthage's relief convoy off the Aegates Islands. Carthage gave up Sicily and paid a heavy indemnity.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthaginian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        12.6,
+        38.12
+       ],
+       [
+        12.7,
+        37.95
+       ],
+       [
+        12.62,
+        37.78
+       ],
+       [
+        12.5,
+        37.72
+       ]
+      ],
+      "label": "Siege lines at Lilybaeum and Drepana"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hanno",
+      "label": "Carthaginian relief convoy",
+      "path": [
+       [
+        10.6,
+        37.0
+       ],
+       [
+        11.2,
+        37.5
+       ],
+       [
+        12.05,
+        37.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lutatius Catulus",
+      "label": "Roman fleet",
+      "path": [
+       [
+        12.43,
+        37.8
+       ],
+       [
+        12.3,
+        37.93
+       ],
+       [
+        12.15,
+        37.97
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Drepana",
+      "kind": "battle",
+      "lon": 12.45,
+      "lat": 38.05,
+      "year": -249,
+      "winner": 1,
+      "text": "Adherbal destroyed most of the Roman fleet attacking Drepana."
+     },
+     {
+      "name": "Battle of the Aegates",
+      "kind": "battle",
+      "lon": 12.2,
+      "lat": 37.98,
+      "year": -241,
+      "winner": 0,
+      "text": "Rome's decisive naval victory ended the First Punic War."
+     },
+     {
+      "name": "Treaty of Lutatius",
+      "kind": "treaty",
+      "lon": 12.48,
+      "lat": 41.89,
+      "year": -241,
+      "winner": 0,
+      "text": "Carthage evacuated Sicily, which became Rome's first province."
+     }
+    ]
+   },
+   {
+    "year": -218,
+    "label": "219 to 218 BC",
+    "title": "Hannibal crosses the Alps",
+    "text": "After losing Sicily, Hamilcar Barca built a new Carthaginian empire in Spain. His son Hannibal took Saguntum, Rome declared war, and in 218 BC Hannibal marched from New Carthage over the Pyrenees, the Rhone and the Alps with an army and war elephants. He arrived in the Po valley with about 26,000 men, raised the Gauls and beat the Roman armies at the Ticinus and the Trebia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthaginian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hannibal",
+      "label": "Hannibal's march",
+      "path": [
+       [
+        -0.98,
+        37.6
+       ],
+       [
+        0.8,
+        41.0
+       ],
+       [
+        2.9,
+        42.6
+       ],
+       [
+        4.65,
+        43.85
+       ],
+       [
+        6.9,
+        45.1
+       ],
+       [
+        7.68,
+        45.07
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gnaeus Scipio",
+      "label": "Roman fleet to Spain",
+      "path": [
+       [
+        10.4,
+        43.7
+       ],
+       [
+        8.5,
+        43.85
+       ],
+       [
+        5.37,
+        43.25
+       ],
+       [
+        3.12,
+        42.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Sempronius Longus",
+      "label": "Consular army to the Trebia",
+      "path": [
+       [
+        12.57,
+        44.06
+       ],
+       [
+        11.34,
+        44.49
+       ],
+       [
+        9.7,
+        45.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Saguntum",
+      "kind": "siege",
+      "lon": -0.27,
+      "lat": 39.68,
+      "year": -219,
+      "winner": 1,
+      "text": "Hannibal's capture of Rome's Spanish ally started the war."
+     },
+     {
+      "name": "Battle of the Ticinus",
+      "kind": "battle",
+      "lon": 8.95,
+      "lat": 45.2,
+      "year": -218,
+      "winner": 1,
+      "text": "Hannibal's cavalry routed Publius Scipio's army, wounding the consul."
+     },
+     {
+      "name": "Battle of the Trebia",
+      "kind": "battle",
+      "lon": 9.6,
+      "lat": 45.0,
+      "year": -218,
+      "winner": 1,
+      "text": "Hannibal ambushed and destroyed the combined consular armies."
+     }
+    ]
+   },
+   {
+    "year": -216,
+    "label": "217 to 216 BC",
+    "title": "Trasimene and Cannae",
+    "text": "Hannibal crossed the Apennines and trapped a Roman army on the shore of Lake Trasimene. Fabius Maximus then shadowed him without giving battle, but in 216 BC Rome sought a decision and at Cannae Hannibal's double envelopment annihilated the largest army it had ever fielded. Capua and much of southern Italy went over to Carthage, yet Rome refused to make peace.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthaginian Empire",
+       "Greek city-states"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        13.95,
+        41.02
+       ],
+       [
+        14.6,
+        41.25
+       ],
+       [
+        15.3,
+        41.55
+       ],
+       [
+        15.95,
+        41.85
+       ]
+      ],
+      "label": "Line in Italy after Cannae"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hannibal",
+      "label": "Over the Apennines to Apulia",
+      "path": [
+       [
+        9.7,
+        44.9
+       ],
+       [
+        10.9,
+        43.9
+       ],
+       [
+        12.07,
+        43.2
+       ],
+       [
+        13.6,
+        43.0
+       ],
+       [
+        15.5,
+        41.6
+       ],
+       [
+        16.13,
+        41.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Fabius Maximus",
+      "label": "Shadowing army",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        13.5,
+        41.6
+       ],
+       [
+        14.6,
+        41.4
+       ],
+       [
+        15.3,
+        41.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Aemilius Paullus and Terentius Varro",
+      "label": "Consular armies",
+      "path": [
+       [
+        12.48,
+        41.89
+       ],
+       [
+        14.2,
+        41.6
+       ],
+       [
+        15.5,
+        41.45
+       ],
+       [
+        16.13,
+        41.31
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Lake Trasimene",
+      "kind": "battle",
+      "lon": 12.07,
+      "lat": 43.2,
+      "year": -217,
+      "winner": 1,
+      "text": "Hannibal ambushed a consular army in the lakeside fog and destroyed it."
+     },
+     {
+      "name": "Battle of Cannae",
+      "kind": "battle",
+      "lon": 16.13,
+      "lat": 41.31,
+      "year": -216,
+      "winner": 1,
+      "text": "Hannibal's double envelopment killed perhaps 50,000 Romans in one day."
+     },
+     {
+      "name": "Capua defects",
+      "kind": "event",
+      "lon": 14.25,
+      "lat": 41.08,
+      "year": -216,
+      "winner": 1,
+      "text": "Italy's second city went over to Hannibal."
+     }
+    ]
+   },
+   {
+    "year": -209,
+    "label": "211 to 206 BC",
+    "title": "Rome strikes back",
+    "text": "Rome wore Hannibal down in Italy, retaking Capua and Tarentum, while Publius Cornelius Scipio took the war to Spain and stormed New Carthage. Hasdrubal Barca slipped out of Spain to reinforce his brother, but the consul Claudius Nero marched north from Apulia and destroyed him at the Metaurus. Scipio's victory at Ilipa in 206 BC drove Carthage out of Spain.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthaginian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.6,
+        40.2
+       ],
+       [
+        16.2,
+        40.1
+       ],
+       [
+        16.8,
+        39.9
+       ]
+      ],
+      "label": "Hannibal confined to the south, 207 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Scipio",
+      "label": "Scipio to New Carthage and Ilipa",
+      "path": [
+       [
+        1.25,
+        41.12
+       ],
+       [
+        0.0,
+        39.5
+       ],
+       [
+        -0.98,
+        37.6
+       ],
+       [
+        -3.6,
+        37.4
+       ],
+       [
+        -5.98,
+        37.52
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hasdrubal Barca",
+      "label": "Hasdrubal's march to Italy",
+      "path": [
+       [
+        -3.75,
+        38.07
+       ],
+       [
+        -1.0,
+        40.5
+       ],
+       [
+        1.5,
+        42.3
+       ],
+       [
+        4.8,
+        44.0
+       ],
+       [
+        7.5,
+        45.0
+       ],
+       [
+        12.85,
+        43.72
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Claudius Nero",
+      "label": "Forced march north",
+      "path": [
+       [
+        16.07,
+        41.22
+       ],
+       [
+        14.8,
+        42.2
+       ],
+       [
+        13.5,
+        43.3
+       ],
+       [
+        12.85,
+        43.72
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of New Carthage",
+      "kind": "siege",
+      "lon": -0.98,
+      "lat": 37.6,
+      "year": -209,
+      "winner": 0,
+      "text": "Scipio stormed Carthage's capital in Spain in a single day."
+     },
+     {
+      "name": "Battle of the Metaurus",
+      "kind": "battle",
+      "lon": 12.85,
+      "lat": 43.72,
+      "year": -207,
+      "winner": 0,
+      "text": "Hasdrubal's army was destroyed before it could join Hannibal."
+     },
+     {
+      "name": "Battle of Ilipa",
+      "kind": "battle",
+      "lon": -5.98,
+      "lat": 37.52,
+      "year": -206,
+      "winner": 0,
+      "text": "Scipio's victory ended Carthaginian power in Spain."
+     }
+    ]
+   },
+   {
+    "year": -202,
+    "label": "204 to 201 BC",
+    "title": "Zama",
+    "text": "Scipio landed in Africa near Utica and, with the Numidian prince Masinissa as an ally, beat Carthage's armies in the field. Carthage recalled Hannibal from Italy after fifteen years, and at Zama Scipio defeated him in the war's final battle. The peace of 201 BC stripped Carthage of its fleet and its empire.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "Greek city-states"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthaginian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Scipio Africanus",
+      "label": "Invasion fleet",
+      "path": [
+       [
+        12.43,
+        37.8
+       ],
+       [
+        11.3,
+        37.4
+       ],
+       [
+        10.06,
+        37.06
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hannibal",
+      "label": "Recalled from Italy",
+      "path": [
+       [
+        17.12,
+        39.08
+       ],
+       [
+        15.5,
+        37.2
+       ],
+       [
+        13.0,
+        36.0
+       ],
+       [
+        10.64,
+        35.83
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hannibal",
+      "label": "March to Zama",
+      "path": [
+       [
+        10.64,
+        35.83
+       ],
+       [
+        9.9,
+        36.0
+       ],
+       [
+        9.2,
+        36.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Masinissa",
+      "label": "Numidian cavalry",
+      "path": [
+       [
+        7.5,
+        36.3
+       ],
+       [
+        8.5,
+        36.3
+       ],
+       [
+        9.2,
+        36.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Zama",
+      "kind": "battle",
+      "lon": 9.2,
+      "lat": 36.3,
+      "year": -202,
+      "winner": 0,
+      "text": "Scipio and Masinissa defeated Hannibal and ended the Second Punic War."
+     },
+     {
+      "name": "Peace of 201 BC",
+      "kind": "treaty",
+      "lon": 10.32,
+      "lat": 36.85,
+      "year": -201,
+      "winner": 0,
+      "text": "Carthage gave up Spain and its fleet and paid tribute for fifty years."
+     }
+    ]
+   },
+   {
+    "year": -149,
+    "label": "149 to 146 BC",
+    "title": "Third Punic War: Carthage destroyed",
+    "text": "Rome, urged on by Cato, used a Carthaginian war with Masinissa's Numidia as a pretext to send an army to Africa. Carthage handed over its weapons but refused to abandon its city, and held out for three years. Scipio Aemilianus stormed it in 146 BC, razed it and made its territory the Roman province of Africa.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rome",
+       "Kingdom of Gala"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Carthage"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        10.24,
+        36.9
+       ],
+       [
+        10.26,
+        36.86
+       ],
+       [
+        10.28,
+        36.82
+       ]
+      ],
+      "label": "Roman siege lines, 147 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Manilius and Censorinus",
+      "label": "Roman expedition",
+      "path": [
+       [
+        12.43,
+        37.8
+       ],
+       [
+        11.3,
+        37.4
+       ],
+       [
+        10.06,
+        37.06
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Scipio Aemilianus",
+      "label": "Assault on Carthage",
+      "path": [
+       [
+        10.06,
+        37.06
+       ],
+       [
+        10.2,
+        36.95
+       ],
+       [
+        10.32,
+        36.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Carthage",
+      "kind": "siege",
+      "lon": 10.32,
+      "lat": 36.85,
+      "year": -146,
+      "winner": 0,
+      "text": "Scipio Aemilianus took the city street by street and razed it."
+     },
+     {
+      "name": "Province of Africa",
+      "kind": "event",
+      "lon": 10.06,
+      "lat": 37.06,
+      "year": -146,
+      "winner": 0,
+      "text": "Carthage's land became a Roman province governed from Utica."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "roman-conquest-of-hispania",
+  "name": "Roman conquest of Hispania",
+  "start": -218,
+  "end": -19,
+  "kind": "conflict",
+  "summary": "Rome came to Spain in 218 BC to fight Carthage and stayed for two centuries of war against the peoples of the interior. Lusitanians under Viriathus, Celtiberians at Numantia, the rebel Roman Sertorius and finally the mountain Cantabrians and Astures resisted in turn until Augustus and Agrippa finished the conquest in 19 BC. Hispania became one of the most Romanised parts of the empire, the root of the Latin languages of Iberia.",
+  "sides": [
+   {
+    "name": "Rome",
+    "color": "#b5452f",
+    "leaders": [
+     "Scipio Africanus",
+     "Cato the Elder",
+     "Scipio Aemilianus",
+     "Pompey",
+     "Augustus",
+     "Agrippa"
+    ]
+   },
+   {
+    "name": "Iberian peoples",
+    "color": "#c08a2e",
+    "leaders": [
+     "Viriathus",
+     "Sertorius",
+     "Cantabrian chiefs"
+    ]
+   },
+   {
+    "name": "Carthage",
+    "color": "#6a4fb3",
+    "leaders": [
+     "Hasdrubal Barca",
+     "Mago"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -4.0,
+    "lat": 40.0,
+    "r": 6.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -218,
+    "label": "218 to 206 BC",
+    "title": "Rome arrives to fight Carthage",
+    "text": "While Hannibal marched on Italy, Gnaeus Scipio landed at Emporion and held the line of the Ebro. Both Scipio brothers were killed in 211 BC, but the younger Publius Scipio stormed New Carthage in 209 BC and drove the Carthaginians out of Spain after Ilipa in 206 BC. Rome kept the conquered east and south coasts.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Carthaginian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        0.87,
+        40.72
+       ],
+       [
+        0.3,
+        41.2
+       ],
+       [
+        -0.88,
+        41.65
+       ],
+       [
+        -2.45,
+        42.47
+       ]
+      ],
+      "label": "Ebro line, 217 to 211 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Gnaeus Scipio",
+      "label": "Landing at Emporion",
+      "path": [
+       [
+        3.12,
+        42.13
+       ],
+       [
+        2.2,
+        41.5
+       ],
+       [
+        1.25,
+        41.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Publius Scipio",
+      "label": "To New Carthage and Ilipa",
+      "path": [
+       [
+        1.25,
+        41.12
+       ],
+       [
+        0.0,
+        39.5
+       ],
+       [
+        -0.98,
+        37.6
+       ],
+       [
+        -3.6,
+        37.4
+       ],
+       [
+        -5.98,
+        37.52
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Hasdrubal Barca",
+      "label": "Carthaginian army",
+      "path": [
+       [
+        -4.78,
+        37.88
+       ],
+       [
+        -3.75,
+        38.07
+       ],
+       [
+        -1.5,
+        40.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Cissa",
+      "kind": "battle",
+      "lon": 1.25,
+      "lat": 41.2,
+      "year": -218,
+      "winner": 0,
+      "text": "Gnaeus Scipio won Rome's first foothold north of the Ebro."
+     },
+     {
+      "name": "Capture of New Carthage",
+      "kind": "siege",
+      "lon": -0.98,
+      "lat": 37.6,
+      "year": -209,
+      "winner": 0,
+      "text": "Scipio seized Carthage's capital, arsenal and treasury in Spain."
+     },
+     {
+      "name": "Battle of Ilipa",
+      "kind": "battle",
+      "lon": -5.98,
+      "lat": 37.52,
+      "year": -206,
+      "winner": 0,
+      "text": "Carthage's last army in Spain was destroyed."
+     }
+    ]
+   },
+   {
+    "year": -195,
+    "label": "197 to 179 BC",
+    "title": "Two provinces and the first revolts",
+    "text": "In 197 BC Rome organised its gains as Hither and Further Spain, and the tribes rose almost at once against tribute and governors. Cato the Elder crushed the northeast in 195 BC, and Tiberius Gracchus pushed into Celtiberia and in 179 BC made treaties that kept the peace for a generation. The interior and the west remained free.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rome"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        0.6,
+        42.4
+       ],
+       [
+        -1.4,
+        41.6
+       ],
+       [
+        -2.4,
+        40.4
+       ],
+       [
+        -3.6,
+        38.8
+       ],
+       [
+        -5.2,
+        38.2
+       ],
+       [
+        -6.6,
+        37.4
+       ]
+      ],
+      "label": "Edge of Roman control, c. 180 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cato the Elder",
+      "label": "Campaign in the northeast",
+      "path": [
+       [
+        3.12,
+        42.13
+       ],
+       [
+        1.25,
+        41.12
+       ],
+       [
+        -0.88,
+        41.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tiberius Gracchus",
+      "label": "Into Celtiberia",
+      "path": [
+       [
+        -0.88,
+        41.65
+       ],
+       [
+        -1.9,
+        41.3
+       ],
+       [
+        -2.5,
+        41.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Cato at Emporion",
+      "kind": "battle",
+      "lon": 3.12,
+      "lat": 42.13,
+      "year": -195,
+      "winner": 0,
+      "text": "Cato defeated the rebel tribes of the northeast."
+     },
+     {
+      "name": "Treaties of Gracchus",
+      "kind": "treaty",
+      "lon": -2.3,
+      "lat": 41.3,
+      "year": -179,
+      "winner": null,
+      "text": "Fair terms for the Celtiberians brought twenty-five years of peace."
+     }
+    ]
+   },
+   {
+    "year": -147,
+    "label": "155 to 139 BC",
+    "title": "Viriathus and the Lusitanians",
+    "text": "The Lusitanians of the far west raided the Roman south, and in 150 BC the governor Galba massacred thousands who had surrendered. A survivor, the shepherd Viriathus, led eight years of guerrilla war from the hills, beating army after army until Rome recognised him as a friend of the Roman people in 140 BC. The next year Rome bribed his companions to murder him.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rome"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -8.6,
+        38.4
+       ],
+       [
+        -7.0,
+        38.8
+       ],
+       [
+        -5.4,
+        39.2
+       ],
+       [
+        -3.8,
+        39.8
+       ]
+      ],
+      "label": "Lusitanian raiding front, c. 145 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Viriathus",
+      "label": "Lusitanian raids",
+      "path": [
+       [
+        -7.6,
+        40.32
+       ],
+       [
+        -6.5,
+        39.2
+       ],
+       [
+        -5.6,
+        38.0
+       ],
+       [
+        -5.5,
+        37.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Servilius Caepio",
+      "label": "Roman army into Lusitania",
+      "path": [
+       [
+        -5.98,
+        37.4
+       ],
+       [
+        -6.5,
+        38.6
+       ],
+       [
+        -7.6,
+        40.32
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Galba's massacre",
+      "kind": "event",
+      "lon": -7.5,
+      "lat": 38.6,
+      "year": -150,
+      "winner": 0,
+      "text": "The slaughter of surrendered Lusitanians turned a raid war into a national revolt."
+     },
+     {
+      "name": "Murder of Viriathus",
+      "kind": "event",
+      "lon": -7.6,
+      "lat": 40.32,
+      "year": -139,
+      "winner": 0,
+      "text": "Bribed by Rome, his own envoys killed him in his sleep."
+     }
+    ]
+   },
+   {
+    "year": -134,
+    "label": "143 to 133 BC",
+    "title": "Numantia",
+    "text": "The Celtiberian hill town of Numantia defied Rome for ten years and humiliated several consuls. In 134 BC Scipio Aemilianus, destroyer of Carthage, arrived, restored discipline and surrounded the town with a ring of walls and camps. After fifteen months of starvation Numantia surrendered and was razed, breaking the resistance of the central plateau.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rome"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -2.49,
+        41.84
+       ],
+       [
+        -2.44,
+        41.86
+       ],
+       [
+        -2.39,
+        41.83
+       ],
+       [
+        -2.39,
+        41.79
+       ],
+       [
+        -2.44,
+        41.76
+       ],
+       [
+        -2.49,
+        41.79
+       ]
+      ],
+      "label": "Scipio's siege ring"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Scipio Aemilianus",
+      "label": "March from Tarraco",
+      "path": [
+       [
+        1.25,
+        41.12
+       ],
+       [
+        -0.88,
+        41.65
+       ],
+       [
+        -1.9,
+        41.8
+       ],
+       [
+        -2.44,
+        41.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Numantia",
+      "kind": "siege",
+      "lon": -2.44,
+      "lat": 41.81,
+      "year": -133,
+      "winner": 0,
+      "text": "The starved defenders surrendered and the town was destroyed."
+     }
+    ]
+   },
+   {
+    "year": -77,
+    "label": "80 to 72 BC",
+    "title": "Sertorius",
+    "text": "Quintus Sertorius, a Roman general on the losing side of Rome's civil war, made Spain his base and won the Lusitanians and Celtiberians to his cause. For years he beat the Senate's armies under Metellus Pius and the young Pompey with hit and run warfare. In 72 BC his own officer Perperna murdered him, and Pompey quickly mopped up.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        1.2,
+        41.6
+       ],
+       [
+        0.0,
+        40.6
+       ],
+       [
+        -1.0,
+        39.3
+       ],
+       [
+        -3.0,
+        38.4
+       ],
+       [
+        -5.2,
+        38.6
+       ]
+      ],
+      "label": "Line of the Sertorian war, 76 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Pompey",
+      "label": "Over the Pyrenees",
+      "path": [
+       [
+        3.0,
+        43.18
+       ],
+       [
+        2.86,
+        42.46
+       ],
+       [
+        1.25,
+        41.12
+       ],
+       [
+        -0.38,
+        39.47
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Metellus Pius",
+      "label": "From Further Spain",
+      "path": [
+       [
+        -5.98,
+        37.4
+       ],
+       [
+        -5.0,
+        38.7
+       ],
+       [
+        -3.0,
+        39.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sertorius",
+      "label": "Sertorian army",
+      "path": [
+       [
+        -0.41,
+        42.14
+       ],
+       [
+        -1.5,
+        40.8
+       ],
+       [
+        -0.43,
+        39.15
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Sucro",
+      "kind": "battle",
+      "lon": -0.43,
+      "lat": 39.15,
+      "year": -75,
+      "winner": null,
+      "text": "Sertorius mauled Pompey before Metellus arrived to save him."
+     },
+     {
+      "name": "Murder of Sertorius",
+      "kind": "event",
+      "lon": -0.41,
+      "lat": 42.14,
+      "year": -72,
+      "winner": 0,
+      "text": "Killed at a banquet in Osca, his capital, by his officer Perperna."
+     }
+    ]
+   },
+   {
+    "year": -26,
+    "label": "29 to 19 BC",
+    "title": "The Cantabrian Wars",
+    "text": "Only the mountain north still held out. Augustus came in person in 26 BC and sent three columns from Segisama into the Cantabrian mountains, while his legates fought the Astures around Lancia. Revolts flared again and again until Agrippa finished the conquest in 19 BC, two hundred years after the Romans first landed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -7.0,
+        42.75
+       ],
+       [
+        -5.6,
+        42.85
+       ],
+       [
+        -4.3,
+        42.8
+       ],
+       [
+        -3.0,
+        43.0
+       ]
+      ],
+      "label": "Cantabrian mountain front, 26 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Augustus",
+      "label": "Columns into Cantabria",
+      "path": [
+       [
+        -4.04,
+        42.42
+       ],
+       [
+        -4.1,
+        42.8
+       ],
+       [
+        -4.0,
+        43.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Carisius",
+      "label": "Against the Astures",
+      "path": [
+       [
+        -6.06,
+        42.46
+       ],
+       [
+        -5.42,
+        42.53
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Agrippa",
+      "label": "Final campaign",
+      "path": [
+       [
+        -4.04,
+        42.42
+       ],
+       [
+        -4.6,
+        42.9
+       ],
+       [
+        -4.8,
+        43.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Lancia",
+      "kind": "siege",
+      "lon": -5.42,
+      "lat": 42.53,
+      "year": -25,
+      "winner": 0,
+      "text": "The stronghold of the Astures surrendered to Carisius."
+     },
+     {
+      "name": "Agrippa ends the war",
+      "kind": "event",
+      "lon": -4.5,
+      "lat": 43.15,
+      "year": -19,
+      "winner": 0,
+      "text": "The last Cantabrian rising was crushed and Hispania was fully Roman."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "maccabean-revolt",
+  "name": "Maccabean Revolt",
+  "start": -167,
+  "end": -160,
+  "kind": "war",
+  "summary": "Jewish rebels led by the priest Mattathias and his sons, the Maccabees, rose against the Seleucid king Antiochus IV after he outlawed Jewish worship and defiled the Temple. Judah Maccabee's guerrilla army beat several Seleucid forces, retook Jerusalem and rededicated the Temple in 164 BC, the origin of Hanukkah. Judah fell in 160 BC, but his brothers went on to found the independent Hasmonean kingdom.",
+  "sides": [
+   {
+    "name": "Maccabees",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Mattathias",
+     "Judah Maccabee",
+     "Jonathan Apphus"
+    ]
+   },
+   {
+    "name": "Seleucid Empire",
+    "color": "#c08a2e",
+    "leaders": [
+     "Antiochus IV",
+     "Lysias",
+     "Nicanor",
+     "Bacchides"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 35.1,
+    "lat": 31.8,
+    "r": 0.9
+   },
+   {
+    "lon": 35.8,
+    "lat": 34.0,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -167,
+    "label": "167 to 166 BC",
+    "title": "Revolt at Modiin",
+    "text": "Antiochus IV banned the Jewish law and set up a pagan altar in the Temple of Jerusalem. In the village of Modiin the priest Mattathias killed a royal officer and a Jew who sacrificed, then fled to the hills with his five sons. His son Judah, called Maccabee, the hammer, took over the band and ambushed the Seleucid columns sent against it.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Seleucid Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.0,
+        32.1
+       ],
+       [
+        34.97,
+        31.85
+       ],
+       [
+        34.95,
+        31.55
+       ]
+      ],
+      "label": "Edge of the Judean hills"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mattathias",
+      "label": "Flight to the hills",
+      "path": [
+       [
+        35.0,
+        31.93
+       ],
+       [
+        35.15,
+        31.97
+       ],
+       [
+        35.22,
+        31.96
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Seron",
+      "label": "Seleucid column",
+      "path": [
+       [
+        34.75,
+        32.05
+       ],
+       [
+        34.95,
+        31.93
+       ],
+       [
+        35.13,
+        31.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Mattathias rises",
+      "kind": "event",
+      "lon": 35.0,
+      "lat": 31.93,
+      "year": -167,
+      "winner": null,
+      "text": "The killing at Modiin began the revolt."
+     },
+     {
+      "name": "Battle of Beth Horon",
+      "kind": "battle",
+      "lon": 35.13,
+      "lat": 31.88,
+      "year": -166,
+      "winner": 0,
+      "text": "Judah ambushed Seron's column in the steep pass."
+     }
+    ]
+   },
+   {
+    "year": -165,
+    "label": "165 to 164 BC",
+    "title": "Emmaus and the Temple",
+    "text": "The regent Lysias sent a large army under Gorgias and Nicanor, but Judah surprised their camp at Emmaus. Lysias came himself by the southern road and was beaten at Beth Zur. Judah entered Jerusalem, cleansed the Temple and rededicated it in December 164 BC, the festival of Hanukkah.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Seleucid Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.0,
+        32.1
+       ],
+       [
+        34.97,
+        31.85
+       ],
+       [
+        34.95,
+        31.55
+       ]
+      ],
+      "label": "Edge of the Judean hills"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Gorgias and Nicanor",
+      "label": "Seleucid army to Emmaus",
+      "path": [
+       [
+        35.5,
+        33.6
+       ],
+       [
+        34.9,
+        32.6
+       ],
+       [
+        34.85,
+        32.0
+       ],
+       [
+        34.99,
+        31.84
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lysias",
+      "label": "Southern invasion",
+      "path": [
+       [
+        36.16,
+        36.2
+       ],
+       [
+        35.5,
+        33.6
+       ],
+       [
+        34.8,
+        32.2
+       ],
+       [
+        34.85,
+        31.55
+       ],
+       [
+        35.08,
+        31.59
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Judah Maccabee",
+      "label": "Maccabee army",
+      "path": [
+       [
+        35.22,
+        31.96
+       ],
+       [
+        34.99,
+        31.84
+       ],
+       [
+        35.08,
+        31.59
+       ],
+       [
+        35.235,
+        31.778
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Emmaus",
+      "kind": "battle",
+      "lon": 34.99,
+      "lat": 31.84,
+      "year": -165,
+      "winner": 0,
+      "text": "Judah's night march caught the Seleucid army divided."
+     },
+     {
+      "name": "Battle of Beth Zur",
+      "kind": "battle",
+      "lon": 35.08,
+      "lat": 31.59,
+      "year": -164,
+      "winner": 0,
+      "text": "Lysias was turned back on the road from Idumea."
+     },
+     {
+      "name": "Rededication of the Temple",
+      "kind": "event",
+      "lon": 35.235,
+      "lat": 31.778,
+      "year": -164,
+      "winner": 0,
+      "text": "Judah purified the Temple and restored Jewish worship."
+     }
+    ]
+   },
+   {
+    "year": -162,
+    "label": "162 BC",
+    "title": "Beth Zechariah",
+    "text": "Lysias returned with the boy king Antiochus V, a far larger army and war elephants. He beat Judah at Beth Zechariah, where Judah's brother Eleazar died stabbing an elephant from beneath, and besieged the Temple mount. News of a rival regent at Antioch forced Lysias to make peace and withdraw, repealing the ban on Jewish religion.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Seleucid Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lysias",
+      "label": "Royal army with elephants",
+      "path": [
+       [
+        36.16,
+        36.2
+       ],
+       [
+        35.5,
+        33.6
+       ],
+       [
+        34.8,
+        32.2
+       ],
+       [
+        34.85,
+        31.55
+       ],
+       [
+        35.15,
+        31.65
+       ],
+       [
+        35.235,
+        31.778
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Judah Maccabee",
+      "label": "Maccabee army",
+      "path": [
+       [
+        35.235,
+        31.778
+       ],
+       [
+        35.15,
+        31.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Beth Zechariah",
+      "kind": "battle",
+      "lon": 35.15,
+      "lat": 31.65,
+      "year": -162,
+      "winner": 1,
+      "text": "Seleucid phalanx and elephants defeated the Maccabees."
+     },
+     {
+      "name": "Peace of Lysias",
+      "kind": "treaty",
+      "lon": 35.235,
+      "lat": 31.778,
+      "year": -162,
+      "winner": 0,
+      "text": "The Seleucids restored religious freedom, the revolt's first aim."
+     }
+    ]
+   },
+   {
+    "year": -160,
+    "label": "161 to 160 BC",
+    "title": "Adasa and Elasa",
+    "text": "The war went on as a fight for power in Judea. Judah destroyed Nicanor's army at Adasa in 161 BC, but the next year the general Bacchides came with a fresh army and killed Judah at Elasa. His brother Jonathan carried on the struggle, and by 142 BC Simon, the last brother, ruled an independent Judea.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Seleucid Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Bacchides",
+      "label": "Seleucid army",
+      "path": [
+       [
+        36.16,
+        36.2
+       ],
+       [
+        35.8,
+        34.0
+       ],
+       [
+        35.5,
+        32.8
+       ],
+       [
+        35.17,
+        31.92
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Judah Maccabee",
+      "label": "Last stand",
+      "path": [
+       [
+        35.22,
+        31.86
+       ],
+       [
+        35.17,
+        31.92
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Adasa",
+      "kind": "battle",
+      "lon": 35.22,
+      "lat": 31.86,
+      "year": -161,
+      "winner": 0,
+      "text": "Nicanor was killed and his army routed."
+     },
+     {
+      "name": "Battle of Elasa",
+      "kind": "battle",
+      "lon": 35.17,
+      "lat": 31.92,
+      "year": -160,
+      "winner": 1,
+      "text": "Judah Maccabee fell fighting against Bacchides' larger army."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "han-expansion-korea-vietnam",
+  "name": "Han conquest of Nanyue and Gojoseon",
+  "start": -111,
+  "end": -108,
+  "kind": "war",
+  "summary": "Emperor Wu of Han sent armies against the kingdoms on China's southern and northeastern edges. In 111 BC Han forces took Panyu and annexed Nanyue, bringing northern Vietnam under Chinese rule for about a thousand years, and in 108 BC they took Wanggeom and replaced Gojoseon with four commanderies in northern Korea. The wars fixed the outer limits of the Han world for centuries.",
+  "sides": [
+   {
+    "name": "Han Empire",
+    "color": "#c0473a",
+    "leaders": [
+     "Emperor Wu",
+     "Lu Bode",
+     "Yang Pu",
+     "Xun Zhi"
+    ]
+   },
+   {
+    "name": "Nanyue and Minyue",
+    "color": "#2f8f83",
+    "leaders": [
+     "Lu Jia",
+     "Zhao Jiande"
+    ]
+   },
+   {
+    "name": "Gojoseon",
+    "color": "#7b5bb5",
+    "leaders": [
+     "King Ugeo"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 110.5,
+    "lat": 23.5,
+    "r": 5.5
+   },
+   {
+    "lon": 124.5,
+    "lat": 39.5,
+    "r": 3.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -112,
+    "label": "112 BC",
+    "title": "War on Nanyue",
+    "text": "Nanyue, a kingdom founded by a Qin general around Panyu, was moving toward submission to Han when its chancellor Lu Jia killed the pro-Han queen mother, the young king and the Han envoys. Emperor Wu sent several armies south over the Nanling passes, led by Lu Bode and Yang Pu, with others coming down the rivers.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Han Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Nan-Yue",
+       "Min-Yue"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        110.3,
+        25.6
+       ],
+       [
+        111.8,
+        25.3
+       ],
+       [
+        113.4,
+        25.3
+       ],
+       [
+        114.8,
+        25.0
+       ]
+      ],
+      "label": "Nanling passes"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lu Bode",
+      "label": "Army of the Wave-Calming General",
+      "path": [
+       [
+        112.94,
+        28.23
+       ],
+       [
+        112.6,
+        26.0
+       ],
+       [
+        113.0,
+        24.8
+       ],
+       [
+        113.1,
+        23.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Yang Pu",
+      "label": "Towered-ship army",
+      "path": [
+       [
+        115.86,
+        28.68
+       ],
+       [
+        114.9,
+        25.9
+       ],
+       [
+        114.3,
+        24.9
+       ],
+       [
+        113.6,
+        23.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Lu Jia's coup",
+      "kind": "event",
+      "lon": 113.26,
+      "lat": 23.13,
+      "year": -112,
+      "winner": 1,
+      "text": "The murder of the king and the Han envoys gave Emperor Wu his reason for war."
+     }
+    ]
+   },
+   {
+    "year": -111,
+    "label": "111 to 110 BC",
+    "title": "Fall of Panyu",
+    "text": "Yang Pu's troops reached Panyu first and set it on fire, and Lu Bode received the surrender of its defenders. Lu Jia and the king fled by sea and were captured. Nanyue became nine commanderies stretching down to Jiaozhi and Jiuzhen in the Red River and Ma River plains of Vietnam, and in 110 BC Han also conquered Minyue on the Fujian coast.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Han Empire",
+       "Nan-Yue"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Min-Yue"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lu Bode",
+      "label": "South to Jiaozhi",
+      "path": [
+       [
+        113.26,
+        23.13
+       ],
+       [
+        110.5,
+        21.8
+       ],
+       [
+        108.3,
+        21.6
+       ],
+       [
+        105.85,
+        21.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Han Yue",
+      "label": "Fleet against Minyue",
+      "path": [
+       [
+        120.2,
+        30.2
+       ],
+       [
+        121.4,
+        28.5
+       ],
+       [
+        119.6,
+        26.1
+       ],
+       [
+        119.3,
+        26.08
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Panyu",
+      "kind": "siege",
+      "lon": 113.26,
+      "lat": 23.13,
+      "year": -111,
+      "winner": 0,
+      "text": "The Nanyue capital was burned and the kingdom annexed."
+     },
+     {
+      "name": "Jiaozhi commandery",
+      "kind": "event",
+      "lon": 105.85,
+      "lat": 21.03,
+      "year": -111,
+      "winner": 0,
+      "text": "Northern Vietnam entered a thousand years of Chinese rule."
+     },
+     {
+      "name": "Conquest of Minyue",
+      "kind": "war",
+      "lon": 119.3,
+      "lat": 26.08,
+      "year": -110,
+      "winner": 0,
+      "text": "Han armies overran the last independent Yue kingdom on the coast."
+     }
+    ]
+   },
+   {
+    "year": -109,
+    "label": "109 BC",
+    "title": "Invasion of Gojoseon",
+    "text": "King Ugeo of Gojoseon blocked contact between Han and the states of southern Korea, and the killing of a Han envoy led to war. Yang Pu crossed the Bohai Sea from Shandong with a fleet while Xun Zhi marched overland from Liaodong. Both were beaten back at first, then closed on the capital Wanggeom.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Han Empire",
+       "Nan-Yue",
+       "Min-Yue"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Tungus"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        124.4,
+        40.1
+       ],
+       [
+        125.2,
+        39.75
+       ],
+       [
+        126.0,
+        39.8
+       ],
+       [
+        126.8,
+        40.0
+       ]
+      ],
+      "label": "Gojoseon's northern line, 109 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Yang Pu",
+      "label": "Fleet across the Bohai",
+      "path": [
+       [
+        119.94,
+        37.18
+       ],
+       [
+        121.2,
+        38.3
+       ],
+       [
+        122.6,
+        38.7
+       ],
+       [
+        124.8,
+        38.7
+       ],
+       [
+        125.75,
+        39.02
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Xun Zhi",
+      "label": "Liaodong army",
+      "path": [
+       [
+        123.17,
+        41.27
+       ],
+       [
+        124.4,
+        40.1
+       ],
+       [
+        125.2,
+        39.6
+       ],
+       [
+        125.75,
+        39.02
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Yang Pu repulsed",
+      "kind": "battle",
+      "lon": 125.4,
+      "lat": 38.85,
+      "year": -109,
+      "winner": 2,
+      "text": "Gojoseon troops routed Yang Pu's landing force near the capital."
+     }
+    ]
+   },
+   {
+    "year": -108,
+    "label": "108 BC",
+    "title": "Four Commanderies",
+    "text": "Besieged and divided, Gojoseon's ministers murdered King Ugeo and the capital fell in the summer of 108 BC. Han divided the land into four commanderies, Lelang around Pyongyang, Zhenfan, Lintun and Xuantu. Lelang lasted until AD 313 and carried Chinese writing and goods into Korea and Japan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Han Empire",
+       "Nan-Yue",
+       "Min-Yue"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Xun Zhi",
+      "label": "Final assault",
+      "path": [
+       [
+        125.2,
+        39.6
+       ],
+       [
+        125.75,
+        39.02
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Wanggeom",
+      "kind": "siege",
+      "lon": 125.75,
+      "lat": 39.02,
+      "year": -108,
+      "winner": 0,
+      "text": "Gojoseon's capital surrendered after King Ugeo was killed by his ministers."
+     },
+     {
+      "name": "Lelang commandery",
+      "kind": "event",
+      "lon": 125.75,
+      "lat": 39.02,
+      "year": -108,
+      "winner": 0,
+      "text": "Han rule in northern Korea began, centred on Pyongyang."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mithridatic-wars",
+  "name": "Mithridatic Wars",
+  "start": -88,
+  "end": -63,
+  "kind": "conflict",
+  "summary": "Mithridates VI of Pontus, the most dangerous enemy of the late Roman Republic, fought Rome three times for control of Anatolia and the Aegean. Sulla drove him out of Greece, Lucullus invaded Pontus and Armenia, and Pompey finally broke him in 66 BC and reorganised the whole East. The wars added Anatolia and Syria to the Roman world and made Pompey the greatest man in Rome.",
+  "sides": [
+   {
+    "name": "Rome",
+    "color": "#b5452f",
+    "leaders": [
+     "Sulla",
+     "Lucullus",
+     "Pompey"
+    ]
+   },
+   {
+    "name": "Pontus and allies",
+    "color": "#2f8f83",
+    "leaders": [
+     "Mithridates VI",
+     "Archelaus",
+     "Tigranes II of Armenia"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 32.0,
+    "lat": 40.0,
+    "r": 7.5
+   },
+   {
+    "lon": 23.2,
+    "lat": 38.3,
+    "r": 2.0
+   },
+   {
+    "lon": 40.5,
+    "lat": 41.5,
+    "r": 5.0
+   }
+  ],
+  "steps": [
+   {
+    "year": -88,
+    "label": "89 to 88 BC",
+    "title": "The Asian Vespers",
+    "text": "Provoked by Rome's ally Bithynia, Mithridates swept through Roman Asia while Rome was distracted by war in Italy. He ordered the killing of every Roman and Italian in the province, perhaps 80,000 people, in a single day, then sent his general Archelaus across the Aegean, where Athens joined him.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "minor states",
+       "Bosporan Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mithridates VI",
+      "label": "Pontic army into Asia",
+      "path": [
+       [
+        35.83,
+        40.65
+       ],
+       [
+        33.8,
+        41.4
+       ],
+       [
+        30.5,
+        40.4
+       ],
+       [
+        27.18,
+        39.12
+       ],
+       [
+        27.34,
+        37.94
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Archelaus",
+      "label": "Fleet to Greece",
+      "path": [
+       [
+        27.34,
+        37.94
+       ],
+       [
+        25.27,
+        37.4
+       ],
+       [
+        23.63,
+        37.94
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Amnias",
+      "kind": "battle",
+      "lon": 33.9,
+      "lat": 41.45,
+      "year": -89,
+      "winner": 1,
+      "text": "Mithridates' generals destroyed the Bithynian army."
+     },
+     {
+      "name": "Asian Vespers",
+      "kind": "event",
+      "lon": 27.34,
+      "lat": 37.94,
+      "year": -88,
+      "winner": 1,
+      "text": "Romans and Italians across Asia were massacred on the king's order."
+     }
+    ]
+   },
+   {
+    "year": -86,
+    "label": "87 to 85 BC",
+    "title": "Sulla in Greece",
+    "text": "Sulla landed in Epirus with five legions, besieged Athens and the Piraeus, and stormed Athens in March 86 BC. He then smashed Archelaus' much larger armies at Chaeronea and Orchomenus in Boeotia. In a hurry to return to civil war in Rome, Sulla made peace at Dardanus: Mithridates gave up his conquests but kept his throne.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "minor states",
+       "Bosporan Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.5,
+        38.65
+       ],
+       [
+        22.9,
+        38.45
+       ],
+       [
+        23.4,
+        38.35
+       ],
+       [
+        23.8,
+        38.3
+       ]
+      ],
+      "label": "Front in Boeotia, 86 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Sulla",
+      "label": "Sulla's legions",
+      "path": [
+       [
+        17.94,
+        40.63
+       ],
+       [
+        19.45,
+        41.32
+       ],
+       [
+        21.5,
+        39.6
+       ],
+       [
+        22.6,
+        38.6
+       ],
+       [
+        23.72,
+        37.98
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Archelaus",
+      "label": "Pontic army in Greece",
+      "path": [
+       [
+        23.63,
+        37.94
+       ],
+       [
+        23.4,
+        38.3
+       ],
+       [
+        22.84,
+        38.49
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Athens",
+      "kind": "siege",
+      "lon": 23.72,
+      "lat": 37.98,
+      "year": -86,
+      "winner": 0,
+      "text": "Sulla stormed the city and sacked it."
+     },
+     {
+      "name": "Battle of Chaeronea",
+      "kind": "battle",
+      "lon": 22.84,
+      "lat": 38.49,
+      "year": -86,
+      "winner": 0,
+      "text": "Sulla's legions routed Archelaus' army."
+     },
+     {
+      "name": "Peace of Dardanus",
+      "kind": "treaty",
+      "lon": 26.37,
+      "lat": 40.12,
+      "year": -85,
+      "winner": 0,
+      "text": "Mithridates gave back all his conquests."
+     }
+    ]
+   },
+   {
+    "year": -73,
+    "label": "74 to 71 BC",
+    "title": "Third war: Cyzicus",
+    "text": "After a brief second war, the death of the king of Bithynia, who left his kingdom to Rome, set off the third and longest war. Mithridates invaded Bithynia and besieged Cyzicus, but Lucullus cut his supply lines and starved his army. Lucullus then invaded Pontus and won at Cabira, and Mithridates fled to his son-in-law Tigranes of Armenia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "minor states",
+       "Bosporan Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mithridates VI",
+      "label": "Invasion of Bithynia",
+      "path": [
+       [
+        35.83,
+        40.65
+       ],
+       [
+        33.0,
+        40.9
+       ],
+       [
+        29.92,
+        40.77
+       ],
+       [
+        27.89,
+        40.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lucullus",
+      "label": "Lucullus relieves Cyzicus and invades Pontus",
+      "path": [
+       [
+        27.34,
+        37.94
+       ],
+       [
+        28.2,
+        39.6
+       ],
+       [
+        27.89,
+        40.38
+       ],
+       [
+        31.0,
+        40.8
+       ],
+       [
+        34.5,
+        40.9
+       ],
+       [
+        36.95,
+        40.59
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Cyzicus",
+      "kind": "siege",
+      "lon": 27.89,
+      "lat": 40.38,
+      "year": -73,
+      "winner": 0,
+      "text": "Mithridates' great army melted away from hunger and disease."
+     },
+     {
+      "name": "Battle of Cabira",
+      "kind": "battle",
+      "lon": 36.95,
+      "lat": 40.59,
+      "year": -72,
+      "winner": 0,
+      "text": "Lucullus broke the Pontic army in its homeland."
+     }
+    ]
+   },
+   {
+    "year": -69,
+    "label": "69 to 67 BC",
+    "title": "Tigranocerta",
+    "text": "Lucullus crossed the Euphrates and routed the huge army of Tigranes at his new capital Tigranocerta. But his march toward the Armenian heartland failed when his exhausted troops mutinied, and Mithridates slipped back into Pontus and destroyed a Roman army at Zela.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "minor states"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lucullus",
+      "label": "Into Armenia",
+      "path": [
+       [
+        36.95,
+        40.59
+       ],
+       [
+        38.3,
+        38.35
+       ],
+       [
+        40.0,
+        38.2
+       ],
+       [
+        41.0,
+        38.14
+       ],
+       [
+        42.6,
+        39.0
+       ],
+       [
+        43.6,
+        39.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tigranes II",
+      "label": "Armenian royal army",
+      "path": [
+       [
+        44.55,
+        39.88
+       ],
+       [
+        43.0,
+        38.8
+       ],
+       [
+        41.0,
+        38.14
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mithridates VI",
+      "label": "Return to Pontus",
+      "path": [
+       [
+        42.0,
+        39.5
+       ],
+       [
+        38.5,
+        40.2
+       ],
+       [
+        35.89,
+        40.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Tigranocerta",
+      "kind": "battle",
+      "lon": 41.0,
+      "lat": 38.14,
+      "year": -69,
+      "winner": 0,
+      "text": "A small Roman army routed Tigranes' host, c. site."
+     },
+     {
+      "name": "Battle of Zela",
+      "kind": "battle",
+      "lon": 35.89,
+      "lat": 40.3,
+      "year": -67,
+      "winner": 1,
+      "text": "Mithridates destroyed the army of Lucullus' legate Triarius."
+     }
+    ]
+   },
+   {
+    "year": -66,
+    "label": "66 to 65 BC",
+    "title": "Pompey takes command",
+    "text": "Fresh from clearing the Mediterranean of pirates, Pompey received the eastern command. He caught Mithridates at night near the Lycus river and destroyed his army. Tigranes surrendered at Artaxata and became a Roman client, while Mithridates escaped through Colchis and around the Black Sea to Crimea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "minor states",
+       "Bosporan Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Pompey",
+      "label": "Pompey's army",
+      "path": [
+       [
+        32.86,
+        39.93
+       ],
+       [
+        35.8,
+        40.1
+       ],
+       [
+        37.83,
+        40.3
+       ],
+       [
+        40.5,
+        39.9
+       ],
+       [
+        44.55,
+        39.88
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mithridates VI",
+      "label": "Flight to Crimea",
+      "path": [
+       [
+        37.83,
+        40.3
+       ],
+       [
+        40.0,
+        41.1
+       ],
+       [
+        41.65,
+        41.65
+       ],
+       [
+        41.0,
+        43.0
+       ],
+       [
+        38.5,
+        44.6
+       ],
+       [
+        36.47,
+        45.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Lycus",
+      "kind": "battle",
+      "lon": 37.83,
+      "lat": 40.3,
+      "year": -66,
+      "winner": 0,
+      "text": "Pompey's night attack destroyed Mithridates' last field army."
+     },
+     {
+      "name": "Tigranes submits",
+      "kind": "treaty",
+      "lon": 44.55,
+      "lat": 39.88,
+      "year": -66,
+      "winner": 0,
+      "text": "Armenia became a Roman client kingdom."
+     }
+    ]
+   },
+   {
+    "year": -63,
+    "label": "64 to 63 BC",
+    "title": "Death of Mithridates",
+    "text": "Mithridates planned to invade Italy from the north, but his son Pharnaces led a revolt, and the old king took his own life at Panticapaeum in 63 BC. Pompey annexed Pontus with Bithynia, made Syria a province, took Jerusalem, and ringed the new provinces with client kings.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic",
+       "minor states",
+       "Bosporan Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Pompey",
+      "label": "Pompey's settlement of the East",
+      "path": [
+       [
+        36.33,
+        41.28
+       ],
+       [
+        35.5,
+        38.8
+       ],
+       [
+        36.16,
+        36.2
+       ],
+       [
+        36.3,
+        33.5
+       ],
+       [
+        35.235,
+        31.778
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Death of Mithridates",
+      "kind": "event",
+      "lon": 36.47,
+      "lat": 45.35,
+      "year": -63,
+      "winner": 0,
+      "text": "Abandoned by his army and his son, Mithridates took his own life."
+     },
+     {
+      "name": "Pompey takes Jerusalem",
+      "kind": "siege",
+      "lon": 35.235,
+      "lat": 31.778,
+      "year": -63,
+      "winner": 0,
+      "text": "Judea became a Roman client state."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "gallic-wars",
+  "name": "Caesar's Gallic Wars",
+  "start": -58,
+  "end": -50,
+  "kind": "war",
+  "summary": "Julius Caesar, governor of Rome's provinces on both sides of the Alps, used a migration of the Helvetii as a pretext to conquer all of independent Gaul. In eight years of campaigns he beat the Gallic and Belgic tribes one by one, crossed the Rhine and the Channel, and crushed the great revolt of Vercingetorix at Alesia in 52 BC. The conquest made Gaul Roman and gave Caesar the army and fortune that carried him to power in Rome.",
+  "sides": [
+   {
+    "name": "Rome",
+    "color": "#b5452f",
+    "leaders": [
+     "Julius Caesar",
+     "Labienus",
+     "Publius Crassus",
+     "Decimus Brutus"
+    ]
+   },
+   {
+    "name": "Gauls and their allies",
+    "color": "#3f8a5a",
+    "leaders": [
+     "Vercingetorix",
+     "Ariovistus",
+     "Ambiorix",
+     "Cassivellaunus"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 2.5,
+    "lat": 47.5,
+    "r": 6.0
+   },
+   {
+    "lon": 0.5,
+    "lat": 51.5,
+    "r": 1.5
+   }
+  ],
+  "steps": [
+   {
+    "year": -58,
+    "label": "58 BC",
+    "title": "Helvetii and Ariovistus",
+    "text": "The Helvetii set out from the Swiss plateau to settle in western Gaul. Caesar followed them across the Saone and destroyed them near Bibracte, sending the survivors home. That same summer he marched north against the Germanic king Ariovistus, who had settled in Gaul, and drove him back over the Rhine.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Divico",
+      "label": "Helvetian migration",
+      "path": [
+       [
+        7.4,
+        46.95
+       ],
+       [
+        6.0,
+        46.15
+       ],
+       [
+        5.4,
+        46.1
+       ],
+       [
+        4.85,
+        46.3
+       ],
+       [
+        4.04,
+        46.92
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "Caesar's legions",
+      "path": [
+       [
+        6.14,
+        46.2
+       ],
+       [
+        5.5,
+        45.95
+       ],
+       [
+        4.85,
+        46.3
+       ],
+       [
+        4.04,
+        46.92
+       ],
+       [
+        6.02,
+        47.24
+       ],
+       [
+        7.3,
+        47.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ariovistus",
+      "label": "Suebi",
+      "path": [
+       [
+        8.2,
+        48.8
+       ],
+       [
+        7.6,
+        48.3
+       ],
+       [
+        7.3,
+        47.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Bibracte",
+      "kind": "battle",
+      "lon": 4.04,
+      "lat": 46.92,
+      "year": -58,
+      "winner": 0,
+      "text": "Caesar defeated the migrating Helvetii and sent them home."
+     },
+     {
+      "name": "Battle against Ariovistus",
+      "kind": "battle",
+      "lon": 7.3,
+      "lat": 47.8,
+      "year": -58,
+      "winner": 0,
+      "text": "The Suebi were routed in Alsace and fled across the Rhine."
+     }
+    ]
+   },
+   {
+    "year": -57,
+    "label": "57 BC",
+    "title": "The Belgae",
+    "text": "Alarmed by the Roman army wintering in their lands, the Belgic tribes of the north gathered a great coalition. Caesar held the line of the Aisne until it broke up, then was nearly overwhelmed by a surprise attack of the Nervii on the Sambre before rallying his legions to win. Publius Crassus meanwhile received the submission of the tribes of Armorica.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        3.2,
+        49.35
+       ],
+       [
+        3.9,
+        49.4
+       ],
+       [
+        4.6,
+        49.45
+       ]
+      ],
+      "label": "Aisne line, 57 BC"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "March to the Aisne and the Sambre",
+      "path": [
+       [
+        6.02,
+        47.24
+       ],
+       [
+        4.6,
+        48.5
+       ],
+       [
+        3.9,
+        49.4
+       ],
+       [
+        3.85,
+        50.22
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Boduognatus",
+      "label": "Nervii",
+      "path": [
+       [
+        3.6,
+        50.6
+       ],
+       [
+        3.85,
+        50.22
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Publius Crassus",
+      "label": "To Armorica",
+      "path": [
+       [
+        2.4,
+        47.9
+       ],
+       [
+        0.0,
+        47.5
+       ],
+       [
+        -2.75,
+        47.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Axona",
+      "kind": "battle",
+      "lon": 3.9,
+      "lat": 49.4,
+      "year": -57,
+      "winner": 0,
+      "text": "The Belgic coalition failed to cross the Aisne and dispersed."
+     },
+     {
+      "name": "Battle of the Sabis",
+      "kind": "battle",
+      "lon": 3.85,
+      "lat": 50.22,
+      "year": -57,
+      "winner": 0,
+      "text": "Caesar survived the Nervii's ambush and annihilated them."
+     }
+    ]
+   },
+   {
+    "year": -55,
+    "label": "56 to 54 BC",
+    "title": "To the Ocean, the Rhine and Britain",
+    "text": "Caesar's fleet under Decimus Brutus destroyed the sailing ships of the Veneti off Brittany. In 55 BC Caesar bridged the Rhine in ten days to overawe the Germans, and that summer and the next he crossed to Britain, where he beat the war leader Cassivellaunus north of the Thames before returning to Gaul.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Celts"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Decimus Brutus",
+      "label": "Roman fleet",
+      "path": [
+       [
+        -2.2,
+        47.25
+       ],
+       [
+        -2.6,
+        47.4
+       ],
+       [
+        -2.95,
+        47.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "Across the Rhine",
+      "path": [
+       [
+        5.5,
+        50.6
+       ],
+       [
+        7.45,
+        50.43
+       ],
+       [
+        7.9,
+        50.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "Crossing to Britain",
+      "path": [
+       [
+        1.6,
+        50.73
+       ],
+       [
+        1.4,
+        51.22
+       ],
+       [
+        0.5,
+        51.3
+       ],
+       [
+        -0.29,
+        51.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Morbihan",
+      "kind": "battle",
+      "lon": -2.95,
+      "lat": 47.5,
+      "year": -56,
+      "winner": 0,
+      "text": "Roman galleys cut the Veneti ships' rigging and destroyed their fleet."
+     },
+     {
+      "name": "Bridge over the Rhine",
+      "kind": "event",
+      "lon": 7.45,
+      "lat": 50.43,
+      "year": -55,
+      "winner": 0,
+      "text": "Caesar's engineers bridged the river to show Rome's reach."
+     },
+     {
+      "name": "Cassivellaunus submits",
+      "kind": "event",
+      "lon": -0.29,
+      "lat": 51.81,
+      "year": -54,
+      "winner": 0,
+      "text": "The British war leader yielded hostages and tribute."
+     }
+    ]
+   },
+   {
+    "year": -54,
+    "label": "54 to 53 BC",
+    "title": "Ambiorix",
+    "text": "In the winter of 54 BC Ambiorix of the Eburones lured fifteen Roman cohorts out of their camp at Atuatuca and massacred them. The Nervii then besieged Quintus Cicero's camp, until Caesar marched to his rescue. In 53 BC Caesar ravaged the land of the Eburones, but Ambiorix was never caught.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ambiorix",
+      "label": "Eburones",
+      "path": [
+       [
+        5.9,
+        50.6
+       ],
+       [
+        5.46,
+        50.78
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "Relief of Cicero",
+      "path": [
+       [
+        2.3,
+        49.9
+       ],
+       [
+        3.2,
+        50.2
+       ],
+       [
+        3.9,
+        50.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "Ravaging of the Eburones",
+      "path": [
+       [
+        3.9,
+        50.45
+       ],
+       [
+        5.0,
+        50.6
+       ],
+       [
+        5.6,
+        50.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Ambush at Atuatuca",
+      "kind": "battle",
+      "lon": 5.46,
+      "lat": 50.78,
+      "year": -54,
+      "winner": 1,
+      "text": "Sabinus and Cotta and their men were wiped out on the march, c. site."
+     },
+     {
+      "name": "Relief of Cicero's camp",
+      "kind": "battle",
+      "lon": 3.9,
+      "lat": 50.45,
+      "year": -54,
+      "winner": 0,
+      "text": "Caesar broke the siege with a small relief army, c. site."
+     }
+    ]
+   },
+   {
+    "year": -52,
+    "label": "52 BC",
+    "title": "Vercingetorix and Alesia",
+    "text": "Vercingetorix of the Arverni united most of Gaul in revolt and fought a scorched earth war. Caesar stormed Avaricum but was thrown back at Gergovia. When Vercingetorix shut himself up in Alesia, Caesar ringed it with two lines of walls, one facing in and one out, beat off a huge Gallic relief army, and forced Vercingetorix to surrender.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        4.43,
+        47.56
+       ],
+       [
+        4.5,
+        47.59
+       ],
+       [
+        4.58,
+        47.56
+       ],
+       [
+        4.58,
+        47.52
+       ],
+       [
+        4.5,
+        47.49
+       ],
+       [
+        4.43,
+        47.52
+       ]
+      ],
+      "label": "Caesar's siege lines at Alesia"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "Caesar's campaign of 52 BC",
+      "path": [
+       [
+        4.87,
+        45.52
+       ],
+       [
+        3.28,
+        48.2
+       ],
+       [
+        2.4,
+        47.08
+       ],
+       [
+        3.12,
+        45.71
+       ],
+       [
+        4.1,
+        46.9
+       ],
+       [
+        4.5,
+        47.54
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Vercingetorix",
+      "label": "Gallic army",
+      "path": [
+       [
+        3.12,
+        45.71
+       ],
+       [
+        2.6,
+        46.9
+       ],
+       [
+        3.12,
+        45.71
+       ],
+       [
+        4.0,
+        46.8
+       ],
+       [
+        4.5,
+        47.54
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Labienus",
+      "label": "Northern campaign",
+      "path": [
+       [
+        3.28,
+        48.2
+       ],
+       [
+        2.35,
+        48.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Avaricum",
+      "kind": "siege",
+      "lon": 2.4,
+      "lat": 47.08,
+      "year": -52,
+      "winner": 0,
+      "text": "Caesar stormed the town and killed almost all its people."
+     },
+     {
+      "name": "Battle of Gergovia",
+      "kind": "battle",
+      "lon": 3.12,
+      "lat": 45.71,
+      "year": -52,
+      "winner": 1,
+      "text": "Caesar's only major defeat in Gaul."
+     },
+     {
+      "name": "Siege of Alesia",
+      "kind": "siege",
+      "lon": 4.5,
+      "lat": 47.54,
+      "year": -52,
+      "winner": 0,
+      "text": "Vercingetorix surrendered after the relief army failed."
+     }
+    ]
+   },
+   {
+    "year": -51,
+    "label": "51 to 50 BC",
+    "title": "Uxellodunum",
+    "text": "Scattered resistance went on after Alesia. Caesar's last great siege was at Uxellodunum, where he cut off the spring that watered the town and cut off the hands of its captured defenders as a warning. By 50 BC Gaul was pacified, and the next year Caesar crossed the Rubicon with his veteran legions.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Julius Caesar",
+      "label": "March to the southwest",
+      "path": [
+       [
+        4.5,
+        47.54
+       ],
+       [
+        3.0,
+        46.4
+       ],
+       [
+        2.0,
+        45.5
+       ],
+       [
+        1.66,
+        44.96
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lucterius and Drappes",
+      "label": "Last rebels",
+      "path": [
+       [
+        2.6,
+        45.2
+       ],
+       [
+        1.66,
+        44.96
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Uxellodunum",
+      "kind": "siege",
+      "lon": 1.66,
+      "lat": 44.96,
+      "year": -51,
+      "winner": 0,
+      "text": "The last major Gallic stronghold fell when its water was cut off."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "roman-conquest-of-britain",
+  "name": "Roman conquest of Britain",
+  "start": 43,
+  "end": 84,
+  "kind": "war",
+  "summary": "In AD 43 the emperor Claudius sent four legions to conquer Britain. Over forty years Rome overran the southern tribes, hunted down Caratacus, survived the revolt of Boudica, which burned three Roman towns, and pushed into Wales, the north and Scotland. Agricola's victory at Mons Graupius in 83 marked the high point, but Rome never held the far north, which Hadrian later walled off.",
+  "sides": [
+   {
+    "name": "Rome",
+    "color": "#b5452f",
+    "leaders": [
+     "Claudius",
+     "Aulus Plautius",
+     "Vespasian",
+     "Suetonius Paulinus",
+     "Agricola"
+    ]
+   },
+   {
+    "name": "British tribes",
+    "color": "#3f8a5a",
+    "leaders": [
+     "Caratacus",
+     "Boudica",
+     "Venutius",
+     "Calgacus"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -2.0,
+    "lat": 53.0,
+    "r": 3.5
+   },
+   {
+    "lon": -3.2,
+    "lat": 56.6,
+    "r": 2.0
+   }
+  ],
+  "steps": [
+   {
+    "year": 43,
+    "label": "43 to 47",
+    "title": "The Claudian invasion",
+    "text": "Aulus Plautius landed at Richborough with four legions, beat the British under Caratacus and Togodumnus in a two day battle on the Medway and forced the Thames. The emperor Claudius came in person with elephants to receive the surrender of Camulodunum, while the future emperor Vespasian took the hill forts of the southwest.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Dumonii"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        0.42,
+        51.15
+       ],
+       [
+        0.48,
+        51.33
+       ],
+       [
+        0.55,
+        51.45
+       ]
+      ],
+      "label": "British line on the Medway"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Aulus Plautius",
+      "label": "Invasion army",
+      "path": [
+       [
+        1.6,
+        50.73
+       ],
+       [
+        1.33,
+        51.29
+       ],
+       [
+        0.48,
+        51.35
+       ],
+       [
+        -0.1,
+        51.5
+       ],
+       [
+        0.9,
+        51.89
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Vespasian",
+      "label": "Legio II Augusta",
+      "path": [
+       [
+        -0.78,
+        50.84
+       ],
+       [
+        -1.8,
+        50.75
+       ],
+       [
+        -2.47,
+        50.69
+       ],
+       [
+        -3.53,
+        50.72
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Caratacus",
+      "label": "Retreat to the west",
+      "path": [
+       [
+        0.9,
+        51.89
+       ],
+       [
+        -1.0,
+        51.8
+       ],
+       [
+        -3.0,
+        51.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Medway",
+      "kind": "battle",
+      "lon": 0.48,
+      "lat": 51.35,
+      "year": 43,
+      "winner": 0,
+      "text": "The British were driven from the river after two days of fighting."
+     },
+     {
+      "name": "Surrender of Camulodunum",
+      "kind": "event",
+      "lon": 0.9,
+      "lat": 51.89,
+      "year": 43,
+      "winner": 0,
+      "text": "Claudius accepted the submission of eleven kings."
+     },
+     {
+      "name": "Storming of Maiden Castle",
+      "kind": "siege",
+      "lon": -2.47,
+      "lat": 50.69,
+      "year": 44,
+      "winner": 0,
+      "text": "Vespasian's legion took the great hill fort, c. 44."
+     }
+    ]
+   },
+   {
+    "year": 50,
+    "label": "47 to 51",
+    "title": "Caratacus",
+    "text": "The governor Ostorius Scapula held a frontier along the Fosse Way and turned on the tribes of Wales, where Caratacus led the Silures and Ordovices. Caratacus was defeated in a hill battle in about 50 and fled to the Brigantes, whose queen Cartimandua handed him over in chains. Claudius spared him in Rome.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire",
+       "Dumonii"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -3.53,
+        50.72
+       ],
+       [
+        -2.36,
+        51.38
+       ],
+       [
+        -1.97,
+        51.72
+       ],
+       [
+        -1.13,
+        52.63
+       ],
+       [
+        -0.54,
+        53.23
+       ]
+      ],
+      "label": "Fosse Way frontier, c. 47"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ostorius Scapula",
+      "label": "Into Wales",
+      "path": [
+       [
+        -1.97,
+        51.72
+       ],
+       [
+        -2.72,
+        52.08
+       ],
+       [
+        -3.1,
+        52.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Caratacus",
+      "label": "Silures and Ordovices",
+      "path": [
+       [
+        -3.4,
+        51.7
+       ],
+       [
+        -3.6,
+        52.3
+       ],
+       [
+        -3.1,
+        52.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Caratacus",
+      "label": "Flight to the Brigantes",
+      "path": [
+       [
+        -3.1,
+        52.5
+       ],
+       [
+        -2.3,
+        53.5
+       ],
+       [
+        -1.71,
+        54.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Defeat of Caratacus",
+      "kind": "battle",
+      "lon": -3.1,
+      "lat": 52.5,
+      "year": 50,
+      "winner": 0,
+      "text": "Roman legions stormed his hill position on the Welsh border, c. site."
+     },
+     {
+      "name": "Cartimandua hands over Caratacus",
+      "kind": "event",
+      "lon": -1.71,
+      "lat": 54.5,
+      "year": 51,
+      "winner": 0,
+      "text": "The Brigantian queen surrendered the fugitive to Rome."
+     }
+    ]
+   },
+   {
+    "year": 60,
+    "label": "60 to 61",
+    "title": "Boudica's revolt",
+    "text": "While the governor Suetonius Paulinus attacked the druid stronghold of Anglesey, Boudica, queen of the Iceni, rose after Roman officials flogged her and seized her kingdom. Her army burned Camulodunum, Londinium and Verulamium and cut up the Ninth Legion. Paulinus marched back and, though heavily outnumbered, destroyed her army somewhere along Watling Street.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire",
+       "Dumonii"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Boudica",
+      "label": "Iceni and Trinovantes",
+      "path": [
+       [
+        1.29,
+        52.58
+       ],
+       [
+        0.9,
+        51.89
+       ],
+       [
+        -0.09,
+        51.51
+       ],
+       [
+        -0.36,
+        51.75
+       ],
+       [
+        -1.52,
+        52.57
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Suetonius Paulinus",
+      "label": "Back from Anglesey",
+      "path": [
+       [
+        -4.2,
+        53.2
+       ],
+       [
+        -2.89,
+        53.19
+       ],
+       [
+        -1.5,
+        52.6
+       ],
+       [
+        -0.09,
+        51.51
+       ],
+       [
+        -0.9,
+        52.1
+       ],
+       [
+        -1.52,
+        52.57
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Petillius Cerialis",
+      "label": "Ninth Legion",
+      "path": [
+       [
+        -0.54,
+        53.23
+       ],
+       [
+        0.2,
+        52.5
+       ],
+       [
+        0.6,
+        52.1
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Attack on Anglesey",
+      "kind": "battle",
+      "lon": -4.2,
+      "lat": 53.2,
+      "year": 60,
+      "winner": 0,
+      "text": "Paulinus crossed the Menai Strait and destroyed the druids' sanctuary."
+     },
+     {
+      "name": "Sack of Londinium",
+      "kind": "event",
+      "lon": -0.09,
+      "lat": 51.51,
+      "year": 60,
+      "winner": 1,
+      "text": "Boudica's army burned the town and killed its inhabitants."
+     },
+     {
+      "name": "Battle of Watling Street",
+      "kind": "battle",
+      "lon": -1.52,
+      "lat": 52.57,
+      "year": 61,
+      "winner": 0,
+      "text": "Paulinus' two legions crushed Boudica's host, c. site."
+     }
+    ]
+   },
+   {
+    "year": 71,
+    "label": "71 to 78",
+    "title": "Brigantes and Wales",
+    "text": "When the Brigantian king Venutius overthrew Cartimandua, Vespasian's governors went on the offensive. Petillius Cerialis conquered the Brigantes of the north, Frontinus subdued the Silures of south Wales, and in 77 to 78 Agricola crushed the Ordovices and took Anglesey.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire",
+       "Dumonii"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Petillius Cerialis",
+      "label": "Into Brigantia",
+      "path": [
+       [
+        -0.54,
+        53.23
+       ],
+       [
+        -1.08,
+        53.96
+       ],
+       [
+        -1.71,
+        54.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Frontinus",
+      "label": "Against the Silures",
+      "path": [
+       [
+        -2.6,
+        51.75
+       ],
+       [
+        -2.96,
+        51.61
+       ],
+       [
+        -3.6,
+        51.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Agricola",
+      "label": "Ordovices and Anglesey",
+      "path": [
+       [
+        -2.89,
+        53.19
+       ],
+       [
+        -3.8,
+        52.9
+       ],
+       [
+        -4.2,
+        53.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Stanwick",
+      "kind": "siege",
+      "lon": -1.71,
+      "lat": 54.5,
+      "year": 72,
+      "winner": 0,
+      "text": "The great Brigantian stronghold of Venutius fell, c. 72."
+     }
+    ]
+   },
+   {
+    "year": 83,
+    "label": "79 to 84",
+    "title": "Mons Graupius",
+    "text": "Agricola advanced into Scotland, built a line of forts between the Forth and the Clyde and sent his fleet around the north of Britain. In 83 he brought the Caledonians under Calgacus to battle at Mons Graupius and routed them. He was recalled soon after, and Rome pulled back toward the Tyne and Solway, where Hadrian built his wall.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire",
+       "Dumonii"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -4.6,
+        55.9
+       ],
+       [
+        -4.0,
+        56.0
+       ],
+       [
+        -3.4,
+        56.02
+       ]
+      ],
+      "label": "Forth to Clyde forts, c. 81"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Agricola",
+      "label": "Advance into Caledonia",
+      "path": [
+       [
+        -1.08,
+        53.96
+       ],
+       [
+        -2.02,
+        54.97
+       ],
+       [
+        -2.7,
+        55.6
+       ],
+       [
+        -3.4,
+        56.4
+       ],
+       [
+        -2.52,
+        57.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Roman fleet",
+      "label": "Voyage around Britain",
+      "path": [
+       [
+        -3.0,
+        56.1
+       ],
+       [
+        -1.9,
+        57.5
+       ],
+       [
+        -2.9,
+        58.9
+       ],
+       [
+        -5.0,
+        58.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Calgacus",
+      "label": "Caledonian army",
+      "path": [
+       [
+        -3.8,
+        57.4
+       ],
+       [
+        -3.0,
+        57.3
+       ],
+       [
+        -2.52,
+        57.29
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Mons Graupius",
+      "kind": "battle",
+      "lon": -2.52,
+      "lat": 57.29,
+      "year": 83,
+      "winner": 0,
+      "text": "Agricola's auxiliaries routed the Caledonians in the far north, c. site."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "jewish-roman-wars",
+  "name": "Jewish-Roman Wars",
+  "start": 66,
+  "end": 136,
+  "kind": "conflict",
+  "summary": "Three great Jewish revolts against Roman rule shook the eastern empire. The First Revolt ended with the destruction of Jerusalem and the Second Temple in 70 and the fall of Masada, a diaspora uprising in Egypt, Cyrene, Cyprus and Mesopotamia was crushed in 115 to 117, and Bar Kokhba's revolt of 132 to 135 ended with Judea devastated and Jews barred from Jerusalem. The wars ended the Temple cult and shifted Jewish life to rabbinic Judaism and the diaspora.",
+  "sides": [
+   {
+    "name": "Rome",
+    "color": "#b5452f",
+    "leaders": [
+     "Vespasian",
+     "Titus",
+     "Lusius Quietus",
+     "Marcius Turbo",
+     "Julius Severus"
+    ]
+   },
+   {
+    "name": "Jewish rebels",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Simon bar Giora",
+     "John of Gischala",
+     "Eleazar ben Yair",
+     "Lukuas",
+     "Simon bar Kokhba"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 35.2,
+    "lat": 31.9,
+    "r": 1.2
+   },
+   {
+    "lon": 28.0,
+    "lat": 33.5,
+    "r": 7.0
+   },
+   {
+    "lon": 40.0,
+    "lat": 37.0,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 66,
+    "label": "66",
+    "title": "The revolt breaks out",
+    "text": "After years of tension, the procurator Florus seized money from the Temple treasury and Jerusalem rose. Rebels took the city and the fortress of Masada and stopped the sacrifices for the emperor. The governor of Syria, Cestius Gallus, marched on Jerusalem with a legion, then withdrew and was ambushed in the pass of Beth Horon.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Judea"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cestius Gallus",
+      "label": "Advance on Jerusalem",
+      "path": [
+       [
+        35.07,
+        32.92
+       ],
+       [
+        34.89,
+        32.5
+       ],
+       [
+        34.95,
+        31.95
+       ],
+       [
+        35.235,
+        31.778
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Cestius Gallus",
+      "label": "Retreat",
+      "path": [
+       [
+        35.235,
+        31.778
+       ],
+       [
+        35.13,
+        31.88
+       ],
+       [
+        34.89,
+        31.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Beth Horon",
+      "kind": "battle",
+      "lon": 35.13,
+      "lat": 31.88,
+      "year": 66,
+      "winner": 1,
+      "text": "The retreating Roman column lost its baggage and thousands of men."
+     }
+    ]
+   },
+   {
+    "year": 67,
+    "label": "67 to 69",
+    "title": "Vespasian takes Galilee",
+    "text": "Nero sent Vespasian with his son Titus and three legions. They advanced from Ptolemais and took Galilee town by town, including Jotapata, where the rebel commander Josephus surrendered, and Gamla. By 68 the rebels held little more than Jerusalem, Masada and a few desert forts, while inside Jerusalem the factions of John of Gischala and Simon bar Giora fought each other. In 69 Vespasian left to become emperor.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Judea"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.95,
+        32.05
+       ],
+       [
+        35.3,
+        32.1
+       ],
+       [
+        35.45,
+        31.85
+       ],
+       [
+        35.42,
+        31.45
+       ]
+      ],
+      "label": "Edge of rebel Judea, 68"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Vespasian",
+      "label": "Conquest of Galilee",
+      "path": [
+       [
+        35.07,
+        32.92
+       ],
+       [
+        35.28,
+        32.83
+       ],
+       [
+        35.53,
+        32.79
+       ],
+       [
+        35.74,
+        32.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "John of Gischala",
+      "label": "Flight to Jerusalem",
+      "path": [
+       [
+        35.45,
+        33.02
+       ],
+       [
+        35.35,
+        32.4
+       ],
+       [
+        35.235,
+        31.778
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Jotapata",
+      "kind": "siege",
+      "lon": 35.28,
+      "lat": 32.83,
+      "year": 67,
+      "winner": 0,
+      "text": "After 47 days the town fell and Josephus went over to Rome."
+     },
+     {
+      "name": "Siege of Gamla",
+      "kind": "siege",
+      "lon": 35.74,
+      "lat": 32.9,
+      "year": 67,
+      "winner": 0,
+      "text": "The hilltop town on the Golan was stormed and its people killed."
+     }
+    ]
+   },
+   {
+    "year": 70,
+    "label": "70",
+    "title": "Siege of Jerusalem",
+    "text": "Titus marched on Jerusalem with four legions in the spring of 70 and broke through its walls one by one. He sealed the city with a siege wall and starved it. In August the Temple was burned and destroyed, and by September the whole city had fallen. Its treasures were carried in triumph through Rome.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire",
+       "Judea"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.218,
+        31.79
+       ],
+       [
+        35.235,
+        31.797
+       ],
+       [
+        35.25,
+        31.785
+       ],
+       [
+        35.245,
+        31.768
+       ],
+       [
+        35.228,
+        31.765
+       ],
+       [
+        35.218,
+        31.775
+       ]
+      ],
+      "label": "Titus's siege wall"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Titus",
+      "label": "Four legions",
+      "path": [
+       [
+        34.89,
+        32.5
+       ],
+       [
+        35.0,
+        32.0
+       ],
+       [
+        35.24,
+        31.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Jerusalem",
+      "kind": "siege",
+      "lon": 35.235,
+      "lat": 31.778,
+      "year": 70,
+      "winner": 0,
+      "text": "Five months of siege ended with the city in ruins."
+     },
+     {
+      "name": "Destruction of the Second Temple",
+      "kind": "event",
+      "lon": 35.2354,
+      "lat": 31.7781,
+      "year": 70,
+      "winner": 0,
+      "text": "The Temple burned, ending the sacrificial cult of Judaism."
+     }
+    ]
+   },
+   {
+    "year": 73,
+    "label": "71 to 74",
+    "title": "Masada",
+    "text": "Roman forces reduced the last rebel forts, Herodium and Machaerus. The governor Flavius Silva then besieged Masada, on its desert rock above the Dead Sea, and built a great ramp up to its walls. According to Josephus, the defenders under Eleazar ben Yair killed themselves rather than be taken.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire",
+       "Judea"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Flavius Silva",
+      "label": "Legio X Fretensis",
+      "path": [
+       [
+        35.235,
+        31.778
+       ],
+       [
+        35.25,
+        31.6
+       ],
+       [
+        35.354,
+        31.316
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Masada",
+      "kind": "siege",
+      "lon": 35.354,
+      "lat": 31.316,
+      "year": 73,
+      "winner": 0,
+      "text": "The last rebel fortress fell in 73 or 74."
+     }
+    ]
+   },
+   {
+    "year": 116,
+    "label": "115 to 117",
+    "title": "The diaspora revolt",
+    "text": "While Trajan campaigned against Parthia, Jewish communities rose in Cyrenaica under Lukuas, in Egypt, on Cyprus and in newly conquered Mesopotamia. The fighting was savage on both sides. Marcius Turbo crushed the revolt in Egypt and Cyrene, and Lusius Quietus put it down in Mesopotamia and then governed Judea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lukuas",
+      "label": "Rebels of Cyrene",
+      "path": [
+       [
+        21.86,
+        32.82
+       ],
+       [
+        25.0,
+        31.6
+       ],
+       [
+        29.92,
+        31.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Marcius Turbo",
+      "label": "Fleet and army to Egypt",
+      "path": [
+       [
+        15.6,
+        38.0
+       ],
+       [
+        22.0,
+        34.5
+       ],
+       [
+        29.92,
+        31.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lusius Quietus",
+      "label": "Reconquest of Mesopotamia",
+      "path": [
+       [
+        38.79,
+        37.16
+       ],
+       [
+        41.22,
+        37.07
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Revolt in Cyrene",
+      "kind": "event",
+      "lon": 21.86,
+      "lat": 32.82,
+      "year": 115,
+      "winner": 1,
+      "text": "Jewish rebels destroyed temples and public buildings."
+     },
+     {
+      "name": "Revolt on Cyprus",
+      "kind": "event",
+      "lon": 33.9,
+      "lat": 35.18,
+      "year": 116,
+      "winner": 1,
+      "text": "Rebels under Artemion devastated Salamis."
+     },
+     {
+      "name": "Quietus retakes Edessa and Nisibis",
+      "kind": "battle",
+      "lon": 38.79,
+      "lat": 37.16,
+      "year": 116,
+      "winner": 0,
+      "text": "Mesopotamia was brought back under Roman control."
+     }
+    ]
+   },
+   {
+    "year": 132,
+    "label": "132 to 133",
+    "title": "Bar Kokhba",
+    "text": "Hadrian's plan to rebuild Jerusalem as a Roman colony, Aelia Capitolina, sparked a new revolt led by Simon bar Kosiba, hailed as Bar Kokhba, son of the star. His well prepared rebels, fighting from hidden tunnels and hill villages, drove the Romans out of much of Judea and struck their own coins counting the years of Israel's redemption.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.95,
+        31.95
+       ],
+       [
+        35.3,
+        32.0
+       ],
+       [
+        35.45,
+        31.7
+       ],
+       [
+        35.35,
+        31.35
+       ],
+       [
+        34.95,
+        31.4
+       ]
+      ],
+      "label": "Rebel-held Judea, 133"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Simon bar Kokhba",
+      "label": "Rebel army",
+      "path": [
+       [
+        35.24,
+        31.67
+       ],
+       [
+        35.135,
+        31.731
+       ],
+       [
+        35.0,
+        31.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tineius Rufus",
+      "label": "Roman garrison forces",
+      "path": [
+       [
+        34.89,
+        32.5
+       ],
+       [
+        34.95,
+        32.1
+       ],
+       [
+        35.0,
+        31.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Revolt of Bar Kokhba",
+      "kind": "war",
+      "lon": 35.24,
+      "lat": 31.67,
+      "year": 132,
+      "winner": 1,
+      "text": "The rebels set up an independent state in the Judean hills."
+     }
+    ]
+   },
+   {
+    "year": 135,
+    "label": "134 to 136",
+    "title": "Betar",
+    "text": "Hadrian brought his best general, Julius Severus, from Britain with many legions. Severus avoided pitched battle and took the rebel strongholds one by one, starving them out. Betar fell in 135 and Bar Kokhba was killed. Judea was devastated, renamed Syria Palaestina, and Jews were barred from Jerusalem.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Roman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Julius Severus",
+      "label": "Roman legions",
+      "path": [
+       [
+        34.89,
+        32.5
+       ],
+       [
+        35.0,
+        32.0
+       ],
+       [
+        35.05,
+        31.8
+       ],
+       [
+        35.135,
+        31.731
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Betar",
+      "kind": "siege",
+      "lon": 35.135,
+      "lat": 31.731,
+      "year": 135,
+      "winner": 0,
+      "text": "Bar Kokhba's last fortress fell and he was killed."
+     },
+     {
+      "name": "Syria Palaestina",
+      "kind": "event",
+      "lon": 35.235,
+      "lat": 31.778,
+      "year": 136,
+      "winner": 0,
+      "text": "Judea lost its name and Jerusalem became the Roman colony Aelia Capitolina."
+     }
+    ]
+   }
+  ]
+ }
+]

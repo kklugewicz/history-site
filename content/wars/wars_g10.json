@@ -1,0 +1,7447 @@
+[
+ {
+  "id": "taiping-rebellion",
+  "name": "Taiping Rebellion",
+  "start": 1850,
+  "end": 1864,
+  "kind": "war",
+  "summary": "Hong Xiuquan, who believed he was the younger brother of Jesus, led the Taiping Heavenly Kingdom in a revolt against the Qing dynasty that captured Nanjing and much of the Yangtze valley. New regional Qing armies, above all Zeng Guofan's Xiang Army and Li Hongzhang's Huai Army, aided late in the war by Western-officered forces, crushed the rebellion in 1864. With perhaps 20 to 30 million dead it was one of the deadliest wars in history, and it shifted power from the Qing court to regional strongmen.",
+  "sides": [
+   {
+    "name": "Qing dynasty",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Zeng Guofan",
+     "Zeng Guoquan",
+     "Li Hongzhang",
+     "Zuo Zongtang",
+     "Senggelinqin",
+     "Charles Gordon"
+    ]
+   },
+   {
+    "name": "Taiping Heavenly Kingdom",
+    "color": "#c0473a",
+    "leaders": [
+     "Hong Xiuquan",
+     "Yang Xiuqing",
+     "Shi Dakai",
+     "Li Xiucheng",
+     "Chen Yucheng"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 112.0,
+    "lat": 26.5,
+    "r": 5.5
+   },
+   {
+    "lon": 117.5,
+    "lat": 31.0,
+    "r": 4.5
+   },
+   {
+    "lon": 116.0,
+    "lat": 37.0,
+    "r": 3
+   }
+  ],
+  "steps": [
+   {
+    "year": 1851,
+    "label": "Jan 1851",
+    "title": "The Jintian Uprising",
+    "text": "Hong Xiuquan's God Worshipping Society gathered thousands of poor Hakka farmers and miners at Jintian in Guangxi and beat the Qing troops sent against them. In January 1851 Hong proclaimed the Taiping Heavenly Kingdom, and the rebels moved north to the walled town of Yong'an, where Qing armies besieged them.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hong Xiuquan",
+      "label": "March to Yong'an",
+      "path": [
+       [
+        110.1,
+        23.5
+       ],
+       [
+        110.3,
+        23.85
+       ],
+       [
+        110.52,
+        24.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Xiang Rong",
+      "label": "Qing troops close on Yong'an",
+      "path": [
+       [
+        110.29,
+        25.27
+       ],
+       [
+        110.45,
+        24.75
+       ],
+       [
+        110.52,
+        24.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Jintian Uprising",
+      "kind": "event",
+      "lon": 110.1,
+      "lat": 23.5,
+      "year": 1851,
+      "winner": 1,
+      "text": "The rebels beat off Qing forces and proclaimed their Heavenly Kingdom."
+     }
+    ]
+   },
+   {
+    "year": 1852,
+    "label": "1852 to 1853",
+    "title": "March to Nanjing",
+    "text": "Breaking out of Yong'an, the Taiping marched north through Hunan, losing their leaders Feng Yunshan and Xiao Chaogui and failing to take Changsha, but gathering hundreds of thousands of recruits. They seized Wuchang, sailed down the Yangtze and captured Nanjing in March 1853, making it their Heavenly Capital, with Qing armies trailing behind.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Yang Xiuqing",
+      "label": "Taiping advance down the Yangtze",
+      "path": [
+       [
+        110.52,
+        24.2
+       ],
+       [
+        110.29,
+        25.27
+       ],
+       [
+        112.94,
+        28.23
+       ],
+       [
+        114.3,
+        30.55
+       ],
+       [
+        117.05,
+        30.52
+       ],
+       [
+        118.78,
+        32.05
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Xiang Rong",
+      "label": "Qing pursuit to Nanjing",
+      "path": [
+       [
+        110.29,
+        25.3
+       ],
+       [
+        112.9,
+        28.0
+       ],
+       [
+        114.2,
+        30.4
+       ],
+       [
+        117.0,
+        30.4
+       ],
+       [
+        118.9,
+        32.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Changsha",
+      "kind": "siege",
+      "lon": 112.94,
+      "lat": 28.23,
+      "year": 1852,
+      "winner": 0,
+      "text": "The Qing garrison held the city and the Taiping leader Xiao Chaogui was killed."
+     },
+     {
+      "name": "Capture of Wuchang",
+      "kind": "siege",
+      "lon": 114.3,
+      "lat": 30.55,
+      "year": 1853,
+      "winner": 1,
+      "text": "The Taiping took their first provincial capital and its river boats."
+     },
+     {
+      "name": "Capture of Nanjing",
+      "kind": "siege",
+      "lon": 118.78,
+      "lat": 32.05,
+      "year": 1853,
+      "winner": 1,
+      "text": "Nanjing fell and became the Taiping capital, Tianjing."
+     }
+    ]
+   },
+   {
+    "year": 1853,
+    "label": "1853 to 1855",
+    "title": "Northern and Western Expeditions",
+    "text": "A Taiping army marched north to take Beijing and reached the outskirts of Tianjin, but froze and starved and was destroyed by the Mongol cavalry of Senggelinqin. A Western Expedition fought up the Yangtze against Zeng Guofan's new Hunan militia, the Xiang Army, which won at Xiangtan but had its river fleet smashed at Hukou. Qing camps sat outside Nanjing and Yangzhou without being able to take the capital.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        119.42,
+        32.42
+       ],
+       [
+        119.1,
+        32.25
+       ],
+       [
+        118.95,
+        32.05
+       ],
+       [
+        118.88,
+        31.88
+       ]
+      ],
+      "label": "Qing Jiangnan and Jiangbei camps"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lin Fengxiang and Li Kaifang",
+      "label": "Northern Expedition",
+      "path": [
+       [
+        118.78,
+        32.1
+       ],
+       [
+        115.78,
+        33.85
+       ],
+       [
+        114.35,
+        34.8
+       ],
+       [
+        115.5,
+        36.6
+       ],
+       [
+        116.9,
+        38.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Shi Dakai",
+      "label": "Western Expedition",
+      "path": [
+       [
+        118.78,
+        32.05
+       ],
+       [
+        117.05,
+        30.52
+       ],
+       [
+        116.0,
+        29.7
+       ],
+       [
+        114.3,
+        30.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Zeng Guofan",
+      "label": "Xiang Army down the Xiang River",
+      "path": [
+       [
+        112.94,
+        28.23
+       ],
+       [
+        113.1,
+        29.37
+       ],
+       [
+        114.3,
+        30.55
+       ],
+       [
+        116.1,
+        29.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Senggelinqin",
+      "label": "Qing cavalry from Beijing",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        116.6,
+        38.9
+       ],
+       [
+        116.55,
+        37.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Xiangtan",
+      "kind": "battle",
+      "lon": 112.94,
+      "lat": 27.83,
+      "year": 1854,
+      "winner": 0,
+      "text": "Zeng Guofan's Xiang Army won its first great victory and saved Hunan."
+     },
+     {
+      "name": "Fall of Lianzhen",
+      "kind": "siege",
+      "lon": 116.55,
+      "lat": 37.9,
+      "year": 1855,
+      "winner": 0,
+      "text": "Senggelinqin captured the last Northern Expedition leaders and ended the threat to Beijing."
+     },
+     {
+      "name": "Battle of Hukou",
+      "kind": "battle",
+      "lon": 116.21,
+      "lat": 29.74,
+      "year": 1855,
+      "winner": 1,
+      "text": "Shi Dakai trapped and smashed Zeng Guofan's river fleet at the mouth of Poyang Lake."
+     }
+    ]
+   },
+   {
+    "year": 1856,
+    "label": "1856",
+    "title": "Victory and the Tianjing Incident",
+    "text": "Taiping armies under Shi Dakai and Qin Rigang destroyed the Qing Jiangnan camp besieging Nanjing, and the Heavenly Kingdom reached the height of its power. Weeks later a power struggle in Nanjing, the Tianjing Incident, saw the Eastern King Yang Xiuqing and thousands of his followers killed, and in 1857 Shi Dakai left with his army, never to return.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Shi Dakai",
+      "label": "Relief of Nanjing",
+      "path": [
+       [
+        115.89,
+        28.68
+       ],
+       [
+        117.0,
+        30.5
+       ],
+       [
+        118.3,
+        31.4
+       ],
+       [
+        118.85,
+        32.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Shi Dakai",
+      "label": "Breaks away to the west (1857)",
+      "path": [
+       [
+        118.78,
+        32.05
+       ],
+       [
+        117.05,
+        30.52
+       ],
+       [
+        115.9,
+        28.7
+       ],
+       [
+        111.5,
+        26.4
+       ],
+       [
+        104.0,
+        28.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Jiangnan Great Camp",
+      "kind": "battle",
+      "lon": 118.95,
+      "lat": 32.03,
+      "year": 1856,
+      "winner": 1,
+      "text": "Taiping armies destroyed the Qing siege camp east of Nanjing."
+     },
+     {
+      "name": "Tianjing Incident",
+      "kind": "event",
+      "lon": 118.78,
+      "lat": 32.06,
+      "year": 1856,
+      "winner": null,
+      "text": "Hong Xiuquan's lieutenants slaughtered Yang Xiuqing and his followers, crippling the leadership."
+     }
+    ]
+   },
+   {
+    "year": 1858,
+    "label": "1858 to 1860",
+    "title": "Revival under Li Xiucheng",
+    "text": "New commanders Chen Yucheng and Li Xiucheng restored Taiping fortunes, wiping out a Xiang Army force at Sanhe. In 1860 they broke the rebuilt Qing siege of Nanjing and swept east to take Suzhou, but were turned back at Shanghai by Qing troops, British and French soldiers and Frederick Townsend Ward's foreign-led militia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        115.8,
+        31.6
+       ],
+       [
+        116.5,
+        30.95
+       ],
+       [
+        116.95,
+        30.4
+       ]
+      ],
+      "label": "Xiang Army front in Anhui, 1860"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Li Xiucheng",
+      "label": "Eastern campaign",
+      "path": [
+       [
+        118.78,
+        32.05
+       ],
+       [
+        119.95,
+        31.78
+       ],
+       [
+        120.62,
+        31.3
+       ],
+       [
+        121.25,
+        31.25
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Chen Yucheng",
+      "label": "Strikes the Xiang Army in Anhui",
+      "path": [
+       [
+        118.4,
+        31.7
+       ],
+       [
+        117.7,
+        31.6
+       ],
+       [
+        117.25,
+        31.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Zeng Guofan",
+      "label": "Xiang Army closes on Anqing",
+      "path": [
+       [
+        115.95,
+        29.7
+       ],
+       [
+        116.3,
+        30.2
+       ],
+       [
+        116.9,
+        30.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Sanhe",
+      "kind": "battle",
+      "lon": 117.25,
+      "lat": 31.5,
+      "year": 1858,
+      "winner": 1,
+      "text": "Chen Yucheng and Li Xiucheng annihilated Li Xubin's Xiang Army force."
+     },
+     {
+      "name": "Capture of Suzhou",
+      "kind": "siege",
+      "lon": 120.62,
+      "lat": 31.3,
+      "year": 1860,
+      "winner": 1,
+      "text": "The Taiping captured the rich city of Suzhou after breaking the Jiangnan siege."
+     },
+     {
+      "name": "Defence of Shanghai",
+      "kind": "battle",
+      "lon": 121.47,
+      "lat": 31.23,
+      "year": 1860,
+      "winner": 0,
+      "text": "Qing and Western troops held Shanghai against Li Xiucheng."
+     }
+    ]
+   },
+   {
+    "year": 1861,
+    "label": "1861 to 1863",
+    "title": "Anqing falls, Shanghai holds",
+    "text": "Zeng Guofan's brother Zeng Guoquan starved Anqing into surrender in 1861, opening the way down the Yangtze to Nanjing. Li Hongzhang's Huai Army and the Ever Victorious Army, later led by Charles Gordon, cleared the country around Shanghai and retook Suzhou in late 1863, while Zuo Zongtang's army fought its way into Zhejiang.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        121.1,
+        30.9
+       ],
+       [
+        120.95,
+        31.25
+       ],
+       [
+        121.2,
+        31.6
+       ]
+      ],
+      "label": "Shanghai defence zone"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Zeng Guoquan",
+      "label": "Xiang Army down the Yangtze",
+      "path": [
+       [
+        117.05,
+        30.52
+       ],
+       [
+        118.38,
+        31.33
+       ],
+       [
+        118.78,
+        32.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Li Hongzhang and Charles Gordon",
+      "label": "Huai Army and Ever Victorious Army",
+      "path": [
+       [
+        121.47,
+        31.23
+       ],
+       [
+        120.98,
+        31.38
+       ],
+       [
+        120.62,
+        31.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Zuo Zongtang",
+      "label": "Chu Army into Zhejiang",
+      "path": [
+       [
+        117.9,
+        28.45
+       ],
+       [
+        119.0,
+        29.1
+       ],
+       [
+        120.16,
+        30.25
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Anqing",
+      "kind": "siege",
+      "lon": 117.05,
+      "lat": 30.52,
+      "year": 1861,
+      "winner": 0,
+      "text": "The Xiang Army starved Anqing into surrender, the decisive turning point."
+     },
+     {
+      "name": "Recapture of Suzhou",
+      "kind": "siege",
+      "lon": 120.62,
+      "lat": 31.3,
+      "year": 1863,
+      "winner": 0,
+      "text": "Li Hongzhang and Gordon's forces retook Suzhou, and the surrendered Taiping leaders were executed."
+     }
+    ]
+   },
+   {
+    "year": 1864,
+    "label": "Jun to Jul 1864",
+    "title": "Fall of Nanjing",
+    "text": "With Nanjing encircled and starving, Hong Xiuquan died in June 1864. The Xiang Army blew a breach in the walls in July and massacred much of the population; Li Xiucheng was caught and executed, and the remaining Taiping bands were hunted down over the next few years.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        118.65,
+        32.15
+       ],
+       [
+        118.95,
+        32.12
+       ],
+       [
+        118.97,
+        31.98
+       ],
+       [
+        118.72,
+        31.95
+       ],
+       [
+        118.65,
+        32.05
+       ]
+      ],
+      "label": "Siege lines around Nanjing"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Zeng Guoquan",
+      "label": "Storm of Nanjing",
+      "path": [
+       [
+        118.6,
+        31.85
+       ],
+       [
+        118.75,
+        31.98
+       ],
+       [
+        118.8,
+        32.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Third Battle of Nanjing",
+      "kind": "siege",
+      "lon": 118.8,
+      "lat": 32.06,
+      "year": 1864,
+      "winner": 0,
+      "text": "The Xiang Army stormed the Taiping capital and ended the Heavenly Kingdom."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "indian-rebellion-1857",
+  "name": "Indian Rebellion of 1857",
+  "start": 1857,
+  "end": 1858,
+  "kind": "war",
+  "summary": "In 1857 sepoys of the East India Company's Bengal Army mutinied at Meerut, and the revolt spread across the Ganges plain and central India, joined by dispossessed rulers, landholders and peasants who rallied around the Mughal emperor Bahadur Shah II. Company forces, reinforced from Britain and helped by loyal Sikh, Gurkha and princely troops, retook Delhi, Lucknow and central India by mid 1858, with atrocities and brutal reprisals on both sides. The British Crown then abolished Company rule and governed India directly as the British Raj.",
+  "sides": [
+   {
+    "name": "East India Company and loyal forces",
+    "color": "#c0473a",
+    "leaders": [
+     "Colin Campbell",
+     "Hugh Rose",
+     "Henry Havelock",
+     "John Nicholson",
+     "James Outram"
+    ]
+   },
+   {
+    "name": "Rebel sepoys and allied rulers",
+    "color": "#3f8f5a",
+    "leaders": [
+     "Bahadur Shah II",
+     "Nana Sahib",
+     "Rani Lakshmibai",
+     "Tantia Tope",
+     "Begum Hazrat Mahal"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 79.5,
+    "lat": 26.5,
+    "r": 4.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1857,
+    "label": "May 1857",
+    "title": "Mutiny at Meerut",
+    "text": "Anger at new rifle cartridges said to be greased with cow and pig fat, and at years of annexations, burst out at Meerut on 10 May 1857, when sepoys freed their jailed comrades and killed British officers and civilians. They rode overnight to Delhi, where the garrison joined them and the aged Mughal emperor Bahadur Shah II was proclaimed their leader. Within weeks regiments across the Ganges plain and Awadh had risen.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British East India Company"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Oudh"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "3rd Bengal Light Cavalry",
+      "label": "Meerut mutineers ride to Delhi",
+      "path": [
+       [
+        77.7,
+        28.98
+       ],
+       [
+        77.45,
+        28.82
+       ],
+       [
+        77.24,
+        28.66
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "General Anson",
+      "label": "Delhi Field Force from Ambala",
+      "path": [
+       [
+        76.78,
+        30.38
+       ],
+       [
+        77.0,
+        29.7
+       ],
+       [
+        77.15,
+        28.74
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Meerut mutiny",
+      "kind": "event",
+      "lon": 77.7,
+      "lat": 28.98,
+      "year": 1857,
+      "winner": 1,
+      "text": "Sepoys of the Bengal Army rose, killed their officers and marched on Delhi."
+     },
+     {
+      "name": "Bahadur Shah II proclaimed",
+      "kind": "event",
+      "lon": 77.24,
+      "lat": 28.66,
+      "year": 1857,
+      "winner": 1,
+      "text": "The rebels restored the last Mughal emperor as the figurehead of the revolt."
+     }
+    ]
+   },
+   {
+    "year": 1857,
+    "label": "Jun to Aug 1857",
+    "title": "Cawnpore, Lucknow and the Delhi Ridge",
+    "text": "A small British force camped on the ridge outside Delhi, too weak to attack the city. At Cawnpore Nana Sahib's forces besieged General Wheeler's entrenchment, and its surrendered garrison and then the women and children were massacred; Henry Havelock's column fought its way up from Allahabad and retook the town in July. In Lucknow the British Residency was besieged from 1 July.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British East India Company"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Oudh"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        77.19,
+        28.7
+       ],
+       [
+        77.205,
+        28.68
+       ],
+       [
+        77.215,
+        28.665
+       ]
+      ],
+      "label": "Delhi Ridge"
+     },
+     {
+      "path": [
+       [
+        80.92,
+        26.87
+       ],
+       [
+        80.94,
+        26.865
+       ],
+       [
+        80.935,
+        26.855
+       ]
+      ],
+      "label": "Lucknow Residency siege"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Nana Sahib",
+      "label": "Rebels besiege Cawnpore",
+      "path": [
+       [
+        80.27,
+        26.61
+       ],
+       [
+        80.3,
+        26.52
+       ],
+       [
+        80.33,
+        26.46
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Henry Havelock",
+      "label": "Relief column from Allahabad",
+      "path": [
+       [
+        81.85,
+        25.44
+       ],
+       [
+        80.81,
+        25.93
+       ],
+       [
+        80.33,
+        26.45
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Begum Hazrat Mahal",
+      "label": "Awadh rebels besiege Lucknow",
+      "path": [
+       [
+        81.2,
+        26.75
+       ],
+       [
+        81.05,
+        26.82
+       ],
+       [
+        80.94,
+        26.86
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Cawnpore",
+      "kind": "siege",
+      "lon": 80.33,
+      "lat": 26.46,
+      "year": 1857,
+      "winner": 1,
+      "text": "Wheeler's entrenchment surrendered and its people were killed at Satichaura Ghat and Bibighar."
+     },
+     {
+      "name": "Siege of Lucknow begins",
+      "kind": "siege",
+      "lon": 80.93,
+      "lat": 26.86,
+      "year": 1857,
+      "winner": null,
+      "text": "About 1,700 soldiers and loyal sepoys held the Residency against far larger rebel forces."
+     }
+    ]
+   },
+   {
+    "year": 1857,
+    "label": "Sep to Dec 1857",
+    "title": "Delhi stormed, Lucknow relieved",
+    "text": "Reinforced by John Nicholson's column and siege guns from the Punjab, the British stormed Delhi on 14 September and took it after a week of street fighting; Nicholson was killed and Bahadur Shah was captured. Havelock and Outram broke into the Lucknow Residency but were trapped there until Sir Colin Campbell evacuated it in November, then beat Tantia Tope's Gwalior Contingent at Cawnpore.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British East India Company"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Oudh"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        80.92,
+        26.87
+       ],
+       [
+        80.94,
+        26.865
+       ],
+       [
+        80.935,
+        26.855
+       ]
+      ],
+      "label": "Lucknow Residency siege"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "John Nicholson",
+      "label": "Movable Column from the Punjab",
+      "path": [
+       [
+        74.34,
+        31.55
+       ],
+       [
+        75.85,
+        30.9
+       ],
+       [
+        76.78,
+        30.38
+       ],
+       [
+        77.21,
+        28.68
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Colin Campbell",
+      "label": "Second relief of Lucknow",
+      "path": [
+       [
+        80.33,
+        26.45
+       ],
+       [
+        80.6,
+        26.7
+       ],
+       [
+        80.94,
+        26.86
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tantia Tope",
+      "label": "Gwalior Contingent on Cawnpore",
+      "path": [
+       [
+        79.73,
+        26.12
+       ],
+       [
+        80.05,
+        26.3
+       ],
+       [
+        80.33,
+        26.46
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Delhi",
+      "kind": "siege",
+      "lon": 77.23,
+      "lat": 28.66,
+      "year": 1857,
+      "winner": 0,
+      "text": "The British stormed the Kashmiri Gate and retook the Mughal capital."
+     },
+     {
+      "name": "Relief of Lucknow",
+      "kind": "siege",
+      "lon": 80.94,
+      "lat": 26.86,
+      "year": 1857,
+      "winner": 0,
+      "text": "Campbell fought through to the Residency and evacuated its garrison and civilians."
+     },
+     {
+      "name": "Second Battle of Cawnpore",
+      "kind": "battle",
+      "lon": 80.35,
+      "lat": 26.47,
+      "year": 1857,
+      "winner": 0,
+      "text": "Campbell routed Tantia Tope's army outside Cawnpore."
+     }
+    ]
+   },
+   {
+    "year": 1858,
+    "label": "Mar 1858",
+    "title": "Lucknow retaken",
+    "text": "With fresh British regiments arriving, Campbell returned to Lucknow with some 30,000 men and Gurkha allies from Nepal and took the city in March 1858 after two weeks of fighting. Begum Hazrat Mahal and thousands of rebels escaped into the Awadh countryside and Rohilkhand, which Campbell spent the summer clearing.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British East India Company"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Oudh"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Colin Campbell",
+      "label": "Advance on Lucknow",
+      "path": [
+       [
+        80.33,
+        26.45
+       ],
+       [
+        80.6,
+        26.7
+       ],
+       [
+        80.95,
+        26.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Begum Hazrat Mahal",
+      "label": "Rebels scatter north",
+      "path": [
+       [
+        80.95,
+        26.85
+       ],
+       [
+        81.3,
+        27.4
+       ],
+       [
+        81.6,
+        28.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Lucknow",
+      "kind": "siege",
+      "lon": 80.95,
+      "lat": 26.85,
+      "year": 1858,
+      "winner": 0,
+      "text": "Campbell stormed the rebel-held city and broke the main rebel army of Awadh."
+     }
+    ]
+   },
+   {
+    "year": 1858,
+    "label": "Mar to Jun 1858",
+    "title": "The Central India campaign",
+    "text": "Sir Hugh Rose's Central India Field Force marched north from Mhow, stormed Jhansi in April after defeating a relief army under Tantia Tope, and took Kalpi in May. Rani Lakshmibai of Jhansi and Tantia Tope then seized the fortress of Gwalior, but Rose retook it in June and the Rani was killed fighting in cavalry dress.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British East India Company"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Oudh"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Hugh Rose",
+      "label": "Central India Field Force",
+      "path": [
+       [
+        75.77,
+        22.55
+       ],
+       [
+        78.74,
+        23.84
+       ],
+       [
+        78.57,
+        25.45
+       ],
+       [
+        79.73,
+        26.12
+       ],
+       [
+        78.18,
+        26.22
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Rani Lakshmibai and Tantia Tope",
+      "label": "Rebels seize Gwalior",
+      "path": [
+       [
+        79.73,
+        26.12
+       ],
+       [
+        79.0,
+        26.2
+       ],
+       [
+        78.18,
+        26.22
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Jhansi",
+      "kind": "siege",
+      "lon": 78.57,
+      "lat": 25.45,
+      "year": 1858,
+      "winner": 0,
+      "text": "Rose stormed the fortress, and the Rani escaped over the walls."
+     },
+     {
+      "name": "Battle of Gwalior",
+      "kind": "battle",
+      "lon": 78.18,
+      "lat": 26.22,
+      "year": 1858,
+      "winner": 0,
+      "text": "The rebels lost their last great stronghold and Rani Lakshmibai was killed."
+     }
+    ]
+   },
+   {
+    "year": 1858,
+    "label": "Aug 1858 to Apr 1859",
+    "title": "Crown rule",
+    "text": "The Government of India Act of August 1858 ended the East India Company's rule, and on 1 November Queen Victoria's proclamation promised religious tolerance and pardons to most rebels. Tantia Tope led his pursuers on a long chase through Rajputana and central India until he was betrayed and hanged in April 1859, while Begum Hazrat Mahal and Nana Sahib fled into Nepal.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "British East India Company",
+       "Oudh"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tantia Tope",
+      "label": "Guerrilla flight",
+      "path": [
+       [
+        78.18,
+        26.22
+       ],
+       [
+        76.5,
+        25.2
+       ],
+       [
+        74.6,
+        24.0
+       ],
+       [
+        74.8,
+        22.8
+       ],
+       [
+        77.0,
+        23.2
+       ],
+       [
+        77.65,
+        25.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Queen Victoria's Proclamation",
+      "kind": "event",
+      "lon": 81.85,
+      "lat": 25.44,
+      "year": 1858,
+      "winner": 0,
+      "text": "Read at Allahabad, it announced direct rule by the Crown over India."
+     },
+     {
+      "name": "Execution of Tantia Tope",
+      "kind": "event",
+      "lon": 77.65,
+      "lat": 25.43,
+      "year": 1859,
+      "winner": 0,
+      "text": "The last major rebel commander was captured and hanged at Shivpuri."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "wars-of-german-unification",
+  "name": "Wars of German Unification",
+  "start": 1864,
+  "end": 1871,
+  "kind": "conflict",
+  "summary": "Between 1864 and 1871 Prussia, steered by its minister-president Otto von Bismarck and its chief of staff Helmuth von Moltke, fought three short wars, against Denmark, Austria and France. Each was quick and decisive, and together they pushed Austria out of German affairs and drew the southern German states into a Prussian-led union. The German Empire proclaimed at Versailles in January 1871 became the strongest power on the continent, while France's loss of Alsace and Lorraine left a lasting grievance.",
+  "sides": [
+   {
+    "name": "Prussia and its allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Otto von Bismarck",
+     "Helmuth von Moltke",
+     "King Wilhelm I",
+     "Crown Prince Friedrich Wilhelm",
+     "Prince Friedrich Karl"
+    ]
+   },
+   {
+    "name": "Prussia's opponents (Denmark, Austria, France)",
+    "color": "#c0473a",
+    "leaders": [
+     "Christian de Meza",
+     "Ludwig von Benedek",
+     "Napoleon III",
+     "Marshal Bazaine",
+     "Marshal MacMahon"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 11.5,
+    "lat": 51.0,
+    "r": 6.5
+   },
+   {
+    "lon": 4.0,
+    "lat": 48.9,
+    "r": 3.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1864,
+    "label": "Feb to Oct 1864",
+    "title": "Second Schleswig War",
+    "text": "When Denmark tied the duchy of Schleswig more closely to the Danish crown, Prussia and Austria invaded in February 1864. The Danes abandoned their Danevirke line, the Prussians stormed the Dybbøl redoubts in April and Austrian troops pushed up into Jutland. In the Treaty of Vienna Denmark gave up Schleswig, Holstein and Lauenburg to joint Austro-Prussian rule.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Prussia",
+       "Austrian Empire",
+       "Venetia",
+       "Schleswig",
+       "Holstein"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Denmark"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        9.4,
+        54.43
+       ],
+       [
+        9.52,
+        54.46
+       ],
+       [
+        9.6,
+        54.51
+       ],
+       [
+        9.85,
+        54.62
+       ]
+      ],
+      "label": "Danevirke line, Feb 1864"
+     },
+     {
+      "path": [
+       [
+        9.71,
+        54.94
+       ],
+       [
+        9.73,
+        54.91
+       ],
+       [
+        9.75,
+        54.89
+       ]
+      ],
+      "label": "Dybbøl redoubts, Apr 1864"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Prince Friedrich Karl",
+      "label": "Prussians to Dybbøl",
+      "path": [
+       [
+        10.13,
+        54.32
+       ],
+       [
+        9.9,
+        54.6
+       ],
+       [
+        9.72,
+        54.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ludwig von Gablenz",
+      "label": "Austrians into Jutland",
+      "path": [
+       [
+        9.94,
+        53.6
+       ],
+       [
+        9.55,
+        54.45
+       ],
+       [
+        9.43,
+        54.78
+       ],
+       [
+        9.47,
+        55.49
+       ],
+       [
+        9.53,
+        55.71
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Christian de Meza",
+      "label": "Danish retreat from the Danevirke",
+      "path": [
+       [
+        9.55,
+        54.47
+       ],
+       [
+        9.43,
+        54.78
+       ],
+       [
+        9.75,
+        54.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Dybbøl",
+      "kind": "battle",
+      "lon": 9.73,
+      "lat": 54.91,
+      "year": 1864,
+      "winner": 0,
+      "text": "Prussian infantry stormed the Danish redoubts after a long bombardment, deciding the war."
+     },
+     {
+      "name": "Treaty of Vienna",
+      "kind": "treaty",
+      "lon": 16.37,
+      "lat": 48.21,
+      "year": 1864,
+      "winner": 0,
+      "text": "Denmark ceded Schleswig, Holstein and Lauenburg to Prussia and Austria."
+     }
+    ]
+   },
+   {
+    "year": 1866,
+    "label": "Jun to Aug 1866",
+    "title": "Austro-Prussian War",
+    "text": "Prussia and Austria fell out over the duchies and over leadership of Germany, and most German states sided with Austria. While a Prussian army knocked out Hanover and the southern states in the west, Moltke sent three armies by rail and road into Bohemia, where they converged on Benedek's Austrians and crushed them at Königgrätz on 3 July. Italy, Prussia's ally, was beaten at Custoza but still gained Venetia, and the Peace of Prague let Prussia annex Hanover, Hesse-Kassel, Nassau and Frankfurt and lead a new North German Confederation without Austria.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Prussia",
+       "Hohenzollern",
+       "Wetzlar",
+       "Schleswig",
+       "Holstein",
+       "Mecklenburg-Schwerin",
+       "Mecklenburg-Strelitz",
+       "Oldenburg",
+       "Brunswick",
+       "Anhalt",
+       "Waldeck",
+       "Lippe-Detmold",
+       "Schaumburg-Lippe",
+       "Hamburg",
+       "Bremen",
+       "Lübeck",
+       "Kingdom of Sardinia",
+       "Lombardy",
+       "Tuscany",
+       "Modena",
+       "Parma",
+       "Lucca",
+       "Massa",
+       "Fivizzano",
+       "Pontremoli",
+       "Kingdom of the Two Sicilies"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "Venetia",
+       "Saxony",
+       "Bavaria",
+       "Palatinate",
+       "Württemberg",
+       "Baden",
+       "Hanover",
+       "Electoral Hesse",
+       "Grand Duchy of Hesse",
+       "Nassau"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.72,
+        50.38
+       ],
+       [
+        15.76,
+        50.3
+       ],
+       [
+        15.8,
+        50.22
+       ]
+      ],
+      "label": "Austrian line at Königgrätz, 3 Jul"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Herwarth von Bittenfeld",
+      "label": "Elbe Army",
+      "path": [
+       [
+        13.74,
+        51.05
+       ],
+       [
+        14.6,
+        50.6
+       ],
+       [
+        15.35,
+        50.44
+       ],
+       [
+        15.68,
+        50.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prince Friedrich Karl",
+      "label": "First Army",
+      "path": [
+       [
+        14.99,
+        51.15
+       ],
+       [
+        15.05,
+        50.77
+       ],
+       [
+        15.35,
+        50.44
+       ],
+       [
+        15.7,
+        50.33
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Crown Prince Friedrich Wilhelm",
+      "label": "Second Army from Silesia",
+      "path": [
+       [
+        16.65,
+        50.6
+       ],
+       [
+        16.16,
+        50.41
+       ],
+       [
+        15.9,
+        50.38
+       ],
+       [
+        15.82,
+        50.33
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ludwig von Benedek",
+      "label": "Austrian North Army",
+      "path": [
+       [
+        17.25,
+        49.6
+       ],
+       [
+        16.5,
+        49.95
+       ],
+       [
+        15.83,
+        50.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Vogel von Falckenstein",
+      "label": "Army of the Main",
+      "path": [
+       [
+        9.74,
+        52.37
+       ],
+       [
+        10.65,
+        51.11
+       ],
+       [
+        10.07,
+        50.2
+       ],
+       [
+        8.68,
+        50.11
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Königgrätz",
+      "kind": "battle",
+      "lon": 15.68,
+      "lat": 50.3,
+      "year": 1866,
+      "winner": 0,
+      "text": "The three Prussian armies met on the battlefield and routed the Austrians, deciding the war in a day."
+     },
+     {
+      "name": "Battle of Custoza",
+      "kind": "battle",
+      "lon": 10.8,
+      "lat": 45.38,
+      "year": 1866,
+      "winner": 1,
+      "text": "Austria's southern army beat the Italians, but could not change the outcome in Bohemia."
+     },
+     {
+      "name": "Peace of Prague",
+      "kind": "treaty",
+      "lon": 14.42,
+      "lat": 50.08,
+      "year": 1866,
+      "winner": 0,
+      "text": "Austria accepted the end of the German Confederation and Prussian leadership of the north."
+     }
+    ]
+   },
+   {
+    "year": 1870,
+    "label": "Jul to Aug 1870",
+    "title": "France goes to war",
+    "text": "Bismarck's edited Ems Dispatch goaded Napoleon III into declaring war in July 1870, and the southern German states joined Prussia as their treaties required. Moltke's armies mobilised faster, beat MacMahon in Alsace at Wörth and broke into Lorraine. After the bloody battles of Mars-la-Tour and Gravelotte, Bazaine's Army of the Rhine was shut up inside the fortress of Metz.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Prussia",
+       "Hohenzollern",
+       "Wetzlar",
+       "Schleswig",
+       "Holstein",
+       "Mecklenburg-Schwerin",
+       "Mecklenburg-Strelitz",
+       "Oldenburg",
+       "Brunswick",
+       "Anhalt",
+       "Waldeck",
+       "Lippe-Detmold",
+       "Schaumburg-Lippe",
+       "Hamburg",
+       "Bremen",
+       "Lübeck",
+       "Hanover",
+       "Electoral Hesse",
+       "Nassau",
+       "Saxony",
+       "Thuringia",
+       "Bavaria",
+       "Palatinate",
+       "Württemberg",
+       "Baden",
+       "Grand Duchy of Hesse"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        6.05,
+        49.2
+       ],
+       [
+        6.3,
+        49.22
+       ],
+       [
+        6.33,
+        49.05
+       ],
+       [
+        6.1,
+        49.0
+       ],
+       [
+        6.0,
+        49.1
+       ],
+       [
+        6.05,
+        49.2
+       ]
+      ],
+      "label": "Metz encircled, Aug 1870"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Crown Prince Friedrich Wilhelm",
+      "label": "Third Army into Alsace",
+      "path": [
+       [
+        8.12,
+        49.2
+       ],
+       [
+        7.94,
+        49.04
+       ],
+       [
+        7.74,
+        48.94
+       ],
+       [
+        6.18,
+        48.69
+       ],
+       [
+        5.16,
+        48.77
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prince Friedrich Karl",
+      "label": "Second Army on Metz",
+      "path": [
+       [
+        7.36,
+        49.25
+       ],
+       [
+        6.6,
+        49.0
+       ],
+       [
+        6.06,
+        48.9
+       ],
+       [
+        5.9,
+        49.08
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Karl von Steinmetz",
+      "label": "First Army",
+      "path": [
+       [
+        6.99,
+        49.23
+       ],
+       [
+        6.6,
+        49.15
+       ],
+       [
+        6.05,
+        49.12
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Marshal MacMahon",
+      "label": "Retreat from Alsace",
+      "path": [
+       [
+        7.74,
+        48.94
+       ],
+       [
+        6.5,
+        48.59
+       ],
+       [
+        5.6,
+        48.65
+       ],
+       [
+        4.36,
+        48.96
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Marshal Bazaine",
+      "label": "Army of the Rhine falls back on Metz",
+      "path": [
+       [
+        6.9,
+        49.19
+       ],
+       [
+        6.5,
+        49.13
+       ],
+       [
+        6.18,
+        49.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Ems Dispatch",
+      "kind": "event",
+      "lon": 7.71,
+      "lat": 50.33,
+      "year": 1870,
+      "winner": null,
+      "text": "Bismarck's sharpened version of a royal telegram provoked France into declaring war."
+     },
+     {
+      "name": "Battle of Wörth",
+      "kind": "battle",
+      "lon": 7.74,
+      "lat": 48.94,
+      "year": 1870,
+      "winner": 0,
+      "text": "The Crown Prince's Third Army routed MacMahon and opened Alsace."
+     },
+     {
+      "name": "Battle of Gravelotte",
+      "kind": "battle",
+      "lon": 6.03,
+      "lat": 49.11,
+      "year": 1870,
+      "winner": 0,
+      "text": "The largest battle of the war forced Bazaine back into Metz."
+     }
+    ]
+   },
+   {
+    "year": 1870,
+    "label": "Aug to Sep 1870",
+    "title": "Sedan",
+    "text": "MacMahon, with Napoleon III riding with him, marched the new Army of Châlons north east to relieve Metz. Moltke wheeled his armies north, cornered it against the Belgian border at Sedan and pounded it from the surrounding heights. On 2 September the emperor and over 100,000 men surrendered; two days later Paris overthrew the Empire and proclaimed the Third Republic.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Prussia",
+       "Hohenzollern",
+       "Wetzlar",
+       "Schleswig",
+       "Holstein",
+       "Mecklenburg-Schwerin",
+       "Mecklenburg-Strelitz",
+       "Oldenburg",
+       "Brunswick",
+       "Anhalt",
+       "Waldeck",
+       "Lippe-Detmold",
+       "Schaumburg-Lippe",
+       "Hamburg",
+       "Bremen",
+       "Lübeck",
+       "Hanover",
+       "Electoral Hesse",
+       "Nassau",
+       "Saxony",
+       "Thuringia",
+       "Bavaria",
+       "Palatinate",
+       "Württemberg",
+       "Baden",
+       "Grand Duchy of Hesse"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        4.87,
+        49.75
+       ],
+       [
+        5.0,
+        49.76
+       ],
+       [
+        5.03,
+        49.68
+       ],
+       [
+        4.93,
+        49.65
+       ],
+       [
+        4.87,
+        49.75
+       ]
+      ],
+      "label": "Sedan pocket, 1 Sep 1870"
+     },
+     {
+      "path": [
+       [
+        6.05,
+        49.2
+       ],
+       [
+        6.3,
+        49.22
+       ],
+       [
+        6.33,
+        49.05
+       ],
+       [
+        6.1,
+        49.0
+       ],
+       [
+        6.0,
+        49.1
+       ],
+       [
+        6.05,
+        49.2
+       ]
+      ],
+      "label": "Metz encircled"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Marshal MacMahon",
+      "label": "Army of Châlons",
+      "path": [
+       [
+        4.36,
+        48.96
+       ],
+       [
+        4.03,
+        49.26
+       ],
+       [
+        4.37,
+        49.51
+       ],
+       [
+        4.94,
+        49.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Crown Prince Friedrich Wilhelm",
+      "label": "Third Army wheels north",
+      "path": [
+       [
+        5.16,
+        48.77
+       ],
+       [
+        4.9,
+        49.15
+       ],
+       [
+        4.86,
+        49.55
+       ],
+       [
+        4.92,
+        49.68
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Crown Prince Albert of Saxony",
+      "label": "Army of the Meuse",
+      "path": [
+       [
+        5.38,
+        49.16
+       ],
+       [
+        5.2,
+        49.45
+       ],
+       [
+        5.05,
+        49.65
+       ],
+       [
+        4.98,
+        49.72
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Sedan",
+      "kind": "battle",
+      "lon": 4.94,
+      "lat": 49.7,
+      "year": 1870,
+      "winner": 0,
+      "text": "Napoleon III and the Army of Châlons surrendered, bringing down the Second Empire."
+     },
+     {
+      "name": "Third Republic proclaimed",
+      "kind": "event",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1870,
+      "winner": null,
+      "text": "A Government of National Defence in Paris vowed to fight on."
+     }
+    ]
+   },
+   {
+    "year": 1871,
+    "label": "Sep 1870 to May 1871",
+    "title": "Siege of Paris and the German Empire",
+    "text": "German armies surrounded Paris from 19 September and starved it through the winter, and Bazaine surrendered Metz in October. Léon Gambetta escaped Paris by balloon and raised new armies on the Loire and in the north, but they could not break through. On 18 January 1871 Wilhelm I was proclaimed German Emperor in the Hall of Mirrors at Versailles, Paris capitulated ten days later, and the Treaty of Frankfurt gave Alsace and much of Lorraine to the new German Empire.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Prussia",
+       "Hohenzollern",
+       "Wetzlar",
+       "Schleswig",
+       "Holstein",
+       "Mecklenburg-Schwerin",
+       "Mecklenburg-Strelitz",
+       "Oldenburg",
+       "Brunswick",
+       "Anhalt",
+       "Waldeck",
+       "Lippe-Detmold",
+       "Schaumburg-Lippe",
+       "Hamburg",
+       "Bremen",
+       "Lübeck",
+       "Hanover",
+       "Electoral Hesse",
+       "Nassau",
+       "Saxony",
+       "Thuringia",
+       "Bavaria",
+       "Palatinate",
+       "Württemberg",
+       "Baden",
+       "Grand Duchy of Hesse"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.12,
+        48.97
+       ],
+       [
+        2.45,
+        49.0
+       ],
+       [
+        2.62,
+        48.86
+       ],
+       [
+        2.45,
+        48.72
+       ],
+       [
+        2.2,
+        48.74
+       ],
+       [
+        2.1,
+        48.85
+       ],
+       [
+        2.12,
+        48.97
+       ]
+      ],
+      "label": "Siege of Paris"
+     },
+     {
+      "path": [
+       [
+        0.2,
+        48.0
+       ],
+       [
+        1.2,
+        47.85
+       ],
+       [
+        1.9,
+        47.85
+       ],
+       [
+        2.7,
+        47.95
+       ]
+      ],
+      "label": "Loire front, Dec 1870"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Crown Prince Friedrich Wilhelm",
+      "label": "March on Paris",
+      "path": [
+       [
+        4.94,
+        49.7
+       ],
+       [
+        4.03,
+        49.26
+       ],
+       [
+        3.4,
+        49.05
+       ],
+       [
+        2.62,
+        48.86
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prince Friedrich Karl",
+      "label": "Second Army from Metz to the Loire",
+      "path": [
+       [
+        6.18,
+        49.12
+       ],
+       [
+        4.6,
+        48.6
+       ],
+       [
+        3.28,
+        48.2
+       ],
+       [
+        1.9,
+        47.9
+       ],
+       [
+        0.2,
+        48.0
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Antoine Chanzy",
+      "label": "Army of the Loire",
+      "path": [
+       [
+        0.69,
+        47.39
+       ],
+       [
+        1.66,
+        47.93
+       ],
+       [
+        1.9,
+        47.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Léon Gambetta",
+      "label": "Escapes Paris by balloon",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        2.55,
+        49.4
+       ],
+       [
+        0.69,
+        47.39
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Paris",
+      "kind": "siege",
+      "lon": 2.35,
+      "lat": 48.86,
+      "year": 1871,
+      "winner": 0,
+      "text": "After four months of hunger and shelling, Paris capitulated on 28 January."
+     },
+     {
+      "name": "Proclamation of the German Empire",
+      "kind": "event",
+      "lon": 2.12,
+      "lat": 48.8,
+      "year": 1871,
+      "winner": 0,
+      "text": "The German princes hailed Wilhelm I as emperor in the palace of Versailles."
+     },
+     {
+      "name": "Treaty of Frankfurt",
+      "kind": "treaty",
+      "lon": 8.68,
+      "lat": 50.11,
+      "year": 1871,
+      "winner": 0,
+      "text": "France ceded Alsace and northern Lorraine and paid an indemnity of five billion francs."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "american-civil-war",
+  "name": "American Civil War",
+  "start": 1861,
+  "end": 1865,
+  "kind": "war",
+  "summary": "Eleven Southern slave states seceded after Abraham Lincoln's election and formed the Confederacy, which fought the United States government (the Union). After four years and some 620,000 or more military deaths, the Union's greater industry and manpower, a naval blockade and the generalship of Grant and Sherman prevailed. The war preserved the United States and ended slavery through the Thirteenth Amendment.",
+  "sides": [
+   {
+    "name": "Union",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Abraham Lincoln",
+     "Ulysses S. Grant",
+     "William T. Sherman",
+     "George McClellan",
+     "George Meade"
+    ]
+   },
+   {
+    "name": "Confederacy",
+    "color": "#c0473a",
+    "leaders": [
+     "Jefferson Davis",
+     "Robert E. Lee",
+     "Stonewall Jackson",
+     "Joseph E. Johnston",
+     "Braxton Bragg"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -77.5,
+    "lat": 38.0,
+    "r": 4
+   },
+   {
+    "lon": -86.0,
+    "lat": 34.0,
+    "r": 6.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1861,
+    "label": "Apr to Jul 1861",
+    "title": "Fort Sumter and First Bull Run",
+    "text": "Confederate batteries bombarded Fort Sumter in Charleston harbour, and Lincoln called for volunteers, prompting four more states to secede while the border states of Kentucky, Missouri and Maryland were held for the Union. The first major battle, at Bull Run near Manassas, ended in a Union rout and showed the war would be long.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -76.3,
+        37.9
+       ],
+       [
+        -77.2,
+        38.7
+       ],
+       [
+        -78.5,
+        38.9
+       ],
+       [
+        -80.5,
+        38.0
+       ],
+       [
+        -82.6,
+        37.6
+       ],
+       [
+        -85.0,
+        36.7
+       ],
+       [
+        -89.2,
+        36.8
+       ],
+       [
+        -91.5,
+        36.5
+       ],
+       [
+        -94.6,
+        36.5
+       ]
+      ],
+      "label": "Union and Confederate line, 1861"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Irvin McDowell",
+      "label": "Army from Washington",
+      "path": [
+       [
+        -77.04,
+        38.9
+       ],
+       [
+        -77.43,
+        38.84
+       ],
+       [
+        -77.52,
+        38.81
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Joseph E. Johnston",
+      "label": "By rail from the Shenandoah",
+      "path": [
+       [
+        -78.16,
+        39.18
+       ],
+       [
+        -77.95,
+        39.0
+       ],
+       [
+        -77.55,
+        38.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "P. G. T. Beauregard",
+      "label": "Confederate army at Manassas",
+      "path": [
+       [
+        -77.47,
+        38.75
+       ],
+       [
+        -77.5,
+        38.78
+       ],
+       [
+        -77.53,
+        38.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fort Sumter",
+      "kind": "siege",
+      "lon": -79.87,
+      "lat": 32.75,
+      "year": 1861,
+      "winner": 1,
+      "text": "The Union garrison surrendered after a 34-hour bombardment, starting the war."
+     },
+     {
+      "name": "First Battle of Bull Run",
+      "kind": "battle",
+      "lon": -77.52,
+      "lat": 38.81,
+      "year": 1861,
+      "winner": 1,
+      "text": "Confederate reinforcements arrived by rail and turned the battle into a Union rout."
+     }
+    ]
+   },
+   {
+    "year": 1862,
+    "label": "Feb to Apr 1862",
+    "title": "War in the West",
+    "text": "Ulysses S. Grant captured Forts Henry and Donelson, opening Tennessee to Union armies, and survived a Confederate surprise attack at Shiloh. A Union fleet under David Farragut ran past the forts below New Orleans and took the South's largest city.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -76.3,
+        37.9
+       ],
+       [
+        -77.4,
+        38.6
+       ],
+       [
+        -78.5,
+        38.6
+       ],
+       [
+        -80.5,
+        37.8
+       ],
+       [
+        -83.0,
+        36.9
+       ],
+       [
+        -85.5,
+        35.6
+       ],
+       [
+        -88.3,
+        35.0
+       ],
+       [
+        -89.6,
+        35.3
+       ],
+       [
+        -90.6,
+        35.5
+       ],
+       [
+        -94.5,
+        36.0
+       ]
+      ],
+      "label": "Front, spring 1862"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ulysses S. Grant",
+      "label": "Forts Henry and Donelson",
+      "path": [
+       [
+        -89.18,
+        37.0
+       ],
+       [
+        -88.6,
+        37.08
+       ],
+       [
+        -88.05,
+        36.5
+       ],
+       [
+        -87.86,
+        36.49
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ulysses S. Grant",
+      "label": "Up the Tennessee River",
+      "path": [
+       [
+        -88.05,
+        36.5
+       ],
+       [
+        -88.25,
+        35.22
+       ],
+       [
+        -88.33,
+        35.15
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Albert Sidney Johnston",
+      "label": "Attack from Corinth",
+      "path": [
+       [
+        -88.52,
+        34.93
+       ],
+       [
+        -88.4,
+        35.05
+       ],
+       [
+        -88.33,
+        35.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "David Farragut",
+      "label": "Fleet up the Mississippi",
+      "path": [
+       [
+        -89.0,
+        28.6
+       ],
+       [
+        -89.25,
+        29.15
+       ],
+       [
+        -89.45,
+        29.36
+       ],
+       [
+        -90.06,
+        29.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Fort Donelson",
+      "kind": "siege",
+      "lon": -87.86,
+      "lat": 36.49,
+      "year": 1862,
+      "winner": 0,
+      "text": "Grant forced the surrender of over 12,000 Confederates and earned the name Unconditional Surrender Grant."
+     },
+     {
+      "name": "Battle of Shiloh",
+      "kind": "battle",
+      "lon": -88.33,
+      "lat": 35.15,
+      "year": 1862,
+      "winner": 0,
+      "text": "Grant's army survived a surprise attack and drove the Confederates back in a battle of shocking losses."
+     },
+     {
+      "name": "Capture of New Orleans",
+      "kind": "siege",
+      "lon": -90.07,
+      "lat": 29.95,
+      "year": 1862,
+      "winner": 0,
+      "text": "Farragut's fleet captured New Orleans and closed the mouth of the Mississippi."
+     }
+    ]
+   },
+   {
+    "year": 1862,
+    "label": "Jun to Sep 1862",
+    "title": "Lee takes command, Antietam",
+    "text": "McClellan's army landed on the Virginia peninsula and neared Richmond, but Robert E. Lee drove it back in the Seven Days Battles and then beat another Union army at Second Bull Run. Lee invaded Maryland and was checked at Antietam, the bloodiest single day in American history, after which Lincoln issued the Emancipation Proclamation.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -76.3,
+        37.6
+       ],
+       [
+        -77.2,
+        38.4
+       ],
+       [
+        -78.0,
+        39.2
+       ],
+       [
+        -80.0,
+        38.3
+       ],
+       [
+        -82.5,
+        37.4
+       ],
+       [
+        -85.0,
+        35.8
+       ],
+       [
+        -88.4,
+        34.9
+       ],
+       [
+        -90.1,
+        35.1
+       ],
+       [
+        -91.5,
+        35.0
+       ],
+       [
+        -94.5,
+        35.6
+       ]
+      ],
+      "label": "Front, summer 1862"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "George McClellan",
+      "label": "By sea to Fort Monroe",
+      "path": [
+       [
+        -77.05,
+        38.8
+       ],
+       [
+        -77.0,
+        38.4
+       ],
+       [
+        -76.3,
+        38.05
+       ],
+       [
+        -76.2,
+        37.6
+       ],
+       [
+        -76.31,
+        37.02
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "George McClellan",
+      "label": "Peninsula Campaign",
+      "path": [
+       [
+        -76.31,
+        37.02
+       ],
+       [
+        -76.7,
+        37.27
+       ],
+       [
+        -77.25,
+        37.52
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Robert E. Lee",
+      "label": "North into Maryland",
+      "path": [
+       [
+        -77.45,
+        37.55
+       ],
+       [
+        -77.99,
+        38.47
+       ],
+       [
+        -77.55,
+        38.82
+       ],
+       [
+        -77.56,
+        39.12
+       ],
+       [
+        -77.75,
+        39.45
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Seven Days Battles",
+      "kind": "battle",
+      "lon": -77.3,
+      "lat": 37.5,
+      "year": 1862,
+      "winner": 1,
+      "text": "Lee's attacks drove McClellan's army away from Richmond."
+     },
+     {
+      "name": "Second Battle of Bull Run",
+      "kind": "battle",
+      "lon": -77.55,
+      "lat": 38.82,
+      "year": 1862,
+      "winner": 1,
+      "text": "Lee and Jackson routed John Pope's army."
+     },
+     {
+      "name": "Battle of Antietam",
+      "kind": "battle",
+      "lon": -77.74,
+      "lat": 39.47,
+      "year": 1862,
+      "winner": 0,
+      "text": "A tactically indecisive but strategic Union victory that ended Lee's first invasion of the North."
+     }
+    ]
+   },
+   {
+    "year": 1863,
+    "label": "May to Jul 1863",
+    "title": "Gettysburg and Vicksburg",
+    "text": "Lee won his greatest victory at Chancellorsville and invaded Pennsylvania, but was defeated at Gettysburg in three days of fighting. A day later Vicksburg surrendered to Grant after a brilliant campaign and siege, giving the Union control of the Mississippi and splitting the Confederacy in two.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -76.3,
+        37.6
+       ],
+       [
+        -77.46,
+        38.3
+       ],
+       [
+        -78.3,
+        38.7
+       ],
+       [
+        -80.3,
+        38.0
+       ],
+       [
+        -82.5,
+        37.0
+       ],
+       [
+        -84.5,
+        35.7
+       ],
+       [
+        -86.4,
+        35.6
+       ],
+       [
+        -88.3,
+        34.9
+       ]
+      ],
+      "label": "Eastern and central front"
+     },
+     {
+      "path": [
+       [
+        -90.0,
+        35.0
+       ],
+       [
+        -90.88,
+        32.35
+       ],
+       [
+        -91.2,
+        31.0
+       ],
+       [
+        -91.6,
+        30.5
+       ]
+      ],
+      "label": "Union-held Mississippi"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Robert E. Lee",
+      "label": "Invasion of Pennsylvania",
+      "path": [
+       [
+        -77.46,
+        38.3
+       ],
+       [
+        -78.19,
+        38.92
+       ],
+       [
+        -77.72,
+        39.64
+       ],
+       [
+        -77.23,
+        39.81
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "George Meade",
+      "label": "Army of the Potomac follows",
+      "path": [
+       [
+        -77.46,
+        38.6
+       ],
+       [
+        -77.2,
+        39.1
+       ],
+       [
+        -77.15,
+        39.6
+       ],
+       [
+        -77.23,
+        39.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ulysses S. Grant",
+      "label": "Vicksburg Campaign",
+      "path": [
+       [
+        -91.05,
+        32.45
+       ],
+       [
+        -91.2,
+        32.0
+       ],
+       [
+        -90.42,
+        32.26
+       ],
+       [
+        -90.18,
+        32.3
+       ],
+       [
+        -90.88,
+        32.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Chancellorsville",
+      "kind": "battle",
+      "lon": -77.63,
+      "lat": 38.31,
+      "year": 1863,
+      "winner": 1,
+      "text": "Lee split his smaller army and routed Hooker, but Stonewall Jackson was mortally wounded."
+     },
+     {
+      "name": "Battle of Gettysburg",
+      "kind": "battle",
+      "lon": -77.23,
+      "lat": 39.81,
+      "year": 1863,
+      "winner": 0,
+      "text": "Meade's army repelled Lee's assaults, including Pickett's Charge, ending his invasion."
+     },
+     {
+      "name": "Siege of Vicksburg",
+      "kind": "siege",
+      "lon": -90.88,
+      "lat": 32.35,
+      "year": 1863,
+      "winner": 0,
+      "text": "Pemberton surrendered the fortress city and nearly 30,000 men on 4 July."
+     }
+    ]
+   },
+   {
+    "year": 1863,
+    "label": "Sep to Nov 1863",
+    "title": "Chickamauga and Chattanooga",
+    "text": "Rosecrans manoeuvred the Confederates out of Chattanooga, but Bragg, reinforced by Longstreet's corps sent by rail from Virginia, routed him at Chickamauga. Grant took command, broke the siege of Chattanooga at Missionary Ridge and opened the gateway to Georgia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -76.3,
+        37.6
+       ],
+       [
+        -77.9,
+        38.4
+       ],
+       [
+        -80.3,
+        37.8
+       ],
+       [
+        -83.0,
+        36.5
+       ],
+       [
+        -85.3,
+        35.0
+       ],
+       [
+        -86.6,
+        34.7
+       ],
+       [
+        -88.5,
+        34.5
+       ],
+       [
+        -90.2,
+        33.5
+       ]
+      ],
+      "label": "Front, autumn 1863"
+     },
+     {
+      "path": [
+       [
+        -90.0,
+        35.0
+       ],
+       [
+        -90.88,
+        32.35
+       ],
+       [
+        -91.2,
+        31.0
+       ],
+       [
+        -91.6,
+        30.5
+       ]
+      ],
+      "label": "Union-held Mississippi"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William Rosecrans",
+      "label": "Advance on Chattanooga",
+      "path": [
+       [
+        -86.39,
+        35.85
+       ],
+       [
+        -86.21,
+        35.36
+       ],
+       [
+        -85.31,
+        35.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "James Longstreet",
+      "label": "Corps sent by rail",
+      "path": [
+       [
+        -77.44,
+        37.54
+       ],
+       [
+        -77.94,
+        34.23
+       ],
+       [
+        -81.97,
+        33.47
+       ],
+       [
+        -84.39,
+        33.75
+       ],
+       [
+        -85.2,
+        34.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ulysses S. Grant",
+      "label": "Takes command at Chattanooga",
+      "path": [
+       [
+        -86.78,
+        36.16
+       ],
+       [
+        -85.9,
+        35.3
+       ],
+       [
+        -85.31,
+        35.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Chickamauga",
+      "kind": "battle",
+      "lon": -85.26,
+      "lat": 34.92,
+      "year": 1863,
+      "winner": 1,
+      "text": "The largest Confederate victory in the West drove Rosecrans back into Chattanooga."
+     },
+     {
+      "name": "Battle of Chattanooga",
+      "kind": "battle",
+      "lon": -85.26,
+      "lat": 35.03,
+      "year": 1863,
+      "winner": 0,
+      "text": "Union troops stormed Missionary Ridge and routed Bragg's army."
+     }
+    ]
+   },
+   {
+    "year": 1864,
+    "label": "May to Jun 1864",
+    "title": "The Overland Campaign",
+    "text": "Grant, now commanding all Union armies, attacked Lee relentlessly in Virginia, suffering huge losses at the Wilderness, Spotsylvania and Cold Harbor but never retreating. He swung south of Richmond and pinned Lee in a long siege at Petersburg, while Sherman began his advance from Chattanooga towards Atlanta.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -77.2,
+        37.75
+       ],
+       [
+        -77.33,
+        37.5
+       ],
+       [
+        -77.4,
+        37.2
+       ]
+      ],
+      "label": "Richmond and Petersburg lines"
+     },
+     {
+      "path": [
+       [
+        -83.8,
+        34.6
+       ],
+       [
+        -84.7,
+        34.3
+       ],
+       [
+        -85.6,
+        34.0
+       ],
+       [
+        -87.5,
+        34.6
+       ],
+       [
+        -90.2,
+        33.5
+       ]
+      ],
+      "label": "Front in Georgia"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ulysses S. Grant",
+      "label": "Overland Campaign",
+      "path": [
+       [
+        -77.8,
+        38.42
+       ],
+       [
+        -77.73,
+        38.31
+       ],
+       [
+        -77.59,
+        38.2
+       ],
+       [
+        -77.28,
+        37.59
+       ],
+       [
+        -77.4,
+        37.23
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Robert E. Lee",
+      "label": "Army of Northern Virginia falls back",
+      "path": [
+       [
+        -77.75,
+        38.3
+       ],
+       [
+        -77.6,
+        38.18
+       ],
+       [
+        -77.35,
+        37.65
+       ],
+       [
+        -77.4,
+        37.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William T. Sherman",
+      "label": "Advance on Atlanta begins",
+      "path": [
+       [
+        -85.31,
+        35.05
+       ],
+       [
+        -84.97,
+        34.77
+       ],
+       [
+        -84.6,
+        34.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Wilderness",
+      "kind": "battle",
+      "lon": -77.73,
+      "lat": 38.31,
+      "year": 1864,
+      "winner": null,
+      "text": "Two days of fighting in dense, burning woods ended without a decision, but Grant pressed on."
+     },
+     {
+      "name": "Battle of Cold Harbor",
+      "kind": "battle",
+      "lon": -77.28,
+      "lat": 37.59,
+      "year": 1864,
+      "winner": 1,
+      "text": "A failed Union frontal assault cost thousands of men in a few hours."
+     },
+     {
+      "name": "Siege of Petersburg begins",
+      "kind": "siege",
+      "lon": -77.4,
+      "lat": 37.23,
+      "year": 1864,
+      "winner": null,
+      "text": "Nine months of trench warfare pinned Lee's army to Richmond."
+     }
+    ]
+   },
+   {
+    "year": 1864,
+    "label": "Sep to Dec 1864",
+    "title": "Atlanta and the March to the Sea",
+    "text": "Sherman captured Atlanta in September, helping secure Lincoln's re-election. He then cut loose from his supply lines and marched to Savannah, destroying railways and property, while Union forces under Thomas destroyed Hood's army at Franklin and Nashville.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -77.2,
+        37.75
+       ],
+       [
+        -77.33,
+        37.5
+       ],
+       [
+        -77.4,
+        37.2
+       ]
+      ],
+      "label": "Richmond and Petersburg lines"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William T. Sherman",
+      "label": "Atlanta Campaign",
+      "path": [
+       [
+        -85.31,
+        35.05
+       ],
+       [
+        -84.97,
+        34.77
+       ],
+       [
+        -84.6,
+        33.98
+       ],
+       [
+        -84.39,
+        33.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William T. Sherman",
+      "label": "March to the Sea",
+      "path": [
+       [
+        -84.39,
+        33.75
+       ],
+       [
+        -83.23,
+        33.08
+       ],
+       [
+        -81.95,
+        32.8
+       ],
+       [
+        -81.09,
+        32.08
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "John Bell Hood",
+      "label": "Invasion of Tennessee",
+      "path": [
+       [
+        -84.39,
+        33.75
+       ],
+       [
+        -85.16,
+        34.26
+       ],
+       [
+        -87.67,
+        34.73
+       ],
+       [
+        -86.87,
+        35.92
+       ],
+       [
+        -86.78,
+        36.16
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "George H. Thomas",
+      "label": "Defence of Nashville",
+      "path": [
+       [
+        -85.31,
+        35.05
+       ],
+       [
+        -86.3,
+        35.7
+       ],
+       [
+        -86.78,
+        36.16
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Atlanta",
+      "kind": "siege",
+      "lon": -84.39,
+      "lat": 33.75,
+      "year": 1864,
+      "winner": 0,
+      "text": "Sherman cut Atlanta's last railroad and Hood evacuated the city."
+     },
+     {
+      "name": "Battle of Nashville",
+      "kind": "battle",
+      "lon": -86.78,
+      "lat": 36.16,
+      "year": 1864,
+      "winner": 0,
+      "text": "Thomas shattered Hood's Army of Tennessee."
+     },
+     {
+      "name": "Capture of Savannah",
+      "kind": "siege",
+      "lon": -81.09,
+      "lat": 32.08,
+      "year": 1864,
+      "winner": 0,
+      "text": "Sherman reached the sea and took Savannah just before Christmas."
+     }
+    ]
+   },
+   {
+    "year": 1865,
+    "label": "Feb to Apr 1865",
+    "title": "Appomattox",
+    "text": "Sherman marched north through the Carolinas while Grant broke Lee's lines at Five Forks, forcing the evacuation of Petersburg and Richmond. Lee's starving army was cut off and surrendered at Appomattox Court House on 9 April; Lincoln was assassinated five days later and the remaining Confederate armies soon surrendered.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Robert E. Lee",
+      "label": "Retreat west",
+      "path": [
+       [
+        -77.4,
+        37.23
+       ],
+       [
+        -77.98,
+        37.34
+       ],
+       [
+        -78.39,
+        37.3
+       ],
+       [
+        -78.8,
+        37.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ulysses S. Grant",
+      "label": "Pursuit",
+      "path": [
+       [
+        -77.62,
+        37.14
+       ],
+       [
+        -78.2,
+        37.19
+       ],
+       [
+        -78.8,
+        37.36
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William T. Sherman",
+      "label": "Through the Carolinas",
+      "path": [
+       [
+        -81.09,
+        32.08
+       ],
+       [
+        -81.03,
+        34.0
+       ],
+       [
+        -78.64,
+        35.78
+       ],
+       [
+        -78.95,
+        36.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Five Forks",
+      "kind": "battle",
+      "lon": -77.62,
+      "lat": 37.14,
+      "year": 1865,
+      "winner": 0,
+      "text": "Sheridan's victory broke Lee's line and doomed Petersburg."
+     },
+     {
+      "name": "Surrender at Appomattox Court House",
+      "kind": "treaty",
+      "lon": -78.8,
+      "lat": 37.38,
+      "year": 1865,
+      "winner": 0,
+      "text": "Lee surrendered the Army of Northern Virginia to Grant."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "reform-war",
+  "name": "Reform War",
+  "start": 1857,
+  "end": 1861,
+  "kind": "war",
+  "summary": "Mexico's Reform War was a civil war between Liberals, who defended the 1857 Constitution that stripped the Catholic Church and the army of their privileges, and Conservatives, who backed the Church and the old order. The Conservatives held Mexico City and won most early battles under the young general Miguel Miramón, but Benito Juárez's Liberal government held out in Veracruz on its customs revenue, issued the radical Reform Laws and won decisively at Calpulalpan in December 1860. The war left Mexico bankrupt, and Juárez's suspension of foreign debt payments in 1861 opened the way to the French intervention.",
+  "sides": [
+   {
+    "name": "Liberals (Juárez government)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Benito Juárez",
+     "Santos Degollado",
+     "Jesús González Ortega",
+     "Ignacio Zaragoza",
+     "Santiago Vidaurri"
+    ]
+   },
+   {
+    "name": "Conservatives",
+    "color": "#c0473a",
+    "leaders": [
+     "Félix Zuloaga",
+     "Miguel Miramón",
+     "Luis Osollo",
+     "Leonardo Márquez",
+     "Tomás Mejía"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -100.5,
+    "lat": 20.8,
+    "r": 4.5
+   },
+   {
+    "lon": -96.4,
+    "lat": 19.1,
+    "r": 1.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1858,
+    "label": "Dec 1857 to Mar 1858",
+    "title": "The Plan of Tacubaya",
+    "text": "President Ignacio Comonfort backed the Conservative Plan of Tacubaya in December 1857 and shut down Congress, then lost control, and in January 1858 General Félix Zuloaga took Mexico City for the Conservatives. Benito Juárez, head of the Supreme Court and so the constitutional successor, set up a Liberal government in Guanajuato and then Guadalajara. Luis Osollo routed the Liberal army at Salamanca in March, and Juárez, nearly shot by mutineers in Guadalajara, escaped to the Pacific coast.",
+    "territories": [],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Benito Juárez",
+      "label": "Juárez's flight",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -101.25,
+        21.02
+       ],
+       [
+        -103.35,
+        20.67
+       ],
+       [
+        -104.32,
+        19.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Luis Osollo",
+      "label": "Conservative army into the Bajío",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -100.39,
+        20.59
+       ],
+       [
+        -101.19,
+        20.57
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Anastasio Parrodi",
+      "label": "Liberal coalition army",
+      "path": [
+       [
+        -103.35,
+        20.67
+       ],
+       [
+        -102.2,
+        20.6
+       ],
+       [
+        -101.19,
+        20.57
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Plan of Tacubaya",
+      "kind": "event",
+      "lon": -99.19,
+      "lat": 19.4,
+      "year": 1857,
+      "winner": 1,
+      "text": "A Conservative coup against the 1857 Constitution started the civil war."
+     },
+     {
+      "name": "Battle of Salamanca",
+      "kind": "battle",
+      "lon": -101.19,
+      "lat": 20.57,
+      "year": 1858,
+      "winner": 1,
+      "text": "Osollo broke the main Liberal army in the Bajío."
+     }
+    ]
+   },
+   {
+    "year": 1858,
+    "label": "Apr to Dec 1858",
+    "title": "Juárez in Veracruz",
+    "text": "Juárez sailed from Manzanillo by way of Panama, Havana and New Orleans and reached Veracruz in May 1858, where the port's customs duties kept his government alive. Conservative armies, led after Osollo's death by the 26-year-old Miguel Miramón, held the central plateau and beat Santiago Vidaurri's northern Liberals at Ahualulco in September, while Santos Degollado kept Liberal resistance going in the west.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        -104.5,
+        21.6
+       ],
+       [
+        -102.6,
+        22.6
+       ],
+       [
+        -100.9,
+        22.3
+       ],
+       [
+        -99.0,
+        21.4
+       ]
+      ],
+      "label": "Northern front, late 1858"
+     },
+     {
+      "path": [
+       [
+        -96.75,
+        19.75
+       ],
+       [
+        -97.05,
+        19.1
+       ],
+       [
+        -96.75,
+        18.55
+       ]
+      ],
+      "label": "Veracruz coast held by the Liberals"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Benito Juárez",
+      "label": "By sea to Veracruz",
+      "path": [
+       [
+        -104.32,
+        19.05
+       ],
+       [
+        -90.0,
+        11.0
+       ],
+       [
+        -79.52,
+        8.97
+       ],
+       [
+        -82.36,
+        23.13
+       ],
+       [
+        -90.07,
+        29.95
+       ],
+       [
+        -96.13,
+        19.19
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Miguel Miramón",
+      "label": "Campaign in the north",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -100.39,
+        20.59
+       ],
+       [
+        -100.98,
+        22.15
+       ],
+       [
+        -101.17,
+        22.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Santiago Vidaurri",
+      "label": "Northern Liberals",
+      "path": [
+       [
+        -100.31,
+        25.67
+       ],
+       [
+        -100.6,
+        23.8
+       ],
+       [
+        -101.17,
+        22.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Juárez reaches Veracruz",
+      "kind": "event",
+      "lon": -96.13,
+      "lat": 19.19,
+      "year": 1858,
+      "winner": 0,
+      "text": "The fortified port became the Liberal capital for the rest of the war."
+     },
+     {
+      "name": "Battle of Ahualulco",
+      "kind": "battle",
+      "lon": -101.17,
+      "lat": 22.4,
+      "year": 1858,
+      "winner": 1,
+      "text": "Miramón routed Vidaurri's northern army."
+     }
+    ]
+   },
+   {
+    "year": 1859,
+    "label": "1859",
+    "title": "Siege of Veracruz and the Reform Laws",
+    "text": "Miramón, now Conservative president, marched on Veracruz in early 1859 but could not take its fortified port and fell back. Degollado struck at Mexico City and was crushed at Tacubaya in April by Leonardo Márquez, whose shooting of prisoners and medical staff earned him the name Tiger of Tacubaya. In July Juárez answered with the Reform Laws, nationalising Church property and separating Church and state.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        -104.5,
+        21.6
+       ],
+       [
+        -102.6,
+        22.6
+       ],
+       [
+        -100.9,
+        22.3
+       ],
+       [
+        -99.0,
+        21.4
+       ]
+      ],
+      "label": "Northern front"
+     },
+     {
+      "path": [
+       [
+        -96.75,
+        19.75
+       ],
+       [
+        -97.05,
+        19.1
+       ],
+       [
+        -96.75,
+        18.55
+       ]
+      ],
+      "label": "Veracruz coast held by the Liberals"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Miguel Miramón",
+      "label": "March on Veracruz",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -97.1,
+        18.85
+       ],
+       [
+        -96.25,
+        19.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Santos Degollado",
+      "label": "Attack on Mexico City",
+      "path": [
+       [
+        -101.19,
+        19.7
+       ],
+       [
+        -100.0,
+        19.5
+       ],
+       [
+        -99.19,
+        19.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Leonardo Márquez",
+      "label": "Relief of the capital",
+      "path": [
+       [
+        -103.35,
+        20.67
+       ],
+       [
+        -101.2,
+        20.5
+       ],
+       [
+        -99.19,
+        19.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "First siege of Veracruz",
+      "kind": "siege",
+      "lon": -96.2,
+      "lat": 19.15,
+      "year": 1859,
+      "winner": 0,
+      "text": "Miramón's army failed to breach the port's defences and withdrew."
+     },
+     {
+      "name": "Battle of Tacubaya",
+      "kind": "battle",
+      "lon": -99.19,
+      "lat": 19.4,
+      "year": 1859,
+      "winner": 1,
+      "text": "Márquez routed Degollado and executed prisoners afterwards."
+     },
+     {
+      "name": "Reform Laws",
+      "kind": "event",
+      "lon": -96.14,
+      "lat": 19.2,
+      "year": 1859,
+      "winner": 0,
+      "text": "Juárez's decrees nationalised Church property and created civil marriage and registry."
+     }
+    ]
+   },
+   {
+    "year": 1860,
+    "label": "Mar to Nov 1860",
+    "title": "The tide turns",
+    "text": "In March 1860 Miramón tried again at Veracruz, but a US Navy squadron seized his small fleet from Havana at Antón Lizardo, and the second siege failed. Liberal armies of the interior under Jesús González Ortega and Ignacio Zaragoza beat Miramón at Silao in August and took Guadalajara in November, leaving the Conservatives only the area around the capital.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        -101.0,
+        21.2
+       ],
+       [
+        -100.0,
+        20.4
+       ],
+       [
+        -99.0,
+        20.6
+       ],
+       [
+        -98.0,
+        19.8
+       ],
+       [
+        -97.6,
+        18.9
+       ]
+      ],
+      "label": "Conservative perimeter, Nov 1860"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tomás Marín",
+      "label": "Conservative ships from Havana",
+      "path": [
+       [
+        -82.36,
+        23.13
+       ],
+       [
+        -90.0,
+        22.0
+       ],
+       [
+        -95.98,
+        19.06
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Miguel Miramón",
+      "label": "Second march on Veracruz",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -97.1,
+        18.85
+       ],
+       [
+        -96.25,
+        19.12
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jesús González Ortega",
+      "label": "Army of the interior",
+      "path": [
+       [
+        -102.57,
+        22.77
+       ],
+       [
+        -101.68,
+        21.12
+       ],
+       [
+        -101.43,
+        20.94
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ignacio Zaragoza",
+      "label": "On to Guadalajara",
+      "path": [
+       [
+        -101.43,
+        20.94
+       ],
+       [
+        -102.5,
+        20.8
+       ],
+       [
+        -103.35,
+        20.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Antón Lizardo",
+      "kind": "battle",
+      "lon": -95.98,
+      "lat": 19.06,
+      "year": 1860,
+      "winner": 0,
+      "text": "US warships captured the Conservative ships meant to blockade Veracruz."
+     },
+     {
+      "name": "Battle of Silao",
+      "kind": "battle",
+      "lon": -101.43,
+      "lat": 20.94,
+      "year": 1860,
+      "winner": 0,
+      "text": "González Ortega and Zaragoza beat Miramón, the first great Liberal victory."
+     },
+     {
+      "name": "Capture of Guadalajara",
+      "kind": "siege",
+      "lon": -103.35,
+      "lat": 20.67,
+      "year": 1860,
+      "winner": 0,
+      "text": "The Liberals took Mexico's second city after a long siege."
+     }
+    ]
+   },
+   {
+    "year": 1861,
+    "label": "Dec 1860 to Jan 1861",
+    "title": "Calpulalpan and the return of Juárez",
+    "text": "González Ortega's army met Miramón's last field army at Calpulalpan on 22 December 1860 and destroyed it. Miramón fled abroad, Liberal troops entered Mexico City on Christmas Day and Juárez returned in January 1861. Conservative guerrillas under Márquez and Mejía fought on, and Mexico's empty treasury soon invited European intervention.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of New Spain"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Miguel Miramón",
+      "label": "Last Conservative army",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -99.4,
+        19.7
+       ],
+       [
+        -99.6,
+        19.97
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jesús González Ortega",
+      "label": "March on the capital",
+      "path": [
+       [
+        -101.43,
+        20.94
+       ],
+       [
+        -100.39,
+        20.59
+       ],
+       [
+        -99.6,
+        19.97
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Benito Juárez",
+      "label": "Return to Mexico City",
+      "path": [
+       [
+        -96.13,
+        19.19
+       ],
+       [
+        -97.1,
+        18.85
+       ],
+       [
+        -98.2,
+        19.04
+       ],
+       [
+        -99.13,
+        19.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Calpulalpan",
+      "kind": "battle",
+      "lon": -99.6,
+      "lat": 19.97,
+      "year": 1860,
+      "winner": 0,
+      "text": "The decisive Liberal victory that ended the war."
+     },
+     {
+      "name": "Juárez returns to Mexico City",
+      "kind": "event",
+      "lon": -99.13,
+      "lat": 19.43,
+      "year": 1861,
+      "winner": 0,
+      "text": "The constitutional government was restored in the capital on 11 January 1861."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "french-conquest-vietnam",
+  "name": "French conquest of Vietnam",
+  "start": 1858,
+  "end": 1885,
+  "kind": "war",
+  "summary": "Between 1858 and 1885 France conquered Vietnam in stages, beginning with a naval expedition sent to protect Catholic missionaries and win a foothold in East Asia. It annexed the south as the colony of Cochinchina, made Cambodia a protectorate, and then fought the Vietnamese court, the Black Flag irregulars and finally Qing China for the north. By 1885 all of Vietnam was under French rule, the core of the French Indochina formed in 1887, although armed resistance went on for years.",
+  "sides": [
+   {
+    "name": "France",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Charles Rigault de Genouilly",
+     "Léonard Charner",
+     "Francis Garnier",
+     "Henri Rivière",
+     "Amédée Courbet"
+    ]
+   },
+   {
+    "name": "Vietnam and its allies",
+    "color": "#c0473a",
+    "leaders": [
+     "Emperor Tu Duc",
+     "Nguyen Tri Phuong",
+     "Liu Yongfu (Black Flags)",
+     "Ton That Thuyet",
+     "Qing armies in Tonkin"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 106.5,
+    "lat": 16.0,
+    "r": 6.5
+   },
+   {
+    "lon": 119.4,
+    "lat": 26.0,
+    "r": 1.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1858,
+    "label": "Sep 1858 to 1859",
+    "title": "Landing at Tourane",
+    "text": "Citing the persecution of Catholic missionaries, Admiral Rigault de Genouilly led a Franco-Spanish fleet into the bay of Tourane (Da Nang) in September 1858 and took its forts. He hoped to march on the capital Hue, but Nguyen Tri Phuong's troops hemmed in the landing and disease ravaged the expedition.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Annam",
+       "Cochin China"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        108.1,
+        16.12
+       ],
+       [
+        108.14,
+        16.0
+       ],
+       [
+        108.25,
+        15.97
+       ]
+      ],
+      "label": "Tourane perimeter"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Rigault de Genouilly",
+      "label": "Franco-Spanish fleet",
+      "path": [
+       [
+        113.5,
+        20.0
+       ],
+       [
+        110.5,
+        17.5
+       ],
+       [
+        108.25,
+        16.1
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Nguyen Tri Phuong",
+      "label": "Vietnamese army from Hue",
+      "path": [
+       [
+        107.58,
+        16.46
+       ],
+       [
+        107.95,
+        16.25
+       ],
+       [
+        108.12,
+        16.06
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Tourane",
+      "kind": "siege",
+      "lon": 108.22,
+      "lat": 16.07,
+      "year": 1858,
+      "winner": 1,
+      "text": "The French held the bay but could not break out, and finally abandoned it in 1860."
+     }
+    ]
+   },
+   {
+    "year": 1861,
+    "label": "Feb 1859 to Jun 1862",
+    "title": "Saigon and the first treaty",
+    "text": "Rigault sailed south and captured the citadel of Saigon in February 1859, a rich rice port far from Hue. In February 1861 Admiral Charner broke the Vietnamese siege lines at Ky Hoa, and the French overran the surrounding provinces. Facing a rebellion in the north, Emperor Tu Duc signed the Treaty of Saigon in June 1862, ceding three southern provinces and paying an indemnity.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Annam",
+       "Cochin China"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        106.62,
+        10.83
+       ],
+       [
+        106.66,
+        10.79
+       ],
+       [
+        106.69,
+        10.76
+       ]
+      ],
+      "label": "Ky Hoa lines, 1861"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Rigault de Genouilly",
+      "label": "Fleet to Saigon",
+      "path": [
+       [
+        108.22,
+        16.07
+       ],
+       [
+        109.3,
+        13.5
+       ],
+       [
+        108.0,
+        10.6
+       ],
+       [
+        106.85,
+        10.4
+       ],
+       [
+        106.7,
+        10.78
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Léonard Charner",
+      "label": "Breakout from Saigon",
+      "path": [
+       [
+        106.7,
+        10.78
+       ],
+       [
+        106.66,
+        10.8
+       ],
+       [
+        106.5,
+        10.55
+       ],
+       [
+        106.36,
+        10.36
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Nguyen Tri Phuong",
+      "label": "Siege army at Ky Hoa",
+      "path": [
+       [
+        107.0,
+        10.95
+       ],
+       [
+        106.8,
+        10.88
+       ],
+       [
+        106.66,
+        10.81
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Saigon",
+      "kind": "siege",
+      "lon": 106.7,
+      "lat": 10.78,
+      "year": 1859,
+      "winner": 0,
+      "text": "French and Spanish troops stormed the citadel of Saigon."
+     },
+     {
+      "name": "Battle of Ky Hoa",
+      "kind": "battle",
+      "lon": 106.66,
+      "lat": 10.8,
+      "year": 1861,
+      "winner": 0,
+      "text": "Charner's reinforced army broke the Vietnamese lines around Saigon."
+     },
+     {
+      "name": "Treaty of Saigon",
+      "kind": "treaty",
+      "lon": 106.7,
+      "lat": 10.76,
+      "year": 1862,
+      "winner": 0,
+      "text": "Vietnam ceded Bien Hoa, Gia Dinh and Dinh Tuong provinces to France."
+     }
+    ]
+   },
+   {
+    "year": 1867,
+    "label": "1863 to 1867",
+    "title": "Cochinchina and Cambodia",
+    "text": "In 1863 King Norodom of Cambodia, squeezed between Siam and Vietnam, accepted a French protectorate. In June 1867 Admiral de La Grandière seized the three western provinces of the Mekong delta without a fight, and their governor Phan Thanh Gian took poison. All of the south was now the French colony of Cochinchina, and a French expedition was exploring the Mekong as a trade route to China.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cochin China",
+       "Cambodia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Annam"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Pierre de La Grandière",
+      "label": "Seizure of the western provinces",
+      "path": [
+       [
+        106.7,
+        10.78
+       ],
+       [
+        105.97,
+        10.25
+       ],
+       [
+        105.12,
+        10.7
+       ],
+       [
+        104.48,
+        10.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Doudart de Lagrée",
+      "label": "Mekong expedition",
+      "path": [
+       [
+        104.92,
+        11.56
+       ],
+       [
+        105.8,
+        15.1
+       ],
+       [
+        102.6,
+        17.97
+       ],
+       [
+        102.14,
+        19.89
+       ],
+       [
+        100.8,
+        22.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Cambodian protectorate",
+      "kind": "treaty",
+      "lon": 104.75,
+      "lat": 11.8,
+      "year": 1863,
+      "winner": 0,
+      "text": "King Norodom placed Cambodia under French protection at Oudong."
+     },
+     {
+      "name": "Annexation of western Cochinchina",
+      "kind": "event",
+      "lon": 105.97,
+      "lat": 10.25,
+      "year": 1867,
+      "winner": 0,
+      "text": "France took Vinh Long, An Giang and Ha Tien, completing the colony."
+     }
+    ]
+   },
+   {
+    "year": 1873,
+    "label": "Nov 1873 to 1874",
+    "title": "Garnier in Tonkin",
+    "text": "The explorer Francis Garnier was sent north in 1873 to settle a quarrel over trade on the Red River, but with a few hundred men he stormed the citadel of Hanoi and seized the delta towns. In December Liu Yongfu's Black Flags, Chinese irregulars working for the Vietnamese court, ambushed and killed him outside Hanoi. France disowned the venture and withdrew, but the 1874 treaty opened the Red River to trade.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Cochin China",
+       "Cambodia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Annam"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Francis Garnier",
+      "label": "Expedition to Hanoi",
+      "path": [
+       [
+        106.7,
+        10.78
+       ],
+       [
+        109.3,
+        12.3
+       ],
+       [
+        108.9,
+        15.5
+       ],
+       [
+        107.0,
+        19.8
+       ],
+       [
+        106.68,
+        20.86
+       ],
+       [
+        105.85,
+        21.03
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Liu Yongfu",
+      "label": "Black Flags from Son Tay",
+      "path": [
+       [
+        105.5,
+        21.14
+       ],
+       [
+        105.7,
+        21.07
+       ],
+       [
+        105.8,
+        21.03
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of the Hanoi citadel",
+      "kind": "siege",
+      "lon": 105.84,
+      "lat": 21.035,
+      "year": 1873,
+      "winner": 0,
+      "text": "Garnier's small force stormed the citadel in an hour."
+     },
+     {
+      "name": "Battle of Cau Giay",
+      "kind": "battle",
+      "lon": 105.8,
+      "lat": 21.03,
+      "year": 1873,
+      "winner": 1,
+      "text": "The Black Flags ambushed and killed Garnier at the Paper Bridge."
+     },
+     {
+      "name": "Treaty of 1874",
+      "kind": "treaty",
+      "lon": 106.7,
+      "lat": 10.78,
+      "year": 1874,
+      "winner": null,
+      "text": "France gave back the delta towns but gained trade rights on the Red River."
+     }
+    ]
+   },
+   {
+    "year": 1883,
+    "label": "Apr 1882 to Aug 1883",
+    "title": "Rivière and the protectorate",
+    "text": "Commander Henri Rivière took the Hanoi citadel again in April 1882, and in May 1883 he too was killed by the Black Flags near the Paper Bridge. France now sent real forces: in August Admiral Courbet bombarded the Thuan An forts guarding Hue, and with Tu Duc just dead the court signed the Harmand Treaty, accepting a French protectorate over Annam and Tonkin.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "French Indochina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Annam"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        105.75,
+        21.25
+       ],
+       [
+        105.74,
+        21.05
+       ],
+       [
+        105.8,
+        20.85
+       ]
+      ],
+      "label": "Hanoi front, 1883"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Henri Rivière",
+      "label": "Up the Red River to Hanoi",
+      "path": [
+       [
+        106.68,
+        20.86
+       ],
+       [
+        106.2,
+        20.95
+       ],
+       [
+        105.85,
+        21.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Amédée Courbet",
+      "label": "Fleet to Hue",
+      "path": [
+       [
+        107.2,
+        18.9
+       ],
+       [
+        107.9,
+        17.2
+       ],
+       [
+        107.65,
+        16.57
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Liu Yongfu",
+      "label": "Black Flags attack",
+      "path": [
+       [
+        105.5,
+        21.14
+       ],
+       [
+        105.7,
+        21.07
+       ],
+       [
+        105.8,
+        21.04
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Second Battle of Cau Giay",
+      "kind": "battle",
+      "lon": 105.8,
+      "lat": 21.03,
+      "year": 1883,
+      "winner": 1,
+      "text": "The Black Flags routed a French sortie and killed Rivière."
+     },
+     {
+      "name": "Battle of Thuan An",
+      "kind": "battle",
+      "lon": 107.65,
+      "lat": 16.56,
+      "year": 1883,
+      "winner": 0,
+      "text": "Courbet's ships and landing parties took the forts at the mouth of the Hue River."
+     },
+     {
+      "name": "Harmand Treaty",
+      "kind": "treaty",
+      "lon": 107.58,
+      "lat": 16.46,
+      "year": 1883,
+      "winner": 0,
+      "text": "The Hue court accepted a French protectorate over all of Vietnam."
+     }
+    ]
+   },
+   {
+    "year": 1884,
+    "label": "Dec 1883 to Apr 1885",
+    "title": "Sino-French War",
+    "text": "Qing China, which treated Vietnam as a tributary, sent armies into Tonkin alongside the Black Flags. The French took Son Tay in December 1883 and Bac Ninh in March 1884, and when talks broke down Courbet destroyed the Chinese Fujian fleet at Fuzhou. A French push took Lang Son in February 1885, but a Chinese victory at Bang Bo forced a hasty retreat that brought down Jules Ferry's government in Paris.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "French Indochina",
+       "Annam"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchu Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        104.9,
+        21.4
+       ],
+       [
+        105.2,
+        21.8
+       ],
+       [
+        105.9,
+        21.75
+       ],
+       [
+        106.75,
+        21.7
+       ],
+       [
+        107.3,
+        21.5
+       ]
+      ],
+      "label": "Tonkin front, early 1885"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Amédée Courbet",
+      "label": "Attack on Son Tay",
+      "path": [
+       [
+        105.85,
+        21.03
+       ],
+       [
+        105.65,
+        21.1
+       ],
+       [
+        105.5,
+        21.14
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Louis Brière de l'Isle",
+      "label": "Lang Son campaign",
+      "path": [
+       [
+        106.07,
+        21.18
+       ],
+       [
+        106.3,
+        21.45
+       ],
+       [
+        106.76,
+        21.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Feng Zicai",
+      "label": "Guangxi Army counterattack",
+      "path": [
+       [
+        106.73,
+        22.15
+       ],
+       [
+        106.74,
+        22.0
+       ],
+       [
+        106.6,
+        21.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Amédée Courbet",
+      "label": "Far East Squadron to Fuzhou",
+      "path": [
+       [
+        121.5,
+        25.4
+       ],
+       [
+        120.2,
+        26.1
+       ],
+       [
+        119.45,
+        26.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Son Tay",
+      "kind": "siege",
+      "lon": 105.5,
+      "lat": 21.14,
+      "year": 1883,
+      "winner": 0,
+      "text": "Courbet stormed the Black Flag stronghold west of Hanoi."
+     },
+     {
+      "name": "Battle of Fuzhou",
+      "kind": "battle",
+      "lon": 119.45,
+      "lat": 26.0,
+      "year": 1884,
+      "winner": 0,
+      "text": "Courbet's squadron sank most of the Fujian fleet in under an hour."
+     },
+     {
+      "name": "Battle of Bang Bo",
+      "kind": "battle",
+      "lon": 106.74,
+      "lat": 22.0,
+      "year": 1885,
+      "winner": 1,
+      "text": "Feng Zicai's troops threw the French back from the Chinese border."
+     }
+    ]
+   },
+   {
+    "year": 1885,
+    "label": "Jun to Jul 1885",
+    "title": "Treaty of Tianjin and Can Vuong",
+    "text": "In June 1885 China signed the Treaty of Tianjin, gave up its claims and pulled its troops out of Tonkin. In July the regent Ton That Thuyet attacked the French garrison in Hue, failed, and fled into the mountains with the boy emperor Ham Nghi, calling on the people to rise in the Can Vuong (Aid the King) movement. The French put a new emperor on the throne and spent the next decade crushing the resistance.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "French Indochina",
+       "Annam"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ton That Thuyet",
+      "label": "Flight with Emperor Ham Nghi",
+      "path": [
+       [
+        107.58,
+        16.46
+       ],
+       [
+        107.0,
+        16.75
+       ],
+       [
+        106.4,
+        17.5
+       ],
+       [
+        105.6,
+        18.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "General de Courcy",
+      "label": "French garrison in Hue",
+      "path": [
+       [
+        107.65,
+        16.56
+       ],
+       [
+        107.6,
+        16.5
+       ],
+       [
+        107.58,
+        16.47
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Tianjin",
+      "kind": "treaty",
+      "lon": 117.2,
+      "lat": 39.13,
+      "year": 1885,
+      "winner": 0,
+      "text": "China recognised the French protectorate over Vietnam."
+     },
+     {
+      "name": "Fall of Hue",
+      "kind": "battle",
+      "lon": 107.58,
+      "lat": 16.47,
+      "year": 1885,
+      "winner": 0,
+      "text": "A night attack on the French garrison failed and the court fled the capital."
+     },
+     {
+      "name": "Can Vuong edict",
+      "kind": "event",
+      "lon": 106.4,
+      "lat": 17.5,
+      "year": 1885,
+      "winner": null,
+      "text": "Issued in Ham Nghi's name, it called scholars and villagers to resist the French."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "russian-conquest-central-asia",
+  "name": "Russian conquest of Central Asia",
+  "start": 1839,
+  "end": 1881,
+  "kind": "conflict",
+  "summary": "Over four decades the Russian Empire advanced south from the Kazakh steppe into the oasis khanates of Central Asia, driven by the search for secure frontiers, trade and cotton, and by rivalry with Britain in the Great Game. Small, well-armed columns took Tashkent in 1865 and Samarkand in 1868, made Bukhara and Khiva protectorates and annexed Kokand, and the storming of the Turkmen fortress of Geok Tepe in 1881 completed the conquest. Russian Turkestan was ruled as a colony until 1917, and its borders shaped today's Central Asian states.",
+  "sides": [
+   {
+    "name": "Russian Empire",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Vasily Perovsky",
+     "Mikhail Chernyaev",
+     "Konstantin von Kaufman",
+     "Mikhail Skobelev"
+    ]
+   },
+   {
+    "name": "Central Asian khanates and Turkmen",
+    "color": "#c0473a",
+    "leaders": [
+     "Alimqul of Kokand",
+     "Emir Muzaffar of Bukhara",
+     "Muhammad Rahim Khan II of Khiva",
+     "Khudayar Khan of Kokand",
+     "Akhal Teke Turkmen"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 63.0,
+    "lat": 43.0,
+    "r": 9
+   },
+   {
+    "lon": 56.0,
+    "lat": 48.5,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1839,
+    "label": "1839 to 1840",
+    "title": "Perovsky's winter march on Khiva",
+    "text": "To end Khivan raids and slave taking on the steppe, the governor of Orenburg, Vasily Perovsky, led about 5,000 men and 10,000 camels south in November 1839. A savage winter killed most of the camels and many men before they had covered half the distance, and Perovsky turned back near the Emba in early 1840. Russia learned to advance slowly, behind lines of forts.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Turan",
+       "central Asian khanates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        51.37,
+        51.23
+       ],
+       [
+        55.1,
+        51.77
+       ],
+       [
+        58.57,
+        51.2
+       ],
+       [
+        61.56,
+        54.08
+       ]
+      ],
+      "label": "Orenburg line, 1839"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Vasily Perovsky",
+      "label": "Winter expedition",
+      "path": [
+       [
+        55.1,
+        51.77
+       ],
+       [
+        56.0,
+        49.6
+       ],
+       [
+        57.4,
+        47.6
+       ],
+       [
+        58.2,
+        47.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Vasily Perovsky",
+      "label": "Retreat, spring 1840",
+      "path": [
+       [
+        58.2,
+        47.0
+       ],
+       [
+        57.0,
+        48.2
+       ],
+       [
+        55.3,
+        51.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Expedition turns back",
+      "kind": "event",
+      "lon": 58.2,
+      "lat": 47.0,
+      "year": 1840,
+      "winner": 1,
+      "text": "Snow, cold and camel deaths stopped the column near the Emba, c. 1840."
+     }
+    ]
+   },
+   {
+    "year": 1853,
+    "label": "1847 to 1854",
+    "title": "Forts on the Syr Darya",
+    "text": "Russia built forts across the steppe, put steamers on the Aral Sea and in 1853 Perovsky stormed the Kokandi fortress of Ak-Mechet on the Syr Darya, renaming it Fort Perovsky. From Siberia another line of forts reached the foothills of the Tian Shan, where Fort Verny, later Almaty, was founded in 1854. Between the two lines a gap of hundreds of kilometres still led to Tashkent.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "central Asian khanates"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Turan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        61.0,
+        46.0
+       ],
+       [
+        63.5,
+        45.6
+       ],
+       [
+        65.5,
+        44.85
+       ],
+       [
+        66.8,
+        44.3
+       ]
+      ],
+      "label": "Syr Darya line"
+     },
+     {
+      "path": [
+       [
+        74.5,
+        43.0
+       ],
+       [
+        76.95,
+        43.25
+       ],
+       [
+        79.06,
+        45.12
+       ]
+      ],
+      "label": "Siberian line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Vasily Perovsky",
+      "label": "Up the Syr Darya",
+      "path": [
+       [
+        55.1,
+        51.77
+       ],
+       [
+        59.0,
+        48.5
+       ],
+       [
+        61.0,
+        46.0
+       ],
+       [
+        65.5,
+        44.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Siberian Cossacks",
+      "label": "South from Semipalatinsk",
+      "path": [
+       [
+        80.25,
+        50.4
+       ],
+       [
+        80.0,
+        47.5
+       ],
+       [
+        79.06,
+        45.12
+       ],
+       [
+        76.95,
+        43.25
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Ak-Mechet",
+      "kind": "siege",
+      "lon": 65.5,
+      "lat": 44.85,
+      "year": 1853,
+      "winner": 0,
+      "text": "Perovsky stormed the Kokandi fort, anchoring the Syr Darya line."
+     },
+     {
+      "name": "Founding of Fort Verny",
+      "kind": "event",
+      "lon": 76.95,
+      "lat": 43.25,
+      "year": 1854,
+      "winner": 0,
+      "text": "The new fort, later Almaty, held the southern end of the Siberian line."
+     }
+    ]
+   },
+   {
+    "year": 1865,
+    "label": "1864 to 1865",
+    "title": "Chernyaev takes Tashkent",
+    "text": "In 1864 columns from both lines closed the gap, taking Aulie-Ata, Turkestan and Chimkent. Colonel Mikhail Chernyaev then attacked Tashkent, the largest city of Central Asia, without clear orders; its Kokandi defender Alimqul was killed, and the city fell after street fighting in June 1865. St Petersburg accepted the conquest and made Tashkent the centre of a new Turkestan province.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "central Asian khanates"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Turan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        66.8,
+        44.3
+       ],
+       [
+        68.27,
+        43.3
+       ],
+       [
+        69.6,
+        42.32
+       ],
+       [
+        71.37,
+        42.9
+       ],
+       [
+        74.5,
+        43.0
+       ]
+      ],
+      "label": "New Kokand line, 1864"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mikhail Chernyaev",
+      "label": "From Verny to Tashkent",
+      "path": [
+       [
+        76.95,
+        43.25
+       ],
+       [
+        71.37,
+        42.9
+       ],
+       [
+        69.6,
+        42.32
+       ],
+       [
+        69.24,
+        41.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikolai Veryovkin",
+      "label": "Up the Syr Darya",
+      "path": [
+       [
+        65.5,
+        44.85
+       ],
+       [
+        68.27,
+        43.3
+       ],
+       [
+        69.6,
+        42.32
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Alimqul",
+      "label": "Kokandi army to Tashkent",
+      "path": [
+       [
+        70.94,
+        40.53
+       ],
+       [
+        70.2,
+        40.9
+       ],
+       [
+        69.3,
+        41.25
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Chimkent",
+      "kind": "siege",
+      "lon": 69.6,
+      "lat": 42.32,
+      "year": 1864,
+      "winner": 0,
+      "text": "Chernyaev's storm of Chimkent closed the gap between the two lines."
+     },
+     {
+      "name": "Capture of Tashkent",
+      "kind": "siege",
+      "lon": 69.24,
+      "lat": 41.3,
+      "year": 1865,
+      "winner": 0,
+      "text": "Chernyaev stormed the city of 100,000 with under 2,000 men."
+     }
+    ]
+   },
+   {
+    "year": 1868,
+    "label": "1866 to 1868",
+    "title": "Bukhara and Samarkand",
+    "text": "Emir Muzaffar of Bukhara demanded Tashkent back and was routed at Irjar in 1866. General Konstantin von Kaufman, first governor-general of Turkestan, marched up the Zeravshan valley and took Samarkand, Tamerlane's old capital, in May 1868, then beat the emir on the Zerabulak heights while a small garrison held Samarkand against a rising. Bukhara became a Russian protectorate, shorn of Samarkand.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "central Asian khanates"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Turan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        66.0,
+        40.2
+       ],
+       [
+        66.3,
+        39.8
+       ],
+       [
+        66.5,
+        39.3
+       ]
+      ],
+      "label": "Zeravshan front, Jun 1868"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Dmitry Romanovsky",
+      "label": "Irjar campaign, 1866",
+      "path": [
+       [
+        69.24,
+        41.3
+       ],
+       [
+        68.9,
+        40.75
+       ],
+       [
+        68.7,
+        40.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Konstantin von Kaufman",
+      "label": "Up the Zeravshan",
+      "path": [
+       [
+        69.24,
+        41.3
+       ],
+       [
+        67.84,
+        40.12
+       ],
+       [
+        66.96,
+        39.65
+       ],
+       [
+        66.3,
+        39.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Emir Muzaffar",
+      "label": "Bukharan army",
+      "path": [
+       [
+        64.42,
+        39.77
+       ],
+       [
+        65.5,
+        39.8
+       ],
+       [
+        66.2,
+        39.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Samarkand",
+      "kind": "siege",
+      "lon": 66.96,
+      "lat": 39.65,
+      "year": 1868,
+      "winner": 0,
+      "text": "Samarkand opened its gates to Kaufman after the Bukharan army fled."
+     },
+     {
+      "name": "Battle of Zerabulak",
+      "kind": "battle",
+      "lon": 66.3,
+      "lat": 39.8,
+      "year": 1868,
+      "winner": 0,
+      "text": "Kaufman broke the emir's last army near Katta-Kurgan, c. June 1868."
+     },
+     {
+      "name": "Bukhara becomes a protectorate",
+      "kind": "treaty",
+      "lon": 64.42,
+      "lat": 39.77,
+      "year": 1868,
+      "winner": 0,
+      "text": "Emir Muzaffar ceded Samarkand and accepted Russian supremacy."
+     }
+    ]
+   },
+   {
+    "year": 1873,
+    "label": "Feb to Aug 1873",
+    "title": "The march on Khiva",
+    "text": "Kaufman sent columns converging across the deserts on Khiva from Tashkent, Orenburg and the Caspian. The column from Krasnovodsk had to turn back for lack of water, but the others met outside Khiva, which surrendered in May 1873. Khan Muhammad Rahim II signed a treaty making Khiva a Russian protectorate, freeing its slaves and ceding the right bank of the Amu Darya.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "central Asian khanates"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Turan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Konstantin von Kaufman",
+      "label": "Turkestan column",
+      "path": [
+       [
+        69.24,
+        41.3
+       ],
+       [
+        67.84,
+        40.12
+       ],
+       [
+        64.0,
+        41.5
+       ],
+       [
+        61.4,
+        41.6
+       ],
+       [
+        60.36,
+        41.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikolai Veryovkin",
+      "label": "Orenburg column",
+      "path": [
+       [
+        55.1,
+        51.77
+       ],
+       [
+        58.5,
+        47.0
+       ],
+       [
+        59.0,
+        44.5
+       ],
+       [
+        58.9,
+        43.07
+       ],
+       [
+        60.36,
+        41.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikolai Lomakin",
+      "label": "Mangyshlak column",
+      "path": [
+       [
+        50.25,
+        44.52
+       ],
+       [
+        55.0,
+        43.5
+       ],
+       [
+        58.9,
+        43.07
+       ],
+       [
+        60.3,
+        41.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Vasily Markozov",
+      "label": "Krasnovodsk column turns back",
+      "path": [
+       [
+        52.98,
+        40.02
+       ],
+       [
+        55.0,
+        39.5
+       ],
+       [
+        56.5,
+        39.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Surrender of Khiva",
+      "kind": "siege",
+      "lon": 60.36,
+      "lat": 41.38,
+      "year": 1873,
+      "winner": 0,
+      "text": "The khanate's capital surrendered after a brief bombardment."
+     },
+     {
+      "name": "Treaty of Gandumian",
+      "kind": "treaty",
+      "lon": 60.42,
+      "lat": 41.33,
+      "year": 1873,
+      "winner": 0,
+      "text": "Khiva became a Russian protectorate and abolished slavery."
+     }
+    ]
+   },
+   {
+    "year": 1876,
+    "label": "1875 to 1876",
+    "title": "The end of Kokand",
+    "text": "A revolt against Khudayar Khan, the Russian-backed ruler of Kokand, turned into a holy war against Russia in 1875. Kaufman and the young Mikhail Skobelev beat the rebels at Makhram and stormed their strongholds in the Fergana valley. In February 1876 Russia abolished the khanate and annexed it as the province of Fergana.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "central Asian khanates"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Turan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Konstantin von Kaufman",
+      "label": "Into the Fergana valley",
+      "path": [
+       [
+        69.24,
+        41.3
+       ],
+       [
+        69.62,
+        40.28
+       ],
+       [
+        69.95,
+        40.42
+       ],
+       [
+        70.94,
+        40.53
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Skobelev",
+      "label": "Storm of Andijan",
+      "path": [
+       [
+        70.94,
+        40.53
+       ],
+       [
+        71.8,
+        40.7
+       ],
+       [
+        72.34,
+        40.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Makhram",
+      "kind": "battle",
+      "lon": 69.95,
+      "lat": 40.42,
+      "year": 1875,
+      "winner": 0,
+      "text": "Kaufman routed the main rebel army on the Syr Darya, c. August 1875."
+     },
+     {
+      "name": "Storming of Andijan",
+      "kind": "siege",
+      "lon": 72.34,
+      "lat": 40.78,
+      "year": 1876,
+      "winner": 0,
+      "text": "Skobelev's capture of Andijan broke the last resistance in Fergana."
+     },
+     {
+      "name": "Annexation of Kokand",
+      "kind": "event",
+      "lon": 70.94,
+      "lat": 40.53,
+      "year": 1876,
+      "winner": 0,
+      "text": "The khanate was abolished and became the Russian province of Fergana."
+     }
+    ]
+   },
+   {
+    "year": 1881,
+    "label": "1879 to 1881",
+    "title": "Geok Tepe",
+    "text": "The Akhal Teke Turkmen beat off a Russian assault on their mud-walled fortress of Geok Tepe in 1879. Skobelev returned in 1880 with a railway built across the desert from the Caspian, besieged the fortress and in January 1881 blew a breach with a mine and stormed it; thousands of defenders and civilians were killed in the assault and pursuit. The Turkmen lands were annexed as Transcaspia, and Merv submitted in 1884.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Bokhara Khanate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        57.92,
+        38.18
+       ],
+       [
+        57.95,
+        38.13
+       ],
+       [
+        58.0,
+        38.14
+       ]
+      ],
+      "label": "Siege lines, Jan 1881"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Nikolai Lomakin",
+      "label": "Repulsed, 1879",
+      "path": [
+       [
+        52.98,
+        40.02
+       ],
+       [
+        56.27,
+        38.98
+       ],
+       [
+        57.9,
+        38.17
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Skobelev",
+      "label": "Akhal Teke expedition",
+      "path": [
+       [
+        53.0,
+        39.9
+       ],
+       [
+        56.27,
+        38.98
+       ],
+       [
+        57.6,
+        38.3
+       ],
+       [
+        57.96,
+        38.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Aleksey Kuropatkin",
+      "label": "Turkestan detachment",
+      "path": [
+       [
+        60.36,
+        41.38
+       ],
+       [
+        59.0,
+        39.5
+       ],
+       [
+        58.0,
+        38.17
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "First Battle of Geok Tepe",
+      "kind": "battle",
+      "lon": 57.9,
+      "lat": 38.18,
+      "year": 1879,
+      "winner": 1,
+      "text": "The Turkmen defeated Lomakin's assault and drove the Russians back to the Caspian."
+     },
+     {
+      "name": "Siege of Geok Tepe",
+      "kind": "siege",
+      "lon": 57.97,
+      "lat": 38.15,
+      "year": 1881,
+      "winner": 0,
+      "text": "Skobelev stormed the fortress, ending Turkmen resistance."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "paraguayan-war",
+  "name": "Paraguayan War",
+  "start": 1864,
+  "end": 1870,
+  "kind": "war",
+  "summary": "The Paraguayan War, or War of the Triple Alliance, began when Paraguay's ruler Francisco Solano López, fearing Brazilian and Argentine dominance over the river states, attacked Brazil after it intervened in Uruguay, and then Argentina when it refused his army passage. Brazil, Argentina and Uruguay allied against him and, after a long, bloody struggle around the river fortress of Humaitá, occupied Asunción and hunted López down in 1870. Paraguay lost a large share of its population, by some estimates more than half, and much territory in the deadliest interstate war in Latin American history.",
+  "sides": [
+   {
+    "name": "Triple Alliance (Brazil, Argentina, Uruguay)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Bartolomé Mitre",
+     "Duke of Caxias",
+     "Count of Eu",
+     "Admiral Barroso",
+     "Venancio Flores"
+    ]
+   },
+   {
+    "name": "Paraguay",
+    "color": "#c0473a",
+    "leaders": [
+     "Francisco Solano López",
+     "Antonio Estigarribia",
+     "José E. Díaz",
+     "Bernardino Caballero"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -58.0,
+    "lat": -26.0,
+    "r": 4.5
+   },
+   {
+    "lon": -57.6,
+    "lat": -31.0,
+    "r": 3.5
+   },
+   {
+    "lon": -57.7,
+    "lat": -19.8,
+    "r": 1.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1864,
+    "label": "Oct 1864 to Feb 1865",
+    "title": "Brazil in Uruguay, López strikes",
+    "text": "Brazil invaded Uruguay in October 1864 to back Venancio Flores's Colorado rebels against the Blanco government, Paraguay's ally, and besieged Paysandú. López answered by seizing a Brazilian steamer on the Paraguay River and sending an expedition upriver that overran Brazil's lightly held province of Mato Grosso in December. Paysandú fell in January 1865 and Flores took power in Montevideo.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of Brazil"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Paraguay"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Venancio Flores and Admiral Tamandaré",
+      "label": "Into Uruguay",
+      "path": [
+       [
+        -57.09,
+        -29.76
+       ],
+       [
+        -57.96,
+        -31.38
+       ],
+       [
+        -58.08,
+        -32.32
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Vicente Barrios",
+      "label": "Expedition up the Paraguay River",
+      "path": [
+       [
+        -57.64,
+        -25.28
+       ],
+       [
+        -57.9,
+        -22.1
+       ],
+       [
+        -57.75,
+        -19.92
+       ],
+       [
+        -57.65,
+        -19.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Paysandú",
+      "kind": "siege",
+      "lon": -58.08,
+      "lat": -32.32,
+      "year": 1865,
+      "winner": 0,
+      "text": "Brazilian and Colorado forces took the Blanco stronghold after a month's siege."
+     },
+     {
+      "name": "Fall of Fort Coimbra",
+      "kind": "siege",
+      "lon": -57.75,
+      "lat": -19.92,
+      "year": 1864,
+      "winner": 1,
+      "text": "The Paraguayans forced the Brazilian fort and overran southern Mato Grosso."
+     }
+    ]
+   },
+   {
+    "year": 1865,
+    "label": "Apr to Sep 1865",
+    "title": "Invasion of Corrientes",
+    "text": "When Argentina refused to let his army cross its territory, López invaded the Argentine province of Corrientes in April 1865, and Brazil, Argentina and Uruguay signed the Treaty of the Triple Alliance. The Brazilian navy under Admiral Barroso destroyed the Paraguayan fleet at Riachuelo in June, and a Paraguayan column under Estigarribia that pushed down the Uruguay River into Brazil was surrounded and surrendered at Uruguaiana in September.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of Brazil",
+       "United Provinces of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Paraguay"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Wenceslao Robles",
+      "label": "Invasion of Corrientes",
+      "path": [
+       [
+        -58.57,
+        -27.32
+       ],
+       [
+        -58.83,
+        -27.47
+       ],
+       [
+        -59.0,
+        -28.4
+       ],
+       [
+        -59.27,
+        -29.14
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Antonio Estigarribia",
+      "label": "Down the Uruguay River",
+      "path": [
+       [
+        -55.87,
+        -27.33
+       ],
+       [
+        -55.97,
+        -28.65
+       ],
+       [
+        -57.09,
+        -29.76
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Admiral Barroso",
+      "label": "Brazilian squadron up the Paraná",
+      "path": [
+       [
+        -58.4,
+        -34.0
+       ],
+       [
+        -60.65,
+        -32.95
+       ],
+       [
+        -60.5,
+        -31.7
+       ],
+       [
+        -59.6,
+        -29.2
+       ],
+       [
+        -58.78,
+        -27.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bartolomé Mitre",
+      "label": "Allied army to Uruguaiana",
+      "path": [
+       [
+        -58.08,
+        -32.32
+       ],
+       [
+        -57.96,
+        -31.38
+       ],
+       [
+        -57.15,
+        -29.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of the Triple Alliance",
+      "kind": "treaty",
+      "lon": -58.38,
+      "lat": -34.6,
+      "year": 1865,
+      "winner": 0,
+      "text": "Brazil, Argentina and Uruguay agreed to fight until López was removed."
+     },
+     {
+      "name": "Battle of Riachuelo",
+      "kind": "battle",
+      "lon": -58.78,
+      "lat": -27.55,
+      "year": 1865,
+      "winner": 0,
+      "text": "Barroso's squadron destroyed the Paraguayan navy, giving the allies control of the rivers."
+     },
+     {
+      "name": "Siege of Uruguaiana",
+      "kind": "siege",
+      "lon": -57.09,
+      "lat": -29.76,
+      "year": 1865,
+      "winner": 0,
+      "text": "Estigarribia's column of some 5,000 men surrendered to the allies."
+     }
+    ]
+   },
+   {
+    "year": 1866,
+    "label": "Apr to Sep 1866",
+    "title": "Tuyutí and Curupayty",
+    "text": "The allies crossed the Paraná at Paso de Patria in April 1866 and dug in at Tuyutí, where on 24 May they beat off a massive Paraguayan attack in the largest battle ever fought in South America. They then stalled before the trench lines covering the river fortress of Humaitá, and in September an allied frontal assault on Curupayty was cut to pieces, halting the advance for a year.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of Brazil",
+       "United Provinces of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Paraguay"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -58.62,
+        -27.13
+       ],
+       [
+        -58.5,
+        -27.18
+       ],
+       [
+        -58.38,
+        -27.2
+       ],
+       [
+        -58.28,
+        -27.17
+       ]
+      ],
+      "label": "Humaitá lines, 1866"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Bartolomé Mitre",
+      "label": "Crossing at Paso de Patria",
+      "path": [
+       [
+        -58.75,
+        -27.5
+       ],
+       [
+        -58.57,
+        -27.32
+       ],
+       [
+        -58.38,
+        -27.25
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "José E. Díaz",
+      "label": "Attack at Tuyutí",
+      "path": [
+       [
+        -58.45,
+        -27.15
+       ],
+       [
+        -58.4,
+        -27.2
+       ],
+       [
+        -58.37,
+        -27.24
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bartolomé Mitre",
+      "label": "Assault on Curupayty",
+      "path": [
+       [
+        -58.55,
+        -27.22
+       ],
+       [
+        -58.58,
+        -27.17
+       ],
+       [
+        -58.6,
+        -27.14
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Tuyutí",
+      "kind": "battle",
+      "lon": -58.37,
+      "lat": -27.23,
+      "year": 1866,
+      "winner": 0,
+      "text": "Allied firepower shattered López's attack, killing or wounding some 13,000 Paraguayans."
+     },
+     {
+      "name": "Battle of Curupayty",
+      "kind": "battle",
+      "lon": -58.6,
+      "lat": -27.14,
+      "year": 1866,
+      "winner": 1,
+      "text": "Díaz's entrenched defenders cut down thousands of attackers for small losses."
+     }
+    ]
+   },
+   {
+    "year": 1868,
+    "label": "1867 to Aug 1868",
+    "title": "Caxias and the fall of Humaitá",
+    "text": "The Brazilian Marshal Caxias took over the allied command, rebuilt the army and outflanked the Humaitá lines to the east. In February 1868 Brazilian ironclads forced their way upriver past the fortress, and López slipped away to new lines further north; the starving garrison of Humaitá surrendered in August.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of Brazil",
+       "United Provinces of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Paraguay"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -58.62,
+        -27.13
+       ],
+       [
+        -58.5,
+        -27.18
+       ],
+       [
+        -58.38,
+        -27.2
+       ],
+       [
+        -58.28,
+        -27.17
+       ]
+      ],
+      "label": "Humaitá lines"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Caxias",
+      "label": "Flank march around Humaitá",
+      "path": [
+       [
+        -58.37,
+        -27.23
+       ],
+       [
+        -58.25,
+        -27.02
+       ],
+       [
+        -58.4,
+        -26.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Delfim de Carvalho",
+      "label": "Ironclads pass Humaitá",
+      "path": [
+       [
+        -58.62,
+        -27.16
+       ],
+       [
+        -58.52,
+        -27.05
+       ],
+       [
+        -58.3,
+        -26.6
+       ],
+       [
+        -57.75,
+        -25.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Francisco Solano López",
+      "label": "Withdrawal north",
+      "path": [
+       [
+        -58.51,
+        -27.07
+       ],
+       [
+        -58.2,
+        -26.7
+       ],
+       [
+        -57.7,
+        -26.0
+       ],
+       [
+        -57.55,
+        -25.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Passage of Humaitá",
+      "kind": "battle",
+      "lon": -58.52,
+      "lat": -27.05,
+      "year": 1868,
+      "winner": 0,
+      "text": "Six Brazilian ironclads ran past the fortress guns under fire."
+     },
+     {
+      "name": "Fall of Humaitá",
+      "kind": "siege",
+      "lon": -58.5,
+      "lat": -27.08,
+      "year": 1868,
+      "winner": 0,
+      "text": "The cut-off garrison surrendered after its supplies ran out."
+     }
+    ]
+   },
+   {
+    "year": 1868,
+    "label": "Dec 1868 to Jan 1869",
+    "title": "The Dezembrada and Asunción",
+    "text": "Caxias built a road through the Chaco swamps, landed his army behind López's new Piquisiry line and struck from the north in a run of December battles at Itororó, Avay and Lomas Valentinas. The Paraguayan army was nearly destroyed, though López escaped, and allied troops occupied a deserted Asunción on 1 January 1869.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of Brazil",
+       "United Provinces of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Paraguay"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -57.57,
+        -25.75
+       ],
+       [
+        -57.45,
+        -25.66
+       ],
+       [
+        -57.35,
+        -25.6
+       ]
+      ],
+      "label": "Piquisiry line, Dec 1868"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Caxias",
+      "label": "Chaco road and landing",
+      "path": [
+       [
+        -58.3,
+        -26.5
+       ],
+       [
+        -57.95,
+        -25.95
+       ],
+       [
+        -57.65,
+        -25.4
+       ],
+       [
+        -57.52,
+        -25.53
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Caxias",
+      "label": "Occupation of Asunción",
+      "path": [
+       [
+        -57.52,
+        -25.53
+       ],
+       [
+        -57.6,
+        -25.4
+       ],
+       [
+        -57.64,
+        -25.28
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Francisco Solano López",
+      "label": "Escape to the hills",
+      "path": [
+       [
+        -57.52,
+        -25.55
+       ],
+       [
+        -57.3,
+        -25.5
+       ],
+       [
+        -57.05,
+        -25.47
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Lomas Valentinas",
+      "kind": "battle",
+      "lon": -57.52,
+      "lat": -25.55,
+      "year": 1868,
+      "winner": 0,
+      "text": "A week of fighting destroyed most of the remaining Paraguayan army."
+     },
+     {
+      "name": "Occupation of Asunción",
+      "kind": "event",
+      "lon": -57.64,
+      "lat": -25.28,
+      "year": 1869,
+      "winner": 0,
+      "text": "Brazilian troops entered the abandoned capital on 1 January."
+     }
+    ]
+   },
+   {
+    "year": 1870,
+    "label": "1869 to Mar 1870",
+    "title": "Cordillera campaign and Cerro Corá",
+    "text": "López raised a last army of old men and boys in the hills east of Asunción. The Count of Eu, Emperor Pedro II's son-in-law, stormed his new capital Piribebuy in August 1869 and destroyed the remnant at Acosta Ñu, where many of the Paraguayan soldiers were children. Hunted into the northern forests, López was killed by Brazilian cavalry at Cerro Corá on 1 March 1870, ending the war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Viceroyalty of Brazil",
+       "United Provinces of the Río de la Plata"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Paraguay"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Count of Eu",
+      "label": "Cordillera campaign",
+      "path": [
+       [
+        -57.64,
+        -25.28
+       ],
+       [
+        -57.3,
+        -25.4
+       ],
+       [
+        -57.05,
+        -25.47
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Francisco Solano López",
+      "label": "Last retreat",
+      "path": [
+       [
+        -57.05,
+        -25.47
+       ],
+       [
+        -56.82,
+        -25.24
+       ],
+       [
+        -56.43,
+        -24.66
+       ],
+       [
+        -56.0,
+        -23.3
+       ],
+       [
+        -56.03,
+        -22.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "José Antônio Correia da Câmara",
+      "label": "Cavalry pursuit",
+      "path": [
+       [
+        -57.43,
+        -23.4
+       ],
+       [
+        -56.6,
+        -22.9
+       ],
+       [
+        -56.05,
+        -22.66
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Piribebuy",
+      "kind": "battle",
+      "lon": -57.05,
+      "lat": -25.47,
+      "year": 1869,
+      "winner": 0,
+      "text": "The Count of Eu stormed López's provisional capital."
+     },
+     {
+      "name": "Battle of Acosta Ñu",
+      "kind": "battle",
+      "lon": -56.97,
+      "lat": -25.4,
+      "year": 1869,
+      "winner": 0,
+      "text": "Thousands of Paraguayans, many of them boys, died covering López's retreat."
+     },
+     {
+      "name": "Battle of Cerro Corá",
+      "kind": "battle",
+      "lon": -56.03,
+      "lat": -22.65,
+      "year": 1870,
+      "winner": 0,
+      "text": "López was killed by Brazilian troops, ending the war."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "russo-turkish-war-1877",
+  "name": "Russo-Turkish War",
+  "start": 1877,
+  "end": 1878,
+  "kind": "war",
+  "summary": "After Ottoman forces brutally crushed a Bulgarian uprising in 1876, Russia declared war in April 1877 to back the Balkan Christians and extend its own influence, and Romania, Serbia and Montenegro fought on its side. The Russians crossed the Danube quickly but were held for five months at Plevna before crossing the Balkan mountains in winter and reaching the outskirts of Constantinople. The Treaty of San Stefano created a large Bulgaria, but the Great Powers cut it back at the Congress of Berlin, which recognised Romania, Serbia and Montenegro as independent.",
+  "sides": [
+   {
+    "name": "Russia and its allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Grand Duke Nicholas",
+     "Iosif Gurko",
+     "Mikhail Skobelev",
+     "Eduard Totleben",
+     "Mikhail Loris-Melikov",
+     "Carol I of Romania"
+    ]
+   },
+   {
+    "name": "Ottoman Empire",
+    "color": "#c0473a",
+    "leaders": [
+     "Osman Pasha",
+     "Süleyman Pasha",
+     "Ahmed Mukhtar Pasha",
+     "Mehmed Ali Pasha"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 26.0,
+    "lat": 43.0,
+    "r": 4
+   },
+   {
+    "lon": 42.8,
+    "lat": 40.7,
+    "r": 2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1877,
+    "label": "Apr to Jul 1877",
+    "title": "Across the Danube",
+    "text": "Russia declared war on 24 April 1877, and its army under Grand Duke Nicholas marched through allied Romania to the Danube. On 27 June General Dragomirov's division crossed the river at Svishtov, and the army fanned out into Bulgaria while a vanguard under Gurko pushed through the Balkan passes. In the Caucasus another Russian army under Loris-Melikov took Ardahan and closed on Kars.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.9,
+        44.0
+       ],
+       [
+        24.0,
+        43.75
+       ],
+       [
+        25.35,
+        43.63
+       ],
+       [
+        26.5,
+        44.05
+       ],
+       [
+        27.9,
+        44.1
+       ]
+      ],
+      "label": "Danube front, Jun 1877"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Grand Duke Nicholas",
+      "label": "Through Romania to the Danube",
+      "path": [
+       [
+        28.86,
+        47.0
+       ],
+       [
+        28.25,
+        46.48
+       ],
+       [
+        27.0,
+        45.4
+       ],
+       [
+        26.1,
+        44.43
+       ],
+       [
+        25.36,
+        43.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Iosif Gurko",
+      "label": "Advance guard over the Balkans",
+      "path": [
+       [
+        25.35,
+        43.62
+       ],
+       [
+        25.62,
+        43.08
+       ],
+       [
+        25.55,
+        42.77
+       ],
+       [
+        25.4,
+        42.62
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Loris-Melikov",
+      "label": "Caucasus army",
+      "path": [
+       [
+        43.85,
+        40.79
+       ],
+       [
+        42.7,
+        41.11
+       ],
+       [
+        43.1,
+        40.62
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Crossing of the Danube at Svishtov",
+      "kind": "battle",
+      "lon": 25.35,
+      "lat": 43.62,
+      "year": 1877,
+      "winner": 0,
+      "text": "Dragomirov's troops crossed in boats under fire and secured a bridgehead."
+     },
+     {
+      "name": "Capture of Ardahan",
+      "kind": "siege",
+      "lon": 42.7,
+      "lat": 41.11,
+      "year": 1877,
+      "winner": 0,
+      "text": "Loris-Melikov's army stormed the fortress in May."
+     }
+    ]
+   },
+   {
+    "year": 1877,
+    "label": "Jul to Dec 1877",
+    "title": "Plevna and Shipka",
+    "text": "Osman Pasha marched from Vidin and dug in at Plevna, on the flank of the Russian advance, and threw back three Russian and Romanian assaults in July and September at a cost of tens of thousands of attackers. Süleyman Pasha's army failed to break through the Russians holding the Shipka Pass in August, and the engineer Totleben starved Plevna into submission; Osman's army tried to break out and surrendered on 10 December. In the Caucasus the Russians stormed Kars in November.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        24.62,
+        43.42
+       ],
+       [
+        24.72,
+        43.13
+       ],
+       [
+        25.32,
+        42.75
+       ],
+       [
+        25.88,
+        42.93
+       ],
+       [
+        26.3,
+        43.4
+       ],
+       [
+        25.97,
+        43.85
+       ]
+      ],
+      "label": "Russian line, autumn 1877"
+     },
+     {
+      "path": [
+       [
+        42.6,
+        40.9
+       ],
+       [
+        43.1,
+        40.55
+       ],
+       [
+        43.5,
+        40.2
+       ]
+      ],
+      "label": "Caucasus front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Osman Pasha",
+      "label": "From Vidin to Plevna",
+      "path": [
+       [
+        22.88,
+        43.99
+       ],
+       [
+        23.6,
+        43.7
+       ],
+       [
+        24.62,
+        43.42
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Süleyman Pasha",
+      "label": "Attack on the Shipka Pass",
+      "path": [
+       [
+        26.56,
+        41.68
+       ],
+       [
+        25.63,
+        42.43
+       ],
+       [
+        25.32,
+        42.73
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Eduard Totleben and Carol I",
+      "label": "Siege of Plevna",
+      "path": [
+       [
+        25.35,
+        43.62
+       ],
+       [
+        25.0,
+        43.5
+       ],
+       [
+        24.66,
+        43.44
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Loris-Melikov",
+      "label": "Storm of Kars",
+      "path": [
+       [
+        43.4,
+        40.4
+       ],
+       [
+        43.25,
+        40.5
+       ],
+       [
+        43.1,
+        40.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Plevna",
+      "kind": "siege",
+      "lon": 24.62,
+      "lat": 43.42,
+      "year": 1877,
+      "winner": 0,
+      "text": "Osman Pasha surrendered with over 40,000 men after a five-month defence."
+     },
+     {
+      "name": "Battle of Shipka Pass",
+      "kind": "battle",
+      "lon": 25.32,
+      "lat": 42.75,
+      "year": 1877,
+      "winner": 0,
+      "text": "Russian troops and Bulgarian volunteers held the pass against Süleyman's attacks."
+     },
+     {
+      "name": "Capture of Kars",
+      "kind": "siege",
+      "lon": 43.1,
+      "lat": 40.6,
+      "year": 1877,
+      "winner": 0,
+      "text": "A night assault took the great Caucasus fortress on 18 November."
+     }
+    ]
+   },
+   {
+    "year": 1878,
+    "label": "Dec 1877 to Jan 1878",
+    "title": "Over the Balkans in winter",
+    "text": "Freed by the fall of Plevna, the Russians crossed the snowbound Balkan mountains in midwinter. Gurko took Sofia on 4 January and beat Süleyman at Philippopolis, while Radetzky and Skobelev surrounded and captured the Ottoman army at Shipka-Sheinovo. With their field armies gone, the Ottomans lost Adrianople on 20 January and asked for an armistice.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "Romania",
+       "Serbia",
+       "Montenegro",
+       "Bulgaria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire",
+       "Bosnia-Herzegovina"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Iosif Gurko",
+      "label": "Winter crossing to Sofia and Philippopolis",
+      "path": [
+       [
+        23.79,
+        42.9
+       ],
+       [
+        23.32,
+        42.7
+       ],
+       [
+        24.75,
+        42.15
+       ],
+       [
+        26.56,
+        41.68
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Skobelev",
+      "label": "Through the Shipka Pass",
+      "path": [
+       [
+        25.32,
+        42.75
+       ],
+       [
+        25.38,
+        42.67
+       ],
+       [
+        25.63,
+        42.43
+       ],
+       [
+        26.5,
+        41.72
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Süleyman Pasha",
+      "label": "Retreat to the Aegean",
+      "path": [
+       [
+        25.63,
+        42.43
+       ],
+       [
+        24.75,
+        42.15
+       ],
+       [
+        25.0,
+        41.6
+       ],
+       [
+        25.87,
+        40.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Shipka-Sheinovo",
+      "kind": "battle",
+      "lon": 25.38,
+      "lat": 42.67,
+      "year": 1878,
+      "winner": 0,
+      "text": "Skobelev and Radetzky captured Vessel Pasha's army of some 30,000 men."
+     },
+     {
+      "name": "Battle of Philippopolis",
+      "kind": "battle",
+      "lon": 24.75,
+      "lat": 42.15,
+      "year": 1878,
+      "winner": 0,
+      "text": "Gurko broke Süleyman's army in three days of fighting."
+     },
+     {
+      "name": "Fall of Adrianople",
+      "kind": "event",
+      "lon": 26.56,
+      "lat": 41.68,
+      "year": 1878,
+      "winner": 0,
+      "text": "The Ottomans gave up their second city without a fight."
+     }
+    ]
+   },
+   {
+    "year": 1878,
+    "label": "Feb to Jul 1878",
+    "title": "San Stefano and Berlin",
+    "text": "As Russian troops advanced to San Stefano, within sight of Constantinople, a British fleet entered the Sea of Marmara to warn them off. The Treaty of San Stefano on 3 March created a large Bulgaria reaching the Aegean, alarming Britain and Austria-Hungary. At the Congress of Berlin in July the powers split Bulgaria, recognised Romania, Serbia and Montenegro as independent, gave Russia Kars and Batum, let Austria-Hungary occupy Bosnia and Herzegovina, and gave Britain Cyprus.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire",
+       "Romania",
+       "Serbia",
+       "Montenegro",
+       "Bulgaria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        28.6,
+        41.3
+       ],
+       [
+        28.72,
+        41.08
+       ],
+       [
+        28.8,
+        40.97
+       ]
+      ],
+      "label": "Russian forward line, Mar 1878"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Grand Duke Nicholas",
+      "label": "Advance to San Stefano",
+      "path": [
+       [
+        26.56,
+        41.68
+       ],
+       [
+        27.8,
+        41.16
+       ],
+       [
+        28.82,
+        40.96
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of San Stefano",
+      "kind": "treaty",
+      "lon": 28.82,
+      "lat": 40.96,
+      "year": 1878,
+      "winner": 0,
+      "text": "The Ottomans accepted a large autonomous Bulgaria and the independence of Romania, Serbia and Montenegro."
+     },
+     {
+      "name": "Congress of Berlin",
+      "kind": "treaty",
+      "lon": 13.4,
+      "lat": 52.52,
+      "year": 1878,
+      "winner": null,
+      "text": "The Great Powers revised San Stefano, shrinking Bulgaria and limiting Russia's gains."
+     }
+    ]
+   }
+  ]
+ }
+]

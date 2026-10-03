@@ -1,0 +1,10124 @@
+[
+ {
+  "id": "world-war-i",
+  "name": "World War I",
+  "start": 1914,
+  "end": 1918,
+  "kind": "war",
+  "summary": "The Allied Powers, chiefly France, Britain, Russia, Italy and from 1917 the United States, fought the Central Powers of Germany, Austria-Hungary, the Ottoman Empire and Bulgaria after the assassination of Archduke Franz Ferdinand set off a chain of alliances. Trench deadlock in the west, vast movement in the east and new fronts at Gallipoli, in Arabia and in Mesopotamia ended with the Central Powers' collapse in 1918, after about 9 million soldiers had died. The war destroyed four empires, brought revolution to Russia and redrew the map of Europe and the Middle East.",
+  "sides": [
+   {
+    "name": "Allied Powers",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Joseph Joffre",
+     "Ferdinand Foch",
+     "Douglas Haig",
+     "Aleksei Brusilov",
+     "Edmund Allenby",
+     "John J. Pershing"
+    ]
+   },
+   {
+    "name": "Central Powers",
+    "color": "#c0473a",
+    "leaders": [
+     "Paul von Hindenburg",
+     "Erich Ludendorff",
+     "Erich von Falkenhayn",
+     "August von Mackensen",
+     "Enver Pasha",
+     "Mustafa Kemal"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 3.5,
+    "lat": 49.8,
+    "r": 5
+   },
+   {
+    "lon": 25.0,
+    "lat": 51.0,
+    "r": 9
+   },
+   {
+    "lon": 18.0,
+    "lat": 43.0,
+    "r": 7
+   },
+   {
+    "lon": 39.0,
+    "lat": 32.0,
+    "r": 10
+   }
+  ],
+  "steps": [
+   {
+    "year": 1914,
+    "label": "Aug to Sep 1914",
+    "title": "The Schlieffen Plan and the Marne",
+    "text": "Germany invaded neutral Belgium to outflank the French armies, bringing Britain into the war. Kluck's First Army swept through Belgium toward Paris, but Joffre's French and British counterattack on the Marne forced the Germans back to the Aisne. A race to the sea followed, and by December a line of trenches ran from the Channel to Switzerland.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Belgium",
+       "Serbia",
+       "Montenegro",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.75,
+        51.13
+       ],
+       [
+        2.88,
+        50.85
+       ],
+       [
+        2.78,
+        50.29
+       ],
+       [
+        2.7,
+        49.95
+       ],
+       [
+        3.0,
+        49.58
+       ],
+       [
+        3.33,
+        49.38
+       ],
+       [
+        4.03,
+        49.25
+       ],
+       [
+        4.95,
+        49.2
+       ],
+       [
+        5.39,
+        49.2
+       ],
+       [
+        5.54,
+        48.9
+       ],
+       [
+        6.05,
+        48.9
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.1,
+        48.0
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Western Front, Dec 1914"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Alexander von Kluck",
+      "label": "German First Army through Belgium",
+      "path": [
+       [
+        6.08,
+        50.78
+       ],
+       [
+        5.57,
+        50.63
+       ],
+       [
+        4.35,
+        50.85
+       ],
+       [
+        3.95,
+        50.45
+       ],
+       [
+        2.83,
+        49.42
+       ],
+       [
+        3.0,
+        49.0
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Max von Hausen",
+      "label": "German centre through the Ardennes",
+      "path": [
+       [
+        6.13,
+        49.61
+       ],
+       [
+        4.95,
+        49.7
+       ],
+       [
+        4.37,
+        49.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John French",
+      "label": "British Expeditionary Force retreats from Mons",
+      "path": [
+       [
+        3.95,
+        50.45
+       ],
+       [
+        3.3,
+        49.85
+       ],
+       [
+        2.9,
+        48.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Joseph Joffre",
+      "label": "French counterattack from Paris",
+      "path": [
+       [
+        2.35,
+        48.86
+       ],
+       [
+        2.9,
+        48.98
+       ],
+       [
+        3.4,
+        49.2
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Helmuth von Moltke",
+      "label": "German retreat to the Aisne",
+      "path": [
+       [
+        3.4,
+        48.95
+       ],
+       [
+        3.5,
+        49.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Liege",
+      "kind": "siege",
+      "lon": 5.57,
+      "lat": 50.63,
+      "year": 1914,
+      "winner": 1,
+      "text": "German siege guns reduced the Belgian forts, but the defence cost the German plan precious days."
+     },
+     {
+      "name": "First Battle of the Marne",
+      "kind": "battle",
+      "lon": 3.4,
+      "lat": 48.95,
+      "year": 1914,
+      "winner": 0,
+      "text": "The Allied counterattack stopped the German advance short of Paris and ended hopes of a quick war."
+     },
+     {
+      "name": "First Battle of Ypres",
+      "kind": "battle",
+      "lon": 2.88,
+      "lat": 50.85,
+      "year": 1914,
+      "winner": 0,
+      "text": "British, French and Belgian troops held Ypres, fixing the northern end of the trench line."
+     }
+    ]
+   },
+   {
+    "year": 1914,
+    "label": "Aug to Dec 1914",
+    "title": "Tannenberg and Galicia",
+    "text": "Russia invaded East Prussia sooner than Germany expected, but Hindenburg and Ludendorff encircled Samsonov's Second Army at Tannenberg and drove Rennenkampf out at the Masurian Lakes. Further south Russian armies routed the Austro-Hungarians in Galicia, took Lemberg and besieged Przemysl. In November the Ottoman Empire entered the war on the side of the Central Powers.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Serbia",
+       "Montenegro",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.75,
+        51.13
+       ],
+       [
+        2.88,
+        50.85
+       ],
+       [
+        2.78,
+        50.29
+       ],
+       [
+        2.7,
+        49.95
+       ],
+       [
+        3.0,
+        49.58
+       ],
+       [
+        3.33,
+        49.38
+       ],
+       [
+        4.03,
+        49.25
+       ],
+       [
+        4.95,
+        49.2
+       ],
+       [
+        5.39,
+        49.2
+       ],
+       [
+        5.54,
+        48.9
+       ],
+       [
+        6.05,
+        48.9
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.1,
+        48.0
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Western Front, Dec 1914"
+     },
+     {
+      "path": [
+       [
+        22.5,
+        55.2
+       ],
+       [
+        22.3,
+        54.3
+       ],
+       [
+        21.5,
+        53.4
+       ],
+       [
+        20.3,
+        52.8
+       ],
+       [
+        20.2,
+        52.1
+       ],
+       [
+        20.4,
+        51.2
+       ],
+       [
+        20.6,
+        50.5
+       ],
+       [
+        20.9,
+        50.0
+       ],
+       [
+        21.2,
+        49.6
+       ],
+       [
+        22.6,
+        49.1
+       ],
+       [
+        24.3,
+        48.5
+       ],
+       [
+        25.9,
+        48.0
+       ]
+      ],
+      "label": "Eastern Front, Dec 1914"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Alexander Samsonov",
+      "label": "Russian Second Army",
+      "path": [
+       [
+        21.0,
+        52.23
+       ],
+       [
+        20.38,
+        53.11
+       ],
+       [
+        20.12,
+        53.48
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Paul von Rennenkampf",
+      "label": "Russian First Army",
+      "path": [
+       [
+        23.9,
+        54.9
+       ],
+       [
+        22.2,
+        54.6
+       ],
+       [
+        21.6,
+        54.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Paul von Hindenburg",
+      "label": "German Eighth Army shifts south",
+      "path": [
+       [
+        21.8,
+        54.5
+       ],
+       [
+        21.0,
+        54.0
+       ],
+       [
+        20.3,
+        53.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikolai Ivanov",
+      "label": "Russian advance into Galicia",
+      "path": [
+       [
+        25.3,
+        50.75
+       ],
+       [
+        24.03,
+        49.84
+       ],
+       [
+        22.77,
+        49.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Tannenberg",
+      "kind": "battle",
+      "lon": 20.13,
+      "lat": 53.48,
+      "year": 1914,
+      "winner": 1,
+      "text": "Hindenburg and Ludendorff encircled the Russian Second Army and took about 90,000 prisoners."
+     },
+     {
+      "name": "Battle of Galicia",
+      "kind": "battle",
+      "lon": 24.03,
+      "lat": 49.84,
+      "year": 1914,
+      "winner": 0,
+      "text": "Russia defeated Austria-Hungary, took Lemberg and besieged Przemysl."
+     }
+    ]
+   },
+   {
+    "year": 1915,
+    "label": "Feb 1915 to Jan 1916",
+    "title": "Gallipoli",
+    "text": "Britain and France tried to force the Dardanelles and knock the Ottoman Empire out of the war. After the fleet was stopped at the Narrows, Hamilton landed British, French, Australian and New Zealand troops at Helles and Anzac Cove, but Ottoman forces under Liman von Sanders and Mustafa Kemal pinned them on the beaches until the Allies withdrew. In the Caucasus Enver's winter offensive was destroyed at Sarikamish, and in 1915 the Ottoman government began the deportations and mass killings of Armenians.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Serbia",
+       "Montenegro",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire",
+       "Bulgaria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        26.21,
+        40.08
+       ],
+       [
+        26.24,
+        40.09
+       ],
+       [
+        26.27,
+        40.08
+       ]
+      ],
+      "label": "Gallipoli lines, 1915"
+     },
+     {
+      "path": [
+       [
+        41.7,
+        41.5
+       ],
+       [
+        42.4,
+        40.4
+       ],
+       [
+        43.3,
+        39.9
+       ],
+       [
+        44.0,
+        39.4
+       ]
+      ],
+      "label": "Caucasus front, 1915"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "John de Robeck",
+      "label": "Allied fleet attacks the Narrows",
+      "path": [
+       [
+        25.27,
+        39.87
+       ],
+       [
+        26.05,
+        39.95
+       ],
+       [
+        26.3,
+        40.06
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ian Hamilton",
+      "label": "Landings at Helles and Anzac Cove",
+      "path": [
+       [
+        25.27,
+        39.87
+       ],
+       [
+        25.9,
+        40.1
+       ],
+       [
+        26.28,
+        40.24
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mustafa Kemal",
+      "label": "19th Division holds the heights",
+      "path": [
+       [
+        26.36,
+        40.18
+       ],
+       [
+        26.3,
+        40.23
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Enver Pasha",
+      "label": "Ottoman Third Army winter offensive",
+      "path": [
+       [
+        41.27,
+        39.9
+       ],
+       [
+        42.0,
+        40.2
+       ],
+       [
+        42.57,
+        40.33
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Naval attack on the Dardanelles",
+      "kind": "battle",
+      "lon": 26.38,
+      "lat": 40.12,
+      "year": 1915,
+      "winner": 1,
+      "text": "Mines sank three Allied battleships on 18 March and the fleet turned back."
+     },
+     {
+      "name": "Gallipoli campaign",
+      "kind": "battle",
+      "lon": 26.28,
+      "lat": 40.24,
+      "year": 1915,
+      "winner": 1,
+      "text": "After eight months and about half a million casualties on both sides, the Allies evacuated the peninsula."
+     },
+     {
+      "name": "Battle of Sarikamish",
+      "kind": "battle",
+      "lon": 42.57,
+      "lat": 40.33,
+      "year": 1915,
+      "winner": 0,
+      "text": "Enver's winter offensive against Russia ended in disaster, with most of the Ottoman Third Army lost."
+     }
+    ]
+   },
+   {
+    "year": 1915,
+    "label": "May to Dec 1915",
+    "title": "The Great Retreat and the fall of Serbia",
+    "text": "A German and Austro-Hungarian breakthrough under Mackensen at Gorlice-Tarnow broke the Russian front, and by autumn the Russians had lost Poland, Lithuania and Galicia. Italy joined the Allies in May but stalled on the Isonzo. In October Bulgaria joined the Central Powers and Serbia was overrun, its army retreating across the Albanian mountains to Corfu.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire",
+       "Bulgaria",
+       "Serbia",
+       "Montenegro"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.75,
+        51.13
+       ],
+       [
+        2.88,
+        50.85
+       ],
+       [
+        2.78,
+        50.29
+       ],
+       [
+        2.7,
+        49.95
+       ],
+       [
+        3.0,
+        49.58
+       ],
+       [
+        3.33,
+        49.38
+       ],
+       [
+        4.03,
+        49.25
+       ],
+       [
+        4.95,
+        49.2
+       ],
+       [
+        5.39,
+        49.2
+       ],
+       [
+        5.54,
+        48.9
+       ],
+       [
+        6.05,
+        48.9
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.1,
+        48.0
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Western Front"
+     },
+     {
+      "path": [
+       [
+        23.9,
+        57.0
+       ],
+       [
+        24.3,
+        56.8
+       ],
+       [
+        26.5,
+        55.9
+       ],
+       [
+        26.8,
+        54.8
+       ],
+       [
+        26.0,
+        53.1
+       ],
+       [
+        26.0,
+        52.1
+       ],
+       [
+        25.5,
+        51.0
+       ],
+       [
+        25.4,
+        50.0
+       ],
+       [
+        25.4,
+        49.3
+       ],
+       [
+        26.0,
+        48.3
+       ]
+      ],
+      "label": "Eastern Front, late 1915"
+     },
+     {
+      "path": [
+       [
+        13.55,
+        46.35
+       ],
+       [
+        13.6,
+        46.1
+       ],
+       [
+        13.55,
+        45.9
+       ],
+       [
+        13.6,
+        45.75
+       ]
+      ],
+      "label": "Isonzo front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "August von Mackensen",
+      "label": "Breakthrough at Gorlice-Tarnow",
+      "path": [
+       [
+        21.16,
+        49.66
+       ],
+       [
+        22.77,
+        49.78
+       ],
+       [
+        24.03,
+        49.84
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Prince Leopold of Bavaria",
+      "label": "Ninth Army takes Warsaw",
+      "path": [
+       [
+        19.8,
+        52.2
+       ],
+       [
+        21.0,
+        52.23
+       ],
+       [
+        23.68,
+        52.09
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "August von Mackensen",
+      "label": "Invasion of Serbia",
+      "path": [
+       [
+        20.46,
+        44.82
+       ],
+       [
+        20.91,
+        44.01
+       ],
+       [
+        21.0,
+        42.66
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Radomir Putnik",
+      "label": "Serbian retreat to Corfu",
+      "path": [
+       [
+        20.91,
+        44.01
+       ],
+       [
+        20.29,
+        42.66
+       ],
+       [
+        19.51,
+        42.07
+       ],
+       [
+        19.45,
+        41.32
+       ],
+       [
+        19.92,
+        39.62
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Gorlice-Tarnow Offensive",
+      "kind": "battle",
+      "lon": 21.16,
+      "lat": 49.66,
+      "year": 1915,
+      "winner": 1,
+      "text": "The Central Powers broke the Russian front and began a retreat of hundreds of kilometres."
+     },
+     {
+      "name": "Fall of Warsaw",
+      "kind": "event",
+      "lon": 21.01,
+      "lat": 52.23,
+      "year": 1915,
+      "winner": 1,
+      "text": "German troops entered Warsaw on 5 August as Russia abandoned Poland."
+     },
+     {
+      "name": "Conquest of Serbia",
+      "kind": "battle",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 1915,
+      "winner": 1,
+      "text": "German, Austro-Hungarian and Bulgarian armies overran Serbia in two months."
+     }
+    ]
+   },
+   {
+    "year": 1916,
+    "label": "Feb to Nov 1916",
+    "title": "Verdun, Jutland and the Somme",
+    "text": "Falkenhayn attacked Verdun to bleed the French army white, and Petain held the city through ten months of fighting. Haig's British offensive on the Somme lost about 57,000 casualties on its first day and gained only a few kilometres. At sea the British Grand Fleet and the German High Seas Fleet met once, at Jutland, after which the German fleet stayed in port.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy",
+       "Portugal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire",
+       "Bulgaria",
+       "Serbia",
+       "Montenegro"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.75,
+        51.13
+       ],
+       [
+        2.88,
+        50.85
+       ],
+       [
+        2.78,
+        50.29
+       ],
+       [
+        2.7,
+        49.95
+       ],
+       [
+        3.0,
+        49.58
+       ],
+       [
+        3.33,
+        49.38
+       ],
+       [
+        4.03,
+        49.25
+       ],
+       [
+        4.95,
+        49.2
+       ],
+       [
+        5.39,
+        49.2
+       ],
+       [
+        5.54,
+        48.9
+       ],
+       [
+        6.05,
+        48.9
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.1,
+        48.0
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Western Front, 1916"
+     },
+     {
+      "path": [
+       [
+        23.9,
+        57.0
+       ],
+       [
+        24.3,
+        56.8
+       ],
+       [
+        26.5,
+        55.9
+       ],
+       [
+        26.8,
+        54.8
+       ],
+       [
+        26.0,
+        53.1
+       ],
+       [
+        26.0,
+        52.1
+       ],
+       [
+        25.5,
+        51.0
+       ],
+       [
+        25.4,
+        50.0
+       ],
+       [
+        25.4,
+        49.3
+       ],
+       [
+        26.0,
+        48.3
+       ]
+      ],
+      "label": "Eastern Front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Erich von Falkenhayn",
+      "label": "Fifth Army attack on Verdun",
+      "path": [
+       [
+        5.45,
+        49.35
+       ],
+       [
+        5.4,
+        49.22
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Philippe Petain",
+      "label": "Supply road to Verdun",
+      "path": [
+       [
+        5.16,
+        48.77
+       ],
+       [
+        5.39,
+        49.16
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Douglas Haig",
+      "label": "Somme offensive",
+      "path": [
+       [
+        2.62,
+        50.0
+       ],
+       [
+        2.85,
+        50.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John Jellicoe",
+      "label": "Grand Fleet from Scapa Flow",
+      "path": [
+       [
+        -3.1,
+        58.85
+       ],
+       [
+        1.0,
+        58.0
+       ],
+       [
+        5.6,
+        56.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Reinhard Scheer",
+      "label": "High Seas Fleet",
+      "path": [
+       [
+        8.13,
+        53.6
+       ],
+       [
+        7.6,
+        54.3
+       ],
+       [
+        6.2,
+        56.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Verdun",
+      "kind": "battle",
+      "lon": 5.39,
+      "lat": 49.16,
+      "year": 1916,
+      "winner": 0,
+      "text": "France held Verdun at a cost of over 700,000 casualties on both sides."
+     },
+     {
+      "name": "Battle of Jutland",
+      "kind": "battle",
+      "lon": 6.1,
+      "lat": 56.7,
+      "year": 1916,
+      "winner": null,
+      "text": "Britain lost more ships, but the German fleet never again challenged British control of the North Sea."
+     },
+     {
+      "name": "Battle of the Somme",
+      "kind": "battle",
+      "lon": 2.75,
+      "lat": 50.0,
+      "year": 1916,
+      "winner": null,
+      "text": "Over a million men were killed or wounded for a few kilometres of ground."
+     }
+    ]
+   },
+   {
+    "year": 1916,
+    "label": "Jun 1916 to Jan 1917",
+    "title": "Brusilov's offensive and Romania",
+    "text": "Brusilov's surprise attack along a wide front shattered the Austro-Hungarian armies in Volhynia and Bukovina, the greatest Allied success of the year. Encouraged, Romania joined the Allies in August and invaded Transylvania, but Falkenhayn and Mackensen counterattacked from two sides and took Bucharest in December. The Romanian army held on only in Moldavia with Russian help.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy",
+       "Portugal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire",
+       "Bulgaria",
+       "Serbia",
+       "Montenegro",
+       "Romania"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.75,
+        51.13
+       ],
+       [
+        2.88,
+        50.85
+       ],
+       [
+        2.78,
+        50.29
+       ],
+       [
+        2.7,
+        49.95
+       ],
+       [
+        3.0,
+        49.58
+       ],
+       [
+        3.33,
+        49.38
+       ],
+       [
+        4.03,
+        49.25
+       ],
+       [
+        4.95,
+        49.2
+       ],
+       [
+        5.39,
+        49.2
+       ],
+       [
+        5.54,
+        48.9
+       ],
+       [
+        6.05,
+        48.9
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.1,
+        48.0
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Western Front"
+     },
+     {
+      "path": [
+       [
+        24.0,
+        56.95
+       ],
+       [
+        26.5,
+        55.9
+       ],
+       [
+        26.8,
+        54.8
+       ],
+       [
+        26.0,
+        53.1
+       ],
+       [
+        26.0,
+        52.1
+       ],
+       [
+        25.0,
+        51.0
+       ],
+       [
+        24.6,
+        49.8
+       ],
+       [
+        24.8,
+        48.6
+       ],
+       [
+        25.5,
+        47.7
+       ],
+       [
+        26.3,
+        46.3
+       ],
+       [
+        27.2,
+        45.7
+       ],
+       [
+        28.0,
+        45.3
+       ],
+       [
+        29.6,
+        45.2
+       ]
+      ],
+      "label": "Eastern Front, Jan 1917"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Aleksei Brusilov",
+      "label": "Southwestern Front breaks through at Lutsk",
+      "path": [
+       [
+        26.25,
+        50.62
+       ],
+       [
+        25.33,
+        50.75
+       ],
+       [
+        24.6,
+        50.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Platon Lechitsky",
+      "label": "Russian Ninth Army takes Bukovina",
+      "path": [
+       [
+        26.6,
+        48.6
+       ],
+       [
+        25.94,
+        48.29
+       ],
+       [
+        25.3,
+        47.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Erich von Falkenhayn",
+      "label": "Ninth Army through the Carpathian passes",
+      "path": [
+       [
+        23.0,
+        45.6
+       ],
+       [
+        23.3,
+        45.1
+       ],
+       [
+        24.0,
+        44.4
+       ],
+       [
+        26.1,
+        44.43
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "August von Mackensen",
+      "label": "Danube Army from Bulgaria",
+      "path": [
+       [
+        25.35,
+        43.62
+       ],
+       [
+        25.7,
+        44.0
+       ],
+       [
+        26.1,
+        44.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Brusilov Offensive",
+      "kind": "battle",
+      "lon": 25.33,
+      "lat": 50.75,
+      "year": 1916,
+      "winner": 0,
+      "text": "Russia inflicted about a million casualties on Austria-Hungary, which never fully recovered."
+     },
+     {
+      "name": "Fall of Bucharest",
+      "kind": "event",
+      "lon": 26.1,
+      "lat": 44.43,
+      "year": 1916,
+      "winner": 1,
+      "text": "The Central Powers took the Romanian capital on 6 December and seized its oil and grain."
+     }
+    ]
+   },
+   {
+    "year": 1917,
+    "label": "Apr 1916 to Dec 1917",
+    "title": "Kut, the Arab Revolt and Baghdad",
+    "text": "In Mesopotamia Townshend's British and Indian force, beaten at Ctesiphon, surrendered at Kut in April 1916. In June Sharif Hussein of Mecca launched the Arab Revolt, and his son Faisal, with the British officer T. E. Lawrence, moved north along the Red Sea and took Aqaba in July 1917. Maude retook Kut and captured Baghdad in March 1917, and Allenby broke the Gaza line at Beersheba and entered Jerusalem in December.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy",
+       "Portugal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire",
+       "Bulgaria",
+       "Serbia",
+       "Montenegro",
+       "Romania"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        43.3,
+        33.4
+       ],
+       [
+        43.68,
+        34.6
+       ],
+       [
+        44.9,
+        34.6
+       ],
+       [
+        45.5,
+        34.4
+       ]
+      ],
+      "label": "Mesopotamia, late 1917"
+     },
+     {
+      "path": [
+       [
+        34.75,
+        32.1
+       ],
+       [
+        35.0,
+        31.9
+       ],
+       [
+        35.25,
+        31.85
+       ],
+       [
+        35.45,
+        31.7
+       ]
+      ],
+      "label": "Palestine, Dec 1917"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles Townshend",
+      "label": "Retreat from Ctesiphon to Kut",
+      "path": [
+       [
+        44.58,
+        33.09
+       ],
+       [
+        45.2,
+        32.8
+       ],
+       [
+        45.82,
+        32.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Frederick Stanley Maude",
+      "label": "Advance up the Tigris to Baghdad",
+      "path": [
+       [
+        47.8,
+        30.5
+       ],
+       [
+        47.15,
+        31.84
+       ],
+       [
+        45.82,
+        32.5
+       ],
+       [
+        44.36,
+        33.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Faisal and T. E. Lawrence",
+      "label": "Arab Revolt moves north",
+      "path": [
+       [
+        39.83,
+        21.42
+       ],
+       [
+        38.06,
+        24.09
+       ],
+       [
+        36.45,
+        26.23
+       ],
+       [
+        35.0,
+        29.53
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Edmund Allenby",
+      "label": "Egyptian Expeditionary Force",
+      "path": [
+       [
+        34.25,
+        31.29
+       ],
+       [
+        34.79,
+        31.25
+       ],
+       [
+        35.22,
+        31.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Kut",
+      "kind": "siege",
+      "lon": 45.82,
+      "lat": 32.5,
+      "year": 1916,
+      "winner": 1,
+      "text": "About 13,000 British and Indian troops surrendered to the Ottomans after a five-month siege."
+     },
+     {
+      "name": "Capture of Aqaba",
+      "kind": "battle",
+      "lon": 35.0,
+      "lat": 29.53,
+      "year": 1917,
+      "winner": 0,
+      "text": "Arab forces took the port from the landward side, opening a supply line for the revolt."
+     },
+     {
+      "name": "Fall of Baghdad",
+      "kind": "event",
+      "lon": 44.36,
+      "lat": 33.31,
+      "year": 1917,
+      "winner": 0,
+      "text": "Maude's army entered Baghdad on 11 March 1917."
+     }
+    ]
+   },
+   {
+    "year": 1917,
+    "label": "Mar to Dec 1917",
+    "title": "Revolution, America and Caporetto",
+    "text": "Revolution overthrew the Tsar in March, and after a failed summer offensive the Bolsheviks seized power in November and sought peace. The United States declared war in April and Pershing began shipping an army to France, while Haig's offensive at Passchendaele ground through mud for little gain. In October a German and Austro-Hungarian attack at Caporetto broke the Italian front and drove it back to the Piave.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Russian Empire",
+       "Finland",
+       "Georgia",
+       "Armenia",
+       "Azerbaijan",
+       "Sakhalin (RU)",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy",
+       "Portugal",
+       "United States",
+       "Greece"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire",
+       "Bulgaria",
+       "Serbia",
+       "Montenegro",
+       "Romania"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.75,
+        51.13
+       ],
+       [
+        2.88,
+        50.85
+       ],
+       [
+        2.78,
+        50.29
+       ],
+       [
+        2.7,
+        49.95
+       ],
+       [
+        3.0,
+        49.58
+       ],
+       [
+        3.33,
+        49.38
+       ],
+       [
+        4.03,
+        49.25
+       ],
+       [
+        4.95,
+        49.2
+       ],
+       [
+        5.39,
+        49.2
+       ],
+       [
+        5.54,
+        48.9
+       ],
+       [
+        6.05,
+        48.9
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.1,
+        48.0
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Western Front, 1917"
+     },
+     {
+      "path": [
+       [
+        24.6,
+        57.3
+       ],
+       [
+        26.5,
+        55.9
+       ],
+       [
+        26.8,
+        54.8
+       ],
+       [
+        26.0,
+        53.1
+       ],
+       [
+        26.0,
+        52.1
+       ],
+       [
+        25.0,
+        51.0
+       ],
+       [
+        25.4,
+        49.4
+       ],
+       [
+        26.0,
+        48.3
+       ],
+       [
+        26.3,
+        46.3
+       ],
+       [
+        27.2,
+        45.7
+       ],
+       [
+        28.0,
+        45.3
+       ]
+      ],
+      "label": "Eastern Front, Dec 1917"
+     },
+     {
+      "path": [
+       [
+        11.5,
+        45.87
+       ],
+       [
+        11.75,
+        45.9
+       ],
+       [
+        12.2,
+        45.85
+       ],
+       [
+        12.35,
+        45.7
+       ],
+       [
+        12.6,
+        45.5
+       ]
+      ],
+      "label": "Piave line, Nov 1917"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Otto von Below",
+      "label": "Breakthrough at Caporetto",
+      "path": [
+       [
+        13.58,
+        46.25
+       ],
+       [
+        13.24,
+        46.06
+       ],
+       [
+        12.3,
+        45.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Luigi Cadorna",
+      "label": "Italian retreat to the Piave",
+      "path": [
+       [
+        13.4,
+        45.95
+       ],
+       [
+        12.9,
+        45.9
+       ],
+       [
+        12.3,
+        45.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Douglas Haig",
+      "label": "Passchendaele offensive",
+      "path": [
+       [
+        2.88,
+        50.85
+       ],
+       [
+        3.0,
+        50.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Oskar von Hutier",
+      "label": "Germans take Riga",
+      "path": [
+       [
+        24.6,
+        56.7
+       ],
+       [
+        24.1,
+        56.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John J. Pershing",
+      "label": "American Expeditionary Forces",
+      "path": [
+       [
+        -2.2,
+        47.27
+       ],
+       [
+        1.0,
+        47.5
+       ],
+       [
+        4.0,
+        48.3
+       ],
+       [
+        5.75,
+        48.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Passchendaele",
+      "kind": "battle",
+      "lon": 3.0,
+      "lat": 50.9,
+      "year": 1917,
+      "winner": null,
+      "text": "Months of attacks in deep mud cost about half a million casualties for a few kilometres."
+     },
+     {
+      "name": "Battle of Caporetto",
+      "kind": "battle",
+      "lon": 13.58,
+      "lat": 46.25,
+      "year": 1917,
+      "winner": 1,
+      "text": "Italy lost about 300,000 men, most as prisoners, before holding on the Piave."
+     },
+     {
+      "name": "October Revolution",
+      "kind": "event",
+      "lon": 30.31,
+      "lat": 59.94,
+      "year": 1917,
+      "winner": null,
+      "text": "Lenin's Bolsheviks took power in Petrograd and moved to take Russia out of the war."
+     }
+    ]
+   },
+   {
+    "year": 1918,
+    "label": "Mar to Jul 1918",
+    "title": "Brest-Litovsk and the Spring Offensive",
+    "text": "Soviet Russia signed away Poland, the Baltic lands and Ukraine at Brest-Litovsk, and Romania made peace soon after. Ludendorff used the divisions freed in the east for a series of offensives in France that drove deep salients toward Amiens and the Marne. Under Foch as Allied supreme commander, French, British and growing American forces held, and in July the Second Battle of the Marne turned the tide.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy",
+       "Portugal",
+       "United States",
+       "Greece"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Belgium",
+       "Ottoman Empire",
+       "Bulgaria",
+       "Serbia",
+       "Montenegro",
+       "Romania"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.75,
+        51.13
+       ],
+       [
+        2.75,
+        50.75
+       ],
+       [
+        2.6,
+        50.6
+       ],
+       [
+        2.8,
+        50.3
+       ],
+       [
+        2.52,
+        49.87
+       ],
+       [
+        2.57,
+        49.65
+       ],
+       [
+        3.0,
+        49.45
+       ],
+       [
+        3.0,
+        49.2
+       ],
+       [
+        3.4,
+        49.05
+       ],
+       [
+        3.9,
+        49.1
+       ],
+       [
+        4.03,
+        49.2
+       ],
+       [
+        4.95,
+        49.2
+       ],
+       [
+        5.39,
+        49.16
+       ],
+       [
+        5.54,
+        48.89
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Western Front, Jul 1918"
+     },
+     {
+      "path": [
+       [
+        28.0,
+        59.4
+       ],
+       [
+        28.33,
+        57.82
+       ],
+       [
+        30.3,
+        55.2
+       ],
+       [
+        30.33,
+        53.9
+       ],
+       [
+        33.0,
+        52.0
+       ],
+       [
+        36.2,
+        51.7
+       ],
+       [
+        39.7,
+        47.23
+       ]
+      ],
+      "label": "German occupation limit in the east, 1918"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Erich Ludendorff",
+      "label": "Operation Michael",
+      "path": [
+       [
+        3.29,
+        49.85
+       ],
+       [
+        2.9,
+        49.85
+       ],
+       [
+        2.52,
+        49.87
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Erich Ludendorff",
+      "label": "Offensive on the Aisne",
+      "path": [
+       [
+        3.6,
+        49.45
+       ],
+       [
+        3.5,
+        49.2
+       ],
+       [
+        3.4,
+        49.05
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ferdinand Foch",
+      "label": "Counterattack on the Marne",
+      "path": [
+       [
+        3.09,
+        49.25
+       ],
+       [
+        3.33,
+        49.38
+       ],
+       [
+        3.6,
+        49.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John J. Pershing",
+      "label": "Americans at Chateau-Thierry",
+      "path": [
+       [
+        3.2,
+        48.95
+       ],
+       [
+        3.4,
+        49.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Brest-Litovsk",
+      "kind": "treaty",
+      "lon": 23.68,
+      "lat": 52.09,
+      "year": 1918,
+      "winner": 1,
+      "text": "Soviet Russia left the war, giving up a third of its European population."
+     },
+     {
+      "name": "Operation Michael",
+      "kind": "battle",
+      "lon": 2.9,
+      "lat": 49.85,
+      "year": 1918,
+      "winner": null,
+      "text": "The largest German offensive of the war gained ground but failed to split the Allies."
+     },
+     {
+      "name": "Second Battle of the Marne",
+      "kind": "battle",
+      "lon": 3.45,
+      "lat": 49.15,
+      "year": 1918,
+      "winner": 0,
+      "text": "The last German offensive failed and Foch's counterattack began the Allied advance."
+     }
+    ]
+   },
+   {
+    "year": 1918,
+    "label": "Aug to Nov 1918",
+    "title": "The Hundred Days and the armistice",
+    "text": "From Amiens on 8 August the Allies attacked all along the Western Front and broke the Hindenburg Line, while Pershing's Americans pushed through the Argonne. In the east Allenby destroyed the Ottoman armies at Megiddo and Faisal's Arab forces entered Damascus, Franchet d'Esperey broke out from Salonika and forced Bulgaria to quit, and British troops advanced up the Tigris toward Mosul. The Ottoman Empire and Austria-Hungary signed armistices, and Germany followed on 11 November 1918.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "United Kingdom of Great Britain and Ireland",
+       "Empire of Japan",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "British Raj",
+       "Egypt",
+       "Kingdom of Italy",
+       "Portugal",
+       "United States",
+       "Greece",
+       "Serbia",
+       "Montenegro",
+       "Romania",
+       "Belgium"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "German Empire",
+       "Austro-Hungarian Empire",
+       "Ottoman Empire",
+       "Bulgaria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        3.72,
+        51.05
+       ],
+       [
+        3.9,
+        50.6
+       ],
+       [
+        3.95,
+        50.45
+       ],
+       [
+        4.4,
+        50.1
+       ],
+       [
+        4.73,
+        49.77
+       ],
+       [
+        4.95,
+        49.7
+       ],
+       [
+        5.4,
+        49.4
+       ],
+       [
+        5.9,
+        49.0
+       ],
+       [
+        6.6,
+        48.55
+       ],
+       [
+        7.17,
+        47.5
+       ]
+      ],
+      "label": "Armistice line, 11 Nov 1918"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Douglas Haig",
+      "label": "British advance from Amiens",
+      "path": [
+       [
+        2.4,
+        49.87
+       ],
+       [
+        3.29,
+        49.85
+       ],
+       [
+        3.95,
+        50.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "John J. Pershing",
+      "label": "Meuse-Argonne offensive",
+      "path": [
+       [
+        5.0,
+        49.2
+       ],
+       [
+        5.1,
+        49.45
+       ],
+       [
+        4.95,
+        49.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Edmund Allenby",
+      "label": "Megiddo and the drive to Damascus",
+      "path": [
+       [
+        34.9,
+        32.2
+       ],
+       [
+        35.18,
+        32.58
+       ],
+       [
+        35.5,
+        32.9
+       ],
+       [
+        36.3,
+        33.51
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Faisal",
+      "label": "Arab Northern Army to Damascus",
+      "path": [
+       [
+        35.0,
+        29.53
+       ],
+       [
+        35.73,
+        30.19
+       ],
+       [
+        36.1,
+        32.62
+       ],
+       [
+        36.3,
+        33.51
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Louis Franchet d'Esperey",
+      "label": "Breakout from Salonika",
+      "path": [
+       [
+        22.94,
+        40.64
+       ],
+       [
+        21.88,
+        41.18
+       ],
+       [
+        21.43,
+        41.99
+       ],
+       [
+        21.9,
+        43.32
+       ],
+       [
+        20.46,
+        44.82
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Amiens",
+      "kind": "battle",
+      "lon": 2.55,
+      "lat": 49.85,
+      "year": 1918,
+      "winner": 0,
+      "text": "Ludendorff called 8 August the black day of the German army."
+     },
+     {
+      "name": "Battle of Megiddo",
+      "kind": "battle",
+      "lon": 35.18,
+      "lat": 32.58,
+      "year": 1918,
+      "winner": 0,
+      "text": "Allenby's breakthrough destroyed the Ottoman armies in Palestine."
+     },
+     {
+      "name": "Armistice of Compiegne",
+      "kind": "treaty",
+      "lon": 2.91,
+      "lat": 49.43,
+      "year": 1918,
+      "winner": 0,
+      "text": "Germany signed the armistice in a railway carriage and the guns fell silent at 11 am on 11 November."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "russian-civil-war",
+  "name": "Russian Civil War",
+  "start": 1917,
+  "end": 1922,
+  "kind": "war",
+  "summary": "After the Bolsheviks seized power in 1917, their Red Army fought a loose alliance of White armies, backed at times by Allied intervention forces, across the former Russian Empire. The Reds held the central heartland and its railways while the Whites attacked from Siberia, the south, the Baltic and the north, and one by one were defeated by 1920. About 7 to 12 million people died, mostly civilians from famine, disease and terror, and the victory produced the Soviet Union in 1922.",
+  "sides": [
+   {
+    "name": "Reds (Bolsheviks)",
+    "color": "#c0392b",
+    "leaders": [
+     "Vladimir Lenin",
+     "Leon Trotsky",
+     "Mikhail Frunze",
+     "Mikhail Tukhachevsky"
+    ]
+   },
+   {
+    "name": "Whites and foreign intervention",
+    "color": "#5b84b1",
+    "leaders": [
+     "Alexander Kolchak",
+     "Anton Denikin",
+     "Pyotr Wrangel",
+     "Nikolai Yudenich"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 40.0,
+    "lat": 53.0,
+    "r": 13
+   },
+   {
+    "lon": 80.0,
+    "lat": 55.0,
+    "r": 14
+   },
+   {
+    "lon": 122.0,
+    "lat": 48.0,
+    "r": 14
+   }
+  ],
+  "steps": [
+   {
+    "year": 1917,
+    "label": "Nov 1917 to Apr 1918",
+    "title": "Revolution and the first Whites",
+    "text": "Lenin's Bolsheviks seized Petrograd in November 1917, dissolved the elected Constituent Assembly and made peace with Germany at Brest-Litovsk. Red Guards took Kiev and much of the south, and the government moved to Moscow. On the Don, Kornilov and Alekseyev raised the anti-Bolshevik Volunteer Army, which marched across the frozen steppe to Yekaterinodar, where Kornilov was killed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Russian Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Vladimir Lenin",
+      "label": "Soviet government moves to Moscow",
+      "path": [
+       [
+        30.31,
+        59.94
+       ],
+       [
+        33.4,
+        57.5
+       ],
+       [
+        37.62,
+        55.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Muravyov",
+      "label": "Red Guards take Kiev",
+      "path": [
+       [
+        36.23,
+        49.99
+       ],
+       [
+        34.55,
+        49.59
+       ],
+       [
+        30.52,
+        50.45
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lavr Kornilov",
+      "label": "The Ice March of the Volunteer Army",
+      "path": [
+       [
+        39.7,
+        47.23
+       ],
+       [
+        40.0,
+        46.3
+       ],
+       [
+        38.98,
+        45.04
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "October Revolution",
+      "kind": "event",
+      "lon": 30.31,
+      "lat": 59.94,
+      "year": 1917,
+      "winner": 0,
+      "text": "The Bolsheviks stormed the Winter Palace and took power in Petrograd."
+     },
+     {
+      "name": "Treaty of Brest-Litovsk",
+      "kind": "treaty",
+      "lon": 23.68,
+      "lat": 52.09,
+      "year": 1918,
+      "winner": null,
+      "text": "Soviet Russia left the World War at the cost of Ukraine, Poland and the Baltic lands."
+     },
+     {
+      "name": "Assault on Yekaterinodar",
+      "kind": "battle",
+      "lon": 38.98,
+      "lat": 45.04,
+      "year": 1918,
+      "winner": 0,
+      "text": "The Volunteer Army's attack failed and Kornilov was killed by a shell."
+     }
+    ]
+   },
+   {
+    "year": 1918,
+    "label": "May to Dec 1918",
+    "title": "The fronts take shape",
+    "text": "In May the Czechoslovak Legion, strung out along the Trans-Siberian Railway, revolted and handed the Volga and Siberia to anti-Bolshevik governments. Trotsky built a conscript Red Army and retook Kazan in September, while Allied troops landed at Murmansk and Arkhangelsk. In November Admiral Kolchak took power in Omsk as Supreme Ruler, and in the south Denikin's Volunteer Army cleared the Kuban. In July the Bolsheviks killed the former Tsar and his family at Yekaterinburg.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        56.5,
+        60.0
+       ],
+       [
+        56.0,
+        58.0
+       ],
+       [
+        54.0,
+        56.3
+       ],
+       [
+        53.0,
+        54.5
+       ],
+       [
+        52.5,
+        53.0
+       ],
+       [
+        54.0,
+        51.8
+       ],
+       [
+        51.4,
+        51.2
+       ]
+      ],
+      "label": "Eastern Front, late 1918"
+     },
+     {
+      "path": [
+       [
+        38.9,
+        47.3
+       ],
+       [
+        40.3,
+        48.8
+       ],
+       [
+        42.0,
+        50.0
+       ],
+       [
+        43.8,
+        49.3
+       ],
+       [
+        44.3,
+        48.7
+       ],
+       [
+        44.0,
+        47.5
+       ],
+       [
+        44.5,
+        46.0
+       ]
+      ],
+      "label": "Southern Front, late 1918"
+     },
+     {
+      "path": [
+       [
+        38.5,
+        62.5
+       ],
+       [
+        41.0,
+        62.0
+       ],
+       [
+        44.0,
+        62.5
+       ]
+      ],
+      "label": "Northern Front, late 1918"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Czechoslovak Legion",
+      "label": "Revolt along the Trans-Siberian",
+      "path": [
+       [
+        45.0,
+        53.2
+       ],
+       [
+        50.1,
+        53.2
+       ],
+       [
+        61.4,
+        55.16
+       ],
+       [
+        73.37,
+        54.98
+       ],
+       [
+        82.9,
+        55.0
+       ],
+       [
+        104.3,
+        52.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Leon Trotsky",
+      "label": "Red Army retakes Kazan",
+      "path": [
+       [
+        37.62,
+        55.75
+       ],
+       [
+        44.0,
+        56.33
+       ],
+       [
+        48.66,
+        55.77
+       ],
+       [
+        49.12,
+        55.79
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Allied expeditionary forces",
+      "label": "Landings at Murmansk and Arkhangelsk",
+      "path": [
+       [
+        33.08,
+        68.97
+       ],
+       [
+        38.0,
+        69.5
+       ],
+       [
+        41.5,
+        67.0
+       ],
+       [
+        40.0,
+        65.3
+       ],
+       [
+        40.54,
+        64.54
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Alexander Kolchak",
+      "label": "Siberian Army takes Perm",
+      "path": [
+       [
+        73.37,
+        54.98
+       ],
+       [
+        60.6,
+        56.84
+       ],
+       [
+        56.25,
+        58.01
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Anton Denikin",
+      "label": "Second Kuban Campaign",
+      "path": [
+       [
+        40.5,
+        46.5
+       ],
+       [
+        39.6,
+        45.8
+       ],
+       [
+        38.98,
+        45.04
+       ],
+       [
+        41.97,
+        45.04
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Revolt of the Czechoslovak Legion",
+      "kind": "event",
+      "lon": 61.4,
+      "lat": 55.16,
+      "year": 1918,
+      "winner": 1,
+      "text": "About 40,000 former prisoners of war seized the railway from the Volga to Vladivostok."
+     },
+     {
+      "name": "Battle of Kazan",
+      "kind": "battle",
+      "lon": 49.12,
+      "lat": 55.79,
+      "year": 1918,
+      "winner": 0,
+      "text": "The first major Red victory, won by Trotsky's reorganised army."
+     },
+     {
+      "name": "Killing of the imperial family",
+      "kind": "event",
+      "lon": 60.6,
+      "lat": 56.84,
+      "year": 1918,
+      "winner": null,
+      "text": "Nicholas II, his wife and five children were shot by Bolshevik guards on 17 July."
+     }
+    ]
+   },
+   {
+    "year": 1919,
+    "label": "Mar to Oct 1919",
+    "title": "The White high tide",
+    "text": "Kolchak's spring offensive reached within reach of the Volga before Frunze's counterattack drove it back across the Urals. In the summer Denikin launched his march on Moscow, taking Kharkiv, Kiev, Kursk and in October Orel, while Wrangel captured Tsaritsyn. In the northwest Yudenich advanced to the outskirts of Petrograd. All three White thrusts peaked in October and were thrown back.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        30.5,
+        50.8
+       ],
+       [
+        31.3,
+        51.5
+       ],
+       [
+        33.0,
+        52.0
+       ],
+       [
+        36.07,
+        52.97
+       ],
+       [
+        37.5,
+        52.6
+       ],
+       [
+        39.2,
+        51.66
+       ],
+       [
+        41.5,
+        50.5
+       ],
+       [
+        44.5,
+        48.7
+       ],
+       [
+        46.0,
+        46.5
+       ],
+       [
+        47.5,
+        45.5
+       ]
+      ],
+      "label": "Southern Front, Oct 1919"
+     },
+     {
+      "path": [
+       [
+        66.0,
+        58.5
+       ],
+       [
+        65.6,
+        56.5
+       ],
+       [
+        67.0,
+        55.2
+       ],
+       [
+        69.0,
+        54.5
+       ],
+       [
+        69.5,
+        52.0
+       ]
+      ],
+      "label": "Eastern Front, Oct 1919"
+     },
+     {
+      "path": [
+       [
+        29.5,
+        59.9
+       ],
+       [
+        30.3,
+        59.75
+       ],
+       [
+        30.5,
+        59.4
+       ],
+       [
+        29.8,
+        58.9
+       ]
+      ],
+      "label": "Petrograd front, Oct 1919"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Alexander Kolchak",
+      "label": "Spring offensive toward the Volga",
+      "path": [
+       [
+        60.6,
+        56.84
+       ],
+       [
+        55.97,
+        54.74
+       ],
+       [
+        52.43,
+        53.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Frunze",
+      "label": "Counteroffensive across the Urals",
+      "path": [
+       [
+        50.1,
+        53.2
+       ],
+       [
+        52.43,
+        53.65
+       ],
+       [
+        55.97,
+        54.74
+       ],
+       [
+        61.4,
+        55.16
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Anton Denikin",
+      "label": "March on Moscow",
+      "path": [
+       [
+        39.7,
+        47.23
+       ],
+       [
+        37.8,
+        48.0
+       ],
+       [
+        36.23,
+        49.99
+       ],
+       [
+        36.19,
+        51.73
+       ],
+       [
+        36.07,
+        52.97
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Pyotr Wrangel",
+      "label": "Caucasian Army takes Tsaritsyn",
+      "path": [
+       [
+        41.97,
+        45.04
+       ],
+       [
+        43.0,
+        47.0
+       ],
+       [
+        44.5,
+        48.7
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Nikolai Yudenich",
+      "label": "Northwestern Army on Petrograd",
+      "path": [
+       [
+        28.19,
+        59.38
+       ],
+       [
+        28.6,
+        59.37
+       ],
+       [
+        30.13,
+        59.57
+       ],
+       [
+        30.33,
+        59.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Tsaritsyn",
+      "kind": "battle",
+      "lon": 44.5,
+      "lat": 48.7,
+      "year": 1919,
+      "winner": 1,
+      "text": "Wrangel took the Volga city in June, linking the White south toward Kolchak's front."
+     },
+     {
+      "name": "Battle of Orel",
+      "kind": "battle",
+      "lon": 36.07,
+      "lat": 52.97,
+      "year": 1919,
+      "winner": 0,
+      "text": "The Red counterattack at Orel and Kromy broke Denikin's drive about 380 km from Moscow."
+     },
+     {
+      "name": "Defence of Petrograd",
+      "kind": "battle",
+      "lon": 30.33,
+      "lat": 59.78,
+      "year": 1919,
+      "winner": 0,
+      "text": "Trotsky rallied the city's defenders and Yudenich's army fell back into Estonia."
+     }
+    ]
+   },
+   {
+    "year": 1920,
+    "label": "Nov 1919 to Nov 1920",
+    "title": "The collapse of the Whites",
+    "text": "Kolchak's armies disintegrated along the Trans-Siberian, and he was handed over and shot at Irkutsk in February 1920. Denikin's forces fled to Novorossiysk and evacuated to Crimea, where Wrangel took command. A Red drive on Warsaw in the Polish-Soviet War was defeated by Pilsudski in August, but in November Frunze stormed the Perekop isthmus and Wrangel's army left Crimea by sea for Constantinople.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "USSR",
+       "Ukraine",
+       "White Russia",
+       "Far Eastern SSR",
+       "Azerbaijan",
+       "Armenia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "South Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        33.5,
+        46.2
+       ],
+       [
+        33.8,
+        46.15
+       ],
+       [
+        34.5,
+        46.05
+       ],
+       [
+        35.2,
+        45.9
+       ]
+      ],
+      "label": "Perekop line, Nov 1920"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Alexander Kolchak",
+      "label": "Retreat along the Trans-Siberian",
+      "path": [
+       [
+        73.37,
+        54.98
+       ],
+       [
+        82.9,
+        55.0
+       ],
+       [
+        92.87,
+        56.01
+       ],
+       [
+        104.3,
+        52.29
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Anton Denikin",
+      "label": "Retreat to Novorossiysk",
+      "path": [
+       [
+        36.19,
+        51.73
+       ],
+       [
+        36.23,
+        49.99
+       ],
+       [
+        39.7,
+        47.23
+       ],
+       [
+        37.77,
+        44.72
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Tukhachevsky",
+      "label": "Drive on Warsaw",
+      "path": [
+       [
+        30.33,
+        53.9
+       ],
+       [
+        27.56,
+        53.9
+       ],
+       [
+        23.16,
+        53.13
+       ],
+       [
+        21.3,
+        52.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Frunze",
+      "label": "Storming of Perekop",
+      "path": [
+       [
+        35.1,
+        47.84
+       ],
+       [
+        33.48,
+        46.81
+       ],
+       [
+        33.69,
+        46.16
+       ],
+       [
+        34.1,
+        44.95
+       ],
+       [
+        33.52,
+        44.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Pyotr Wrangel",
+      "label": "Evacuation of Crimea",
+      "path": [
+       [
+        33.52,
+        44.6
+       ],
+       [
+        31.0,
+        43.0
+       ],
+       [
+        28.98,
+        41.01
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Execution of Kolchak",
+      "kind": "event",
+      "lon": 104.3,
+      "lat": 52.29,
+      "year": 1920,
+      "winner": 0,
+      "text": "Handed over by the Czechoslovaks, the White Supreme Ruler was shot at Irkutsk on 7 February."
+     },
+     {
+      "name": "Battle of Warsaw",
+      "kind": "battle",
+      "lon": 21.2,
+      "lat": 52.25,
+      "year": 1920,
+      "winner": null,
+      "text": "Polish forces under Pilsudski routed the Red Army and ended the hope of carrying revolution west."
+     },
+     {
+      "name": "Battle of Perekop",
+      "kind": "battle",
+      "lon": 33.69,
+      "lat": 46.16,
+      "year": 1920,
+      "winner": 0,
+      "text": "The Red Army broke the fortified isthmus and about 150,000 people left Crimea with Wrangel."
+     }
+    ]
+   },
+   {
+    "year": 1922,
+    "label": "Feb 1921 to Dec 1922",
+    "title": "Last battles and the Soviet Union",
+    "text": "The Red Army invaded Georgia in February 1921, and in March it crushed the Kronstadt sailors' revolt across the ice while peasant risings were suppressed and famine killed millions. In the Far East, Blyukher's army beat the last Whites at Volochayevka and Japanese troops withdrew, and the Reds entered Vladivostok in October 1922. In December 1922 the Union of Soviet Socialist Republics was proclaimed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "USSR",
+       "Ukraine",
+       "White Russia",
+       "Far Eastern SSR",
+       "Azerbaijan",
+       "Armenia",
+       "Georgia",
+       "South Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        134.0,
+        48.0
+       ],
+       [
+        134.55,
+        48.57
+       ],
+       [
+        135.2,
+        48.9
+       ]
+      ],
+      "label": "Far Eastern front, Feb 1922"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Red Army 11th Army",
+      "label": "Invasion of Georgia",
+      "path": [
+       [
+        49.87,
+        40.41
+       ],
+       [
+        46.5,
+        41.3
+       ],
+       [
+        44.79,
+        41.72
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikhail Tukhachevsky",
+      "label": "Assault across the ice on Kronstadt",
+      "path": [
+       [
+        29.76,
+        59.92
+       ],
+       [
+        29.77,
+        59.99
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Vasily Blyukher",
+      "label": "People's Revolutionary Army to Vladivostok",
+      "path": [
+       [
+        134.55,
+        48.57
+       ],
+       [
+        135.07,
+        48.48
+       ],
+       [
+        133.5,
+        46.0
+       ],
+       [
+        132.82,
+        44.6
+       ],
+       [
+        131.89,
+        43.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Kronstadt rebellion",
+      "kind": "event",
+      "lon": 29.77,
+      "lat": 59.99,
+      "year": 1921,
+      "winner": 0,
+      "text": "Sailors who had backed the revolution demanded free soviets and were crushed in March 1921."
+     },
+     {
+      "name": "Battle of Volochayevka",
+      "kind": "battle",
+      "lon": 134.55,
+      "lat": 48.57,
+      "year": 1922,
+      "winner": 0,
+      "text": "The decisive Red victory in the Far East opened the road to Vladivostok."
+     },
+     {
+      "name": "Formation of the USSR",
+      "kind": "event",
+      "lon": 37.62,
+      "lat": 55.75,
+      "year": 1922,
+      "winner": 0,
+      "text": "Russia, Ukraine, Belarus and Transcaucasia joined as the Soviet Union on 30 December 1922."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "turkish-war-of-independence",
+  "name": "Turkish War of Independence",
+  "start": 1919,
+  "end": 1923,
+  "kind": "war",
+  "summary": "After the Ottoman defeat in 1918 the Allies occupied Constantinople and Greece landed at Smyrna, and Mustafa Kemal organised a national movement in Anatolia that rejected the Treaty of Sevres. Nationalist armies defeated Armenia in the east, pushed France out of Cilicia and, after hard battles at Inonu and Sakarya, routed the Greek army in 1922. The Treaty of Lausanne recognised the new Turkish state, and the Republic of Turkey was proclaimed in 1923.",
+  "sides": [
+   {
+    "name": "Turkish National Movement",
+    "color": "#c0473a",
+    "leaders": [
+     "Mustafa Kemal",
+     "Ismet Pasha",
+     "Kazim Karabekir",
+     "Fevzi Cakmak"
+    ]
+   },
+   {
+    "name": "Greece, Armenia and the Allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Eleftherios Venizelos",
+     "King Constantine I",
+     "Anastasios Papoulas",
+     "Georgios Hatzianestis"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 32.0,
+    "lat": 39.0,
+    "r": 7
+   },
+   {
+    "lon": 42.0,
+    "lat": 40.0,
+    "r": 3
+   }
+  ],
+  "steps": [
+   {
+    "year": 1920,
+    "label": "May 1919 to Dec 1920",
+    "title": "Occupation and the national movement",
+    "text": "Greek troops landed at Smyrna in May 1919, and days later Mustafa Kemal arrived at Samsun and rallied resistance at congresses in Erzurum and Sivas. When the Allies occupied Constantinople in March 1920, a Grand National Assembly opened in Ankara, and it rejected the Treaty of Sevres that partitioned Anatolia. Greek forces pushed inland to Bursa and Usak, while Karabekir defeated Armenia in the east and nationalists fought the French in Cilicia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Sultanate",
+       "Armenia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Greece",
+       "Syria (France)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.4,
+        40.7
+       ],
+       [
+        29.4,
+        40.2
+       ],
+       [
+        29.6,
+        39.4
+       ],
+       [
+        29.4,
+        38.7
+       ],
+       [
+        28.8,
+        38.2
+       ],
+       [
+        27.9,
+        37.6
+       ]
+      ],
+      "label": "Greek front, late 1920"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mustafa Kemal",
+      "label": "From Samsun to Ankara",
+      "path": [
+       [
+        36.33,
+        41.29
+       ],
+       [
+        35.83,
+        40.65
+       ],
+       [
+        41.27,
+        39.9
+       ],
+       [
+        37.02,
+        39.75
+       ],
+       [
+        32.85,
+        39.93
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Leonidas Paraskevopoulos",
+      "label": "Greek army from Smyrna to Bursa",
+      "path": [
+       [
+        25.5,
+        38.6
+       ],
+       [
+        27.14,
+        38.42
+       ],
+       [
+        28.0,
+        39.0
+       ],
+       [
+        29.06,
+        40.19
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Kazim Karabekir",
+      "label": "Eastern Army against Armenia",
+      "path": [
+       [
+        41.27,
+        39.9
+       ],
+       [
+        42.57,
+        40.33
+       ],
+       [
+        43.1,
+        40.6
+       ],
+       [
+        43.85,
+        40.79
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Greek landing at Smyrna",
+      "kind": "event",
+      "lon": 27.14,
+      "lat": 38.42,
+      "year": 1919,
+      "winner": 1,
+      "text": "The Greek occupation of Smyrna in May 1919 sparked Turkish armed resistance."
+     },
+     {
+      "name": "Grand National Assembly opens",
+      "kind": "event",
+      "lon": 32.85,
+      "lat": 39.93,
+      "year": 1920,
+      "winner": 0,
+      "text": "The Ankara assembly declared itself the government of the nation on 23 April 1920."
+     },
+     {
+      "name": "Treaty of Sevres",
+      "kind": "treaty",
+      "lon": 2.21,
+      "lat": 48.82,
+      "year": 1920,
+      "winner": 1,
+      "text": "The Sultan's government accepted a partition of Anatolia that the nationalists refused to recognise."
+     }
+    ]
+   },
+   {
+    "year": 1921,
+    "label": "Jan to Sep 1921",
+    "title": "Inonu and Sakarya",
+    "text": "Ismet Pasha checked two Greek advances at Inonu in January and March 1921. In July a larger Greek offensive won at Kutahya and Eskisehir and marched on Ankara, but Kemal, now commander in chief, held a line on the Sakarya river for three weeks until the exhausted Greeks withdrew. Soon after, France and Soviet Russia made peace with Ankara, freeing the nationalists to turn west.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Sultanate",
+       "Armenia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Greece"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.6,
+        40.1
+       ],
+       [
+        32.0,
+        39.75
+       ],
+       [
+        32.1,
+        39.45
+       ],
+       [
+        31.8,
+        39.1
+       ]
+      ],
+      "label": "Sakarya line, Sep 1921"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ismet Pasha",
+      "label": "Defence at Inonu",
+      "path": [
+       [
+        30.52,
+        39.78
+       ],
+       [
+        30.14,
+        39.82
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Anastasios Papoulas",
+      "label": "Greek march on Ankara",
+      "path": [
+       [
+        29.4,
+        38.68
+       ],
+       [
+        29.98,
+        39.42
+       ],
+       [
+        30.52,
+        39.78
+       ],
+       [
+        31.9,
+        39.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mustafa Kemal",
+      "label": "Turkish army stands on the Sakarya",
+      "path": [
+       [
+        32.85,
+        39.93
+       ],
+       [
+        32.14,
+        39.58
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Anastasios Papoulas",
+      "label": "Greek withdrawal to Eskisehir and Afyon",
+      "path": [
+       [
+        31.9,
+        39.5
+       ],
+       [
+        30.52,
+        39.78
+       ],
+       [
+        30.54,
+        38.76
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Second Battle of Inonu",
+      "kind": "battle",
+      "lon": 30.14,
+      "lat": 39.82,
+      "year": 1921,
+      "winner": 0,
+      "text": "Ismet's victory in April 1921 gave the new army confidence and its commander his later surname."
+     },
+     {
+      "name": "Battle of Kutahya-Eskisehir",
+      "kind": "battle",
+      "lon": 30.52,
+      "lat": 39.78,
+      "year": 1921,
+      "winner": 1,
+      "text": "The Greek army took both towns in July and the Turks fell back east of the Sakarya."
+     },
+     {
+      "name": "Battle of Sakarya",
+      "kind": "battle",
+      "lon": 31.95,
+      "lat": 39.55,
+      "year": 1921,
+      "winner": 0,
+      "text": "After 21 days of fighting the Greek advance on Ankara was halted for good."
+     }
+    ]
+   },
+   {
+    "year": 1922,
+    "label": "Aug to Oct 1922",
+    "title": "The Great Offensive and Smyrna",
+    "text": "On 26 August 1922 Kemal launched the Great Offensive against the Greek line near Afyon and broke it within days at Dumlupinar. The Greek army fled to the coast and was evacuated, and Turkish cavalry entered Smyrna on 9 September, after which fire destroyed the Greek and Armenian quarters of the city. Facing the Allies at Chanak, Ankara agreed the Armistice of Mudanya, which returned Eastern Thrace to Turkey.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Sultanate",
+       "Armenia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Greece"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.15,
+        40.43
+       ],
+       [
+        30.0,
+        40.1
+       ],
+       [
+        30.52,
+        39.78
+       ],
+       [
+        30.5,
+        39.1
+       ],
+       [
+        30.54,
+        38.76
+       ],
+       [
+        30.0,
+        38.3
+       ]
+      ],
+      "label": "Greek line, Aug 1922"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mustafa Kemal",
+      "label": "The Great Offensive",
+      "path": [
+       [
+        30.43,
+        38.58
+       ],
+       [
+        29.98,
+        38.85
+       ],
+       [
+        29.4,
+        38.68
+       ],
+       [
+        27.14,
+        38.42
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Georgios Hatzianestis",
+      "label": "Greek retreat and evacuation",
+      "path": [
+       [
+        30.54,
+        38.76
+       ],
+       [
+        29.4,
+        38.68
+       ],
+       [
+        28.0,
+        38.5
+       ],
+       [
+        27.14,
+        38.42
+       ],
+       [
+        26.1,
+        38.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Dumlupinar",
+      "kind": "battle",
+      "lon": 29.98,
+      "lat": 38.85,
+      "year": 1922,
+      "winner": 0,
+      "text": "The main Greek force was encircled and destroyed on 30 August 1922."
+     },
+     {
+      "name": "Great fire of Smyrna",
+      "kind": "event",
+      "lon": 27.14,
+      "lat": 38.42,
+      "year": 1922,
+      "winner": null,
+      "text": "Fire and killings in September destroyed much of the city, and tens of thousands of Greek and Armenian civilians died or fled."
+     },
+     {
+      "name": "Armistice of Mudanya",
+      "kind": "treaty",
+      "lon": 28.88,
+      "lat": 40.37,
+      "year": 1922,
+      "winner": 0,
+      "text": "The Allies accepted Turkish rule over Eastern Thrace and Constantinople."
+     }
+    ]
+   },
+   {
+    "year": 1923,
+    "label": "Nov 1922 to Oct 1923",
+    "title": "Lausanne and the Republic",
+    "text": "The Ankara assembly abolished the Ottoman sultanate in November 1922. At Lausanne Ismet Pasha won recognition of Turkish sovereignty over Anatolia and Eastern Thrace, and Greece and Turkey agreed a compulsory exchange of about 1.6 million people. Allied troops left Constantinople, Turkish troops entered it, and on 29 October 1923 the Republic of Turkey was proclaimed with Kemal as president.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Sultanate",
+       "Armenia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Greece"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Allied occupation garrison",
+      "label": "Allies evacuate Constantinople",
+      "path": [
+       [
+        28.98,
+        41.01
+       ],
+       [
+        27.5,
+        40.7
+       ],
+       [
+        26.4,
+        40.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Sukru Naili Pasha",
+      "label": "Turkish troops enter Constantinople",
+      "path": [
+       [
+        29.92,
+        40.77
+       ],
+       [
+        29.3,
+        40.85
+       ],
+       [
+        28.98,
+        41.01
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Lausanne",
+      "kind": "treaty",
+      "lon": 6.63,
+      "lat": 46.52,
+      "year": 1923,
+      "winner": 0,
+      "text": "Signed on 24 July 1923, it replaced Sevres and fixed Turkey's borders."
+     },
+     {
+      "name": "Proclamation of the Republic",
+      "kind": "event",
+      "lon": 32.85,
+      "lat": 39.93,
+      "year": 1923,
+      "winner": 0,
+      "text": "The assembly proclaimed the Republic of Turkey with Ankara as its capital."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "chinese-civil-war",
+  "name": "Chinese Civil War",
+  "start": 1927,
+  "end": 1949,
+  "kind": "conflict",
+  "summary": "The Nationalist Kuomintang under Chiang Kai-shek and the Chinese Communist Party fought for control of China in two rounds, from the 1927 split to the Japanese invasion and again from 1946. The Communists survived encirclement through the Long March, grew behind Japanese lines during the war with Japan, and then won in Manchuria and in the great Huaihai campaign. In 1949 Mao Zedong proclaimed the People's Republic of China and the Nationalist government withdrew to Taiwan.",
+  "sides": [
+   {
+    "name": "Nationalists (Kuomintang)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Chiang Kai-shek",
+     "Bai Chongxi",
+     "Hu Zongnan",
+     "Du Yuming"
+    ]
+   },
+   {
+    "name": "Communists",
+    "color": "#c0473a",
+    "leaders": [
+     "Mao Zedong",
+     "Zhu De",
+     "Lin Biao",
+     "Su Yu",
+     "Liu Bocheng",
+     "Deng Xiaoping"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 112.0,
+    "lat": 31.0,
+    "r": 15
+   },
+   {
+    "lon": 125.0,
+    "lat": 43.0,
+    "r": 8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1927,
+    "label": "Apr 1927 to Dec 1928",
+    "title": "The split and the end of the Northern Expedition",
+    "text": "Halfway through the Northern Expedition against the warlords, Chiang Kai-shek turned on his Communist allies and massacred them in Shanghai in April 1927. Communist-led units rose at Nanchang on 1 August, the birth of the Red Army, and survivors under Zhu De joined Mao Zedong in the Jinggang Mountains. Chiang's armies took Beijing in June 1928 and the Manchurian warlord accepted Nationalist rule that December.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chinese Warlords"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Chiang Kai-shek",
+      "label": "Northern Expedition reaches Beijing",
+      "path": [
+       [
+        118.8,
+        32.06
+       ],
+       [
+        117.18,
+        34.26
+       ],
+       [
+        117.0,
+        36.65
+       ],
+       [
+        116.4,
+        39.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Zhu De",
+      "label": "From the Nanchang Uprising to Jinggangshan",
+      "path": [
+       [
+        115.86,
+        28.68
+       ],
+       [
+        116.03,
+        25.88
+       ],
+       [
+        116.68,
+        23.35
+       ],
+       [
+        114.17,
+        26.57
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mao Zedong",
+      "label": "Autumn Harvest Uprising to Jinggangshan",
+      "path": [
+       [
+        113.6,
+        28.15
+       ],
+       [
+        113.9,
+        27.4
+       ],
+       [
+        114.17,
+        26.57
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Shanghai massacre",
+      "kind": "event",
+      "lon": 121.47,
+      "lat": 31.23,
+      "year": 1927,
+      "winner": 0,
+      "text": "Nationalist troops and gangsters killed thousands of Communists and labour activists from 12 April 1927."
+     },
+     {
+      "name": "Nanchang Uprising",
+      "kind": "battle",
+      "lon": 115.86,
+      "lat": 28.68,
+      "year": 1927,
+      "winner": null,
+      "text": "Communist-led units seized the city on 1 August before being driven south."
+     },
+     {
+      "name": "Nationalists take Beijing",
+      "kind": "event",
+      "lon": 116.4,
+      "lat": 39.9,
+      "year": 1928,
+      "winner": 0,
+      "text": "The capture of Beijing ended the Northern Expedition and nominally reunified China."
+     }
+    ]
+   },
+   {
+    "year": 1934,
+    "label": "1930 to Oct 1935",
+    "title": "Encirclement and the Long March",
+    "text": "From the Jiangxi Soviet around Ruijin the Red Army beat four Nationalist encirclement campaigns, but Chiang's fifth, ringing the base with blockhouses, forced it to break out in October 1934. About 86,000 men set out on the Long March, lost heavily crossing the Xiang River, and at Zunyi in January 1935 Mao gained a leading voice. A year later fewer than 10,000 reached northern Shaanxi, which became the new Communist base.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chinese Warlords"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        115.0,
+        27.3
+       ],
+       [
+        116.3,
+        27.4
+       ],
+       [
+        116.9,
+        26.5
+       ],
+       [
+        116.6,
+        25.4
+       ],
+       [
+        115.6,
+        25.0
+       ],
+       [
+        114.8,
+        25.6
+       ],
+       [
+        114.6,
+        26.6
+       ],
+       [
+        115.0,
+        27.3
+       ]
+      ],
+      "label": "Fifth encirclement, 1934"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Chiang Kai-shek",
+      "label": "Fifth encirclement campaign",
+      "path": [
+       [
+        115.86,
+        28.68
+       ],
+       [
+        116.33,
+        26.84
+       ],
+       [
+        116.03,
+        25.88
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mao Zedong and Zhu De",
+      "label": "The Long March",
+      "path": [
+       [
+        116.03,
+        25.88
+       ],
+       [
+        111.07,
+        25.93
+       ],
+       [
+        106.93,
+        27.7
+       ],
+       [
+        102.23,
+        29.91
+       ],
+       [
+        103.2,
+        32.6
+       ],
+       [
+        108.17,
+        36.93
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Xue Yue",
+      "label": "Nationalist pursuit",
+      "path": [
+       [
+        112.94,
+        28.23
+       ],
+       [
+        110.3,
+        27.3
+       ],
+       [
+        106.71,
+        26.58
+       ],
+       [
+        104.07,
+        30.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Xiang River",
+      "kind": "battle",
+      "lon": 111.07,
+      "lat": 25.93,
+      "year": 1934,
+      "winner": 0,
+      "text": "Crossing under fire, the Red Army lost more than half its strength."
+     },
+     {
+      "name": "Zunyi Conference",
+      "kind": "event",
+      "lon": 106.93,
+      "lat": 27.7,
+      "year": 1935,
+      "winner": null,
+      "text": "Party leaders blamed the defeats on their military advisers and Mao rose to the leadership."
+     },
+     {
+      "name": "End of the Long March",
+      "kind": "event",
+      "lon": 108.17,
+      "lat": 36.93,
+      "year": 1935,
+      "winner": 1,
+      "text": "The survivors reached the Shaanxi base in October 1935 after about 9,000 km."
+     }
+    ]
+   },
+   {
+    "year": 1937,
+    "label": "Dec 1936 to 1945",
+    "title": "The Xi'an Incident and the United Front",
+    "text": "In December 1936 Chiang was detained at Xi'an by his own generals and agreed to stop fighting the Communists and resist Japan together. During the war with Japan the Communist Eighth Route and New Fourth Armies fought a guerrilla war behind Japanese lines and expanded their base areas from Yan'an. The truce was uneasy: in January 1941 Nationalist troops destroyed the New Fourth Army headquarters, and by 1945 the Communists ruled about 90 million people.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chinese Warlords"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lin Biao",
+      "label": "Eighth Route Army crosses into Shanxi",
+      "path": [
+       [
+        109.49,
+        36.6
+       ],
+       [
+        110.5,
+        36.6
+       ],
+       [
+        112.55,
+        37.87
+       ],
+       [
+        113.93,
+        39.33
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ye Ting",
+      "label": "New Fourth Army in the lower Yangtze",
+      "path": [
+       [
+        118.3,
+        30.45
+       ],
+       [
+        119.0,
+        31.6
+       ],
+       [
+        119.5,
+        32.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Xi'an Incident",
+      "kind": "event",
+      "lon": 108.94,
+      "lat": 34.34,
+      "year": 1936,
+      "winner": null,
+      "text": "Zhang Xueliang held Chiang until he accepted a united front against Japan."
+     },
+     {
+      "name": "New Fourth Army Incident",
+      "kind": "battle",
+      "lon": 118.3,
+      "lat": 30.45,
+      "year": 1941,
+      "winner": 0,
+      "text": "Nationalist forces ambushed the New Fourth Army headquarters, ending real cooperation."
+     }
+    ]
+   },
+   {
+    "year": 1946,
+    "label": "Jun 1946 to Dec 1947",
+    "title": "War resumes",
+    "text": "After American mediation failed, Chiang's larger and better armed forces attacked in mid 1946, taking cities across north China and Manchuria and capturing Yan'an in March 1947. The Communists gave up territory to destroy units in the field, annihilating the elite 74th Division at Menglianggu. Lin Biao built up a large army in northern Manchuria, and in August 1947 Liu Bocheng and Deng Xiaoping struck south across the Yellow River to the Dabie Mountains.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "China",
+       "Taiwan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchuria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        122.5,
+        45.0
+       ],
+       [
+        124.8,
+        45.1
+       ],
+       [
+        126.5,
+        44.6
+       ],
+       [
+        128.0,
+        44.3
+       ],
+       [
+        129.6,
+        43.5
+       ]
+      ],
+      "label": "Manchurian front, 1947"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Du Yuming",
+      "label": "Nationalist drive into Manchuria",
+      "path": [
+       [
+        123.43,
+        41.8
+       ],
+       [
+        124.35,
+        43.17
+       ],
+       [
+        125.32,
+        43.88
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lin Biao",
+      "label": "Northeast army attacks across the Sungari",
+      "path": [
+       [
+        126.63,
+        45.75
+       ],
+       [
+        125.6,
+        44.8
+       ],
+       [
+        124.35,
+        43.17
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Hu Zongnan",
+      "label": "Capture of Yan'an",
+      "path": [
+       [
+        108.94,
+        34.34
+       ],
+       [
+        109.43,
+        35.76
+       ],
+       [
+        109.49,
+        36.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Liu Bocheng and Deng Xiaoping",
+      "label": "March to the Dabie Mountains",
+      "path": [
+       [
+        115.5,
+        35.2
+       ],
+       [
+        115.5,
+        34.7
+       ],
+       [
+        115.5,
+        33.5
+       ],
+       [
+        115.8,
+        31.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Siping",
+      "kind": "battle",
+      "lon": 124.35,
+      "lat": 43.17,
+      "year": 1946,
+      "winner": 0,
+      "text": "Nationalist forces drove the Communists back north of the Sungari in May 1946."
+     },
+     {
+      "name": "Fall of Yan'an",
+      "kind": "event",
+      "lon": 109.49,
+      "lat": 36.6,
+      "year": 1947,
+      "winner": 0,
+      "text": "Mao abandoned his capital without a fight and kept moving in northern Shaanxi."
+     },
+     {
+      "name": "Battle of Menglianggu",
+      "kind": "battle",
+      "lon": 118.0,
+      "lat": 35.6,
+      "year": 1947,
+      "winner": 1,
+      "text": "The Communists destroyed the Nationalists' elite 74th Division in Shandong."
+     }
+    ]
+   },
+   {
+    "year": 1948,
+    "label": "Sep 1948 to Jan 1949",
+    "title": "Liaoshen, Huaihai and Pingjin",
+    "text": "In three great campaigns the Communists destroyed the best Nationalist armies. Lin Biao took Jinzhou and Shenyang and cleared Manchuria, then swept south to take Tianjin and receive the surrender of Beiping. Between November and January, Su Yu, Liu Bocheng and Deng Xiaoping encircled about half a million Nationalist troops around Xuzhou in the Huaihai campaign and captured their commander Du Yuming.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "China",
+       "Taiwan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Manchuria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        105.0,
+        34.0
+       ],
+       [
+        108.9,
+        34.3
+       ],
+       [
+        112.0,
+        33.0
+       ],
+       [
+        115.0,
+        32.3
+       ],
+       [
+        117.4,
+        32.9
+       ],
+       [
+        119.0,
+        32.5
+       ],
+       [
+        121.0,
+        32.0
+       ]
+      ],
+      "label": "Front, Jan 1949"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lin Biao",
+      "label": "Liaoshen and Pingjin campaigns",
+      "path": [
+       [
+        124.35,
+        43.17
+       ],
+       [
+        121.13,
+        41.1
+       ],
+       [
+        123.43,
+        41.8
+       ],
+       [
+        119.6,
+        39.93
+       ],
+       [
+        117.2,
+        39.13
+       ],
+       [
+        116.4,
+        39.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Su Yu",
+      "label": "East China Field Army on Xuzhou",
+      "path": [
+       [
+        117.0,
+        36.65
+       ],
+       [
+        117.4,
+        35.0
+       ],
+       [
+        117.18,
+        34.26
+       ],
+       [
+        116.5,
+        34.0
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Liu Bocheng and Deng Xiaoping",
+      "label": "Central Plains Field Army",
+      "path": [
+       [
+        113.65,
+        34.75
+       ],
+       [
+        115.78,
+        33.85
+       ],
+       [
+        116.77,
+        33.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Du Yuming",
+      "label": "Breakout from Xuzhou",
+      "path": [
+       [
+        117.18,
+        34.26
+       ],
+       [
+        116.5,
+        34.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Liaoshen campaign",
+      "kind": "battle",
+      "lon": 121.13,
+      "lat": 41.1,
+      "year": 1948,
+      "winner": 1,
+      "text": "The fall of Jinzhou trapped the Nationalist armies in Manchuria, which lost about 470,000 men."
+     },
+     {
+      "name": "Huaihai campaign",
+      "kind": "battle",
+      "lon": 117.18,
+      "lat": 34.26,
+      "year": 1949,
+      "winner": 1,
+      "text": "The decisive battle of the war opened the road to the Yangtze and Nanjing."
+     },
+     {
+      "name": "Surrender of Beiping",
+      "kind": "event",
+      "lon": 116.4,
+      "lat": 39.9,
+      "year": 1949,
+      "winner": 1,
+      "text": "General Fu Zuoyi handed over the old capital intact in January 1949."
+     }
+    ]
+   },
+   {
+    "year": 1949,
+    "label": "Apr to Dec 1949",
+    "title": "The Yangtze crossing and the People's Republic",
+    "text": "On 21 April 1949 Communist armies crossed the Yangtze on a broad front and took Nanjing, Shanghai and Wuhan within weeks. Lin Biao drove south to Guangzhou while Liu and Deng took Chongqing and Chengdu in the southwest. Mao proclaimed the People's Republic of China in Beijing on 1 October, an assault on Kinmen failed in late October, and in December Chiang's government withdrew to Taiwan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Taiwan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "China",
+       "Manchuria",
+       "Xinjiang"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        119.5,
+        26.5
+       ],
+       [
+        119.6,
+        25.0
+       ],
+       [
+        118.5,
+        24.2
+       ],
+       [
+        117.5,
+        23.4
+       ]
+      ],
+      "label": "Taiwan Strait, Dec 1949"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Chen Yi and Su Yu",
+      "label": "Third Field Army crosses the Yangtze",
+      "path": [
+       [
+        118.3,
+        32.4
+       ],
+       [
+        118.8,
+        32.06
+       ],
+       [
+        120.3,
+        31.57
+       ],
+       [
+        121.47,
+        31.23
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lin Biao",
+      "label": "Fourth Field Army to Guangzhou",
+      "path": [
+       [
+        114.3,
+        30.59
+       ],
+       [
+        112.94,
+        28.23
+       ],
+       [
+        112.57,
+        26.89
+       ],
+       [
+        113.26,
+        23.13
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Liu Bocheng and Deng Xiaoping",
+      "label": "Second Field Army to the southwest",
+      "path": [
+       [
+        111.7,
+        29.03
+       ],
+       [
+        108.4,
+        29.3
+       ],
+       [
+        106.55,
+        29.56
+       ],
+       [
+        104.07,
+        30.67
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Chiang Kai-shek",
+      "label": "Government withdraws to Taiwan",
+      "path": [
+       [
+        118.09,
+        24.48
+       ],
+       [
+        120.0,
+        24.5
+       ],
+       [
+        121.56,
+        25.04
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Crossing of the Yangtze",
+      "kind": "battle",
+      "lon": 118.8,
+      "lat": 32.06,
+      "year": 1949,
+      "winner": 1,
+      "text": "Nanjing, the Nationalist capital, fell on 23 April 1949."
+     },
+     {
+      "name": "Proclamation of the People's Republic",
+      "kind": "event",
+      "lon": 116.39,
+      "lat": 39.91,
+      "year": 1949,
+      "winner": 1,
+      "text": "Mao declared the founding of the PRC from Tiananmen on 1 October 1949."
+     },
+     {
+      "name": "Battle of Guningtou",
+      "kind": "battle",
+      "lon": 118.32,
+      "lat": 24.45,
+      "year": 1949,
+      "winner": 0,
+      "text": "The failed landing on Kinmen ended Communist hopes of a quick invasion of Taiwan."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "second-italo-ethiopian-war",
+  "name": "Second Italo-Ethiopian War",
+  "start": 1935,
+  "end": 1936,
+  "kind": "war",
+  "summary": "Fascist Italy invaded Ethiopia, one of Africa's last independent states, from its colonies of Eritrea and Somaliland to build an empire and avenge the defeat at Adwa in 1896. Italian armies with aircraft, artillery and poison gas defeated Emperor Haile Selassie's forces in a series of battles in the north and took Addis Ababa in May 1936. The League of Nations' weak sanctions failed to stop the war, a blow to collective security on the road to World War II.",
+  "sides": [
+   {
+    "name": "Kingdom of Italy",
+    "color": "#3f8f5f",
+    "leaders": [
+     "Benito Mussolini",
+     "Emilio De Bono",
+     "Pietro Badoglio",
+     "Rodolfo Graziani"
+    ]
+   },
+   {
+    "name": "Ethiopian Empire",
+    "color": "#c9962b",
+    "leaders": [
+     "Haile Selassie",
+     "Ras Imru",
+     "Ras Kassa",
+     "Ras Mulugeta",
+     "Ras Desta"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 40.5,
+    "lat": 10.0,
+    "r": 7
+   }
+  ],
+  "steps": [
+   {
+    "year": 1935,
+    "label": "Oct to Dec 1935",
+    "title": "Invasion",
+    "text": "On 3 October 1935, without a declaration of war, De Bono's army crossed the Mareb from Eritrea and took Adwa, Aksum and Mek'ele, while Graziani advanced into the Ogaden from Italian Somaliland. The League of Nations condemned Italy and imposed sanctions that excluded oil. In December Ras Imru's Christmas Offensive drove the Italians back at the Dembeguina Pass.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Italy",
+       "Eritrea",
+       "Italian Somaliland"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ethiopia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        37.9,
+        14.2
+       ],
+       [
+        38.7,
+        14.0
+       ],
+       [
+        39.5,
+        13.4
+       ],
+       [
+        40.0,
+        13.5
+       ]
+      ],
+      "label": "Northern front, Dec 1935"
+     },
+     {
+      "path": [
+       [
+        42.3,
+        4.5
+       ],
+       [
+        43.5,
+        5.8
+       ],
+       [
+        44.3,
+        6.9
+       ],
+       [
+        45.5,
+        7.5
+       ]
+      ],
+      "label": "Southern front, Dec 1935"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Emilio De Bono",
+      "label": "Northern army from Eritrea",
+      "path": [
+       [
+        38.93,
+        15.33
+       ],
+       [
+        39.0,
+        14.6
+       ],
+       [
+        38.9,
+        14.17
+       ],
+       [
+        39.45,
+        14.0
+       ],
+       [
+        39.47,
+        13.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Rodolfo Graziani",
+      "label": "Southern army into the Ogaden",
+      "path": [
+       [
+        45.34,
+        2.04
+       ],
+       [
+        45.2,
+        4.74
+       ],
+       [
+        44.27,
+        6.73
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ras Imru",
+      "label": "Christmas Offensive",
+      "path": [
+       [
+        37.47,
+        12.6
+       ],
+       [
+        37.9,
+        13.8
+       ],
+       [
+        38.15,
+        13.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Adwa",
+      "kind": "event",
+      "lon": 38.9,
+      "lat": 14.17,
+      "year": 1935,
+      "winner": 0,
+      "text": "Italy took the town where it had been defeated in 1896."
+     },
+     {
+      "name": "League of Nations sanctions",
+      "kind": "event",
+      "lon": 6.14,
+      "lat": 46.2,
+      "year": 1935,
+      "winner": null,
+      "text": "The League named Italy the aggressor but its sanctions left out oil."
+     },
+     {
+      "name": "Battle of Dembeguina Pass",
+      "kind": "battle",
+      "lon": 38.15,
+      "lat": 13.95,
+      "year": 1935,
+      "winner": 1,
+      "text": "Ras Imru's forces overran an Italian column in the Christmas Offensive."
+     }
+    ]
+   },
+   {
+    "year": 1936,
+    "label": "Jan to Mar 1936",
+    "title": "Badoglio's battles in the north",
+    "text": "Badoglio replaced De Bono and used massed artillery, aircraft and mustard gas, banned by the Geneva Protocol, against Ethiopian armies and civilians. He destroyed Ras Mulugeta's army at Amba Aradam, then those of Ras Kassa and Ras Seyoum in the Tembien and Ras Imru's at Shire. On 31 March Haile Selassie's own counterattack failed at Maychew, while in the south Graziani defeated Ras Desta and took Neghelli.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Italy",
+       "Eritrea",
+       "Italian Somaliland"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Ethiopia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        37.8,
+        13.4
+       ],
+       [
+        38.6,
+        13.2
+       ],
+       [
+        39.5,
+        12.8
+       ],
+       [
+        40.0,
+        12.8
+       ]
+      ],
+      "label": "Northern front, Mar 1936"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Pietro Badoglio",
+      "label": "Advance from Mek'ele",
+      "path": [
+       [
+        39.47,
+        13.5
+       ],
+       [
+        39.53,
+        13.3
+       ],
+       [
+        39.53,
+        12.98
+       ],
+       [
+        39.54,
+        12.78
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Haile Selassie",
+      "label": "Imperial army moves north",
+      "path": [
+       [
+        39.63,
+        11.13
+       ],
+       [
+        39.52,
+        12.5
+       ],
+       [
+        39.54,
+        12.78
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Rodolfo Graziani",
+      "label": "Drive on Neghelli",
+      "path": [
+       [
+        42.07,
+        4.18
+       ],
+       [
+        40.6,
+        4.9
+       ],
+       [
+        39.58,
+        5.33
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Amba Aradam",
+      "kind": "battle",
+      "lon": 39.53,
+      "lat": 13.3,
+      "year": 1936,
+      "winner": 0,
+      "text": "Ras Mulugeta's army was broken by artillery, bombing and gas in February."
+     },
+     {
+      "name": "Battle of Shire",
+      "kind": "battle",
+      "lon": 38.28,
+      "lat": 14.1,
+      "year": 1936,
+      "winner": 0,
+      "text": "Ras Imru's army was driven back across the Takazze."
+     },
+     {
+      "name": "Battle of Maychew",
+      "kind": "battle",
+      "lon": 39.54,
+      "lat": 12.78,
+      "year": 1936,
+      "winner": 0,
+      "text": "The emperor's last major army was defeated on 31 March 1936."
+     }
+    ]
+   },
+   {
+    "year": 1936,
+    "label": "Apr to May 1936",
+    "title": "The fall of Addis Ababa",
+    "text": "Badoglio's motorised columns drove south through Dessie to Addis Ababa, which they entered on 5 May 1936 as Graziani took Harar. Haile Selassie left by rail for Djibouti and exile, and in June he appealed to the League of Nations in Geneva. Mussolini proclaimed an Italian empire, but resistance fighters kept up a guerrilla war until British and Ethiopian forces freed the country in 1941.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Italy",
+       "Eritrea",
+       "Italian Somaliland",
+       "Ethiopia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Pietro Badoglio",
+      "label": "March on Addis Ababa",
+      "path": [
+       [
+        39.54,
+        12.78
+       ],
+       [
+        39.63,
+        11.13
+       ],
+       [
+        39.53,
+        9.68
+       ],
+       [
+        38.75,
+        9.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Rodolfo Graziani",
+      "label": "Southern army takes Harar",
+      "path": [
+       [
+        44.27,
+        6.73
+       ],
+       [
+        43.56,
+        8.22
+       ],
+       [
+        42.8,
+        9.35
+       ],
+       [
+        42.12,
+        9.31
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Haile Selassie",
+      "label": "Emperor goes into exile",
+      "path": [
+       [
+        38.75,
+        9.03
+       ],
+       [
+        41.86,
+        9.6
+       ],
+       [
+        43.15,
+        11.59
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Addis Ababa",
+      "kind": "event",
+      "lon": 38.75,
+      "lat": 9.03,
+      "year": 1936,
+      "winner": 0,
+      "text": "Italian troops entered the capital on 5 May 1936."
+     },
+     {
+      "name": "Haile Selassie addresses the League",
+      "kind": "event",
+      "lon": 6.14,
+      "lat": 46.2,
+      "year": 1936,
+      "winner": null,
+      "text": "The emperor warned the League in June 1936 that collective security was at stake."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "spanish-civil-war",
+  "name": "Spanish Civil War",
+  "start": 1936,
+  "end": 1939,
+  "kind": "war",
+  "summary": "A military coup against Spain's Popular Front government in July 1936 split the country between the Republic and the Nationalist rebels led by Francisco Franco. Germany and Italy sent aircraft and troops to the Nationalists, while the Soviet Union and the International Brigades aided the Republic. The Nationalists conquered Spain region by region and won in April 1939, beginning Franco's dictatorship; about 500,000 people died, many in executions behind both lines.",
+  "sides": [
+   {
+    "name": "Republicans",
+    "color": "#c0473a",
+    "leaders": [
+     "Francisco Largo Caballero",
+     "Juan Negrin",
+     "Jose Miaja",
+     "Vicente Rojo"
+    ]
+   },
+   {
+    "name": "Nationalists",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Francisco Franco",
+     "Emilio Mola",
+     "Juan Yague",
+     "Gonzalo Queipo de Llano"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -3.0,
+    "lat": 40.2,
+    "r": 6
+   }
+  ],
+  "steps": [
+   {
+    "year": 1936,
+    "label": "Jul to Nov 1936",
+    "title": "The coup and the march on Madrid",
+    "text": "The rising of 17 and 18 July 1936 took Spanish Morocco, Seville and the conservative north and west, but failed in Madrid, Barcelona and most of the east. German and Italian aircraft ferried Franco's Army of Africa across the Strait, and Yague's columns drove north, took Badajoz with mass executions, relieved the Alcazar of Toledo and reached Madrid in November. Miaja's defenders, militias and the first International Brigades held the capital.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        -0.1,
+        42.75
+       ],
+       [
+        -0.35,
+        42.15
+       ],
+       [
+        -0.7,
+        41.5
+       ],
+       [
+        -1.0,
+        40.6
+       ],
+       [
+        -1.6,
+        40.9
+       ],
+       [
+        -2.6,
+        41.0
+       ],
+       [
+        -3.5,
+        40.6
+       ],
+       [
+        -3.75,
+        40.4
+       ],
+       [
+        -3.9,
+        40.0
+       ],
+       [
+        -4.6,
+        39.4
+       ],
+       [
+        -5.2,
+        38.7
+       ],
+       [
+        -4.8,
+        37.95
+       ],
+       [
+        -4.5,
+        37.2
+       ],
+       [
+        -4.6,
+        36.8
+       ]
+      ],
+      "label": "Main front, Nov 1936"
+     },
+     {
+      "path": [
+       [
+        -7.05,
+        43.55
+       ],
+       [
+        -6.2,
+        43.1
+       ],
+       [
+        -5.2,
+        42.95
+       ],
+       [
+        -4.2,
+        43.0
+       ],
+       [
+        -3.3,
+        43.0
+       ],
+       [
+        -2.5,
+        43.1
+       ],
+       [
+        -2.4,
+        43.3
+       ]
+      ],
+      "label": "Northern front, late 1936"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Juan Yague",
+      "label": "Army of Africa from Morocco to Madrid",
+      "path": [
+       [
+        -5.37,
+        35.57
+       ],
+       [
+        -5.98,
+        37.39
+       ],
+       [
+        -6.34,
+        38.92
+       ],
+       [
+        -4.83,
+        39.96
+       ],
+       [
+        -4.03,
+        39.86
+       ],
+       [
+        -3.75,
+        40.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Emilio Mola",
+      "label": "Army of the North toward Madrid",
+      "path": [
+       [
+        -1.64,
+        42.81
+       ],
+       [
+        -3.7,
+        42.34
+       ],
+       [
+        -3.58,
+        41.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Buenaventura Durruti",
+      "label": "Anarchist column to Aragon",
+      "path": [
+       [
+        2.17,
+        41.39
+       ],
+       [
+        0.62,
+        41.62
+       ],
+       [
+        -0.4,
+        41.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "International Brigades",
+      "label": "Volunteers to Madrid",
+      "path": [
+       [
+        -1.86,
+        38.99
+       ],
+       [
+        -2.8,
+        39.7
+       ],
+       [
+        -3.7,
+        40.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Badajoz",
+      "kind": "battle",
+      "lon": -6.97,
+      "lat": 38.88,
+      "year": 1936,
+      "winner": 1,
+      "text": "The town fell on 14 August and many hundreds of prisoners and civilians were shot."
+     },
+     {
+      "name": "Siege of the Alcazar",
+      "kind": "siege",
+      "lon": -4.02,
+      "lat": 39.86,
+      "year": 1936,
+      "winner": 1,
+      "text": "Franco diverted his army to relieve the besieged fortress in Toledo on 27 September."
+     },
+     {
+      "name": "Battle of Madrid",
+      "kind": "battle",
+      "lon": -3.72,
+      "lat": 40.45,
+      "year": 1936,
+      "winner": 0,
+      "text": "The Republic held the capital, and the war became a long one."
+     }
+    ]
+   },
+   {
+    "year": 1937,
+    "label": "Feb to Oct 1937",
+    "title": "Jarama, Guadalajara and the war in the north",
+    "text": "Nationalist attacks to cut off Madrid failed at the Jarama and, in March, Italian troops were routed at Guadalajara. Franco turned north: German Condor Legion aircraft bombed Guernica on 26 April, Bilbao fell in June, and Santander and Asturias followed by October. Republican offensives at Brunete and Belchite to relieve the north gained little.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        -0.1,
+        42.75
+       ],
+       [
+        -0.35,
+        42.15
+       ],
+       [
+        -0.7,
+        41.5
+       ],
+       [
+        -1.0,
+        40.6
+       ],
+       [
+        -1.6,
+        40.9
+       ],
+       [
+        -2.6,
+        41.0
+       ],
+       [
+        -3.5,
+        40.6
+       ],
+       [
+        -3.75,
+        40.4
+       ],
+       [
+        -3.9,
+        40.0
+       ],
+       [
+        -4.6,
+        39.4
+       ],
+       [
+        -5.2,
+        38.7
+       ],
+       [
+        -4.8,
+        37.95
+       ],
+       [
+        -4.5,
+        37.3
+       ],
+       [
+        -3.6,
+        36.8
+       ]
+      ],
+      "label": "Main front, 1937"
+     },
+     {
+      "path": [
+       [
+        -7.05,
+        43.55
+       ],
+       [
+        -6.2,
+        43.1
+       ],
+       [
+        -5.2,
+        42.95
+       ],
+       [
+        -4.6,
+        43.2
+       ],
+       [
+        -4.55,
+        43.4
+       ]
+      ],
+      "label": "Northern front, Sep 1937"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Emilio Mola",
+      "label": "Campaign in Biscay",
+      "path": [
+       [
+        -2.67,
+        42.85
+       ],
+       [
+        -2.63,
+        43.17
+       ],
+       [
+        -2.93,
+        43.26
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Fidel Davila",
+      "label": "Santander and Asturias",
+      "path": [
+       [
+        -2.93,
+        43.26
+       ],
+       [
+        -3.8,
+        43.46
+       ],
+       [
+        -4.8,
+        43.4
+       ],
+       [
+        -5.66,
+        43.54
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mario Roatta",
+      "label": "Italian attack on Guadalajara",
+      "path": [
+       [
+        -2.64,
+        41.07
+       ],
+       [
+        -2.87,
+        40.76
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Jose Miaja",
+      "label": "Brunete offensive",
+      "path": [
+       [
+        -3.85,
+        40.45
+       ],
+       [
+        -3.99,
+        40.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Guadalajara",
+      "kind": "battle",
+      "lon": -2.87,
+      "lat": 40.76,
+      "year": 1937,
+      "winner": 0,
+      "text": "Republican troops routed Mussolini's expeditionary corps in March 1937."
+     },
+     {
+      "name": "Bombing of Guernica",
+      "kind": "event",
+      "lon": -2.68,
+      "lat": 43.31,
+      "year": 1937,
+      "winner": 1,
+      "text": "German and Italian aircraft destroyed the Basque town on market day, killing hundreds of people."
+     },
+     {
+      "name": "Fall of Bilbao",
+      "kind": "event",
+      "lon": -2.93,
+      "lat": 43.26,
+      "year": 1937,
+      "winner": 1,
+      "text": "The Basque capital fell on 19 June after its defensive ring was broken."
+     }
+    ]
+   },
+   {
+    "year": 1938,
+    "label": "Dec 1937 to Nov 1938",
+    "title": "Teruel, the Aragon offensive and the Ebro",
+    "text": "The Republic took Teruel in bitter winter fighting, but the Nationalists retook it in February 1938 and swept through Aragon to reach the Mediterranean at Vinaros in April, cutting Republican Spain in two. In July the Republican Army of the Ebro under Modesto crossed the river in a surprise attack. The Battle of the Ebro, the longest of the war, ended in November with the Republic's army spent.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        1.0,
+        42.6
+       ],
+       [
+        0.85,
+        42.1
+       ],
+       [
+        0.62,
+        41.62
+       ],
+       [
+        0.5,
+        41.3
+       ],
+       [
+        0.55,
+        41.1
+       ],
+       [
+        0.85,
+        40.72
+       ]
+      ],
+      "label": "Catalonia front, mid 1938"
+     },
+     {
+      "path": [
+       [
+        -0.1,
+        39.95
+       ],
+       [
+        -0.6,
+        40.05
+       ],
+       [
+        -1.1,
+        40.2
+       ],
+       [
+        -1.6,
+        40.85
+       ],
+       [
+        -2.6,
+        41.0
+       ],
+       [
+        -3.5,
+        40.6
+       ],
+       [
+        -3.75,
+        40.4
+       ],
+       [
+        -3.9,
+        40.0
+       ],
+       [
+        -4.6,
+        39.4
+       ],
+       [
+        -5.2,
+        38.7
+       ],
+       [
+        -4.8,
+        37.95
+       ],
+       [
+        -4.5,
+        37.3
+       ],
+       [
+        -3.6,
+        36.8
+       ]
+      ],
+      "label": "Centre zone front, mid 1938"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Fidel Davila",
+      "label": "Aragon offensive to the sea",
+      "path": [
+       [
+        -1.11,
+        40.34
+       ],
+       [
+        -0.75,
+        41.3
+       ],
+       [
+        -0.13,
+        41.05
+       ],
+       [
+        0.47,
+        40.47
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Vicente Rojo",
+      "label": "Republican attack on Teruel",
+      "path": [
+       [
+        -0.9,
+        40.1
+       ],
+       [
+        -1.11,
+        40.34
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Juan Modesto",
+      "label": "Army of the Ebro crosses the river",
+      "path": [
+       [
+        0.55,
+        41.23
+       ],
+       [
+        0.44,
+        41.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Francisco Franco",
+      "label": "Nationalist counteroffensive on the Ebro",
+      "path": [
+       [
+        0.2,
+        41.0
+       ],
+       [
+        0.44,
+        41.05
+       ],
+       [
+        0.6,
+        41.15
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Teruel",
+      "kind": "battle",
+      "lon": -1.11,
+      "lat": 40.34,
+      "year": 1938,
+      "winner": 1,
+      "text": "The Nationalists retook the town in February 1938 after the coldest battle of the war."
+     },
+     {
+      "name": "Nationalists reach the sea",
+      "kind": "event",
+      "lon": 0.47,
+      "lat": 40.47,
+      "year": 1938,
+      "winner": 1,
+      "text": "The capture of Vinaros on 15 April split the Republic in two."
+     },
+     {
+      "name": "Battle of the Ebro",
+      "kind": "battle",
+      "lon": 0.44,
+      "lat": 41.05,
+      "year": 1938,
+      "winner": 1,
+      "text": "Four months of attrition destroyed the Republic's last strategic reserve."
+     }
+    ]
+   },
+   {
+    "year": 1939,
+    "label": "Dec 1938 to Apr 1939",
+    "title": "The fall of Catalonia and Madrid",
+    "text": "The Nationalist offensive in Catalonia took Barcelona on 26 January 1939, and about 450,000 soldiers and civilians fled into France. In Madrid Colonel Casado overthrew Negrin's government in March in the hope of a negotiated peace, but Franco demanded unconditional surrender. Nationalist troops entered Madrid on 28 March, and Franco declared the war over on 1 April 1939.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Spain"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -0.1,
+        39.95
+       ],
+       [
+        -0.6,
+        40.05
+       ],
+       [
+        -1.1,
+        40.2
+       ],
+       [
+        -1.6,
+        40.85
+       ],
+       [
+        -2.6,
+        41.0
+       ],
+       [
+        -3.5,
+        40.6
+       ],
+       [
+        -3.75,
+        40.4
+       ],
+       [
+        -3.9,
+        40.0
+       ],
+       [
+        -4.6,
+        39.4
+       ],
+       [
+        -5.2,
+        38.7
+       ],
+       [
+        -4.8,
+        37.95
+       ],
+       [
+        -4.5,
+        37.3
+       ],
+       [
+        -3.6,
+        36.8
+       ]
+      ],
+      "label": "Centre zone front, Feb 1939"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Juan Yague",
+      "label": "Offensive in Catalonia",
+      "path": [
+       [
+        0.6,
+        41.2
+       ],
+       [
+        1.25,
+        41.12
+       ],
+       [
+        2.17,
+        41.39
+       ],
+       [
+        2.82,
+        41.98
+       ],
+       [
+        2.9,
+        42.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Juan Negrin",
+      "label": "Retreat of the Republican army and refugees",
+      "path": [
+       [
+        2.17,
+        41.39
+       ],
+       [
+        2.96,
+        42.27
+       ],
+       [
+        2.86,
+        42.47
+       ],
+       [
+        3.02,
+        42.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Francisco Franco",
+      "label": "Final offensive on Madrid",
+      "path": [
+       [
+        -4.03,
+        39.86
+       ],
+       [
+        -3.7,
+        40.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Barcelona",
+      "kind": "event",
+      "lon": 2.17,
+      "lat": 41.39,
+      "year": 1939,
+      "winner": 1,
+      "text": "Nationalist troops entered the city on 26 January 1939 almost unopposed."
+     },
+     {
+      "name": "Fall of Madrid",
+      "kind": "event",
+      "lon": -3.7,
+      "lat": 40.42,
+      "year": 1939,
+      "winner": 1,
+      "text": "The capital surrendered on 28 March and the war ended four days later."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "second-sino-japanese-war",
+  "name": "Second Sino-Japanese War",
+  "start": 1937,
+  "end": 1945,
+  "kind": "war",
+  "summary": "Japan, which already held Manchuria, launched a full-scale invasion of China in 1937, taking the coast, the great cities and the Yangtze valley, and committing mass atrocities at Nanjing. Chiang Kai-shek's Nationalists traded space for time from their wartime capital at Chongqing while Communist guerrillas fought behind Japanese lines, and after 1941 the war merged into World War II. China, with about 15 to 20 million dead, outlasted Japan until its surrender in 1945.",
+  "sides": [
+   {
+    "name": "China",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Chiang Kai-shek",
+     "Li Zongren",
+     "Xue Yue",
+     "Zhu De",
+     "Peng Dehuai"
+    ]
+   },
+   {
+    "name": "Empire of Japan",
+    "color": "#c0473a",
+    "leaders": [
+     "Hideki Tojo",
+     "Iwane Matsui",
+     "Shunroku Hata",
+     "Yasuji Okamura"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 114.0,
+    "lat": 32.0,
+    "r": 12
+   },
+   {
+    "lon": 122.0,
+    "lat": 43.0,
+    "r": 8
+   },
+   {
+    "lon": 100.0,
+    "lat": 25.0,
+    "r": 5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1937,
+    "label": "Jul to Dec 1937",
+    "title": "From the Marco Polo Bridge to Nanjing",
+    "text": "A clash at the Marco Polo Bridge near Beiping on 7 July 1937 grew into full war, and Japanese armies took Beiping, Tianjin and the north China railways to Taiyuan. Chiang threw his best divisions into Shanghai, where three months of fighting ended in a Japanese landing behind them in November. Matsui's armies pursued them to Nanjing, which fell on 13 December, followed by weeks of mass killing and rape of prisoners and civilians.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chinese Warlords"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Empire of Japan",
+       "Manchuria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        109.8,
+        40.6
+       ],
+       [
+        112.55,
+        37.87
+       ],
+       [
+        114.5,
+        37.07
+       ],
+       [
+        116.3,
+        36.5
+       ],
+       [
+        117.0,
+        36.7
+       ],
+       [
+        119.0,
+        37.5
+       ]
+      ],
+      "label": "North China front, Dec 1937"
+     },
+     {
+      "path": [
+       [
+        118.4,
+        31.3
+       ],
+       [
+        119.0,
+        31.0
+       ],
+       [
+        119.8,
+        30.5
+       ],
+       [
+        120.2,
+        30.2
+       ],
+       [
+        120.6,
+        30.0
+       ]
+      ],
+      "label": "Yangtze front, Dec 1937"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hisaichi Terauchi",
+      "label": "North China Area Army down the railways",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        115.46,
+        38.87
+       ],
+       [
+        114.51,
+        38.04
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Seishiro Itagaki",
+      "label": "Into Shanxi to Taiyuan",
+      "path": [
+       [
+        116.4,
+        39.9
+       ],
+       [
+        114.88,
+        40.82
+       ],
+       [
+        113.3,
+        40.08
+       ],
+       [
+        113.93,
+        39.33
+       ],
+       [
+        112.55,
+        37.87
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Iwane Matsui",
+      "label": "Shanghai to Nanjing",
+      "path": [
+       [
+        121.47,
+        31.23
+       ],
+       [
+        120.62,
+        31.3
+       ],
+       [
+        119.95,
+        31.78
+       ],
+       [
+        118.8,
+        32.06
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Chiang Kai-shek",
+      "label": "Central Army reinforces Shanghai",
+      "path": [
+       [
+        118.8,
+        32.06
+       ],
+       [
+        120.0,
+        31.6
+       ],
+       [
+        121.2,
+        31.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Marco Polo Bridge Incident",
+      "kind": "event",
+      "lon": 116.21,
+      "lat": 39.85,
+      "year": 1937,
+      "winner": null,
+      "text": "A night clash between Chinese and Japanese troops started the full-scale war."
+     },
+     {
+      "name": "Battle of Shanghai",
+      "kind": "battle",
+      "lon": 121.47,
+      "lat": 31.23,
+      "year": 1937,
+      "winner": 1,
+      "text": "China lost about 250,000 men but showed it would fight."
+     },
+     {
+      "name": "Fall of Nanjing and Nanjing Massacre",
+      "kind": "battle",
+      "lon": 118.8,
+      "lat": 32.06,
+      "year": 1937,
+      "winner": 1,
+      "text": "Japanese troops killed tens of thousands to over 200,000 prisoners and civilians in the capital."
+     }
+    ]
+   },
+   {
+    "year": 1938,
+    "label": "Jan to Oct 1938",
+    "title": "Taierzhuang, the Yellow River and Wuhan",
+    "text": "Li Zongren won China's first major victory at Taierzhuang in April 1938, but Japan took Xuzhou in May. To stop the advance on Zhengzhou, Nationalist troops broke the Yellow River dikes in June, flooding vast areas and killing hundreds of thousands of civilians. Hata's armies advanced up the Yangtze and took Wuhan in October while another force landed near Guangzhou, and the government moved to Chongqing.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chinese warlords"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Empire of Japan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        109.8,
+        40.6
+       ],
+       [
+        110.6,
+        38.5
+       ],
+       [
+        110.3,
+        36.0
+       ],
+       [
+        110.5,
+        34.6
+       ],
+       [
+        112.5,
+        34.7
+       ],
+       [
+        113.66,
+        34.9
+       ],
+       [
+        114.4,
+        33.6
+       ],
+       [
+        114.07,
+        32.13
+       ],
+       [
+        113.6,
+        31.2
+       ],
+       [
+        113.13,
+        29.36
+       ],
+       [
+        115.0,
+        29.4
+       ],
+       [
+        115.99,
+        29.7
+       ],
+       [
+        117.5,
+        30.5
+       ],
+       [
+        119.0,
+        30.5
+       ],
+       [
+        120.15,
+        30.27
+       ]
+      ],
+      "label": "Front, late 1938"
+     },
+     {
+      "path": [
+       [
+        112.8,
+        23.6
+       ],
+       [
+        113.6,
+        23.6
+       ],
+       [
+        114.2,
+        23.1
+       ]
+      ],
+      "label": "Guangzhou front, late 1938"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hisaichi Terauchi",
+      "label": "Drive on Xuzhou",
+      "path": [
+       [
+        117.0,
+        36.65
+       ],
+       [
+        117.5,
+        35.2
+       ],
+       [
+        117.73,
+        34.56
+       ],
+       [
+        117.18,
+        34.26
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Li Zongren",
+      "label": "Counterattack at Taierzhuang",
+      "path": [
+       [
+        117.18,
+        34.26
+       ],
+       [
+        117.73,
+        34.56
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Shunroku Hata",
+      "label": "Up the Yangtze to Wuhan",
+      "path": [
+       [
+        118.8,
+        32.06
+       ],
+       [
+        117.05,
+        30.53
+       ],
+       [
+        115.99,
+        29.7
+       ],
+       [
+        114.3,
+        30.59
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mikio Furusho",
+      "label": "Landing at Bias Bay to Guangzhou",
+      "path": [
+       [
+        114.55,
+        22.65
+       ],
+       [
+        114.4,
+        23.1
+       ],
+       [
+        113.26,
+        23.13
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Chiang Kai-shek",
+      "label": "Government moves to Chongqing",
+      "path": [
+       [
+        114.3,
+        30.59
+       ],
+       [
+        111.29,
+        30.7
+       ],
+       [
+        106.55,
+        29.56
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Taierzhuang",
+      "kind": "battle",
+      "lon": 117.73,
+      "lat": 34.56,
+      "year": 1938,
+      "winner": 0,
+      "text": "Chinese forces encircled and mauled two Japanese divisions in April 1938."
+     },
+     {
+      "name": "Yellow River flood",
+      "kind": "event",
+      "lon": 113.66,
+      "lat": 34.9,
+      "year": 1938,
+      "winner": null,
+      "text": "Breaching the dikes at Huayuankou slowed Japan but killed an estimated 400,000 to 900,000 civilians."
+     },
+     {
+      "name": "Battle of Wuhan",
+      "kind": "battle",
+      "lon": 114.3,
+      "lat": 30.59,
+      "year": 1938,
+      "winner": 1,
+      "text": "The largest battle of the early war ended with Wuhan's fall on 25 October."
+     }
+    ]
+   },
+   {
+    "year": 1940,
+    "label": "1939 to 1941",
+    "title": "Stalemate",
+    "text": "With its armies spread thin, Japan settled into occupation, bombing Chongqing repeatedly and setting up a puppet government at Nanjing. Xue Yue's armies threw back Japanese attacks on Changsha in 1939 and 1941, and in 1940 Peng Dehuai's Communist Eighth Route Army struck the railways of north China in the Hundred Regiments Offensive, provoking brutal Japanese reprisals. When Japan attacked the United States in December 1941, China's war became part of World War II.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chinese warlords"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Empire of Japan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        109.8,
+        40.6
+       ],
+       [
+        110.6,
+        38.5
+       ],
+       [
+        110.3,
+        36.0
+       ],
+       [
+        110.5,
+        34.6
+       ],
+       [
+        112.5,
+        34.7
+       ],
+       [
+        113.66,
+        34.9
+       ],
+       [
+        114.4,
+        33.6
+       ],
+       [
+        114.07,
+        32.13
+       ],
+       [
+        112.7,
+        31.6
+       ],
+       [
+        111.29,
+        30.7
+       ],
+       [
+        112.2,
+        29.9
+       ],
+       [
+        113.13,
+        29.36
+       ],
+       [
+        114.5,
+        28.6
+       ],
+       [
+        115.9,
+        28.4
+       ],
+       [
+        117.0,
+        29.5
+       ],
+       [
+        119.0,
+        30.2
+       ],
+       [
+        120.6,
+        29.9
+       ]
+      ],
+      "label": "Front, 1940"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Yasuji Okamura",
+      "label": "Japanese Eleventh Army on Changsha",
+      "path": [
+       [
+        113.13,
+        29.36
+       ],
+       [
+        113.0,
+        28.7
+       ],
+       [
+        112.94,
+        28.23
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Xue Yue",
+      "label": "Counterattack at Changsha",
+      "path": [
+       [
+        112.94,
+        28.23
+       ],
+       [
+        113.1,
+        28.9
+       ],
+       [
+        113.13,
+        29.3
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Peng Dehuai",
+      "label": "Hundred Regiments Offensive",
+      "path": [
+       [
+        112.55,
+        37.87
+       ],
+       [
+        113.58,
+        37.86
+       ],
+       [
+        114.51,
+        38.04
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Japanese air forces",
+      "label": "Bombing raids on Chongqing",
+      "path": [
+       [
+        114.3,
+        30.59
+       ],
+       [
+        110.0,
+        30.2
+       ],
+       [
+        106.55,
+        29.56
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "First Battle of Changsha",
+      "kind": "battle",
+      "lon": 112.94,
+      "lat": 28.23,
+      "year": 1939,
+      "winner": 0,
+      "text": "The Japanese drive on Changsha was turned back in October 1939."
+     },
+     {
+      "name": "Hundred Regiments Offensive",
+      "kind": "battle",
+      "lon": 113.58,
+      "lat": 37.86,
+      "year": 1940,
+      "winner": 0,
+      "text": "Communist forces wrecked railways and mines across north China in late 1940."
+     },
+     {
+      "name": "Bombing of Chongqing",
+      "kind": "event",
+      "lon": 106.55,
+      "lat": 29.56,
+      "year": 1939,
+      "winner": 1,
+      "text": "Years of Japanese air raids killed thousands but did not break the wartime capital."
+     }
+    ]
+   },
+   {
+    "year": 1944,
+    "label": "Apr to Dec 1944",
+    "title": "Operation Ichi-Go and the Burma Road",
+    "text": "Japan's largest offensive of the war, Ichi-Go, overran Henan, took Changsha and, after a 47-day siege, Hengyang, then Guilin and Liuzhou, opening a land corridor to Indochina and seizing American air bases. The Nationalist armies suffered huge losses. In the southwest, Chinese troops trained in India under Stilwell took Myitkyina and Wei Lihuang's Yunnan armies crossed the Salween to reopen the land route to China.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Chinese warlords"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Empire of Japan",
+       "French Indo-China",
+       "Laos",
+       "Cambodia",
+       "Cochin China"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        110.5,
+        34.6
+       ],
+       [
+        112.45,
+        34.0
+       ],
+       [
+        112.0,
+        32.5
+       ],
+       [
+        111.29,
+        30.7
+       ],
+       [
+        111.5,
+        28.5
+       ],
+       [
+        111.0,
+        27.0
+       ],
+       [
+        109.8,
+        25.8
+       ],
+       [
+        108.0,
+        25.4
+       ],
+       [
+        107.54,
+        25.83
+       ],
+       [
+        107.2,
+        24.5
+       ],
+       [
+        106.6,
+        22.5
+       ]
+      ],
+      "label": "Japanese advance, Dec 1944"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Shunroku Hata",
+      "label": "Ichi-Go in Henan",
+      "path": [
+       [
+        113.66,
+        34.75
+       ],
+       [
+        113.0,
+        34.65
+       ],
+       [
+        112.45,
+        34.62
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Isamu Yokoyama",
+      "label": "Ichi-Go south to Guangxi",
+      "path": [
+       [
+        113.13,
+        29.36
+       ],
+       [
+        112.94,
+        28.23
+       ],
+       [
+        112.57,
+        26.89
+       ],
+       [
+        110.29,
+        25.27
+       ],
+       [
+        109.41,
+        24.33
+       ],
+       [
+        107.54,
+        25.83
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Joseph Stilwell",
+      "label": "Chinese X Force from Ledo",
+      "path": [
+       [
+        95.74,
+        27.29
+       ],
+       [
+        96.6,
+        26.4
+       ],
+       [
+        97.4,
+        25.38
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wei Lihuang",
+      "label": "Y Force across the Salween",
+      "path": [
+       [
+        99.16,
+        25.11
+       ],
+       [
+        98.49,
+        25.02
+       ],
+       [
+        98.69,
+        24.59
+       ],
+       [
+        97.98,
+        24.08
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Defence of Hengyang",
+      "kind": "siege",
+      "lon": 112.57,
+      "lat": 26.89,
+      "year": 1944,
+      "winner": 1,
+      "text": "The city held for 47 days before falling in August 1944."
+     },
+     {
+      "name": "Battle of Guilin-Liuzhou",
+      "kind": "battle",
+      "lon": 110.29,
+      "lat": 25.27,
+      "year": 1944,
+      "winner": 1,
+      "text": "Japan took both cities and their air bases in November."
+     },
+     {
+      "name": "Siege of Myitkyina",
+      "kind": "siege",
+      "lon": 97.4,
+      "lat": 25.38,
+      "year": 1944,
+      "winner": 0,
+      "text": "Chinese and American troops took the key north Burma town in August 1944."
+     }
+    ]
+   },
+   {
+    "year": 1945,
+    "label": "Apr to Sep 1945",
+    "title": "Japan's surrender",
+    "text": "Chinese armies won a clear victory in western Hunan in spring 1945 and began retaking ground in the south. On 9 August, three days after the bombing of Hiroshima, Soviet armies invaded Manchuria and overran the Kwantung Army. Japan surrendered on 15 August, its forces in China formally surrendered at Nanjing on 9 September, and Taiwan was handed to China in October.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "China",
+       "Taiwan",
+       "Manchuria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Japan (USA)"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        115.5,
+        47.8
+       ],
+       [
+        119.5,
+        50.3
+       ],
+       [
+        127.5,
+        53.0
+       ],
+       [
+        135.0,
+        48.5
+       ],
+       [
+        131.0,
+        43.0
+       ]
+      ],
+      "label": "Manchukuo border at the Soviet attack"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "He Yingqin",
+      "label": "Battle of West Hunan",
+      "path": [
+       [
+        109.68,
+        27.44
+       ],
+       [
+        110.3,
+        27.3
+       ],
+       [
+        111.0,
+        27.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Rodion Malinovsky",
+      "label": "Soviet Transbaikal Front from Mongolia",
+      "path": [
+       [
+        114.5,
+        46.8
+       ],
+       [
+        118.0,
+        45.0
+       ],
+       [
+        121.0,
+        43.6
+       ],
+       [
+        123.43,
+        41.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Kirill Meretskov",
+      "label": "Soviet First Far Eastern Front",
+      "path": [
+       [
+        131.9,
+        43.8
+       ],
+       [
+        129.6,
+        44.58
+       ],
+       [
+        126.63,
+        45.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of West Hunan",
+      "kind": "battle",
+      "lon": 109.68,
+      "lat": 27.44,
+      "year": 1945,
+      "winner": 0,
+      "text": "Chinese forces stopped the last Japanese offensive aimed at the Zhijiang air base."
+     },
+     {
+      "name": "Soviet invasion of Manchuria",
+      "kind": "battle",
+      "lon": 126.63,
+      "lat": 45.75,
+      "year": 1945,
+      "winner": 0,
+      "text": "Over a million Soviet troops destroyed the Kwantung Army in under two weeks."
+     },
+     {
+      "name": "Japanese surrender at Nanjing",
+      "kind": "treaty",
+      "lon": 118.8,
+      "lat": 32.06,
+      "year": 1945,
+      "winner": 0,
+      "text": "General Okamura surrendered over a million Japanese troops in China on 9 September."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "world-war-ii",
+  "name": "World War II",
+  "start": 1939,
+  "end": 1945,
+  "kind": "war",
+  "summary": "The Allies, led by Britain, the Soviet Union, the United States and China, fought the Axis powers of Germany, Italy and Japan after German and Japanese wars of conquest in Europe and Asia. After early Axis victories the tide turned in 1942 and 1943 at Midway, Stalingrad and El Alamein; Germany surrendered in May 1945 and Japan in September after the atomic bombings and Soviet entry into the war. The deadliest conflict in history, with 70 to 85 million dead including about six million Jews murdered in the Holocaust, it left the United States and the Soviet Union as rival superpowers.",
+  "sides": [
+   {
+    "name": "Allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Winston Churchill",
+     "Franklin D. Roosevelt",
+     "Joseph Stalin",
+     "Georgy Zhukov",
+     "Dwight D. Eisenhower",
+     "Douglas MacArthur"
+    ]
+   },
+   {
+    "name": "Axis",
+    "color": "#c0473a",
+    "leaders": [
+     "Adolf Hitler",
+     "Benito Mussolini",
+     "Hideki Tojo",
+     "Erwin Rommel",
+     "Erich von Manstein",
+     "Isoroku Yamamoto"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 15.0,
+    "lat": 48.0,
+    "r": 22
+   },
+   {
+    "lon": 12.0,
+    "lat": 32.0,
+    "r": 13
+   },
+   {
+    "lon": 135.0,
+    "lat": 12.0,
+    "r": 30
+   },
+   {
+    "lon": -168.0,
+    "lat": 24.0,
+    "r": 12
+   }
+  ],
+  "steps": [
+   {
+    "year": 1939,
+    "label": "Sep 1939 to Mar 1940",
+    "title": "Invasion of Poland",
+    "text": "Germany invaded Poland on 1 September 1939, and Britain and France declared war two days later. German army groups under Bock and Rundstedt converged on Warsaw, and under the Nazi-Soviet Pact the Red Army invaded from the east on 17 September; Poland was partitioned within weeks. In the west the armies faced each other along the Maginot and Siegfried lines in the quiet months of the Phoney War.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Malaysia",
+       "Hong Kong",
+       "France",
+       "Poland",
+       "Algeria (France)",
+       "Morocco (France)",
+       "Tunisia",
+       "Syria (France)"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        22.6,
+        54.35
+       ],
+       [
+        22.9,
+        53.2
+       ],
+       [
+        23.68,
+        52.09
+       ],
+       [
+        24.0,
+        51.0
+       ],
+       [
+        23.8,
+        50.4
+       ],
+       [
+        22.8,
+        49.8
+       ],
+       [
+        22.6,
+        49.1
+       ]
+      ],
+      "label": "German-Soviet partition line, Sep 1939"
+     },
+     {
+      "path": [
+       [
+        6.4,
+        49.5
+       ],
+       [
+        7.0,
+        49.15
+       ],
+       [
+        8.2,
+        48.97
+       ],
+       [
+        7.8,
+        48.5
+       ],
+       [
+        7.6,
+        47.6
+       ]
+      ],
+      "label": "Maginot and Siegfried lines"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Fedor von Bock",
+      "label": "Army Group North from Pomerania and East Prussia",
+      "path": [
+       [
+        16.2,
+        53.9
+       ],
+       [
+        18.0,
+        53.1
+       ],
+       [
+        20.0,
+        52.6
+       ],
+       [
+        20.9,
+        52.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gerd von Rundstedt",
+      "label": "Army Group South from Silesia",
+      "path": [
+       [
+        18.0,
+        50.5
+       ],
+       [
+        19.5,
+        51.2
+       ],
+       [
+        20.9,
+        52.15
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gerd von Rundstedt",
+      "label": "Fourteenth Army toward Lwow",
+      "path": [
+       [
+        19.94,
+        50.06
+       ],
+       [
+        22.0,
+        50.04
+       ],
+       [
+        24.03,
+        49.84
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Bzura",
+      "kind": "battle",
+      "lon": 19.6,
+      "lat": 52.2,
+      "year": 1939,
+      "winner": 1,
+      "text": "The largest battle of the campaign ended with the encirclement of two Polish armies."
+     },
+     {
+      "name": "Siege of Warsaw",
+      "kind": "siege",
+      "lon": 21.01,
+      "lat": 52.23,
+      "year": 1939,
+      "winner": 1,
+      "text": "Warsaw surrendered on 28 September after heavy bombing and shelling."
+     }
+    ]
+   },
+   {
+    "year": 1940,
+    "label": "Apr to Jun 1940",
+    "title": "Blitzkrieg in the west",
+    "text": "After seizing Denmark and Norway in April, Germany attacked the Netherlands, Belgium and France on 10 May 1940. Guderian's panzers broke through the Ardennes at Sedan and raced to the Channel, trapping the Allied armies in the north, most of whose British troops escaped from Dunkirk. Italy entered the war on 10 June, Paris fell on 14 June, and France signed an armistice that left the north and west under German occupation.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Malaysia",
+       "Hong Kong"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia",
+       "Poland",
+       "Denmark",
+       "Norway",
+       "Netherlands",
+       "Belgium",
+       "Luxembourg",
+       "France",
+       "Italy",
+       "Albania",
+       "Libya",
+       "Ethiopia (Italy)",
+       "Eritrea (Italy)",
+       "Italian Somaliland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        1.6,
+        50.15
+       ],
+       [
+        2.3,
+        49.9
+       ],
+       [
+        3.0,
+        49.6
+       ],
+       [
+        3.5,
+        49.45
+       ],
+       [
+        4.5,
+        49.5
+       ],
+       [
+        5.4,
+        49.5
+       ],
+       [
+        6.4,
+        49.5
+       ]
+      ],
+      "label": "Weygand Line, 5 Jun 1940"
+     },
+     {
+      "path": [
+       [
+        -1.75,
+        43.35
+       ],
+       [
+        -0.6,
+        44.9
+       ],
+       [
+        0.2,
+        46.0
+       ],
+       [
+        0.6,
+        46.7
+       ],
+       [
+        1.6,
+        47.1
+       ],
+       [
+        3.33,
+        46.57
+       ],
+       [
+        4.8,
+        46.35
+       ],
+       [
+        5.9,
+        46.3
+       ]
+      ],
+      "label": "Armistice demarcation line, 22 Jun 1940"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Nikolaus von Falkenhorst",
+      "label": "Invasion of Norway",
+      "path": [
+       [
+        10.6,
+        57.7
+       ],
+       [
+        10.75,
+        59.9
+       ],
+       [
+        10.4,
+        63.43
+       ],
+       [
+        17.43,
+        68.44
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Fedor von Bock",
+      "label": "Army Group B into the Low Countries",
+      "path": [
+       [
+        6.5,
+        51.8
+       ],
+       [
+        5.1,
+        51.9
+       ],
+       [
+        4.35,
+        50.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Heinz Guderian",
+      "label": "Panzers through the Ardennes to the Channel",
+      "path": [
+       [
+        7.0,
+        50.1
+       ],
+       [
+        5.5,
+        49.9
+       ],
+       [
+        4.95,
+        49.7
+       ],
+       [
+        3.0,
+        50.0
+       ],
+       [
+        1.83,
+        50.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lord Gort",
+      "label": "British Expeditionary Force falls back to Dunkirk",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        3.06,
+        50.63
+       ],
+       [
+        2.37,
+        51.03
+       ],
+       [
+        1.33,
+        51.12
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gerd von Rundstedt",
+      "label": "Germans enter Paris",
+      "path": [
+       [
+        3.0,
+        49.9
+       ],
+       [
+        2.8,
+        49.4
+       ],
+       [
+        2.35,
+        48.86
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Sedan",
+      "kind": "battle",
+      "lon": 4.94,
+      "lat": 49.7,
+      "year": 1940,
+      "winner": 1,
+      "text": "German panzers crossed the Meuse on 13 May and broke the French front."
+     },
+     {
+      "name": "Dunkirk evacuation",
+      "kind": "event",
+      "lon": 2.38,
+      "lat": 51.03,
+      "year": 1940,
+      "winner": null,
+      "text": "About 338,000 British and French troops were evacuated to Britain."
+     },
+     {
+      "name": "Armistice of Compiegne",
+      "kind": "treaty",
+      "lon": 2.91,
+      "lat": 49.43,
+      "year": 1940,
+      "winner": 1,
+      "text": "France signed the armistice on 22 June in the railway carriage used in 1918."
+     }
+    ]
+   },
+   {
+    "year": 1940,
+    "label": "Jul 1940 to May 1941",
+    "title": "Britain stands; the desert and the Balkans",
+    "text": "The RAF defeated the Luftwaffe's bid for air control over Britain, ending invasion plans, though the Blitz on British cities went on into 1941. In North Africa O'Connor's small British force routed the Italians, then Rommel's Afrika Korps drove the British back to Egypt and besieged Tobruk, while British and Commonwealth forces freed Ethiopia. In April 1941 Germany overran Yugoslavia and Greece, and in May took Crete from the air.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Malaysia",
+       "Hong Kong",
+       "Ethiopia (Italy)",
+       "Eritrea (Italy)",
+       "Italian Somaliland"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia",
+       "Poland",
+       "Denmark",
+       "Norway",
+       "Netherlands",
+       "Belgium",
+       "Luxembourg",
+       "France",
+       "Italy",
+       "Albania",
+       "Libya",
+       "Hungary",
+       "Romania",
+       "Bulgaria",
+       "Yugoslavia",
+       "Greece"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -5.0,
+        49.6
+       ],
+       [
+        -1.5,
+        50.1
+       ],
+       [
+        1.4,
+        50.9
+       ],
+       [
+        2.5,
+        51.3
+       ]
+      ],
+      "label": "Channel front, 1940"
+     },
+     {
+      "path": [
+       [
+        25.15,
+        31.58
+       ],
+       [
+        25.0,
+        31.0
+       ],
+       [
+        25.0,
+        30.0
+       ]
+      ],
+      "label": "Egyptian frontier, Apr 1941"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hermann Goering",
+      "label": "Luftwaffe raids on Britain",
+      "path": [
+       [
+        2.0,
+        50.6
+       ],
+       [
+        1.0,
+        51.1
+       ],
+       [
+        -0.12,
+        51.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Richard O'Connor",
+      "label": "Operation Compass",
+      "path": [
+       [
+        25.92,
+        31.61
+       ],
+       [
+        25.08,
+        31.76
+       ],
+       [
+        23.96,
+        32.08
+       ],
+       [
+        22.64,
+        32.76
+       ],
+       [
+        20.15,
+        31.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Erwin Rommel",
+      "label": "Afrika Korps to the Egyptian border",
+      "path": [
+       [
+        16.59,
+        31.2
+       ],
+       [
+        19.13,
+        30.27
+       ],
+       [
+        20.07,
+        32.12
+       ],
+       [
+        23.96,
+        32.08
+       ],
+       [
+        25.15,
+        31.58
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wilhelm List",
+      "label": "Invasion of Greece",
+      "path": [
+       [
+        23.32,
+        42.7
+       ],
+       [
+        22.94,
+        40.64
+       ],
+       [
+        22.42,
+        39.64
+       ],
+       [
+        23.73,
+        37.98
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Kurt Student",
+      "label": "Airborne invasion of Crete",
+      "path": [
+       [
+        23.73,
+        37.98
+       ],
+       [
+        23.8,
+        36.7
+       ],
+       [
+        23.82,
+        35.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Britain",
+      "kind": "battle",
+      "lon": 0.3,
+      "lat": 51.3,
+      "year": 1940,
+      "winner": 0,
+      "text": "RAF Fighter Command beat the Luftwaffe over southern England."
+     },
+     {
+      "name": "Battle of Beda Fomm",
+      "kind": "battle",
+      "lon": 20.15,
+      "lat": 31.55,
+      "year": 1941,
+      "winner": 0,
+      "text": "British forces cut off and destroyed the retreating Italian Tenth Army."
+     },
+     {
+      "name": "Battle of Crete",
+      "kind": "battle",
+      "lon": 23.82,
+      "lat": 35.53,
+      "year": 1941,
+      "winner": 1,
+      "text": "German paratroopers took the island at such cost that Hitler ended large airborne drops."
+     }
+    ]
+   },
+   {
+    "year": 1941,
+    "label": "Jun to Dec 1941",
+    "title": "Operation Barbarossa",
+    "text": "On 22 June 1941 Germany and its allies invaded the Soviet Union with over three million men, encircling whole Soviet armies, besieging Leningrad and taking Kiev. Behind the front, German killing squads began shooting Jews en masse, the start of the Holocaust's systematic phase. The offensive stalled in the autumn mud, and in December Zhukov's counteroffensive threw the Germans back from Moscow.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Malaysia",
+       "Hong Kong",
+       "Ethiopia (Italy)",
+       "Eritrea (Italy)",
+       "Italian Somaliland",
+       "USSR",
+       "Mongolia",
+       "Syria (France)",
+       "Iran"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia",
+       "Poland",
+       "Denmark",
+       "Norway",
+       "Netherlands",
+       "Belgium",
+       "Luxembourg",
+       "France",
+       "Italy",
+       "Albania",
+       "Libya",
+       "Hungary",
+       "Romania",
+       "Bulgaria",
+       "Yugoslavia",
+       "Greece",
+       "Finland",
+       "Estonia",
+       "Latvia",
+       "Lithuania"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.9,
+        59.85
+       ],
+       [
+        31.0,
+        59.5
+       ],
+       [
+        33.5,
+        59.6
+       ],
+       [
+        31.3,
+        58.4
+       ],
+       [
+        33.5,
+        57.2
+       ],
+       [
+        35.9,
+        56.86
+       ],
+       [
+        37.3,
+        56.35
+       ],
+       [
+        36.7,
+        55.4
+       ],
+       [
+        37.6,
+        54.15
+       ],
+       [
+        38.5,
+        52.6
+       ],
+       [
+        37.2,
+        51.1
+       ],
+       [
+        37.6,
+        49.8
+       ],
+       [
+        38.5,
+        48.5
+       ],
+       [
+        38.9,
+        47.2
+       ]
+      ],
+      "label": "Eastern Front, 5 Dec 1941"
+     },
+     {
+      "path": [
+       [
+        25.15,
+        31.58
+       ],
+       [
+        25.0,
+        31.0
+       ],
+       [
+        25.0,
+        30.0
+       ]
+      ],
+      "label": "Egyptian frontier, 1941"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Wilhelm von Leeb",
+      "label": "Army Group North to Leningrad",
+      "path": [
+       [
+        21.5,
+        54.8
+       ],
+       [
+        23.9,
+        54.9
+       ],
+       [
+        26.53,
+        55.87
+       ],
+       [
+        28.33,
+        57.82
+       ],
+       [
+        30.2,
+        59.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Fedor von Bock",
+      "label": "Army Group Centre to Moscow",
+      "path": [
+       [
+        23.68,
+        52.1
+       ],
+       [
+        27.56,
+        53.9
+       ],
+       [
+        32.05,
+        54.78
+       ],
+       [
+        34.3,
+        55.2
+       ],
+       [
+        36.6,
+        55.75
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gerd von Rundstedt",
+      "label": "Army Group South to Kiev and Rostov",
+      "path": [
+       [
+        24.0,
+        50.3
+       ],
+       [
+        28.66,
+        50.25
+       ],
+       [
+        30.52,
+        50.45
+       ],
+       [
+        36.23,
+        49.99
+       ],
+       [
+        39.7,
+        47.23
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Georgy Zhukov",
+      "label": "Winter counteroffensive before Moscow",
+      "path": [
+       [
+        37.6,
+        55.9
+       ],
+       [
+        36.8,
+        55.8
+       ],
+       [
+        35.5,
+        55.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kiev",
+      "kind": "battle",
+      "lon": 30.52,
+      "lat": 50.45,
+      "year": 1941,
+      "winner": 1,
+      "text": "The Germans encircled the city's defenders and took over 600,000 prisoners."
+     },
+     {
+      "name": "Babi Yar massacre",
+      "kind": "event",
+      "lon": 30.45,
+      "lat": 50.47,
+      "year": 1941,
+      "winner": null,
+      "text": "German units shot about 33,000 Jews from Kiev in two days in September 1941."
+     },
+     {
+      "name": "Battle of Moscow",
+      "kind": "battle",
+      "lon": 36.8,
+      "lat": 55.8,
+      "year": 1941,
+      "winner": 0,
+      "text": "The Red Army halted the drive on Moscow and threw it back in winter."
+     }
+    ]
+   },
+   {
+    "year": 1941,
+    "label": "Dec 1941 to Jun 1942",
+    "title": "Pearl Harbor to Midway",
+    "text": "On 7 December 1941 Nagumo's carriers struck the US fleet at Pearl Harbor, and the United States entered the war. In six months Japan took Hong Kong, Malaya, Singapore, the Philippines, the Dutch East Indies and Burma. The advance was checked at the Coral Sea in May, and at Midway in June American carriers sank four Japanese carriers, ending Japan's naval superiority.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Ethiopia (Italy)",
+       "Eritrea (Italy)",
+       "Italian Somaliland",
+       "USSR",
+       "Mongolia",
+       "Syria (France)",
+       "Iran",
+       "United States",
+       "Chinese warlords"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia",
+       "Poland",
+       "Denmark",
+       "Norway",
+       "Netherlands",
+       "Belgium",
+       "Luxembourg",
+       "France",
+       "Italy",
+       "Albania",
+       "Libya",
+       "Hungary",
+       "Romania",
+       "Bulgaria",
+       "Yugoslavia",
+       "Greece",
+       "Finland",
+       "Estonia",
+       "Latvia",
+       "Lithuania",
+       "Empire of Japan",
+       "Siam",
+       "French Indo-China",
+       "Laos",
+       "Cambodia",
+       "Cochin China",
+       "Malaysia",
+       "Dutch East Indies",
+       "Philippines",
+       "Guam",
+       "Saipan",
+       "Hong Kong"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        95.3,
+        5.5
+       ],
+       [
+        105.0,
+        -7.5
+       ],
+       [
+        115.0,
+        -9.0
+       ],
+       [
+        125.0,
+        -9.5
+       ],
+       [
+        135.0,
+        -8.0
+       ],
+       [
+        141.0,
+        -6.0
+       ],
+       [
+        147.5,
+        -9.0
+       ],
+       [
+        160.0,
+        -9.5
+       ],
+       [
+        168.0,
+        -8.0
+       ],
+       [
+        173.0,
+        1.0
+       ],
+       [
+        167.0,
+        9.0
+       ],
+       [
+        166.6,
+        19.3
+       ],
+       [
+        170.0,
+        30.0
+       ],
+       [
+        175.0,
+        45.0
+       ],
+       [
+        177.5,
+        51.98
+       ]
+      ],
+      "label": "Japanese perimeter, mid 1942"
+     },
+     {
+      "path": [
+       [
+        92.3,
+        20.8
+       ],
+       [
+        94.2,
+        24.0
+       ],
+       [
+        96.5,
+        26.5
+       ],
+       [
+        98.6,
+        25.0
+       ]
+      ],
+      "label": "Burma front, mid 1942"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Chuichi Nagumo",
+      "label": "Carrier strike on Pearl Harbor",
+      "path": [
+       [
+        147.6,
+        44.9
+       ],
+       [
+        170.0,
+        42.0
+       ],
+       [
+        -170.0,
+        35.0
+       ],
+       [
+        -158.0,
+        26.0
+       ],
+       [
+        -157.97,
+        21.36
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tomoyuki Yamashita",
+      "label": "Malaya to Singapore",
+      "path": [
+       [
+        100.6,
+        7.2
+       ],
+       [
+        101.69,
+        3.14
+       ],
+       [
+        103.76,
+        1.46
+       ],
+       [
+        103.82,
+        1.35
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Masaharu Homma",
+      "label": "Invasion of the Philippines",
+      "path": [
+       [
+        120.3,
+        16.1
+       ],
+       [
+        120.98,
+        14.6
+       ],
+       [
+        120.5,
+        14.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Douglas MacArthur",
+      "label": "MacArthur leaves for Australia",
+      "path": [
+       [
+        120.59,
+        14.38
+       ],
+       [
+        125.0,
+        8.0
+       ],
+       [
+        130.84,
+        -12.46
+       ],
+       [
+        144.96,
+        -37.81
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Raymond Spruance",
+      "label": "US carriers to Midway",
+      "path": [
+       [
+        -157.97,
+        21.36
+       ],
+       [
+        -168.0,
+        28.0
+       ],
+       [
+        -173.0,
+        32.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Attack on Pearl Harbor",
+      "kind": "battle",
+      "lon": -157.95,
+      "lat": 21.36,
+      "year": 1941,
+      "winner": 1,
+      "text": "Japanese aircraft sank or damaged eight battleships and killed about 2,400 Americans."
+     },
+     {
+      "name": "Fall of Singapore",
+      "kind": "siege",
+      "lon": 103.82,
+      "lat": 1.35,
+      "year": 1942,
+      "winner": 1,
+      "text": "About 80,000 British, Indian and Australian troops surrendered on 15 February 1942."
+     },
+     {
+      "name": "Battle of Midway",
+      "kind": "battle",
+      "lon": -179.0,
+      "lat": 30.5,
+      "year": 1942,
+      "winner": 0,
+      "text": "American carrier aircraft sank four Japanese carriers in a single day."
+     }
+    ]
+   },
+   {
+    "year": 1942,
+    "label": "Jun 1942 to Feb 1943",
+    "title": "Stalingrad and El Alamein",
+    "text": "Germany's summer offensive drove toward the Caucasus oil fields and the Volga, where Paulus's Sixth Army fought for Stalingrad street by street until a Soviet pincer encircled it in November; it surrendered on 2 February 1943. In Egypt Montgomery's Eighth Army broke Rommel's line at El Alamein, and Eisenhower's Anglo-American landings in Morocco and Algeria trapped the Axis in Tunisia. In the Pacific the Americans won the long struggle for Guadalcanal, while in occupied Europe the Nazi death camps were murdering Jews deported from across the continent.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Ethiopia (Italy)",
+       "Eritrea (Italy)",
+       "Italian Somaliland",
+       "USSR",
+       "Mongolia",
+       "Syria (France)",
+       "Iran",
+       "United States",
+       "Chinese warlords",
+       "Morocco (France)",
+       "Algeria (France)",
+       "Libya"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia",
+       "Poland",
+       "Denmark",
+       "Norway",
+       "Netherlands",
+       "Belgium",
+       "Luxembourg",
+       "France",
+       "Italy",
+       "Albania",
+       "Hungary",
+       "Romania",
+       "Bulgaria",
+       "Yugoslavia",
+       "Greece",
+       "Finland",
+       "Estonia",
+       "Latvia",
+       "Lithuania",
+       "Empire of Japan",
+       "Siam",
+       "French Indo-China",
+       "Laos",
+       "Cambodia",
+       "Cochin China",
+       "Malaysia",
+       "Dutch East Indies",
+       "Philippines",
+       "Guam",
+       "Saipan",
+       "Hong Kong",
+       "Tunisia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.9,
+        59.85
+       ],
+       [
+        31.3,
+        59.4
+       ],
+       [
+        32.3,
+        59.0
+       ],
+       [
+        31.3,
+        58.4
+       ],
+       [
+        32.5,
+        57.3
+       ],
+       [
+        30.6,
+        56.3
+       ],
+       [
+        34.3,
+        56.3
+       ],
+       [
+        35.3,
+        54.8
+       ],
+       [
+        35.8,
+        53.7
+       ],
+       [
+        37.0,
+        52.6
+       ],
+       [
+        39.2,
+        51.7
+       ],
+       [
+        41.0,
+        50.0
+       ],
+       [
+        43.5,
+        49.3
+       ],
+       [
+        44.5,
+        48.75
+       ],
+       [
+        44.8,
+        47.6
+       ],
+       [
+        44.0,
+        46.3
+       ],
+       [
+        45.0,
+        44.5
+       ],
+       [
+        43.6,
+        43.4
+       ],
+       [
+        41.0,
+        43.8
+       ],
+       [
+        38.8,
+        44.3
+       ],
+       [
+        37.8,
+        44.7
+       ]
+      ],
+      "label": "Eastern Front, Nov 1942"
+     },
+     {
+      "path": [
+       [
+        28.95,
+        30.85
+       ],
+       [
+        28.95,
+        30.5
+       ],
+       [
+        28.8,
+        30.0
+       ]
+      ],
+      "label": "El Alamein line, Oct 1942"
+     },
+     {
+      "path": [
+       [
+        9.9,
+        37.1
+       ],
+       [
+        9.5,
+        36.5
+       ],
+       [
+        9.2,
+        35.6
+       ],
+       [
+        8.9,
+        35.0
+       ],
+       [
+        9.6,
+        34.4
+       ],
+       [
+        10.3,
+        33.6
+       ]
+      ],
+      "label": "Tunisian front, Feb 1943"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Friedrich Paulus",
+      "label": "Sixth Army to Stalingrad",
+      "path": [
+       [
+        36.23,
+        49.99
+       ],
+       [
+        39.5,
+        49.0
+       ],
+       [
+        43.53,
+        48.69
+       ],
+       [
+        44.5,
+        48.7
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Wilhelm List",
+      "label": "Army Group A into the Caucasus",
+      "path": [
+       [
+        39.7,
+        47.23
+       ],
+       [
+        40.5,
+        45.8
+       ],
+       [
+        43.13,
+        44.21
+       ],
+       [
+        43.6,
+        43.49
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Georgy Zhukov",
+      "label": "Operation Uranus encircles Stalingrad",
+      "path": [
+       [
+        42.73,
+        49.58
+       ],
+       [
+        43.53,
+        48.69
+       ],
+       [
+        44.6,
+        48.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bernard Montgomery",
+      "label": "Eighth Army from El Alamein to Tunisia",
+      "path": [
+       [
+        28.95,
+        30.85
+       ],
+       [
+        25.15,
+        31.58
+       ],
+       [
+        23.96,
+        32.08
+       ],
+       [
+        20.07,
+        32.12
+       ],
+       [
+        13.18,
+        32.89
+       ],
+       [
+        10.3,
+        33.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Dwight D. Eisenhower",
+      "label": "Operation Torch and the drive on Tunis",
+      "path": [
+       [
+        -7.6,
+        33.6
+       ],
+       [
+        -0.64,
+        35.7
+       ],
+       [
+        3.06,
+        36.75
+       ],
+       [
+        7.75,
+        36.9
+       ],
+       [
+        9.5,
+        36.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Stalingrad",
+      "kind": "battle",
+      "lon": 44.52,
+      "lat": 48.71,
+      "year": 1943,
+      "winner": 0,
+      "text": "About 90,000 survivors of the Sixth Army surrendered on 2 February 1943."
+     },
+     {
+      "name": "Second Battle of El Alamein",
+      "kind": "battle",
+      "lon": 28.95,
+      "lat": 30.83,
+      "year": 1942,
+      "winner": 0,
+      "text": "Montgomery's victory ended the Axis threat to Egypt and Suez."
+     },
+     {
+      "name": "Guadalcanal campaign",
+      "kind": "battle",
+      "lon": 160.0,
+      "lat": -9.45,
+      "year": 1943,
+      "winner": 0,
+      "text": "Six months of land, sea and air battles ended with Japan's withdrawal in February 1943."
+     }
+    ]
+   },
+   {
+    "year": 1943,
+    "label": "Jul 1943 to May 1944",
+    "title": "Kursk, Italy and island hopping",
+    "text": "Germany's last great offensive in the east failed at Kursk in July 1943, and the Red Army advanced to the Dnieper, retook Kiev and lifted the siege of Leningrad. After the Axis surrender in Tunisia, the Allies invaded Sicily and then Italy, which changed sides in September, but German troops held the Gustav Line at Cassino for months. In the Pacific Nimitz's forces took Tarawa and the Marshall Islands while MacArthur advanced along New Guinea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Ethiopia (Italy)",
+       "Eritrea (Italy)",
+       "Italian Somaliland",
+       "USSR",
+       "Mongolia",
+       "Syria (France)",
+       "Iran",
+       "United States",
+       "Chinese warlords",
+       "Morocco (France)",
+       "Algeria (France)",
+       "Libya",
+       "Tunisia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia",
+       "Poland",
+       "Denmark",
+       "Norway",
+       "Netherlands",
+       "Belgium",
+       "Luxembourg",
+       "France",
+       "Italy",
+       "Albania",
+       "Hungary",
+       "Romania",
+       "Bulgaria",
+       "Yugoslavia",
+       "Greece",
+       "Finland",
+       "Estonia",
+       "Latvia",
+       "Lithuania",
+       "Empire of Japan",
+       "Siam",
+       "French Indo-China",
+       "Laos",
+       "Cambodia",
+       "Cochin China",
+       "Malaysia",
+       "Dutch East Indies",
+       "Philippines",
+       "Guam",
+       "Saipan",
+       "Hong Kong"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        28.2,
+        59.4
+       ],
+       [
+        28.0,
+        58.3
+       ],
+       [
+        29.9,
+        57.5
+       ],
+       [
+        30.5,
+        56.3
+       ],
+       [
+        30.6,
+        55.4
+       ],
+       [
+        31.0,
+        54.4
+       ],
+       [
+        31.0,
+        53.5
+       ],
+       [
+        29.5,
+        52.0
+       ],
+       [
+        28.0,
+        51.5
+       ],
+       [
+        26.6,
+        51.34
+       ],
+       [
+        28.5,
+        49.9
+       ],
+       [
+        30.5,
+        49.3
+       ],
+       [
+        32.26,
+        48.51
+       ],
+       [
+        34.39,
+        47.57
+       ],
+       [
+        33.5,
+        46.9
+       ],
+       [
+        32.4,
+        46.5
+       ]
+      ],
+      "label": "Eastern Front, Jan 1944"
+     },
+     {
+      "path": [
+       [
+        13.73,
+        41.24
+       ],
+       [
+        13.81,
+        41.49
+       ],
+       [
+        14.1,
+        41.75
+       ],
+       [
+        14.3,
+        42.0
+       ],
+       [
+        14.45,
+        42.3
+       ]
+      ],
+      "label": "Gustav Line, early 1944"
+     },
+     {
+      "path": [
+       [
+        146.46,
+        -5.62
+       ],
+       [
+        148.4,
+        -5.45
+       ],
+       [
+        155.0,
+        -6.5
+       ],
+       [
+        173.0,
+        1.4
+       ],
+       [
+        167.7,
+        9.0
+       ]
+      ],
+      "label": "Allied line in the Pacific, early 1944"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Erich von Manstein",
+      "label": "Southern pincer at Kursk",
+      "path": [
+       [
+        36.59,
+        50.6
+       ],
+       [
+        36.65,
+        50.85
+       ],
+       [
+        36.73,
+        51.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nikolai Vatutin",
+      "label": "Advance to the Dnieper and Kiev",
+      "path": [
+       [
+        36.6,
+        50.6
+       ],
+       [
+        34.8,
+        50.9
+       ],
+       [
+        32.0,
+        50.3
+       ],
+       [
+        30.52,
+        50.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bernard Montgomery",
+      "label": "Sicily and the Italian mainland",
+      "path": [
+       [
+        15.09,
+        36.71
+       ],
+       [
+        15.09,
+        37.5
+       ],
+       [
+        15.55,
+        38.19
+       ],
+       [
+        15.65,
+        38.1
+       ],
+       [
+        16.6,
+        40.5
+       ],
+       [
+        14.4,
+        42.35
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mark Clark",
+      "label": "Salerno to Cassino",
+      "path": [
+       [
+        14.76,
+        40.68
+       ],
+       [
+        14.25,
+        40.85
+       ],
+       [
+        13.9,
+        41.2
+       ],
+       [
+        13.81,
+        41.49
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Chester Nimitz",
+      "label": "Central Pacific drive",
+      "path": [
+       [
+        -157.97,
+        21.36
+       ],
+       [
+        -170.0,
+        10.0
+       ],
+       [
+        172.98,
+        1.42
+       ],
+       [
+        167.7,
+        9.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kursk",
+      "kind": "battle",
+      "lon": 36.73,
+      "lat": 51.03,
+      "year": 1943,
+      "winner": 0,
+      "text": "The largest tank battle in history ended Germany's ability to attack in the east."
+     },
+     {
+      "name": "Invasion of Sicily",
+      "kind": "battle",
+      "lon": 14.2,
+      "lat": 37.4,
+      "year": 1943,
+      "winner": 0,
+      "text": "The Allied landings of 10 July led to Mussolini's fall two weeks later."
+     },
+     {
+      "name": "Battle of Tarawa",
+      "kind": "battle",
+      "lon": 172.98,
+      "lat": 1.42,
+      "year": 1943,
+      "winner": 0,
+      "text": "US Marines took the fortified atoll in three days of costly fighting."
+     }
+    ]
+   },
+   {
+    "year": 1944,
+    "label": "Jun to Dec 1944",
+    "title": "D-Day, Bagration and Leyte",
+    "text": "On 6 June 1944 Eisenhower's Allied armies landed in Normandy, broke out in August and liberated Paris and Brussels. On 22 June the Soviet Operation Bagration destroyed Germany's Army Group Centre and carried the Red Army to the Vistula, while Romania and Bulgaria changed sides; that summer about 430,000 Hungarian Jews were deported to Auschwitz. In December Hitler's Ardennes counteroffensive was halted, and in the Pacific the Americans took Saipan and won the naval battle of Leyte Gulf.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "Union of South Africa",
+       "British Raj",
+       "Egypt",
+       "Mesopotamia (GB)",
+       "Mandatory Palestine (GB)",
+       "Sudan",
+       "Kenya",
+       "British Somaliland",
+       "Ethiopia (Italy)",
+       "Eritrea (Italy)",
+       "Italian Somaliland",
+       "USSR",
+       "Mongolia",
+       "Syria (France)",
+       "Iran",
+       "United States",
+       "Chinese warlords",
+       "Morocco (France)",
+       "Algeria (France)",
+       "Libya",
+       "Tunisia",
+       "France",
+       "Belgium",
+       "Luxembourg",
+       "Romania",
+       "Bulgaria",
+       "Greece",
+       "Albania",
+       "Yugoslavia",
+       "Guam",
+       "Saipan",
+       "Estonia",
+       "Latvia",
+       "Lithuania"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Germany",
+       "Czechoslovakia",
+       "Poland",
+       "Denmark",
+       "Norway",
+       "Netherlands",
+       "Italy",
+       "Hungary",
+       "Empire of Japan",
+       "Siam",
+       "French Indo-China",
+       "Laos",
+       "Cambodia",
+       "Cochin China",
+       "Malaysia",
+       "Dutch East Indies",
+       "Philippines",
+       "Hong Kong"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        4.4,
+        51.7
+       ],
+       [
+        5.5,
+        51.75
+       ],
+       [
+        5.9,
+        51.4
+       ],
+       [
+        6.1,
+        51.0
+       ],
+       [
+        6.3,
+        50.4
+       ],
+       [
+        6.1,
+        50.0
+       ],
+       [
+        6.4,
+        49.5
+       ],
+       [
+        7.0,
+        49.1
+       ],
+       [
+        7.6,
+        48.6
+       ],
+       [
+        7.3,
+        47.8
+       ],
+       [
+        7.5,
+        47.55
+       ]
+      ],
+      "label": "Western Front, 15 Dec 1944"
+     },
+     {
+      "path": [
+       [
+        21.5,
+        55.7
+       ],
+       [
+        22.5,
+        54.8
+       ],
+       [
+        21.5,
+        53.5
+       ],
+       [
+        21.0,
+        52.3
+       ],
+       [
+        21.6,
+        51.5
+       ],
+       [
+        21.5,
+        50.4
+       ],
+       [
+        21.7,
+        49.5
+       ],
+       [
+        21.5,
+        48.3
+       ],
+       [
+        20.0,
+        47.7
+       ],
+       [
+        19.1,
+        47.5
+       ],
+       [
+        18.5,
+        46.5
+       ],
+       [
+        18.9,
+        45.8
+       ],
+       [
+        19.4,
+        44.8
+       ]
+      ],
+      "label": "Eastern Front, Dec 1944"
+     },
+     {
+      "path": [
+       [
+        9.9,
+        44.05
+       ],
+       [
+        11.0,
+        44.2
+       ],
+       [
+        11.9,
+        44.25
+       ],
+       [
+        12.2,
+        44.42
+       ]
+      ],
+      "label": "Gothic Line, winter 1944"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Dwight D. Eisenhower",
+      "label": "Normandy to Brussels",
+      "path": [
+       [
+        -1.4,
+        50.5
+       ],
+       [
+        -0.6,
+        49.35
+       ],
+       [
+        -0.37,
+        49.18
+       ],
+       [
+        0.2,
+        48.9
+       ],
+       [
+        2.35,
+        48.86
+       ],
+       [
+        4.35,
+        50.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Konstantin Rokossovsky",
+      "label": "Operation Bagration",
+      "path": [
+       [
+        29.22,
+        53.14
+       ],
+       [
+        27.56,
+        53.9
+       ],
+       [
+        25.3,
+        53.2
+       ],
+       [
+        23.16,
+        53.13
+       ],
+       [
+        21.1,
+        52.25
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gerd von Rundstedt",
+      "label": "Ardennes offensive",
+      "path": [
+       [
+        6.3,
+        50.4
+       ],
+       [
+        5.72,
+        50.0
+       ],
+       [
+        4.91,
+        50.26
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Chester Nimitz",
+      "label": "Marianas campaign",
+      "path": [
+       [
+        167.7,
+        9.0
+       ],
+       [
+        162.3,
+        11.5
+       ],
+       [
+        145.75,
+        15.18
+       ],
+       [
+        144.79,
+        13.44
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Douglas MacArthur",
+      "label": "Return to the Philippines",
+      "path": [
+       [
+        140.7,
+        -2.53
+       ],
+       [
+        128.4,
+        2.3
+       ],
+       [
+        125.0,
+        11.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "D-Day landings",
+      "kind": "battle",
+      "lon": -0.6,
+      "lat": 49.35,
+      "year": 1944,
+      "winner": 0,
+      "text": "About 156,000 Allied troops landed in Normandy on 6 June 1944."
+     },
+     {
+      "name": "Operation Bagration",
+      "kind": "battle",
+      "lon": 27.56,
+      "lat": 53.9,
+      "year": 1944,
+      "winner": 0,
+      "text": "The Soviet offensive destroyed Army Group Centre and freed Belarus."
+     },
+     {
+      "name": "Battle of Leyte Gulf",
+      "kind": "battle",
+      "lon": 125.5,
+      "lat": 11.0,
+      "year": 1944,
+      "winner": 0,
+      "text": "The largest naval battle in history broke the Japanese fleet."
+     }
+    ]
+   },
+   {
+    "year": 1945,
+    "label": "Jan to Jun 1945",
+    "title": "The fall of Germany",
+    "text": "The Red Army swept from the Vistula to the Oder in January, liberating Auschwitz, while the Western Allies crossed the Rhine in March and raced into Germany, uncovering concentration camps. Soviet armies under Zhukov and Konev stormed Berlin, Hitler killed himself on 30 April, and Germany surrendered unconditionally on 8 May 1945. In the Pacific, US forces took Iwo Jima and Okinawa in some of the war's bloodiest fighting.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "India",
+       "Pakistan",
+       "Bangladesh",
+       "Burma",
+       "Egypt",
+       "Iraq",
+       "Syria",
+       "Lebanon",
+       "Jordan",
+       "Iran",
+       "Sudan",
+       "Kenya",
+       "Ethiopia",
+       "Eritrea",
+       "Somalia",
+       "British Somaliland",
+       "Morocco",
+       "Algeria",
+       "Tunisia",
+       "Cyraneica (UK Lybia)",
+       "Tripolitana (UK Lybia)",
+       "Fezzan (Frech Lybia)",
+       "USSR",
+       "Mongolia",
+       "United States",
+       "China",
+       "Philippines",
+       "France",
+       "Belgium",
+       "Netherlands",
+       "Luxembourg",
+       "Denmark",
+       "Norway",
+       "Poland",
+       "Czechoslovakia",
+       "Austria",
+       "Hungary",
+       "Romania",
+       "Bulgaria",
+       "Yugoslavia",
+       "Greece",
+       "Albania",
+       "Italy",
+       "Germany (Soviet)",
+       "Germany (USA)",
+       "Germany (UK)",
+       "Germany (France)",
+       "Dutch Guinea"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Japan (USA)",
+       "Korea (USSR)",
+       "Korea (USA)",
+       "Manchuria",
+       "Taiwan",
+       "Indonesia",
+       "Malaysia",
+       "Thailand",
+       "Cochin China",
+       "Annam",
+       "Tonkin",
+       "Laos",
+       "Cambodia",
+       "Hong Kong"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        10.7,
+        53.9
+       ],
+       [
+        11.4,
+        53.3
+       ],
+       [
+        11.63,
+        52.13
+       ],
+       [
+        12.3,
+        51.9
+       ],
+       [
+        13.0,
+        51.56
+       ],
+       [
+        12.9,
+        51.0
+       ],
+       [
+        12.5,
+        50.5
+       ],
+       [
+        13.0,
+        49.5
+       ],
+       [
+        13.5,
+        48.6
+       ]
+      ],
+      "label": "Line of contact, 25 Apr 1945"
+     },
+     {
+      "path": [
+       [
+        127.65,
+        26.22
+       ],
+       [
+        127.72,
+        26.21
+       ],
+       [
+        127.8,
+        26.2
+       ]
+      ],
+      "label": "Okinawa front, May 1945"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Georgy Zhukov",
+      "label": "Vistula to Berlin",
+      "path": [
+       [
+        21.0,
+        52.23
+       ],
+       [
+        16.93,
+        52.41
+       ],
+       [
+        14.65,
+        52.58
+       ],
+       [
+        13.4,
+        52.52
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ivan Konev",
+      "label": "Through Silesia to the Elbe",
+      "path": [
+       [
+        21.5,
+        50.4
+       ],
+       [
+        19.94,
+        50.06
+       ],
+       [
+        17.03,
+        51.11
+       ],
+       [
+        14.98,
+        51.15
+       ],
+       [
+        13.0,
+        51.56
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Omar Bradley",
+      "label": "Across the Rhine to the Elbe",
+      "path": [
+       [
+        6.08,
+        50.78
+       ],
+       [
+        7.24,
+        50.58
+       ],
+       [
+        9.48,
+        51.31
+       ],
+       [
+        12.37,
+        51.34
+       ],
+       [
+        13.0,
+        51.56
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bernard Montgomery",
+      "label": "Rhine crossing to Hamburg",
+      "path": [
+       [
+        6.6,
+        51.66
+       ],
+       [
+        8.8,
+        53.08
+       ],
+       [
+        10.0,
+        53.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Chester Nimitz",
+      "label": "Iwo Jima and Okinawa",
+      "path": [
+       [
+        144.79,
+        13.44
+       ],
+       [
+        141.32,
+        24.78
+       ],
+       [
+        127.8,
+        26.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Liberation of Auschwitz",
+      "kind": "event",
+      "lon": 19.2,
+      "lat": 50.03,
+      "year": 1945,
+      "winner": 0,
+      "text": "Soviet troops freed the largest Nazi death camp, where about 1.1 million people, most of them Jews, had been murdered."
+     },
+     {
+      "name": "Battle of Berlin",
+      "kind": "battle",
+      "lon": 13.4,
+      "lat": 52.52,
+      "year": 1945,
+      "winner": 0,
+      "text": "The city fell on 2 May, and Germany surrendered six days later."
+     },
+     {
+      "name": "Battle of Okinawa",
+      "kind": "battle",
+      "lon": 127.8,
+      "lat": 26.3,
+      "year": 1945,
+      "winner": 0,
+      "text": "Over 200,000 soldiers and civilians died before the island fell in June 1945."
+     }
+    ]
+   },
+   {
+    "year": 1945,
+    "label": "Aug to Sep 1945",
+    "title": "Hiroshima and Japan's surrender",
+    "text": "American B-29s dropped atomic bombs on Hiroshima on 6 August and Nagasaki on 9 August 1945, and the Soviet Union declared war and invaded Manchuria and northern Korea. Emperor Hirohito announced Japan's surrender on 15 August. The formal surrender was signed aboard USS Missouri in Tokyo Bay on 2 September 1945, ending the war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United Kingdom",
+       "Canada",
+       "Australia",
+       "New Zealand",
+       "South Africa",
+       "India",
+       "Pakistan",
+       "Bangladesh",
+       "Burma",
+       "Egypt",
+       "Iraq",
+       "Syria",
+       "Lebanon",
+       "Jordan",
+       "Iran",
+       "Sudan",
+       "Kenya",
+       "Ethiopia",
+       "Eritrea",
+       "Somalia",
+       "British Somaliland",
+       "Morocco",
+       "Algeria",
+       "Tunisia",
+       "Cyraneica (UK Lybia)",
+       "Tripolitana (UK Lybia)",
+       "Fezzan (Frech Lybia)",
+       "USSR",
+       "Mongolia",
+       "United States",
+       "China",
+       "Philippines",
+       "France",
+       "Belgium",
+       "Netherlands",
+       "Luxembourg",
+       "Denmark",
+       "Norway",
+       "Poland",
+       "Czechoslovakia",
+       "Austria",
+       "Hungary",
+       "Romania",
+       "Bulgaria",
+       "Yugoslavia",
+       "Greece",
+       "Albania",
+       "Italy",
+       "Germany (Soviet)",
+       "Germany (USA)",
+       "Germany (UK)",
+       "Germany (France)",
+       "Dutch Guinea",
+       "Manchuria",
+       "Korea (USSR)"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Japan (USA)",
+       "Korea (USA)",
+       "Taiwan",
+       "Indonesia",
+       "Malaysia",
+       "Thailand",
+       "Cochin China",
+       "Annam",
+       "Tonkin",
+       "Laos",
+       "Cambodia",
+       "Hong Kong"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        115.5,
+        47.8
+       ],
+       [
+        119.5,
+        50.3
+       ],
+       [
+        127.5,
+        53.0
+       ],
+       [
+        135.0,
+        48.5
+       ],
+       [
+        131.0,
+        43.0
+       ]
+      ],
+      "label": "Manchukuo border at the Soviet attack, 9 Aug 1945"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Paul Tibbets",
+      "label": "Enola Gay from Tinian to Hiroshima",
+      "path": [
+       [
+        145.6,
+        15.0
+       ],
+       [
+        141.0,
+        25.0
+       ],
+       [
+        133.0,
+        33.0
+       ],
+       [
+        132.45,
+        34.39
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Rodion Malinovsky",
+      "label": "Soviet Transbaikal Front into Manchuria",
+      "path": [
+       [
+        114.5,
+        46.8
+       ],
+       [
+        118.0,
+        45.0
+       ],
+       [
+        121.0,
+        43.6
+       ],
+       [
+        123.43,
+        41.8
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Kirill Meretskov",
+      "label": "Soviet First Far Eastern Front",
+      "path": [
+       [
+        131.9,
+        43.8
+       ],
+       [
+        129.6,
+        44.58
+       ],
+       [
+        126.63,
+        45.75
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Douglas MacArthur",
+      "label": "Allied occupation forces to Tokyo Bay",
+      "path": [
+       [
+        120.98,
+        14.6
+       ],
+       [
+        127.8,
+        26.3
+       ],
+       [
+        139.75,
+        35.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Atomic bombing of Hiroshima",
+      "kind": "event",
+      "lon": 132.45,
+      "lat": 34.39,
+      "year": 1945,
+      "winner": 0,
+      "text": "The first nuclear weapon used in war killed about 70,000 to 140,000 people by the end of 1945."
+     },
+     {
+      "name": "Atomic bombing of Nagasaki",
+      "kind": "event",
+      "lon": 129.87,
+      "lat": 32.75,
+      "year": 1945,
+      "winner": 0,
+      "text": "The second bomb killed about 40,000 to 75,000 people."
+     },
+     {
+      "name": "Surrender of Japan",
+      "kind": "treaty",
+      "lon": 139.75,
+      "lat": 35.35,
+      "year": 1945,
+      "winner": 0,
+      "text": "Japan signed the instrument of surrender aboard USS Missouri on 2 September 1945."
+     }
+    ]
+   }
+  ]
+ }
+]

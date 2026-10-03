@@ -1,0 +1,5954 @@
+[
+ {
+  "id": "bangladesh-liberation-war",
+  "name": "Bangladesh Liberation War",
+  "start": 1971,
+  "end": 1971,
+  "kind": "war",
+  "summary": "After Pakistan's military government refused to hand power to the Awami League, which had won the 1970 election, it launched a crackdown in East Pakistan in March 1971 and Bengali nationalists declared independence. A nine-month guerrilla war, a massive refugee flight to India and finally a two-week Indian invasion in December ended with the surrender of Pakistani forces in Dhaka and the birth of Bangladesh. Estimates of the dead range from several hundred thousand to about three million.",
+  "sides": [
+   {
+    "name": "Bangladesh forces (Mukti Bahini) and India",
+    "color": "#3a9a5b",
+    "leaders": [
+     "Sheikh Mujibur Rahman",
+     "Col. M. A. G. Osmani",
+     "Indira Gandhi",
+     "Gen. Sam Manekshaw",
+     "Lt Gen. Jagjit Singh Aurora"
+    ]
+   },
+   {
+    "name": "Pakistan",
+    "color": "#c0473a",
+    "leaders": [
+     "Yahya Khan",
+     "Lt Gen. Tikka Khan",
+     "Lt Gen. A. A. K. Niazi"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 90.3,
+    "lat": 23.8,
+    "r": 3.5
+   },
+   {
+    "lon": 72.5,
+    "lat": 29.5,
+    "r": 5.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1971,
+    "label": "25 to 27 Mar 1971",
+    "title": "Operation Searchlight",
+    "text": "On the night of 25 March the Pakistani army under Lt Gen. Tikka Khan struck in Dhaka against Awami League leaders, students and Bengali police and soldiers, and arrested Sheikh Mujibur Rahman. Independence was proclaimed on 26 March and broadcast from Chittagong, and mutinous Bengali units fell back toward the Indian border as the army fanned out to retake the towns.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lt Gen. Tikka Khan",
+      "label": "Army crackdown spreads from Dhaka",
+      "path": [
+       [
+        90.4,
+        23.8
+       ],
+       [
+        90.9,
+        23.5
+       ],
+       [
+        91.18,
+        23.46
+       ],
+       [
+        91.83,
+        22.34
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. Tikka Khan",
+      "label": "Army secures the west",
+      "path": [
+       [
+        90.4,
+        23.8
+       ],
+       [
+        89.9,
+        23.6
+       ],
+       [
+        89.21,
+        23.17
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Searchlight",
+      "kind": "event",
+      "lon": 90.4,
+      "lat": 23.73,
+      "year": 1971,
+      "winner": 1,
+      "text": "The army's crackdown in Dhaka began a campaign of mass killing and arrests across East Pakistan."
+     },
+     {
+      "name": "Declaration of independence",
+      "kind": "event",
+      "lon": 91.85,
+      "lat": 22.39,
+      "year": 1971,
+      "winner": null,
+      "text": "Independence was proclaimed on 26 March and announced over the radio from Chittagong."
+     }
+    ]
+   },
+   {
+    "year": 1971,
+    "label": "Apr to Nov 1971",
+    "title": "Guerrilla war and refugee crisis",
+    "text": "A government in exile was sworn in at Mujibnagar in April, and Col. M. A. G. Osmani organised the Mukti Bahini guerrillas from bases in India. Lt Gen. A. A. K. Niazi took command of Pakistani forces, while about ten million refugees crossed into India. In August India signed a friendship treaty with the Soviet Union and stepped up support for the insurgents.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "India"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Col. M. A. G. Osmani",
+      "label": "Mukti Bahini raids from the west",
+      "path": [
+       [
+        88.6,
+        23.0
+       ],
+       [
+        89.0,
+        23.1
+       ],
+       [
+        89.21,
+        23.17
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Col. M. A. G. Osmani",
+      "label": "Mukti Bahini raids from Tripura",
+      "path": [
+       [
+        91.28,
+        23.83
+       ],
+       [
+        91.2,
+        23.6
+       ],
+       [
+        91.18,
+        23.46
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. A. A. K. Niazi",
+      "label": "Garrisons pushed to the border",
+      "path": [
+       [
+        90.4,
+        23.8
+       ],
+       [
+        90.0,
+        24.6
+       ],
+       [
+        89.37,
+        24.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Mujibnagar government sworn in",
+      "kind": "event",
+      "lon": 88.73,
+      "lat": 23.77,
+      "year": 1971,
+      "winner": 0,
+      "text": "The Provisional Government of Bangladesh took its oath in a mango grove near the Indian border."
+     },
+     {
+      "name": "Indo-Soviet Treaty",
+      "kind": "treaty",
+      "lon": 77.21,
+      "lat": 28.61,
+      "year": 1971,
+      "winner": null,
+      "text": "India gained Soviet diplomatic backing against outside intervention."
+     }
+    ]
+   },
+   {
+    "year": 1971,
+    "label": "3 to 15 Dec 1971",
+    "title": "India enters the war",
+    "text": "Pakistani air strikes on Indian airfields on 3 December brought open war. In the east, Indian corps and Mukti Bahini units under Lt Gen. Jagjit Singh Aurora drove in from three sides, bypassing strongpoints and crossing the Meghna toward Dhaka, while an airborne drop at Tangail cut off retreating troops. In the west the two armies fought along the border and in Kashmir.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "India"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        74.3,
+        34.6
+       ],
+       [
+        74.6,
+        32.7
+       ],
+       [
+        74.5,
+        31.6
+       ],
+       [
+        73.9,
+        30.3
+       ],
+       [
+        71.9,
+        28.1
+       ],
+       [
+        70.2,
+        26.9
+       ],
+       [
+        69.6,
+        24.3
+       ]
+      ],
+      "label": "India-Pakistan western front, Dec 1971"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lt Gen. Sagat Singh",
+      "label": "IV Corps across the Meghna",
+      "path": [
+       [
+        91.28,
+        23.83
+       ],
+       [
+        91.0,
+        24.05
+       ],
+       [
+        90.7,
+        23.9
+       ],
+       [
+        90.42,
+        23.82
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lt Gen. T. N. Raina",
+      "label": "II Corps from the west",
+      "path": [
+       [
+        88.55,
+        23.4
+       ],
+       [
+        89.21,
+        23.17
+       ],
+       [
+        89.56,
+        22.82
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Maj. Gen. Gandharv Nagra",
+      "label": "Northern thrust on Dhaka",
+      "path": [
+       [
+        90.22,
+        25.51
+       ],
+       [
+        89.94,
+        24.92
+       ],
+       [
+        89.92,
+        24.25
+       ],
+       [
+        90.4,
+        23.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. A. A. K. Niazi",
+      "label": "Pull back on Dhaka",
+      "path": [
+       [
+        91.18,
+        23.46
+       ],
+       [
+        90.9,
+        23.7
+       ],
+       [
+        90.42,
+        23.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Longewala",
+      "kind": "battle",
+      "lon": 70.16,
+      "lat": 27.53,
+      "year": 1971,
+      "winner": 0,
+      "text": "A small Indian post, backed by air strikes, held off a Pakistani armoured thrust into Rajasthan."
+     },
+     {
+      "name": "Tangail airdrop",
+      "kind": "battle",
+      "lon": 89.92,
+      "lat": 24.25,
+      "year": 1971,
+      "winner": 0,
+      "text": "Indian paratroopers landed behind Pakistani lines to block the road to Dhaka."
+     }
+    ]
+   },
+   {
+    "year": 1971,
+    "label": "16 Dec 1971 to 1972",
+    "title": "Surrender in Dhaka",
+    "text": "On 16 December Lt Gen. Niazi signed the instrument of surrender before Lt Gen. Aurora in Dhaka, and about 93,000 Pakistani personnel became prisoners of war. A ceasefire in the west followed the next day, Sheikh Mujibur Rahman returned to lead Bangladesh in January 1972, and the Simla Agreement of July 1972 set terms for peace between India and Pakistan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "India"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lt Gen. Jagjit Singh Aurora",
+      "label": "Indian and Bangladeshi forces enter Dhaka",
+      "path": [
+       [
+        90.6,
+        23.9
+       ],
+       [
+        90.42,
+        23.78
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Pakistani surrender in Dhaka",
+      "kind": "event",
+      "lon": 90.4,
+      "lat": 23.73,
+      "year": 1971,
+      "winner": 0,
+      "text": "The surrender at the Ramna Race Course ended the war and confirmed Bangladesh's independence."
+     },
+     {
+      "name": "Simla Agreement",
+      "kind": "treaty",
+      "lon": 77.17,
+      "lat": 31.1,
+      "year": 1972,
+      "winner": null,
+      "text": "India and Pakistan agreed to settle disputes bilaterally and returned captured land in the west."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yom-kippur-war",
+  "name": "Yom Kippur War",
+  "start": 1973,
+  "end": 1973,
+  "kind": "war",
+  "summary": "On 6 October 1973, Yom Kippur, Egypt and Syria launched a surprise attack to recover the Sinai and the Golan Heights, held by Israel since 1967. After early Arab gains Israel stopped the Syrians, crossed the Suez Canal and surrounded the Egyptian Third Army before superpower pressure imposed a ceasefire. The war triggered the Arab oil embargo and opened the diplomacy that led to the 1979 Egypt-Israel peace treaty.",
+  "sides": [
+   {
+    "name": "Egypt and Syria",
+    "color": "#c0473a",
+    "leaders": [
+     "Anwar Sadat",
+     "Hafez al-Assad",
+     "Gen. Ahmad Ismail Ali",
+     "Lt Gen. Saad el-Shazly"
+    ]
+   },
+   {
+    "name": "Israel",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Golda Meir",
+     "Moshe Dayan",
+     "Lt Gen. David Elazar",
+     "Maj. Gen. Ariel Sharon",
+     "Maj. Gen. Avraham Adan"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 32.6,
+    "lat": 30.3,
+    "r": 2.0
+   },
+   {
+    "lon": 35.85,
+    "lat": 33.1,
+    "r": 0.9
+   }
+  ],
+  "steps": [
+   {
+    "year": 1973,
+    "label": "6 to 7 Oct 1973",
+    "title": "Operation Badr",
+    "text": "Egypt's Second and Third Armies crossed the Suez Canal under a heavy barrage, breached the Bar Lev Line and dug in on the east bank behind a screen of anti-tank and anti-aircraft missiles. At the same time about 1,400 Syrian tanks attacked the thinly held Golan Heights and in the south broke through almost to the Sea of Galilee.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Egypt",
+       "Syria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.4,
+        31.2
+       ],
+       [
+        32.42,
+        30.85
+       ],
+       [
+        32.42,
+        30.58
+       ],
+       [
+        32.52,
+        30.4
+       ],
+       [
+        32.62,
+        30.15
+       ],
+       [
+        32.65,
+        29.95
+       ]
+      ],
+      "label": "Suez Canal front, 6 to 8 Oct"
+     },
+     {
+      "path": [
+       [
+        35.77,
+        33.3
+       ],
+       [
+        35.83,
+        33.15
+       ],
+       [
+        35.88,
+        33.0
+       ],
+       [
+        35.9,
+        32.85
+       ],
+       [
+        35.85,
+        32.73
+       ]
+      ],
+      "label": "Golan ceasefire line before the war"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Maj. Gen. Saad Mamoun",
+      "label": "Egyptian Second Army crosses",
+      "path": [
+       [
+        32.2,
+        30.6
+       ],
+       [
+        32.32,
+        30.62
+       ],
+       [
+        32.48,
+        30.62
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Maj. Gen. Abdel Munim Wasel",
+      "label": "Egyptian Third Army crosses",
+      "path": [
+       [
+        32.45,
+        30.02
+       ],
+       [
+        32.58,
+        30.05
+       ],
+       [
+        32.68,
+        30.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Hafez al-Assad",
+      "label": "Syrian armour into the Golan",
+      "path": [
+       [
+        36.1,
+        33.15
+       ],
+       [
+        35.88,
+        33.0
+       ],
+       [
+        35.75,
+        32.88
+       ],
+       [
+        35.68,
+        32.83
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Crossing of the Suez Canal",
+      "kind": "battle",
+      "lon": 32.33,
+      "lat": 30.58,
+      "year": 1973,
+      "winner": 0,
+      "text": "Egyptian engineers bridged the canal and overran most Bar Lev strongpoints within hours."
+     },
+     {
+      "name": "Valley of Tears",
+      "kind": "battle",
+      "lon": 35.8,
+      "lat": 33.2,
+      "year": 1973,
+      "winner": 1,
+      "text": "A few dozen Israeli tanks held the northern Golan against repeated Syrian assaults."
+     }
+    ]
+   },
+   {
+    "year": 1973,
+    "label": "8 to 14 Oct 1973",
+    "title": "Israel recovers",
+    "text": "Mobilised Israeli reserves threw the Syrians back across the ceasefire line by 10 October and pushed toward Damascus, where Iraqi and Jordanian forces joined the defence. An Israeli counterattack in Sinai on 8 October failed, but when Egypt advanced beyond its missile cover on 14 October its armoured attack was beaten off with heavy losses. Both sides were resupplied, Israel by a US airlift and the Arab states by the Soviet Union.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Egypt",
+       "Syria",
+       "Iraq",
+       "Jordan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.4,
+        31.2
+       ],
+       [
+        32.42,
+        30.85
+       ],
+       [
+        32.42,
+        30.58
+       ],
+       [
+        32.52,
+        30.4
+       ],
+       [
+        32.62,
+        30.15
+       ],
+       [
+        32.65,
+        29.95
+       ]
+      ],
+      "label": "Suez Canal front, 6 to 8 Oct"
+     },
+     {
+      "path": [
+       [
+        35.8,
+        33.33
+       ],
+       [
+        35.97,
+        33.32
+       ],
+       [
+        36.05,
+        33.25
+       ],
+       [
+        35.98,
+        33.1
+       ],
+       [
+        35.9,
+        32.95
+       ]
+      ],
+      "label": "Golan front after the Israeli advance"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Maj. Gen. Yitzhak Hofi",
+      "label": "Northern Command counteroffensive",
+      "path": [
+       [
+        35.65,
+        33.0
+       ],
+       [
+        35.8,
+        33.1
+       ],
+       [
+        35.95,
+        33.22
+       ],
+       [
+        36.04,
+        33.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lt Gen. Saad el-Shazly",
+      "label": "Egyptian armoured offensive",
+      "path": [
+       [
+        32.45,
+        30.45
+       ],
+       [
+        32.62,
+        30.42
+       ],
+       [
+        32.8,
+        30.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Iraqi 3rd Armoured Division",
+      "label": "Iraqi reinforcements",
+      "path": [
+       [
+        36.4,
+        33.0
+       ],
+       [
+        36.2,
+        33.1
+       ],
+       [
+        36.08,
+        33.18
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Tank battle of 14 October",
+      "kind": "battle",
+      "lon": 32.78,
+      "lat": 30.42,
+      "year": 1973,
+      "winner": 1,
+      "text": "Egypt lost some 250 tanks attacking toward the Sinai passes."
+     },
+     {
+      "name": "Arab oil embargo",
+      "kind": "event",
+      "lon": 46.72,
+      "lat": 24.69,
+      "year": 1973,
+      "winner": null,
+      "text": "Arab oil producers cut output and embargoed the United States, quadrupling oil prices."
+     }
+    ]
+   },
+   {
+    "year": 1973,
+    "label": "15 to 25 Oct 1973",
+    "title": "Across the canal",
+    "text": "Israeli divisions under Ariel Sharon and Avraham Adan forced a crossing at Deversoir after fierce fighting at the Chinese Farm and spread out on the west bank, destroying air defences. Adan's tanks drove south to the outskirts of Suez, cutting off the Egyptian Third Army. UN Security Council Resolution 338 called a ceasefire on 22 October, which took hold on 25 October after a brief US-Soviet crisis.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Egypt",
+       "Syria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.4,
+        31.2
+       ],
+       [
+        32.42,
+        30.7
+       ],
+       [
+        32.3,
+        30.55
+       ],
+       [
+        32.05,
+        30.38
+       ],
+       [
+        31.95,
+        30.1
+       ],
+       [
+        32.3,
+        29.95
+       ],
+       [
+        32.52,
+        29.98
+       ]
+      ],
+      "label": "Front at the ceasefire, 24 Oct"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Maj. Gen. Ariel Sharon",
+      "label": "Crossing at Deversoir",
+      "path": [
+       [
+        32.7,
+        30.55
+       ],
+       [
+        32.45,
+        30.45
+       ],
+       [
+        32.36,
+        30.42
+       ],
+       [
+        32.27,
+        30.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Maj. Gen. Avraham Adan",
+      "label": "Drive to Suez",
+      "path": [
+       [
+        32.36,
+        30.42
+       ],
+       [
+        32.25,
+        30.3
+       ],
+       [
+        32.2,
+        30.1
+       ],
+       [
+        32.5,
+        29.98
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of the Chinese Farm",
+      "kind": "battle",
+      "lon": 32.42,
+      "lat": 30.45,
+      "year": 1973,
+      "winner": 1,
+      "text": "Costly night fighting opened the corridor to Israel's canal bridgehead."
+     },
+     {
+      "name": "Encirclement of the Third Army",
+      "kind": "siege",
+      "lon": 32.55,
+      "lat": 29.97,
+      "year": 1973,
+      "winner": 1,
+      "text": "Some 30,000 Egyptian soldiers on the east bank were cut off when the ceasefire took hold."
+     },
+     {
+      "name": "UN Resolution 338",
+      "kind": "treaty",
+      "lon": 32.1,
+      "lat": 30.25,
+      "year": 1973,
+      "winner": null,
+      "text": "The Security Council demanded a ceasefire and negotiations under Resolution 242."
+     }
+    ]
+   },
+   {
+    "year": 1974,
+    "label": "1974 to 1979",
+    "title": "From disengagement to peace",
+    "text": "US mediation under Henry Kissinger produced disengagement agreements with Egypt in January 1974 and with Syria in May 1974, pulling Israeli forces back from the canal and Quneitra. Egypt's partial success gave Sadat room for direct diplomacy, leading to the Camp David Accords in 1978 and the 1979 peace treaty under which Israel returned the Sinai.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Egypt",
+       "Syria"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lt Gen. David Elazar",
+      "label": "Withdrawal from the west bank",
+      "path": [
+       [
+        32.1,
+        30.3
+       ],
+       [
+        32.4,
+        30.4
+       ],
+       [
+        32.8,
+        30.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sinai disengagement agreement",
+      "kind": "treaty",
+      "lon": 31.95,
+      "lat": 30.08,
+      "year": 1974,
+      "winner": null,
+      "text": "Israel withdrew east of the canal and a UN buffer zone separated the armies."
+     },
+     {
+      "name": "Golan disengagement agreement",
+      "kind": "treaty",
+      "lon": 35.82,
+      "lat": 33.12,
+      "year": 1974,
+      "winner": null,
+      "text": "Israel returned Quneitra and a UN force took over a buffer zone on the Golan."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "lebanese-civil-war",
+  "name": "Lebanese Civil War",
+  "start": 1975,
+  "end": 1990,
+  "kind": "war",
+  "summary": "Tensions over power-sharing between Lebanon's Christian and Muslim communities and over armed Palestinian groups in the country erupted into civil war in 1975. Shifting coalitions of militias fought for fifteen years while Syria and Israel intervened, Israel invading in 1982 and Syria keeping troops in much of the country. The 1989 Taif Agreement and Syria's defeat of Gen. Michel Aoun in 1990 ended the war, which killed an estimated 120,000 to 150,000 people.",
+  "sides": [
+   {
+    "name": "Christian militias (Lebanese Front) and, in 1982, Israel",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Pierre Gemayel",
+     "Bashir Gemayel",
+     "Camille Chamoun",
+     "Samir Geagea",
+     "Michel Aoun",
+     "Ariel Sharon"
+    ]
+   },
+   {
+    "name": "PLO, leftist and Muslim militias",
+    "color": "#3a9a5b",
+    "leaders": [
+     "Kamal Jumblatt",
+     "Yasser Arafat",
+     "Walid Jumblatt",
+     "Nabih Berri"
+    ]
+   },
+   {
+    "name": "Syria",
+    "color": "#c0473a",
+    "leaders": [
+     "Hafez al-Assad",
+     "Ghazi Kanaan"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 35.75,
+    "lat": 33.7,
+    "r": 1.3
+   }
+  ],
+  "steps": [
+   {
+    "year": 1975,
+    "label": "1975 to 1976",
+    "title": "The war begins",
+    "text": "After gunmen fired on a church in Ain el-Remmaneh, Phalangist militiamen ambushed a bus carrying Palestinians on 13 April 1975, setting off fighting between Christian militias and the Lebanese National Movement allied with the PLO. Beirut split along the Green Line, and both sides committed massacres. In June 1976 Syria sent in its army, at first to stop the leftist and Palestinian advance, and Christian forces took the Tel al-Zaatar camp.",
+    "territories": [
+     {
+      "side": 2,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.505,
+        33.898
+       ],
+       [
+        35.508,
+        33.888
+       ],
+       [
+        35.515,
+        33.878
+       ],
+       [
+        35.523,
+        33.866
+       ],
+       [
+        35.532,
+        33.855
+       ]
+      ],
+      "label": "Green Line, Beirut"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Hafez al-Assad",
+      "label": "Syrian army enters Lebanon",
+      "path": [
+       [
+        36.29,
+        33.51
+       ],
+       [
+        36.0,
+        33.67
+       ],
+       [
+        35.9,
+        33.8
+       ],
+       [
+        35.7,
+        33.82
+       ],
+       [
+        35.58,
+        33.84
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Kamal Jumblatt",
+      "label": "LNM and PLO offensive in the mountains",
+      "path": [
+       [
+        35.5,
+        33.88
+       ],
+       [
+        35.6,
+        33.86
+       ],
+       [
+        35.7,
+        33.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bashir Gemayel",
+      "label": "Christian militias on Tel al-Zaatar",
+      "path": [
+       [
+        35.53,
+        33.89
+       ],
+       [
+        35.55,
+        33.87
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Ain el-Remmaneh bus attack",
+      "kind": "event",
+      "lon": 35.528,
+      "lat": 33.858,
+      "year": 1975,
+      "winner": null,
+      "text": "The killing of bus passengers is taken as the start of the war."
+     },
+     {
+      "name": "Siege of Tel al-Zaatar",
+      "kind": "siege",
+      "lon": 35.55,
+      "lat": 33.865,
+      "year": 1976,
+      "winner": 0,
+      "text": "Christian militias besieged and overran the Palestinian camp, killing many civilians."
+     },
+     {
+      "name": "Syrian intervention",
+      "kind": "war",
+      "lon": 35.9,
+      "lat": 33.8,
+      "year": 1976,
+      "winner": 2,
+      "text": "Syrian troops moved in and later stayed as the core of the Arab Deterrent Force."
+     }
+    ]
+   },
+   {
+    "year": 1982,
+    "label": "Jun to Sep 1982",
+    "title": "Israel invades",
+    "text": "After a 1978 incursion and years of PLO attacks from the south, Israel invaded on 6 June 1982, its columns driving up the coast to Beirut and fighting Syrian forces in the Bekaa. West Beirut was besieged until the PLO agreed to evacuate to Tunis in August. President-elect Bashir Gemayel was assassinated in September, and Lebanese Forces militiamen then killed hundreds of civilians in the Sabra and Shatila camps.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.55,
+        33.82
+       ],
+       [
+        35.7,
+        33.76
+       ],
+       [
+        35.8,
+        33.6
+       ],
+       [
+        35.75,
+        33.4
+       ]
+      ],
+      "label": "Israeli-Syrian line, late Jun 1982"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ariel Sharon",
+      "label": "Coastal drive to Beirut",
+      "path": [
+       [
+        35.13,
+        33.09
+       ],
+       [
+        35.2,
+        33.27
+       ],
+       [
+        35.37,
+        33.56
+       ],
+       [
+        35.47,
+        33.68
+       ],
+       [
+        35.5,
+        33.83
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ariel Sharon",
+      "label": "Eastern thrust into the Bekaa",
+      "path": [
+       [
+        35.62,
+        33.25
+       ],
+       [
+        35.7,
+        33.45
+       ],
+       [
+        35.78,
+        33.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Yasser Arafat",
+      "label": "PLO evacuation by sea",
+      "path": [
+       [
+        35.5,
+        33.9
+       ],
+       [
+        35.0,
+        34.1
+       ],
+       [
+        34.4,
+        34.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Beirut",
+      "kind": "siege",
+      "lon": 35.5,
+      "lat": 33.88,
+      "year": 1982,
+      "winner": 0,
+      "text": "Ten weeks of siege and bombardment ended with the PLO's departure from Lebanon."
+     },
+     {
+      "name": "Battle of Sultan Yacoub",
+      "kind": "battle",
+      "lon": 35.8,
+      "lat": 33.6,
+      "year": 1982,
+      "winner": 2,
+      "text": "Syrian forces stopped an Israeli armoured advance in the Bekaa."
+     },
+     {
+      "name": "Sabra and Shatila massacre",
+      "kind": "event",
+      "lon": 35.49,
+      "lat": 33.86,
+      "year": 1982,
+      "winner": null,
+      "text": "Militiamen killed hundreds and possibly thousands of Palestinian and Lebanese civilians."
+     }
+    ]
+   },
+   {
+    "year": 1983,
+    "label": "1983 to 1984",
+    "title": "Multinational force and the Mountain War",
+    "text": "US, French and Italian troops arrived to support the new government of Amin Gemayel, but suicide bombings of the US Marine and French barracks in October 1983 killed 299 servicemen. In the Chouf mountains Walid Jumblatt's Druze militia defeated the Lebanese Forces, and in February 1984 Amal and Druze fighters took West Beirut. The multinational force withdrew and Israel pulled back toward the south.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.505,
+        33.898
+       ],
+       [
+        35.508,
+        33.888
+       ],
+       [
+        35.515,
+        33.878
+       ],
+       [
+        35.523,
+        33.866
+       ],
+       [
+        35.532,
+        33.855
+       ]
+      ],
+      "label": "Green Line, Beirut"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Walid Jumblatt",
+      "label": "Druze offensive in the Chouf",
+      "path": [
+       [
+        35.65,
+        33.65
+       ],
+       [
+        35.62,
+        33.75
+       ],
+       [
+        35.6,
+        33.81
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Nabih Berri",
+      "label": "Amal takes West Beirut",
+      "path": [
+       [
+        35.5,
+        33.83
+       ],
+       [
+        35.49,
+        33.88
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Amin Gemayel",
+      "label": "Lebanese army and Lebanese Forces fall back",
+      "path": [
+       [
+        35.62,
+        33.78
+       ],
+       [
+        35.55,
+        33.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Beirut barracks bombings",
+      "kind": "event",
+      "lon": 35.49,
+      "lat": 33.83,
+      "year": 1983,
+      "winner": null,
+      "text": "Truck bombs killed 241 US and 58 French servicemen, hastening the force's withdrawal."
+     },
+     {
+      "name": "Mountain War",
+      "kind": "battle",
+      "lon": 35.66,
+      "lat": 33.81,
+      "year": 1983,
+      "winner": 1,
+      "text": "Druze forces drove Christian militias out of most of the Chouf."
+     },
+     {
+      "name": "6 February uprising",
+      "kind": "event",
+      "lon": 35.49,
+      "lat": 33.89,
+      "year": 1984,
+      "winner": 1,
+      "text": "Amal and Druze militias took control of West Beirut from the army."
+     }
+    ]
+   },
+   {
+    "year": 1985,
+    "label": "1985 to 1988",
+    "title": "Wars within the war",
+    "text": "Israel withdrew in 1985 to a security zone in the south held with the South Lebanon Army, while the Shia militia Hezbollah, backed by Iran, fought it there. Syrian-backed Amal besieged Palestinian camps in the War of the Camps and later fought Hezbollah, and Syrian troops returned to West Beirut in 1987. Kidnappings of foreigners and car bombings were frequent.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.505,
+        33.898
+       ],
+       [
+        35.508,
+        33.888
+       ],
+       [
+        35.515,
+        33.878
+       ],
+       [
+        35.523,
+        33.866
+       ],
+       [
+        35.532,
+        33.855
+       ]
+      ],
+      "label": "Green Line, Beirut"
+     },
+     {
+      "path": [
+       [
+        35.17,
+        33.17
+       ],
+       [
+        35.35,
+        33.27
+       ],
+       [
+        35.5,
+        33.38
+       ],
+       [
+        35.58,
+        33.52
+       ],
+       [
+        35.7,
+        33.42
+       ],
+       [
+        35.8,
+        33.35
+       ]
+      ],
+      "label": "Edge of Israel's security zone"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Nabih Berri",
+      "label": "Amal against the camps",
+      "path": [
+       [
+        35.5,
+        33.84
+       ],
+       [
+        35.49,
+        33.86
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Ghazi Kanaan",
+      "label": "Syrian troops return to West Beirut",
+      "path": [
+       [
+        35.9,
+        33.8
+       ],
+       [
+        35.65,
+        33.82
+       ],
+       [
+        35.49,
+        33.88
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "War of the Camps",
+      "kind": "siege",
+      "lon": 35.49,
+      "lat": 33.86,
+      "year": 1985,
+      "winner": null,
+      "text": "Amal sieges of Sabra, Shatila and Burj el-Barajneh lasted on and off until 1988."
+     },
+     {
+      "name": "Israel withdraws to the security zone",
+      "kind": "event",
+      "lon": 35.4,
+      "lat": 33.27,
+      "year": 1985,
+      "winner": null,
+      "text": "Israel kept a strip of the south with its allied South Lebanon Army until 2000."
+     }
+    ]
+   },
+   {
+    "year": 1989,
+    "label": "1989 to 1990",
+    "title": "Taif and the end of the war",
+    "text": "With two rival governments, Gen. Michel Aoun declared a war of liberation against Syria in 1989, shelling and being shelled for months. The Taif Agreement of October 1989 rebalanced power between the communities, but Aoun rejected it and fought the Lebanese Forces of Samir Geagea in 1990. On 13 October 1990 Syrian forces stormed the presidential palace at Baabda, Aoun took refuge in the French embassy, and the militias other than Hezbollah were disarmed.",
+    "territories": [
+     {
+      "side": 2,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        35.505,
+        33.898
+       ],
+       [
+        35.508,
+        33.888
+       ],
+       [
+        35.515,
+        33.878
+       ],
+       [
+        35.523,
+        33.866
+       ],
+       [
+        35.532,
+        33.855
+       ]
+      ],
+      "label": "Green Line, Beirut"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Hafez al-Assad",
+      "label": "Syrian assault on Baabda",
+      "path": [
+       [
+        35.9,
+        33.8
+       ],
+       [
+        35.7,
+        33.82
+       ],
+       [
+        35.55,
+        33.83
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Samir Geagea",
+      "label": "Lebanese Forces against Aoun",
+      "path": [
+       [
+        35.62,
+        33.98
+       ],
+       [
+        35.58,
+        33.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Taif Agreement",
+      "kind": "treaty",
+      "lon": 40.42,
+      "lat": 21.27,
+      "year": 1989,
+      "winner": null,
+      "text": "Lebanese MPs meeting in Saudi Arabia agreed a new power-sharing formula."
+     },
+     {
+      "name": "Fall of Baabda",
+      "kind": "battle",
+      "lon": 35.545,
+      "lat": 33.835,
+      "year": 1990,
+      "winner": 2,
+      "text": "Syrian and allied Lebanese army forces ousted Aoun, ending the fighting."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "soviet-afghan-war",
+  "name": "Soviet-Afghan War",
+  "start": 1979,
+  "end": 1989,
+  "kind": "war",
+  "summary": "In December 1979 the Soviet Union invaded Afghanistan to prop up the communist government against a growing Islamist rebellion. For nearly a decade Soviet and Afghan government forces held the cities and roads while mujahideen groups, armed through Pakistan by the United States, Saudi Arabia and others, controlled much of the countryside. The Soviets withdrew in 1989 after about 15,000 deaths, while perhaps a million or more Afghans died and some five million became refugees.",
+  "sides": [
+   {
+    "name": "Soviet Union and Afghan government",
+    "color": "#c0473a",
+    "leaders": [
+     "Leonid Brezhnev",
+     "Babrak Karmal",
+     "Mohammad Najibullah",
+     "Lt Gen. Boris Gromov"
+    ]
+   },
+   {
+    "name": "Mujahideen",
+    "color": "#3a9a5b",
+    "leaders": [
+     "Ahmad Shah Massoud",
+     "Gulbuddin Hekmatyar",
+     "Jalaluddin Haqqani",
+     "Ismail Khan",
+     "Burhanuddin Rabbani"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 67.5,
+    "lat": 34.2,
+    "r": 5.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1979,
+    "label": "Mar to Dec 1979",
+    "title": "The Soviet invasion",
+    "text": "The communist government that seized power in 1978 faced spreading revolts, including a rising in Herat in March 1979. On 27 December Soviet special forces stormed the Tajbeg Palace, killed President Hafizullah Amin and installed Babrak Karmal, while the 40th Army crossed the Amu Darya at Termez and drove over the Salang Pass to Kabul, with a second column from Kushka to Herat and Kandahar.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "USSR",
+       "Afghanistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lt Gen. Yuri Tukharinov",
+      "label": "40th Army to Kabul",
+      "path": [
+       [
+        67.28,
+        37.22
+       ],
+       [
+        68.7,
+        36.2
+       ],
+       [
+        69.07,
+        35.32
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lt Gen. Yuri Tukharinov",
+      "label": "Western column to Kandahar",
+      "path": [
+       [
+        62.35,
+        35.28
+       ],
+       [
+        62.2,
+        34.35
+       ],
+       [
+        62.2,
+        32.37
+       ],
+       [
+        64.36,
+        31.59
+       ],
+       [
+        65.71,
+        31.61
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Herat uprising",
+      "kind": "event",
+      "lon": 62.2,
+      "lat": 34.35,
+      "year": 1979,
+      "winner": null,
+      "text": "A revolt in Herat, put down at great cost, showed how weak the government's hold had become."
+     },
+     {
+      "name": "Operation Storm-333",
+      "kind": "battle",
+      "lon": 69.13,
+      "lat": 34.45,
+      "year": 1979,
+      "winner": 0,
+      "text": "Soviet commandos stormed the palace and killed Amin."
+     }
+    ]
+   },
+   {
+    "year": 1982,
+    "label": "1980 to 1985",
+    "title": "Cities against countryside",
+    "text": "Over 100,000 Soviet troops held Kabul, the main towns and the ring road, while mujahideen groups based in Pakistan ambushed convoys and raided garrisons. Ahmad Shah Massoud beat off repeated Soviet offensives into the Panjshir Valley, which commanded the Salang highway. Bombing and sweeps emptied whole districts, and refugees poured into Pakistan and Iran.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "USSR",
+       "Afghanistan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lt Gen. Viktor Yermakov",
+      "label": "Panjshir offensives",
+      "path": [
+       [
+        69.17,
+        34.53
+       ],
+       [
+        69.25,
+        35.0
+       ],
+       [
+        69.6,
+        35.25
+       ],
+       [
+        69.9,
+        35.45
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jalaluddin Haqqani",
+      "label": "Supply line from Miranshah",
+      "path": [
+       [
+        70.07,
+        33.0
+       ],
+       [
+        69.92,
+        33.34
+       ],
+       [
+        69.22,
+        33.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gulbuddin Hekmatyar",
+      "label": "Supply line through the Khyber",
+      "path": [
+       [
+        71.57,
+        34.01
+       ],
+       [
+        71.1,
+        34.08
+       ],
+       [
+        70.45,
+        34.43
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Panjshir offensives",
+      "kind": "battle",
+      "lon": 69.75,
+      "lat": 35.35,
+      "year": 1982,
+      "winner": null,
+      "text": "Nine Soviet offensives failed to destroy Massoud's forces in the valley."
+     }
+    ]
+   },
+   {
+    "year": 1986,
+    "label": "1986 to Jan 1988",
+    "title": "Stingers and stalemate",
+    "text": "Mikhail Gorbachev called the war a bleeding wound, and in 1986 Mohammad Najibullah replaced Karmal and offered national reconciliation. US-supplied Stinger missiles, first used near Jalalabad in September 1986, made low flying costly for Soviet aircraft. Soviet operations could still win set battles, such as the relief of besieged Khost under Lt Gen. Boris Gromov in Operation Magistral, but not the war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "USSR",
+       "Afghanistan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lt Gen. Boris Gromov",
+      "label": "Operation Magistral to Khost",
+      "path": [
+       [
+        69.17,
+        34.53
+       ],
+       [
+        69.22,
+        33.6
+       ],
+       [
+        69.55,
+        33.45
+       ],
+       [
+        69.92,
+        33.34
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jalaluddin Haqqani",
+      "label": "Siege of Khost",
+      "path": [
+       [
+        70.07,
+        33.0
+       ],
+       [
+        69.93,
+        33.05
+       ],
+       [
+        69.92,
+        33.3
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Zhawar",
+      "kind": "battle",
+      "lon": 69.93,
+      "lat": 33.05,
+      "year": 1986,
+      "winner": 0,
+      "text": "Afghan and Soviet forces overran a major mujahideen base near the border, then withdrew."
+     },
+     {
+      "name": "First Stinger shootdowns",
+      "kind": "event",
+      "lon": 70.45,
+      "lat": 34.43,
+      "year": 1986,
+      "winner": 1,
+      "text": "Mujahideen shot down Soviet helicopters with shoulder-fired missiles near Jalalabad."
+     },
+     {
+      "name": "Operation Magistral",
+      "kind": "battle",
+      "lon": 69.6,
+      "lat": 33.45,
+      "year": 1988,
+      "winner": 0,
+      "text": "A large Soviet offensive reopened the road to Khost."
+     }
+    ]
+   },
+   {
+    "year": 1988,
+    "label": "Apr 1988 to Feb 1989",
+    "title": "The Soviet withdrawal",
+    "text": "The Geneva Accords of April 1988 committed the Soviet Union to leave. Half its troops left by August 1988 and the rest followed over the winter, back along the Salang highway and the western road. On 15 February 1989 Lt Gen. Boris Gromov walked last across the Friendship Bridge into Soviet Uzbekistan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "USSR",
+       "Afghanistan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lt Gen. Boris Gromov",
+      "label": "40th Army withdraws north",
+      "path": [
+       [
+        69.17,
+        34.53
+       ],
+       [
+        69.07,
+        35.32
+       ],
+       [
+        68.7,
+        36.2
+       ],
+       [
+        67.42,
+        37.23
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Lt Gen. Boris Gromov",
+      "label": "Western withdrawal",
+      "path": [
+       [
+        65.71,
+        31.61
+       ],
+       [
+        62.2,
+        32.37
+       ],
+       [
+        62.2,
+        34.35
+       ],
+       [
+        62.35,
+        35.28
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Geneva Accords",
+      "kind": "treaty",
+      "lon": 6.14,
+      "lat": 46.2,
+      "year": 1988,
+      "winner": null,
+      "text": "Afghanistan, Pakistan, the US and the USSR signed agreements setting the timetable for withdrawal."
+     },
+     {
+      "name": "Last Soviet troops leave",
+      "kind": "event",
+      "lon": 67.42,
+      "lat": 37.23,
+      "year": 1989,
+      "winner": null,
+      "text": "The withdrawal ended at the Friendship Bridge over the Amu Darya."
+     }
+    ]
+   },
+   {
+    "year": 1989,
+    "label": "Mar 1989 to 1992",
+    "title": "The government holds on",
+    "text": "Without Soviet troops but with Soviet supplies, Najibullah's government defeated a large mujahideen assault on Jalalabad in 1989. It survived until aid ended with the Soviet collapse, and in April 1992 mujahideen forces entered Kabul, after which the factions fought each other for the capital.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Afghanistan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Pakistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Gulbuddin Hekmatyar",
+      "label": "Mujahideen assault on Jalalabad",
+      "path": [
+       [
+        71.1,
+        34.08
+       ],
+       [
+        70.7,
+        34.3
+       ],
+       [
+        70.45,
+        34.43
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ahmad Shah Massoud",
+      "label": "Into Kabul, 1992",
+      "path": [
+       [
+        69.7,
+        35.3
+       ],
+       [
+        69.2,
+        35.0
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Jalalabad",
+      "kind": "battle",
+      "lon": 70.45,
+      "lat": 34.43,
+      "year": 1989,
+      "winner": 0,
+      "text": "Government forces held the city against months of mujahideen attacks."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "central-american-civil-wars",
+  "name": "Central American civil wars",
+  "start": 1979,
+  "end": 1996,
+  "kind": "conflict",
+  "summary": "From 1979 Nicaragua, El Salvador and Guatemala were torn by civil wars rooted in inequality and military rule and sharpened by the Cold War. In Nicaragua the Sandinistas overthrew Somoza and then fought US-backed Contra rebels, while in El Salvador and Guatemala leftist guerrillas fought US-backed military governments whose campaigns killed large numbers of civilians. Regional peace plans ended the wars between 1990 and 1996, after some 300,000 deaths across the three countries.",
+  "sides": [
+   {
+    "name": "US-backed governments and the Contras",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Ronald Reagan",
+     "Jose Napoleon Duarte",
+     "Efrain Rios Montt",
+     "Enrique Bermudez"
+    ]
+   },
+   {
+    "name": "Sandinistas and leftist guerrillas (FMLN, URNG)",
+    "color": "#c0473a",
+    "leaders": [
+     "Daniel Ortega",
+     "Humberto Ortega",
+     "Joaquin Villalobos",
+     "Schafik Handal",
+     "Rolando Moran"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -88.0,
+    "lat": 13.9,
+    "r": 4.8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1979,
+    "label": "Jun to Jul 1979",
+    "title": "The Sandinista revolution",
+    "text": "A broad uprising led by the Sandinista National Liberation Front (FSLN) brought down the Somoza dynasty in Nicaragua. While Edén Pastora's southern front pinned the National Guard near the Costa Rican border, insurrections took city after city, and Anastasio Somoza fled on 17 July. Two days later the Sandinistas entered Managua.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Nicaragua"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "El Salvador",
+       "Guatemala",
+       "Honduras"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Eden Pastora",
+      "label": "FSLN southern front",
+      "path": [
+       [
+        -85.62,
+        11.22
+       ],
+       [
+        -85.83,
+        11.44
+       ],
+       [
+        -86.1,
+        11.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Daniel Ortega",
+      "label": "FSLN columns converge on Managua",
+      "path": [
+       [
+        -86.88,
+        12.43
+       ],
+       [
+        -86.5,
+        12.25
+       ],
+       [
+        -86.27,
+        12.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Somoza",
+      "kind": "war",
+      "lon": -86.27,
+      "lat": 12.13,
+      "year": 1979,
+      "winner": 1,
+      "text": "The FSLN took power in Managua, ending more than four decades of Somoza family rule."
+     }
+    ]
+   },
+   {
+    "year": 1981,
+    "label": "1980 to 1983",
+    "title": "War in El Salvador and the Guatemalan highlands",
+    "text": "In El Salvador Archbishop Óscar Romero was shot dead in March 1980 and five guerrilla groups united as the FMLN, whose January 1981 offensive failed but left it holding rural zones in Chalatenango and Morazán. Army sweeps there included the El Mozote massacre. In Guatemala the army under Romeo Lucas García and then Efraín Ríos Montt waged a scorched-earth campaign against the URNG guerrillas and Maya villages in the highlands.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Nicaragua"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "El Salvador",
+       "Guatemala",
+       "Honduras"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Joaquin Villalobos",
+      "label": "FMLN in Morazan",
+      "path": [
+       [
+        -88.4,
+        13.6
+       ],
+       [
+        -88.2,
+        13.75
+       ],
+       [
+        -88.1,
+        13.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Atlacatl Battalion",
+      "label": "Salvadoran army sweep",
+      "path": [
+       [
+        -89.19,
+        13.7
+       ],
+       [
+        -88.6,
+        13.5
+       ],
+       [
+        -88.11,
+        13.9
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Efrain Rios Montt",
+      "label": "Guatemalan army into the Ixil highlands",
+      "path": [
+       [
+        -90.51,
+        14.63
+       ],
+       [
+        -90.82,
+        14.66
+       ],
+       [
+        -91.15,
+        15.03
+       ],
+       [
+        -91.15,
+        15.41
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Assassination of Archbishop Romero",
+      "kind": "event",
+      "lon": -89.19,
+      "lat": 13.7,
+      "year": 1980,
+      "winner": null,
+      "text": "Romero was killed while saying Mass, a killing a UN truth commission tied to a death squad."
+     },
+     {
+      "name": "El Mozote massacre",
+      "kind": "event",
+      "lon": -88.11,
+      "lat": 13.9,
+      "year": 1981,
+      "winner": null,
+      "text": "Soldiers killed about 800 villagers in northern Morazán."
+     },
+     {
+      "name": "Highland massacres",
+      "kind": "event",
+      "lon": -91.15,
+      "lat": 15.41,
+      "year": 1982,
+      "winner": null,
+      "text": "Hundreds of Maya villages were destroyed in the army's counterinsurgency campaign."
+     }
+    ]
+   },
+   {
+    "year": 1984,
+    "label": "1982 to 1987",
+    "title": "The Contra war",
+    "text": "The United States funded and trained the Contras, built around former National Guard officers, who raided northern Nicaragua from bases in Honduras under Enrique Bermúdez while a southern group operated from Costa Rica. The Sandinista army grew rapidly with conscription and Cuban and Soviet arms. The CIA mined Nicaraguan harbours in 1984, Congress cut off military aid, and the secret diversion of arms-sale money revealed in 1986 became the Iran-Contra affair.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Nicaragua"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "El Salvador",
+       "Guatemala",
+       "Honduras"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Enrique Bermudez",
+      "label": "FDN Contras raid from Honduras",
+      "path": [
+       [
+        -86.57,
+        14.03
+       ],
+       [
+        -86.4,
+        13.6
+       ],
+       [
+        -86.0,
+        13.09
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Eden Pastora",
+      "label": "ARDE southern front",
+      "path": [
+       [
+        -84.3,
+        10.75
+       ],
+       [
+        -84.4,
+        11.1
+       ],
+       [
+        -84.7,
+        11.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Humberto Ortega",
+      "label": "Sandinista army to the north",
+      "path": [
+       [
+        -86.27,
+        12.13
+       ],
+       [
+        -86.2,
+        12.7
+       ],
+       [
+        -86.0,
+        13.09
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Mining of Nicaraguan harbours",
+      "kind": "event",
+      "lon": -87.17,
+      "lat": 12.48,
+      "year": 1984,
+      "winner": null,
+      "text": "The International Court of Justice later ruled the US support for the Contras unlawful."
+     },
+     {
+      "name": "Iran-Contra affair",
+      "kind": "event",
+      "lon": -86.57,
+      "lat": 14.03,
+      "year": 1986,
+      "winner": null,
+      "text": "Revelations of covert arms sales funding the Contras led to a political scandal in the US."
+     }
+    ]
+   },
+   {
+    "year": 1989,
+    "label": "1987 to 1992",
+    "title": "Esquipulas and peace in Nicaragua and El Salvador",
+    "text": "Costa Rican president Óscar Arias brokered the Esquipulas II accord of 1987, committing the region's presidents to ceasefires and elections. In Nicaragua the Sandinistas lost the February 1990 election to Violeta Chamorro and the Contras demobilised. In El Salvador the FMLN's November 1989 offensive reached San Salvador, soldiers murdered six Jesuit priests, and the stalemate led to the Chapultepec peace accords of 1992.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Nicaragua"
+      ]
+     },
+     {
+      "side": 0,
+      "polities": [
+       "El Salvador",
+       "Guatemala",
+       "Honduras"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Joaquin Villalobos",
+      "label": "FMLN offensive on San Salvador",
+      "path": [
+       [
+        -88.95,
+        13.85
+       ],
+       [
+        -89.1,
+        13.75
+       ],
+       [
+        -89.19,
+        13.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Alfredo Cristiani",
+      "label": "Salvadoran army counterattack",
+      "path": [
+       [
+        -89.25,
+        13.67
+       ],
+       [
+        -89.19,
+        13.71
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Esquipulas II",
+      "kind": "treaty",
+      "lon": -89.35,
+      "lat": 14.56,
+      "year": 1987,
+      "winner": null,
+      "text": "Central American presidents agreed a framework for ending the wars."
+     },
+     {
+      "name": "1989 FMLN offensive",
+      "kind": "battle",
+      "lon": -89.19,
+      "lat": 13.7,
+      "year": 1989,
+      "winner": null,
+      "text": "The guerrillas fought in the capital for weeks, showing neither side could win."
+     },
+     {
+      "name": "Chapultepec Peace Accords",
+      "kind": "treaty",
+      "lon": -99.18,
+      "lat": 19.42,
+      "year": 1992,
+      "winner": null,
+      "text": "The FMLN disarmed and became a political party, and the army was reduced and reformed."
+     }
+    ]
+   },
+   {
+    "year": 1996,
+    "label": "1990 to 1996",
+    "title": "Guatemala's long war ends",
+    "text": "Guatemala's war, which began in 1960, continued at lower intensity while the government and the URNG negotiated under UN mediation. The Agreement on a Firm and Lasting Peace was signed in Guatemala City on 29 December 1996. A UN-backed truth commission later estimated 200,000 dead or disappeared in Guatemala and attributed most violations to state forces.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Guatemala"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Rolando Moran",
+      "label": "URNG in the north and highlands",
+      "path": [
+       [
+        -90.4,
+        16.6
+       ],
+       [
+        -90.9,
+        16.0
+       ],
+       [
+        -91.15,
+        15.41
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Nicaraguan election",
+      "kind": "event",
+      "lon": -86.27,
+      "lat": 12.13,
+      "year": 1990,
+      "winner": null,
+      "text": "Violeta Chamorro's victory brought a peaceful transfer of power from the Sandinistas."
+     },
+     {
+      "name": "Guatemalan Peace Accords",
+      "kind": "treaty",
+      "lon": -90.51,
+      "lat": 14.63,
+      "year": 1996,
+      "winner": null,
+      "text": "The final agreement ended 36 years of civil war."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "iran-iraq-war",
+  "name": "Iran-Iraq War",
+  "start": 1980,
+  "end": 1988,
+  "kind": "war",
+  "summary": "Iraq under Saddam Hussein invaded revolutionary Iran in September 1980, seeking the Shatt al-Arab waterway and Khuzestan and fearing the spread of Iran's revolution. Iran drove the invaders out by 1982 and then pushed into Iraq in costly offensives, while both sides attacked cities and oil tankers and Iraq used chemical weapons. The war ended in a UN ceasefire in 1988 with the borders unchanged and hundreds of thousands dead.",
+  "sides": [
+   {
+    "name": "Iraq",
+    "color": "#c0473a",
+    "leaders": [
+     "Saddam Hussein",
+     "Gen. Adnan Khairallah",
+     "Gen. Maher Abd al-Rashid"
+    ]
+   },
+   {
+    "name": "Iran",
+    "color": "#3a9a5b",
+    "leaders": [
+     "Ruhollah Khomeini",
+     "Akbar Hashemi Rafsanjani",
+     "Col. Ali Sayad Shirazi",
+     "Mohsen Rezaee"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 47.3,
+    "lat": 31.8,
+    "r": 4.0
+   },
+   {
+    "lon": 51.5,
+    "lat": 27.0,
+    "r": 3.0
+   }
+  ],
+  "steps": [
+   {
+    "year": 1980,
+    "label": "Sep to Dec 1980",
+    "title": "Iraq invades",
+    "text": "On 22 September 1980 Iraqi aircraft struck Iranian airfields and divisions crossed the border on a broad front, the main effort into oil-rich Khuzestan. Khorramshahr fell after a month of street fighting and Abadan was besieged, but the advance stalled short of Ahvaz and Dezful as Revolutionary Guards and the regular army stiffened.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        45.6,
+        34.5
+       ],
+       [
+        46.1,
+        33.9
+       ],
+       [
+        46.4,
+        33.1
+       ],
+       [
+        47.5,
+        32.4
+       ],
+       [
+        48.2,
+        32.25
+       ],
+       [
+        48.4,
+        31.6
+       ],
+       [
+        48.55,
+        31.1
+       ],
+       [
+        48.3,
+        30.45
+       ],
+       [
+        48.3,
+        30.25
+       ]
+      ],
+      "label": "Front, Dec 1980"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Gen. Adnan Khairallah",
+      "label": "Iraqi III Corps into Khuzestan",
+      "path": [
+       [
+        47.81,
+        30.51
+       ],
+       [
+        48.05,
+        30.55
+       ],
+       [
+        48.18,
+        30.44
+       ],
+       [
+        48.3,
+        30.34
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gen. Adnan Khairallah",
+      "label": "Iraqi IV Corps toward Dezful",
+      "path": [
+       [
+        47.15,
+        31.84
+       ],
+       [
+        47.6,
+        32.1
+       ],
+       [
+        48.1,
+        32.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gen. Adnan Khairallah",
+      "label": "Central front at Qasr-e Shirin",
+      "path": [
+       [
+        45.4,
+        34.3
+       ],
+       [
+        45.57,
+        34.52
+       ],
+       [
+        45.9,
+        34.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Khorramshahr",
+      "kind": "battle",
+      "lon": 48.18,
+      "lat": 30.44,
+      "year": 1980,
+      "winner": 0,
+      "text": "Iraqi troops took the port city after weeks of house-to-house fighting."
+     },
+     {
+      "name": "Siege of Abadan",
+      "kind": "siege",
+      "lon": 48.3,
+      "lat": 30.34,
+      "year": 1980,
+      "winner": 1,
+      "text": "Abadan and its refinery held out until Iran broke the siege in September 1981."
+     }
+    ]
+   },
+   {
+    "year": 1982,
+    "label": "Sep 1981 to Jun 1982",
+    "title": "Iran strikes back",
+    "text": "Iranian counteroffensives combining the army with masses of Revolutionary Guard and Basij volunteers broke the siege of Abadan, retook Bostan and in March 1982 routed Iraqi forces near Dezful. In May Iran recaptured Khorramshahr, taking about 19,000 prisoners. Saddam pulled his remaining troops back to the border, but Iran's leaders chose to carry the war into Iraq.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        45.55,
+        34.55
+       ],
+       [
+        45.95,
+        33.95
+       ],
+       [
+        46.2,
+        33.15
+       ],
+       [
+        47.4,
+        32.45
+       ],
+       [
+        47.7,
+        31.4
+       ],
+       [
+        47.75,
+        30.9
+       ],
+       [
+        48.0,
+        30.45
+       ],
+       [
+        48.45,
+        30.0
+       ]
+      ],
+      "label": "Front, Jun 1982"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Col. Ali Sayad Shirazi",
+      "label": "Operation Fath ol-Mobin",
+      "path": [
+       [
+        48.4,
+        32.38
+       ],
+       [
+        48.25,
+        32.25
+       ],
+       [
+        47.9,
+        32.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Mohsen Rezaee",
+      "label": "Operation Beit ol-Moqaddas",
+      "path": [
+       [
+        48.67,
+        31.32
+       ],
+       [
+        48.4,
+        30.85
+       ],
+       [
+        48.18,
+        30.44
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Fath ol-Mobin",
+      "kind": "battle",
+      "lon": 48.2,
+      "lat": 32.25,
+      "year": 1982,
+      "winner": 1,
+      "text": "Iran destroyed several Iraqi divisions west of Dezful and Shush."
+     },
+     {
+      "name": "Liberation of Khorramshahr",
+      "kind": "battle",
+      "lon": 48.18,
+      "lat": 30.44,
+      "year": 1982,
+      "winner": 1,
+      "text": "Iran retook the city on 24 May, the turning point of the war."
+     }
+    ]
+   },
+   {
+    "year": 1984,
+    "label": "Jul 1982 to 1986",
+    "title": "Human waves and the war of attrition",
+    "text": "Iran's offensives toward Basra in 1982 and through the Hawizeh marshes in 1984 cost tens of thousands of lives for little ground, as Iraq dug in behind flooded barriers and used mustard and nerve gas. Both sides fired missiles at each other's cities, and from 1984 attacked tankers in the Gulf. In February 1986 Iranian troops crossed the Shatt al-Arab and seized the Faw peninsula.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        45.55,
+        34.55
+       ],
+       [
+        45.95,
+        33.95
+       ],
+       [
+        46.2,
+        33.15
+       ],
+       [
+        47.4,
+        32.45
+       ],
+       [
+        47.55,
+        31.4
+       ],
+       [
+        47.6,
+        31.05
+       ],
+       [
+        47.85,
+        30.7
+       ],
+       [
+        48.0,
+        30.45
+       ],
+       [
+        48.4,
+        30.08
+       ],
+       [
+        48.15,
+        30.02
+       ],
+       [
+        48.12,
+        29.93
+       ]
+      ],
+      "label": "Front, 1986"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mohsen Rezaee",
+      "label": "Operation Ramadan toward Basra",
+      "path": [
+       [
+        48.25,
+        30.75
+       ],
+       [
+        48.0,
+        30.62
+       ],
+       [
+        47.85,
+        30.52
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Col. Ali Sayad Shirazi",
+      "label": "Operation Dawn 8 seizes Faw",
+      "path": [
+       [
+        48.55,
+        30.12
+       ],
+       [
+        48.47,
+        30.02
+       ],
+       [
+        48.48,
+        29.98
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gen. Maher Abd al-Rashid",
+      "label": "Iraqi Seventh Corps holds Basra",
+      "path": [
+       [
+        47.81,
+        30.51
+       ],
+       [
+        47.95,
+        30.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Ramadan",
+      "kind": "battle",
+      "lon": 47.95,
+      "lat": 30.55,
+      "year": 1982,
+      "winner": 0,
+      "text": "Iran's first major offensive into Iraq failed before Basra's defences."
+     },
+     {
+      "name": "Battle of the Marshes",
+      "kind": "battle",
+      "lon": 47.58,
+      "lat": 31.05,
+      "year": 1984,
+      "winner": null,
+      "text": "Iran seized the Majnoon oil islands while Iraq used chemical weapons on a large scale."
+     },
+     {
+      "name": "First Battle of al-Faw",
+      "kind": "battle",
+      "lon": 48.48,
+      "lat": 29.98,
+      "year": 1986,
+      "winner": 1,
+      "text": "Iran's capture of Faw cut Iraq off from the Gulf coast."
+     }
+    ]
+   },
+   {
+    "year": 1987,
+    "label": "1987",
+    "title": "Karbala 5 and the Tanker War",
+    "text": "Iran's largest attempt on Basra, Karbala 5, broke into the outer defences around Fish Lake but stalled with enormous losses on both sides. In the Gulf, attacks on shipping drew in the superpowers: the US reflagged Kuwaiti tankers and escorted convoys, and an Iraqi missile struck the frigate USS Stark.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        47.75,
+        30.9
+       ],
+       [
+        47.9,
+        30.6
+       ],
+       [
+        47.98,
+        30.45
+       ],
+       [
+        48.4,
+        30.08
+       ],
+       [
+        48.15,
+        30.02
+       ]
+      ],
+      "label": "Front before Basra, 1987"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mohsen Rezaee",
+      "label": "Karbala 5 toward Basra",
+      "path": [
+       [
+        48.15,
+        30.55
+       ],
+       [
+        48.0,
+        30.5
+       ],
+       [
+        47.92,
+        30.48
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Revolutionary Guard navy",
+      "label": "Attacks on Gulf shipping",
+      "path": [
+       [
+        56.3,
+        27.1
+       ],
+       [
+        53.5,
+        26.5
+       ],
+       [
+        51.5,
+        27.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "US Navy escort force",
+      "label": "Convoys of reflagged tankers",
+      "path": [
+       [
+        56.3,
+        26.4
+       ],
+       [
+        52.5,
+        26.6
+       ],
+       [
+        48.5,
+        29.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Karbala 5",
+      "kind": "battle",
+      "lon": 47.95,
+      "lat": 30.48,
+      "year": 1987,
+      "winner": 0,
+      "text": "Iran gained ground east of Basra but could not take the city."
+     },
+     {
+      "name": "USS Stark incident",
+      "kind": "event",
+      "lon": 51.0,
+      "lat": 27.5,
+      "year": 1987,
+      "winner": null,
+      "text": "An Iraqi Exocet missile killed 37 US sailors, and Iraq called it a mistake."
+     }
+    ]
+   },
+   {
+    "year": 1988,
+    "label": "Mar to Aug 1988",
+    "title": "Iraq's final offensives and the ceasefire",
+    "text": "In March 1988 Iraqi aircraft gassed the Kurdish town of Halabja, killing thousands, during the Anfal campaign. From April Iraqi forces, led by the Republican Guard, retook Faw and drove Iran from its positions east of Basra and elsewhere, while US warships destroyed Iranian naval forces. On 18 July Iran accepted UN Resolution 598 and a ceasefire took effect on 20 August 1988.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        45.55,
+        34.55
+       ],
+       [
+        45.95,
+        33.95
+       ],
+       [
+        46.2,
+        33.15
+       ],
+       [
+        47.4,
+        32.45
+       ],
+       [
+        47.7,
+        31.4
+       ],
+       [
+        47.75,
+        30.9
+       ],
+       [
+        48.0,
+        30.45
+       ],
+       [
+        48.45,
+        30.0
+       ]
+      ],
+      "label": "Ceasefire line, Aug 1988"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Gen. Maher Abd al-Rashid",
+      "label": "Iraq retakes Faw",
+      "path": [
+       [
+        48.0,
+        30.3
+       ],
+       [
+        48.2,
+        30.1
+       ],
+       [
+        48.48,
+        29.98
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Republican Guard",
+      "label": "Offensives east of Basra",
+      "path": [
+       [
+        47.81,
+        30.51
+       ],
+       [
+        48.0,
+        30.55
+       ],
+       [
+        48.25,
+        30.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Halabja chemical attack",
+      "kind": "event",
+      "lon": 45.99,
+      "lat": 35.18,
+      "year": 1988,
+      "winner": null,
+      "text": "Iraqi chemical bombs killed an estimated 3,000 to 5,000 Kurdish civilians."
+     },
+     {
+      "name": "Second Battle of al-Faw",
+      "kind": "battle",
+      "lon": 48.48,
+      "lat": 29.98,
+      "year": 1988,
+      "winner": 0,
+      "text": "Iraq recaptured the peninsula in about 36 hours."
+     },
+     {
+      "name": "UN Resolution 598 ceasefire",
+      "kind": "treaty",
+      "lon": 47.5,
+      "lat": 31.5,
+      "year": 1988,
+      "winner": null,
+      "text": "The ceasefire left the pre-war border in place."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "falklands-war",
+  "name": "Falklands War",
+  "start": 1982,
+  "end": 1982,
+  "kind": "war",
+  "summary": "On 2 April 1982 Argentina's military government seized the British-ruled Falkland Islands, which it claims as the Malvinas, and South Georgia. Britain sent a naval task force 13,000 km south, retook South Georgia, landed at San Carlos and advanced across East Falkland until the Argentine garrison at Stanley surrendered on 14 June. About 650 Argentine and 255 British servicemen and three islanders died, and defeat hastened the fall of Argentina's junta.",
+  "sides": [
+   {
+    "name": "Argentina",
+    "color": "#4a9bd0",
+    "leaders": [
+     "Gen. Leopoldo Galtieri",
+     "Adm. Jorge Anaya",
+     "Brig. Gen. Mario Menendez"
+    ]
+   },
+   {
+    "name": "United Kingdom",
+    "color": "#c0473a",
+    "leaders": [
+     "Margaret Thatcher",
+     "Rear Adm. Sandy Woodward",
+     "Maj. Gen. Jeremy Moore",
+     "Brig. Julian Thompson"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -59.0,
+    "lat": -51.8,
+    "r": 2.5
+   },
+   {
+    "lon": -36.6,
+    "lat": -54.3,
+    "r": 1.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1982,
+    "label": "2 to 3 Apr 1982",
+    "title": "Argentina takes the islands",
+    "text": "Argentine marines and special forces landed near Stanley in Operation Rosario and, after a short fight with the small Royal Marines garrison, Governor Rex Hunt surrendered. South Georgia was taken the next day. The UN Security Council demanded Argentine withdrawal, and Britain began assembling a task force.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Rear Adm. Carlos Busser",
+      "label": "Amphibious force to Stanley",
+      "path": [
+       [
+        -62.1,
+        -38.9
+       ],
+       [
+        -60.5,
+        -45.0
+       ],
+       [
+        -58.5,
+        -50.0
+       ],
+       [
+        -57.85,
+        -51.69
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Argentine navy",
+      "label": "Landing at South Georgia",
+      "path": [
+       [
+        -58.5,
+        -50.5
+       ],
+       [
+        -45.0,
+        -53.5
+       ],
+       [
+        -36.51,
+        -54.28
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Invasion of the Falklands",
+      "kind": "battle",
+      "lon": -57.85,
+      "lat": -51.69,
+      "year": 1982,
+      "winner": 0,
+      "text": "The garrison at Government House surrendered after a few hours."
+     },
+     {
+      "name": "Invasion of South Georgia",
+      "kind": "battle",
+      "lon": -36.51,
+      "lat": -54.28,
+      "year": 1982,
+      "winner": 0,
+      "text": "Royal Marines at Grytviken damaged a corvette before surrendering."
+     }
+    ]
+   },
+   {
+    "year": 1982,
+    "label": "Apr to mid May 1982",
+    "title": "The task force sails south",
+    "text": "Carriers and amphibious ships sailed from Portsmouth on 5 April and staged through Ascension Island while diplomacy failed. British forces retook South Georgia on 25 April. On 2 May the submarine HMS Conqueror sank the cruiser General Belgrano with 323 lives lost, after which the Argentine fleet stayed in port, and two days later an air-launched Exocet wrecked the destroyer HMS Sheffield.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Rear Adm. Sandy Woodward",
+      "label": "Carrier task force",
+      "path": [
+       [
+        -1.1,
+        50.8
+       ],
+       [
+        -14.4,
+        -7.95
+       ],
+       [
+        -35.0,
+        -35.0
+       ],
+       [
+        -52.0,
+        -48.5
+       ],
+       [
+        -56.5,
+        -51.0
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "HMS Conqueror",
+      "label": "Submarine patrol",
+      "path": [
+       [
+        -56.0,
+        -53.0
+       ],
+       [
+        -61.53,
+        -55.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Recapture of South Georgia",
+      "kind": "battle",
+      "lon": -36.51,
+      "lat": -54.28,
+      "year": 1982,
+      "winner": 1,
+      "text": "The Argentine garrison at Grytviken surrendered without a fight on land."
+     },
+     {
+      "name": "Sinking of the General Belgrano",
+      "kind": "battle",
+      "lon": -61.53,
+      "lat": -55.4,
+      "year": 1982,
+      "winner": 1,
+      "text": "The deadliest single loss of the war."
+     },
+     {
+      "name": "Sinking of HMS Sheffield",
+      "kind": "battle",
+      "lon": -56.93,
+      "lat": -53.07,
+      "year": 1982,
+      "winner": 0,
+      "text": "An Exocet missile set the destroyer ablaze, killing 20 crew."
+     }
+    ]
+   },
+   {
+    "year": 1982,
+    "label": "21 May to 10 Jun 1982",
+    "title": "San Carlos and the advance",
+    "text": "3 Commando Brigade under Brig. Julian Thompson landed at San Carlos Water on 21 May, and Argentine pilots sank several British ships in the anchorage in the following days. 2 Para won at Goose Green, then the commandos and paratroops marched across the north of East Falkland to the hills west of Stanley, while 5 Infantry Brigade moved by sea to Fitzroy, where air attacks hit the landing ships Sir Galahad and Sir Tristram.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -57.98,
+        -51.64
+       ],
+       [
+        -58.04,
+        -51.68
+       ],
+       [
+        -58.0,
+        -51.72
+       ],
+       [
+        -57.96,
+        -51.74
+       ]
+      ],
+      "label": "Argentine defences west of Stanley"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Brig. Julian Thompson",
+      "label": "3 Commando Brigade march on Stanley",
+      "path": [
+       [
+        -59.03,
+        -51.5
+       ],
+       [
+        -58.6,
+        -51.47
+       ],
+       [
+        -58.42,
+        -51.57
+       ],
+       [
+        -58.12,
+        -51.68
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Col. H. Jones",
+      "label": "2 Para to Goose Green",
+      "path": [
+       [
+        -59.0,
+        -51.55
+       ],
+       [
+        -58.97,
+        -51.75
+       ],
+       [
+        -58.97,
+        -51.83
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Brig. Tony Wilson",
+      "label": "5 Infantry Brigade to Fitzroy",
+      "path": [
+       [
+        -58.97,
+        -51.83
+       ],
+       [
+        -58.5,
+        -51.88
+       ],
+       [
+        -58.22,
+        -51.79
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Brig. Gen. Mario Menendez",
+      "label": "Garrison holds the Stanley perimeter",
+      "path": [
+       [
+        -57.85,
+        -51.69
+       ],
+       [
+        -57.97,
+        -51.69
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "San Carlos landings",
+      "kind": "battle",
+      "lon": -59.03,
+      "lat": -51.5,
+      "year": 1982,
+      "winner": 1,
+      "text": "About 4,000 troops got ashore, though air attacks sank HMS Ardent, Antelope and Coventry and the Atlantic Conveyor nearby."
+     },
+     {
+      "name": "Battle of Goose Green",
+      "kind": "battle",
+      "lon": -58.97,
+      "lat": -51.83,
+      "year": 1982,
+      "winner": 1,
+      "text": "2 Para took the settlement and over 900 prisoners, its commander H. Jones being killed."
+     },
+     {
+      "name": "Bluff Cove air attacks",
+      "kind": "battle",
+      "lon": -58.22,
+      "lat": -51.79,
+      "year": 1982,
+      "winner": 0,
+      "text": "Bombs on two landing ships killed 48 British servicemen."
+     }
+    ]
+   },
+   {
+    "year": 1982,
+    "label": "11 to 14 Jun 1982",
+    "title": "The fall of Stanley",
+    "text": "In night attacks British battalions took Mount Longdon, Two Sisters and Mount Harriet on 11 to 12 June, then Wireless Ridge and Mount Tumbledown on 13 to 14 June. With the high ground lost, Brig. Gen. Mario Menéndez surrendered the garrison of over 9,000 men to Maj. Gen. Jeremy Moore on 14 June. Galtieri was removed days later.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Argentina"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -57.93,
+        -51.665
+       ],
+       [
+        -57.95,
+        -51.695
+       ],
+       [
+        -57.98,
+        -51.72
+       ]
+      ],
+      "label": "Last Argentine line, 13 Jun"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Maj. Gen. Jeremy Moore",
+      "label": "Night attacks on the mountains",
+      "path": [
+       [
+        -58.12,
+        -51.68
+       ],
+       [
+        -58.04,
+        -51.69
+       ],
+       [
+        -57.95,
+        -51.7
+       ],
+       [
+        -57.86,
+        -51.69
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Col. David Chaundler",
+      "label": "2 Para on Wireless Ridge",
+      "path": [
+       [
+        -58.0,
+        -51.64
+       ],
+       [
+        -57.93,
+        -51.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Mount Longdon",
+      "kind": "battle",
+      "lon": -57.98,
+      "lat": -51.66,
+      "year": 1982,
+      "winner": 1,
+      "text": "3 Para took the mountain in the costliest British action of the war."
+     },
+     {
+      "name": "Battle of Mount Tumbledown",
+      "kind": "battle",
+      "lon": -57.95,
+      "lat": -51.7,
+      "year": 1982,
+      "winner": 1,
+      "text": "The Scots Guards cleared Argentine marines from the last key height."
+     },
+     {
+      "name": "Argentine surrender at Stanley",
+      "kind": "event",
+      "lon": -57.85,
+      "lat": -51.69,
+      "year": 1982,
+      "winner": 1,
+      "text": "The surrender ended the fighting after 74 days."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "gulf-war",
+  "name": "Gulf War",
+  "start": 1990,
+  "end": 1991,
+  "kind": "war",
+  "summary": "Iraq invaded and annexed Kuwait in August 1990 amid disputes over debt, oil prices and borders. A US-led coalition of 35 countries, authorised by the UN, built up forces in Saudi Arabia, waged a six-week air campaign from January 1991 and liberated Kuwait in a 100-hour ground offensive. Saddam Hussein stayed in power under sanctions, and the war set the pattern for later US involvement in the region.",
+  "sides": [
+   {
+    "name": "Iraq",
+    "color": "#c0473a",
+    "leaders": [
+     "Saddam Hussein",
+     "Ali Hassan al-Majid",
+     "Lt Gen. Ayad Futayyih al-Rawi"
+    ]
+   },
+   {
+    "name": "US-led coalition",
+    "color": "#3b6fb6",
+    "leaders": [
+     "George H. W. Bush",
+     "Gen. Norman Schwarzkopf",
+     "Gen. Colin Powell",
+     "Lt Gen. Khalid bin Sultan"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 46.8,
+    "lat": 29.6,
+    "r": 3.8
+   },
+   {
+    "lon": 43.5,
+    "lat": 32.8,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1990,
+    "label": "2 Aug 1990",
+    "title": "Iraq invades Kuwait",
+    "text": "Republican Guard divisions crossed the border before dawn on 2 August and reached Kuwait City within hours, while helicopter-borne commandos attacked the Dasman Palace. The emir escaped to Saudi Arabia, the UN imposed sanctions, and Iraq declared Kuwait its nineteenth province.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq",
+       "Kuwait"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lt Gen. Ayad Futayyih al-Rawi",
+      "label": "Republican Guard into Kuwait",
+      "path": [
+       [
+        47.72,
+        30.11
+       ],
+       [
+        47.71,
+        29.97
+       ],
+       [
+        47.66,
+        29.34
+       ],
+       [
+        47.98,
+        29.37
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Republican Guard",
+      "label": "Advance to the Saudi border",
+      "path": [
+       [
+        47.98,
+        29.37
+       ],
+       [
+        48.1,
+        28.9
+       ],
+       [
+        48.4,
+        28.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Invasion of Kuwait",
+      "kind": "battle",
+      "lon": 47.98,
+      "lat": 29.37,
+      "year": 1990,
+      "winner": 0,
+      "text": "Kuwait's small army was overrun in less than two days."
+     },
+     {
+      "name": "Battle of the Dasman Palace",
+      "kind": "battle",
+      "lon": 47.99,
+      "lat": 29.39,
+      "year": 1990,
+      "winner": 0,
+      "text": "The emir's brother was killed defending the palace."
+     }
+    ]
+   },
+   {
+    "year": 1990,
+    "label": "Aug 1990 to Jan 1991",
+    "title": "Desert Shield",
+    "text": "Fearing a move on the Saudi oil fields, the US rushed troops to Saudi Arabia from 7 August, and a coalition of 35 countries eventually massed about 700,000 troops there. Iraq fortified Kuwait with minefields and trenches. UN Resolution 678 authorised force if Iraq had not left by 15 January 1991.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq",
+       "Kuwait"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia",
+       "United States",
+       "United Kingdom",
+       "France",
+       "Egypt",
+       "Syria",
+       "Qatar",
+       "United Arab Emirates",
+       "Oman"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        46.55,
+        29.1
+       ],
+       [
+        47.1,
+        28.95
+       ],
+       [
+        47.7,
+        28.6
+       ],
+       [
+        48.42,
+        28.53
+       ]
+      ],
+      "label": "Saudi-Kuwait front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Gen. Norman Schwarzkopf",
+      "label": "US forces deploy inland",
+      "path": [
+       [
+        50.15,
+        26.27
+       ],
+       [
+        48.5,
+        27.4
+       ],
+       [
+        45.97,
+        28.43
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. Khalid bin Sultan",
+      "label": "Arab coalition forces",
+      "path": [
+       [
+        50.15,
+        26.27
+       ],
+       [
+        49.2,
+        27.5
+       ],
+       [
+        48.49,
+        28.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Desert Shield",
+      "kind": "event",
+      "lon": 50.15,
+      "lat": 26.27,
+      "year": 1990,
+      "winner": null,
+      "text": "The first US units arrived in Dhahran within days of the invasion."
+     },
+     {
+      "name": "UN Resolution 678",
+      "kind": "event",
+      "lon": 47.1,
+      "lat": 29.2,
+      "year": 1990,
+      "winner": null,
+      "text": "The Security Council set a deadline of 15 January 1991."
+     }
+    ]
+   },
+   {
+    "year": 1991,
+    "label": "17 Jan to 23 Feb 1991",
+    "title": "The air war",
+    "text": "Operation Desert Storm opened on 17 January with strikes on Baghdad, air defences and command centres, followed by weeks of bombing of Iraqi forces in Kuwait. Iraq fired Scud missiles at Israel and Saudi Arabia, set Kuwaiti oil wells alight and released oil into the Gulf. An Iraqi thrust into the Saudi town of Khafji was thrown back, while coalition armies shifted secretly west for an outflanking attack.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq",
+       "Kuwait"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia",
+       "United States",
+       "United Kingdom",
+       "France",
+       "Egypt",
+       "Syria",
+       "Qatar",
+       "United Arab Emirates",
+       "Oman"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        46.55,
+        29.1
+       ],
+       [
+        47.1,
+        28.95
+       ],
+       [
+        47.7,
+        28.6
+       ],
+       [
+        48.42,
+        28.53
+       ]
+      ],
+      "label": "Saudi-Kuwait front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Maj. Gen. Salah Aboud Mahmoud",
+      "label": "Raid on Khafji",
+      "path": [
+       [
+        48.1,
+        28.75
+       ],
+       [
+        48.49,
+        28.43
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. Gary Luck",
+      "label": "XVIII Airborne Corps moves west",
+      "path": [
+       [
+        45.97,
+        28.43
+       ],
+       [
+        44.8,
+        29.0
+       ],
+       [
+        43.5,
+        29.63
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. Frederick Franks",
+      "label": "VII Corps moves west",
+      "path": [
+       [
+        46.8,
+        28.2
+       ],
+       [
+        46.2,
+        28.6
+       ],
+       [
+        45.7,
+        29.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Air campaign begins",
+      "kind": "battle",
+      "lon": 44.36,
+      "lat": 33.31,
+      "year": 1991,
+      "winner": 1,
+      "text": "Cruise missiles and stealth aircraft struck Baghdad on the first night."
+     },
+     {
+      "name": "Battle of Khafji",
+      "kind": "battle",
+      "lon": 48.49,
+      "lat": 28.43,
+      "year": 1991,
+      "winner": 1,
+      "text": "Saudi, Qatari and US forces retook the town after two days."
+     },
+     {
+      "name": "Scud attacks on Israel",
+      "kind": "event",
+      "lon": 34.78,
+      "lat": 32.08,
+      "year": 1991,
+      "winner": null,
+      "text": "Israel did not retaliate, keeping Arab states in the coalition."
+     }
+    ]
+   },
+   {
+    "year": 1991,
+    "label": "24 to 28 Feb 1991",
+    "title": "The 100-hour ground war",
+    "text": "US Marines and Arab forces breached the defences into Kuwait while the XVIII Airborne Corps swung deep into Iraq to the Euphrates and VII Corps hooked east to destroy Republican Guard divisions. Iraqi forces fled Kuwait City along the road north, where aircraft attacked their columns. Kuwait was liberated on 27 February and a ceasefire took effect the next day.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kuwait",
+       "Saudi Arabia",
+       "United States",
+       "United Kingdom",
+       "France",
+       "Egypt",
+       "Syria",
+       "Qatar",
+       "United Arab Emirates",
+       "Oman"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        46.2,
+        31.0
+       ],
+       [
+        46.7,
+        30.5
+       ],
+       [
+        47.3,
+        30.15
+       ],
+       [
+        47.72,
+        30.11
+       ]
+      ],
+      "label": "Line at the ceasefire, 28 Feb"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lt Gen. Gary Luck",
+      "label": "XVIII Airborne Corps to the Euphrates",
+      "path": [
+       [
+        43.5,
+        29.63
+       ],
+       [
+        44.3,
+        30.3
+       ],
+       [
+        45.5,
+        30.8
+       ],
+       [
+        46.25,
+        31.0
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. Frederick Franks",
+      "label": "VII Corps left hook",
+      "path": [
+       [
+        45.7,
+        29.0
+       ],
+       [
+        46.1,
+        29.7
+       ],
+       [
+        46.85,
+        29.9
+       ],
+       [
+        47.35,
+        30.05
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. Walter Boomer",
+      "label": "Marines into Kuwait",
+      "path": [
+       [
+        47.7,
+        28.6
+       ],
+       [
+        47.85,
+        29.0
+       ],
+       [
+        47.98,
+        29.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. Khalid bin Sultan",
+      "label": "Arab forces to Kuwait City",
+      "path": [
+       [
+        48.42,
+        28.53
+       ],
+       [
+        48.15,
+        29.0
+       ],
+       [
+        47.98,
+        29.37
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Saddam Hussein",
+      "label": "Retreat from Kuwait",
+      "path": [
+       [
+        47.98,
+        29.37
+       ],
+       [
+        47.65,
+        29.42
+       ],
+       [
+        47.72,
+        30.11
+       ],
+       [
+        47.81,
+        30.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of 73 Easting",
+      "kind": "battle",
+      "lon": 46.85,
+      "lat": 29.9,
+      "year": 1991,
+      "winner": 1,
+      "text": "US and British armour destroyed a Republican Guard division in a sandstorm."
+     },
+     {
+      "name": "Liberation of Kuwait City",
+      "kind": "battle",
+      "lon": 47.98,
+      "lat": 29.37,
+      "year": 1991,
+      "winner": 1,
+      "text": "Arab coalition forces entered the capital on 27 February."
+     },
+     {
+      "name": "Safwan ceasefire talks",
+      "kind": "treaty",
+      "lon": 47.72,
+      "lat": 30.11,
+      "year": 1991,
+      "winner": null,
+      "text": "Coalition and Iraqi generals agreed the terms of the ceasefire on 3 March."
+     }
+    ]
+   },
+   {
+    "year": 1991,
+    "label": "Mar to Apr 1991",
+    "title": "Uprisings and aftermath",
+    "text": "Shia rebels in the south and Kurds in the north rose against the government, but the Republican Guard crushed both uprisings within weeks, and over a million Kurds fled toward Turkey and Iran. The coalition set up a safe haven and later no-fly zones, while UN sanctions and weapons inspections continued through the 1990s.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Kuwait",
+       "Saudi Arabia",
+       "United States",
+       "United Kingdom",
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Ali Hassan al-Majid",
+      "label": "Crushing the southern uprising",
+      "path": [
+       [
+        44.36,
+        33.31
+       ],
+       [
+        44.02,
+        32.62
+       ],
+       [
+        44.33,
+        32.0
+       ],
+       [
+        47.81,
+        30.51
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Republican Guard",
+      "label": "Retaking the Kurdish north",
+      "path": [
+       [
+        44.36,
+        33.31
+       ],
+       [
+        44.39,
+        35.47
+       ],
+       [
+        44.01,
+        36.19
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Lt Gen. John Shalikashvili",
+      "label": "Operation Provide Comfort",
+      "path": [
+       [
+        42.3,
+        37.2
+       ],
+       [
+        42.68,
+        37.14
+       ],
+       [
+        43.0,
+        36.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "1991 uprisings",
+      "kind": "event",
+      "lon": 44.02,
+      "lat": 32.62,
+      "year": 1991,
+      "winner": 0,
+      "text": "Rebels briefly held most southern cities and Kurdistan before being defeated."
+     },
+     {
+      "name": "Safe haven in northern Iraq",
+      "kind": "event",
+      "lon": 42.68,
+      "lat": 37.14,
+      "year": 1991,
+      "winner": null,
+      "text": "Coalition troops protected returning Kurdish refugees around Zakho."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yugoslav-wars",
+  "name": "Yugoslav Wars",
+  "start": 1991,
+  "end": 2001,
+  "kind": "conflict",
+  "summary": "As Yugoslavia broke apart, a series of wars was fought between 1991 and 2001 over which peoples and lands would belong to which new states. Serbia under Slobodan Milosevic and Serb forces fought to keep Serb-inhabited areas in a common state, against Slovenia, Croatia, Bosnia's government and later Kosovo Albanian rebels, with NATO intervening in Bosnia and Kosovo. The wars killed about 130,000 people, displaced millions and included the Srebrenica genocide, the worst atrocity in Europe since 1945.",
+  "sides": [
+   {
+    "name": "Serbia, the Yugoslav army and Serb forces",
+    "color": "#c0473a",
+    "leaders": [
+     "Slobodan Milosevic",
+     "Radovan Karadzic",
+     "Gen. Ratko Mladic",
+     "Milan Martic"
+    ]
+   },
+   {
+    "name": "Slovenia, Croatia, Bosnian government and Kosovo Albanian forces",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Milan Kucan",
+     "Franjo Tudjman",
+     "Alija Izetbegovic",
+     "Gen. Ante Gotovina",
+     "Hashim Thaci"
+    ]
+   },
+   {
+    "name": "NATO",
+    "color": "#d08a2e",
+    "leaders": [
+     "Bill Clinton",
+     "Javier Solana",
+     "Gen. Wesley Clark",
+     "Adm. Leighton Smith"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 17.3,
+    "lat": 44.5,
+    "r": 3.3
+   },
+   {
+    "lon": 21.0,
+    "lat": 42.4,
+    "r": 1.6
+   }
+  ],
+  "steps": [
+   {
+    "year": 1991,
+    "label": "Jun to Jul 1991",
+    "title": "Slovenia's Ten-Day War",
+    "text": "Slovenia and Croatia declared independence on 25 June 1991. When the Yugoslav People's Army (JNA) moved to seize Slovenia's border posts, Slovenian territorial defence forces blockaded and ambushed its columns. After ten days of fighting the European Community brokered the Brioni Agreement, and the JNA withdrew from Slovenia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Yugoslavia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Gen. Veljko Kadijevic",
+      "label": "JNA columns to the borders",
+      "path": [
+       [
+        15.98,
+        45.81
+       ],
+       [
+        15.1,
+        45.95
+       ],
+       [
+        14.51,
+        46.05
+       ],
+       [
+        13.85,
+        46.2
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Janez Jansa",
+      "label": "Slovenian territorial defence",
+      "path": [
+       [
+        14.51,
+        46.05
+       ],
+       [
+        15.0,
+        45.95
+       ],
+       [
+        15.55,
+        46.0
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Ten-Day War",
+      "kind": "war",
+      "lon": 14.51,
+      "lat": 46.05,
+      "year": 1991,
+      "winner": 1,
+      "text": "Slovenia secured its independence at a cost of a few dozen dead."
+     },
+     {
+      "name": "Brioni Agreement",
+      "kind": "treaty",
+      "lon": 13.76,
+      "lat": 44.91,
+      "year": 1991,
+      "winner": null,
+      "text": "A three-month moratorium led to the JNA's withdrawal from Slovenia."
+     }
+    ]
+   },
+   {
+    "year": 1991,
+    "label": "Aug 1991 to Jan 1992",
+    "title": "War in Croatia",
+    "text": "Croatian Serb rebels, backed by the JNA and Serbian volunteers, took about a third of Croatia, proclaiming the Republic of Serbian Krajina. The JNA destroyed and captured Vukovar after an 87-day siege and shelled Dubrovnik. A UN-brokered ceasefire in January 1992 froze the front lines under UN peacekeepers, and the European Community recognised Croatia and Slovenia.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        17.1,
+        45.3
+       ],
+       [
+        16.37,
+        45.45
+       ],
+       [
+        15.55,
+        45.49
+       ],
+       [
+        15.25,
+        45.0
+       ],
+       [
+        15.37,
+        44.55
+       ],
+       [
+        15.45,
+        44.15
+       ],
+       [
+        15.85,
+        43.9
+       ],
+       [
+        16.3,
+        43.75
+       ]
+      ],
+      "label": "Krajina front line"
+     },
+     {
+      "path": [
+       [
+        18.55,
+        45.6
+       ],
+       [
+        18.7,
+        45.45
+       ],
+       [
+        18.85,
+        45.25
+       ],
+       [
+        19.0,
+        45.15
+       ]
+      ],
+      "label": "Eastern Slavonia front"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Gen. Zivota Panic",
+      "label": "JNA on Vukovar",
+      "path": [
+       [
+        19.83,
+        45.25
+       ],
+       [
+        19.3,
+        45.25
+       ],
+       [
+        19.0,
+        45.35
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gen. Pavle Strugar",
+      "label": "JNA on Dubrovnik",
+      "path": [
+       [
+        18.7,
+        42.55
+       ],
+       [
+        18.3,
+        42.6
+       ],
+       [
+        18.09,
+        42.65
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Milan Martic",
+      "label": "Krajina Serb forces",
+      "path": [
+       [
+        16.2,
+        44.04
+       ],
+       [
+        15.9,
+        44.6
+       ],
+       [
+        15.6,
+        45.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Vukovar",
+      "kind": "siege",
+      "lon": 19.0,
+      "lat": 45.35,
+      "year": 1991,
+      "winner": 0,
+      "text": "The town fell on 18 November and about 200 prisoners were killed at Ovcara."
+     },
+     {
+      "name": "Siege of Dubrovnik",
+      "kind": "siege",
+      "lon": 18.09,
+      "lat": 42.65,
+      "year": 1991,
+      "winner": 1,
+      "text": "The old city was shelled but held, and the siege was lifted in 1992."
+     },
+     {
+      "name": "Sarajevo ceasefire",
+      "kind": "treaty",
+      "lon": 18.41,
+      "lat": 43.86,
+      "year": 1992,
+      "winner": null,
+      "text": "The Vance plan ceasefire took effect on 3 January 1992."
+     }
+    ]
+   },
+   {
+    "year": 1992,
+    "label": "Apr 1992 to 1994",
+    "title": "War in Bosnia",
+    "text": "Bosnia-Herzegovina declared independence after a referendum boycotted by most Serbs, and in April 1992 Bosnian Serb forces under Gen. Ratko Mladić, with JNA support, seized about 70 percent of the country, expelling and killing non-Serbs in the Drina valley and around Prijedor. Sarajevo was besieged and shelled for almost four years. In 1993 Bosnian Croat and government forces also fought each other until the US-brokered Washington Agreement of 1994.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        17.25,
+        43.4
+       ],
+       [
+        17.35,
+        43.9
+       ],
+       [
+        17.05,
+        44.25
+       ],
+       [
+        17.4,
+        44.45
+       ],
+       [
+        17.95,
+        44.7
+       ],
+       [
+        18.55,
+        44.75
+       ],
+       [
+        18.95,
+        44.55
+       ],
+       [
+        18.8,
+        44.2
+       ],
+       [
+        18.45,
+        43.95
+       ],
+       [
+        18.25,
+        43.6
+       ],
+       [
+        17.9,
+        43.45
+       ]
+      ],
+      "label": "Approximate front around government and Croat-held central Bosnia"
+     },
+     {
+      "path": [
+       [
+        18.32,
+        43.84
+       ],
+       [
+        18.36,
+        43.88
+       ],
+       [
+        18.43,
+        43.89
+       ],
+       [
+        18.47,
+        43.86
+       ],
+       [
+        18.45,
+        43.82
+       ],
+       [
+        18.38,
+        43.82
+       ],
+       [
+        18.32,
+        43.84
+       ]
+      ],
+      "label": "Siege lines of Sarajevo"
+     },
+     {
+      "path": [
+       [
+        17.1,
+        45.3
+       ],
+       [
+        16.37,
+        45.45
+       ],
+       [
+        15.55,
+        45.49
+       ],
+       [
+        15.25,
+        45.0
+       ],
+       [
+        15.37,
+        44.55
+       ],
+       [
+        15.45,
+        44.15
+       ],
+       [
+        15.85,
+        43.9
+       ],
+       [
+        16.3,
+        43.75
+       ]
+      ],
+      "label": "Krajina front line"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Gen. Ratko Mladic",
+      "label": "Bosnian Serb army in the east",
+      "path": [
+       [
+        19.35,
+        44.75
+       ],
+       [
+        19.15,
+        44.4
+       ],
+       [
+        19.3,
+        44.1
+       ],
+       [
+        19.1,
+        43.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gen. Ratko Mladic",
+      "label": "Posavina corridor",
+      "path": [
+       [
+        17.19,
+        44.77
+       ],
+       [
+        17.8,
+        45.0
+       ],
+       [
+        18.81,
+        44.87
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Alija Izetbegovic",
+      "label": "Bosnian army holds central Bosnia",
+      "path": [
+       [
+        18.41,
+        43.86
+       ],
+       [
+        18.1,
+        44.1
+       ],
+       [
+        17.91,
+        44.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Sarajevo",
+      "kind": "siege",
+      "lon": 18.41,
+      "lat": 43.86,
+      "year": 1992,
+      "winner": 1,
+      "text": "About 11,000 people were killed in the longest siege of a capital in modern history."
+     },
+     {
+      "name": "Prijedor camps",
+      "kind": "event",
+      "lon": 16.71,
+      "lat": 44.98,
+      "year": 1992,
+      "winner": null,
+      "text": "Bosniaks and Croats were held in camps such as Omarska, where many were killed."
+     },
+     {
+      "name": "Destruction of the Mostar bridge",
+      "kind": "event",
+      "lon": 17.815,
+      "lat": 43.337,
+      "year": 1993,
+      "winner": null,
+      "text": "Bosnian Croat shelling brought down the 16th-century Old Bridge during the Croat-Bosniak war."
+     }
+    ]
+   },
+   {
+    "year": 1995,
+    "label": "Jul to Aug 1995",
+    "title": "Srebrenica and Operation Storm",
+    "text": "In July 1995 Bosnian Serb forces overran the UN safe area of Srebrenica and killed about 8,000 Bosniak men and boys, a crime later judged genocide by international courts. In August the Croatian army under Gen. Ante Gotovina retook almost all of the Krajina in Operation Storm, and some 150,000 to 200,000 Serbs fled. Croatian and Bosnian forces then advanced in western Bosnia, together with the Bosnian 5th Corps breaking out of Bihać.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Serbia",
+       "Montenegro"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Croatia",
+       "Bosnia and Herzegovina"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        17.1,
+        45.3
+       ],
+       [
+        16.37,
+        45.45
+       ],
+       [
+        15.55,
+        45.49
+       ],
+       [
+        15.25,
+        45.0
+       ],
+       [
+        15.37,
+        44.55
+       ],
+       [
+        15.45,
+        44.15
+       ],
+       [
+        15.85,
+        43.9
+       ],
+       [
+        16.3,
+        43.75
+       ]
+      ],
+      "label": "Krajina front line"
+     },
+     {
+      "path": [
+       [
+        18.32,
+        43.84
+       ],
+       [
+        18.36,
+        43.88
+       ],
+       [
+        18.43,
+        43.89
+       ],
+       [
+        18.47,
+        43.86
+       ],
+       [
+        18.45,
+        43.82
+       ],
+       [
+        18.38,
+        43.82
+       ],
+       [
+        18.32,
+        43.84
+       ]
+      ],
+      "label": "Siege lines of Sarajevo"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Gen. Ratko Mladic",
+      "label": "Assault on Srebrenica",
+      "path": [
+       [
+        19.21,
+        44.16
+       ],
+       [
+        19.28,
+        44.13
+       ],
+       [
+        19.3,
+        44.1
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gen. Ante Gotovina",
+      "label": "Operation Storm",
+      "path": [
+       [
+        17.01,
+        43.83
+       ],
+       [
+        16.6,
+        43.95
+       ],
+       [
+        16.2,
+        44.04
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gen. Atif Dudakovic",
+      "label": "Bosnian 5th Corps breaks out",
+      "path": [
+       [
+        15.87,
+        44.82
+       ],
+       [
+        16.3,
+        44.7
+       ],
+       [
+        16.6,
+        44.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Srebrenica genocide",
+      "kind": "event",
+      "lon": 19.3,
+      "lat": 44.1,
+      "year": 1995,
+      "winner": null,
+      "text": "Some 8,000 Bosniak men and boys were killed after the enclave fell on 11 July."
+     },
+     {
+      "name": "Operation Storm",
+      "kind": "battle",
+      "lon": 16.2,
+      "lat": 44.04,
+      "year": 1995,
+      "winner": 1,
+      "text": "Croatia retook Knin and the Krajina in four days."
+     }
+    ]
+   },
+   {
+    "year": 1995,
+    "label": "Aug to Dec 1995",
+    "title": "NATO bombing and Dayton",
+    "text": "After a mortar attack on Sarajevo's Markale market, NATO bombed Bosnian Serb positions in Operation Deliberate Force, and Croatian and Bosnian offensives took more ground. A ceasefire followed in October, and talks at Dayton, Ohio produced an agreement signed in Paris in December. Bosnia remained one state of two entities, a Bosniak-Croat federation and the Republika Srpska, policed by a NATO-led force.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Serbia",
+       "Montenegro"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Croatia",
+       "Bosnia and Herzegovina"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "United States",
+       "United Kingdom",
+       "France",
+       "Italy"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        18.32,
+        43.84
+       ],
+       [
+        18.36,
+        43.88
+       ],
+       [
+        18.43,
+        43.89
+       ],
+       [
+        18.47,
+        43.86
+       ],
+       [
+        18.45,
+        43.82
+       ],
+       [
+        18.38,
+        43.82
+       ],
+       [
+        18.32,
+        43.84
+       ]
+      ],
+      "label": "Siege lines of Sarajevo"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Adm. Leighton Smith",
+      "label": "Operation Deliberate Force",
+      "path": [
+       [
+        12.6,
+        46.03
+       ],
+       [
+        15.5,
+        44.8
+       ],
+       [
+        18.57,
+        43.82
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Adm. Leighton Smith",
+      "label": "IFOR deploys",
+      "path": [
+       [
+        15.98,
+        45.81
+       ],
+       [
+        17.5,
+        44.8
+       ],
+       [
+        18.41,
+        43.86
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Deliberate Force",
+      "kind": "battle",
+      "lon": 18.57,
+      "lat": 43.82,
+      "year": 1995,
+      "winner": 2,
+      "text": "Two weeks of air strikes hit Bosnian Serb artillery, ammunition and communications."
+     },
+     {
+      "name": "Dayton Agreement",
+      "kind": "treaty",
+      "lon": -84.19,
+      "lat": 39.76,
+      "year": 1995,
+      "winner": null,
+      "text": "The agreement ended the Bosnian War after about 100,000 deaths."
+     }
+    ]
+   },
+   {
+    "year": 1999,
+    "label": "1998 to Jun 1999",
+    "title": "Kosovo",
+    "text": "Fighting between the Kosovo Liberation Army and Yugoslav and Serbian forces escalated in 1998. After the Racak killings and failed talks at Rambouillet, NATO began a 78-day air campaign against Yugoslavia on 24 March 1999, during which Serbian forces drove some 800,000 Kosovo Albanians into Albania and Macedonia. Milosevic accepted terms in June, Yugoslav forces withdrew, and a NATO-led force entered Kosovo under UN administration.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Serbia",
+       "Montenegro"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "United States",
+       "United Kingdom",
+       "France",
+       "Germany",
+       "Italy"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Gen. Wesley Clark",
+      "label": "Operation Allied Force",
+      "path": [
+       [
+        12.6,
+        46.03
+       ],
+       [
+        16.5,
+        44.0
+       ],
+       [
+        20.46,
+        44.82
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gen. Nebojsa Pavkovic",
+      "label": "Yugoslav Third Army in Kosovo",
+      "path": [
+       [
+        21.9,
+        43.32
+       ],
+       [
+        21.17,
+        42.67
+       ],
+       [
+        20.29,
+        42.66
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hashim Thaci",
+      "label": "KLA in the Drenica region",
+      "path": [
+       [
+        20.65,
+        42.7
+       ],
+       [
+        20.85,
+        42.65
+       ],
+       [
+        21.0,
+        42.6
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Lt Gen. Mike Jackson",
+      "label": "KFOR enters Kosovo",
+      "path": [
+       [
+        21.43,
+        42.0
+       ],
+       [
+        21.25,
+        42.35
+       ],
+       [
+        21.17,
+        42.67
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Racak massacre",
+      "kind": "event",
+      "lon": 21.02,
+      "lat": 42.43,
+      "year": 1999,
+      "winner": null,
+      "text": "The killing of 45 Albanian civilians in January 1999 hardened Western policy."
+     },
+     {
+      "name": "NATO bombing of Yugoslavia",
+      "kind": "battle",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 1999,
+      "winner": 2,
+      "text": "Air strikes on military targets and infrastructure lasted from March to June."
+     },
+     {
+      "name": "Kumanovo Agreement",
+      "kind": "treaty",
+      "lon": 21.71,
+      "lat": 42.13,
+      "year": 1999,
+      "winner": null,
+      "text": "Yugoslav forces agreed to leave Kosovo."
+     }
+    ]
+   },
+   {
+    "year": 2001,
+    "label": "2000 to 2001",
+    "title": "The last conflicts",
+    "text": "Milosevic was ousted after disputed elections in October 2000 and later handed to the Hague tribunal. Fighting flared in the Presevo valley of southern Serbia and in 2001 in Macedonia, where the ethnic Albanian National Liberation Army fought government forces until the Ohrid Agreement in August 2001 expanded Albanian minority rights, ending the Yugoslav Wars.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Serbia",
+       "Montenegro"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ali Ahmeti",
+      "label": "NLA insurgency near Tetovo",
+      "path": [
+       [
+        21.25,
+        42.25
+       ],
+       [
+        21.1,
+        42.1
+       ],
+       [
+        20.97,
+        42.01
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Overthrow of Milosevic",
+      "kind": "event",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 2000,
+      "winner": null,
+      "text": "Mass protests in Belgrade forced Milosevic to concede defeat."
+     },
+     {
+      "name": "Ohrid Agreement",
+      "kind": "treaty",
+      "lon": 20.8,
+      "lat": 41.12,
+      "year": 2001,
+      "winner": null,
+      "text": "The deal ended the insurgency in Macedonia."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rwandan-civil-war",
+  "name": "Rwandan Civil War and genocide",
+  "start": 1990,
+  "end": 1994,
+  "kind": "war",
+  "summary": "The Rwandan Patriotic Front, formed mainly by Tutsi refugees in Uganda, invaded Rwanda in 1990 to fight the Hutu-led government of Juvenal Habyarimana. A peace deal in 1993 collapsed when Habyarimana's plane was shot down in April 1994, and extremists in the government, army and Interahamwe militia carried out a genocide that killed an estimated 500,000 to 800,000 people, mostly Tutsi. The RPF's victory in July ended the genocide, while some two million Hutu fled to Zaire, setting the stage for the Congo wars.",
+  "sides": [
+   {
+    "name": "Rwandan government, army (FAR) and Interahamwe",
+    "color": "#c0473a",
+    "leaders": [
+     "Juvenal Habyarimana",
+     "Col. Theoneste Bagosora",
+     "Maj. Gen. Augustin Bizimungu"
+    ]
+   },
+   {
+    "name": "Rwandan Patriotic Front (RPF)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Fred Rwigyema",
+     "Paul Kagame"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 29.9,
+    "lat": -1.95,
+    "r": 1.4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1990,
+    "label": "Oct 1990",
+    "title": "The RPF invades",
+    "text": "On 1 October 1990 about 4,000 RPF fighters under Fred Rwigyema crossed from Uganda at Kagitumba. Rwigyema was killed on the second day, and Rwandan troops, backed by French, Belgian and Zairean forces, drove the rebels back. Paul Kagame returned from the US to take command and regrouped the RPF in the Virunga mountains.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rwanda"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Fred Rwigyema",
+      "label": "RPF invasion from Uganda",
+      "path": [
+       [
+        30.45,
+        -1.05
+       ],
+       [
+        30.4,
+        -1.3
+       ],
+       [
+        30.4,
+        -1.55
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Juvenal Habyarimana",
+      "label": "Government counteroffensive",
+      "path": [
+       [
+        30.06,
+        -1.95
+       ],
+       [
+        30.3,
+        -1.7
+       ],
+       [
+        30.4,
+        -1.4
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Paul Kagame",
+      "label": "RPF regroups in the Virungas",
+      "path": [
+       [
+        30.4,
+        -1.2
+       ],
+       [
+        29.9,
+        -1.15
+       ],
+       [
+        29.55,
+        -1.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "RPF invasion",
+      "kind": "battle",
+      "lon": 30.45,
+      "lat": -1.05,
+      "year": 1990,
+      "winner": 0,
+      "text": "The first RPF offensive was defeated within weeks."
+     }
+    ]
+   },
+   {
+    "year": 1993,
+    "label": "1991 to 1993",
+    "title": "Guerrilla war and the Arusha Accords",
+    "text": "The RPF fought a guerrilla war in the north, raiding Ruhengeri in January 1991, while Hutu extremist media and militias spread hatred of Tutsi. An RPF offensive in February 1993 pushed to within about 30 km of Kigali before a ceasefire. The Arusha Accords of August 1993 provided for power-sharing, and a UN force under Gen. Roméo Dallaire arrived to oversee it.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rwanda"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.55,
+        -1.5
+       ],
+       [
+        29.75,
+        -1.6
+       ],
+       [
+        30.05,
+        -1.62
+       ],
+       [
+        30.3,
+        -1.55
+       ],
+       [
+        30.55,
+        -1.4
+       ],
+       [
+        30.8,
+        -1.25
+       ]
+      ],
+      "label": "Front and buffer zone, 1993"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Paul Kagame",
+      "label": "February 1993 offensive",
+      "path": [
+       [
+        29.9,
+        -1.35
+       ],
+       [
+        30.07,
+        -1.45
+       ],
+       [
+        30.07,
+        -1.58
+       ],
+       [
+        30.06,
+        -1.72
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Maj. Gen. Deogratias Nsabimana",
+      "label": "Government army holds the south",
+      "path": [
+       [
+        30.06,
+        -1.95
+       ],
+       [
+        30.06,
+        -1.75
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Ruhengeri raid",
+      "kind": "battle",
+      "lon": 29.63,
+      "lat": -1.5,
+      "year": 1991,
+      "winner": 1,
+      "text": "The RPF briefly took the town and freed prisoners from its jail."
+     },
+     {
+      "name": "Arusha Accords",
+      "kind": "treaty",
+      "lon": 36.68,
+      "lat": -3.37,
+      "year": 1993,
+      "winner": null,
+      "text": "The deal provided for a transitional government and a merged army."
+     }
+    ]
+   },
+   {
+    "year": 1994,
+    "label": "Apr to Jun 1994",
+    "title": "Genocide and the RPF offensive",
+    "text": "On 6 April 1994 President Habyarimana's plane was shot down over Kigali. Within hours the Presidential Guard, army units and Interahamwe militia began killing Tutsi and moderate Hutu across the country, organised under figures such as Col. Théoneste Bagosora, while the UN force was reduced. The RPF resumed its offensive, linking up with its battalion in Kigali and sweeping east and south.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Rwanda"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Paul Kagame",
+      "label": "RPF advance on Kigali",
+      "path": [
+       [
+        30.07,
+        -1.58
+       ],
+       [
+        30.1,
+        -1.8
+       ],
+       [
+        30.06,
+        -1.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Paul Kagame",
+      "label": "RPF sweep through the east",
+      "path": [
+       [
+        30.45,
+        -1.3
+       ],
+       [
+        30.54,
+        -2.16
+       ],
+       [
+        30.78,
+        -2.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Paul Kagame",
+      "label": "RPF drive south to Butare",
+      "path": [
+       [
+        30.1,
+        -2.0
+       ],
+       [
+        29.97,
+        -2.3
+       ],
+       [
+        29.74,
+        -2.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Col. Theoneste Bagosora",
+      "label": "Interahamwe and army killings spread",
+      "path": [
+       [
+        30.06,
+        -1.95
+       ],
+       [
+        29.75,
+        -2.07
+       ],
+       [
+        29.74,
+        -2.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "President's plane shot down",
+      "kind": "event",
+      "lon": 30.14,
+      "lat": -1.96,
+      "year": 1994,
+      "winner": null,
+      "text": "The attack, whose perpetrators are still disputed, triggered the genocide."
+     },
+     {
+      "name": "Nyamata church massacre",
+      "kind": "event",
+      "lon": 30.09,
+      "lat": -2.15,
+      "year": 1994,
+      "winner": null,
+      "text": "Thousands who sheltered in the church were killed, one of many such massacres."
+     },
+     {
+      "name": "Siege of Kigali",
+      "kind": "siege",
+      "lon": 30.06,
+      "lat": -1.95,
+      "year": 1994,
+      "winner": 1,
+      "text": "The RPF fought for the capital from April to early July."
+     }
+    ]
+   },
+   {
+    "year": 1994,
+    "label": "Jul 1994",
+    "title": "RPF victory and exodus",
+    "text": "The RPF captured Kigali on 4 July and pushed west to Gisenyi, declaring the war over on 18 July. A French-led force set up a zone in the southwest under Operation Turquoise, and about two million Hutu, including many of those responsible for the genocide, fled into Zaire, where refugee camps around Goma became a base for further conflict.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Rwanda"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Paul Kagame",
+      "label": "RPF drives west",
+      "path": [
+       [
+        30.06,
+        -1.95
+       ],
+       [
+        29.75,
+        -2.07
+       ],
+       [
+        29.63,
+        -1.5
+       ],
+       [
+        29.26,
+        -1.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Maj. Gen. Augustin Bizimungu",
+      "label": "Government army flees to Zaire",
+      "path": [
+       [
+        29.75,
+        -2.07
+       ],
+       [
+        29.63,
+        -1.5
+       ],
+       [
+        29.26,
+        -1.7
+       ],
+       [
+        29.22,
+        -1.68
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Kigali",
+      "kind": "battle",
+      "lon": 30.06,
+      "lat": -1.95,
+      "year": 1994,
+      "winner": 1,
+      "text": "The capture of the capital effectively ended the genocide in RPF-held areas."
+     },
+     {
+      "name": "Operation Turquoise",
+      "kind": "event",
+      "lon": 28.9,
+      "lat": -2.48,
+      "year": 1994,
+      "winner": null,
+      "text": "French troops created a humanitarian zone in the southwest."
+     },
+     {
+      "name": "Exodus to Goma",
+      "kind": "event",
+      "lon": 29.22,
+      "lat": -1.68,
+      "year": 1994,
+      "winner": null,
+      "text": "Around a million refugees crossed into Goma within days, where cholera killed thousands."
+     }
+    ]
+   }
+  ]
+ }
+]

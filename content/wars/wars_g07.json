@@ -1,0 +1,7038 @@
+[
+ {
+  "id": "spain-in-europe",
+  "name": "Spain's wars for European dominance",
+  "start": 1494,
+  "end": 1659,
+  "kind": "conflict",
+  "summary": "Between 1494 and 1659 the Habsburg kings of Spain fought France, the Ottomans, the Dutch, England and the German Protestants for mastery of Europe. Ferdinand's generals won southern Italy, Charles V ruled Spain, the Netherlands, Italy and the Holy Roman Empire, and Philip II added Portugal, but endless war, revolt in the Netherlands and bankruptcy wore Spain down. Defeat by France at Rocroi in 1643 and the Peace of the Pyrenees in 1659 handed European leadership to Louis XIV's France.",
+  "sides": [
+   {
+    "name": "Spanish Habsburgs and allies",
+    "color": "#c9822b",
+    "leaders": [
+     "Ferdinand of Aragon",
+     "Gonzalo Fernandez de Cordoba",
+     "Charles V",
+     "Philip II",
+     "Duke of Alba",
+     "Don John of Austria",
+     "Duke of Parma",
+     "Ambrogio Spinola"
+    ]
+   },
+   {
+    "name": "France",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Charles VIII",
+     "Louis XII",
+     "Francis I",
+     "Henry II",
+     "Cardinal Richelieu",
+     "Duke of Enghien",
+     "Turenne"
+    ]
+   },
+   {
+    "name": "Ottomans, Dutch, English and Protestant rivals",
+    "color": "#7b5ea7",
+    "leaders": [
+     "Suleiman the Magnificent",
+     "John Frederick of Saxony",
+     "William of Orange",
+     "Maurice of Nassau",
+     "Elizabeth I"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 4,
+    "lat": 45,
+    "r": 12
+   },
+   {
+    "lon": 16,
+    "lat": 41,
+    "r": 8
+   }
+  ],
+  "steps": [
+   {
+    "year": 1503,
+    "label": "1494-1504",
+    "title": "Ferdinand and the Gran Capitan",
+    "text": "In 1494 Charles VIII of France marched the length of Italy to seize Naples, starting the Italian Wars. Ferdinand of Aragon, who already ruled Sicily and Sardinia, sent Gonzalo Fernandez de Cordoba, the Gran Capitan. When France and Spain fell out over splitting Naples, his pikemen and arquebusiers won at Cerignola and on the Garigliano in 1503, and Naples became Spanish for two centuries.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Castille",
+       "Aragón"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Charles VIII",
+      "label": "French invasion of Italy, 1494 to 1495",
+      "path": [
+       [
+        5.72,
+        45.19
+       ],
+       [
+        8.2,
+        44.9
+       ],
+       [
+        11.25,
+        43.77
+       ],
+       [
+        12.48,
+        41.9
+       ],
+       [
+        14.25,
+        40.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gonzalo Fernandez de Cordoba",
+      "label": "The Gran Capitan from Sicily to Naples",
+      "path": [
+       [
+        15.55,
+        38.19
+       ],
+       [
+        16.28,
+        41.32
+       ],
+       [
+        15.9,
+        41.27
+       ],
+       [
+        14.25,
+        40.85
+       ],
+       [
+        13.77,
+        41.25
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Duke of Nemours",
+      "label": "French army of Naples",
+      "path": [
+       [
+        14.25,
+        40.85
+       ],
+       [
+        16.07,
+        41.22
+       ],
+       [
+        15.9,
+        41.27
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Cerignola",
+      "kind": "battle",
+      "lon": 15.9,
+      "lat": 41.27,
+      "year": 1503,
+      "winner": 0,
+      "text": "Spanish arquebusiers behind a ditch shot down the French gendarmes and killed their commander Nemours."
+     },
+     {
+      "name": "Battle of the Garigliano",
+      "kind": "battle",
+      "lon": 13.77,
+      "lat": 41.25,
+      "year": 1503,
+      "winner": 0,
+      "text": "The Gran Capitan crossed the flooded river by a pontoon bridge and routed the last French army in the south."
+     },
+     {
+      "name": "Treaty of Lyon",
+      "kind": "treaty",
+      "lon": 4.83,
+      "lat": 45.76,
+      "year": 1504,
+      "winner": 0,
+      "text": "Louis XII recognised Ferdinand as king of Naples."
+     }
+    ]
+   },
+   {
+    "year": 1525,
+    "label": "1516-1525",
+    "title": "Charles V and Pavia",
+    "text": "Ferdinand's grandson Charles of Habsburg inherited Spain with its Italian kingdoms, the Burgundian Netherlands and Austria, and in 1519 he was elected Holy Roman Emperor, ringing France with Habsburg lands. The two powers fought over Milan. At Pavia in February 1525 Spanish arquebusiers and German landsknechts shattered the French army and captured King Francis I.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Castille",
+       "Aragón",
+       "Navarre",
+       "Holy Roman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Francis I",
+      "label": "French army over the Alps",
+      "path": [
+       [
+        4.83,
+        45.76
+       ],
+       [
+        6.9,
+        45.25
+       ],
+       [
+        7.68,
+        45.07
+       ],
+       [
+        9.19,
+        45.46
+       ],
+       [
+        9.16,
+        45.21
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles de Lannoy and Pescara",
+      "label": "Imperial relief army",
+      "path": [
+       [
+        9.5,
+        45.31
+       ],
+       [
+        9.3,
+        45.25
+       ],
+       [
+        9.16,
+        45.21
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Charles V elected emperor",
+      "kind": "event",
+      "lon": 8.68,
+      "lat": 50.11,
+      "year": 1519,
+      "winner": 0,
+      "text": "The electors at Frankfurt chose Charles, uniting Spain and the Holy Roman Empire under one ruler."
+     },
+     {
+      "name": "Battle of Pavia",
+      "kind": "battle",
+      "lon": 9.16,
+      "lat": 45.22,
+      "year": 1525,
+      "winner": 0,
+      "text": "The French army was destroyed in the park of Mirabello and Francis I was taken prisoner to Madrid."
+     }
+    ]
+   },
+   {
+    "year": 1530,
+    "label": "1526-1530",
+    "title": "The Sack of Rome",
+    "text": "Once free, Francis broke his promises and joined the pope, Venice and Milan in the League of Cognac. Unpaid imperial troops under the Duke of Bourbon marched on Rome and sacked it in May 1527, holding Pope Clement VII prisoner. The Peace of Cambrai in 1529 left Italy to Charles, who was crowned emperor by the pope at Bologna in 1530, while his brother Ferdinand held Vienna against Suleiman the Magnificent.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Habsburg Netherlands",
+       "Holy Roman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Bourbon",
+      "label": "Imperial army marches on Rome",
+      "path": [
+       [
+        9.19,
+        45.46
+       ],
+       [
+        9.69,
+        45.05
+       ],
+       [
+        11.88,
+        43.46
+       ],
+       [
+        12.1,
+        42.42
+       ],
+       [
+        12.48,
+        41.9
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Suleiman the Magnificent",
+      "label": "Ottoman march on Vienna",
+      "path": [
+       [
+        28.97,
+        41.01
+       ],
+       [
+        23.32,
+        42.7
+       ],
+       [
+        20.46,
+        44.82
+       ],
+       [
+        19.04,
+        47.5
+       ],
+       [
+        16.37,
+        48.21
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Rome",
+      "kind": "event",
+      "lon": 12.46,
+      "lat": 41.9,
+      "year": 1527,
+      "winner": 0,
+      "text": "Mutinous imperial troops looted Rome for weeks and the pope became the emperor's prisoner."
+     },
+     {
+      "name": "Siege of Vienna",
+      "kind": "siege",
+      "lon": 16.37,
+      "lat": 48.21,
+      "year": 1529,
+      "winner": 0,
+      "text": "The Habsburg garrison held out and Suleiman withdrew as winter came."
+     },
+     {
+      "name": "Peace of Cambrai",
+      "kind": "treaty",
+      "lon": 3.24,
+      "lat": 50.18,
+      "year": 1529,
+      "winner": 0,
+      "text": "France gave up its claims in Italy, Flanders and Artois."
+     }
+    ]
+   },
+   {
+    "year": 1547,
+    "label": "1535-1547",
+    "title": "Tunis, the tercios and Muhlberg",
+    "text": "Charles fought on three fronts. In 1535 he led a fleet that took Tunis from the corsair admiral Barbarossa, and Milan passed directly to Spain. His infantry was reorganised into tercios, permanent regiments of pike and shot that became the most feared foot soldiers in Europe for a century. France allied with the Ottomans, but in Germany Charles and the Duke of Alba crushed the Protestant Schmalkaldic League at Muhlberg in 1547.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Habsburg Netherlands",
+       "Holy Roman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles V",
+      "label": "Imperial fleet to Tunis",
+      "path": [
+       [
+        2.17,
+        41.38
+       ],
+       [
+        9.11,
+        39.22
+       ],
+       [
+        10.31,
+        36.82
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles V and the Duke of Alba",
+      "label": "March on Saxony",
+      "path": [
+       [
+        12.37,
+        50.08
+       ],
+       [
+        12.9,
+        50.83
+       ],
+       [
+        13.23,
+        51.43
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "John Frederick of Saxony",
+      "label": "Schmalkaldic army retreats along the Elbe",
+      "path": [
+       [
+        13.47,
+        51.16
+       ],
+       [
+        13.3,
+        51.33
+       ],
+       [
+        13.23,
+        51.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Conquest of Tunis",
+      "kind": "siege",
+      "lon": 10.18,
+      "lat": 36.8,
+      "year": 1535,
+      "winner": 0,
+      "text": "Charles took La Goulette and Tunis and restored a Spanish vassal as ruler."
+     },
+     {
+      "name": "Battle of Muhlberg",
+      "kind": "battle",
+      "lon": 13.23,
+      "lat": 51.43,
+      "year": 1547,
+      "winner": 0,
+      "text": "Spanish troops forded the Elbe and routed the Protestant princes, capturing the Elector of Saxony."
+     }
+    ]
+   },
+   {
+    "year": 1557,
+    "label": "1556-1559",
+    "title": "Philip II and St Quentin",
+    "text": "Worn out, Charles abdicated in 1556 and split his inheritance: Austria and the imperial crown went to his brother Ferdinand, while his son Philip II received Spain, Italy, the Netherlands and the Americas. Philip's army under Emmanuel Philibert of Savoy routed the French at St Quentin in 1557. The Peace of Cateau-Cambresis in 1559 ended the Italian Wars with Spain the master of Italy.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Habsburg Netherlands"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Emmanuel Philibert of Savoy",
+      "label": "Army of Flanders invades France",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        3.95,
+        50.45
+       ],
+       [
+        3.5,
+        50.1
+       ],
+       [
+        3.29,
+        49.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Constable Montmorency",
+      "label": "French relief army",
+      "path": [
+       [
+        3.37,
+        49.66
+       ],
+       [
+        3.32,
+        49.78
+       ],
+       [
+        3.29,
+        49.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Abdication of Charles V",
+      "kind": "event",
+      "lon": 4.36,
+      "lat": 50.84,
+      "year": 1556,
+      "winner": null,
+      "text": "In Brussels Charles handed the Netherlands and Spain to Philip and retired to a monastery."
+     },
+     {
+      "name": "Battle of St Quentin",
+      "kind": "battle",
+      "lon": 3.29,
+      "lat": 49.85,
+      "year": 1557,
+      "winner": 0,
+      "text": "The French relief army was destroyed and Montmorency captured."
+     },
+     {
+      "name": "Peace of Cateau-Cambresis",
+      "kind": "treaty",
+      "lon": 3.54,
+      "lat": 50.1,
+      "year": 1559,
+      "winner": 0,
+      "text": "France renounced Italy, leaving Spain dominant there for 150 years."
+     }
+    ]
+   },
+   {
+    "year": 1580,
+    "label": "1571-1580",
+    "title": "Lepanto and the union with Portugal",
+    "text": "Philip led Catholic Europe against the Ottomans, and in 1571 the Holy League fleet under his half-brother Don John of Austria destroyed the Ottoman fleet at Lepanto. In 1580, after the young king of Portugal died in battle in Morocco, Philip claimed the throne and the Duke of Alba conquered Portugal in weeks. Spain now ruled all of Iberia, both colonial empires and the first empire on which the sun never set.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Habsburg Netherlands",
+       "Portugal"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Don John of Austria",
+      "label": "Holy League fleet",
+      "path": [
+       [
+        15.6,
+        38.2
+       ],
+       [
+        17.2,
+        39.0
+       ],
+       [
+        19.92,
+        39.62
+       ],
+       [
+        20.6,
+        38.7
+       ],
+       [
+        21.07,
+        38.27
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Ali Pasha",
+      "label": "Ottoman fleet leaves Lepanto",
+      "path": [
+       [
+        21.83,
+        38.39
+       ],
+       [
+        21.5,
+        38.32
+       ],
+       [
+        21.15,
+        38.28
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Alba",
+      "label": "Conquest of Portugal",
+      "path": [
+       [
+        -6.97,
+        38.88
+       ],
+       [
+        -7.16,
+        38.88
+       ],
+       [
+        -8.89,
+        38.52
+       ],
+       [
+        -9.42,
+        38.7
+       ],
+       [
+        -9.18,
+        38.71
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Lepanto",
+      "kind": "battle",
+      "lon": 21.07,
+      "lat": 38.27,
+      "year": 1571,
+      "winner": 0,
+      "text": "The largest galley battle in history ended Ottoman naval supremacy in the western Mediterranean."
+     },
+     {
+      "name": "Battle of Alcantara",
+      "kind": "battle",
+      "lon": -9.18,
+      "lat": 38.71,
+      "year": 1580,
+      "winner": 0,
+      "text": "Alba defeated the pretender Antonio outside Lisbon and Philip became king of Portugal."
+     }
+    ]
+   },
+   {
+    "year": 1588,
+    "label": "1568-1588",
+    "title": "Revolt of the Netherlands and the Armada",
+    "text": "Philip's taxes and persecution of Protestants drove the Netherlands into revolt in 1568 under William of Orange, and Alba's reign of terror only spread it. The Duke of Parma won back the southern provinces and took Antwerp in 1585, but Holland and Zeeland fought on with English help. In 1588 Philip sent the Armada to carry Parma's army to England; English fireships broke it up off Gravelines and storms wrecked it on the way home.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Habsburg Netherlands",
+       "Portugal"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "England and Ireland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        3.4,
+        51.45
+       ],
+       [
+        4.3,
+        51.6
+       ],
+       [
+        5.0,
+        51.75
+       ],
+       [
+        5.9,
+        51.85
+       ],
+       [
+        6.3,
+        52.3
+       ],
+       [
+        6.9,
+        52.9
+       ]
+      ],
+      "label": "Spanish and Dutch rebel line, c. 1588"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Medina Sidonia",
+      "label": "Spanish Armada",
+      "path": [
+       [
+        -9.3,
+        38.6
+       ],
+       [
+        -8.6,
+        43.5
+       ],
+       [
+        -5.2,
+        49.7
+       ],
+       [
+        -1.2,
+        50.4
+       ],
+       [
+        1.75,
+        51.0
+       ],
+       [
+        2.5,
+        55.5
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Lord Howard and Francis Drake",
+      "label": "English fleet",
+      "path": [
+       [
+        -4.14,
+        50.3
+       ],
+       [
+        -3.0,
+        50.3
+       ],
+       [
+        -1.2,
+        50.5
+       ],
+       [
+        1.6,
+        50.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Parma",
+      "label": "Army of Flanders waits for the Armada",
+      "path": [
+       [
+        4.4,
+        51.22
+       ],
+       [
+        3.22,
+        51.21
+       ],
+       [
+        2.38,
+        51.03
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Antwerp",
+      "kind": "siege",
+      "lon": 4.4,
+      "lat": 51.22,
+      "year": 1585,
+      "winner": 0,
+      "text": "Parma bridged the Scheldt and starved Antwerp into surrender, securing the south for Spain."
+     },
+     {
+      "name": "Battle of Gravelines",
+      "kind": "battle",
+      "lon": 2.0,
+      "lat": 51.1,
+      "year": 1588,
+      "winner": 2,
+      "text": "Fireships scattered the Armada at anchor off Calais and the English fleet mauled it the next day."
+     }
+    ]
+   },
+   {
+    "year": 1634,
+    "label": "1621-1634",
+    "title": "The Spanish Road and Nordlingen",
+    "text": "Philip II's successors still fielded Europe's best army. When the Twelve Years' Truce with the Dutch ran out in 1621, Ambrogio Spinola took Breda, and Spain backed its Austrian cousins in the Thirty Years' War, moving troops from Milan to Flanders along the Spanish Road. In 1634 the Cardinal-Infante Ferdinand led an army over the Alps and, with the emperor's forces, crushed the Swedes at Nordlingen. But the cost, paid in American silver and Castilian taxes, was ruinous.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Portugal",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Habsburg Netherlands",
+       "Holy Roman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Dutch Republic",
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        3.4,
+        51.35
+       ],
+       [
+        4.4,
+        51.45
+       ],
+       [
+        5.2,
+        51.3
+       ],
+       [
+        5.7,
+        50.85
+       ]
+      ],
+      "label": "Spanish and Dutch line, 1634"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Army of Flanders reinforcements",
+      "label": "The Spanish Road",
+      "path": [
+       [
+        9.19,
+        45.46
+       ],
+       [
+        5.92,
+        45.57
+       ],
+       [
+        6.02,
+        47.24
+       ],
+       [
+        6.18,
+        48.69
+       ],
+       [
+        6.13,
+        49.61
+       ],
+       [
+        4.35,
+        50.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ambrogio Spinola",
+      "label": "Siege of Breda",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        4.4,
+        51.22
+       ],
+       [
+        4.78,
+        51.59
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Cardinal-Infante Ferdinand",
+      "label": "Spanish army over the Alps",
+      "path": [
+       [
+        9.19,
+        45.46
+       ],
+       [
+        9.9,
+        46.17
+       ],
+       [
+        10.5,
+        47.3
+       ],
+       [
+        10.49,
+        48.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Breda",
+      "kind": "siege",
+      "lon": 4.78,
+      "lat": 51.59,
+      "year": 1625,
+      "winner": 0,
+      "text": "Spinola starved the Dutch fortress into surrender after ten months."
+     },
+     {
+      "name": "Battle of Nordlingen",
+      "kind": "battle",
+      "lon": 10.49,
+      "lat": 48.85,
+      "year": 1634,
+      "winner": 0,
+      "text": "Spanish and imperial troops destroyed the main Swedish army in southern Germany."
+     }
+    ]
+   },
+   {
+    "year": 1643,
+    "label": "1635-1643",
+    "title": "Revolts and Rocroi",
+    "text": "In 1635 Cardinal Richelieu brought France into open war with Spain. The strain broke Spain in 1640, when Catalonia rose with French help and Portugal proclaimed John IV king and won back its independence. In May 1643 the young Duke of Enghien caught Francisco de Melo's invading army at Rocroi and destroyed the veteran tercios, ending their reputation for invincibility.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Habsburg Netherlands"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Dutch Republic",
+       "Portugal"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.5,
+        51.05
+       ],
+       [
+        3.3,
+        50.4
+       ],
+       [
+        4.1,
+        50.15
+       ],
+       [
+        4.8,
+        49.9
+       ],
+       [
+        5.6,
+        49.55
+       ]
+      ],
+      "label": "Franco-Spanish front in Flanders, 1643"
+     },
+     {
+      "path": [
+       [
+        0.75,
+        42.7
+       ],
+       [
+        0.6,
+        41.6
+       ],
+       [
+        0.8,
+        40.8
+       ]
+      ],
+      "label": "Front in Catalonia, 1643"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Francisco de Melo",
+      "label": "Army of Flanders invades France",
+      "path": [
+       [
+        3.95,
+        50.45
+       ],
+       [
+        4.2,
+        50.2
+       ],
+       [
+        4.52,
+        49.93
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Duke of Enghien",
+      "label": "French army relieves Rocroi",
+      "path": [
+       [
+        2.3,
+        49.9
+       ],
+       [
+        3.6,
+        49.8
+       ],
+       [
+        4.52,
+        49.93
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Revolt of the Catalans",
+      "kind": "event",
+      "lon": 2.17,
+      "lat": 41.39,
+      "year": 1640,
+      "winner": 1,
+      "text": "Catalonia rebelled against Madrid and placed itself under the French king."
+     },
+     {
+      "name": "Portuguese Restoration",
+      "kind": "event",
+      "lon": -9.14,
+      "lat": 38.71,
+      "year": 1640,
+      "winner": 2,
+      "text": "Lisbon nobles proclaimed John IV, beginning a 28 year war that ended in Portuguese independence."
+     },
+     {
+      "name": "Battle of Rocroi",
+      "kind": "battle",
+      "lon": 4.52,
+      "lat": 49.93,
+      "year": 1643,
+      "winner": 1,
+      "text": "French cavalry and artillery broke the Spanish infantry squares."
+     }
+    ]
+   },
+   {
+    "year": 1659,
+    "label": "1648-1659",
+    "title": "Peace of the Pyrenees",
+    "text": "At Munster in 1648 Spain at last recognised the independent Dutch Republic but fought on against France. After Turenne, with Cromwell's English redcoats, beat the Spanish at the Battle of the Dunes in 1658, Philip IV made the Peace of the Pyrenees in 1659, ceding Roussillon and Artois and marrying his daughter to Louis XIV. Spain kept most of its empire, but France had replaced it as the leading power in Europe.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Luxembourg",
+       "Franche-Comté"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "France"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Dutch Republic",
+       "Portugal",
+       "England and Ireland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.4,
+        50.95
+       ],
+       [
+        3.1,
+        50.4
+       ],
+       [
+        4.0,
+        50.15
+       ],
+       [
+        4.8,
+        49.9
+       ]
+      ],
+      "label": "Franco-Spanish front, 1658"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Turenne",
+      "label": "French and English army besieges Dunkirk",
+      "path": [
+       [
+        2.3,
+        49.9
+       ],
+       [
+        2.7,
+        50.6
+       ],
+       [
+        2.38,
+        51.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Don John Joseph of Austria and Conde",
+      "label": "Spanish relief army",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        3.22,
+        51.21
+       ],
+       [
+        2.45,
+        51.06
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Peace of Munster",
+      "kind": "treaty",
+      "lon": 7.63,
+      "lat": 51.96,
+      "year": 1648,
+      "winner": 2,
+      "text": "Spain recognised the Dutch Republic after eighty years of war."
+     },
+     {
+      "name": "Battle of the Dunes",
+      "kind": "battle",
+      "lon": 2.45,
+      "lat": 51.06,
+      "year": 1658,
+      "winner": 1,
+      "text": "Turenne's Franco-English army defeated the Spanish relief force and Dunkirk fell."
+     },
+     {
+      "name": "Peace of the Pyrenees",
+      "kind": "treaty",
+      "lon": -1.765,
+      "lat": 43.343,
+      "year": 1659,
+      "winner": 1,
+      "text": "Signed on Pheasant Island in the Bidasoa, it marked the end of Spanish supremacy in Europe."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "thirty-years-war",
+  "name": "Thirty Years' War",
+  "start": 1618,
+  "end": 1648,
+  "kind": "war",
+  "summary": "A Protestant revolt in Bohemia against the Catholic Habsburg emperor grew into a European war fought mostly in Germany, drawing in Denmark, Sweden, France and Spain. Armies and the famine and plague they spread killed perhaps a third of the population in parts of Germany. The Peace of Westphalia in 1648 confirmed the independence of the German princes and is often seen as the start of the modern state system.",
+  "sides": [
+   {
+    "name": "Habsburgs and Catholic League",
+    "color": "#b5452f",
+    "leaders": [
+     "Emperor Ferdinand II",
+     "Maximilian of Bavaria",
+     "Tilly",
+     "Wallenstein",
+     "Cardinal-Infante Ferdinand"
+    ]
+   },
+   {
+    "name": "Protestant states, Sweden and France",
+    "color": "#2f6db5",
+    "leaders": [
+     "Frederick V",
+     "Christian IV of Denmark",
+     "Gustavus Adolphus",
+     "Cardinal Richelieu",
+     "Johan Baner",
+     "Lennart Torstensson",
+     "Turenne"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 11.5,
+    "lat": 50.5,
+    "r": 5
+   },
+   {
+    "lon": 5.5,
+    "lat": 50.0,
+    "r": 2.2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1620,
+    "label": "1618-1620",
+    "title": "Bohemian revolt",
+    "text": "Protestant nobles threw the emperor's regents out of a window in Prague and chose Frederick V of the Palatinate as king of Bohemia. Emperor Ferdinand II and Maximilian of Bavaria's Catholic League sent Tilly's army, which crushed the rebels at White Mountain outside Prague, while Spinola's Spanish troops occupied Frederick's Palatinate on the Rhine.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Holy Roman Empire",
+       "Spain",
+       "Habsburg Netherlands",
+       "Milan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tilly",
+      "label": "Catholic League and imperial army",
+      "path": [
+       [
+        11.58,
+        48.14
+       ],
+       [
+        14.29,
+        48.31
+       ],
+       [
+        14.9,
+        49.2
+       ],
+       [
+        14.32,
+        50.08
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ambrogio Spinola",
+      "label": "Spanish army into the Palatinate",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        6.13,
+        49.61
+       ],
+       [
+        7.6,
+        49.9
+       ],
+       [
+        8.47,
+        49.49
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Defenestration of Prague",
+      "kind": "event",
+      "lon": 14.4,
+      "lat": 50.09,
+      "year": 1618,
+      "winner": 1,
+      "text": "Bohemian Protestants threw two imperial regents from a window of Prague Castle, starting the revolt."
+     },
+     {
+      "name": "Battle of White Mountain",
+      "kind": "battle",
+      "lon": 14.32,
+      "lat": 50.08,
+      "year": 1620,
+      "winner": 0,
+      "text": "Tilly's army routed the Bohemian rebels in two hours and Frederick V fled."
+     }
+    ]
+   },
+   {
+    "year": 1626,
+    "label": "1625-1629",
+    "title": "Danish phase",
+    "text": "Christian IV of Denmark entered the war to defend the Protestant north. Wallenstein's new imperial army beat Mansfeld at the Dessau Bridge and Tilly crushed the Danes at Lutter, but Wallenstein failed to take Stralsund, and the emperor's Edict of Restitution of 1629 alarmed every Protestant prince.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Holy Roman Empire",
+       "Spain",
+       "Habsburg Netherlands",
+       "Milan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Denmark-Norway",
+       "Dutch Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Christian IV",
+      "label": "Danish army into Lower Saxony",
+      "path": [
+       [
+        9.7,
+        53.3
+       ],
+       [
+        10.2,
+        52.4
+       ],
+       [
+        10.27,
+        51.98
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tilly",
+      "label": "Catholic League army",
+      "path": [
+       [
+        9.5,
+        51.3
+       ],
+       [
+        9.9,
+        51.6
+       ],
+       [
+        10.27,
+        51.98
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wallenstein",
+      "label": "Imperial army to the Elbe and the Baltic",
+      "path": [
+       [
+        14.4,
+        50.1
+       ],
+       [
+        12.4,
+        51.3
+       ],
+       [
+        12.25,
+        51.83
+       ],
+       [
+        12.1,
+        53.6
+       ],
+       [
+        13.09,
+        54.31
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Dessau Bridge",
+      "kind": "battle",
+      "lon": 12.25,
+      "lat": 51.83,
+      "year": 1626,
+      "winner": 0,
+      "text": "Wallenstein repulsed Mansfeld's assault on the Elbe crossing."
+     },
+     {
+      "name": "Battle of Lutter",
+      "kind": "battle",
+      "lon": 10.27,
+      "lat": 51.98,
+      "year": 1626,
+      "winner": 0,
+      "text": "Tilly decisively defeated Christian IV, knocking Denmark out of the war."
+     },
+     {
+      "name": "Siege of Stralsund",
+      "kind": "siege",
+      "lon": 13.09,
+      "lat": 54.31,
+      "year": 1628,
+      "winner": 1,
+      "text": "Danish and Swedish help kept Wallenstein from taking the Baltic port."
+     }
+    ]
+   },
+   {
+    "year": 1631,
+    "label": "1630-1631",
+    "title": "Sweden enters",
+    "text": "Gustavus Adolphus of Sweden landed in Pomerania with a modern, mobile army. After Tilly's troops sacked Magdeburg, Saxony joined Sweden, and at Breitenfeld Gustavus won the first great Protestant victory of the war.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Holy Roman Empire",
+       "Spain",
+       "Habsburg Netherlands",
+       "Milan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Sweden",
+       "Dutch Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Gustavus Adolphus",
+      "label": "Swedish fleet to Pomerania",
+      "path": [
+       [
+        18.5,
+        59.0
+       ],
+       [
+        17.5,
+        57.2
+       ],
+       [
+        15.5,
+        55.0
+       ],
+       [
+        13.95,
+        54.25
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gustavus Adolphus",
+      "label": "March into Saxony",
+      "path": [
+       [
+        13.77,
+        54.14
+       ],
+       [
+        14.55,
+        53.43
+       ],
+       [
+        13.0,
+        52.4
+       ],
+       [
+        12.38,
+        51.42
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tilly",
+      "label": "Tilly into Saxony",
+      "path": [
+       [
+        11.63,
+        52.13
+       ],
+       [
+        12.0,
+        51.8
+       ],
+       [
+        12.38,
+        51.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Sack of Magdeburg",
+      "kind": "siege",
+      "lon": 11.63,
+      "lat": 52.13,
+      "year": 1631,
+      "winner": 0,
+      "text": "Imperial troops stormed the Protestant city, and most of its people died."
+     },
+     {
+      "name": "Battle of Breitenfeld",
+      "kind": "battle",
+      "lon": 12.38,
+      "lat": 51.42,
+      "year": 1631,
+      "winner": 1,
+      "text": "Gustavus Adolphus' flexible brigades destroyed Tilly's veteran army."
+     }
+    ]
+   },
+   {
+    "year": 1632,
+    "label": "1631-1632",
+    "title": "Gustavus in Germany",
+    "text": "Gustavus swept across Germany to the Rhine and then into Bavaria, where Tilly was mortally wounded at the Lech. The recalled Wallenstein moved into Saxony, and at Lutzen the Swedes won the field but Gustavus Adolphus was killed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Holy Roman Empire",
+       "Spain",
+       "Habsburg Netherlands",
+       "Milan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Sweden",
+       "Dutch Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Gustavus Adolphus",
+      "label": "Swedes to the Rhine and into Bavaria",
+      "path": [
+       [
+        12.38,
+        51.42
+       ],
+       [
+        11.03,
+        50.98
+       ],
+       [
+        9.93,
+        49.79
+       ],
+       [
+        8.27,
+        50.0
+       ],
+       [
+        10.98,
+        48.69
+       ],
+       [
+        11.58,
+        48.14
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Wallenstein",
+      "label": "Imperial army into Saxony",
+      "path": [
+       [
+        11.0,
+        49.5
+       ],
+       [
+        12.0,
+        50.5
+       ],
+       [
+        12.37,
+        51.34
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Gustavus Adolphus",
+      "label": "Swedes march to Lutzen",
+      "path": [
+       [
+        11.08,
+        49.45
+       ],
+       [
+        11.5,
+        50.5
+       ],
+       [
+        12.14,
+        51.26
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Rain",
+      "kind": "battle",
+      "lon": 10.98,
+      "lat": 48.69,
+      "year": 1632,
+      "winner": 1,
+      "text": "Gustavus forced the crossing of the Lech and Tilly was mortally wounded."
+     },
+     {
+      "name": "Battle of Lutzen",
+      "kind": "battle",
+      "lon": 12.14,
+      "lat": 51.26,
+      "year": 1632,
+      "winner": 1,
+      "text": "The Swedes drove Wallenstein from the field, but Gustavus Adolphus was killed."
+     }
+    ]
+   },
+   {
+    "year": 1634,
+    "label": "1634-1635",
+    "title": "Nordlingen",
+    "text": "Wallenstein was murdered on the emperor's orders in 1634. A Spanish army under the Cardinal-Infante came over the Alps from Milan to join the imperial forces, and together they shattered the Swedish army at Nordlingen, after which Saxony and most German Protestant states made the Peace of Prague with the emperor.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Holy Roman Empire",
+       "Spain",
+       "Habsburg Netherlands",
+       "Milan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Sweden",
+       "Dutch Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Cardinal-Infante Ferdinand",
+      "label": "Spanish army from Milan",
+      "path": [
+       [
+        9.19,
+        45.46
+       ],
+       [
+        9.5,
+        46.8
+       ],
+       [
+        10.0,
+        47.6
+       ],
+       [
+        10.49,
+        48.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Bernhard of Saxe-Weimar and Gustav Horn",
+      "label": "Swedish army",
+      "path": [
+       [
+        12.1,
+        49.0
+       ],
+       [
+        11.0,
+        48.9
+       ],
+       [
+        10.49,
+        48.85
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Nordlingen",
+      "kind": "battle",
+      "lon": 10.49,
+      "lat": 48.85,
+      "year": 1634,
+      "winner": 0,
+      "text": "Spanish and imperial forces destroyed the main Swedish army in southern Germany."
+     },
+     {
+      "name": "Peace of Prague",
+      "kind": "treaty",
+      "lon": 14.42,
+      "lat": 50.09,
+      "year": 1635,
+      "winner": 0,
+      "text": "Saxony and most Protestant princes made peace with the emperor."
+     }
+    ]
+   },
+   {
+    "year": 1638,
+    "label": "1635-1643",
+    "title": "France enters",
+    "text": "Cardinal Richelieu brought Catholic France into the war against the Habsburgs in 1635 to break their encirclement of France. Sweden recovered under Baner with a victory at Wittstock, Bernhard of Saxe-Weimar took Breisach and cut the Spanish Road, and in 1643 the young Duke of Enghien broke the famous Spanish tercios at Rocroi.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Holy Roman Empire",
+       "Spain",
+       "Habsburg Netherlands",
+       "Milan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Sweden",
+       "France",
+       "Dutch Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Johan Baner",
+      "label": "Swedish army in Brandenburg",
+      "path": [
+       [
+        13.4,
+        52.5
+       ],
+       [
+        12.9,
+        52.9
+       ],
+       [
+        12.49,
+        53.16
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Bernhard of Saxe-Weimar",
+      "label": "Army on the Upper Rhine",
+      "path": [
+       [
+        6.2,
+        48.7
+       ],
+       [
+        7.3,
+        47.8
+       ],
+       [
+        7.58,
+        48.03
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Francisco de Melo",
+      "label": "Spanish army of Flanders",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        4.5,
+        50.4
+       ],
+       [
+        4.52,
+        49.92
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Duke of Enghien",
+      "label": "French army",
+      "path": [
+       [
+        2.3,
+        49.9
+       ],
+       [
+        3.6,
+        49.8
+       ],
+       [
+        4.52,
+        49.92
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Wittstock",
+      "kind": "battle",
+      "lon": 12.49,
+      "lat": 53.16,
+      "year": 1636,
+      "winner": 1,
+      "text": "Baner's Swedes defeated the imperial and Saxon army in Brandenburg."
+     },
+     {
+      "name": "Siege of Breisach",
+      "kind": "siege",
+      "lon": 7.58,
+      "lat": 48.03,
+      "year": 1638,
+      "winner": 1,
+      "text": "The fall of the Rhine fortress cut Spain's land route from Italy to the Netherlands."
+     },
+     {
+      "name": "Battle of Rocroi",
+      "kind": "battle",
+      "lon": 4.52,
+      "lat": 49.92,
+      "year": 1643,
+      "winner": 1,
+      "text": "The French broke the Spanish infantry, ending its reputation for invincibility."
+     }
+    ]
+   },
+   {
+    "year": 1645,
+    "label": "1645-1648",
+    "title": "Peace of Westphalia",
+    "text": "Torstensson's Swedes destroyed an imperial army at Jankau and advanced toward Vienna, while Turenne and Wrangel ravaged Bavaria. After years of talks at Munster and Osnabruck, the Peace of Westphalia ended the war in October 1648, leaving Germany devastated and France and Sweden the winners.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Holy Roman Empire",
+       "Spain",
+       "Habsburg Netherlands",
+       "Milan"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Sweden",
+       "France",
+       "Dutch Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Lennart Torstensson",
+      "label": "Swedes toward Vienna",
+      "path": [
+       [
+        12.4,
+        51.3
+       ],
+       [
+        13.4,
+        50.6
+       ],
+       [
+        14.73,
+        49.65
+       ],
+       [
+        16.37,
+        48.3
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Turenne and Wrangel",
+      "label": "French and Swedes into Bavaria",
+      "path": [
+       [
+        9.2,
+        49.1
+       ],
+       [
+        10.0,
+        48.6
+       ],
+       [
+        10.6,
+        48.4
+       ],
+       [
+        11.58,
+        48.14
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Jankau",
+      "kind": "battle",
+      "lon": 14.73,
+      "lat": 49.65,
+      "year": 1645,
+      "winner": 1,
+      "text": "Torstensson's Swedes destroyed the emperor's last major army in Bohemia."
+     },
+     {
+      "name": "Battle of Zusmarshausen",
+      "kind": "battle",
+      "lon": 10.6,
+      "lat": 48.4,
+      "year": 1648,
+      "winner": 1,
+      "text": "French and Swedish troops defeated the last imperial and Bavarian field army."
+     },
+     {
+      "name": "Peace of Westphalia",
+      "kind": "treaty",
+      "lon": 7.63,
+      "lat": 51.96,
+      "year": 1648,
+      "winner": 1,
+      "text": "Treaties at Munster and Osnabruck gave Sweden and France new lands and the German princes sovereignty."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "the-deluge",
+  "name": "The Deluge: Khmelnytsky Uprising and the Swedish and Russian invasions of Poland-Lithuania",
+  "start": 1648,
+  "end": 1667,
+  "kind": "war",
+  "summary": "In 1648 the Cossacks of Ukraine under Bohdan Khmelnytsky rose against the Polish-Lithuanian Commonwealth, and when they placed themselves under the tsar in 1654 Russia invaded from the east, followed in 1655 by Sweden from the north and west. The Commonwealth nearly collapsed but recovered through national resistance and shifting alliances, ending the wars with the Peace of Oliva in 1660 and the Truce of Andrusovo in 1667. The Deluge cost Poland-Lithuania perhaps a third of its people and left Russia holding Smolensk, Kyiv and left-bank Ukraine.",
+  "sides": [
+   {
+    "name": "Polish-Lithuanian Commonwealth",
+    "color": "#c0473a",
+    "leaders": [
+     "John II Casimir",
+     "Stefan Czarniecki",
+     "Jerzy Lubomirski",
+     "Stanislaw Potocki"
+    ]
+   },
+   {
+    "name": "Cossacks and Russia",
+    "color": "#3a9a6a",
+    "leaders": [
+     "Bohdan Khmelnytsky",
+     "Tsar Alexis I",
+     "Vasily Sheremetev",
+     "Ivan Khovansky"
+    ]
+   },
+   {
+    "name": "Sweden and its allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Charles X Gustav",
+     "Arvid Wittenberg",
+     "Frederick William of Brandenburg",
+     "George II Rakoczi"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 25.5,
+    "lat": 51.5,
+    "r": 7
+   },
+   {
+    "lon": 33,
+    "lat": 51,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 1648,
+    "label": "1648",
+    "title": "Khmelnytsky's uprising",
+    "text": "Bohdan Khmelnytsky, a Cossack officer wronged by a Polish magnate, rode out of the Zaporozhian Sich with Crimean Tatar allies. He destroyed the Polish crown armies at Zhovti Vody and Korsun, routed a noble levy at Pyliavtsi, and swept west to Lviv and Zamosc as peasants rose and Jews, Catholics and nobles were massacred across Ukraine.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Poland-Lithuania"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Crimean Khanate"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        27.6,
+        51.5
+       ],
+       [
+        27.2,
+        50.3
+       ],
+       [
+        27.6,
+        49.0
+       ],
+       [
+        28.5,
+        48.2
+       ]
+      ],
+      "label": "Cossack-held Ukraine, late 1648"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Bohdan Khmelnytsky",
+      "label": "Cossack and Tatar army",
+      "path": [
+       [
+        34.4,
+        47.57
+       ],
+       [
+        33.5,
+        48.35
+       ],
+       [
+        31.26,
+        49.42
+       ],
+       [
+        27.25,
+        49.63
+       ],
+       [
+        24.03,
+        49.84
+       ],
+       [
+        23.25,
+        50.72
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tugay Bey",
+      "label": "Crimean Tatar horde",
+      "path": [
+       [
+        33.7,
+        46.15
+       ],
+       [
+        33.6,
+        47.2
+       ],
+       [
+        33.5,
+        48.35
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mikolaj Potocki",
+      "label": "Polish crown army",
+      "path": [
+       [
+        30.0,
+        49.2
+       ],
+       [
+        32.06,
+        49.44
+       ],
+       [
+        31.26,
+        49.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Zhovti Vody",
+      "kind": "battle",
+      "lon": 33.5,
+      "lat": 48.35,
+      "year": 1648,
+      "winner": 1,
+      "text": "The Polish vanguard was surrounded and destroyed."
+     },
+     {
+      "name": "Battle of Korsun",
+      "kind": "battle",
+      "lon": 31.26,
+      "lat": 49.42,
+      "year": 1648,
+      "winner": 1,
+      "text": "Khmelnytsky ambushed the main crown army and captured both Polish hetmans."
+     },
+     {
+      "name": "Battle of Pyliavtsi",
+      "kind": "battle",
+      "lon": 27.25,
+      "lat": 49.63,
+      "year": 1648,
+      "winner": 1,
+      "text": "A huge Polish noble army fled in panic, opening the road west."
+     }
+    ]
+   },
+   {
+    "year": 1651,
+    "label": "1649-1653",
+    "title": "Berestechko and stalemate",
+    "text": "King John II Casimir led the Commonwealth's full strength east and in 1651 won one of the largest battles of the century at Berestechko when the Tatar khan abandoned the Cossacks. Khmelnytsky recovered and annihilated a Polish army at Batih in 1652. Needing a stronger protector, he turned to Orthodox Moscow.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Polish–Lithuanian Commonwealth"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.0,
+        51.6
+       ],
+       [
+        28.5,
+        50.3
+       ],
+       [
+        28.8,
+        49.2
+       ],
+       [
+        29.8,
+        48.2
+       ]
+      ],
+      "label": "Cossack Hetmanate border, c. 1652"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "John II Casimir",
+      "label": "Royal army",
+      "path": [
+       [
+        22.57,
+        51.25
+       ],
+       [
+        24.28,
+        50.48
+       ],
+       [
+        25.38,
+        50.36
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Bohdan Khmelnytsky and Islam III Giray",
+      "label": "Cossack and Tatar army",
+      "path": [
+       [
+        30.12,
+        49.79
+       ],
+       [
+        27.5,
+        49.8
+       ],
+       [
+        25.78,
+        49.67
+       ],
+       [
+        25.38,
+        50.36
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Bohdan Khmelnytsky",
+      "label": "Cossacks march to Batih",
+      "path": [
+       [
+        30.12,
+        49.79
+       ],
+       [
+        29.8,
+        49.2
+       ],
+       [
+        29.53,
+        48.7
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Berestechko",
+      "kind": "battle",
+      "lon": 25.38,
+      "lat": 50.36,
+      "year": 1651,
+      "winner": 0,
+      "text": "The Tatars fled and the Cossack camp was stormed, a crushing Polish victory."
+     },
+     {
+      "name": "Battle of Batih",
+      "kind": "battle",
+      "lon": 29.53,
+      "lat": 48.7,
+      "year": 1652,
+      "winner": 1,
+      "text": "Cossacks and Tatars destroyed a Polish army and massacred its prisoners."
+     }
+    ]
+   },
+   {
+    "year": 1654,
+    "label": "1654-1655",
+    "title": "Russia invades",
+    "text": "At Pereiaslav in 1654 the Cossacks swore allegiance to Tsar Alexis, and Russia invaded the Grand Duchy of Lithuania. Russian armies took Smolensk, Vitebsk, Mogilev and Minsk, and in August 1655 captured Vilnius, while Russians and Cossacks besieged Lviv in the south.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Polish–Lithuanian Commonwealth"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        25.3,
+        55.9
+       ],
+       [
+        25.0,
+        54.6
+       ],
+       [
+        24.0,
+        53.7
+       ],
+       [
+        25.5,
+        52.5
+       ],
+       [
+        24.0,
+        51.0
+       ],
+       [
+        24.0,
+        49.8
+       ]
+      ],
+      "label": "Russian and Cossack advance, late 1655"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tsar Alexis I",
+      "label": "Main Russian army",
+      "path": [
+       [
+        37.62,
+        55.75
+       ],
+       [
+        34.3,
+        55.21
+       ],
+       [
+        32.04,
+        54.78
+       ],
+       [
+        30.2,
+        55.19
+       ],
+       [
+        27.56,
+        53.9
+       ],
+       [
+        25.28,
+        54.69
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Vasily Buturlin and Khmelnytsky",
+      "label": "Russians and Cossacks to Lviv",
+      "path": [
+       [
+        30.12,
+        49.79
+       ],
+       [
+        28.6,
+        49.8
+       ],
+       [
+        26.0,
+        49.8
+       ],
+       [
+        24.03,
+        49.84
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Pereiaslav Council",
+      "kind": "treaty",
+      "lon": 31.45,
+      "lat": 50.07,
+      "year": 1654,
+      "winner": 1,
+      "text": "Khmelnytsky and the Cossack officers swore allegiance to the tsar."
+     },
+     {
+      "name": "Siege of Smolensk",
+      "kind": "siege",
+      "lon": 32.05,
+      "lat": 54.78,
+      "year": 1654,
+      "winner": 1,
+      "text": "Smolensk surrendered to the tsar after a three month siege."
+     },
+     {
+      "name": "Fall of Vilnius",
+      "kind": "siege",
+      "lon": 25.28,
+      "lat": 54.69,
+      "year": 1655,
+      "winner": 1,
+      "text": "The Lithuanian capital was taken, burned and looted."
+     }
+    ]
+   },
+   {
+    "year": 1655,
+    "label": "1655",
+    "title": "The Swedish Deluge",
+    "text": "In July 1655 Charles X Gustav of Sweden invaded from Pomerania and Livonia. The nobles of Greater Poland surrendered at Ujscie, the Lithuanian magnate Janusz Radziwill accepted Swedish rule, Warsaw and Krakow fell, and John II Casimir fled to Silesia. Only the monastery of Jasna Gora at Czestochowa held out, and its successful defence became a rallying cry.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Polish–Lithuanian Commonwealth"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        25.3,
+        55.9
+       ],
+       [
+        25.0,
+        54.6
+       ],
+       [
+        24.0,
+        53.7
+       ],
+       [
+        25.5,
+        52.5
+       ],
+       [
+        24.0,
+        51.0
+       ],
+       [
+        24.0,
+        49.8
+       ]
+      ],
+      "label": "Russian and Cossack front, late 1655"
+     },
+     {
+      "path": [
+       [
+        21.5,
+        53.6
+       ],
+       [
+        22.0,
+        52.0
+       ],
+       [
+        21.8,
+        50.8
+       ],
+       [
+        20.5,
+        49.6
+       ]
+      ],
+      "label": "Edge of Swedish-held Poland, late 1655"
+     }
+    ],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Arvid Wittenberg",
+      "label": "Swedish army from Pomerania",
+      "path": [
+       [
+        14.55,
+        53.43
+       ],
+       [
+        16.0,
+        53.2
+       ],
+       [
+        16.74,
+        53.05
+       ],
+       [
+        16.93,
+        52.41
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Charles X Gustav",
+      "label": "Main Swedish army",
+      "path": [
+       [
+        16.93,
+        52.41
+       ],
+       [
+        18.6,
+        52.3
+       ],
+       [
+        21.01,
+        52.23
+       ],
+       [
+        20.6,
+        51.4
+       ],
+       [
+        19.94,
+        50.06
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Magnus de la Gardie",
+      "label": "Swedes from Livonia",
+      "path": [
+       [
+        24.1,
+        56.95
+       ],
+       [
+        23.97,
+        55.29
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capitulation at Ujscie",
+      "kind": "treaty",
+      "lon": 16.74,
+      "lat": 53.05,
+      "year": 1655,
+      "winner": 2,
+      "text": "The levy of Greater Poland surrendered without a fight and accepted Charles X Gustav."
+     },
+     {
+      "name": "Siege of Krakow",
+      "kind": "siege",
+      "lon": 19.94,
+      "lat": 50.06,
+      "year": 1655,
+      "winner": 2,
+      "text": "The old capital surrendered to the Swedes in October."
+     },
+     {
+      "name": "Siege of Jasna Gora",
+      "kind": "siege",
+      "lon": 19.1,
+      "lat": 50.81,
+      "year": 1655,
+      "winner": 0,
+      "text": "The Pauline monks and a small garrison beat off the Swedes, and the nation began to rise."
+     }
+    ]
+   },
+   {
+    "year": 1656,
+    "label": "1656-1657",
+    "title": "The nation rises",
+    "text": "The king returned and Stefan Czarniecki waged a guerrilla war that wore down the Swedes, retaking Warsaw in June 1656. Charles X Gustav and the Elector of Brandenburg won it back in a three day battle, and in 1657 Prince Rakoczi of Transylvania invaded from the south. But Russia made a truce with Poland to fight Sweden, Denmark attacked Sweden, and in the Treaty of Wehlau Brandenburg switched sides in return for full sovereignty over Prussia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Polish–Lithuanian Commonwealth"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Sweden",
+       "Prussia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Stefan Czarniecki",
+      "label": "Guerrilla campaign",
+      "path": [
+       [
+        21.75,
+        50.68
+       ],
+       [
+        21.19,
+        51.78
+       ],
+       [
+        21.01,
+        52.23
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Charles X Gustav and Frederick William",
+      "label": "Swedish and Brandenburg army",
+      "path": [
+       [
+        19.03,
+        54.04
+       ],
+       [
+        20.0,
+        53.1
+       ],
+       [
+        21.05,
+        52.28
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "George II Rakoczi",
+      "label": "Transylvanian invasion",
+      "path": [
+       [
+        23.6,
+        46.77
+       ],
+       [
+        22.0,
+        49.0
+       ],
+       [
+        19.94,
+        50.06
+       ],
+       [
+        23.69,
+        52.1
+       ],
+       [
+        21.01,
+        52.23
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Warsaw",
+      "kind": "battle",
+      "lon": 21.05,
+      "lat": 52.28,
+      "year": 1656,
+      "winner": 2,
+      "text": "Swedish and Brandenburg troops beat a much larger Polish-Lithuanian army over three days."
+     },
+     {
+      "name": "Battle of Prostki",
+      "kind": "battle",
+      "lon": 22.43,
+      "lat": 53.7,
+      "year": 1656,
+      "winner": 0,
+      "text": "Lithuanian and Tatar cavalry routed a Swedish and Brandenburg force in Ducal Prussia."
+     },
+     {
+      "name": "Treaty of Wehlau",
+      "kind": "treaty",
+      "lon": 21.23,
+      "lat": 54.61,
+      "year": 1657,
+      "winner": 0,
+      "text": "Brandenburg left Sweden for Poland in return for sovereignty over Prussia."
+     }
+    ]
+   },
+   {
+    "year": 1658,
+    "label": "1658-1660",
+    "title": "Sweden turns away",
+    "text": "Charles X Gustav marched his army across the frozen Danish straits in 1658 and forced Denmark into a harsh peace, then attacked again, so Polish, Brandenburg and Austrian troops followed him to Denmark. In Ukraine the new hetman Ivan Vyhovsky rejoined Poland and beat a Russian army at Konotop. After Charles died, the Peace of Oliva in 1660 ended the war with Sweden, which kept Livonia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Polish–Lithuanian Commonwealth",
+       "Denmark-Norway",
+       "Prussia"
+      ]
+     },
+     {
+      "side": 2,
+      "polities": [
+       "Sweden"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 2,
+      "commander": "Charles X Gustav",
+      "label": "March across the frozen Belts",
+      "path": [
+       [
+        9.75,
+        55.57
+       ],
+       [
+        10.0,
+        55.4
+       ],
+       [
+        10.9,
+        54.9
+       ],
+       [
+        11.9,
+        55.2
+       ],
+       [
+        12.57,
+        55.68
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Stefan Czarniecki",
+      "label": "Polish expedition to Denmark",
+      "path": [
+       [
+        16.93,
+        52.41
+       ],
+       [
+        14.55,
+        53.43
+       ],
+       [
+        9.8,
+        54.7
+       ],
+       [
+        9.9,
+        54.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ivan Vyhovsky and the Crimean khan",
+      "label": "Cossacks and Tatars against Russia",
+      "path": [
+       [
+        31.0,
+        50.0
+       ],
+       [
+        32.5,
+        50.8
+       ],
+       [
+        33.2,
+        51.24
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "March across the Belts",
+      "kind": "event",
+      "lon": 10.4,
+      "lat": 55.3,
+      "year": 1658,
+      "winner": 2,
+      "text": "The Swedish army crossed the ice to Zealand and forced the Treaty of Roskilde on Denmark."
+     },
+     {
+      "name": "Battle of Konotop",
+      "kind": "battle",
+      "lon": 33.2,
+      "lat": 51.24,
+      "year": 1659,
+      "winner": 0,
+      "text": "Vyhovsky's Cossacks and the Crimean Tatars destroyed a Russian cavalry army."
+     },
+     {
+      "name": "Peace of Oliva",
+      "kind": "treaty",
+      "lon": 18.56,
+      "lat": 54.41,
+      "year": 1660,
+      "winner": null,
+      "text": "Poland gave up its claim to the Swedish throne and Livonia, ending the Swedish war."
+     }
+    ]
+   },
+   {
+    "year": 1660,
+    "label": "1660-1667",
+    "title": "War with Russia and Andrusovo",
+    "text": "Freed from Sweden, the Commonwealth turned on Russia. Czarniecki and Sapieha beat Khovansky at Polonka, and Polish and Tatar forces trapped Sheremetev's army at Chudniv in 1660. But the exhausted Commonwealth could not win back the east, and the Truce of Andrusovo in 1667 split Ukraine along the Dnieper, giving Russia Smolensk, Kyiv and the left bank.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Polish–Lithuanian Commonwealth"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.0,
+        56.0
+       ],
+       [
+        31.3,
+        54.5
+       ],
+       [
+        30.9,
+        52.5
+       ],
+       [
+        30.5,
+        50.6
+       ],
+       [
+        31.8,
+        49.5
+       ],
+       [
+        33.0,
+        48.3
+       ]
+      ],
+      "label": "Andrusovo line, 1667"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Stefan Czarniecki and Pawel Sapieha",
+      "label": "Polish-Lithuanian army",
+      "path": [
+       [
+        23.83,
+        53.68
+       ],
+       [
+        25.0,
+        53.3
+       ],
+       [
+        25.86,
+        53.06
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ivan Khovansky",
+      "label": "Russian army",
+      "path": [
+       [
+        27.56,
+        53.9
+       ],
+       [
+        26.7,
+        53.4
+       ],
+       [
+        25.86,
+        53.06
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Vasily Sheremetev",
+      "label": "Russian army from Kyiv",
+      "path": [
+       [
+        30.52,
+        50.45
+       ],
+       [
+        29.3,
+        50.2
+       ],
+       [
+        28.11,
+        50.05
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Stanislaw Potocki and Jerzy Lubomirski",
+      "label": "Crown army and Tatars",
+      "path": [
+       [
+        24.03,
+        49.84
+       ],
+       [
+        26.0,
+        49.9
+       ],
+       [
+        28.11,
+        50.05
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Polonka",
+      "kind": "battle",
+      "lon": 25.86,
+      "lat": 53.06,
+      "year": 1660,
+      "winner": 0,
+      "text": "Czarniecki and Sapieha routed Khovansky's Russian army in Lithuania."
+     },
+     {
+      "name": "Battle of Chudniv",
+      "kind": "battle",
+      "lon": 28.11,
+      "lat": 50.05,
+      "year": 1660,
+      "winner": 0,
+      "text": "Sheremetev's encircled Russian army surrendered."
+     },
+     {
+      "name": "Truce of Andrusovo",
+      "kind": "treaty",
+      "lon": 31.5,
+      "lat": 54.6,
+      "year": 1667,
+      "winner": 1,
+      "text": "Russia kept Smolensk, Kyiv and Ukraine east of the Dnieper."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "qing-invasions-of-korea",
+  "name": "Qing (Manchu) invasions of Korea",
+  "start": 1627,
+  "end": 1637,
+  "kind": "war",
+  "summary": "The Manchus of the Later Jin, at war with Ming China, twice invaded Joseon Korea to end its loyalty to the Ming. The first invasion in 1627 forced a 'brotherly' alliance; the second in 1636 to 1637, led by Hong Taiji as emperor of the new Qing dynasty, trapped King Injo in Namhansanseong and forced him to kneel in surrender. Korea became a Qing tributary, cut its ties to the Ming and turned inward for two centuries.",
+  "sides": [
+   {
+    "name": "Later Jin / Qing (Manchus)",
+    "color": "#c9822b",
+    "leaders": [
+     "Hong Taiji",
+     "Amin",
+     "Dorgon",
+     "Mafuta"
+    ]
+   },
+   {
+    "name": "Joseon Korea",
+    "color": "#3b6fb6",
+    "leaders": [
+     "King Injo",
+     "Im Gyeong-eop",
+     "Kim Ryu",
+     "Choe Myeong-gil"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 126.0,
+    "lat": 38.8,
+    "r": 3.2
+   },
+   {
+    "lon": 121.0,
+    "lat": 40.8,
+    "r": 3.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1627,
+    "label": "Jan to Mar 1627",
+    "title": "First invasion",
+    "text": "Hong Taiji, the new Later Jin khan, sent his cousin Amin across the frozen Yalu with about 30,000 men to punish Korea for helping the Ming. The Manchus stormed Uiju and Anju and occupied Pyongyang, and King Injo fled from Seoul to Ganghwa Island. Short of supplies, the Jin agreed to a treaty making Korea its 'younger brother' and withdrew.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Korea"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        125.4,
+        38.1
+       ],
+       [
+        126.1,
+        38.3
+       ],
+       [
+        126.8,
+        38.6
+       ],
+       [
+        127.4,
+        38.9
+       ]
+      ],
+      "label": "Limit of the Jin advance, Mar 1627"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Amin",
+      "label": "Later Jin army",
+      "path": [
+       [
+        123.43,
+        41.8
+       ],
+       [
+        124.53,
+        40.2
+       ],
+       [
+        125.67,
+        39.62
+       ],
+       [
+        125.75,
+        39.03
+       ],
+       [
+        125.75,
+        38.67
+       ],
+       [
+        126.39,
+        38.33
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "King Injo",
+      "label": "Court flees to Ganghwa",
+      "path": [
+       [
+        126.98,
+        37.57
+       ],
+       [
+        126.7,
+        37.62
+       ],
+       [
+        126.49,
+        37.71
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Uiju",
+      "kind": "siege",
+      "lon": 124.53,
+      "lat": 40.2,
+      "year": 1627,
+      "winner": 0,
+      "text": "The border fortress fell on the first day of the invasion."
+     },
+     {
+      "name": "Battle of Anju",
+      "kind": "siege",
+      "lon": 125.67,
+      "lat": 39.62,
+      "year": 1627,
+      "winner": 0,
+      "text": "The Manchus stormed Anju and its commander blew himself up rather than surrender."
+     },
+     {
+      "name": "Peace at Ganghwa",
+      "kind": "treaty",
+      "lon": 126.49,
+      "lat": 37.71,
+      "year": 1627,
+      "winner": 0,
+      "text": "Korea accepted a 'brotherly' relationship with the Later Jin but did not break with the Ming."
+     }
+    ]
+   },
+   {
+    "year": 1636,
+    "label": "1628-1636",
+    "title": "The Qing demand submission",
+    "text": "Korea kept supporting the Ming while the Manchus grew stronger: in 1629 Hong Taiji raided through the Great Wall to the gates of Beijing, and by 1635 the Mongols of Inner Mongolia had submitted. In 1636 at Mukden he proclaimed the Qing dynasty with himself as emperor and demanded that Korea acknowledge him as its overlord. King Injo's court refused.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Korea"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Hong Taiji",
+      "label": "Raid through the Great Wall, 1629",
+      "path": [
+       [
+        123.43,
+        41.8
+       ],
+       [
+        121.0,
+        41.1
+       ],
+       [
+        118.5,
+        40.4
+       ],
+       [
+        117.96,
+        40.19
+       ],
+       [
+        116.4,
+        39.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Raid on Beijing",
+      "kind": "battle",
+      "lon": 116.4,
+      "lat": 39.9,
+      "year": 1629,
+      "winner": 0,
+      "text": "Hong Taiji's army ravaged the Beijing region before withdrawing with plunder."
+     },
+     {
+      "name": "Proclamation of the Qing",
+      "kind": "event",
+      "lon": 123.43,
+      "lat": 41.8,
+      "year": 1636,
+      "winner": 0,
+      "text": "Hong Taiji declared himself emperor of the Great Qing; the Korean envoys refused to bow."
+     }
+    ]
+   },
+   {
+    "year": 1636,
+    "label": "Dec 1636 to Jan 1637",
+    "title": "Second invasion and Namhansanseong",
+    "text": "In December 1636 Hong Taiji crossed the frozen Yalu with about 120,000 men. A cavalry vanguard ignored General Im Gyeong-eop's fortress at Baengma and raced to Seoul in under two weeks, cutting off the road to Ganghwa. The royal family escaped to the island, but King Injo had to take refuge in the mountain fortress of Namhansanseong, where the Qing besieged him.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Korea"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mafuta",
+      "label": "Qing cavalry vanguard",
+      "path": [
+       [
+        124.53,
+        40.2
+       ],
+       [
+        125.67,
+        39.62
+       ],
+       [
+        125.75,
+        39.03
+       ],
+       [
+        126.55,
+        37.97
+       ],
+       [
+        126.98,
+        37.57
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Hong Taiji",
+      "label": "Main Qing army",
+      "path": [
+       [
+        123.43,
+        41.8
+       ],
+       [
+        124.53,
+        40.2
+       ],
+       [
+        125.75,
+        39.03
+       ],
+       [
+        126.55,
+        37.97
+       ],
+       [
+        127.1,
+        37.51
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "King Injo",
+      "label": "King retreats to Namhansanseong",
+      "path": [
+       [
+        126.98,
+        37.57
+       ],
+       [
+        127.1,
+        37.52
+       ],
+       [
+        127.18,
+        37.48
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Kim Gyeong-jing",
+      "label": "Royal family to Ganghwa",
+      "path": [
+       [
+        126.98,
+        37.57
+       ],
+       [
+        126.7,
+        37.62
+       ],
+       [
+        126.49,
+        37.71
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Baengma fortress",
+      "kind": "siege",
+      "lon": 124.62,
+      "lat": 40.07,
+      "year": 1636,
+      "winner": 1,
+      "text": "Im Gyeong-eop held his fortress, but the Qing simply rode past it."
+     },
+     {
+      "name": "Siege of Namhansanseong",
+      "kind": "siege",
+      "lon": 127.18,
+      "lat": 37.48,
+      "year": 1636,
+      "winner": 0,
+      "text": "Some 13,000 defenders with little food were surrounded in deep winter."
+     }
+    ]
+   },
+   {
+    "year": 1637,
+    "label": "Jan to Feb 1637",
+    "title": "Surrender at Samjeondo",
+    "text": "Provincial relief armies marching to the king were beaten one by one, and Dorgon crossed to Ganghwa and captured the royal family. With food running out, King Injo came down from the fortress and kowtowed to Hong Taiji at Samjeondo on the Han River. Korea became a Qing tributary, broke with the Ming and sent two princes to Mukden as hostages.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Korea"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Heo Wan and Min Seong-hwi",
+      "label": "Gyeongsang relief army",
+      "path": [
+       [
+        128.6,
+        35.87
+       ],
+       [
+        127.93,
+        36.99
+       ],
+       [
+        127.27,
+        37.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Dorgon",
+      "label": "Assault on Ganghwa Island",
+      "path": [
+       [
+        126.98,
+        37.55
+       ],
+       [
+        126.7,
+        37.62
+       ],
+       [
+        126.49,
+        37.71
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Hong Taiji",
+      "label": "Return with royal hostages",
+      "path": [
+       [
+        127.1,
+        37.51
+       ],
+       [
+        125.75,
+        39.03
+       ],
+       [
+        124.53,
+        40.2
+       ],
+       [
+        123.43,
+        41.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ssangnyeong",
+      "kind": "battle",
+      "lon": 127.27,
+      "lat": 37.4,
+      "year": 1637,
+      "winner": 0,
+      "text": "A large Korean relief army from Gyeongsang was routed by a small Qing cavalry force."
+     },
+     {
+      "name": "Fall of Ganghwa",
+      "kind": "siege",
+      "lon": 126.49,
+      "lat": 37.71,
+      "year": 1637,
+      "winner": 0,
+      "text": "Dorgon's troops crossed by boat and captured the queen and princes."
+     },
+     {
+      "name": "Surrender at Samjeondo",
+      "kind": "treaty",
+      "lon": 127.1,
+      "lat": 37.51,
+      "year": 1637,
+      "winner": 0,
+      "text": "Injo bowed nine times to Hong Taiji and accepted Qing overlordship."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "english-civil-war",
+  "name": "English Civil War",
+  "start": 1642,
+  "end": 1651,
+  "kind": "war",
+  "summary": "A struggle over power, taxes and religion between Charles I and Parliament became a civil war across England, Scotland and Ireland. Parliament, allied with the Scottish Covenanters and later fighting with its own New Model Army under Fairfax and Cromwell, won the first war, then beat the King's Scottish allies, executed Charles in 1649 and conquered Ireland and Scotland. Britain briefly became a republic, and the war established that a king could not rule without Parliament.",
+  "sides": [
+   {
+    "name": "Royalists (with the Scots from 1648)",
+    "color": "#b5452f",
+    "leaders": [
+     "Charles I",
+     "Prince Rupert",
+     "Marquess of Newcastle",
+     "Marquess of Montrose",
+     "Duke of Hamilton",
+     "Charles II"
+    ]
+   },
+   {
+    "name": "Parliament (with the Scottish Covenanters to 1647)",
+    "color": "#c9892b",
+    "leaders": [
+     "Earl of Essex",
+     "Thomas Fairfax",
+     "Oliver Cromwell",
+     "Earl of Leven",
+     "David Leslie"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -2.2,
+    "lat": 53.5,
+    "r": 4.2
+   },
+   {
+    "lon": -7.0,
+    "lat": 53.0,
+    "r": 2.2
+   }
+  ],
+  "steps": [
+   {
+    "year": 1642,
+    "label": "1642",
+    "title": "War begins: Edgehill",
+    "text": "After years of quarrels over taxes, religion and control of the army, Charles I raised his standard at Nottingham in August 1642. Parliament held London, the navy and the rich southeast; the King drew support from the north, west and Wales. The first battle at Edgehill was a draw, and the King's advance on London stopped at Turnham Green, so he made Oxford his capital.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        -0.5,
+        53.4
+       ],
+       [
+        -1.2,
+        52.9
+       ],
+       [
+        -1.6,
+        52.4
+       ],
+       [
+        -1.3,
+        51.9
+       ],
+       [
+        -1.0,
+        51.5
+       ],
+       [
+        -1.6,
+        51.0
+       ],
+       [
+        -2.6,
+        50.7
+       ]
+      ],
+      "label": "Rough line of control, early 1643"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles I",
+      "label": "Royalist army",
+      "path": [
+       [
+        -1.15,
+        52.95
+       ],
+       [
+        -2.75,
+        52.71
+       ],
+       [
+        -1.47,
+        52.13
+       ],
+       [
+        -1.26,
+        51.75
+       ],
+       [
+        -0.31,
+        51.49
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Earl of Essex",
+      "label": "Parliamentary army",
+      "path": [
+       [
+        -0.12,
+        51.51
+       ],
+       [
+        -0.9,
+        52.24
+       ],
+       [
+        -2.22,
+        52.19
+       ],
+       [
+        -1.47,
+        52.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "King raises his standard",
+      "kind": "event",
+      "lon": -1.15,
+      "lat": 52.95,
+      "year": 1642,
+      "winner": null,
+      "text": "Charles declared war on Parliament at Nottingham Castle."
+     },
+     {
+      "name": "Battle of Edgehill",
+      "kind": "battle",
+      "lon": -1.47,
+      "lat": 52.13,
+      "year": 1642,
+      "winner": null,
+      "text": "The first battle of the war ended indecisively."
+     },
+     {
+      "name": "Turnham Green",
+      "kind": "battle",
+      "lon": -0.25,
+      "lat": 51.49,
+      "year": 1642,
+      "winner": 1,
+      "text": "London's trained bands faced down the King, who fell back to Oxford."
+     }
+    ]
+   },
+   {
+    "year": 1644,
+    "label": "1643-1644",
+    "title": "The Scots join: Marston Moor",
+    "text": "The Royalists did well in 1643, so Parliament allied with the Scottish Covenanters in the Solemn League and Covenant. In 1644 Leven's Scots marched south and besieged York with Parliament's northern armies. Prince Rupert rode to the rescue, but at Marston Moor Cromwell's cavalry and the allied foot destroyed his army and the north was lost to the King, though Charles trapped and captured Essex's infantry at Lostwithiel in Cornwall.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Scotland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -2.9,
+        53.2
+       ],
+       [
+        -2.0,
+        52.8
+       ],
+       [
+        -1.4,
+        52.3
+       ],
+       [
+        -1.0,
+        51.8
+       ],
+       [
+        -1.4,
+        51.2
+       ],
+       [
+        -2.3,
+        50.8
+       ]
+      ],
+      "label": "Rough line of control, late 1644"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Earl of Leven",
+      "label": "Scottish Covenanter army",
+      "path": [
+       [
+        -2.0,
+        55.77
+       ],
+       [
+        -1.61,
+        54.97
+       ],
+       [
+        -1.57,
+        54.78
+       ],
+       [
+        -1.08,
+        53.96
+       ],
+       [
+        -1.27,
+        53.96
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Prince Rupert",
+      "label": "Rupert's relief march to York",
+      "path": [
+       [
+        -2.75,
+        52.71
+       ],
+       [
+        -2.43,
+        53.58
+       ],
+       [
+        -2.02,
+        53.96
+       ],
+       [
+        -1.47,
+        54.01
+       ],
+       [
+        -1.27,
+        53.96
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Earl of Essex",
+      "label": "Essex into the southwest",
+      "path": [
+       [
+        -1.26,
+        51.6
+       ],
+       [
+        -2.94,
+        50.72
+       ],
+       [
+        -4.67,
+        50.41
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles I",
+      "label": "King pursues Essex",
+      "path": [
+       [
+        -1.26,
+        51.75
+       ],
+       [
+        -2.36,
+        51.38
+       ],
+       [
+        -3.53,
+        50.72
+       ],
+       [
+        -4.67,
+        50.41
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Solemn League and Covenant",
+      "kind": "treaty",
+      "lon": -3.19,
+      "lat": 55.95,
+      "year": 1643,
+      "winner": 1,
+      "text": "The Scots agreed to send an army to fight for Parliament."
+     },
+     {
+      "name": "Battle of Marston Moor",
+      "kind": "battle",
+      "lon": -1.27,
+      "lat": 53.96,
+      "year": 1644,
+      "winner": 1,
+      "text": "The largest battle of the war cost the King the north of England."
+     },
+     {
+      "name": "Battle of Lostwithiel",
+      "kind": "battle",
+      "lon": -4.67,
+      "lat": 50.41,
+      "year": 1644,
+      "winner": 0,
+      "text": "Essex's infantry surrendered to the King in Cornwall."
+     }
+    ]
+   },
+   {
+    "year": 1645,
+    "label": "1645-1646",
+    "title": "New Model Army: Naseby",
+    "text": "Parliament created the professional New Model Army under Sir Thomas Fairfax with Oliver Cromwell commanding the horse. At Naseby in June 1645 it destroyed the King's main field army, and the Royalist strongholds fell one by one. In Scotland Montrose won a string of victories for the King until David Leslie beat him at Philiphaugh, and in May 1646 Charles surrendered to the Scots.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Scotland"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        -3.0,
+        53.3
+       ],
+       [
+        -2.7,
+        52.4
+       ],
+       [
+        -2.4,
+        51.6
+       ],
+       [
+        -2.8,
+        50.9
+       ]
+      ],
+      "label": "Royalist west and Wales, late 1645"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Fairfax and Cromwell",
+      "label": "New Model Army",
+      "path": [
+       [
+        -0.6,
+        51.48
+       ],
+       [
+        -1.26,
+        51.7
+       ],
+       [
+        -0.72,
+        52.08
+       ],
+       [
+        -0.99,
+        52.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles I",
+      "label": "Royalist field army",
+      "path": [
+       [
+        -1.26,
+        51.75
+       ],
+       [
+        -1.72,
+        51.93
+       ],
+       [
+        -1.13,
+        52.63
+       ],
+       [
+        -0.92,
+        52.48
+       ],
+       [
+        -0.99,
+        52.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Marquess of Montrose",
+      "label": "Montrose's Highland campaign",
+      "path": [
+       [
+        -5.1,
+        56.82
+       ],
+       [
+        -3.8,
+        57.58
+       ],
+       [
+        -2.7,
+        57.23
+       ],
+       [
+        -4.05,
+        55.98
+       ],
+       [
+        -2.87,
+        55.53
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Naseby",
+      "kind": "battle",
+      "lon": -0.99,
+      "lat": 52.4,
+      "year": 1645,
+      "winner": 1,
+      "text": "The New Model Army destroyed the King's infantry and captured his papers."
+     },
+     {
+      "name": "Battle of Philiphaugh",
+      "kind": "battle",
+      "lon": -2.87,
+      "lat": 55.53,
+      "year": 1645,
+      "winner": 1,
+      "text": "David Leslie surprised and routed Montrose's army."
+     },
+     {
+      "name": "King surrenders to the Scots",
+      "kind": "event",
+      "lon": -0.96,
+      "lat": 53.08,
+      "year": 1646,
+      "winner": 1,
+      "text": "Charles gave himself up to the Scottish army near Newark, ending the first civil war."
+     }
+    ]
+   },
+   {
+    "year": 1648,
+    "label": "1648-1649",
+    "title": "Second Civil War and the King's execution",
+    "text": "Charles plotted with a faction of Scots, the Engagers, who invaded England for him in 1648 while Royalists rose in Kent, Essex and Wales. Cromwell crushed the Scots at Preston and Fairfax starved out Colchester. Convinced the King could not be trusted, the army purged Parliament, and Charles I was tried and beheaded outside the Banqueting House in Whitehall in January 1649.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Scotland"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "England and Ireland"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Hamilton",
+      "label": "Engager Scots army",
+      "path": [
+       [
+        -3.26,
+        54.99
+       ],
+       [
+        -2.93,
+        54.89
+       ],
+       [
+        -2.75,
+        54.33
+       ],
+       [
+        -2.7,
+        53.76
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Oliver Cromwell",
+      "label": "Cromwell from Wales to Preston",
+      "path": [
+       [
+        -4.91,
+        51.67
+       ],
+       [
+        -2.24,
+        51.86
+       ],
+       [
+        -1.55,
+        53.8
+       ],
+       [
+        -2.02,
+        53.96
+       ],
+       [
+        -2.7,
+        53.76
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Thomas Fairfax",
+      "label": "Fairfax in Kent and Essex",
+      "path": [
+       [
+        -0.12,
+        51.51
+       ],
+       [
+        0.52,
+        51.27
+       ],
+       [
+        0.9,
+        51.89
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Colchester",
+      "kind": "siege",
+      "lon": 0.9,
+      "lat": 51.89,
+      "year": 1648,
+      "winner": 1,
+      "text": "Fairfax starved the Royalist garrison into surrender after eleven weeks."
+     },
+     {
+      "name": "Battle of Preston",
+      "kind": "battle",
+      "lon": -2.7,
+      "lat": 53.76,
+      "year": 1648,
+      "winner": 1,
+      "text": "Cromwell routed the larger Scottish and Royalist army."
+     },
+     {
+      "name": "Execution of Charles I",
+      "kind": "event",
+      "lon": -0.126,
+      "lat": 51.504,
+      "year": 1649,
+      "winner": 1,
+      "text": "The King was beheaded and England became a republic, the Commonwealth."
+     }
+    ]
+   },
+   {
+    "year": 1649,
+    "label": "1649-1650",
+    "title": "Cromwell in Ireland",
+    "text": "Ireland had been held since 1641 by Catholic Confederates, now allied with the Royalists under Ormond. Cromwell landed at Dublin in August 1649 after a Parliamentary victory at Rathmines, then stormed Drogheda and Wexford and massacred their garrisons and many townspeople. His campaign began a reconquest that confiscated most Catholic land.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Scotland"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "England and Ireland"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Oliver Cromwell",
+      "label": "Cromwell's army in Ireland",
+      "path": [
+       [
+        -5.03,
+        51.71
+       ],
+       [
+        -6.26,
+        53.35
+       ],
+       [
+        -6.35,
+        53.72
+       ],
+       [
+        -6.46,
+        52.34
+       ],
+       [
+        -7.7,
+        52.36
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Marquess of Ormond",
+      "label": "Royalist and Confederate army",
+      "path": [
+       [
+        -7.25,
+        52.65
+       ],
+       [
+        -6.8,
+        53.1
+       ],
+       [
+        -6.26,
+        53.32
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Rathmines",
+      "kind": "battle",
+      "lon": -6.26,
+      "lat": 53.32,
+      "year": 1649,
+      "winner": 1,
+      "text": "The Dublin garrison routed Ormond's besieging army."
+     },
+     {
+      "name": "Siege of Drogheda",
+      "kind": "siege",
+      "lon": -6.35,
+      "lat": 53.72,
+      "year": 1649,
+      "winner": 1,
+      "text": "Cromwell stormed the town and his troops killed the garrison and many civilians."
+     },
+     {
+      "name": "Sack of Wexford",
+      "kind": "siege",
+      "lon": -6.46,
+      "lat": 52.34,
+      "year": 1649,
+      "winner": 1,
+      "text": "The town was taken and plundered during surrender talks."
+     }
+    ]
+   },
+   {
+    "year": 1651,
+    "label": "1650-1651",
+    "title": "Dunbar and Worcester",
+    "text": "The Scots crowned Charles II, so Cromwell invaded Scotland and, though cornered at Dunbar, smashed David Leslie's army in September 1650. In 1651 Charles II led a Scottish army deep into England, but at Worcester, exactly a year after Dunbar, Cromwell destroyed it. Charles escaped to France after six weeks on the run, and England, Scotland and Ireland were ruled by Parliament and later by Cromwell as Lord Protector.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "England and Ireland",
+       "Scotland"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Oliver Cromwell",
+      "label": "Invasion of Scotland",
+      "path": [
+       [
+        -2.0,
+        55.77
+       ],
+       [
+        -2.52,
+        55.99
+       ],
+       [
+        -3.19,
+        55.95
+       ],
+       [
+        -3.44,
+        56.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "David Leslie",
+      "label": "Scots army shadows Cromwell",
+      "path": [
+       [
+        -3.19,
+        55.95
+       ],
+       [
+        -2.8,
+        55.95
+       ],
+       [
+        -2.55,
+        55.95
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles II",
+      "label": "Royalist Scots march into England",
+      "path": [
+       [
+        -3.94,
+        56.12
+       ],
+       [
+        -2.93,
+        54.89
+       ],
+       [
+        -2.63,
+        53.55
+       ],
+       [
+        -2.22,
+        52.19
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Oliver Cromwell",
+      "label": "Cromwell's pursuit to Worcester",
+      "path": [
+       [
+        -3.44,
+        56.4
+       ],
+       [
+        -1.6,
+        54.5
+       ],
+       [
+        -1.3,
+        53.7
+       ],
+       [
+        -1.95,
+        52.09
+       ],
+       [
+        -2.22,
+        52.19
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Dunbar",
+      "kind": "battle",
+      "lon": -2.52,
+      "lat": 55.99,
+      "year": 1650,
+      "winner": 1,
+      "text": "Cromwell's outnumbered army routed the Scots at dawn."
+     },
+     {
+      "name": "Battle of Worcester",
+      "kind": "battle",
+      "lon": -2.22,
+      "lat": 52.19,
+      "year": 1651,
+      "winner": 1,
+      "text": "The last battle of the civil wars destroyed Charles II's army."
+     },
+     {
+      "name": "Charles II escapes",
+      "kind": "event",
+      "lon": -0.27,
+      "lat": 50.83,
+      "year": 1651,
+      "winner": null,
+      "text": "After hiding in an oak tree, the young king sailed from Shoreham to France."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "great-turkish-war",
+  "name": "Great Turkish War",
+  "start": 1683,
+  "end": 1699,
+  "kind": "war",
+  "summary": "The Ottoman grand vizier Kara Mustafa's siege of Vienna in 1683 was broken by a Polish and German relief army under Jan III Sobieski, and the Holy League of the Habsburgs, Poland, Venice and later Russia went on the offensive. Over sixteen years the allies took Buda, Belgrade for a time, the Morea and Azov, and Prince Eugene destroyed the Sultan's army at Zenta. The Treaty of Karlowitz in 1699 gave Hungary and Transylvania to Austria and marked the start of the Ottoman retreat from Europe.",
+  "sides": [
+   {
+    "name": "Ottoman Empire and allies",
+    "color": "#3f9a6b",
+    "leaders": [
+     "Kara Mustafa Pasha",
+     "Mehmed IV",
+     "Fazil Mustafa Pasha",
+     "Mustafa II",
+     "Imre Thokoly"
+    ]
+   },
+   {
+    "name": "Holy League",
+    "color": "#4a6fb5",
+    "leaders": [
+     "Leopold I",
+     "Jan III Sobieski",
+     "Charles of Lorraine",
+     "Max Emanuel of Bavaria",
+     "Louis of Baden",
+     "Eugene of Savoy",
+     "Francesco Morosini",
+     "Peter the Great"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 19.0,
+    "lat": 46.3,
+    "r": 4.5
+   },
+   {
+    "lon": 22.3,
+    "lat": 38.0,
+    "r": 2.2
+   },
+   {
+    "lon": 39.2,
+    "lat": 49.0,
+    "r": 2.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1683,
+    "label": "1683",
+    "title": "The siege of Vienna",
+    "text": "Backing a Hungarian revolt under Imre Thokoly, Grand Vizier Kara Mustafa led some 150,000 men up the Danube and besieged Vienna in July 1683. The city held for two months while Charles of Lorraine gathered a relief army. On 12 September King Jan III Sobieski led Polish and German troops down the Kahlenberg, and his winged hussars charged into the Ottoman camp in the largest cavalry charge in history.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Polish–Lithuanian Commonwealth",
+       "Venice"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Kara Mustafa Pasha",
+      "label": "Ottoman army up the Danube",
+      "path": [
+       [
+        20.46,
+        44.82
+       ],
+       [
+        18.69,
+        45.55
+       ],
+       [
+        18.41,
+        47.19
+       ],
+       [
+        17.63,
+        47.68
+       ],
+       [
+        16.37,
+        48.21
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Jan III Sobieski",
+      "label": "Polish relief army",
+      "path": [
+       [
+        19.94,
+        50.06
+       ],
+       [
+        18.86,
+        50.44
+       ],
+       [
+        17.25,
+        49.59
+       ],
+       [
+        16.06,
+        48.33
+       ],
+       [
+        16.33,
+        48.27
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Charles of Lorraine",
+      "label": "Imperial army",
+      "path": [
+       [
+        17.63,
+        47.68
+       ],
+       [
+        16.9,
+        48.0
+       ],
+       [
+        16.5,
+        48.3
+       ],
+       [
+        16.06,
+        48.33
+       ],
+       [
+        16.33,
+        48.27
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Vienna",
+      "kind": "siege",
+      "lon": 16.37,
+      "lat": 48.21,
+      "year": 1683,
+      "winner": 1,
+      "text": "The garrison under Starhemberg held out for two months against mines and assaults."
+     },
+     {
+      "name": "Battle of Vienna",
+      "kind": "battle",
+      "lon": 16.33,
+      "lat": 48.27,
+      "year": 1683,
+      "winner": 1,
+      "text": "The relief army routed the besiegers; Kara Mustafa was later executed for his failure."
+     }
+    ]
+   },
+   {
+    "year": 1686,
+    "label": "1684-1686",
+    "title": "Holy League and Buda",
+    "text": "Pope Innocent XI brought the Emperor, Poland and Venice together in the Holy League in 1684. Charles of Lorraine pushed down the Danube and in 1686, after a long siege, stormed Buda, the Ottoman capital of Hungary for 145 years. In the south the Venetian fleet under Francesco Morosini landed in Greece and conquered the Morea.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Polish–Lithuanian Commonwealth",
+       "Venice"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.6,
+        45.3
+       ],
+       [
+        16.9,
+        45.9
+       ],
+       [
+        18.2,
+        46.3
+       ],
+       [
+        19.3,
+        46.9
+       ],
+       [
+        20.3,
+        47.6
+       ],
+       [
+        21.8,
+        48.1
+       ]
+      ],
+      "label": "Front, late 1686"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Charles of Lorraine",
+      "label": "Imperial army down the Danube",
+      "path": [
+       [
+        16.37,
+        48.21
+       ],
+       [
+        17.63,
+        47.68
+       ],
+       [
+        18.74,
+        47.79
+       ],
+       [
+        19.04,
+        47.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Francesco Morosini",
+      "label": "Venetian fleet to the Morea",
+      "path": [
+       [
+        12.33,
+        45.44
+       ],
+       [
+        16.5,
+        41.5
+       ],
+       [
+        19.92,
+        39.62
+       ],
+       [
+        21.96,
+        36.8
+       ],
+       [
+        22.8,
+        37.57
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Holy League formed",
+      "kind": "treaty",
+      "lon": 14.29,
+      "lat": 48.31,
+      "year": 1684,
+      "winner": 1,
+      "text": "The Emperor, Poland and Venice allied under the pope against the Ottomans."
+     },
+     {
+      "name": "Siege of Buda",
+      "kind": "siege",
+      "lon": 19.04,
+      "lat": 47.5,
+      "year": 1686,
+      "winner": 1,
+      "text": "The Habsburg army stormed Buda after 78 days."
+     },
+     {
+      "name": "Fall of Nafplio",
+      "kind": "siege",
+      "lon": 22.8,
+      "lat": 37.57,
+      "year": 1686,
+      "winner": 1,
+      "text": "Morosini took the main Ottoman fortress of the Morea."
+     }
+    ]
+   },
+   {
+    "year": 1688,
+    "label": "1687-1688",
+    "title": "Mohacs and Belgrade",
+    "text": "At the second battle of Mohacs in 1687 Lorraine and Max Emanuel of Bavaria routed the grand vizier's army; the defeat led to a mutiny that deposed Sultan Mehmed IV. Transylvania submitted to the Habsburgs, a Venetian shell blew up the Parthenon in Athens, and in 1688 Max Emanuel stormed Belgrade.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Polish–Lithuanian Commonwealth",
+       "Venice"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.8,
+        45.2
+       ],
+       [
+        17.5,
+        45.1
+       ],
+       [
+        19.3,
+        44.9
+       ],
+       [
+        20.6,
+        44.6
+       ],
+       [
+        22.0,
+        44.6
+       ],
+       [
+        23.0,
+        45.7
+       ]
+      ],
+      "label": "Front, late 1688"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Charles of Lorraine",
+      "label": "Imperial army to Mohacs",
+      "path": [
+       [
+        19.04,
+        47.5
+       ],
+       [
+        18.68,
+        45.99
+       ],
+       [
+        18.4,
+        45.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Max Emanuel of Bavaria",
+      "label": "March on Belgrade",
+      "path": [
+       [
+        19.04,
+        47.5
+       ],
+       [
+        19.86,
+        45.25
+       ],
+       [
+        20.46,
+        44.82
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Francesco Morosini",
+      "label": "Venetians at Athens",
+      "path": [
+       [
+        22.8,
+        37.57
+       ],
+       [
+        23.1,
+        37.6
+       ],
+       [
+        23.63,
+        37.94
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Mohacs",
+      "kind": "battle",
+      "lon": 18.4,
+      "lat": 45.85,
+      "year": 1687,
+      "winner": 1,
+      "text": "The imperial victory near Mount Harsany avenged the disaster of 1526."
+     },
+     {
+      "name": "Parthenon destroyed",
+      "kind": "event",
+      "lon": 23.73,
+      "lat": 37.97,
+      "year": 1687,
+      "winner": 1,
+      "text": "A Venetian mortar round ignited the Ottoman powder store inside the Parthenon."
+     },
+     {
+      "name": "Siege of Belgrade",
+      "kind": "siege",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 1688,
+      "winner": 1,
+      "text": "Max Emanuel stormed the key fortress on the Danube."
+     }
+    ]
+   },
+   {
+    "year": 1690,
+    "label": "1689-1691",
+    "title": "Ottoman revival",
+    "text": "France attacked the Rhine in 1688, drawing Habsburg troops west. Louis of Baden still pushed deep into Serbia to Nis and Vidin, but the able grand vizier Fazil Mustafa Pasha struck back in 1690, retaking Nis and Belgrade as tens of thousands of Serbs fled north with their patriarch. At Slankamen in 1691 Louis of Baden beat the Ottomans and Fazil Mustafa was killed, fixing the front on the Sava and Danube.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Polish–Lithuanian Commonwealth",
+       "Venice",
+       "Tsardom of Muscovy"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.8,
+        45.2
+       ],
+       [
+        17.6,
+        45.1
+       ],
+       [
+        19.3,
+        44.95
+       ],
+       [
+        20.2,
+        45.1
+       ],
+       [
+        20.6,
+        45.7
+       ],
+       [
+        21.4,
+        46.3
+       ]
+      ],
+      "label": "Sava and Danube line, 1691"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Louis of Baden",
+      "label": "Imperial drive into Serbia",
+      "path": [
+       [
+        20.46,
+        44.82
+       ],
+       [
+        21.0,
+        44.1
+       ],
+       [
+        21.9,
+        43.32
+       ],
+       [
+        22.88,
+        43.99
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Fazil Mustafa Pasha",
+      "label": "Ottoman counteroffensive",
+      "path": [
+       [
+        23.32,
+        42.7
+       ],
+       [
+        21.9,
+        43.32
+       ],
+       [
+        20.46,
+        44.82
+       ],
+       [
+        20.25,
+        45.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Nis",
+      "kind": "battle",
+      "lon": 21.9,
+      "lat": 43.32,
+      "year": 1689,
+      "winner": 1,
+      "text": "Louis of Baden defeated the Ottomans and took Nis."
+     },
+     {
+      "name": "Recapture of Belgrade",
+      "kind": "siege",
+      "lon": 20.46,
+      "lat": 44.82,
+      "year": 1690,
+      "winner": 0,
+      "text": "Fazil Mustafa retook Belgrade when its powder magazine exploded."
+     },
+     {
+      "name": "Battle of Slankamen",
+      "kind": "battle",
+      "lon": 20.25,
+      "lat": 45.13,
+      "year": 1691,
+      "winner": 1,
+      "text": "A bloody imperial victory in which the grand vizier was killed."
+     }
+    ]
+   },
+   {
+    "year": 1697,
+    "label": "1695-1697",
+    "title": "Azov and Zenta",
+    "text": "Sultan Mustafa II took the field himself and won back ground in the Banat. Russia, in the League since 1686, struck at the Black Sea, and in 1696 the young Peter the Great took Azov with a new river fleet. In September 1697 Prince Eugene of Savoy caught the Sultan's army crossing the Tisza at Zenta and destroyed it while Mustafa watched from the far bank.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Polish–Lithuanian Commonwealth",
+       "Venice",
+       "Tsardom of Muscovy"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        15.8,
+        45.2
+       ],
+       [
+        17.6,
+        45.1
+       ],
+       [
+        19.3,
+        44.95
+       ],
+       [
+        20.2,
+        45.1
+       ],
+       [
+        20.6,
+        45.7
+       ],
+       [
+        21.4,
+        46.3
+       ]
+      ],
+      "label": "Sava and Danube line, 1697"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Mustafa II",
+      "label": "Sultan's army heading for Szeged",
+      "path": [
+       [
+        20.46,
+        44.82
+       ],
+       [
+        20.3,
+        45.4
+       ],
+       [
+        20.08,
+        45.93
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Eugene of Savoy",
+      "label": "Imperial army",
+      "path": [
+       [
+        19.86,
+        45.25
+       ],
+       [
+        20.1,
+        45.7
+       ],
+       [
+        20.15,
+        46.25
+       ],
+       [
+        20.08,
+        45.93
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Peter the Great",
+      "label": "Russian army and Don flotilla",
+      "path": [
+       [
+        39.2,
+        51.67
+       ],
+       [
+        41.0,
+        49.8
+       ],
+       [
+        40.1,
+        47.6
+       ],
+       [
+        39.42,
+        47.11
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Azov",
+      "kind": "siege",
+      "lon": 39.42,
+      "lat": 47.11,
+      "year": 1696,
+      "winner": 1,
+      "text": "Peter's galleys cut the fortress off from the sea and it surrendered."
+     },
+     {
+      "name": "Battle of Zenta",
+      "kind": "battle",
+      "lon": 20.08,
+      "lat": 45.93,
+      "year": 1697,
+      "winner": 1,
+      "text": "Eugene attacked the Ottoman army as it crossed the Tisza, killing tens of thousands."
+     }
+    ]
+   },
+   {
+    "year": 1700,
+    "label": "1699-1700",
+    "title": "Karlowitz",
+    "text": "Exhausted, the Ottomans accepted British and Dutch mediation. At Karlowitz in January 1699 they ceded Hungary and Transylvania to Austria, the Morea and much of Dalmatia to Venice and Podolia to Poland, and in 1700 Russia's envoy, sailing to Constantinople on a Russian warship, secured Azov. It was the first time the Ottomans had signed away large European lands.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ottoman Empire"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Austrian Empire",
+       "Holy Roman Empire",
+       "Polish–Lithuanian Commonwealth",
+       "Venice",
+       "Tsardom of Muscovy"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Emelyan Ukraintsev",
+      "label": "Russian envoy aboard the warship Krepost",
+      "path": [
+       [
+        38.9,
+        47.2
+       ],
+       [
+        36.5,
+        45.3
+       ],
+       [
+        31.5,
+        43.0
+       ],
+       [
+        28.98,
+        41.03
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Karlowitz",
+      "kind": "treaty",
+      "lon": 19.94,
+      "lat": 45.2,
+      "year": 1699,
+      "winner": 1,
+      "text": "Austria gained Hungary and Transylvania, Venice the Morea and Poland Podolia."
+     },
+     {
+      "name": "Treaty of Constantinople",
+      "kind": "treaty",
+      "lon": 28.97,
+      "lat": 41.01,
+      "year": 1700,
+      "winner": 1,
+      "text": "The Ottomans ceded Azov to Russia."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "great-northern-war",
+  "name": "Great Northern War",
+  "start": 1700,
+  "end": 1721,
+  "kind": "war",
+  "summary": "Russia, Denmark-Norway and Saxony-Poland attacked the Swedish Empire in 1700, expecting an easy win over its teenage king Charles XII. Charles beat each in turn but lost his army deep in Ukraine at Poltava in 1709, and while he sat in Ottoman exile Peter the Great took the Baltic provinces and Finland. The Treaty of Nystad in 1721 ended Sweden's age as a great power and made Russia an empire and the master of the Baltic.",
+  "sides": [
+   {
+    "name": "Swedish Empire",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Charles XII",
+     "Carl Gustaf Rehnskiold",
+     "Adam Ludwig Lewenhaupt",
+     "Magnus Stenbock"
+    ]
+   },
+   {
+    "name": "Russia, Denmark-Norway, Saxony-Poland and later Prussia and Hanover",
+    "color": "#c0473a",
+    "leaders": [
+     "Peter the Great",
+     "Augustus II",
+     "Frederick IV of Denmark",
+     "Boris Sheremetev",
+     "Alexander Menshikov",
+     "Fyodor Apraksin"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 23.0,
+    "lat": 57.0,
+    "r": 8
+   },
+   {
+    "lon": 31.5,
+    "lat": 50.5,
+    "r": 4.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 1700,
+    "label": "1700",
+    "title": "Copenhagen and Narva",
+    "text": "Denmark, Saxony and Russia attacked at once. Eighteen-year-old Charles XII landed beside Copenhagen and forced Denmark out of the war within weeks, then shipped his army to Estonia. In a November snowstorm at Narva about 10,000 Swedes broke Peter the Great's besieging army of over 30,000.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Sweden"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy",
+       "Denmark-Norway",
+       "Polish–Lithuanian Commonwealth"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles XII",
+      "label": "Landing on Zealand",
+      "path": [
+       [
+        12.83,
+        55.87
+       ],
+       [
+        12.7,
+        55.93
+       ],
+       [
+        12.53,
+        55.97
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles XII",
+      "label": "Swedish army to Narva",
+      "path": [
+       [
+        14.86,
+        56.16
+       ],
+       [
+        21.5,
+        57.5
+       ],
+       [
+        24.5,
+        58.38
+       ],
+       [
+        26.36,
+        59.35
+       ],
+       [
+        28.19,
+        59.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Peter the Great",
+      "label": "Russian army besieges Narva",
+      "path": [
+       [
+        31.27,
+        58.52
+       ],
+       [
+        29.8,
+        58.9
+       ],
+       [
+        28.3,
+        59.37
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Augustus II",
+      "label": "Saxon army besieges Riga",
+      "path": [
+       [
+        23.72,
+        56.65
+       ],
+       [
+        24.0,
+        56.85
+       ],
+       [
+        24.1,
+        56.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Travendal",
+      "kind": "treaty",
+      "lon": 10.35,
+      "lat": 53.98,
+      "year": 1700,
+      "winner": 0,
+      "text": "Denmark made peace after Charles threatened Copenhagen."
+     },
+     {
+      "name": "Battle of Narva",
+      "kind": "battle",
+      "lon": 28.19,
+      "lat": 59.38,
+      "year": 1700,
+      "winner": 0,
+      "text": "The Swedes attacked in a blizzard and routed the Russian army."
+     }
+    ]
+   },
+   {
+    "year": 1704,
+    "label": "1701-1706",
+    "title": "Charles in Poland, Peter on the Neva",
+    "text": "Charles turned on Augustus II, crossing the Daugava at Riga, taking Warsaw and beating the Saxons and Poles at Kliszow. He had Augustus deposed in Poland, and after Rehnskiold's victory at Fraustadt he invaded Saxony and forced Augustus out of the war at Altranstadt in 1706. Meanwhile Peter rebuilt his army, took Ingria and founded St Petersburg at the mouth of the Neva in 1703.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Sweden"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy",
+       "Denmark-Norway",
+       "Polish–Lithuanian Commonwealth"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.7,
+        60.6
+       ],
+       [
+        30.2,
+        60.2
+       ]
+      ],
+      "label": "Karelian front, 1704"
+     },
+     {
+      "path": [
+       [
+        27.4,
+        59.45
+       ],
+       [
+        27.0,
+        58.9
+       ],
+       [
+        26.5,
+        58.4
+       ],
+       [
+        27.4,
+        57.9
+       ]
+      ],
+      "label": "Russian gains in Estonia, 1704"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles XII",
+      "label": "Swedish campaign in Poland and Saxony",
+      "path": [
+       [
+        24.1,
+        56.95
+       ],
+       [
+        23.9,
+        54.9
+       ],
+       [
+        21.01,
+        52.23
+       ],
+       [
+        20.4,
+        50.53
+       ],
+       [
+        16.93,
+        52.41
+       ],
+       [
+        12.17,
+        51.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Carl Gustaf Rehnskiold",
+      "label": "Swedish army at Fraustadt",
+      "path": [
+       [
+        16.93,
+        52.41
+       ],
+       [
+        16.6,
+        52.1
+       ],
+       [
+        16.32,
+        51.81
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Peter the Great",
+      "label": "Russians take Ingria and Narva",
+      "path": [
+       [
+        31.04,
+        59.95
+       ],
+       [
+        30.4,
+        59.95
+       ],
+       [
+        29.1,
+        59.6
+       ],
+       [
+        28.19,
+        59.38
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Boris Sheremetev",
+      "label": "Russians take Dorpat",
+      "path": [
+       [
+        28.33,
+        57.82
+       ],
+       [
+        27.5,
+        58.1
+       ],
+       [
+        26.72,
+        58.38
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kliszow",
+      "kind": "battle",
+      "lon": 20.4,
+      "lat": 50.53,
+      "year": 1702,
+      "winner": 0,
+      "text": "Charles routed a larger Saxon and Polish army."
+     },
+     {
+      "name": "St Petersburg founded",
+      "kind": "event",
+      "lon": 30.31,
+      "lat": 59.95,
+      "year": 1703,
+      "winner": 1,
+      "text": "Peter began his new capital and Baltic port on land taken from Sweden."
+     },
+     {
+      "name": "Battle of Fraustadt",
+      "kind": "battle",
+      "lon": 16.32,
+      "lat": 51.81,
+      "year": 1706,
+      "winner": 0,
+      "text": "Rehnskiold destroyed a Saxon and Russian army twice his size."
+     }
+    ]
+   },
+   {
+    "year": 1709,
+    "label": "1707-1709",
+    "title": "The march on Moscow and Poltava",
+    "text": "In 1708 Charles marched east from Saxony toward Moscow, winning at Holowczyn, but the Russians burned the land before him. Peter destroyed Lewenhaupt's supply column at Lesnaya, and Charles turned south into Ukraine, where the Cossack hetman Mazepa joined him. After a terrible winter the Swedes attacked Peter's fortified camp at Poltava in June 1709 and were crushed; the rest of the army surrendered at Perevolochna and Charles fled to Ottoman Bender.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Sweden"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy",
+       "Denmark-Norway",
+       "Polish–Lithuanian Commonwealth"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles XII",
+      "label": "Swedish invasion of Russia",
+      "path": [
+       [
+        12.17,
+        51.31
+       ],
+       [
+        23.83,
+        53.68
+       ],
+       [
+        29.6,
+        54.02
+       ],
+       [
+        30.33,
+        53.91
+       ],
+       [
+        33.49,
+        50.75
+       ],
+       [
+        34.55,
+        49.59
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Adam Ludwig Lewenhaupt",
+      "label": "Supply army from Riga",
+      "path": [
+       [
+        24.1,
+        56.95
+       ],
+       [
+        27.0,
+        55.2
+       ],
+       [
+        30.0,
+        54.0
+       ],
+       [
+        31.1,
+        53.5
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Peter the Great",
+      "label": "Russian main army",
+      "path": [
+       [
+        32.04,
+        54.78
+       ],
+       [
+        31.1,
+        53.5
+       ],
+       [
+        33.0,
+        51.5
+       ],
+       [
+        34.55,
+        49.59
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles XII",
+      "label": "Flight to Bender",
+      "path": [
+       [
+        34.53,
+        49.03
+       ],
+       [
+        32.0,
+        47.6
+       ],
+       [
+        29.48,
+        46.83
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Lesnaya",
+      "kind": "battle",
+      "lon": 31.1,
+      "lat": 53.5,
+      "year": 1708,
+      "winner": 1,
+      "text": "Peter destroyed the Swedish supply train before it could reach Charles."
+     },
+     {
+      "name": "Battle of Poltava",
+      "kind": "battle",
+      "lon": 34.55,
+      "lat": 49.59,
+      "year": 1709,
+      "winner": 1,
+      "text": "The Swedish army was shattered and Rehnskiold captured."
+     },
+     {
+      "name": "Surrender at Perevolochna",
+      "kind": "event",
+      "lon": 34.53,
+      "lat": 49.03,
+      "year": 1709,
+      "winner": 1,
+      "text": "Some 14,000 Swedes trapped on the Dnieper laid down their arms."
+     }
+    ]
+   },
+   {
+    "year": 1714,
+    "label": "1710-1714",
+    "title": "Russia takes the Baltic and Finland",
+    "text": "With Sweden's field army gone, Russia took Riga, Reval and Vyborg in 1710, and Denmark and Saxony rejoined the war. Peter was nearly destroyed when an Ottoman army trapped him on the Pruth in 1711 and had to give back Azov. He then turned to Finland, and in 1714 his galley fleet beat the Swedish navy at Gangut, the first great Russian naval victory.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Sweden"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy",
+       "Denmark-Norway",
+       "Polish–Lithuanian Commonwealth"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        21.5,
+        63.0
+       ],
+       [
+        22.5,
+        62.0
+       ],
+       [
+        22.0,
+        60.6
+       ]
+      ],
+      "label": "Russian-held Finland, 1714"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Boris Sheremetev",
+      "label": "Russian army to Riga",
+      "path": [
+       [
+        34.55,
+        49.59
+       ],
+       [
+        30.5,
+        54.0
+       ],
+       [
+        27.5,
+        55.5
+       ],
+       [
+        24.1,
+        56.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Peter the Great",
+      "label": "Pruth campaign",
+      "path": [
+       [
+        30.52,
+        50.45
+       ],
+       [
+        28.3,
+        48.16
+       ],
+       [
+        27.6,
+        47.16
+       ],
+       [
+        28.17,
+        46.63
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Fyodor Apraksin",
+      "label": "Galley fleet along the Finnish coast",
+      "path": [
+       [
+        30.2,
+        59.95
+       ],
+       [
+        27.0,
+        60.2
+       ],
+       [
+        24.94,
+        60.1
+       ],
+       [
+        22.95,
+        59.75
+       ],
+       [
+        22.27,
+        60.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Riga",
+      "kind": "siege",
+      "lon": 24.1,
+      "lat": 56.95,
+      "year": 1710,
+      "winner": 1,
+      "text": "Riga surrendered after a siege ravaged by plague."
+     },
+     {
+      "name": "Pruth campaign",
+      "kind": "battle",
+      "lon": 28.17,
+      "lat": 46.63,
+      "year": 1711,
+      "winner": null,
+      "text": "Surrounded by a huge Ottoman army, Peter bought his way out by returning Azov."
+     },
+     {
+      "name": "Battle of Gangut",
+      "kind": "battle",
+      "lon": 22.95,
+      "lat": 59.8,
+      "year": 1714,
+      "winner": 1,
+      "text": "Russian galleys outflanked becalmed Swedish warships off Hanko."
+     }
+    ]
+   },
+   {
+    "year": 1718,
+    "label": "1715-1718",
+    "title": "Charles returns and falls",
+    "text": "Charles rode across Europe from Bender to Stralsund in 1714, but Prussia and Hanover joined his enemies and Stralsund fell in 1715, ending Sweden's hold on Germany. Charles raised a new army and invaded Norway to strike Denmark, and in December 1718 he was shot dead in the trenches before Fredriksten fortress.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Sweden"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy",
+       "Denmark-Norway",
+       "Polish–Lithuanian Commonwealth",
+       "Prussia",
+       "Brandenburg",
+       "Hanover"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Charles XII",
+      "label": "Ride from Bender to Stralsund",
+      "path": [
+       [
+        29.48,
+        46.83
+       ],
+       [
+        23.6,
+        46.77
+       ],
+       [
+        16.37,
+        48.21
+       ],
+       [
+        12.1,
+        49.0
+       ],
+       [
+        13.09,
+        54.31
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Frederick William I and Frederick IV",
+      "label": "Prussian and Danish siege army",
+      "path": [
+       [
+        13.4,
+        52.52
+       ],
+       [
+        13.3,
+        53.6
+       ],
+       [
+        13.09,
+        54.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Charles XII",
+      "label": "Invasion of Norway",
+      "path": [
+       [
+        13.0,
+        55.7
+       ],
+       [
+        11.95,
+        57.7
+       ],
+       [
+        11.17,
+        58.94
+       ],
+       [
+        11.39,
+        59.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Stralsund",
+      "kind": "siege",
+      "lon": 13.09,
+      "lat": 54.31,
+      "year": 1715,
+      "winner": 1,
+      "text": "Prussians, Danes and Saxons took Sweden's last major German fortress."
+     },
+     {
+      "name": "Death of Charles XII",
+      "kind": "siege",
+      "lon": 11.39,
+      "lat": 59.12,
+      "year": 1718,
+      "winner": 1,
+      "text": "The king was killed by a shot to the head while inspecting siege works at Fredriksten."
+     }
+    ]
+   },
+   {
+    "year": 1721,
+    "label": "1719-1721",
+    "title": "Nystad and the Russian Empire",
+    "text": "Sweden made peace with Hanover, Prussia and Denmark, but Russian galleys raided and burned the Swedish coast close to Stockholm in 1719 to 1721 and won again at Grengam. By the Treaty of Nystad Sweden ceded Livonia, Estonia, Ingria and part of Karelia to Russia, and Peter was proclaimed Emperor of All Russia.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Sweden"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Tsardom of Muscovy"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Fyodor Apraksin",
+      "label": "Galley raids on the Swedish coast",
+      "path": [
+       [
+        22.27,
+        60.4
+       ],
+       [
+        20.3,
+        60.1
+       ],
+       [
+        18.9,
+        59.6
+       ],
+       [
+        17.5,
+        58.7
+       ],
+       [
+        16.3,
+        58.55
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Grengam",
+      "kind": "battle",
+      "lon": 20.4,
+      "lat": 60.1,
+      "year": 1720,
+      "winner": 1,
+      "text": "Russian galleys captured four Swedish frigates in the Aland islands."
+     },
+     {
+      "name": "Treaty of Nystad",
+      "kind": "treaty",
+      "lon": 21.41,
+      "lat": 60.79,
+      "year": 1721,
+      "winner": 1,
+      "text": "Sweden ceded its eastern Baltic provinces to Russia."
+     },
+     {
+      "name": "Peter proclaimed emperor",
+      "kind": "event",
+      "lon": 30.31,
+      "lat": 59.95,
+      "year": 1721,
+      "winner": 1,
+      "text": "The Senate gave Peter the titles Emperor and the Great, founding the Russian Empire."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "war-of-the-spanish-succession",
+  "name": "War of the Spanish Succession",
+  "start": 1701,
+  "end": 1714,
+  "kind": "war",
+  "summary": "When the childless Charles II of Spain left his empire to Louis XIV's grandson Philip, England, the Dutch Republic and Austria formed a Grand Alliance to stop France and Spain from uniting. Marlborough and Prince Eugene won great victories at Blenheim, Ramillies, Turin and Oudenarde, but Philip V held Spain with French help. The Treaties of Utrecht and Rastatt in 1713 to 1714 left Philip king of Spain while Austria took Spain's European lands and Britain gained Gibraltar, setting the balance of power for the century.",
+  "sides": [
+   {
+    "name": "France, Spain and Bavaria (Bourbons)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Louis XIV",
+     "Philip V",
+     "Duke of Villars",
+     "Duke of Vendome",
+     "Duke of Berwick",
+     "Marshal Tallard",
+     "Max Emanuel of Bavaria"
+    ]
+   },
+   {
+    "name": "Grand Alliance",
+    "color": "#c0473a",
+    "leaders": [
+     "Duke of Marlborough",
+     "Eugene of Savoy",
+     "Archduke Charles",
+     "Earl of Galway",
+     "James Stanhope",
+     "Anthonie Heinsius"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 5.0,
+    "lat": 49.5,
+    "r": 6
+   },
+   {
+    "lon": -3.5,
+    "lat": 40.0,
+    "r": 5.5
+   },
+   {
+    "lon": 9.5,
+    "lat": 45.3,
+    "r": 3
+   }
+  ],
+  "steps": [
+   {
+    "year": 1702,
+    "label": "1701-1702",
+    "title": "A Bourbon on the Spanish throne",
+    "text": "Charles II of Spain died in 1700 leaving everything to Louis XIV's grandson, who became Philip V. Austria claimed the inheritance for Archduke Charles, and Prince Eugene crossed the Alps to attack Spanish Milan, winning at Carpi and Chiari. England and the Dutch joined Austria in a Grand Alliance and declared war in 1702, and an Anglo-Dutch fleet destroyed the Spanish treasure fleet in Vigo Bay.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Luxembourg",
+       "Sardinia-Piedmont",
+       "Portugal"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Austrian Empire",
+       "England and Ireland",
+       "Scotland",
+       "Dutch Republic"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Eugene of Savoy",
+      "label": "Imperial army over the Alps",
+      "path": [
+       [
+        11.12,
+        46.07
+       ],
+       [
+        11.04,
+        45.89
+       ],
+       [
+        11.33,
+        45.13
+       ],
+       [
+        10.5,
+        45.4
+       ],
+       [
+        9.93,
+        45.54
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Marshal Catinat and Villeroi",
+      "label": "French and Spanish army of Italy",
+      "path": [
+       [
+        9.19,
+        45.46
+       ],
+       [
+        9.6,
+        45.5
+       ],
+       [
+        9.93,
+        45.54
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "George Rooke",
+      "label": "Anglo-Dutch fleet",
+      "path": [
+       [
+        -1.1,
+        50.7
+       ],
+       [
+        -6.0,
+        48.3
+       ],
+       [
+        -10.2,
+        43.0
+       ],
+       [
+        -6.5,
+        36.5
+       ],
+       [
+        -9.9,
+        40.0
+       ],
+       [
+        -8.75,
+        42.25
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Philip V enters Madrid",
+      "kind": "event",
+      "lon": -3.7,
+      "lat": 40.42,
+      "year": 1701,
+      "winner": 0,
+      "text": "Louis XIV's grandson was received as king of Spain."
+     },
+     {
+      "name": "Battle of Chiari",
+      "kind": "battle",
+      "lon": 9.93,
+      "lat": 45.54,
+      "year": 1701,
+      "winner": 1,
+      "text": "Eugene repulsed the French and Spanish assault on his entrenched camp."
+     },
+     {
+      "name": "Battle of Vigo Bay",
+      "kind": "battle",
+      "lon": -8.65,
+      "lat": 42.27,
+      "year": 1702,
+      "winner": 1,
+      "text": "The allies destroyed the French escort and the Spanish treasure fleet."
+     }
+    ]
+   },
+   {
+    "year": 1704,
+    "label": "1703-1704",
+    "title": "Blenheim and Gibraltar",
+    "text": "Bavaria had joined France, and in 1704 a Franco-Bavarian army threatened Vienna. Marlborough marched his army 400 kilometres from the Low Countries to the Danube, joined Prince Eugene, and at Blenheim destroyed the army of Marshal Tallard, saving Austria. Portugal and Savoy had switched to the allies in 1703, and in August 1704 an Anglo-Dutch fleet took Gibraltar.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia",
+       "Milan",
+       "Luxembourg"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Austrian Empire",
+       "England and Ireland",
+       "Scotland",
+       "Dutch Republic",
+       "Portugal",
+       "Sardinia-Piedmont"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        3.4,
+        51.35
+       ],
+       [
+        4.4,
+        51.45
+       ],
+       [
+        5.3,
+        51.3
+       ],
+       [
+        5.7,
+        51.0
+       ]
+      ],
+      "label": "Flanders front, 1704"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Duke of Marlborough",
+      "label": "March to the Danube",
+      "path": [
+       [
+        6.47,
+        51.0
+       ],
+       [
+        7.59,
+        50.36
+       ],
+       [
+        8.69,
+        49.4
+       ],
+       [
+        9.6,
+        48.8
+       ],
+       [
+        10.78,
+        48.72
+       ],
+       [
+        10.64,
+        48.64
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Eugene of Savoy",
+      "label": "Imperial army from the Rhine",
+      "path": [
+       [
+        8.2,
+        48.9
+       ],
+       [
+        9.5,
+        48.5
+       ],
+       [
+        10.5,
+        48.6
+       ],
+       [
+        10.64,
+        48.64
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Marshal Tallard",
+      "label": "French army through the Black Forest",
+      "path": [
+       [
+        7.75,
+        48.58
+       ],
+       [
+        8.3,
+        48.1
+       ],
+       [
+        9.99,
+        48.4
+       ],
+       [
+        10.64,
+        48.64
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "George Rooke",
+      "label": "Fleet to Gibraltar",
+      "path": [
+       [
+        -9.3,
+        38.6
+       ],
+       [
+        -8.5,
+        36.8
+       ],
+       [
+        -6.2,
+        36.0
+       ],
+       [
+        -5.35,
+        36.14
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Blenheim",
+      "kind": "battle",
+      "lon": 10.64,
+      "lat": 48.64,
+      "year": 1704,
+      "winner": 1,
+      "text": "Marlborough and Eugene destroyed the Franco-Bavarian army and captured Tallard."
+     },
+     {
+      "name": "Capture of Gibraltar",
+      "kind": "siege",
+      "lon": -5.35,
+      "lat": 36.14,
+      "year": 1704,
+      "winner": 1,
+      "text": "Anglo-Dutch marines took the Rock, which Britain still holds."
+     }
+    ]
+   },
+   {
+    "year": 1706,
+    "label": "1706",
+    "title": "Year of victories: Ramillies and Turin",
+    "text": "In May 1706 Marlborough routed Villeroi at Ramillies and the Spanish Netherlands fell to the allies within weeks. In September Prince Eugene marched along the Po and relieved besieged Turin, driving the French from Italy. From Portugal, Galway's allied army even entered Madrid for a few months, proclaiming Archduke Charles king.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Spain",
+       "Naples",
+       "Sicily",
+       "Sardinia"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Austrian Empire",
+       "England and Ireland",
+       "Scotland",
+       "Dutch Republic",
+       "Portugal",
+       "Sardinia-Piedmont",
+       "Luxembourg",
+       "Milan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.6,
+        51.05
+       ],
+       [
+        3.2,
+        50.7
+       ],
+       [
+        3.9,
+        50.4
+       ],
+       [
+        4.6,
+        50.2
+       ]
+      ],
+      "label": "Flanders front after Ramillies, 1706"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Duke of Marlborough",
+      "label": "Allied army to Ramillies",
+      "path": [
+       [
+        5.69,
+        50.85
+       ],
+       [
+        5.2,
+        50.75
+       ],
+       [
+        4.91,
+        50.65
+       ],
+       [
+        4.35,
+        50.85
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Marshal Villeroi",
+      "label": "French army",
+      "path": [
+       [
+        4.7,
+        50.88
+       ],
+       [
+        4.8,
+        50.75
+       ],
+       [
+        4.91,
+        50.65
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Eugene of Savoy",
+      "label": "Relief of Turin",
+      "path": [
+       [
+        10.7,
+        45.6
+       ],
+       [
+        10.2,
+        45.1
+       ],
+       [
+        9.3,
+        45.08
+       ],
+       [
+        8.2,
+        44.9
+       ],
+       [
+        7.65,
+        45.1
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Earl of Galway",
+      "label": "Allied army from Portugal to Madrid",
+      "path": [
+       [
+        -7.16,
+        38.88
+       ],
+       [
+        -6.88,
+        39.72
+       ],
+       [
+        -5.66,
+        40.97
+       ],
+       [
+        -3.7,
+        40.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ramillies",
+      "kind": "battle",
+      "lon": 4.91,
+      "lat": 50.65,
+      "year": 1706,
+      "winner": 1,
+      "text": "Marlborough's victory cost France the Spanish Netherlands."
+     },
+     {
+      "name": "Battle of Turin",
+      "kind": "battle",
+      "lon": 7.65,
+      "lat": 45.1,
+      "year": 1706,
+      "winner": 1,
+      "text": "Eugene and Victor Amadeus broke the French siege and France lost northern Italy."
+     },
+     {
+      "name": "Allies take Madrid",
+      "kind": "event",
+      "lon": -3.7,
+      "lat": 40.42,
+      "year": 1706,
+      "winner": 1,
+      "text": "Archduke Charles was proclaimed king, but Castile rejected him."
+     }
+    ]
+   },
+   {
+    "year": 1708,
+    "label": "1707-1709",
+    "title": "Almansa, Oudenarde and Malplaquet",
+    "text": "In Spain Berwick crushed Galway's allied army at Almansa in 1707, securing most of the country for Philip V. In the north Marlborough and Eugene beat the French at Oudenarde in 1708 and took Lille. After the Great Frost of 1709 Louis XIV sought peace, but refused the allies' harsh terms, and at Malplaquet Villars lost the field at such cost to the allies that France was saved from invasion.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Spain",
+       "Sicily"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Austrian Empire",
+       "England and Ireland",
+       "Scotland",
+       "Dutch Republic",
+       "Portugal",
+       "Sardinia-Piedmont",
+       "Luxembourg",
+       "Milan",
+       "Naples",
+       "Sardinia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        2.4,
+        50.9
+       ],
+       [
+        3.0,
+        50.5
+       ],
+       [
+        3.6,
+        50.35
+       ],
+       [
+        4.2,
+        50.2
+       ]
+      ],
+      "label": "Flanders front, 1709"
+     },
+     {
+      "path": [
+       [
+        0.7,
+        42.7
+       ],
+       [
+        0.5,
+        41.6
+       ],
+       [
+        0.6,
+        40.8
+       ]
+      ],
+      "label": "Allied-held Catalonia, 1709"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Berwick",
+      "label": "Bourbon army",
+      "path": [
+       [
+        -3.7,
+        40.42
+       ],
+       [
+        -2.0,
+        39.2
+       ],
+       [
+        -1.09,
+        38.87
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Earl of Galway",
+      "label": "Allied army from Valencia",
+      "path": [
+       [
+        -0.38,
+        39.47
+       ],
+       [
+        -0.8,
+        38.95
+       ],
+       [
+        -1.09,
+        38.87
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Marlborough and Eugene",
+      "label": "Allied army in Flanders",
+      "path": [
+       [
+        4.35,
+        50.85
+       ],
+       [
+        3.6,
+        50.85
+       ],
+       [
+        3.06,
+        50.63
+       ],
+       [
+        3.95,
+        50.45
+       ],
+       [
+        3.86,
+        50.33
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Villars",
+      "label": "French army",
+      "path": [
+       [
+        3.52,
+        50.36
+       ],
+       [
+        3.7,
+        50.3
+       ],
+       [
+        3.86,
+        50.33
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Almansa",
+      "kind": "battle",
+      "lon": -1.09,
+      "lat": 38.87,
+      "year": 1707,
+      "winner": 0,
+      "text": "Berwick's victory restored Valencia and Aragon to Philip V."
+     },
+     {
+      "name": "Battle of Oudenarde",
+      "kind": "battle",
+      "lon": 3.6,
+      "lat": 50.85,
+      "year": 1708,
+      "winner": 1,
+      "text": "Marlborough and Eugene beat Vendome and went on to take Lille."
+     },
+     {
+      "name": "Battle of Malplaquet",
+      "kind": "battle",
+      "lon": 3.86,
+      "lat": 50.33,
+      "year": 1709,
+      "winner": 1,
+      "text": "The bloodiest battle of the century; the allies won the field but lost a quarter of their men."
+     }
+    ]
+   },
+   {
+    "year": 1711,
+    "label": "1710-1712",
+    "title": "The tide turns: Brihuega and Denain",
+    "text": "Stanhope and Starhemberg took Madrid again in 1710, but Vendome trapped the British at Brihuega and fought the allies to a standstill at Villaviciosa, deciding the war in Spain. In 1711 Archduke Charles became emperor, and Britain, unwilling to see Austria and Spain united, opened secret talks with France. Without British troops, Eugene was beaten by Villars at Denain in 1712.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Spain",
+       "Sicily"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Austrian Empire",
+       "England and Ireland",
+       "Scotland",
+       "Dutch Republic",
+       "Portugal",
+       "Sardinia-Piedmont",
+       "Luxembourg",
+       "Milan",
+       "Naples",
+       "Sardinia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "James Stanhope and Starhemberg",
+      "label": "Allied march on Madrid",
+      "path": [
+       [
+        0.62,
+        41.62
+       ],
+       [
+        -0.88,
+        41.65
+       ],
+       [
+        -3.7,
+        40.42
+       ],
+       [
+        -2.87,
+        40.76
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Vendome",
+      "label": "Bourbon army",
+      "path": [
+       [
+        -4.72,
+        41.65
+       ],
+       [
+        -3.8,
+        41.0
+       ],
+       [
+        -2.87,
+        40.76
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Duke of Villars",
+      "label": "French attack at Denain",
+      "path": [
+       [
+        3.24,
+        50.18
+       ],
+       [
+        3.38,
+        50.33
+       ],
+       [
+        3.28,
+        50.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Brihuega and Villaviciosa",
+      "kind": "battle",
+      "lon": -2.87,
+      "lat": 40.76,
+      "year": 1710,
+      "winner": 0,
+      "text": "Vendome captured Stanhope's British corps and drove the allies from Castile."
+     },
+     {
+      "name": "Emperor Joseph I dies",
+      "kind": "event",
+      "lon": 16.37,
+      "lat": 48.21,
+      "year": 1711,
+      "winner": null,
+      "text": "Archduke Charles inherited the Austrian lands and the imperial crown."
+     },
+     {
+      "name": "Battle of Denain",
+      "kind": "battle",
+      "lon": 3.38,
+      "lat": 50.33,
+      "year": 1712,
+      "winner": 0,
+      "text": "Villars crushed Eugene's Dutch rearguard, saving France."
+     }
+    ]
+   },
+   {
+    "year": 1714,
+    "label": "1713-1714",
+    "title": "Utrecht and Rastatt",
+    "text": "The Treaty of Utrecht in 1713 recognised Philip V as king of Spain on condition that the French and Spanish crowns never unite. Austria took Spain's Netherlands, Milan, Naples and Sardinia, Savoy gained Sicily, and Britain kept Gibraltar and Minorca and won trading rights in Spanish America. The emperor made peace at Rastatt in 1714, and Philip's army took Barcelona that September.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "France",
+       "Spain"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Holy Roman Empire",
+       "Austrian Empire",
+       "England and Ireland",
+       "Scotland",
+       "Dutch Republic",
+       "Portugal",
+       "Sardinia-Piedmont",
+       "Luxembourg",
+       "Milan",
+       "Naples",
+       "Sardinia",
+       "Sicily"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Duke of Berwick",
+      "label": "Siege of Barcelona",
+      "path": [
+       [
+        0.62,
+        41.62
+       ],
+       [
+        1.5,
+        41.55
+       ],
+       [
+        2.17,
+        41.39
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Treaty of Utrecht",
+      "kind": "treaty",
+      "lon": 5.12,
+      "lat": 52.09,
+      "year": 1713,
+      "winner": null,
+      "text": "Philip V kept Spain but gave up its European lands and his claim to France."
+     },
+     {
+      "name": "Treaty of Rastatt",
+      "kind": "treaty",
+      "lon": 8.2,
+      "lat": 48.86,
+      "year": 1714,
+      "winner": 1,
+      "text": "The emperor accepted the settlement and took the Spanish Netherlands and Italian lands."
+     },
+     {
+      "name": "Siege of Barcelona",
+      "kind": "siege",
+      "lon": 2.17,
+      "lat": 41.39,
+      "year": 1714,
+      "winner": 0,
+      "text": "Barcelona fell to Berwick after a 14 month siege, ending Catalan self-government."
+     }
+    ]
+   }
+  ]
+ }
+]

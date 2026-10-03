@@ -1,0 +1,6494 @@
+[
+ {
+  "id": "war-in-afghanistan",
+  "name": "War in Afghanistan",
+  "start": 2001,
+  "end": 2021,
+  "kind": "war",
+  "summary": "After the 11 September 2001 attacks, a US-led coalition and Afghan Northern Alliance forces overthrew the Taliban government that had sheltered al-Qaeda. The Taliban regrouped and waged a long insurgency against the new Afghan government and NATO forces. After a 2020 US-Taliban deal, foreign troops withdrew and the Taliban retook the country in August 2021.",
+  "sides": [
+   {
+    "name": "US-led coalition and Afghan government",
+    "color": "#3b6fb6",
+    "leaders": [
+     "George W. Bush",
+     "Barack Obama",
+     "Hamid Karzai",
+     "Ashraf Ghani",
+     "Stanley McChrystal",
+     "David Petraeus"
+    ]
+   },
+   {
+    "name": "Taliban and al-Qaeda",
+    "color": "#b5652f",
+    "leaders": [
+     "Mullah Mohammad Omar",
+     "Osama bin Laden",
+     "Akhtar Mansour",
+     "Haibatullah Akhundzada",
+     "Sirajuddin Haqqani"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 66.5,
+    "lat": 33.5,
+    "r": 7
+   }
+  ],
+  "steps": [
+   {
+    "year": 2001,
+    "label": "Oct to Dec 2001",
+    "title": "The Taliban overthrown",
+    "text": "From 7 October US and British air strikes and special forces backed the Northern Alliance, which held only a strip of the northeast. Abdul Rashid Dostum took Mazar-i-Sharif on 9 November, Mohammed Fahim's forces entered Kabul on 13 November, and Hamid Karzai and Gul Agha Sherzai closed on Kandahar, which fell in early December. Osama bin Laden escaped from Tora Bora into Pakistan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States",
+       "United Kingdom"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Afghanistan"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        68.7,
+        35.6
+       ],
+       [
+        69.0,
+        35.1
+       ],
+       [
+        69.3,
+        35.0
+       ],
+       [
+        69.7,
+        35.1
+       ],
+       [
+        70.2,
+        35.6
+       ],
+       [
+        70.0,
+        36.6
+       ]
+      ],
+      "label": "Northern Alliance line, Oct 2001"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Abdul Rashid Dostum",
+      "label": "Advance on Mazar-i-Sharif",
+      "path": [
+       [
+        67.0,
+        35.95
+       ],
+       [
+        67.05,
+        36.35
+       ],
+       [
+        67.11,
+        36.71
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mohammed Fahim",
+      "label": "Northern Alliance to Kabul",
+      "path": [
+       [
+        69.26,
+        34.95
+       ],
+       [
+        69.2,
+        34.75
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Hamid Karzai",
+      "label": "From Uruzgan to Kandahar",
+      "path": [
+       [
+        65.87,
+        32.63
+       ],
+       [
+        65.8,
+        32.1
+       ],
+       [
+        65.71,
+        31.61
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Gul Agha Sherzai",
+      "label": "From the Pakistan border to Kandahar",
+      "path": [
+       [
+        66.45,
+        30.92
+       ],
+       [
+        66.1,
+        31.3
+       ],
+       [
+        65.71,
+        31.61
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Mazar-i-Sharif",
+      "kind": "battle",
+      "lon": 67.11,
+      "lat": 36.71,
+      "year": 2001,
+      "winner": 0,
+      "text": "The first major city to fall opened a land route from Uzbekistan."
+     },
+     {
+      "name": "Fall of Kabul",
+      "kind": "event",
+      "lon": 69.17,
+      "lat": 34.53,
+      "year": 2001,
+      "winner": 0,
+      "text": "Taliban forces abandoned the capital on 13 November."
+     },
+     {
+      "name": "Battle of Tora Bora",
+      "kind": "battle",
+      "lon": 70.08,
+      "lat": 34.1,
+      "year": 2001,
+      "winner": null,
+      "text": "Al-Qaeda's mountain stronghold was overrun, but bin Laden escaped."
+     }
+    ]
+   },
+   {
+    "year": 2002,
+    "label": "2002 to 2005",
+    "title": "A new government",
+    "text": "The Bonn Agreement made Hamid Karzai interim leader, and a NATO-led force (ISAF) secured Kabul and later spread across the country. In March 2002 US forces fought al-Qaeda and Taliban fighters in the Shah-i-Kot valley, and the remaining leaders withdrew into Pakistan's border regions. Karzai won Afghanistan's first presidential election in 2004.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Afghanistan",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Franklin Hagenbeck",
+      "label": "Operation Anaconda",
+      "path": [
+       [
+        69.26,
+        34.95
+       ],
+       [
+        69.22,
+        33.6
+       ],
+       [
+        69.33,
+        33.35
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taliban leadership",
+      "label": "Withdrawal toward Quetta",
+      "path": [
+       [
+        65.71,
+        31.61
+       ],
+       [
+        66.45,
+        30.92
+       ],
+       [
+        66.99,
+        30.18
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Al-Qaeda fighters",
+      "label": "Into Pakistan's tribal areas",
+      "path": [
+       [
+        69.33,
+        33.35
+       ],
+       [
+        69.9,
+        33.1
+       ],
+       [
+        70.1,
+        32.9
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Bonn Agreement",
+      "kind": "treaty",
+      "lon": 7.1,
+      "lat": 50.73,
+      "year": 2001,
+      "winner": 0,
+      "text": "Afghan factions agreed on an interim government led by Karzai."
+     },
+     {
+      "name": "Operation Anaconda",
+      "kind": "battle",
+      "lon": 69.33,
+      "lat": 33.35,
+      "year": 2002,
+      "winner": 0,
+      "text": "US and allied troops cleared the valley after heavy fighting, but many fighters slipped away."
+     },
+     {
+      "name": "Presidential election",
+      "kind": "event",
+      "lon": 69.17,
+      "lat": 34.53,
+      "year": 2004,
+      "winner": 0,
+      "text": "Karzai was elected president in October 2004."
+     }
+    ]
+   },
+   {
+    "year": 2006,
+    "label": "2006 to 2008",
+    "title": "The Taliban return in the south",
+    "text": "As NATO extended its mission into the south, the Taliban, directed by leaders based in Pakistan, launched a large insurgency in Kandahar and Helmand. Canadian-led troops fought Operation Medusa west of Kandahar, and British forces in Helmand were drawn into long fights for district centres such as Sangin and Musa Qala. Roadside bombs and suicide attacks spread across the country.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Afghanistan",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mullah Dadullah",
+      "label": "Taliban push into Kandahar and Helmand",
+      "path": [
+       [
+        66.99,
+        30.18
+       ],
+       [
+        66.45,
+        30.92
+       ],
+       [
+        65.47,
+        31.54
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "David Fraser",
+      "label": "Operation Medusa",
+      "path": [
+       [
+        65.71,
+        31.61
+       ],
+       [
+        65.58,
+        31.57
+       ],
+       [
+        65.47,
+        31.54
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "16 Air Assault Brigade",
+      "label": "British into Helmand",
+      "path": [
+       [
+        64.22,
+        31.86
+       ],
+       [
+        64.82,
+        32.07
+       ],
+       [
+        64.95,
+        32.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Medusa",
+      "kind": "battle",
+      "lon": 65.47,
+      "lat": 31.54,
+      "year": 2006,
+      "winner": 0,
+      "text": "NATO's largest combat operation to date drove Taliban fighters out of Panjwai district."
+     },
+     {
+      "name": "Battle of Musa Qala",
+      "kind": "battle",
+      "lon": 64.95,
+      "lat": 32.42,
+      "year": 2007,
+      "winner": 0,
+      "text": "Afghan and British troops retook the town the Taliban had held since early 2007."
+     }
+    ]
+   },
+   {
+    "year": 2009,
+    "label": "2009 to 2011",
+    "title": "The surge",
+    "text": "President Obama sent about 30,000 more troops, and commanders Stanley McChrystal and then David Petraeus pursued a counterinsurgency campaign focused on Helmand and Kandahar. US Marines took Marja in February 2010, and later offensives cleared districts around Kandahar. On 2 May 2011 US special forces killed Osama bin Laden in Abbottabad, Pakistan.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Afghanistan",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Larry Nicholson",
+      "label": "Operation Moshtarak, Marja",
+      "path": [
+       [
+        64.37,
+        31.59
+       ],
+       [
+        64.22,
+        31.55
+       ],
+       [
+        64.11,
+        31.52
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "David Petraeus",
+      "label": "Kandahar operations",
+      "path": [
+       [
+        65.71,
+        31.61
+       ],
+       [
+        65.62,
+        31.68
+       ],
+       [
+        65.5,
+        31.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "William McRaven",
+      "label": "Abbottabad raid",
+      "path": [
+       [
+        70.45,
+        34.43
+       ],
+       [
+        71.8,
+        34.3
+       ],
+       [
+        73.24,
+        34.17
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Marja",
+      "kind": "battle",
+      "lon": 64.11,
+      "lat": 31.52,
+      "year": 2010,
+      "winner": 0,
+      "text": "Marines and Afghan troops seized the Taliban-held farming district."
+     },
+     {
+      "name": "Death of Osama bin Laden",
+      "kind": "event",
+      "lon": 73.24,
+      "lat": 34.17,
+      "year": 2011,
+      "winner": 0,
+      "text": "The al-Qaeda leader was killed in a night raid on his compound."
+     }
+    ]
+   },
+   {
+    "year": 2014,
+    "label": "2014 to 2016",
+    "title": "Afghan forces take the lead",
+    "text": "Ashraf Ghani became president in 2014, and NATO ended its combat mission in December, leaving a smaller training force. The Taliban, led from 2015 by Akhtar Mansour and from 2016 by Haibatullah Akhundzada, gained ground in the countryside. In September 2015 they briefly captured the northern city of Kunduz before Afghan forces with US air support retook it.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Afghanistan",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Akhtar Mansour",
+      "label": "Taliban assault on Kunduz",
+      "path": [
+       [
+        68.6,
+        36.95
+       ],
+       [
+        68.75,
+        36.85
+       ],
+       [
+        68.86,
+        36.73
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Afghan National Army",
+      "label": "Counterattack from Kabul",
+      "path": [
+       [
+        69.17,
+        34.53
+       ],
+       [
+        68.7,
+        35.9
+       ],
+       [
+        68.86,
+        36.73
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "End of ISAF combat mission",
+      "kind": "event",
+      "lon": 69.17,
+      "lat": 34.53,
+      "year": 2014,
+      "winner": null,
+      "text": "NATO handed security to Afghan forces and began the smaller Resolute Support mission."
+     },
+     {
+      "name": "Battle of Kunduz",
+      "kind": "battle",
+      "lon": 68.86,
+      "lat": 36.73,
+      "year": 2015,
+      "winner": 0,
+      "text": "The Taliban held the city for about two weeks, their biggest gain since 2001."
+     }
+    ]
+   },
+   {
+    "year": 2018,
+    "label": "2018 to 2020",
+    "title": "Talks with the Taliban",
+    "text": "With the war in stalemate and the Taliban contesting much of the countryside, the United States opened direct talks led by Zalmay Khalilzad. The Doha Agreement of 29 February 2020 committed the US to withdraw its troops in exchange for Taliban security guarantees, and intra-Afghan talks began that September without result.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Afghanistan",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Haibatullah Akhundzada",
+      "label": "Taliban attack on Ghazni",
+      "path": [
+       [
+        68.1,
+        33.2
+       ],
+       [
+        68.3,
+        33.4
+       ],
+       [
+        68.42,
+        33.55
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Ghazni",
+      "kind": "battle",
+      "lon": 68.42,
+      "lat": 33.55,
+      "year": 2018,
+      "winner": 0,
+      "text": "Taliban fighters overran much of the city for several days before being driven out."
+     },
+     {
+      "name": "Doha Agreement",
+      "kind": "treaty",
+      "lon": 51.53,
+      "lat": 25.29,
+      "year": 2020,
+      "winner": null,
+      "text": "The US agreed to a full withdrawal; the Afghan government was not a party."
+     }
+    ]
+   },
+   {
+    "year": 2021,
+    "label": "May to Aug 2021",
+    "title": "The fall of Kabul",
+    "text": "As US and NATO troops withdrew, a Taliban offensive took rural districts and border crossings, then the provincial capitals in quick succession in August. Kabul fell on 15 August as President Ghani left the country. A US-led airlift evacuated over 120,000 people, a suicide bombing by the Islamic State's local branch killed about 170 Afghans and 13 US troops at the airport, and the last US forces left on 30 August.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Afghanistan"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mohammad Yaqoob",
+      "label": "Taliban sweep through the north",
+      "path": [
+       [
+        68.86,
+        36.73
+       ],
+       [
+        67.11,
+        36.71
+       ],
+       [
+        69.0,
+        35.6
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taliban southern forces",
+      "label": "Kandahar to Kabul",
+      "path": [
+       [
+        65.71,
+        31.61
+       ],
+       [
+        67.0,
+        32.6
+       ],
+       [
+        68.42,
+        33.55
+       ],
+       [
+        69.17,
+        34.53
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Taliban western forces",
+      "label": "Capture of Herat",
+      "path": [
+       [
+        61.5,
+        33.5
+       ],
+       [
+        62.2,
+        34.35
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Chris Donahue",
+      "label": "Airlift from Kabul airport",
+      "path": [
+       [
+        69.21,
+        34.56
+       ],
+       [
+        60.0,
+        30.0
+       ],
+       [
+        51.31,
+        25.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Kabul",
+      "kind": "event",
+      "lon": 69.17,
+      "lat": 34.53,
+      "year": 2021,
+      "winner": 1,
+      "text": "The Taliban entered the capital without a fight on 15 August."
+     },
+     {
+      "name": "Kabul airport bombing",
+      "kind": "event",
+      "lon": 69.22,
+      "lat": 34.56,
+      "year": 2021,
+      "winner": null,
+      "text": "An Islamic State suicide attack hit crowds at the airport gates on 26 August."
+     },
+     {
+      "name": "Last US flight leaves",
+      "kind": "event",
+      "lon": 69.21,
+      "lat": 34.56,
+      "year": 2021,
+      "winner": 1,
+      "text": "The final US aircraft departed on 30 August, ending the 20-year war."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "iraq-war",
+  "name": "Iraq War",
+  "start": 2003,
+  "end": 2011,
+  "kind": "war",
+  "summary": "A US-led coalition invaded Iraq in March 2003 and overthrew Saddam Hussein, citing weapons of mass destruction that were never found. The occupation faced a growing insurgency and a sectarian civil war, which eased after the 2007 troop surge and the Sunni Awakening. US forces left at the end of 2011, but the Islamic State's rise in 2014 brought renewed war until 2017.",
+  "sides": [
+   {
+    "name": "US-led coalition and new Iraqi government",
+    "color": "#3b6fb6",
+    "leaders": [
+     "George W. Bush",
+     "Tommy Franks",
+     "David Petraeus",
+     "Ray Odierno",
+     "Nouri al-Maliki"
+    ]
+   },
+   {
+    "name": "Saddam Hussein's government, then insurgent groups",
+    "color": "#b5452f",
+    "leaders": [
+     "Saddam Hussein",
+     "Abu Musab al-Zarqawi",
+     "Muqtada al-Sadr",
+     "Abu Bakr al-Baghdadi"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 44.0,
+    "lat": 33.0,
+    "r": 6
+   }
+  ],
+  "steps": [
+   {
+    "year": 2003,
+    "label": "Mar to Apr 2003",
+    "title": "Invasion",
+    "text": "On 20 March 2003 coalition forces under Tommy Franks crossed from Kuwait. The US Army's V Corps raced up the Euphrates past Najaf and through the Karbala Gap, US Marines advanced through Nasiriyah and Kut, and British troops took Basra. Baghdad fell on 9 April, and Saddam Hussein went into hiding.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "United States",
+       "United Kingdom"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iraq"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        43.9,
+        32.6
+       ],
+       [
+        44.3,
+        32.8
+       ],
+       [
+        45.0,
+        32.8
+       ],
+       [
+        45.8,
+        32.55
+       ]
+      ],
+      "label": "Front south of Baghdad, early Apr 2003"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "William Wallace",
+      "label": "V Corps up the Euphrates",
+      "path": [
+       [
+        47.6,
+        30.0
+       ],
+       [
+        46.3,
+        30.9
+       ],
+       [
+        44.33,
+        32.0
+       ],
+       [
+        44.1,
+        32.7
+       ],
+       [
+        44.23,
+        33.26
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "James Conway",
+      "label": "I Marine Expeditionary Force",
+      "path": [
+       [
+        47.5,
+        30.1
+       ],
+       [
+        46.26,
+        31.04
+       ],
+       [
+        45.82,
+        32.5
+       ],
+       [
+        44.6,
+        33.25
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Robin Brims",
+      "label": "British 1st Armoured Division to Basra",
+      "path": [
+       [
+        47.71,
+        30.11
+       ],
+       [
+        47.6,
+        30.4
+       ],
+       [
+        47.78,
+        30.51
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "US special forces and Kurdish Peshmerga",
+      "label": "Northern front to Kirkuk",
+      "path": [
+       [
+        44.0,
+        36.2
+       ],
+       [
+        44.2,
+        35.8
+       ],
+       [
+        44.39,
+        35.47
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Nasiriyah",
+      "kind": "battle",
+      "lon": 46.26,
+      "lat": 31.04,
+      "year": 2003,
+      "winner": 0,
+      "text": "Marines fought through the city to secure the Euphrates bridges."
+     },
+     {
+      "name": "Battle of Basra",
+      "kind": "battle",
+      "lon": 47.78,
+      "lat": 30.51,
+      "year": 2003,
+      "winner": 0,
+      "text": "British forces entered Iraq's second city after a two-week siege."
+     },
+     {
+      "name": "Fall of Baghdad",
+      "kind": "event",
+      "lon": 44.37,
+      "lat": 33.31,
+      "year": 2003,
+      "winner": 0,
+      "text": "US troops entered the capital and Saddam's government collapsed on 9 April."
+     }
+    ]
+   },
+   {
+    "year": 2003,
+    "label": "2003 to 2004",
+    "title": "Occupation and insurgency",
+    "text": "The Coalition Provisional Authority under Paul Bremer disbanded the army and purged Ba'ath party members, and a mainly Sunni insurgency grew alongside Abu Musab al-Zarqawi's jihadist network. US troops captured Saddam near Tikrit in December 2003. In 2004 Muqtada al-Sadr's Mahdi Army rose in Najaf, sovereignty passed to an interim Iraqi government, and US Marines stormed Fallujah in November.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Raymond Odierno",
+      "label": "4th Infantry Division hunts Saddam",
+      "path": [
+       [
+        43.68,
+        34.6
+       ],
+       [
+        43.75,
+        34.52
+       ],
+       [
+        43.8,
+        34.46
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Muqtada al-Sadr",
+      "label": "Mahdi Army uprising in Najaf",
+      "path": [
+       [
+        44.4,
+        32.03
+       ],
+       [
+        44.32,
+        31.99
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Richard Natonski",
+      "label": "Second assault on Fallujah",
+      "path": [
+       [
+        43.8,
+        33.45
+       ],
+       [
+        43.78,
+        33.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Saddam Hussein",
+      "kind": "event",
+      "lon": 43.8,
+      "lat": 34.46,
+      "year": 2003,
+      "winner": 0,
+      "text": "He was found hiding near ad-Dawr on 13 December and executed in 2006."
+     },
+     {
+      "name": "Second Battle of Fallujah",
+      "kind": "battle",
+      "lon": 43.78,
+      "lat": 33.35,
+      "year": 2004,
+      "winner": 0,
+      "text": "US and Iraqi troops retook the insurgent-held city in the war's heaviest urban fighting."
+     }
+    ]
+   },
+   {
+    "year": 2005,
+    "label": "2005 to 2006",
+    "title": "Sectarian civil war",
+    "text": "Iraqis voted in elections and approved a new constitution in 2005, but Sunni-Shia violence soared after the bombing of the al-Askari shrine in Samarra in February 2006. Militias and death squads killed thousands of civilians a month in and around Baghdad. Zarqawi was killed in a US air strike in June 2006, but his group, al-Qaeda in Iraq, carried on.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "H. R. McMaster",
+      "label": "Clearing Tal Afar",
+      "path": [
+       [
+        42.9,
+        36.3
+       ],
+       [
+        42.45,
+        36.37
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Sean MacFarland",
+      "label": "Operations in Ramadi",
+      "path": [
+       [
+        43.45,
+        33.45
+       ],
+       [
+        43.3,
+        33.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Samarra mosque bombing",
+      "kind": "event",
+      "lon": 43.87,
+      "lat": 34.2,
+      "year": 2006,
+      "winner": null,
+      "text": "The destruction of the Shia shrine's golden dome set off a wave of sectarian killings."
+     },
+     {
+      "name": "Death of al-Zarqawi",
+      "kind": "event",
+      "lon": 44.58,
+      "lat": 33.83,
+      "year": 2006,
+      "winner": 0,
+      "text": "The al-Qaeda in Iraq leader was killed in an air strike near Baqubah."
+     }
+    ]
+   },
+   {
+    "year": 2007,
+    "label": "2007 to 2008",
+    "title": "Surge and Awakening",
+    "text": "President Bush sent about 30,000 more troops under David Petraeus to secure Baghdad, while Sunni tribes in Anbar, the Awakening, turned against al-Qaeda in Iraq. In March 2008 Prime Minister Nouri al-Maliki sent the Iraqi army against Shia militias in Basra and later Sadr City. Violence fell sharply, and in November 2008 Iraq and the US agreed that US troops would leave by the end of 2011.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "David Petraeus",
+      "label": "Surge brigades into Baghdad",
+      "path": [
+       [
+        47.6,
+        30.0
+       ],
+       [
+        46.26,
+        31.04
+       ],
+       [
+        44.37,
+        33.31
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Nouri al-Maliki",
+      "label": "Iraqi army to Basra",
+      "path": [
+       [
+        44.37,
+        33.31
+       ],
+       [
+        45.82,
+        32.5
+       ],
+       [
+        46.9,
+        31.2
+       ],
+       [
+        47.78,
+        30.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Anbar Awakening",
+      "kind": "event",
+      "lon": 43.3,
+      "lat": 33.42,
+      "year": 2007,
+      "winner": 0,
+      "text": "Sunni tribal leaders around Ramadi allied with US forces against al-Qaeda in Iraq."
+     },
+     {
+      "name": "Battle of Basra",
+      "kind": "battle",
+      "lon": 47.78,
+      "lat": 30.51,
+      "year": 2008,
+      "winner": 0,
+      "text": "Iraqi forces regained control of the city from Mahdi Army fighters."
+     },
+     {
+      "name": "Status of Forces Agreement",
+      "kind": "treaty",
+      "lon": 44.37,
+      "lat": 33.31,
+      "year": 2008,
+      "winner": null,
+      "text": "The deal set the withdrawal of all US forces by 31 December 2011."
+     }
+    ]
+   },
+   {
+    "year": 2009,
+    "label": "2009 to 2011",
+    "title": "US withdrawal",
+    "text": "US troops left Iraqi cities in June 2009 and ended combat operations in August 2010, leaving advisers under Ray Odierno and then Lloyd Austin. Political deadlock and attacks continued, but Iraqi forces took over security. The last US troops crossed into Kuwait on 18 December 2011.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq",
+       "United States",
+       "United Kingdom"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Lloyd Austin",
+      "label": "Last US convoys to Kuwait",
+      "path": [
+       [
+        44.37,
+        33.31
+       ],
+       [
+        46.26,
+        31.04
+       ],
+       [
+        47.71,
+        30.11
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "End of US combat mission",
+      "kind": "event",
+      "lon": 44.37,
+      "lat": 33.31,
+      "year": 2010,
+      "winner": null,
+      "text": "Operation Iraqi Freedom became Operation New Dawn, an advisory mission."
+     },
+     {
+      "name": "Last US troops leave",
+      "kind": "event",
+      "lon": 47.71,
+      "lat": 30.11,
+      "year": 2011,
+      "winner": null,
+      "text": "The final convoy crossed the border on 18 December 2011."
+     }
+    ]
+   },
+   {
+    "year": 2012,
+    "label": "2011 to 2017, aftermath",
+    "title": "Rise and fall of the Islamic State",
+    "text": "Remnants of al-Qaeda in Iraq, rebuilt as the Islamic State under Abu Bakr al-Baghdadi, grew during the Syrian civil war and in Sunni discontent with the Maliki government. In June 2014 they seized Mosul and drove toward Baghdad, and Baghdadi declared a caliphate. Iraqi forces, Kurdish Peshmerga, Shia militias and a US-led air campaign took the territory back, ending with Mosul in July 2017.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Iraq"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        41.4,
+        36.5
+       ],
+       [
+        42.6,
+        36.6
+       ],
+       [
+        43.4,
+        36.35
+       ],
+       [
+        43.8,
+        35.6
+       ],
+       [
+        44.1,
+        34.9
+       ],
+       [
+        43.9,
+        34.2
+       ],
+       [
+        43.8,
+        33.5
+       ],
+       [
+        43.4,
+        33.3
+       ],
+       [
+        42.5,
+        33.6
+       ],
+       [
+        41.0,
+        34.4
+       ]
+      ],
+      "label": "Approx. edge of Islamic State territory, late 2014"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Abu Bakr al-Baghdadi",
+      "label": "Islamic State offensive from Syria",
+      "path": [
+       [
+        39.0,
+        35.95
+       ],
+       [
+        41.0,
+        36.3
+       ],
+       [
+        43.13,
+        36.34
+       ],
+       [
+        43.68,
+        34.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Abdulamir Yarallah",
+      "label": "Iraqi offensive on Mosul",
+      "path": [
+       [
+        43.68,
+        34.6
+       ],
+       [
+        43.2,
+        35.8
+       ],
+       [
+        43.13,
+        36.34
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Mosul",
+      "kind": "battle",
+      "lon": 43.13,
+      "lat": 36.34,
+      "year": 2014,
+      "winner": 1,
+      "text": "A small Islamic State force routed the much larger Iraqi garrison in June 2014."
+     },
+     {
+      "name": "Battle of Mosul",
+      "kind": "battle",
+      "lon": 43.13,
+      "lat": 36.34,
+      "year": 2017,
+      "winner": 0,
+      "text": "Nine months of urban fighting ended with the city's recapture in July 2017."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "mexican-drug-war",
+  "name": "Mexican Drug War",
+  "start": 2006,
+  "end": 2025,
+  "kind": "conflict",
+  "summary": "In December 2006 President Felipe Calderon deployed the army against Mexico's drug-trafficking organisations, which also fought each other for smuggling routes into the United States. Arrests and killings of kingpins fragmented the cartels and spread violence across the country, with hundreds of thousands killed or missing since 2006. Successive governments changed strategy, but the conflict continued at the end of 2025.",
+  "sides": [
+   {
+    "name": "Mexican government and security forces",
+    "color": "#2f7d5b",
+    "leaders": [
+     "Felipe Calderon",
+     "Enrique Pena Nieto",
+     "Andres Manuel Lopez Obrador",
+     "Claudia Sheinbaum"
+    ]
+   },
+   {
+    "name": "Drug cartels (rival organisations)",
+    "color": "#b5452f",
+    "leaders": [
+     "Joaquin Guzman (Sinaloa)",
+     "Ismael Zambada (Sinaloa)",
+     "Heriberto Lazcano (Los Zetas)",
+     "Nemesio Oseguera (Jalisco New Generation)"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": -103.0,
+    "lat": 24.0,
+    "r": 11
+   }
+  ],
+  "steps": [
+   {
+    "year": 2006,
+    "label": "2006 to 2007",
+    "title": "The army is sent in",
+    "text": "Days after taking office in December 2006, Felipe Calderon sent thousands of soldiers and federal police into his home state of Michoacan, then to Guerrero, Baja California and the northern border states. The campaign targeted the leaders of the Sinaloa, Gulf, Juarez and Tijuana organisations and La Familia Michoacana.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Felipe Calderon",
+      "label": "Joint Operation Michoacan",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -100.5,
+        19.6
+       ],
+       [
+        -101.9,
+        19.2
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mexican Army",
+      "label": "Deployments to the border states",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -100.31,
+        25.67
+       ],
+       [
+        -99.5,
+        27.48
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Operation Michoacan",
+      "kind": "war",
+      "lon": -101.9,
+      "lat": 19.2,
+      "year": 2006,
+      "winner": null,
+      "text": "About 6,500 troops and police opened the government offensive on 11 December 2006."
+     }
+    ]
+   },
+   {
+    "year": 2008,
+    "label": "2008 to 2010",
+    "title": "Cartel wars on the border",
+    "text": "The Sinaloa cartel under Joaquin Guzman fought the Juarez cartel for Ciudad Juarez, which became one of the most violent cities in the world. In 2010 Los Zetas broke from the Gulf cartel, setting off a war across Tamaulipas and the northeast. The US Merida Initiative funded equipment and training for Mexican forces.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Joaquin Guzman",
+      "label": "Sinaloa push into Ciudad Juarez",
+      "path": [
+       [
+        -107.39,
+        24.8
+       ],
+       [
+        -106.07,
+        28.63
+       ],
+       [
+        -106.44,
+        31.69
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Heriberto Lazcano",
+      "label": "Los Zetas against the Gulf cartel",
+      "path": [
+       [
+        -99.5,
+        27.48
+       ],
+       [
+        -98.3,
+        25.9
+       ],
+       [
+        -97.5,
+        25.87
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle for Ciudad Juarez",
+      "kind": "war",
+      "lon": -106.44,
+      "lat": 31.69,
+      "year": 2008,
+      "winner": null,
+      "text": "Thousands were killed in the city between 2008 and 2011 as cartels fought and the army deployed."
+     },
+     {
+      "name": "San Fernando massacre",
+      "kind": "event",
+      "lon": -98.15,
+      "lat": 24.85,
+      "year": 2010,
+      "winner": null,
+      "text": "Los Zetas killed 72 migrants in Tamaulipas in August 2010."
+     },
+     {
+      "name": "Death of Arturo Beltran Leyva",
+      "kind": "event",
+      "lon": -99.23,
+      "lat": 18.92,
+      "year": 2009,
+      "winner": 0,
+      "text": "Marines killed the cartel leader in Cuernavaca in December 2009."
+     }
+    ]
+   },
+   {
+    "year": 2011,
+    "label": "2011 to 2012",
+    "title": "Peak of the Calderon years",
+    "text": "Killings related to organised crime reached their first peak in 2011 as Los Zetas spread from the northeast to Veracruz and Coahuila. Mass attacks, such as the arson of a casino in Monterrey, shocked the country. In October 2012 marines killed Zetas leader Heriberto Lazcano in Coahuila.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Heriberto Lazcano",
+      "label": "Los Zetas expansion",
+      "path": [
+       [
+        -99.5,
+        27.48
+       ],
+       [
+        -100.31,
+        25.67
+       ],
+       [
+        -101.0,
+        25.42
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mexican Navy",
+      "label": "Marines against Los Zetas",
+      "path": [
+       [
+        -97.86,
+        22.25
+       ],
+       [
+        -99.5,
+        26.0
+       ],
+       [
+        -101.05,
+        27.43
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Monterrey casino attack",
+      "kind": "event",
+      "lon": -100.31,
+      "lat": 25.67,
+      "year": 2011,
+      "winner": null,
+      "text": "An arson attack blamed on Los Zetas killed 52 people in August 2011."
+     },
+     {
+      "name": "Death of Heriberto Lazcano",
+      "kind": "event",
+      "lon": -101.05,
+      "lat": 27.43,
+      "year": 2012,
+      "winner": 0,
+      "text": "The Zetas founder was killed in a firefight with marines in Coahuila."
+     }
+    ]
+   },
+   {
+    "year": 2013,
+    "label": "2013 to 2018",
+    "title": "Kingpins fall, cartels splinter",
+    "text": "President Enrique Pena Nieto continued the pursuit of top leaders. Armed self-defence groups rose against the Knights Templar in Michoacan, and Joaquin Guzman was captured in 2014, escaped in 2015, was recaptured in 2016 and was extradited to the United States. The disappearance of 43 students in Iguala in 2014 caused national outrage, while the Jalisco New Generation Cartel grew into a major power.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Nemesio Oseguera",
+      "label": "Jalisco New Generation Cartel expands",
+      "path": [
+       [
+        -103.35,
+        20.67
+       ],
+       [
+        -102.0,
+        19.6
+       ],
+       [
+        -101.18,
+        19.7
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Mexican Navy",
+      "label": "Recapture of Guzman",
+      "path": [
+       [
+        -107.39,
+        24.8
+       ],
+       [
+        -108.5,
+        25.5
+       ],
+       [
+        -108.99,
+        25.79
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Iguala disappearances",
+      "kind": "event",
+      "lon": -99.54,
+      "lat": 18.34,
+      "year": 2014,
+      "winner": null,
+      "text": "Forty-three students from Ayotzinapa disappeared after an attack involving police and a local gang."
+     },
+     {
+      "name": "Recapture of El Chapo",
+      "kind": "event",
+      "lon": -108.99,
+      "lat": 25.79,
+      "year": 2016,
+      "winner": 0,
+      "text": "Marines caught Guzman in Los Mochis six months after his tunnel escape from prison."
+     }
+    ]
+   },
+   {
+    "year": 2019,
+    "label": "2019 to 2024",
+    "title": "Hugs, not bullets",
+    "text": "President Andres Manuel Lopez Obrador promised to tackle the causes of violence and created a militarised National Guard, as homicides stayed near record levels. In October 2019 troops released Ovidio Guzman after cartel gunmen besieged Culiacan, then captured him in 2023. In July 2024 Ismael Zambada was taken to the United States, and the Sinaloa cartel split into a violent war between his faction and Guzman's sons.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Los Chapitos",
+      "label": "Sinaloa factions fight in Culiacan",
+      "path": [
+       [
+        -107.6,
+        24.9
+       ],
+       [
+        -107.39,
+        24.8
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "La Mayiza",
+      "label": "Zambada loyalists against Los Chapitos",
+      "path": [
+       [
+        -107.2,
+        24.6
+       ],
+       [
+        -107.39,
+        24.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Culiacan siege",
+      "kind": "battle",
+      "lon": -107.39,
+      "lat": 24.8,
+      "year": 2019,
+      "winner": 1,
+      "text": "The government freed Ovidio Guzman after armed attacks across the city."
+     },
+     {
+      "name": "Zambada taken to the US",
+      "kind": "event",
+      "lon": -106.69,
+      "lat": 31.87,
+      "year": 2024,
+      "winner": null,
+      "text": "His arrest near El Paso set off fighting inside the Sinaloa cartel."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "2025",
+    "title": "A new government, the same war",
+    "text": "Claudia Sheinbaum took office in October 2024 promising more intelligence-led policing, and her government reported a fall in homicides during 2025. Under pressure from the United States, which designated several cartels as terrorist organisations, Mexico sent dozens of jailed cartel figures to US courts. Violence remained high in Sinaloa, Guanajuato, Michoacan and other states.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Mexico"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Omar Garcia Harfuch",
+      "label": "Federal reinforcements to Sinaloa",
+      "path": [
+       [
+        -99.13,
+        19.43
+       ],
+       [
+        -104.0,
+        22.0
+       ],
+       [
+        -107.39,
+        24.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Transfers to the United States",
+      "kind": "event",
+      "lon": -99.13,
+      "lat": 19.43,
+      "year": 2025,
+      "winner": null,
+      "text": "Mexico sent dozens of cartel prisoners to the US in 2025, including Rafael Caro Quintero."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "syrian-civil-war",
+  "name": "Syrian Civil War",
+  "start": 2011,
+  "end": 2024,
+  "kind": "war",
+  "summary": "Protests against Bashar al-Assad in 2011 met a violent crackdown and turned into a multi-sided war between the government, rebel groups, the Islamic State and Kurdish-led forces, drawing in Russia, Iran, Turkey and a US-led coalition. Russian and Iranian support let Assad recover most cities by 2018, and front lines froze in 2020. In late 2024 a rebel offensive led by Hayat Tahrir al-Sham took Damascus and ended the Assad government.",
+  "sides": [
+   {
+    "name": "Assad government and allies (Russia, Iran, Hezbollah)",
+    "color": "#b5452f",
+    "leaders": [
+     "Bashar al-Assad",
+     "Maher al-Assad",
+     "Suheil al-Hassan",
+     "Qasem Soleimani"
+    ]
+   },
+   {
+    "name": "Rebel opposition (later led by Hayat Tahrir al-Sham)",
+    "color": "#2f8a57",
+    "leaders": [
+     "Free Syrian Army commanders",
+     "Ahmed al-Sharaa (Abu Mohammad al-Julani)"
+    ]
+   },
+   {
+    "name": "Islamic State",
+    "color": "#5a5a5a",
+    "leaders": [
+     "Abu Bakr al-Baghdadi",
+     "Abu Mohammad al-Adnani"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 38.5,
+    "lat": 35.0,
+    "r": 4.5
+   }
+  ],
+  "steps": [
+   {
+    "year": 2011,
+    "label": "2011 to 2012",
+    "title": "From protest to war",
+    "text": "Protests that began in Daraa in March 2011 spread across Syria and were met with live fire. Army defectors formed the Free Syrian Army, and by 2012 rebels held parts of Homs, Idlib and the Damascus suburbs. In July 2012 rebels pushed into Aleppo, which stayed divided for four years.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        37.1,
+        36.26
+       ],
+       [
+        37.14,
+        36.21
+       ],
+       [
+        37.17,
+        36.18
+       ],
+       [
+        37.22,
+        36.16
+       ]
+      ],
+      "label": "Aleppo divided, 2012"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Free Syrian Army",
+      "label": "Rebel push into Aleppo",
+      "path": [
+       [
+        37.1,
+        36.55
+       ],
+       [
+        37.12,
+        36.35
+       ],
+       [
+        37.16,
+        36.21
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Bashar al-Assad",
+      "label": "Army assault on Homs",
+      "path": [
+       [
+        36.3,
+        33.51
+       ],
+       [
+        36.6,
+        34.2
+       ],
+       [
+        36.7,
+        34.72
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Daraa protests",
+      "kind": "event",
+      "lon": 36.1,
+      "lat": 32.62,
+      "year": 2011,
+      "winner": null,
+      "text": "Arrests of schoolboys sparked protests that spread nationwide."
+     },
+     {
+      "name": "Siege of Baba Amr, Homs",
+      "kind": "siege",
+      "lon": 36.7,
+      "lat": 34.72,
+      "year": 2012,
+      "winner": 0,
+      "text": "Government forces retook the rebel-held district after weeks of shelling."
+     },
+     {
+      "name": "Battle of Aleppo begins",
+      "kind": "battle",
+      "lon": 37.16,
+      "lat": 36.2,
+      "year": 2012,
+      "winner": null,
+      "text": "Rebels seized the east of Syria's largest city."
+     }
+    ]
+   },
+   {
+    "year": 2013,
+    "label": "2013 to 2014",
+    "title": "Hezbollah, chemical weapons and the Islamic State",
+    "text": "Hezbollah fighters helped government forces retake al-Qusayr in mid 2013, and a sarin attack on the Ghouta suburbs in August killed hundreds, leading to a deal to remove Syria's declared chemical arsenal. The Islamic State took Raqqa from other rebels in early 2014 and declared a caliphate in June. Its siege of Kurdish Kobani was broken in January 2015 by Kurdish YPG fighters backed by US air strikes.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        37.4,
+        36.6
+       ],
+       [
+        37.8,
+        36.2
+       ],
+       [
+        38.2,
+        35.6
+       ],
+       [
+        38.7,
+        34.9
+       ],
+       [
+        39.6,
+        34.2
+       ],
+       [
+        40.8,
+        34.3
+       ]
+      ],
+      "label": "Approx. western edge of Islamic State territory, 2014"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Hezbollah",
+      "label": "Assault on al-Qusayr",
+      "path": [
+       [
+        36.5,
+        34.3
+       ],
+       [
+        36.58,
+        34.51
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Abu Bakr al-Baghdadi",
+      "label": "Islamic State seizes the east",
+      "path": [
+       [
+        40.14,
+        35.33
+       ],
+       [
+        39.0,
+        35.95
+       ],
+       [
+        38.36,
+        36.75
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Islamic State fighters",
+      "label": "Siege of Kobani",
+      "path": [
+       [
+        38.4,
+        36.6
+       ],
+       [
+        38.36,
+        36.89
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of al-Qusayr",
+      "kind": "battle",
+      "lon": 36.58,
+      "lat": 34.51,
+      "year": 2013,
+      "winner": 0,
+      "text": "The government and Hezbollah cut a rebel supply route from Lebanon."
+     },
+     {
+      "name": "Ghouta chemical attack",
+      "kind": "event",
+      "lon": 36.4,
+      "lat": 33.52,
+      "year": 2013,
+      "winner": null,
+      "text": "A sarin attack killed hundreds of people in rebel-held suburbs of Damascus."
+     },
+     {
+      "name": "Siege of Kobani",
+      "kind": "siege",
+      "lon": 38.36,
+      "lat": 36.89,
+      "year": 2014,
+      "winner": null,
+      "text": "Kurdish YPG fighters and US air power held the town and the siege failed by January 2015."
+     }
+    ]
+   },
+   {
+    "year": 2015,
+    "label": "2015 to 2016",
+    "title": "Russia intervenes",
+    "text": "A rebel coalition took Idlib in March 2015 and the Islamic State seized Palmyra in May, leaving the government at its weakest. From September 2015 Russian air power, Iranian-backed militias and Hezbollah turned the tide. In December 2016 government forces retook eastern Aleppo, the opposition's most important stronghold, after a long siege.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        36.9,
+        36.35
+       ],
+       [
+        37.1,
+        36.28
+       ],
+       [
+        37.2,
+        36.2
+       ],
+       [
+        37.3,
+        36.1
+       ]
+      ],
+      "label": "Front around Aleppo, late 2016"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Army of Conquest",
+      "label": "Rebels take Idlib",
+      "path": [
+       [
+        36.4,
+        36.1
+       ],
+       [
+        36.63,
+        35.93
+       ]
+      ]
+     },
+     {
+      "side": 2,
+      "commander": "Islamic State fighters",
+      "label": "Advance on Palmyra",
+      "path": [
+       [
+        39.5,
+        35.0
+       ],
+       [
+        38.9,
+        34.8
+       ],
+       [
+        38.27,
+        34.56
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Suheil al-Hassan",
+      "label": "Government offensive on east Aleppo",
+      "path": [
+       [
+        37.35,
+        36.05
+       ],
+       [
+        37.25,
+        36.15
+       ],
+       [
+        37.16,
+        36.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Idlib",
+      "kind": "battle",
+      "lon": 36.63,
+      "lat": 35.93,
+      "year": 2015,
+      "winner": 1,
+      "text": "A rebel coalition led by Islamist groups captured the provincial capital."
+     },
+     {
+      "name": "Russian air campaign begins",
+      "kind": "event",
+      "lon": 35.95,
+      "lat": 35.4,
+      "year": 2015,
+      "winner": 0,
+      "text": "Russian jets began flying from Hmeimim air base on 30 September 2015."
+     },
+     {
+      "name": "Fall of eastern Aleppo",
+      "kind": "siege",
+      "lon": 37.16,
+      "lat": 36.2,
+      "year": 2016,
+      "winner": 0,
+      "text": "Remaining rebels and civilians were evacuated in December 2016."
+     }
+    ]
+   },
+   {
+    "year": 2017,
+    "label": "2017 to 2019",
+    "title": "The caliphate falls",
+    "text": "The Kurdish-led Syrian Democratic Forces, backed by the US-led coalition, took Raqqa in October 2017, while government forces broke the siege of Deir ez-Zor and advanced along the Euphrates. The government retook Eastern Ghouta and the south in 2018, and Turkey and allied rebels occupied areas of the north. The Islamic State lost its last village, Baghuz, in March 2019.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        38.2,
+        35.95
+       ],
+       [
+        39.0,
+        35.85
+       ],
+       [
+        40.14,
+        35.33
+       ],
+       [
+        40.93,
+        34.45
+       ]
+      ],
+      "label": "Euphrates line between government and SDF, 2018"
+     },
+     {
+      "path": [
+       [
+        36.2,
+        35.6
+       ],
+       [
+        36.64,
+        35.44
+       ],
+       [
+        36.8,
+        35.86
+       ],
+       [
+        36.95,
+        36.2
+       ]
+      ],
+      "label": "Idlib front, 2018"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Suheil al-Hassan",
+      "label": "Government advance to Deir ez-Zor",
+      "path": [
+       [
+        38.27,
+        34.56
+       ],
+       [
+        39.3,
+        35.0
+       ],
+       [
+        40.14,
+        35.33
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Government forces",
+      "label": "Eastern Ghouta offensive",
+      "path": [
+       [
+        36.3,
+        33.51
+       ],
+       [
+        36.4,
+        33.55
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Turkish-backed rebels",
+      "label": "Operation Olive Branch, Afrin",
+      "path": [
+       [
+        36.6,
+        36.75
+       ],
+       [
+        36.87,
+        36.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Raqqa",
+      "kind": "battle",
+      "lon": 39.0,
+      "lat": 35.95,
+      "year": 2017,
+      "winner": null,
+      "text": "The SDF took the Islamic State's capital after four months of fighting."
+     },
+     {
+      "name": "Fall of Eastern Ghouta",
+      "kind": "siege",
+      "lon": 36.4,
+      "lat": 33.55,
+      "year": 2018,
+      "winner": 0,
+      "text": "The last rebel enclave near Damascus surrendered in April 2018."
+     },
+     {
+      "name": "Battle of Baghuz",
+      "kind": "battle",
+      "lon": 40.93,
+      "lat": 34.45,
+      "year": 2019,
+      "winner": null,
+      "text": "SDF forces ended the Islamic State's territorial control in March 2019."
+     }
+    ]
+   },
+   {
+    "year": 2020,
+    "label": "2020 to 2023",
+    "title": "Frozen lines",
+    "text": "A government offensive in Idlib ended with a Russian-Turkish ceasefire in March 2020, leaving the northwest to Hayat Tahrir al-Sham and Turkish-backed factions. The country stayed divided among the government, the rebels, Turkish-held zones and the SDF in the northeast, while the economy collapsed. The Arab League readmitted Syria in 2023.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        36.15,
+        35.8
+       ],
+       [
+        36.5,
+        35.7
+       ],
+       [
+        36.75,
+        35.83
+       ],
+       [
+        36.95,
+        36.15
+       ],
+       [
+        36.85,
+        36.4
+       ]
+      ],
+      "label": "Idlib line after March 2020"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Government forces",
+      "label": "Offensive in Idlib province",
+      "path": [
+       [
+        36.64,
+        35.3
+       ],
+       [
+        36.68,
+        35.6
+       ],
+       [
+        36.8,
+        35.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Moscow ceasefire",
+      "kind": "treaty",
+      "lon": 37.62,
+      "lat": 55.75,
+      "year": 2020,
+      "winner": null,
+      "text": "Russia and Turkey agreed a ceasefire along the M4 highway in Idlib."
+     },
+     {
+      "name": "Earthquake",
+      "kind": "event",
+      "lon": 36.6,
+      "lat": 36.2,
+      "year": 2023,
+      "winner": null,
+      "text": "The February 2023 earthquake killed thousands in northwest Syria."
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "label": "27 Nov to 8 Dec 2024",
+    "title": "Fall of Assad",
+    "text": "On 27 November 2024 Hayat Tahrir al-Sham and allied factions under Ahmed al-Sharaa attacked from Idlib and took Aleppo within days, as government forces collapsed with Russia and Hezbollah distracted by other wars. Hama fell on 5 December and Homs on 7 December, while rebels in the south moved on Damascus. On 8 December rebels entered the capital and Assad fled to Moscow.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Syria"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        36.15,
+        35.8
+       ],
+       [
+        36.5,
+        35.7
+       ],
+       [
+        36.75,
+        35.83
+       ],
+       [
+        36.95,
+        36.15
+       ],
+       [
+        36.85,
+        36.4
+       ]
+      ],
+      "label": "Front on 27 Nov 2024"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Ahmed al-Sharaa",
+      "label": "Offensive on Aleppo",
+      "path": [
+       [
+        36.75,
+        35.95
+       ],
+       [
+        36.95,
+        36.1
+       ],
+       [
+        37.16,
+        36.2
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Ahmed al-Sharaa",
+      "label": "South to Hama, Homs and Damascus",
+      "path": [
+       [
+        36.63,
+        35.93
+       ],
+       [
+        36.75,
+        35.13
+       ],
+       [
+        36.7,
+        34.73
+       ],
+       [
+        36.3,
+        33.51
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Southern rebel factions",
+      "label": "Daraa to Damascus",
+      "path": [
+       [
+        36.1,
+        32.62
+       ],
+       [
+        36.2,
+        33.1
+       ],
+       [
+        36.3,
+        33.51
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Aleppo",
+      "kind": "battle",
+      "lon": 37.16,
+      "lat": 36.2,
+      "year": 2024,
+      "winner": 1,
+      "text": "Rebels took Syria's second city almost without a fight."
+     },
+     {
+      "name": "Capture of Hama",
+      "kind": "battle",
+      "lon": 36.75,
+      "lat": 35.13,
+      "year": 2024,
+      "winner": 1,
+      "text": "Government forces withdrew from the city on 5 December."
+     },
+     {
+      "name": "Fall of Damascus",
+      "kind": "event",
+      "lon": 36.3,
+      "lat": 33.51,
+      "year": 2024,
+      "winner": 1,
+      "text": "Assad's government fell on 8 December, ending more than 50 years of family rule."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "yemeni-civil-war",
+  "name": "Yemeni Civil War and Saudi-led Intervention",
+  "start": 2014,
+  "end": 2025,
+  "kind": "war",
+  "summary": "The Houthi movement seized Sanaa in 2014 and pushed south, and in March 2015 a Saudi-led coalition intervened to restore President Hadi's government. The war settled into a stalemate that created one of the world's worst humanitarian crises, and a UN-brokered truce in 2022 largely ended the large-scale fighting. From late 2023 Houthi attacks on Red Sea shipping drew strikes by the US, Britain and Israel, and Yemen remained divided at the end of 2025.",
+  "sides": [
+   {
+    "name": "Houthi movement (Ansar Allah)",
+    "color": "#2f8a57",
+    "leaders": [
+     "Abdul-Malik al-Houthi",
+     "Ali Abdullah Saleh (allied until 2017)",
+     "Mahdi al-Mashat"
+    ]
+   },
+   {
+    "name": "Yemeni government and Saudi-led coalition",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Abdrabbuh Mansur Hadi",
+     "Rashad al-Alimi",
+     "Mohammed bin Salman",
+     "Aidarus al-Zubaidi"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 45.5,
+    "lat": 15.5,
+    "r": 5
+   }
+  ],
+  "steps": [
+   {
+    "year": 2014,
+    "label": "Sep 2014 to Mar 2015",
+    "title": "The Houthis take Sanaa",
+    "text": "Houthi fighters from Saada, allied with forces loyal to former president Ali Abdullah Saleh, entered Sanaa in September 2014. In early 2015 they placed President Hadi under house arrest, and after he escaped to Aden they drove south toward the city.",
+    "territories": [],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Abdul-Malik al-Houthi",
+      "label": "From Saada to Sanaa",
+      "path": [
+       [
+        43.76,
+        16.94
+       ],
+       [
+        43.94,
+        15.81
+       ],
+       [
+        44.21,
+        15.35
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Houthi and Saleh forces",
+      "label": "Drive on Aden",
+      "path": [
+       [
+        44.21,
+        15.35
+       ],
+       [
+        44.4,
+        14.55
+       ],
+       [
+        44.02,
+        13.58
+       ],
+       [
+        45.03,
+        12.79
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Sanaa",
+      "kind": "event",
+      "lon": 44.21,
+      "lat": 15.35,
+      "year": 2014,
+      "winner": 0,
+      "text": "Houthi forces took over the capital on 21 September 2014."
+     }
+    ]
+   },
+   {
+    "year": 2015,
+    "label": "Mar to Dec 2015",
+    "title": "Operation Decisive Storm",
+    "text": "On 26 March 2015 Saudi Arabia, led by defence minister Mohammed bin Salman, and its allies began air strikes and a naval blockade. UAE-backed southern forces retook Aden in July and pushed the Houthis out of most of the south, while fighting stalled around Marib and Taiz.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia",
+       "United Arab Emirates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        44.6,
+        17.4
+       ],
+       [
+        45.0,
+        16.0
+       ],
+       [
+        45.3,
+        15.3
+       ],
+       [
+        45.3,
+        14.5
+       ],
+       [
+        44.73,
+        13.75
+       ],
+       [
+        44.02,
+        13.58
+       ],
+       [
+        43.4,
+        13.2
+       ]
+      ],
+      "label": "Approx. front, late 2015"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "UAE-backed forces",
+      "label": "Liberation of Aden and the south",
+      "path": [
+       [
+        45.03,
+        12.79
+       ],
+       [
+        44.9,
+        13.05
+       ],
+       [
+        44.73,
+        13.75
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Saudi-led coalition",
+      "label": "Coalition forces to Marib",
+      "path": [
+       [
+        47.0,
+        17.0
+       ],
+       [
+        46.0,
+        16.0
+       ],
+       [
+        45.32,
+        15.46
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Decisive Storm begins",
+      "kind": "event",
+      "lon": 44.21,
+      "lat": 15.35,
+      "year": 2015,
+      "winner": null,
+      "text": "Coalition air strikes hit Houthi positions across the north."
+     },
+     {
+      "name": "Battle of Aden",
+      "kind": "battle",
+      "lon": 45.03,
+      "lat": 12.79,
+      "year": 2015,
+      "winner": 1,
+      "text": "Southern fighters with Emirati support drove Houthi forces out of the city."
+     }
+    ]
+   },
+   {
+    "year": 2016,
+    "label": "2016 to 2018",
+    "title": "Stalemate and the Hodeidah offensive",
+    "text": "Front lines barely moved as air strikes, the blockade, famine and cholera devastated the country. In December 2017 Saleh broke with the Houthis and was killed in Sanaa. In 2018 coalition-backed forces advanced up the Red Sea coast to Hodeidah, Yemen's main port, until the UN-brokered Stockholm Agreement halted the battle.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia",
+       "United Arab Emirates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        44.6,
+        17.4
+       ],
+       [
+        44.9,
+        16.3
+       ],
+       [
+        45.15,
+        15.5
+       ],
+       [
+        45.4,
+        14.6
+       ],
+       [
+        44.73,
+        13.75
+       ],
+       [
+        44.02,
+        13.58
+       ],
+       [
+        43.3,
+        14.0
+       ],
+       [
+        42.98,
+        14.7
+       ]
+      ],
+      "label": "Approx. front line, 2018 to 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tareq Saleh",
+      "label": "West coast offensive",
+      "path": [
+       [
+        43.25,
+        13.32
+       ],
+       [
+        43.3,
+        14.0
+       ],
+       [
+        42.98,
+        14.7
+       ],
+       [
+        42.95,
+        14.8
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Death of Ali Abdullah Saleh",
+      "kind": "event",
+      "lon": 44.21,
+      "lat": 15.35,
+      "year": 2017,
+      "winner": 0,
+      "text": "The former president was killed after turning against his Houthi allies."
+     },
+     {
+      "name": "Battle of Hodeidah",
+      "kind": "battle",
+      "lon": 42.95,
+      "lat": 14.8,
+      "year": 2018,
+      "winner": null,
+      "text": "Coalition forces reached the city's edges but did not take the port."
+     },
+     {
+      "name": "Stockholm Agreement",
+      "kind": "treaty",
+      "lon": 18.07,
+      "lat": 59.33,
+      "year": 2018,
+      "winner": null,
+      "text": "The parties agreed a ceasefire in Hodeidah and a prisoner exchange."
+     }
+    ]
+   },
+   {
+    "year": 2019,
+    "label": "2019 to 2021",
+    "title": "Rifts and the battle for Marib",
+    "text": "In August 2019 the separatist Southern Transitional Council, backed by the UAE, seized Aden from government forces, and the Riyadh Agreement later papered over the split. Houthi drones and missiles struck Saudi territory, including oil facilities at Abqaiq, which the Houthis claimed and the US blamed on Iran. From 2020 the Houthis attacked Marib, the government's last northern stronghold, but failed to take it.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia",
+       "United Arab Emirates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        44.6,
+        17.4
+       ],
+       [
+        44.9,
+        16.3
+       ],
+       [
+        45.15,
+        15.5
+       ],
+       [
+        45.4,
+        14.6
+       ],
+       [
+        44.73,
+        13.75
+       ],
+       [
+        44.02,
+        13.58
+       ],
+       [
+        43.3,
+        14.0
+       ],
+       [
+        42.98,
+        14.7
+       ]
+      ],
+      "label": "Approx. front line, 2018 to 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Houthi forces",
+      "label": "Offensive on Marib",
+      "path": [
+       [
+        44.75,
+        15.45
+       ],
+       [
+        45.0,
+        15.42
+       ],
+       [
+        45.32,
+        15.46
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Aidarus al-Zubaidi",
+      "label": "Southern Transitional Council takes Aden",
+      "path": [
+       [
+        44.9,
+        13.05
+       ],
+       [
+        45.03,
+        12.79
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Abqaiq and Khurais attacks",
+      "kind": "event",
+      "lon": 49.68,
+      "lat": 25.93,
+      "year": 2019,
+      "winner": null,
+      "text": "Strikes on Saudi oil plants briefly halved the kingdom's output."
+     },
+     {
+      "name": "Battle of Marib",
+      "kind": "battle",
+      "lon": 45.32,
+      "lat": 15.46,
+      "year": 2021,
+      "winner": 1,
+      "text": "Government forces backed by coalition air power held the city."
+     }
+    ]
+   },
+   {
+    "year": 2022,
+    "label": "2022 to 2023",
+    "title": "Truce",
+    "text": "A UN-brokered truce in April 2022 paused air strikes and major offensives, and President Hadi handed power to a Presidential Leadership Council led by Rashad al-Alimi. The truce formally lapsed in October, but large-scale fighting did not resume, and Saudi Arabia held direct talks with the Houthis.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia",
+       "United Arab Emirates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        44.6,
+        17.4
+       ],
+       [
+        44.9,
+        16.3
+       ],
+       [
+        45.15,
+        15.5
+       ],
+       [
+        45.4,
+        14.6
+       ],
+       [
+        44.73,
+        13.75
+       ],
+       [
+        44.02,
+        13.58
+       ],
+       [
+        43.3,
+        14.0
+       ],
+       [
+        42.98,
+        14.7
+       ]
+      ],
+      "label": "Approx. front line, 2018 to 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Rashad al-Alimi",
+      "label": "New leadership council to Aden",
+      "path": [
+       [
+        46.68,
+        24.71
+       ],
+       [
+        46.0,
+        18.0
+       ],
+       [
+        45.03,
+        12.79
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "UN truce",
+      "kind": "treaty",
+      "lon": 44.21,
+      "lat": 15.35,
+      "year": 2022,
+      "winner": null,
+      "text": "A nationwide truce took effect on 2 April 2022."
+     }
+    ]
+   },
+   {
+    "year": 2023,
+    "label": "Nov 2023 to 2025",
+    "title": "Red Sea war and new rifts",
+    "text": "Saying they acted in support of Gaza, the Houthis attacked ships in the Red Sea and fired missiles at Israel from November 2023, prompting US and British strikes from January 2024 and Israeli strikes on Hodeidah and Sanaa. A US air campaign in 2025 ended in a May ceasefire between the US and the Houthis, and attacks largely stopped after the October 2025 Gaza ceasefire. In December 2025 the Southern Transitional Council moved to take control of much of eastern Yemen, straining the anti-Houthi camp.",
+    "territories": [
+     {
+      "side": 1,
+      "polities": [
+       "Saudi Arabia",
+       "United Arab Emirates"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        44.6,
+        17.4
+       ],
+       [
+        44.9,
+        16.3
+       ],
+       [
+        45.15,
+        15.5
+       ],
+       [
+        45.4,
+        14.6
+       ],
+       [
+        44.73,
+        13.75
+       ],
+       [
+        44.02,
+        13.58
+       ],
+       [
+        43.3,
+        14.0
+       ],
+       [
+        42.98,
+        14.7
+       ]
+      ],
+      "label": "Approx. front line, 2018 to 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Houthi forces",
+      "label": "Attacks on Red Sea shipping",
+      "path": [
+       [
+        42.95,
+        14.8
+       ],
+       [
+        42.3,
+        14.5
+       ],
+       [
+        41.9,
+        14.9
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Aidarus al-Zubaidi",
+      "label": "STC forces move into Hadramawt",
+      "path": [
+       [
+        45.03,
+        12.79
+       ],
+       [
+        47.0,
+        13.8
+       ],
+       [
+        49.12,
+        14.54
+       ],
+       [
+        48.79,
+        15.94
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Galaxy Leader seizure",
+      "kind": "event",
+      "lon": 42.2,
+      "lat": 15.0,
+      "year": 2023,
+      "winner": 0,
+      "text": "Houthi forces hijacked a cargo ship by helicopter in November 2023."
+     },
+     {
+      "name": "US and UK strikes",
+      "kind": "event",
+      "lon": 42.95,
+      "lat": 14.8,
+      "year": 2024,
+      "winner": null,
+      "text": "Air and missile strikes on Houthi targets began on 12 January 2024."
+     },
+     {
+      "name": "US-Houthi ceasefire",
+      "kind": "treaty",
+      "lon": 58.4,
+      "lat": 23.6,
+      "year": 2025,
+      "winner": null,
+      "text": "An Oman-brokered deal in May 2025 ended US strikes and Houthi attacks on US ships."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "russia-ukraine-war",
+  "name": "Russia-Ukraine War",
+  "start": 2014,
+  "end": 2025,
+  "kind": "war",
+  "summary": "Russia and Ukraine have been at war since 2014, when Russia annexed Crimea and backed armed separatists in the Donbas after Ukraine's pro-Western Euromaidan revolution. In February 2022 Russia launched a full-scale invasion that failed to take Kyiv and became a war of attrition along a long front in the east and south. At the end of 2025 fighting continued without a ceasefire, in the largest war in Europe since 1945.",
+  "sides": [
+   {
+    "name": "Ukraine",
+    "color": "#2f6db5",
+    "leaders": [
+     "Volodymyr Zelenskyy",
+     "Valerii Zaluzhnyi",
+     "Oleksandr Syrskyi"
+    ]
+   },
+   {
+    "name": "Russia and Russian-backed forces",
+    "color": "#b5452f",
+    "leaders": [
+     "Vladimir Putin",
+     "Sergei Shoigu",
+     "Valery Gerasimov",
+     "Andrei Belousov"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 35.0,
+    "lat": 48.5,
+    "r": 5
+   }
+  ],
+  "steps": [
+   {
+    "year": 2014,
+    "label": "Feb to Mar 2014",
+    "title": "Annexation of Crimea",
+    "text": "After protests in Kyiv led to the ouster of President Viktor Yanukovych, Russian troops without insignia took control of Crimea. A referendum held under Russian control, rejected as illegitimate by Ukraine and most UN members, was followed by Russia's annexation of the peninsula on 18 March 2014.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Black Sea Fleet and special forces",
+      "label": "Russian forces from Sevastopol",
+      "path": [
+       [
+        33.52,
+        44.6
+       ],
+       [
+        33.8,
+        44.8
+       ],
+       [
+        34.1,
+        44.95
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Russian reinforcements",
+      "label": "Across the Kerch Strait",
+      "path": [
+       [
+        36.7,
+        45.25
+       ],
+       [
+        35.8,
+        45.2
+       ],
+       [
+        34.1,
+        44.95
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Annexation of Crimea",
+      "kind": "event",
+      "lon": 34.1,
+      "lat": 44.95,
+      "year": 2014,
+      "winner": 1,
+      "text": "Russia declared the peninsula part of its territory on 18 March 2014."
+     }
+    ]
+   },
+   {
+    "year": 2014,
+    "label": "Apr 2014 to Feb 2015",
+    "title": "War in the Donbas",
+    "text": "Armed separatists backed by Russia, including a group under Igor Girkin, seized towns in Donetsk and Luhansk oblasts, and Ukraine launched military operations against them. Ukrainian forces retook Sloviansk in July, but in August Russian regular units crossed the border and defeated them at Ilovaisk. The Minsk agreements of 2014 and 2015 froze but did not end the fighting.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        39.75,
+        48.6
+       ],
+       [
+        39.2,
+        48.72
+       ],
+       [
+        38.55,
+        48.68
+       ],
+       [
+        38.2,
+        48.45
+       ],
+       [
+        37.95,
+        48.18
+       ],
+       [
+        37.65,
+        47.95
+       ],
+       [
+        37.75,
+        47.6
+       ],
+       [
+        37.83,
+        47.09
+       ]
+      ],
+      "label": "Donbas line of contact, 2015"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Igor Girkin",
+      "label": "Separatists withdraw from Sloviansk to Donetsk",
+      "path": [
+       [
+        37.6,
+        48.85
+       ],
+       [
+        37.75,
+        48.5
+       ],
+       [
+        37.8,
+        48.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Ukrainian armed forces",
+      "label": "Advance toward Ilovaisk",
+      "path": [
+       [
+        37.5,
+        47.6
+       ],
+       [
+        37.9,
+        47.75
+       ],
+       [
+        38.2,
+        47.92
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Russian regular units",
+      "label": "Cross the border",
+      "path": [
+       [
+        39.9,
+        47.95
+       ],
+       [
+        38.9,
+        47.9
+       ],
+       [
+        38.25,
+        47.92
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Russian-backed forces",
+      "label": "Push on Debaltseve",
+      "path": [
+       [
+        38.8,
+        48.2
+       ],
+       [
+        38.41,
+        48.34
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Recapture of Sloviansk",
+      "kind": "battle",
+      "lon": 37.6,
+      "lat": 48.85,
+      "year": 2014,
+      "winner": 0,
+      "text": "Separatist forces abandoned the town in July 2014."
+     },
+     {
+      "name": "Battle of Ilovaisk",
+      "kind": "battle",
+      "lon": 38.2,
+      "lat": 47.92,
+      "year": 2014,
+      "winner": 1,
+      "text": "Ukrainian units were encircled and suffered heavy losses during their withdrawal."
+     },
+     {
+      "name": "Battle of Debaltseve",
+      "kind": "battle",
+      "lon": 38.41,
+      "lat": 48.34,
+      "year": 2015,
+      "winner": 1,
+      "text": "Ukrainian forces withdrew from the rail hub days after the second Minsk agreement."
+     }
+    ]
+   },
+   {
+    "year": 2015,
+    "label": "2015 to 2021",
+    "title": "A frozen front",
+    "text": "Trench warfare and shelling continued along a line of contact in the Donbas, and by early 2022 over 14,000 people had been killed since 2014. In 2018 Russian forces seized Ukrainian naval vessels near the Kerch Strait, and in 2021 Russia massed troops near Ukraine's borders.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        39.75,
+        48.6
+       ],
+       [
+        39.2,
+        48.72
+       ],
+       [
+        38.55,
+        48.68
+       ],
+       [
+        38.2,
+        48.45
+       ],
+       [
+        37.95,
+        48.18
+       ],
+       [
+        37.65,
+        47.95
+       ],
+       [
+        37.75,
+        47.6
+       ],
+       [
+        37.83,
+        47.09
+       ]
+      ],
+      "label": "Donbas line of contact, 2015"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Valery Gerasimov",
+      "label": "Troop build-up on the border, 2021",
+      "path": [
+       [
+        39.2,
+        51.66
+       ],
+       [
+        38.0,
+        51.0
+       ],
+       [
+        36.6,
+        50.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Minsk II",
+      "kind": "treaty",
+      "lon": 27.56,
+      "lat": 53.9,
+      "year": 2015,
+      "winner": null,
+      "text": "A ceasefire and political roadmap that was never fully implemented."
+     },
+     {
+      "name": "Kerch Strait incident",
+      "kind": "event",
+      "lon": 36.6,
+      "lat": 45.2,
+      "year": 2018,
+      "winner": 1,
+      "text": "Russian forces fired on and seized three Ukrainian naval vessels and their crews."
+     }
+    ]
+   },
+   {
+    "year": 2022,
+    "label": "Feb to Apr 2022",
+    "title": "Full-scale invasion",
+    "text": "On 24 February 2022 Russia invaded from Belarus, Russia and Crimea. Ukrainian forces under Oleksandr Syrskyi stopped the assault on Kyiv and Russia withdrew from the north by early April, but Russian troops took Kherson and much of the south and besieged Mariupol.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        29.6,
+        51.3
+       ],
+       [
+        29.9,
+        50.7
+       ],
+       [
+        30.2,
+        50.52
+       ],
+       [
+        30.75,
+        50.6
+       ],
+       [
+        31.3,
+        51.3
+       ],
+       [
+        32.5,
+        51.2
+       ]
+      ],
+      "label": "Front near Kyiv, Mar 2022"
+     },
+     {
+      "path": [
+       [
+        31.9,
+        46.75
+       ],
+       [
+        32.8,
+        47.3
+       ],
+       [
+        34.5,
+        47.5
+       ],
+       [
+        35.6,
+        47.5
+       ],
+       [
+        36.6,
+        47.75
+       ],
+       [
+        37.5,
+        48.0
+       ],
+       [
+        37.9,
+        48.5
+       ],
+       [
+        37.3,
+        49.2
+       ],
+       [
+        36.4,
+        50.05
+       ],
+       [
+        35.9,
+        50.45
+       ]
+      ],
+      "label": "Southern and eastern front, Mar 2022"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Eastern Military District",
+      "label": "From Belarus on Kyiv",
+      "path": [
+       [
+        30.2,
+        51.7
+       ],
+       [
+        30.1,
+        51.27
+       ],
+       [
+        30.2,
+        50.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Central Military District",
+      "label": "Via Chernihiv",
+      "path": [
+       [
+        32.8,
+        52.1
+       ],
+       [
+        31.3,
+        51.5
+       ],
+       [
+        30.9,
+        50.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Western Military District",
+      "label": "Advance on Kharkiv",
+      "path": [
+       [
+        36.6,
+        50.55
+       ],
+       [
+        36.23,
+        49.99
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Southern Military District",
+      "label": "From Crimea to Kherson",
+      "path": [
+       [
+        33.75,
+        45.95
+       ],
+       [
+        32.62,
+        46.64
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Southern Military District",
+      "label": "To Melitopol and Mariupol",
+      "path": [
+       [
+        34.3,
+        46.0
+       ],
+       [
+        35.37,
+        46.85
+       ],
+       [
+        37.55,
+        47.1
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Kyiv",
+      "kind": "battle",
+      "lon": 30.52,
+      "lat": 50.45,
+      "year": 2022,
+      "winner": 0,
+      "text": "Ukrainian forces halted the Russian advance in the city's outskirts, and Russia withdrew from the north."
+     },
+     {
+      "name": "Battle of Kharkiv",
+      "kind": "battle",
+      "lon": 36.23,
+      "lat": 49.99,
+      "year": 2022,
+      "winner": 0,
+      "text": "Russian forces failed to take Ukraine's second-largest city."
+     },
+     {
+      "name": "Siege of Mariupol",
+      "kind": "siege",
+      "lon": 37.55,
+      "lat": 47.1,
+      "year": 2022,
+      "winner": 1,
+      "text": "Russian forces took the devastated city after the last defenders at the Azovstal steelworks surrendered in May."
+     }
+    ]
+   },
+   {
+    "year": 2022,
+    "label": "Sep to Nov 2022",
+    "title": "Ukrainian counteroffensives",
+    "text": "A rapid Ukrainian offensive led by Oleksandr Syrskyi recaptured most of Kharkiv oblast in September, and Russia announced a partial mobilisation and claimed to annex four Ukrainian oblasts, a claim most states reject. In November Russian forces under Sergei Surovikin withdrew across the Dnipro and Ukraine retook Kherson city.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.9,
+        46.55
+       ],
+       [
+        32.7,
+        46.65
+       ],
+       [
+        33.5,
+        46.8
+       ],
+       [
+        34.4,
+        47.35
+       ],
+       [
+        35.4,
+        47.45
+       ],
+       [
+        36.3,
+        47.6
+       ],
+       [
+        37.2,
+        47.75
+       ],
+       [
+        37.6,
+        48.0
+       ],
+       [
+        37.85,
+        48.3
+       ],
+       [
+        38.05,
+        48.6
+       ],
+       [
+        38.15,
+        48.95
+       ],
+       [
+        38.1,
+        49.3
+       ],
+       [
+        37.8,
+        49.7
+       ],
+       [
+        37.95,
+        50.1
+       ]
+      ],
+      "label": "Front, Nov 2022"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Oleksandr Syrskyi",
+      "label": "Kharkiv counteroffensive",
+      "path": [
+       [
+        36.68,
+        49.84
+       ],
+       [
+        36.84,
+        49.46
+       ],
+       [
+        37.6,
+        49.71
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Oleksandr Syrskyi",
+      "label": "Through Izium to Lyman",
+      "path": [
+       [
+        36.84,
+        49.46
+       ],
+       [
+        37.25,
+        49.21
+       ],
+       [
+        37.8,
+        48.99
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Andriy Kovalchuk",
+      "label": "Kherson counteroffensive",
+      "path": [
+       [
+        33.39,
+        47.91
+       ],
+       [
+        33.3,
+        47.2
+       ],
+       [
+        32.62,
+        46.64
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Sergei Surovikin",
+      "label": "Withdrawal across the Dnipro",
+      "path": [
+       [
+        32.62,
+        46.64
+       ],
+       [
+        33.0,
+        46.6
+       ],
+       [
+        33.37,
+        46.6
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Kharkiv counteroffensive",
+      "kind": "battle",
+      "lon": 37.26,
+      "lat": 49.21,
+      "year": 2022,
+      "winner": 0,
+      "text": "Ukrainian forces broke through and retook Izium, Kupiansk and thousands of square kilometres."
+     },
+     {
+      "name": "Recapture of Kherson",
+      "kind": "battle",
+      "lon": 32.62,
+      "lat": 46.64,
+      "year": 2022,
+      "winner": 0,
+      "text": "Russian forces withdrew from the only regional capital they had captured since February."
+     }
+    ]
+   },
+   {
+    "year": 2023,
+    "label": "2023",
+    "title": "Bakhmut and the summer counteroffensive",
+    "text": "Russian forces, led at Bakhmut by Wagner Group fighters under Yevgeny Prigozhin, captured the town in May after months of extremely costly fighting; in June Prigozhin briefly marched his men toward Moscow before standing down. Ukraine's summer counteroffensive in Zaporizhzhia oblast met dense minefields and made only small gains, and the Kakhovka dam was destroyed in June.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.9,
+        46.55
+       ],
+       [
+        32.7,
+        46.65
+       ],
+       [
+        33.5,
+        46.8
+       ],
+       [
+        34.4,
+        47.35
+       ],
+       [
+        35.4,
+        47.45
+       ],
+       [
+        35.83,
+        47.42
+       ],
+       [
+        36.3,
+        47.6
+       ],
+       [
+        37.2,
+        47.75
+       ],
+       [
+        37.6,
+        48.0
+       ],
+       [
+        37.8,
+        48.3
+       ],
+       [
+        37.95,
+        48.6
+       ],
+       [
+        38.15,
+        48.95
+       ],
+       [
+        38.1,
+        49.3
+       ],
+       [
+        37.8,
+        49.7
+       ],
+       [
+        37.95,
+        50.1
+       ]
+      ],
+      "label": "Front, late 2023"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Yevgeny Prigozhin",
+      "label": "Wagner assault on Bakhmut",
+      "path": [
+       [
+        38.38,
+        48.63
+       ],
+       [
+        38.2,
+        48.62
+       ],
+       [
+        38.0,
+        48.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Oleksandr Tarnavskyi",
+      "label": "Counteroffensive toward Tokmak",
+      "path": [
+       [
+        35.79,
+        47.65
+       ],
+       [
+        35.83,
+        47.45
+       ],
+       [
+        35.78,
+        47.35
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Bakhmut",
+      "kind": "battle",
+      "lon": 38.0,
+      "lat": 48.6,
+      "year": 2023,
+      "winner": 1,
+      "text": "Russian forces took the ruined city after about ten months of fighting."
+     },
+     {
+      "name": "Zaporizhzhia counteroffensive",
+      "kind": "battle",
+      "lon": 35.83,
+      "lat": 47.45,
+      "year": 2023,
+      "winner": null,
+      "text": "Ukraine recaptured Robotyne and nearby villages but did not break the Russian defences."
+     },
+     {
+      "name": "Wagner mutiny",
+      "kind": "event",
+      "lon": 39.72,
+      "lat": 47.23,
+      "year": 2023,
+      "winner": null,
+      "text": "Wagner seized Rostov-on-Don and advanced north before a deal ended the revolt on 24 June."
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "label": "2024",
+    "title": "Avdiivka, Kursk and Pokrovsk",
+    "text": "Russia took Avdiivka in February and pressed slow, costly advances in Donetsk oblast toward Pokrovsk. In August Ukraine launched a surprise cross-border incursion into Russia's Kursk oblast, and North Korean troops were later deployed to help Russia push it back.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.9,
+        46.55
+       ],
+       [
+        32.7,
+        46.65
+       ],
+       [
+        33.5,
+        46.8
+       ],
+       [
+        34.4,
+        47.35
+       ],
+       [
+        35.4,
+        47.45
+       ],
+       [
+        36.3,
+        47.6
+       ],
+       [
+        37.0,
+        47.8
+       ],
+       [
+        37.25,
+        48.1
+       ],
+       [
+        37.35,
+        48.3
+       ],
+       [
+        37.75,
+        48.45
+       ],
+       [
+        37.95,
+        48.6
+       ],
+       [
+        38.15,
+        48.95
+       ],
+       [
+        38.0,
+        49.3
+       ],
+       [
+        37.7,
+        49.7
+       ],
+       [
+        37.95,
+        50.1
+       ]
+      ],
+      "label": "Front, late 2024"
+     },
+     {
+      "path": [
+       [
+        34.95,
+        51.15
+       ],
+       [
+        35.1,
+        51.4
+       ],
+       [
+        35.4,
+        51.35
+       ],
+       [
+        35.6,
+        51.1
+       ]
+      ],
+      "label": "Kursk salient, late 2024"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Oleksandr Syrskyi",
+      "label": "Incursion into Kursk oblast",
+      "path": [
+       [
+        35.0,
+        50.9
+       ],
+       [
+        35.27,
+        51.19
+       ],
+       [
+        35.3,
+        51.35
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Russian Central Group of Forces",
+      "label": "Advance toward Pokrovsk",
+      "path": [
+       [
+        37.75,
+        48.14
+       ],
+       [
+        37.5,
+        48.22
+       ],
+       [
+        37.25,
+        48.28
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Avdiivka",
+      "kind": "battle",
+      "lon": 37.75,
+      "lat": 48.14,
+      "year": 2024,
+      "winner": 1,
+      "text": "Ukrainian forces withdrew from the heavily fortified town in February 2024."
+     },
+     {
+      "name": "Kursk incursion",
+      "kind": "battle",
+      "lon": 35.27,
+      "lat": 51.19,
+      "year": 2024,
+      "winner": null,
+      "text": "Ukraine seized Sudzha and nearby areas; Russian forces retook most of the territory by March 2025."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "2025",
+    "title": "Attrition and diplomacy",
+    "text": "Russian forces pushed Ukraine out of Kursk oblast in the spring and continued slow advances in Donetsk oblast, fighting into Pokrovsk and Myrnohrad and pressing toward Kostiantynivka and Huliaipole, while both sides struck each other's cities, airfields and energy infrastructure with drones and missiles. US-led diplomacy produced talks, a Trump-Putin summit in Alaska and several peace proposals, but no ceasefire had been agreed by the end of 2025.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ukraine"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Russia"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        31.9,
+        46.55
+       ],
+       [
+        32.7,
+        46.65
+       ],
+       [
+        33.5,
+        46.8
+       ],
+       [
+        34.4,
+        47.35
+       ],
+       [
+        35.4,
+        47.45
+       ],
+       [
+        36.1,
+        47.6
+       ],
+       [
+        36.6,
+        47.85
+       ],
+       [
+        37.1,
+        48.15
+       ],
+       [
+        37.2,
+        48.35
+       ],
+       [
+        37.65,
+        48.5
+       ],
+       [
+        37.95,
+        48.7
+       ],
+       [
+        38.1,
+        48.95
+       ],
+       [
+        37.9,
+        49.3
+       ],
+       [
+        37.65,
+        49.7
+       ],
+       [
+        37.95,
+        50.1
+       ]
+      ],
+      "label": "Approx. front, late 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Valery Gerasimov",
+      "label": "Russian pressure on Pokrovsk",
+      "path": [
+       [
+        37.4,
+        48.4
+       ],
+       [
+        37.18,
+        48.28
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Russian forces",
+      "label": "Advance toward Kostiantynivka",
+      "path": [
+       [
+        38.0,
+        48.6
+       ],
+       [
+        37.85,
+        48.56
+       ],
+       [
+        37.7,
+        48.53
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Russian forces",
+      "label": "Push toward Huliaipole",
+      "path": [
+       [
+        36.9,
+        47.75
+       ],
+       [
+        36.6,
+        47.7
+       ],
+       [
+        36.27,
+        47.66
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Kursk retaken",
+      "kind": "battle",
+      "lon": 35.27,
+      "lat": 51.19,
+      "year": 2025,
+      "winner": 1,
+      "text": "Russian and North Korean forces drove Ukrainian troops from Sudzha in March 2025."
+     },
+     {
+      "name": "Battle of Pokrovsk",
+      "kind": "battle",
+      "lon": 37.18,
+      "lat": 48.28,
+      "year": 2025,
+      "winner": null,
+      "text": "Russian forces fought into the city through 2025; Russia claimed its capture late in the year."
+     },
+     {
+      "name": "Alaska summit",
+      "kind": "event",
+      "lon": -149.9,
+      "lat": 61.2,
+      "year": 2025,
+      "winner": null,
+      "text": "Trump and Putin met in Anchorage in August 2025 without agreeing a ceasefire."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tigray-war",
+  "name": "Tigray War",
+  "start": 2020,
+  "end": 2022,
+  "kind": "war",
+  "summary": "In November 2020 a power struggle between Ethiopia's federal government under Abiy Ahmed and the Tigray People's Liberation Front turned into war, with Eritrean and Amhara regional forces fighting alongside the federal army. Tigrayan forces retook their region in 2021 and advanced toward Addis Ababa before being driven back. The Pretoria peace agreement of November 2022 ended a war that killed hundreds of thousands, many through famine and blockade.",
+  "sides": [
+   {
+    "name": "Ethiopian federal government and allies (Eritrea, Amhara forces)",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Abiy Ahmed",
+     "Isaias Afwerki",
+     "Birhanu Jula"
+    ]
+   },
+   {
+    "name": "Tigray People's Liberation Front and Tigray Defence Forces",
+    "color": "#c0473a",
+    "leaders": [
+     "Debretsion Gebremichael",
+     "Tsadkan Gebretensae",
+     "Tadesse Werede"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 39.0,
+    "lat": 12.5,
+    "r": 4
+   }
+  ],
+  "steps": [
+   {
+    "year": 2020,
+    "label": "Nov 2020",
+    "title": "Federal offensive",
+    "text": "After Tigrayan forces attacked federal Northern Command bases on 4 November 2020, Abiy Ahmed ordered an offensive. Federal troops and Amhara forces advanced from the south and west, Eritrean troops entered from the north, and Mekelle fell on 28 November as TPLF leaders withdrew into the mountains.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ethiopia",
+       "Eritrea"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Amhara regional forces",
+      "label": "Into western Tigray",
+      "path": [
+       [
+        37.47,
+        12.6
+       ],
+       [
+        37.0,
+        13.5
+       ],
+       [
+        36.6,
+        14.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Birhanu Jula",
+      "label": "Federal army from the south",
+      "path": [
+       [
+        39.56,
+        12.42
+       ],
+       [
+        39.53,
+        13.0
+       ],
+       [
+        39.47,
+        13.5
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Eritrean Defence Forces",
+      "label": "Eritrean army from the north",
+      "path": [
+       [
+        38.93,
+        15.33
+       ],
+       [
+        39.46,
+        14.28
+       ],
+       [
+        38.72,
+        14.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Northern Command attacks",
+      "kind": "event",
+      "lon": 39.47,
+      "lat": 13.5,
+      "year": 2020,
+      "winner": 1,
+      "text": "Tigrayan forces seized federal army bases and weapons on 4 November."
+     },
+     {
+      "name": "Capture of Mekelle",
+      "kind": "battle",
+      "lon": 39.47,
+      "lat": 13.5,
+      "year": 2020,
+      "winner": 0,
+      "text": "Federal forces entered the Tigrayan capital and Abiy declared the operation over."
+     }
+    ]
+   },
+   {
+    "year": 2021,
+    "label": "Dec 2020 to Jun 2021",
+    "title": "Insurgency and the return to Mekelle",
+    "text": "Tigrayan forces regrouped in the countryside while reports of massacres, sexual violence and a blockade of aid drew international condemnation of all armed parties, especially Eritrean and federal forces. In June 2021 the Tigray Defence Forces under Tsadkan Gebretensae and Tadesse Werede counterattacked, and the government withdrew from Mekelle and declared a unilateral ceasefire.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ethiopia",
+       "Eritrea"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tadesse Werede",
+      "label": "Operation Alula",
+      "path": [
+       [
+        39.1,
+        13.3
+       ],
+       [
+        39.3,
+        13.45
+       ],
+       [
+        39.47,
+        13.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Axum massacre",
+      "kind": "event",
+      "lon": 38.72,
+      "lat": 14.13,
+      "year": 2020,
+      "winner": null,
+      "text": "Human rights groups reported hundreds of civilians killed by Eritrean troops in late November 2020."
+     },
+     {
+      "name": "Recapture of Mekelle",
+      "kind": "battle",
+      "lon": 39.47,
+      "lat": 13.5,
+      "year": 2021,
+      "winner": 1,
+      "text": "Tigrayan forces re-entered the city on 28 June 2021."
+     }
+    ]
+   },
+   {
+    "year": 2021,
+    "label": "Jul to Nov 2021",
+    "title": "Advance toward Addis Ababa",
+    "text": "Tigrayan forces pushed south into Amhara and east into Afar, taking Lalibela, Dessie and Kombolcha and reaching Debre Sina, under 200 km from the capital. The government declared a state of emergency and mobilised militias, and Abiy announced he would lead from the front.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ethiopia",
+       "Eritrea"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        38.0,
+        11.9
+       ],
+       [
+        38.7,
+        11.2
+       ],
+       [
+        39.4,
+        10.3
+       ],
+       [
+        39.77,
+        9.85
+       ],
+       [
+        40.1,
+        10.6
+       ],
+       [
+        40.3,
+        11.7
+       ],
+       [
+        40.2,
+        12.5
+       ]
+      ],
+      "label": "Furthest Tigrayan advance, Nov 2021"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Tadesse Werede",
+      "label": "South through Amhara",
+      "path": [
+       [
+        39.56,
+        12.42
+       ],
+       [
+        39.05,
+        12.03
+       ],
+       [
+        39.63,
+        11.13
+       ],
+       [
+        39.77,
+        9.85
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Tigray Defence Forces",
+      "label": "Into Afar toward the Djibouti road",
+      "path": [
+       [
+        39.9,
+        12.3
+       ],
+       [
+        40.3,
+        11.8
+       ],
+       [
+        40.6,
+        11.4
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Dessie and Kombolcha",
+      "kind": "battle",
+      "lon": 39.63,
+      "lat": 11.13,
+      "year": 2021,
+      "winner": 1,
+      "text": "Tigrayan forces took the two towns at the start of November 2021."
+     }
+    ]
+   },
+   {
+    "year": 2021,
+    "label": "Dec 2021 to Jul 2022",
+    "title": "Federal counteroffensive and truce",
+    "text": "Backed by newly acquired armed drones, federal forces and allied militias drove the Tigrayan forces back into Tigray in December 2021. A humanitarian truce in March 2022 allowed some aid in, but Tigray remained cut off from banking, power and communications.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ethiopia",
+       "Eritrea"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        37.7,
+        14.4
+       ],
+       [
+        38.2,
+        13.5
+       ],
+       [
+        39.0,
+        12.8
+       ],
+       [
+        39.6,
+        12.4
+       ],
+       [
+        40.0,
+        13.0
+       ],
+       [
+        39.9,
+        14.0
+       ]
+      ],
+      "label": "Line around Tigray, early 2022"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Abiy Ahmed",
+      "label": "Federal counteroffensive",
+      "path": [
+       [
+        39.77,
+        9.85
+       ],
+       [
+        39.63,
+        11.13
+       ],
+       [
+        39.05,
+        12.03
+       ],
+       [
+        39.56,
+        12.42
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Recapture of Lalibela",
+      "kind": "battle",
+      "lon": 39.05,
+      "lat": 12.03,
+      "year": 2021,
+      "winner": 0,
+      "text": "Federal forces retook the town in December 2021 as Tigrayan forces retreated."
+     },
+     {
+      "name": "Humanitarian truce",
+      "kind": "treaty",
+      "lon": 38.75,
+      "lat": 9.0,
+      "year": 2022,
+      "winner": null,
+      "text": "The government declared a truce in March 2022 to allow aid deliveries."
+     }
+    ]
+   },
+   {
+    "year": 2022,
+    "label": "Aug to Nov 2022",
+    "title": "Final offensive and the Pretoria agreement",
+    "text": "Fighting resumed in August 2022, and federal and Eritrean forces took Shire, Axum and Adwa in October. On 2 November 2022 the government and the TPLF signed a cessation of hostilities in Pretoria, mediated by the African Union, providing for Tigrayan disarmament and restored services.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Ethiopia",
+       "Eritrea"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        37.7,
+        14.4
+       ],
+       [
+        38.2,
+        13.5
+       ],
+       [
+        39.0,
+        12.8
+       ],
+       [
+        39.6,
+        12.4
+       ],
+       [
+        40.0,
+        13.0
+       ],
+       [
+        39.9,
+        14.0
+       ]
+      ],
+      "label": "Line around Tigray, Aug 2022"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Eritrean Defence Forces",
+      "label": "Into northwest Tigray",
+      "path": [
+       [
+        37.8,
+        14.8
+       ],
+       [
+        38.29,
+        14.1
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Birhanu Jula",
+      "label": "Federal advance on Shire and Axum",
+      "path": [
+       [
+        37.8,
+        13.6
+       ],
+       [
+        38.29,
+        14.1
+       ],
+       [
+        38.72,
+        14.13
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Capture of Shire",
+      "kind": "battle",
+      "lon": 38.29,
+      "lat": 14.1,
+      "year": 2022,
+      "winner": 0,
+      "text": "Federal and Eritrean forces took the town in October 2022."
+     },
+     {
+      "name": "Pretoria Agreement",
+      "kind": "treaty",
+      "lon": 28.19,
+      "lat": -25.75,
+      "year": 2022,
+      "winner": null,
+      "text": "The African Union-brokered deal ended the war on 2 November 2022."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sudan-civil-war",
+  "name": "Sudanese Civil War",
+  "start": 2023,
+  "end": 2025,
+  "kind": "war",
+  "summary": "In April 2023 a power struggle between the Sudanese Armed Forces under Abdel Fattah al-Burhan and the Rapid Support Forces under Mohamed Hamdan Dagalo (Hemedti) erupted into war in Khartoum. The RSF took most of the capital and Darfur, and the army later retook Khartoum and central Sudan, splitting the country between east and west. The war has killed tens of thousands and displaced over 10 million people, and it continued at the end of 2025.",
+  "sides": [
+   {
+    "name": "Sudanese Armed Forces and allies",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Abdel Fattah al-Burhan",
+     "Shams al-Din Kabbashi",
+     "Yasir al-Atta"
+    ]
+   },
+   {
+    "name": "Rapid Support Forces and allies",
+    "color": "#c0803a",
+    "leaders": [
+     "Mohamed Hamdan Dagalo (Hemedti)",
+     "Abdel Rahim Dagalo"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 30.0,
+    "lat": 14.5,
+    "r": 7
+   }
+  ],
+  "steps": [
+   {
+    "year": 2023,
+    "label": "Apr to Sep 2023",
+    "title": "War in the capital",
+    "text": "On 15 April 2023 fighting broke out in Khartoum between the army and the RSF, former partners in the 2021 coup. RSF fighters seized much of the capital, while the army held key bases and used air power. Burhan left Khartoum in August and set up the government in Port Sudan, and mass killings of Masalit civilians were reported in El Geneina in West Darfur.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.45,
+        15.7
+       ],
+       [
+        32.5,
+        15.6
+       ],
+       [
+        32.55,
+        15.55
+       ],
+       [
+        32.65,
+        15.6
+       ]
+      ],
+      "label": "Khartoum front, 2023"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Hemedti",
+      "label": "RSF seize central Khartoum",
+      "path": [
+       [
+        32.6,
+        15.45
+       ],
+       [
+        32.55,
+        15.55
+       ],
+       [
+        32.53,
+        15.6
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Abdel Fattah al-Burhan",
+      "label": "Government moves to Port Sudan",
+      "path": [
+       [
+        32.53,
+        15.6
+       ],
+       [
+        34.0,
+        17.0
+       ],
+       [
+        37.22,
+        19.62
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Khartoum begins",
+      "kind": "battle",
+      "lon": 32.53,
+      "lat": 15.6,
+      "year": 2023,
+      "winner": null,
+      "text": "Heavy fighting erupted on 15 April across the capital and Omdurman."
+     },
+     {
+      "name": "El Geneina killings",
+      "kind": "event",
+      "lon": 22.45,
+      "lat": 13.45,
+      "year": 2023,
+      "winner": 1,
+      "text": "The UN and rights groups reported thousands of Masalit civilians killed as the RSF took the city."
+     }
+    ]
+   },
+   {
+    "year": 2023,
+    "label": "Oct 2023 to Mar 2024",
+    "title": "RSF sweep Darfur and Gezira",
+    "text": "The RSF captured four of Darfur's five state capitals, including Nyala, in late 2023. In December they took Wad Madani, capital of the farming heartland of Gezira, and the war spread south and east. In early 2024 the army began a counteroffensive in Omdurman.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.0,
+        16.2
+       ],
+       [
+        32.4,
+        15.8
+       ],
+       [
+        32.6,
+        15.4
+       ],
+       [
+        33.4,
+        14.6
+       ],
+       [
+        33.9,
+        13.6
+       ]
+      ],
+      "label": "Front in central Sudan, early 2024"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Abdel Rahim Dagalo",
+      "label": "RSF capture Darfur",
+      "path": [
+       [
+        25.35,
+        13.63
+       ],
+       [
+        24.88,
+        12.05
+       ],
+       [
+        23.48,
+        12.9
+       ],
+       [
+        22.45,
+        13.45
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "RSF forces",
+      "label": "Advance to Wad Madani",
+      "path": [
+       [
+        32.53,
+        15.6
+       ],
+       [
+        33.0,
+        15.0
+       ],
+       [
+        33.52,
+        14.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Army forces",
+      "label": "Counterattack in Omdurman",
+      "path": [
+       [
+        32.46,
+        15.8
+       ],
+       [
+        32.48,
+        15.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of Nyala",
+      "kind": "battle",
+      "lon": 24.88,
+      "lat": 12.05,
+      "year": 2023,
+      "winner": 1,
+      "text": "The RSF took Sudan's second-largest city in October 2023."
+     },
+     {
+      "name": "Fall of Wad Madani",
+      "kind": "battle",
+      "lon": 33.52,
+      "lat": 14.4,
+      "year": 2023,
+      "winner": 1,
+      "text": "Army forces withdrew from the Gezira capital in December 2023."
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "label": "Apr to Dec 2024",
+    "title": "El Fasher and famine",
+    "text": "The RSF besieged El Fasher, the army's last stronghold in Darfur, from May 2024, and famine was confirmed in Zamzam displacement camp nearby. The RSF also advanced into Sennar state, while from September the army pushed across the Nile bridges into Khartoum.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        32.0,
+        16.2
+       ],
+       [
+        32.45,
+        15.75
+       ],
+       [
+        32.6,
+        15.45
+       ],
+       [
+        33.4,
+        14.6
+       ],
+       [
+        33.9,
+        13.4
+       ],
+       [
+        34.2,
+        12.8
+       ]
+      ],
+      "label": "Front in central Sudan, late 2024"
+     },
+     {
+      "path": [
+       [
+        25.25,
+        13.7
+       ],
+       [
+        25.35,
+        13.75
+       ],
+       [
+        25.45,
+        13.65
+       ],
+       [
+        25.35,
+        13.5
+       ],
+       [
+        25.25,
+        13.6
+       ]
+      ],
+      "label": "Siege lines around El Fasher"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "RSF forces",
+      "label": "Siege of El Fasher",
+      "path": [
+       [
+        25.0,
+        13.5
+       ],
+       [
+        25.35,
+        13.63
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "RSF forces",
+      "label": "Advance into Sennar",
+      "path": [
+       [
+        33.52,
+        14.4
+       ],
+       [
+        33.93,
+        13.15
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Abdel Fattah al-Burhan",
+      "label": "Army crosses into Khartoum",
+      "path": [
+       [
+        32.46,
+        15.75
+       ],
+       [
+        32.53,
+        15.62
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of El Fasher",
+      "kind": "siege",
+      "lon": 25.35,
+      "lat": 13.63,
+      "year": 2024,
+      "winner": null,
+      "text": "The army and allied Darfuri forces held the city through 2024 under constant attack."
+     },
+     {
+      "name": "Famine in Zamzam",
+      "kind": "event",
+      "lon": 25.3,
+      "lat": 13.5,
+      "year": 2024,
+      "winner": null,
+      "text": "Famine was confirmed in the displacement camp in August 2024."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "Jan to May 2025",
+    "title": "The army retakes Khartoum",
+    "text": "The army recaptured Wad Madani in January 2025 and the presidential palace in central Khartoum in March, and by May the RSF had withdrawn from Khartoum state. The RSF answered with drone strikes on Port Sudan and moved to set up a rival government in the areas it held.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        28.5,
+        16.5
+       ],
+       [
+        29.6,
+        15.0
+       ],
+       [
+        30.2,
+        13.5
+       ],
+       [
+        30.0,
+        12.0
+       ],
+       [
+        29.7,
+        10.8
+       ]
+      ],
+      "label": "Approx. front, mid 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Shams al-Din Kabbashi",
+      "label": "Army retakes Wad Madani",
+      "path": [
+       [
+        33.93,
+        13.15
+       ],
+       [
+        33.6,
+        13.9
+       ],
+       [
+        33.52,
+        14.4
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Yasir al-Atta",
+      "label": "Army clears Khartoum",
+      "path": [
+       [
+        33.52,
+        14.4
+       ],
+       [
+        33.0,
+        15.1
+       ],
+       [
+        32.53,
+        15.6
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hemedti",
+      "label": "RSF withdraw west",
+      "path": [
+       [
+        32.48,
+        15.6
+       ],
+       [
+        31.0,
+        14.6
+       ],
+       [
+        30.22,
+        13.18
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Recapture of Wad Madani",
+      "kind": "battle",
+      "lon": 33.52,
+      "lat": 14.4,
+      "year": 2025,
+      "winner": 0,
+      "text": "Army forces re-entered the Gezira capital on 11 January 2025."
+     },
+     {
+      "name": "Recapture of the presidential palace",
+      "kind": "battle",
+      "lon": 32.53,
+      "lat": 15.61,
+      "year": 2025,
+      "winner": 0,
+      "text": "The army took the palace in central Khartoum in March 2025."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "Jun to Dec 2025",
+    "title": "Fall of El Fasher and war in Kordofan",
+    "text": "After an 18-month siege, the RSF captured El Fasher in late October 2025, with widespread reports of mass killings of civilians, giving it control of nearly all of Darfur. Fighting shifted to Kordofan, where the RSF and its allies pressed on Babanusa, Kadugli and El Obeid. Sudan was effectively split between an army-held east and an RSF-held west, and diplomatic efforts had not produced a ceasefire.",
+    "territories": [],
+    "fronts": [
+     {
+      "path": [
+       [
+        28.5,
+        16.5
+       ],
+       [
+        29.8,
+        14.6
+       ],
+       [
+        30.0,
+        13.2
+       ],
+       [
+        29.9,
+        11.8
+       ],
+       [
+        29.7,
+        10.8
+       ]
+      ],
+      "label": "Approx. front, late 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "RSF forces",
+      "label": "Final assault on El Fasher",
+      "path": [
+       [
+        25.3,
+        13.5
+       ],
+       [
+        25.35,
+        13.63
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "RSF forces",
+      "label": "Offensive in Kordofan",
+      "path": [
+       [
+        27.0,
+        12.5
+       ],
+       [
+        27.95,
+        11.33
+       ],
+       [
+        29.7,
+        11.0
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Army forces",
+      "label": "Defence of El Obeid",
+      "path": [
+       [
+        32.53,
+        15.6
+       ],
+       [
+        31.4,
+        14.0
+       ],
+       [
+        30.22,
+        13.18
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Fall of El Fasher",
+      "kind": "battle",
+      "lon": 25.35,
+      "lat": 13.63,
+      "year": 2025,
+      "winner": 1,
+      "text": "The RSF took the city in late October 2025 amid reports of mass atrocities."
+     },
+     {
+      "name": "Battles in Kordofan",
+      "kind": "battle",
+      "lon": 29.9,
+      "lat": 12.0,
+      "year": 2025,
+      "winner": null,
+      "text": "Kordofan became the main front at the end of 2025."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "israel-hamas-war",
+  "name": "Israel-Hamas War",
+  "start": 2023,
+  "end": 2025,
+  "kind": "war",
+  "summary": "On 7 October 2023 Hamas-led militants attacked southern Israel, killing about 1,200 people and taking 251 hostages, and Israel responded with an air and ground campaign in the Gaza Strip. The war killed tens of thousands of Palestinians, displaced most of Gaza's population and caused a severe humanitarian crisis, and it spread to Lebanon, Yemen and Iran. A US-brokered ceasefire in October 2025 returned the remaining living hostages, with Israeli troops still holding part of Gaza.",
+  "sides": [
+   {
+    "name": "Israel",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Benjamin Netanyahu",
+     "Yoav Gallant",
+     "Israel Katz",
+     "Herzi Halevi",
+     "Eyal Zamir"
+    ]
+   },
+   {
+    "name": "Hamas and allied Palestinian armed groups",
+    "color": "#2f8a57",
+    "leaders": [
+     "Yahya Sinwar",
+     "Mohammed Deif",
+     "Mohammed Sinwar",
+     "Ismail Haniyeh"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 34.42,
+    "lat": 31.42,
+    "r": 0.6
+   }
+  ],
+  "steps": [
+   {
+    "year": 2023,
+    "label": "7 Oct 2023",
+    "title": "The 7 October attack",
+    "text": "Under rocket cover, thousands of militants led by Hamas's armed wing breached the Gaza border fence and attacked army posts, kibbutzim, towns and a music festival in southern Israel. About 1,200 people, most of them civilians, were killed and 251 taken into Gaza as hostages. Israel declared war and mobilised about 300,000 reservists.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Mohammed Deif",
+      "label": "Attack on border communities",
+      "path": [
+       [
+        34.45,
+        31.48
+       ],
+       [
+        34.49,
+        31.42
+       ],
+       [
+        34.6,
+        31.52
+       ]
+      ]
+     },
+     {
+      "side": 1,
+      "commander": "Hamas fighters",
+      "label": "Attack on the Nova festival",
+      "path": [
+       [
+        34.42,
+        31.38
+       ],
+       [
+        34.48,
+        31.39
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Attack on Be'eri",
+      "kind": "event",
+      "lon": 34.49,
+      "lat": 31.42,
+      "year": 2023,
+      "winner": null,
+      "text": "More than 100 residents of the kibbutz were killed and dozens taken hostage."
+     },
+     {
+      "name": "Nova festival attack",
+      "kind": "event",
+      "lon": 34.48,
+      "lat": 31.39,
+      "year": 2023,
+      "winner": null,
+      "text": "Militants killed more than 360 people at the outdoor festival near Re'im."
+     }
+    ]
+   },
+   {
+    "year": 2023,
+    "label": "Oct to Dec 2023",
+    "title": "Invasion of northern Gaza",
+    "text": "After weeks of heavy bombardment and an order for civilians to move south, Israeli ground forces entered Gaza on 27 October, cut the strip in two along Wadi Gaza and encircled Gaza City. A week-long truce in late November exchanged 105 hostages for 240 Palestinian prisoners. In December the offensive turned south to Khan Yunis.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.37,
+        31.44
+       ],
+       [
+        34.41,
+        31.45
+       ],
+       [
+        34.46,
+        31.44
+       ]
+      ],
+      "label": "Israeli cordon along Wadi Gaza, Nov 2023"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Herzi Halevi",
+      "label": "Advance on Gaza City from the north",
+      "path": [
+       [
+        34.53,
+        31.58
+       ],
+       [
+        34.5,
+        31.55
+       ],
+       [
+        34.46,
+        31.52
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Israel Defense Forces",
+      "label": "Cutting the strip in two",
+      "path": [
+       [
+        34.47,
+        31.43
+       ],
+       [
+        34.42,
+        31.45
+       ],
+       [
+        34.37,
+        31.45
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Israel Defense Forces",
+      "label": "Offensive on Khan Yunis",
+      "path": [
+       [
+        34.38,
+        31.38
+       ],
+       [
+        34.3,
+        31.34
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Siege of Gaza City",
+      "kind": "siege",
+      "lon": 34.46,
+      "lat": 31.51,
+      "year": 2023,
+      "winner": 0,
+      "text": "Israeli forces encircled the city and raided al-Shifa hospital in November."
+     },
+     {
+      "name": "November truce",
+      "kind": "treaty",
+      "lon": 34.31,
+      "lat": 31.25,
+      "year": 2023,
+      "winner": null,
+      "text": "Hostages and Palestinian prisoners were exchanged during a seven-day pause."
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "label": "Jan to Sep 2024",
+    "title": "Khan Yunis and Rafah",
+    "text": "Israeli forces fought through Khan Yunis until April 2024 and in May moved into Rafah, seizing the Philadelphi corridor along the Egyptian border. Most of Gaza's 2.1 million people were displaced, aid was severely limited, and the International Court of Justice ordered Israel to prevent acts of genocide and enable aid, which Israel said it was doing. Hamas leader Ismail Haniyeh was killed in Tehran in July.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.22,
+        31.32
+       ],
+       [
+        34.25,
+        31.28
+       ],
+       [
+        34.27,
+        31.22
+       ]
+      ],
+      "label": "Philadelphi corridor, 2024"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Israel Defense Forces",
+      "label": "Rafah offensive",
+      "path": [
+       [
+        34.28,
+        31.25
+       ],
+       [
+        34.25,
+        31.29
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Israel Defense Forces",
+      "label": "Along the Egyptian border",
+      "path": [
+       [
+        34.27,
+        31.22
+       ],
+       [
+        34.22,
+        31.32
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Battle of Khan Yunis",
+      "kind": "battle",
+      "lon": 34.3,
+      "lat": 31.34,
+      "year": 2024,
+      "winner": 0,
+      "text": "Israeli forces fought in Gaza's second city from December 2023 to April 2024."
+     },
+     {
+      "name": "Rafah offensive",
+      "kind": "battle",
+      "lon": 34.25,
+      "lat": 31.29,
+      "year": 2024,
+      "winner": 0,
+      "text": "Israel took Rafah and the border crossing with Egypt from May 2024."
+     }
+    ]
+   },
+   {
+    "year": 2024,
+    "label": "Sep to Dec 2024",
+    "title": "Sinwar killed, war in Lebanon",
+    "text": "Israel escalated its parallel conflict with Hezbollah, killing its leader Hassan Nasrallah in Beirut and sending troops into southern Lebanon until a ceasefire in November. In Gaza, Israeli troops killed Yahya Sinwar in a chance encounter in Rafah on 16 October and laid siege to Jabalia in the north.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.37,
+        31.45
+       ],
+       [
+        34.41,
+        31.45
+       ],
+       [
+        34.46,
+        31.44
+       ]
+      ],
+      "label": "Netzarim corridor, 2024"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Israel Defense Forces",
+      "label": "Siege of Jabalia",
+      "path": [
+       [
+        34.53,
+        31.56
+       ],
+       [
+        34.49,
+        31.53
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Israel Defense Forces",
+      "label": "Ground operation in southern Lebanon",
+      "path": [
+       [
+        35.5,
+        33.08
+       ],
+       [
+        35.5,
+        33.2
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Death of Yahya Sinwar",
+      "kind": "event",
+      "lon": 34.24,
+      "lat": 31.31,
+      "year": 2024,
+      "winner": 0,
+      "text": "The Hamas leader was killed by Israeli troops in Tal al-Sultan."
+     },
+     {
+      "name": "Israel-Hezbollah ceasefire",
+      "kind": "treaty",
+      "lon": 35.5,
+      "lat": 33.89,
+      "year": 2024,
+      "winner": null,
+      "text": "A US and French-brokered ceasefire in Lebanon took effect on 27 November."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "Jan to Sep 2025",
+    "title": "Truce, collapse and Gaza City",
+    "text": "A ceasefire on 19 January 2025 returned 33 hostages in exchange for Palestinian prisoners, but it collapsed on 18 March when Israel resumed strikes and ground operations. A new US and Israeli-backed aid system began in May amid deadly crowding at distribution sites, and a UN-backed food security body declared famine in Gaza City in August. In September Israel launched an offensive to take Gaza City.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.24,
+        31.33
+       ],
+       [
+        34.3,
+        31.31
+       ],
+       [
+        34.35,
+        31.29
+       ]
+      ],
+      "label": "Morag corridor, 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Eyal Zamir",
+      "label": "Offensive on Gaza City",
+      "path": [
+       [
+        34.5,
+        31.55
+       ],
+       [
+        34.47,
+        31.52
+       ],
+       [
+        34.45,
+        31.5
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "January ceasefire",
+      "kind": "treaty",
+      "lon": 34.45,
+      "lat": 31.5,
+      "year": 2025,
+      "winner": null,
+      "text": "A phased truce held for about two months."
+     },
+     {
+      "name": "Famine declared in Gaza City",
+      "kind": "event",
+      "lon": 34.45,
+      "lat": 31.5,
+      "year": 2025,
+      "winner": null,
+      "text": "The Integrated Food Security Phase Classification confirmed famine in August 2025."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "Oct to Dec 2025",
+    "title": "Ceasefire",
+    "text": "Under a US plan presented by President Trump, Israel and Hamas agreed a ceasefire that took effect on 10 October 2025. Hamas released the 20 remaining living hostages on 13 October and Israel freed about 2,000 Palestinian prisoners and detainees, while Israeli troops pulled back to a line leaving them in control of roughly half of Gaza. By then the Gaza Health Ministry reported over 67,000 Palestinians killed, and disarmament and Gaza's future governance remained unresolved.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     }
+    ],
+    "fronts": [
+     {
+      "path": [
+       [
+        34.53,
+        31.58
+       ],
+       [
+        34.48,
+        31.5
+       ],
+       [
+        34.41,
+        31.42
+       ],
+       [
+        34.34,
+        31.36
+       ],
+       [
+        34.28,
+        31.33
+       ],
+       [
+        34.22,
+        31.33
+       ]
+      ],
+      "label": "Approx. Israeli withdrawal line, Oct 2025"
+     }
+    ],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Israel Defense Forces",
+      "label": "Pullback to the withdrawal line",
+      "path": [
+       [
+        34.45,
+        31.5
+       ],
+       [
+        34.49,
+        31.49
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "October 2025 ceasefire",
+      "kind": "treaty",
+      "lon": 34.45,
+      "lat": 31.5,
+      "year": 2025,
+      "winner": null,
+      "text": "The truce took effect on 10 October after talks in Egypt."
+     },
+     {
+      "name": "Hostage and prisoner release",
+      "kind": "event",
+      "lon": 34.53,
+      "lat": 31.56,
+      "year": 2025,
+      "winner": null,
+      "text": "All living hostages returned to Israel on 13 October."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "twelve-day-war",
+  "name": "Twelve-Day War",
+  "start": 2025,
+  "end": 2025,
+  "kind": "war",
+  "summary": "On 13 June 2025 Israel launched surprise air strikes on Iran's nuclear programme, military leaders and air defences, and Iran answered with waves of ballistic missiles and drones against Israel. On 22 June the United States bombed the nuclear sites at Fordow, Natanz and Isfahan. A ceasefire took effect on 24 June, and the extent of lasting damage to Iran's nuclear programme remained disputed.",
+  "sides": [
+   {
+    "name": "Israel and the United States",
+    "color": "#3b6fb6",
+    "leaders": [
+     "Benjamin Netanyahu",
+     "Eyal Zamir",
+     "Tomer Bar",
+     "Donald Trump"
+    ]
+   },
+   {
+    "name": "Iran",
+    "color": "#2f8a57",
+    "leaders": [
+     "Ali Khamenei",
+     "Masoud Pezeshkian",
+     "Abdolrahim Mousavi",
+     "Mohammad Pakpour"
+    ]
+   }
+  ],
+  "theater": [
+   {
+    "lon": 43.0,
+    "lat": 32.5,
+    "r": 11
+   }
+  ],
+  "steps": [
+   {
+    "year": 2025,
+    "label": "13 Jun 2025",
+    "title": "Operation Rising Lion",
+    "text": "Israeli aircraft and covertly placed drones struck air defences, missile launchers and the Natanz enrichment site, and killed armed forces chief Mohammad Bagheri, IRGC commander Hossein Salami and several nuclear scientists. Israel said it acted to stop Iran from building a nuclear weapon, which Iran denies seeking.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "Tomer Bar",
+      "label": "Israeli Air Force strike on Tehran",
+      "path": [
+       [
+        34.9,
+        31.9
+       ],
+       [
+        38.5,
+        33.5
+       ],
+       [
+        44.0,
+        34.5
+       ],
+       [
+        51.39,
+        35.69
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tomer Bar",
+      "label": "Strike on Natanz",
+      "path": [
+       [
+        34.9,
+        31.9
+       ],
+       [
+        40.0,
+        33.0
+       ],
+       [
+        46.0,
+        33.5
+       ],
+       [
+        51.73,
+        33.72
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Strike on Natanz",
+      "kind": "event",
+      "lon": 51.73,
+      "lat": 33.72,
+      "year": 2025,
+      "winner": 0,
+      "text": "Israel hit the above-ground enrichment plant and power supply."
+     },
+     {
+      "name": "Strikes on Tehran",
+      "kind": "event",
+      "lon": 51.39,
+      "lat": 35.69,
+      "year": 2025,
+      "winner": 0,
+      "text": "Senior commanders and scientists were killed in their homes and offices."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "13 to 21 Jun 2025",
+    "title": "Missiles over Israel",
+    "text": "Iran fired hundreds of ballistic missiles and over a thousand drones at Israel; most were intercepted, but strikes hit Tel Aviv, Haifa, Beersheba and other cities. Israel gained air superiority over western Iran and Tehran and widened its strikes to missile bases, the Isfahan nuclear site, energy facilities and state broadcasting.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Islamic Revolutionary Guard Corps Aerospace Force",
+      "label": "Missile salvos at Israel",
+      "path": [
+       [
+        47.06,
+        34.31
+       ],
+       [
+        42.0,
+        33.5
+       ],
+       [
+        38.0,
+        32.5
+       ],
+       [
+        34.78,
+        32.08
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "Tomer Bar",
+      "label": "Strikes on Isfahan and missile bases",
+      "path": [
+       [
+        34.9,
+        31.9
+       ],
+       [
+        42.0,
+        33.0
+       ],
+       [
+        47.06,
+        34.31
+       ],
+       [
+        51.67,
+        32.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Missile strikes on Tel Aviv",
+      "kind": "event",
+      "lon": 34.78,
+      "lat": 32.08,
+      "year": 2025,
+      "winner": 1,
+      "text": "Missiles that got through caused deaths and heavy damage in central Israel."
+     },
+     {
+      "name": "Soroka hospital hit",
+      "kind": "event",
+      "lon": 34.8,
+      "lat": 31.26,
+      "year": 2025,
+      "winner": 1,
+      "text": "An Iranian missile damaged the Beersheba hospital on 19 June."
+     },
+     {
+      "name": "Strike on Isfahan",
+      "kind": "event",
+      "lon": 51.67,
+      "lat": 32.65,
+      "year": 2025,
+      "winner": 0,
+      "text": "Israel hit uranium conversion facilities at Isfahan."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "22 Jun 2025",
+    "title": "Operation Midnight Hammer",
+    "text": "US B-2 bombers flew from Missouri and dropped 14 bunker-buster bombs on the deeply buried Fordow enrichment site and on Natanz, while a submarine fired Tomahawk missiles at Isfahan. President Trump said the sites had been destroyed, while later assessments of the damage differed.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel",
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 0,
+      "commander": "509th Bomb Wing",
+      "label": "B-2 bombers from Whiteman Air Force Base",
+      "path": [
+       [
+        -93.55,
+        38.73
+       ],
+       [
+        -40.0,
+        38.0
+       ],
+       [
+        10.0,
+        36.0
+       ],
+       [
+        35.0,
+        35.0
+       ],
+       [
+        50.99,
+        34.88
+       ]
+      ]
+     },
+     {
+      "side": 0,
+      "commander": "US Navy submarine",
+      "label": "Tomahawk strike on Isfahan",
+      "path": [
+       [
+        57.5,
+        24.0
+       ],
+       [
+        55.0,
+        28.0
+       ],
+       [
+        51.67,
+        32.65
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Strike on Fordow",
+      "kind": "event",
+      "lon": 50.99,
+      "lat": 34.88,
+      "year": 2025,
+      "winner": 0,
+      "text": "Twelve GBU-57 bombs hit the enrichment plant built inside a mountain."
+     }
+    ]
+   },
+   {
+    "year": 2025,
+    "label": "23 to 24 Jun 2025",
+    "title": "Retaliation and ceasefire",
+    "text": "Iran fired missiles at the US Al Udeid air base in Qatar after giving advance warning, and nearly all were intercepted without casualties. President Trump then announced a ceasefire, which took effect on 24 June after a final exchange of strikes. Iranian authorities reported about 1,000 people killed in Iran, and about 30 were killed in Israel.",
+    "territories": [
+     {
+      "side": 0,
+      "polities": [
+       "Israel",
+       "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Iran"
+      ]
+     }
+    ],
+    "fronts": [],
+    "moves": [
+     {
+      "side": 1,
+      "commander": "Islamic Revolutionary Guard Corps Aerospace Force",
+      "label": "Missiles at Al Udeid",
+      "path": [
+       [
+        51.0,
+        30.0
+       ],
+       [
+        51.3,
+        27.0
+       ],
+       [
+        51.31,
+        25.12
+       ]
+      ]
+     }
+    ],
+    "events": [
+     {
+      "name": "Attack on Al Udeid",
+      "kind": "event",
+      "lon": 51.31,
+      "lat": 25.12,
+      "year": 2025,
+      "winner": null,
+      "text": "Iran's symbolic strike on the US base caused no casualties."
+     },
+     {
+      "name": "Ceasefire",
+      "kind": "treaty",
+      "lon": 51.39,
+      "lat": 35.69,
+      "year": 2025,
+      "winner": null,
+      "text": "The truce announced by Trump took effect on 24 June and held."
+     }
+    ]
+   }
+  ]
+ }
+]
