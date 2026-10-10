@@ -1,0 +1,1973 @@
+[
+ {
+  "id": "anatolia-west",
+  "name": "Western Anatolia (Ionia and Lydia)",
+  "lon": 28.0,
+  "lat": 38.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farming peoples of western Anatolia worshipped local gods and a mother goddess."
+   },
+   {
+    "from": -1600,
+    "faith": "mesopotamian",
+    "note": "Luwian kingdoms such as Arzawa shared the storm god and the gods of the Hittite and Hurrian world."
+   },
+   {
+    "from": -1000,
+    "faith": "hellenic",
+    "note": "Ionian Greek colonists and the Lydian kings spread Greek cults, with great temples such as the Artemision at Ephesus."
+   },
+   {
+    "from": 325,
+    "faith": "christian",
+    "note": "Home of Paul's churches and the Seven Churches of Revelation, Asia Minor was among the first regions with a Christian majority by the early 4th century."
+   },
+   {
+    "from": 1054,
+    "faith": "orthodox",
+    "note": "The region's Greek Christians stayed with the Patriarch of Constantinople when Rome and Constantinople split in 1054."
+   },
+   {
+    "from": 1400,
+    "faith": "sunni",
+    "note": "Turkish beyliks such as Aydin and Saruhan, then the Ottomans by 1390, ruled the region, and conversion and Turkmen settlement made it majority Sunni Muslim in the 15th century."
+   }
+  ]
+ },
+ {
+  "id": "anatolia-central",
+  "name": "Central Anatolia (Cappadocia and Galatia)",
+  "lon": 32.9,
+  "lat": 39.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Neolithic towns such as Catalhoyuk worshipped local goddesses and ancestors."
+   },
+   {
+    "from": -1650,
+    "faith": "mesopotamian",
+    "note": "Hittite kings at Hattusa worshipped a 'thousand gods' of Hattian, Hurrian and Mesopotamian origin, led by the storm god and the sun goddess of Arinna."
+   },
+   {
+    "from": -330,
+    "faith": "hellenic",
+    "note": "After Alexander, Hellenistic and then Roman rule (Galatia, 25 BC) merged the gods of Phrygians and Galatian Celts, such as Cybele, into Greek and Roman religion."
+   },
+   {
+    "from": 325,
+    "faith": "christian",
+    "note": "Cappadocia and Galatia became solidly Christian by the 4th century, the land of the Cappadocian Fathers Basil, Gregory of Nyssa and Gregory of Nazianzus."
+   },
+   {
+    "from": 1054,
+    "faith": "orthodox",
+    "note": "Byzantine Anatolia sided with Constantinople in the 1054 schism with Rome."
+   },
+   {
+    "from": 1300,
+    "faith": "sunni",
+    "note": "After Manzikert (1071) the Seljuk Sultanate of Rum ruled from Konya, and Turkmen settlement and conversion made central Anatolia majority Sunni Muslim by about 1300."
+   }
+  ]
+ },
+ {
+  "id": "anatolia-east",
+  "name": "Eastern Anatolia (Armenian Highlands)",
+  "lon": 41.3,
+  "lat": 39.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Highland peoples around Lake Van worshipped local gods of mountains and springs."
+   },
+   {
+    "from": -850,
+    "faith": "mesopotamian",
+    "note": "The kingdom of Urartu worshipped Haldi, Teisheba and Shivini in a pantheon shaped by Hurrian and Assyrian religion."
+   },
+   {
+    "from": -550,
+    "faith": "zoroastrianism",
+    "note": "Under Persian rule the Armenians adopted an Iranian, Mazdean religion of Aramazd, Anahit and Mihr."
+   },
+   {
+    "from": 301,
+    "faith": "christian",
+    "note": "King Tiridates III, converted by Gregory the Illuminator, made Armenia the first kingdom with Christianity as its state religion."
+   },
+   {
+    "from": 506,
+    "faith": "oriental",
+    "note": "The Armenian Church formally rejected the Council of Chalcedon at the Council of Dvin in 506, joining the Oriental Orthodox churches."
+   },
+   {
+    "from": 1514,
+    "faith": "sunni",
+    "note": "Seljuk, Turkmen and Kurdish settlement after 1071 and Ottoman rule after Chaldiran (1514) made Muslims the majority by the 16th century; Armenians stayed numerous until the 1915 genocide."
+   }
+  ]
+ },
+ {
+  "id": "pontus",
+  "name": "Pontus (Black Sea coast)",
+  "lon": 39.7,
+  "lat": 40.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Peoples of the Black Sea mountains such as the Chalybes worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "hellenic",
+    "note": "Greek colonies like Sinope and Trapezus, and later the Hellenized kings of Pontus and Rome, spread Greek religion along the coast."
+   },
+   {
+    "from": 350,
+    "faith": "christian",
+    "note": "The Pontic coast became Christian during the 4th century under Roman and Byzantine rule."
+   },
+   {
+    "from": 1054,
+    "faith": "orthodox",
+    "note": "The region followed Constantinople in the 1054 schism; the Empire of Trebizond (1204 to 1461) remained a Greek Orthodox state."
+   },
+   {
+    "from": 1650,
+    "faith": "sunni",
+    "note": "After the Ottoman conquest of Trebizond in 1461, conversion over the 16th and 17th centuries made the coast majority Muslim; the Pontic Greeks left in the 1923 population exchange."
+   }
+  ]
+ },
+ {
+  "id": "cilicia",
+  "name": "Cilicia (Adana and Tarsus)",
+  "lon": 35.3,
+  "lat": 37.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farmers of the Cilician plain worshipped local gods."
+   },
+   {
+    "from": -1600,
+    "faith": "mesopotamian",
+    "note": "The kingdom of Kizzuwatna, later Hittite, worshipped Hurrian and Luwian gods such as Teshub and Hebat."
+   },
+   {
+    "from": -330,
+    "faith": "hellenic",
+    "note": "Alexander's conquest and Roman rule made Tarsus and the Cilician cities centres of Greek religion and learning."
+   },
+   {
+    "from": 350,
+    "faith": "christian",
+    "note": "Cilicia, home of Paul of Tarsus, became Christian by the 4th century."
+   },
+   {
+    "from": 700,
+    "faith": "sunni",
+    "note": "Arab conquest turned Cilicia into the thughur, the Muslim frontier against Byzantium, with Tarsus and Adana settled by Muslim garrisons."
+   },
+   {
+    "from": 965,
+    "faith": "christian",
+    "note": "Emperor Nikephoros Phokas reconquered Cilicia in 965, expelled its Muslims and resettled it with Greek, Armenian and Syriac Christians."
+   },
+   {
+    "from": 1054,
+    "faith": "orthodox",
+    "note": "Byzantine Cilicia sided with Constantinople in the 1054 schism with Rome."
+   },
+   {
+    "from": 1080,
+    "faith": "oriental",
+    "note": "Armenian princes founded the Armenian Kingdom of Cilicia, and Armenian Apostolic Christians became the leading population until 1375."
+   },
+   {
+    "from": 1375,
+    "faith": "sunni",
+    "note": "The Mamluks destroyed the Armenian kingdom in 1375, and Turkmen Ramazanid and then Ottoman rule made Cilicia majority Sunni Muslim."
+   }
+  ]
+ },
+ {
+  "id": "upper-mesopotamia",
+  "name": "Upper Mesopotamia (Edessa and Diyarbakir)",
+  "lon": 39.8,
+  "lat": 37.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early sanctuaries such as Gobekli Tepe show the first monumental religious sites here."
+   },
+   {
+    "from": -2500,
+    "faith": "mesopotamian",
+    "note": "Hurrian and Assyrian gods ruled the region, and Harran's moon god Sin was worshipped into Islamic times."
+   },
+   {
+    "from": 200,
+    "faith": "christian",
+    "note": "King Abgar VIII of Edessa is remembered as the first Christian ruler, and Edessa became the heart of Syriac Christianity."
+   },
+   {
+    "from": 451,
+    "faith": "oriental",
+    "note": "Most Syriac Christians rejected Chalcedon; Jacob Baradaeus of Tella organized the Syriac Orthodox Church here in the 540s."
+   },
+   {
+    "from": 1150,
+    "faith": "sunni",
+    "note": "Seljuk conquest, Turkmen and Kurdish settlement and the fall of Crusader Edessa (1144) made the region majority Muslim; Syriac and Armenian Christians remained numerous until 1915."
+   }
+  ]
+ },
+ {
+  "id": "syria-north",
+  "name": "Northern Syria (Aleppo)",
+  "lon": 37.2,
+  "lat": 36.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farming villages of northern Syria worshipped local gods."
+   },
+   {
+    "from": -2500,
+    "faith": "mesopotamian",
+    "note": "Ebla and then Aleppo worshipped the storm god Hadad and the Amorite, Hurrian and Aramaean gods."
+   },
+   {
+    "from": -300,
+    "faith": "hellenic",
+    "note": "The Seleucid kings founded Antioch and spread Greek religion, and the Romans added the emperor cult."
+   },
+   {
+    "from": 380,
+    "faith": "christian",
+    "note": "Antioch was one of the oldest Christian centres, and northern Syria was largely Christian by the late 4th century."
+   },
+   {
+    "from": 451,
+    "faith": "oriental",
+    "note": "Most of the Syriac countryside rejected Chalcedon and formed the Syriac Orthodox Church, while Greek cities stayed Chalcedonian."
+   },
+   {
+    "from": 944,
+    "faith": "shia",
+    "note": "By the time the Twelver Shia Hamdanid Sayf al-Dawla took Aleppo in 944, Muslims were the majority, and Aleppo's townspeople were largely Imami Shia until the 12th century."
+   },
+   {
+    "from": 1148,
+    "faith": "sunni",
+    "note": "Nur al-Din banned the Shia call to prayer in Aleppo in 1148 and founded Sunni madrasas, and the city and region became firmly Sunni."
+   }
+  ]
+ },
+ {
+  "id": "syria-damascus",
+  "name": "Southern Syria (Damascus)",
+  "lon": 36.3,
+  "lat": 33.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farming peoples of the Damascus oasis worshipped local gods."
+   },
+   {
+    "from": -2500,
+    "faith": "mesopotamian",
+    "note": "Amorite and then Aramaean kingdoms worshipped Hadad, the storm god of Damascus, and other Canaanite and Mesopotamian gods."
+   },
+   {
+    "from": -300,
+    "faith": "hellenic",
+    "note": "Seleucid and then Roman rule turned Hadad's temple into the great temple of Jupiter Damascenus."
+   },
+   {
+    "from": 380,
+    "faith": "christian",
+    "note": "Christianity became the religion of the Empire, and the temple of Jupiter became the church of John the Baptist."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "Conquered in 634 and made the Umayyad capital in 661, southern Syria slowly became majority Muslim, probably by around the 10th century."
+   },
+   {
+    "from": 970,
+    "faith": "ismaili",
+    "note": "The Ismaili Fatimid caliphs of Cairo ruled Damascus from 970, a ruling faith the Sunni townspeople largely resisted."
+   },
+   {
+    "from": 1076,
+    "faith": "sunni",
+    "note": "The Seljuk Turks took Damascus in 1076 and restored Sunni rule, later championed by Nur al-Din and Saladin."
+   }
+  ]
+ },
+ {
+  "id": "mount-lebanon",
+  "name": "Mount Lebanon",
+  "lon": 35.8,
+  "lat": 34.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Lebanon mountains worshipped local gods of springs and high places."
+   },
+   {
+    "from": -3000,
+    "faith": "mesopotamian",
+    "note": "Phoenician cities such as Byblos worshipped Baal, Astarte and Adonis, whose cult centre was at Afqa in the mountains."
+   },
+   {
+    "from": -64,
+    "faith": "hellenic",
+    "note": "Roman rule fused the Phoenician gods with Roman ones, as at the great temple of Jupiter at Baalbek."
+   },
+   {
+    "from": 450,
+    "faith": "christian",
+    "note": "Disciples of the hermit Saint Maron converted the mountain villages in the 5th century; the Maronites later stood apart from both Byzantium and Rome."
+   },
+   {
+    "from": 1182,
+    "faith": "catholic",
+    "note": "The Maronite Church entered full union with Rome during the Crusades (about 1182), and Maronite Catholics remain the majority of Mount Lebanon."
+   }
+  ]
+ },
+ {
+  "id": "jabal-amil",
+  "name": "Southern Lebanon (Jabal Amil)",
+  "lon": 35.4,
+  "lat": 33.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the southern Lebanese hills worshipped local gods."
+   },
+   {
+    "from": -3000,
+    "faith": "mesopotamian",
+    "note": "Phoenician Tyre and Sidon worshipped Melqart, Eshmun and Astarte."
+   },
+   {
+    "from": -64,
+    "faith": "hellenic",
+    "note": "Roman rule brought Roman temples and the emperor cult to Tyre and Sidon."
+   },
+   {
+    "from": 400,
+    "faith": "christian",
+    "note": "Tyre and Sidon became Christian bishoprics and the region Christian by about 400."
+   },
+   {
+    "from": 1000,
+    "faith": "shia",
+    "note": "After the Muslim conquest of 635, the people of Jabal Amil became Twelver Shia by about the 11th century; its scholars later helped convert Safavid Iran."
+   }
+  ]
+ },
+ {
+  "id": "israel",
+  "name": "Israel (coastal plain and Galilee)",
+  "lon": 34.9,
+  "lat": 32.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Natufian and Neolithic peoples of the land buried and honoured their ancestors."
+   },
+   {
+    "from": -3000,
+    "faith": "mesopotamian",
+    "note": "Canaanite city states worshipped El, Baal, Asherah and Astarte."
+   },
+   {
+    "from": -1000,
+    "faith": "judaism",
+    "note": "The Israelite kingdoms worshipped Yahweh, and Judaism took shape around the Torah and the Jerusalem Temple."
+   },
+   {
+    "from": 135,
+    "faith": "hellenic",
+    "note": "After the Bar Kokhba revolt (132 to 135) Rome expelled Jews from Judea and refounded Jerusalem as the pagan Aelia Capitolina, though Galilee stayed Jewish."
+   },
+   {
+    "from": 425,
+    "faith": "christian",
+    "note": "Imperial patronage of the Holy Land and the closure of pagan temples, such as Gaza's Marneion in 402, made the land majority Christian in the 5th century."
+   },
+   {
+    "from": 970,
+    "faith": "ismaili",
+    "note": "Conquered by the Arabs in 634 to 640, the land came under Ismaili Fatimid rule in 970 as conversion slowly turned it Muslim, mostly Sunni; Christians were still numerous."
+   },
+   {
+    "from": 1099,
+    "faith": "catholic",
+    "note": "Latin crusaders ruled the Kingdom of Jerusalem from 1099, a ruling faith over a population of Eastern Christians and Muslims."
+   },
+   {
+    "from": 1187,
+    "faith": "sunni",
+    "note": "Saladin's reconquest in 1187 and Ayyubid and Mamluk rule completed the land's long shift to a Sunni Muslim majority."
+   },
+   {
+    "from": 1948,
+    "faith": "judaism",
+    "note": "Zionist immigration and the founding of Israel in 1948, with the flight and expulsion of most Palestinian Arabs, gave the land a Jewish majority."
+   }
+  ]
+ },
+ {
+  "id": "palestine",
+  "name": "Palestine (West Bank and Gaza)",
+  "lon": 35.25,
+  "lat": 31.95,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Natufian and Neolithic peoples, as at Jericho, buried and honoured their ancestors."
+   },
+   {
+    "from": -3000,
+    "faith": "mesopotamian",
+    "note": "Canaanite city states worshipped El, Baal, Asherah and Astarte."
+   },
+   {
+    "from": -1000,
+    "faith": "judaism",
+    "note": "The Israelite kingdoms worshipped Yahweh, and Judaism took shape around the Torah and the Jerusalem Temple."
+   },
+   {
+    "from": 135,
+    "faith": "hellenic",
+    "note": "After the Bar Kokhba revolt Rome expelled Jews from Judea and refounded Jerusalem as the pagan Aelia Capitolina."
+   },
+   {
+    "from": 425,
+    "faith": "christian",
+    "note": "Constantine's Church of the Holy Sepulchre, pilgrimage and monasticism made the Holy Land majority Christian in the 5th century."
+   },
+   {
+    "from": 970,
+    "faith": "ismaili",
+    "note": "Conquered by the Arabs in 634 to 640, the land came under Ismaili Fatimid rule in 970 as conversion slowly turned it Muslim, mostly Sunni; Christians were still numerous."
+   },
+   {
+    "from": 1099,
+    "faith": "catholic",
+    "note": "Latin crusaders ruled the Kingdom of Jerusalem from 1099, a ruling faith over a population of Eastern Christians and Muslims."
+   },
+   {
+    "from": 1187,
+    "faith": "sunni",
+    "note": "Saladin's reconquest of Jerusalem in 1187 and Ayyubid and Mamluk rule completed the land's long shift to a Sunni Muslim majority, which Palestinians remain today."
+   }
+  ]
+ },
+ {
+  "id": "jordan",
+  "name": "Jordan",
+  "lon": 35.9,
+  "lat": 31.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Neolithic peoples such as those of Ain Ghazal made plaster statues of their gods or ancestors."
+   },
+   {
+    "from": -3000,
+    "faith": "mesopotamian",
+    "note": "Ammonites, Moabites and Edomites worshipped Milcom and Chemosh, and later the Nabataeans of Petra worshipped Dushara and al-Uzza."
+   },
+   {
+    "from": 106,
+    "faith": "hellenic",
+    "note": "Rome annexed the Nabataean kingdom as the province of Arabia in 106, and the Decapolis cities such as Gerasa built Roman temples."
+   },
+   {
+    "from": 400,
+    "faith": "christian",
+    "note": "The land became Christian under Byzantine rule, as the church mosaics of Madaba show."
+   },
+   {
+    "from": 750,
+    "faith": "sunni",
+    "note": "After the Muslim victory at Yarmouk in 636, Arab tribes and gradual conversion made the land majority Muslim by about the Abbasid era."
+   }
+  ]
+ },
+ {
+  "id": "iraq-north",
+  "name": "Northern Iraq (Mosul and Assyria)",
+  "lon": 43.1,
+  "lat": 36.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farmers of the northern Mesopotamian plains worshipped local gods."
+   },
+   {
+    "from": -2500,
+    "faith": "mesopotamian",
+    "note": "Assyria worshipped the god Ashur and Ishtar of Nineveh and Arbela, the state cult of the Assyrian empire."
+   },
+   {
+    "from": 484,
+    "faith": "east-syriac",
+    "note": "Christianity spread through Adiabene and Nineveh, and by the late 5th century most Aramaic speakers here belonged to the Church of the East, confirmed at the Synod of Beth Lapat (484)."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "After the Arab conquest of 641, Arab settlement and conversion of Kurds and Aramaeans made the region majority Sunni Muslim by about the 10th century, with many Christian villages remaining."
+   }
+  ]
+ },
+ {
+  "id": "iraq-baghdad",
+  "name": "Central Iraq (Baghdad and Babylonia)",
+  "lon": 44.4,
+  "lat": 33.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farmers of the Mesopotamian plain worshipped local gods."
+   },
+   {
+    "from": -3500,
+    "faith": "mesopotamian",
+    "note": "Sumer, Akkad and Babylon worshipped city gods such as Enlil and Marduk, whose cult in Babylon lasted into the 1st century AD."
+   },
+   {
+    "from": 226,
+    "faith": "zoroastrianism",
+    "note": "The Sasanians ruled from Ctesiphon with Zoroastrianism as state faith over a mixed population of Christians, Jews, Mandaeans and pagans."
+   },
+   {
+    "from": 762,
+    "faith": "sunni",
+    "note": "After the Arab conquest (637), Kufa and the new Abbasid capital Baghdad (762) became centres of Islamic learning, and the region was majority Muslim, mostly Sunni, by the 9th century."
+   },
+   {
+    "from": 1960,
+    "faith": "shia",
+    "note": "Migration from the Shia south, to districts such as Sadr City, gave Baghdad and central Iraq a Shia majority by the late 20th century."
+   }
+  ]
+ },
+ {
+  "id": "iraq-south",
+  "name": "Southern Iraq (Basra, Najaf and Karbala)",
+  "lon": 46.5,
+  "lat": 31.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the southern marshes such as the Ubaid culture built the first temples at Eridu."
+   },
+   {
+    "from": -3500,
+    "faith": "mesopotamian",
+    "note": "The Sumerian cities Ur, Uruk and Eridu worshipped Nanna, Inanna and Enki."
+   },
+   {
+    "from": 226,
+    "faith": "zoroastrianism",
+    "note": "The Sasanian state favoured Zoroastrianism over a mixed population of Christians, Jews, Mandaeans and pagans."
+   },
+   {
+    "from": 650,
+    "faith": "sunni",
+    "note": "Arab conquest and the garrison cities of Basra (636) and Kufa (638) brought Arab settlers and Islam; Ali's shrine at Najaf and Husayn's at Karbala made it Shia holy land."
+   },
+   {
+    "from": 1800,
+    "faith": "shia",
+    "note": "Shia clerics from the shrine cities converted the Arab tribes of the south to Twelver Shia Islam in the late 18th and 19th centuries."
+   }
+  ]
+ },
+ {
+  "id": "iran-west",
+  "name": "Western Iran (Isfahan and Hamadan)",
+  "lon": 51.7,
+  "lat": 32.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Iranian plateau worshipped local gods."
+   },
+   {
+    "from": -650,
+    "faith": "zoroastrianism",
+    "note": "The Medes and the Achaemenid Persians worshipped Ahura Mazda through magi priests, and Zoroastrianism became the religion of Iran."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "After the Arab conquest of 642 to 651, Iranians converted gradually and the plateau was majority Muslim, mostly Sunni, by about the 10th century."
+   },
+   {
+    "from": 1501,
+    "faith": "shia",
+    "note": "Shah Ismail I made Twelver Shia Islam the state religion in 1501, and the Safavids converted most Iranians over the next century."
+   }
+  ]
+ },
+ {
+  "id": "iran-azerbaijan",
+  "name": "Iranian Azerbaijan (Tabriz)",
+  "lon": 46.3,
+  "lat": 38.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples around Lake Urmia worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "Media Atropatene was a Zoroastrian heartland, home of the royal fire temple Adur Gushnasp at Takht-e Soleyman."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "After the Arab conquest the region became majority Muslim, mostly Shafi'i Sunni, by about the 10th century."
+   },
+   {
+    "from": 1501,
+    "faith": "shia",
+    "note": "Ismail I, leader of the Safavid order of Ardabil, was crowned at Tabriz in 1501 and made Twelver Shia Islam the faith of Azerbaijan and Iran."
+   }
+  ]
+ },
+ {
+  "id": "tabaristan",
+  "name": "Tabaristan and Gilan (Caspian Iran)",
+  "lon": 53.0,
+  "lat": 36.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Caspian forests worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "The Caspian provinces were Zoroastrian, and local Dabuyid and Bavandid princes kept the old faith for two centuries after the Arab conquest."
+   },
+   {
+    "from": 864,
+    "faith": "shia",
+    "note": "Zaydi Shia Alids founded a state in Tabaristan in 864 and converted the Daylamites; the region later became Twelver Shia under the Marashis and Safavids."
+   }
+  ]
+ },
+ {
+  "id": "khuzestan",
+  "name": "Khuzestan (Elam)",
+  "lon": 48.7,
+  "lat": 31.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Susiana plain worshipped local gods."
+   },
+   {
+    "from": -3200,
+    "faith": "mesopotamian",
+    "note": "Elam worshipped Inshushinak, Humban and Kiririsha in a religion closely tied to Mesopotamia."
+   },
+   {
+    "from": -539,
+    "faith": "zoroastrianism",
+    "note": "Susa became an Achaemenid capital, and Persian Zoroastrianism gradually replaced the Elamite gods."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "After the Arab conquest of the 640s, the province became majority Muslim by about the 10th century."
+   },
+   {
+    "from": 1501,
+    "faith": "shia",
+    "note": "Safavid rule from 1501, after the Shia Musha'sha' dynasty of Hoveyzeh, made the region Twelver Shia."
+   }
+  ]
+ },
+ {
+  "id": "fars",
+  "name": "Fars (Persis)",
+  "lon": 52.5,
+  "lat": 29.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Zagros valleys worshipped local gods."
+   },
+   {
+    "from": -550,
+    "faith": "zoroastrianism",
+    "note": "Persis was the homeland of the Achaemenids and Sasanians and the last stronghold of Zoroastrian priests after the Arab conquest."
+   },
+   {
+    "from": 950,
+    "faith": "sunni",
+    "note": "Fars resisted conversion longer than most of Iran, but by the mid 10th century Muslims were the majority."
+   },
+   {
+    "from": 1501,
+    "faith": "shia",
+    "note": "The Safavids made Twelver Shia Islam the state religion in 1501 and converted the population over the following century."
+   }
+  ]
+ },
+ {
+  "id": "iran-khorasan",
+  "name": "Khorasan (Mashhad and Nishapur)",
+  "lon": 59.6,
+  "lat": 36.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of Khorasan worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "Parthia and Khorasan, near Zoroaster's eastern homeland, were Zoroastrian under the Achaemenids, Parthians and Sasanians."
+   },
+   {
+    "from": 850,
+    "faith": "sunni",
+    "note": "After the Arab conquest of 651, Khorasan converted faster than western Iran and was majority Sunni Muslim by the mid 9th century, as Nishapur's records show."
+   },
+   {
+    "from": 1510,
+    "faith": "shia",
+    "note": "Ismail I took Khorasan in 1510, and Safavid rule and the shrine of Imam Reza at Mashhad made the region Twelver Shia."
+   }
+  ]
+ },
+ {
+  "id": "hejaz",
+  "name": "Hejaz (Mecca and Medina)",
+  "lon": 39.9,
+  "lat": 21.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Arab tribes worshipped Hubal, al-Lat, al-Uzza and Manat, with the Kaaba at Mecca as their chief sanctuary."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "Muhammad's conquest of Mecca in 630 cleansed the Kaaba of idols and made the Hejaz the heart of Islam; early Islam is shown here as Sunni."
+   }
+  ]
+ },
+ {
+  "id": "najd",
+  "name": "Najd (Riyadh)",
+  "lon": 46.7,
+  "lat": 24.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bedouin tribes of central Arabia worshipped tribal gods and sacred stones."
+   },
+   {
+    "from": 632,
+    "faith": "sunni",
+    "note": "The tribes of Najd submitted to Islam in the Ridda wars of 632 to 633; in 1744 Muhammad ibn Abd al-Wahhab's alliance with the Saudis began the Wahhabi reform."
+   }
+  ]
+ },
+ {
+  "id": "yemen-highlands",
+  "name": "Northern Yemen (Sanaa and Saada)",
+  "lon": 44.2,
+  "lat": 15.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saba, Main and Himyar worshipped the moon god Almaqah and other South Arabian gods at temples such as Marib's Awwam."
+   },
+   {
+    "from": 380,
+    "faith": "judaism",
+    "note": "Himyarite kings abandoned the old gods around 380 for a Jewish monotheism, and King Yusuf Dhu Nuwas ruled as a Jew until 525; this was mainly the ruling faith."
+   },
+   {
+    "from": 525,
+    "faith": "oriental",
+    "note": "The Christian Aksumites of Ethiopia conquered Himyar in 525, and their viceroy Abraha built a great Miaphysite church at Sanaa."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "Yemen's tribes and Persian governor Badhan embraced Islam around 630."
+   },
+   {
+    "from": 897,
+    "faith": "shia",
+    "note": "Al-Hadi ila al-Haqq founded the Zaydi imamate at Saada in 897; the northern highlands became Zaydi Shia (distinct from Twelvers) under imams who ruled until 1962."
+   }
+  ]
+ },
+ {
+  "id": "yemen-south",
+  "name": "Lower Yemen (Taiz and Aden)",
+  "lon": 44.0,
+  "lat": 13.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saba, Qataban and Himyar worshipped the moon god Almaqah and other South Arabian gods."
+   },
+   {
+    "from": 380,
+    "faith": "judaism",
+    "note": "Himyarite kings adopted a Jewish monotheism around 380; King Yusuf Dhu Nuwas ruled as a Jew until 525. This was mainly the ruling faith."
+   },
+   {
+    "from": 525,
+    "faith": "oriental",
+    "note": "The Christian Aksumites of Ethiopia conquered Himyar in 525 and ruled through Abraha, a Miaphysite Christian."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "Yemen accepted Islam around 630, and lower Yemen became Shafi'i Sunni."
+   },
+   {
+    "from": 1047,
+    "faith": "ismaili",
+    "note": "The Ismaili Sulayhid dynasty, allies of the Fatimids, ruled lower Yemen from 1047, under Queen Arwa from Jibla; a ruling faith over a mostly Sunni people."
+   },
+   {
+    "from": 1174,
+    "faith": "sunni",
+    "note": "Turanshah's Ayyubid conquest of 1174 ended Ismaili rule, and lower Yemen remained Shafi'i Sunni."
+   }
+  ]
+ },
+ {
+  "id": "hadramawt",
+  "name": "Hadramawt",
+  "lon": 48.6,
+  "lat": 15.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The kingdom of Hadramawt worshipped the moon god Sayin and other South Arabian gods."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "The tribes of Hadramawt accepted Islam around 630."
+   },
+   {
+    "from": 745,
+    "faith": "ibadi",
+    "note": "Hadramawt became an Ibadi stronghold after the revolt of Talib al-Haqq in 745, and Ibadism remained strong here until about the 12th century."
+   },
+   {
+    "from": 1150,
+    "faith": "sunni",
+    "note": "Shafi'i Sunni Islam, spread by the Ba Alawi sayyids descended from Ahmad al-Muhajir, replaced Ibadism by the 12th century."
+   }
+  ]
+ },
+ {
+  "id": "oman",
+  "name": "Oman",
+  "lon": 57.5,
+  "lat": 22.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of Magan worshipped local gods; Arab tribes later honoured tribal deities."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "The Julanda rulers of Oman accepted Islam around 630, in the early years before the sectarian splits."
+   },
+   {
+    "from": 751,
+    "faith": "ibadi",
+    "note": "Oman elected its first Ibadi imam, al-Julanda ibn Masud, in 751, and has been the heartland of Ibadi Islam ever since."
+   }
+  ]
+ },
+ {
+  "id": "uae",
+  "name": "United Arab Emirates",
+  "lon": 55.5,
+  "lat": 24.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of the Oman peninsula worshipped local and tribal gods."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "The Azd tribes of the coast accepted Islam around 630; most Emiratis today are Sunni Muslims."
+   }
+  ]
+ },
+ {
+  "id": "qatar",
+  "name": "Qatar",
+  "lon": 51.2,
+  "lat": 25.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Arab tribes worshipped local gods; some Christians of the Church of the East lived here before Islam."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "The peninsula embraced Islam around 630; Qatar's rulers adopted the Wahhabi reform in the 19th century."
+   }
+  ]
+ },
+ {
+  "id": "bahrain",
+  "name": "Bahrain",
+  "lon": 50.55,
+  "lat": 26.05,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the island worshipped local gods."
+   },
+   {
+    "from": -2200,
+    "faith": "mesopotamian",
+    "note": "Dilmun, a trading kingdom, worshipped Inzak and Enki in a religion close to Mesopotamia's."
+   },
+   {
+    "from": 629,
+    "faith": "sunni",
+    "note": "Al-Mundhir ibn Sawa, ruler of Bahrain, accepted Islam around 629."
+   },
+   {
+    "from": 899,
+    "faith": "ismaili",
+    "note": "The Ismaili Qarmatians founded a state in eastern Arabia in 899 and seized the Black Stone of the Kaaba in 930."
+   },
+   {
+    "from": 1077,
+    "faith": "shia",
+    "note": "After the Qarmatian state fell in 1077, the island's Baharna farmers became Twelver Shia, and Bahrain grew into a centre of Shia learning."
+   }
+  ]
+ },
+ {
+  "id": "al-ahsa",
+  "name": "Al-Ahsa and Qatif (Eastern Arabia)",
+  "lon": 49.6,
+  "lat": 25.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The oasis peoples of eastern Arabia worshipped local gods."
+   },
+   {
+    "from": 629,
+    "faith": "sunni",
+    "note": "The tribes of the region accepted Islam around 629."
+   },
+   {
+    "from": 899,
+    "faith": "ismaili",
+    "note": "The Ismaili Qarmatians ruled eastern Arabia from al-Ahsa from 899 to 1077 and seized the Black Stone of the Kaaba in 930."
+   },
+   {
+    "from": 1077,
+    "faith": "shia",
+    "note": "After the Qarmatian state fell, the oasis farmers of al-Ahsa and Qatif became Twelver Shia, as many remain today."
+   }
+  ]
+ },
+ {
+  "id": "kuwait",
+  "name": "Kuwait",
+  "lon": 47.6,
+  "lat": 29.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples worshipped local gods; Failaka island held a Greek sanctuary under the Seleucids."
+   },
+   {
+    "from": 630,
+    "faith": "sunni",
+    "note": "The region embraced Islam around 630; Kuwait, founded by the Bani Utbah around 1716, is majority Sunni with a large Shia minority."
+   }
+  ]
+ },
+ {
+  "id": "egypt",
+  "name": "Lower Egypt (Cairo and the Delta)",
+  "lon": 31.2,
+  "lat": 30.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Prehistoric Nile peoples buried their dead with offerings and worshipped animal and fertility gods."
+   },
+   {
+    "from": -3100,
+    "faith": "egyptian",
+    "note": "The unified kingdom worshipped Ra, Osiris, Isis and Horus, with the pharaoh as divine king."
+   },
+   {
+    "from": 325,
+    "faith": "christian",
+    "note": "Egypt, home of Alexandria's church and the first monks, became majority Christian by about the early 4th century."
+   },
+   {
+    "from": 451,
+    "faith": "oriental",
+    "note": "Most Egyptians rejected the Council of Chalcedon and followed the Coptic Orthodox Church."
+   },
+   {
+    "from": 969,
+    "faith": "ismaili",
+    "note": "The Ismaili Fatimids founded Cairo in 969; Muslims, mostly Sunni, probably became the majority in this era, though some scholars place it as late as the 14th century."
+   },
+   {
+    "from": 1171,
+    "faith": "sunni",
+    "note": "Saladin ended the Fatimid caliphate in 1171 and restored Sunni Islam, and Mamluk era pressures shrank the Copts to a minority."
+   }
+  ]
+ },
+ {
+  "id": "egypt-upper",
+  "name": "Upper Egypt (Thebes and Asyut)",
+  "lon": 32.6,
+  "lat": 25.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Prehistoric Nile peoples buried their dead with offerings and worshipped animal and fertility gods."
+   },
+   {
+    "from": -3100,
+    "faith": "egyptian",
+    "note": "Upper Egypt worshipped Amun at Thebes, Horus at Edfu and Hathor at Dendera."
+   },
+   {
+    "from": 350,
+    "faith": "christian",
+    "note": "Christianity, spread by monks such as Pachomius, became the majority faith of Upper Egypt in the 4th century."
+   },
+   {
+    "from": 451,
+    "faith": "oriental",
+    "note": "Upper Egypt became the heartland of the Coptic Orthodox Church after Chalcedon in 451."
+   },
+   {
+    "from": 1350,
+    "faith": "sunni",
+    "note": "Copts in the south remained numerous long after the Arab conquest; Mamluk persecutions and mass conversions from 1301 to 1354 left Muslims the majority by the 14th century."
+   }
+  ]
+ },
+ {
+  "id": "cyrenaica",
+  "name": "Cyrenaica (eastern Libya)",
+  "lon": 21.8,
+  "lat": 32.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Libyan Berber tribes worshipped local gods and the oracle of Ammon."
+   },
+   {
+    "from": -630,
+    "faith": "hellenic",
+    "note": "Greeks from Thera founded Cyrene in 631 BC, and Cyrenaica became a centre of Greek and then Roman religion."
+   },
+   {
+    "from": 380,
+    "faith": "christian",
+    "note": "Christianity became the religion of the Pentapolis by the late 4th century, when Synesius of Cyrene was bishop."
+   },
+   {
+    "from": 750,
+    "faith": "sunni",
+    "note": "After the Arab conquest of 643 the Berber tribes gradually converted to Islam."
+   },
+   {
+    "from": 909,
+    "faith": "ismaili",
+    "note": "The Ismaili Fatimids ruled Cyrenaica from 909, a ruling faith over a mostly Sunni people."
+   },
+   {
+    "from": 1051,
+    "faith": "sunni",
+    "note": "Fatimid control ended in the mid 11th century as the Banu Sulaym Arabs settled; Maliki Sunni Islam prevailed, later revived by the Senussi order (1843)."
+   }
+  ]
+ },
+ {
+  "id": "tripolitania",
+  "name": "Tripolitania (western Libya)",
+  "lon": 13.2,
+  "lat": 32.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Libyan Berber tribes worshipped local gods."
+   },
+   {
+    "from": -700,
+    "faith": "mesopotamian",
+    "note": "Phoenician and Carthaginian cities such as Oea, Sabratha and Leptis worshipped Baal Hammon and Tanit."
+   },
+   {
+    "from": -46,
+    "faith": "hellenic",
+    "note": "Rome annexed the region, and Leptis Magna, birthplace of Emperor Septimius Severus, built great Roman temples."
+   },
+   {
+    "from": 380,
+    "faith": "christian",
+    "note": "Christianity became dominant in the cities of Tripolitania by the late 4th century."
+   },
+   {
+    "from": 455,
+    "faith": "arian",
+    "note": "The Arian Vandals ruled Tripolitania from about 455, a ruling faith over a Nicene Christian population."
+   },
+   {
+    "from": 533,
+    "faith": "christian",
+    "note": "Belisarius reconquered the region for Byzantium in 533 and restored Nicene Christianity."
+   },
+   {
+    "from": 750,
+    "faith": "ibadi",
+    "note": "After the Arab conquest the Berbers of Tripolitania and Jabal Nafusa embraced Ibadi Islam, briefly ruling under the imam Abu al-Khattab in 757."
+   },
+   {
+    "from": 909,
+    "faith": "ismaili",
+    "note": "The Ismaili Fatimids ruled Tripolitania from 909, a ruling faith over Ibadi and Sunni Muslims."
+   },
+   {
+    "from": 1048,
+    "faith": "sunni",
+    "note": "The Zirids broke with the Fatimids in 1048 and Banu Hilal Arabs arrived soon after; Maliki Sunni Islam became dominant, though Jabal Nafusa remains Ibadi."
+   }
+  ]
+ },
+ {
+  "id": "fezzan",
+  "name": "Fezzan (southern Libya)",
+  "lon": 14.4,
+  "lat": 26.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saharan peoples, later the Garamantes of Germa, worshipped local gods."
+   },
+   {
+    "from": 700,
+    "faith": "sunni",
+    "note": "Arab raids from 666 brought Islam to the Fezzan oases."
+   },
+   {
+    "from": 918,
+    "faith": "ibadi",
+    "note": "The Ibadi Banu Khattab dynasty ruled the Fezzan from Zawila from about 918."
+   },
+   {
+    "from": 1172,
+    "faith": "sunni",
+    "note": "Qaraqush's conquest of Zawila in 1172 ended Ibadi rule, and Maliki Sunni Islam prevailed."
+   }
+  ]
+ },
+ {
+  "id": "tunisia",
+  "name": "Tunisia (Carthage and Kairouan)",
+  "lon": 10.1,
+  "lat": 36.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber peoples worshipped local gods."
+   },
+   {
+    "from": -814,
+    "faith": "mesopotamian",
+    "note": "Phoenician Carthage, founded around 814 BC, worshipped Baal Hammon and Tanit."
+   },
+   {
+    "from": -146,
+    "faith": "hellenic",
+    "note": "Rome destroyed Carthage in 146 BC and made Africa a province of Roman religion."
+   },
+   {
+    "from": 330,
+    "faith": "christian",
+    "note": "Roman Africa, home of Tertullian, Cyprian and later Augustine, became largely Christian by the 4th century."
+   },
+   {
+    "from": 439,
+    "faith": "arian",
+    "note": "The Arian Vandals took Carthage in 439 and persecuted the Nicene majority."
+   },
+   {
+    "from": 533,
+    "faith": "christian",
+    "note": "Belisarius reconquered Africa for Byzantium in 533 and restored Nicene Christianity."
+   },
+   {
+    "from": 800,
+    "faith": "sunni",
+    "note": "After the Arab conquest of Carthage (698), most people became Muslim, and under the Aghlabids (800) Kairouan was a centre of Maliki Sunni law."
+   },
+   {
+    "from": 909,
+    "faith": "ismaili",
+    "note": "The Ismaili Fatimid caliphate was proclaimed in Ifriqiya in 909, a ruling faith the Maliki townspeople resisted."
+   },
+   {
+    "from": 1048,
+    "faith": "sunni",
+    "note": "The Zirid emir al-Muizz broke with the Fatimids in 1048 and restored Sunni Islam."
+   }
+  ]
+ },
+ {
+  "id": "algeria-east",
+  "name": "Eastern Algeria (Constantine and Kabylia)",
+  "lon": 6.6,
+  "lat": 36.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber peoples worshipped local gods."
+   },
+   {
+    "from": -200,
+    "faith": "mesopotamian",
+    "note": "The Numidian kings at Cirta adopted the Carthaginian god Baal Hammon, as shown by the stelae of El Hofra."
+   },
+   {
+    "from": -46,
+    "faith": "hellenic",
+    "note": "Rome annexed Numidia after Thapsus in 46 BC, spreading Roman religion."
+   },
+   {
+    "from": 330,
+    "faith": "christian",
+    "note": "Numidia was largely Christian by the 4th century and the heartland of the Donatist church."
+   },
+   {
+    "from": 442,
+    "faith": "arian",
+    "note": "The Arian Vandals ruled Numidia from 442, a ruling faith over a Nicene Christian population."
+   },
+   {
+    "from": 534,
+    "faith": "christian",
+    "note": "Byzantium reconquered Numidia in 534 and restored Nicene Christianity."
+   },
+   {
+    "from": 750,
+    "faith": "sunni",
+    "note": "After the defeat of the Berber queen Kahina around 700, the Berbers of the east converted to Islam over the 8th century."
+   },
+   {
+    "from": 909,
+    "faith": "ismaili",
+    "note": "The Kutama Berbers of Little Kabylia, converted by the missionary Abu Abdallah al-Shii, carried the Ismaili Fatimids to power in 909."
+   },
+   {
+    "from": 1015,
+    "faith": "sunni",
+    "note": "The Hammadid dynasty broke with the Fatimids in 1015 and Maliki Sunni Islam returned."
+   }
+  ]
+ },
+ {
+  "id": "algeria-central",
+  "name": "Central Algeria (Algiers)",
+  "lon": 3.0,
+  "lat": 36.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber peoples worshipped local gods."
+   },
+   {
+    "from": -25,
+    "faith": "hellenic",
+    "note": "Juba II, a Roman client king, ruled Mauretania from Caesarea (Cherchell), and Roman religion followed."
+   },
+   {
+    "from": 380,
+    "faith": "christian",
+    "note": "Mauretania Caesariensis had dozens of bishoprics and a largely Christian population by the late 4th century."
+   },
+   {
+    "from": 750,
+    "faith": "sunni",
+    "note": "After the Arab conquest the Berbers of the region converted to Islam in the 8th century; Maliki Sunni Islam prevailed."
+   }
+  ]
+ },
+ {
+  "id": "algeria-west",
+  "name": "Western Algeria (Tahert and Tlemcen)",
+  "lon": 1.3,
+  "lat": 35.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber peoples worshipped local gods."
+   },
+   {
+    "from": 400,
+    "faith": "christian",
+    "note": "Christianity spread through the Roman towns and Berber kingdoms, such as Altava's Masuna, 'king of the Moors and Romans'."
+   },
+   {
+    "from": 776,
+    "faith": "ibadi",
+    "note": "The Persian Ibn Rustam founded the Ibadi imamate of Tahert in 776, which ruled western Algeria's Berbers as an Ibadi state."
+   },
+   {
+    "from": 909,
+    "faith": "sunni",
+    "note": "After the Fatimids destroyed Tahert in 909, the Zenata Berbers of the west, allied with Cordoba, turned to Maliki Sunni Islam."
+   }
+  ]
+ },
+ {
+  "id": "algeria-sahara",
+  "name": "Algerian Sahara (Ouargla and the Mzab)",
+  "lon": 4.5,
+  "lat": 31.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saharan Berber peoples worshipped local gods."
+   },
+   {
+    "from": 800,
+    "faith": "ibadi",
+    "note": "Ibadi missionaries tied to the imams of Tahert converted the oasis Berbers, and refugees from Tahert founded Sedrata near Ouargla after 909."
+   },
+   {
+    "from": 1300,
+    "faith": "sunni",
+    "note": "Maliki Sunni Islam spread among the oasis peoples, leaving Ibadis concentrated in the Mzab valley, where they remain."
+   }
+  ]
+ },
+ {
+  "id": "morocco-north",
+  "name": "Northern Morocco (Fes)",
+  "lon": -5.0,
+  "lat": 34.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber peoples worshipped local gods; Roman Volubilis and Tingis were small islands of Roman religion."
+   },
+   {
+    "from": 710,
+    "faith": "sunni",
+    "note": "Musa ibn Nusayr's conquest brought the Berbers into Islam, and Idris I founded the Idrisid state at Fes in 789; Maliki Sunni Islam prevailed."
+   }
+  ]
+ },
+ {
+  "id": "morocco-south",
+  "name": "Southern Morocco (Marrakesh)",
+  "lon": -8.0,
+  "lat": 31.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Masmuda and other Berber peoples worshipped local gods."
+   },
+   {
+    "from": 800,
+    "faith": "sunni",
+    "note": "The southern Berbers converted to Islam during the 8th and 9th centuries; the Almoravids founded Marrakesh in 1070 as a capital of Maliki Sunni Islam."
+   }
+  ]
+ },
+ {
+  "id": "western-sahara",
+  "name": "Western Sahara",
+  "lon": -13.2,
+  "lat": 27.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Sanhaja Berber nomads worshipped local gods."
+   },
+   {
+    "from": 1050,
+    "faith": "sunni",
+    "note": "The Almoravid movement of Abdallah ibn Yasin made the Sanhaja nomads Maliki Sunni Muslims in the mid 11th century."
+   }
+  ]
+ },
+ {
+  "id": "mauritania",
+  "name": "Mauritania (coast and Adrar)",
+  "lon": -15.8,
+  "lat": 18.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber and Soninke peoples worshipped local gods."
+   },
+   {
+    "from": 1050,
+    "faith": "sunni",
+    "note": "The Almoravid movement among the Sanhaja Berbers made the region Maliki Sunni Muslim in the mid 11th century."
+   }
+  ]
+ },
+ {
+  "id": "kazakhstan-steppe",
+  "name": "Kazakh Steppe (Astana)",
+  "lon": 71.4,
+  "lat": 51.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early steppe peoples, later the Iranian Saka and Scythians, worshipped sky, fire and ancestors."
+   },
+   {
+    "from": 552,
+    "faith": "tengri",
+    "note": "The Gokturk Khaganate (552) and later Turkic peoples spread the worship of Tengri, the sky god, across the steppe."
+   },
+   {
+    "from": 1500,
+    "faith": "sunni",
+    "note": "The Kazakh Khanate (1465) was ruled by Muslim khans, and Sunni Islam spread among the nomads, blended with older steppe customs."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "kazakhstan-south",
+  "name": "Southern Kazakhstan (Turkestan and Otrar)",
+  "lon": 68.3,
+  "lat": 43.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Syr Darya worshipped local gods."
+   },
+   {
+    "from": 552,
+    "faith": "tengri",
+    "note": "The Western Turkic Khaganate ruled the Syr Darya, and its Turkic nomads worshipped Tengri."
+   },
+   {
+    "from": 960,
+    "faith": "sunni",
+    "note": "The Karakhanid Turks converted to Islam in 960, and Sufis such as Khoja Ahmed Yasawi of Turkestan spread it among the nomads."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "transoxiana",
+  "name": "Transoxiana (Samarkand and Bukhara)",
+  "lon": 66.0,
+  "lat": 39.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Zeravshan valley worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "The Sogdians practised their own form of Zoroastrianism, with fire temples and local gods; Buddhists, Christians and Manichaeans were minorities."
+   },
+   {
+    "from": 875,
+    "faith": "sunni",
+    "note": "After Qutayba's conquest (709 to 712), Transoxiana became majority Muslim under the Samanid emirs of Bukhara (875 to 999), a heartland of Sunni learning."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "khwarazm",
+  "name": "Khwarazm (Khiva)",
+  "lon": 60.4,
+  "lat": 41.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Amu Darya delta worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "Khwarazm, perhaps the Avestan homeland, followed Zoroastrianism, with its distinctive ossuary burials."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "After Qutayba's conquest of 712, Khwarazm became majority Muslim by about the 10th century, home of scholars such as al-Biruni."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "tashkent",
+  "name": "Tashkent (Chach)",
+  "lon": 69.3,
+  "lat": 41.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Chirchik valley worshipped local gods."
+   },
+   {
+    "from": -500,
+    "faith": "zoroastrianism",
+    "note": "The Iranian people of Chach followed a Sogdian style Zoroastrianism."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "Under the Samanids Chach became majority Sunni Muslim by about the 10th century."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "fergana",
+  "name": "Fergana Valley",
+  "lon": 71.8,
+  "lat": 40.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Fergana valley worshipped local gods."
+   },
+   {
+    "from": -500,
+    "faith": "zoroastrianism",
+    "note": "The Iranian farmers of Fergana, the Dayuan of Chinese records, followed a religion akin to Sogdian Zoroastrianism."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "Under the Samanids and then the Karakhanids, Fergana became majority Sunni Muslim by about the 10th century."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "turkmenistan",
+  "name": "Turkmenistan (Merv and Nisa)",
+  "lon": 58.4,
+  "lat": 37.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farmers of the Kopet Dag foothills worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "Margiana and Parthia followed Zoroastrianism; the Parthian kings came from Nisa near Ashgabat."
+   },
+   {
+    "from": 850,
+    "faith": "sunni",
+    "note": "Merv became a base of the Arab conquest in 651 and was majority Muslim by the 9th century; Oghuz Turkmen tribes later brought Sunni Islam to the whole region."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "kyrgyzstan",
+  "name": "Kyrgyzstan (Chuy valley)",
+  "lon": 74.6,
+  "lat": 42.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saka nomads of the Tian Shan worshipped sky, sun and ancestors."
+   },
+   {
+    "from": 552,
+    "faith": "tengri",
+    "note": "The Turkic khaganates ruled from Suyab in the Chuy valley, and their nomads worshipped Tengri."
+   },
+   {
+    "from": 960,
+    "faith": "sunni",
+    "note": "The Karakhanids, ruling from Balasagun, converted to Islam in 960."
+   },
+   {
+    "from": 1220,
+    "faith": "tengri",
+    "note": "The Qara Khitai and then the Mongol conquest returned the valley to nomadic rulers who kept steppe religion."
+   },
+   {
+    "from": 1600,
+    "faith": "sunni",
+    "note": "The Kyrgyz tribes gradually adopted Sunni Islam from the 16th century, completed under the Kokand Khanate in the 18th and 19th centuries."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "tajikistan",
+  "name": "Tajikistan (Hisor and Khatlon)",
+  "lon": 68.8,
+  "lat": 38.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Hisor valley worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "The Iranian peoples of Bactria and Sogdia followed Zoroastrianism; Buddhist monasteries such as Ajina Tepe served a minority."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "Under the Samanids the region became majority Sunni Muslim by about the 10th century."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule closed nearly all mosques and madrasas, unveiled women in the hujum campaign and imposed state atheism, though most people kept a Muslim identity in private."
+   },
+   {
+    "from": 1991,
+    "faith": "sunni",
+    "note": "Independence in 1991 brought an open revival of Sunni Islam, with new mosques and religious schools, under a secular state."
+   }
+  ]
+ },
+ {
+  "id": "pamir",
+  "name": "Pamirs (Badakhshan)",
+  "lon": 71.6,
+  "lat": 37.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Iranian mountain peoples of the Pamirs worshipped local gods and sacred fires."
+   },
+   {
+    "from": 1070,
+    "faith": "ismaili",
+    "note": "The poet and missionary Nasir Khusraw preached Ismaili Islam in Badakhshan in the 11th century, and the Pamiris became Ismailis, followers of the Aga Khan."
+   },
+   {
+    "from": 1928,
+    "faith": "secular",
+    "note": "Soviet rule imposed state atheism and closed the region's prayer houses."
+   },
+   {
+    "from": 1991,
+    "faith": "ismaili",
+    "note": "After independence the Pamiris openly returned to Ismaili Islam, supported by the Aga Khan's institutions."
+   }
+  ]
+ },
+ {
+  "id": "kabul",
+  "name": "Kabul and the Kabul valley",
+  "lon": 69.2,
+  "lat": 34.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Kabul valley worshipped local gods."
+   },
+   {
+    "from": -1500,
+    "faith": "vedic",
+    "note": "The Kabul river, the Kubha of the Rigveda, was home to Indo-Aryans who followed Vedic religion."
+   },
+   {
+    "from": -250,
+    "faith": "buddhism",
+    "note": "Ashoka's missions and then Indo-Greek and Kushan patrons made the valley a Buddhist land, with great stupas at Hadda and Kapisa."
+   },
+   {
+    "from": 850,
+    "faith": "hinduism",
+    "note": "The brahmin Hindu Shahi dynasty displaced the Buddhist Turk Shahis around 850, and Shaivism gained ground in the Kabul valley."
+   },
+   {
+    "from": 980,
+    "faith": "sunni",
+    "note": "Sabuktigin of Ghazni drove the Hindu Shahis from the Kabul valley in the 980s, and the region became Sunni Muslim under the Ghaznavids."
+   }
+  ]
+ },
+ {
+  "id": "herat",
+  "name": "Herat (Aria)",
+  "lon": 62.2,
+  "lat": 34.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Hari river valley worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "Aria was a Zoroastrian province of the Achaemenid, Parthian and Sasanian empires."
+   },
+   {
+    "from": 850,
+    "faith": "sunni",
+    "note": "After the Arab conquest of 652, Herat became majority Sunni Muslim by the 9th century and later the Timurid capital of learning."
+   }
+  ]
+ },
+ {
+  "id": "balkh",
+  "name": "Balkh (Bactria)",
+  "lon": 66.9,
+  "lat": 36.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of Bactria worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "Bactria, where tradition says Zoroaster preached and died, followed Zoroastrianism under the Achaemenids."
+   },
+   {
+    "from": 50,
+    "faith": "buddhism",
+    "note": "Under Kushan patronage Buddhism became the leading faith of Bactria alongside Iranian cults; Xuanzang found about 100 monasteries at Balkh in 630."
+   },
+   {
+    "from": 800,
+    "faith": "sunni",
+    "note": "After the Arab conquest the Barmakid priests of Balkh's Nava Vihara converted to Islam, and Bactria was majority Sunni Muslim by the 9th century."
+   }
+  ]
+ },
+ {
+  "id": "hazarajat",
+  "name": "Hazarajat (Bamiyan)",
+  "lon": 67.8,
+  "lat": 34.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early mountain peoples of central Afghanistan worshipped local gods."
+   },
+   {
+    "from": 100,
+    "faith": "buddhism",
+    "note": "Bamiyan was a Buddhist kingdom, carving its colossal Buddhas in the 6th century."
+   },
+   {
+    "from": 1000,
+    "faith": "sunni",
+    "note": "Saffarid and Ghaznavid conquests made the region Sunni Muslim by the 11th century."
+   },
+   {
+    "from": 1600,
+    "faith": "shia",
+    "note": "The Hazaras adopted Twelver Shia Islam, probably under Safavid influence in the 16th and 17th centuries."
+   }
+  ]
+ },
+ {
+  "id": "kandahar",
+  "name": "Kandahar (Arachosia)",
+  "lon": 65.7,
+  "lat": 31.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Helmand and Arghandab valleys worshipped local gods."
+   },
+   {
+    "from": -600,
+    "faith": "zoroastrianism",
+    "note": "Arachosia, the Avestan Harahvaiti, followed Iranian religion under the Achaemenids; Ashoka later set up Greek and Aramaic edicts here."
+   },
+   {
+    "from": 1000,
+    "faith": "sunni",
+    "note": "After the Saffarids overthrew the Zunbil kings in 870, Islam spread among the Pashtun tribes under Ghaznavid rule (977 to 1186)."
+   }
+  ]
+ }
+]

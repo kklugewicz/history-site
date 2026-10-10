@@ -1,0 +1,3294 @@
+[
+ {
+  "id": "punjab-pakistan",
+  "name": "West Punjab (Lahore)",
+  "lon": 74.35,
+  "lat": 31.55,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Harappan cities of the Indus valley worshipped mother goddesses, sacred animals and possibly a horned proto-Shiva, alongside older village spirits."
+   },
+   {
+    "from": -1500,
+    "faith": "vedic",
+    "note": "Indo-Aryan tribes settled the land of the five rivers, where the hymns of the Rigveda were composed."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "Under the Maurya emperor Ashoka and later the Kushans, Buddhist monasteries flourished across the Punjab."
+   },
+   {
+    "from": 500,
+    "faith": "hinduism",
+    "note": "Gupta influence and the Huna king Mihirakula's persecution of Buddhists left Shaiva and Vaishnava Hinduism dominant."
+   },
+   {
+    "from": 1300,
+    "faith": "sunni",
+    "note": "Ruled by Muslims since Mahmud of Ghazni took Lahore in 1021, western Punjab turned to Islam through Sufi shrines, and Muslims stayed the majority even under Ranjit Singh's Sikh Empire from 1799 to 1849."
+   }
+  ]
+ },
+ {
+  "id": "punjab-india",
+  "name": "East Punjab (Amritsar and Ludhiana)",
+  "lon": 75.6,
+  "lat": 31.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Harappan cities of the Indus valley worshipped mother goddesses, sacred animals and possibly a horned proto-Shiva, alongside older village spirits."
+   },
+   {
+    "from": -1500,
+    "faith": "vedic",
+    "note": "Indo-Aryan tribes settled the Punjab, where the Rigveda's hymns to Indra, Agni and Soma were composed."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "Ashoka's Maurya empire and later the Kushans spread Buddhist monasteries through the Punjab."
+   },
+   {
+    "from": 500,
+    "faith": "hinduism",
+    "note": "From the Gupta age Hindu worship of Shiva and Vishnu prevailed, and it stayed the faith of most villagers through centuries of Muslim rule."
+   },
+   {
+    "from": 1966,
+    "faith": "sikhism",
+    "note": "Guru Nanak's faith, born here around 1500, became the majority after Partition in 1947 drove Muslims west and the 1966 split of Hindi-speaking Haryana left a Sikh-majority Punjab state."
+   }
+  ]
+ },
+ {
+  "id": "gandhara",
+  "name": "Gandhara and Peshawar",
+  "lon": 71.55,
+  "lat": 34.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The hill and valley peoples of the Peshawar basin honoured local spirits and ancestors."
+   },
+   {
+    "from": -1500,
+    "faith": "vedic",
+    "note": "Gandhara appears in the Rigveda as a land of Indo-Aryan tribes performing Vedic fire sacrifices."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "Ashoka sent missionaries to Gandhara, and Taxila and Peshawar became great centres of Buddhist learning."
+   },
+   {
+    "from": 127,
+    "faith": "mahayana",
+    "note": "The Kushan emperor Kanishka built the great Peshawar stupa, and Gandharan monks and sculptors helped shape Mahayana Buddhism and the Buddha image."
+   },
+   {
+    "from": 822,
+    "faith": "hinduism",
+    "note": "The Hindu Shahi dynasty replaced the Buddhist Turk Shahis, and Shaiva Hinduism became the ruling faith of the region."
+   },
+   {
+    "from": 1001,
+    "faith": "sunni",
+    "note": "Mahmud of Ghazni defeated the Hindu Shahi king Jayapala near Peshawar, and the Pashtun and other peoples of the region became Sunni Muslims."
+   }
+  ]
+ },
+ {
+  "id": "multan",
+  "name": "Multan",
+  "lon": 71.47,
+  "lat": 30.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Harappan cities of the Indus valley worshipped mother goddesses, sacred animals and possibly a horned proto-Shiva, alongside older village spirits."
+   },
+   {
+    "from": -1500,
+    "faith": "vedic",
+    "note": "Indo-Aryan settlers brought Vedic sacrifice to the middle Indus."
+   },
+   {
+    "from": -300,
+    "faith": "hinduism",
+    "note": "Multan grew around its famous temple of the sun god Surya, a pilgrimage centre for all of northern India."
+   },
+   {
+    "from": 712,
+    "faith": "sunni",
+    "note": "Muhammad bin Qasim's Umayyad army took Multan, which became a Muslim-ruled city though its sun temple still drew Hindu pilgrims."
+   },
+   {
+    "from": 959,
+    "faith": "ismaili",
+    "note": "Ismaili missionaries won over Multan's rulers, who recognised the Fatimid caliphs in Cairo and destroyed the sun temple's idol; this was the ruling faith rather than the people's."
+   },
+   {
+    "from": 1010,
+    "faith": "sunni",
+    "note": "Mahmud of Ghazni crushed the Ismaili state, and Suhrawardi Sufi saints such as Bahauddin Zakariya later made Multan a Sunni stronghold."
+   }
+  ]
+ },
+ {
+  "id": "sindh",
+  "name": "Sindh",
+  "lon": 68.37,
+  "lat": 25.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Mohenjo-daro and the Harappan towns of Sindh worshipped mother goddesses and sacred animals, with ritual bathing in the Great Bath."
+   },
+   {
+    "from": -1200,
+    "faith": "vedic",
+    "note": "Indo-Aryan peoples named the river Sindhu and brought Vedic rites to its lower valley."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "Buddhism spread under Ashoka, and the Chinese pilgrim Xuanzang still found hundreds of Buddhist monasteries in Sindh around 640."
+   },
+   {
+    "from": 632,
+    "faith": "hinduism",
+    "note": "The Brahmin minister Chach seized the throne from the Buddhist Rai dynasty, and Brahmanical Hinduism became the ruling faith."
+   },
+   {
+    "from": 712,
+    "faith": "sunni",
+    "note": "Muhammad bin Qasim conquered Sindh for the Umayyad caliphate; conversion of its people to Sunni Islam took several centuries, aided by Sufi saints like Lal Shahbaz Qalandar."
+   }
+  ]
+ },
+ {
+  "id": "balochistan",
+  "name": "Balochistan",
+  "lon": 67.0,
+  "lat": 30.18,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Farming villages like Mehrgarh, among the oldest in South Asia, and later pastoral tribes worshipped local gods and ancestors."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "Arabs conquered Makran from 644, and Sunni Islam spread as Baloch tribes moved east from Iran into the region between the 10th and 14th centuries."
+   }
+  ]
+ },
+ {
+  "id": "kashmir",
+  "name": "Kashmir Valley",
+  "lon": 74.8,
+  "lat": 34.08,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early Kashmiris revered the Naga serpent spirits of the valley's springs and lakes."
+   },
+   {
+    "from": -1000,
+    "faith": "vedic",
+    "note": "Brahmin settlers brought Vedic ritual to the valley."
+   },
+   {
+    "from": -250,
+    "faith": "buddhism",
+    "note": "Ashoka founded Srinagar's first monasteries, and the Kushan king Kanishka is said to have held the Fourth Buddhist Council in Kashmir."
+   },
+   {
+    "from": 600,
+    "faith": "hinduism",
+    "note": "Under the Karkota and Utpala kings Kashmir became a centre of Hindu learning, home of Kashmir Shaivism and the Martand sun temple."
+   },
+   {
+    "from": 1400,
+    "faith": "sunni",
+    "note": "After Shah Mir founded a sultanate in 1339, the Sufi Mir Sayyid Ali Hamadani and Sultan Sikandar's reign (1389 to 1413) turned most Kashmiris to Islam."
+   }
+  ]
+ },
+ {
+  "id": "ladakh",
+  "name": "Ladakh",
+  "lon": 77.58,
+  "lat": 34.16,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Dard and Tibetan herders of Ladakh followed Bon-like spirit cults of mountains and passes."
+   },
+   {
+    "from": 950,
+    "faith": "vajrayana",
+    "note": "After Tibet's empire collapsed a Tibetan dynasty founded the kingdom of Ladakh, and monks like Rinchen Zangpo built monasteries such as Alchi."
+   }
+  ]
+ },
+ {
+  "id": "baltistan",
+  "name": "Gilgit-Baltistan",
+  "lon": 75.63,
+  "lat": 35.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The mountain peoples of Baltistan and Gilgit worshipped spirits of peaks and springs."
+   },
+   {
+    "from": 750,
+    "faith": "vajrayana",
+    "note": "Tibet's empire conquered Baltistan in the 730s, and the Balti people became Tibetan Buddhists."
+   },
+   {
+    "from": 1500,
+    "faith": "shia",
+    "note": "The Kashmiri Sufi Mir Shamsuddin Iraqi converted the Balti people to Noorbakhshi Islam, which later gave way largely to Twelver Shia Islam, while Hunza became Ismaili."
+   }
+  ]
+ },
+ {
+  "id": "delhi",
+  "name": "Delhi and the Upper Doab",
+  "lon": 77.2,
+  "lat": 28.62,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Farmers of the upper Ganges and Yamuna worshipped village gods and fertility spirits."
+   },
+   {
+    "from": -1200,
+    "faith": "vedic",
+    "note": "The Kuru kingdom around Delhi became the heartland of Vedic religion, where the great Vedic rituals and texts were codified."
+   },
+   {
+    "from": -500,
+    "faith": "hinduism",
+    "note": "Vedic religion grew into Hinduism, with the epics placing the Pandavas' city of Indraprastha here."
+   },
+   {
+    "from": 1206,
+    "faith": "sunni",
+    "note": "The Delhi Sultanate and later the Mughals made Delhi the capital of Muslim India; this was the ruling faith, while most people of the surrounding countryside stayed Hindu."
+   },
+   {
+    "from": 1857,
+    "faith": "hinduism",
+    "note": "After the British deposed the last Mughal emperor in 1857, Delhi's Hindu majority came to the fore, reinforced by Hindu and Sikh refugees at Partition in 1947."
+   }
+  ]
+ },
+ {
+  "id": "varanasi",
+  "name": "Awadh and Varanasi",
+  "lon": 82.5,
+  "lat": 26.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Villagers of the middle Ganges worshipped mother goddesses, snake spirits and tree spirits."
+   },
+   {
+    "from": -1000,
+    "faith": "vedic",
+    "note": "The kingdoms of Kosala and Kashi adopted Vedic sacrifice led by Brahmin priests."
+   },
+   {
+    "from": -500,
+    "faith": "hinduism",
+    "note": "Although the Buddha preached his first sermon at nearby Sarnath, Kashi (Varanasi) grew into Hinduism's holiest city, and Ayodhya into the city of Rama."
+   }
+  ]
+ },
+ {
+  "id": "bihar",
+  "name": "Bihar (Magadha)",
+  "lon": 85.14,
+  "lat": 25.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farmers of the eastern Ganges plain worshipped local spirits and mother goddesses."
+   },
+   {
+    "from": -1100,
+    "faith": "vedic",
+    "note": "Vedic culture reached Videha and Magadha, where Brahmin priests held sway."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "Magadha, where the Buddha and Mahavira had taught, became the core of Ashoka's Buddhist empire after his conversion."
+   },
+   {
+    "from": 320,
+    "faith": "hinduism",
+    "note": "The Gupta emperors, ruling from Pataliputra, championed Vishnu and Shiva, though Nalanda grew into Buddhism's greatest university."
+   },
+   {
+    "from": 750,
+    "faith": "vajrayana",
+    "note": "The Pala kings patronised tantric Buddhism at Nalanda and Vikramashila, sending teachers like Atisha to Tibet; this was the ruling faith, beside a largely Hindu population."
+   },
+   {
+    "from": 1200,
+    "faith": "hinduism",
+    "note": "Bakhtiyar Khalji's raiders sacked Nalanda and Vikramashila around 1200, and Buddhism vanished from Bihar, leaving Hinduism as the people's faith."
+   }
+  ]
+ },
+ {
+  "id": "west-bengal",
+  "name": "West Bengal",
+  "lon": 88.36,
+  "lat": 22.57,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of the Bengal delta worshipped river, tree and serpent deities such as Manasa."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "Mauryan rule carried Buddhism into Bengal, where ports like Tamralipti linked it to Sri Lanka and Southeast Asia."
+   },
+   {
+    "from": 350,
+    "faith": "hinduism",
+    "note": "Gupta rule brought Brahmin settlers and Hindu temple worship to Bengal."
+   },
+   {
+    "from": 750,
+    "faith": "vajrayana",
+    "note": "The Pala dynasty made Bengal the last great stronghold of Buddhism, patronising tantric monasteries; this was the ruling faith while many subjects worshipped Hindu gods."
+   },
+   {
+    "from": 1161,
+    "faith": "hinduism",
+    "note": "The Sena kings restored orthodox Hinduism, and Bengal's Hindus kept their faith through Muslim rule, with Kali and Durga worship and Chaitanya's Vaishnavism."
+   }
+  ]
+ },
+ {
+  "id": "bangladesh",
+  "name": "Bangladesh (East Bengal)",
+  "lon": 90.4,
+  "lat": 23.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The rice farmers and fishers of the eastern delta worshipped river, snake and village deities."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "A Mauryan inscription at Mahasthangarh shows Buddhist imperial rule in northern Bengal."
+   },
+   {
+    "from": 350,
+    "faith": "hinduism",
+    "note": "Gupta rule and Brahmin settlement spread Hindu worship into the delta."
+   },
+   {
+    "from": 750,
+    "faith": "vajrayana",
+    "note": "The Pala and Chandra kings were patrons of tantric Buddhism, building monasteries like Somapura; it was the court faith beside Hindu cults."
+   },
+   {
+    "from": 1161,
+    "faith": "hinduism",
+    "note": "The Sena dynasty revived orthodox Hinduism across Bengal before Bakhtiyar Khalji's Muslim conquest in 1204."
+   },
+   {
+    "from": 1600,
+    "faith": "sunni",
+    "note": "Under Mughal rule from 1576, Sufi-led clearing and settlement of the eastern delta's forests made Muslims the majority of East Bengal's peasants."
+   }
+  ]
+ },
+ {
+  "id": "assam",
+  "name": "Assam (Kamarupa)",
+  "lon": 91.74,
+  "lat": 26.14,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tibeto-Burman and Austroasiatic peoples of the Brahmaputra valley practised animist and ancestor religions."
+   },
+   {
+    "from": 350,
+    "faith": "hinduism",
+    "note": "The Varman kings of Kamarupa adopted Hinduism, and the Kamakhya goddess temple became a great centre of Shakta worship."
+   }
+  ]
+ },
+ {
+  "id": "ahom",
+  "name": "Upper Assam (Ahom)",
+  "lon": 94.64,
+  "lat": 26.98,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The hill and valley peoples of Upper Assam followed animist religions, and the Tai Ahom who arrived in 1228 kept their own ancestral gods."
+   },
+   {
+    "from": 1550,
+    "faith": "hinduism",
+    "note": "Sankardeva's devotional Vaishnavism won over much of Upper Assam, and the Ahom kings themselves gradually embraced Hinduism."
+   }
+  ]
+ },
+ {
+  "id": "nagaland-mizoram",
+  "name": "Naga and Mizo Hills",
+  "lon": 94.11,
+  "lat": 25.67,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Naga, Mizo and Kuki peoples practised animist religions centred on village spirits, feasts of merit and headhunting rites."
+   },
+   {
+    "from": 1950,
+    "faith": "protestant",
+    "note": "American Baptist and Welsh missionaries converted the Naga and Mizo peoples, making Nagaland strongly Baptist and Mizoram mainly Presbyterian by the mid 20th century."
+   }
+  ]
+ },
+ {
+  "id": "manipur",
+  "name": "Manipur",
+  "lon": 93.94,
+  "lat": 24.81,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Meitei people worshipped the Sanamahi gods and household ancestors in the Manipur valley."
+   },
+   {
+    "from": 1717,
+    "faith": "hinduism",
+    "note": "King Pamheiba (Garib Niwaz) adopted Gaudiya Vaishnavism and made it the state religion of the Meitei kingdom."
+   }
+  ]
+ },
+ {
+  "id": "odisha",
+  "name": "Odisha (Kalinga)",
+  "lon": 85.82,
+  "lat": 20.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tribal peoples of Kalinga worshipped forest, earth and village goddesses."
+   },
+   {
+    "from": -261,
+    "faith": "buddhism",
+    "note": "Ashoka's bloody conquest of Kalinga led to his remorse and embrace of Buddhism, which spread across the region."
+   },
+   {
+    "from": -150,
+    "faith": "jainism",
+    "note": "King Kharavela of Kalinga, a devout Jain, carved the Udayagiri caves for Jain monks; Jainism was the royal faith."
+   },
+   {
+    "from": 400,
+    "faith": "hinduism",
+    "note": "Hindu dynasties rose, building temples such as the Lingaraja at Bhubaneswar and the Jagannath temple at Puri."
+   }
+  ]
+ },
+ {
+  "id": "malwa",
+  "name": "Malwa and Central India",
+  "lon": 77.4,
+  "lat": 23.26,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Forest and farming peoples of central India worshipped local gods and spirits."
+   },
+   {
+    "from": -800,
+    "faith": "vedic",
+    "note": "The kingdom of Avanti around Ujjain took up Vedic religion."
+   },
+   {
+    "from": -260,
+    "faith": "buddhism",
+    "note": "Ashoka, once viceroy at Ujjain, endowed the great stupa at Sanchi, and Buddhism flourished in Malwa."
+   },
+   {
+    "from": 320,
+    "faith": "hinduism",
+    "note": "Gupta rule, centred in part on Ujjain, made Hinduism dominant, and the Paramara kings later built great Shiva temples."
+   }
+  ]
+ },
+ {
+  "id": "rajasthan",
+  "name": "Rajasthan",
+  "lon": 75.79,
+  "lat": 26.91,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Herders and farmers of the Thar fringe worshipped local gods and ancestors."
+   },
+   {
+    "from": -1200,
+    "faith": "vedic",
+    "note": "The Matsya kingdom and other Vedic peoples settled northeast Rajasthan."
+   },
+   {
+    "from": -400,
+    "faith": "hinduism",
+    "note": "Hinduism prevailed, later championed by Rajput kings, while Jain merchants built temples such as those at Mount Abu."
+   }
+  ]
+ },
+ {
+  "id": "gujarat",
+  "name": "Gujarat",
+  "lon": 72.57,
+  "lat": 23.02,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Harappan ports such as Lothal and Dholavira worshipped fire altars, mother goddesses and sacred animals."
+   },
+   {
+    "from": -1000,
+    "faith": "vedic",
+    "note": "Vedic culture spread to Saurashtra and the Gujarat plains."
+   },
+   {
+    "from": -300,
+    "faith": "hinduism",
+    "note": "Hinduism became the main faith, with the Somnath temple and Krishna's Dwarka as great shrines, beside a strong Jain merchant community."
+   },
+   {
+    "from": 1160,
+    "faith": "jainism",
+    "note": "The Solanki king Kumarapala, guided by the monk Hemachandra, made Jainism the court faith and banned animal slaughter."
+   },
+   {
+    "from": 1173,
+    "faith": "hinduism",
+    "note": "After Kumarapala's death Hindu royal patronage returned, and Hindus stayed the majority under the Gujarat Sultanate and the Mughals."
+   }
+  ]
+ },
+ {
+  "id": "maharashtra",
+  "name": "Maharashtra (Deccan)",
+  "lon": 73.86,
+  "lat": 18.52,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Deccan farmers and herders worshipped mother goddesses and local deities such as Khandoba's forerunners."
+   },
+   {
+    "from": -700,
+    "faith": "vedic",
+    "note": "Vedic Brahmins and their rites spread south across the Vindhyas into the Deccan."
+   },
+   {
+    "from": -200,
+    "faith": "hinduism",
+    "note": "The Satavahana kings performed Vedic sacrifices while merchants funded Buddhist caves at Karla and Ajanta, and later Rashtrakuta kings carved Ellora's Kailasa temple."
+   }
+  ]
+ },
+ {
+  "id": "andhra",
+  "name": "Andhra and Telangana",
+  "lon": 79.0,
+  "lat": 17.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Megalith-building peoples of the eastern Deccan honoured their ancestors and local spirits."
+   },
+   {
+    "from": -250,
+    "faith": "buddhism",
+    "note": "Ashoka's missionaries reached Andhra, and the great stupa of Amaravati was begun."
+   },
+   {
+    "from": 150,
+    "faith": "mahayana",
+    "note": "Under the Satavahanas and Ikshvakus, Amaravati and Nagarjunakonda became great Buddhist centres, linked to the Mahayana philosopher Nagarjuna."
+   },
+   {
+    "from": 400,
+    "faith": "hinduism",
+    "note": "The Vishnukundin and Pallava kings revived Brahmanical Hinduism, and Buddhism faded; Hindus stayed the majority even under the Muslim Qutb Shahis and Nizams."
+   }
+  ]
+ },
+ {
+  "id": "goa",
+  "name": "Goa",
+  "lon": 73.83,
+  "lat": 15.49,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Konkan villagers worshipped earth and village goddesses."
+   },
+   {
+    "from": -200,
+    "faith": "hinduism",
+    "note": "Hinduism spread along the Konkan coast, and the Kadamba kings built temples in Goa."
+   },
+   {
+    "from": 1560,
+    "faith": "catholic",
+    "note": "Portugal conquered Goa in 1510, and with the Inquisition from 1560 forced and mass conversions made the Old Conquests overwhelmingly Catholic."
+   },
+   {
+    "from": 1900,
+    "faith": "hinduism",
+    "note": "The mainly Hindu New Conquests, added in 1763 to 1788, and Catholic emigration made Hindus the majority of Goa again by the early 20th century."
+   }
+  ]
+ },
+ {
+  "id": "karnataka",
+  "name": "Karnataka",
+  "lon": 76.0,
+  "lat": 13.21,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the southern Deccan honoured ancestors with megaliths and worshipped village deities."
+   },
+   {
+    "from": -200,
+    "faith": "hinduism",
+    "note": "Brahmin settlers and the Satavahana and Kadamba kings spread Hindu worship."
+   },
+   {
+    "from": 350,
+    "faith": "jainism",
+    "note": "The Western Ganga kings and later the Rashtrakutas were great patrons of Jainism, building Shravanabelagola's giant Gommateshwara statue; Jainism was the leading court faith."
+   },
+   {
+    "from": 1116,
+    "faith": "hinduism",
+    "note": "The Hoysala king Vishnuvardhana turned from Jainism to Vaishnavism under Ramanuja, Basava founded the Lingayats, and the Vijayanagara empire later made the south a Hindu bastion."
+   }
+  ]
+ },
+ {
+  "id": "tamil-nadu",
+  "name": "Tamil Nadu",
+  "lon": 79.14,
+  "lat": 10.79,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early Tamils worshipped Murugan, Korravai and hero stones for fallen warriors."
+   },
+   {
+    "from": -300,
+    "faith": "hinduism",
+    "note": "Sangam-age kings of the Chera, Chola and Pandya lines patronised Vedic sacrifice alongside Tamil gods."
+   },
+   {
+    "from": 300,
+    "faith": "jainism",
+    "note": "Under the Kalabhra rulers Jain and Buddhist monks gained royal favour and shaped Tamil literature; this was the court faith of the age."
+   },
+   {
+    "from": 600,
+    "faith": "hinduism",
+    "note": "The bhakti hymns of the Shaiva Nayanars and Vaishnava Alvars won back kings like the Pallava Mahendravarman I, and the Cholas raised great temples like Thanjavur's."
+   }
+  ]
+ },
+ {
+  "id": "kerala",
+  "name": "Kerala",
+  "lon": 76.3,
+  "lat": 9.95,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Chera country of the Sangam age worshipped Dravidian gods, ancestors and serpent spirits."
+   },
+   {
+    "from": 800,
+    "faith": "hinduism",
+    "note": "Brahmin settlement under the Chera Perumals made Hinduism dominant, while Thomas Christians of the Syriac church and Mappila Muslims grew into large minorities."
+   }
+  ]
+ },
+ {
+  "id": "sri-lanka",
+  "name": "Sri Lanka",
+  "lon": 80.63,
+  "lat": 7.29,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Vedda and early Sinhalese worshipped yakkha and naga spirits."
+   },
+   {
+    "from": -247,
+    "faith": "theravada",
+    "note": "Ashoka's son Mahinda converted King Devanampiya Tissa of Anuradhapura, and the island became the lasting heartland of Theravada Buddhism."
+   }
+  ]
+ },
+ {
+  "id": "jaffna",
+  "name": "Jaffna (Northern Sri Lanka)",
+  "lon": 80.01,
+  "lat": 9.66,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The early people of northern Lanka worshipped naga serpent spirits."
+   },
+   {
+    "from": -200,
+    "faith": "theravada",
+    "note": "Buddhism spread to the north from Anuradhapura, and Buddhist sites stood in the Jaffna peninsula."
+   },
+   {
+    "from": 1215,
+    "faith": "hinduism",
+    "note": "After Kalinga Magha's invasion and the rise of the Tamil Jaffna kingdom, Shaiva Hinduism became the faith of the north."
+   }
+  ]
+ },
+ {
+  "id": "nepal",
+  "name": "Nepal",
+  "lon": 85.32,
+  "lat": 27.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kirata and other hill peoples worshipped ancestral and nature spirits."
+   },
+   {
+    "from": -250,
+    "faith": "buddhism",
+    "note": "Ashoka honoured the Buddha's birthplace at Lumbini, and Buddhism spread to the Kathmandu valley."
+   },
+   {
+    "from": 400,
+    "faith": "hinduism",
+    "note": "The Licchavi kings made Hinduism the royal faith while supporting Newar Buddhism, and Nepal later became the world's only Hindu kingdom."
+   }
+  ]
+ },
+ {
+  "id": "bhutan",
+  "name": "Bhutan",
+  "lon": 89.64,
+  "lat": 27.47,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of the Bhutanese valleys followed Bon and local mountain deities."
+   },
+   {
+    "from": 750,
+    "faith": "vajrayana",
+    "note": "Padmasambhava's 8th century visit began Bhutan's conversion, and in 1616 Zhabdrung Ngawang Namgyal unified it as a Drukpa Kagyu Buddhist state."
+   }
+  ]
+ },
+ {
+  "id": "tibet",
+  "name": "Central Tibet",
+  "lon": 91.11,
+  "lat": 29.65,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tibetans followed Bon, with priests serving the sky-descended kings and mountain gods."
+   },
+   {
+    "from": 779,
+    "faith": "vajrayana",
+    "note": "King Trisong Detsen founded Samye monastery with Padmasambhava and Shantarakshita and made Buddhism the state religion."
+   },
+   {
+    "from": 842,
+    "faith": "folk",
+    "note": "Langdarma's persecution of monks and the collapse of the Tibetan empire ended royal Buddhism for over a century."
+   },
+   {
+    "from": 978,
+    "faith": "vajrayana",
+    "note": "Monks returning from Amdo and teachers like Atisha began the later spread of Buddhism, and the Dalai Lamas ruled Tibet from 1642."
+   }
+  ]
+ },
+ {
+  "id": "amdo",
+  "name": "Amdo (Qinghai)",
+  "lon": 100.62,
+  "lat": 36.28,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Qiang and Xianbei herders around Lake Kokonor, including the Tuyuhun kingdom, followed shamanic and mountain cults."
+   },
+   {
+    "from": 900,
+    "faith": "vajrayana",
+    "note": "Monks fleeing Langdarma's persecution kept Buddhism alive in Amdo, which later gave birth to Tsongkhapa and great monasteries such as Kumbum and Labrang."
+   }
+  ]
+ },
+ {
+  "id": "kham",
+  "name": "Kham (Eastern Tibet)",
+  "lon": 97.17,
+  "lat": 31.14,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The clans of Kham followed Bon and the worship of mountain deities."
+   },
+   {
+    "from": 1100,
+    "faith": "vajrayana",
+    "note": "Monasteries spread across Kham in the later diffusion of Buddhism, and the first Karmapa founded Karma Gon here in 1147."
+   }
+  ]
+ },
+ {
+  "id": "kashgar",
+  "name": "Kashgar (Western Tarim)",
+  "lon": 75.99,
+  "lat": 39.47,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saka and other Iranian-speaking oasis dwellers worshipped local and Iranian gods."
+   },
+   {
+    "from": 100,
+    "faith": "buddhism",
+    "note": "Buddhism came over the Pamirs from Kushan Gandhara, and Kashgar's monasteries followed the Sarvastivada school."
+   },
+   {
+    "from": 934,
+    "faith": "sunni",
+    "note": "Satuq Bughra Khan of the Kara-Khanids converted to Islam, making Kashgar the first Turkic Muslim realm and the base for the conquest of the Tarim."
+   }
+  ]
+ },
+ {
+  "id": "khotan",
+  "name": "Khotan",
+  "lon": 79.92,
+  "lat": 37.11,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saka settlers of the southern Tarim oasis worshipped Iranian and local gods."
+   },
+   {
+    "from": -50,
+    "faith": "buddhism",
+    "note": "Buddhism reached Khotan from Kashmir and Gandhara, according to tradition through the monk Vairocana."
+   },
+   {
+    "from": 300,
+    "faith": "mahayana",
+    "note": "Khotan became a great centre of Mahayana Buddhism, sending sutras and teachers to China."
+   },
+   {
+    "from": 1006,
+    "faith": "sunni",
+    "note": "The Kara-Khanids conquered Khotan after a long holy war, and its people became Sunni Muslims."
+   }
+  ]
+ },
+ {
+  "id": "kucha",
+  "name": "Kucha (Northern Tarim)",
+  "lon": 82.96,
+  "lat": 41.72,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tocharian-speaking people of Kucha worshipped local gods."
+   },
+   {
+    "from": 100,
+    "faith": "buddhism",
+    "note": "Kucha became a Buddhist kingdom of Sarvastivada monks and painted caves like Kizil, birthplace of the translator Kumarajiva."
+   },
+   {
+    "from": 1390,
+    "faith": "sunni",
+    "note": "The Chagatai Muslim khans of Moghulistan forcibly converted Kucha and its neighbours to Islam."
+   }
+  ]
+ },
+ {
+  "id": "turfan",
+  "name": "Turfan (Gaochang and Qocho)",
+  "lon": 89.19,
+  "lat": 42.95,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Jushi people of the Turfan oasis worshipped local gods."
+   },
+   {
+    "from": 450,
+    "faith": "mahayana",
+    "note": "The Han Chinese kingdom of Gaochang made Turfan a Mahayana Buddhist oasis, as was Tang Xizhou after 640."
+   },
+   {
+    "from": 850,
+    "faith": "manichaeism",
+    "note": "Uyghurs fleeing Mongolia founded the kingdom of Qocho, whose rulers kept their Manichaean state faith."
+   },
+   {
+    "from": 1000,
+    "faith": "mahayana",
+    "note": "Qocho's Uyghur rulers and people turned from Manichaeism to Buddhism, filling the Bezeklik caves with murals."
+   },
+   {
+    "from": 1450,
+    "faith": "sunni",
+    "note": "The Muslim khans of Moghulistan conquered Turfan, and the last Buddhist Uyghurs became Muslims by about 1500."
+   }
+  ]
+ },
+ {
+  "id": "dzungaria",
+  "name": "Dzungaria (Northern Xinjiang)",
+  "lon": 87.62,
+  "lat": 43.83,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early herders of the Dzungarian steppe worshipped nature spirits."
+   },
+   {
+    "from": -200,
+    "faith": "tengri",
+    "note": "Xiongnu and later Turkic nomads brought the cult of the sky god Tengri and their shamans."
+   },
+   {
+    "from": 850,
+    "faith": "manichaeism",
+    "note": "The Uyghur kingdom of Qocho, with its summer capital at Beshbalik, kept the Manichaean faith of its rulers."
+   },
+   {
+    "from": 1000,
+    "faith": "mahayana",
+    "note": "The Uyghurs of Beshbalik and Qocho converted to Buddhism."
+   },
+   {
+    "from": 1400,
+    "faith": "tengri",
+    "note": "Oirat Mongol nomads took over the steppe and followed shamanism."
+   },
+   {
+    "from": 1615,
+    "faith": "vajrayana",
+    "note": "The Oirat nobles adopted Gelug Buddhism, and the Dzungar Khanate became a Tibetan Buddhist power."
+   },
+   {
+    "from": 1760,
+    "faith": "chinese",
+    "note": "The Qing destroyed the Dzungars and resettled the land with Han Chinese, Hui and others."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most of the Han majority of northern Xinjiang profess none."
+   }
+  ]
+ },
+ {
+  "id": "mongolia",
+  "name": "Mongolia",
+  "lon": 106.92,
+  "lat": 47.92,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the Mongolian steppe raised deer stones and honoured nature spirits."
+   },
+   {
+    "from": -209,
+    "faith": "tengri",
+    "note": "The Xiongnu empire and its Turkic and Mongol successors worshipped Tengri, the eternal blue sky, through shamans."
+   },
+   {
+    "from": 762,
+    "faith": "manichaeism",
+    "note": "Bogu Qaghan of the Uyghur khaganate adopted Manichaeism as the state faith of his steppe empire."
+   },
+   {
+    "from": 840,
+    "faith": "tengri",
+    "note": "The Kyrgyz destroyed the Uyghur khaganate, and the steppe returned to Tengri worship, the faith of Chinggis Khan."
+   },
+   {
+    "from": 1578,
+    "faith": "vajrayana",
+    "note": "Altan Khan met the Gelug lama Sonam Gyatso, gave him the title Dalai Lama, and Mongols converted en masse to Tibetan Buddhism."
+   },
+   {
+    "from": 1937,
+    "faith": "secular",
+    "note": "Communist purges destroyed over 700 monasteries and killed or laicised the lamas, enforcing state atheism."
+   },
+   {
+    "from": 1990,
+    "faith": "vajrayana",
+    "note": "The democratic revolution restored religious freedom, and today just over half of Mongolians call themselves Buddhist."
+   }
+  ]
+ },
+ {
+  "id": "inner-mongolia",
+  "name": "Inner Mongolia",
+  "lon": 111.75,
+  "lat": 40.84,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of the southern steppe honoured nature spirits and ancestors."
+   },
+   {
+    "from": -300,
+    "faith": "tengri",
+    "note": "The Xiongnu, Xianbei and later Turkic and Mongol nomads worshipped Tengri through shamans."
+   },
+   {
+    "from": 916,
+    "faith": "mahayana",
+    "note": "The Khitan Liao dynasty patronised Buddhism across the southern steppe, building pagodas and printing a Buddhist canon."
+   },
+   {
+    "from": 1206,
+    "faith": "tengri",
+    "note": "Chinggis Khan unified the Mongols, who kept their shamanist faith in Tengri."
+   },
+   {
+    "from": 1578,
+    "faith": "vajrayana",
+    "note": "Altan Khan of the Tumed embraced Tibetan Buddhism and founded Hohhot around its great monastery."
+   },
+   {
+    "from": 1912,
+    "faith": "chinese",
+    "note": "Han Chinese settlement encouraged by the late Qing and the Republic made Han farmers the majority."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "The People's Republic suppressed religion, and most people of the region now follow none."
+   }
+  ]
+ },
+ {
+  "id": "north-china-plain",
+  "name": "North China Plain (Henan)",
+  "lon": 112.45,
+  "lat": 34.62,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Yangshao farmers, and later the Shang and Zhou kings, worshipped ancestors and the high god Di or Heaven through divination and sacrifice."
+   },
+   {
+    "from": -500,
+    "faith": "chinese",
+    "note": "Confucius and the Taoist sages reshaped Zhou ancestor worship into China's lasting blend of Confucian ethics, Taoism and folk religion."
+   },
+   {
+    "from": 400,
+    "faith": "mahayana",
+    "note": "Buddhism became the dominant faith of north China under the Northern Wei, who moved their capital to Luoyang in 494 and carved the Longmen grottoes."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "Emperor Wuzong's Huichang persecution closed thousands of monasteries, and Neo-Confucianism and folk religion led thereafter, with Buddhism alongside."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "The Communist People's Republic suppressed religion, and most Chinese now say they follow none, though folk practice survives."
+   }
+  ]
+ },
+ {
+  "id": "guanzhong",
+  "name": "Guanzhong (Xi'an)",
+  "lon": 108.94,
+  "lat": 34.34,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Neolithic farmers of the Wei valley worshipped ancestors and nature spirits."
+   },
+   {
+    "from": -500,
+    "faith": "chinese",
+    "note": "The Wei valley, home of the Zhou, Qin and Han, became a heart of Confucian state ritual and Taoism."
+   },
+   {
+    "from": 400,
+    "faith": "mahayana",
+    "note": "Chang'an became the great Buddhist capital where Kumarajiva and Xuanzang translated sutras, beside Nestorian, Manichaean and Zoroastrian minorities."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "Emperor Wuzong's Huichang edict, issued from Chang'an, closed monasteries and foreign temples, and Buddhism never regained its dominance."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "hebei-beijing",
+  "name": "Hebei and Beijing",
+  "lon": 116.4,
+  "lat": 39.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Neolithic peoples of the northern plain worshipped ancestors and nature."
+   },
+   {
+    "from": -500,
+    "faith": "chinese",
+    "note": "The state of Yan and later Han China brought Confucian and Taoist practice to the north."
+   },
+   {
+    "from": 400,
+    "faith": "mahayana",
+    "note": "Buddhism dominated the north under the Northern Wei and its successors, and monasteries rose around Youzhou."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "The Huichang persecution broke the power of the Buddhist monasteries."
+   },
+   {
+    "from": 938,
+    "faith": "mahayana",
+    "note": "The Khitan Liao dynasty made Yanjing, today's Beijing, a Buddhist southern capital, as did the Jurchen Jin after them."
+   },
+   {
+    "from": 1368,
+    "faith": "chinese",
+    "note": "The Ming restored Confucian state ritual, building the Temple of Heaven, and folk religion led in daily life."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "shandong",
+  "name": "Shandong",
+  "lon": 117.0,
+  "lat": 35.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Dawenkou and Longshan farmers worshipped ancestors, and Mount Tai was a sacred mountain."
+   },
+   {
+    "from": -500,
+    "faith": "chinese",
+    "note": "Confucius taught in the state of Lu, making Qufu the birthplace of Confucianism."
+   },
+   {
+    "from": 450,
+    "faith": "mahayana",
+    "note": "Buddhism flourished in Shandong under the northern dynasties, with Buddha carvings at Qingzhou and on Mount Tai."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "After the Huichang persecution Confucianism and folk religion again led, with Qufu's Confucius temple at its heart."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "jiangnan",
+  "name": "Jiangnan (Lower Yangtze)",
+  "lon": 118.8,
+  "lat": 32.06,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Liangzhu jade-makers and the later Wu and Yue peoples worshipped ancestors and animal spirits."
+   },
+   {
+    "from": -221,
+    "faith": "chinese",
+    "note": "The Qin and Han unification brought Confucian and Taoist practice to the lower Yangtze."
+   },
+   {
+    "from": 502,
+    "faith": "mahayana",
+    "note": "Emperor Wu of Liang, ruling from Jiankang (Nanjing), made Buddhism the faith of the southern court and filled the city with hundreds of temples."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "The Huichang persecution ended Buddhist dominance, and Neo-Confucianism and folk religion led, beside Chan and Pure Land temples."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "middle-yangtze",
+  "name": "Hubei and Hunan (Chu)",
+  "lon": 113.0,
+  "lat": 29.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Rice farmers of the middle Yangtze worshipped ancestors and river spirits, and the state of Chu kept vivid shamanic rites."
+   },
+   {
+    "from": -221,
+    "faith": "chinese",
+    "note": "Qin and Han rule absorbed Chu into Chinese Confucian and Taoist practice."
+   },
+   {
+    "from": 500,
+    "faith": "mahayana",
+    "note": "Buddhism spread widely, and Chan Buddhism took shape at Huangmei and in Hunan."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "After the Huichang persecution Confucian and folk religion led again, beside Taoist Wudang and Buddhist temples."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "sichuan",
+  "name": "Sichuan (Shu)",
+  "lon": 104.07,
+  "lat": 30.67,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sanxingdui and Jinsha cultures of Shu worshipped sun, bird and bronze-masked ancestor gods."
+   },
+   {
+    "from": -316,
+    "faith": "chinese",
+    "note": "Qin conquered Shu, and in AD 142 Zhang Daoling founded the Way of the Celestial Masters here, the first organised Taoist church."
+   },
+   {
+    "from": 600,
+    "faith": "mahayana",
+    "note": "Buddhism flourished under the Sui and Tang, as the giant Buddha of Leshan, begun in 713, shows."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "After the Huichang persecution Taoism, Confucian ritual and folk religion led again."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "guangdong",
+  "name": "Guangdong (Lingnan)",
+  "lon": 113.26,
+  "lat": 23.13,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Baiyue peoples of the far south worshipped ancestors, snakes and sea spirits."
+   },
+   {
+    "from": -111,
+    "faith": "chinese",
+    "note": "The Han dynasty conquered Nanyue, and Han settlers brought Confucian and Taoist practice to Lingnan."
+   },
+   {
+    "from": 650,
+    "faith": "mahayana",
+    "note": "Buddhism grew strong in the south, and the Guangdong-born sixth patriarch Huineng shaped Chan Buddhism."
+   },
+   {
+    "from": 845,
+    "faith": "chinese",
+    "note": "After the Huichang persecution ancestor worship, lineage halls and folk gods like Mazu dominated, beside Buddhism."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "guangxi",
+  "name": "Guangxi",
+  "lon": 108.32,
+  "lat": 22.82,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Zhuang and other Tai peoples worshipped ancestors, the frog goddess and village spirits."
+   },
+   {
+    "from": 1053,
+    "faith": "chinese",
+    "note": "After the Song crushed Nong Zhigao's Zhuang revolt, Han settlement spread Chinese ancestor and Taoist worship, which Zhuang religion absorbed."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "fujian",
+  "name": "Fujian",
+  "lon": 119.3,
+  "lat": 26.08,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Minyue people worshipped snakes, ancestors and sea spirits."
+   },
+   {
+    "from": -110,
+    "faith": "chinese",
+    "note": "The Han dynasty conquered Minyue, and later waves of Han settlers made Fujian Chinese in culture and religion."
+   },
+   {
+    "from": 909,
+    "faith": "mahayana",
+    "note": "The Min kingdom and the Song made Fujian China's most Buddhist province, crowded with monasteries."
+   },
+   {
+    "from": 1368,
+    "faith": "chinese",
+    "note": "Under the Ming, lineage ancestor worship and folk gods such as the sea goddess Mazu led Fujianese religion."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "yunnan",
+  "name": "Yunnan (Nanzhao and Dali)",
+  "lon": 100.23,
+  "lat": 25.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Dian culture and the Bai and Yi peoples worshipped ancestors, bronze drums and nature spirits."
+   },
+   {
+    "from": 800,
+    "faith": "mahayana",
+    "note": "The Nanzhao kings and then the Dali kingdom adopted Buddhism, with tantric Azhali priests, making Dali a land of Buddhas."
+   },
+   {
+    "from": 1382,
+    "faith": "chinese",
+    "note": "The Ming conquered Yunnan and settled Han soldiers and farmers, spreading Chinese religion."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "dunhuang",
+  "name": "Hexi Corridor (Dunhuang)",
+  "lon": 94.66,
+  "lat": 40.14,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early herders of the Gansu corridor honoured local spirits."
+   },
+   {
+    "from": -200,
+    "faith": "tengri",
+    "note": "The Xiongnu drove out the Yuezhi and brought the cult of Tengri."
+   },
+   {
+    "from": -111,
+    "faith": "chinese",
+    "note": "Emperor Wu of Han took the Hexi corridor and founded Dunhuang as a Chinese garrison town."
+   },
+   {
+    "from": 366,
+    "faith": "mahayana",
+    "note": "The monk Lezun carved the first Mogao caves, and Dunhuang became a great Buddhist gateway on the Silk Road."
+   },
+   {
+    "from": 786,
+    "faith": "vajrayana",
+    "note": "The Tibetan empire ruled Dunhuang and spread Tibetan Buddhism."
+   },
+   {
+    "from": 848,
+    "faith": "mahayana",
+    "note": "Zhang Yichao's Return to Allegiance Army expelled the Tibetans, and Chinese Mahayana Buddhism led again."
+   },
+   {
+    "from": 1036,
+    "faith": "vajrayana",
+    "note": "The Tangut Western Xia took Dunhuang, and their Buddhism drew heavily on Tibetan tantra."
+   },
+   {
+    "from": 1524,
+    "faith": "sunni",
+    "note": "The Ming withdrew behind Jiayuguan, and Dunhuang fell to the Muslim khans of Turfan."
+   },
+   {
+    "from": 1725,
+    "faith": "chinese",
+    "note": "The Qing resettled Dunhuang with Han Chinese farmers."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "ningxia",
+  "name": "Ningxia (Western Xia)",
+  "lon": 106.23,
+  "lat": 38.49,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Steppe and farming peoples of the Ordos loop honoured nature spirits."
+   },
+   {
+    "from": -214,
+    "faith": "chinese",
+    "note": "Qin and Han armies took the Ordos loop and settled Chinese farmers along the Yellow River."
+   },
+   {
+    "from": 450,
+    "faith": "mahayana",
+    "note": "Buddhism spread along the frontier under the northern dynasties and the Tang."
+   },
+   {
+    "from": 1038,
+    "faith": "vajrayana",
+    "note": "The Tangut Western Xia made Buddhism their state religion, with Tibetan lamas as imperial preceptors."
+   },
+   {
+    "from": 1227,
+    "faith": "chinese",
+    "note": "The Mongols destroyed the Western Xia, and Han and Hui settlers later repopulated the land."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and the Han majority now mostly profess none, beside a large Hui Muslim minority."
+   }
+  ]
+ },
+ {
+  "id": "liaodong",
+  "name": "Liaodong (Shenyang)",
+  "lon": 123.43,
+  "lat": 41.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of Liaodong worshipped ancestors and nature spirits."
+   },
+   {
+    "from": -300,
+    "faith": "chinese",
+    "note": "The state of Yan and then the Han commanderies brought Chinese settlers and religion."
+   },
+   {
+    "from": 404,
+    "faith": "mahayana",
+    "note": "Buddhist Goguryeo and later the Liao and Jin dynasties ruled Liaodong, leaving pagodas across the region."
+   },
+   {
+    "from": 1371,
+    "faith": "chinese",
+    "note": "The Ming restored Chinese rule, and Han ancestor and folk religion led."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "manchuria",
+  "name": "Manchuria",
+  "lon": 126.63,
+  "lat": 45.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sushen, Mohe and Jurchen forest peoples practised shamanism."
+   },
+   {
+    "from": 698,
+    "faith": "mahayana",
+    "note": "The kingdom of Balhae adopted Buddhism and Tang culture."
+   },
+   {
+    "from": 926,
+    "faith": "folk",
+    "note": "After the Khitans destroyed Balhae, the Jurchen tribes kept their shamanism, a faith the Qing Manchus preserved at court."
+   },
+   {
+    "from": 1880,
+    "faith": "chinese",
+    "note": "The Qing opened Manchuria to Han settlers, who became the great majority by 1900."
+   },
+   {
+    "from": 1949,
+    "faith": "secular",
+    "note": "Communist rule suppressed religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "taiwan",
+  "name": "Taiwan",
+  "lon": 120.68,
+  "lat": 24.15,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Austronesian peoples of Taiwan worshipped ancestors and nature spirits."
+   },
+   {
+    "from": 1662,
+    "faith": "chinese",
+    "note": "Koxinga expelled the Dutch, whose Reformed missions had won some lowland villages, and Hokkien settlers made Chinese folk religion, Taoism and Buddhism dominant."
+   }
+  ]
+ },
+ {
+  "id": "north-korea",
+  "name": "North Korea",
+  "lon": 125.75,
+  "lat": 39.03,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Koreans practised shamanism (Muism), with mudang shamans serving spirits of nature and ancestors."
+   },
+   {
+    "from": 372,
+    "faith": "mahayana",
+    "note": "King Sosurim of Goguryeo received Buddhism from Former Qin, and it later became the state religion of Goryeo."
+   },
+   {
+    "from": 1392,
+    "faith": "chinese",
+    "note": "The Joseon dynasty made Neo-Confucianism the state ideology and pushed Buddhist monasteries into the mountains."
+   },
+   {
+    "from": 1948,
+    "faith": "secular",
+    "note": "Kim Il Sung's communist state abolished organised religion in favour of the Juche ideology."
+   }
+  ]
+ },
+ {
+  "id": "south-korea",
+  "name": "South Korea",
+  "lon": 126.98,
+  "lat": 37.57,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Koreans practised shamanism (Muism), with mudang shamans serving nature and ancestor spirits."
+   },
+   {
+    "from": 384,
+    "faith": "mahayana",
+    "note": "Baekje adopted Buddhism in 384, and it became the state religion under Goryeo (918 to 1392), which carved the Tripitaka Koreana."
+   },
+   {
+    "from": 1392,
+    "faith": "chinese",
+    "note": "The Joseon dynasty made Neo-Confucianism the state ideology, and ancestor rites became the core of Korean religion."
+   },
+   {
+    "from": 2015,
+    "faith": "secular",
+    "note": "The 2015 census found 56% of South Koreans with no religion; Protestants (20%), who grew fast after 1960, had just passed Buddhists (16%) as the largest faith."
+   }
+  ]
+ },
+ {
+  "id": "silla",
+  "name": "Gyeongsang (Silla)",
+  "lon": 129.21,
+  "lat": 35.86,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Silla people worshipped sky gods, ancestors and mountain spirits through shamans."
+   },
+   {
+    "from": 527,
+    "faith": "mahayana",
+    "note": "The martyrdom of the courtier Ichadon led King Beopheung to make Buddhism Silla's state religion, and Gyeongju gained Bulguksa temple."
+   },
+   {
+    "from": 1392,
+    "faith": "chinese",
+    "note": "Under Joseon, Neo-Confucian academies flourished in the southeast and ancestor rites became central."
+   },
+   {
+    "from": 2015,
+    "faith": "secular",
+    "note": "The 2015 census found most South Koreans with no religion, though Buddhism stays strongest in this region."
+   }
+  ]
+ },
+ {
+  "id": "japan-kansai",
+  "name": "Japan (Kansai)",
+  "lon": 135.8,
+  "lat": 34.69,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Jomon people worshipped nature spirits and fertility through clay figurines."
+   },
+   {
+    "from": 300,
+    "faith": "shinto",
+    "note": "The Yamato kings of the Kofun period built their power on worship of the kami and the sun goddess Amaterasu."
+   },
+   {
+    "from": 594,
+    "faith": "mahayana",
+    "note": "Empress Suiko and Prince Shotoku proclaimed Buddhism a state faith, and Nara and Kyoto became great Buddhist capitals, with kami and buddhas worshipped together."
+   },
+   {
+    "from": 1868,
+    "faith": "shinto",
+    "note": "The Meiji government separated Shinto from Buddhism and made State Shinto, centred on the emperor, the official national cult; most families kept Buddhist funerals."
+   },
+   {
+    "from": 1945,
+    "faith": "secular",
+    "note": "Defeat ended State Shinto, and most Japanese now say they have no religion, though they visit shrines and hold Buddhist funerals."
+   }
+  ]
+ },
+ {
+  "id": "japan-kanto",
+  "name": "Japan (Kanto)",
+  "lon": 139.69,
+  "lat": 35.69,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Jomon people worshipped nature spirits and fertility through clay figurines."
+   },
+   {
+    "from": 400,
+    "faith": "shinto",
+    "note": "Yamato rule brought worship of the kami, the sun goddess and clan ancestor gods to the eastern plains."
+   },
+   {
+    "from": 750,
+    "faith": "mahayana",
+    "note": "Emperor Shomu's provincial temples spread Buddhism east, and the Kamakura shoguns later fostered Zen and Pure Land."
+   },
+   {
+    "from": 1868,
+    "faith": "shinto",
+    "note": "The Meiji emperor moved to Tokyo and made State Shinto the official national cult; most families kept Buddhist funerals."
+   },
+   {
+    "from": 1945,
+    "faith": "secular",
+    "note": "Defeat ended State Shinto, and most Japanese now say they have no religion, though shrine and temple customs remain."
+   }
+  ]
+ },
+ {
+  "id": "tohoku",
+  "name": "Tohoku (Northern Honshu)",
+  "lon": 140.87,
+  "lat": 38.27,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Emishi of northern Honshu kept Jomon-rooted nature and ancestor religion."
+   },
+   {
+    "from": 802,
+    "faith": "mahayana",
+    "note": "Sakanoue no Tamuramaro subdued the Emishi, and the northern Fujiwara later built the golden Buddhist halls of Hiraizumi."
+   },
+   {
+    "from": 1868,
+    "faith": "shinto",
+    "note": "The Meiji government made State Shinto the official national cult."
+   },
+   {
+    "from": 1945,
+    "faith": "secular",
+    "note": "Defeat ended State Shinto, and most Japanese now say they have no religion."
+   }
+  ]
+ },
+ {
+  "id": "nagasaki",
+  "name": "Kyushu (Nagasaki)",
+  "lon": 129.87,
+  "lat": 32.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Jomon and Yayoi peoples of Kyushu worshipped nature spirits."
+   },
+   {
+    "from": 300,
+    "faith": "shinto",
+    "note": "Kyushu's chiefs worshipped kami tied to the Yamato court and its sun goddess."
+   },
+   {
+    "from": 600,
+    "faith": "mahayana",
+    "note": "Buddhism spread across Kyushu, intertwined with kami worship."
+   },
+   {
+    "from": 1580,
+    "faith": "catholic",
+    "note": "The Christian daimyo Omura Sumitada gave Nagasaki to the Jesuits, and much of western Kyushu became Catholic."
+   },
+   {
+    "from": 1614,
+    "faith": "mahayana",
+    "note": "The Tokugawa banned Christianity, crushed the Shimabara rising and forced every family to register at a Buddhist temple, while Hidden Christians worshipped in secret."
+   },
+   {
+    "from": 1868,
+    "faith": "shinto",
+    "note": "The Meiji government made State Shinto the official national cult."
+   },
+   {
+    "from": 1945,
+    "faith": "secular",
+    "note": "Defeat ended State Shinto, and most Japanese now say they have no religion."
+   }
+  ]
+ },
+ {
+  "id": "hokkaido",
+  "name": "Hokkaido (Ainu)",
+  "lon": 141.35,
+  "lat": 43.06,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ainu worshipped kamuy, the spirits of bears, fire and the land, sending them home in the iomante bear ceremony."
+   },
+   {
+    "from": 1869,
+    "faith": "shinto",
+    "note": "The Meiji state annexed Hokkaido and settled it with Japanese farmers under State Shinto."
+   },
+   {
+    "from": 1945,
+    "faith": "secular",
+    "note": "Defeat ended State Shinto, and most people here now say they have no religion."
+   }
+  ]
+ },
+ {
+  "id": "upper-burma",
+  "name": "Upper Burma (Pagan)",
+  "lon": 95.5,
+  "lat": 21.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Burmese and Pyu villagers worshipped nat spirits of nature and ancestors."
+   },
+   {
+    "from": 400,
+    "faith": "theravada",
+    "note": "The Pyu city-states such as Sri Ksetra followed Pali Buddhism alongside Hindu cults."
+   },
+   {
+    "from": 849,
+    "faith": "mahayana",
+    "note": "Pagan, founded by the Bamar after the Pyu fell, was led by Ari monks practising tantric Mahayana Buddhism."
+   },
+   {
+    "from": 1056,
+    "faith": "theravada",
+    "note": "King Anawrahta, guided by the Mon monk Shin Arahan, made Theravada the faith of Pagan and its people."
+   }
+  ]
+ },
+ {
+  "id": "lower-burma",
+  "name": "Lower Burma (Mon)",
+  "lon": 96.48,
+  "lat": 17.34,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mon worshipped nature spirits and ancestors."
+   },
+   {
+    "from": 400,
+    "faith": "theravada",
+    "note": "Mon kingdoms such as Thaton, the Suvannabhumi of tradition, received Theravada by sea from India and Sri Lanka."
+   }
+  ]
+ },
+ {
+  "id": "arakan",
+  "name": "Arakan (Rakhine)",
+  "lon": 93.19,
+  "lat": 20.59,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The early peoples of the Arakan coast worshipped local spirits."
+   },
+   {
+    "from": 350,
+    "faith": "mahayana",
+    "note": "The Chandra kings of Vesali patronised Mahayana Buddhism alongside Hindu gods."
+   },
+   {
+    "from": 1430,
+    "faith": "theravada",
+    "note": "King Min Saw Mon founded Mrauk U, whose Buddhist kings, though using Muslim titles, made Theravada the faith of the Rakhine."
+   }
+  ]
+ },
+ {
+  "id": "northern-thailand",
+  "name": "Northern Thailand (Lan Na)",
+  "lon": 98.98,
+  "lat": 18.79,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Lawa and other hill peoples worshipped phi spirits."
+   },
+   {
+    "from": 750,
+    "faith": "theravada",
+    "note": "Queen Chamadevi's Mon kingdom of Hariphunchai brought Theravada Buddhism, later the faith of Mangrai's Lan Na from 1292."
+   }
+  ]
+ },
+ {
+  "id": "sukhothai",
+  "name": "Sukhothai",
+  "lon": 99.82,
+  "lat": 17.01,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tai and Mon villagers worshipped phi spirits."
+   },
+   {
+    "from": 1000,
+    "faith": "hinduism",
+    "note": "Sukhothai was a Khmer outpost with Hindu and Mahayana shrines."
+   },
+   {
+    "from": 1238,
+    "faith": "theravada",
+    "note": "The Thai kingdom of Sukhothai threw off Khmer rule, and King Ramkhamhaeng invited Sri Lankan monks, making Theravada the Thai faith."
+   }
+  ]
+ },
+ {
+  "id": "central-thailand",
+  "name": "Central Thailand (Ayutthaya)",
+  "lon": 100.57,
+  "lat": 14.35,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early rice farmers of the Chao Phraya worshipped spirits and ancestors."
+   },
+   {
+    "from": 600,
+    "faith": "theravada",
+    "note": "The Mon kingdoms of Dvaravati adopted Theravada Buddhism, a faith Ayutthaya (1351) and Bangkok inherited."
+   }
+  ]
+ },
+ {
+  "id": "isan",
+  "name": "Isan (Khorat Plateau)",
+  "lon": 102.1,
+  "lat": 14.97,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Bronze Age villagers of Ban Chiang honoured ancestors and spirits."
+   },
+   {
+    "from": 600,
+    "faith": "hinduism",
+    "note": "Chenla and the Khmer empire brought Shiva worship to the Khorat plateau."
+   },
+   {
+    "from": 1100,
+    "faith": "mahayana",
+    "note": "Phimai's great temple was dedicated to the Buddha, and Jayavarman VII spread Mahayana across the plateau."
+   },
+   {
+    "from": 1300,
+    "faith": "theravada",
+    "note": "Lao and Thai settlement and monks made Theravada the faith of the plateau."
+   }
+  ]
+ },
+ {
+  "id": "nakhon-si-thammarat",
+  "name": "Southern Thailand (Tambralinga)",
+  "lon": 99.96,
+  "lat": 8.43,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Coastal peoples of the Malay peninsula worshipped spirits of land and sea."
+   },
+   {
+    "from": 200,
+    "faith": "hinduism",
+    "note": "Indian traders brought Hindu gods to the port kingdom of Tambralinga."
+   },
+   {
+    "from": 775,
+    "faith": "mahayana",
+    "note": "Srivijaya ruled the region and spread Mahayana Buddhism, as the Ligor inscription records."
+   },
+   {
+    "from": 1200,
+    "faith": "theravada",
+    "note": "Nakhon Si Thammarat became a centre of Sri Lankan Theravada, which it passed on to Sukhothai."
+   }
+  ]
+ },
+ {
+  "id": "patani",
+  "name": "Patani",
+  "lon": 101.25,
+  "lat": 6.87,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Malay coastal peoples worshipped spirits of land and sea."
+   },
+   {
+    "from": 100,
+    "faith": "hinduism",
+    "note": "The kingdom of Langkasuka grew rich on Indian trade and Hindu and Buddhist worship."
+   },
+   {
+    "from": 700,
+    "faith": "mahayana",
+    "note": "Srivijaya's influence made Mahayana Buddhism the court faith."
+   },
+   {
+    "from": 1470,
+    "faith": "sunni",
+    "note": "The rulers of Patani accepted Islam, and the Malay sultanate became a centre of Islamic learning."
+   }
+  ]
+ },
+ {
+  "id": "angkor",
+  "name": "Angkor (Northern Cambodia)",
+  "lon": 103.86,
+  "lat": 13.36,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Khmer villagers worshipped neak ta spirits of the land and ancestors."
+   },
+   {
+    "from": 600,
+    "faith": "hinduism",
+    "note": "Chenla and then Jayavarman II's Khmer empire of 802 worshipped Shiva and Vishnu as god-kings, building Angkor Wat for Vishnu."
+   },
+   {
+    "from": 1181,
+    "faith": "mahayana",
+    "note": "Jayavarman VII made Mahayana Buddhism the state faith and built the Bayon with its smiling faces."
+   },
+   {
+    "from": 1243,
+    "faith": "hinduism",
+    "note": "Jayavarman VIII restored Shaivism and defaced many Buddha images."
+   },
+   {
+    "from": 1295,
+    "faith": "theravada",
+    "note": "Under Indravarman III Theravada Buddhism spread from Thailand and Sri Lanka and became the faith of the Khmer people."
+   },
+   {
+    "from": 1975,
+    "faith": "secular",
+    "note": "The Khmer Rouge abolished religion, killing monks and destroying temples."
+   },
+   {
+    "from": 1979,
+    "faith": "theravada",
+    "note": "After the Khmer Rouge fell, Theravada Buddhism was restored, and it is the state religion today."
+   }
+  ]
+ },
+ {
+  "id": "cambodia",
+  "name": "Cambodia (Phnom Penh and Funan)",
+  "lon": 104.92,
+  "lat": 11.56,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Khmer villagers worshipped neak ta spirits of the land and ancestors."
+   },
+   {
+    "from": 100,
+    "faith": "hinduism",
+    "note": "The trading kingdom of Funan adopted Hindu gods and Sanskrit kingship, led according to legend by the Brahmin Kaundinya."
+   },
+   {
+    "from": 1181,
+    "faith": "mahayana",
+    "note": "Jayavarman VII made Mahayana Buddhism the state faith of the Khmer empire."
+   },
+   {
+    "from": 1243,
+    "faith": "hinduism",
+    "note": "Jayavarman VIII restored Shaiva Hinduism as the court faith."
+   },
+   {
+    "from": 1295,
+    "faith": "theravada",
+    "note": "Theravada Buddhism became the faith of the Khmer people, and Phnom Penh became the capital in the 1430s."
+   },
+   {
+    "from": 1975,
+    "faith": "secular",
+    "note": "The Khmer Rouge abolished religion, killing monks and destroying temples."
+   },
+   {
+    "from": 1979,
+    "faith": "theravada",
+    "note": "After the Khmer Rouge fell, Theravada Buddhism was restored, and it is the state religion today."
+   }
+  ]
+ },
+ {
+  "id": "laos",
+  "name": "Laos (Lan Xang)",
+  "lon": 102.14,
+  "lat": 19.89,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Lao and hill peoples worshipped phi spirits of the land and ancestors."
+   },
+   {
+    "from": 1353,
+    "faith": "theravada",
+    "note": "Fa Ngum founded Lan Xang with Khmer monks and the Phra Bang Buddha image, making Theravada the Lao faith."
+   }
+  ]
+ },
+ {
+  "id": "champasak",
+  "name": "Champasak (Southern Laos)",
+  "lon": 105.82,
+  "lat": 14.85,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Mon-Khmer peoples worshipped spirits of mountains and rivers."
+   },
+   {
+    "from": 500,
+    "faith": "hinduism",
+    "note": "The early Khmer kingdom of Chenla built the Shiva temple of Wat Phu on its sacred mountain."
+   },
+   {
+    "from": 1400,
+    "faith": "theravada",
+    "note": "Theravada Buddhism spread among the Lao and Khmer of the south."
+   }
+  ]
+ },
+ {
+  "id": "north-vietnam",
+  "name": "North Vietnam",
+  "lon": 105.85,
+  "lat": 21.03,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Dong Son culture worshipped ancestors, rice spirits and the bronze drum."
+   },
+   {
+    "from": -111,
+    "faith": "chinese",
+    "note": "Han China conquered the Red River delta, ruling it for a thousand years and planting Confucian and Taoist practice."
+   },
+   {
+    "from": 1009,
+    "faith": "mahayana",
+    "note": "The Ly dynasty, founded by a monk-raised king, made Buddhism the state faith, and the Tran kings founded the Truc Lam school of Zen."
+   },
+   {
+    "from": 1428,
+    "faith": "chinese",
+    "note": "Le Loi's Le dynasty adopted Neo-Confucianism as state ideology, with ancestor worship at the heart of Vietnamese religion."
+   },
+   {
+    "from": 1954,
+    "faith": "secular",
+    "note": "The communist Democratic Republic of Vietnam restricted religion, and most Vietnamese now profess none, though ancestor worship endures."
+   }
+  ]
+ },
+ {
+  "id": "champa",
+  "name": "Central Vietnam (Champa)",
+  "lon": 108.12,
+  "lat": 15.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sa Huynh culture of the central coast buried its dead in jars and honoured ancestors."
+   },
+   {
+    "from": 200,
+    "faith": "hinduism",
+    "note": "The Cham kingdom of Champa adopted Shaiva Hinduism, building the temples of My Son."
+   },
+   {
+    "from": 875,
+    "faith": "mahayana",
+    "note": "King Indravarman II founded the great Mahayana monastery of Dong Duong at Indrapura."
+   },
+   {
+    "from": 925,
+    "faith": "hinduism",
+    "note": "Later Cham kings returned to Shaiva Hinduism."
+   },
+   {
+    "from": 1471,
+    "faith": "chinese",
+    "note": "The Vietnamese conquered Vijaya and settled the coast, bringing Confucian ancestor worship and Buddhism."
+   },
+   {
+    "from": 1975,
+    "faith": "secular",
+    "note": "Communist reunification restricted religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "panduranga",
+  "name": "Panduranga (Southern Champa)",
+  "lon": 108.99,
+  "lat": 11.57,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cham coastal peoples honoured ancestors and sea spirits."
+   },
+   {
+    "from": 200,
+    "faith": "hinduism",
+    "note": "Panduranga, the last Cham principality, worshipped Shiva at temples like Po Klong Garai, some Cham later adopting Islam."
+   },
+   {
+    "from": 1832,
+    "faith": "chinese",
+    "note": "Emperor Minh Mang abolished Panduranga, and Vietnamese settlers brought ancestor worship and Buddhism."
+   },
+   {
+    "from": 1975,
+    "faith": "secular",
+    "note": "Communist reunification restricted religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "south-vietnam",
+  "name": "South Vietnam (Mekong Delta)",
+  "lon": 106.7,
+  "lat": 10.78,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early delta peoples worshipped land and water spirits."
+   },
+   {
+    "from": 100,
+    "faith": "hinduism",
+    "note": "The port of Oc Eo belonged to Funan, which adopted Hindu gods and Sanskrit kingship."
+   },
+   {
+    "from": 1300,
+    "faith": "theravada",
+    "note": "The Khmer of the lower Mekong adopted Theravada Buddhism."
+   },
+   {
+    "from": 1698,
+    "faith": "mahayana",
+    "note": "The Nguyen lords founded Gia Dinh (Saigon), and Vietnamese settlers brought Mahayana Buddhism and ancestor worship."
+   },
+   {
+    "from": 1975,
+    "faith": "secular",
+    "note": "Communist reunification restricted religion, and most people now profess none."
+   }
+  ]
+ },
+ {
+  "id": "kedah",
+  "name": "Kedah",
+  "lon": 100.45,
+  "lat": 5.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Malay and Orang Asli peoples worshipped spirits of forest, river and sea."
+   },
+   {
+    "from": 300,
+    "faith": "hinduism",
+    "note": "Indian traders and priests built Hindu shrines in the Bujang valley, the oldest Indianised port on the Malay peninsula."
+   },
+   {
+    "from": 700,
+    "faith": "mahayana",
+    "note": "Kedah came under Srivijaya and became a Mahayana Buddhist port on the route between India and China."
+   },
+   {
+    "from": 1474,
+    "faith": "sunni",
+    "note": "Kedah's raja converted to Islam, by tradition taking the name Sultan Muzaffar Shah, as Malacca's influence spread Islam up the peninsula."
+   }
+  ]
+ },
+ {
+  "id": "malacca",
+  "name": "Malacca and the Malay Peninsula",
+  "lon": 102.25,
+  "lat": 2.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Malay and Orang Asli peoples worshipped spirits of forest, river and sea."
+   },
+   {
+    "from": 700,
+    "faith": "mahayana",
+    "note": "Srivijaya dominated the Strait of Malacca and spread Mahayana Buddhism among its Malay ports."
+   },
+   {
+    "from": 1414,
+    "faith": "sunni",
+    "note": "Malacca's founder Parameswara, or his son, converted to Islam, and the sultanate became the hub from which Sunni Islam spread across the Malay world."
+   }
+  ]
+ },
+ {
+  "id": "singapore",
+  "name": "Singapore",
+  "lon": 103.82,
+  "lat": 1.35,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Orang Laut sea nomads worshipped spirits of the sea and islands."
+   },
+   {
+    "from": 1300,
+    "faith": "mahayana",
+    "note": "Temasek was a trading port of the Hindu Buddhist Malay world, its rulers claiming descent from Srivijaya."
+   },
+   {
+    "from": 1400,
+    "faith": "sunni",
+    "note": "Temasek fell under the Muslim sultanates of Malacca and then Johor."
+   },
+   {
+    "from": 1850,
+    "faith": "chinese",
+    "note": "After the British founded Singapore in 1819, Chinese immigrants became the majority, worshipping in Taoist and folk temples such as Thian Hock Keng."
+   },
+   {
+    "from": 1990,
+    "faith": "mahayana",
+    "note": "Buddhism overtook Taoism and folk religion as Singapore's largest faith, held by about a third of residents, beside Christians, Muslims and Hindus."
+   }
+  ]
+ },
+ {
+  "id": "brunei",
+  "name": "Brunei and North Borneo",
+  "lon": 114.94,
+  "lat": 4.89,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Malay, Dusun and Dayak peoples of northern Borneo followed animist ancestor religions."
+   },
+   {
+    "from": 1400,
+    "faith": "sunni",
+    "note": "Brunei's ruler Awang Alak Betatar converted to Islam as Sultan Muhammad Shah, and the sultanate spread Islam along the coasts of Borneo."
+   }
+  ]
+ },
+ {
+  "id": "aceh",
+  "name": "Aceh and Pasai",
+  "lon": 96.5,
+  "lat": 4.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of northern Sumatra followed animist religions."
+   },
+   {
+    "from": 500,
+    "faith": "hinduism",
+    "note": "Indian traders brought Hindu and Buddhist worship to the port of Lamuri at Sumatra's northern tip."
+   },
+   {
+    "from": 1297,
+    "faith": "sunni",
+    "note": "Sultan Malik al-Saleh of Samudera Pasai, the first Muslim kingdom in Southeast Asia, died in 1297, and Aceh later became the Veranda of Mecca."
+   }
+  ]
+ },
+ {
+  "id": "batak",
+  "name": "Batak Lands (Lake Toba)",
+  "lon": 99.06,
+  "lat": 2.33,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Batak worshipped the high god Mula Jadi Na Bolon and ancestor spirits through datu priests."
+   },
+   {
+    "from": 1880,
+    "faith": "lutheran",
+    "note": "The German Rhenish mission of Ludwig Nommensen converted the Toba Batak, founding the HKBP, now one of Asia's largest Lutheran churches."
+   }
+  ]
+ },
+ {
+  "id": "minangkabau",
+  "name": "Minangkabau (West Sumatra)",
+  "lon": 100.37,
+  "lat": -0.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Minangkabau followed animist and ancestor religion under their matrilineal adat."
+   },
+   {
+    "from": 1347,
+    "faith": "vajrayana",
+    "note": "King Adityawarman, a Majapahit prince, practised tantric Bhairava Buddhism; it was the court faith rather than the people's."
+   },
+   {
+    "from": 1600,
+    "faith": "sunni",
+    "note": "Islam spread inland from the coast, and the Padri war of 1803 to 1837 later imposed stricter Sunni practice on Minangkabau custom."
+   }
+  ]
+ },
+ {
+  "id": "palembang",
+  "name": "Palembang (Srivijaya)",
+  "lon": 104.75,
+  "lat": -2.98,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Malay peoples of southern Sumatra worshipped river and ancestor spirits."
+   },
+   {
+    "from": 683,
+    "faith": "mahayana",
+    "note": "Srivijaya, recorded in the Kedukan Bukit inscription of 683, became a great centre of Mahayana Buddhism where the Chinese monk Yijing studied Sanskrit."
+   },
+   {
+    "from": 1550,
+    "faith": "sunni",
+    "note": "Palembang came under the influence of Muslim Demak in Java and adopted Islam, later becoming a sultanate."
+   }
+  ]
+ },
+ {
+  "id": "sunda",
+  "name": "West Java (Sunda)",
+  "lon": 107.6,
+  "lat": -6.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sundanese worshipped ancestor and mountain spirits."
+   },
+   {
+    "from": 400,
+    "faith": "hinduism",
+    "note": "King Purnawarman of Tarumanagara inscribed stones with his footprints likened to Vishnu's, the start of Hindu Sunda kingship."
+   },
+   {
+    "from": 1579,
+    "faith": "sunni",
+    "note": "The Muslim sultanate of Banten conquered Pakuan Pajajaran, ending the Hindu kingdom of Sunda."
+   }
+  ]
+ },
+ {
+  "id": "central-java",
+  "name": "Central Java",
+  "lon": 110.36,
+  "lat": -7.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Javanese worshipped ancestor, rice and volcano spirits."
+   },
+   {
+    "from": 732,
+    "faith": "hinduism",
+    "note": "King Sanjaya of Mataram consecrated a Shiva linga, recorded in the Canggal inscription of 732."
+   },
+   {
+    "from": 778,
+    "faith": "mahayana",
+    "note": "The Sailendra kings embraced Mahayana Buddhism and built Borobudur, the largest Buddhist monument in the world."
+   },
+   {
+    "from": 856,
+    "faith": "hinduism",
+    "note": "Rakai Pikatan's line restored Shaiva Hinduism as the court faith and raised the Prambanan temples to Shiva."
+   },
+   {
+    "from": 1587,
+    "faith": "sunni",
+    "note": "Senopati founded the Islamic sultanate of Mataram, completing inland Java's turn to Islam, often blended with older Javanese custom."
+   }
+  ]
+ },
+ {
+  "id": "east-java",
+  "name": "East Java (Majapahit)",
+  "lon": 112.4,
+  "lat": -7.55,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Javanese worshipped ancestor, rice and volcano spirits."
+   },
+   {
+    "from": 760,
+    "faith": "hinduism",
+    "note": "The Kanjuruhan kingdom raised a Shiva temple, and later Kediri, Singhasari and Majapahit fused Shiva and Buddha worship."
+   },
+   {
+    "from": 1527,
+    "faith": "sunni",
+    "note": "Muslim Demak conquered the last of Majapahit, and many Hindu nobles and priests fled to Bali."
+   }
+  ]
+ },
+ {
+  "id": "bali",
+  "name": "Bali",
+  "lon": 114.84,
+  "lat": -8.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Balinese worshipped ancestor and mountain spirits, above all of Mount Agung."
+   },
+   {
+    "from": 914,
+    "faith": "hinduism",
+    "note": "The Warmadewa kings left Hindu and Buddhist inscriptions, and refugees from Majapahit later made Bali the last Hindu island of Indonesia."
+   }
+  ]
+ },
+ {
+  "id": "lombok",
+  "name": "Lombok",
+  "lon": 116.1,
+  "lat": -8.58,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sasak people worshipped ancestor and nature spirits."
+   },
+   {
+    "from": 1350,
+    "faith": "hinduism",
+    "note": "Majapahit's expansion brought Hindu rule and religion to Lombok."
+   },
+   {
+    "from": 1600,
+    "faith": "sunni",
+    "note": "Javanese and Makassarese preachers converted the Sasak to Islam, even though Hindu Balinese kings ruled the island from the 1740s to 1894."
+   }
+  ]
+ },
+ {
+  "id": "banjar",
+  "name": "South Borneo (Banjar)",
+  "lon": 114.59,
+  "lat": -3.32,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Dayak peoples followed the Kaharingan ancestor religion."
+   },
+   {
+    "from": 1300,
+    "faith": "hinduism",
+    "note": "The Javanese-influenced Hindu kingdoms of Negara Dipa and Negara Daha ruled the Barito delta."
+   },
+   {
+    "from": 1526,
+    "faith": "sunni",
+    "note": "Prince Samudera converted to Islam as Sultan Suriansyah, with help from Demak, founding the sultanate of Banjar."
+   }
+  ]
+ },
+ {
+  "id": "kutai",
+  "name": "East Borneo (Kutai)",
+  "lon": 117.15,
+  "lat": -0.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Dayak peoples followed the Kaharingan ancestor religion."
+   },
+   {
+    "from": 400,
+    "faith": "hinduism",
+    "note": "King Mulawarman's stone pillars of about 400, the oldest inscriptions in Indonesia, record Brahmin sacrifices; this was the court faith."
+   },
+   {
+    "from": 1575,
+    "faith": "sunni",
+    "note": "The rulers of Kutai Kartanegara adopted Islam, which spread among the coastal peoples."
+   }
+  ]
+ },
+ {
+  "id": "makassar",
+  "name": "South Sulawesi (Makassar)",
+  "lon": 119.43,
+  "lat": -5.14,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bugis and Makassarese worshipped ancestors and gods through bissu priests."
+   },
+   {
+    "from": 1605,
+    "faith": "sunni",
+    "note": "Sultan Alauddin of Gowa converted to Islam in 1605 and in wars over the next six years forced Bone and the other Bugis states to follow."
+   }
+  ]
+ },
+ {
+  "id": "minahasa",
+  "name": "North Sulawesi (Minahasa)",
+  "lon": 124.84,
+  "lat": 1.47,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Minahasa worshipped ancestor spirits through walian priests."
+   },
+   {
+    "from": 1840,
+    "faith": "reformed",
+    "note": "The Dutch missionaries Riedel and Schwarz, arriving in 1831, converted the Minahasa to Reformed Protestantism within a generation."
+   }
+  ]
+ },
+ {
+  "id": "ternate",
+  "name": "North Maluku (Ternate)",
+  "lon": 127.38,
+  "lat": 0.79,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The clove islanders of Ternate and Tidore worshipped ancestor spirits."
+   },
+   {
+    "from": 1486,
+    "faith": "sunni",
+    "note": "Sultan Zainal Abidin of Ternate embraced Islam, and the sultanate spread it across the Moluccas."
+   }
+  ]
+ },
+ {
+  "id": "ambon",
+  "name": "Ambon (Central Maluku)",
+  "lon": 128.18,
+  "lat": -3.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ambonese worshipped ancestor spirits."
+   },
+   {
+    "from": 1546,
+    "faith": "catholic",
+    "note": "Francis Xavier preached at Ambon, where Portuguese missions had converted many coastal villages."
+   },
+   {
+    "from": 1605,
+    "faith": "reformed",
+    "note": "The Dutch East India Company seized Ambon and turned its Catholic villages into Reformed Protestant congregations."
+   }
+  ]
+ },
+ {
+  "id": "flores",
+  "name": "Flores and Nusa Tenggara",
+  "lon": 121.65,
+  "lat": -8.84,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of Flores worshipped ancestor spirits and the sky and earth."
+   },
+   {
+    "from": 1920,
+    "faith": "catholic",
+    "note": "Portuguese Dominicans began at Larantuka in the 1500s, and Dutch Divine Word missionaries from 1913 made Flores overwhelmingly Catholic."
+   }
+  ]
+ },
+ {
+  "id": "timor-leste",
+  "name": "Timor-Leste",
+  "lon": 125.57,
+  "lat": -8.56,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Timorese worshipped ancestors through sacred uma lulik houses."
+   },
+   {
+    "from": 1980,
+    "faith": "catholic",
+    "note": "Portuguese missions made a Catholic minority, and under Indonesian occupation from 1975 most Timorese joined the Church, which backed independence."
+   }
+  ]
+ },
+ {
+  "id": "west-papua",
+  "name": "West Papua",
+  "lon": 140.7,
+  "lat": -2.53,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Papuan peoples worshipped ancestor spirits and held cargo and initiation rites."
+   },
+   {
+    "from": 1950,
+    "faith": "reformed",
+    "note": "Missionaries Ottow and Geissler landed at Mansinam in 1855, and Dutch Reformed missions made most northern Papuans Protestant by the 1950s."
+   }
+  ]
+ },
+ {
+  "id": "luzon",
+  "name": "Luzon (Manila)",
+  "lon": 120.98,
+  "lat": 14.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tagalogs worshipped Bathala and the anito spirits through babaylan priestesses."
+   },
+   {
+    "from": 1500,
+    "faith": "sunni",
+    "note": "Manila's rajahs such as Sulayman were Muslims tied to Brunei; this was the ruling faith while most villagers kept the anito."
+   },
+   {
+    "from": 1571,
+    "faith": "catholic",
+    "note": "Miguel Lopez de Legazpi took Manila, and Augustinian, Franciscan and Dominican friars made Luzon's lowlands Catholic."
+   }
+  ]
+ },
+ {
+  "id": "visayas",
+  "name": "Visayas (Cebu)",
+  "lon": 123.65,
+  "lat": 10.35,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Visayans worshipped the anito spirits through babaylan priestesses."
+   },
+   {
+    "from": 1565,
+    "faith": "catholic",
+    "note": "Magellan baptised Rajah Humabon of Cebu in 1521, and after Legazpi founded Cebu in 1565 the Visayas became Catholic."
+   }
+  ]
+ },
+ {
+  "id": "bangsamoro",
+  "name": "Bangsamoro (Maguindanao, Lanao, Sulu)",
+  "lon": 124.25,
+  "lat": 7.22,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of Mindanao and the Sulu islands worshipped anito spirits."
+   },
+   {
+    "from": 1520,
+    "faith": "sunni",
+    "note": "Sharif Kabungsuwan founded the Sultanate of Maguindanao, as Sulu had become a sultanate around 1450, and the Moro peoples resisted Spanish Catholicism."
+   }
+  ]
+ },
+ {
+  "id": "davao",
+  "name": "Davao and Northern Mindanao",
+  "lon": 125.6,
+  "lat": 7.07,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Lumad peoples of Mindanao's uplands worshipped spirits of nature and ancestors."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "Twentieth century migration of Christian settlers from Luzon and the Visayas made Catholics the majority across most of Mindanao."
+   }
+  ]
+ },
+ {
+  "id": "png-papua",
+  "name": "Southern Papua New Guinea",
+  "lon": 147.18,
+  "lat": -9.44,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Motu, Koita and other peoples of the Papuan coast worshipped ancestor spirits."
+   },
+   {
+    "from": 1920,
+    "faith": "reformed",
+    "note": "The Congregationalist London Missionary Society, arriving in 1871, made coastal Papua Protestant, a tradition now in the United Church."
+   }
+  ]
+ },
+ {
+  "id": "png-morobe",
+  "name": "Morobe and Madang (PNG)",
+  "lon": 147.0,
+  "lat": -6.72,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The peoples of the Huon Gulf and Madang coast honoured ancestor spirits."
+   },
+   {
+    "from": 1930,
+    "faith": "lutheran",
+    "note": "Johann Flierl founded a German Lutheran mission at Finschhafen in 1886, and mass conversions followed in the 1920s and 1930s."
+   }
+  ]
+ },
+ {
+  "id": "png-highlands",
+  "name": "Papua New Guinea Highlands",
+  "lon": 145.39,
+  "lat": -6.08,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Highlanders practised ancestor cults and pig-exchange rituals, unknown to the outside world until the 1930s."
+   },
+   {
+    "from": 1960,
+    "faith": "lutheran",
+    "note": "Lutheran missions, with Catholic and evangelical ones beside them, converted most Highlanders within a generation of first contact."
+   }
+  ]
+ },
+ {
+  "id": "png-sepik",
+  "name": "Sepik (PNG)",
+  "lon": 143.63,
+  "lat": -3.58,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Sepik peoples worshipped ancestors and crocodile spirits in great spirit houses."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "Divine Word Catholic missionaries, arriving in 1896, converted most of the Sepik."
+   }
+  ]
+ },
+ {
+  "id": "new-britain",
+  "name": "New Britain, New Ireland and Bougainville",
+  "lon": 152.27,
+  "lat": -4.34,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tolai and other island peoples held ancestor and masked-society rites."
+   },
+   {
+    "from": 1910,
+    "faith": "catholic",
+    "note": "Catholic Sacred Heart and Marist missionaries, competing with Methodists, made most of the islands Catholic."
+   }
+  ]
+ },
+ {
+  "id": "fiji",
+  "name": "Fiji",
+  "lon": 178.44,
+  "lat": -18.14,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Lapita voyagers settled Fiji about 1000 BC, and Fijians worshipped ancestral gods such as Degei through priests and temples."
+   },
+   {
+    "from": 1854,
+    "faith": "protestant",
+    "note": "The paramount chief Cakobau converted to Methodism, which stayed Fiji's largest church even when Indo-Fijian Hindus made up about 40 percent of the people."
+   }
+  ]
+ },
+ {
+  "id": "hawaii",
+  "name": "Hawaii",
+  "lon": -155.5,
+  "lat": 19.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Polynesians settled Hawaii around AD 1000 and worshipped Ku, Kane, Lono and Kanaloa under the kapu system."
+   },
+   {
+    "from": 1825,
+    "faith": "reformed",
+    "note": "After Liholiho and Kaahumanu abolished the kapu in 1819, Kaahumanu embraced the Congregationalist missionaries from New England, and most Hawaiians followed."
+   },
+   {
+    "from": 1900,
+    "faith": "mahayana",
+    "note": "Japanese plantation workers, about 40 percent of the islands' people by 1900, made Jodo Shinshu and other Buddhist temples the largest religious community."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "After the war many Japanese Americans turned Christian or secular, leaving Catholics, with Filipino and Portuguese families, as the largest church."
+   }
+  ]
+ },
+ {
+  "id": "australia-southeast",
+  "name": "Southeastern Australia",
+  "lon": 151.21,
+  "lat": -33.87,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Aboriginal Australians followed the Dreaming, the law and stories of the ancestral beings who shaped the land."
+   },
+   {
+    "from": 1788,
+    "faith": "anglican",
+    "note": "The First Fleet founded Sydney, and the Church of England was the largest church of the Australian colonies."
+   },
+   {
+    "from": 1986,
+    "faith": "catholic",
+    "note": "Irish and later Italian and other immigrants grew the Catholic Church until it overtook the Anglicans in the 1986 census; today no religion is the largest single answer."
+   }
+  ]
+ },
+ {
+  "id": "australia-west",
+  "name": "Western Australia",
+  "lon": 115.86,
+  "lat": -31.95,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Noongar and other peoples followed the Dreaming of their ancestral beings."
+   },
+   {
+    "from": 1829,
+    "faith": "anglican",
+    "note": "The Swan River Colony brought British settlers, among whom the Church of England was the largest church."
+   },
+   {
+    "from": 1986,
+    "faith": "catholic",
+    "note": "Catholics overtook Anglicans as Australia's largest church in the 1986 census."
+   }
+  ]
+ },
+ {
+  "id": "australia-centre",
+  "name": "Central Australia",
+  "lon": 133.88,
+  "lat": -23.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Arrernte and other desert peoples followed the Dreaming, with sacred sites such as Uluru."
+   },
+   {
+    "from": 1911,
+    "faith": "anglican",
+    "note": "The Commonwealth took over the Northern Territory, and Anglican settler churches led, while Lutheran missions like Hermannsburg converted many Arrernte."
+   },
+   {
+    "from": 1986,
+    "faith": "catholic",
+    "note": "Catholics overtook Anglicans as Australia's largest church in the 1986 census."
+   }
+  ]
+ },
+ {
+  "id": "australia-north",
+  "name": "Northern Australia (Top End)",
+  "lon": 130.84,
+  "lat": -12.46,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Larrakia, Yolngu and other peoples followed the Dreaming and traded with Makassarese trepang fishers."
+   },
+   {
+    "from": 1911,
+    "faith": "anglican",
+    "note": "Commonwealth rule of the Northern Territory brought settler churches, with Anglican and Methodist missions in Arnhem Land."
+   },
+   {
+    "from": 1986,
+    "faith": "catholic",
+    "note": "Catholics overtook Anglicans as Australia's largest church in the 1986 census."
+   }
+  ]
+ },
+ {
+  "id": "tasmania",
+  "name": "Tasmania",
+  "lon": 147.33,
+  "lat": -42.88,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The palawa, Tasmania's Aboriginal people, followed their own ancestral beliefs."
+   },
+   {
+    "from": 1803,
+    "faith": "anglican",
+    "note": "The British penal colony at Hobart brought the Church of England, and the palawa were nearly wiped out in the Black War."
+   },
+   {
+    "from": 1986,
+    "faith": "catholic",
+    "note": "Catholics overtook Anglicans as Australia's largest church in the 1986 census."
+   }
+  ]
+ },
+ {
+  "id": "new-zealand-north",
+  "name": "New Zealand (North Island)",
+  "lon": 174.76,
+  "lat": -36.85,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "No people lived here until Polynesian voyagers arrived around 1280, bringing the Maori gods Tangaroa, Tane and Rangi and Papa."
+   },
+   {
+    "from": 1840,
+    "faith": "anglican",
+    "note": "The Church Missionary Society, active from 1814, converted many Maori, and British settlement after the Treaty of Waitangi made Anglicans the largest church."
+   },
+   {
+    "from": 2018,
+    "faith": "secular",
+    "note": "Nearly half of New Zealanders reported no religion in the 2018 census, the largest group by far, and a majority did by 2023."
+   }
+  ]
+ },
+ {
+  "id": "canterbury",
+  "name": "Canterbury (New Zealand)",
+  "lon": 172.64,
+  "lat": -43.53,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "No people lived here until Polynesians arrived around 1280; the Ngai Tahu worshipped the Maori gods and ancestors."
+   },
+   {
+    "from": 1850,
+    "faith": "anglican",
+    "note": "The Canterbury Association founded Christchurch as an Anglican settlement."
+   },
+   {
+    "from": 2018,
+    "faith": "secular",
+    "note": "Nearly half of New Zealanders reported no religion in the 2018 census, and a majority did by 2023."
+   }
+  ]
+ },
+ {
+  "id": "otago",
+  "name": "Otago (New Zealand)",
+  "lon": 170.5,
+  "lat": -45.87,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "No people lived here until Polynesians arrived around 1280; the Ngai Tahu worshipped the Maori gods and ancestors."
+   },
+   {
+    "from": 1848,
+    "faith": "reformed",
+    "note": "The Free Church of Scotland founded Dunedin as a Presbyterian settlement, and Presbyterians led Otago for a century."
+   },
+   {
+    "from": 2018,
+    "faith": "secular",
+    "note": "Nearly half of New Zealanders reported no religion in the 2018 census, and a majority did by 2023."
+   }
+  ]
+ }
+]

@@ -1,0 +1,2969 @@
+[
+ {
+  "id": "nobadia",
+  "name": "Lower Nubia (Nobadia)",
+  "lon": 30.6,
+  "lat": 21.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "A-Group and C-Group herders and farmers of Lower Nubia followed their own cults of cattle, ancestors and local gods."
+   },
+   {
+    "from": -1500,
+    "faith": "egyptian",
+    "note": "The New Kingdom conquest of Kush under Thutmose I planted temples of Amun and other Egyptian gods across Nubia, and Nubians still worshipped Isis of Philae into the 6th century AD."
+   },
+   {
+    "from": 543,
+    "faith": "oriental",
+    "note": "A Miaphysite mission sent by Empress Theodora under the priest Julian converted the king of Nobadia in 543, and the land joined the Coptic church that rejected Chalcedon."
+   },
+   {
+    "from": 1480,
+    "faith": "sunni",
+    "note": "Arab tribes such as the Banu Kanz settled Lower Nubia, and Dotawo, the last Christian Nubian kingdom, faded out in the late 15th century, leaving a Muslim land later ruled by the Ottomans."
+   }
+  ]
+ },
+ {
+  "id": "makuria",
+  "name": "Makuria (Dongola)",
+  "lon": 30.48,
+  "lat": 18.22,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Kerma culture farmers and herders of the Dongola reach worshipped their own gods and buried their rulers in great mounds with sacrificed retainers."
+   },
+   {
+    "from": -1500,
+    "faith": "egyptian",
+    "note": "Egypt's New Kingdom conquered Kush and built the Amun temple at Jebel Barkal, and the Napatan kings, who ruled Egypt itself as its 25th dynasty, kept Amun as their chief god."
+   },
+   {
+    "from": 570,
+    "faith": "christian",
+    "note": "A Byzantine mission converted the kingdom of Makuria to Chalcedonian Christianity around 570, with its capital and cathedrals at Old Dongola."
+   },
+   {
+    "from": 710,
+    "faith": "oriental",
+    "note": "After uniting with Nobadia, Makuria adopted the Miaphysite faith of the Coptic patriarch of Alexandria, whose bishops led the Nubian church for six centuries."
+   },
+   {
+    "from": 1317,
+    "faith": "sunni",
+    "note": "Mamluk interventions put a Muslim prince, Abdallah Barshambu, on the Dongola throne in 1317, the royal throne hall became a mosque, and the Nubians gradually became Muslims."
+   }
+  ]
+ },
+ {
+  "id": "alodia",
+  "name": "Alodia and the Funj (Central Sudan)",
+  "lon": 32.53,
+  "lat": 15.55,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Neolithic communities at the Nile confluence, among the earliest cattle herders in Africa, followed local cults."
+   },
+   {
+    "from": -800,
+    "faith": "egyptian",
+    "note": "The kingdom of Kush, ruling from Napata and from about 590 BC from Meroe, spread the worship of Amun alongside the lion god Apedemak and other Meroitic gods."
+   },
+   {
+    "from": 580,
+    "faith": "oriental",
+    "note": "The Miaphysite bishop Longinus converted the kingdom of Alodia, whose capital Soba lay near modern Khartoum, around 580."
+   },
+   {
+    "from": 1504,
+    "faith": "sunni",
+    "note": "The Funj, who destroyed Christian Soba around 1504, made Sennar a Muslim sultanate, and Sufi holy men spread Islam among the people of the Gezira and the Nile."
+   }
+  ]
+ },
+ {
+  "id": "beja",
+  "name": "Red Sea Hills (Beja)",
+  "lon": 36.6,
+  "lat": 18.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Beja herders of the Red Sea Hills, the Blemmyes of Roman sources, worshipped their own gods and also honoured Isis at Philae."
+   },
+   {
+    "from": 1400,
+    "faith": "sunni",
+    "note": "Arab miners and traders settling in the Beja lands from the 9th century, and intermarriage with Beja clans, made the Beja Muslim by about the 15th century."
+   }
+  ]
+ },
+ {
+  "id": "kordofan",
+  "name": "Kordofan (Sudan)",
+  "lon": 30.22,
+  "lat": 13.18,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Nuba and other peoples of Kordofan followed local religions centred on rain makers, priests and ancestors."
+   },
+   {
+    "from": 1750,
+    "faith": "sunni",
+    "note": "Arab Baggara cattle nomads and the Funj and Darfur sultans who fought over Kordofan spread Islam through its plains by the 18th century, while many Nuba hill peoples kept their own faiths."
+   }
+  ]
+ },
+ {
+  "id": "darfur",
+  "name": "Darfur (Sudan)",
+  "lon": 25.35,
+  "lat": 13.63,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Fur, Daju and Tunjur peoples of Jebel Marra and the Darfur plains followed their own traditional religions."
+   },
+   {
+    "from": 1650,
+    "faith": "sunni",
+    "note": "Sultan Sulayman Solongdungu, founder of the Keira sultanate around 1650, made Islam the state religion, and Muslim scholars and the pilgrim road spread it among the Fur."
+   }
+  ]
+ },
+ {
+  "id": "equatoria",
+  "name": "Equatoria (South Sudan)",
+  "lon": 31.58,
+  "lat": 4.85,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bari, Zande, Lotuko and other peoples of Equatoria followed their own religions of rain makers, ancestors and a high god."
+   },
+   {
+    "from": 1975,
+    "faith": "catholic",
+    "note": "Comboni missionaries from the early 1900s and their mission schools, then the upheaval of the civil wars, made most people of Equatoria Christian, with the Catholic Church the largest."
+   }
+  ]
+ },
+ {
+  "id": "dinka-nuer",
+  "name": "Dinka and Nuer lands (South Sudan)",
+  "lon": 29.7,
+  "lat": 6.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Dinka and Nuer cattle herders worshipped Nhialic or Kwoth, the sky god, through spirit masters, prophets and the sacrifice of cattle."
+   },
+   {
+    "from": 1995,
+    "faith": "catholic",
+    "note": "Christianity spread massively during the civil war of 1983 to 2005, when churches were among the few institutions left, and the Catholic and Episcopal (Anglican) churches now hold most believers."
+   }
+  ]
+ },
+ {
+  "id": "tigray",
+  "name": "Tigray and Aksum (Ethiopia)",
+  "lon": 38.72,
+  "lat": 14.13,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cushitic and Semitic speaking farmers followed local cults, and the kingdom of D'mt and early Aksum honoured South Arabian gods such as Almaqah, Astar and the war god Mahrem."
+   },
+   {
+    "from": 340,
+    "faith": "christian",
+    "note": "King Ezana of Aksum was converted by the Syrian bishop Frumentius in the 330s and put the cross on his coins, making Aksum one of the first Christian states."
+   },
+   {
+    "from": 451,
+    "faith": "oriental",
+    "note": "Following the Coptic patriarch of Alexandria, the Aksumite church rejected Chalcedon, and the Nine Saints, Syrian Miaphysite monks of the late 5th century, carried the faith into the countryside."
+   }
+  ]
+ },
+ {
+  "id": "lasta",
+  "name": "Lasta and Lalibela (Ethiopia)",
+  "lon": 39.05,
+  "lat": 12.03,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Agaw farmers of Lasta followed traditional cults of sky and earth spirits."
+   },
+   {
+    "from": 650,
+    "faith": "oriental",
+    "note": "Christianity spread south from Aksum into Lasta and Angot among the Agaw, whose Zagwe kings later carved the rock churches of Lalibela around 1200."
+   }
+  ]
+ },
+ {
+  "id": "south-wollo",
+  "name": "South Wollo (Ethiopia)",
+  "lon": 39.63,
+  "lat": 11.13,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cushitic and Semitic speaking farmers of the eastern highlands followed traditional cults."
+   },
+   {
+    "from": 1270,
+    "faith": "oriental",
+    "note": "The old province of Amhara here was the cradle of the Solomonic dynasty restored in 1270, with the island monastery of Hayq Istifanos as a leading centre of Orthodox learning."
+   },
+   {
+    "from": 1580,
+    "faith": "folk",
+    "note": "After Ahmad Gragn's wars of 1529 to 1543, Oromo clans following the gada system and the sky god Waaqa moved into the old lands of Amhara and Angot."
+   },
+   {
+    "from": 1750,
+    "faith": "sunni",
+    "note": "The Oromo of Wollo adopted Islam, and the Muslim born Yejju lords who dominated Ethiopia in the Era of the Princes and the Mammadoch dynasty made the region largely Muslim."
+   }
+  ]
+ },
+ {
+  "id": "gondar",
+  "name": "Gondar and Lake Tana (Ethiopia)",
+  "lon": 37.47,
+  "lat": 12.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Agaw peoples around Lake Tana kept traditional cults, while the Beta Israel practised their own form of Judaism in the Semien and Dembiya highlands."
+   },
+   {
+    "from": 1330,
+    "faith": "oriental",
+    "note": "Emperor Amda Seyon's wars and the monasteries founded on Lake Tana's islands in the 14th century made the region Orthodox, later the seat of the Gondarine emperors from 1636."
+   }
+  ]
+ },
+ {
+  "id": "shewa",
+  "name": "Shewa (Addis Ababa)",
+  "lon": 38.75,
+  "lat": 9.02,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cushitic and Semitic speaking farmers of the Shewan plateau followed traditional cults."
+   },
+   {
+    "from": 1270,
+    "faith": "oriental",
+    "note": "Yekuno Amlak, who founded the Solomonic dynasty in 1270, and his heirs made Shewa a heartland of the Orthodox kingdom, with royal camps and monasteries such as Debre Libanos."
+   },
+   {
+    "from": 1570,
+    "faith": "folk",
+    "note": "After Ahmad Gragn's Muslim conquest of 1529 to 1543 ruined the kingdom, Oromo clans following the gada system and the sky god Waaqa settled most of the Shewan plateau."
+   },
+   {
+    "from": 1886,
+    "faith": "oriental",
+    "note": "Menelik II of Shewa conquered the surrounding Oromo lands and founded Addis Ababa in 1886, spreading Orthodox churches, settlers and baptism across central Ethiopia."
+   }
+  ]
+ },
+ {
+  "id": "harar",
+  "name": "Harar and Adal (Ethiopia)",
+  "lon": 42.12,
+  "lat": 9.31,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cushitic farmers and herders of the eastern highlands followed traditional cults."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "Islam came inland from the port of Zeila along the trade routes, and the Harla and Harari towns became the heart of the sultanates of Ifat and Adal, with Harar their capital from 1520."
+   }
+  ]
+ },
+ {
+  "id": "afar",
+  "name": "Afar lowlands",
+  "lon": 41.0,
+  "lat": 11.79,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Afar herders of the Danakil lowlands followed traditional religion."
+   },
+   {
+    "from": 1300,
+    "faith": "sunni",
+    "note": "Islam spread among the Afar from the Red Sea coast and the sultanates of Ifat and Adal, and the Imamate of Aussa, founded in 1577, later ruled them as a Muslim state."
+   }
+  ]
+ },
+ {
+  "id": "jimma",
+  "name": "Gibe and Jimma (Ethiopia)",
+  "lon": 36.83,
+  "lat": 7.67,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Oromo of the Gibe region followed Waaqeffanna, the worship of the sky god Waaqa, organised by the gada age system."
+   },
+   {
+    "from": 1830,
+    "faith": "sunni",
+    "note": "The Gibe kingdoms adopted Islam in the 19th century, and Abba Jifar I of Jimma, ruling from about 1830, made it the faith of his court and people."
+   }
+  ]
+ },
+ {
+  "id": "arsi-bale",
+  "name": "Arsi and Bale (Ethiopia)",
+  "lon": 40.0,
+  "lat": 7.12,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cushitic farmers and herders of the Bale highlands followed traditional cults."
+   },
+   {
+    "from": 1300,
+    "faith": "sunni",
+    "note": "The Muslim sultanate of Bali grew around the shrine of Sheikh Hussein, a saint remembered from about 1200, as one of the Muslim states of southern Ethiopia."
+   },
+   {
+    "from": 1570,
+    "faith": "folk",
+    "note": "Oromo clans following Waaqeffanna and the gada system overran Bale and Arsi during their great migrations of the 16th century."
+   },
+   {
+    "from": 1890,
+    "faith": "sunni",
+    "note": "The Arsi and Bale Oromo embraced Islam in the 19th and early 20th centuries, partly in resistance to Menelik II's conquest, with Sheikh Hussein's shrine again a great pilgrimage centre."
+   }
+  ]
+ },
+ {
+  "id": "wollega",
+  "name": "Wollega (Ethiopia)",
+  "lon": 36.55,
+  "lat": 9.08,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The western Oromo of Wollega followed Waaqeffanna under their gada assemblies and qaallu priests."
+   },
+   {
+    "from": 1900,
+    "faith": "oriental",
+    "note": "Moroda Bakare of Leqa Nekemte submitted to Menelik II in 1882 and was baptised Orthodox, and the Orthodox church then spread among the Wollega Oromo under Shewan rule."
+   },
+   {
+    "from": 1990,
+    "faith": "lutheran",
+    "note": "The Mekane Yesus church, rooted in the Oromo Bible and mission of Onesimos Nesib from 1904, grew rapidly under the Derg until Lutherans outnumbered the Orthodox in Wollega."
+   }
+  ]
+ },
+ {
+  "id": "wolaita",
+  "name": "Wolaita and the south (Ethiopia)",
+  "lon": 37.75,
+  "lat": 6.85,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Wolaita kingdom and its southern neighbours followed traditional religions centred on the divine king and ancestor spirits."
+   },
+   {
+    "from": 1975,
+    "faith": "protestant",
+    "note": "Sudan Interior Mission evangelists arrived in 1928, and their Kale Heywet church, which grew in secret during the Italian occupation, became the faith of most Wolaita and many southern peoples."
+   }
+  ]
+ },
+ {
+  "id": "gambela",
+  "name": "Gambela (Ethiopia)",
+  "lon": 34.6,
+  "lat": 8.25,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Anuak and Nuer of the Baro lowlands followed their own religions of village kings, spirits and cattle sacrifice."
+   },
+   {
+    "from": 1985,
+    "faith": "protestant",
+    "note": "Presbyterian and Mekane Yesus missions, and refugees returning from Sudan's wars, made most Anuak and Nuer Protestant by the late 20th century."
+   }
+  ]
+ },
+ {
+  "id": "ogaden",
+  "name": "Somali Region (Ethiopia)",
+  "lon": 43.5,
+  "lat": 7.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Somali herders worshipped Waaq, the sky god, before Islam."
+   },
+   {
+    "from": 1300,
+    "faith": "sunni",
+    "note": "Islam spread inland among the Somali clans from the ports of Zeila and Berbera, and the Ogaden was part of the Muslim world of Adal by the 14th century."
+   }
+  ]
+ },
+ {
+  "id": "eritrea-highlands",
+  "name": "Eritrean highlands",
+  "lon": 38.93,
+  "lat": 15.33,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The highland farmers of the Kebessa shared the South Arabian influenced cults of D'mt, whose great temple at Yeha lay just to the south."
+   },
+   {
+    "from": 340,
+    "faith": "christian",
+    "note": "As part of Aksum, the Eritrean plateau and its port Adulis followed King Ezana into Christianity in the 4th century."
+   },
+   {
+    "from": 451,
+    "faith": "oriental",
+    "note": "The highland church rejected Chalcedon with Alexandria, and its Orthodox Tewahedo tradition, autocephalous in Eritrea since 1993, remains the faith of most highlanders."
+   }
+  ]
+ },
+ {
+  "id": "massawa",
+  "name": "Massawa and Dahlak coast",
+  "lon": 39.45,
+  "lat": 15.61,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The coastal peoples around Adulis and the Dahlak islands followed local cults while trading with Egypt, Arabia and India."
+   },
+   {
+    "from": 340,
+    "faith": "christian",
+    "note": "Adulis, the great port of Aksum, became Christian with King Ezana's court in the 4th century."
+   },
+   {
+    "from": 451,
+    "faith": "oriental",
+    "note": "Aksum's church, and with it the Red Sea coast, rejected the Council of Chalcedon along with Alexandria."
+   },
+   {
+    "from": 900,
+    "faith": "sunni",
+    "note": "Muslim traders and refugees settled the Dahlak islands from the 8th century, and the Dahlak sultanate made the Massawa coast Muslim by about the 10th century."
+   }
+  ]
+ },
+ {
+  "id": "eritrea-west",
+  "name": "Western Eritrean lowlands",
+  "lon": 37.88,
+  "lat": 15.55,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Kunama and Nara farmers and Beja herders of the western lowlands followed their own traditional religions."
+   },
+   {
+    "from": 1550,
+    "faith": "sunni",
+    "note": "Beja Beni Amer clans tied to the Funj sultanate of Sennar spread Islam in the western lowlands, and the Nara followed in the 19th century, while many Kunama kept their own faith."
+   }
+  ]
+ },
+ {
+  "id": "eritrea-north",
+  "name": "Northern Eritrea (Tigre)",
+  "lon": 38.47,
+  "lat": 16.67,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Herders of the northern Eritrean hills followed traditional cults."
+   },
+   {
+    "from": 600,
+    "faith": "oriental",
+    "note": "Christianity spread from Aksum among the herders of the northern hills, and the Tigre speaking Bet Asgede, Mensa and Marya clans were still Orthodox Christians around 1800."
+   },
+   {
+    "from": 1850,
+    "faith": "sunni",
+    "note": "Between about 1820 and 1880 the Tigre clans converted to Islam under the holy family of Ad Sheikh and the Mirghaniyya order, turning northern Eritrea Muslim."
+   }
+  ]
+ },
+ {
+  "id": "djibouti",
+  "name": "Djibouti",
+  "lon": 42.8,
+  "lat": 11.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Afar and Issa Somali herders worshipped Waaq and other spirits."
+   },
+   {
+    "from": 1000,
+    "faith": "sunni",
+    "note": "Islam crossed early from Arabia to the nearby port of Zeila, whose two qibla mosque is said to be among Africa's oldest, and the Afar and Issa became Muslim."
+   }
+  ]
+ },
+ {
+  "id": "somaliland",
+  "name": "Somaliland",
+  "lon": 44.06,
+  "lat": 9.56,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Somali and earlier Cushitic herders worshipped Waaq, the sky god, and traded myrrh and frankincense with Egypt and Arabia."
+   },
+   {
+    "from": 1200,
+    "faith": "sunni",
+    "note": "Islam reached Zeila and Berbera with Arab traders in its first centuries, and holy clan founders such as Sheikh Isaaq made the northern Somali Muslim by about the 13th century."
+   }
+  ]
+ },
+ {
+  "id": "puntland",
+  "name": "Puntland (Somalia)",
+  "lon": 48.48,
+  "lat": 8.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The herders and incense traders of the Horn, perhaps the Land of Punt of Egyptian texts, worshipped Waaq and other spirits."
+   },
+   {
+    "from": 1200,
+    "faith": "sunni",
+    "note": "Islam spread along the coast and among the Darod clans, who trace their descent to an Arabian holy man, making the north east Muslim by about the 13th century."
+   }
+  ]
+ },
+ {
+  "id": "mogadishu",
+  "name": "Benadir coast (Mogadishu)",
+  "lon": 45.34,
+  "lat": 2.05,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Somali herders and Bantu farmers of the southern coast followed Waaq and other traditional religions."
+   },
+   {
+    "from": 1000,
+    "faith": "sunni",
+    "note": "Arab and Persian merchants made Mogadishu a Muslim trading city by the 10th century, and its sultanate, visited by Ibn Battuta in 1331, spread Islam along the Benadir coast."
+   }
+  ]
+ },
+ {
+  "id": "jubaland",
+  "name": "Jubaland (Somalia)",
+  "lon": 42.54,
+  "lat": -0.36,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Bantu farmers of the Juba valley and Oromo and Somali herders followed traditional religions."
+   },
+   {
+    "from": 1300,
+    "faith": "sunni",
+    "note": "The Ajuran sultanate and the coastal towns spread Islam up the Juba valley, and the Somali clans who later moved in completed the conversion."
+   }
+  ]
+ },
+ {
+  "id": "kenya-coast",
+  "name": "Swahili coast of Kenya (Lamu, Malindi)",
+  "lon": 40.9,
+  "lat": -2.27,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Bantu fishing and farming communities on the coast followed ancestral religions."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "Trade with Arabia and the Persian Gulf made the Swahili towns of Lamu, Pate, Malindi and Mombasa Muslim by the 12th century, and Portuguese rule from 1505 to 1698 did not change that."
+   }
+  ]
+ },
+ {
+  "id": "kenya-northeast",
+  "name": "North-eastern Kenya",
+  "lon": 40.06,
+  "lat": 1.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Oromo and Borana herders of the northern plains followed Waaqeffanna and the gada system."
+   },
+   {
+    "from": 1880,
+    "faith": "sunni",
+    "note": "Somali clans moving south west across the Juba in the 19th century pushed out the Oromo and made the region Muslim."
+   }
+  ]
+ },
+ {
+  "id": "kenya-central",
+  "name": "Central Kenya (Kikuyu and Kamba)",
+  "lon": 36.82,
+  "lat": -1.29,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kikuyu, Kamba and Maasai worshipped Ngai, the high god of Mount Kenya, with ancestor spirits and age set rituals."
+   },
+   {
+    "from": 1955,
+    "faith": "protestant",
+    "note": "Church of Scotland, Anglican, Africa Inland Mission and Catholic schools from the 1890s, and the upheaval of the Mau Mau years, made most of central Kenya Christian, Protestants leading."
+   }
+  ]
+ },
+ {
+  "id": "kenya-west",
+  "name": "Western Kenya (Luo and Luhya)",
+  "lon": 34.76,
+  "lat": -0.09,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Luo and Luhya around Lake Victoria honoured a high god and ancestral spirits, with diviners and rain makers."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "Anglican, Quaker, Adventist and Pentecostal missions from the early 1900s, along with Catholic Mill Hill missions and African churches such as Legio Maria, made the region mostly Christian."
+   }
+  ]
+ },
+ {
+  "id": "kenya-rift",
+  "name": "Rift Valley (Kalenjin)",
+  "lon": 35.27,
+  "lat": 0.51,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kalenjin peoples worshipped Asis, the god of the sun, through elders and seasonal ceremonies."
+   },
+   {
+    "from": 1970,
+    "faith": "protestant",
+    "note": "The Africa Inland Church, with Catholic and Pentecostal churches, converted most Kalenjin in the decades around independence."
+   }
+  ]
+ },
+ {
+  "id": "zanzibar",
+  "name": "Zanzibar",
+  "lon": 39.2,
+  "lat": -6.16,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Bantu fishing and farming communities of Unguja and Pemba followed ancestral religions."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "The Kizimkazi mosque inscription of 1107 marks Zanzibar's early Islam, and the Swahili stayed Sunni Muslims under the Ibadi Omani sultans who ruled from 1698 and made it their capital in 1840."
+   }
+  ]
+ },
+ {
+  "id": "kilwa",
+  "name": "Southern Tanzanian coast (Kilwa)",
+  "lon": 39.51,
+  "lat": -8.96,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Bantu fishing and farming communities on the coast followed ancestral religions."
+   },
+   {
+    "from": 1000,
+    "faith": "sunni",
+    "note": "The Kilwa sultanate, founded by the Shirazi dynasty in the late 10th century, became the richest Muslim city of the Swahili coast, and Islam spread inland to the Yao in the 19th century."
+   }
+  ]
+ },
+ {
+  "id": "kilimanjaro",
+  "name": "Kilimanjaro (Tanzania)",
+  "lon": 37.34,
+  "lat": -3.35,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Chagga chiefdoms on Kilimanjaro's slopes worshipped Ruwa, the high god, with ancestor offerings and initiation rites."
+   },
+   {
+    "from": 1930,
+    "faith": "lutheran",
+    "note": "Leipzig Lutheran missionaries from 1893 and Catholic Spiritans from 1890 converted most Chagga, and the Lutheran church of northern Tanzania, based in Moshi, became a leading church."
+   }
+  ]
+ },
+ {
+  "id": "ugogo",
+  "name": "Central Tanzania (Ugogo)",
+  "lon": 35.74,
+  "lat": -6.17,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Gogo herders of the central plateau followed rain makers and ancestral spirits."
+   },
+   {
+    "from": 1950,
+    "faith": "anglican",
+    "note": "The Church Missionary Society's work among the Gogo from 1876 at Mpwapwa made Anglicanism the main faith of Ugogo, and Dodoma became the seat of an Anglican diocese."
+   }
+  ]
+ },
+ {
+  "id": "sukuma",
+  "name": "Sukumaland (Tanzania)",
+  "lon": 32.9,
+  "lat": -2.52,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sukuma and Nyamwezi chiefdoms followed ancestor cults, healers and dance societies."
+   },
+   {
+    "from": 1980,
+    "faith": "catholic",
+    "note": "The White Fathers founded Bukumbi mission in 1883, and Catholic and Africa Inland Church missions slowly won most Sukuma by the late 20th century, Catholics the largest."
+   }
+  ]
+ },
+ {
+  "id": "kagera",
+  "name": "Kagera (Tanzania)",
+  "lon": 31.8,
+  "lat": -1.33,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Haya kingdoms west of Lake Victoria honoured the Cwezi spirits through kubandwa possession cults."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "White Fathers from 1892 and Lutheran missions converted the Haya, the Catholic Church becoming the largest."
+   }
+  ]
+ },
+ {
+  "id": "songea",
+  "name": "Southern highlands (Tanzania)",
+  "lon": 35.65,
+  "lat": -10.68,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ngoni, Matengo and other peoples of the south followed ancestral religions."
+   },
+   {
+    "from": 1940,
+    "faith": "catholic",
+    "note": "German Benedictines of St Ottilien founded Peramiho in 1898 and, after the Maji Maji war, made the Songea district one of Africa's most Catholic areas."
+   }
+  ]
+ },
+ {
+  "id": "buganda",
+  "name": "Buganda (Uganda)",
+  "lon": 32.58,
+  "lat": 0.32,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ganda worshipped the lubaale gods, such as Mukasa of Lake Victoria, through mediums and temples, with the kabaka as sacred king."
+   },
+   {
+    "from": 1900,
+    "faith": "catholic",
+    "note": "After Kabaka Mwanga's martyrdoms of 1886 and the religious wars of 1888 to 1892, Ganda chiefs converted en masse, and while Anglicans ruled under the 1900 Agreement, Catholics became the largest church."
+   }
+  ]
+ },
+ {
+  "id": "acholi",
+  "name": "Acholi (Uganda)",
+  "lon": 32.3,
+  "lat": 2.78,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Acholi chiefdoms worshipped the jogi spirits and the chiefdom shrines of their rwodi."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "Comboni missionaries working from 1910 at Gulu and Kitgum made most Acholi Catholic by the mid 20th century, with an Anglican minority."
+   }
+  ]
+ },
+ {
+  "id": "ankole",
+  "name": "Ankole (Uganda)",
+  "lon": 30.66,
+  "lat": -0.61,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ankole kingdom's Hima herders and Iru farmers honoured the Cwezi spirits and the royal drum Bagyendanwa."
+   },
+   {
+    "from": 1930,
+    "faith": "anglican",
+    "note": "Anglican missionaries, backed by the Ganda agents who helped the British run Ankole from 1901, made the Church of Uganda the leading faith of the kingdom."
+   }
+  ]
+ },
+ {
+  "id": "rwanda",
+  "name": "Rwanda",
+  "lon": 30.06,
+  "lat": -1.95,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Rwandans worshipped Imana, the creator, and the Kubandwa spirits of the hero Ryangombe, with the mwami as sacred king."
+   },
+   {
+    "from": 1935,
+    "faith": "catholic",
+    "note": "After the Belgians replaced Mwami Musinga with his mission educated son Mutara III Rudahigwa in 1931, mass baptisms called the tornade made Rwanda mostly Catholic within a decade."
+   }
+  ]
+ },
+ {
+  "id": "burundi",
+  "name": "Burundi",
+  "lon": 29.92,
+  "lat": -3.43,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Burundians worshipped Imana and the Kubandwa spirits of Kiranga, with the mwami as sacred king."
+   },
+   {
+    "from": 1940,
+    "faith": "catholic",
+    "note": "White Fathers missions from 1898 led a wave of conversions in the 1930s under Belgian rule that made Burundi overwhelmingly Catholic."
+   }
+  ]
+ },
+ {
+  "id": "kongo",
+  "name": "Kingdom of Kongo (northern Angola)",
+  "lon": 14.24,
+  "lat": -6.27,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kongo worshipped Nzambi Mpungu, the creator, through nkisi power objects, ancestors and priests of the land spirits."
+   },
+   {
+    "from": 1491,
+    "faith": "catholic",
+    "note": "King Nzinga a Nkuwu was baptised Joao I in 1491 and his son Afonso I made Catholicism the royal religion from 1506, a ruling faith that spread, blended with Kongo beliefs, from the court to much of the people."
+   }
+  ]
+ },
+ {
+  "id": "kinshasa",
+  "name": "Western Congo (Kinshasa)",
+  "lon": 15.31,
+  "lat": -4.32,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Teke, Humbu and Kongo peoples of Malebo Pool traded on the river and honoured ancestors and nkisi spirits."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "Belgian Catholic missions favoured in colonial schools, Baptist missions and Simon Kimbangu's church of 1921 made the people of Leopoldville and the lower Congo mostly Christian, Catholics leading."
+   }
+  ]
+ },
+ {
+  "id": "equateur",
+  "name": "Equateur (DR Congo)",
+  "lon": 18.27,
+  "lat": 0.05,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mongo peoples of the central basin followed ancestor cults and forest spirits."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "Trappist and Sacred Heart missionaries and the American Disciples of Christ converted the Mongo country under Belgian rule, the Catholic Church becoming the largest."
+   }
+  ]
+ },
+ {
+  "id": "kwilu",
+  "name": "Kwango and Kwilu (DR Congo)",
+  "lon": 18.82,
+  "lat": -5.04,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Yaka, Pende and Mbala peoples followed ancestor cults and masked initiation societies."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "Belgian Jesuits, who ran the Kwango mission from 1893 with farm chapels and schools, made the region heavily Catholic by the mid 20th century."
+   }
+  ]
+ },
+ {
+  "id": "kasai",
+  "name": "Kasai (DR Congo)",
+  "lon": 22.42,
+  "lat": -5.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Luba, Lulua and Kuba kingdoms worshipped a creator god, ancestors and nature spirits, with sacred kings like the Kuba nyim."
+   },
+   {
+    "from": 1940,
+    "faith": "catholic",
+    "note": "Scheut missionaries and the American Presbyterian Congo Mission at Luebo, both from 1891, converted most of the Kasai, the Catholic Church being the largest."
+   }
+  ]
+ },
+ {
+  "id": "katanga",
+  "name": "Katanga (DR Congo)",
+  "lon": 27.48,
+  "lat": -11.66,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Luba and Lunda empires and Msiri's Yeke kingdom honoured ancestors and the spirits of their sacred kings."
+   },
+   {
+    "from": 1940,
+    "faith": "catholic",
+    "note": "Benedictine, Salesian and Franciscan missions and the Catholic schools of the copper mining company drew most of Katanga's workers and villages into the Catholic Church."
+   }
+  ]
+ },
+ {
+  "id": "upper-congo",
+  "name": "Upper Congo (Kisangani)",
+  "lon": 25.2,
+  "lat": 0.52,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The forest peoples of the upper Congo and Ituri followed ancestor cults and spirits of forest and river."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "Sacred Heart priests and Protestant missions such as the Baptists made the Stanleyville region largely Christian under Belgian rule, Catholics leading."
+   }
+  ]
+ },
+ {
+  "id": "kivu",
+  "name": "Kivu (DR Congo)",
+  "lon": 28.86,
+  "lat": -2.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Shi, Nande and Rega kingdoms honoured ancestors and the spirits of lakes and mountains."
+   },
+   {
+    "from": 1940,
+    "faith": "catholic",
+    "note": "White Fathers arriving in Kivu from 1906 converted most of the Shi and their neighbours, and Bukavu became a Catholic archdiocese."
+   }
+  ]
+ },
+ {
+  "id": "congo-brazzaville",
+  "name": "Republic of the Congo",
+  "lon": 15.28,
+  "lat": -4.27,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kongo, Teke and Vili kingdoms of Loango and Malebo Pool worshipped Nzambi, ancestors and nkisi spirits."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "Spiritan missionaries under Bishop Augouard from 1883, with Swedish Protestants and later the Matsouanist movement, made the south of the Congo mostly Christian, Catholics leading."
+   }
+  ]
+ },
+ {
+  "id": "gabon",
+  "name": "Gabon",
+  "lon": 9.45,
+  "lat": 0.39,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Fang, Myene and Punu peoples followed ancestor cults such as the Fang byeri reliquaries, and later the Bwiti initiation religion."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "American Presbyterians from 1842 and French Spiritans from 1844 at Libreville began missions that, under French rule, made most Gabonese Christian, Catholics the largest group."
+   }
+  ]
+ },
+ {
+  "id": "bioko",
+  "name": "Bioko (Equatorial Guinea)",
+  "lon": 8.78,
+  "lat": 3.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bubi of Fernando Po followed their own religion of ancestors and the spirits of the island's forests."
+   },
+   {
+    "from": 1900,
+    "faith": "catholic",
+    "note": "Spanish Claretian missionaries, arriving in 1883, converted most of the Bubi, and Catholicism has been the island's faith ever since."
+   }
+  ]
+ },
+ {
+  "id": "rio-muni",
+  "name": "Rio Muni (Equatorial Guinea)",
+  "lon": 10.3,
+  "lat": 1.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Fang of the mainland honoured ancestors through byeri reliquaries and initiation societies."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "Claretian missions under Spanish rule converted most Fang of Rio Muni, making Equatorial Guinea one of Africa's most Catholic countries."
+   }
+  ]
+ },
+ {
+  "id": "car-south",
+  "name": "Southern Central African Republic",
+  "lon": 18.56,
+  "lat": 4.36,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Banda, Gbaya and Ngbaka peoples followed ancestor cults and initiation societies."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "Spiritan Catholic missions from 1894 and American Baptist, Brethren and other evangelical missions converted most of the south in the 20th century, Protestants slightly outnumbering Catholics."
+   }
+  ]
+ },
+ {
+  "id": "dar-al-kuti",
+  "name": "Dar al-Kuti (northern CAR)",
+  "lon": 20.65,
+  "lat": 8.41,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Banda, Runga and Kresh peoples of the northern savanna followed traditional religions."
+   },
+   {
+    "from": 1890,
+    "faith": "sunni",
+    "note": "Muhammad al-Sanusi made Ndele the capital of the Muslim sultanate of Dar al-Kuti around 1890, a slave raiding state tied to Wadai, and Islam spread among the northern peoples."
+   }
+  ]
+ },
+ {
+  "id": "luanda",
+  "name": "Luanda and Ndongo (Angola)",
+  "lon": 13.23,
+  "lat": -8.84,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mbundu of the kingdom of Ndongo honoured ancestors and land spirits through their ngola kings."
+   },
+   {
+    "from": 1600,
+    "faith": "catholic",
+    "note": "After the Portuguese founded Luanda in 1576 and warred on Ndongo, Catholicism became the ruling faith of the colony and spread among the Mbundu around it, and Queen Njinga was baptised in 1622."
+   }
+  ]
+ },
+ {
+  "id": "angola-highlands",
+  "name": "Central Highlands (Angola)",
+  "lon": 15.74,
+  "lat": -12.78,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ovimbundu kingdoms of the central plateau, great caravan traders, worshipped Suku the creator and their royal ancestors."
+   },
+   {
+    "from": 1940,
+    "faith": "catholic",
+    "note": "Congregationalist missionaries from 1880 and Catholic Spiritans converted most Ovimbundu in the early 20th century, Catholics becoming the larger church."
+   }
+  ]
+ },
+ {
+  "id": "angola-south",
+  "name": "Southern Angola (Huila)",
+  "lon": 13.49,
+  "lat": -14.92,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Nyaneka, Ovambo and Herero herders of the south followed ancestor and cattle cults."
+   },
+   {
+    "from": 1960,
+    "faith": "catholic",
+    "note": "Spiritan missions from the 1880s and Portuguese settlement made Catholicism the main faith of the Huila plateau in the 20th century."
+   }
+  ]
+ },
+ {
+  "id": "cameroon-south",
+  "name": "Southern Cameroon (Yaounde)",
+  "lon": 11.5,
+  "lat": 3.87,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Beti, Bulu and Bassa peoples of the forest honoured ancestors and initiation societies such as the Beti so."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "German Pallottines from 1890 and then French Spiritans converted most Beti, making the Yaounde region strongly Catholic, while the Bulu largely joined American Presbyterians."
+   }
+  ]
+ },
+ {
+  "id": "douala",
+  "name": "Cameroon coast (Douala)",
+  "lon": 9.7,
+  "lat": 4.05,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Duala trading chiefdoms of the Wouri estuary honoured ancestors and the water spirits called miengu."
+   },
+   {
+    "from": 1910,
+    "faith": "reformed",
+    "note": "Baptist missionaries led by Alfred Saker from 1845, then the Basel Mission from 1886 and the Paris Mission, made the Duala largely Protestant, the root of the Evangelical Church of Cameroon."
+   }
+  ]
+ },
+ {
+  "id": "grassfields",
+  "name": "Cameroon Grassfields",
+  "lon": 10.16,
+  "lat": 5.96,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Grassfields kingdoms such as Nso, Bali and the Bamileke chiefdoms revered sacred kings, skull ancestors and regulatory secret societies."
+   },
+   {
+    "from": 1960,
+    "faith": "catholic",
+    "note": "Basel Presbyterian missions from 1903 and Catholic Mill Hill and Sacred Heart missions converted the Grassfields in the 20th century, the Catholics becoming the largest church."
+   }
+  ]
+ },
+ {
+  "id": "adamawa",
+  "name": "Northern Cameroon (Adamawa)",
+  "lon": 13.4,
+  "lat": 9.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The many peoples of the Benue plains and Mandara hills followed their own traditional religions."
+   },
+   {
+    "from": 1810,
+    "faith": "sunni",
+    "note": "Modibo Adama, a flag bearer of Usman dan Fodio, waged jihad from 1809 and founded the Adamawa emirate, whose Fulbe lamidates ruled and spread Islam across the north."
+   }
+  ]
+ },
+ {
+  "id": "ngaoundere",
+  "name": "Adamawa plateau (Ngaoundere)",
+  "lon": 13.58,
+  "lat": 7.32,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mbum and Gbaya of the Adamawa plateau followed traditional religions."
+   },
+   {
+    "from": 1835,
+    "faith": "sunni",
+    "note": "Fulbe under Ardo Njobdi founded the lamidate of Ngaoundere in the 1830s within the Adamawa emirate, converting or subjecting the Mbum, and the plateau became mainly Muslim."
+   }
+  ]
+ },
+ {
+  "id": "kanem",
+  "name": "Kanem (Chad)",
+  "lon": 15.31,
+  "lat": 14.12,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kanembu and Teda of Kanem followed traditional religions under their early Duguwa kings."
+   },
+   {
+    "from": 1085,
+    "faith": "sunni",
+    "note": "Mai Hummay of the Sayfawa dynasty converted to Islam around 1085, making Kanem one of the first Muslim kingdoms south of the Sahara, and his successors went on pilgrimage to Mecca."
+   }
+  ]
+ },
+ {
+  "id": "borno",
+  "name": "Borno (Nigeria)",
+  "lon": 13.16,
+  "lat": 11.85,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The So people of the Lake Chad plains followed their own religion before Kanuri rule."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "The Muslim Sayfawa kings of Kanem extended Islam to Borno, which became their seat after about 1380 and stayed a Muslim sultanate into the 20th century."
+   }
+  ]
+ },
+ {
+  "id": "baguirmi",
+  "name": "Baguirmi (Chad)",
+  "lon": 16.17,
+  "lat": 11.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Barma and their neighbours on the Chari river followed traditional religions."
+   },
+   {
+    "from": 1600,
+    "faith": "sunni",
+    "note": "Mbang Abdullah, who ruled from about 1568 to 1608, made Islam the court religion of the Baguirmi sultanate at Massenya, and it spread among the Barma."
+   }
+  ]
+ },
+ {
+  "id": "wadai",
+  "name": "Wadai (Chad)",
+  "lon": 20.83,
+  "lat": 13.83,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Maba and Tama peoples of the eastern highlands followed traditional religions under the Tunjur kings."
+   },
+   {
+    "from": 1635,
+    "faith": "sunni",
+    "note": "Abd al-Karim overthrew the Tunjur around 1635 and founded the Muslim sultanate of Wadai, which made Islam the faith of the Maba and their neighbours."
+   }
+  ]
+ },
+ {
+  "id": "borkou-tibesti",
+  "name": "Borkou and Tibesti (Chad)",
+  "lon": 19.1,
+  "lat": 17.93,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Toubou herders of the Tibesti and Borkou followed traditional religions."
+   },
+   {
+    "from": 1650,
+    "faith": "sunni",
+    "note": "The Toubou gradually adopted Islam from the 16th century through Kanem, the Fezzan and Saharan traders, and the Sanusi order strengthened it in the 19th century."
+   }
+  ]
+ },
+ {
+  "id": "chad-south",
+  "name": "Southern Chad",
+  "lon": 16.08,
+  "lat": 8.57,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sara and their neighbours followed traditional religions, with yondo initiation for young men."
+   },
+   {
+    "from": 1980,
+    "faith": "protestant",
+    "note": "Protestant missions from the 1920s and Catholic missions under French rule converted most of the Sara south by the late 20th century, Protestants slightly ahead of Catholics."
+   }
+  ]
+ },
+ {
+  "id": "air",
+  "name": "Air and Agadez (Niger)",
+  "lon": 7.99,
+  "lat": 16.97,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tuareg herders of the Air mountains and earlier Saharan peoples followed traditional cults."
+   },
+   {
+    "from": 1400,
+    "faith": "sunni",
+    "note": "Tuareg confederations adopted Islam through trade with the Maghreb, and the sultanate of Agadez, founded in the 15th century, became a centre of Islamic learning on the caravan routes."
+   }
+  ]
+ },
+ {
+  "id": "damagaram",
+  "name": "Damagaram (Zinder, Niger)",
+  "lon": 8.99,
+  "lat": 13.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Hausa and Kanuri farmers around Zinder followed traditional cults of spirits such as the bori."
+   },
+   {
+    "from": 1750,
+    "faith": "sunni",
+    "note": "Kanuri Muslims from Borno founded the sultanate of Damagaram around 1731 and soon moved its capital to Zinder, and Islam became the faith of most of its Hausa subjects."
+   }
+  ]
+ },
+ {
+  "id": "niger-west",
+  "name": "Western Niger (Zarma and Songhay)",
+  "lon": 2.11,
+  "lat": 13.51,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Zarma and Songhay farmers along the Niger honoured river spirits and ancestors through possession cults."
+   },
+   {
+    "from": 1850,
+    "faith": "sunni",
+    "note": "Though Songhay kings had been Muslim since the 11th century, most Zarma and Songhay villagers became Muslim only in the 19th and early 20th centuries."
+   }
+  ]
+ },
+ {
+  "id": "gao",
+  "name": "Gao (Songhay, Mali)",
+  "lon": -0.04,
+  "lat": 16.27,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Songhay fishermen and farmers of the Niger bend honoured river spirits and ancestors."
+   },
+   {
+    "from": 1010,
+    "faith": "sunni",
+    "note": "Za Kosoy, king of Gao, converted to Islam around 1010, and Gao became the Muslim capital of the Songhay Empire, whose Askia rulers made pilgrimage to Mecca."
+   }
+  ]
+ },
+ {
+  "id": "timbuktu",
+  "name": "Timbuktu (Mali)",
+  "lon": -3.0,
+  "lat": 16.77,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Herders and farmers of the Niger bend followed traditional religions."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "Tuareg founded Timbuktu around 1100 as a Muslim trading camp, and under Mali and Songhay it became a famous city of Islamic scholarship around the Sankore mosque."
+   }
+  ]
+ },
+ {
+  "id": "kidal",
+  "name": "Adrar des Ifoghas (Mali)",
+  "lon": 1.41,
+  "lat": 18.44,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber herders of the Adrar des Ifoghas followed traditional Saharan cults."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "The Tuareg of the Adrar des Ifoghas adopted Islam through trade with the Maghreb, and the nearby caravan town of Tadmekka was Muslim by the 11th century."
+   }
+  ]
+ },
+ {
+  "id": "djenne",
+  "name": "Djenne and the inland delta (Mali)",
+  "lon": -4.55,
+  "lat": 13.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bozo, Marka and Bambara around the old city of Jenne-jeno honoured ancestors and the spirits of the inland Niger delta."
+   },
+   {
+    "from": 1250,
+    "faith": "sunni",
+    "note": "Koi Konboro, ruler of Djenne, converted in the 13th century and turned his palace into the first Great Mosque, and the Macina caliphate of 1818 later made the delta a Fulbe Muslim state."
+   }
+  ]
+ },
+ {
+  "id": "manding",
+  "name": "Manding (Mali Empire heartland)",
+  "lon": -8.41,
+  "lat": 11.93,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mande of the upper Niger honoured ancestors and spirits through the komo power society and blacksmith priests."
+   },
+   {
+    "from": 1240,
+    "faith": "sunni",
+    "note": "Sundiata Keita founded the Mali Empire around 1235, and its mansas, such as Mansa Musa with his pilgrimage of 1324, ruled as Muslims, though many Mandinka farmers kept older faiths for centuries."
+   }
+  ]
+ },
+ {
+  "id": "segou",
+  "name": "Segou (Bambara, Mali)",
+  "lon": -6.27,
+  "lat": 13.44,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bambara kept their ancestral religion of power objects and initiation societies, and the Bambara Empire of Segou, founded around 1712, upheld it against Muslim neighbours."
+   },
+   {
+    "from": 1861,
+    "faith": "sunni",
+    "note": "El Hadj Umar Tall's Tijani jihad conquered Segou in 1861, and Islam, spreading further under French rule, became the faith of most Bambara by the mid 20th century."
+   }
+  ]
+ },
+ {
+  "id": "mauritania-adrar",
+  "name": "Adrar (Mauritania)",
+  "lon": -13.05,
+  "lat": 20.52,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Sanhaja Berber camel herders of the western Sahara followed their own religion."
+   },
+   {
+    "from": 1050,
+    "faith": "sunni",
+    "note": "The Almoravid movement of Abdallah ibn Yasin, born among the Sanhaja Berbers here in the 1040s, made the western Sahara strictly Sunni Muslim before conquering Morocco and Spain."
+   }
+  ]
+ },
+ {
+  "id": "ghana-empire",
+  "name": "Ghana Empire (southern Mauritania)",
+  "lon": -7.97,
+  "lat": 15.77,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Soninke kings of Ghana, at Koumbi Saleh, kept a royal cult of sacred groves and the snake spirit Bida, while Muslim merchants lived in their own town."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "After the Almoravid wars of the 1070s, Ghana's kings and the Soninke became Muslim, and Soninke traders later spread Islam across West Africa."
+   }
+  ]
+ },
+ {
+  "id": "mauritania-west",
+  "name": "Western Mauritania (Trarza)",
+  "lon": -15.97,
+  "lat": 18.08,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Berber herders of the Atlantic Sahara followed their own religion."
+   },
+   {
+    "from": 1050,
+    "faith": "sunni",
+    "note": "The Almoravids, whose movement began among the Sanhaja of the Mauritanian Sahara in the 1040s, made the region Muslim, and later Hassani Arab tribes and zawaya scholars kept it so."
+   }
+  ]
+ },
+ {
+  "id": "futa-toro",
+  "name": "Futa Toro (Senegal river)",
+  "lon": -14.96,
+  "lat": 16.65,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The farmers and herders of the middle Senegal valley followed traditional religions."
+   },
+   {
+    "from": 1040,
+    "faith": "sunni",
+    "note": "War Jabi, king of Takrur on the Senegal river, converted to Islam before his death around 1040, and the Toucouleur of Futa Toro, who renewed it in their revolution of 1776, have been Muslim since."
+   }
+  ]
+ },
+ {
+  "id": "wolof",
+  "name": "Cayor and Baol (Wolof Senegal)",
+  "lon": -16.4,
+  "lat": 14.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Wolof kingdoms of Cayor and Baol were ruled by damels and ceddo warriors who, though in contact with Islam, kept traditional religion."
+   },
+   {
+    "from": 1880,
+    "faith": "sunni",
+    "note": "Marabout movements and the collapse of the ceddo kingdoms under French conquest brought mass conversion, crowned by Amadou Bamba's Mouride brotherhood from 1883."
+   }
+  ]
+ },
+ {
+  "id": "saloum",
+  "name": "Saloum (Senegal)",
+  "lon": -16.07,
+  "lat": 14.15,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Serer and Wolof of the kingdom of Saloum followed traditional religions under their bour."
+   },
+   {
+    "from": 1870,
+    "faith": "sunni",
+    "note": "The jihad of Maba Diakhou Ba from 1861 and the spread of the Tijaniyya, later led from Kaolack by Ibrahima Niass, made Saloum Muslim."
+   }
+  ]
+ },
+ {
+  "id": "sine",
+  "name": "Sine (Serer, Senegal)",
+  "lon": -16.41,
+  "lat": 14.34,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Serer of Sine worshipped Roog, the supreme god, through saltigue priests, and their kingdom defeated Maba's jihad at Fandane-Thiouthioune in 1867."
+   },
+   {
+    "from": 1930,
+    "faith": "sunni",
+    "note": "Under French rule most Serer converted to Islam through the Mouride and Tijani brotherhoods, though a large Catholic minority, including President Senghor, also formed."
+   }
+  ]
+ },
+ {
+  "id": "casamance",
+  "name": "Casamance (Senegal)",
+  "lon": -16.27,
+  "lat": 12.58,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Jola rice farmers worshipped Emitai and the spirit shrines called boekin."
+   },
+   {
+    "from": 1950,
+    "faith": "sunni",
+    "note": "Islam spread among the Jola from Mandinka neighbours in the late 19th and 20th centuries, overtaking traditional religion, while the Catholic Church won a large minority."
+   }
+  ]
+ },
+ {
+  "id": "bundu",
+  "name": "Bundu (eastern Senegal)",
+  "lon": -13.67,
+  "lat": 13.77,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Soninke, Mandinka and Fulbe of the upper Senegal followed traditional religions alongside Muslim traders."
+   },
+   {
+    "from": 1690,
+    "faith": "sunni",
+    "note": "Malik Sy founded the Muslim almamate of Bundu around 1690, the first of the West African Fulbe jihad states, and Islam became the faith of its people."
+   }
+  ]
+ },
+ {
+  "id": "gambia",
+  "name": "The Gambia",
+  "lon": -15.6,
+  "lat": 13.45,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mandinka, Wolof, Jola and Fula of the Gambia valley followed traditional religions, though Muslim traders and clerics had lived among them since Mali's time."
+   },
+   {
+    "from": 1880,
+    "faith": "sunni",
+    "note": "The Soninke Marabout wars of about 1850 to 1880 overthrew the old non-Muslim Mandinka kingdoms and made the Gambia valley overwhelmingly Muslim."
+   }
+  ]
+ },
+ {
+  "id": "guinea-bissau",
+  "name": "Guinea-Bissau",
+  "lon": -15.6,
+  "lat": 11.86,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Balanta, Papel, Manjak and Bijago peoples followed ancestral religions with spirit shrines."
+   },
+   {
+    "from": 1990,
+    "faith": "sunni",
+    "note": "Islam, long held by the Fula and Mandinka of the east, became the largest faith of Guinea-Bissau in the late 20th century, while traditional religion and Catholicism remain strong on the coast."
+   }
+  ]
+ },
+ {
+  "id": "futa-jallon",
+  "name": "Futa Jallon (Guinea)",
+  "lon": -12.28,
+  "lat": 11.32,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Jallonke and other farmers of the Futa Jallon highlands followed traditional religions."
+   },
+   {
+    "from": 1725,
+    "faith": "sunni",
+    "note": "Fulbe clerics led by Karamokho Alfa launched a jihad around 1725 and founded the almamate of Futa Jallon, a Muslim state whose schools made the highlands a centre of Islamic learning."
+   }
+  ]
+ },
+ {
+  "id": "upper-guinea",
+  "name": "Upper Guinea (Kankan)",
+  "lon": -9.31,
+  "lat": 10.38,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Malinke of the upper Niger honoured ancestors and spirits through power societies."
+   },
+   {
+    "from": 1700,
+    "faith": "sunni",
+    "note": "Kankan was founded around 1690 by the Muslim Kaba clerical clan, and Samori Toure's empire of the 1870s and 1880s pressed Islam on the Malinke of the upper Niger."
+   }
+  ]
+ },
+ {
+  "id": "guinea-coast",
+  "name": "Guinea coast (Susu)",
+  "lon": -13.5,
+  "lat": 9.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Susu, Baga and Nalu of the coast followed ancestral religions and secret societies."
+   },
+   {
+    "from": 1850,
+    "faith": "sunni",
+    "note": "Islam spread from the Futa Jallon to the Susu in the 18th and 19th centuries and the coast became Muslim, though some Baga kept their masks and shrines into the 20th century."
+   }
+  ]
+ },
+ {
+  "id": "freetown",
+  "name": "Freetown (Sierra Leone)",
+  "lon": -13.23,
+  "lat": 8.48,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Temne and Bullom of the peninsula honoured ancestors and spirits through secret societies such as Poro and Bondo."
+   },
+   {
+    "from": 1792,
+    "faith": "protestant",
+    "note": "Black Loyalists from Nova Scotia founded Freetown in 1792 as Methodists, Baptists and Huntingdonians, and liberated Africans landed after 1808 joined their churches and the Anglicans to form the Krio."
+   },
+   {
+    "from": 1960,
+    "faith": "sunni",
+    "note": "Migration from the provinces, where Islam had spread widely, made Muslims the majority in Freetown and the Western Area during the 20th century."
+   }
+  ]
+ },
+ {
+  "id": "sierra-leone-north",
+  "name": "Northern Sierra Leone (Temne)",
+  "lon": -12.04,
+  "lat": 8.88,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Temne, Limba and Loko followed ancestral religion and the Poro and Bondo secret societies."
+   },
+   {
+    "from": 1900,
+    "faith": "sunni",
+    "note": "Fula and Mandinka traders and clerics spread Islam among the Temne in the 18th and 19th centuries, and most northerners were Muslim by the early 20th century."
+   }
+  ]
+ },
+ {
+  "id": "sierra-leone-south",
+  "name": "Southern Sierra Leone (Mende)",
+  "lon": -11.74,
+  "lat": 7.96,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mende worshipped Ngewo, the creator, and their ancestors, with the Poro and Sande societies as pillars of social life."
+   },
+   {
+    "from": 1950,
+    "faith": "sunni",
+    "note": "Islam spread among the Mende in the late 19th and 20th centuries, overtaking traditional religion, while Methodist and Catholic missions won a large Christian minority."
+   }
+  ]
+ },
+ {
+  "id": "liberia-coast",
+  "name": "Liberian coast (Monrovia)",
+  "lon": -10.8,
+  "lat": 6.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Dei, Bassa, Kru and Vai of the coast followed ancestral religions and the Poro and Sande societies."
+   },
+   {
+    "from": 1822,
+    "faith": "protestant",
+    "note": "Freed African Americans of the American Colonization Society founded Monrovia in 1822 as Methodists and Baptists, and as Americo-Liberians they ruled the country with their churches dominant."
+   }
+  ]
+ },
+ {
+  "id": "liberia-interior",
+  "name": "Liberian interior",
+  "lon": -9.47,
+  "lat": 7.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kpelle, Loma, Gio and Mano followed ancestral religions with Poro and Sande initiation."
+   },
+   {
+    "from": 1980,
+    "faith": "protestant",
+    "note": "Lutheran, Methodist and above all Pentecostal churches converted most of the interior during the 20th century, though Poro and Sande remain influential."
+   }
+  ]
+ },
+ {
+  "id": "ivory-coast-south",
+  "name": "Southern Ivory Coast",
+  "lon": -4.02,
+  "lat": 5.35,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Akan, Lagoon and Kru peoples honoured ancestors and lagoon and forest deities through priests and shrines."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "The prophet William Wade Harris baptised some 100,000 people in 1913 to 1915, and Catholic missions present since 1895 gathered many of them, making the south largely Christian."
+   }
+  ]
+ },
+ {
+  "id": "ivory-coast-north",
+  "name": "Northern Ivory Coast",
+  "lon": -5.63,
+  "lat": 9.46,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Senufo followed their traditional religion organised by the Poro society, while Muslim Dyula traders lived in towns such as Kong."
+   },
+   {
+    "from": 1980,
+    "faith": "sunni",
+    "note": "Islam, carried by Dyula traders and Malinke migrants, became the majority faith among the Senufo and other northerners in the later 20th century."
+   }
+  ]
+ },
+ {
+  "id": "gold-coast",
+  "name": "Gold Coast (Fante and Ga)",
+  "lon": -1.25,
+  "lat": 5.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Fante and Ga worshipped the abosom, gods of lagoons, sea and land, and honoured ancestors through stools and festivals."
+   },
+   {
+    "from": 1920,
+    "faith": "protestant",
+    "note": "Wesleyan Methodists among the Fante from 1835 and the Basel Mission among the Ga and Akuapem from 1828 made the coastal south largely Protestant by the early 20th century."
+   }
+  ]
+ },
+ {
+  "id": "asante",
+  "name": "Asante (Ghana)",
+  "lon": -1.62,
+  "lat": 6.69,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Asante kingdom, built around the Golden Stool called down by the priest Okomfo Anokye about 1700, worshipped the abosom gods and the ancestors of the stools."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "After British conquest in 1896 to 1901, Methodist, Presbyterian and Catholic schools converted the Asante, and Pentecostal churches have since become the largest group."
+   }
+  ]
+ },
+ {
+  "id": "dagbon",
+  "name": "Dagbon (northern Ghana)",
+  "lon": -0.84,
+  "lat": 9.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Dagomba kingdom of Dagbon and its neighbours followed traditional religions of earth shrines and ancestors."
+   },
+   {
+    "from": 1950,
+    "faith": "sunni",
+    "note": "Islam, the court religion since Ya Na Zangina converted around 1700, spread among the Dagomba people and became their majority faith in the 20th century."
+   }
+  ]
+ },
+ {
+  "id": "volta",
+  "name": "Volta (Ewe, Ghana)",
+  "lon": 0.47,
+  "lat": 6.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ewe worshipped Mawu and the trowo deities, with priests and shrines in every town."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "The Bremen Mission from 1847 and Catholic Divine Word missionaries from 1892 converted most Ewe, the Catholics becoming the largest church."
+   }
+  ]
+ },
+ {
+  "id": "togo-south",
+  "name": "Southern Togo",
+  "lon": 1.22,
+  "lat": 6.13,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ewe and Mina of the coast worshipped Mawu and the vodun spirits."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "Divine Word missionaries from 1892 under German rule and French Catholic missions later made Catholicism the leading faith of southern Togo, though vodun remains widely practised."
+   }
+  ]
+ },
+ {
+  "id": "togo-central",
+  "name": "Central Togo (Tem)",
+  "lon": 1.13,
+  "lat": 8.98,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tem and their neighbours followed traditional religions."
+   },
+   {
+    "from": 1850,
+    "faith": "sunni",
+    "note": "The Tem chiefdoms around Sokode adopted Islam from Hausa and Dyula traders in the 19th century, making the region largely Muslim."
+   }
+  ]
+ },
+ {
+  "id": "dahomey",
+  "name": "Dahomey (southern Benin)",
+  "lon": 1.99,
+  "lat": 7.18,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Fon kingdom of Dahomey made the worship of the vodun and the royal ancestors a state religion, with annual customs at Abomey."
+   },
+   {
+    "from": 1990,
+    "faith": "catholic",
+    "note": "Catholic missions from 1861 at Ouidah slowly won the Fon, and Catholicism became the largest faith of the south in the late 20th century, though Vodun remains widely followed."
+   }
+  ]
+ },
+ {
+  "id": "borgu",
+  "name": "Borgu (northern Benin)",
+  "lon": 2.63,
+  "lat": 9.34,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bariba kingdoms of Borgu followed traditional religion around their sacred kings."
+   },
+   {
+    "from": 1950,
+    "faith": "sunni",
+    "note": "Islam, long held by Dendi and Fulbe traders, spread among the Bariba in the 20th century and became the largest faith of northern Benin."
+   }
+  ]
+ },
+ {
+  "id": "mossi",
+  "name": "Mossi Plateau (Burkina Faso)",
+  "lon": -1.53,
+  "lat": 12.37,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mossi kingdoms resisted Islam for centuries and worshipped the earth and the royal ancestors, with the Mogho Naba as sacred king."
+   },
+   {
+    "from": 1960,
+    "faith": "sunni",
+    "note": "Islam, which entered the court with Mogho Naba Dulugu in the late 18th century, spread among ordinary Mossi in the 20th century and overtook traditional religion, while Catholicism won a large minority."
+   }
+  ]
+ },
+ {
+  "id": "burkina-west",
+  "name": "Western Burkina Faso",
+  "lon": -4.3,
+  "lat": 11.18,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bobo, Bwa and Senufo followed traditional religions of masks and the Do cult."
+   },
+   {
+    "from": 1930,
+    "faith": "sunni",
+    "note": "Muslim Dyula traders had long lived at Bobo-Dioulasso, and Islam spread widely in the west from the late 19th century to become the majority faith."
+   }
+  ]
+ },
+ {
+  "id": "liptako",
+  "name": "Liptako (Burkina Faso)",
+  "lon": -0.03,
+  "lat": 14.03,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Gurmanche and Songhay of the Sahel followed traditional religions."
+   },
+   {
+    "from": 1810,
+    "faith": "sunni",
+    "note": "Fulbe led by Brahima Saidou launched a jihad around 1810 inspired by Usman dan Fodio and founded the Muslim emirate of Liptako at Dori."
+   }
+  ]
+ },
+ {
+  "id": "kano",
+  "name": "Kano (Nigeria)",
+  "lon": 8.52,
+  "lat": 12.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Hausa farmers of Kano honoured spirits through the bori cult and the sacred grove and shrine of Dala hill."
+   },
+   {
+    "from": 1460,
+    "faith": "sunni",
+    "note": "Islam came with Wangara clerics under Sarki Yaji in the 14th century, and Muhammad Rumfa, ruling from 1463, made it the law of Kano, though many villagers kept the old ways until the 1804 jihad."
+   }
+  ]
+ },
+ {
+  "id": "sokoto",
+  "name": "Sokoto (Nigeria)",
+  "lon": 5.24,
+  "lat": 13.06,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Hausa of Gobir and Kebbi honoured bori spirits, and their kings mixed Islam with older practice."
+   },
+   {
+    "from": 1804,
+    "faith": "sunni",
+    "note": "Usman dan Fodio's jihad from 1804 overthrew Gobir and founded the Sokoto Caliphate in 1809, the largest state in West Africa, which spread a reformed Sunni Islam across the Hausa lands."
+   }
+  ]
+ },
+ {
+  "id": "ilorin",
+  "name": "Ilorin and Old Oyo (Nigeria)",
+  "lon": 4.55,
+  "lat": 8.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Yoruba of northern Oyo worshipped the orisha, with the alaafin of the Oyo Empire as sacred king."
+   },
+   {
+    "from": 1823,
+    "faith": "sunni",
+    "note": "Fulani clerics allied to Sokoto took Ilorin after Afonja's revolt against Oyo and made it a Muslim emirate by 1823, and Old Oyo was abandoned soon after."
+   }
+  ]
+ },
+ {
+  "id": "nupe",
+  "name": "Nupe (Nigeria)",
+  "lon": 6.01,
+  "lat": 9.08,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Nupe kingdom on the middle Niger followed traditional religion around the sacred etsu."
+   },
+   {
+    "from": 1830,
+    "faith": "sunni",
+    "note": "Fulani jihadists took over the Nupe kingdom in the 1830s, and the emirate of Bida spread Islam among the Nupe."
+   }
+  ]
+ },
+ {
+  "id": "plateau",
+  "name": "Middle Belt (Jos Plateau)",
+  "lon": 8.89,
+  "lat": 9.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Berom, Ngas, Tarok and many other peoples of the Jos Plateau, never conquered by the Sokoto jihad, kept their own religions."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "The Sudan United Mission from 1904 and other evangelical and Catholic missions converted most of the Plateau peoples, whose Church of Christ in Nations is now the largest body."
+   }
+  ]
+ },
+ {
+  "id": "benue",
+  "name": "Benue (Tiv and Idoma)",
+  "lon": 8.53,
+  "lat": 7.73,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tiv and Idoma followed ancestor cults and protective spirit powers the Tiv called akombo."
+   },
+   {
+    "from": 1960,
+    "faith": "catholic",
+    "note": "South African Dutch Reformed missionaries from 1911 and Catholic Holy Ghost Fathers converted most of the Tiv and Idoma, the Catholic Church becoming the largest."
+   }
+  ]
+ },
+ {
+  "id": "oyo-ibadan",
+  "name": "Oyo and Ibadan (Yoruba)",
+  "lon": 3.9,
+  "lat": 7.38,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Yoruba worshipped Olodumare and the orisha such as Sango and Ogun, consulted Ifa divination and honoured the alaafin of Oyo."
+   },
+   {
+    "from": 1910,
+    "faith": "sunni",
+    "note": "Islam, brought by traders and clerics and strengthened from Ilorin, spread through Ibadan and Oyo in the 19th century, and Muslims became the largest group there by the early 20th century."
+   }
+  ]
+ },
+ {
+  "id": "egba",
+  "name": "Egba and Ogun (Yoruba)",
+  "lon": 3.35,
+  "lat": 7.15,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Egba worshipped the orisha and consulted Ifa, gathering at Olumo rock where they founded Abeokuta around 1830."
+   },
+   {
+    "from": 1940,
+    "faith": "anglican",
+    "note": "The Church Missionary Society came in 1846 at the invitation of Egba chiefs and Yoruba returnees from Sierra Leone, making Abeokuta a cradle of Nigerian Anglicanism beside a large Muslim community."
+   }
+  ]
+ },
+ {
+  "id": "ekiti-ondo",
+  "name": "Ekiti and Ondo (Yoruba)",
+  "lon": 5.2,
+  "lat": 7.25,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ekiti, Ondo and Ijesa Yoruba worshipped the orisha and their sacred kings."
+   },
+   {
+    "from": 1935,
+    "faith": "protestant",
+    "note": "Anglican missions and the Aladura revival led by Joseph Babalola from 1930, which built the Christ Apostolic Church, made the eastern Yoruba overwhelmingly Christian."
+   }
+  ]
+ },
+ {
+  "id": "benin-city",
+  "name": "Benin Kingdom (Edo)",
+  "lon": 5.62,
+  "lat": 6.34,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Edo kingdom of Benin worshipped Osanobua, Olokun and the ancestors of the oba, its sacred king."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "Portuguese priests baptised some of Oba Esigie's court around 1515 without lasting effect, and Christianity, now led by Pentecostal churches, became the majority faith after British conquest in 1897."
+   }
+  ]
+ },
+ {
+  "id": "igboland",
+  "name": "Igboland (Nigeria)",
+  "lon": 7.5,
+  "lat": 6.45,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Igbo worshipped Chukwu, the earth goddess Ala and many alusi, with oracles such as Ibini Ukpabi of Arochukwu."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "Anglican missions from 1857 at Onitsha and Catholic Holy Ghost Fathers from 1885, whose schools under Bishop Shanahan drew huge numbers, made the Igbo mostly Christian, Catholics leading."
+   }
+  ]
+ },
+ {
+  "id": "calabar",
+  "name": "Efik and Ibibio (Calabar)",
+  "lon": 8.33,
+  "lat": 4.95,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Efik and Ibibio honoured ancestors, and the Ekpe leopard society governed the trading towns of Old Calabar."
+   },
+   {
+    "from": 1910,
+    "faith": "reformed",
+    "note": "Church of Scotland Presbyterians, arriving in 1846 under Hope Waddell, converted the Efik of Calabar, while the Qua Iboe Mission and Catholics won the Ibibio."
+   }
+  ]
+ },
+ {
+  "id": "niger-delta",
+  "name": "Niger Delta (Ijaw and Ikwerre)",
+  "lon": 7.0,
+  "lat": 4.82,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ijaw and Ikwerre worshipped water spirits, ancestors and town deities such as the python of Bonny."
+   },
+   {
+    "from": 1910,
+    "faith": "anglican",
+    "note": "King George Pepple of Bonny invited Bishop Samuel Ajayi Crowther's Niger Delta mission in 1864, and Anglicanism spread through the delta city states, later joined by Pentecostal churches."
+   }
+  ]
+ },
+ {
+  "id": "zambia-central",
+  "name": "Central Zambia",
+  "lon": 28.28,
+  "lat": -15.42,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tonga, Lenje and Soli honoured ancestors and rain shrines tended by spirit mediums."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "Missions from the 1890s and the mixing of peoples in the towns made Zambia mostly Christian by independence, with evangelical and Pentecostal churches leading, and in 1991 it was declared a Christian nation."
+   }
+  ]
+ },
+ {
+  "id": "copperbelt",
+  "name": "Copperbelt (Zambia)",
+  "lon": 28.2,
+  "lat": -12.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Lamba and Lima followed ancestral religion under their chiefs."
+   },
+   {
+    "from": 1950,
+    "faith": "protestant",
+    "note": "Copper mines opened from the late 1920s drew workers whose union churches, later the United Church of Zambia, and Catholic and Pentecostal congregations made the Copperbelt Christian."
+   }
+  ]
+ },
+ {
+  "id": "bembaland",
+  "name": "Bembaland (Zambia)",
+  "lon": 31.18,
+  "lat": -10.21,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Bemba kingdom of the Chitimukulu worshipped Lesa and the royal ancestral spirits."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "White Fathers entered Bembaland in 1895 and converted most of the Bemba, making northern Zambia strongly Catholic."
+   }
+  ]
+ },
+ {
+  "id": "barotseland",
+  "name": "Barotseland (Zambia)",
+  "lon": 23.13,
+  "lat": -15.25,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Lozi kingdom worshipped Nyambe, the creator, and honoured the royal graves of the litunga."
+   },
+   {
+    "from": 1950,
+    "faith": "reformed",
+    "note": "Francois Coillard's Paris Evangelical Mission came to Barotseland in 1885 at the invitation of Litunga Lewanika, and its Reformed church became the leading faith of the Lozi."
+   }
+  ]
+ },
+ {
+  "id": "malawi-north",
+  "name": "Northern Malawi",
+  "lon": 34.0,
+  "lat": -11.46,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tumbuka and Ngoni of the north followed ancestral religions."
+   },
+   {
+    "from": 1920,
+    "faith": "reformed",
+    "note": "The Free Church of Scotland's Livingstonia Mission from 1875 educated and converted the north, whose Presbyterian synod of the CCAP is still the main church."
+   }
+  ]
+ },
+ {
+  "id": "malawi-central",
+  "name": "Central Malawi (Chewa)",
+  "lon": 33.78,
+  "lat": -13.97,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Chewa worshipped Chiuta and honoured ancestors through the Nyau masked society."
+   },
+   {
+    "from": 1960,
+    "faith": "catholic",
+    "note": "Dutch Reformed missionaries from 1889 and Catholic White Fathers and Montfortians converted most Chewa, Catholics the largest, though the Nyau masked dances still continue."
+   }
+  ]
+ },
+ {
+  "id": "malawi-south",
+  "name": "Southern Malawi (Shire Highlands)",
+  "lon": 35.0,
+  "lat": -15.79,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mang'anja of the Shire highlands honoured ancestors and the rain shrine of Mbona."
+   },
+   {
+    "from": 1930,
+    "faith": "reformed",
+    "note": "The Church of Scotland's Blantyre Mission of 1876, followed by Catholic and Anglican missions, made the Shire highlands Christian, with the Presbyterian Blantyre Synod a leading church."
+   }
+  ]
+ },
+ {
+  "id": "yao",
+  "name": "Lake Malawi south (Yao)",
+  "lon": 35.26,
+  "lat": -14.48,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Yao of the southern lake region followed ancestral religion while trading ivory and slaves to the coast."
+   },
+   {
+    "from": 1890,
+    "faith": "sunni",
+    "note": "Yao chiefs such as Makanjira and Mponda adopted Islam from Swahili traders in the late 19th century, and their people became Muslim, the heart of Malawi's Muslim minority."
+   }
+  ]
+ },
+ {
+  "id": "mozambique-coast",
+  "name": "Northern Mozambique coast",
+  "lon": 40.6,
+  "lat": -15.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Makua and other Bantu communities of the coast followed ancestral religions."
+   },
+   {
+    "from": 1100,
+    "faith": "sunni",
+    "note": "Swahili traders from Kilwa made the towns of Angoche and Mozambique Island Muslim, and though Portugal ruled from 1507, Islam spread among the coastal Makua and Koti."
+   }
+  ]
+ },
+ {
+  "id": "cabo-delgado",
+  "name": "Cabo Delgado (Mozambique)",
+  "lon": 40.3,
+  "lat": -12.97,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Makua and Makonde of the far north followed ancestral religions and initiation rites."
+   },
+   {
+    "from": 1910,
+    "faith": "sunni",
+    "note": "Swahili ties and Sufi brotherhoods, the Shadhiliyya and Qadiriyya, spread Islam among the Mwani and the Makua of the far north in the late 19th and early 20th centuries."
+   }
+  ]
+ },
+ {
+  "id": "zambezia",
+  "name": "Zambezia (Mozambique)",
+  "lon": 36.89,
+  "lat": -17.88,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Lomwe and Chuabo of the Zambezi lowlands honoured ancestors and rain spirits."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "Portuguese prazo estates from the 17th century and Catholic missions favoured under the 1940 Concordat made Zambezia a Catholic stronghold."
+   }
+  ]
+ },
+ {
+  "id": "mozambique-south",
+  "name": "Southern Mozambique",
+  "lon": 32.58,
+  "lat": -25.97,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tsonga, Ronga and Chopi honoured ancestors through healers and spirit mediums."
+   },
+   {
+    "from": 1960,
+    "faith": "catholic",
+    "note": "Swiss Presbyterian, Methodist and Catholic missions, and later Zionist churches, made the south Christian in the 20th century, with Catholics the largest single church."
+   }
+  ]
+ },
+ {
+  "id": "mashonaland",
+  "name": "Mashonaland (Zimbabwe)",
+  "lon": 31.05,
+  "lat": -17.83,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Shona of Great Zimbabwe and the Mutapa state worshipped Mwari, the high god, through mediums of royal ancestral spirits, the mhondoro."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "Methodist, Anglican, Catholic and other missions from the 1890s, and then Apostolic and Pentecostal churches such as Johane Marange's, made most Shona Christian by the 1960s."
+   }
+  ]
+ },
+ {
+  "id": "matabeleland",
+  "name": "Matabeleland (Zimbabwe)",
+  "lon": 28.58,
+  "lat": -20.15,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ndebele kingdom of Mzilikazi and Lobengula honoured royal ancestors and consulted the Mwari shrines of the Matopos."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "The London Missionary Society opened Inyati in 1859 with few converts, but after the British conquest of 1893 churches spread, and Apostolic and Pentecostal churches now lead."
+   }
+  ]
+ },
+ {
+  "id": "bangwato",
+  "name": "Bangwato (Botswana)",
+  "lon": 26.71,
+  "lat": -22.39,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Tswana chiefdoms worshipped Modimo and their ancestors, with rain making and initiation led by the chief."
+   },
+   {
+    "from": 1875,
+    "faith": "reformed",
+    "note": "Khama III, baptised by the London Missionary Society in 1862, ruled the Bangwato from 1875 to 1923 as a Christian king, abolishing initiation and rain rites and making the LMS church the tribal church."
+   }
+  ]
+ },
+ {
+  "id": "botswana-south",
+  "name": "Southern Botswana",
+  "lon": 25.91,
+  "lat": -24.65,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Kwena, Kgatla and other Tswana worshipped Modimo and honoured their ancestors."
+   },
+   {
+    "from": 1950,
+    "faith": "protestant",
+    "note": "Sechele I of the Bakwena was baptised by David Livingstone in 1848, and over the next century Congregational, Dutch Reformed, Zionist and Pentecostal churches made most Batswana Christian."
+   }
+  ]
+ },
+ {
+  "id": "namibia-central",
+  "name": "Central and southern Namibia",
+  "lon": 17.08,
+  "lat": -22.56,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Nama, Herero and Damara worshipped the creator and their ancestors, with the holy fire of the Herero homesteads."
+   },
+   {
+    "from": 1900,
+    "faith": "lutheran",
+    "note": "Rhenish missionaries from 1842 converted the Nama and many Herero, and after the German genocide of 1904 to 1908 most survivors joined the Lutheran churches."
+   }
+  ]
+ },
+ {
+  "id": "ovamboland",
+  "name": "Ovamboland (Namibia)",
+  "lon": 15.95,
+  "lat": -17.91,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ovambo kingdoms worshipped Kalunga and honoured royal ancestors under sacred kings."
+   },
+   {
+    "from": 1930,
+    "faith": "lutheran",
+    "note": "Finnish Lutheran missionaries arriving in 1870 converted most of the Ovambo by the 1930s, and their church is now Namibia's largest."
+   }
+  ]
+ },
+ {
+  "id": "western-cape",
+  "name": "Western Cape (South Africa)",
+  "lon": 18.42,
+  "lat": -33.93,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Khoikhoi herders and San hunters of the Cape worshipped Tsui-Goab and Heitsi-Eibib and danced for rain."
+   },
+   {
+    "from": 1652,
+    "faith": "reformed",
+    "note": "Jan van Riebeeck's Dutch East India Company post of 1652 made the Dutch Reformed Church the ruling church of the Cape, slowly absorbing Khoikhoi and slaves, while the Cape Malays kept Islam."
+   }
+  ]
+ },
+ {
+  "id": "northern-cape",
+  "name": "Northern Cape (Orange river)",
+  "lon": 21.25,
+  "lat": -28.45,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Nama, Korana and San of the Orange river worshipped Tsui-Goab, Heitsi-Eibib and the San trickster gods."
+   },
+   {
+    "from": 1850,
+    "faith": "reformed",
+    "note": "London and Rhenish missions and the Dutch Reformed Church converted the Griqua, Korana and Nama of the Orange river, and Afrikaans speaking Reformed congregations became the norm."
+   }
+  ]
+ },
+ {
+  "id": "eastern-cape",
+  "name": "Eastern Cape (Xhosa)",
+  "lon": 28.78,
+  "lat": -31.59,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Xhosa worshipped Qamata and honoured the ancestors with cattle sacrifice and initiation."
+   },
+   {
+    "from": 1950,
+    "faith": "protestant",
+    "note": "Methodist missions from the 1820s, Anglicans and Presbyterians, and later Zionist churches converted most Xhosa, especially after the cattle killing of 1856 to 1857 broke the old order."
+   }
+  ]
+ },
+ {
+  "id": "kwazulu",
+  "name": "KwaZulu-Natal (Zulu)",
+  "lon": 31.42,
+  "lat": -28.33,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Zulu kingdom of Shaka worshipped uNkulunkulu and the amadlozi ancestors, with the king leading the first fruits ceremony."
+   },
+   {
+    "from": 1970,
+    "faith": "protestant",
+    "note": "Missions from the 1830s and above all African independent churches such as Isaiah Shembe's Nazareth Baptist Church and the Zionists made most Zulu Christian during the 20th century."
+   }
+  ]
+ },
+ {
+  "id": "free-state",
+  "name": "Free State (South Africa)",
+  "lon": 26.21,
+  "lat": -29.12,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Sotho, Tswana and Griqua of the highveld worshipped Modimo and their ancestors."
+   },
+   {
+    "from": 1854,
+    "faith": "reformed",
+    "note": "Voortrekkers of the Great Trek founded the Orange Free State in 1854 with the Dutch Reformed Church as its church, a ruling faith over a largely Sotho and Tswana population."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "Missions to the Sotho and Tswana and the growth of Zionist, Methodist and Pentecostal churches made the black majority of the Free State Christian in the 20th century."
+   }
+  ]
+ },
+ {
+  "id": "transvaal",
+  "name": "Transvaal (Gauteng)",
+  "lon": 28.19,
+  "lat": -25.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Ndebele, Tswana and Pedi of the Transvaal worshipped the high god and their ancestors."
+   },
+   {
+    "from": 1852,
+    "faith": "reformed",
+    "note": "The Boer South African Republic, recognised in 1852, made the Dutch Reformed churches its state churches, ruling a mostly non-Christian African majority until the British conquest of 1900."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "The Witwatersrand gold rush from 1886 gathered Africans from across the region, and Methodist, Zionist and Pentecostal churches made the black majority Christian by the mid 20th century."
+   }
+  ]
+ },
+ {
+  "id": "limpopo",
+  "name": "Limpopo (Pedi and Venda)",
+  "lon": 29.45,
+  "lat": -23.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Pedi kingdom and the Venda honoured ancestors, sacred lakes and rain queens such as the Lovedu Modjadji."
+   },
+   {
+    "from": 1970,
+    "faith": "protestant",
+    "note": "Berlin Lutheran missions from the 1860s and the Zion Christian Church, founded in 1924 by Engenas Lekganyane at Moria near Polokwane, made most of the region Christian."
+   }
+  ]
+ },
+ {
+  "id": "lesotho",
+  "name": "Lesotho",
+  "lon": 27.48,
+  "lat": -29.32,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Basotho worshipped Molimo and their ancestors, the balimo, with initiation schools for boys and girls."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "King Moshoeshoe I invited Paris Evangelical missionaries in 1833 and Catholic Oblates came in 1862, and by the 20th century most Basotho were Christian, Catholics the largest church."
+   }
+  ]
+ },
+ {
+  "id": "eswatini",
+  "name": "Eswatini",
+  "lon": 31.13,
+  "lat": -26.32,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Swazi worshipped Mvelincanti and the royal ancestors, with the king at the heart of the Incwala ceremony."
+   },
+   {
+    "from": 1960,
+    "faith": "protestant",
+    "note": "Wesleyan missions from 1844 and later Zionist and Pentecostal churches made most Swazi Christian, while the Incwala and royal ancestral rites remain."
+   }
+  ]
+ },
+ {
+  "id": "imerina",
+  "name": "Imerina (Madagascar)",
+  "lon": 47.52,
+  "lat": -18.91,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Merina worshipped Andriamanitra, the creator, honoured the razana ancestors and kept royal talismans called sampy."
+   },
+   {
+    "from": 1869,
+    "faith": "reformed",
+    "note": "Queen Ranavalona II was baptised in 1869 and burned the royal sampy, making the London Missionary Society's Congregational church the state church of the Merina kingdom after decades of persecution."
+   }
+  ]
+ },
+ {
+  "id": "betsileo",
+  "name": "Betsileo (Madagascar)",
+  "lon": 47.08,
+  "lat": -21.45,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Betsileo rice farmers of the southern highlands honoured the razana ancestors with famadihana reburials."
+   },
+   {
+    "from": 1930,
+    "faith": "catholic",
+    "note": "Jesuit missions, strengthened under French rule from 1896, made the Betsileo highlands one of the most Catholic regions of Madagascar."
+   }
+  ]
+ },
+ {
+  "id": "madagascar-south",
+  "name": "Southern Madagascar",
+  "lon": 43.67,
+  "lat": -23.35,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mahafaly, Antandroy and Vezo of the south honour ancestors with great tombs, cattle sacrifice and spirit possession, and Christianity has spread only slowly there."
+   }
+  ]
+ }
+]

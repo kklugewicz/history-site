@@ -1,0 +1,298 @@
+[
+ {
+  "id": "folk",
+  "name": "Traditional and folk religions",
+  "family": "Indigenous and folk",
+  "color": "#a38b6d",
+  "start": null,
+  "text": "Local ancestral, animist and nature religions, passed on orally rather than through a scripture or church."
+ },
+ {
+  "id": "tengri",
+  "name": "Tengrism",
+  "family": "Indigenous and folk",
+  "color": "#8f7a4e",
+  "start": null,
+  "text": "The sky-god religion of the Turkic and Mongol steppe peoples, with shamans as intermediaries."
+ },
+ {
+  "id": "egyptian",
+  "name": "Ancient Egyptian religion",
+  "family": "Ancient polytheism",
+  "color": "#c7a052",
+  "start": -3100,
+  "text": "The gods of the Nile with the pharaoh as divine king, centred on temples and the afterlife."
+ },
+ {
+  "id": "mesopotamian",
+  "name": "Mesopotamian and Canaanite religion",
+  "family": "Ancient polytheism",
+  "color": "#9c6644",
+  "start": -3500,
+  "text": "The city gods of Sumer, Babylon and Assyria and the related Canaanite and Phoenician cults of Baal and Astarte."
+ },
+ {
+  "id": "hellenic",
+  "name": "Greek and Roman religion",
+  "family": "Ancient polytheism",
+  "color": "#e07a5f",
+  "start": -1200,
+  "text": "The Olympian gods of Greece and Rome, worshipped through civic temples, sacrifice and oracles, with the Roman emperor cult added later."
+ },
+ {
+  "id": "pagan-europe",
+  "name": "Celtic, Germanic, Norse and Slavic paganism",
+  "family": "Ancient polytheism",
+  "color": "#8b9a46",
+  "start": null,
+  "text": "The pre-Christian religions of northern and eastern Europe: druids, Odin and Thor, Perun and the Baltic gods."
+ },
+ {
+  "id": "mesoamerican",
+  "name": "Mesoamerican religion",
+  "family": "Americas",
+  "color": "#c45f2a",
+  "start": -1200,
+  "text": "The temple-pyramid religions of the Olmec, Maya, Toltec and Aztec, with a shared calendar and gods like Quetzalcoatl."
+ },
+ {
+  "id": "andean",
+  "name": "Andean religion",
+  "family": "Americas",
+  "color": "#b3743d",
+  "start": -2500,
+  "text": "The religions of Chavin, Moche, Tiwanaku and the Inca, centred on the sun god Inti, mountain spirits and ancestor mummies."
+ },
+ {
+  "id": "judaism",
+  "name": "Judaism",
+  "family": "Judaism",
+  "color": "#2aa7d6",
+  "start": -1000,
+  "text": "The monotheism of the Israelites, centred on the Torah, first on the Jerusalem Temple and after AD 70 on rabbis and synagogues."
+ },
+ {
+  "id": "zoroastrianism",
+  "name": "Zoroastrianism",
+  "family": "Iranian",
+  "color": "#a8324a",
+  "start": -1200,
+  "text": "Zarathustra's faith in the wise lord Ahura Mazda and the struggle of good against evil, state religion of three Persian empires."
+ },
+ {
+  "id": "manichaeism",
+  "name": "Manichaeism",
+  "family": "Iranian",
+  "color": "#c25b77",
+  "start": 240,
+  "text": "Mani's dualist religion of light and darkness, which spread from Persia to Rome and China and was state religion of the Uyghurs."
+ },
+ {
+  "id": "vedic",
+  "name": "Vedic religion",
+  "family": "Hinduism",
+  "color": "#e8a54b",
+  "start": -1500,
+  "text": "The fire sacrifices and hymns of the Vedas, the root of Hinduism."
+ },
+ {
+  "id": "hinduism",
+  "name": "Hinduism",
+  "family": "Hinduism",
+  "color": "#f08c21",
+  "start": -500,
+  "text": "The family of traditions devoted to Vishnu, Shiva and the Goddess, built on the Vedas, the epics and temple worship."
+ },
+ {
+  "id": "jainism",
+  "name": "Jainism",
+  "family": "Dharmic",
+  "color": "#d97a5a",
+  "start": -500,
+  "text": "Mahavira's path of non-violence and asceticism."
+ },
+ {
+  "id": "buddhism",
+  "name": "Early Buddhism",
+  "family": "Buddhism",
+  "color": "#f2c94c",
+  "start": -500,
+  "text": "The Buddha's teaching in its first Indian centuries, before the Theravada and Mahayana traditions separated."
+ },
+ {
+  "id": "theravada",
+  "name": "Theravada Buddhism",
+  "family": "Buddhism",
+  "color": "#e3b505",
+  "start": -250,
+  "text": "The 'teaching of the elders', based on the Pali canon, followed in Sri Lanka, Burma, Thailand, Laos and Cambodia."
+ },
+ {
+  "id": "mahayana",
+  "name": "Mahayana Buddhism",
+  "family": "Buddhism",
+  "color": "#cfa000",
+  "start": 100,
+  "text": "The 'great vehicle' with its bodhisattvas and many sutras, including Chan or Zen and Pure Land, followed in China, Korea, Japan and Vietnam."
+ },
+ {
+  "id": "vajrayana",
+  "name": "Tibetan (Vajrayana) Buddhism",
+  "family": "Buddhism",
+  "color": "#b8860b",
+  "start": 700,
+  "text": "Tantric Buddhism led by lamas such as the Dalai Lama, followed in Tibet, Mongolia, Bhutan and Buryatia."
+ },
+ {
+  "id": "chinese",
+  "name": "Confucianism, Taoism and Chinese folk religion",
+  "family": "East Asian",
+  "color": "#d9534f",
+  "start": -500,
+  "text": "China's blend of ancestor worship, Confucian ethics and Taoist practice, practised alongside Buddhism."
+ },
+ {
+  "id": "shinto",
+  "name": "Shinto",
+  "family": "East Asian",
+  "color": "#e86fae",
+  "start": 300,
+  "text": "Japan's worship of the kami at shrines, intertwined with Buddhism for a thousand years and made a state cult from 1868 to 1945."
+ },
+ {
+  "id": "christian",
+  "name": "Christianity (before the Great Schism)",
+  "family": "Christianity",
+  "color": "#5b6fc0",
+  "start": 30,
+  "text": "The one imperial church of the Roman world, before Catholics and Orthodox split in 1054."
+ },
+ {
+  "id": "arian",
+  "name": "Arian Christianity",
+  "family": "Christianity",
+  "color": "#6aa0b8",
+  "start": 320,
+  "text": "Christians who held that the Son was created by the Father; condemned at Nicaea in 325 but the faith of the Goths, Vandals and Lombards until about 700."
+ },
+ {
+  "id": "oriental",
+  "name": "Oriental Orthodoxy (Coptic, Ethiopian, Armenian, Syriac)",
+  "family": "Christianity",
+  "color": "#b05f8f",
+  "start": 451,
+  "text": "The ancient churches that rejected the Council of Chalcedon in 451: the Coptic, Ethiopian, Eritrean, Armenian and Syriac Orthodox churches."
+ },
+ {
+  "id": "east-syriac",
+  "name": "Church of the East (Nestorian)",
+  "family": "Christianity",
+  "color": "#8a6bb0",
+  "start": 431,
+  "text": "The Persian church whose missionaries reached India, Central Asia and Tang China."
+ },
+ {
+  "id": "catholic",
+  "name": "Roman Catholicism",
+  "family": "Christianity",
+  "color": "#3a63c8",
+  "start": 1054,
+  "text": "The Latin church led by the Pope in Rome, after the 1054 split with the Orthodox East."
+ },
+ {
+  "id": "orthodox",
+  "name": "Eastern Orthodoxy",
+  "family": "Christianity",
+  "color": "#9a5cc6",
+  "start": 1054,
+  "text": "The Greek, Slavic and Romanian churches in communion with Constantinople, after the 1054 split with Rome."
+ },
+ {
+  "id": "hussite",
+  "name": "Hussite (Utraquist) Christianity",
+  "family": "Christianity",
+  "color": "#4f86b0",
+  "start": 1415,
+  "text": "The Bohemian reform church of Jan Hus's followers, a century before Luther, which gave the laity the communion cup."
+ },
+ {
+  "id": "lutheran",
+  "name": "Lutheranism",
+  "family": "Christianity",
+  "color": "#6f88f2",
+  "start": 1517,
+  "text": "The first Protestant church, from Martin Luther's break with Rome, dominant in northern Germany and Scandinavia."
+ },
+ {
+  "id": "anglican",
+  "name": "Anglicanism",
+  "family": "Christianity",
+  "color": "#8aa4e0",
+  "start": 1534,
+  "text": "The Church of England, separated from Rome by Henry VIII in 1534, and its daughter churches across the British Empire."
+ },
+ {
+  "id": "reformed",
+  "name": "Reformed (Calvinist and Presbyterian)",
+  "family": "Christianity",
+  "color": "#5e7fd6",
+  "start": 1536,
+  "text": "John Calvin's Protestantism: the Swiss, Dutch, Scottish Presbyterian and Huguenot churches."
+ },
+ {
+  "id": "protestant",
+  "name": "Evangelical Protestantism",
+  "family": "Christianity",
+  "color": "#7b8cf0",
+  "start": 1600,
+  "text": "Later Protestant movements such as Baptists, Methodists and Pentecostals, strongest in the United States, Africa and Latin America today."
+ },
+ {
+  "id": "sunni",
+  "name": "Sunni Islam",
+  "family": "Islam",
+  "color": "#5aab3e",
+  "start": 632,
+  "text": "The majority branch of Islam, which accepted the elected caliphs as Muhammad's successors."
+ },
+ {
+  "id": "shia",
+  "name": "Twelver Shia Islam",
+  "family": "Islam",
+  "color": "#138a72",
+  "start": 680,
+  "text": "The branch that follows Ali and twelve imams as Muhammad's rightful successors, state religion of Iran since 1501."
+ },
+ {
+  "id": "ismaili",
+  "name": "Ismaili Shia Islam",
+  "family": "Islam",
+  "color": "#2f9e8f",
+  "start": 765,
+  "text": "The Sevener branch of Shia Islam, faith of the Fatimid caliphs who ruled Egypt and North Africa from 909 to 1171."
+ },
+ {
+  "id": "ibadi",
+  "name": "Ibadi Islam",
+  "family": "Islam",
+  "color": "#7fb85a",
+  "start": 700,
+  "text": "A small early branch of Islam, distinct from both Sunni and Shia, majority in Oman."
+ },
+ {
+  "id": "sikhism",
+  "name": "Sikhism",
+  "family": "Dharmic",
+  "color": "#c96b00",
+  "start": 1500,
+  "text": "Guru Nanak's monotheist faith of the Punjab, whose Sikh Empire ruled the region from 1799 to 1849."
+ },
+ {
+  "id": "secular",
+  "name": "Secular or state atheism",
+  "family": "Non-religious",
+  "color": "#7d8796",
+  "start": 1917,
+  "text": "Communist states that suppressed religion, and societies where most people now follow none."
+ }
+]

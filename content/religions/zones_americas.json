@@ -1,0 +1,2200 @@
+[
+ {
+  "id": "alaska-southwest",
+  "name": "Kodiak and the Aleutians",
+  "lon": -152.4,
+  "lat": 57.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Unangan (Aleut), Alutiiq and Yup'ik peoples followed shamans and honoured the spirits of sea mammals, weather and ancestors."
+   },
+   {
+    "from": 1794,
+    "faith": "orthodox",
+    "note": "Monks from Valaam, among them St Herman, came to Kodiak with the Russian traders, and the Aleuts and Alutiiq became Russian Orthodox, a faith they kept after the 1867 US purchase."
+   }
+  ]
+ },
+ {
+  "id": "alaska",
+  "name": "Alaska",
+  "lon": -149.5,
+  "lat": 62.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Athabaskan peoples such as the Dena'ina and Koyukon, and the Inupiat to the north, held animist beliefs guided by shamans."
+   },
+   {
+    "from": 1900,
+    "faith": "protestant",
+    "note": "After the 1867 US purchase, Presbyterian, Methodist and Episcopal missions spread and the gold rushes of 1896 to 1902 brought mostly Protestant settlers, though nearly a third of Alaskans now claim no religion."
+   }
+  ]
+ },
+ {
+  "id": "yukon",
+  "name": "Yukon",
+  "lon": -135.05,
+  "lat": 60.72,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tagish, Tutchone, Inland Tlingit and other First Nations followed animist beliefs and the guidance of shamans."
+   },
+   {
+    "from": 1890,
+    "faith": "anglican",
+    "note": "Anglican missionaries under Bishop William Bompas converted many First Nations, and the 1898 Klondike gold rush brought a wave of mostly Protestant settlers."
+   },
+   {
+    "from": 2015,
+    "faith": "secular",
+    "note": "Yukon became one of the least religious places in North America, with 60 percent reporting no religion in the 2021 census."
+   }
+  ]
+ },
+ {
+  "id": "northwest-territories",
+  "name": "Northwest Territories",
+  "lon": -114.37,
+  "lat": 62.45,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Dene peoples such as the Dogrib (Tlicho), Slavey and Chipewyan honoured animal spirits and followed prophets and shamans."
+   },
+   {
+    "from": 1860,
+    "faith": "catholic",
+    "note": "French Oblate missionaries working along the Mackenzie River fur trade posts from the 1850s converted most Dene to Catholicism."
+   }
+  ]
+ },
+ {
+  "id": "nunavut",
+  "name": "Nunavut and the Canadian Arctic",
+  "lon": -68.5,
+  "lat": 63.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Dorset and then Thule Inuit hunters followed angakkuit (shamans) and honoured Sedna, the sea woman who rules the animals."
+   },
+   {
+    "from": 1920,
+    "faith": "anglican",
+    "note": "Conversions spread from Edmund Peck's Anglican mission begun on Baffin Island in 1894, and by the 1920s most Inuit of the eastern Arctic were Anglican."
+   }
+  ]
+ },
+ {
+  "id": "greenland",
+  "name": "Greenland",
+  "lon": -51.7,
+  "lat": 64.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Saqqaq and Dorset Paleo-Eskimo hunters lived along the coasts with shamanic beliefs."
+   },
+   {
+    "from": 985,
+    "faith": "pagan-europe",
+    "note": "Erik the Red led Norse settlers from Iceland to found the Eastern and Western Settlements, the latter near today's Nuuk, worshipping Thor and Odin."
+   },
+   {
+    "from": 1000,
+    "faith": "christian",
+    "note": "Erik's wife Thjodhild built Greenland's first church at Brattahlid as the Norse settlers followed Iceland into Christianity."
+   },
+   {
+    "from": 1054,
+    "faith": "catholic",
+    "note": "After the Great Schism the Greenland Norse stayed with Rome, receiving their own bishop at Gardar in 1126."
+   },
+   {
+    "from": 1350,
+    "faith": "folk",
+    "note": "The Norse Western Settlement was abandoned around 1350 and the Eastern by about 1450, leaving Greenland to Thule Inuit who followed shamans and the sea goddess Sedna."
+   },
+   {
+    "from": 1760,
+    "faith": "lutheran",
+    "note": "Lutheran missions begun by Hans Egede at Nuuk in 1721, alongside Moravian stations, converted most West Greenland Inuit by the late 1700s; the Church of Greenland is still Lutheran."
+   }
+  ]
+ },
+ {
+  "id": "british-columbia",
+  "name": "British Columbia",
+  "lon": -122.5,
+  "lat": 49.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Coast Salish, Kwakwaka'wakw, Haida and other peoples raised totem poles, held potlatches and winter dances and honoured guardian spirits."
+   },
+   {
+    "from": 1858,
+    "faith": "anglican",
+    "note": "The Fraser River gold rush and the new Crown colony brought British settlers, and the Church of England, beside Catholic, Methodist and Presbyterian missions, became the largest church."
+   },
+   {
+    "from": 2021,
+    "faith": "secular",
+    "note": "The 2021 census found 52 percent of British Columbians reporting no religion, the highest share of any Canadian province."
+   }
+  ]
+ },
+ {
+  "id": "alberta",
+  "name": "Alberta",
+  "lon": -113.5,
+  "lat": 52.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Blackfoot (Siksika, Kainai, Piikani), Plains Cree and Tsuut'ina peoples held the Sun Dance and medicine bundle ceremonies."
+   },
+   {
+    "from": 1900,
+    "faith": "protestant",
+    "note": "The Canadian Pacific Railway and homestead settlement brought Methodist, Presbyterian and Lutheran farmers, and Alberta later became the heartland of Canadian evangelicalism."
+   }
+  ]
+ },
+ {
+  "id": "canadian-prairies",
+  "name": "Saskatchewan and Manitoba",
+  "lon": -101.5,
+  "lat": 50.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Plains Cree, Assiniboine, Ojibwe and Dakota peoples honoured the Creator through the Sun Dance, sweat lodge and vision quest."
+   },
+   {
+    "from": 1885,
+    "faith": "protestant",
+    "note": "After the railway and the defeat of the Metis North-West Resistance of 1885, Ontario Protestants and European immigrants homesteaded the prairies, with Methodist and Presbyterian churches strongest."
+   },
+   {
+    "from": 1960,
+    "faith": "catholic",
+    "note": "Ukrainian Greek Catholic, German, Polish, French and Metis Catholics made the Catholic Church the largest in Saskatchewan and Manitoba by the 1960s, ahead of the United Church."
+   }
+  ]
+ },
+ {
+  "id": "ontario",
+  "name": "Ontario",
+  "lon": -79.8,
+  "lat": 43.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Iroquoian Huron-Wendat, Neutral and Haudenosaunee farmers and Anishinaabe hunters held the Feast of the Dead and other spirit rites."
+   },
+   {
+    "from": 1784,
+    "faith": "anglican",
+    "note": "United Empire Loyalists fleeing the American Revolution settled Upper Canada, where the 1791 Constitutional Act set aside clergy reserves for the established Church of England."
+   },
+   {
+    "from": 1830,
+    "faith": "protestant",
+    "note": "Methodist circuit riders and camp meetings made Methodism the largest church of Upper Canada, and in 1925 Methodists joined Presbyterians in the United Church of Canada."
+   },
+   {
+    "from": 1961,
+    "faith": "catholic",
+    "note": "Postwar Italian, Portuguese, Polish and later Filipino and Latin American immigration made Catholics the largest church in Ontario, ahead of the United and Anglican churches."
+   }
+  ]
+ },
+ {
+  "id": "quebec",
+  "name": "Quebec",
+  "lon": -71.25,
+  "lat": 46.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Iroquoian villagers of Stadacona and Hochelaga and Algonquian peoples such as the Innu honoured the spirits of animals, the sky and the dead."
+   },
+   {
+    "from": 1608,
+    "faith": "catholic",
+    "note": "Samuel de Champlain founded Quebec, and New France grew as a strictly Catholic colony whose church stayed central to French Canadian life after the 1763 British conquest until the 1960s Quiet Revolution."
+   }
+  ]
+ },
+ {
+  "id": "new-brunswick",
+  "name": "New Brunswick",
+  "lon": -65.5,
+  "lat": 46.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Mi'kmaq, Wolastoqiyik (Maliseet) and Passamaquoddy peoples honoured the culture hero Glooscap and the spirits of land and sea."
+   },
+   {
+    "from": 1610,
+    "faith": "catholic",
+    "note": "French missionaries converted the Mi'kmaq and Wolastoqiyik, who became Catholic allies of the Acadian settlers and New France."
+   },
+   {
+    "from": 1783,
+    "faith": "protestant",
+    "note": "After the Acadian expulsion of 1755, Loyalists founded Saint John and Fredericton, and Baptist, Methodist, Anglican and Presbyterian settlers formed a Protestant majority."
+   },
+   {
+    "from": 1950,
+    "faith": "catholic",
+    "note": "The growth of returning Acadians and Irish Catholics made Catholics about half of New Brunswick's people by the mid 1900s."
+   }
+  ]
+ },
+ {
+  "id": "nova-scotia",
+  "name": "Nova Scotia",
+  "lon": -63.6,
+  "lat": 45.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mi'kmaq of Mi'kma'ki honoured Kisu'lk the Creator and the culture hero Glooscap, guided by shamans called puoinaq."
+   },
+   {
+    "from": 1610,
+    "faith": "catholic",
+    "note": "The Mi'kmaq grand chief Membertou was baptised at Port-Royal, and the Mi'kmaq and the French settlers of Acadia became Catholic."
+   },
+   {
+    "from": 1760,
+    "faith": "protestant",
+    "note": "After Halifax was founded in 1749 and the Acadians were expelled in 1755, New England Planters, Loyalists and Scottish settlers made Nova Scotia mostly Baptist, Presbyterian, Methodist and Anglican."
+   }
+  ]
+ },
+ {
+  "id": "newfoundland",
+  "name": "Newfoundland and Labrador",
+  "lon": -53.5,
+  "lat": 47.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Maritime Archaic people and later the Beothuk, who coated themselves in red ochre, held animist beliefs; the Norse camp at L'Anse aux Meadows around 1000 left no lasting church."
+   },
+   {
+    "from": 1610,
+    "faith": "anglican",
+    "note": "English West Country fishermen settled the Avalon coast from the founding of Cupids in 1610, bringing the Church of England."
+   },
+   {
+    "from": 1800,
+    "faith": "catholic",
+    "note": "Heavy Irish immigration in the late 1700s and early 1800s made Catholics the largest church, ahead of the Anglicans and the Methodists of the outports."
+   }
+  ]
+ },
+ {
+  "id": "new-england",
+  "name": "Southern New England",
+  "lon": -71.4,
+  "lat": 42.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Algonquian peoples such as the Wampanoag, Massachusett and Narragansett honoured the creator Kiehtan and the spirit powers called manitou through their powwaws, or shamans."
+   },
+   {
+    "from": 1630,
+    "faith": "reformed",
+    "note": "Puritans of the Massachusetts Bay Company, following the Plymouth Pilgrims of 1620, built Calvinist Congregational churches that were established by law in Massachusetts until 1833."
+   },
+   {
+    "from": 1880,
+    "faith": "catholic",
+    "note": "Irish, French Canadian, Italian and Portuguese immigration made Catholics the largest religious group in Massachusetts, Rhode Island and Connecticut by the late 1800s."
+   }
+  ]
+ },
+ {
+  "id": "northern-new-england",
+  "name": "Northern New England",
+  "lon": -71.0,
+  "lat": 44.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Abenaki and Penobscot peoples lived by hunting and planting and honoured the culture hero Gluskabe and the spirits of the land."
+   },
+   {
+    "from": 1760,
+    "faith": "reformed",
+    "note": "After the fall of New France in 1760 ended the Abenaki wars, Congregationalist settlers from southern New England flooded into New Hampshire, Vermont and Maine."
+   }
+  ]
+ },
+ {
+  "id": "new-york-city",
+  "name": "New York City and New Jersey",
+  "lon": -74.0,
+  "lat": 40.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Lenape peoples honoured a creator and the manitou spirits of nature and held seasonal thanksgiving ceremonies."
+   },
+   {
+    "from": 1625,
+    "faith": "reformed",
+    "note": "The Dutch West India Company founded New Amsterdam with the Dutch Reformed Church as its official faith, and after the English took it in 1664 Reformed and Presbyterian churches stayed strongest."
+   },
+   {
+    "from": 1850,
+    "faith": "catholic",
+    "note": "Irish refugees from the Great Famine and German immigrants made Catholics the largest church in New York by the 1850s, later joined by Italians, Poles and Puerto Ricans."
+   }
+  ]
+ },
+ {
+  "id": "upstate-new-york",
+  "name": "Upstate New York",
+  "lon": -76.2,
+  "lat": 42.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Haudenosaunee, the Iroquois League said to be founded by the Peacemaker and Hiawatha, held Longhouse ceremonies of thanksgiving to the Creator."
+   },
+   {
+    "from": 1790,
+    "faith": "protestant",
+    "note": "After the Revolution the Iroquois lost most of their lands and Yankee settlers filled the region, which revivals made the Burned-over District of Methodists, Baptists and Presbyterians."
+   },
+   {
+    "from": 1920,
+    "faith": "catholic",
+    "note": "Irish, German, Italian and Polish workers in Buffalo, Rochester, Syracuse and Albany made Catholics the largest church in upstate New York by the early 1900s."
+   }
+  ]
+ },
+ {
+  "id": "pennsylvania",
+  "name": "Pennsylvania",
+  "lon": -77.2,
+  "lat": 40.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Lenape and Susquehannock peoples honoured a creator and the spirits of nature through dances and the Big House ceremony."
+   },
+   {
+    "from": 1682,
+    "faith": "protestant",
+    "note": "William Penn's Quaker colony welcomed all faiths and drew Quakers, German Lutherans, Reformed, Mennonites and Amish, and Scots-Irish Presbyterians, a Protestant majority of many churches."
+   }
+  ]
+ },
+ {
+  "id": "chesapeake",
+  "name": "Virginia and Maryland",
+  "lon": -77.4,
+  "lat": 37.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Powhatan paramount chiefdom and neighbouring Algonquian peoples worshipped the creator Ahone and the feared spirit Okeus through priests and temples."
+   },
+   {
+    "from": 1607,
+    "faith": "anglican",
+    "note": "English colonists at Jamestown made the Church of England the established church of Virginia, and of Maryland from 1702 despite its founding as a Catholic refuge in 1634."
+   },
+   {
+    "from": 1790,
+    "faith": "protestant",
+    "note": "After Virginia's 1786 Statute for Religious Freedom disestablished the Episcopal Church, Baptist and Methodist revivals won most white and enslaved Black Virginians."
+   }
+  ]
+ },
+ {
+  "id": "carolinas",
+  "name": "The Carolinas",
+  "lon": -79.5,
+  "lat": 35.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Catawba, Cherokee and other heirs of the Mississippian mound builders held the Green Corn ceremony and honoured the spirits of sacred fire and water."
+   },
+   {
+    "from": 1670,
+    "faith": "anglican",
+    "note": "English settlers founded Charles Town, and the Church of England was established by law in both Carolinas, though Quakers, Huguenots and Baptists were numerous."
+   },
+   {
+    "from": 1790,
+    "faith": "protestant",
+    "note": "Baptist and Methodist revivals of the Great Awakenings won most white Carolinians and, through Black preachers, the enslaved, making the region a stronghold of evangelical Protestantism."
+   }
+  ]
+ },
+ {
+  "id": "upland-south",
+  "name": "Tennessee and Kentucky",
+  "lon": -86.0,
+  "lat": 36.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Mississippian chiefdoms and later Cherokee, Shawnee and Chickasaw peoples held seasonal rites honouring the sun, sacred fire and ancestors."
+   },
+   {
+    "from": 1790,
+    "faith": "protestant",
+    "note": "Settlers crossing the Appalachians brought Baptist, Methodist and Presbyterian faith, and the Cane Ridge revival of 1801 in Kentucky set off the frontier camp meeting movement."
+   }
+  ]
+ },
+ {
+  "id": "deep-south",
+  "name": "Georgia, Alabama and Mississippi",
+  "lon": -86.3,
+  "lat": 32.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Mississippian mound centres such as Moundville and Etowah, and later the Creek, Choctaw and Chickasaw nations, honoured the sun and sacred fire in the Green Corn ceremony."
+   },
+   {
+    "from": 1815,
+    "faith": "protestant",
+    "note": "After the Creek War of 1814 and the later removal of the southern nations, cotton planters and the enslaved poured in, and Baptist and Methodist churches became the faith of white and Black Southerners."
+   }
+  ]
+ },
+ {
+  "id": "arkansas",
+  "name": "Arkansas",
+  "lon": -92.3,
+  "lat": 34.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Caddo, Quapaw and Osage peoples, heirs of the mound builders, honoured a supreme being and the spirits of nature."
+   },
+   {
+    "from": 1820,
+    "faith": "protestant",
+    "note": "After the Louisiana Purchase settlers from Tennessee and Kentucky brought Baptist and Methodist churches to Arkansas Territory, created in 1819."
+   }
+  ]
+ },
+ {
+  "id": "florida",
+  "name": "Florida",
+  "lon": -81.8,
+  "lat": 28.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Timucua, Apalachee, Calusa and Tequesta peoples worshipped the sun and moon and built temple mounds."
+   },
+   {
+    "from": 1565,
+    "faith": "catholic",
+    "note": "Pedro Menendez founded St Augustine, and Franciscan missions converted most Timucua and Apalachee by the mid 1600s."
+   },
+   {
+    "from": 1704,
+    "faith": "folk",
+    "note": "Carolina English and Creek allies destroyed the Apalachee and Timucua missions in raids of 1702 to 1704, and the Seminoles who later settled Florida kept their own traditions."
+   },
+   {
+    "from": 1821,
+    "faith": "protestant",
+    "note": "Florida passed to the United States, and Anglo-American settlers made it Baptist and Methodist, though Cuban and other Latin American migration later built a large Catholic community."
+   }
+  ]
+ },
+ {
+  "id": "louisiana",
+  "name": "South Louisiana",
+  "lon": -91.3,
+  "lat": 30.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Natchez, Chitimacha and Caddo peoples, heirs of the mound builders, honoured the sun; the Natchez ruler, the Great Sun, kept an eternal temple fire."
+   },
+   {
+    "from": 1718,
+    "faith": "catholic",
+    "note": "The French founded New Orleans, the Code Noir required enslaved people to be baptised Catholic, and Acadian exiles from 1765 kept south Louisiana Catholic after the 1803 Louisiana Purchase."
+   }
+  ]
+ },
+ {
+  "id": "texas",
+  "name": "Texas",
+  "lon": -97.5,
+  "lat": 31.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Caddo farmers with temple mounds, Tonkawa hunters and later Comanche and Apache horsemen followed their own spirit traditions."
+   },
+   {
+    "from": 1718,
+    "faith": "catholic",
+    "note": "Spain founded San Antonio and a chain of Franciscan missions, making Catholicism the ruling faith, though Comanche and Apache peoples still controlled most of Texas."
+   },
+   {
+    "from": 1836,
+    "faith": "protestant",
+    "note": "Anglo-American settlers, who by then outnumbered Tejanos about ten to one, won Texan independence, and Baptist and Methodist churches became dominant."
+   }
+  ]
+ },
+ {
+  "id": "south-texas",
+  "name": "South Texas",
+  "lon": -98.4,
+  "lat": 27.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Coahuiltecan and Karankawa bands lived by hunting and gathering and held mitote dances led by shamans."
+   },
+   {
+    "from": 1749,
+    "faith": "catholic",
+    "note": "Jose de Escandon founded Spanish towns along the Rio Grande in Nuevo Santander, and the region's Tejano and Mexican American majority has stayed Catholic."
+   }
+  ]
+ },
+ {
+  "id": "oklahoma",
+  "name": "Oklahoma",
+  "lon": -97.5,
+  "lat": 35.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Wichita and Caddo farmers, and later Comanche, Kiowa and Osage peoples, held Sun Dance and medicine bundle rites."
+   },
+   {
+    "from": 1889,
+    "faith": "protestant",
+    "note": "The Cherokee, Creek and other removed nations brought Baptist and Methodist churches, and the land runs from 1889 filled Oklahoma with Protestant settlers from the South."
+   }
+  ]
+ },
+ {
+  "id": "ohio",
+  "name": "Ohio",
+  "lon": -82.8,
+  "lat": 40.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Adena and Hopewell built burial mounds and earthworks such as the Great Serpent Mound, and later the Shawnee, Miami and Delaware honoured the Great Spirit."
+   },
+   {
+    "from": 1795,
+    "faith": "protestant",
+    "note": "The Treaty of Greenville opened Ohio to settlers from New England, Virginia and Pennsylvania, who brought Methodist, Baptist and Presbyterian churches."
+   }
+  ]
+ },
+ {
+  "id": "indiana-illinois",
+  "name": "Indiana and Illinois",
+  "lon": -88.0,
+  "lat": 40.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cahokia, the largest Mississippian city around 1100, and later Illinois, Miami and Potawatomi peoples held rites to the sun and the spirits of the land."
+   },
+   {
+    "from": 1815,
+    "faith": "protestant",
+    "note": "After the War of 1812 broke Native resistance, settlers from Kentucky and Ohio filled Indiana and Illinois with Methodist and Baptist churches, though Chicago later grew strongly Catholic."
+   }
+  ]
+ },
+ {
+  "id": "michigan",
+  "name": "Michigan",
+  "lon": -84.6,
+  "lat": 43.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Anishinaabe peoples, the Ojibwe, Odawa and Potawatomi, honoured Gitche Manitou and kept the Midewiwin medicine society."
+   },
+   {
+    "from": 1830,
+    "faith": "protestant",
+    "note": "The Erie Canal brought Yankee settlers who made Michigan Methodist, Baptist and Presbyterian, later joined by Dutch Reformed and German Lutheran immigrants."
+   }
+  ]
+ },
+ {
+  "id": "upper-midwest",
+  "name": "Minnesota and Wisconsin",
+  "lon": -92.5,
+  "lat": 45.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Dakota and Ojibwe peoples held Midewiwin, vision quest and medicine dance ceremonies honouring the Great Spirit."
+   },
+   {
+    "from": 1870,
+    "faith": "lutheran",
+    "note": "After the Dakota War of 1862, Norwegian, Swedish and German Lutheran homesteaders made Lutheranism the largest Protestant church of Minnesota and Wisconsin, closely rivalled by Catholics."
+   }
+  ]
+ },
+ {
+  "id": "missouri-iowa",
+  "name": "Missouri and Iowa",
+  "lon": -92.5,
+  "lat": 40.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Osage, Missouria and Ioway peoples, and earlier Mississippian towns, honoured the sun, thunder beings and sacred bundles."
+   },
+   {
+    "from": 1820,
+    "faith": "protestant",
+    "note": "Settlers from Kentucky, Tennessee and Virginia brought Baptist and Methodist churches, while French Catholic St Louis and later German Catholics formed a large minority."
+   }
+  ]
+ },
+ {
+  "id": "northern-plains",
+  "name": "The Dakotas",
+  "lon": -100.3,
+  "lat": 46.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Lakota, Dakota, Mandan and Hidatsa held Sun Dance and vision quest rites to Wakan Tanka, the Great Mystery."
+   },
+   {
+    "from": 1880,
+    "faith": "lutheran",
+    "note": "The Great Dakota Boom brought Norwegian and German Lutheran homesteaders by the hundred thousand, while Catholic and Episcopal missions worked on the Lakota reservations."
+   }
+  ]
+ },
+ {
+  "id": "central-plains",
+  "name": "Kansas and Nebraska",
+  "lon": -98.5,
+  "lat": 39.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Pawnee, Kansa, Osage and Cheyenne peoples held the Morning Star ceremony, buffalo rites and the Sun Dance."
+   },
+   {
+    "from": 1860,
+    "faith": "protestant",
+    "note": "The Kansas-Nebraska Act of 1854 and the Homestead Act of 1862 brought Methodist, Baptist and other Protestant settlers, and the Plains peoples were confined to reservations."
+   }
+  ]
+ },
+ {
+  "id": "colorado",
+  "name": "Colorado",
+  "lon": -105.0,
+  "lat": 39.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Ancestral Puebloans built the cliff dwellings of Mesa Verde, and later Ute, Arapaho and Cheyenne peoples held the Bear Dance and Sun Dance."
+   },
+   {
+    "from": 1860,
+    "faith": "protestant",
+    "note": "The Pike's Peak gold rush of 1859 and the railroads brought Anglo-American settlers and Protestant churches, though Hispano villages in the south stayed Catholic."
+   }
+  ]
+ },
+ {
+  "id": "northern-rockies",
+  "name": "Montana and Wyoming",
+  "lon": -109.0,
+  "lat": 46.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Blackfeet, Crow, Salish and Shoshone peoples held the Sun Dance and medicine bundle ceremonies."
+   },
+   {
+    "from": 1880,
+    "faith": "protestant",
+    "note": "Gold and copper mining, cattle ranching and the Northern Pacific Railway brought settlers who built Methodist, Lutheran and Presbyterian churches beside Catholic ones."
+   }
+  ]
+ },
+ {
+  "id": "idaho",
+  "name": "Idaho",
+  "lon": -115.5,
+  "lat": 44.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Shoshone, Bannock and Nez Perce peoples sought guardian spirits through vision quests."
+   },
+   {
+    "from": 1862,
+    "faith": "protestant",
+    "note": "Gold strikes in the Boise Basin brought Protestant miners and farmers while Latter-day Saints settled the south-east, and Protestants together remain the largest group."
+   }
+  ]
+ },
+ {
+  "id": "nevada",
+  "name": "Nevada",
+  "lon": -117.5,
+  "lat": 39.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Paiute, Shoshone and Washoe peoples of the Great Basin followed shamans; the Paiute prophet Wovoka began the Ghost Dance here in 1889."
+   },
+   {
+    "from": 1860,
+    "faith": "protestant",
+    "note": "The Comstock Lode silver rush of 1859 brought miners from across the country, making Nevada a mixed but mostly Protestant state, though Catholics are now the largest single church."
+   }
+  ]
+ },
+ {
+  "id": "utah",
+  "name": "Utah",
+  "lon": -111.9,
+  "lat": 40.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Fremont farmers and later Ute, Southern Paiute and Shoshone peoples held the Bear Dance and other spirit ceremonies."
+   },
+   {
+    "from": 1847,
+    "faith": "protestant",
+    "note": "Brigham Young led the Latter-day Saints to the Salt Lake Valley; Mormons, still a majority of Utahns, appear under the Protestant colour only because this map has no separate Latter-day Saint category."
+   }
+  ]
+ },
+ {
+  "id": "new-mexico",
+  "name": "New Mexico",
+  "lon": -106.0,
+  "lat": 35.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Ancestral Puebloans built Chaco Canyon, and the Pueblo peoples held kachina dances in kivas, later joined by Apache and Navajo peoples."
+   },
+   {
+    "from": 1598,
+    "faith": "catholic",
+    "note": "Juan de Onate colonised New Mexico, and Franciscan friars baptised the Pueblos and suppressed the kachina ceremonies."
+   },
+   {
+    "from": 1680,
+    "faith": "folk",
+    "note": "Po'pay led the Pueblo Revolt, which killed or expelled the Spanish and their friars and restored the old ceremonies for twelve years."
+   },
+   {
+    "from": 1692,
+    "faith": "catholic",
+    "note": "Diego de Vargas reconquered New Mexico, and the Catholicism of Hispano villages and Pueblos, often alongside Pueblo ritual, has remained the largest faith."
+   }
+  ]
+ },
+ {
+  "id": "arizona",
+  "name": "Arizona",
+  "lon": -111.9,
+  "lat": 33.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Hohokam built canals and ball courts, and their O'odham descendants and the Hopi, Apache and Navajo kept their own ceremonies."
+   },
+   {
+    "from": 1880,
+    "faith": "protestant",
+    "note": "Railroads and copper mining brought Anglo-American and Mormon settlers, and Protestant churches overtook the Catholic faith of the Hispanic towns and O'odham missions."
+   }
+  ]
+ },
+ {
+  "id": "northern-california",
+  "name": "Northern California",
+  "lon": -121.9,
+  "lat": 38.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Ohlone, Miwok and Pomo peoples held Kuksu society dances and honoured the spirits of the land."
+   },
+   {
+    "from": 1776,
+    "faith": "catholic",
+    "note": "Franciscans founded Mission Dolores at San Francisco and other Bay Area missions, where many Ohlone were baptised and died of disease; Catholicism was the ruling faith."
+   },
+   {
+    "from": 1849,
+    "faith": "protestant",
+    "note": "The Gold Rush brought a flood of mostly Protestant Americans, alongside many Catholic Irish, Mexicans and Chileans, and Protestants became the largest group."
+   }
+  ]
+ },
+ {
+  "id": "southern-california",
+  "name": "Southern California",
+  "lon": -118.0,
+  "lat": 34.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tongva, Chumash and Cahuilla peoples followed shamans, and many joined the Chinigchinich religion of visions and toloache rites."
+   },
+   {
+    "from": 1769,
+    "faith": "catholic",
+    "note": "Junipero Serra founded the first Franciscan mission at San Diego, and the mission chain made the coastal peoples Catholic under Spanish and then Mexican rule."
+   },
+   {
+    "from": 1885,
+    "faith": "protestant",
+    "note": "The railroad land boom of the 1880s brought Midwestern Protestants who made Los Angeles a heavily Protestant city for decades."
+   },
+   {
+    "from": 1990,
+    "faith": "catholic",
+    "note": "Mexican and Central American immigration again made Catholics the largest religious group in Southern California."
+   }
+  ]
+ },
+ {
+  "id": "pacific-northwest",
+  "name": "Oregon and Washington",
+  "lon": -122.6,
+  "lat": 46.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Chinook, Coast Salish and Kalapuya peoples held potlatches and winter spirit dances and honoured the salmon and guardian spirits."
+   },
+   {
+    "from": 1843,
+    "faith": "protestant",
+    "note": "Methodist and Presbyterian missions preceded the Oregon Trail migrations from 1843, which made Oregon and Washington settler lands with Protestant majorities, though a third now claim no religion."
+   }
+  ]
+ },
+ {
+  "id": "central-mexico",
+  "name": "Central Mexico",
+  "lon": -99.1,
+  "lat": 19.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early hunters and the first maize farmers of the Valley of Mexico honoured the forces of nature and the dead."
+   },
+   {
+    "from": -1200,
+    "faith": "mesoamerican",
+    "note": "Tlatilco took up Olmec-style ritual, and the valley later centred its worship on Teotihuacan's Pyramids of the Sun and Moon and, from 1325, on the Aztec Templo Mayor of Tenochtitlan."
+   },
+   {
+    "from": 1521,
+    "faith": "catholic",
+    "note": "Cortes conquered Tenochtitlan, Franciscans from 1524 baptised millions, and the Virgin of Guadalupe became the symbol of a Mexican Catholicism that survived the anticlerical laws and the Cristero War."
+   }
+  ]
+ },
+ {
+  "id": "gulf-coast-mexico",
+  "name": "Veracruz and Tabasco",
+  "lon": -94.5,
+  "lat": 18.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farmers of the Gulf lowlands honoured spirits of rain, maize and the jaguar."
+   },
+   {
+    "from": -1200,
+    "faith": "mesoamerican",
+    "note": "The Olmec of San Lorenzo and La Venta, the mother culture of Mesoamerica, carved colossal heads and worshipped jaguar-faced rain and maize gods."
+   },
+   {
+    "from": 1521,
+    "faith": "catholic",
+    "note": "Cortes landed at Veracruz in 1519, and after the fall of the Aztecs friars converted the Totonac, Nahua and Chontal Maya peoples of the Gulf coast."
+   }
+  ]
+ },
+ {
+  "id": "oaxaca",
+  "name": "Oaxaca",
+  "lon": -96.7,
+  "lat": 17.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early maize farmers of the Oaxaca valleys honoured the lightning god and their ancestors."
+   },
+   {
+    "from": -1200,
+    "faith": "mesoamerican",
+    "note": "San Jose Mogote and later Monte Alban, the Zapotec capital from 500 BC, built temples and ball courts and used the Mesoamerican calendar, as did the Mixtec kingdoms."
+   },
+   {
+    "from": 1529,
+    "faith": "catholic",
+    "note": "Dominican friars followed the Spanish conquest and built churches like Santo Domingo de Oaxaca, though Zapotec and Mixtec villages kept many old rites within Catholic practice."
+   }
+  ]
+ },
+ {
+  "id": "west-mexico",
+  "name": "Jalisco and Michoacan",
+  "lon": -103.0,
+  "lat": 20.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early peoples of western Mexico honoured the dead in shaft tombs and the spirits of nature."
+   },
+   {
+    "from": -1000,
+    "faith": "mesoamerican",
+    "note": "Shaft tomb and Teuchitlan cultures shared Mesoamerican ritual, and from about 1350 the Purepecha (Tarascan) state worshipped the fire god Curicaueri at Tzintzuntzan."
+   },
+   {
+    "from": 1530,
+    "faith": "catholic",
+    "note": "Nuno de Guzman's brutal conquest created Nueva Galicia and Franciscans evangelised the region, which became the Catholic heartland of the Cristero War in the 1920s."
+   }
+  ]
+ },
+ {
+  "id": "bajio-zacatecas",
+  "name": "Zacatecas and the Bajio",
+  "lon": -102.0,
+  "lat": 22.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Chichimeca hunter-gatherers roamed the northern plateau honouring the sun and the spirits of the hunt, while frontier towns like La Quemada briefly held Mesoamerican temples."
+   },
+   {
+    "from": 1550,
+    "faith": "catholic",
+    "note": "Silver strikes at Zacatecas in 1546 and Guanajuato drew Spanish miners, and after the Chichimeca War ended around 1590 Franciscans and Christian Indian settlers made the region Catholic."
+   }
+  ]
+ },
+ {
+  "id": "northeast-mexico",
+  "name": "Nuevo Leon and Coahuila",
+  "lon": -100.6,
+  "lat": 26.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Coahuiltecan and other hunter-gatherer bands of the northeast held mitote dances and peyote rites."
+   },
+   {
+    "from": 1596,
+    "faith": "catholic",
+    "note": "Diego de Montemayor founded Monterrey, and Spanish settlers with Tlaxcalan colonists and Franciscans made the northeast Catholic as its native peoples died out or were absorbed."
+   }
+  ]
+ },
+ {
+  "id": "chihuahua",
+  "name": "Chihuahua and Durango",
+  "lon": -106.1,
+  "lat": 28.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Raramuri (Tarahumara), Tepehuan, Concho and later Apache peoples honoured the sun and moon and danced to bring rain."
+   },
+   {
+    "from": 1640,
+    "faith": "catholic",
+    "note": "Silver mining at Santa Barbara and Parral and Jesuit and Franciscan missions among the Raramuri made the north Catholic, though Raramuri ritual still blends both faiths."
+   }
+  ]
+ },
+ {
+  "id": "sonora",
+  "name": "Sonora and Sinaloa",
+  "lon": -109.9,
+  "lat": 28.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Yaqui, Mayo, O'odham and Seri peoples held deer dances and other rites to the spirits of the desert."
+   },
+   {
+    "from": 1620,
+    "faith": "catholic",
+    "note": "Jesuit missionaries entered the Mayo and Yaqui valleys from 1614 to 1617, and the Yaqui built a distinctive Catholic ritual life around their eight pueblos."
+   }
+  ]
+ },
+ {
+  "id": "baja-california",
+  "name": "Baja California",
+  "lon": -113.0,
+  "lat": 27.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cochimi, Guaycura and Pericu bands painted the great murals of the Sierra de San Francisco and followed shamans."
+   },
+   {
+    "from": 1697,
+    "faith": "catholic",
+    "note": "The Jesuit Juan Maria de Salvatierra founded Loreto, the first lasting mission, and the peninsula's native peoples were baptised as epidemics destroyed their numbers."
+   }
+  ]
+ },
+ {
+  "id": "yucatan",
+  "name": "Yucatan",
+  "lon": -89.3,
+  "lat": 20.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early Maya farmers of the limestone plain honoured the rain and the sacred waters of the cenotes."
+   },
+   {
+    "from": -1000,
+    "faith": "mesoamerican",
+    "note": "Maya cities such as Chichen Itza, Uxmal and Mayapan worshipped Chaac, Kukulcan and Itzamna with temple pyramids and offerings in sacred cenotes."
+   },
+   {
+    "from": 1546,
+    "faith": "catholic",
+    "note": "Francisco de Montejo completed the conquest of Yucatan, and Franciscan friars, among them Diego de Landa who burned Maya books in 1562, imposed Catholicism."
+   }
+  ]
+ },
+ {
+  "id": "chiapas",
+  "name": "Chiapas",
+  "lon": -92.6,
+  "lat": 16.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early hunters and farmers of the Chiapas highlands and Pacific coast honoured the earth and rain."
+   },
+   {
+    "from": -1000,
+    "faith": "mesoamerican",
+    "note": "Mixe-Zoque and Maya peoples built Izapa and later Palenque, Tonina and Yaxchilan, centres of divine kingship, ancestor worship and the Maya calendar."
+   },
+   {
+    "from": 1528,
+    "faith": "catholic",
+    "note": "Diego de Mazariegos founded San Cristobal, and Dominicans such as Bartolome de las Casas, bishop from 1545, evangelised the Tzotzil and Tzeltal Maya."
+   }
+  ]
+ },
+ {
+  "id": "belize",
+  "name": "Belize",
+  "lon": -88.7,
+  "lat": 17.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early hunters and maize farmers lived in the forests of the Maya lowlands."
+   },
+   {
+    "from": -1000,
+    "faith": "mesoamerican",
+    "note": "Maya cities such as Caracol, Lamanai and Altun Ha rose here, and Lamanai kept its temples in use until Spanish times."
+   },
+   {
+    "from": 1798,
+    "faith": "anglican",
+    "note": "British Baymen logging with enslaved Africans won the Battle of St George's Caye, and the Creole society of British Honduras became Anglican, Methodist and Baptist."
+   },
+   {
+    "from": 1870,
+    "faith": "catholic",
+    "note": "Mestizo refugees from Yucatan's Caste War and Garifuna settlers, served by Jesuits from 1851, made Catholics the largest church in Belize."
+   }
+  ]
+ },
+ {
+  "id": "guatemala",
+  "name": "Guatemala",
+  "lon": -90.6,
+  "lat": 14.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early foragers and maize farmers lived in the highlands and Peten lowlands."
+   },
+   {
+    "from": -1000,
+    "faith": "mesoamerican",
+    "note": "Maya peoples built El Mirador, Kaminaljuyu and Tikal, kingdoms whose rulers led the worship of the maize god, the rain god Chaac and the ancestors."
+   },
+   {
+    "from": 1524,
+    "faith": "catholic",
+    "note": "Pedro de Alvarado conquered the Kiche and Kaqchikel kingdoms, and Dominicans and Franciscans made the highland Maya Catholic, often blending the saints with Maya rites; evangelicals now rival Catholics in number."
+   }
+  ]
+ },
+ {
+  "id": "honduras",
+  "name": "Honduras",
+  "lon": -87.2,
+  "lat": 14.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early foragers and farmers lived in the valleys of Honduras."
+   },
+   {
+    "from": -800,
+    "faith": "mesoamerican",
+    "note": "Los Naranjos and later the Maya city of Copan and the Lenca chiefdoms shared Mesoamerican temple worship, the calendar and the ritual ballgame."
+   },
+   {
+    "from": 1524,
+    "faith": "catholic",
+    "note": "The Spanish conquest, completed after the defeat of the Lenca leader Lempira in 1537, brought Catholic missions and towns."
+   },
+   {
+    "from": 2015,
+    "faith": "protestant",
+    "note": "Pentecostal and other evangelical churches, growing fast since the 1980s, now count more Hondurans than the Catholic Church in several recent national surveys."
+   }
+  ]
+ },
+ {
+  "id": "el-salvador",
+  "name": "El Salvador",
+  "lon": -89.2,
+  "lat": 13.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early farmers lived among the volcanoes of the Pacific slope."
+   },
+   {
+    "from": -1000,
+    "faith": "mesoamerican",
+    "note": "Chalchuapa with its Olmec-influenced pyramids, then Maya towns and later the Pipil (Nahua) lordship of Cuzcatlan, worshipped Mesoamerican gods."
+   },
+   {
+    "from": 1528,
+    "faith": "catholic",
+    "note": "Pedro de Alvarado's campaigns of 1524 to 1528 conquered Cuzcatlan, and San Salvador became a Catholic colonial town; the martyred archbishop Oscar Romero was made a saint in 2018."
+   }
+  ]
+ },
+ {
+  "id": "nicaragua",
+  "name": "Nicaragua",
+  "lon": -86.25,
+  "lat": 12.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Chibchan-speaking farmers and fishers held animist beliefs before Mesoamerican peoples arrived."
+   },
+   {
+    "from": 800,
+    "faith": "mesoamerican",
+    "note": "Chorotega and later Nicarao (Nahua) migrants from Mexico settled the Pacific lowlands and brought Mesoamerican gods, the calendar and markets."
+   },
+   {
+    "from": 1524,
+    "faith": "catholic",
+    "note": "The Nicarao were baptised en masse under Gil Gonzalez Davila in 1523, and Francisco Hernandez de Cordoba founded Granada and Leon in 1524."
+   }
+  ]
+ },
+ {
+  "id": "mosquito-coast",
+  "name": "Mosquito Coast",
+  "lon": -83.6,
+  "lat": 14.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Miskito, Mayangna and Rama peoples followed sukias, or shamans, and honoured the spirits of forest and sea."
+   },
+   {
+    "from": 1880,
+    "faith": "protestant",
+    "note": "Moravian missionaries arrived in 1849 under the British-protected Miskito Kingdom, and a great revival in 1881 made the Miskito overwhelmingly Moravian."
+   }
+  ]
+ },
+ {
+  "id": "costa-rica",
+  "name": "Costa Rica",
+  "lon": -84.1,
+  "lat": 9.95,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Chibchan peoples like the Huetar and the Diquis, who carved the great stone spheres, honoured nature spirits and ancestors."
+   },
+   {
+    "from": 1564,
+    "faith": "catholic",
+    "note": "Juan Vazquez de Coronado founded Cartago, and the colony's mostly Spanish settlers made Catholicism the faith that remains the state religion under the constitution."
+   }
+  ]
+ },
+ {
+  "id": "panama",
+  "name": "Panama",
+  "lon": -80.0,
+  "lat": 8.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Cueva, Ngabe and Guna peoples, makers of the gold work of Gran Cocle, honoured nature spirits and ancestors."
+   },
+   {
+    "from": 1519,
+    "faith": "catholic",
+    "note": "Pedrarias Davila founded Panama City, the first European city on the Pacific, and the isthmus became a Catholic crossroads of the Spanish empire."
+   }
+  ]
+ },
+ {
+  "id": "cuba",
+  "name": "Cuba",
+  "lon": -79.5,
+  "lat": 22.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Taino and Ciboney peoples honoured zemis, spirit images of ancestors and nature, in ceremonies led by caciques and behique healers."
+   },
+   {
+    "from": 1511,
+    "faith": "catholic",
+    "note": "Diego Velazquez conquered Cuba, the Taino died out, and Catholicism, blended among enslaved Africans with Yoruba religion as Santeria, became the island's faith."
+   },
+   {
+    "from": 1961,
+    "faith": "secular",
+    "note": "Fidel Castro declared the revolution socialist, expelled priests and in 1976 made Cuba an atheist state; most Cubans stopped practising, though Santeria and private faith survived."
+   },
+   {
+    "from": 1992,
+    "faith": "catholic",
+    "note": "The 1992 constitution made Cuba a secular rather than atheist state, and papal visits from 1998 helped a Catholic revival, though Santeria remains widespread."
+   }
+  ]
+ },
+ {
+  "id": "haiti",
+  "name": "Haiti",
+  "lon": -72.3,
+  "lat": 18.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Taino peoples honoured zemis, spirits of ancestors and nature, through ceremonies led by caciques and behique healers."
+   },
+   {
+    "from": 1493,
+    "faith": "catholic",
+    "note": "Columbus left a garrison at La Navidad in 1492 and Spanish rule wiped out the Taino; under France from 1697 enslaved Africans were baptised Catholic and blended it with African rites into Vodou."
+   }
+  ]
+ },
+ {
+  "id": "dominican-republic",
+  "name": "Dominican Republic",
+  "lon": -70.4,
+  "lat": 18.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Taino chiefdoms honoured zemis and held areito dances to recount their myths."
+   },
+   {
+    "from": 1496,
+    "faith": "catholic",
+    "note": "Bartholomew Columbus founded Santo Domingo, later seat of the first cathedral and university in the Americas, and the colony became Catholic as the Taino perished."
+   }
+  ]
+ },
+ {
+  "id": "puerto-rico",
+  "name": "Puerto Rico",
+  "lon": -66.4,
+  "lat": 18.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Taino peoples of Borinquen honoured zemis and played the ritual ballgame in stone-lined plazas."
+   },
+   {
+    "from": 1508,
+    "faith": "catholic",
+    "note": "Juan Ponce de Leon founded Caparra and Spanish rule made the island Catholic as the Taino collapsed; Catholics remain the largest group despite strong Pentecostal growth since US rule began in 1898."
+   }
+  ]
+ },
+ {
+  "id": "jamaica",
+  "name": "Jamaica",
+  "lon": -77.3,
+  "lat": 18.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Taino peoples of Xaymaca honoured zemis, spirits of ancestors and nature."
+   },
+   {
+    "from": 1509,
+    "faith": "catholic",
+    "note": "Spanish settlers founded Sevilla la Nueva, and the Taino died out under forced labour and disease."
+   },
+   {
+    "from": 1655,
+    "faith": "anglican",
+    "note": "England seized Jamaica and established the Church of England, though most enslaved Africans brought in for sugar kept African beliefs such as Myal and Obeah."
+   },
+   {
+    "from": 1830,
+    "faith": "protestant",
+    "note": "Baptist and Methodist missions, with Black deacons like Sam Sharpe of the 1831 Baptist War, converted the enslaved, and after emancipation Baptists, then Adventists and Pentecostals, led."
+   }
+  ]
+ },
+ {
+  "id": "trinidad",
+  "name": "Trinidad and Tobago",
+  "lon": -61.3,
+  "lat": 10.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Arawak and Carib peoples of Trinidad, the island the Spanish called Iere's land, honoured ancestral spirits."
+   },
+   {
+    "from": 1592,
+    "faith": "catholic",
+    "note": "Antonio de Berrio founded San Jose de Oruna, and Spanish rule and the French Catholic planters invited in 1783 made Catholics the largest group, beside later Hindu, Anglican and Pentecostal communities."
+   }
+  ]
+ },
+ {
+  "id": "colombia-andes",
+  "name": "Colombian Andes",
+  "lon": -74.1,
+  "lat": 4.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Muisca of the Bogota plateau worshipped the sun god Sue and the moon goddess Chia and offered gold at sacred lakes like Guatavita, origin of the El Dorado legend."
+   },
+   {
+    "from": 1538,
+    "faith": "catholic",
+    "note": "Gonzalo Jimenez de Quesada conquered the Muisca and founded Bogota, and the missionary orders made New Granada a deeply Catholic land."
+   }
+  ]
+ },
+ {
+  "id": "colombia-caribbean",
+  "name": "Colombian Caribbean",
+  "lon": -75.2,
+  "lat": 10.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Zenu and Tairona peoples, builders of the stone city in the Sierra Nevada, followed priests called mamos who still guide the Kogi today."
+   },
+   {
+    "from": 1533,
+    "faith": "catholic",
+    "note": "Santa Marta was founded in 1525 and Cartagena in 1533, and Cartagena became a seat of the Inquisition and the port where Peter Claver baptised enslaved Africans."
+   }
+  ]
+ },
+ {
+  "id": "colombia-south",
+  "name": "Southern Colombia",
+  "lon": -76.6,
+  "lat": 2.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The San Agustin culture carved hundreds of stone guardian statues over tombs, and later chiefdoms honoured ancestors and nature spirits."
+   },
+   {
+    "from": 1537,
+    "faith": "catholic",
+    "note": "Sebastian de Belalcazar founded Popayan and Cali, and the south became a stronghold of colonial Catholicism."
+   }
+  ]
+ },
+ {
+  "id": "venezuela",
+  "name": "Venezuela",
+  "lon": -66.9,
+  "lat": 10.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Timoto-Cuica farmers of the Andes and Carib and Arawak peoples of the coast honoured nature spirits, with shamans called piaches."
+   },
+   {
+    "from": 1527,
+    "faith": "catholic",
+    "note": "Spanish settlers founded Coro, and later Caracas in 1567, and Franciscan and Capuchin missions spread Catholicism across the coast and the llanos."
+   }
+  ]
+ },
+ {
+  "id": "venezuela-guayana",
+  "name": "Venezuelan Guayana",
+  "lon": -63.5,
+  "lat": 7.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Warao, Pemon and Karina peoples of the Orinoco followed shamans, and the Pemon honour the tepui mountains as homes of spirits."
+   },
+   {
+    "from": 1725,
+    "faith": "catholic",
+    "note": "Catalan Capuchins founded missions along the Caroni from 1724, and Angostura, today's Ciudad Bolivar, became the Spanish capital of Guayana."
+   }
+  ]
+ },
+ {
+  "id": "ecuador-highlands",
+  "name": "Ecuadorian Andes",
+  "lon": -78.5,
+  "lat": -0.4,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Highland chiefdoms of the Quitu, Caranqui and Canari peoples honoured mountains, the sun and moon and their ancestors."
+   },
+   {
+    "from": 1470,
+    "faith": "andean",
+    "note": "The Inca under Topa Inca and Huayna Capac conquered the northern Andes and imposed the cult of Inti, the sun, and Quito became a second Inca capital."
+   },
+   {
+    "from": 1534,
+    "faith": "catholic",
+    "note": "Sebastian de Belalcazar took Quito, and Franciscan, Dominican and Jesuit orders built its baroque churches and evangelised the Quichua highlands."
+   }
+  ]
+ },
+ {
+  "id": "ecuador-coast",
+  "name": "Ecuadorian coast",
+  "lon": -79.9,
+  "lat": -1.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Valdivia villagers made some of the oldest pottery in the Americas around 3500 BC, and later Manteno seafarers honoured the sea and their ancestors."
+   },
+   {
+    "from": 1538,
+    "faith": "catholic",
+    "note": "The Spanish conquest and the founding of Guayaquil brought the coast under Catholic rule as its native population collapsed."
+   }
+  ]
+ },
+ {
+  "id": "peru-north",
+  "name": "Northern Peru",
+  "lon": -78.8,
+  "lat": -7.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early fishers and farmers of the north coast, such as those of Huaca Prieta, honoured the sea and their ancestors."
+   },
+   {
+    "from": -1500,
+    "faith": "andean",
+    "note": "Cupisnique, then from about 100 AD the Moche with their Huacas of the Sun and Moon, and later the Chimu kingdom of Chan Chan built temple cults that the Inca absorbed."
+   },
+   {
+    "from": 1534,
+    "faith": "catholic",
+    "note": "Diego de Almagro founded Trujillo, and Catholic orders evangelised the Mochica-speaking peoples of the north coast."
+   }
+  ]
+ },
+ {
+  "id": "peru-coast",
+  "name": "Central Peruvian coast",
+  "lon": -77.0,
+  "lat": -11.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early fishing villages of the Peruvian coast honoured the sea and the dead."
+   },
+   {
+    "from": -2500,
+    "faith": "andean",
+    "note": "Caral and the Norte Chico towns north of Lima raised the oldest monumental temples of the Americas, and later Pachacamac became the coast's great oracle shrine."
+   },
+   {
+    "from": 1535,
+    "faith": "catholic",
+    "note": "Francisco Pizarro founded Lima, capital of the Viceroyalty of Peru, whose archbishops, saints like Rose of Lima and Martin de Porres, and Inquisition made it South America's Catholic heart."
+   }
+  ]
+ },
+ {
+  "id": "peru-highlands",
+  "name": "Peruvian Andes",
+  "lon": -72.0,
+  "lat": -13.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early highland hunters and herders of llamas and alpacas honoured mountains, springs and their ancestors."
+   },
+   {
+    "from": -900,
+    "faith": "andean",
+    "note": "Chavin de Huantar spread a highland temple cult, followed by Wari and from about 1400 the Inca, who worshipped Inti, Viracocha and the mountain apus from Cusco's Coricancha."
+   },
+   {
+    "from": 1572,
+    "faith": "catholic",
+    "note": "After the 1533 conquest of Cusco, Viceroy Toledo executed Tupac Amaru in 1572 and forced Andeans into Catholic reducciones, though worship of the apus survived alongside the saints."
+   }
+  ]
+ },
+ {
+  "id": "upper-amazon",
+  "name": "Peruvian Amazon",
+  "lon": -73.25,
+  "lat": -3.75,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Amazonian peoples like the Shipibo, Ashaninka and Kukama followed shamans who used ayahuasca to deal with the forest spirits."
+   },
+   {
+    "from": 1880,
+    "faith": "catholic",
+    "note": "Jesuit missions of Maynas existed from 1638 to 1767, but the rubber boom from the 1880s, centred on Iquitos, created a mestizo Catholic majority, at terrible cost to native peoples."
+   }
+  ]
+ },
+ {
+  "id": "bolivia-altiplano",
+  "name": "Bolivian Altiplano",
+  "lon": -68.2,
+  "lat": -16.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Early herders and farmers around Lake Titicaca honoured the mountains, the lake and the earth mother Pachamama."
+   },
+   {
+    "from": -1500,
+    "faith": "andean",
+    "note": "Chiripa and Pukara temple builders were followed by Tiwanaku, a great ceremonial city from about 500 AD, and in the 1400s by the Inca, who held Lake Titicaca as the birthplace of the sun."
+   },
+   {
+    "from": 1572,
+    "faith": "catholic",
+    "note": "Spanish rule from 1538 and the Potosi silver mines brought missionaries, and Viceroy Toledo's resettlements from the 1570s made the Aymara and Quechua Catholic, blended with Pachamama worship."
+   }
+  ]
+ },
+ {
+  "id": "bolivia-lowlands",
+  "name": "Bolivian lowlands",
+  "lon": -63.5,
+  "lat": -16.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Moxos peoples built raised fields and causeways in the Beni floodplains, and Chiquitano and Guarani peoples honoured forest spirits."
+   },
+   {
+    "from": 1690,
+    "faith": "catholic",
+    "note": "Jesuits founded the Moxos missions from 1682 and the Chiquitos missions from 1691, whose baroque churches still stand, and Santa Cruz grew as a Catholic frontier city."
+   }
+  ]
+ },
+ {
+  "id": "chile-north",
+  "name": "Northern Chile",
+  "lon": -69.0,
+  "lat": -22.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Chinchorro of the Atacama coast mummified their dead from about 5000 BC, two thousand years before Egypt."
+   },
+   {
+    "from": 500,
+    "faith": "andean",
+    "note": "San Pedro de Atacama and the oases came under the influence of Tiwanaku and later of the Inca, whose high Andean peak shrines held offerings and sacrifices."
+   },
+   {
+    "from": 1540,
+    "faith": "catholic",
+    "note": "Pedro de Valdivia crossed the Atacama on his way to conquer Chile, and the oasis peoples were brought into Catholic parishes."
+   }
+  ]
+ },
+ {
+  "id": "chile-central",
+  "name": "Central Chile",
+  "lon": -70.8,
+  "lat": -33.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Picunche and Mapuche farmers honoured Ngenechen, the ancestors and nature spirits through machi shamans."
+   },
+   {
+    "from": 1470,
+    "faith": "andean",
+    "note": "The Inca under Topa Inca extended their empire and sun cult south to the Maipo river, near today's Santiago."
+   },
+   {
+    "from": 1541,
+    "faith": "catholic",
+    "note": "Pedro de Valdivia founded Santiago, and Chile became a Catholic colony and republic, though a fast-growing share of Chileans now have no religion."
+   }
+  ]
+ },
+ {
+  "id": "araucania",
+  "name": "Araucania",
+  "lon": -72.6,
+  "lat": -38.7,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Mapuche honoured Ngenechen and their ancestors through machi shamans and the nguillatun, and kept their independence from Spain after victory at Curalaba in 1598."
+   },
+   {
+    "from": 1883,
+    "faith": "catholic",
+    "note": "Chile's Occupation of the Araucania ended Mapuche independence, and Chilean and European settlers and Capuchin missions made the region Catholic, though evangelical churches are strong among the Mapuche."
+   }
+  ]
+ },
+ {
+  "id": "magallanes",
+  "name": "Magallanes and Tierra del Fuego",
+  "lon": -70.9,
+  "lat": -53.15,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Selk'nam, Kawesqar and Yaghan of Tierra del Fuego held the Hain initiation ceremony and believed in a supreme being, Temaukel."
+   },
+   {
+    "from": 1885,
+    "faith": "catholic",
+    "note": "Sheep ranching and gold rushes brought Chilean, Croatian and British settlers to Punta Arenas, Salesian missions gathered the surviving Selk'nam, and the native peoples were nearly destroyed."
+   }
+  ]
+ },
+ {
+  "id": "argentina-pampas",
+  "name": "Buenos Aires and the Pampas",
+  "lon": -59.5,
+  "lat": -34.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Querandi and other Pampas hunters honoured the spirits of the land, later joined by Mapuche-speaking horsemen."
+   },
+   {
+    "from": 1580,
+    "faith": "catholic",
+    "note": "Juan de Garay refounded Buenos Aires, and Spanish and later mass Italian immigration made the Pampas firmly Catholic, the homeland of Pope Francis."
+   }
+  ]
+ },
+ {
+  "id": "argentina-northwest",
+  "name": "Argentine Northwest",
+  "lon": -65.4,
+  "lat": -24.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Condorhuasi, Aguada and Diaguita cultures of the valleys honoured the sun, thunder and the earth."
+   },
+   {
+    "from": 1480,
+    "faith": "andean",
+    "note": "The Inca conquered the Calchaqui valleys and built roads and peak shrines like Llullaillaco, where three child offerings were found frozen."
+   },
+   {
+    "from": 1565,
+    "faith": "catholic",
+    "note": "San Miguel de Tucuman was founded in 1565 and Salta in 1582, though the Calchaqui peoples resisted Spanish rule and Catholic missions until 1667."
+   }
+  ]
+ },
+ {
+  "id": "cuyo",
+  "name": "Cuyo (Mendoza)",
+  "lon": -68.84,
+  "lat": -32.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Huarpe farmers of the Cuyo oases honoured the sun, the moon and the mountain spirits."
+   },
+   {
+    "from": 1480,
+    "faith": "andean",
+    "note": "The Inca extended the Qhapaq Nan road and their sun worship to the Huarpe of Mendoza and San Juan, and built a shrine on Aconcagua."
+   },
+   {
+    "from": 1561,
+    "faith": "catholic",
+    "note": "Pedro del Castillo founded Mendoza from Chile, and Jesuits and other orders converted the Huarpe."
+   }
+  ]
+ },
+ {
+  "id": "argentina-litoral",
+  "name": "Argentine Litoral",
+  "lon": -60.0,
+  "lat": -29.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Guarani, Charrua and Chana peoples of the great rivers honoured forest and water spirits through shamans."
+   },
+   {
+    "from": 1573,
+    "faith": "catholic",
+    "note": "Juan de Garay founded Santa Fe in 1573 and Corrientes followed in 1588, and Jesuits built the Guarani reductions upriver, making the region Catholic."
+   }
+  ]
+ },
+ {
+  "id": "patagonia",
+  "name": "Argentine Patagonia",
+  "lon": -68.0,
+  "lat": -42.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tehuelche hunters and Mapuche who crossed the Andes followed shamans, and the Tehuelche told of the creator hero Elal."
+   },
+   {
+    "from": 1879,
+    "faith": "catholic",
+    "note": "The Conquest of the Desert ended native independence, and Argentine, Italian and Spanish settlers and Salesian missions made Patagonia Catholic, though Welsh settlers in Chubut from 1865 kept chapels."
+   }
+  ]
+ },
+ {
+  "id": "uruguay",
+  "name": "Uruguay",
+  "lon": -56.0,
+  "lat": -34.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Charrua and Guarani peoples hunted and fished along the Uruguay river and the coast, honouring the spirits of nature."
+   },
+   {
+    "from": 1726,
+    "faith": "catholic",
+    "note": "Bruno Mauricio de Zabala founded Montevideo, and Spanish and later Italian immigrants made the country nominally Catholic."
+   },
+   {
+    "from": 2010,
+    "faith": "secular",
+    "note": "Separation of church and state in 1918 and the renaming of religious holidays made Uruguay Latin America's most secular country, where those with no religion now outnumber Catholics."
+   }
+  ]
+ },
+ {
+  "id": "paraguay",
+  "name": "Paraguay",
+  "lon": -57.6,
+  "lat": -25.3,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Guarani farmers honoured Tupa and sought the Land Without Evil through shamans and prophets."
+   },
+   {
+    "from": 1537,
+    "faith": "catholic",
+    "note": "Spanish settlers founded Asuncion and married into Guarani families, and Jesuit reductions from 1609 made the Guarani one of the most Catholic peoples of the continent."
+   }
+  ]
+ },
+ {
+  "id": "brazil-pernambuco",
+  "name": "Pernambuco (north-east Brazil)",
+  "lon": -35.5,
+  "lat": -8.2,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tupi-speaking peoples such as the Potiguara and Caete honoured the thunder spirit Tupa and followed shaman prophets called pajes."
+   },
+   {
+    "from": 1535,
+    "faith": "catholic",
+    "note": "Duarte Coelho founded the captaincy of Pernambuco and the sugar town of Olinda, worked by enslaved Africans who were baptised Catholic."
+   },
+   {
+    "from": 1630,
+    "faith": "reformed",
+    "note": "The Dutch West India Company took Recife and ruled the north-east as Dutch Brazil, a Calvinist state that tolerated Catholics and Jews, though most people stayed Catholic."
+   },
+   {
+    "from": 1654,
+    "faith": "catholic",
+    "note": "Luso-Brazilian rebels expelled the Dutch, and Catholicism, alongside the African-rooted Xango religion, has remained the region's faith."
+   }
+  ]
+ },
+ {
+  "id": "brazil-bahia",
+  "name": "Bahia",
+  "lon": -39.0,
+  "lat": -12.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tupinamba and other Tupi peoples honoured Tupa and followed shaman prophets who preached the Land Without Evil."
+   },
+   {
+    "from": 1549,
+    "faith": "catholic",
+    "note": "Tome de Sousa founded Salvador as the capital of Brazil with the first Jesuits, and Bahia became Catholic, blended among enslaved Africans with the Yoruba-rooted Candomble."
+   }
+  ]
+ },
+ {
+  "id": "brazil-southeast",
+  "name": "Sao Paulo and Rio de Janeiro",
+  "lon": -46.0,
+  "lat": -23.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Tupi peoples like the Tupiniquim and Tamoio honoured Tupa, the thunder, and sought the Land Without Evil."
+   },
+   {
+    "from": 1554,
+    "faith": "catholic",
+    "note": "Jesuits Manuel da Nobrega and Jose de Anchieta founded Sao Paulo and Rio de Janeiro followed in 1565, and immigration built a Catholic majority now challenged by fast Pentecostal growth."
+   }
+  ]
+ },
+ {
+  "id": "brazil-minas",
+  "name": "Minas Gerais",
+  "lon": -44.0,
+  "lat": -19.9,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Botocudo, Puri and other Macro-Je forest peoples honoured spirits of the forest and the dead."
+   },
+   {
+    "from": 1700,
+    "faith": "catholic",
+    "note": "The gold rush of the 1690s drew settlers and enslaved Africans to Minas Gerais, where lay brotherhoods built the baroque churches of Ouro Preto."
+   }
+  ]
+ },
+ {
+  "id": "brazil-south",
+  "name": "Southern Brazil",
+  "lon": -51.5,
+  "lat": -29.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Guarani, Kaingang and Charrua peoples honoured forest spirits and the Guarani creator Nhanderu."
+   },
+   {
+    "from": 1737,
+    "faith": "catholic",
+    "note": "Jesuit Guarani missions of the Seven Peoples from 1682 and Portuguese settlement from 1737 made the south Catholic, reinforced by Azorean, Italian and German Catholic settlers beside German Lutherans."
+   }
+  ]
+ },
+ {
+  "id": "brazil-center-west",
+  "name": "Central-West Brazil",
+  "lon": -48.5,
+  "lat": -16.0,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Je-speaking peoples like the Xavante, Bororo and Kayapo held village ceremonies and honoured the spirits of the cerrado."
+   },
+   {
+    "from": 1725,
+    "faith": "catholic",
+    "note": "Bandeirantes found gold at Cuiaba in 1718 and Goias in 1725, bringing Catholic settlers to the interior, where Brasilia was built as the new capital in 1960."
+   }
+  ]
+ },
+ {
+  "id": "brazil-amazon",
+  "name": "Brazilian Amazon",
+  "lon": -60.0,
+  "lat": -3.1,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Amazonian peoples, some living in large chiefdoms along the river before European diseases, followed shamans who mediated with forest spirits."
+   },
+   {
+    "from": 1880,
+    "faith": "catholic",
+    "note": "Missions dated back to the 1600s, but the rubber boom from the 1870s brought masses of Catholic migrants from the north-east and made Manaus a booming Catholic city."
+   }
+  ]
+ },
+ {
+  "id": "brazil-para",
+  "name": "Para and the Amazon mouth",
+  "lon": -48.5,
+  "lat": -1.45,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "The Marajoara culture built mounds and painted urns on Marajo island, and Tupinamba peoples later honoured Tupa along the coast."
+   },
+   {
+    "from": 1616,
+    "faith": "catholic",
+    "note": "The Portuguese founded Belem, and Jesuit missions under Antonio Vieira gathered the native peoples; its Cirio de Nazare procession is now one of the world's largest Catholic festivals."
+   }
+  ]
+ },
+ {
+  "id": "guyana",
+  "name": "Guyana",
+  "lon": -58.4,
+  "lat": 6.5,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Lokono (Arawak), Carib and Warao peoples of the coast and the Wapishana and Macushi of the savannas followed shamans called piaimen."
+   },
+   {
+    "from": 1627,
+    "faith": "reformed",
+    "note": "The Dutch West India Company founded the Essequibo and Berbice plantation colonies, worked by enslaved Africans under Dutch Reformed rule."
+   },
+   {
+    "from": 1814,
+    "faith": "anglican",
+    "note": "Britain took the colonies, and after emancipation in 1838 most Afro-Guyanese joined Anglican, Methodist and Congregational churches while indentured Indians brought Hinduism and Islam."
+   },
+   {
+    "from": 1990,
+    "faith": "protestant",
+    "note": "Pentecostal and other evangelical churches grew to become the largest religious group, with Hindus about a quarter of the population."
+   }
+  ]
+ },
+ {
+  "id": "suriname",
+  "name": "Suriname",
+  "lon": -55.2,
+  "lat": 5.6,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Lokono (Arawak), Kalina (Carib) and Trio peoples followed shamans and honoured forest spirits."
+   },
+   {
+    "from": 1667,
+    "faith": "reformed",
+    "note": "The Dutch took Suriname from England under the Treaty of Breda and built a plantation colony under Dutch Reformed rule, worked by enslaved Africans, many of whom fled to form Maroon nations."
+   },
+   {
+    "from": 1863,
+    "faith": "protestant",
+    "note": "Moravian missions active since 1735 became the largest church among Afro-Surinamese after emancipation in 1863, and Protestants remain narrowly the largest group beside Hindus, Catholics and Muslims."
+   }
+  ]
+ },
+ {
+  "id": "french-guiana",
+  "name": "French Guiana",
+  "lon": -52.6,
+  "lat": 4.8,
+  "history": [
+   {
+    "from": -10000,
+    "faith": "folk",
+    "note": "Kalina, Lokono, Palikur and Wayampi peoples followed shamans and honoured forest spirits."
+   },
+   {
+    "from": 1664,
+    "faith": "catholic",
+    "note": "France settled Cayenne, and Jesuit missions, Catholic settlers and enslaved Africans baptised under the Code Noir made Catholicism the colony's faith."
+   }
+  ]
+ }
+]

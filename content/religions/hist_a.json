@@ -1,0 +1,831 @@
+{
+ "christian": [
+  {
+   "year": 30,
+   "title": "Crucifixion of Jesus, c. 30",
+   "text": "Jesus of Nazareth was crucified in Jerusalem around AD 30, and his followers began preaching his resurrection among the Jews of Judea and Galilee."
+  },
+  {
+   "year": 50,
+   "title": "Paul's missions to the Gentiles",
+   "text": "Around AD 50 Paul and other apostles carried the faith through Syria, Anatolia and Greece to Rome, founding mixed Jewish and Gentile churches in the cities of the empire."
+  },
+  {
+   "year": 313,
+   "title": "Edict of Milan",
+   "text": "Constantine and Licinius granted Christians legal freedom in 313, ending the persecutions and starting imperial patronage that let the church grow fast across the Roman world."
+  },
+  {
+   "year": 325,
+   "title": "Council of Nicaea",
+   "text": "The first ecumenical council, called by Constantine, condemned Arius and defined the Son as of one substance with the Father, setting the creed of mainstream Christianity."
+  },
+  {
+   "year": 380,
+   "title": "State religion of Rome",
+   "text": "Theodosius I made Nicene Christianity the official religion of the Roman Empire with the Edict of Thessalonica, and pagan sacrifices were banned in the following years."
+  },
+  {
+   "year": 451,
+   "title": "Council of Chalcedon",
+   "text": "Chalcedon defined Christ as one person in two natures; Egypt, Armenia and much of Syria rejected it, splitting off the Oriental Orthodox churches."
+  },
+  {
+   "year": 496,
+   "title": "Baptism of Clovis, c. 496",
+   "text": "Clovis, king of the Franks, was baptised a Nicene Christian in Reims, making Gaul a Catholic kingdom while most other Germanic rulers were still Arian."
+  },
+  {
+   "year": 636,
+   "title": "Arab conquests begin",
+   "text": "From the Battle of Yarmouk in 636 the Arab armies took Syria, Palestine, Egypt and North Africa, and by 711 Spain, cutting the Christian world back to Europe and Anatolia."
+  },
+  {
+   "year": 988,
+   "title": "Baptism of Kievan Rus, c. 988",
+   "text": "After the conversion of Bulgaria (864) and the mission of Cyril and Methodius to the Slavs, Grand Prince Vladimir of Kiev was baptised, bringing the Rus into Byzantine Christianity."
+  },
+  {
+   "year": 1054,
+   "title": "The Great Schism",
+   "text": "Papal legates and Patriarch Michael Cerularius excommunicated each other in Constantinople, and the church split into a Latin Catholic West and a Greek Orthodox East."
+  }
+ ],
+ "arian": [
+  {
+   "year": 318,
+   "title": "Arius preaches in Alexandria, c. 318",
+   "text": "The Alexandrian priest Arius taught that the Son was created by the Father and was not eternal, and his bishop Alexander condemned him, starting a controversy across the East."
+  },
+  {
+   "year": 325,
+   "title": "Condemned at Nicaea",
+   "text": "The Council of Nicaea rejected Arius's teaching and exiled him, but many eastern bishops and later the emperors Constantius II and Valens favoured Arian or compromise creeds."
+  },
+  {
+   "year": 341,
+   "title": "Ulfilas, bishop of the Goths",
+   "text": "Ulfilas, consecrated around 341, preached to the Goths north of the Danube and translated the Bible into Gothic, making the Goths and then other Germanic peoples Arian."
+  },
+  {
+   "year": 381,
+   "title": "Defeat at Constantinople",
+   "text": "Theodosius I and the Council of Constantinople reaffirmed the Nicene creed, and Arianism was outlawed in the empire, surviving mainly among the Germanic peoples on and beyond its borders."
+  },
+  {
+   "year": 439,
+   "title": "Vandal kingdom in Africa",
+   "text": "The Vandals under Gaiseric crossed from Spain in 429 and took Carthage in 439, ruling Roman Africa as Arians who often persecuted the Nicene clergy."
+  },
+  {
+   "year": 493,
+   "title": "Ostrogothic Italy",
+   "text": "Theodoric the Great, an Arian Ostrogoth, made himself king of Italy in 493, while Visigoths in Spain and Burgundians in Gaul also ruled as Arians over Nicene subjects."
+  },
+  {
+   "year": 534,
+   "title": "Vandals and Ostrogoths destroyed",
+   "text": "Justinian's general Belisarius ended the Vandal kingdom in 534, and the Ostrogoths were crushed by 553, returning Africa and Italy to the Nicene church."
+  },
+  {
+   "year": 568,
+   "title": "Lombards invade Italy",
+   "text": "The largely Arian Lombards under Alboin conquered much of northern and central Italy from 568, giving Arianism its last great kingdom."
+  },
+  {
+   "year": 589,
+   "title": "Reccared's conversion",
+   "text": "King Reccared led the Visigoths of Spain to Nicene Christianity at the Third Council of Toledo in 589, ending Arianism in the Iberian Peninsula."
+  },
+  {
+   "year": 680,
+   "title": "End of Arianism, c. 680",
+   "text": "Under Queen Theodelinda and later kings such as Aripert I the Lombards gradually became Catholic, and by the late 7th century Arianism had disappeared as an organised church."
+  }
+ ],
+ "oriental": [
+  {
+   "year": 451,
+   "title": "Rejection of Chalcedon",
+   "text": "Miaphysite Christians in Egypt and Syria refused Chalcedon's two natures formula, and the Coptic church of Alexandria, with its daughter church in Ethiopia, broke with Rome and Constantinople."
+  },
+  {
+   "year": 506,
+   "title": "Armenia rejects Chalcedon",
+   "text": "The Armenian church formally rejected Chalcedon at the First Council of Dvin around 506, keeping Armenia separate from the imperial church ever after."
+  },
+  {
+   "year": 543,
+   "title": "Jacob Baradaeus and Nubia, c. 543",
+   "text": "Jacob Baradaeus began ordaining a separate Syriac Orthodox hierarchy, and missions backed by Empress Theodora converted the Nubian kingdoms on the upper Nile."
+  },
+  {
+   "year": 641,
+   "title": "Arab conquest of Egypt",
+   "text": "The Arabs took Egypt in 641 and Syria shortly before; Copts and Syriacs kept their churches under Muslim rule but slowly became minorities over the following centuries."
+  },
+  {
+   "year": 1270,
+   "title": "Solomonic Ethiopia",
+   "text": "The Solomonic dynasty took power in Ethiopia in 1270 and made the highland kingdom the great stronghold of Oriental Orthodoxy, with a revival of monasteries and church literature."
+  },
+  {
+   "year": 1500,
+   "title": "Nubian Christianity fades, c. 1500",
+   "text": "After Makuria fell to Muslim rulers in the 14th century and Alodia collapsed around 1504, Christianity disappeared from Nubia, now Sudan."
+  },
+  {
+   "year": 1915,
+   "title": "Armenian and Syriac genocide",
+   "text": "The Ottoman government killed about one million Armenians and many Syriac Christians from 1915, emptying eastern Anatolia of its ancient churches."
+  },
+  {
+   "year": 1959,
+   "title": "Ethiopian church independent",
+   "text": "The Ethiopian Orthodox Tewahedo Church received its own patriarch from the Coptic church in 1959, and the Eritrean church followed in 1993."
+  },
+  {
+   "year": 1991,
+   "title": "Today",
+   "text": "Armenia regained independence in 1991 with its national church; today Oriental Orthodox Christians number roughly 60 million, most of them in Ethiopia, with large Coptic and Armenian communities."
+  }
+ ],
+ "east-syriac": [
+  {
+   "year": 431,
+   "title": "Nestorius condemned at Ephesus",
+   "text": "The Council of Ephesus condemned Nestorius of Constantinople, and his followers found refuge in the church of the Persian Empire, already organised at Seleucia-Ctesiphon in 410."
+  },
+  {
+   "year": 489,
+   "title": "School moves to Nisibis",
+   "text": "Emperor Zeno closed the School of Edessa in 489 and its teachers moved to Nisibis in Persia, as the Persian church adopted the dyophysite teaching associated with Nestorius."
+  },
+  {
+   "year": 635,
+   "title": "Alopen reaches Tang China",
+   "text": "The monk Alopen brought the faith to the Tang capital Chang'an in 635, as recorded on the Xi'an Stele of 781, while other missions served India and Central Asia."
+  },
+  {
+   "year": 780,
+   "title": "Timothy I in Baghdad",
+   "text": "Under the Abbasid caliphs the patriarchs moved to Baghdad, and Patriarch Timothy I (780 to 823) sent bishops to Central Asia, Tibet and China at the church's greatest reach."
+  },
+  {
+   "year": 845,
+   "title": "Persecution in China",
+   "text": "Emperor Wuzong's suppression of foreign religions in 845 effectively ended the church in China for centuries."
+  },
+  {
+   "year": 1007,
+   "title": "Conversion of the Keraits, c. 1007",
+   "text": "The Kerait tribe of Mongolia converted around 1007, and the Naimans and Ongut followed, so many Mongol and Turkic nobles were Church of the East Christians in the 13th century."
+  },
+  {
+   "year": 1295,
+   "title": "Mongols turn to Islam",
+   "text": "The Ilkhan Ghazan converted to Islam in 1295, followed by persecutions and then Timur's campaigns around 1400, which destroyed the church in Iran and Central Asia."
+  },
+  {
+   "year": 1552,
+   "title": "Schism and Chaldean Church",
+   "text": "In 1552 part of the church chose Yohannan Sulaqa as patriarch and entered union with Rome, founding the Chaldean Catholic Church, while in India the Portuguese latinised the St Thomas Christians."
+  },
+  {
+   "year": 1915,
+   "title": "Assyrian genocide",
+   "text": "During the First World War Ottoman and Kurdish forces killed many Assyrians in Hakkari and northwest Iran, and survivors fled to Iraq and later the West."
+  },
+  {
+   "year": 2015,
+   "title": "Today",
+   "text": "The Assyrian Church of the East moved its patriarch back from Chicago to Erbil in 2015 and has a few hundred thousand members in Iraq, Iran, Syria, India and the diaspora."
+  }
+ ],
+ "catholic": [
+  {
+   "year": 1054,
+   "title": "The Great Schism",
+   "text": "Rome and Constantinople excommunicated each other in 1054, and the Latin church under the pope became a separate communion covering western and central Europe."
+  },
+  {
+   "year": 1095,
+   "title": "The Crusades",
+   "text": "Pope Urban II preached the First Crusade at Clermont, and Latin crusaders took Jerusalem in 1099 and set up Catholic states in the Levant that lasted until 1291."
+  },
+  {
+   "year": 1204,
+   "title": "Sack of Constantinople",
+   "text": "The Fourth Crusade captured Constantinople and set up a Latin Empire there until 1261, deepening the rift with the Orthodox East."
+  },
+  {
+   "year": 1386,
+   "title": "Lithuania converts",
+   "text": "Grand Duke Jogaila was baptised when he married Queen Jadwiga of Poland, making Lithuania, the last pagan state in Europe, a Catholic land."
+  },
+  {
+   "year": 1492,
+   "title": "Granada and the New World",
+   "text": "Ferdinand and Isabella took Granada, completing the Reconquista of Spain, and Columbus's voyage that year opened the Americas to Catholic conquest and missions."
+  },
+  {
+   "year": 1517,
+   "title": "The Reformation",
+   "text": "Martin Luther's protest began the Reformation, and within decades the Catholic church lost northern Germany, Scandinavia, England, Scotland and the Netherlands."
+  },
+  {
+   "year": 1521,
+   "title": "Conquest of Mexico",
+   "text": "Cortes took the Aztec capital in 1521 and Pizarro conquered the Inca from 1532, and friars made Spanish and Portuguese America the largest Catholic region of the world."
+  },
+  {
+   "year": 1545,
+   "title": "Council of Trent",
+   "text": "The Council of Trent (1545 to 1563) reformed the church and defined doctrine against Protestantism, while the Jesuits led missions to Asia and won back Poland and much of central Europe."
+  },
+  {
+   "year": 1962,
+   "title": "Second Vatican Council",
+   "text": "Vatican II (1962 to 1965) allowed the mass in local languages and opened dialogue with other churches, as the church grew rapidly in Africa and Asia."
+  },
+  {
+   "year": 2025,
+   "title": "Today",
+   "text": "Leo XIV, born in the United States, was elected pope in 2025, leading about 1.4 billion Catholics, more than 40 percent of them in Latin America."
+  }
+ ],
+ "orthodox": [
+  {
+   "year": 1054,
+   "title": "The Great Schism",
+   "text": "Patriarch Michael Cerularius and the papal legates excommunicated each other, and the Greek, Bulgarian and Rus churches in communion with Constantinople became the Orthodox East."
+  },
+  {
+   "year": 1204,
+   "title": "Crusaders take Constantinople",
+   "text": "The Fourth Crusade sacked Constantinople and imposed a Latin patriarch until 1261, leaving lasting bitterness against the Catholic West."
+  },
+  {
+   "year": 1219,
+   "title": "Serbian church autocephalous",
+   "text": "Saint Sava became the first archbishop of an independent Serbian church in 1219, as Orthodoxy took deep national roots in the Balkans and among the Rus."
+  },
+  {
+   "year": 1453,
+   "title": "Fall of Constantinople",
+   "text": "The Ottomans took Constantinople in 1453, and the Orthodox of the Balkans and Anatolia lived for centuries as a protected community under Muslim rule."
+  },
+  {
+   "year": 1589,
+   "title": "Moscow patriarchate",
+   "text": "Moscow, now seeing itself as the Third Rome, gained its own patriarch in 1589, and Russian expansion carried Orthodoxy across Siberia to the Pacific and Alaska."
+  },
+  {
+   "year": 1821,
+   "title": "Balkan independence",
+   "text": "The Greek war of independence from 1821, followed by Serbia, Romania and Bulgaria, created Orthodox nation states each with its own national church."
+  },
+  {
+   "year": 1917,
+   "title": "Bolshevik revolution",
+   "text": "Soviet rule closed most churches and killed or imprisoned thousands of clergy, and after 1945 communist governments restricted Orthodoxy across eastern Europe."
+  },
+  {
+   "year": 1991,
+   "title": "Revival after communism",
+   "text": "The fall of the Soviet Union in 1991 brought a large revival of church life in Russia, Ukraine, Belarus, Georgia and the Balkans."
+  },
+  {
+   "year": 2019,
+   "title": "Today",
+   "text": "Constantinople recognised an independent Orthodox Church of Ukraine in 2019, causing a break with Moscow; Orthodox Christians number about 220 to 260 million, most in eastern Europe."
+  }
+ ],
+ "lutheran": [
+  {
+   "year": 1517,
+   "title": "Ninety-five Theses",
+   "text": "Martin Luther, a monk and professor in Wittenberg in Saxony, attacked the sale of indulgences, and his teaching of salvation by faith alone spread rapidly through print."
+  },
+  {
+   "year": 1521,
+   "title": "Diet of Worms",
+   "text": "Luther refused to recant before Emperor Charles V and was outlawed, but protected by Frederick the Wise he translated the Bible into German."
+  },
+  {
+   "year": 1527,
+   "title": "Sweden breaks with Rome",
+   "text": "Gustav Vasa began the Swedish Reformation at the Diet of Vasteras in 1527, bringing Sweden and Finland into the Lutheran fold, while Livonian towns also turned Lutheran."
+  },
+  {
+   "year": 1530,
+   "title": "Augsburg Confession",
+   "text": "Philip Melanchthon presented the Augsburg Confession to the emperor, the defining statement of Lutheran faith, and many German princes and cities adopted it."
+  },
+  {
+   "year": 1536,
+   "title": "Denmark and Norway",
+   "text": "Christian III made Lutheranism the state religion of Denmark, Norway and Iceland, so all of Scandinavia became Lutheran."
+  },
+  {
+   "year": 1555,
+   "title": "Peace of Augsburg",
+   "text": "The Peace of Augsburg let each German prince choose Lutheranism or Catholicism for his land, legally dividing the Holy Roman Empire."
+  },
+  {
+   "year": 1648,
+   "title": "Peace of Westphalia",
+   "text": "The Thirty Years' War, in which Sweden's Gustavus Adolphus defended the Lutheran cause, ended in 1648 with the confessional map of Germany and the Baltic largely fixed."
+  },
+  {
+   "year": 1817,
+   "title": "Prussian Union",
+   "text": "King Frederick William III merged Lutheran and Reformed churches in Prussia, prompting some Old Lutherans to emigrate."
+  },
+  {
+   "year": 1850,
+   "title": "Emigration to America, c. 1850",
+   "text": "German and Scandinavian emigrants brought Lutheran churches to the American Midwest, while missions later built large churches in Ethiopia, Tanzania, Namibia and Indonesia."
+  },
+  {
+   "year": 2000,
+   "title": "Today",
+   "text": "Sweden separated church and state in 2000; Lutherans number about 75 million, with old majorities in the Nordic countries and fast growth in Africa."
+  }
+ ],
+ "anglican": [
+  {
+   "year": 1534,
+   "title": "Act of Supremacy",
+   "text": "Henry VIII broke with the pope over his divorce and Parliament made the king Supreme Head of the Church of England, followed by the dissolution of the monasteries."
+  },
+  {
+   "year": 1549,
+   "title": "Book of Common Prayer",
+   "text": "Under Edward VI Archbishop Thomas Cranmer issued the Book of Common Prayer in English, giving the church a Protestant liturgy."
+  },
+  {
+   "year": 1553,
+   "title": "Catholic restoration under Mary",
+   "text": "Mary I returned England to Rome and burned nearly 300 Protestants, including Cranmer, until her death in 1558."
+  },
+  {
+   "year": 1559,
+   "title": "Elizabethan Settlement",
+   "text": "Elizabeth I restored the Church of England as a Protestant church with bishops, which also became the established, though minority, Church of Ireland."
+  },
+  {
+   "year": 1607,
+   "title": "Virginia colony",
+   "text": "The Jamestown settlers brought the Church of England to America, where it became established in Virginia and other southern colonies."
+  },
+  {
+   "year": 1789,
+   "title": "Episcopal Church in America",
+   "text": "After American independence the Protestant Episcopal Church was organised in 1789, the first Anglican church outside the British Isles independent of the crown."
+  },
+  {
+   "year": 1867,
+   "title": "First Lambeth Conference",
+   "text": "Bishops from across the British Empire met at Lambeth Palace, forming what became the Anglican Communion of national churches."
+  },
+  {
+   "year": 1900,
+   "title": "Missions in Africa, c. 1900",
+   "text": "Missionary societies built large Anglican churches in Nigeria, Uganda and Kenya under British colonial rule, which today hold most of the Communion's members."
+  },
+  {
+   "year": 2008,
+   "title": "Today",
+   "text": "Disputes over sexuality led conservative churches, mostly African, to found GAFCON in 2008; the Communion has about 85 million members, the largest church being in Nigeria."
+  }
+ ],
+ "reformed": [
+  {
+   "year": 1536,
+   "title": "Calvin in Geneva",
+   "text": "John Calvin published the Institutes of the Christian Religion and began his work in Geneva, building on Zwingli's reformation in Zurich from 1519."
+  },
+  {
+   "year": 1560,
+   "title": "Scottish Reformation",
+   "text": "Led by John Knox, the Scottish Parliament abolished papal authority in 1560 and created a Presbyterian Church of Scotland."
+  },
+  {
+   "year": 1562,
+   "title": "French Wars of Religion",
+   "text": "War broke out between Catholics and Calvinist Huguenots in France, ending with the Edict of Nantes in 1598, which granted the Huguenots limited toleration."
+  },
+  {
+   "year": 1581,
+   "title": "Dutch Republic",
+   "text": "The northern Netherlands declared independence from Catholic Spain in 1581, and the Dutch Reformed Church became the public church of the republic."
+  },
+  {
+   "year": 1618,
+   "title": "Synod of Dort",
+   "text": "The Synod of Dort (1618 to 1619) condemned the Arminians and defined strict Calvinist doctrine for the Reformed churches."
+  },
+  {
+   "year": 1630,
+   "title": "Puritan New England",
+   "text": "English Puritans founded the Massachusetts Bay Colony in 1630, while Scottish Presbyterians settled Ulster in the same decades."
+  },
+  {
+   "year": 1652,
+   "title": "Dutch Cape Colony",
+   "text": "The Dutch East India Company founded Cape Town, and the Dutch Reformed Church became the church of the Afrikaners in South Africa."
+  },
+  {
+   "year": 1685,
+   "title": "Huguenot exodus",
+   "text": "Louis XIV revoked the Edict of Nantes, and about 200,000 Huguenots fled France to the Netherlands, Prussia, England and South Africa."
+  },
+  {
+   "year": 1884,
+   "title": "Presbyterian Korea",
+   "text": "American Presbyterian missionaries arrived in Korea from 1884, and Presbyterianism became the largest Protestant church in South Korea."
+  },
+  {
+   "year": 2020,
+   "title": "Today",
+   "text": "Reformed and Presbyterian churches number tens of millions, strong in Switzerland, the Netherlands, Scotland, South Korea, southern Africa and the United States."
+  }
+ ],
+ "protestant": [
+  {
+   "year": 1609,
+   "title": "First Baptist church",
+   "text": "English Separatists led by John Smyth in Amsterdam founded the first Baptist church, baptising only believing adults."
+  },
+  {
+   "year": 1639,
+   "title": "Baptists in America",
+   "text": "Roger Williams founded the first Baptist church in America in Providence, Rhode Island, a colony built on religious freedom."
+  },
+  {
+   "year": 1738,
+   "title": "Wesley and Methodism",
+   "text": "John Wesley's conversion in London began the Methodist revival, which with George Whitefield's preaching fed the Great Awakening in Britain and America."
+  },
+  {
+   "year": 1784,
+   "title": "Methodist Episcopal Church",
+   "text": "American Methodists formed their own church in Baltimore in 1784, which grew to be the largest denomination in the United States by the mid 19th century."
+  },
+  {
+   "year": 1792,
+   "title": "Modern missions",
+   "text": "William Carey founded the Baptist Missionary Society and sailed to India, starting a wave of evangelical missions to Asia, Africa and the Pacific."
+  },
+  {
+   "year": 1801,
+   "title": "Second Great Awakening",
+   "text": "The Cane Ridge revival in Kentucky helped spread Baptists and Methodists across the American frontier, making evangelicalism the dominant faith of the United States."
+  },
+  {
+   "year": 1906,
+   "title": "Azusa Street revival",
+   "text": "The Azusa Street revival in Los Angeles launched Pentecostalism, which reached Brazil in 1911 with the Assemblies of God and soon spread worldwide."
+  },
+  {
+   "year": 1970,
+   "title": "Latin American boom, c. 1970",
+   "text": "Pentecostal and evangelical churches grew rapidly in Latin America and sub-Saharan Africa, winning large shares of Brazil, Guatemala, Nigeria and Kenya."
+  },
+  {
+   "year": 2020,
+   "title": "Today",
+   "text": "Evangelical and Pentecostal Christians number several hundred million, most of them now in the Global South rather than Europe or North America."
+  }
+ ],
+ "judaism": [
+  {
+   "year": -1000,
+   "title": "Kingdom of David, c. 1000 BC",
+   "text": "According to the Bible, David made Jerusalem the capital of Israel and his son Solomon built the First Temple there, centring the worship of the God of Israel."
+  },
+  {
+   "year": -722,
+   "title": "Fall of Israel",
+   "text": "Assyria destroyed the northern kingdom of Israel and deported much of its people, leaving the southern kingdom of Judah as the heart of the faith."
+  },
+  {
+   "year": -586,
+   "title": "Babylonian exile",
+   "text": "Nebuchadnezzar destroyed Jerusalem and the First Temple and exiled the elite to Babylon, where much of the Hebrew Bible took shape."
+  },
+  {
+   "year": -538,
+   "title": "Return and Second Temple",
+   "text": "Cyrus the Great of Persia allowed exiles to return, and the Second Temple was completed around 516 BC."
+  },
+  {
+   "year": -164,
+   "title": "Maccabean revolt",
+   "text": "The Maccabees rebelled against the Seleucid king Antiochus IV and rededicated the Temple in 164 BC, later ruling an independent Jewish kingdom."
+  },
+  {
+   "year": 70,
+   "title": "Destruction of the Temple",
+   "text": "The Romans destroyed the Second Temple in AD 70 and crushed the Bar Kokhba revolt in 135, so Judaism became a diaspora faith led by rabbis, synagogues and the Talmud."
+  },
+  {
+   "year": 740,
+   "title": "Khazar conversion, c. 740",
+   "text": "The ruling elite of the Khazar khaganate north of the Caucasus adopted Judaism, the only large state with Jewish rulers between antiquity and modern times."
+  },
+  {
+   "year": 1492,
+   "title": "Expulsion from Spain",
+   "text": "Spain expelled its Jews in 1492 and Portugal in 1497; many found refuge in the Ottoman Empire, while Poland-Lithuania became the main centre of European Jewry."
+  },
+  {
+   "year": 1941,
+   "title": "The Holocaust",
+   "text": "Nazi Germany and its allies murdered about six million Jews from 1941 to 1945, destroying the great Jewish communities of eastern and central Europe."
+  },
+  {
+   "year": 1948,
+   "title": "State of Israel",
+   "text": "Israel was founded in 1948 and Jews from the Middle East and Europe moved there; today about 15 million Jews live mostly in Israel and the United States."
+  }
+ ],
+ "sunni": [
+  {
+   "year": 632,
+   "title": "The first caliphs",
+   "text": "After Muhammad's death in 632 Abu Bakr was chosen as caliph and united Arabia; most Muslims accepted him and his successors, the root of Sunni Islam."
+  },
+  {
+   "year": 642,
+   "title": "Arab conquests",
+   "text": "Under Umar and Uthman the Arabs took Syria, Iraq and Egypt, and by 651 the Persian Empire, spreading Islam across the Middle East."
+  },
+  {
+   "year": 711,
+   "title": "Umayyads reach Spain and Sindh",
+   "text": "The Umayyad caliphate of Damascus crossed into Spain and conquered Sindh in 711, creating an empire from the Atlantic to Central Asia."
+  },
+  {
+   "year": 750,
+   "title": "Abbasid caliphate",
+   "text": "The Abbasids overthrew the Umayyads in 750 and built Baghdad, where the Sunni schools of law and the hadith collections took shape."
+  },
+  {
+   "year": 1071,
+   "title": "Seljuks win at Manzikert",
+   "text": "The Seljuk Turks defeated Byzantium at Manzikert in 1071, opening Anatolia to Turkish settlement, after restoring Sunni rule in Baghdad over the Shia Buyids."
+  },
+  {
+   "year": 1206,
+   "title": "Delhi Sultanate",
+   "text": "Turkic rulers founded the Delhi Sultanate in 1206, bringing much of northern India under Sunni rule, later continued by the Mughals."
+  },
+  {
+   "year": 1258,
+   "title": "Mongols sack Baghdad",
+   "text": "The Mongols destroyed Baghdad and ended the Abbasid caliphate, but the Golden Horde and the Ilkhans later converted, carrying Islam across the steppe."
+  },
+  {
+   "year": 1400,
+   "title": "Islam in Southeast Asia, c. 1400",
+   "text": "Merchants and Sufis spread Islam through the trading ports of Southeast Asia, and Malacca's ruler converted, making the Malay world and later Java Muslim."
+  },
+  {
+   "year": 1453,
+   "title": "Ottomans take Constantinople",
+   "text": "The Ottomans took Constantinople in 1453 and in 1517 Egypt, leading the Sunni world as caliphs, while Spain fell to Christians in 1492 and Iran turned Shia in 1501."
+  },
+  {
+   "year": 1924,
+   "title": "End of the caliphate",
+   "text": "Turkey abolished the Ottoman caliphate in 1924; today Sunnis are about 85 to 90 percent of nearly two billion Muslims, with Indonesia the largest Muslim country."
+  }
+ ],
+ "shia": [
+  {
+   "year": 680,
+   "title": "Karbala",
+   "text": "Husayn, grandson of Muhammad and son of Ali, was killed by Umayyad troops at Karbala in Iraq, and mourning his death became the heart of Shia identity."
+  },
+  {
+   "year": 874,
+   "title": "Occultation of the twelfth imam",
+   "text": "The twelfth imam, Muhammad al-Mahdi, went into hiding in 874 according to Twelver belief, and scholars came to lead the community in his absence."
+  },
+  {
+   "year": 945,
+   "title": "Buyids in Baghdad",
+   "text": "The Shia Buyid dynasty from Iran took control of Baghdad in 945 and ruled Iraq and western Iran until 1055, fostering Twelver scholarship."
+  },
+  {
+   "year": 1310,
+   "title": "Ilkhan Oljeitu converts",
+   "text": "The Mongol Ilkhan Oljeitu adopted Twelver Shia Islam around 1310, an early royal conversion, though Iran remained mostly Sunni."
+  },
+  {
+   "year": 1501,
+   "title": "Safavid Iran",
+   "text": "Shah Ismail I founded the Safavid dynasty in 1501 and imposed Twelver Shia Islam on Iran and Azerbaijan, which became overwhelmingly Shia over the next two centuries."
+  },
+  {
+   "year": 1800,
+   "title": "Southern Iraq converts, c. 1800",
+   "text": "Arab tribes of southern Iraq converted in large numbers in the 18th and 19th centuries, making Shia Muslims the majority in Iraq."
+  },
+  {
+   "year": 1979,
+   "title": "Iranian Revolution",
+   "text": "Ayatollah Khomeini overthrew the shah and founded an Islamic Republic ruled by Shia clerics, backing Shia movements such as Hezbollah in Lebanon."
+  },
+  {
+   "year": 2003,
+   "title": "Today",
+   "text": "After 2003 Shia parties came to power in Iraq; Twelvers are about 10 to 13 percent of Muslims, the majority in Iran, Iraq, Azerbaijan and Bahrain."
+  }
+ ],
+ "ismaili": [
+  {
+   "year": 765,
+   "title": "Split over the imamate",
+   "text": "When the imam Ja'far al-Sadiq died in 765, those who followed his son Ismail and grandson Muhammad broke with the Twelvers and became the Ismailis."
+  },
+  {
+   "year": 909,
+   "title": "Fatimid caliphate founded",
+   "text": "The Ismaili mission among the Kutama Berbers brought Abdallah al-Mahdi to power in Ifriqiya in 909, founding the Fatimid caliphate, while the Qarmatians held Bahrain."
+  },
+  {
+   "year": 969,
+   "title": "Fatimids conquer Egypt",
+   "text": "The Fatimids took Egypt in 969 and founded Cairo and al-Azhar, ruling also Syria, the Hejaz and Sicily at their height."
+  },
+  {
+   "year": 1090,
+   "title": "Hasan-i Sabbah at Alamut",
+   "text": "Hasan-i Sabbah seized the fortress of Alamut in northern Iran in 1090, the base of the Nizari Ismaili state of castles in Iran and Syria."
+  },
+  {
+   "year": 1094,
+   "title": "Nizari and Musta'li split",
+   "text": "A succession dispute in Cairo split the Ismailis into Nizaris, led from Alamut, and Musta'lis, whose Tayyibi branch survives as the Bohras of Yemen and India."
+  },
+  {
+   "year": 1171,
+   "title": "End of the Fatimids",
+   "text": "Saladin abolished the Fatimid caliphate in 1171 and restored Sunni Islam in Egypt."
+  },
+  {
+   "year": 1256,
+   "title": "Mongols take Alamut",
+   "text": "Hulagu's Mongols destroyed Alamut and the Nizari castles in Iran in 1256, and the Nizaris survived as scattered communities in Iran, Central Asia and India."
+  },
+  {
+   "year": 1817,
+   "title": "The Aga Khans",
+   "text": "The Qajar shah granted the Nizari imam the title Aga Khan in 1817; Aga Khan I moved to India in the 1840s and built up communities in South Asia and East Africa."
+  },
+  {
+   "year": 2025,
+   "title": "Today",
+   "text": "Aga Khan V succeeded his father in 2025 as imam of about 12 to 15 million Nizaris, living mainly in Pakistan, India, Afghanistan, Tajikistan and the diaspora."
+  }
+ ],
+ "ibadi": [
+  {
+   "year": 700,
+   "title": "Ibadis in Basra, c. 700",
+   "text": "Moderate Kharijites led by scholars such as Jabir ibn Zayd in Basra, and named after Abdallah ibn Ibad, rejected both Umayyad rule and Kharijite violence."
+  },
+  {
+   "year": 750,
+   "title": "First imamate in Oman",
+   "text": "Oman's tribes elected al-Julanda ibn Mas'ud as Ibadi imam around 750, the start of a long tradition of elected imams in Oman."
+  },
+  {
+   "year": 777,
+   "title": "Rustamid imamate",
+   "text": "Abd al-Rahman ibn Rustam founded an Ibadi imamate at Tahert in Algeria, ruling much of the central Maghreb, with Ibadis also strong in Jebel Nafusa in Libya."
+  },
+  {
+   "year": 909,
+   "title": "Fatimids destroy Tahert",
+   "text": "The Fatimids ended the Rustamid state in 909, and North African Ibadis withdrew to oases and islands such as the Mzab, Djerba and Jebel Nafusa."
+  },
+  {
+   "year": 1650,
+   "title": "Ya'ariba expel the Portuguese",
+   "text": "The Ya'ariba imams, in power since 1624, took Muscat from the Portuguese in 1650 and then their East African ports, building an Omani maritime empire."
+  },
+  {
+   "year": 1744,
+   "title": "Al Said dynasty",
+   "text": "Ahmad ibn Said founded the Al Said dynasty, which still rules Oman, after expelling the Persians."
+  },
+  {
+   "year": 1840,
+   "title": "Capital at Zanzibar",
+   "text": "Sultan Said bin Sultan moved his court to Zanzibar around 1840, where an Omani Ibadi elite ruled the Swahili coast."
+  },
+  {
+   "year": 1964,
+   "title": "Zanzibar revolution",
+   "text": "The Zanzibar revolution of 1964 overthrew the Arab sultan and ended Omani rule in East Africa."
+  },
+  {
+   "year": 1970,
+   "title": "Today",
+   "text": "Sultan Qaboos, who took power in 1970, modernised Oman, the only country where Ibadis are the largest Muslim community, with small groups in Algeria, Tunisia, Libya and Zanzibar."
+  }
+ ],
+ "secular": [
+  {
+   "year": 1917,
+   "title": "Bolshevik revolution",
+   "text": "Lenin's Bolsheviks separated church and state, seized church property and began a campaign against religion in Russia."
+  },
+  {
+   "year": 1929,
+   "title": "Soviet anti-religious campaign",
+   "text": "The 1929 law on religious associations and the League of the Militant Godless led to mass closures of churches, mosques and synagogues and the killing of clergy in the 1930s."
+  },
+  {
+   "year": 1949,
+   "title": "Communist bloc expands",
+   "text": "After 1945 communist regimes took over eastern Europe and in 1949 Mao founded the People's Republic of China, imposing state atheism on a large part of the world."
+  },
+  {
+   "year": 1966,
+   "title": "Cultural Revolution",
+   "text": "Red Guards in China destroyed temples, churches and mosques from 1966, and religious practice was almost wholly banned until the late 1970s."
+  },
+  {
+   "year": 1967,
+   "title": "Albania bans religion",
+   "text": "Enver Hoxha declared Albania the world's first atheist state in 1967 and closed every place of worship."
+  },
+  {
+   "year": 1975,
+   "title": "Indochina",
+   "text": "Communist victories in Vietnam, Laos and Cambodia in 1975 brought restrictions on Buddhism and Christianity, and the Khmer Rouge tried to wipe out religion."
+  },
+  {
+   "year": 1991,
+   "title": "Fall of Soviet Union",
+   "text": "The collapse of communism in Europe brought religious revivals, though the Czech Republic, Estonia and eastern Germany stayed largely non-religious."
+  },
+  {
+   "year": 2021,
+   "title": "Today",
+   "text": "Censuses show no religion rising in the West, with fewer than half of England and Wales Christian in 2021; about a quarter of the world is unaffiliated, most in China."
+  }
+ ],
+ "hussite": [
+  {
+   "year": 1402,
+   "title": "Jan Hus preaches in Prague",
+   "text": "The Prague priest Jan Hus took up John Wycliffe's ideas, attacking indulgences and the wealth of the clergy from the Bethlehem Chapel."
+  },
+  {
+   "year": 1415,
+   "title": "Hus burned at Constance",
+   "text": "The Council of Constance condemned Hus and burned him as a heretic, turning Bohemian anger into a national religious movement."
+  },
+  {
+   "year": 1419,
+   "title": "Defenestration and revolution",
+   "text": "Hussites threw Prague councillors from a window and took over Bohemia; their sign was the chalice, communion in both kinds for all."
+  },
+  {
+   "year": 1420,
+   "title": "Zizka defeats the crusades",
+   "text": "Under Jan Zizka and Prokop the Great, Hussite armies with war wagons beat five papal crusades between 1420 and 1431."
+  },
+  {
+   "year": 1436,
+   "title": "Compacts of Basel",
+   "text": "After the moderate Utraquists crushed the radical Taborites at Lipany in 1434, the Church accepted their chalice in the Compacts of Basel."
+  },
+  {
+   "year": 1485,
+   "title": "Peace of Kutna Hora",
+   "text": "Bohemia's Catholic and Utraquist estates agreed to tolerate each other, a rare religious peace in medieval Europe."
+  },
+  {
+   "year": 1575,
+   "title": "Bohemian Confession",
+   "text": "Utraquists, Lutherans and the Unity of Brethren joined in a common Protestant confession, confirmed by Rudolf II's Letter of Majesty in 1609."
+  },
+  {
+   "year": 1620,
+   "title": "White Mountain and suppression",
+   "text": "The Protestant estates' defeat at White Mountain ended the Hussite church; the Habsburgs forced re-Catholicisation and exiled its leaders."
+  },
+  {
+   "year": 1918,
+   "title": "Remembered in Czechoslovakia",
+   "text": "Hus became a national hero of independent Czechoslovakia, and the new Czechoslovak Hussite Church was founded in 1920."
+  }
+ ]
+}

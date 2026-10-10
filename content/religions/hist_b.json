@@ -1,0 +1,220 @@
+{
+"folk": [
+ {"year": -4000, "title": "Ancestral faiths everywhere", "text": "In c. 4000 BC nearly every people on earth followed local animist, ancestral and nature religions, from the farmers of Africa, Europe and Asia to the hunters of the Americas and Australia."},
+ {"year": -3000, "title": "First state religions emerge", "text": "From c. 3000 BC the local cults of Egypt, Mesopotamia, India and China grew into organised state religions with priests, temples and writing, while most of the world kept its oral traditions."},
+ {"year": -500, "title": "Axial Age faiths spread", "text": "From c. 500 BC Buddhism, Jainism, Confucianism and Zoroastrianism began to replace or absorb local traditions across Asia, though village and ancestor cults lived on beneath them."},
+ {"year": 700, "title": "Christianity and Islam advance", "text": "After Rome adopted Christianity and the Arab conquests began in 632, the two faiths spread through Europe, the Middle East and North Africa, shrinking the lands of traditional religion."},
+ {"year": 1050, "title": "Sahel kings adopt Islam", "text": "In the 11th century the rulers of Takrur and Kanem converted to Islam through trans-Saharan trade, beginning the slow Islamization of West African elites while most farmers kept their own gods."},
+ {"year": 1500, "title": "Conquest of the Americas", "text": "After 1492 Spanish and Portuguese conquest and missions Christianized most of the Americas, and later Russian expansion did the same in much of Siberia."},
+ {"year": 1820, "title": "Pacific islands convert", "text": "From c. 1820 Protestant missionaries converted Hawaii, Tahiti, Tonga, Fiji and Samoa, often after their chiefs or kings adopted Christianity, ending traditional religion as the majority faith across Polynesia."},
+ {"year": 1885, "title": "Missions in colonial Africa", "text": "After the Berlin Conference of 1884 to 1885, colonial rule and missionaries spread Christianity and Islam across sub-Saharan Africa, where most people still followed traditional religion in 1900."},
+ {"year": 2000, "title": "Living traditions today", "text": "Few countries now have a traditional-religion majority, but ancestral and spirit beliefs survive across Africa, Siberia, the Americas, Oceania and Southeast Asia, often blended with Christianity or Islam."}
+],
+"tengri": [
+ {"year": -209, "title": "Xiongnu sons of Heaven", "text": "In 209 BC Modu Chanyu united the Xiongnu of the Mongolian steppe, whose rulers were styled sons of Tengri, the Heaven god, according to Chinese records."},
+ {"year": 552, "title": "Gokturk Khaganate rises", "text": "In 552 the Gokturks founded a steppe empire from Manchuria to the Black Sea; their Orkhon inscriptions of the 730s credit Tengri and the earth goddess Umay with the khagans' power."},
+ {"year": 762, "title": "Uyghurs turn Manichaean", "text": "In 762 the Uyghur khagan Bogu adopted Manichaeism as state religion, the first great steppe power to set aside Tengri worship as its official cult."},
+ {"year": 922, "title": "Western Turks embrace Islam", "text": "Volga Bulgaria accepted Islam in 922 and the Karakhanids in the mid 10th century, beginning the conversion of the western and Central Asian Turks, including the Seljuks."},
+ {"year": 1206, "title": "Genghis Khan's Eternal Heaven", "text": "In 1206 Temujin was proclaimed Genghis Khan; the Mongol Empire claimed to rule all lands under the mandate of Mongke Tengri, the Eternal Blue Heaven, while tolerating other faiths."},
+ {"year": 1295, "title": "Mongol khanates convert", "text": "Ghazan made the Ilkhanate Muslim in 1295 and Uzbek Khan did the same for the Golden Horde from 1313, while the Yuan court in China favoured Tibetan Buddhism."},
+ {"year": 1578, "title": "Mongols adopt Tibetan Buddhism", "text": "In 1578 Altan Khan met the Gelug lama Sonam Gyatso and gave him the title Dalai Lama; the Mongols turned to Buddhism and shamanism was pushed to the margins."},
+ {"year": 1991, "title": "Post-Soviet revival", "text": "Since the fall of the USSR in 1991, Tengrist and shamanic movements have revived in Kyrgyzstan, Kazakhstan, Buryatia, Tuva, Altai and Yakutia, mostly as minority and cultural traditions."}
+],
+"egyptian": [
+ {"year": -3100, "title": "Egypt united under pharaoh", "text": "In c. 3100 BC Upper and Lower Egypt were united under the first kings, who ruled as divine intermediaries identified with the falcon god Horus."},
+ {"year": -2560, "title": "Pyramids of Giza", "text": "In c. 2560 BC Khufu built the Great Pyramid at Giza, the height of the Old Kingdom royal cult tied to the sun god Ra and the king's afterlife."},
+ {"year": -1550, "title": "New Kingdom and Amun", "text": "In c. 1550 BC Ahmose expelled the Hyksos; under the New Kingdom Amun-Ra of Thebes became the empire's chief god, and Egyptian temples spread into Nubia and Canaan."},
+ {"year": -1350, "title": "Akhenaten's Aten revolution", "text": "In c. 1350 BC Akhenaten replaced the traditional gods with worship of the sun disc Aten at his new capital Amarna; the old cults were restored soon after his death."},
+ {"year": -730, "title": "Kushite pharaohs from Nubia", "text": "In c. 730 BC Piye of Kush, a devotee of Amun, conquered Egypt; Nubian kings at Napata and later Meroe kept Egyptian-style religion until the 4th century AD."},
+ {"year": -332, "title": "Alexander and the Ptolemies", "text": "In 332 BC Alexander took Egypt and was hailed son of Amun at Siwa; the Ptolemaic kings built temples such as Edfu and spread the cults of Isis and Serapis through the Greek world."},
+ {"year": -30, "title": "Roman Egypt, Isis abroad", "text": "After 30 BC Egypt became a Roman province; its temples kept working under emperors portrayed as pharaohs, and Isis worship spread as far as Rome, Gaul and Britain."},
+ {"year": 391, "title": "Theodosius closes the temples", "text": "In 391 Theodosius I banned pagan sacrifice and the Serapeum of Alexandria was destroyed; Egypt soon became overwhelmingly Christian."},
+ {"year": 537, "title": "Philae, the last temple", "text": "In c. 537 Justinian closed the temple of Isis at Philae, long kept open for Nubian worshippers, ending the last public cult of ancient Egyptian religion."}
+],
+"mesopotamian": [
+ {"year": -3500, "title": "Sumerian temple cities", "text": "From c. 3500 BC Uruk and other Sumerian cities built great temples to gods such as An and Inanna, each city governed in the name of its patron deity."},
+ {"year": -2334, "title": "Sargon of Akkad", "text": "In c. 2334 BC Sargon united Mesopotamia in the first empire; his daughter Enheduanna, high priestess of the moon god Nanna at Ur, wrote the earliest hymns known by author."},
+ {"year": -1754, "title": "Hammurabi and Marduk", "text": "In c. 1754 BC Hammurabi of Babylon issued his law code under the sun god Shamash, and Marduk of Babylon rose toward the head of the pantheon."},
+ {"year": -1400, "title": "Canaanite gods at Ugarit", "text": "In c. 1400 to 1200 BC the tablets of Ugarit on the Syrian coast recorded the myths of El, Baal and Anat, the gods shared by the Canaanite city states."},
+ {"year": -814, "title": "Phoenicians carry Baal west", "text": "Tyre founded Carthage in c. 814 BC, and Phoenician traders spread the cults of Baal, Astarte and Melqart to Cyprus, Sicily, Sardinia, North Africa and Spain."},
+ {"year": -700, "title": "Assyria wars for Ashur", "text": "In c. 700 BC the Assyrian empire, waging war in the name of its god Ashur, ruled from Egypt to western Iran, and Ashurbanipal's Nineveh library gathered its religious texts."},
+ {"year": -539, "title": "Persia takes Babylon", "text": "In 539 BC Cyrus the Great captured Babylon; Marduk's temple kept working under Persian and then Seleucid rule, but the old religion lost its royal patrons."},
+ {"year": -146, "title": "Rome destroys Carthage", "text": "In 146 BC Rome destroyed Carthage, though the Punic gods Baal Hammon and Tanit lived on in Roman Africa under the names Saturn and Caelestis."},
+ {"year": 75, "title": "Last cuneiform tablet", "text": "The last datable cuneiform astronomical tablet from Babylon dates to c. AD 75, marking the fading of the old Mesopotamian temple culture."},
+ {"year": 391, "title": "Theodosius bans sacrifice", "text": "In 391 Theodosius I banned pagan sacrifice, ending the public cults of Baal and Astarte in Roman Syria and Phoenicia; only small pockets, such as the moon cult of Harran, lingered on."}
+],
+"hellenic": [
+ {"year": -1200, "title": "Mycenaean gods", "text": "By c. 1200 BC the Mycenaean palaces of Greece recorded offerings to Zeus, Hera, Poseidon and Dionysus on Linear B tablets."},
+ {"year": -776, "title": "First Olympic Games", "text": "In 776 BC, by tradition, the first games for Zeus were held at Olympia; Homer and Hesiod soon fixed the family of Olympian gods shared by all Greeks."},
+ {"year": -750, "title": "Colonies spread Greek gods", "text": "From c. 750 BC Greek colonies carried temples and oracles from Spain and Sicily to the Black Sea, while Rome and the Etruscans adopted many Greek gods under Latin names."},
+ {"year": -447, "title": "Parthenon of Athens", "text": "In 447 BC Athens began the Parthenon for its patron Athena, a high point of classical civic religion alongside Delphi's oracle and the Eleusinian Mysteries."},
+ {"year": -334, "title": "Alexander's Hellenistic world", "text": "In 334 BC Alexander invaded Persia; his successors planted Greek cults and temples from Egypt and Syria to Bactria, blending them with local gods."},
+ {"year": -27, "title": "Augustus and emperor cult", "text": "In 27 BC Augustus became the first Roman emperor; worship of Roma and the deified emperors joined the old gods across an empire from Britain to Syria."},
+ {"year": 312, "title": "Constantine turns Christian", "text": "In 312 Constantine won at the Milvian Bridge under a Christian sign, and the Edict of Milan in 313 began the shift of imperial favour from the old gods to Christianity."},
+ {"year": 361, "title": "Julian's pagan revival", "text": "From 361 to 363 Emperor Julian tried to restore temple sacrifice and organise paganism like a church, but his revival ended with his death in Persia."},
+ {"year": 391, "title": "Theodosius bans sacrifice", "text": "In 391 and 392 Theodosius I banned pagan sacrifice and temple worship throughout the empire, and the Olympic Games ended soon after."},
+ {"year": 529, "title": "Justinian closes the Academy", "text": "In 529 Justinian barred pagans from teaching, ending the Platonic Academy of Athens; the last rural pockets, such as the Mani peninsula, converted by the 9th century."}
+],
+"pagan-europe": [
+ {"year": -450, "title": "Celtic world and druids", "text": "From c. 450 BC the La Tene Celts spread from Gaul to Bohemia and Iberia, led by druid priests who worshipped at sacred groves, springs and lakes."},
+ {"year": -52, "title": "Caesar conquers Gaul", "text": "By 52 BC Caesar had conquered Gaul, where Celtic gods merged with Roman ones; Rome later suppressed the druids, storming their stronghold on Anglesey in AD 60."},
+ {"year": 496, "title": "Clovis baptised", "text": "In c. 496 Clovis, king of the Franks, was baptised a Catholic, starting the conversion of the Germanic peoples who had settled in Gaul."},
+ {"year": 597, "title": "Mission to the Anglo-Saxons", "text": "In 597 Augustine landed in Kent to convert the pagan Anglo-Saxons; with Irish monks from the north, England was Christian by c. 690."},
+ {"year": 772, "title": "Charlemagne fells Irminsul", "text": "In 772 Charlemagne destroyed the Saxon sacred pillar Irminsul and began a 30-year war that forced the Saxons to accept Christianity."},
+ {"year": 988, "title": "Baptism of the Rus", "text": "Vladimir of Kiev was baptised in 988, after Mieszko of Poland in 966 and before Iceland's vote for Christianity in 1000, shrinking pagan Europe to Scandinavia and the Baltic."},
+ {"year": 1100, "title": "Scandinavia becomes Christian", "text": "By c. 1100 Scandinavia was Christian, after Olaf II's conversion of Norway and the end of the royal temple cult at Uppsala in Sweden."},
+ {"year": 1230, "title": "Northern Crusades in Baltic", "text": "From 1230 the Teutonic Knights conquered the pagan Prussians, as German crusaders had done with the Livonians and Estonians, converting the Baltic coast by force."},
+ {"year": 1387, "title": "Lithuania, last pagan state", "text": "In 1387 Lithuania, Europe's last pagan state, was officially baptised after its grand duke Jogaila became king of Poland; Samogitia followed in 1413."},
+ {"year": 1973, "title": "Modern pagan revival", "text": "In 1973 Iceland recognised the Asatru Fellowship, part of a small modern revival of Norse, Baltic, Slavic and Celtic paganism across Europe."}
+],
+"mesoamerican": [
+ {"year": -1200, "title": "Olmec ceremonial centres", "text": "From c. 1200 BC the Olmec of the Gulf Coast built ceremonial centres such as San Lorenzo, with were-jaguar gods, the sacred ballgame and colossal heads of their rulers."},
+ {"year": -500, "title": "Zapotecs and the calendar", "text": "In c. 500 BC the Zapotecs founded Monte Alban in Oaxaca, where some of the earliest glyphs of the 260-day ritual calendar shared across Mesoamerica appear."},
+ {"year": 100, "title": "Teotihuacan's great pyramids", "text": "In c. AD 100 to 250 Teotihuacan raised the Pyramids of the Sun and Moon and the Feathered Serpent temple, making it the religious capital of central Mexico."},
+ {"year": 250, "title": "Classic Maya divine kings", "text": "From c. 250 the divine kings of Tikal, Calakmul, Palenque and Copan ruled through temple-pyramids, bloodletting rites and the Long Count calendar."},
+ {"year": 900, "title": "Maya collapse, Toltecs rise", "text": "In c. 900 the southern Maya cities were abandoned, while Toltec Tula and Chichen Itza spread the cult of the feathered serpent Quetzalcoatl, or Kukulcan."},
+ {"year": 1325, "title": "Aztecs found Tenochtitlan", "text": "In 1325 the Mexica founded Tenochtitlan; from 1428 their Triple Alliance empire honoured Huitzilopochtli and Tlaloc at the Templo Mayor with mass human sacrifice."},
+ {"year": 1521, "title": "Spanish conquest of Mexico", "text": "In 1521 Cortes and his native allies took Tenochtitlan; temples were destroyed and Franciscan and Dominican friars converted central Mexico to Catholicism."},
+ {"year": 1697, "title": "Fall of the last Maya kingdom", "text": "In 1697 Spain conquered Nojpeten in the Peten, the last independent Maya kingdom, ending Mesoamerican religion as a state faith."},
+ {"year": 2000, "title": "Traditions within Catholicism", "text": "Today Maya and Nahua rites survive inside Catholic practice, and highland Guatemalan day-keepers still follow the 260-day calendar."}
+],
+"andean": [
+ {"year": -2500, "title": "Caral's sacred mounds", "text": "By c. 2500 BC Caral and other Norte Chico towns on the Peruvian coast built platform mounds and sunken plazas for communal rituals, the oldest monumental religion in the Americas."},
+ {"year": -900, "title": "Chavin cult spreads", "text": "From c. 900 BC the temple of Chavin de Huantar drew pilgrims, and its staff god and feline imagery spread across the highlands and coast of Peru."},
+ {"year": 100, "title": "Moche and Nazca", "text": "From c. AD 100 the Moche built the Huacas of the Sun and Moon on Peru's north coast, while the Nazca drew giant ritual lines and figures in the southern desert."},
+ {"year": 600, "title": "Tiwanaku and Wari", "text": "In c. 600 Tiwanaku near Lake Titicaca, with its Gate of the Sun, and the Wari empire of the central highlands spread a shared staff god across the Andes."},
+ {"year": 1438, "title": "Inca empire of Inti", "text": "From 1438 Pachacuti built the Inca empire, centred on the sun god Inti at Cusco's Coricancha, and imposed the sun cult and royal mummy worship from Ecuador to Chile."},
+ {"year": 1532, "title": "Spanish conquest of Peru", "text": "In 1532 Pizarro captured the Inca Atahualpa at Cajamarca; the Spanish destroyed temples and huacas and began converting the Andes to Catholicism."},
+ {"year": 1572, "title": "Fall of Vilcabamba", "text": "In 1572 the Spanish executed Tupac Amaru, last Inca of Vilcabamba; campaigns to extirpate idolatry from 1610 drove the old cults into hiding."},
+ {"year": 1944, "title": "Inti Raymi revived", "text": "In 1944 Cusco revived the Inca sun festival Inti Raymi; today Quechua and Aymara offerings to Pachamama and the mountain apus continue alongside Catholicism."}
+],
+"zoroastrianism": [
+ {"year": -1200, "title": "Zarathustra's Gathas", "text": "In c. 1200 BC (estimates range from 1500 to 600 BC) Zarathustra composed the Gathas in eastern Iran, preaching the wise lord Ahura Mazda against the lie and its demons."},
+ {"year": -522, "title": "Darius and Ahura Mazda", "text": "From 522 BC Darius I credited his rule to Ahura Mazda in royal inscriptions, as the Achaemenid empire stretched from Egypt and Anatolia to the Indus."},
+ {"year": -330, "title": "Alexander burns Persepolis", "text": "In 330 BC Alexander destroyed the Achaemenid empire and burned Persepolis; under Seleucid and then Parthian rule Zoroastrianism coexisted with Greek cults."},
+ {"year": 224, "title": "Sasanian state church", "text": "In 224 Ardashir I founded the Sasanian empire, which made Zoroastrianism a state church with fire temples, a powerful priesthood and an organised Avesta canon."},
+ {"year": 651, "title": "Arab conquest of Iran", "text": "The last Sasanian shah Yazdegerd III died in 651 after the Arab conquest; Iran's population turned slowly to Islam and was mostly Muslim by c. 1000."},
+ {"year": 936, "title": "Parsis settle in Gujarat", "text": "Zoroastrians seeking refuge landed at Sanjan in Gujarat, traditionally c. 936 (some say 716), founding the Parsi community of India."},
+ {"year": 1882, "title": "Jizya lifted in Iran", "text": "In 1882, after campaigns funded by Bombay Parsis, the Qajar shah abolished the jizya poll tax on Iran's dwindling Zoroastrians of Yazd and Kerman."},
+ {"year": 2020, "title": "Small community today", "text": "Today perhaps 100,000 to 200,000 Zoroastrians remain, mainly in Mumbai, Yazd and Tehran and in diaspora communities in North America and Britain."}
+],
+"manichaeism": [
+ {"year": 240, "title": "Mani's revelation", "text": "In c. 240 Mani began preaching in Sasanian Mesopotamia a religion of light against darkness, uniting ideas from Zoroaster, Buddha and Jesus with its own scriptures."},
+ {"year": 276, "title": "Mani dies in prison", "text": "Mani died in prison in c. 276 under Bahram I, urged on by the Zoroastrian high priest Kartir; persecution scattered his followers west into Rome and east into Central Asia."},
+ {"year": 302, "title": "Diocletian's edict", "text": "In c. 302 Diocletian outlawed Manichaeism, yet it spread through Roman Egypt, Africa and Italy, where the young Augustine was a Manichaean hearer for nine years."},
+ {"year": 694, "title": "Mission to Tang China", "text": "In 694 a Manichaean missionary presented the faith's scripture at the Tang court, after Sogdian merchants had carried it along the Silk Road."},
+ {"year": 762, "title": "Uyghur state religion", "text": "In 762 the Uyghur khagan Bogu converted, making Manichaeism the state religion of the Uyghur empire on the Mongolian steppe."},
+ {"year": 843, "title": "Tang persecution", "text": "In 843, after the Uyghur empire fell, the Tang banned Manichaeism and killed many of its clergy in China."},
+ {"year": 1000, "title": "Qocho turns Buddhist", "text": "The Uyghur kingdom of Qocho in Turfan kept Manichaean monasteries until Buddhism prevailed there in c. 1000, ending its last royal patronage."},
+ {"year": 1339, "title": "Last shrine in Fujian", "text": "The Cao'an temple near Quanzhou in Fujian holds a Mani statue dated 1339; the faith survived there as the Religion of Light into the Ming era, then vanished."}
+],
+"vedic": [
+ {"year": -1500, "title": "Rigvedic hymns", "text": "In c. 1500 to 1200 BC Indo-Aryan tribes in the Punjab composed the Rigveda, hymns to Indra, Agni and Soma sung at fire sacrifices."},
+ {"year": -1000, "title": "Kuru ritual and eastward spread", "text": "In c. 1000 BC the Kuru kingdom codified the great fire rituals in the Yajurveda and Brahmanas, and Vedic culture spread east into the Ganges plain."},
+ {"year": -700, "title": "The early Upanishads", "text": "From c. 700 BC the early Upanishads taught karma, rebirth and the unity of the self with brahman, turning Vedic thought inward."},
+ {"year": -500, "title": "Sramana challenge", "text": "In c. 500 BC the Buddha and Mahavira rejected Vedic sacrifice and brahmin authority, winning royal patrons in Magadha."},
+ {"year": -185, "title": "Shunga revival", "text": "In c. 185 BC Pushyamitra Shunga overthrew the Mauryas and revived the royal horse sacrifice, a brief return of Vedic kingship."},
+ {"year": 320, "title": "Absorbed into Hinduism", "text": "By the Gupta era from 320, temple worship of Vishnu, Shiva and the Goddess had largely replaced Vedic sacrifice, though the Vedas remained Hinduism's sacred root."},
+ {"year": 1975, "title": "Living Vedic rites", "text": "In 1975 Nambudiri brahmins of Kerala performed the 12-day Athirathram fire ritual, one of the few places where ancient Vedic rites and chanting still survive."}
+],
+"hinduism": [
+ {"year": -500, "title": "Epics and devotion", "text": "From c. 500 BC the Mahabharata, with its Bhagavad Gita, and the Ramayana took shape, centring worship on Krishna, Rama and Shiva rather than Vedic sacrifice."},
+ {"year": 320, "title": "Gupta golden age", "text": "From 320 the Gupta kings patronised Vishnu and Shiva, the Puranas were compiled and the first stone temples rose, as Hinduism overtook Buddhism in royal favour."},
+ {"year": 400, "title": "Indianized Southeast Asia", "text": "From c. 400 Hindu kingdoms such as Funan, Champa and Tarumanagara in Java adopted Shiva and Vishnu worship and Sanskrit, carried by traders and brahmins."},
+ {"year": 800, "title": "Shankara and bhakti saints", "text": "In c. 800 Adi Shankara taught Advaita Vedanta and founded monasteries, while Tamil bhakti poets spread devotion to Shiva and Vishnu, helping Hinduism eclipse Buddhism in India."},
+ {"year": 1113, "title": "Angkor Wat for Vishnu", "text": "From c. 1113 Suryavarman II built Angkor Wat for Vishnu, the high point of Hinduism in Southeast Asia before Cambodia turned to Theravada Buddhism."},
+ {"year": 1206, "title": "Delhi Sultanate", "text": "In 1206 the Delhi Sultanate began centuries of Muslim rule over north India, but Hindus remained the majority, and the Vijayanagara empire from 1336 championed Hinduism in the south."},
+ {"year": 1527, "title": "Majapahit falls, Bali remains", "text": "In c. 1527 the Hindu Majapahit kingdom of Java fell to Muslim Demak; Java became Muslim, but Bali kept its Hindu religion to this day."},
+ {"year": 1674, "title": "Shivaji's Maratha kingdom", "text": "In 1674 Shivaji was crowned Hindu king of the Marathas, whose power came to dominate much of India in the 18th century as Mughal rule declined."},
+ {"year": 1947, "title": "Independence and Partition", "text": "In 1947 India became independent as a secular republic with a Hindu majority, while Partition drove millions of Hindus out of the new Pakistan."},
+ {"year": 2000, "title": "Third largest religion", "text": "Today about 1.2 billion Hindus form majorities in India and Nepal and on Bali, with large communities in Mauritius, Fiji, Britain and North America."}
+],
+"jainism": [
+ {"year": -500, "title": "Mahavira's teaching", "text": "In c. 500 BC (traditional dates 599 to 527 BC) Mahavira, the 24th tirthankara, taught strict non-violence and asceticism in the kingdoms of Bihar."},
+ {"year": -300, "title": "Chandragupta goes south", "text": "By tradition, in c. 300 BC the Maurya emperor Chandragupta became a monk and followed the sage Bhadrabahu to Shravanabelagola, carrying Jainism into Karnataka."},
+ {"year": 80, "title": "Digambara and Svetambara split", "text": "The community divided into the sky-clad Digambaras and the white-clad Svetambaras, a split traditionally dated to AD 79 or 82."},
+ {"year": 454, "title": "Council of Valabhi", "text": "In c. 454 the Svetambara council at Valabhi in Gujarat wrote down its scriptural canon under the monk Devarddhi."},
+ {"year": 983, "title": "Gommateshwara statue", "text": "In c. 983 the minister Chavundaraya raised the 17 metre statue of Bahubali at Shravanabelagola, at the height of royal Jain patronage in the Deccan."},
+ {"year": 1143, "title": "Kumarapala in Gujarat", "text": "From 1143 King Kumarapala of Gujarat, guided by the monk Hemachandra, protected Jainism and banned animal slaughter, making Gujarat and Rajasthan its lasting heartland."},
+ {"year": 2011, "title": "Small but influential today", "text": "India's 2011 census counted about 4.5 million Jains, mainly in Maharashtra, Rajasthan, Gujarat and Karnataka, with diaspora communities in Britain, North America and East Africa."}
+],
+"buddhism": [
+ {"year": -500, "title": "The Buddha's awakening", "text": "In c. 500 BC (dates range from 563 to 400 BC) Siddhartha Gautama attained awakening at Bodh Gaya and taught the Middle Way in the Ganges kingdoms of Magadha and Kosala."},
+ {"year": -380, "title": "Second council and schism", "text": "At the council of Vaishali in c. 380 BC disputes over monastic rules began the split between the Sthavira elders and the Mahasanghika majority."},
+ {"year": -260, "title": "Ashoka's conversion", "text": "In c. 260 BC, after his bloody conquest of Kalinga, the Maurya emperor Ashoka embraced the Dharma, set up edicts across India and sent missions to Sri Lanka and Gandhara."},
+ {"year": -150, "title": "Indo-Greek Buddhism", "text": "In c. 150 BC the Indo-Greek king Menander, remembered as Milinda, debated the monk Nagasena, as Buddhism flourished in Bactria and Gandhara."},
+ {"year": 127, "title": "Kushans and the Silk Road", "text": "From c. 127 the Kushan emperor Kanishka patronised Buddhism; Gandhara art gave the Buddha a human image and monks carried the faith along the Silk Road to China."},
+ {"year": 427, "title": "Nalanda founded", "text": "In c. 427 the Gupta kings founded the monastery university of Nalanda in Bihar, which drew students from China, Korea and Tibet for 800 years."},
+ {"year": 1193, "title": "Decline in India", "text": "In c. 1193 Turkic armies sacked Nalanda and Vikramashila; with Hindu revival and lost patronage, Buddhism nearly vanished from India outside the Himalayas."},
+ {"year": 1956, "title": "Ambedkar's mass conversion", "text": "In 1956 B. R. Ambedkar and about 400,000 Dalits converted to Buddhism at Nagpur, reviving the faith in its homeland as a movement against caste."}
+],
+"theravada": [
+ {"year": -250, "title": "Mahinda reaches Sri Lanka", "text": "In c. 250 BC Ashoka's son Mahinda converted King Devanampiya Tissa at Anuradhapura, founding the Mahavihara monastery and Sri Lankan Buddhism."},
+ {"year": -29, "title": "Pali canon written down", "text": "In c. 29 BC monks at Aluvihare in Sri Lanka wrote down the Pali canon for the first time, the scripture of Theravada to this day."},
+ {"year": 430, "title": "Buddhaghosa's commentaries", "text": "In c. 430 the scholar Buddhaghosa wrote the Visuddhimagga and Pali commentaries at Anuradhapura, fixing Theravada doctrine."},
+ {"year": 1056, "title": "Anawrahta of Pagan", "text": "In 1056 King Anawrahta of Pagan adopted Theravada under the monk Shin Arahan, making Burma a Theravada kingdom of thousands of temples."},
+ {"year": 1165, "title": "Sri Lankan Sangha unified", "text": "In 1165 Parakramabahu I unified the Sri Lankan monastic orders under the Mahavihara, and its strict lineage became the model for Southeast Asia."},
+ {"year": 1279, "title": "Sukhothai and the Thai", "text": "From c. 1279 King Ram Khamhaeng of Sukhothai patronised Sri Lankan-style Theravada, which became the religion of the Thai kingdoms."},
+ {"year": 1353, "title": "Laos and Cambodia convert", "text": "In 1353 Fa Ngum founded Lan Xang in Laos with Theravada as its faith, and by then Cambodia too had turned from the Hindu and Mahayana cults of Angkor to Theravada."},
+ {"year": 1753, "title": "Siam restores Lankan ordination", "text": "In 1753 Siamese monks led by Upali restored higher ordination in Kandy, founding the Siam Nikaya, Sri Lanka's largest monastic order."},
+ {"year": 1975, "title": "Communist persecution", "text": "From 1975 the Khmer Rouge destroyed Cambodia's monasteries and killed most of its monks, and the new communist government of Laos restricted the Sangha."},
+ {"year": 2000, "title": "Theravada today", "text": "Today about 150 million Theravada Buddhists form the majority in Sri Lanka, Myanmar, Thailand, Laos and Cambodia, after Cambodia's revival in the 1980s and 1990s."}
+],
+"mahayana": [
+ {"year": 100, "title": "Great Vehicle sutras", "text": "In c. AD 100 new sutras such as the Perfection of Wisdom and the Lotus Sutra spread in India, teaching the bodhisattva path; Nagarjuna soon gave Mahayana its philosophy."},
+ {"year": 148, "title": "Scriptures reach Luoyang", "text": "In 148 the Parthian monk An Shigao began translating Buddhist texts at Luoyang, and the Kushan monk Lokaksema soon followed with the first Mahayana sutras in Chinese."},
+ {"year": 538, "title": "Korea and Japan", "text": "Buddhism reached Korea in 372, and in 538 (or 552) the Korean kingdom of Baekje sent images and sutras to Japan, where Prince Shotoku promoted it from 594."},
+ {"year": 629, "title": "Tang golden age", "text": "In 629 Xuanzang set out for India to collect scriptures; under the Tang, Chinese schools such as Chan, Pure Land and Tiantai took shape."},
+ {"year": 845, "title": "Huichang persecution", "text": "In 845 Emperor Wuzong closed some 4,600 monasteries and defrocked over 260,000 monks and nuns; Chan and Pure Land survived best and came to dominate."},
+ {"year": 1009, "title": "Ly dynasty in Vietnam", "text": "In 1009 the Ly dynasty, raised to power with the support of monks, made Mahayana Buddhism the court religion of Dai Viet."},
+ {"year": 1175, "title": "Kamakura schools in Japan", "text": "From 1175 Honen founded Pure Land, followed by Eisai's and Dogen's Zen and Nichiren's Lotus school, bringing Buddhism to ordinary Japanese."},
+ {"year": 1392, "title": "Joseon favours Confucianism", "text": "In 1392 Korea's new Joseon dynasty adopted Neo-Confucianism as state ideology and pushed Buddhist monasteries into the mountains."},
+ {"year": 1966, "title": "Cultural Revolution", "text": "From 1966 the Cultural Revolution closed or destroyed temples across China, after communist rule began in 1949; Vietnam's communists restricted Buddhism from 1975."},
+ {"year": 2000, "title": "Revival and reach today", "text": "Since the 1980s temples have reopened in China; Mahayana is the largest Buddhist tradition, with roughly 200 to 350 million followers in East Asia and Vietnam."}
+],
+"vajrayana": [
+ {"year": 700, "title": "Tantric Buddhism in India", "text": "In c. 700 tantric or Vajrayana Buddhism developed in India, using mantras, mandalas and guru initiation, and flourished under the Pala kings of Bengal."},
+ {"year": 779, "title": "Samye, first monastery", "text": "In c. 779 the Tibetan emperor Trisong Detsen founded Samye with Shantarakshita and Padmasambhava and made Buddhism the state religion of the Tibetan empire."},
+ {"year": 842, "title": "Tibetan empire collapses", "text": "In c. 842 the Tibetan empire broke apart after the murder of King Langdarma, remembered as a persecutor, and monastic Buddhism declined for over a century."},
+ {"year": 1042, "title": "Atisha and second diffusion", "text": "In 1042 the Bengali master Atisha arrived in western Tibet; the revival gave rise to the Kadam, Sakya and Kagyu schools."},
+ {"year": 1260, "title": "Phagpa and Kublai Khan", "text": "In 1260 Kublai Khan named the Sakya lama Phagpa his imperial preceptor, giving the Sakya rule over Tibet under the Yuan and Tibetan Buddhism a Mongol following."},
+ {"year": 1409, "title": "Tsongkhapa's Gelug school", "text": "In 1409 the reformer Tsongkhapa founded Ganden monastery near Lhasa, beginning the Gelug or Yellow Hat school."},
+ {"year": 1578, "title": "Dalai Lama title, Mongols convert", "text": "In 1578 the Mongol Altan Khan gave the Gelug lama Sonam Gyatso the title Dalai Lama, and the Mongols converted to Tibetan Buddhism."},
+ {"year": 1642, "title": "Dalai Lama rules Tibet", "text": "In 1642 the Fifth Dalai Lama became ruler of Tibet with Mongol help and began the Potala Palace, while in Bhutan the Zhabdrung had founded a Drukpa Kagyu state from 1616."},
+ {"year": 1959, "title": "Exile to India", "text": "In 1959, after a failed uprising against Chinese rule, the 14th Dalai Lama fled to India; most Tibetan monasteries were destroyed in the Cultural Revolution."},
+ {"year": 1990, "title": "Revival in Mongolia", "text": "Since 1990 monasteries have reopened in Mongolia, Buryatia, Kalmykia and Tuva; Vajrayana is also the state religion of Bhutan and lives on in Ladakh and the exile community."}
+],
+"chinese": [
+ {"year": -500, "title": "Confucius teaches", "text": "Confucius (551 to 479 BC) taught ritual, filial piety and virtuous rule in the state of Lu, building on Shang ancestor worship and the Zhou Mandate of Heaven."},
+ {"year": -350, "title": "Daodejing and Zhuangzi", "text": "In c. 350 BC the Daodejing attributed to Laozi and the writings of Zhuangzi took shape, the classic texts of Taoism and its ideal of harmony with the Dao."},
+ {"year": -136, "title": "Han state Confucianism", "text": "In 136 BC Emperor Wu of Han established official scholars of the Five Classics, making Confucianism the ideology of the Chinese state for two millennia."},
+ {"year": 142, "title": "Celestial Masters", "text": "In 142 Zhang Daoling claimed a revelation from the deified Laozi in Sichuan, founding the Way of the Celestial Masters, the first organised Taoist church."},
+ {"year": 618, "title": "Tang Three Teachings", "text": "The Tang dynasty from 618 honoured Laozi as ancestor of the imperial house, while Confucianism, Taoism and Buddhism coexisted as the Three Teachings."},
+ {"year": 1313, "title": "Neo-Confucian orthodoxy", "text": "In 1313 the Yuan made Zhu Xi's Neo-Confucian commentaries the standard for the civil service exams, an orthodoxy that ruled Chinese learning until 1905."},
+ {"year": 1392, "title": "Joseon Korea and Vietnam", "text": "From 1392 Joseon Korea, and later the Le dynasty of Vietnam from 1428, adopted Neo-Confucianism as state ideology, spreading ancestor rites across East Asia."},
+ {"year": 1905, "title": "Exams abolished", "text": "In 1905 the Qing abolished the Confucian civil service exams, and the 1911 revolution ended the imperial rites to Heaven."},
+ {"year": 1966, "title": "Cultural Revolution", "text": "From 1966 the Cultural Revolution attacked Confucius, temples and ancestral shrines, deepening the suppression of religion begun under communist rule in 1949."},
+ {"year": 1980, "title": "Revival today", "text": "Since c. 1980 temples and ancestor rites have revived in China, and Chinese folk religion, Taoism and Confucian values remain strong in Taiwan, Hong Kong, Singapore and the diaspora."}
+],
+"shinto": [
+ {"year": 300, "title": "Kami worship of Yamato", "text": "In c. 300 the Yamato rulers, buried in great kofun mounds, worshipped the kami of mountains, rivers and ancestors and traced their line to the sun goddess Amaterasu."},
+ {"year": 587, "title": "Buddhism joins the kami", "text": "In 587 the pro-Buddhist Soga clan defeated the Mononobe, and kami worship began a thousand-year blending with Buddhism."},
+ {"year": 712, "title": "Kojiki records the myths", "text": "In 712 the Kojiki and in 720 the Nihon Shoki recorded the kami myths and the imperial descent from Amaterasu; the Ise Grand Shrine had been rebuilt every 20 years since 690."},
+ {"year": 927, "title": "Engishiki shrine register", "text": "In 927 the Engishiki listed 2,861 shrines receiving state offerings, as kami came to be seen as local forms of Buddhas and bodhisattvas."},
+ {"year": 1868, "title": "Meiji State Shinto", "text": "In 1868 the Meiji government separated Shinto from Buddhism and built State Shinto around worship of the emperor."},
+ {"year": 1910, "title": "Shrines across the empire", "text": "After taking Taiwan in 1895 and Korea in 1910, Japan built state shrines in its colonies, and in the 1930s pressed colonial subjects to attend them."},
+ {"year": 1945, "title": "Shinto Directive", "text": "In December 1945 the US occupation abolished State Shinto, and in 1946 the emperor renounced divinity; shrines became private religious bodies."},
+ {"year": 2013, "title": "Ise rebuilt again", "text": "In 2013 the Ise Grand Shrine was rebuilt for the 62nd time; most Japanese still visit some 80,000 shrines for festivals and New Year while calling themselves non-religious."}
+],
+"sikhism": [
+ {"year": 1500, "title": "Guru Nanak's revelation", "text": "In c. 1499 Guru Nanak had a revelation at Sultanpur Lodhi in the Punjab and began preaching one God beyond Hindu and Muslim divisions."},
+ {"year": 1604, "title": "Adi Granth at Harmandir", "text": "In 1604 the fifth Guru, Arjan, installed the Adi Granth scripture in the Harmandir Sahib at Amritsar; his execution under Jahangir in 1606 hardened Sikh resistance."},
+ {"year": 1699, "title": "Khalsa founded", "text": "At Vaisakhi in 1699 Guru Gobind Singh founded the Khalsa at Anandpur, a baptised brotherhood marked by the five Ks."},
+ {"year": 1708, "title": "Scripture as eternal Guru", "text": "In 1708 Guru Gobind Singh died after naming the scripture, the Guru Granth Sahib, as the eternal Guru; Banda Singh Bahadur then led a Sikh revolt in the Punjab."},
+ {"year": 1799, "title": "Ranjit Singh's Sikh Empire", "text": "In 1799 Ranjit Singh took Lahore and built a Sikh Empire across the Punjab to Kashmir and Peshawar, gilding the Harmandir into the Golden Temple."},
+ {"year": 1849, "title": "British annexation", "text": "In 1849 Britain annexed the Punjab after two Anglo-Sikh wars; Sikhs became a pillar of the Indian Army and began emigrating across the empire."},
+ {"year": 1947, "title": "Partition of Punjab", "text": "In 1947 Partition split the Punjab; nearly all Sikhs left the new Pakistan, concentrating the faith in Indian Punjab."},
+ {"year": 1984, "title": "Operation Blue Star", "text": "In June 1984 the Indian army stormed the Golden Temple; Prime Minister Indira Gandhi was killed by her Sikh bodyguards, followed by anti-Sikh riots in Delhi."},
+ {"year": 2011, "title": "Sikhs today", "text": "Today about 25 to 30 million Sikhs live worldwide, a majority in Indian Punjab, with large communities in Canada, Britain and the United States."}
+]
+}
