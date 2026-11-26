@@ -1456,10 +1456,11 @@ details[open] summary { margin-bottom: 6px; }
   function personClick(p, e) {
     if (!hasStory(p.id)) return selectPerson(p);
     if (!S.detail) selectPerson(p);
-    const q = [p.id], on = [];
-    leadG.selectAll('g.leader').each(d => on.push(d.p));
-    peopleG.selectAll('g.person').each(d => on.push(d.p));
-    ovG.selectAll('g.gen').each(d => { const per = d && d.m && personOfCommander(d.m.commander); if (per) on.push(per); });
+    const q = [p.id], on = [], box = svg.node().getBoundingClientRect();
+    const seen = n => { const r = n.getBoundingClientRect(); return r.right > box.left && r.left < box.right && r.bottom > box.top && r.top < box.bottom; };
+    leadG.selectAll('g.leader').each(function (d) { if (seen(this)) on.push(d.p); });
+    peopleG.selectAll('g.person').each(function (d) { if (seen(this)) on.push(d.p); });
+    ovG.selectAll('g.gen').each(function (d) { const per = d && d.m && personOfCommander(d.m.commander); if (per && seen(this)) on.push(per); });
     on.sort((a, b) => (a.rank || 3) - (b.rank || 3)).forEach(x => { if (hasStory(x.id) && !q.includes(x.id)) q.push(x.id); });
     openStory(p.id, { queue: q, from: e });
   }
