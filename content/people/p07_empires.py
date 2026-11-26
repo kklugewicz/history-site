@@ -60,10 +60,10 @@ P('Geronimo', 'Apache leader', (1829, 1909), 3, 'war',
 P('Thomas Edison', 'American inventor', (1847, 1931), 2, 'mind',
   'Gave the world the phonograph, the practical light bulb and the first power stations.',
   G(1876, 1886, 'Menlo Park', (-74.34, 40.57)), G(1887, 1931, 'West Orange', (-74.24, 40.79)))
-P('Alexander Graham Bell', 'Inventor of the telephone', (1847, 1922), 3, 'mind',
+P('Alexander Graham Bell', 'Inventor of the telephone', (1847, 1922), 2, 'mind',
   'Scottish-born teacher of the deaf who patented the telephone in 1876.',
   G(1871, 1922, 'Boston, Washington and Nova Scotia', 'boston', 'washington', (-60.58, 46.1)))
-P('Nikola Tesla', 'Serbian-American inventor', (1856, 1943), 3, 'mind',
+P('Nikola Tesla', 'Serbian-American inventor', (1856, 1943), 2, 'mind',
   'Invented the alternating-current motor that powers the world, and dreamed of wireless power.',
   G(1884, 1943, 'New York', 'new_york', (-104.82, 38.83), 'new_york'))
 
@@ -108,29 +108,29 @@ P('Benjamin Disraeli', 'British prime minister', (1804, 1881), 3, 'rule',
 P('William Ewart Gladstone', 'British prime minister', (1809, 1898), 3, 'rule reform',
   'Liberal prime minister four times, who fought for Irish home rule.',
   G(1868, 1894, 'Prime minister', 'london'))
-P('Charles Dickens', 'English novelist', (1812, 1870), 3, 'art reform',
+P('Charles Dickens', 'English novelist', (1812, 1870), 2, 'art reform',
   'Wrote Oliver Twist and A Christmas Carol, showing Victorian Britain its poor.',
   G(1833, 1870, 'London', 'london'))
-P('Victor Hugo', 'French writer', (1802, 1885), 3, 'art',
+P('Victor Hugo', 'French writer', (1802, 1885), 2, 'art',
   'Wrote Les Misérables and The Hunchback of Notre-Dame, and spent 19 years in exile against Napoleon III.',
   G(1830, 1851, 'Paris', 'paris'), G(1855, 1870, 'Exile on Guernsey', (-2.54, 49.45)), G(1870, 1885, 'Paris', 'paris'))
 P('Louis Pasteur', 'French scientist', (1822, 1895), 2, 'mind',
   'Proved that germs cause disease, invented pasteurisation and made vaccines against rabies and anthrax.',
   G(1849, 1856, 'Strasbourg and Lille', (7.75, 48.58), (3.06, 50.63)), G(1857, 1895, 'Paris', 'paris'))
-P('Gregor Mendel', 'Austrian monk and scientist', (1822, 1884), 3, 'mind',
+P('Gregor Mendel', 'Austrian monk and scientist', (1822, 1884), 2, 'mind',
   'Bred pea plants in his monastery garden and discovered the laws of heredity.',
   G(1856, 1884, 'Abbey at Brno', (16.61, 49.2)))
-P('Dmitri Mendeleev', 'Russian chemist', (1834, 1907), 3, 'mind',
+P('Dmitri Mendeleev', 'Russian chemist', (1834, 1907), 2, 'mind',
   'Arranged the elements in the periodic table and predicted ones not yet found.',
   G(1869, 1907, 'St Petersburg', 'st_petersburg'))
-P('Richard Wagner', 'German composer', (1813, 1883), 3, 'art',
+P('Richard Wagner', 'German composer', (1813, 1883), 2, 'art',
   'Wrote the four operas of The Ring of the Nibelung and built a theatre at Bayreuth to stage them.',
   G(1849, 1858, 'Exile in Zurich', 'zurich'), G(1864, 1872, 'Munich and Lucerne', 'munich', (8.31, 47.05)), G(1872, 1883, 'Bayreuth', (11.58, 49.94)))
 P('Vincent van Gogh', 'Dutch painter', (1853, 1890), 2, 'art',
   'Sold almost nothing in his lifetime; his Sunflowers and Starry Night are now among the most loved paintings in the world.',
   G(1880, 1885, 'Belgium and the Netherlands', 'brussels', (5.41, 51.44)), G(1886, 1887, 'Paris', 'paris'), G(1888, 1889, 'Arles', (4.63, 43.68)),
   G(1889, 1890, 'Saint-Rémy and Auvers', (4.83, 43.79), (2.17, 49.07)))
-P('Claude Monet', 'French painter', (1840, 1926), 3, 'art',
+P('Claude Monet', 'French painter', (1840, 1926), 2, 'art',
   "His Impression, Sunrise gave Impressionism its name; he spent his last decades painting his water lilies.",
   G(1871, 1882, 'Argenteuil and Paris', (2.25, 48.95), 'paris'), G(1883, 1926, 'Giverny', (1.53, 49.08)))
 P('Ferdinand de Lesseps', 'French diplomat and developer', (1805, 1894), 3, 'mind',

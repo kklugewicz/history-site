@@ -90,7 +90,7 @@ P('Ernest Shackleton', 'Anglo-Irish polar explorer', (1874, 1922), 3, 'explore',
 P('Wright brothers', 'Aviation pioneers', (1867, 1948), 2, 'mind',
   'Bicycle makers Orville and Wilbur Wright made the first powered aeroplane flight at Kitty Hawk in 1903.',
   G(1903, 1903, 'First powered flight at Kitty Hawk', (-84.19, 39.76), (-75.67, 36.02)), G(1904, 1908, 'Dayton and France', (-84.19, 39.76), (0.2, 48.0)))
-P('Henry Ford', 'American industrialist', (1863, 1947), 3, 'mind',
+P('Henry Ford', 'American industrialist', (1863, 1947), 2, 'mind',
   'His moving assembly line made the Model T cheap enough for ordinary families.',
   G(1903, 1947, 'Ford Motor Company in Detroit', (-83.05, 42.33)))
 P('Albert Einstein', 'German-born physicist', (1879, 1955), 1, 'mind',
@@ -167,7 +167,7 @@ P('Muhammad Ali Jinnah', 'Founder of Pakistan', (1876, 1948), 2, 'rule',
 P('Jawaharlal Nehru', 'First prime minister of India', (1889, 1964), 2, 'rule',
   "Gandhi's heir who led independent India for 17 years and helped found the non-aligned movement.",
   G(1920, 1946, 'Independence movement and prison', (81.85, 25.43), 'delhi', (75.85, 22.72)), R(1947, 1964, 'Prime minister of India', 'India', at='delhi'))
-P('Rabindranath Tagore', 'Bengali poet', (1861, 1941), 3, 'art',
+P('Rabindranath Tagore', 'Bengali poet', (1861, 1941), 2, 'art',
   'The first non-European to win the Nobel prize for literature; wrote the national anthems of India and Bangladesh.',
   G(1901, 1941, 'Santiniketan', (87.68, 23.68)))
 P('Chiang Kai-shek', 'Leader of the Republic of China', (1887, 1975), 1, 'war rule',

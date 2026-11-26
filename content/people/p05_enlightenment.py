@@ -21,7 +21,7 @@ P('Charles II of England', 'King of England, Scotland and Ireland', (1630, 1685)
 P('Rembrandt', 'Dutch painter', (1606, 1669), 2, 'art',
   'Painted The Night Watch and a lifetime of searching self-portraits in Amsterdam.',
   G(1631, 1669, 'Painter in Amsterdam', 'amsterdam'))
-P('Johannes Vermeer', 'Dutch painter', (1632, 1675), 3, 'art',
+P('Johannes Vermeer', 'Dutch painter', (1632, 1675), 2, 'art',
   'Painted quiet rooms full of light, like Girl with a Pearl Earring, in Delft.',
   G(1653, 1675, 'Painter in Delft', 'delft'))
 P('Diego Velázquez', 'Spanish painter', (1599, 1660), 3, 'art',
@@ -57,10 +57,10 @@ P('John Locke', 'English philosopher', (1632, 1704), 2, 'mind',
 P('Isaac Newton', 'English mathematician and physicist', (1643, 1727), 1, 'mind',
   'Discovered the laws of motion and gravity, split white light into colours and invented calculus.',
   G(1661, 1696, 'Cambridge: the Principia', 'cambridge'), G(1696, 1727, 'Master of the Mint in London', 'london'))
-P('Gottfried Wilhelm Leibniz', 'German philosopher and mathematician', (1646, 1716), 3, 'mind',
+P('Gottfried Wilhelm Leibniz', 'German philosopher and mathematician', (1646, 1716), 2, 'mind',
   'Invented calculus at the same time as Newton, and binary numbers too.',
   G(1672, 1676, 'Paris', 'paris'), G(1676, 1716, 'Hanover', 'hanover'))
-P('Antonie van Leeuwenhoek', 'Dutch scientist', (1632, 1723), 3, 'mind',
+P('Antonie van Leeuwenhoek', 'Dutch scientist', (1632, 1723), 2, 'mind',
   'First person to see bacteria, through microscopes he ground himself.',
   G(1673, 1723, 'Microscopes at Delft', 'delft'))
 P('Christopher Wren', 'English architect', (1632, 1723), 3, 'art mind',
@@ -290,7 +290,7 @@ P('Maximilien Robespierre', 'French revolutionary', (1758, 1794), 2, 'rule refor
 P('Georges Danton', 'French revolutionary', (1759, 1794), 3, 'rule',
   'Fiery orator who rallied France against invasion in 1792, then fell to Robespierre.',
   G(1789, 1794, 'Paris', 'paris'))
-P('Antoine Lavoisier', 'French chemist', (1743, 1794), 3, 'mind',
+P('Antoine Lavoisier', 'French chemist', (1743, 1794), 2, 'mind',
   'Father of modern chemistry who named oxygen, and was guillotined in the Terror.',
   G(1768, 1794, 'Paris', 'paris'))
 P('James Watt', 'Scottish engineer', (1736, 1819), 2, 'mind',

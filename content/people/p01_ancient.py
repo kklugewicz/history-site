@@ -115,7 +115,7 @@ P('Herod the Great', 'King of Judea', (-73, -4), 3, 'rule',
 P('Solon', 'Athenian lawgiver', (-630, -560), 3, 'reform',
   'Cancelled debts, freed debt slaves and gave Athens laws that laid the ground for democracy.',
   G(-594, -570, 'Archon and lawgiver of Athens', 'athens'))
-P('Pythagoras', 'Greek philosopher and mathematician', (-570, -495), 3, 'mind',
+P('Pythagoras', 'Greek philosopher and mathematician', (-570, -495), 2, 'mind',
   'Founded a brotherhood at Croton that taught that the world is ordered by number.',
   G(-570, -532, 'Youth on Samos', 'samos'), G(-531, -495, 'School at Croton', (17.13, 39.08)))
 P('Leonidas I', 'King of Sparta', (-540, -480), 2, 'war',
@@ -170,7 +170,7 @@ P('Alexander the Great', 'King of Macedon, conqueror of Persia', (-356, -323), 1
     ('babylon', -330), 'susa', ('persepolis', -329.6), 'ecbatana', 'herat', 'kandahar', ('kabul', -328.5), ('balkh', -328.2),
     ('samarkand', -327.8), 'balkh', ('taxila', -326.6), ((73.5, 32.9, -325.6)), ((75.5, 31.8, -325.4)), ((68.4, 25.4, -324.8)),
     ((63.0, 26.0, -324.5)), ('persepolis', -323.9), ('susa', -323.7), ('babylon', -323.3)))
-P('Euclid', 'Greek mathematician', (-325, -270), 3, 'mind',
+P('Euclid', 'Greek mathematician', (-325, -270), 2, 'mind',
   'Wrote the Elements in Alexandria, the textbook of geometry for two thousand years.',
   G(-300, -270, 'Teaches in Alexandria', 'alexandria'))
 P('Archimedes', 'Greek mathematician and inventor', (-287, -212), 2, 'mind',

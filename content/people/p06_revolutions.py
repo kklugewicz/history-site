@@ -195,7 +195,7 @@ P('Friedrich Engels', 'German philosopher', (1820, 1895), 3, 'mind reform',
 P('George Stephenson', 'English railway engineer', (1781, 1848), 3, 'mind',
   "Built the first public steam railways, the 'father of railways'.",
   G(1825, 1830, 'Stockton and Darlington, then Liverpool and Manchester', (-1.32, 54.57), (-1.55, 54.52), 'liverpool', 'manchester'))
-P('Michael Faraday', 'English scientist', (1791, 1867), 3, 'mind',
+P('Michael Faraday', 'English scientist', (1791, 1867), 2, 'mind',
   'Bookbinder\'s apprentice who discovered electromagnetic induction, the basis of every electric generator.',
   G(1813, 1867, 'Royal Institution in London', 'london'))
 P('Charles Darwin', 'English naturalist', (1809, 1882), 1, 'mind explore',

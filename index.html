@@ -342,6 +342,172 @@ details[open] summary { margin-bottom: 6px; }
   .play { width: 34px; height: 34px; }
 }
 @media (prefers-reduced-motion: reduce) { .pol { transition: none; } .bm .pulse { animation: none; } .fb.flash > circle { animation: none; } }
+/* stories: the most important people's lives told a page at a time, like a story on a phone. A ring round a face
+   means it has one (grey once seen). The story card is dark whatever the theme, so pictures and text read the same. */
+/* the story ring runs gold to coral to magenta, so it never reads as one of the single colours that mark a person's kind */
+:root { --story-a: #d42f7a; --story-m: #ea5a36; --story-b: #f0aa2c; --story-ring: linear-gradient(40deg, var(--story-b), var(--story-m) 48%, var(--story-a)); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --story-a: #f0559a; --story-m: #ff7a4d; --story-b: #ffc24d; } }
+:root[data-theme="dark"] { --story-a: #f0559a; --story-m: #ff7a4d; --story-b: #ffc24d; }
+.sring { display: none; fill: var(--paper); stroke: url(#storyRing); stroke-width: 3; pointer-events: none; }
+.has-story .sring { display: inline; }
+.has-story.seen .sring { stroke: color-mix(in srgb, var(--ink-soft) 60%, transparent); stroke-width: 1.7; }
+.has-story:hover .sring { stroke-width: 3.8; }
+/* the dates in a person's or a faith's history list are plain text, not the year card at the top left */
+.hist .when, .stint .when { display: inline; padding: 0; background: none; border: 0; border-radius: 0; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; min-width: 0; }
+.tray { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; margin: -4px -2px -6px; scroll-snap-type: x proximity; scrollbar-width: thin; }
+.tray button { all: unset; box-sizing: border-box; flex: none; width: 66px; display: flex; flex-direction: column; align-items: center; gap: 5px; cursor: pointer; scroll-snap-align: start; text-align: center; }
+.tray .face { width: 60px; height: 60px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font-weight: 700; font-size: 16px; color: var(--ink-soft); background: var(--line); }
+.tray .face img { width: 100%; height: 100%; object-fit: cover; }
+.tray .face.story { border-width: 2.5px; padding: 2px; }
+.tray .n { font-size: 12px; line-height: 1.2; max-width: 66px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.tray button:focus-visible .face { outline: 2px solid var(--accent); outline-offset: 2px; }
+.face.story, .ph.story { cursor: pointer; border: 2px solid transparent; padding: 1.5px; transition: transform .15s;
+  background: linear-gradient(var(--fc, var(--line)), var(--fc, var(--line))) content-box, linear-gradient(var(--paper), var(--paper)) padding-box,
+    var(--story-ring) border-box; }
+.face.story.seen, .ph.story.seen { background: linear-gradient(var(--fc, var(--line)), var(--fc, var(--line))) content-box, linear-gradient(var(--paper), var(--paper)) padding-box,
+    linear-gradient(color-mix(in srgb, var(--ink-soft) 45%, transparent), color-mix(in srgb, var(--ink-soft) 45%, transparent)) border-box; }
+.face.story img, .ph.story img { border-radius: 50%; }
+.face.story:hover, .ph.story:hover { transform: scale(1.06); }
+.people .face.story { width: 36px; height: 36px; margin: -3px; }
+.mv .face:not(.story) { background: var(--fc, var(--line)); }
+.mv .face.story { width: 32px; height: 32px; margin: -3px; }
+.ruler .ph.story { width: 74px; height: 74px; margin: -5px; border-width: 3px; padding: 2px; }
+.ruler.big .ph.story { width: 98px; height: 98px; }
+.storybtn { all: unset; box-sizing: border-box; display: inline-flex; align-items: center; gap: 7px; margin-top: 10px; padding: 6px 15px 6px 11px; border-radius: 99px;
+  cursor: pointer; font-weight: 700; font-size: 14px; color: var(--ink); border: 2px solid transparent;
+  background: linear-gradient(var(--paper), var(--paper)) padding-box, var(--story-ring) border-box; }
+.storybtn svg { width: 15px; height: 15px; color: var(--story-a); }
+.storybtn:hover { background: linear-gradient(color-mix(in srgb, var(--story-a) 10%, var(--paper)), color-mix(in srgb, var(--story-a) 10%, var(--paper))) padding-box,
+  var(--story-ring) border-box; }
+.storybtn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.spin { pointer-events: none; }
+.spin .dot { fill: var(--story-a); stroke: var(--paper); stroke-width: 2.2; }
+.spin .pulse { fill: none; stroke: var(--story-a); stroke-width: 2.4; transform-box: fill-box; transform-origin: center; animation: pulse 1.8s ease-out infinite; }
+.spin text { font-family: var(--f-display); font-size: 16px; fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 4px; stroke-linejoin: round; }
+
+.sv { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; font-family: var(--f-body); color: #f4f1ea; --kc: #f0c25a; }
+.sv-dim { position: absolute; inset: 0; background: rgba(7, 10, 13, .86); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.sv-wrap { position: relative; display: flex; align-items: center; gap: 16px; }
+.sv-card { position: relative; flex: none; overflow: hidden; border-radius: 14px; background: #0f1317; box-shadow: 0 24px 70px rgba(0,0,0,.55); outline: none;
+  display: flex; flex-direction: column;
+  height: min(92vh, 880px); width: min(calc(100vw - 150px), calc(min(92vh, 880px) * .5625));
+  touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+@supports (height: 1dvh) { .sv-card { height: min(92dvh, 880px); width: min(calc(100vw - 150px), calc(min(92dvh, 880px) * .5625)); } }
+.sv-bg { position: absolute; inset: -60px; background: #1a2026 center / cover no-repeat; filter: blur(30px) brightness(.46) saturate(1.25); }
+.sv-top { position: absolute; left: 0; right: 0; top: 0; z-index: 3; padding: 10px 10px 30px; background: linear-gradient(rgba(0,0,0,.58), rgba(0,0,0,.22) 70%, transparent); }
+.sv-bars { display: flex; gap: 3px; padding: 0 2px; }
+.sv-bar { flex: 1; height: 2.5px; border-radius: 2px; background: rgba(255,255,255,.3); overflow: hidden; }
+.sv-bar i { display: block; height: 100%; background: #fff; transform: scaleX(0); transform-origin: left; }
+.sv-bar.done i { transform: none; }
+.sv-bar.on i { animation: svfill var(--d, 6s) linear forwards; }
+.sv.paused .sv-bar.on i { animation-play-state: paused; }
+@keyframes svfill { to { transform: none; } }
+.sv-head { display: flex; align-items: center; gap: 2px; margin-top: 10px; }
+.sv-who { all: unset; display: flex; align-items: center; gap: 9px; min-width: 0; flex: 1; cursor: pointer; padding: 2px 4px; border-radius: 8px; }
+.sv-av { width: 34px; height: 34px; border-radius: 50%; overflow: hidden; flex: none; background: rgba(255,255,255,.16); display: grid; place-items: center; font-size: 12px; font-weight: 700; box-shadow: 0 0 0 1.5px rgba(255,255,255,.85); }
+.sv-av img { width: 100%; height: 100%; object-fit: cover; }
+.sv-nm { display: flex; flex-direction: column; min-width: 0; line-height: 1.2; }
+.sv-nm b { font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sv-nm span { font-family: var(--f-mono); font-size: 11px; color: rgba(255,255,255,.72); white-space: nowrap; }
+.sv-ib { all: unset; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; cursor: pointer; flex: none; color: #fff; }
+.sv-ib svg { width: 21px; height: 21px; filter: drop-shadow(0 1px 2px rgba(0,0,0,.4)); }
+.sv-ib:hover, .sv-who:hover { background: rgba(255,255,255,.12); }
+.sv-ib:focus-visible, .sv-who:focus-visible, .sv-nav:focus-visible { outline: 2px solid #fff; outline-offset: 1px; }
+.sv-media { position: relative; z-index: 1; flex: 1 1 0; min-height: 28%; margin-top: 70px; pointer-events: none; }
+.sv-card.solo .sv-media { display: none; }
+.sv-media img { position: absolute; left: 16px; top: 6px; width: calc(100% - 32px); height: calc(100% - 10px); object-fit: contain;
+  filter: drop-shadow(0 12px 26px rgba(0,0,0,.55)); opacity: 0; transition: opacity .35s ease; }
+.sv-media img.on { opacity: 1; }
+.sv-media.wait::after { content: ""; position: absolute; left: calc(50% - 17px); top: calc(50% - 17px); width: 34px; height: 34px; border-radius: 50%;
+  border: 2.5px solid rgba(255,255,255,.22); border-top-color: rgba(255,255,255,.9); animation: svspin .9s linear infinite; }
+@keyframes svspin { to { transform: rotate(1turn); } }
+.sv-tap { all: unset; position: absolute; top: 70px; bottom: 0; z-index: 2; cursor: pointer; }
+#svTapPrev { left: 0; width: 30%; }
+#svTapNext { right: 0; width: 70%; }
+.sv-tap:focus-visible { outline: 2px solid rgba(255,255,255,.5); outline-offset: -8px; border-radius: 12px; }
+.sv-body { position: relative; z-index: 3; flex: 0 1 auto; max-height: 66%; overflow: hidden; padding: 14px 22px 24px; pointer-events: none; }
+.sv-card.tight .sv-media { min-height: 15%; }
+.sv-card.tight .sv-body { max-height: none; }
+.sv-card::after { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(rgba(6,8,10,0) 40%, rgba(6,8,10,.55) 75%, rgba(6,8,10,.7)); pointer-events: none; }
+.sv-card.solo .sv-body { flex: 1 1 auto; max-height: none; margin-top: 70px; display: flex; flex-direction: column; justify-content: center; justify-content: safe center; }
+.sv-body a, .sv-body button { pointer-events: auto; }
+.sv-body.k-life { --kc: rgba(255,255,255,.78); }
+.sv-body.k-made { --kc: #8fd6ec; }
+.sv-body.k-work { --kc: #f3a988; }
+.sv-body.k-song { --kc: #cdb0ff; }
+.sv-body.k-tale { --kc: #a3e2ab; }
+.sv-card[data-k="legacy"]::after { background: radial-gradient(130% 70% at 50% 100%, rgba(140,92,12,.42), transparent 72%), linear-gradient(rgba(6,8,10,0) 40%, rgba(10,7,2,.6) 75%, rgba(10,7,2,.75)); }
+.sv-k { display: flex; align-items: center; gap: 7px; font-family: var(--f-mono); font-size: 11px; letter-spacing: .13em; text-transform: uppercase; color: var(--kc); }
+.sv-k svg { width: 18px; height: 18px; flex: none; }
+.sv-y { margin-left: auto; letter-spacing: .05em; color: rgba(255,255,255,.75); }
+.sv-t { font-family: var(--f-display); font-weight: 400; font-size: 30px; line-height: 1.08; margin: 9px 0 10px; text-wrap: balance; color: #fff; }
+.sv-t.big { font-size: 42px; margin: 6px 0 4px; }
+.sv-t.it { font-style: italic; }
+.sv-life { font-family: var(--f-mono); font-size: 12.5px; color: rgba(255,255,255,.72); margin-bottom: 12px; }
+.sv-x { margin: 0; font-size: 16.5px; line-height: 1.5; color: rgba(255,255,255,.93); text-wrap: pretty; }
+.sv-fx { margin-top: 12px; padding: 9px 12px 10px; border-left: 3px solid var(--kc); background: rgba(255,255,255,.08); border-radius: 0 8px 8px 0; }
+.sv-fx b { display: block; font-family: var(--f-mono); font-size: 10.5px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; color: var(--kc); margin-bottom: 3px; }
+.sv-fx p { margin: 0; font-size: 15px; line-height: 1.45; }
+.sv-wins { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.sv-wins span { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; line-height: 1.2; padding: 4px 10px 4px 7px; border-radius: 99px; background: rgba(255,255,255,.13); }
+.sv-wins svg { width: 13px; height: 13px; flex: none; color: #f0c25a; }
+.sv-pts { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 9px; }
+.sv-pts li { display: grid; grid-template-columns: 18px 1fr; gap: 9px; font-size: 15.5px; line-height: 1.38; }
+.sv-pts svg { width: 16px; height: 16px; margin-top: 2px; color: var(--kc); }
+.sv-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 14px; font-size: 12.5px; color: rgba(255,255,255,.68); }
+.sv-place { all: unset; display: inline-flex; align-items: center; gap: 7px; padding: 3px 12px 3px 3px; border-radius: 99px; background: rgba(255,255,255,.13); color: #fff; cursor: pointer; font-size: 13px; }
+.sv-place:hover { background: rgba(255,255,255,.22); }
+.sv-globe { width: 26px; height: 26px; flex: none; }
+.g-sea { fill: #2b5a74; } .g-land { fill: #ddd3b8; } .g-rim { fill: none; stroke: rgba(255,255,255,.6); stroke-width: .8; } .g-dot { fill: #ff6a45; stroke: #fff; stroke-width: 1.1; }
+.sv-cap { font-style: italic; }
+.sv-src { color: rgba(255,255,255,.62); }
+.sv-src:hover { color: #fff; }
+.sv-end { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.sv-end button, .sv-end a { all: unset; cursor: pointer; padding: 8px 15px; border-radius: 99px; background: rgba(255,255,255,.15); font-size: 14px; font-weight: 500; color: #fff; }
+.sv-end .pri { background: #fff; color: #14181c; font-weight: 700; }
+.sv-end button:hover, .sv-end a:hover { background: rgba(255,255,255,.26); }
+.sv-end .pri:hover { background: #efe9dc; }
+.sv-end button:focus-visible, .sv-end a:focus-visible, .sv-place:focus-visible, .sv-listen:focus-visible, .sv-play:focus-visible, .sv-body .sv-src:focus-visible, .sv-aut a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.sv-au { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 14px; font-size: 13px; color: rgba(255,255,255,.82); }
+.sv-play { all: unset; width: 38px; height: 38px; border-radius: 50%; background: #fff; color: #14181c; display: grid; place-items: center; cursor: pointer; flex: none; }
+.sv-play svg { width: 20px; height: 20px; }
+.sv-eq { display: inline-flex; align-items: flex-end; gap: 2px; height: 18px; }
+.sv-eq i { width: 3px; height: 100%; border-radius: 1px; background: var(--kc); transform-origin: bottom; animation: sveq .8s ease-in-out infinite alternate; }
+.sv-eq i:nth-child(2) { animation-delay: -.25s; } .sv-eq i:nth-child(3) { animation-delay: -.55s; } .sv-eq i:nth-child(4) { animation-delay: -.1s; } .sv-eq i:nth-child(5) { animation-delay: -.4s; }
+.sv.paused .sv-eq i, .sv.muted .sv-eq i, .sv-eq.off i { animation-play-state: paused; }
+@keyframes sveq { from { transform: scaleY(.22); } to { transform: scaleY(1); } }
+.sv-listen { display: inline-flex; align-items: center; gap: 7px; padding: 7px 14px 7px 11px; border-radius: 99px; background: #fff; color: #14181c; text-decoration: none; font-weight: 700; font-size: 14px; }
+.sv-listen svg { width: 16px; height: 16px; }
+.sv-aut a { color: inherit; }
+.sv-body.dense .sv-t { font-size: 26px; margin-bottom: 8px; } .sv-body.dense .sv-t.big { font-size: 36px; }
+.sv-body.dense .sv-x { font-size: 15px; line-height: 1.45; } .sv-body.dense .sv-fx p, .sv-body.dense .sv-pts li { font-size: 14px; }
+.sv-body.denser .sv-t { font-size: 23px; } .sv-body.denser .sv-x { font-size: 14px; line-height: 1.4; } .sv-body.denser .sv-fx p, .sv-body.denser .sv-pts li { font-size: 13px; }
+.sv-body.in > * { animation: svin .42s cubic-bezier(.2,.8,.25,1) both; }
+.sv-body.in > :nth-child(2) { animation-delay: .04s; } .sv-body.in > :nth-child(3) { animation-delay: .08s; } .sv-body.in > :nth-child(n+4) { animation-delay: .12s; }
+@keyframes svin { from { opacity: 0; transform: translateY(12px); } }
+.sv-nav { all: unset; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.14); color: #fff; display: grid; place-items: center; cursor: pointer; flex: none; }
+.sv-nav:hover { background: rgba(255,255,255,.26); }
+.sv-nav svg { width: 22px; height: 22px; }
+.sv-nav.off { visibility: hidden; }
+.sv .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 760px) {
+  .sv-wrap { gap: 0; }
+  .sv-nav { display: none; }
+  .sv-card { width: 100vw; height: 100vh; border-radius: 0; }
+  @supports (height: 1dvh) { .sv-card { width: 100vw; height: 100dvh; } }
+  .sv-top { padding-top: calc(8px + env(safe-area-inset-top, 0px)); }
+  .sv-media, .sv-card.solo .sv-body { margin-top: calc(66px + env(safe-area-inset-top, 0px)); }
+  .sv-tap { top: calc(66px + env(safe-area-inset-top, 0px)); }
+  .sv-body { padding: 12px 18px calc(20px + env(safe-area-inset-bottom, 0px)); }
+  .sv-t { font-size: 27px; } .sv-t.big { font-size: 38px; } .sv-x { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sv-body.in > * { animation: none; }
+  .sv-eq i { animation: none; transform: scaleY(.6); }
+  .sv-media img { transition: none; }
+  .face.story, .ph.story { transition: none; }
+  .spin .pulse { animation: none; }
+}
 </style>
 </head>
 <body>
@@ -379,6 +545,32 @@ details[open] summary { margin-bottom: 6px; }
       <div class="ticks" id="ticks"></div>
     </div>
     <button class="step" id="next" type="button" aria-label="Forward in time">&#8250;</button>
+  </div>
+</div>
+
+<!-- a person's story, shown over the map -->
+<div class="sv" id="sv" hidden>
+  <div class="sv-dim" id="svDim"></div>
+  <div class="sv-wrap">
+    <button type="button" class="sv-nav" id="svPrevS" aria-label="Previous story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5L8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="sv-card" id="svCard" role="dialog" aria-modal="true" aria-labelledby="svName" tabindex="-1">
+      <div class="sv-bg" id="svBg"></div>
+      <div class="sv-top">
+        <div class="sv-bars" id="svBars" aria-hidden="true"></div>
+        <div class="sv-head">
+          <button type="button" class="sv-who" id="svWho" title="Show them on the map"><span class="sv-av" id="svAv"></span><span class="sv-nm"><b id="svName"></b><span id="svLife"></span></span></button>
+          <button type="button" class="sv-ib" id="svMute" hidden></button>
+          <button type="button" class="sv-ib" id="svPause"></button>
+          <button type="button" class="sv-ib" id="svClose" aria-label="Close the story"></button>
+        </div>
+      </div>
+      <div class="sv-media" id="svMedia"><img id="svImg" alt=""></div>
+      <button type="button" class="sv-tap" id="svTapPrev" aria-label="Previous page"></button>
+      <button type="button" class="sv-tap" id="svTapNext" aria-label="Next page"></button>
+      <div class="sv-body" id="svBody" aria-live="polite"></div>
+      <span class="vh" id="svCount"></span>
+    </div>
+    <button type="button" class="sv-nav" id="svNextS" aria-label="Next story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   </div>
 </div>
 
@@ -1184,7 +1376,7 @@ details[open] summary { margin-bottom: 6px; }
       for (const t of want) if (!(t in portraits)) portraits[t] = null;
       try { localStorage.setItem('wtt-portraits2', JSON.stringify(portraits)); } catch (e) {}
       drawLeaders(); drawPeople(); if (S.detail || S.mode === 'wars') refreshGenerals();
-      if (S.selected || S.person) renderPanel();
+      renderPanelSoon();
     }).catch(() => {}).finally(() => { if (wantPortraits.size) fetchPortraits(); });
   }
   // the name under a face: a long name keeps the part before ', ', ' of ' or ' the ', then a regnal number, then the surname with its particles
@@ -1205,6 +1397,7 @@ details[open] summary { margin-bottom: 6px; }
   const initials = name => name.replace(/\(.*?\)/g, '').split(/\s+/).filter(w => /^[A-ZÀ-ɏ]/.test(w) && !/^(I|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV|XVI)$/.test(w)).slice(0, 2).map(w => w[0]).join('') || name[0];
   // a ring with initials underneath and the photo on top once it loads
   function face(g, r, clip) {
+    g.append('circle').attr('class', 'sring').attr('r', r + 3.9);   // shown when the person has a story
     g.append('circle').attr('class', 'ring').attr('r', r + 1);
     g.append('text').attr('class', 'ini');
     g.append('image').attr('x', -r).attr('y', -r).attr('width', 2 * r).attr('height', 2 * r)
@@ -1216,8 +1409,504 @@ details[open] summary { margin-bottom: 6px; }
     const im = g.select('image');
     if (im.attr('href') !== src) im.attr('href', src || null).style('display', src ? null : 'none');
     if (!src) needPortrait(o);
+    const sid = storyIdOf(o), st = hasStory(sid);
+    g.classed('has-story', st).classed('seen', st && seenStories.has(sid));
   }
-  const faceHtml = (o, name, cls = 'face') => { const src = imgOf(o); if (!src) needPortrait(o); return `<span class="${cls}">${src ? `<img src="${esc(src)}" alt="" loading="lazy">` : esc(initials(name))}</span>`; };
+  const faceHtml = (o, name, cls = 'face') => {
+    const src = imgOf(o), sid = storyIdOf(o); if (!src) needPortrait(o);
+    return `<span class="${cls}${storyCls(o)}"${hasStory(sid) ? ` data-story-person="${sid}" title="Watch the story of ${esc(personById[sid].name)}"` : ''}>${src ? `<img src="${esc(src)}" alt="" loading="lazy">` : esc(initials(name))}</span>`;
+  };
+
+  // ---------- stories ----------
+  // The map's most important people each have a story: their life told a page at a time, like a story on a phone.
+  // A ringed face opens it, and the ring turns grey once it has been seen. Pages turn by themselves; tap the right of
+  // the card for the next page and the left for the one before, hold to pause, swipe down to close and sideways for
+  // the next person. Each story loads on its own from data/stories/ (content/stories/build_stories.py writes them).
+  // Pictures are the lead images of the Wikipedia articles a page names; a song page plays a free recording that it
+  // finds on the Wikipedia article for the piece, from Wikimedia Commons.
+  let storyIdx = {};
+  const hasStory = id => !!(id && storyIdx[id]);
+  const storyIdOf = o => !o ? null : o.stints ? o.id : (o.person || null);   // a person, or a general linked to one
+  const fromStore = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || d); } catch (e) { return JSON.parse(d); } };
+  const toStore = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+  const seenStories = new Set(fromStore('wtt-seen', '[]'));
+  function markSeen(id) { if (!seenStories.has(id)) { seenStories.add(id); toStore('wtt-seen', [...seenStories]); } }
+  const storyCls = o => { const id = storyIdOf(o); return hasStory(id) ? ' story' + (seenStories.has(id) ? ' seen' : '') : ''; };
+  const storyTip = p => p && hasStory(p.id) ? ' · click for their story' : '';
+  {
+    const gr = defs.append('linearGradient').attr('id', 'storyRing').attr('x1', 0).attr('y1', 1).attr('x2', 1).attr('y2', 0);
+    gr.append('stop').attr('offset', 0).style('stop-color', 'var(--story-b)');
+    gr.append('stop').attr('offset', .48).style('stop-color', 'var(--story-m)');
+    gr.append('stop').attr('offset', 1).style('stop-color', 'var(--story-a)');
+  }
+  opt('stories/index.json').then(j => { if (!j || !j.ids) return; storyIdx = j.ids; drawLeaders(); drawPeople(); refreshGenerals(); renderPanel(); });
+  // a ringed face on the map opens that person's story; the others on screen with a story come after it
+  function personClick(p, e) {
+    if (!hasStory(p.id)) return selectPerson(p);
+    if (!S.detail) selectPerson(p);
+    const q = [p.id], on = [];
+    leadG.selectAll('g.leader').each(d => on.push(d.p));
+    peopleG.selectAll('g.person').each(d => on.push(d.p));
+    ovG.selectAll('g.gen').each(d => { const per = d && d.m && personOfCommander(d.m.commander); if (per) on.push(per); });
+    on.sort((a, b) => (a.rank || 3) - (b.rank || 3)).forEach(x => { if (hasStory(x.id) && !q.includes(x.id)) q.push(x.id); });
+    openStory(p.id, { queue: q, from: e });
+  }
+  // faces in the reading panel get their ring here, so the panel's own markup stays as it is
+  function ringPanelFaces(el) {
+    el.querySelectorAll('[data-person] .ph, [data-person] .face').forEach(f => {
+      const id = f.closest('[data-person]').dataset.person, st = hasStory(id);
+      f.classList.toggle('story', st); f.classList.toggle('seen', st && seenStories.has(id));
+      if (st) { f.dataset.storyPerson = id; f.title = 'Watch the story of ' + personById[id].name; }
+    });
+  }
+  // the row of story faces in the default view: people at work this year, then the others alive, then the nearest in time
+  function storyTray() {
+    const y = S.year, list = [];
+    for (const p of people) {
+      if (!hasStory(p.id)) continue;
+      const [b, d] = p.life || [], lo = b != null ? b : p.stints[0].from, hi = d != null ? d : Math.max(...p.stints.map(s => s.to));
+      list.push({ p, on: !!stintAt(p, y, S.yf), gap: y < lo ? lo - y : y > hi ? y - hi : 0 });
+    }
+    if (!list.length) return '';
+    list.sort((a, b) => (b.on - a.on) || (a.gap - b.gap) || (a.p.rank || 3) - (b.p.rank || 3) || a.p.name.localeCompare(b.p.name));
+    const pick = list.filter((x, i) => x.gap === 0 || i < 8).slice(0, 18), ids = pick.map(x => x.p.id);
+    const title = pick.some(x => x.gap === 0) ? 'Stories from ' + fmtYear(y) : 'Stories from the nearest years';
+    return `<div class="sec"><h3>${esc(title)}</h3><div class="tray" data-queue="${ids.join(' ')}">` + ids.map(id => {
+      const p = personById[id];
+      return `<button type="button" data-story-person="${id}" title="${esc(p.name)}: ${esc(storyIdx[id])}">${faceHtml(p, p.name)}<span class="n">${esc(shortName(p))}</span></button>`;
+    }).join('') + '</div></div>';
+  }
+
+  const SV = { open: false, id: null, p: null, pages: [], i: 0, queue: [], qi: 0, paused: false, hold: false, ended: false,
+    loading: false, token: 0, recs: {}, dur: 6, muted: fromStore('wtt-mute', 'false') === true, audio: null, opener: null, tapAt: 0, fade: 0 };
+  const svEl = $('sv'), svCard = $('svCard'), svBg = $('svBg'), svBars = $('svBars'), svImg = $('svImg'), svMedia = $('svMedia'), svBody = $('svBody');
+  const storyFiles = {};
+  const loadStory = id => storyFiles[id] || (storyFiles[id] = get('stories/' + id + '.json').catch(e => { delete storyFiles[id]; throw e; }));
+  const getJSON = u => fetch(u).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  const WAPI = 'https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&redirects=1&';
+  const wikiUrl = (t, site = 'en.wikipedia.org') => `https://${site}/wiki/` + encodeURIComponent(String(t).replace(/ /g, '_')).replace(/%3A/g, ':').replace(/%2F/g, '/');
+  // pictures: { title: { s: picture url, f: its file page } }, or null when the article has no free picture
+  const simg = fromStore('wtt-simg', '{}'), srec = fromStore('wtt-srec', '{}'), simgMiss = new Set();
+  const picOf = t => (t && simg[t] && simg[t].s) || null;
+  const picPending = t => !!t && !(t in simg) && !simgMiss.has(t);
+  // the page each asked-for title landed on, once Wikipedia has normalised it and followed its redirects
+  function landed(q, asked) {
+    const norm = {}, red = {}, pages = {}, out = {};
+    for (const n of q.normalized || []) norm[n.from] = n.to;
+    for (const n of q.redirects || []) red[n.from] = n.to;
+    for (const pg of q.pages || []) pages[pg.title] = pg;
+    for (const t of asked) { let u = norm[t] || t, n = 0; while (red[u] && n++ < 4) u = red[u]; out[t] = pages[u] || null; }
+    return out;
+  }
+  function storyImages(titles) {
+    const want = [...new Set(titles.filter(picPending))];
+    if (!want.length) return Promise.resolve();
+    const jobs = [];
+    const batch = (list, q, read) => {
+      for (let i = 0; i < list.length; i += 50) {
+        const ch = list.slice(i, i + 50);
+        jobs.push(getJSON(WAPI + q + encodeURIComponent(ch.join('|'))).then(j => { const by = landed(j.query || {}, ch); for (const t of ch) simg[t] = read(by[t]); })
+          .catch(() => ch.forEach(t => simgMiss.add(t))));   // offline or blocked: try again next visit
+      }
+    };
+    // an article's lead picture (Wikipedia only hands out freely licensed ones here), or a named file on Commons
+    batch(want.filter(t => !/^File:/i.test(t)), 'prop=pageimages&piprop=thumbnail|name&pithumbsize=960&pilimit=50&titles=',
+      pg => pg && pg.thumbnail ? { s: pg.thumbnail.source, f: 'File:' + pg.pageimage } : null);
+    batch(want.filter(t => /^File:/i.test(t)), 'prop=imageinfo&iiprop=url&iiurlwidth=960&titles=',
+      pg => { const ii = pg && (pg.imageinfo || [])[0]; return ii ? { s: ii.thumburl || ii.url, f: pg.title } : null; });
+    return Promise.all(jobs).then(() => toStore('wtt-simg', simg));
+  }
+  // a free recording of a piece: the audio files on its Wikipedia article that live on Commons (files kept on
+  // Wikipedia itself are fair-use clips that may not be reused), the one whose name has the hint's words first
+  const probe = document.createElement('audio');
+  const playable = m => !!m && (!!probe.canPlayType(m) || (/ogg/.test(m) && !!(probe.canPlayType('audio/ogg; codecs="vorbis"') || probe.canPlayType('audio/ogg; codecs="opus"'))));
+  async function findRecording(au) {
+    const key = au.page + '|' + (au.hint || '');
+    if (key in srec) return srec[key];
+    try {
+      const j = await getJSON(WAPI + 'prop=images&imlimit=max&titles=' + encodeURIComponent(au.page));
+      const pg = landed(j.query || {}, [au.page])[au.page];
+      const words = (au.hint || '').toLowerCase().split(/[\s,]+/).filter(Boolean), fit = f => words.filter(w => f.toLowerCase().includes(w)).length;
+      const files = ((pg && pg.images) || []).map(x => x.title).filter(t => /\.(ogg|oga|opus|flac|wav|mp3)$/i.test(t)).sort((a, b) => fit(b) - fit(a)).slice(0, 20);
+      let rec = null;
+      if (files.length) {
+        const by = landed((await getJSON(WAPI + 'prop=imageinfo&iiprop=url|mime|size|mediatype&titles=' + encodeURIComponent(files.join('|')))).query || {}, files);
+        const len = x => x.duration > 50 && x.duration < 1500 ? 2 : 1;
+        const ok = files.map(f => ({ f, pg: by[f] })).filter(x => x.pg && x.pg.imagerepository === 'shared' && x.pg.imageinfo && x.pg.imageinfo[0])
+          .map(x => ({ f: x.pg.title || x.f, ...x.pg.imageinfo[0] })).filter(x => (x.mediatype === 'AUDIO' || /audio|ogg/.test(x.mime || '')) && !(x.duration < 15))
+          .sort((a, b) => fit(b.f) - fit(a.f) || len(b) - len(a));
+        const best = ok[0];
+        if (best) {
+          rec = { src: best.url, type: best.mime, file: best.f, dur: best.duration || null };
+          if (!playable(best.mime)) {   // Safari and Ogg: Commons keeps an MP3 copy of most recordings
+            const jv = await getJSON('https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&prop=videoinfo&viprop=derivatives&titles=' + encodeURIComponent(best.f));
+            const vi = ((((jv.query || {}).pages || [])[0] || {}).videoinfo || [])[0];
+            const mp3 = vi && (vi.derivatives || []).find(d => /mpeg|mp3/.test(d.type || '') || d.transcodekey === 'mp3');
+            rec = mp3 ? { ...rec, src: mp3.src, type: 'audio/mpeg' } : null;
+          }
+        }
+      }
+      srec[key] = rec; toStore('wtt-srec', srec);
+      return rec;
+    } catch (e) { return null; }   // offline or blocked: the page still reads, just without sound
+  }
+
+  // a small globe turned to where a page happened
+  const gProj = d3.geoOrthographic().scale(11.5).translate([0, 0]).clipAngle(90).precision(1), globeCache = new Map();
+  function globeSvg([lon, lat]) {
+    const key = Math.round(lon * 2) + ',' + Math.round(lat * 2);
+    let d = globeCache.get(key);
+    if (d == null) {
+      let s = '', lx, ly; const r = v => Math.round(v * 4) / 4;
+      const ctx = { moveTo(x, y) { lx = r(x); ly = r(y); s += 'M' + lx + ' ' + ly; }, lineTo(x, y) { x = r(x); y = r(y); if (x !== lx || y !== ly) { s += 'L' + x + ' ' + y; lx = x; ly = y; } }, closePath() { s += 'Z'; }, arc() {} };
+      gProj.rotate([-lon, -lat]); d3.geoPath(gProj, ctx)(land); d = s; globeCache.set(key, d);
+    }
+    return `<svg class="sv-globe" viewBox="-13 -13 26 26" aria-hidden="true"><circle class="g-sea" r="11.5"/><path class="g-land" d="${d}"/><circle class="g-rim" r="11.5"/><circle class="g-dot" r="2.3"/></svg>`;
+  }
+  // 24×24 icons; a medal marks a major achievement
+  const SVI = {
+    win: '<path fill="currentColor" d="M6.2 2.5h3.9l2.6 5.6-2.4 1.6zM17.8 2.5h-3.9l-2.2 4.8 2.6 2.1z"/><path fill="currentColor" fill-rule="evenodd" d="M5.4 15a6.6 6.6 0 1 0 13.2 0a6.6 6.6 0 1 0-13.2 0zM12 10.6l1.4 2.9 3.1.4-2.3 2.2.6 3.1L12 17.7l-2.8 1.5.6-3.1-2.3-2.2 3.1-.4z"/>',
+    made: '<path fill="currentColor" d="M12 2.2a7 7 0 0 0-4.2 12.6c.6.5.9 1.1.9 1.8V17h6.6v-.4c0-.7.3-1.3.9-1.8A7 7 0 0 0 12 2.2zM8.7 18.6h6.6V20a1.8 1.8 0 0 1-1.8 1.8h-3A1.8 1.8 0 0 1 8.7 20z"/>',
+    work: '<rect x="3" y="4" width="18" height="16" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M5.6 17.4l4.3-5.6 3.2 3.9 2.1-2.6 3.2 4.3z"/><circle cx="15.8" cy="8.6" r="1.7" fill="currentColor"/>',
+    song: '<path fill="currentColor" d="M9 17.4a2.9 2.9 0 1 1-1.8-2.7V4.6l12-2.4v12.6a2.9 2.9 0 1 1-1.8-2.7V6.7L9 8.4z"/>',
+    tale: '<path fill="currentColor" d="M4 4.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 20.5v-4H4A1.5 1.5 0 0 1 2.5 15V6A1.5 1.5 0 0 1 4 4.5z"/>',
+    legacy: '<path fill="currentColor" d="M12 2.6l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/>',
+    life: '<path fill="currentColor" d="M6.5 2.5h11v2.2c0 2.5-1.6 4.4-3.6 5.6v3.4c2 1.2 3.6 3.1 3.6 5.6v2.2h-11v-2.2c0-2.5 1.6-4.4 3.6-5.6v-3.4C8.1 9.1 6.5 7.2 6.5 4.7zm2.4 17.2h6.2c-.3-1.7-1.6-2.9-3.1-3.7-1.5.8-2.8 2-3.1 3.7z"/>',
+    pause: '<path fill="currentColor" d="M7 4.5h3.6v15H7zM13.4 4.5H17v15h-3.6z"/>',
+    play: '<path fill="currentColor" d="M7.5 4.2L19.5 12l-12 7.8z"/>',
+    close: '<path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>',
+    sound: '<path fill="currentColor" d="M3.5 9h4l5-4.2v14.4l-5-4.2h-4z"/><path d="M15.6 8.6a4.8 4.8 0 0 1 0 6.8M18.2 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
+    muted: '<path fill="currentColor" d="M3.5 9h4l5-4.2v14.4l-5-4.2h-4z"/><path d="M15.5 9.2l5.5 5.6M21 9.2l-5.5 5.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
+  };
+  const svIco = k => SVI[k] ? `<svg viewBox="0 0 24 24" aria-hidden="true">${SVI[k]}</svg>` : '';
+  const KICK = { life: 'Life', win: 'Major achievement', made: 'Breakthrough', work: 'Work', song: 'Music', tale: 'Story time', legacy: 'Legacy' };
+  $('svClose').innerHTML = svIco('close');
+
+  function svPausedNow() { return SV.paused || SV.hold || SV.ended || SV.loading || document.hidden || !SV.open; }
+  function svSync() {
+    const off = svPausedNow();
+    svEl.classList.toggle('paused', off); svEl.classList.toggle('muted', SV.muted);
+    const pb = $('svPause'), mb = $('svMute');
+    pb.innerHTML = svIco(SV.paused || SV.ended ? 'play' : 'pause'); pb.setAttribute('aria-label', SV.ended ? 'Watch again' : SV.paused ? 'Play' : 'Pause');
+    mb.innerHTML = svIco(SV.muted ? 'muted' : 'sound'); mb.setAttribute('aria-label', SV.muted ? 'Turn the sound on' : 'Turn the sound off');
+    const a = SV.audio, pg = SV.pages[SV.i], rec = SV.recs[SV.i];
+    if (a && pg && pg.k === 'song' && rec && a.dataset.src === rec.src) { a.muted = SV.muted; if (off) a.pause(); else if (a.paused) a.play().catch(() => {}); }
+  }
+  function svAudio() { if (!SV.audio) { SV.audio = new Audio(); SV.audio.preload = 'auto'; } return SV.audio; }
+  // browsers only let a page start sound from a tap, so the tap that opens a story starts a silent clip
+  function svUnlock() {
+    const a = svAudio(); if (a.dataset.unlocked) return; a.dataset.unlocked = '1';
+    a.src = 'data:audio/wav;base64,UklGRiwAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQgAAACAgICAgICAgA==';
+    a.play().then(() => a.pause()).catch(() => {});
+  }
+  // the music fades out over a third of a second when its page is left
+  function svQuiet() {
+    const a = SV.audio; if (!a || a.paused) return;
+    const my = ++SV.fade;
+    if (reduce()) { a.pause(); return; }
+    const v0 = a.volume, t0 = performance.now();
+    const iv = setInterval(() => {
+      if (my !== SV.fade) return clearInterval(iv);
+      const f = 1 - (performance.now() - t0) / 350;
+      if (f <= 0) { clearInterval(iv); a.pause(); a.volume = 1; } else a.volume = v0 * f;
+    }, 30);
+  }
+  function svSound(pg) {
+    if (pg.k !== 'song' || !pg.au) return svQuiet();
+    const i = SV.i, rec = SV.recs[i];
+    if (rec === undefined) {
+      svQuiet();
+      const tok = SV.token;
+      findRecording(pg.au).then(r => { SV.recs[i] = r; if (SV.open && tok === SV.token && SV.i === i) svRender(false); });
+      return;
+    }
+    if (!rec) return svQuiet();
+    const a = svAudio(); SV.fade++;
+    if (a.dataset.src !== rec.src) { a.src = rec.src; a.dataset.src = rec.src; }
+    try { a.currentTime = 0; } catch (e) {}
+    a.volume = 1; a.muted = SV.muted;
+  }
+  // reading time: a few seconds plus about a quarter of a second a word; a song page lasts as long as its clip, up to 30s
+  function svDur(pg) {
+    const rec = SV.recs[SV.i];
+    if (pg.k === 'song' && pg.au && rec) return clamp(rec.dur || 30, 12, 30);
+    const words = [pg.t, pg.x, pg.fx, ...(pg.pts || [])].join(' ').split(/\s+/).filter(Boolean).length;
+    return clamp(2.6 + words * .28, 5, pg.k === 'legacy' ? 16 : 15);
+  }
+  function svBarsHtml() { svBars.innerHTML = SV.pages.map(() => '<span class="sv-bar"><i></i></span>').join(''); }
+  function svStartBar() {
+    [...svBars.children].forEach((b, i) => { b.classList.toggle('done', i < SV.i); b.classList.remove('on'); b.firstElementChild.onanimationend = null; });
+    const b = svBars.children[SV.i]; if (!b) return;
+    b.style.setProperty('--d', SV.dur + 's');
+    void b.offsetWidth;
+    b.classList.add('on');
+    b.firstElementChild.onanimationend = () => { if (SV.open && !SV.loading) svNext(true); };
+  }
+  function svPic() {
+    const pg = SV.pages[SV.i], p = SV.p; if (!pg) return;
+    const cover = picOf(p.wiki) || imgOf(p);
+    const pic = pg.k === 'cover' ? cover : picOf(pg.img);
+    const wait = !pic && (pg.k === 'cover' ? picPending(p.wiki) : picPending(pg.img));
+    const back = pic || cover;
+    svBg.style.backgroundImage = back ? `url("${String(back).replace(/"/g, '%22')}")` : 'none';
+    svMedia.classList.toggle('wait', wait);
+    SV.solo = !pic && !wait; svCard.classList.toggle('solo', SV.solo);
+    if (pic) { if (svImg.getAttribute('src') !== pic) { svImg.classList.remove('on'); svImg.src = pic; } svImg.alt = pg.cap || (pg.k === 'cover' ? 'Portrait of ' + p.name : pg.t); }
+    else { svImg.removeAttribute('src'); svImg.classList.remove('on'); svImg.alt = ''; }
+  }
+  svImg.onload = () => svImg.classList.add('on');
+  svImg.onerror = () => { if (!svImg.getAttribute('src')) return; svImg.classList.remove('on'); svImg.removeAttribute('src'); SV.solo = true; svCard.classList.add('solo'); svFit(); };
+  // long pages step the type down until they fit; on a short screen the picture then shrinks, and at last steps aside
+  function svFit() {
+    svBody.classList.remove('dense', 'denser'); svCard.classList.remove('tight'); svCard.classList.toggle('solo', !!SV.solo);
+    const over = () => svBody.scrollHeight > svBody.clientHeight + 2;
+    if (over()) svBody.classList.add('dense');
+    if (over()) svBody.classList.add('denser');
+    if (over() && !SV.solo) svCard.classList.add('tight');
+    if (over() && !SV.solo) { svCard.classList.remove('tight'); svCard.classList.add('solo'); }
+  }
+  function svPageHtml(pg, p) {
+    if (pg.k === 'cover') {
+      const marks = SV.pages.filter(q => q.k === 'win' || q.k === 'made' || q.k === 'work' || q.k === 'song').slice(0, 6);
+      const src = simg[p.wiki];
+      return `<div class="sv-k"><span>${esc(p.role)}</span></div><h2 class="sv-t big">${esc(p.name)}</h2><div class="sv-life">${esc(lifeText(p))}</div>` +
+        `<p class="sv-x">${esc(pg.x)}</p>` + (marks.length ? `<div class="sv-wins" aria-label="Known for">${marks.map(q => `<span>${svIco(q.k)}${esc(q.t)}</span>`).join('')}</div>` : '') +
+        (src ? `<div class="sv-row"><a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">Portrait credit</a></div>` : '');
+    }
+    const kick = pg.kick || KICK[pg.k], when = pg.y != null ? fmtYear(pg.y) : '';
+    let h = `<div class="sv-k">${svIco(pg.k)}<span>${esc(kick)}</span>${when ? `<span class="sv-y">${esc(when)}</span>` : ''}</div>`;
+    h += `<h2 class="sv-t${pg.k === 'work' ? ' it' : ''}">${esc(pg.k === 'legacy' ? 'Why they matter' : pg.t)}</h2><p class="sv-x">${esc(pg.x)}</p>`;
+    if (pg.k === 'made' && pg.fx) h += `<div class="sv-fx"><b>What it changed</b><p>${esc(pg.fx)}</p></div>`;
+    if (pg.k === 'legacy' && pg.pts && pg.pts.length) h += `<ul class="sv-pts">${pg.pts.map(t => `<li>${svIco('legacy')}<span>${esc(t)}</span></li>`).join('')}</ul>`;
+    if (pg.k === 'song') h += svSongHtml(pg, p);
+    const row = [], src = pg.img && simg[pg.img];
+    if (pg.at) row.push(`<button type="button" class="sv-place" data-sv="map" title="Show this on the map">${globeSvg(pg.at)}<span>${esc(pg.wh || 'On the map')}</span></button>`);
+    if (pg.cap && src) row.push(`<span class="sv-cap">${esc(pg.cap)}</span>`);
+    if (src) row.push(`<a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">Picture credit</a>`);
+    if (row.length) h += `<div class="sv-row">${row.join('')}</div>`;
+    if (pg.k === 'legacy') {
+      const nx = personById[SV.queue[SV.qi + 1]];
+      h += `<div class="sv-end">${nx ? `<button type="button" class="pri" data-sv="next">Next: ${esc(shortName(nx))}</button>` : ''}<button type="button" data-sv="again">Watch again</button>` +
+        `<button type="button" data-sv="person">See them on the map</button>${p.wiki ? `<a href="${esc(wikiUrl(p.wiki))}" target="_blank" rel="noopener">Read more</a>` : ''}</div>`;
+    }
+    return h;
+  }
+  function svSongHtml(pg, p) {
+    const elsewhere = `<a class="sv-listen" href="${esc(pg.listen || 'https://www.youtube.com/results?search_query=' + encodeURIComponent(p.name + ' ' + pg.t))}" target="_blank" rel="noopener">${svIco('song')}<span>Listen to it</span></a>`;
+    if (!pg.au) return `<div class="sv-au">${elsewhere}<span class="sv-aut">Still under copyright, so it plays on another site.</span></div>`;
+    const r = SV.recs[SV.i];
+    if (r === undefined) return `<div class="sv-au"><span class="sv-eq off"><i></i><i></i><i></i><i></i><i></i></span><span class="sv-aut">Finding a recording…</span></div>`;
+    if (!r) return `<div class="sv-au">${elsewhere}<span class="sv-aut">No free recording would load here.</span></div>`;
+    return `<div class="sv-au"><button type="button" class="sv-play" data-sv="mute" aria-label="${SV.muted ? 'Turn the sound on' : 'Turn the sound off'}">${svIco(SV.muted ? 'muted' : 'sound')}</button>` +
+      `<span class="sv-eq"><i></i><i></i><i></i><i></i><i></i></span><span class="sv-aut">${SV.muted ? 'Sound is off' : 'Playing'} · a free recording from <a href="${esc(wikiUrl(r.file, 'commons.wikimedia.org'))}" target="_blank" rel="noopener">Wikimedia Commons</a></span></div>`;
+  }
+  function svRender(anim = true) {
+    const pg = SV.pages[SV.i], p = SV.p; if (!pg) return;
+    SV.ended = false;
+    svCard.dataset.k = pg.k;
+    svBody.className = 'sv-body k-' + pg.k;
+    svPic();
+    svBody.innerHTML = svPageHtml(pg, p);
+    svFit();
+    if (anim && !reduce()) { void svBody.offsetWidth; svBody.classList.add('in'); }
+    $('svCount').textContent = `${p.name}, page ${SV.i + 1} of ${SV.pages.length}`;
+    const nx = SV.pages[SV.i + 1], ns = nx && picOf(nx.img); if (ns) new Image().src = ns;
+    svSound(pg);
+    SV.dur = svDur(pg);
+    svStartBar(); svSync();
+  }
+  function svHead(p) {
+    const src = imgOf(p) || picOf(p.wiki);
+    $('svAv').innerHTML = src ? `<img src="${esc(src)}" alt="">` : esc(initials(p.name));
+    $('svName').textContent = p.name; $('svLife').textContent = lifeText(p);
+    $('svMute').hidden = !SV.pages.some(pg => pg.k === 'song' && pg.au);
+    const pv = personById[SV.queue[SV.qi - 1]], nx = personById[SV.queue[SV.qi + 1]];
+    $('svPrevS').classList.toggle('off', !pv); $('svNextS').classList.toggle('off', !nx);
+    $('svPrevS').title = pv ? 'Previous story: ' + pv.name : ''; $('svNextS').title = nx ? 'Next story: ' + nx.name : '';
+  }
+  async function svLoad(id, start = 0) {
+    const p = personById[id], tok = ++SV.token;
+    SV.id = id; SV.p = p; SV.recs = {}; SV.i = 0; SV.loading = true;
+    SV.pages = [{ k: 'cover', t: p.name, x: storyIdx[id] || p.why }];
+    svHead(p); svBarsHtml(); svRender(false);
+    const fresh = () => {   // pictures came in: show the one for this page, and its credit
+      if (tok !== SV.token || !SV.open) return;
+      svHead(p);
+      const pg = SV.pages[SV.i]; if (!pg) return;
+      svPic(); svBody.classList.remove('in'); svBody.innerHTML = svPageHtml(pg, p); svFit();
+    };
+    storyImages([p.wiki]).then(fresh);
+    let d;
+    try { d = await loadStory(id); } catch (e) {
+      if (tok !== SV.token) return;
+      SV.loading = false; SV.ended = true;
+      svBody.innerHTML = '<p class="sv-x">This story would not load. Check the connection and try again.</p>'; svSync();
+      return;
+    }
+    if (tok !== SV.token) return;
+    SV.pages = [{ k: 'cover', t: p.name, x: d.hook }].concat(d.pages);
+    SV.loading = false; markSeen(id);
+    SV.pages.forEach((pg, i) => { if (pg.k === 'song' && pg.au) findRecording(pg.au).then(r => { if (tok === SV.token && SV.recs[i] === undefined) SV.recs[i] = r; }); });
+    const titles = [...new Set([p.wiki, ...SV.pages.map(pg => pg.img)].filter(Boolean))];
+    storyImages(titles.slice(0, 3)).then(fresh).then(() => storyImages(titles)).then(fresh);
+    SV.i = clamp(start, 0, SV.pages.length - 1);
+    svHead(p); svBarsHtml(); svRender();
+    const nx = SV.queue[SV.qi + 1]; if (nx) loadStory(nx).catch(() => {});
+  }
+  function openStory(id, o = {}) {
+    if (!hasStory(id) || !personById[id]) return;
+    stopPlay(); hideTip();
+    const q = [...new Set((o.queue || [id]).filter(x => hasStory(x) && personById[x]))]; if (!q.includes(id)) q.unshift(id);
+    SV.queue = q; SV.qi = q.indexOf(id);
+    if (!SV.open) {
+      SV.opener = document.activeElement; SV.open = true; SV.paused = false; SV.hold = false;
+      svEl.hidden = false; document.querySelector('.app').inert = true;
+      svUnlock();
+      if (!reduce()) {   // the card grows out of the face that was clicked
+        const r = svCard.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+        const fx = o.from && o.from.clientX ? o.from.clientX : cx, fy = o.from && o.from.clientY ? o.from.clientY : cy;
+        svCard.animate([{ transform: `translate(${fx - cx}px, ${fy - cy}px) scale(.08)`, opacity: .3, borderRadius: '50%' }, { transform: 'none', opacity: 1 }], { duration: 340, easing: 'cubic-bezier(.2,.85,.25,1)' });
+        $('svDim').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260 });
+      }
+      svCard.focus({ preventScroll: true });
+    }
+    svLoad(id, o.page || 0);
+  }
+  function svClose() {
+    if (!SV.open) return;
+    SV.open = false; SV.token++; SV.fade++; SV.hold = false;
+    if (SV.audio) SV.audio.pause();
+    const id = SV.id;
+    const done = () => {
+      if (SV.open) return;   // opened again while it was closing
+      svEl.hidden = true; svBars.innerHTML = ''; svBody.innerHTML = ''; svImg.removeAttribute('src'); document.querySelector('.app').inert = false;
+      const back = SV.opener && SV.opener !== document.body && SV.opener.isConnected ? SV.opener : $('panelBody').querySelector(`button[data-story-person="${id}"]`);
+      if (back && back.focus) back.focus({ preventScroll: true });
+    };
+    if (reduce()) done();
+    else {
+      svCard.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'scale(.94)' }], { duration: 170, easing: 'ease-in' }).onfinish = done;
+      $('svDim').animate([{ opacity: 1 }, { opacity: 0 }], { duration: 170 });
+    }
+    drawLeaders(); drawPeople(); refreshGenerals(); renderPanel();
+  }
+  function svGo(i) { SV.i = clamp(i, 0, SV.pages.length - 1); svRender(); }
+  function svNext(auto) {
+    if (SV.loading) return;
+    if (SV.i < SV.pages.length - 1) return svGo(SV.i + 1);
+    if (SV.qi < SV.queue.length - 1) return svStory(1);
+    if (auto) { SV.ended = true; svSync(); return; }   // the last page stays up until it is closed
+    svClose();
+  }
+  function svPrev() { if (SV.i > 0) return svGo(SV.i - 1); if (SV.qi > 0) return svStory(-1); svGo(0); }
+  function svStory(dir) {
+    const qi = SV.qi + dir;
+    if (qi < 0 || qi >= SV.queue.length) { if (dir > 0) svClose(); return; }
+    SV.qi = qi;
+    const go = () => { if (SV.open) svLoad(SV.queue[qi], 0); };
+    if (reduce()) return go();
+    svQuiet();
+    svCard.animate([{ transform: 'none', opacity: 1 }, { transform: `translateX(${-dir * 40}px)`, opacity: 0 }], { duration: 140, easing: 'ease-in' }).onfinish = () => {
+      go(); if (SV.open) svCard.animate([{ transform: `translateX(${dir * 40}px)`, opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 220, easing: 'ease-out' });
+    };
+  }
+  function svMute() {
+    SV.muted = !SV.muted; toStore('wtt-mute', SV.muted);
+    if (SV.audio) SV.audio.muted = SV.muted;
+    svSync();
+    const au = svBody.querySelector('.sv-au'), pg = SV.pages[SV.i];
+    if (au && pg && pg.k === 'song') au.outerHTML = svSongHtml(pg, SV.p);
+  }
+  function svToggle() { if (SV.ended) return svGo(0); SV.paused = !SV.paused; svSync(); }
+  // a page's place: back on the map, at that year, with a pin
+  const storyG = root.append('g');
+  let pinTimer = 0;
+  function scalePins() { storyG.selectAll('g.spin').attr('transform', d => { const [x, y] = proj(d.at); return `translate(${x},${y}) scale(${1 / S.k})`; }); }
+  zoom.on('zoom.story', scalePins);
+  function svShowPlace(pg) {
+    svClose();
+    if (pg.y != null && !S.detail && pg.y >= snaps[0].span[0] && pg.y <= snaps[N - 1].span[1]) setYear(pg.y);
+    const [x, y] = proj(pg.at), k = Math.max(S.k, 5);
+    zoomToBounds([[x - 150 / k, y - 110 / k], [x + 150 / k, y + 110 / k]], k);
+    clearTimeout(pinTimer);
+    storyG.selectAll('*').interrupt().remove();
+    const g = storyG.append('g').attr('class', 'spin').datum(pg);
+    g.append('circle').attr('class', 'pulse').attr('r', 10);
+    g.append('circle').attr('class', 'dot').attr('r', 6);
+    g.append('text').attr('x', 12).attr('y', 5).text(pg.wh || pg.t);
+    scalePins();
+    pinTimer = setTimeout(() => storyG.selectAll('g.spin').transition().duration(700).style('opacity', 0).remove(), 10000);
+  }
+  // taps, holds and swipes on the card
+  let gest = null;
+  svCard.addEventListener('pointerdown', e => {
+    if (e.button !== 0 || gest || e.target.closest('.sv-top button, .sv-body a, .sv-body button')) return;
+    gest = { x: e.clientX, y: e.clientY, id: e.pointerId, held: false, moved: false };
+    try { svCard.setPointerCapture(e.pointerId); } catch (er) {}
+    gest.timer = setTimeout(() => { if (gest) { gest.held = true; SV.hold = true; svSync(); } }, 220);
+  });
+  svCard.addEventListener('pointermove', e => {
+    if (!gest || e.pointerId !== gest.id) return;
+    const dx = e.clientX - gest.x, dy = e.clientY - gest.y;
+    if (!gest.moved && Math.hypot(dx, dy) > 12) { gest.moved = true; clearTimeout(gest.timer); }
+    if (gest.moved && dy > 0 && dy > Math.abs(dx) && !reduce()) svCard.style.transform = `translateY(${dy * .5}px) scale(${1 - Math.min(dy, 400) / 2000})`;
+  });
+  const endGesture = e => {
+    if (!gest || e.pointerId !== gest.id) return;
+    clearTimeout(gest.timer);
+    const g = gest, dx = e.clientX - g.x, dy = e.clientY - g.y; gest = null;
+    svCard.style.transform = '';
+    SV.tapAt = performance.now();
+    if (g.held && !g.moved) { SV.hold = false; svSync(); return; }
+    SV.hold = false;
+    if (e.type === 'pointercancel') { svSync(); return; }
+    if (g.moved) {
+      if (dy > 90 && dy > Math.abs(dx)) svClose();
+      else if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) svStory(dx < 0 ? 1 : -1);
+      else svSync();
+      return;
+    }
+    const r = svCard.getBoundingClientRect();
+    if (e.clientY - r.top < 64) return;   // the header
+    if (e.clientX - r.left < r.width * .3) svPrev(); else svNext();
+  };
+  svCard.addEventListener('pointerup', endGesture);
+  svCard.addEventListener('pointercancel', endGesture);
+  svCard.addEventListener('contextmenu', e => e.preventDefault());
+  const tapped = () => performance.now() - SV.tapAt < 450;   // a pointer tap already turned the page
+  $('svTapPrev').onclick = () => { if (!tapped()) svPrev(); };
+  $('svTapNext').onclick = () => { if (!tapped()) svNext(); };
+  $('svPrevS').onclick = () => svStory(-1);
+  $('svNextS').onclick = () => svStory(1);
+  $('svClose').onclick = svClose;
+  $('svDim').onclick = svClose;
+  $('svPause').onclick = svToggle;
+  $('svMute').onclick = svMute;
+  const svToPerson = () => { const p = SV.p; svClose(); if (p) { selectPerson(p); focusPerson(p); } };
+  $('svWho').onclick = svToPerson;
+  svBody.addEventListener('click', e => {
+    const b = e.target.closest('[data-sv]'); if (!b) return;
+    const a = b.dataset.sv, pg = SV.pages[SV.i];
+    if (a === 'map' && pg && pg.at) svShowPlace(pg);
+    else if (a === 'mute') svMute();
+    else if (a === 'next') svStory(1);
+    else if (a === 'again') svGo(0);
+    else if (a === 'person') svToPerson();
+  });
+  addEventListener('keydown', e => {
+    if (!SV.open) return;
+    const k = e.key, onCtl = e.target.closest && e.target.closest('.sv-body a, .sv-body button, .sv-top button, .sv-nav');
+    if (k === 'Escape') svClose();
+    else if (k === 'ArrowRight') svNext();
+    else if (k === 'ArrowLeft') svPrev();
+    else if (k === 'ArrowDown' || k === 'PageDown') svStory(1);
+    else if (k === 'ArrowUp' || k === 'PageUp') svStory(-1);
+    else if (k === ' ' && !onCtl) svToggle();
+    else if ((k === 'm' || k === 'M') && !e.ctrlKey && !e.metaKey && !e.altKey) svMute();
+    else { if (k === ' ') e.stopImmediatePropagation(); return; }   // space on a button presses it, and doesn't play the map
+    e.preventDefault(); e.stopImmediatePropagation();
+  }, true);
+  document.addEventListener('visibilitychange', () => { if (!SV.open) return; if (document.hidden && SV.audio) SV.audio.pause(); svSync(); });
 
   // ---------- people ----------
   // Each person has stints: "rule" ties them to a state's name while they lead it; "path" places them on the map,
@@ -1308,16 +1997,18 @@ details[open] summary { margin-bottom: 6px; }
       const big = Math.sqrt(l.a * k * k);
       if (big < 90) return false;
       const arr = by.get(l) || []; if (arr.length >= (big > 160 ? 3 : 2)) return false; arr.push(x); by.set(l, arr);
-      x.l = l; x.n = arr.length - 1; x.s = Math.min(1.15, .55 + (big - 90) / 250);
+      // faces sit in a row left of the name; a story ring takes a little more room
+      const R = hasStory(x.p.id) ? 18.6 : 15, pv = arr[arr.length - 2];
+      x.l = l; x.R = R; x.off = pv ? pv.off + pv.R + 2 + R : 3 + R; x.sc = Math.min(1.15, .55 + (big - 90) / 250);
       return true;
     });
     leadG.selectAll('g.leader').data(list, d => d.p.id).join(enter => {
       const g = enter.append('g').attr('class', 'leader')
-        .on('click', (e, d) => { e.stopPropagation(); selectPerson(d.p); })
-        .on('mousemove', (e, d) => showTip(e, d.p.name, `${d.s.label || d.p.role}, ${fmtSpan(d.s.from, d.s.to)}`)).on('mouseleave', hideTip);
+        .on('click', (e, d) => { e.stopPropagation(); personClick(d.p, e); })
+        .on('mousemove', (e, d) => showTip(e, d.p.name, `${d.s.label || d.p.role}, ${fmtSpan(d.s.from, d.s.to)}${storyTip(d.p)}`)).on('mouseleave', hideTip);
       face(g, 14, 'clip14');
       return g;
-    }).attr('transform', d => `translate(${d.l.x - (halfW(d.l, k) + (18 + 32 * d.n) * d.s + 4) / k},${d.l.y}) scale(${d.s / k})`)
+    }).attr('transform', d => `translate(${d.l.x - (halfW(d.l, k) + d.off * d.sc + 4) / k},${d.l.y}) scale(${d.sc / k})`)
       .each(function (d) { setFace(d3.select(this), d.p, d.p.name); });
   }
   // people on the move or at a place, shown once zoomed in a little; the most important win when they crowd
@@ -1344,11 +2035,12 @@ details[open] summary { margin-bottom: 6px; }
       .sort((a, b) => (a.p.rank || 3) - (b.p.rank || 3) || (b.p.id === S.person) - (a.p.id === S.person));
     const s = Math.min(1.1, .7 + (k - minK) * .08), R = 15 * s, placed = [];
     for (const d of cand) {
-      // nudge around a crowded spot before giving up on a lesser figure
+      // nudge around a crowded spot before giving up on a lesser figure (a story ring takes a little more room)
       let ok = false;
+      d.R = hasStory(d.p.id) ? 17.4 * s : R;
       for (const [ox, oy] of [[0, 0], [0, -1.4], [1.3, -.7], [-1.3, -.7], [1.3, .7], [-1.3, .7], [0, 1.4]]) {
         const x = d.sx + ox * R * 1.6, y = d.sy + oy * R * 1.6;
-        if (placed.every(q => Math.hypot(q.x - x, q.y - y) > 2.05 * R)) { d.x = x; d.y = y; ok = true; break; }
+        if (placed.every(q => Math.hypot(q.x - x, q.y - y) > 1.025 * (q.R + d.R))) { d.x = x; d.y = y; ok = true; break; }
       }
       if (ok || d.p.id === S.person) { if (!ok) { d.x = d.sx; d.y = d.sy; } placed.push(d); }
     }
@@ -1366,8 +2058,8 @@ details[open] summary { margin-bottom: 6px; }
     }
     peopleG.selectAll('g.person').data(placed, d => d.p.id).join(enter => {
       const g = enter.append('g').attr('class', 'person')
-        .on('click', (e, d) => { e.stopPropagation(); selectPerson(d.p); })
-        .on('mousemove', (e, d) => showTip(e, d.p.name, (d.s.label ? d.s.label + ' · ' : '') + fmtSpan(d.s.from, d.s.to))).on('mouseleave', hideTip);
+        .on('click', (e, d) => { e.stopPropagation(); personClick(d.p, e); })
+        .on('mousemove', (e, d) => showTip(e, d.p.name, (d.s.label ? d.s.label + ' · ' : '') + fmtSpan(d.s.from, d.s.to) + storyTip(d.p))).on('mouseleave', hideTip);
       face(g, 13, 'clip14');
       g.append('text').attr('class', 'pname').attr('y', 27);
       return g;
@@ -1669,8 +2361,9 @@ details[open] summary { margin-bottom: 6px; }
     const o = m.commander && cmdr[m.commander], who = o ? m.commander : null;
     if (!o && !m.sea) { if (animate && !reduce()) p.attr('stroke-dasharray', L + ' ' + L).attr('stroke-dashoffset', L).transition().delay(i * 250).duration(1500).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0).on('end', function () { d3.select(this).attr('stroke-dasharray', null); }); moveLabel(m, who, xy, color, detail); return; }
     const g = ovG.append('g').attr('class', 'gen')
-      .on('click', e => { e.stopPropagation(); const per = o && personOfCommander(m.commander); if (per) selectPerson(per); else if (!S.detail) enterWar(w, stepIndexAt(w, S.year)); })
-      .on('mousemove', e => showTip(e, who || m.label || 'Fleet', (who && m.label && m.label !== who ? m.label + ' · ' : '') + (w.sides[m.side]?.name || ''))).on('mouseleave', hideTip);
+      .on('click', e => { e.stopPropagation(); const per = o && personOfCommander(m.commander); if (per) personClick(per, e); else if (!S.detail) enterWar(w, stepIndexAt(w, S.year)); })
+      .on('mousemove', e => { const per = o && personOfCommander(m.commander); showTip(e, who || m.label || 'Fleet', (who && m.label && m.label !== who ? m.label + ' · ' : '') + (w.sides[m.side]?.name || '') + (per ? storyTip(per) : '')); }).on('mouseleave', hideTip);
+    g.append('circle').attr('class', 'sring').attr('r', 15.2);
     g.append('circle').attr('class', 'ring').attr('r', 12.5).style('fill', color);
     g.append('use').attr('class', 'helm').attr('href', helmFor(w, m.sea)).attr('x', -9).attr('y', -9).attr('width', 18).attr('height', 18).style('color', color);
     g.append('image').attr('x', -12).attr('y', -12).attr('width', 24).attr('height', 24).attr('clip-path', 'url(#clip12)').attr('preserveAspectRatio', 'xMidYMin slice');
@@ -1705,6 +2398,8 @@ details[open] summary { margin-bottom: 6px; }
     g.select('image').attr('href', src || null).style('display', src ? null : 'none');
     g.select('.helm').style('display', src ? 'none' : null);
     if (!src && o) needPortrait(o);
+    const sid = storyIdOf(o), st = hasStory(sid);
+    g.classed('has-story', st).classed('seen', st && seenStories.has(sid));
   }
   const refreshGenerals = () => ovG.selectAll('g.gen').each(function () { setGeneral(d3.select(this)); });
   function posGen(g) {
@@ -1875,7 +2570,7 @@ details[open] summary { margin-bottom: 6px; }
         // a general worth knowing gets a face and a name; any other army is listed by what it was
         const o = m.commander && cmdr[m.commander], c = w.sides[m.side]?.color || 'var(--line)';
         const name = o ? m.commander : (m.label || m.commander), sub = o && m.label && m.label !== m.commander ? ', ' + esc(m.label) : '';
-        return `<div class="mv">${o ? faceHtml(o, m.commander).replace('class="face"', `class="face" style="background:${c}"`) : `<span class="face plain" style="background:${c}">${ico(m.sea ? 'anchor' : 'arrow')}</span>`}<span><b>${esc(name)}</b>${sub}${m.sea ? ' <span class="ev-k">by sea</span>' : ''}</span></div>`;
+        return `<div class="mv">${o ? faceHtml(o, m.commander).replace(/class="face([^"]*)"/, `class="face$1" style="--fc:${c}"`) : `<span class="face plain" style="background:${c}">${ico(m.sea ? 'anchor' : 'arrow')}</span>`}<span><b>${esc(name)}</b>${sub}${m.sea ? ' <span class="ev-k">by sea</span>' : ''}</span></div>`;
       }).join('') + '</div></div>';
       if (st.events?.length) html += '<div class="sec"><h3>Key moments</h3><div class="list">' + st.events.map(b =>
         `<div class="battle" style="border-color:${w.sides[b.winner]?.color || 'var(--line)'}"><span class="ev-k">${esc(b.sea ? 'sea ' + b.kind : b.kind)}</span> <b>${esc(b.name)}</b> <span class="win">${fmtYear(b.year)}${b.winner != null && w.sides[b.winner] ? ' · ' + sideName(b.winner) + (b.kind === 'battle' || b.kind === 'siege' ? ' victory' : '') : ''}</span><div>${esc(b.text)}</div></div>`).join('') + '</div></div>';
@@ -1890,7 +2585,8 @@ details[open] summary { margin-bottom: 6px; }
     } else if (S.person && personById[S.person]) {
       const p = personById[S.person], now = stintAt(p, S.year, S.yf);
       head = `<p class="kicker">${esc(p.role)}</p><p class="period">${esc(p.name)}</p><div class="meta">${lifeText(p) ? esc(lifeText(p)) + ' · ' : ''}in ${esc(fmtYear(S.year))}</div>`;
-      html += `<div class="ruler big"><div class="ph">${imgOf(p) ? `<img src="${esc(imgOf(p))}" alt="">` : esc(initials(p.name))}</div><div><p class="syn" style="font-size:15px">${esc(p.why)}</p></div></div>`;
+      const st = hasStory(p.id);
+      html += `<div class="ruler big"><div class="ph${storyCls(p)}"${st ? ` data-story-person="${p.id}" title="Watch their story"` : ''}>${imgOf(p) ? `<img src="${esc(imgOf(p))}" alt="">` : esc(initials(p.name))}</div><div><p class="syn" style="font-size:15px">${esc(p.why)}</p>${st ? `<button type="button" class="storybtn" data-story-person="${p.id}">${svIco('play')}<span>Watch their story</span></button>` : ''}</div></div>`;
       if (now) html += `<div class="sec"><h3>In ${esc(fmtYear(S.year))}</h3><p class="syn" style="font-size:15px"><b>${esc(now.label || p.role)}</b> <span class="win">${fmtSpan(now.from, now.to)}</span></p></div>`;
       else html += `<p class="hint">Not on the map in ${esc(fmtYear(S.year))}. Pick a moment below to see where they were.</p>`;
       html += `<div class="sec"><h3>Life on the map</h3><ul class="hist">${p.stints.map((st, i) => [st, i]).sort((a, b) => a[0].from - b[0].from || b[0].to - a[0].to).map(([st, i]) => `<li><button type="button" data-stint="${i}" class="${st === now ? 'now' : ''}"><i class="swatch" style="background:${tagColor(p)}"></i><span><b>${esc(st.label || p.role)}</b> <span class="when">${fmtSpan(st.from, st.to)}</span></span><span class="note">${st.rule ? 'Leads ' + esc(st.rule[0]) : st.path.length > 1 ? 'On the move' : 'Based here'}</span></button></li>`).join('')}</ul></div>`;
@@ -1944,6 +2640,7 @@ details[open] summary { margin-bottom: 6px; }
         html += `<div class="legend"><span>${ico('swords')} war front or battle</span><span>${ico('ship')} war at sea</span><span>${ico('tower')} siege</span><span><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10" fill="#3a63c8"/><use href="#fs-cross" x="-7.6" y="-7.6" width="15.2" height="15.2"/></svg> main faith</span></div>`;
         const act = activeWarsAt(S.year);
         if (act.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${act.map(warCard).join('')}</div></div>`;
+        html += storyTray();
         html += peopleBlock(8);
         if (s.world['Key Events']) html += `<div class="sec"><h3>World in ${esc(s.label)}</h3>${events(s.world['Key Events'])}</div>`;
         if (s.world['Global Events']) html += `<div class="sec"><h3>Around the globe</h3>${events(s.world['Global Events'])}</div>`;
@@ -1956,6 +2653,7 @@ details[open] summary { margin-bottom: 6px; }
     panelKey = key;
     $('panelHead').innerHTML = head;
     body.innerHTML = html + credit;
+    ringPanelFaces(body);
     body.scrollTop = top;
   }
   // the denomination's own history; the row for the shown year is highlighted and each row moves the map to its year
@@ -1966,6 +2664,17 @@ details[open] summary { margin-bottom: 6px; }
       `<li><button type="button" class="${i === now ? 'now' : ''}" data-hist="${i}"><i class="swatch" style="background:${fa.color}"></i><span><b>${esc(e.title)}</b> <span class="when">${fmtYear(e.year)}</span></span><span class="note">${esc(e.text)}</span></button></li>`).join('') + '</ul></div>';
   }
   function onPick(e) {
+    // a ringed face opens that person's story; the other stories in the same list come after it
+    const sp = e.target.closest('[data-story-person]');
+    if (sp) {
+      const id = sp.dataset.storyPerson, p = personById[id];
+      if (!p || !hasStory(id)) return;
+      const box = sp.closest('[data-queue]');
+      const q = box ? box.dataset.queue.split(' ') : [...new Set([...(sp.closest('.people, .list') || $('panelBody')).querySelectorAll('[data-story-person]')].map(x => x.dataset.storyPerson))];
+      if (!box && !S.detail && S.person !== id) { selectPerson(p); focusPerson(p); }
+      openStory(id, { queue: q, from: e });
+      return;
+    }
     const f = e.target.closest('[data-faith]');
     if (f) { S.faithSel = f.dataset.faith; styleMap(); renderPanel(); return; }
     const h = e.target.closest('[data-hist]');
