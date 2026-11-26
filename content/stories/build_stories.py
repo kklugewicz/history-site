@@ -33,6 +33,11 @@ PRETTY = {
     'gads_hill': "Gad's Hill", 'schonhausen': 'Schönhausen', 'koniggratz': 'Königgrätz', 'saint_remy': 'Saint-Rémy',
     'auvers': 'Auvers-sur-Oise', 'le_havre': 'Le Havre', 'yasnaya_polyana': 'Yasnaya Polyana', 'pribor': 'Příbor',
     'combahee': 'Combahee River', 'osborne': 'Osborne House', 'niagara': 'Niagara Falls', 'heinzendorf': 'Heinzendorf',
+    'highland_park_mi': 'Highland Park', 'south_pole': 'South Pole', 'framheim': 'Bay of Whales', 'blenheim': 'Blenheim Palace',
+    'kim_lien': 'Kim Liên', 'pac_bo': 'Pác Bó', 'colombey': 'Colombey', 'neauphle': 'Neauphle-le-Château', 'guang_an': "Guang'an",
+    'pt_109': 'Solomon Islands', 'birmingham_al': 'Birmingham, Alabama', 'memphis_tn': 'Memphis', 'bergen_belsen': 'Bergen-Belsen',
+    'cambridge_ma': 'Cambridge, Massachusetts', 'portland_or': 'Portland, Oregon', 'treetops': 'Treetops, Kenya',
+    'mezzegra': 'Lake Como', 'vatican': 'Vatican City', 'edwards': 'Edwards Air Force Base', 'cern': 'CERN, Geneva',
 }
 SMALL = {'of', 'de', 'da', 'del', 'la', 'le', 'the', 'and', 'on', 'upon', 'aux', 'du', 'des', 'van', 'von', 'al'}
 

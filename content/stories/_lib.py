@@ -84,3 +84,24 @@ C.update({  # the 1800s
     'niagara': (-79.07, 43.08), 'colorado_springs': (-104.82, 38.83), 'wardenclyffe': (-72.91, 40.95), 'pribor': (18.15, 49.64),
     'santiniketan': (87.68, 23.68), 'heidelberg': (8.69, 49.4), 'trieste': (13.77, 45.65),
 })
+
+C.update({  # the 1900s
+    'dearborn': (-83.18, 42.32), 'highland_park_mi': (-83.1, 42.41), 'durban': (31.03, -29.86), 'pietermaritzburg': (30.39, -29.6),
+    'shushenskoye': (91.95, 53.32), 'south_pole': (0.0, -89.9), 'framheim': (-164.0, -78.5), 'tromso': (18.96, 69.65),
+    'borge': (10.98, 59.27), 'blenheim': (-1.36, 51.84), 'sandhurst': (-0.77, 51.35), 'kureika': (87.2, 66.45), 'ulm': (9.99, 48.4),
+    'bern': (7.45, 46.95), 'thessaloniki': (22.94, 40.64), 'malaga': (-4.42, 36.72), 'guernica': (-2.68, 43.32),
+    'warm_springs': (-84.68, 32.89), 'predappio': (11.98, 44.1), 'xikou': (121.25, 29.68), 'whampoa': (113.42, 23.09),
+    'braunau': (13.04, 48.26), 'linz': (14.29, 48.31), 'kim_lien': (105.58, 18.67), 'pac_bo': (106.05, 22.98),
+    'colombey': (4.88, 48.22), 'jinggangshan': (114.17, 26.57), 'khomein': (50.08, 33.64), 'neauphle': (1.9, 48.82),
+    'guang_an': (106.63, 30.47), 'shenzhen': (114.06, 22.54), 'berkeley': (-122.27, 37.87), 'skopje': (21.43, 42.0),
+    'bletchley_park': (-0.74, 52.0), 'wilmslow': (-2.23, 53.33), 'tuskegee': (-85.69, 32.42), 'brookline': (-71.12, 42.33),
+    'pt_109': (157.0, -8.1), 'mvezo': (28.48, -31.93), 'qunu': (28.6, -31.8), 'rivonia': (28.06, -26.05), 'wadowice': (19.49, 49.88),
+    'vatican': (12.45, 41.9), 'gdansk': (18.65, 54.35), 'auschwitz': (19.2, 50.03), 'biran': (-75.78, 20.72),
+    'santiago_de_cuba': (-75.82, 20.02), 'treetops': (36.9, -0.4), 'birmingham_al': (-86.8, 33.52), 'memphis_tn': (-90.05, 35.15),
+    'bergen_belsen': (9.91, 52.76), 'wapakoneta': (-84.19, 40.57), 'edwards': (-117.88, 34.9), 'privolnoye': (42.27, 46.6),
+    'stavropol': (41.97, 45.04), 'chernobyl': (30.1, 51.39), 'foros': (33.79, 44.39), 'klushino': (34.75, 55.65),
+    'saratov': (46.03, 51.53), 'baikonur': (63.31, 45.92), 'star_city': (38.12, 55.88), 'taktser': (101.88, 36.47),
+    'tawang': (91.86, 27.59), 'grozny': (45.69, 43.32), 'crimea': (34.1, 44.95), 'cern': (6.05, 46.23),
+    'cambridge_ma': (-71.09, 42.36), 'los_altos': (-122.11, 37.38), 'cupertino': (-122.03, 37.32), 'portland_or': (-122.68, 45.52),
+    'abbey_road': (-0.18, 51.53), 'rishikesh': (78.27, 30.09), 'kyiv': (30.52, 50.45), 'mezzegra': (9.21, 46.0),
+})
