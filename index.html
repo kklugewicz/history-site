@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Interactive world history map: borders, wars and religions through time.">
+<meta name="description" content="Interactive world history map: borders, wars, religions and the people who made history, year by year.">
 <link rel="icon" href="favicon.svg">
 <style>
 *, *::before, *::after { box-sizing: border-box; }
@@ -15,9 +15,12 @@ body { margin: 0; }
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Alegreya+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: full-bleed map; title + mode tabs top-left, reading panel on the right (bottom sheet on phones), timeline docked at the bottom with era bands above the slider. */
+/* Layout: full-bleed map with a painted sea below it and a layer of moving things above it; title, year and mode tabs
+   top-left, reading panel on the right (bottom sheet on phones), timeline docked at the bottom with play controls. */
 :root {
   --ocean: #d5dde0;
+  --wave: 70 104 122;
+  --wave-a: .34;
   --grat: #c3ccd0;
   --land: #e9e6df;
   --land-edge: #cfcabf;
@@ -26,6 +29,7 @@ body { margin: 0; }
   --paper: #f7f6f2;
   --line: #d9d6cd;
   --accent: #9b3d23;
+  --war: #b3261e;
   --pol-s: 42%;
   --pol-l: 70%;
   --pol-muted: #dcd8ce;
@@ -41,14 +45,14 @@ body { margin: 0; }
   --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --ocean: #0e171d; --grat: #18242c; --land: #222b31; --land-edge: #2f3a41;
-  --ink: #e6e3da; --ink-soft: #9aa6ac; --paper: #151d22; --line: #2c373e; --accent: #e08a68;
+  --ocean: #0e171d; --wave: 150 186 206; --wave-a: .2; --grat: #18242c; --land: #222b31; --land-edge: #2f3a41;
+  --ink: #e6e3da; --ink-soft: #9aa6ac; --paper: #151d22; --line: #2c373e; --accent: #e08a68; --war: #ef6a5a;
   --pol-s: 30%; --pol-l: 36%; --pol-muted: #2b353b; --pol-edge: #0e171d; --faith-op: .62; --sel: #f3efe4;
   --shadow: 0 6px 24px rgba(0,0,0,.45); --era-l: 30%; --era-s: 22%; --side-op: .62;
   color-scheme: dark; } }
 :root[data-theme="dark"] {
-  --ocean: #0e171d; --grat: #18242c; --land: #222b31; --land-edge: #2f3a41;
-  --ink: #e6e3da; --ink-soft: #9aa6ac; --paper: #151d22; --line: #2c373e; --accent: #e08a68;
+  --ocean: #0e171d; --wave: 150 186 206; --wave-a: .2; --grat: #18242c; --land: #222b31; --land-edge: #2f3a41;
+  --ink: #e6e3da; --ink-soft: #9aa6ac; --paper: #151d22; --line: #2c373e; --accent: #e08a68; --war: #ef6a5a;
   --pol-s: 30%; --pol-l: 36%; --pol-muted: #2b353b; --pol-edge: #0e171d; --faith-op: .62; --sel: #f3efe4;
   --shadow: 0 6px 24px rgba(0,0,0,.45); --era-l: 30%; --era-s: 22%; --side-op: .62;
   color-scheme: dark; }
@@ -56,26 +60,79 @@ body { margin: 0; }
 html, body { height: 100%; }
 body { background: var(--ocean); color: var(--ink); font-family: var(--f-body); font-size: 15px; overflow: hidden; }
 .app { position: relative; height: 100%; display: grid; grid-template-rows: 1fr auto; }
-.stage { position: relative; min-height: 0; }
-#map { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+.stage { position: relative; min-height: 0; overflow: hidden; }
+#sea, #fx { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; display: block; }
+#map { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
 #map:active { cursor: grabbing; }
-.sphere { fill: var(--ocean); }
 .grat { fill: none; stroke: var(--grat); stroke-width: .6; vector-effect: non-scaling-stroke; }
 .land { fill: var(--land); stroke: var(--land-edge); stroke-width: .6; vector-effect: non-scaling-stroke; }
-.pol { stroke: var(--pol-edge); stroke-width: .8; vector-effect: non-scaling-stroke; cursor: pointer; transition: fill .3s; }
+.pol { stroke: var(--pol-edge); stroke-width: .8; vector-effect: non-scaling-stroke; cursor: pointer; transition: fill .45s; }
 .pol:hover { fill-opacity: .8; }
 .pol.muted { fill: var(--pol-muted) !important; }
 .pol.faith { fill-opacity: var(--faith-op); }
 .pol.faith.other { fill-opacity: .16; }
-.leader { cursor: pointer; }
-.leader .ring { fill: var(--paper); stroke: var(--ink); stroke-width: 1.5; }
-.leader .ini { font-family: var(--f-body); font-weight: 700; font-size: 10px; fill: var(--ink); text-anchor: middle; dominant-baseline: central; }
-.leader:hover .ring { stroke: var(--accent); stroke-width: 2.5; }
+.pol.sel { stroke: var(--sel); stroke-width: 2.2; }
+.pol.side { fill-opacity: var(--side-op); }
+.pol.minor { fill: transparent !important; stroke: none; pointer-events: none; }
+.pols.old { pointer-events: none; }
+.lbl { font-family: var(--f-display); fill: var(--ink); paint-order: stroke; stroke: color-mix(in srgb, var(--paper) 70%, transparent); stroke-linejoin: round; text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
+
+/* portraits: rulers beside their state's name, people where they are */
+.leader, .person, .gen { cursor: pointer; }
+.leader .ring, .person .ring { fill: var(--paper); stroke: var(--ink); stroke-width: 1.5; }
+.ini { font-family: var(--f-body); font-weight: 700; font-size: 10px; fill: var(--ink); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.leader:hover .ring, .person:hover .ring { stroke: var(--accent); stroke-width: 2.6; }
+.person .ring { stroke-width: 2.2; }
+.person.sel .ring { stroke: var(--accent); stroke-width: 3.2; }
+.pname { font-family: var(--f-body); font-weight: 700; font-size: 11px; fill: var(--ink); text-anchor: middle; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+.pname tspan.d { font-weight: 400; font-style: italic; fill: var(--ink-soft); }
+.trail { fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: .6; pointer-events: none; }
+.trail.ahead { opacity: .22; }
+
+/* faith badges beside names */
+.fb { cursor: pointer; }
+.fb > circle { stroke: var(--paper); stroke-width: 1.8; }
+.fb.flash > circle { animation: fbflash 1.4s ease-out; }
+@keyframes fbflash { 0% { stroke: #fff6c2; stroke-width: 9; } 100% { stroke-width: 1.8; } }
+
+/* war lines, swords and battle markers */
+.wl-halo { fill: none; stroke: var(--paper); stroke-linecap: round; stroke-linejoin: round; opacity: .75; pointer-events: none; }
+.wl { fill: none; stroke: var(--war); stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
+.wl.contact { opacity: .85; }
+.sw, .bm { cursor: pointer; }
+.sw use { transition: transform .2s; }
+.sw:hover use, .bm:hover use { transform: scale(1.25); }
+.bm .pulse { fill: none; stroke: var(--war); stroke-width: 2; transform-box: fill-box; transform-origin: center; animation: pulse 1.8s ease-out infinite; }
+@keyframes pulse { from { transform: scale(.5); opacity: .95; } to { transform: scale(2.6); opacity: 0; } }
+.bm.past { opacity: .55; }
+.front-lbl { font-family: var(--f-mono); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; letter-spacing: .04em; pointer-events: none; }
+
+/* war overlays: arrows, generals, war names */
+.move { fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: .92; pointer-events: none; }
+.move.ghost { opacity: .22; }
+.move-lbl { font-family: var(--f-body); font-style: italic; paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; pointer-events: none; }
+.move-lbl .cmd { font-style: normal; font-weight: 700; }
+.gen .ring { stroke: var(--paper); stroke-width: 2.4; }
+.gen .flag { stroke: var(--paper); stroke-width: .8; }
+.gen .pole { stroke: var(--ink); stroke-width: 1.3; }
+.gen:hover .ring { stroke: var(--ink); }
+.wb { cursor: pointer; }
+.wb text { font-family: var(--f-display); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; }
+.wb:hover text { fill: var(--accent); }
+.mark text { font-family: var(--f-display); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
+.mark.past { opacity: .45; }
+.mark .dot { stroke: var(--paper); stroke-width: 1.5; }
+.theater { cursor: pointer; }
+
+/* reading panel */
 .ruler { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; }
 .ruler .ph { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--line); display: grid; place-items: center; font-weight: 700; color: var(--ink-soft); }
 .ruler .ph img { width: 100%; height: 100%; object-fit: cover; }
 .ruler b { display: block; font-size: 16px; }
 .ruler .s { color: var(--ink-soft); font-size: 13px; }
+.ruler.big { grid-template-columns: 88px 1fr; }
+.ruler.big .ph { width: 88px; height: 88px; font-size: 22px; }
+.ruler.big b { font-family: var(--f-display); font-weight: 400; font-size: 24px; line-height: 1.1; }
 .hist { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 2px; }
 .hist button { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 12px 1fr; gap: 2px 8px; width: 100%; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 14px; line-height: 1.35; }
 .hist button:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
@@ -85,38 +142,33 @@ body { background: var(--ocean); color: var(--ink); font-family: var(--f-body); 
 .hist .when { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); }
 .hist .note { grid-column: 2; color: var(--ink-soft); font-size: 13.5px; }
 .fam h4 { margin: 4px 0 2px; font-size: 11.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); }
-.pol.sel { stroke: var(--sel); stroke-width: 2.2; }
-.pols { transition: opacity .25s ease; }
-.pols.fading { opacity: .3; }
-.lbl { font-family: var(--f-display); fill: var(--ink); paint-order: stroke; stroke: color-mix(in srgb, var(--paper) 70%, transparent); stroke-linejoin: round; text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
-.theater { cursor: pointer; }
-.theater path { fill-opacity: .16; stroke-dasharray: 5 4; vector-effect: non-scaling-stroke; stroke-width: 1.6; }
-.theater:hover path { fill-opacity: .28; }
-.theater text, .mark text { font-family: var(--f-display); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
-.move { fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: .92; }
-.move-lbl { font-family: var(--f-body); font-style: italic; paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; }
-.mark .dot { stroke: var(--paper); stroke-width: 1.5; }
-.mark.past { opacity: .45; }
-.pol.side { fill-opacity: var(--side-op); }
-.pol.minor { fill: transparent !important; stroke: none; pointer-events: none; }
 .row button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.front-halo { fill: none; stroke: var(--paper); stroke-linecap: round; stroke-linejoin: round; opacity: .85; }
-.front { fill: none; stroke: var(--ink); stroke-linecap: butt; stroke-linejoin: round; }
-.front-lbl { font-family: var(--f-mono); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; letter-spacing: .04em; }
-.move.ghost { opacity: .22; }
-.move-lbl .cmd { font-style: normal; font-weight: 700; }
-.mark .ico { stroke: var(--paper); stroke-width: 1.5; }
 .sides { display: flex; flex-direction: column; gap: 8px; }
 .sides .sd { display: grid; grid-template-columns: 14px 1fr; gap: 2px 8px; align-items: center; font-size: 14px; }
 .sides .sd b { font-weight: 700; }
 .sides .ld { grid-column: 2; color: var(--ink-soft); font-size: 13px; }
-.mv { font-size: 14px; line-height: 1.4; display: flex; gap: 8px; align-items: baseline; }
-.mv .swatch { width: 10px; height: 10px; border-radius: 50%; }
+.mv { font-size: 14px; line-height: 1.4; display: flex; gap: 8px; align-items: center; }
+.mv .face { width: 26px; height: 26px; border-radius: 50%; flex: none; display: grid; place-items: center; overflow: hidden; color: #fff; font-size: 10px; font-weight: 700; }
+.mv .face img { width: 100%; height: 100%; object-fit: cover; }
+.mv .face.plain svg { width: 16px; height: 16px; }
 .ev-k { font-family: var(--f-mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); }
 .list h4 { margin: 6px 0 0; font-size: 11.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); }
+.people { display: flex; flex-direction: column; gap: 4px; }
+.people button { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 30px 1fr; gap: 8px; align-items: center; padding: 4px 6px; border-radius: 6px; cursor: pointer; font-size: 14px; line-height: 1.25; }
+.people button:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.people button:focus-visible { outline: 2px solid var(--accent); }
+.people .face { width: 30px; height: 30px; border-radius: 50%; overflow: hidden; background: var(--line); display: grid; place-items: center; font-size: 11px; font-weight: 700; color: var(--ink-soft); }
+.people .face img { width: 100%; height: 100%; object-fit: cover; }
+.people .s { display: block; color: var(--ink-soft); font-size: 12.5px; }
 
-.top { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); left: 16px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; max-width: calc(100% - 32px); }
-.top h1 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: clamp(22px, 3vw, 30px); line-height: 1; }
+.top { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); left: 16px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; max-width: calc(100% - 32px); pointer-events: none; }
+.top > * { pointer-events: auto; }
+.top h1 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: clamp(20px, 2.4vw, 26px); line-height: 1; color: var(--ink-soft); }
+.when { display: flex; flex-direction: column; gap: 3px; padding: 6px 14px 8px; background: color-mix(in srgb, var(--paper) 86%, transparent); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); backdrop-filter: blur(3px); min-width: 168px; }
+.when .y { font-family: var(--f-display); font-size: clamp(34px, 4vw, 50px); line-height: 1; white-space: nowrap; font-variant-numeric: lining-nums; }
+.when .y small { font-size: .4em; margin-left: .2em; letter-spacing: .08em; color: var(--ink-soft); }
+.when .age { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.when .sub { font-size: 12.5px; color: var(--ink-soft); white-space: nowrap; max-width: 300px; overflow: hidden; text-overflow: ellipsis; }
 .tabs { display: flex; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 3px; box-shadow: var(--shadow); }
 .tabs button { border: 0; box-shadow: none; background: transparent; padding: 6px 14px; border-radius: 6px; font-weight: 500; }
 .tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
@@ -151,18 +203,22 @@ details[open] summary { margin-bottom: 6px; }
 .card .s { color: var(--ink-soft); font-size: 13px; }
 .card .swatch { margin-top: 3px; }
 .list { display: flex; flex-direction: column; gap: 6px; }
-.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; }
-.legend span { display: inline-flex; gap: 6px; align-items: center; }
 .battle { border-left: 3px solid var(--line); padding-left: 10px; font-size: 14px; line-height: 1.4; }
 .battle b { font-weight: 700; }
 .win { font-family: var(--f-mono); font-size: 11px; color: var(--ink-soft); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 13px; color: var(--ink-soft); }
+.legend span { display: inline-flex; gap: 5px; align-items: center; }
+.legend svg { width: 18px; height: 18px; }
+.stint { font-size: 13.5px; }
+.stint .when { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); }
 .credit { margin-top: auto; font-size: 11.5px; color: var(--ink-soft); line-height: 1.4; }
 .credit a { color: inherit; }
 
-.timeline { background: var(--paper); border-top: 1px solid var(--line); padding: 8px 16px calc(10px + env(safe-area-inset-bottom, 0px)); display: grid; grid-template-columns: auto 1fr auto; gap: 4px 12px; align-items: center; }
+.timeline { background: var(--paper); border-top: 1px solid var(--line); padding: 8px 16px calc(10px + env(safe-area-inset-bottom, 0px)); display: grid; grid-template-columns: auto auto 1fr auto; gap: 4px 10px; align-items: center; }
 .tl-head { grid-column: 1 / -1; display: flex; gap: 10px; align-items: center; min-height: 24px; font-size: 13px; color: var(--ink-soft); flex-wrap: wrap; }
 .tl-head b { color: var(--ink); }
 .tl-head button { padding: 2px 10px; box-shadow: none; font-size: 13px; }
+.tl-head .grow { flex: 1; }
 .track { position: relative; min-width: 0; }
 .bands { position: relative; height: 20px; }
 .band { position: absolute; top: 0; height: 18px; border-radius: 3px; font-size: 10.5px; line-height: 18px; padding: 0 4px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--ink); background: hsl(var(--h) var(--era-s) var(--era-l)); }
@@ -178,7 +234,11 @@ details[open] summary { margin-bottom: 6px; }
 .ticks span:first-child { transform: translateX(-8px); }
 .ticks span:last-child { transform: translateX(calc(-100% + 8px)); }
 .step { width: 34px; height: 34px; padding: 0; font-size: 18px; line-height: 1; box-shadow: none; }
-#tip { position: absolute; pointer-events: none; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; font-size: 13px; box-shadow: var(--shadow); white-space: nowrap; }
+.play { width: 40px; height: 40px; padding: 0; border-radius: 50%; background: var(--ink); color: var(--paper); border-color: var(--ink); display: grid; place-items: center; }
+.play:hover { background: var(--accent); border-color: var(--accent); }
+.play svg { width: 16px; height: 16px; fill: currentColor; }
+#tip { position: absolute; pointer-events: none; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; font-size: 13px; box-shadow: var(--shadow); white-space: nowrap; max-width: 360px; }
+#tip .t2 { display: block; color: var(--ink-soft); font-size: 12px; white-space: normal; }
 
 @media (max-width: 760px) {
   .panel { top: auto; left: 8px; right: 8px; bottom: 8px; width: auto; max-height: 44%; }
@@ -188,19 +248,30 @@ details[open] summary { margin-bottom: 6px; }
   .panel-body { padding: 10px 14px 14px; }
   .ticks span.minor, .band.short { color: transparent; }
   .tabs button { padding: 5px 10px; }
+  .top { gap: 6px; }
+  .top h1 { display: none; }
+  .when { padding: 4px 10px 6px; min-width: 0; }
+  .when .y { font-size: 30px; }
+  .when .sub { display: none; }
   .places { flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 32px); padding: 2px 2px 8px; margin: -2px -2px -8px; scrollbar-width: none; }
   .places button { flex: none; font-size: 14px; padding: 4px 9px; }
+  .timeline { padding: 6px 10px calc(8px + env(safe-area-inset-bottom, 0px)); gap: 4px 6px; }
+  .step { width: 30px; height: 30px; }
+  .play { width: 34px; height: 34px; }
 }
-@media (prefers-reduced-motion: reduce) { .pols, .pol { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .pol { transition: none; } .bm .pulse { animation: none; } .fb.flash > circle { animation: none; } }
 </style>
 </head>
 <body>
 
 <div class="app">
-  <div class="stage">
-    <svg id="map" role="img" aria-label="World map for the selected period"></svg>
+  <div class="stage" id="stage">
+    <canvas id="sea" aria-hidden="true"></canvas>
+    <svg id="map" role="img" aria-label="World map for the selected year"></svg>
+    <canvas id="fx" aria-hidden="true"></canvas>
     <div class="top">
       <h1>World Through Time</h1>
+      <div class="when" id="when" aria-live="off"><div class="y" id="yNum"></div><div class="age" id="yAge"></div><div class="sub" id="ySub"></div></div>
       <div class="tabs" role="tablist" aria-label="Map view">
         <button type="button" role="tab" data-mode="map" aria-selected="true">Borders</button>
         <button type="button" role="tab" data-mode="wars" aria-selected="false">Wars</button>
@@ -217,14 +288,15 @@ details[open] summary { margin-bottom: 6px; }
   </div>
   <div class="timeline">
     <div class="tl-head" id="tlHead"></div>
-    <button class="step" id="prev" type="button" aria-label="Previous">&#8249;</button>
+    <button class="play" id="play" type="button" aria-label="Play through time" title="Play (space)"></button>
+    <button class="step" id="prev" type="button" aria-label="Back in time">&#8249;</button>
     <div class="track" id="track">
       <div class="bands" id="bands"></div>
       <div class="lanes" id="lanes"></div>
-      <input id="slider" type="range" min="0" max="45" step="1" value="27" aria-label="Time">
+      <input id="slider" type="range" min="0" max="46" step="any" value="27" aria-label="Year">
       <div class="ticks" id="ticks"></div>
     </div>
-    <button class="step" id="next" type="button" aria-label="Next">&#8250;</button>
+    <button class="step" id="next" type="button" aria-label="Forward in time">&#8250;</button>
   </div>
 </div>
 
@@ -235,28 +307,97 @@ details[open] summary { margin-bottom: 6px; }
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const reduce = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isPhone = () => innerWidth <= 760;
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
   const svg = d3.select('#map');
   const defs = svg.append('defs');
   const root = svg.append('g');
   const proj = d3.geoNaturalEarth1();
   const path = d3.geoPath(proj);
-  const sphere = root.append('path').attr('class', 'sphere');
   const grat = root.append('path').attr('class', 'grat');
   const landG = root.append('path').attr('class', 'land');
-  const polG = root.append('g').attr('class', 'pols');
+  const polWrap = root.append('g');            // one <g class="pols"> per border file; a new file fades in over the old one
+  const wlG = root.append('g');                // war lines: fronts and borders between warring sides
   const lblG = root.append('g');
-  const leadG = root.append('g');
-  const ovG = root.append('g');
+  const fbG = root.append('g');                // faith badges beside names
+  const trailG = root.append('g');             // routes travelled by people on the move
+  const ovG = root.append('g');                // Wars tab and story overlays: arrows, generals, sites
+  const wmG = root.append('g');                // swords on war lines, battle markers
+  const leadG = root.append('g');              // rulers beside their state's name
+  const peopleG = root.append('g');            // people where they were
   const tip = $('tip');
+  const seaCv = $('sea'), fxCv = $('fx'), seaCtx = seaCv.getContext('2d'), fxCtx = fxCv.getContext('2d');
 
-  const get = f => fetch('data/' + f).then(r => r.json());
-  const [timeline, land, synopses, wars, rel, rulers] = await Promise.all(
-    ['timeline.json', 'land.json', 'synopses.json', 'wars.json', 'religions.json', 'rulers.json'].map(get));
+  // ---------- symbols ----------
+  // Faith symbols are drawn white on a disc of the faith's colour; "currentColor" parts take the disc colour (holes).
+  const W1 = 'fill="#fff"', CC = 'fill="currentColor"', ST = 'fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"';
+  const FS = {
+    cross: `<path ${W1} d="M-1.6-7.6h3.2v4.2h4.1v3h-4.1v8h-3.2v-8h-4.1v-3h4.1z"/>`,
+    orth: `<path ${W1} d="M-1.2-8h2.4v16h-2.4z M-2.8-6.4h5.6v1.6h-5.6z M-5.4-3.4h10.8v2h-10.8z M-4.2 4.8l8-2.6.5 1.5-8 2.6z"/>`,
+    pattee: `<path ${W1} d="M-1.3-1.3L-3-7.6H3L1.3-1.3 7.6-3V3L1.3 1.3 3 7.6H-3L-1.3 1.3-7.6 3V-3z"/>`,
+    coptic: `<path ${W1} d="M-1.3-1.3L-3-7.6H3L1.3-1.3 7.6-3V3L1.3 1.3 3 7.6H-3L-1.3 1.3-7.6 3V-3z"/><circle ${CC} r="2"/><circle ${W1} r=".9"/>`,
+    crescent: `<circle ${W1} cx="-1.2" r="6.8"/><circle ${CC} cx="1.3" cy="-.4" r="5.6"/><path ${W1} d="M4.4-2.2l.55 1.55h1.6l-1.3.95.5 1.55-1.35-.95-1.35.95.5-1.55-1.3-.95h1.6z"/>`,
+    star6: `<path ${ST} stroke-width="1.5" d="M0-7.6L6.6 3.8H-6.6z M0 7.6L6.6-3.8H-6.6z"/>`,
+    flame: `<path ${W1} d="M0-8.2C3.4-4.6 6.4-1.2 4.8 3.4 3.9 6.3 1.8 7.6 0 7.6S-3.9 6.3-4.8 3.4C-6-0.6-2.6-2.4-2.2-5.4-.6-3.8-.2-6.2 0-8.2z"/><path ${CC} d="M0-1.2C1.6.6 2.6 2.4 1.9 4.2 1.4 5.4.7 5.8 0 5.8S-1.4 5.4-1.9 4.2C-2.5 2.6-1.2 1.2 0-1.2z"/>`,
+    sun: `<circle ${W1} r="3.2"/><g ${ST} stroke-width="1.5">${d3.range(8).map(i => { const a = i * Math.PI / 4; return `<line x1="${(4.9 * Math.cos(a)).toFixed(2)}" y1="${(4.9 * Math.sin(a)).toFixed(2)}" x2="${(7.6 * Math.cos(a)).toFixed(2)}" y2="${(7.6 * Math.sin(a)).toFixed(2)}"/>`; }).join('')}</g>`,
+    chakana: `<path ${W1} d="M-1.8-7.6h3.6v2.6h2.6v2.6h2.6v4.8H4.4V5H1.8v2.6h-3.6V5H-4.4V2.4H-7V-2.4h2.6V-5h2.6z"/><circle ${CC} r="1.9"/>`,
+    om: `<g ${ST} stroke-width="1.45"><path d="M-6.4-3.6C-4.6-6.2-.4-5.6-1.2-2.6-1.6-1.2-3-.8-4.2-.8-1.4-.8 1-.4 1 2.6 1 5.6-3.4 6.8-6.6 4.4"/><path d="M-1-1.6C1.2-3.4 4.2-3 5.2-.6 6.2 1.8 5.4 4.8 3 5.6"/><path d="M1.2-6.6Q3.6-4.6 6.4-6.4"/></g><circle ${W1} cx="3.9" cy="-8.4" r="1.05"/>`,
+    hand: `<path ${W1} d="M-4.4 7.8V-.6c0-1.4 1.8-1.4 1.8 0V-5c0-1.4 1.9-1.4 1.9 0v-.9c0-1.5 2-1.5 2 0v.9c0-1.3 1.9-1.3 1.9 0V-.4c0-1.2 1.8-1.2 1.8 0 0 .6.4 3.2-1.2 5.4L2.6 7.8z"/><circle ${CC} cy="2.8" r="1.6"/>`,
+    wheel: `<g ${ST} stroke-width="1.4"><circle r="6.4"/>${d3.range(8).map(i => { const a = i * Math.PI / 4; return `<line x1="${(1.6 * Math.cos(a)).toFixed(2)}" y1="${(1.6 * Math.sin(a)).toFixed(2)}" x2="${(6.4 * Math.cos(a)).toFixed(2)}" y2="${(6.4 * Math.sin(a)).toFixed(2)}"/>`; }).join('')}</g><circle ${W1} r="2"/>`,
+    yinyang: `<circle ${W1} r="7.2"/><path ${CC} d="M0-7.2A7.2 7.2 0 0 1 0 7.2 3.6 3.6 0 0 1 0 0 3.6 3.6 0 0 0 0-7.2z"/><circle ${W1} cy="3.6" r="1.25"/><circle ${CC} cy="-3.6" r="1.25"/>`,
+    torii: `<path ${W1} d="M-8.4-6.6Q0-4.6 8.4-6.6V-4.2Q0-2.4-8.4-4.2z M-6.4-1.4h12.8V.4H-6.4z M-5.2-3.6h2v11.6h-2z M3.2-3.6h2v11.6h-2z"/>`,
+    khanda: `<path ${W1} d="M0-8.4L1.2-6V2.6H-1.2V-6z M-2.6 2.6h5.2v1.2h-5.2z M-.7 3.8h1.4v3h-1.4z"/><g ${ST} stroke-width="1.3"><circle cy="-.6" r="3.6"/><path d="M-6.6-4.2C-8.2.6-6 5.4-1.6 6.8 M6.6-4.2C8.2.6 6 5.4 1.6 6.8"/></g>`,
+    ankh: `<g ${ST} stroke-width="2"><ellipse cy="-4" rx="2.8" ry="3.6"/></g><path ${W1} d="M-6.6-.5h13.2v2.2H-6.6z M-1.15 0h2.3v8H-1.15z"/>`,
+    star8: `<path ${W1} d="${d3.range(16).map(i => { const a = i * Math.PI / 8 - Math.PI / 2, r = i % 2 ? 2.9 : 7.8; return (i ? 'L' : 'M') + (r * Math.cos(a)).toFixed(2) + ' ' + (r * Math.sin(a)).toFixed(2); }).join('')}z"/>`,
+    temple: `<path ${W1} d="M0-8L8.2-3.6H-8.2z M-7.4-2.8h14.8v1.4H-7.4z M-6.6-.8h1.8v6.4h-1.8z M-2.6-.8h1.8v6.4h-1.8z M.8-.8h1.8v6.4H.8z M4.8-.8h1.8v6.4H4.8z M-8 6h16v1.8H-8z"/>`,
+    hammer: `<g ${ST} stroke-width="1.4"><circle cy="-6.6" r="1.4"/></g><path ${W1} d="M-1.1-5.2h2.2V1H-1.1z M-6.4 1h12.8L5.4 6.6 3 5.2 0 7.6-3 5.2-5.4 6.6z"/>`,
+    pyramid: `<path ${W1} d="M-1.6-7.6h3.2v2.2h1.4v2.4h1.8v2.6h1.8v2.6h1.8v2.6H8V7.6H-8V4.8h.6V2.2h1.8V-.4h1.8V-3h1.8v-2.4h1.4z"/><path ${CC} d="M-.7 1h1.4v6.6H-.7z"/>`,
+    tengri: `<g ${ST} stroke-width="1.5"><circle r="7"/><path d="M0 6.2V-.2 M0-.2L-4-5 M0-.2L4-5"/></g>`,
+    spiral: `<path ${ST} stroke-width="1.5" d="M0 0C.9-.9 2 0 1.8 1.2 1.5 2.9-.8 3.4-2.2 2.2-3.9.7-3.4-2.2-1.2-3.4 1.4-4.8 4.6-3.4 5-.4 5.4 3-1.8 6.6-5 4.4"/>`,
+    atom: `<g ${ST} stroke-width="1.1"><ellipse rx="7.4" ry="2.8"/><ellipse rx="7.4" ry="2.8" transform="rotate(60)"/><ellipse rx="7.4" ry="2.8" transform="rotate(-60)"/></g><circle ${W1} r="1.5"/>`,
+  };
+  const FAITH_SYM = { christian: 'cross', arian: 'cross', catholic: 'cross', hussite: 'cross', lutheran: 'cross', anglican: 'cross', reformed: 'cross', protestant: 'cross',
+    orthodox: 'orth', oriental: 'coptic', 'east-syriac': 'pattee', sunni: 'crescent', shia: 'crescent', ismaili: 'crescent', ibadi: 'crescent', judaism: 'star6',
+    zoroastrianism: 'flame', manichaeism: 'sun', vedic: 'om', hinduism: 'om', jainism: 'hand', buddhism: 'wheel', theravada: 'wheel', mahayana: 'wheel', vajrayana: 'wheel',
+    chinese: 'yinyang', shinto: 'torii', sikhism: 'khanda', egyptian: 'ankh', mesopotamian: 'star8', hellenic: 'temple', 'pagan-europe': 'hammer',
+    mesoamerican: 'pyramid', andean: 'chakana', tengri: 'tengri', folk: 'spiral', secular: 'atom' };
+  // Map icons: crossed swords for fighting, a tower for sieges, ships for war at sea, helmets for generals without a portrait.
+  const swordHalf = (fill, stroke, sw) => `<g transform="rotate(-45)" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" stroke-linejoin="round"><path d="M-3.2-1.2H7.4L10.8 0 7.4 1.2H-3.2z"/><rect x="-4.9" y="-3.9" width="1.8" height="7.8" rx=".8"/><rect x="-9.1" y="-.95" width="4.3" height="1.9" rx=".6"/><circle cx="-9.9" r="1.5"/></g>`;
+  const ICONS = {
+    swords: `<g>${swordHalf('var(--paper)', 'var(--paper)', 2.6)}<g transform="scale(-1 1)">${swordHalf('var(--paper)', 'var(--paper)', 2.6)}</g></g>` +
+      `<g>${swordHalf('#d9dee2', '#2a2f33', .7)}<g transform="scale(-1 1)">${swordHalf('#d9dee2', '#2a2f33', .7)}</g></g>` +
+      `<g fill="#a8781f" stroke="#2a2f33" stroke-width=".5"><g transform="rotate(-45)"><rect x="-4.9" y="-3.9" width="1.8" height="7.8" rx=".8"/><circle cx="-9.9" r="1.5"/></g><g transform="scale(-1 1) rotate(-45)"><rect x="-4.9" y="-3.9" width="1.8" height="7.8" rx=".8"/><circle cx="-9.9" r="1.5"/></g></g>`,
+    tower: `<path d="M-6.6 8.4V-3.4H-7.8V-8.6h2.8v2.2h2V-8.6h2v2.2h2V-8.6h2v2.2h2V-8.6h2.8v5.2H6.6V8.4z" fill="#6d6a66" stroke="var(--paper)" stroke-width="1.6" stroke-linejoin="round"/><path d="M-2 8.4V3.6a2 2 0 0 1 4 0V8.4z" fill="#2a2f33"/><path d="M-6.6-1h13.2" stroke="#2a2f33" stroke-width=".8"/>`,
+    ship: `<path d="M-9.6 1.6H9.6L6.8 6.6H-7z" fill="#6b4423" stroke="var(--paper)" stroke-width="1.4" stroke-linejoin="round"/><path d="M-.5 1.6V-9.4" stroke="#3a2a1a" stroke-width="1.2"/><path d="M.4-8.6Q6.8-3.8.4.8z M-1.4-7.6Q-7-3.6-1.4.4z" fill="#f3ecd9" stroke="#3a2a1a" stroke-width=".7"/><path d="M-.5-9.4l4 1.1-4 1.1z" fill="var(--war)"/>`,
+    steamship: `<path d="M-10.4 1.6H10.4L8 6.2H-8.6z" fill="#4a5560" stroke="var(--paper)" stroke-width="1.4" stroke-linejoin="round"/><path d="M-6 1.6V-1.6H5V1.6z M-3.6-1.6V-4.6H2.2V-1.6z" fill="#8a949c" stroke="#2a2f33" stroke-width=".6"/><path d="M-1.2-4.6V-8H1.2V-4.6z" fill="#2a2f33"/><circle cx="2.4" cy="-10" r="1.8" fill="#9aa3a9" opacity=".8"/>`,
+    treaty: `<path d="M-6.4-6.2h11.4a1.6 1.6 0 0 1 0 3.2H4.4v8.6a1.6 1.6 0 0 1-1.6 1.6H-6.4a1.6 1.6 0 0 1 0-3.2h.6V-4.6a1.6 1.6 0 0 1 0-1.6z" fill="#efe3c2" stroke="#6b5a35" stroke-width="1"/><path d="M-3.4-1.6h5.6M-3.4 1h5.6M-3.4 3.6h3.4" stroke="#6b5a35" stroke-width=".8"/>`,
+    star: `<path d="${d3.range(10).map(i => { const a = i * Math.PI / 5 - Math.PI / 2, r = i % 2 ? 3.4 : 8; return (i ? 'L' : 'M') + (r * Math.cos(a)).toFixed(2) + ' ' + (r * Math.sin(a)).toFixed(2); }).join('')}z" fill="var(--war)" stroke="var(--paper)" stroke-width="1.4" stroke-linejoin="round"/>`,
+    helm_a: `<path fill="#fff" d="M-5.6 6.6V0C-5.6-4.6-2.4-6.6.8-6.6 4.6-6.6 6.6-3.8 6.6 0V1.4H3.2V4L1.4 6.6z"/><path fill="currentColor" d="M-1-1.4h4.4v1.6H.6V4.4H-1z"/><path fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" d="M-5.2-5.6C-3.2-9.6 3-9.8 6-6.4"/>`,
+    helm_m: `<path fill="#fff" d="M-5.6 7V-3.2C-5.6-6.4-2.8-7.6 0-7.6S5.6-6.4 5.6-3.2V7z"/><path fill="none" stroke="currentColor" stroke-width="1.3" d="M-4.4-1.4h8.8 M0-1.4V6.4"/><g fill="currentColor"><circle cx="-2.6" cy="2.6" r=".55"/><circle cx="-2.6" cy="4.4" r=".55"/><circle cx="2.6" cy="2.6" r=".55"/><circle cx="2.6" cy="4.4" r=".55"/></g>`,
+    helm_e: `<path fill="#fff" d="M-8.6 2.8Q-4.6-6.8 0-7.2 4.6-6.8 8.6 2.8 0-.4-8.6 2.8z"/><circle fill="currentColor" cx="0" cy="-2.6" r="1.7"/><path fill="#fff" d="M-6 4.2h12v1.8H-6z"/>`,
+    helm_w: `<path fill="#fff" d="M-7 3.2C-7-3.2-3.6-6.6 0-6.6S7-3.2 7 3.2z"/><path fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" d="M-9.2 3.4H9.2"/><path fill="none" stroke="currentColor" stroke-width=".9" d="M-5.4 0H5.4"/>`,
+    anchor: `<g fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"><circle cy="-6" r="1.6"/><path d="M0-4.4V7 M-3.4-2.2H3.4 M-6.4 2.6C-5.8 6 -3 7.2 0 7.2S5.8 6 6.4 2.6"/></g>`,
+    arrow: `<path d="M-6.5 0H5.5M1 -4.6L5.8 0L1 4.6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`,
+  };
+  defs.html(
+    Object.entries(FS).map(([k, v]) => `<symbol id="fs-${k}" viewBox="-10 -10 20 20" overflow="visible">${v}</symbol>`).join('') +
+    Object.entries(ICONS).map(([k, v]) => `<symbol id="ic-${k}" viewBox="-12 -12 24 24" overflow="visible">${v}</symbol>`).join('') +
+    '<clipPath id="clip14"><circle r="14"/></clipPath><clipPath id="clip12"><circle r="12"/></clipPath>');
+
+  // ---------- data ----------
+  const get = f => fetch('data/' + f).then(r => { if (!r.ok) throw new Error(f + ' ' + r.status); return r.json(); });
+  const opt = f => get(f).catch(() => null);
+  const [timeline, land, synopses, wars, rel, peopleData, commanders, ambient] = await Promise.all([
+    get('timeline.json'), get('land.json'), get('synopses.json'), get('wars.json'), get('religions.json'),
+    opt('people.json'), opt('commanders.json'), opt('ambient.json')]);
+  const people = (peopleData && peopleData.people) || [];
+  const personById = Object.fromEntries(people.map(p => [p.id, p]));
+  const cmdr = commanders || {};
+  const routes = (ambient && ambient.routes) || [];
   const snaps = timeline.snapshots, N = snaps.length;
   const faithById = Object.fromEntries(rel.denominations.map(f => [f.id, f]));
-  const zoneById = Object.fromEntries(rel.zones.map(z => [z.id, z]));
   const storyById = Object.fromEntries(rel.stories.map(s => [s.id, s]));
+  const warById = Object.fromEntries(wars.map(w => [w.id, w]));
   const cache = {};
   // A ring wound the wrong way covers the whole globe in D3's spherical geometry; flip any such polygon.
   const fixWinding = fc => {
@@ -285,11 +426,39 @@ details[open] summary { margin-bottom: 6px; }
     const top = new Set(Object.values(byRegion).flatMap(gs => gs.sort((a, b) => gArea[b] - gArea[a]).slice(0, modern ? 2 : 3)));
     for (const f of fc.features) f.major = FAMOUS.test(f.group) || FAMOUS.test(f.properties.name) ||
       (!NOT_STATE.test(f.group) && (gArea[f.group] >= minKm2 || top.has(f.group)));
+    fc.byName = new Map();
+    for (const f of fc.features) { const o = fc.byName.get(f.properties.name); if (!o || o.area < f.area) fc.byName.set(f.properties.name, f); }
     return fc;
   }
-  const loadBorders = f => cache[f] || (cache[f] = get('borders_' + f + '.json').then(fixWinding).then(fc => classify(fc, f)));
   const fileYear = f => f.startsWith('bc') ? -f.slice(2) : +f;
+  const loadBorders = f => cache[f] || (cache[f] = get('borders_' + f + '.json').then(fixWinding).then(fc => classify(fc, f)));
+  // the map for a year is the latest border snapshot at or before it (the earliest one before 4000 BC)
   const fileForYear = y => timeline.borderFiles.reduce((best, f) => fileYear(f) <= y ? f : best, timeline.borderFiles[0]);
+
+  // ---------- time ----------
+  // The slider is continuous. Each period of the spreadsheet gets the same width, so recent centuries get more room;
+  // inside a period time runs evenly. Years step singly from the Middle Ages on and in coarser steps in deep time.
+  const spanLen = i => snaps[i].span[1] - snaps[i].span[0] + 1;
+  function periodOf(y) { if (y === 0) y = 1; for (let i = 0; i < N; i++) if (y <= snaps[i].span[1]) return i; return N - 1; }
+  const posOfYear = y => { const i = periodOf(y); return i + clamp((y - snaps[i].span[0]) / spanLen(i), 0, .999999); };
+  const yearFloatOfPos = p => { p = clamp(p, 0, N - 1e-6); const i = Math.floor(p); return snaps[i].span[0] + (p - i) * spanLen(i); };
+  const gran = i => { const L = spanLen(i); return L >= 5000 ? 50 : L >= 1000 ? 10 : L >= 300 ? 5 : 1; };
+  function yearOfPos(p) {
+    p = clamp(p, 0, N - 1e-6); const i = Math.floor(p), [a, b] = snaps[i].span, g = gran(i);
+    const y = clamp(a + Math.floor((yearFloatOfPos(p) - a) / g) * g, a, b);
+    return y === 0 ? 1 : y;
+  }
+  // the arrows move ten steps per period: single years in the 1900s, decades in the Middle Ages, centuries in the Bronze Age
+  const NICE = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000];
+  const tick = i => NICE.find(n => n >= spanLen(i) / 10 * .8) || 1000;
+  function stepYear(y, dir) {
+    if (dir > 0) { const t = tick(periodOf(y)); let n = (Math.floor(y / t) + 1) * t; if (n === 0) n = 1; return Math.min(n, snaps[N - 1].span[1]); }
+    const t = tick(periodOf(y === 1 ? -1 : y - 1)); let n = (Math.ceil(y / t) - 1) * t; if (n === 0) n = -1; return Math.max(n, snaps[0].span[0]);
+  }
+  const fmtYear = y => y < 0 ? (-y) + ' BC' : (y < 1000 ? 'AD ' + y : '' + y);
+  const fmtSpan = (a, b) => a === b ? fmtYear(a) : fmtYear(a) + ' to ' + fmtYear(b);
+  const lifeText = p => { const [b, d] = p.life || []; return b != null && d != null ? fmtSpan(b, d) : b != null ? 'born ' + fmtYear(b) : d != null ? 'died ' + fmtYear(d) : ''; };
+  const xcss = (p, max) => `calc(${p / max} * (100% - 16px) + 8px)`;
 
   // ---------- eras ----------
   const ERAS = [
@@ -299,20 +468,7 @@ details[open] summary { margin-bottom: 6px; }
     ['Enlightenment', 27, 28, 48], ['Age of Revolutions', 29, 30, 8], ['Industrial Age', 31, 33, 200],
     ['World Wars', 34, 37, 355], ['Cold War', 38, 41, 225], ['Information Age', 42, 45, 170]];
   const eraOf = i => ERAS.find(e => i >= e[1] && i <= e[2]);
-
-  // year -> period index, and fractional slider position
-  function periodOf(y) {
-    if (y === 0) y = 1;
-    for (let i = 0; i < N; i++) if (y <= snaps[i].span[1]) return i;
-    return N - 1;
-  }
-  function posOf(y) {
-    if (y === 0) y = 1;
-    const i = periodOf(y), [a, b] = snaps[i].span;
-    return Math.max(0, Math.min(N - 1, i - .5 + Math.max(0, Math.min(1, (y - a) / (b - a + 1)))));
-  }
-  const xcss = (p, max) => `calc(${p / max} * (100% - 16px) + 8px)`;
-  const fmtYear = y => y < 0 ? (-y) + ' BC' : (y < 1000 ? 'AD ' + y : '' + y);
+  const eraName = y => eraOf(periodOf(y))[0];
 
   // ---------- colour ----------
   const HUES = [8, 24, 40, 62, 95, 140, 168, 192, 212, 236, 262, 292, 322, 345];
@@ -322,8 +478,9 @@ details[open] summary { margin-bottom: 6px; }
   const hashHue = name => { if (name in FIXED) return FIXED[name]; let h = 0; for (const c of name) h = (h * 31 + c.charCodeAt(0)) >>> 0; return HUES[h % HUES.length]; };
   const polFill = n => `hsl(${hashHue(n)} var(--pol-s) var(--pol-l))`;
   const warColor = w => `hsl(${hashHue(w.id + 'x')} 55% 48%)`;
+
+  // ---------- religion ----------
   // Each state takes the religion of its place ("zone"): the zone anchor inside it nearest its centre, else the nearest anchor.
-  const yearOf = i => Math.round((snaps[i].span[0] + snaps[i].span[1]) / 2);
   function zoneOf(f) {
     if (f.zone !== undefined) return f.zone;
     let big = null, ba = -1;
@@ -373,37 +530,46 @@ details[open] summary { margin-bottom: 6px; }
     return (f.zw = n >= 3 ? [...w] : [[zoneOf(f), 1]]);
   }
   const entryAt = (z, y) => { let e = z.history[0]; for (const h of z.history) if (h.from <= y) e = h; return e; };
-  const zoneFaith = (z, i) => faithById[entryAt(z, yearOf(i)).faith] || null;
-  function faithAt(f, i) {
+  const zoneFaith = (z, y) => faithById[entryAt(z, y).faith] || null;
+  function faithAt(f, y) {
+    if (f._fy === y) return f._fa;
     const zw = zoneWeights(f);
-    if (zw.length === 1) return zoneFaith(zw[0][0], i);
-    const by = new Map(); let top = null, tw = 0;
-    // thinly spread hunter and herder peoples rarely outnumbered the farmers and towns they shared a state with
-    for (const [z, v] of zw) { const fa = zoneFaith(z, i); if (!fa) continue; const t = (by.get(fa) || 0) + v * (fa.id === 'folk' ? .35 : 1); by.set(fa, t); if (t > tw) { tw = t; top = fa; } }
-    return top;
+    let top = null;
+    if (zw.length === 1) top = zoneFaith(zw[0][0], y);
+    else {
+      const by = new Map(); let tw = 0;
+      // thinly spread hunter and herder peoples rarely outnumbered the farmers and towns they shared a state with
+      for (const [z, v] of zw) { const fa = zoneFaith(z, y); if (!fa) continue; const t = (by.get(fa) || 0) + v * (fa.id === 'folk' ? .35 : 1); by.set(fa, t); if (t > tw) { tw = t; top = fa; } }
+    }
+    f._fy = y; f._fa = top; return top;
   }
   const storyOf = fa => fa && fa.story && storyById[fa.story];
+  const faithIcon = fa => '#fs-' + (FAITH_SYM[fa.id] || 'spiral');
 
   // ---------- state ----------
   let detailed = false;
   try { detailed = localStorage.getItem('wtt-detailed') === '1'; } catch (e) {}
-  const S = { mode: 'map', detail: null, idx: 27, step: 0, selected: null, features: [], k: 1 };
+  const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, person: null, faithSel: null,
+    features: [], fc: null, file: null, k: 1, t: d3.zoomIdentity, playing: false, speed: 1 };
   // simplified drawing applies everywhere except inside a war, where every involved state must show
   const simple = () => !detailed && !(S.detail && S.detail.kind === 'war');
-  let W = 0, H = 0;
+  let W = 0, H = 0, dpr = 1;
 
   function layout() {
     const r = svg.node().getBoundingClientRect(); W = r.width; H = r.height;
+    dpr = Math.min(2, devicePixelRatio || 1);
+    for (const cv of [seaCv, fxCv]) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
     proj.fitExtent([[4, 4], [W - 4, H - 4]], { type: 'Sphere' });
-    sphere.attr('d', path({ type: 'Sphere' }));
     grat.attr('d', path(d3.geoGraticule10()));
     landG.attr('d', path(land));
-    polG.selectAll('path').attr('d', path);
-    computeLabels(); drawLabels(); drawOverlay(false);
+    polWrap.selectAll('path').attr('d', path);
+    computeLabels(); drawLabels(); drawWarLayer(); drawOverlay(false); drawPeople();
+    prepRoutes(); drawAmbient(true);
   }
 
   const zoom = d3.zoom().scaleExtent([.5, 60]).on('zoom', e => {
-    root.attr('transform', e.transform); S.k = e.transform.k; drawLabels(); scaleOverlay();
+    root.attr('transform', e.transform); S.t = e.transform; S.k = e.transform.k;
+    drawLabels(); scaleOverlay(); placeSwords(); drawPeople(); drawAmbient(true);
   });
   svg.call(zoom).on('dblclick.zoom', null);
   function zoomToBounds(b, maxK = 40, dur = 750) {
@@ -415,27 +581,36 @@ details[open] summary { margin-bottom: 6px; }
     svg.transition().duration(reduce() ? 0 : dur).call(zoom.transform, t);
   }
   const ptsBounds = pts => path.bounds({ type: 'MultiPoint', coordinates: pts });
-  const circles = list => ({ type: 'FeatureCollection', features: list.map(t => ({ type: 'Feature', geometry: d3.geoCircle().center([t.lon, t.lat]).radius(t.r)() })) });
 
-  // ---------- labels ----------
+  // ---------- labels and faith badges ----------
   let labels = [];
+  // The simplified map names an empire once, on its home state (the member that carries the empire's name, or the
+  // one in HOME), not on its biggest colony; colonies over a million km² keep their own names.
+  const HOME = { 'Spanish Habsburg': 'Spain', 'Mongol Empire': 'Great Khanate', 'Italy': 'Kingdom of Italy', 'Russia': 'Russian Empire' };
+  const COLONY_KM2 = 1e6;
+  let labelsByName = new Map();
   function computeLabels() {
-    const sm = simple(), byName = new Map();
+    const sm = simple(), byName = new Map(), home = new Map();
+    if (sm) for (const f of S.features) if (f.major && f.properties.name === (HOME[f.group] || f.group)) home.set(f.group, f);
     for (const f of S.features) {
       if (sm && !f.major) continue;
+      let name = sm ? f.group : f.properties.name;
+      if (sm && home.has(f.group) && home.get(f.group) !== f) { if (f.area < COLONY_KM2) continue; name = f.properties.name; }
       let best = null, ba = -1;
       for (const poly of f.geometry.coordinates) { const g = { type: 'Polygon', coordinates: poly }; const a = path.area(g); if (a > ba) { ba = a; best = g; } }
       const [x, y] = path.centroid(best); const b = path.bounds(best);
-      const name = sm ? f.group : f.properties.name;
-      if (isFinite(x) && !(byName.get(name)?.a > ba)) byName.set(name, { name, x, y, a: ba, w: b[1][0] - b[0][0] });
+      if (isFinite(x) && !(byName.get(name)?.a > ba)) byName.set(name, { name, x, y, a: ba, w: b[1][0] - b[0][0], f });
     }
     labels = [...byName.values()];
+    labelsByName = byName;
   }
   // on-screen size of a label: grows with how big its state looks, from 10px to 15px
   const lblPx = (l, k) => Math.min(15, 12 * Math.max(.85, Math.sqrt(l.a * k * k) / 140));
+  // half the on-screen width of a label, in px (the display face averages ~.54em per letter)
+  const halfW = (l, k) => l.name.length * lblPx(l, k) * .27;
   let shownLabels = new Map();
   function drawLabels() {
-    const k = S.k, fs = 12 / k;
+    const k = S.k;
     const side = sideMap();
     // the simplified map has few shapes, so it can afford to label smaller ones
     const [minA, perCh] = simple() ? [700, 4.4] : [2200, 5.4];
@@ -445,139 +620,483 @@ details[open] summary { margin-bottom: 6px; }
       .attr('font-size', d => lblPx(d, k) / k)
       .attr('stroke-width', 3 / k).text(d => d.name);
     shownLabels = new Map(vis.map(l => [l.name, l]));
+    drawBadges(vis);
     drawLeaders();
   }
+  // a small faith symbol after each name, in Borders and Religions; it flashes when the land changes faith
+  const lastFaith = new Map();
+  function drawBadges(vis) {
+    const k = S.k, on = !S.detail && S.mode !== 'wars';
+    const list = on ? vis.map(l => ({ l, fa: faithAt(l.f, S.year) })).filter(d => d.fa) : [];
+    fbG.selectAll('g.fb').data(list, d => d.l.name).join(enter => {
+      const g = enter.append('g').attr('class', 'fb')
+        .on('click', (e, d) => { e.stopPropagation(); pickFaith(d.fa.id); })
+        .on('mousemove', (e, d) => showTip(e, d.fa.name, 'Main faith of ' + d.l.name + '. Click to see where it was followed.')).on('mouseleave', hideTip);
+      g.append('circle').attr('r', 10);
+      g.append('use').attr('x', -7.6).attr('y', -7.6).attr('width', 15.2).attr('height', 15.2);
+      return g;
+    }).each(function (d) {
+      const g = d3.select(this), px = lblPx(d.l, k), s = px / 22, prev = lastFaith.get(d.l.name);
+      g.attr('transform', `translate(${d.l.x + (halfW(d.l, k) + 3 + 10 * s) / k},${d.l.y - px * .06 / k}) scale(${s / k})`);
+      g.select('circle').style('fill', d.fa.color);
+      g.select('use').attr('href', faithIcon(d.fa)).style('color', d.fa.color);
+      if (prev && prev !== d.fa.id && S.playing && !reduce()) { g.classed('flash', false); this.getBoundingClientRect(); g.classed('flash', true); }
+      lastFaith.set(d.l.name, d.fa.id);
+    });
+  }
+  function pickFaith(id) {
+    if (S.mode !== 'religions') setMode('religions');
+    S.faithSel = id; S.selected = null; S.person = null;
+    styleMap(); renderPanel(); openPanel();
+  }
 
-  // ---------- leaders ----------
-  // A towering ruler of the period gets a portrait beside their state's name. Portraits come from Wikipedia at view time;
-  // if they can't load, the circle shows initials.
-  const portraits = (() => { try { return JSON.parse(localStorage.getItem('wtt-portraits') || '{}'); } catch (e) { return {}; } })();
+  // ---------- portraits ----------
+  // Portraits come from Wikipedia: most are already known (img), the rest are looked up in the visitor's browser.
+  const portraits = (() => { try { return JSON.parse(localStorage.getItem('wtt-portraits2') || '{}'); } catch (e) { return {}; } })();
   const asked = new Set();
-  function fetchPortraits(list) {
-    const want = list.map(x => x.r.wiki).filter(t => !(t in portraits) && !asked.has(t));
+  let portraitTimer = 0;
+  const wantPortraits = new Set();
+  function imgOf(o) { return o ? (o.img || portraits[o.wiki] || null) : null; }
+  function needPortrait(o) {
+    if (!o || o.img || !o.wiki || o.wiki in portraits || asked.has(o.wiki)) return;
+    wantPortraits.add(o.wiki);
+    clearTimeout(portraitTimer); portraitTimer = setTimeout(fetchPortraits, 120);
+  }
+  function fetchPortraits() {
+    const want = [...wantPortraits].slice(0, 50); want.forEach(t => { wantPortraits.delete(t); asked.add(t); });
     if (!want.length) return;
-    want.forEach(t => asked.add(t));
     const u = 'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&piprop=thumbnail&pithumbsize=120&redirects=1&titles=' + encodeURIComponent(want.join('|'));
     fetch(u).then(r => r.json()).then(j => {
       const q = j.query || {}, back = {};
       for (const n of q.normalized || []) back[n.to] = n.from;
       for (const n of q.redirects || []) back[n.to] = back[n.from] || n.from;
-      for (const pg of Object.values(q.pages || {})) if (pg.thumbnail) portraits[back[pg.title] || pg.title] = pg.thumbnail.source;
-      try { localStorage.setItem('wtt-portraits', JSON.stringify(portraits)); } catch (e) {}
-      drawLeaders(); if (S.selected) renderPanel();
-    }).catch(() => {});
+      for (const pg of Object.values(q.pages || {})) portraits[back[pg.title] || pg.title] = pg.thumbnail ? pg.thumbnail.source : null;
+      for (const t of want) if (!(t in portraits)) portraits[t] = null;
+      try { localStorage.setItem('wtt-portraits2', JSON.stringify(portraits)); } catch (e) {}
+      drawLeaders(); drawPeople(); if (S.detail || S.mode === 'wars') refreshGenerals();
+      if (S.selected || S.person) renderPanel();
+    }).catch(() => {}).finally(() => { if (wantPortraits.size) fetchPortraits(); });
   }
-  function leadersNow() {
-    if (S.mode !== 'map' || S.detail) return [];
-    const [a, b] = snaps[S.idx].span, best = new Map();
-    for (const r of rulers) {
-      const ov = Math.min(b, r.to) - Math.max(a, r.from) + 1;
-      if (ov <= 0 || ov < Math.min(10, (r.to - r.from + 1) / 2)) continue;
-      let f = null;
-      for (const p of r.polities) { f = S.features.filter(x => x.properties.name === p).sort((x, y) => y.area - x.area)[0]; if (f) break; }
-      if (f && !(best.get(f)?.ov >= ov)) best.set(f, { r, f, ov });
+  // the name under a face: a long name keeps the part before ', ', ' of ' or ' the ', then a regnal number, then the surname with its particles
+  const PARTICLES = new Set(['de', 'da', 'do', 'dos', 'das', 'del', 'y', 'van', 'der', 'den', 'ter', 'di', 'du', 'la', 'le']);
+  function shortName(p) {
+    let n = p.short || p.name;
+    if (n.length <= 22) return n;
+    for (const cut of [', ', ' of ', ' the ']) if (n.length > 22 && n.indexOf(cut) > 0) n = n.slice(0, n.indexOf(cut));
+    if (n.length <= 22) return n;
+    const w = n.split(' '), r = w.findIndex((x, i) => i > 0 && /^[IVXL]+$/.test(x));
+    if (r > 0) return w.slice(0, r + 1).join(' ');
+    let i = w.length - 1;
+    while (i > 1 && PARTICLES.has(w[i - 1].toLowerCase())) i--;
+    if (i > 1 && (/^(de|da|do|dos|das|del|y)$/.test(w[i]) || /^d'/.test(w[w.length - 1]))) i--;
+    const s = w.slice(i).join(' ');
+    return s.length <= 22 ? s : w[w.length - 1];
+  }
+  const initials = name => name.replace(/\(.*?\)/g, '').split(/\s+/).filter(w => /^[A-ZÀ-ɏ]/.test(w) && !/^(I|II|III|IV|V|VI|VII|VIII|IX|X|XI|XII|XIII|XIV|XV|XVI)$/.test(w)).slice(0, 2).map(w => w[0]).join('') || name[0];
+  // a ring with initials underneath and the photo on top once it loads
+  function face(g, r, clip) {
+    g.append('circle').attr('class', 'ring').attr('r', r + 1);
+    g.append('text').attr('class', 'ini');
+    g.append('image').attr('x', -r).attr('y', -r).attr('width', 2 * r).attr('height', 2 * r)
+      .attr('clip-path', `url(#${clip})`).attr('preserveAspectRatio', 'xMidYMin slice');
+  }
+  function setFace(g, o, name) {
+    const src = imgOf(o);
+    g.select('.ini').text(initials(name));
+    const im = g.select('image');
+    if (im.attr('href') !== src) im.attr('href', src || null).style('display', src ? null : 'none');
+    if (!src) needPortrait(o);
+  }
+  const faceHtml = (o, name, cls = 'face') => { const src = imgOf(o); if (!src) needPortrait(o); return `<span class="${cls}">${src ? `<img src="${esc(src)}" alt="" loading="lazy">` : esc(initials(name))}</span>`; };
+
+  // ---------- people ----------
+  // Each person has stints: "rule" ties them to a state's name while they lead it; "path" places them on the map,
+  // moving along the route over the stint's years (a single point when they stayed put).
+  const TAG_COLOR = { war: '#b3261e', explore: '#1f6fb2', faith: '#7d3c98', mind: '#1f7a63', art: '#b5651d', rule: '#9c7a12', power: '#9c7a12', reform: '#2d6a9f' };
+  const tagColor = p => TAG_COLOR[(p.tags || [])[0]] || 'var(--ink)';
+  function prepStint(s) {
+    if (s._t) return;
+    const src = s.path || [s.at], pts = src.map(q => [q[0], q[1]]);
+    // unwrap longitudes so a route across the date line moves the short way round
+    for (let i = 1; i < pts.length; i++) { while (pts[i][0] - pts[i - 1][0] > 180) pts[i][0] -= 360; while (pts[i][0] - pts[i - 1][0] < -180) pts[i][0] += 360; }
+    const cum = [0];
+    for (let i = 1; i < pts.length; i++) { const la = (pts[i][1] + pts[i - 1][1]) / 2 * Math.PI / 180; cum.push(cum[i - 1] + Math.hypot((pts[i][0] - pts[i - 1][0]) * Math.cos(la), pts[i][1] - pts[i - 1][1])); }
+    const L = cum[cum.length - 1] || 1, span = s.to - s.from + 1;
+    // a waypoint may carry its own year; the others are spaced by distance between the known ones
+    const t = src.map(q => q.length > 2 ? (q[2] - s.from) / span : null);
+    if (t[0] == null) t[0] = 0;
+    if (t[t.length - 1] == null) t[t.length - 1] = pts.length > 1 ? 1 : 0;
+    for (let i = 1; i < t.length; i++) if (t[i] == null) {
+      let j = i; while (t[j] == null) j++;
+      const a = t[i - 1], b = t[j], c0 = cum[i - 1], c1 = cum[j];
+      for (let m = i; m < j; m++) t[m] = a + (b - a) * (c1 > c0 ? (cum[m] - c0) / (c1 - c0) : (m - i + 1) / (j - i + 1));
     }
-    return [...best.values()];
+    s._pts = pts; s._t = t; s._L = L;
   }
-  const leaderOf = f => leadersNow().find(x => x.f === f);
+  // what a person is doing in year y: a journey beats a reign (a king on campaign is shown on the road), a journey
+  // whose dated waypoints span this moment beats one that has not started yet, and a shorter stint beats a longer one
+  function stintAt(p, y, yf = y + .5) {
+    let best = null, bs = -1;
+    for (const s of p.stints) {
+      if (y < s.from || y > s.to) continue;
+      let sc = 1 / (2 + s.to - s.from);
+      if (s.path) {
+        const a = s.path[0], z = s.path[s.path.length - 1];
+        sc += 4;
+        if (yf >= (a.length > 2 ? a[2] : s.from) - .02 && yf <= (z.length > 2 ? z[2] : s.to + 1) + .02) sc += 2;
+      }
+      if (sc > bs) { bs = sc; best = s; }
+    }
+    return best;
+  }
+  // where a person on the move is at fractional year yf, and how far along the route (index of the last waypoint passed)
+  function whereAt(s, yf) {
+    prepStint(s);
+    const pts = s._pts, t = s._t;
+    if (pts.length === 1) return { pt: pts[0], i: 0 };
+    const f = clamp((yf - s.from) / (s.to - s.from + 1), 0, 1);
+    let i = 0; while (i < t.length - 2 && t[i + 1] <= f) i++;
+    const u = t[i + 1] > t[i] ? clamp((f - t[i]) / (t[i + 1] - t[i]), 0, 1) : 1;
+    const pt = [pts[i][0] + (pts[i + 1][0] - pts[i][0]) * u, pts[i][1] + (pts[i + 1][1] - pts[i][1]) * u];
+    return { pt: [((pt[0] + 540) % 360) - 180, pt[1]], i, u };
+  }
+  // rulers at this year, tied to the state they led (the first of their listed names that is on the map)
+  function rulersNow() {
+    if (!S.fc) return [];
+    const out = [];
+    for (const p of people) {
+      const s = stintAt(p, S.year, S.yf);
+      if (!s || !s.rule) continue;
+      const f = rulerFeat(s);
+      if (f) out.push({ p, s, f });
+    }
+    return out;
+  }
+  function rulerFeat(s) {
+    if (!S.fc) return null;
+    for (const n of s.rule) { const f = S.fc.byName.get(n); if (f) return f; }
+    return null;
+  }
+  // the label a ruler sits by: their own state's, or on the simplified map their empire's when the empire is theirs
+  // (it is named after their state, or the stint lists the empire). null when no label on this map can be theirs.
+  function leaderLabel(s, f = rulerFeat(s)) {
+    if (!f) return null;
+    const own = labelsByName.get(f.properties.name);
+    if (own && own.f === f) return own;
+    if (!simple()) return null;
+    const g = labelsByName.get(f.group);
+    return g && (g.f === f || s.rule.includes(f.group)) ? g : null;
+  }
+  const rulersOf = f => rulersNow().filter(x => x.f === f || (simple() && x.f.group === f.group && x.f.properties.name === f.properties.name));
   function drawLeaders() {
     // a portrait only appears once you've zoomed in past the whole-world view, and only beside a name
-    // that is showing; it shrinks as the state gets smaller on screen
-    const k = S.k, list = k < 2 ? [] : leadersNow().filter(x => {
-      const l = shownLabels.get(simple() ? x.f.group : x.f.properties.name);
+    // that is showing; it shrinks as the state gets smaller on screen. Up to two per state.
+    const k = S.k, by = new Map();
+    const list = (S.mode !== 'map' || S.detail || k < 2) ? [] : rulersNow().sort((a, b) => (a.p.rank || 3) - (b.p.rank || 3)).filter(x => {
+      const L = leaderLabel(x.s, x.f), l = L && shownLabels.get(L.name);
       if (!l) return false;
-      // how wide the state looks on screen, in px; small-looking states get no portrait
       const big = Math.sqrt(l.a * k * k);
       if (big < 90) return false;
-      x.xy = [l.x, l.y]; x.s = Math.min(1.15, .55 + (big - 90) / 250); x.w = l.name.length * lblPx(l, k) * .29;
+      const arr = by.get(l) || []; if (arr.length >= (big > 160 ? 3 : 2)) return false; arr.push(x); by.set(l, arr);
+      x.l = l; x.n = arr.length - 1; x.s = Math.min(1.15, .55 + (big - 90) / 250);
       return true;
     });
-    fetchPortraits(list);
-    leadG.selectAll('g.leader').data(list, d => d.r.name).join(enter => {
+    leadG.selectAll('g.leader').data(list, d => d.p.id).join(enter => {
       const g = enter.append('g').attr('class', 'leader')
-        .on('click', (e, d) => { e.stopPropagation(); onPolity(d.f); })
-        .on('mousemove', (e, d) => showTip(e, `${d.r.name}, ${d.r.role} (${fmtYear(d.r.from)} to ${fmtYear(d.r.to)})`)).on('mouseleave', hideTip);
-      g.append('circle').attr('class', 'ring').attr('r', 15);
-      g.append('text').attr('class', 'ini').text(d => d.r.name.split(/\s+/).filter(w => /^[A-Z]/.test(w)).slice(0, 2).map(w => w[0]).join(''));
-      g.append('image').attr('x', -14).attr('y', -14).attr('width', 28).attr('height', 28).attr('clip-path', 'url(#portraitClip)').attr('preserveAspectRatio', 'xMidYMin slice');
+        .on('click', (e, d) => { e.stopPropagation(); selectPerson(d.p); })
+        .on('mousemove', (e, d) => showTip(e, d.p.name, `${d.s.label || d.p.role}, ${fmtSpan(d.s.from, d.s.to)}`)).on('mouseleave', hideTip);
+      face(g, 14, 'clip14');
       return g;
-    }).attr('transform', d => `translate(${d.xy[0] - (d.w + 18 * d.s + 4) / k},${d.xy[1]}) scale(${d.s / k})`)
-      .each(function (d) { const src = portraits[d.r.wiki]; d3.select(this).select('image').attr('href', src || null).style('display', src ? null : 'none'); });
+    }).attr('transform', d => `translate(${d.l.x - (halfW(d.l, k) + (18 + 32 * d.n) * d.s + 4) / k},${d.l.y}) scale(${d.s / k})`)
+      .each(function (d) { setFace(d3.select(this), d.p, d.p.name); });
   }
-  defs.append('clipPath').attr('id', 'portraitClip').append('circle').attr('r', 14);
+  // people on the move or at a place, shown once zoomed in a little; the most important win when they crowd
+  function peopleNow() {
+    if (S.detail || S.mode === 'wars') return [];
+    const out = [];
+    for (const p of people) {
+      const s = stintAt(p, S.year, S.yf);
+      if (!s) continue;
+      // a ruler whose state has no name on this map (or whose empire's name stands for someone else) is shown at their seat
+      if (!s.path && !(s.at && !leaderLabel(s))) continue;
+      if (S.mode === 'religions' && !(p.tags || []).includes('faith')) continue;
+      out.push({ p, s });
+    }
+    return out;
+  }
+  let shownPeople = [];
+  function drawPeople() {
+    const k = S.k, t = S.t, minK = isPhone() ? 2.2 : 1.7;
+    const cand = k < minK ? [] : peopleNow().map(d => {
+      const w = whereAt(d.s, S.yf), xy = proj(w.pt);
+      return { ...d, w, xy, sx: t.applyX(xy[0]), sy: t.applyY(xy[1]) };
+    }).filter(d => d.sx > -40 && d.sx < W + 40 && d.sy > -40 && d.sy < H + 40 && (d.p.rank || 3) <= (k < 2.6 ? 1 : k < 4 ? 2 : 3))
+      .sort((a, b) => (a.p.rank || 3) - (b.p.rank || 3) || (b.p.id === S.person) - (a.p.id === S.person));
+    const s = Math.min(1.1, .7 + (k - minK) * .08), R = 15 * s, placed = [];
+    for (const d of cand) {
+      // nudge around a crowded spot before giving up on a lesser figure
+      let ok = false;
+      for (const [ox, oy] of [[0, 0], [0, -1.4], [1.3, -.7], [-1.3, -.7], [1.3, .7], [-1.3, .7], [0, 1.4]]) {
+        const x = d.sx + ox * R * 1.6, y = d.sy + oy * R * 1.6;
+        if (placed.every(q => Math.hypot(q.x - x, q.y - y) > 2.05 * R)) { d.x = x; d.y = y; ok = true; break; }
+      }
+      if (ok || d.p.id === S.person) { if (!ok) { d.x = d.sx; d.y = d.sy; } placed.push(d); }
+    }
+    shownPeople = placed;
+    // names go under the faces, most important first; a name that would run into another name or face waits for a hover
+    const showName = k >= 2.4, boxes = [];
+    for (const d of placed) {
+      d.txt = shortName(d.p);
+      d.nameOn = false;
+      if (!showName && d.p.id !== S.person) continue;
+      const w = d.txt.length * 6.4 * s, x0 = d.x - w / 2, y0 = d.y + 18 * s, y1 = d.y + 30 * s;
+      const hit = boxes.some(b => x0 < b[2] && x0 + w > b[0] && y0 < b[3] && y1 > b[1])
+        || placed.some(q => q !== d && Math.abs(q.x - d.x) < w / 2 + 13 * s && q.y + 13 * s > y0 && q.y - 13 * s < y1);
+      if (!hit || d.p.id === S.person) { boxes.push([x0, y0, x0 + w, y1]); d.nameOn = true; }
+    }
+    peopleG.selectAll('g.person').data(placed, d => d.p.id).join(enter => {
+      const g = enter.append('g').attr('class', 'person')
+        .on('click', (e, d) => { e.stopPropagation(); selectPerson(d.p); })
+        .on('mousemove', (e, d) => showTip(e, d.p.name, (d.s.label ? d.s.label + ' · ' : '') + fmtSpan(d.s.from, d.s.to))).on('mouseleave', hideTip);
+      face(g, 13, 'clip14');
+      g.append('text').attr('class', 'pname').attr('y', 27);
+      return g;
+    }).attr('transform', d => { const x = (d.x - t.x) / k, y = (d.y - t.y) / k; return `translate(${x},${y}) scale(${s / k})`; })
+      .classed('sel', d => d.p.id === S.person)
+      .each(function (d) {
+        const g = d3.select(this); setFace(g, d.p, d.p.name);
+        g.select('.ring').style('stroke', tagColor(d.p));
+        g.select('.pname').style('display', d.nameOn ? null : 'none').text(d.txt);
+      });
+    // the road behind a traveller, and faintly the road ahead
+    const tr = placed.filter(d => d.s.path && d.s.path.length > 1 && (d.p.rank === 1 || d.p.id === S.person || k >= 3.2));
+    trailG.selectAll('g.tr').data(tr, d => d.p.id + d.s.from).join(enter => {
+      const g = enter.append('g').attr('class', 'tr');
+      g.append('path').attr('class', 'trail ahead'); g.append('path').attr('class', 'trail done');
+      return g;
+    }).each(function (d) {
+      const g = d3.select(this), c = tagColor(d.p), pts = d.s._pts, i = d.w.i;
+      const done = pts.slice(0, i + 1).concat([d.w.pt]), ahead = [d.w.pt].concat(pts.slice(i + 1));
+      g.select('.done').attr('d', routeLine(done)).style('stroke', c).attr('stroke-width', 2.2 / k).attr('stroke-dasharray', `${5 / k} ${3 / k}`);
+      g.select('.ahead').attr('d', ahead.length > 1 ? routeLine(ahead) : null).style('stroke', c).attr('stroke-width', 1.6 / k).attr('stroke-dasharray', `${2 / k} ${4 / k}`);
+    });
+  }
+  function selectPerson(p) {
+    S.person = p.id; S.selected = null;
+    if (S.mode === 'wars') setMode('map');
+    drawPeople(); styleMap(); renderPanel(); openPanel();
+  }
 
   // ---------- polities ----------
-  async function showBorders(file) {
-    polG.classed('fading', true);
-    const data = await loadBorders(file);
-    S.features = data.features;
-    polG.selectAll('path').data(S.features, d => d.properties.name).join('path')
+  let polGroup = null, borderLoop = null, borderWant = null;
+  // one loader at a time; while it waits on a file the wanted year may move on, and it follows
+  function showBorders(file) {
+    borderWant = file;
+    if (borderLoop) return borderLoop;
+    borderLoop = (async () => {
+      try {
+        while (borderWant && borderWant !== S.file) {
+          const f = borderWant, data = await loadBorders(f);
+          if (borderWant !== f) continue;
+          swapBorders(f, data);
+          // keep the neighbours warm so playing and scrubbing don't wait on the network
+          const i = timeline.borderFiles.indexOf(f);
+          [i + 1, i - 1, i + 2].forEach(j => { const nf = timeline.borderFiles[j]; if (nf) setTimeout(() => loadBorders(nf), 300); });
+        }
+      } finally { borderLoop = null; }
+    })();
+    return borderLoop;
+  }
+  function swapBorders(file, data) {
+    S.file = file; S.fc = data; S.features = data.features;
+    const old = polGroup, fade = old && !reduce();
+    polGroup = polWrap.append('g').attr('class', 'pols').style('opacity', fade ? 0 : 1);
+    polGroup.selectAll('path').data(S.features).join('path')
       .attr('class', 'pol').attr('d', path)
       .on('click', (e, d) => { e.stopPropagation(); onPolity(d); })
       .on('mousemove', (e, d) => showTip(e, polTip(d.properties, d)))
       .on('mouseleave', hideTip);
-    polG.classed('fading', false);
-    computeLabels(); drawLabels(); styleMap();
+    if (old) {
+      old.classed('old', true);
+      if (fade) polGroup.transition().duration(500).ease(d3.easeCubicOut).style('opacity', 1).on('end', () => old.remove());
+      else old.remove();
+    }
+    if (S.selected && !S.features.some(f => f.properties.name === S.selected && (!simple() || f.major))) { S.selected = null; renderPanel(); }
+    computeLabels(); styleMap(); drawLabels(); drawWarLayer(); drawOverlay(false);
+    renderPanelSoon();
   }
   function styleMap() {
-    const d = S.detail, side = sideMap() || new Map(), sm = simple();
-    polG.selectAll('path').each(function (f) {
+    if (!polGroup) return;
+    const d = S.detail, side = sideMap() || overviewSides(), sm = simple(), y = S.year;
+    polGroup.selectAll('path').each(function (f) {
       const p = f.properties, el = d3.select(this);
       let fill = polFill(sm ? f.group : p.name), muted = false, faith = false, war = false, other = false;
-      if (d && d.kind === 'war') {
+      if (d && d.kind === 'war' || (!d && S.mode === 'wars')) {
         const sd = side.get(p.name);
-        if (sd != null && d.item.sides[sd]) { fill = d.item.sides[sd].color; war = true; } else muted = true;
+        if (sd) { fill = sd.color; war = true; } else muted = true;
       } else if (d && d.kind === 'religion') {
         if (d.item.steps[S.step].regions.includes(p.regions[0])) { fill = d.item.color; faith = true; } else muted = true;
-      } else if (S.mode === 'wars') muted = true;
-      else if (S.mode === 'religions') {
-        const fa = faithAt(f, S.idx);
+      } else if (S.mode === 'religions') {
+        const fa = faithAt(f, y);
         if (fa) { fill = fa.color; faith = true; other = !!S.faithSel && fa.id !== S.faithSel; } else muted = true;
       }
       // inside a merged group, paint the shared edges in the group colour so the empire reads as one shape
       const merged = sm && f.major && !d && S.mode === 'map' && f.group !== p.name;
-      el.style('fill', fill).style('stroke', merged && p.name !== S.selected ? fill : null).classed('minor', sm && !f.major)
+      el.style('fill', fill).style('stroke', merged && p.name !== S.selected ? fill : null).classed('minor', sm && !f.major && !war)
         .classed('muted', muted).classed('faith', faith).classed('other', other).classed('side', war)
         .classed('sel', p.name === S.selected);
     });
-    polG.selectAll('path.sel').raise();
+    polGroup.selectAll('path.sel').raise();
   }
-  // polity name -> side index for the current war step (null outside a war)
+  // polity name -> {side, color} for the war being read (null outside a war)
   function sideMap() {
     const d = S.detail; if (!d || d.kind !== 'war') return null;
+    const m = new Map(), w = d.item;
+    for (const t of w.steps[S.step].territories || []) for (const n of t.polities) if (w.sides[t.side]) m.set(n, { side: t.side, color: w.sides[t.side].color, w });
+    return m;
+  }
+  // in the Wars tab, every war being fought this year colours its sides; the earliest war wins a contested state
+  function overviewSides() {
     const m = new Map();
-    for (const t of d.item.steps[S.step].territories || []) for (const n of t.polities) m.set(n, t.side);
+    if (S.detail || S.mode !== 'wars') return m;
+    for (const it of warItems()) for (const t of it.st.territories || []) for (const n of t.polities)
+      if (!m.has(n) && it.w.sides[t.side]) m.set(n, { side: t.side, color: it.w.sides[t.side].color, w: it.w });
     return m;
   }
   function polTip(p, f) {
-    if (S.mode === 'religions' && !S.detail) { const fa = faithAt(f, S.idx); return p.name + (fa ? ': ' + fa.name : ''); }
+    if (S.mode === 'religions' && !S.detail) { const fa = faithAt(f, S.year); return p.name + (fa ? ': ' + fa.name : ''); }
+    const sd = (sideMap() || overviewSides()).get(p.name);
+    if (sd) return p.name + ' (' + sd.w.sides[sd.side].name + (S.detail ? '' : ', ' + sd.w.name) + ')';
     if (simple() && f.group !== p.name) return p.name + ' (' + f.group + ')';
-    const side = sideMap(), sd = side && side.get(p.name);
-    return sd != null && S.detail.item.sides[sd] ? p.name + ' (' + S.detail.item.sides[sd].name + ')' : p.name;
+    return p.name;
   }
-  function showTip(e, text) {
+  function showTip(e, text, sub) {
     if (isPhone()) return;
-    tip.hidden = false; tip.textContent = text;
-    const r = svg.node().getBoundingClientRect();
-    tip.style.left = (e.clientX - r.left + 14) + 'px'; tip.style.top = (e.clientY - r.top + 10) + 'px';
+    tip.hidden = false;
+    tip.innerHTML = esc(text) + (sub ? `<span class="t2">${esc(sub)}</span>` : '');
+    const r = $('stage').getBoundingClientRect();
+    const x = e.clientX - r.left + 14, y = e.clientY - r.top + 10;
+    tip.style.left = Math.min(x, W - tip.offsetWidth - 8) + 'px'; tip.style.top = y + 'px';
   }
   function hideTip() { tip.hidden = true; }
 
   function onPolity(f) {
     if (S.detail) return;
+    if (S.mode === 'wars') {
+      const sd = overviewSides().get(f.properties.name);
+      if (sd) { enterWar(sd.w, stepIndexAt(sd.w, S.year)); return; }
+    }
     if (S.mode === 'religions') {
-      const fa = faithAt(f, S.idx);
-      S.faithSel = fa ? fa.id : null; S.selected = null;
-      styleMap(); renderPanel(); $('panel').classList.remove('collapsed');
+      const fa = faithAt(f, S.year);
+      S.faithSel = fa ? fa.id : null; S.selected = null; S.person = null;
+      styleMap(); renderPanel(); openPanel();
       return;
     }
-    S.selected = f.properties.name; styleMap();
+    S.selected = f.properties.name; S.person = null; styleMap(); drawPeople();
     zoomToBounds(path.bounds(f));
-    renderPanel();
-    $('panel').classList.remove('collapsed');
+    renderPanel(); openPanel();
   }
+  const openPanel = () => $('panel').classList.remove('collapsed');
 
-  // ---------- overlay: theaters, moves, battles, sites ----------
+  // ---------- wars on the map ----------
+  const activeWarsAt = y => wars.filter(w => w.start <= y && w.end >= y);
+  function stepIndexAt(w, y) { let si = 0; w.steps.forEach((st, i) => { if (st.year <= y) si = i; }); return si; }
+  // the wars to draw now: the one being read, or every war being fought this year (not in Religions)
+  function warItems() {
+    const d = S.detail;
+    if (d && d.kind === 'war') return [{ w: d.item, si: S.step, st: d.item.steps[S.step], detail: true }];
+    if (d || S.mode === 'religions') return [];
+    return activeWarsAt(S.year).map(w => { const si = stepIndexAt(w, S.year); return { w, si, st: w.steps[si] }; });
+  }
+  const curve = d3.line().curve(d3.curveCatmullRom.alpha(.5));
+  // a route that crosses the 180th meridian (Japan to Hawaii) is drawn as a great-circle path, which the map splits at the edge
+  const routeLine = pts => pts && pts.some((p, i) => i && Math.abs(p[0] - pts[i - 1][0]) > 180)
+    ? path({ type: 'LineString', coordinates: pts.map(p => [((p[0] + 540) % 360) - 180, p[1]]) }) : curve(pts.map(p => proj([((p[0] + 540) % 360) - 180, p[1]])));
+  const line = (xy, pts) => pts && pts.some((p, i) => i && Math.abs(p[0] - pts[i - 1][0]) > 180)
+    ? path({ type: 'LineString', coordinates: pts }) : curve(xy);
+  // war lines: the front where there was one, else where the warring states' borders touched
+  let wlines = [];
+  function drawWarLayer() {
+    const items = warItems(), lines = [];
+    for (const it of items) {
+      const fr = it.st.fronts && it.st.fronts.length ? it.st.fronts : (it.st.contact || []);
+      fr.forEach((f, j) => {
+        if (!f.path || f.path.length < 2) return;
+        const xy = f.path.map(p => proj(p)), cum = [0];
+        for (let i = 1; i < xy.length; i++) cum.push(cum[i - 1] + Math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]));
+        lines.push({ key: it.w.id + ':' + it.si + ':' + j, it, f, xy, cum, len: cum[cum.length - 1], contact: !it.st.fronts?.length });
+      });
+    }
+    wlines = lines;
+    wlG.selectAll('g.wlg').data(lines, d => d.key).join(enter => {
+      const g = enter.append('g').attr('class', 'wlg');
+      g.append('path').attr('class', 'wl-halo'); g.append('path').attr('class', 'wl');
+      g.append('text').attr('class', 'front-lbl');
+      return g;
+    }).each(function (d) {
+      const g = d3.select(this), dd = line(d.xy, d.f.path);
+      g.select('.wl-halo').attr('d', dd); g.select('.wl').attr('d', dd).classed('contact', d.contact);
+      g.select('.front-lbl').text(d.it.detail && d.f.label ? d.f.label : '').attr('data-x', d.xy[0][0]).attr('data-y', d.xy[0][1]);
+    });
+    drawBattles(items);
+    placeSwords(); scaleWarLines();
+  }
+  function scaleWarLines() {
+    const k = S.k, det = !!S.detail;
+    wlG.selectAll('.wl-halo').attr('stroke-width', (det ? 7 : 5) / k);
+    wlG.selectAll('.wl').attr('stroke-width', (det ? 3 : 2) / k).attr('stroke-dasharray', d => d.contact ? `${7 / k} ${4 / k}` : null);
+    wlG.selectAll('.front-lbl').attr('font-size', 11 / k).attr('stroke-width', 3 / k)
+      .attr('x', function () { return +this.dataset.x + 8 / k; }).attr('y', function () { return +this.dataset.y + 14 / k; });
+  }
+  // crossed swords spaced along each war line, about one per 70 px on screen
+  function placeSwords() {
+    const k = S.k, out = [];
+    for (const l of wlines) {
+      const n = clamp(Math.floor(l.len * k / 70), 1, l.it.detail ? 9 : 5);
+      for (let i = 0; i < n; i++) {
+        const at = l.len * (i + .5) / n;
+        let j = 1; while (j < l.cum.length - 1 && l.cum[j] < at) j++;
+        const u = (at - l.cum[j - 1]) / ((l.cum[j] - l.cum[j - 1]) || 1);
+        out.push({ key: l.key + ':' + i, l, x: l.xy[j - 1][0] + (l.xy[j][0] - l.xy[j - 1][0]) * u, y: l.xy[j - 1][1] + (l.xy[j][1] - l.xy[j - 1][1]) * u });
+      }
+    }
+    const sz = S.detail ? 22 : 17;
+    wmG.selectAll('g.sw').data(out, d => d.key).join(enter => {
+      const g = enter.append('g').attr('class', 'sw')
+        .on('click', (e, d) => { e.stopPropagation(); if (!S.detail) enterWar(d.l.it.w, d.l.it.si); })
+        .on('mousemove', (e, d) => showTip(e, d.l.it.w.name, warVs(d.l.it.w) + (S.detail ? '' : ' · click to follow the war'))).on('mouseleave', hideTip);
+      g.append('use').attr('href', '#ic-swords');
+      return g;
+    }).attr('transform', d => `translate(${d.x},${d.y}) scale(${1 / k})`)
+      .select('use').attr('x', -sz / 2).attr('y', -sz / 2).attr('width', sz).attr('height', sz);
+  }
+  const warVs = w => w.sides.map(s => s.name).join(' vs ') + ', ' + fmtSpan(w.start, w.end);
+  const evIcon = e => e.sea ? (e.year >= 1850 ? '#ic-steamship' : '#ic-ship') : e.kind === 'siege' ? '#ic-tower' : e.kind === 'treaty' ? '#ic-treaty' : e.kind === 'battle' ? '#ic-swords' : '#ic-star';
+  // battles of the war's current chapter that have happened by this year; this year's pulse
+  function drawBattles(items) {
+    const y = S.year, g0 = gran(periodOf(y)), list = [];
+    if (!S.detail) for (const it of items) for (const e of it.st.events || []) {
+      if (e.year > y || (e.kind !== 'battle' && e.kind !== 'siege' && !e.sea)) continue;
+      list.push({ key: it.w.id + ':' + e.name, it, e, now: y - e.year < Math.max(1, g0) });
+    }
+    wmG.selectAll('g.bm').data(list, d => d.key).join(enter => {
+      const g = enter.append('g').attr('class', 'bm')
+        .on('click', (e, d) => { e.stopPropagation(); enterWar(d.it.w, d.it.si); })
+        .on('mousemove', (e, d) => showTip(e, d.e.name + ' (' + fmtYear(d.e.year) + ')', d.it.w.name + (d.e.winner != null && d.it.w.sides[d.e.winner] ? ' · ' + d.it.w.sides[d.e.winner].name + ' won' : ''))).on('mouseleave', hideTip);
+      g.append('circle').attr('class', 'pulse').attr('r', 9);
+      g.append('use').attr('x', -9).attr('y', -9).attr('width', 18).attr('height', 18);
+      return g;
+    }).each(function (d) {
+      const [x, y2] = proj([d.e.lon, d.e.lat]);
+      d3.select(this).attr('data-x', x).attr('data-y', y2).attr('transform', `translate(${x},${y2}) scale(${1 / S.k})`)
+        .classed('past', !d.now).select('use').attr('href', evIcon(d.e));
+      d3.select(this).select('.pulse').style('display', d.now ? null : 'none');
+    });
+    battleNow = list.filter(d => d.now).map(d => d.e);
+  }
+  let battleNow = [];
+
+  // ---------- overlay: Wars tab, war chapters and faith journeys ----------
   const markerIds = {};
   function marker(color) {
     if (markerIds[color]) return markerIds[color];
@@ -587,97 +1106,147 @@ details[open] summary { margin-bottom: 6px; }
       .append('path').attr('d', 'M0,0 L10,5 L0,10 z').attr('fill', color);
     return (markerIds[color] = id);
   }
-  const curve = d3.line().curve(d3.curveCatmullRom.alpha(.5));
-  // a route that crosses the 180th meridian (Japan to Hawaii) is drawn as a great-circle path, which the map splits at the edge
-  const line = (xy, pts) => pts && pts.some((p, i) => i && Math.abs(p[0] - pts[i - 1][0]) > 180)
-    ? path({ type: 'LineString', coordinates: pts }) : curve(xy);
-  function activeWars() { const [a, b] = snaps[S.idx].span; return wars.filter(w => w.start <= b && w.end >= a); }
-
+  let drawnSteps = new Set();
   function drawOverlay(animate = true) {
     ovG.selectAll('*').remove();
     const d = S.detail;
     if (!d && S.mode === 'wars') {
-      for (const w of activeWars()) {
-        const col = warColor(w);
-        const g = ovG.append('g').attr('class', 'theater').on('click', e => { e.stopPropagation(); enterWar(w); })
-          .on('mousemove', e => showTip(e, w.name + ': click to explore')).on('mouseleave', hideTip);
-        for (const t of w.theater) g.append('path').attr('d', path(d3.geoCircle().center([t.lon, t.lat]).radius(t.r)())).attr('fill', col).attr('stroke', col);
-        const [x, y] = proj([w.theater[0].lon, w.theater[0].lat]);
-        g.append('text').attr('class', 'tlabel').attr('x', x).attr('y', y).attr('text-anchor', 'middle').text(w.name);
+      const keys = new Set();
+      for (const it of warItems()) {
+        const w = it.w, key = w.id + ':' + it.si, fresh = animate && !drawnSteps.has(key);
+        keys.add(key);
+        (it.st.moves || []).forEach((m, i) => move(m, w, fresh, i, false, false));
+        warBadge(it);
       }
+      drawnSteps = keys;
     }
     if (d && d.kind === 'war') {
       const w = d.item, st = w.steps[S.step], sc = i => w.sides[i]?.color || warColor(w);
-      (st.fronts || []).forEach(f => front(f));
-      if (S.step > 0) (w.steps[S.step - 1].moves || []).forEach(m => move(m.path, sc(m.side), null, false, 0, true));
-      w.steps.slice(0, S.step).forEach(s => (s.events || []).forEach(b => mark(b, b.winner != null ? sc(b.winner) : 'var(--ink-soft)', true, b.kind)));
-      (st.moves || []).forEach((m, i) => move(m.path, sc(m.side), m.label, animate, i, false, m.commander));
-      (st.events || []).forEach(b => mark(b, b.winner != null ? sc(b.winner) : 'var(--ink-soft)', false, b.kind));
+      if (S.step > 0) (w.steps[S.step - 1].moves || []).forEach(m => move(m, w, false, 0, true, true));
+      w.steps.slice(0, S.step).forEach(s => (s.events || []).forEach(b => mark(b, b.winner != null ? sc(b.winner) : 'var(--ink-soft)', true)));
+      (st.moves || []).forEach((m, i) => move(m, w, animate, i, false, true));
+      (st.events || []).forEach(b => mark(b, b.winner != null ? sc(b.winner) : 'var(--ink-soft)', false));
     }
     if (d && d.kind === 'religion') {
       const r = d.item, st = r.steps[S.step];
-      (st.moves || []).forEach((m, i) => move(m.path, r.color, m.label, animate, i));
+      (st.moves || []).forEach((m, i) => plainMove(m.path, r.color, m.label, animate, i));
       r.steps.slice(0, S.step).forEach(s => (s.sites || []).forEach(x => mark(x, r.color, true, 'site')));
       (st.sites || []).forEach(x => mark(x, r.color, false, 'site'));
     }
     scaleOverlay();
   }
-  function front(f) {
-    const xy = f.path.map(p => proj(p));
-    ovG.append('path').attr('class', 'front-halo').attr('d', line(xy, f.path));
-    ovG.append('path').attr('class', 'front').attr('d', line(xy, f.path));
-    if (f.label) {
-      const m = xy[0];
-      ovG.append('text').attr('class', 'front-lbl').attr('data-x', m[0]).attr('data-y', m[1]).text(f.label);
-    }
+  function warBadge(it) {
+    const t = it.w.theater?.[0]; if (!t) return;
+    const [x, y] = proj([t.lon, t.lat]);
+    const g = ovG.append('g').attr('class', 'wb').attr('data-x', x).attr('data-y', y)
+      .on('click', e => { e.stopPropagation(); enterWar(it.w, it.si); })
+      .on('mousemove', e => showTip(e, it.w.name, it.st.title + ' · ' + it.st.label + ' · click to follow the war')).on('mouseleave', hideTip);
+    g.append('use').attr('href', '#ic-swords').attr('x', -10).attr('y', -10).attr('width', 20).attr('height', 20);
+    g.append('text').attr('x', 13).attr('y', 5).attr('font-size', 14).attr('stroke-width', 3).text(it.w.name);
   }
-  function move(pts, color, label, animate, i, ghost, commander) {
+  // an army's route, with its general riding at the head of the arrow
+  const helmFor = (w, sea) => sea ? '#ic-anchor' : w.start < 500 ? '#ic-helm_a' : w.start < 1500 ? '#ic-helm_m' : w.start < 1870 ? '#ic-helm_e' : '#ic-helm_w';
+  function move(m, w, animate, i, ghost, detail) {
+    const color = w.sides[m.side]?.color || warColor(w), pts = m.path;
+    if (!pts || pts.length < 2) return;
     const xy = pts.map(p => proj(p));
     const p = ovG.append('path').attr('class', 'move' + (ghost ? ' ghost' : '')).attr('d', line(xy, pts)).attr('stroke', color)
-      .attr('marker-end', `url(#${marker(color)})`);
+      .attr('marker-end', `url(#${marker(color)})`).attr('data-w', detail ? 3.4 : 2.4);
+    if (ghost) return;
+    const node = p.node(), L = node.getTotalLength(), lead = .9;
+    // only a general worth knowing rides at the head of the arrow (content/people/commanders.py); a fleet without one
+    // still shows its anchor, and any other army is just its arrow
+    const o = m.commander && cmdr[m.commander], who = o ? m.commander : null;
+    if (!o && !m.sea) { if (animate && !reduce()) p.attr('stroke-dasharray', L + ' ' + L).attr('stroke-dashoffset', L).transition().delay(i * 250).duration(1500).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0).on('end', function () { d3.select(this).attr('stroke-dasharray', null); }); moveLabel(m, who, xy, color, detail); return; }
+    const g = ovG.append('g').attr('class', 'gen')
+      .on('click', e => { e.stopPropagation(); const per = o && personOfCommander(m.commander); if (per) selectPerson(per); else if (!S.detail) enterWar(w, stepIndexAt(w, S.year)); })
+      .on('mousemove', e => showTip(e, who || m.label || 'Fleet', (who && m.label && m.label !== who ? m.label + ' · ' : '') + (w.sides[m.side]?.name || ''))).on('mouseleave', hideTip);
+    g.append('circle').attr('class', 'ring').attr('r', 12.5).style('fill', color);
+    g.append('use').attr('class', 'helm').attr('href', helmFor(w, m.sea)).attr('x', -9).attr('y', -9).attr('width', 18).attr('height', 18).style('color', color);
+    g.append('image').attr('x', -12).attr('y', -12).attr('width', 24).attr('height', 24).attr('clip-path', 'url(#clip12)').attr('preserveAspectRatio', 'xMidYMin slice');
+    g.append('path').attr('class', 'pole').attr('d', 'M9 -6 V-25');
+    g.append('path').attr('class', 'flag').attr('d', 'M9 -25 L22 -21 L9 -17 Z').style('fill', color);
+    g.datum({ m, w });
+    setGeneral(g);
+    const at = f => { const q = node.getPointAtLength(L * f); g.attr('data-x', q.x).attr('data-y', q.y); };
+    at(animate && !reduce() ? 0 : lead);
+    if (animate && !reduce()) {
+      p.attr('stroke-dasharray', L + ' ' + L).attr('stroke-dashoffset', L)
+        .transition().delay(i * 250).duration(1500).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0)
+        .on('end', function () { d3.select(this).attr('stroke-dasharray', null); });
+      g.transition().delay(i * 250).duration(1500).ease(d3.easeCubicOut).tween('lead', () => f => { at(f * lead); posGen(g); });
+    }
+    moveLabel(m, who, xy, color, detail);
+  }
+  function moveLabel(m, who, xy, color, detail) {
+    if (!(detail || S.k >= 2.2)) return;
+    const lbl = m.label && m.label !== m.commander ? m.label : null;
+    if (!who && !lbl) return;
+    const t = ovG.append('text').attr('class', 'move-lbl').attr('data-x', xy[0][0]).attr('data-y', xy[0][1]).attr('fill', color);
+    if (who) t.append('tspan').attr('class', 'cmd').text(who);
+    if (lbl) t.append('tspan').text((who ? ', ' : '') + lbl);
+  }
+  function personOfCommander(c) {
+    const o = c && cmdr[c];
+    return o && o.person ? personById[o.person] : null;
+  }
+  function setGeneral(g) {
+    const { m } = g.datum(), o = m.commander && cmdr[m.commander], src = imgOf(o);
+    g.select('image').attr('href', src || null).style('display', src ? null : 'none');
+    g.select('.helm').style('display', src ? 'none' : null);
+    if (!src && o) needPortrait(o);
+  }
+  const refreshGenerals = () => ovG.selectAll('g.gen').each(function () { setGeneral(d3.select(this)); });
+  function posGen(g) {
+    const k = S.k, s = S.detail ? 1 : .82;
+    g.attr('transform', `translate(${g.attr('data-x')},${g.attr('data-y')}) scale(${s / k})`);
+  }
+  function plainMove(pts, color, label, animate, i) {
+    const xy = pts.map(p => proj(p));
+    const p = ovG.append('path').attr('class', 'move').attr('d', line(xy, pts)).attr('stroke', color)
+      .attr('marker-end', `url(#${marker(color)})`).attr('data-w', 3.2);
     if (animate && !reduce()) {
       const L = p.node().getTotalLength();
       p.attr('stroke-dasharray', L + ' ' + L).attr('stroke-dashoffset', L)
         .transition().delay(i * 250).duration(1300).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0)
         .on('end', function () { d3.select(this).attr('stroke-dasharray', null); });
     }
-    if (label || commander) {
-      // label the army where it sets out, so the end of the arrow stays clear for the battle it heads to
-      const t = ovG.append('text').attr('class', 'move-lbl').attr('data-x', xy[0][0]).attr('data-y', xy[0][1]).attr('fill', color);
-      if (commander) t.append('tspan').attr('class', 'cmd').text(commander);
-      if (label && label !== commander) t.append('tspan').text((commander ? ', ' : '') + label);
-    }
+    if (label) ovG.append('text').attr('class', 'move-lbl').attr('data-x', xy[0][0]).attr('data-y', xy[0][1]).attr('fill', color).text(label);
   }
   function mark(b, color, past, kind) {
     const [x, y] = proj([b.lon, b.lat]);
     const g = ovG.append('g').attr('class', 'mark' + (past ? ' past' : '')).attr('data-x', x).attr('data-y', y)
-      .on('mousemove', e => showTip(e, b.name + (b.year != null ? ' (' + fmtYear(b.year) + ')' : ''))).on('mouseleave', hideTip);
-    const sym = { battle: d3.symbolCross, siege: d3.symbolSquare, treaty: d3.symbolDiamond, war: d3.symbolStar }[kind];
-    if (sym) g.append('path').attr('class', 'dot').attr('d', d3.symbol(sym, past ? 70 : 150)()).attr('transform', kind === 'battle' ? 'rotate(45)' : null).style('fill', color);
-    else g.append('circle').attr('class', 'dot').attr('r', past ? 4 : 6).style('fill', color);
-    if (!past) g.append('text').attr('x', 10).attr('y', 4).attr('font-size', 13).text(b.name);
+      .on('mousemove', e => showTip(e, b.name + (b.year != null ? ' (' + fmtYear(b.year) + ')' : ''), b.text)).on('mouseleave', hideTip);
+    if (kind === 'site') g.append('circle').attr('class', 'dot').attr('r', past ? 4 : 6).style('fill', color);
+    else {
+      const s = past ? 15 : 22;
+      g.append('circle').attr('r', s * .52).style('fill', color).style('opacity', .9).attr('stroke', 'var(--paper)').attr('stroke-width', 1.5);
+      g.append('use').attr('href', evIcon(b)).attr('x', -s * .4).attr('y', -s * .4).attr('width', s * .8).attr('height', s * .8);
+    }
+    if (!past) g.append('text').attr('x', 14).attr('y', 4).attr('font-size', 13).text(b.name);
   }
   function scaleOverlay() {
     const k = S.k;
-    ovG.selectAll('.move').attr('stroke-width', 3.2 / k);
-    ovG.selectAll('.front-halo').attr('stroke-width', 8 / k);
-    ovG.selectAll('.front').attr('stroke-width', 3.4 / k).attr('stroke-dasharray', `${9 / k} ${4 / k}`);
-    ovG.selectAll('.front-lbl').attr('font-size', 11 / k).attr('stroke-width', 3 / k)
-      .attr('x', function () { return +this.dataset.x + 8 / k; }).attr('y', function () { return +this.dataset.y + 14 / k; });
+    ovG.selectAll('.move').attr('stroke-width', function () { return (+this.dataset.w || 3.2) / k; });
     ovG.selectAll('.move-lbl').attr('font-size', 12 / k).attr('stroke-width', 3 / k)
       .attr('x', function () { return +this.dataset.x + 6 / k; }).attr('y', function () { return +this.dataset.y - 6 / k; });
-    ovG.selectAll('.mark').attr('transform', function () { return `translate(${this.dataset.x},${this.dataset.y}) scale(${1 / k})`; });
-    ovG.selectAll('.tlabel').attr('font-size', 15 / k).attr('stroke-width', 3 / k);
+    ovG.selectAll('.mark, .wb').attr('transform', function () { return `translate(${this.dataset.x},${this.dataset.y}) scale(${1 / k})`; });
+    ovG.selectAll('g.gen').each(function () { posGen(d3.select(this)); });
+    wmG.selectAll('g.bm').attr('transform', function () { return `translate(${this.dataset.x},${this.dataset.y}) scale(${1 / k})`; });
+    scaleWarLines();
   }
 
-  // ---------- detail views ----------
-  function enterWar(w) {
-    S.detail = { kind: 'war', item: w, back: S.idx }; S.step = 0; S.selected = null;
-    showStep(0);
+  // ---------- war and faith stories ----------
+  function enterWar(w, n = 0) {
+    stopPlay();
+    S.detail = { kind: 'war', item: w, back: S.year }; S.step = n; S.selected = null; S.person = null;
+    if (S.mode !== 'wars') setMode('wars', true);
+    showStep(n); openPanel();
   }
   function enterReligion(r) {
-    S.detail = { kind: 'religion', item: r, back: S.idx }; S.step = 0; S.selected = null;
-    showStep(0);
+    stopPlay();
+    S.detail = { kind: 'religion', item: r, back: S.year }; S.step = 0; S.selected = null; S.person = null;
+    showStep(0); openPanel();
   }
   function stepBounds(st, pad) {
     const pts = [...(st.events || []), ...(st.sites || [])].map(b => [b.lon, b.lat])
@@ -689,23 +1258,65 @@ details[open] summary { margin-bottom: 6px; }
   }
   async function showStep(n) {
     const it = S.detail.item; S.step = n;
-    const b = stepBounds(it.steps[n], S.detail.kind === 'war' ? 5 : 10);
+    const st = it.steps[n];
+    const b = stepBounds(st, S.detail.kind === 'war' ? 5 : 10);
     if (b) zoomToBounds(b, 10);
-    renderTimeline(); renderPanel();
-    await showBorders(fileForYear(it.steps[n].year));
-    if (S.detail && S.detail.item === it && S.step === n) drawOverlay(true);
+    S.year = st.year; S.yf = st.year + .5;
+    renderWhen(); renderTimeline(); renderPanel();
+    drawLabels(); drawPeople();
+    const file = fileForYear(st.year);
+    if (file !== S.file) await showBorders(file);
+    if (S.detail && S.detail.item === it && S.step === n) { computeLabels(); styleMap(); drawLabels(); drawWarLayer(); drawOverlay(true); }
   }
-  function exitDetail() { const back = S.detail.back; S.detail = null; setPeriod(back); }
+  function exitDetail() { const back = S.detail.back; S.detail = null; computeLabels(); setYear(back, { force: true }); drawOverlay(false); }
 
-  // ---------- period ----------
-  async function setPeriod(i) {
+  // ---------- the year ----------
+  let yearRaf = 0, panelTimer = 0, lastRender = 0;
+  function setYear(y, o = {}) {
+    if (S.detail && !o.force) return;
+    const yf = o.yf != null ? o.yf : y + .5;
+    const changed = y !== S.year;
+    S.year = y; S.yf = yf; S.pos = o.pos != null ? o.pos : posOfYear(y);
+    const i = periodOf(y), periodChanged = i !== S.idx;
     S.idx = i;
-    renderTimeline(); renderPanel(); drawOverlay(false);
-    await showBorders(snaps[i].file);
-    if (S.idx !== i || S.detail) return;
-    if (S.selected && !S.features.some(f => f.properties.name === S.selected && (!simple() || f.major))) { S.selected = null; renderPanel(); }
-    styleMap();
-    if (S.mode === 'religions') renderPanel();  // its faith list depends on the states just loaded
+    if (!o.fromSlider) slider.value = S.pos;
+    renderWhen();
+    if (periodChanged || o.force) { markEra(); renderPanelSoon(); }
+    const file = fileForYear(y);
+    if (file !== S.file) showBorders(file);
+    if (changed || o.force) { scheduleYear(); if (!S.detail) renderPanelSoon(); }
+    else if (S.mode !== 'wars') drawPeopleSoon();
+    saveHash();
+  }
+  // year-bound layers are redrawn at most ~12 times a second while playing or scrubbing
+  function scheduleYear() {
+    if (yearRaf) return;
+    const wait = Math.max(0, 80 - (performance.now() - lastRender));
+    yearRaf = setTimeout(() => requestAnimationFrame(() => {
+      yearRaf = 0; lastRender = performance.now();
+      if (S.detail) return;
+      styleMap(); drawLabels(); drawWarLayer(); drawOverlay(true); drawPeople();
+    }), wait);
+  }
+  let peopleRaf = 0;
+  function drawPeopleSoon() { if (!peopleRaf) peopleRaf = requestAnimationFrame(() => { peopleRaf = 0; drawPeople(); }); }
+  let lastPanel = 0;
+  function renderPanelSoon() {
+    if (panelTimer) return;
+    const wait = Math.max(S.playing ? 0 : 120, (S.playing ? 1000 : 150) - (performance.now() - lastPanel));
+    panelTimer = setTimeout(renderPanel, wait);
+  }
+  function renderWhen() {
+    const d = S.detail, y = S.year;
+    const big = y < 0 ? `${(y < -3000 ? 'c. ' : '') + (-y)}<small>BC</small>` : `${y}<small>AD</small>`;
+    $('yNum').innerHTML = big;
+    $('yAge').textContent = eraName(y);
+    $('ySub').textContent = d ? d.item.name : snaps[S.idx].label + ' · ' + snaps[S.idx].century;
+  }
+  let hashTimer = 0;
+  function saveHash() {
+    clearTimeout(hashTimer);
+    hashTimer = setTimeout(() => { try { history.replaceState(null, '', '#year=' + S.year); } catch (e) {} }, 400);
   }
 
   // ---------- panel ----------
@@ -724,23 +1335,40 @@ details[open] summary { margin-bottom: 6px; }
     if (open) return `<div class="sec"><h3>${esc(r)}${held}</h3>${body}</div>`;
     return `<details><summary>${esc(r)} ${held}</summary><div class="sec">${body}</div></details>`;
   }
-  const credit = '<p class="credit">Events come from your World History timeline; synopses, wars and religions were written for this map. Borders are approximate, from <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> (A. Ourednik, GPL-3.0), using the closest available year.</p>';
-  const warCard = w => `<button type="button" class="card" data-war="${w.id}"><i class="swatch" style="background:${warColor(w)}"></i><span><b>${esc(w.name)}</b><span class="s">${fmtYear(w.start)} to ${fmtYear(w.end)}</span></span></button>`;
+  const credit = '<p class="credit">Events come from your World History timeline; synopses, wars, religions and people were written for this map. Portraits load from Wikipedia. Borders are approximate, from <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> (A. Ourednik, GPL-3.0), using the closest earlier year.</p>';
+  const warCard = w => `<button type="button" class="card" data-war="${w.id}"><i class="swatch" style="background:${warColor(w)}"></i><span><b>${esc(w.name)}</b><span class="s">${fmtSpan(w.start, w.end)}</span></span></button>`;
   const storyCard = (st, sub) => `<button type="button" class="card" data-story="${st.id}"><i class="swatch" style="background:${st.color}"></i><span><b>${esc(st.name)}</b><span class="s">${esc(sub)}</span></span></button>`;
+  const personBtn = (p, sub) => `<button type="button" data-person="${p.id}">${faceHtml(p, p.name)}<span><b>${esc(p.name)}</b><span class="s">${esc(sub)}</span></span></button>`;
+  const ico = id => `<svg viewBox="-12 -12 24 24" aria-hidden="true"><use href="#ic-${id}" x="-12" y="-12" width="24" height="24"/></svg>`;
+  // who was making history this year: rulers of the biggest states first, then people on the move
+  function peopleBlock(limit) {
+    const y = S.year, act = [];
+    for (const p of people) { const s = stintAt(p, y, S.yf); if (s) act.push({ p, s }); }
+    if (!act.length) return '';
+    act.sort((a, b) => (a.p.rank || 3) - (b.p.rank || 3) || a.p.name.localeCompare(b.p.name));
+    const shown = act.slice(0, limit);
+    return `<div class="sec"><h3>People in ${esc(fmtYear(y))}</h3><div class="people">${shown.map(({ p, s }) => personBtn(p, s.label || p.role)).join('')}</div>${act.length > limit ? `<p class="hint" style="margin-top:6px">and ${act.length - limit} more; zoom in to see them on the map.</p>` : ''}</div>`;
+  }
 
+  let panelKey = '';
   function renderPanel() {
+    clearTimeout(panelTimer); panelTimer = 0; lastPanel = performance.now();
     const s = snaps[S.idx], d = S.detail, era = eraOf(S.idx);
     let head = '', html = '';
     if (d && d.kind === 'war') {
       const w = d.item, st = w.steps[S.step];
       const sideName = i => w.sides[i] ? esc(w.sides[i].name) : '';
-      head = `<p class="kicker">${esc(w.name)} · ${fmtYear(w.start)} to ${fmtYear(w.end)}</p><p class="period">${esc(st.title)}</p><div class="meta">${esc(st.label)} · ${w.kind === 'conflict' ? 'chapter' : 'step'} ${S.step + 1} of ${w.steps.length}</div>`;
+      head = `<p class="kicker">${esc(w.name)} · ${fmtSpan(w.start, w.end)}</p><p class="period">${esc(st.title)}</p><div class="meta">${esc(st.label)} · ${w.kind === 'conflict' ? 'chapter' : 'step'} ${S.step + 1} of ${w.steps.length}</div>`;
       html += `<div class="sides">${w.sides.map(x => `<div class="sd"><i class="swatch" style="background:${x.color}"></i><b>${esc(x.name)}</b>${x.leaders?.length ? `<span class="ld">${x.leaders.map(esc).join(', ')}</span>` : ''}</div>`).join('')}</div>`;
       html += `<p class="syn">${esc(st.text)}</p>`;
-      if (st.moves?.length) html += '<div class="sec"><h3>On the move</h3><div class="list">' + st.moves.map(m =>
-        `<div class="mv"><i class="swatch" style="background:${w.sides[m.side]?.color || 'var(--line)'}"></i><span><b>${esc(m.commander || m.label)}</b>${m.label && m.commander && m.label !== m.commander ? ', ' + esc(m.label) : ''}</span></div>`).join('') + '</div></div>';
+      if (st.moves?.length) html += '<div class="sec"><h3>On the move</h3><div class="list">' + st.moves.map(m => {
+        // a general worth knowing gets a face and a name; any other army is listed by what it was
+        const o = m.commander && cmdr[m.commander], c = w.sides[m.side]?.color || 'var(--line)';
+        const name = o ? m.commander : (m.label || m.commander), sub = o && m.label && m.label !== m.commander ? ', ' + esc(m.label) : '';
+        return `<div class="mv">${o ? faceHtml(o, m.commander).replace('class="face"', `class="face" style="background:${c}"`) : `<span class="face plain" style="background:${c}">${ico(m.sea ? 'anchor' : 'arrow')}</span>`}<span><b>${esc(name)}</b>${sub}${m.sea ? ' <span class="ev-k">by sea</span>' : ''}</span></div>`;
+      }).join('') + '</div></div>';
       if (st.events?.length) html += '<div class="sec"><h3>Key moments</h3><div class="list">' + st.events.map(b =>
-        `<div class="battle" style="border-color:${w.sides[b.winner]?.color || 'var(--line)'}"><span class="ev-k">${esc(b.kind)}</span> <b>${esc(b.name)}</b> <span class="win">${fmtYear(b.year)}${b.winner != null && w.sides[b.winner] ? ' · ' + sideName(b.winner) + (b.kind === 'battle' || b.kind === 'siege' ? ' victory' : '') : ''}</span><div>${esc(b.text)}</div></div>`).join('') + '</div></div>';
+        `<div class="battle" style="border-color:${w.sides[b.winner]?.color || 'var(--line)'}"><span class="ev-k">${esc(b.sea ? 'sea ' + b.kind : b.kind)}</span> <b>${esc(b.name)}</b> <span class="win">${fmtYear(b.year)}${b.winner != null && w.sides[b.winner] ? ' · ' + sideName(b.winner) + (b.kind === 'battle' || b.kind === 'siege' ? ' victory' : '') : ''}</span><div>${esc(b.text)}</div></div>`).join('') + '</div></div>';
       html += `<details${S.step === 0 ? ' open' : ''}><summary>About this ${w.kind === 'conflict' ? 'conflict' : 'war'}</summary><p class="syn" style="font-size:15px">${esc(w.summary)}</p></details>`;
     } else if (d && d.kind === 'religion') {
       const r = d.item, st = r.steps[S.step];
@@ -749,87 +1377,116 @@ details[open] summary { margin-bottom: 6px; }
       if (st.sites?.length) html += '<div class="sec"><h3>Key places</h3><ul>' + st.sites.map(x => `<li><b>${esc(x.name)}</b>: ${esc(x.text)}</li>`).join('') + '</ul></div>';
       if (st.regions?.length) html += `<div class="sec"><h3>Established in</h3><p class="hint">${st.regions.map(esc).join(', ')}</p></div>`;
       html += `<details${S.step === 0 ? ' open' : ''}><summary>About ${esc(r.name)}</summary><p class="syn" style="font-size:15px">${esc(r.summary)}</p></details>`;
+    } else if (S.person && personById[S.person]) {
+      const p = personById[S.person], now = stintAt(p, S.year, S.yf);
+      head = `<p class="kicker">${esc(p.role)}</p><p class="period">${esc(p.name)}</p><div class="meta">${lifeText(p) ? esc(lifeText(p)) + ' · ' : ''}in ${esc(fmtYear(S.year))}</div>`;
+      html += `<div class="ruler big"><div class="ph">${imgOf(p) ? `<img src="${esc(imgOf(p))}" alt="">` : esc(initials(p.name))}</div><div><p class="syn" style="font-size:15px">${esc(p.why)}</p></div></div>`;
+      if (now) html += `<div class="sec"><h3>In ${esc(fmtYear(S.year))}</h3><p class="syn" style="font-size:15px"><b>${esc(now.label || p.role)}</b> <span class="win">${fmtSpan(now.from, now.to)}</span></p></div>`;
+      else html += `<p class="hint">Not on the map in ${esc(fmtYear(S.year))}. Pick a moment below to see where they were.</p>`;
+      html += `<div class="sec"><h3>Life on the map</h3><ul class="hist">${p.stints.map((st, i) => [st, i]).sort((a, b) => a[0].from - b[0].from || b[0].to - a[0].to).map(([st, i]) => `<li><button type="button" data-stint="${i}" class="${st === now ? 'now' : ''}"><i class="swatch" style="background:${tagColor(p)}"></i><span><b>${esc(st.label || p.role)}</b> <span class="when">${fmtSpan(st.from, st.to)}</span></span><span class="note">${st.rule ? 'Leads ' + esc(st.rule[0]) : st.path.length > 1 ? 'On the move' : 'Based here'}</span></button></li>`).join('')}</ul></div>`;
+      if (p.wiki) html += `<p class="hint"><a href="https://en.wikipedia.org/wiki/${encodeURIComponent(p.wiki.replace(/ /g, '_'))}" target="_blank" rel="noopener">Read more on Wikipedia</a></p>`;
     } else {
-      head = `<p class="kicker">${esc(era[0])}</p><p class="period">${esc(s.label)}</p><div class="meta">${esc(s.century)} · borders ${esc(s.borders)}</div>`;
+      head = `<p class="kicker">${esc(era[0])}</p><p class="period">${esc(s.label)}</p><div class="meta">${esc(s.century)} · borders ${esc(S.file ? 'c. ' + fmtYear(fileYear(S.file)) : s.borders)}</div>`;
       const f = S.features.find(x => x.properties.name === S.selected);
       if (f) {
-        const p = f.properties, fa = faithAt(f, S.idx);
+        const p = f.properties, fa = faithAt(f, S.year);
         const sw = S.mode === 'religions' && fa ? fa.color : polFill(p.name);
-        const ld = leaderOf(f); if (ld) fetchPortraits([ld]);
-        if (ld) html += `<div class="ruler"><div class="ph">${portraits[ld.r.wiki] ? `<img src="${esc(portraits[ld.r.wiki])}" alt="">` : esc(ld.r.name[0])}</div><div><b>${esc(ld.r.name)}</b><span class="s">${esc(ld.r.role)}, ${fmtYear(ld.r.from)} to ${fmtYear(ld.r.to)}</span><p class="syn" style="font-size:14.5px;margin-top:4px">${esc(ld.r.why)}</p></div></div>`;
+        for (const ld of rulersOf(f)) html += `<button type="button" class="card" data-person="${ld.p.id}" style="padding:6px 8px"><span class="ruler"><span class="ph">${imgOf(ld.p) ? `<img src="${esc(imgOf(ld.p))}" alt="">` : esc(initials(ld.p.name))}</span><span><b>${esc(ld.p.name)}</b><span class="s">${esc(ld.s.label || ld.p.role)}, ${fmtSpan(ld.s.from, ld.s.to)}</span><span class="syn" style="display:block;font-size:14.5px;margin-top:4px">${esc(ld.p.why)}</span></span></span></button>`;
         html += `<div class="focus"><h2><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</h2>` +
           (p.sub ? `<div class="sub">Part of ${esc(p.sub)}</div>` : '') + (fa ? `<div class="sub">Main faith: ${esc(fa.name)}</div>` : '') + '</div>';
+        const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
+        if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
         html += regionBlock(p.regions[0], true);
         p.regions.slice(1).forEach(r => html += regionBlock(r, false));
         if (storyOf(fa)) html += storyCard(storyOf(fa), 'Follow how this faith spread');
       } else if (S.mode === 'wars') {
-        const act = activeWars();
-        html += `<div class="sec"><h3>Wars in this period</h3>${act.length ? '<div class="list">' + act.map(warCard).join('') + '</div>' : '<p class="hint">None of the major wars on this map falls in this period. Pick one below or from the coloured bars on the timeline.</p>'}</div>`;
+        const act = activeWarsAt(S.year), inPeriod = wars.filter(w => w.start <= s.span[1] && w.end >= s.span[0]);
+        html += `<p class="hint">Each war being fought in ${esc(fmtYear(S.year))} colours its sides. Arrows are the armies on the move, led by their generals; crossed swords mark the front and the battles. Click any of them to follow the war.</p>`;
+        html += `<div class="sec"><h3>Wars in ${esc(fmtYear(S.year))}</h3>${act.length ? '<div class="list">' + act.map(warCard).join('') + '</div>' : '<p class="hint">None of the major wars on this map is being fought this year.</p>'}</div>`;
+        const more = inPeriod.filter(w => !act.includes(w));
+        if (more.length) html += `<div class="sec"><h3>Also in ${esc(s.label)}</h3><div class="list">${more.map(warCard).join('')}</div></div>`;
         const byEra = ERAS.map(e => [e[0], wars.filter(w => eraOf(periodOf(w.start)) === e)]).filter(x => x[1].length);
-        html += `<details${act.length ? '' : ' open'}><summary>All ${wars.length} wars</summary><div class="list">${byEra.map(([n, ws]) => `<h4>${esc(n)}</h4>` + ws.map(warCard).join('')).join('')}</div></details>`;
+        html += `<details><summary>All ${wars.length} wars</summary><div class="list">${byEra.map(([n, ws]) => `<h4>${esc(n)}</h4>` + ws.map(warCard).join('')).join('')}</div></details>`;
       } else if (S.mode === 'religions') {
         const fa = S.faithSel && faithById[S.faithSel];
         if (fa) {
-          head = `<p class="kicker">${esc(fa.family)} · ${esc(s.label)}</p><p class="period">${esc(fa.name)}</p><div class="meta">${fa.start != null ? 'since c. ' + fmtYear(fa.start) : 'since prehistory'}</div>`;
+          head = `<p class="kicker">${esc(fa.family)} · ${esc(fmtYear(S.year))}</p><p class="period">${esc(fa.name)}</p><div class="meta">${fa.start != null ? 'since c. ' + fmtYear(fa.start) : 'since prehistory'}</div>`;
           html += `<p class="syn">${esc(fa.text)}</p>`;
           // the biggest states shown on the map that follow it now
-          const where = [...new Set(S.features.filter(x => (!simple() || x.major) && faithAt(x, S.idx) === fa)
+          const where = [...new Set(S.features.filter(x => (!simple() || x.major) && faithAt(x, S.year) === fa)
             .sort((x, y) => y.area - x.area).map(x => simple() ? x.group : x.properties.name))];
-          html += `<div class="sec"><h3>Main faith in ${esc(s.label)}</h3><p class="hint">${where.length ? esc(where.slice(0, 12).join(', ')) + (where.length > 12 ? `, and ${where.length - 12} more` : '') : 'Not the main faith of any state shown in this period.'}</p></div>`;
+          html += `<div class="sec"><h3>Main faith in ${esc(fmtYear(S.year))}</h3><p class="hint">${where.length ? esc(where.slice(0, 12).join(', ')) + (where.length > 12 ? `, and ${where.length - 12} more` : '') : 'Not the main faith of any state shown this year.'}</p></div>`;
           html += histBlock(fa);
           if (storyOf(fa)) html += storyCard(storyOf(fa), 'Follow how this faith spread');
           html += '<p class="hint">Click the sea to see all faiths again.</p>';
         } else {
-          html += '<p class="hint">Each state is shaded by its main religion. Click one to select that faith, see everywhere it was the main faith, and read its history.</p>';
+          html += '<p class="hint">Each state is shaded by its main religion. Click one to select that faith, see everywhere it was the main faith, and read its history. Religious figures appear where they lived and travelled once you zoom in.</p>';
           const counts = {};
-          S.features.forEach(x => { if (!simple() || x.major) { const f2 = faithAt(x, S.idx); if (f2) counts[f2.id] = (counts[f2.id] || 0) + 1; } });
+          S.features.forEach(x => { if (!simple() || x.major) { const f2 = faithAt(x, S.year); if (f2) counts[f2.id] = (counts[f2.id] || 0) + 1; } });
           const fams = d3.groups(Object.keys(counts).sort((a, b) => counts[b] - counts[a]).map(id => faithById[id]), x => x.family);
           html += '<div class="list fam">' + fams.map(([fam, list]) => `<h4>${esc(fam)}</h4>` + list.map(x =>
-            `<button type="button" class="card" data-faith="${x.id}"><i class="swatch" style="background:${x.color}"></i><span><b>${esc(x.name)}</b></span></button>`).join('')).join('') + '</div>';
+            `<button type="button" class="card" data-faith="${x.id}"><svg width="18" height="18" viewBox="-10 -10 20 20" aria-hidden="true" style="flex:none;color:${x.color}"><circle r="10" fill="${x.color}"/><use href="${faithIcon(x)}" x="-7.6" y="-7.6" width="15.2" height="15.2"/></svg><span><b>${esc(x.name)}</b></span></button>`).join('')).join('') + '</div>';
           html += `<details><summary>Follow a faith's spread</summary><div class="list">${rel.stories.map(st => storyCard(st, 'Founded ' + st.founded)).join('')}</div></details>`;
         }
       } else {
-        html += `<p class="hint">Click any state to zoom in and read what was going on there. ${detailed ? 'Showing every state and people.' : 'Showing the main civilizations; turn on Detailed borders to see every state.'}</p>`;
-        if (s.world['Key Events']) html += `<div class="sec"><h3>World</h3>${events(s.world['Key Events'])}</div>`;
+        html += `<p class="hint">Press play or drag the timeline to move through the years. Click any state to read what was going on there, and zoom in to meet the people of the time. ${detailed ? 'Showing every state and people.' : 'Showing the main civilizations; turn on Detailed borders to see every state.'}</p>`;
+        html += `<div class="legend"><span>${ico('swords')} war front or battle</span><span>${ico('ship')} war at sea</span><span>${ico('tower')} siege</span><span><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10" fill="#3a63c8"/><use href="#fs-cross" x="-7.6" y="-7.6" width="15.2" height="15.2"/></svg> main faith</span></div>`;
+        const act = activeWarsAt(S.year);
+        if (act.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${act.map(warCard).join('')}</div></div>`;
+        html += peopleBlock(8);
+        if (s.world['Key Events']) html += `<div class="sec"><h3>World in ${esc(s.label)}</h3>${events(s.world['Key Events'])}</div>`;
         if (s.world['Global Events']) html += `<div class="sec"><h3>Around the globe</h3>${events(s.world['Global Events'])}</div>`;
         if (s.world['European Events']) html += `<div class="sec"><h3>Europe</h3>${events(s.world['European Events'])}</div>`;
       }
     }
+    // the same view a moment later (the year moved on) keeps its scroll position
+    const key = d ? d.kind + d.item.id + ':' + S.step : S.person ? 'p' + S.person : S.selected ? 's' + S.selected : S.faithSel ? 'f' + S.faithSel : S.mode;
+    const body = $('panelBody'), top = key === panelKey ? body.scrollTop : 0;
+    panelKey = key;
     $('panelHead').innerHTML = head;
-    $('panelBody').innerHTML = html + credit;
+    body.innerHTML = html + credit;
+    body.scrollTop = top;
   }
-  // the denomination's own history; the row for the shown period is highlighted and each row moves the map to its year
+  // the denomination's own history; the row for the shown year is highlighted and each row moves the map to its year
   function histBlock(fa) {
-    const y = yearOf(S.idx), h = fa.history || [];
+    const y = S.year, h = fa.history || [];
     let now = -1; h.forEach((e, i) => { if (e.year <= y) now = i; });
     return `<div class="sec"><h3>History of ${esc(fa.name)}</h3><ul class="hist">` + h.map((e, i) =>
       `<li><button type="button" class="${i === now ? 'now' : ''}" data-hist="${i}"><i class="swatch" style="background:${fa.color}"></i><span><b>${esc(e.title)}</b> <span class="when">${fmtYear(e.year)}</span></span><span class="note">${esc(e.text)}</span></button></li>`).join('') + '</ul></div>';
-  }
-  function jumpToEntry(i) {
-    const fa = faithById[S.faithSel], e = fa && fa.history[i];
-    if (e) setPeriod(periodOf(e.year));
   }
   function onPick(e) {
     const f = e.target.closest('[data-faith]');
     if (f) { S.faithSel = f.dataset.faith; styleMap(); renderPanel(); return; }
     const h = e.target.closest('[data-hist]');
-    if (h) { jumpToEntry(+h.dataset.hist); return; }
+    if (h) { const fa = faithById[S.faithSel], en = fa && fa.history[+h.dataset.hist]; if (en) setYear(en.year); return; }
+    const pb = e.target.closest('[data-person]');
+    if (pb) { const p = personById[pb.dataset.person]; if (p) { selectPerson(p); focusPerson(p); } return; }
+    const sb = e.target.closest('[data-stint]');
+    if (sb) { const p = personById[S.person], st = p && p.stints[+sb.dataset.stint]; if (st) { if (S.detail) S.detail = null; const a = st.path && st.path[0].length > 2 ? st.path[0][2] : st.from; setYear(st.from, { yf: Math.max(st.from, a) + .01 }); focusPerson(p, st); } return; }
     const b = e.target.closest('[data-war],[data-story]'); if (!b) return;
-    if (b.dataset.war) enterWar(wars.find(w => w.id === b.dataset.war)); else enterReligion(storyById[b.dataset.story]);
-    $('panel').classList.remove('collapsed');
+    if (b.dataset.war) { const w = warById[b.dataset.war]; enterWar(w, w.start <= S.year && S.year <= w.end && b.closest('#panelBody') ? stepIndexAt(w, S.year) : 0); }
+    else enterReligion(storyById[b.dataset.story]);
+    openPanel();
+  }
+  // bring a person into view where they are (or their state, for a ruler)
+  function focusPerson(p, st) {
+    const s = st || stintAt(p, S.year, S.yf); if (!s) return;
+    if (s.path || (s.at && !leaderLabel(s))) { const xy = proj(whereAt(s, S.yf).pt); const k = Math.max(S.k, 4); zoomToBounds([[xy[0] - 160 / k, xy[1] - 120 / k], [xy[0] + 160 / k, xy[1] + 120 / k]], k); }
+    else if (S.fc) { for (const n of s.rule) { const f = S.fc.byName.get(n); if (f) { const b = path.bounds(f); zoomToBounds(b, 8); break; } } }
   }
   $('panelBody').addEventListener('click', onPick);
   $('lanes').addEventListener('click', onPick);
 
   // ---------- timeline ----------
   const slider = $('slider');
+  const TICKS = [[-10000, '10,000 BC'], [-1000, '1000 BC'], [1, 'AD 1'], [300, '300'], [800, '800'], [1300, '1300'], [1700, '1700'], [1850, '1850'], [1920, '1920'], [1970, '1970'], [2029, 'Now']];
   function renderTimeline() {
     const d = S.detail, bands = $('bands'), lanes = $('lanes'), ticks = $('ticks'), head = $('tlHead');
     if (d) {
       const it = d.item, n = it.steps.length;
-      slider.max = n - 1; slider.value = S.step;
+      slider.max = n - 1; slider.step = 1; slider.value = S.step;
       slider.setAttribute('aria-label', it.name + ' timeline');
-      head.innerHTML = `<button type="button" id="back">&#8249; Back to world timeline</button><span><b>${esc(it.name)}</b></span>`;
+      head.innerHTML = `<button type="button" id="back">&#8249; Back to ${esc(fmtYear(d.back))}</button><span><b>${esc(it.name)}</b> · press play to watch it unfold</span>`;
       $('back').onclick = exitDetail;
       bands.style.display = 'none'; lanes.innerHTML = ''; lanes.style.height = '0';
       // long step labels ("Dec 1941 to Jun 1942") collide, so show every k-th one that fits
@@ -837,48 +1494,101 @@ details[open] summary { margin-bottom: 6px; }
       const stride = Math.max(1, Math.ceil(n / Math.max(2, Math.floor(room / (longest * 6.6 + 14)))));
       const shown = d3.range(0, n, stride);
       if (shown.at(-1) !== n - 1) { if (n - 1 - shown.at(-1) < stride * .6 && shown.length > 1) shown.pop(); shown.push(n - 1); }
-      ticks.innerHTML = shown.map(i => `<span class="${i === 0 || i === n - 1 ? '' : 'minor'}" style="left:${xcss(i, n - 1)}">${esc(it.steps[i].label)}</span>`).join('');
+      ticks.innerHTML = shown.map(i => `<span class="${i === 0 || i === n - 1 ? '' : 'minor'}" style="left:${xcss(i, Math.max(1, n - 1))}">${esc(it.steps[i].label)}</span>`).join('');
       return;
     }
-    slider.max = N - 1; slider.value = S.idx; slider.setAttribute('aria-label', 'Time period');
-    const era = eraOf(S.idx);
-    head.innerHTML = S.mode === 'wars' ? '<span><b>Wars:</b> each coloured bar is a major war. Click one to explore it.</span>'
+    slider.max = N; slider.step = 'any'; slider.value = S.pos; slider.setAttribute('aria-label', 'Year');
+    slider.setAttribute('aria-valuetext', fmtYear(S.year));
+    head.innerHTML = (S.mode === 'wars' ? '<span><b>Wars:</b> each coloured bar is a major war. Click one to follow it.</span>'
       : S.mode === 'religions' ? '<span><b>Religions:</b> each dot marks when a faith began. Click one to follow its spread.</span>'
-      : `<span>Era: <b>${esc(era[0])}</b></span>`;
+      : `<span>Era: <b id="eraName"></b></span>`) + `<span class="grow"></span><button type="button" id="speed" title="Playback speed">Speed ${S.speed}×</button>`;
+    $('speed').onclick = () => { S.speed = S.speed >= 4 ? .5 : S.speed * 2; $('speed').textContent = 'Speed ' + S.speed + '×'; };
     bands.style.display = '';
     bands.className = 'bands' + (S.mode === 'map' ? '' : ' dim');
-    bands.innerHTML = ERAS.map(e => {
-      const l = Math.max(0, e[1] - .5), r = Math.min(N - 1, e[2] + .5);
-      return `<div class="band${e === era ? ' cur' : ''}${e[2] - e[1] < 2 ? ' short' : ''}" title="${esc(e[0])}" style="--h:${e[3]};left:${xcss(l, N - 1)};width:calc(${(r - l) / (N - 1)} * (100% - 16px) - 1px)">${esc(e[0])}</div>`;
-    }).join('');
+    bands.innerHTML = ERAS.map(e => `<div class="band${e[2] - e[1] < 1 ? ' short' : ''}" data-era="${e[1]}" title="${esc(e[0])}" style="--h:${e[3]};left:${xcss(e[1], N)};width:calc(${(e[2] + 1 - e[1]) / N} * (100% - 16px) - 1px)">${esc(e[0])}</div>`).join('');
     if (S.mode === 'wars') {
       const laneEnd = []; let html = '';
       wars.slice().sort((a, b) => a.start - b.start).forEach(w => {
-        const l = posOf(w.start), r = Math.max(posOf(w.end), l + .25);
+        const l = posOfYear(w.start), r = Math.max(posOfYear(w.end) + 1 / 40, l + .25);
         let lane = laneEnd.findIndex(x => x < l - .05); if (lane < 0) { lane = laneEnd.length; laneEnd.push(r); } else laneEnd[lane] = r;
-        html += `<button type="button" class="warbar" data-war="${w.id}" title="${esc(w.name)} (${fmtYear(w.start)} to ${fmtYear(w.end)})" aria-label="${esc(w.name)}" style="background:${warColor(w)};top:${2 + lane * 8}px;left:${xcss(l, N - 1)};width:calc(${(r - l) / (N - 1)} * (100% - 16px))"></button>`;
+        html += `<button type="button" class="warbar" data-war="${w.id}" title="${esc(w.name)} (${fmtSpan(w.start, w.end)})" aria-label="${esc(w.name)}" style="background:${warColor(w)};top:${2 + lane * 8}px;left:${xcss(l, N)};width:calc(${(r - l) / N} * (100% - 16px))"></button>`;
       });
       lanes.innerHTML = html; lanes.style.height = (laneEnd.length * 8 + 4) + 'px';
     } else if (S.mode === 'religions') {
-      lanes.innerHTML = rel.stories.map(st => `<button type="button" class="pin" data-story="${st.id}" title="${esc(st.name)}, founded ${esc(st.founded)}" aria-label="${esc(st.name)}" style="background:${st.color};left:${xcss(posOf(st.steps[0].year), N - 1)}"></button>`).join('');
+      lanes.innerHTML = rel.stories.map(st => `<button type="button" class="pin" data-story="${st.id}" title="${esc(st.name)}, founded ${esc(st.founded)}" aria-label="${esc(st.name)}" style="background:${st.color};left:${xcss(posOfYear(st.steps[0].year), N)}"></button>`).join('');
       lanes.style.height = '18px';
     } else { lanes.innerHTML = ''; lanes.style.height = '0'; }
-    const major = [0, 4, 10, 13, 18, 23, 27, 31, 35, 40, 45];
-    const tl = i => i === 10 ? 'AD 1' : snaps[i].label.replace(/^(\d+)–\d+/, '$1').replace('Before 3000 BC', '<3000 BC');
-    ticks.innerHTML = major.map(i => `<span class="${[0, 23, 45].includes(i) ? '' : 'minor'}" style="left:${xcss(i, N - 1)}">${esc(tl(i))}</span>`).join('');
+    ticks.innerHTML = TICKS.map(([y, t], i) => `<span class="${i === 0 || i === TICKS.length - 1 || y === 1300 ? '' : 'minor'}" style="left:${xcss(i === TICKS.length - 1 ? N : posOfYear(y), N)}">${esc(t)}</span>`).join('');
+    markEra();
   }
-  const go = v => S.detail ? showStep(v) : setPeriod(v);
-  slider.addEventListener('input', () => go(+slider.value));
-  $('prev').onclick = () => go(Math.max(0, +slider.value - 1));
-  $('next').onclick = () => go(Math.min(+slider.max, +slider.value + 1));
+  function markEra() {
+    const era = eraOf(S.idx);
+    document.querySelectorAll('#bands .band').forEach(b => b.classList.toggle('cur', +b.dataset.era === era[1]));
+    const en = $('eraName'); if (en) en.textContent = era[0];
+    slider.setAttribute('aria-valuetext', fmtYear(S.year));
+  }
+  const go = v => S.detail ? showStep(v) : setYear(v);
+  slider.addEventListener('input', () => {
+    if (S.detail) { showStep(Math.round(+slider.value)); return; }
+    stopPlay();
+    const p = +slider.value;
+    setYear(yearOfPos(p), { pos: p, yf: yearFloatOfPos(p), fromSlider: true });
+  });
+  slider.addEventListener('keydown', e => {
+    if (S.detail) return;
+    const k = e.key;
+    if (k === 'ArrowLeft' || k === 'ArrowDown' || k === 'ArrowRight' || k === 'ArrowUp' || k === 'PageUp' || k === 'PageDown' || k === 'Home' || k === 'End') {
+      e.preventDefault(); stopPlay();
+      if (k === 'Home') return setYear(snaps[0].span[0]);
+      if (k === 'End') return setYear(snaps[N - 1].span[1]);
+      const dir = (k === 'ArrowRight' || k === 'ArrowUp' || k === 'PageUp') ? 1 : -1;
+      if (k.startsWith('Page')) { const i = clamp(S.idx + dir, 0, N - 1); return setYear(dir > 0 || S.year === snaps[S.idx].span[0] ? snaps[i].span[0] : snaps[S.idx].span[0]); }
+      setYear(stepYear(S.year, dir));
+    }
+  });
+  $('prev').onclick = () => { stopPlay(); S.detail ? go(Math.max(0, S.step - 1)) : setYear(stepYear(S.year, -1)); };
+  $('next').onclick = () => { stopPlay(); S.detail ? go(Math.min(S.detail.item.steps.length - 1, S.step + 1)) : setYear(stepYear(S.year, 1)); };
+
+  // ---------- play ----------
+  // Playing moves the timeline at a steady pace: about four seconds a period at 1×, so deep time races and the
+  // twentieth century ticks year by year. Inside a war or faith story it turns the pages every few seconds.
+  const playIcon = () => $('play').innerHTML = S.playing ? '<svg viewBox="0 0 16 16"><path d="M3 2h3.6v12H3zM9.4 2H13v12H9.4z"/></svg>' : '<svg viewBox="0 0 16 16"><path d="M4 2l10 6-10 6z"/></svg>';
+  let playRaf = 0, playLast = 0, storyTimer = 0;
+  function startPlay() {
+    S.playing = true; playIcon(); $('play').setAttribute('aria-label', 'Pause');
+    if (S.detail) {
+      const turn = () => { if (!S.playing || !S.detail) return; const n = S.detail.item.steps.length; if (S.step >= n - 1) return stopPlay(); showStep(S.step + 1); storyTimer = setTimeout(turn, 4200 / S.speed); };
+      if (S.step >= S.detail.item.steps.length - 1) showStep(0);
+      storyTimer = setTimeout(turn, 2600 / S.speed);
+      return;
+    }
+    if (S.pos >= N - .002) setYear(snaps[0].span[0]);
+    playLast = performance.now();
+    const frame = now => {
+      if (!S.playing) return;
+      const dt = Math.min(.1, (now - playLast) / 1000); playLast = now;
+      const p = S.pos + dt * .25 * S.speed;
+      if (p >= N - 1e-6) { setYear(snaps[N - 1].span[1], { pos: N - 1e-6 }); return stopPlay(); }
+      setYear(yearOfPos(p), { pos: p, yf: yearFloatOfPos(p) });
+      playRaf = requestAnimationFrame(frame);
+    };
+    playRaf = requestAnimationFrame(frame);
+  }
+  function stopPlay() {
+    if (!S.playing) return;
+    S.playing = false; cancelAnimationFrame(playRaf); clearTimeout(storyTimer); playIcon(); $('play').setAttribute('aria-label', 'Play through time');
+  }
+  $('play').onclick = () => S.playing ? stopPlay() : startPlay();
+  playIcon();
 
   // ---------- controls ----------
-  document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
-    S.mode = b.dataset.mode; S.faithSel = null;
-    document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x === b));
-    if (S.detail) { S.detail = null; setPeriod(S.idx); return; }
-    styleMap(); drawOverlay(false); renderTimeline(); renderPanel(); drawLabels();
-  });
+  function setMode(m, keepDetail) {
+    S.mode = m; S.faithSel = null; if (m === 'wars') S.person = null;
+    document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x.dataset.mode === m));
+    if (S.detail && !keepDetail) { S.detail = null; computeLabels(); setYear(S.year, { force: true }); }
+    styleMap(); drawWarLayer(); drawOverlay(false); renderTimeline(); renderPanel(); drawLabels(); drawPeople();
+  }
+  document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { const back = S.detail ? S.detail.back : null; if (back != null) { S.detail = null; S.year = back; } setMode(b.dataset.mode); });
   const worldView = (dur = 750) => zoomToBounds(path.bounds({ type: 'Sphere' }), 40, dur);
   // continent boxes as [west, south, east, north]; edge points are sampled so the curved projection fits the whole box
   const PLACES = { Europe: [-11, 35, 42, 69], Asia: [26, -10, 150, 75], Africa: [-19, -36, 52, 38],
@@ -900,16 +1610,223 @@ details[open] summary { margin-bottom: 6px; }
     computeLabels(); drawLabels(); styleMap(); renderPanel();
   };
   svg.on('click', () => {
-    if (S.detail || !(S.selected || S.faithSel)) return;
-    S.selected = S.faithSel = null; styleMap(); renderPanel();
+    if (S.detail || !(S.selected || S.faithSel || S.person)) return;
+    S.selected = S.faithSel = S.person = null; styleMap(); drawPeople(); renderPanel();
   });
   $('panelHead').onclick = () => { if (isPhone()) $('panel').classList.toggle('collapsed'); };
-  addEventListener('keydown', e => { if (e.key === 'Escape' && S.detail) exitDetail(); });
-  addEventListener('resize', layout);
+  addEventListener('keydown', e => {
+    if (e.key === 'Escape' && S.detail) { exitDetail(); return; }
+    const tag = (e.target.tagName || '').toLowerCase();
+    if (e.key === ' ' && tag !== 'button' && tag !== 'a' && tag !== 'summary') { e.preventDefault(); S.playing ? stopPlay() : startPlay(); }
+  });
+  addEventListener('resize', () => { layout(); renderTimeline(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) stopPlay(); });
 
+  // ---------- ambient life ----------
+  // Below the map: a sea that glints with small waves. Above it: ships, caravans, trains and planes on the trade routes of
+  // the age, fleets and armies of the wars being fought, and smoke over this year's battles. All of it pauses for reduced motion.
+  const fxs = { routes: [], lastT: 0, smoke: [], lastDraw: 0 };
+  const cssVar = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  let waveRGB = '70 104 122', waveA = .34, inkC = '#1e2a31', paperC = '#f7f6f2';
+  function readColors() { waveRGB = cssVar('--wave') || waveRGB; waveA = +cssVar('--wave-a') || waveA; inkC = cssVar('--ink') || inkC; paperC = cssVar('--paper') || paperC; }
+  matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => { readColors(); drawAmbient(true); });
+  // projected route geometry (map units at zoom 1), with cumulative lengths for moving along it
+  function prepPath(pts, gc) {
+    let ll = pts.map(p => [p[0], p[1]]);
+    if (gc) { const out = []; for (let i = 1; i < ll.length; i++) { const f = d3.geoInterpolate(ll[i - 1], ll[i]), n = Math.max(2, Math.ceil(d3.geoDistance(ll[i - 1], ll[i]) * 30)); for (let j = i === 1 ? 0 : 1; j <= n; j++) out.push(f(j / n)); } ll = out; }
+    const xy = [], cum = [0];
+    for (let i = 0; i < ll.length; i++) {
+      xy.push(proj(ll[i]));
+      if (i) { const jump = Math.abs(ll[i][0] - ll[i - 1][0]) > 180; cum.push(cum[i - 1] + (jump ? 0 : Math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]))); }
+    }
+    return { xy, cum, len: cum[cum.length - 1], ll };
+  }
+  function pointOn(g, at) {
+    const c = g.cum; at = ((at % g.len) + g.len) % g.len;
+    let lo = 1, hi = c.length - 1;
+    while (lo < hi) { const mid = (lo + hi) >> 1; if (c[mid] < at) lo = mid + 1; else hi = mid; }
+    const i = lo, seg = c[i] - c[i - 1] || 1, u = (at - c[i - 1]) / seg, a = g.xy[i - 1], b = g.xy[i];
+    return [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u, Math.atan2(b[1] - a[1], b[0] - a[0])];
+  }
+  function prepRoutes() {
+    fxs.routes = routes.map(r => ({ r, g: prepPath(r.path, r.kind === 'plane'), off: Math.random() * 1000 }));
+    warPaths.clear();
+  }
+  const warPaths = new Map();
+  const warGeo = m => { let g = warPaths.get(m); if (!g) { g = prepPath(m.path); g.off = Math.random() * 100; warPaths.set(m, g); } return g; };
+
+  // sprites are drawn facing right at the origin, about 2s long
+  const SPR = {
+    galley(c, s, col) { c.fillStyle = '#6b4423'; c.beginPath(); c.moveTo(-s, -.1 * s); c.quadraticCurveTo(0, .55 * s, s * 1.1, -.35 * s); c.lineTo(s * .8, -.1 * s); c.lineTo(-s, -.1 * s); c.fill();
+      c.strokeStyle = '#3a2a1a'; c.lineWidth = Math.max(.6, s * .07); c.beginPath(); for (let i = -3; i <= 3; i++) { c.moveTo(i * .22 * s, .1 * s); c.lineTo(i * .22 * s - .18 * s, .55 * s); } c.stroke();
+      c.beginPath(); c.moveTo(0, -.1 * s); c.lineTo(0, -1.1 * s); c.stroke(); c.fillStyle = '#efe6cf'; c.fillRect(-.45 * s, -1 * s, .9 * s, .7 * s); c.fillStyle = col; c.fillRect(-.45 * s, -.75 * s, .9 * s, .18 * s); },
+    longship(c, s, col) { c.fillStyle = '#5a3a1c'; c.beginPath(); c.moveTo(-1.15 * s, -.55 * s); c.quadraticCurveTo(-.9 * s, .3 * s, 0, .3 * s); c.quadraticCurveTo(.9 * s, .3 * s, 1.15 * s, -.55 * s); c.lineTo(.95 * s, -.1 * s); c.lineTo(-.95 * s, -.1 * s); c.closePath(); c.fill();
+      c.strokeStyle = '#3a2a1a'; c.lineWidth = Math.max(.6, s * .07); c.beginPath(); c.moveTo(0, -.1 * s); c.lineTo(0, -1.15 * s); c.stroke();
+      for (let i = 0; i < 3; i++) { c.fillStyle = i % 2 ? '#f1e8d2' : col; c.fillRect(-.5 * s, (-1.05 + i * .28) * s, s, .28 * s); } },
+    sail(c, s, col) { c.fillStyle = '#5b3a1f'; c.beginPath(); c.moveTo(-1.05 * s, -.15 * s); c.lineTo(1.1 * s, -.15 * s); c.lineTo(.75 * s, .35 * s); c.lineTo(-.85 * s, .35 * s); c.closePath(); c.fill();
+      c.strokeStyle = '#3a2a1a'; c.lineWidth = Math.max(.5, s * .06); c.beginPath(); c.moveTo(-.35 * s, -.15 * s); c.lineTo(-.35 * s, -1.05 * s); c.moveTo(.35 * s, -.15 * s); c.lineTo(.35 * s, -1.25 * s); c.stroke();
+      c.fillStyle = '#f4eedf'; c.beginPath(); c.moveTo(-.62 * s, -.95 * s); c.quadraticCurveTo(-.25 * s, -.6 * s, -.62 * s, -.3 * s); c.lineTo(-.08 * s, -.3 * s); c.quadraticCurveTo(.2 * s, -.6 * s, -.08 * s, -.95 * s); c.fill();
+      c.beginPath(); c.moveTo(.08 * s, -1.15 * s); c.quadraticCurveTo(.45 * s, -.75 * s, .08 * s, -.32 * s); c.lineTo(.65 * s, -.32 * s); c.quadraticCurveTo(.95 * s, -.75 * s, .65 * s, -1.15 * s); c.fill();
+      c.fillStyle = col; c.fillRect(.35 * s, -1.42 * s, .32 * s, .18 * s); },
+    dhow(c, s, col) { c.fillStyle = '#7a5230'; c.beginPath(); c.moveTo(-.95 * s, -.2 * s); c.lineTo(1.15 * s, -.3 * s); c.quadraticCurveTo(.5 * s, .35 * s, -.7 * s, .3 * s); c.closePath(); c.fill();
+      c.fillStyle = '#f1e9d4'; c.beginPath(); c.moveTo(-.7 * s, -.25 * s); c.lineTo(.2 * s, -1.25 * s); c.quadraticCurveTo(.55 * s, -.6 * s, .55 * s, -.25 * s); c.closePath(); c.fill(); c.strokeStyle = col; c.lineWidth = Math.max(.6, s * .08); c.stroke(); },
+    junk(c, s, col) { c.fillStyle = '#6a3d22'; c.beginPath(); c.moveTo(-1.1 * s, -.45 * s); c.lineTo(1 * s, -.25 * s); c.lineTo(.7 * s, .3 * s); c.lineTo(-.85 * s, .3 * s); c.closePath(); c.fill();
+      c.fillStyle = '#c0653a'; for (const [x, h] of [[-.45, .85], [.25, 1.05]]) { c.beginPath(); c.moveTo(x * s, -.3 * s); c.lineTo((x - .22) * s, -h * s); c.lineTo((x + .3) * s, -h * s); c.lineTo((x + .38) * s, -.3 * s); c.closePath(); c.fill(); }
+      c.strokeStyle = 'rgba(40,20,10,.6)'; c.lineWidth = Math.max(.4, s * .04); c.beginPath(); for (let j = 0; j < 4; j++) { c.moveTo(-.65 * s, (-.45 - j * .12) * s); c.lineTo(.6 * s, (-.45 - j * .15) * s); } c.stroke(); },
+    canoe(c, s, col) { c.fillStyle = '#6e4a2a'; for (const dy of [-.05, .25]) { c.beginPath(); c.ellipse(0, dy * s, s, .13 * s, 0, 0, Math.PI * 2); c.fill(); }
+      c.fillStyle = '#e9dcc0'; c.beginPath(); c.moveTo(-.1 * s, -.1 * s); c.quadraticCurveTo(-.7 * s, -.9 * s, .1 * s, -1.2 * s); c.quadraticCurveTo(-.15 * s, -.6 * s, .45 * s, -.1 * s); c.closePath(); c.fill(); },
+    steam(c, s, col) { c.fillStyle = '#3f4a52'; c.beginPath(); c.moveTo(-1.1 * s, -.15 * s); c.lineTo(1.15 * s, -.15 * s); c.lineTo(.9 * s, .3 * s); c.lineTo(-1 * s, .3 * s); c.closePath(); c.fill();
+      c.fillStyle = '#e8e4da'; c.fillRect(-.55 * s, -.45 * s, .9 * s, .3 * s); c.fillStyle = col; c.fillRect(-.05 * s, -.95 * s, .22 * s, .5 * s); c.fillStyle = '#222'; c.fillRect(-.05 * s, -.98 * s, .22 * s, .1 * s); },
+    container(c, s, col) { c.fillStyle = '#2f3a44'; c.beginPath(); c.moveTo(-1.2 * s, -.1 * s); c.lineTo(1.25 * s, -.1 * s); c.lineTo(1 * s, .28 * s); c.lineTo(-1.1 * s, .28 * s); c.closePath(); c.fill();
+      const cols = ['#c0392b', '#2e86c1', '#d4ac0d', '#27ae60', '#8e44ad']; for (let i = 0; i < 6; i++) for (let j = 0; j < 2; j++) { c.fillStyle = cols[(i * 2 + j) % 5]; c.fillRect((-.95 + i * .3) * s, (-.34 - j * .22) * s, .27 * s, .2 * s); }
+      c.fillStyle = '#e8e4da'; c.fillRect(.85 * s, -.62 * s, .22 * s, .52 * s); },
+    caravan(c, s, col, t) { for (let i = 0; i < 3; i++) camel(c, s * .55, (-i * 1.05) * s, Math.sin(t * 6 + i) * .04 * s, i === 0 ? col : '#a57c4f'); },
+    llama(c, s, col, t) { for (let i = 0; i < 3; i++) llama(c, s * .5, (-i * .9) * s, Math.sin(t * 6 + i) * .04 * s, i === 0 ? col : '#c9b79a'); },
+    wagon(c, s, col) { c.fillStyle = '#7a5230'; c.fillRect(-.7 * s, -.25 * s, 1.3 * s, .3 * s); c.fillStyle = '#f3efe2'; c.beginPath(); c.moveTo(-.7 * s, -.25 * s); c.quadraticCurveTo(-.1 * s, -1.05 * s, .6 * s, -.25 * s); c.closePath(); c.fill(); c.strokeStyle = '#5a3a1c'; c.lineWidth = Math.max(.5, s * .06); c.stroke();
+      c.fillStyle = '#3a2a1a'; for (const x of [-.45, .4]) { c.beginPath(); c.arc(x * s, .12 * s, .17 * s, 0, Math.PI * 2); c.fill(); } c.fillStyle = col; c.fillRect(.75 * s, -.35 * s, .45 * s, .3 * s); },
+    train(c, s, col) { c.fillStyle = '#2b2b2b'; c.fillRect(.2 * s, -.55 * s, .95 * s, .6 * s); c.fillRect(.95 * s, -.9 * s, .16 * s, .4 * s); c.fillStyle = col; c.fillRect(.2 * s, -.8 * s, .45 * s, .3 * s);
+      for (let i = 0; i < 3; i++) { c.fillStyle = i % 2 ? '#7b241c' : '#1e4d6b'; c.fillRect((-.85 - i * 1.05) * s, -.5 * s, .95 * s, .55 * s); }
+      c.fillStyle = '#111'; for (let i = 0; i < 8; i++) { c.beginPath(); c.arc((1 - i * .52) * s, .1 * s, .1 * s, 0, Math.PI * 2); c.fill(); } },
+    plane(c, s, col) { c.fillStyle = '#f4f6f7'; c.strokeStyle = 'rgba(30,42,49,.6)'; c.lineWidth = Math.max(.5, s * .05);
+      c.beginPath(); c.moveTo(1.1 * s, 0); c.quadraticCurveTo(.9 * s, -.12 * s, .4 * s, -.1 * s); c.lineTo(.1 * s, -.9 * s); c.lineTo(-.15 * s, -.9 * s); c.lineTo(0, -.1 * s); c.lineTo(-.7 * s, -.08 * s); c.lineTo(-.95 * s, -.4 * s); c.lineTo(-1.08 * s, -.4 * s); c.lineTo(-.95 * s, 0);
+      c.lineTo(-1.08 * s, .4 * s); c.lineTo(-.95 * s, .4 * s); c.lineTo(-.7 * s, .08 * s); c.lineTo(0, .1 * s); c.lineTo(-.15 * s, .9 * s); c.lineTo(.1 * s, .9 * s); c.lineTo(.4 * s, .1 * s); c.quadraticCurveTo(.9 * s, .12 * s, 1.1 * s, 0); c.fill(); c.stroke(); },
+    army(c, s, col, t) { c.fillStyle = col; c.strokeStyle = paperC; c.lineWidth = Math.max(.6, s * .1);
+      for (let i = 0; i < 4; i++) { const x = (-i * .42) * s, b = Math.abs(Math.sin(t * 8 + i)) * .1 * s; c.beginPath(); c.arc(x, -.55 * s - b, .16 * s, 0, Math.PI * 2); c.fill(); c.stroke(); c.fillRect(x - .12 * s, -.42 * s - b, .24 * s, .42 * s); }
+      c.strokeStyle = inkC; c.lineWidth = Math.max(.6, s * .07); c.beginPath(); c.moveTo(.25 * s, 0); c.lineTo(.25 * s, -1.25 * s); c.stroke(); c.fillStyle = col; c.beginPath(); c.moveTo(.25 * s, -1.25 * s); c.lineTo(.85 * s, -1.08 * s); c.lineTo(.25 * s, -.9 * s); c.fill(); },
+  };
+  function camel(c, s, x, y, col) {
+    c.fillStyle = col; c.beginPath(); c.ellipse(x, y - .7 * s, .55 * s, .28 * s, 0, 0, Math.PI * 2); c.fill();
+    c.beginPath(); c.ellipse(x - .05 * s, y - .95 * s, .25 * s, .22 * s, 0, 0, Math.PI * 2); c.fill();
+    c.lineWidth = Math.max(.6, .14 * s); c.strokeStyle = col; c.beginPath(); c.moveTo(x + .45 * s, y - .8 * s); c.quadraticCurveTo(x + .75 * s, y - .9 * s, x + .78 * s, y - 1.3 * s); c.stroke();
+    c.beginPath(); c.ellipse(x + .85 * s, y - 1.3 * s, .16 * s, .09 * s, 0, 0, Math.PI * 2); c.fill();
+    c.lineWidth = Math.max(.5, .1 * s); c.beginPath(); for (const lx of [-.35, -.2, .2, .35]) { c.moveTo(x + lx * s, y - .5 * s); c.lineTo(x + lx * s, y); } c.stroke();
+  }
+  function llama(c, s, x, y, col) {
+    c.fillStyle = col; c.beginPath(); c.ellipse(x, y - .7 * s, .45 * s, .24 * s, 0, 0, Math.PI * 2); c.fill();
+    c.lineWidth = Math.max(.6, .14 * s); c.strokeStyle = col; c.beginPath(); c.moveTo(x + .35 * s, y - .8 * s); c.lineTo(x + .42 * s, y - 1.45 * s); c.stroke();
+    c.beginPath(); c.ellipse(x + .5 * s, y - 1.48 * s, .15 * s, .09 * s, 0, 0, Math.PI * 2); c.fill();
+    c.lineWidth = Math.max(.5, .1 * s); c.beginPath(); for (const lx of [-.3, -.15, .15, .3]) { c.moveTo(x + lx * s, y - .5 * s); c.lineTo(x + lx * s, y); } c.stroke();
+  }
+  const ROUTE_SPRITE = { galley: 'galley', longship: 'longship', sail: 'sail', galleon: 'sail', cog: 'sail', carrack: 'sail', dhow: 'dhow', junk: 'junk', canoe: 'canoe', steam: 'steam', container: 'container', caravan: 'caravan', llama: 'llama', wagon: 'wagon', train: 'train', plane: 'plane' };
+  const seaSprite = y => y < 800 ? 'galley' : y < 1100 ? 'longship' : y < 1840 ? 'sail' : 'steam';
+  function sprite(c, kind, x, y, ang, s, col, t, flipOK = true) {
+    c.save(); c.translate(x, y);
+    if (kind === 'plane') c.rotate(ang);
+    else { const left = Math.cos(ang) < 0; let tilt = left ? Math.atan2(-Math.sin(ang), -Math.cos(ang)) : ang; tilt = clamp(tilt, -.35, .35); if (left && flipOK) { c.scale(-1, 1); c.rotate(-tilt); } else c.rotate(tilt); }
+    // small bob on water
+    if (kind !== 'plane' && kind !== 'train' && kind !== 'caravan' && kind !== 'llama' && kind !== 'wagon' && kind !== 'army') c.translate(0, Math.sin(t * 2.2 + x * .05) * s * .06);
+    (SPR[kind] || SPR.sail)(c, s, col, t);
+    c.restore();
+  }
+  // deterministic hash for wave placement
+  const hash = (a, b, c) => { let h = (a * 374761393 + b * 668265263 + c * 2147483647) | 0; h = (h ^ (h >>> 13)) * 1274126177 | 0; return ((h ^ (h >>> 16)) >>> 0) / 4294967295; };
+  function drawSea(t) {
+    const c = seaCtx, k = S.k, T = S.t;
+    c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, seaCv.width, seaCv.height);
+    c.setTransform(dpr * k, 0, 0, dpr * k, dpr * T.x, dpr * T.y);
+    c.beginPath(); d3.geoPath(proj, c)({ type: 'Sphere' }); c.save(); c.clip();
+    c.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const lvl = Math.pow(2, Math.floor(Math.log2(Math.max(1, k)))), g = (isPhone() ? 46 : 36) / lvl;
+    const x0 = -T.x / k, y0 = -T.y / k, x1 = (W - T.x) / k, y1 = (H - T.y) / k;
+    c.strokeStyle = `rgb(${waveRGB})`; c.lineWidth = 1.1; c.lineCap = 'round';
+    const L = Math.log2(lvl) | 0, still = reduce();
+    for (let gx = Math.floor(x0 / g); gx <= x1 / g; gx++) for (let gy = Math.floor(y0 / g); gy <= y1 / g; gy++) {
+      const h1 = hash(gx, gy, L), h2 = hash(gy, gx, L + 7), h3 = hash(gx + 11, gy - 5, L);
+      const sx = T.x + k * (gx + h1) * g, sy = T.y + k * (gy + h2) * g;
+      const a = still ? .55 : Math.sin(h3 * 6.283 + t * (.35 + .3 * h1));
+      if (a < .08) continue;
+      c.globalAlpha = a * waveA;
+      const dx = still ? 0 : Math.sin(t * .25 + h2 * 9) * 2.2, w = 4 + h3 * 2.5;
+      c.beginPath(); c.moveTo(sx - w + dx, sy); c.quadraticCurveTo(sx - w / 2 + dx, sy - 2.2, sx + dx, sy); c.quadraticCurveTo(sx + w / 2 + dx, sy - 2.2, sx + w + dx, sy); c.stroke();
+    }
+    c.restore(); c.globalAlpha = 1;
+  }
+  function drawFx(t, dt) {
+    const c = fxCtx, k = S.k, T = S.t, y = S.year, still = reduce();
+    c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, fxCv.width, fxCv.height);
+    c.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const sx = p => T.x + k * p[0], sy = p => T.y + k * p[1];
+    const sz = clamp(5 * Math.sqrt(k), 5.5, 15) * (isPhone() ? .9 : 1);
+    // trade routes of this age: a faint dotted road and the traffic on it
+    if (!S.detail && S.mode !== 'wars') {
+      for (const R of fxs.routes) {
+        const r = R.r; if (y < r.from || y > r.to) continue;
+        const fade = clamp(Math.min(y - r.from, r.to - y) / 15 + .35, .35, 1);
+        c.globalAlpha = .38 * fade; c.strokeStyle = r.kind === 'plane' ? 'rgba(120,140,160,.9)' : (r.kind === 'train' ? 'rgba(60,60,60,.9)' : 'rgba(150,100,50,.95)');
+        c.lineWidth = r.kind === 'train' ? 1.6 : 1.2; c.setLineDash(r.kind === 'train' ? [6, 3] : [2, 4]);
+        c.beginPath(); let pen = false;
+        R.g.xy.forEach((p, i) => { const jump = i && Math.abs(R.g.ll[i][0] - R.g.ll[i - 1][0]) > 180; if (!pen || jump) { c.moveTo(sx(p), sy(p)); pen = true; } else c.lineTo(sx(p), sy(p)); });
+        c.stroke(); c.setLineDash([]);
+        const v = 9 / Math.sqrt(k) * (r.kind === 'plane' ? 3 : r.kind === 'train' ? 2 : 1);
+        if (!still) R.off += dt * v;
+        const n = Math.max(1, Math.min(9, Math.round(R.g.len / (r.kind === 'plane' ? 160 : 70))));
+        c.globalAlpha = fade;
+        for (let i = 0; i < n; i++) {
+          const q = pointOn(R.g, R.off + i * R.g.len / n), X = sx(q), Y = sy(q);
+          if (X < -30 || X > W + 30 || Y < -30 || Y > H + 30) continue;
+          sprite(c, ROUTE_SPRITE[r.kind] || 'sail', X, Y, q[2], sz * (r.kind === 'plane' ? .9 : 1), r.kind === 'plane' ? '#c0392b' : (r.color || '#9b3d23'), t);
+        }
+      }
+      c.globalAlpha = 1;
+    }
+    // fleets and armies of the wars being fought now (in Borders and Wars)
+    const items = (S.mode === 'religions' && !S.detail) ? [] : warItems();
+    for (const it of items) for (const m of it.st.moves || []) {
+      if (!m.path || m.path.length < 2) continue;
+      const g = warGeo(m), col = it.w.sides[m.side]?.color || '#888';
+      if (!still) g.off += dt * 14 / Math.sqrt(k);
+      const n = m.sea ? 2 : 1;
+      for (let i = 0; i < n; i++) {
+        const along = (g.off + i * g.len / n) % (g.len * 1.15);
+        if (along > g.len) continue;
+        const q = pointOn(g, along), X = sx(q), Y = sy(q);
+        if (X < -30 || X > W + 30 || Y < -30 || Y > H + 30) continue;
+        c.globalAlpha = clamp(Math.min(along, g.len - along) / (g.len * .12), 0, 1);
+        sprite(c, m.sea ? seaSprite(it.st.year) : 'army', X, Y, q[2], sz * (m.sea ? 1.05 : .95), col, t);
+      }
+      c.globalAlpha = 1;
+    }
+    // smoke over this year's battles
+    if (!still) {
+      for (const e of battleNow) if (Math.random() < dt * 5) { const [px, py] = proj([e.lon, e.lat]); fxs.smoke.push({ x: px, y: py, vx: (Math.random() - .5) * 6, vy: -8 - Math.random() * 8, age: 0, life: 1.6 + Math.random(), r: 2 + Math.random() * 2, fire: Math.random() < .3 }); }
+      fxs.smoke = fxs.smoke.filter(p => (p.age += dt) < p.life);
+      for (const p of fxs.smoke) {
+        const u = p.age / p.life, X = sx([p.x, p.y]) + p.vx * p.age, Y = sy([p.x, p.y]) + p.vy * p.age - 6;
+        c.globalAlpha = (1 - u) * (p.fire && u < .25 ? .9 : .45);
+        c.fillStyle = p.fire && u < .25 ? '#f39c12' : 'rgba(110,110,110,1)';
+        c.beginPath(); c.arc(X, Y, p.r * (1 + u * 2.4), 0, Math.PI * 2); c.fill();
+      }
+      c.globalAlpha = 1;
+    } else fxs.smoke = [];
+  }
+  // the clock: ~30 frames a second while anything moves; a single frame on demand otherwise
+  let ambRaf = 0, ambLast = 0;
+  function drawAmbient(now) {
+    if (now) { const t = performance.now() / 1000; drawSea(t); drawFx(t, 0); }
+    if (!ambRaf && !reduce()) ambRaf = requestAnimationFrame(loop);
+  }
+  function loop(ts) {
+    ambRaf = 0;
+    if (document.hidden) { ambRaf = requestAnimationFrame(loop); return; }
+    if (ts - ambLast >= 32) {
+      const dt = ambLast ? Math.min(.1, (ts - ambLast) / 1000) : 0; ambLast = ts;
+      const t = ts / 1000; drawSea(t); drawFx(t, dt);
+    }
+    if (!reduce()) ambRaf = requestAnimationFrame(loop);
+  }
+
+  // ---------- start ----------
+  readColors();
+  const hy = +((location.hash.match(/year=(-?\d+)/) || [])[1]);
+  const startYear = isFinite(hy) && hy && hy >= snaps[0].span[0] && hy <= snaps[N - 1].span[1] ? hy : 1715;
+  S.year = startYear; S.idx = periodOf(startYear); S.pos = posOfYear(startYear);
   layout();
   worldView(0);
-  await setPeriod(S.idx);
+  renderTimeline();
+  setYear(startYear, { force: true });
+  await showBorders(fileForYear(startYear));
+  renderPanel();
+  drawAmbient(true);
 })();
 </script>
 </body>

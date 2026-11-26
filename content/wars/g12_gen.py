@@ -328,7 +328,7 @@ wars.append({
            E("Nationalists take Beijing", "event", 116.4, 39.9, 1928, 0, "The capture of Beijing ended the Northern Expedition and nominally reunified China.")]),
         S(1934, "1930 to Oct 1935", "Encirclement and the Long March",
           "From the Jiangxi Soviet around Ruijin the Red Army beat four Nationalist encirclement campaigns, but Chiang's fifth, ringing the base with blockhouses, forced it to break out in October 1934. About 86,000 men set out on the Long March, lost heavily crossing the Xiang River, and at Zunyi in January 1935 Mao gained a leading voice. A year later fewer than 10,000 reached northern Shaanxi, which became the new Communist base.",
-          T(["Chinese Warlords"]),
+          T(["Republic of China"]),
           [F("Fifth encirclement, 1934", [[115.0, 27.3], [116.3, 27.4], [116.9, 26.5], [116.6, 25.4], [115.6, 25.0], [114.8, 25.6], [114.6, 26.6], [115.0, 27.3]])],
           [M(0, "Chiang Kai-shek", "Fifth encirclement campaign", [[115.86, 28.68], [116.33, 26.84], [116.03, 25.88]]),
            M(1, "Mao Zedong and Zhu De", "The Long March", [[116.03, 25.88], [111.07, 25.93], [106.93, 27.7], [102.23, 29.91], [103.2, 32.6], [108.17, 36.93]]),
@@ -338,7 +338,7 @@ wars.append({
            E("End of the Long March", "event", 108.17, 36.93, 1935, 1, "The survivors reached the Shaanxi base in October 1935 after about 9,000 km.")]),
         S(1937, "Dec 1936 to 1945", "The Xi'an Incident and the United Front",
           "In December 1936 Chiang was detained at Xi'an by his own generals and agreed to stop fighting the Communists and resist Japan together. During the war with Japan the Communist Eighth Route and New Fourth Armies fought a guerrilla war behind Japanese lines and expanded their base areas from Yan'an. The truce was uneasy: in January 1941 Nationalist troops destroyed the New Fourth Army headquarters, and by 1945 the Communists ruled about 90 million people.",
-          T(["Chinese Warlords"]),
+          T(["Republic of China"]),
           [],
           [M(1, "Lin Biao", "Eighth Route Army crosses into Shanxi", [[109.49, 36.6], [110.5, 36.6], [112.55, 37.87], [113.93, 39.33]]),
            M(1, "Ye Ting", "New Fourth Army in the lower Yangtze", [[118.3, 30.45], [119.0, 31.6], [119.5, 32.8]])],
@@ -496,7 +496,7 @@ wars.append({
     "steps": [
         S(1937, "Jul to Dec 1937", "From the Marco Polo Bridge to Nanjing",
           "A clash at the Marco Polo Bridge near Beiping on 7 July 1937 grew into full war, and Japanese armies took Beiping, Tianjin and the north China railways to Taiyuan. Chiang threw his best divisions into Shanghai, where three months of fighting ended in a Japanese landing behind them in November. Matsui's armies pursued them to Nanjing, which fell on 13 December, followed by weeks of mass killing and rape of prisoners and civilians.",
-          T(["Chinese Warlords"], ["Empire of Japan", "Manchuria"]),
+          T(["Republic of China"], ["Empire of Japan", "Manchuria"]),
           [F("North China front, Dec 1937", [[109.8, 40.6], [112.55, 37.87], [114.5, 37.07], [116.3, 36.5], [117.0, 36.7], [119.0, 37.5]]),
            F("Yangtze front, Dec 1937", [[118.4, 31.3], [119.0, 31.0], [119.8, 30.5], [120.2, 30.2], [120.6, 30.0]])],
           [M(1, "Hisaichi Terauchi", "North China Area Army down the railways", [[116.4, 39.9], [115.46, 38.87], [114.51, 38.04]]),
@@ -508,7 +508,7 @@ wars.append({
            E("Fall of Nanjing and Nanjing Massacre", "battle", 118.8, 32.06, 1937, 1, "Japanese troops killed tens of thousands to over 200,000 prisoners and civilians in the capital.")]),
         S(1938, "Jan to Oct 1938", "Taierzhuang, the Yellow River and Wuhan",
           "Li Zongren won China's first major victory at Taierzhuang in April 1938, but Japan took Xuzhou in May. To stop the advance on Zhengzhou, Nationalist troops broke the Yellow River dikes in June, flooding vast areas and killing hundreds of thousands of civilians. Hata's armies advanced up the Yangtze and took Wuhan in October while another force landed near Guangzhou, and the government moved to Chongqing.",
-          T(["Chinese warlords"], ["Empire of Japan"]),
+          T(["Republic of China"], ["Empire of Japan"]),
           [F("Front, late 1938", [[109.8, 40.6], [110.6, 38.5], [110.3, 36.0], [110.5, 34.6], [112.5, 34.7], [113.66, 34.9], [114.4, 33.6], [114.07, 32.13], [113.6, 31.2], [113.13, 29.36], [115.0, 29.4], [115.99, 29.7], [117.5, 30.5], [119.0, 30.5], [120.15, 30.27]]),
            F("Guangzhou front, late 1938", [[112.8, 23.6], [113.6, 23.6], [114.2, 23.1]])],
           [M(1, "Hisaichi Terauchi", "Drive on Xuzhou", [[117.0, 36.65], [117.5, 35.2], [117.73, 34.56], [117.18, 34.26]]),
@@ -521,7 +521,7 @@ wars.append({
            E("Battle of Wuhan", "battle", 114.3, 30.59, 1938, 1, "The largest battle of the early war ended with Wuhan's fall on 25 October.")]),
         S(1940, "1939 to 1941", "Stalemate",
           "With its armies spread thin, Japan settled into occupation, bombing Chongqing repeatedly and setting up a puppet government at Nanjing. Xue Yue's armies threw back Japanese attacks on Changsha in 1939 and 1941, and in 1940 Peng Dehuai's Communist Eighth Route Army struck the railways of north China in the Hundred Regiments Offensive, provoking brutal Japanese reprisals. When Japan attacked the United States in December 1941, China's war became part of World War II.",
-          T(["Chinese warlords"], ["Empire of Japan"]),
+          T(["Republic of China"], ["Empire of Japan"]),
           [F("Front, 1940", SJ_FRONT40)],
           [M(1, "Yasuji Okamura", "Japanese Eleventh Army on Changsha", [[113.13, 29.36], [113.0, 28.7], [112.94, 28.23]]),
            M(0, "Xue Yue", "Counterattack at Changsha", [[112.94, 28.23], [113.1, 28.9], [113.13, 29.3]]),
@@ -532,7 +532,7 @@ wars.append({
            E("Bombing of Chongqing", "event", 106.55, 29.56, 1939, 1, "Years of Japanese air raids killed thousands but did not break the wartime capital.")]),
         S(1944, "Apr to Dec 1944", "Operation Ichi-Go and the Burma Road",
           "Japan's largest offensive of the war, Ichi-Go, overran Henan, took Changsha and, after a 47-day siege, Hengyang, then Guilin and Liuzhou, opening a land corridor to Indochina and seizing American air bases. The Nationalist armies suffered huge losses. In the southwest, Chinese troops trained in India under Stilwell took Myitkyina and Wei Lihuang's Yunnan armies crossed the Salween to reopen the land route to China.",
-          T(["Chinese warlords"], ["Empire of Japan", "French Indo-China", "Laos", "Cambodia", "Cochin China"]),
+          T(["Republic of China"], ["Empire of Japan", "French Indo-China", "Laos", "Cambodia", "Cochin China"]),
           [F("Japanese advance, Dec 1944", [[110.5, 34.6], [112.45, 34.0], [112.0, 32.5], [111.29, 30.7], [111.5, 28.5], [111.0, 27.0], [109.8, 25.8], [108.0, 25.4], [107.54, 25.83], [107.2, 24.5], [106.6, 22.5]])],
           [M(1, "Shunroku Hata", "Ichi-Go in Henan", [[113.66, 34.75], [113.0, 34.65], [112.45, 34.62]]),
            M(1, "Isamu Yokoyama", "Ichi-Go south to Guangxi", [[113.13, 29.36], [112.94, 28.23], [112.57, 26.89], [110.29, 25.27], [109.41, 24.33], [107.54, 25.83]]),
@@ -572,7 +572,7 @@ wA3 = DOM + ["Ethiopia (Italy)", "Eritrea (Italy)", "Italian Somaliland"]
 wX3 = minus(wX2, ["Ethiopia (Italy)", "Eritrea (Italy)", "Italian Somaliland"]) + BALK
 wA4 = wA3 + ["USSR", "Mongolia", "Syria (France)", "Iran"]
 wX4 = wX3 + ["Finland"] + BALT
-wA5 = minus(wA4, ["Malaysia", "Hong Kong"]) + ["United States", "Chinese warlords"]
+wA5 = minus(wA4, ["Malaysia", "Hong Kong"]) + ["United States", "Republic of China"]
 wX5 = wX4 + JPN
 wA6 = wA5 + ["Morocco (France)", "Algeria (France)", "Libya"]
 wX6 = minus(wX5, ["Libya"]) + ["Tunisia"]

@@ -115,6 +115,33 @@ json.dump({'snapshots': snapshots, 'regions': list(REGIONS), 'borderFiles': ALL_
           open(os.path.join(OUT, 'timeline.json'), 'w'), ensure_ascii=False)
 
 # ---------- borders ----------
+# source names that are wrong for the snapshot (1930 labels the whole Soviet Union 'White Russia')
+RENAME = {('1930', 'White Russia'): 'USSR', ('1930', 'Chinese Warlords'): 'Republic of China',
+          ('1938', 'Chinese warlords'): 'Republic of China'}
+# overlord (SUBJECTO/PARTOF) names fixed per snapshot: typos, a feature listed as part of itself, and colonies filed
+# under a name the home state does not carry in that snapshot (None drops the overlord)
+PARENT_FIX = {
+    '400': {"Persi": None},
+    '800': {"Papou": None},
+    '900': {"Papou": None},
+    '1400': {"Riazan": None},
+    '1530': {"Papous": None, "Vice Royalty of New Spain": None},
+    '1600': {"Papous": None, "Vice Royalty of New Spain": None},
+    '1650': {"Vice Royalty of Peru": None, "Vice-Royalty of New Spain": None, "Vice-Royalty of Peru": None, "Vice-Royalty of Brazil": None, "Vice-Royalty of New Granada": None, "Vice Royalty of New Spain": None, "Expansionist Kingdom of Merina": None, "Illinnois": None, "Hindu Kingdoms": None, "England": "England and Ireland", "Netherlands": "Dutch Republic", "Scottalnd": None, "Papous": None},
+    '1700': {"Vice Royalty of Peru": None, "Vice-Royalty of New Spain": None, "Vice-Royalty of Peru": None, "Vice-Royalty of Brazil": None, "Vice-Royalty of New Granada": None, "Vice Royalty of New Spain": None, "Expansionist Kingdom of Merina": None, "Illinnois": None, "Hindu Kingdoms": None, "England": "England and Ireland", "Netherlands": "Dutch Republic", "Scottalnd": None, "Papous": None, "Savoy-Piedmont": "Sardinia-Piedmont"},
+    '1715': {"Vice Royalty of Peru": None, "Vice-Royalty of New Spain": None, "Vice-Royalty of Peru": None, "Vice-Royalty of Brazil": None, "Vice-Royalty of New Granada": None, "Vice Royalty of New Spain": None, "Expansionist Kingdom of Merina": None, "Illinnois": None, "Hindu Kingdoms": None, "Danemark": "Denmark-Norway", "Neterlands": "Netherlands", "Savoy-Piedmont": "Sardinia-Piedmont"},
+    '1783': {"Vice Royalty of Peru": None, "Vice-Royalty of New Spain": None, "Vice-Royalty of Peru": None, "Vice-Royalty of Brazil": None, "Vice-Royalty of New Granada": None, "Vice Royalty of New Spain": None, "Expansionist Kingdom of Merina": None, "Illinnois": None, "Hindu Kingdoms": None, "3": None, "Austria": "Austrian Empire", "UK": "United Kingdom"},
+    '1800': {"Vice Royalty of Peru": None, "Vice-Royalty of New Spain": None, "Vice-Royalty of Peru": None, "Vice-Royalty of Brazil": None, "Vice-Royalty of New Granada": None, "Vice Royalty of New Spain": None, "Expansionist Kingdom of Merina": None, "Illinnois": None, "Hindu Kingdoms": None, "UK": "United Kingdom", "Habsburg Austria": "Austrian Empire", "Netherlands": "Batavian Republic", "(Russian and Japanese claim)": None},
+    '1815': {"Vice Royalty of Peru": None, "Vice-Royalty of New Spain": None, "Vice-Royalty of Peru": None, "Vice-Royalty of Brazil": None, "Vice-Royalty of New Granada": None, "Vice Royalty of New Spain": None, "Expansionist Kingdom of Merina": None, "Illinnois": None, "Hindu Kingdoms": None, "Papou": None, "Papu": None, "United Provinces of La Plata": None, "(Russian and Japanese claim)": None},
+    '1878': {"United Kingdom": "United Kingdom of Great Britain and Ireland", "Great Britain": "United Kingdom of Great Britain and Ireland", "Algeria": None},
+    '1880': {"United Kingdom": "United Kingdom of Great Britain and Ireland", "Great Britain": "United Kingdom of Great Britain and Ireland", "Algeria": None},
+    '1900': {"United Kingdom": "United Kingdom of Great Britain and Ireland"},
+    '1914': {"United Kingdom": "United Kingdom of Great Britain and Ireland", "British Empire": "United Kingdom of Great Britain and Ireland", "Anglo-Egyption Sudan": None, "Italy": "Kingdom of Italy", "Russia": "Russian Empire"},
+    '1920': {"United Kingdom": "United Kingdom of Great Britain and Ireland"},
+    '1930': {"United Kingdom": "United Kingdom of Great Britain and Ireland"},
+    '1938': {"United Kingdom of Great Britain and Ireland": "United Kingdom"},
+    '1945': {"USA": "United States"},
+}
 anchors = [(r, Point(p)) for r, ps in REGIONS.items() for p in ps]
 order = list(REGIONS)
 for f in ALL_FILES:
@@ -122,6 +149,7 @@ for f in ALL_FILES:
     groups = {}
     for ft in d['features']:
         pr = ft['properties']; n = (pr.get('NAME') or '').strip()
+        n = RENAME.get((f, n), n)
         if not n or not ft.get('geometry'): continue
         try: g = shape(ft['geometry']).buffer(0)
         except Exception: continue
@@ -143,6 +171,7 @@ for f in ALL_FILES:
         props = {'name': n, 'regions': regs}
         for k in ('sub', 'part'):
             v = info[k].replace('�', 'ó') if info[k] else ''  # source typo: Arag�n
+            v = PARENT_FIX.get(f, {}).get(v, v) if v else v
             if v and v != n: props[k] = v
         feats.append({'type': 'Feature', 'properties': props, 'geometry': geo})
     json.dump({'type': 'FeatureCollection', 'features': feats},
