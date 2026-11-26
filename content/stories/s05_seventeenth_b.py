@@ -321,7 +321,7 @@ story('gottfried-wilhelm-leibniz', 'The genius who invented calculus, binary num
     tale('The best of all possible worlds',
          'He argued that God had made this the best of all possible worlds. Half a century later the French writer '
          'Voltaire mocked the idea without mercy in his comic novel Candide.',
-         img='Candide', y=1710),
+         img='Théodicée', y=1710),
     life('A lonely end',
          'He served the dukes of Hanover for 40 years, writing a history of their family that he never finished. When he '
          'died in 1716, hardly anyone came to his funeral.',

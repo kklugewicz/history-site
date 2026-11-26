@@ -8,6 +8,8 @@ Acropolis of Athens
 Adoration of the Magi (Botticelli, 1475)
 Agoge
 Agra Fort
+Aimé Bonpland
+Ajaccio
 Akbarnama
 Akhenaten
 Akkadian Empire
@@ -60,10 +62,14 @@ Baptism of Jesus
 Barmakids
 Basilica of Saint Paul Outside the Walls
 Basilica of San Vitale
+Bastille
 Battle of Actium
 Battle of Alesia
 Battle of Ankara
+Battle of Austerlitz
+Battle of Ayacucho
 Battle of Boju
+Battle of Boyacá
 Battle of Cajamarca
 Battle of Cannae
 Battle of Gaugamela
@@ -83,10 +89,12 @@ Battle of Poltava
 Battle of Sekigahara
 Battle of Talas
 Battle of Thermopylae
+Battle of Waterloo
 Battle of Zama
 Battle of the Catalaunian Plains
 Battle of the Hydaspes
 Battle of the Milvian Bridge
+Battle of the Pyramids
 Battle of the Teutoburg Forest
 Bayeux Tapestry
 Beard tax
@@ -94,13 +102,17 @@ Beatrice Portinari
 Beethoven House
 Behistun Inscription
 Belisarius
+Berlin
 Bibi-Khanym Mosque
+Bifocals
 Binary number
 Birbal
 Black pepper
 Boadicea and Her Daughters
 Bonfire of the vanities
+Boston
 Boudican revolt
+Braddock Expedition
 Bran Castle
 Bucephalus
 Buddhas of Bamiyan
@@ -119,14 +131,18 @@ Canticle of the Sun
 Cape Bojador
 Cape of Good Hope
 Caprese Michelangelo
+Caracas
 Caravel
 Carolingian Empire
 Carolingian minuscule
 Cartesian coordinate system
 Carthage
+Casiquiare canal
 Catalan Atlas
 Catholic Monarchs
+Centrifugal governor
 Cesare Borgia
+Chimborazo
 Christina, Queen of Sweden
 Church of the Nativity
 Château de Chinon
@@ -135,15 +151,22 @@ Château du Clos Lucé
 Cilician pirates
 Code of Hammurabi
 Codex Atlanticus
+Coffee
 Cogito, ergo sum
+College of William & Mary
 Colossus of Constantine
 Column of Marcus Aurelius
 Confessions (Augustine)
 Confucius
 Conquest of Ceuta
+Conservation of mass
 Constantinople
+Constanze Mozart
+Contour line
 Conversion of Paul the Apostle
 Corpus Juris Civilis
+Cosmos (Humboldt)
+Critique of Pure Reason
 Croesus
 Crown of Castile
 Crucifixion of Jesus
@@ -161,6 +184,8 @@ David (Michelangelo)
 De revolutionibus orbium coelestium
 Death of Alexander the Great
 Death of Cleopatra
+Declaration of Independence (painting)
+Declaration of the Rights of Man and of the Citizen
 Delft
 Dendera Temple complex
 Denial of Peter
@@ -174,6 +199,7 @@ Dieterich Buxtehude
 Diocletian
 Dionysius I of Syracuse
 Divine Comedy
+Division of labour
 Djinguereber Mosque
 Domesday Book
 Domrémy-la-Pucelle
@@ -190,9 +216,11 @@ Edward the Confessor
 Egyptian–Hittite peace treaty
 Eisenach
 El Escorial
+Electric eel
 Elizabeth I
 Elizabethan Religious Settlement
 Elizabethan era
+Emile, or On Education
 Emperor Gaozong of Tang
 Emperor Taizong of Tang
 Emperor Wu of Han
@@ -219,9 +247,12 @@ First Folio
 First Triumvirate
 Florence Baptistery
 Florence Cathedral
+Fort de Joux
 Fossanova Abbey
 Fra Filippo Lippi
 Franciscans
+Frederick William I of Prussia
+French invasion of Russia
 Frombork Cathedral
 Fronde
 Fujiwara no Shōshi
@@ -243,9 +274,13 @@ Global spread of the printing press
 Globe Theatre
 Glorious Revolution
 Gobi Desert
+Goethe in the Roman Campagna
+Goethe's Faust
+Goethe–Schiller Monument
 Golden Hind
 Golden Temple
 Gordian Knot
+Gran Colombia
 Grand Embassy of Peter the Great
 Great Comet of 1577
 Great Mosque of Kufa
@@ -253,13 +288,17 @@ Great Plague of London
 Great Pyramid of Giza
 Great Renunciation
 Great Wall of China
+Grigory Potemkin
+Groundwork of the Metaphysic of Morals
 Gupta Empire
 Guqin
 Gur-e-Amir
 Gutenberg Bible
 Gwanghwamun Plaza
+HMS Endeavour
 Hadrian
 Hagia Sophia
+Haitian Revolution
 Hall of Worthies
 Hamlet
 Han van Meegeren
@@ -268,11 +307,13 @@ Hangul
 Hangzhou
 Hannibal's crossing of the Alps
 Hanover
+Hans Hermann von Katte
 Hatfield House
 Heian-kyō
 Heiligenstadt Testament
 Heliocentrism
 Henry VII of England
+Hermitage Museum
 Hernán Cortés
 Hindu–Arabic numeral system
 Hippo Regius
@@ -280,8 +321,10 @@ Hispaniola
 History of Animals
 History of chocolate
 History of paper
+Horsepower
 House of Wisdom
 Humayun
+Humboldt penguin
 Hunminjeongeum
 Hunnic Empire
 Huns
@@ -290,6 +333,7 @@ Ibadat Khana
 Iceni
 Imam Ali Shrine
 Imperial examination
+Inauguration of George Washington
 Inca Empire
 Inclined plane
 Inferno (Dante)
@@ -300,8 +344,10 @@ Italian language
 Jabal Thawr
 Jabal al-Nour
 Jahangir
+Jamaica Letter
 Jang Yeong-sil
 Jaya Sri Maha Bodhi
+Jean Calas
 Jerónimos Monastery
 Jesus walking on water
 Jing Ke
@@ -317,7 +363,9 @@ Kaaba
 Kalinga War
 Katharina von Bora
 Kayseri
+Kealakekua Bay
 Kepler's laws of planetary motion
+Kettle
 Keys of Heaven
 Khadija bint Khuwaylid
 Khufu ship
@@ -327,6 +375,8 @@ Kish (Sumer)
 Kochi
 Konya
 Kublai Khan
+Königsberg
+Königsberg Cathedral
 L'Anse aux Meadows
 La Malinche
 La Noche Triste
@@ -342,11 +392,15 @@ Leonardo da Vinci
 Leonardo's horse
 Leonidas at Thermopylae
 Leshan Giant Buddha
+Letters on the English
 Library of Alexandria
 Lighthouse of Alexandria
+Lightning rod
 Lima
 Lion Capital of Ashoka
 Longmen Grottoes
+Longwood House
+Louisiana Purchase
 Lucius Cornelius Sulla
 Lucius Verus
 Lumbini
@@ -361,6 +415,7 @@ Maldives
 Mali Empire
 Manichaeism
 Manuel I of Portugal
+Manuela Sáenz
 Marcus Licinius Crassus
 Marcus Vipsanius Agrippa
 Mari, Syria
@@ -370,6 +425,7 @@ Mary, Queen of Scots
 Masjid al-Haram
 Mask of Tutankhamun
 Masnavi
+Matthew Boulton
 Maurya Empire
 Mausoleum of Augustus
 Mausoleum of Saladin
@@ -377,12 +433,14 @@ Mecca
 Medellín, Spain
 Meditations
 Method of Fluxions
+Metric system
 Mevlana Museum
 Mevlevi Order
 Michael Servetus
 Microorganism
 Middle Way
 Mihrimah Sultan Mosque (Edirnekapı)
+Miserere (Allegri)
 Mishneh Torah
 Mogao Caves
 Molière
@@ -393,10 +451,14 @@ Mongol Empire
 Mongol invasion of the Khwarazmian Empire
 Mongol invasions of Japan
 Mongolian steppe
+Monte Sacro (Rome)
+Monticello
 Mortuary Temple of Hatshepsut
 Moscow Kremlin
 Mount Nebo
+Mount Vernon
 Mount Vesuvius
+Mozart family
 Mughal Empire
 Mumtaz Mahal
 Museo Galileo
@@ -404,7 +466,9 @@ Mysterium Cosmographicum
 Nahj al-Balagha
 Nalanda
 Nankana Sahib
+Napoleonic Code
 Nativity scene
+Nebular hypothesis
 Newton (Blake)
 Newtonian telescope
 Night Attack at Târgoviște
@@ -419,12 +483,15 @@ Onon River
 Order of the Dragon
 Organon
 Ottoman Empire
+Oxygen
 Pacific Ocean
 Padrão dos Descobrimentos
 Palace of Versailles
 Palatine Chapel, Aachen
 Palazzo Vecchio
+Panmure House
 Pantheon, Rome
+Panthéon
 Paper
 Parinirvana
 Parthenon
@@ -438,25 +505,32 @@ Pentecost
 Pepin the Short
 Pericles' Funeral Oration
 Peripatetic school
+Perpetual Peace: A Philosophical Sketch
 Persepolis
 Perspective (graphical)
+Peter III of Russia
 Peter the Great
 Philippines
 Philosophiæ Naturalis Principia Mathematica
 Pi
 Pietà (Michelangelo)
 Pisa Cathedral
+Place de la Concorde
 Plague of Athens
 Plague of Justinian
 Plagues of Egypt
 Platonic Academy
 Plymouth Hoe
+Poor Richard's Almanack
 Pope Leo III
+Portrait of Antoine-Laurent Lavoisier and his Wife
+Potato
 Primavera (Botticelli)
 Prime number
 Printing press
 Ptolemaic Kingdom
 Ptolemy I Soter
+Pugachev's Rebellion
 Pythagorean theorem
 Pythagorean tuning
 Pythagoreanism
@@ -484,14 +558,17 @@ Roccasecca
 Roman Forum
 Roman cavalry
 Romeo and Juliet
+Rosetta Stone
 Round city of Baghdad
 Royal Mint
 Royal Road
 Royal Society
 Rubicon
+Russian Empire
 Sacsayhuamán
 Sagres
 Sahara
+Saint Lawrence River
 Saint Monica
 Saint Petersburg
 Saint Stephen
@@ -499,13 +576,18 @@ Saladin
 Samanid Empire
 Samos
 San Damiano
+Sanssouci
 Santa María (ship)
 Saskia van Uylenburgh
+Schönbrunn Palace
+Scurvy
 Sea of Galilee
 Second Battle of Panipat
+Second voyage of James Cook
 Self-portraits by Rembrandt
 Selimiye Mosque
 Sermon on the Mount
+Seven Years' War
 Seville
 Shah Jahan
 Shahrisabz
@@ -520,7 +602,10 @@ Siege of Jerusalem (63 BC)
 Siege of Orléans
 Siege of Syracuse (213–212 BC)
 Siege of Szigetvár
+Siege of Toulon
 Siege of Vienna (1529)
+Siege of Yorktown
+Silesian Wars
 Silk Road
 Sines
 Sistine Chapel
@@ -566,6 +651,7 @@ The Birth of Venus
 The Canon of Medicine
 The Clouds
 The Compendious Book on Calculation by Completion and Balancing
+The Coronation of Napoleon
 The Death of Socrates
 The Diary of Lady Murasaki
 The Guide for the Perplexed
@@ -574,17 +660,24 @@ The Last Supper (Leonardo)
 The Meeting of Leo the Great and Attila
 The Milkmaid (Vermeer)
 The Night Watch
+The Plumb-pudding in Danger
 The Prince
 The Protectorate
 The School of Athens
+The Social Contract
 The Song of Roland
+The Sorrows of Young Werther
 The Tale of Genji
+The Theory of Moral Sentiments
 The Travels of Marco Polo
+The Wealth of Nations
 Theatre of Pompey
 Theodora (wife of Justinian I)
+Theory of Colours
 Thermopylae
 Third Servile War
 Thutmose III
+Théodicée
 Tikrit
 Timurid Empire
 Tokugawa shogunate
@@ -597,17 +690,22 @@ Tower of London
 Toyotomi Hideyoshi
 Trabzon
 Traitors' Gate
+Traité élémentaire de chimie
 Treasure voyages
+Treaty of Alliance (1778)
 Trial of Joan of Arc
 Trial of Socrates
 Tribute Giraffe with Attendant
 Two Treatises of Government
 Tycho Brahe
 Târgoviște
+United States Declaration of Independence
 University of Geneva
+University of Glasgow
 University of Paris
 Urbino
 Valladolid
+Valley Forge
 Van Leeuwenhoek's microscopes
 Vasco Núñez de Balboa
 Venice
@@ -616,16 +714,20 @@ Victoria (ship)
 View of Delft
 Vinci, Tuscany
 Vinland
+Virginia Statute for Religious Freedom
 Vitis riparia
 Vitruvian Man
 Walls of Constantinople
 War of the Spanish Succession
 Wartburg
+Washington Crossing the Delaware
 Water clock
+Watt steam engine
 Weimar
 Westminster Abbey
 Westminster Hall
 Westminster School
+Whitby
 William Adams (sailor, born 1564)
 William Farel
 Wittenberg
@@ -645,9 +747,14 @@ Zhou dynasty
 Zulfiqar
 audio: Brandenburg Concertos
 audio: Cello Suites (Bach) | prelude
+audio: Der Hölle Rache kocht in meinem Herzen
+audio: Eine kleine Nachtmusik | allegro
 audio: Für Elise
 audio: Pastime with Good Company
+audio: Piano Sonata No. 11 (Mozart) | turca
 audio: Piano Sonata No. 14 (Beethoven) | adagio sostenuto
+audio: Requiem (Mozart) | lacrimosa
+audio: Symphony No. 40 (Mozart) | molto allegro
 audio: Symphony No. 5 (Beethoven) | allegro con brio
 audio: Toccata and Fugue in D minor, BWV 565
 Şehzade Mosque
