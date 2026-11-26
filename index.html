@@ -912,13 +912,13 @@ details[open] summary { margin-bottom: 6px; }
     seaKey = ''; drawTerrain();
     polWrap.selectAll('path').attr('d', path);
     projectWater(); prepCurrents();
-    computeLabels(); drawLabels(); drawWarLayer(); drawOverlay(false); drawPeople();
+    computeLabels(); drawPeople(); drawLabels(); drawWarLayer(); drawOverlay(false);
     prepRoutes(); drawAmbient(true);
   }
 
   const zoom = d3.zoom().scaleExtent([.5, 60]).on('zoom', e => {
     root.attr('transform', e.transform); S.t = e.transform; S.k = e.transform.k;
-    drawTerrain(); styleWater(); drawLabels(); scaleOverlay(); placeSwords(); drawPeople(); drawAmbient(true);
+    drawTerrain(); styleWater(); drawPeople(); drawLabels(); scaleOverlay(); placeSwords(); drawAmbient(true);
   });
   svg.call(zoom).on('dblclick.zoom', null);
   function zoomToBounds(b, maxK = 40, dur = 750) {
@@ -1074,6 +1074,7 @@ details[open] summary { margin-bottom: 6px; }
       taken.push([cx - d.fw / 2 - 3, cy - d.gap - d.fh - 3, cx + d.fw / 2 + 3, cy]);
     }
     for (const d of shownCities) taken.push(...d.boxes);
+    taken.push(...peopleBoxes());
     const hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
     const list = [];
     const cand = GEO.labels.filter(d => size >= d.k * .94 && inYears(d, y) && (!detail || d.c === 'ocean' || d.c === 'sea' || d.c === 'sea2' || d.c === 'strait'))
@@ -1229,11 +1230,20 @@ details[open] summary { margin-bottom: 6px; }
   const CITY_PX = [0, 27, 23, 19];       // landmark height on screen, growing a little as you zoom in
   let shownCities = [];
   const lastLandmark = new Map();
+  // the faces of the people on the map and their names, in screen px (drawPeople runs before the labels)
+  function peopleBoxes() {
+    const out = [];
+    for (const d of shownPeople) {
+      const r = d.R; out.push([d.x - r, d.y - r, d.x + r, d.y + r]);
+      if (d.nameOn) { const u = r / 15, w = d.txt.length * 3.2 * u; out.push([d.x - w, d.y + 18 * u, d.x + w, d.y + 30 * u]); }
+    }
+    return out;
+  }
   function drawCities() {
     const list = [];
     if (CTY && W && !S.detail && S.mode !== 'wars') {
       const k = S.k, T = S.t, y = S.year, size = worldPx() / 1000, ph = isPhone() ? .85 : 1;
-      // the room taken by states' names (and the faith badge after each), flags and rulers' portraits, in screen px
+      // the room taken by states' names (and the faith badge after each), flags, rulers' portraits and people, in screen px
       const taken = [];
       for (const l of shownLabels.values()) {
         const cx = T.x + l.x * k, cy = T.y + l.y * k, px = lblPx(l, k), hw = halfW(l, k) + 2;
@@ -1246,6 +1256,8 @@ details[open] summary { margin-bottom: 6px; }
         const { a, e, f } = m.matrix, x = T.x + e * k, yy = T.y + f * k, r = 16 * a * k;
         taken.push([x - r, yy - r, x + r, yy + r]);
       });
+      // people are placed just before this; where one stands in a city, its landmark and name make room for the face
+      taken.push(...peopleBoxes());
       const hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
       const cand = [], pk = proj.scale() + ',' + proj.translate();
       for (const c of CTY) {
@@ -2468,7 +2480,7 @@ details[open] summary { margin-bottom: 6px; }
     if (b) zoomToBounds(b, 10);
     S.year = st.year; S.yf = st.year + .5;
     renderWhen(); renderTimeline(); renderPanel();
-    drawLabels(); drawPeople();
+    drawPeople(); drawLabels();
     const file = fileForYear(st.year);
     if (file !== S.file) await showBorders(file);
     if (S.detail && S.detail.item === it && S.step === n) { computeLabels(); styleMap(); drawLabels(); drawWarLayer(); drawOverlay(true); }
@@ -2500,7 +2512,7 @@ details[open] summary { margin-bottom: 6px; }
     yearRaf = setTimeout(() => requestAnimationFrame(() => {
       yearRaf = 0; lastRender = performance.now();
       if (S.detail) return;
-      styleMap(); styleWater(); drawLabels(); drawWarLayer(); drawOverlay(true); drawPeople();
+      styleMap(); styleWater(); drawPeople(); drawLabels(); drawWarLayer(); drawOverlay(true);
     }), wait);
   }
   let peopleRaf = 0;
@@ -2806,7 +2818,7 @@ details[open] summary { margin-bottom: 6px; }
     S.mode = m; S.faithSel = null; if (m === 'wars') S.person = null;
     document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x.dataset.mode === m));
     if (S.detail && !keepDetail) { S.detail = null; computeLabels(); setYear(S.year, { force: true }); }
-    styleMap(); drawWarLayer(); drawOverlay(false); renderTimeline(); renderPanel(); drawLabels(); drawPeople();
+    styleMap(); drawWarLayer(); drawOverlay(false); renderTimeline(); renderPanel(); drawPeople(); drawLabels();
   }
   document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { const back = S.detail ? S.detail.back : null; if (back != null) { S.detail = null; S.year = back; } setMode(b.dataset.mode); });
   const worldView = (dur = 750) => zoomToBounds(path.bounds({ type: 'Sphere' }), 40, dur);
