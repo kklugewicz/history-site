@@ -63,7 +63,7 @@ P('Malcolm X', 'Black nationalist leader', (1925, 1965), 3, 'reform faith',
   'Nation of Islam preacher who broke with it after his pilgrimage to Mecca; shot in New York.',
   G(1952, 1965, 'Detroit, Harlem and Mecca', ('detroit', 1952.6), ('new_york', 1954.5), ('new_york', 1964.25), ('jeddah', 1964.3), ('mecca', 1964.31), ('cairo', 1964.33),
     ('accra', 1964.36), ('new_york', 1964.4), ('new_york', 1965.14)))
-P('Rosa Parks', 'Civil rights activist', (1913, 2005), 3, 'reform',
+P('Rosa Parks', 'Civil rights activist', (1913, 2005), 2, 'reform',
   'Refused to give up her bus seat in Montgomery in 1955, starting the bus boycott.',
   G(1955, 1956, 'The Montgomery bus boycott', 'montgomery'))
 P('Neil Armstrong', 'American astronaut', (1930, 2012), 2, 'explore',
@@ -212,7 +212,7 @@ P('Benazir Bhutto', 'Prime minister of Pakistan', (1953, 2007), 3, 'rule',
 P('Sheikh Mujibur Rahman', 'Founder of Bangladesh', (1920, 1975), 3, 'rule',
   'Led East Pakistan to independence as Bangladesh in 1971; murdered in a coup in 1975.',
   R(1972, 1975, 'Leader of Bangladesh', 'Bangladesh', at='dhaka'))
-P('Mother Teresa', 'Catholic nun', (1910, 1997), 3, 'faith',
+P('Mother Teresa', 'Catholic nun', (1910, 1997), 2, 'faith',
   'Albanian nun who cared for the dying poor of Calcutta.',
   G(1929, 1997, 'Calcutta', 'calcutta'))
 P('Malala Yousafzai', "Pakistani campaigner for girls' schooling", (1997, None), 3, 'reform',
@@ -389,16 +389,16 @@ P('Pablo Picasso', 'Spanish painter', (1881, 1973), 2, 'art',
   G(1895, 1903, 'Barcelona, Madrid and Paris', ('barcelona', 1895.8), ('madrid', 1897.8), ('barcelona', 1899.0), ('barcelona', 1900.75), ('paris', 1900.8),
     ('paris', 1901.9), ('barcelona', 1902.0)),
   G(1904, 1946, 'Paris', 'paris'), G(1947, 1973, 'The south of France', ((7.05, 43.58, 1948.0)), ((7.0, 43.6, 1961.0)), ((7.0, 43.6, 1973.27))))
-P('Alan Turing', 'British mathematician', (1912, 1954), 3, 'mind',
+P('Alan Turing', 'British mathematician', (1912, 1954), 2, 'mind',
   'Founded computer science and broke German codes at Bletchley Park.',
   G(1939, 1945, 'Codebreaker at Bletchley Park', (-0.74, 52.0)), G(1946, 1954, 'The first computers', ('london', 1946.0), ('london', 1947.9), ('manchester', 1948.5)))
-P('The Beatles', 'English rock band', (1960, 1970), 3, 'art',
+P('The Beatles', 'English rock band', (1960, 1970), 2, 'art',
   'Four lads from Liverpool who became the most famous band in history.',
   G(1960, 1969, 'Liverpool, Hamburg, London and the world', ('liverpool', 1960.5), ('hamburg', 1960.65), ('liverpool', 1961.2), ('london', 1963.5), ('new_york', 1964.1),
     ('london', 1964.2), ((78.27, 30.12, 1968.15)), ('london', 1968.35), ('london', 1969.99)))
-P('Tim Berners-Lee', 'English computer scientist', (1955, None), 3, 'mind',
+P('Tim Berners-Lee', 'English computer scientist', (1955, None), 2, 'mind',
   'Invented the World Wide Web at CERN in 1989.',
   G(1989, 1991, 'Inventing the web at CERN', (6.05, 46.23)))
-P('Steve Jobs', 'Co-founder of Apple', (1955, 2011), 3, 'mind',
+P('Steve Jobs', 'Co-founder of Apple', (1955, 2011), 2, 'mind',
   'Made the personal computer, and then the smartphone, something everyone wanted.',
   G(1976, 2011, 'Apple, in what became Silicon Valley', (-122.03, 37.32)))
