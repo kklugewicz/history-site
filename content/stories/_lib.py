@@ -68,3 +68,19 @@ C.update({
     'deir_el_bahari': (32.61, 25.74), 'valley_of_kings': (32.6, 25.74), 'behistun': (47.44, 34.39), 'mount_nebo': (35.73, 31.77),
     'nippur': (45.23, 32.13), 'wadi_al_jarf': (32.64, 29.03), 'pi_ramesses': (31.83, 30.8), 'mari': (40.89, 34.55),
 })
+
+C.update({  # the 1800s
+    'guernsey': (-2.54, 49.46), 'shrewsbury': (-2.75, 52.71), 'hodgenville': (-85.74, 37.57), 'new_salem': (-89.84, 40.0),
+    'springfield_il': (-89.65, 39.8), 'gads_hill': (0.47, 51.41), 'bayreuth': (11.58, 49.95), 'lucerne': (8.31, 47.05),
+    'schonhausen': (12.03, 52.58), 'koniggratz': (15.83, 50.29), 'friedrichsruh': (10.34, 53.53), 'baltimore': (-76.61, 39.29),
+    'new_bedford': (-70.93, 41.64), 'rochester_ny': (-77.61, 43.16), 'windsor': (-0.6, 51.48), 'balmoral': (-3.23, 57.04),
+    'osborne': (-1.27, 50.75), 'scutari': (29.02, 41.0), 'balaclava': (33.6, 44.5), 'dole': (5.49, 47.09), 'arbois': (5.77, 46.9),
+    'lille': (3.06, 50.63), 'strasbourg': (7.75, 48.58), 'brno': (16.61, 49.2), 'heinzendorf': (17.78, 49.66),
+    'auburn_ny': (-76.56, 42.93), 'combahee': (-80.65, 32.63), 'yasnaya_polyana': (37.53, 54.07), 'astapovo': (39.45, 53.24),
+    'giverny': (1.53, 49.08), 'le_havre': (0.11, 49.49), 'argenteuil': (2.25, 48.95), 'milan_ohio': (-82.6, 41.3),
+    'port_huron': (-82.42, 42.98), 'west_orange': (-74.24, 40.79), 'brantford': (-80.26, 43.14), 'baddeck': (-60.75, 46.1),
+    'zundert': (4.66, 51.47), 'nuenen': (5.55, 51.47), 'borinage': (3.85, 50.43), 'arles': (4.63, 43.68),
+    'saint_remy': (4.83, 43.79), 'auvers': (2.17, 49.07), 'smiljan': (15.31, 44.57), 'graz': (15.44, 47.07),
+    'niagara': (-79.07, 43.08), 'colorado_springs': (-104.82, 38.83), 'wardenclyffe': (-72.91, 40.95), 'pribor': (18.15, 49.64),
+    'santiniketan': (87.68, 23.68), 'heidelberg': (8.69, 49.4), 'trieste': (13.77, 45.65),
+})

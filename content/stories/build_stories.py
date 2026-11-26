@@ -29,6 +29,10 @@ PRETTY = {
     'mount_sinai': 'Mount Sinai', 'saint_denis': 'Saint-Denis', 'ain_jalut': 'Ain Jalut', 'tel_aviv': 'Tel Aviv',
     'lake_trasimene': 'Lake Trasimene', 'new_carthage': 'Cartagena', 'kitty_hawk': 'Kitty Hawk', 'menlo_park': 'Menlo Park',
     'los_alamos': 'Los Alamos', 'cape_canaveral': 'Cape Canaveral', 'lutetia': 'Paris', 'constantinople': 'Constantinople',
+    'springfield_il': 'Springfield', 'rochester_ny': 'Rochester', 'auburn_ny': 'Auburn', 'milan_ohio': 'Milan, Ohio',
+    'gads_hill': "Gad's Hill", 'schonhausen': 'Schönhausen', 'koniggratz': 'Königgrätz', 'saint_remy': 'Saint-Rémy',
+    'auvers': 'Auvers-sur-Oise', 'le_havre': 'Le Havre', 'yasnaya_polyana': 'Yasnaya Polyana', 'pribor': 'Příbor',
+    'combahee': 'Combahee River', 'osborne': 'Osborne House', 'niagara': 'Niagara Falls', 'heinzendorf': 'Heinzendorf',
 }
 SMALL = {'of', 'de', 'da', 'del', 'la', 'le', 'the', 'and', 'on', 'upon', 'aux', 'du', 'des', 'van', 'von', 'al'}
 
