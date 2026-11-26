@@ -65,4 +65,6 @@ def legacy(text, *points, **kw):
 # places the stories need that the people's table does not have
 C.update({
     'vinci': (10.93, 43.79), 'amboise': (0.98, 47.41), 'heiligenstadt': (16.35, 48.25), 'eisenach': (10.32, 50.98),
+    'deir_el_bahari': (32.61, 25.74), 'valley_of_kings': (32.6, 25.74), 'behistun': (47.44, 34.39), 'mount_nebo': (35.73, 31.77),
+    'nippur': (45.23, 32.13), 'wadi_al_jarf': (32.64, 29.03), 'pi_ramesses': (31.83, 30.8), 'mari': (40.89, 34.55),
 })
