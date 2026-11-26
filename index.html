@@ -143,6 +143,28 @@ body { background: var(--bg); color: var(--ink); font-family: var(--f-body); fon
 .fb.flash > circle { animation: fbflash 1.4s ease-out; }
 @keyframes fbflash { 0% { stroke: #fff6c2; stroke-width: 9; } 100% { stroke-width: 1.8; } }
 
+/* small flags over the names, in Borders */
+.flag { cursor: pointer; }
+.flag .halo { fill: none; stroke: var(--paper); stroke-width: 2.6; stroke-linejoin: round; opacity: .8; }
+.flag .edge { fill: none; stroke: color-mix(in srgb, var(--ink) 42%, transparent); stroke-width: .7; }
+.flag:hover .edge { stroke: var(--accent); stroke-width: 1.5; }
+.flag .fi.new { animation: flagin .8s ease-out; }
+@keyframes flagin { from { opacity: 0; } to { opacity: 1; } }
+
+/* cities, each drawn as its landmark of the time */
+.city { cursor: pointer; }
+.city use { fill: color-mix(in srgb, var(--ink) 86%, transparent); stroke: color-mix(in srgb, var(--paper) 85%, transparent); paint-order: stroke; stroke-linejoin: round; }
+.city:hover use { fill: var(--accent); }
+.city .dot { fill: var(--ink); stroke: var(--paper); stroke-width: 1.4; }
+.city .hit { fill: transparent; }
+.city .tie { stroke: color-mix(in srgb, var(--ink) 55%, transparent); stroke-width: 1; }
+.city.plain use { fill: color-mix(in srgb, var(--ink) 62%, transparent); }
+.city use.new { animation: cityin 1s ease-out; }
+@keyframes cityin { from { opacity: 0; } to { opacity: 1; } }
+.city text { font-family: var(--f-display); fill: var(--ink); text-anchor: middle; paint-order: stroke; stroke: color-mix(in srgb, var(--paper) 80%, transparent); stroke-width: 2.6px; stroke-linejoin: round; }
+.city.r1 text { letter-spacing: .03em; }
+.city.r3 text { font-style: italic; }
+
 /* war lines, swords and battle markers */
 .wl-halo { fill: none; stroke: var(--paper); stroke-linecap: round; stroke-linejoin: round; opacity: .75; pointer-events: none; }
 .wl { fill: none; stroke: var(--war); stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
@@ -234,6 +256,18 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .panel-body { overflow-y: auto; padding: 14px 18px 18px; min-height: 0; display: flex; flex-direction: column; gap: 16px; }
 .focus h2 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: 24px; line-height: 1.1; text-wrap: balance; display: flex; align-items: center; gap: 8px; }
 .swatch { width: 14px; height: 14px; border-radius: 3px; flex: none; border: 1px solid var(--line); display: inline-block; }
+.flagcard { display: grid; grid-template-columns: 96px 1fr; gap: 12px; align-items: start; margin: 12px 0 2px; }
+.flagcard img { width: 96px; height: 72px; border-radius: 3px; display: block; background: var(--line); box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 18%, transparent), 0 2px 8px rgba(40,28,12,.14); }
+.flagcard b { display: block; font-size: 15px; line-height: 1.25; }
+.flagcard .s { display: block; font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); margin-top: 3px; }
+.flagcard .note { display: block; font-size: 13.5px; line-height: 1.38; color: var(--ink-soft); margin-top: 5px; }
+.flagrow { display: flex; flex-wrap: wrap; gap: 4px; }
+.flagrow button { all: unset; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 5px 4px 3px; min-width: 44px; border-radius: 6px; cursor: pointer; font-family: var(--f-mono); font-size: 10.5px; color: var(--ink-soft); }
+.flagrow button:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.flagrow button:focus-visible { outline: 2px solid var(--accent); }
+.flagrow button.now { background: color-mix(in srgb, var(--accent) 13%, transparent); color: var(--ink); }
+.flagrow button.off { cursor: default; opacity: .5; }
+.flagrow .ft { display: block; border-radius: 2px; box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 22%, transparent); }
 .sub { color: var(--ink-soft); font-size: 13px; margin-top: 3px; }
 .hint { color: var(--ink-soft); font-size: 14px; margin: 0; }
 .syn { margin: 0; font-size: 16px; line-height: 1.5; }
@@ -370,7 +404,9 @@ details[open] summary { margin-bottom: 6px; }
   const neatG = root.append('path').attr('class', 'neat');   // the edge of the world
   const wlG = root.append('g');                // war lines: fronts and borders between warring sides
   const geoG = root.append('g').attr('class', 'geo');        // names of seas, straits, rivers, mountains; peaks; currents' names
+  const cityG = root.append('g');              // cities, each drawn as the landmark it was known for
   const lblG = root.append('g');
+  const flagG = root.append('g');              // small flags over the names, in Borders
   const fbG = root.append('g');                // faith badges beside names
   const trailG = root.append('g');             // routes travelled by people on the move
   const ovG = root.append('g');                // Wars tab and story overlays: arrows, generals, sites
@@ -527,9 +563,75 @@ details[open] summary { margin-bottom: 6px; }
   const FIXED = { 'Roman Empire': 0, 'Roman Republic': 0, 'Rome': 0, 'Eastern Roman Empire': 280, 'Byzantine Empire': 280,
     'Ottoman Empire': 152, 'France': 214, 'Holy Roman Empire': 44, 'Russian Empire': 120, 'USSR': 356, 'Spain': 30,
     'United States': 220, 'United States of America': 220, 'China': 8, 'Mongol Empire': 95 };
-  const hashHue = name => { if (name in FIXED) return FIXED[name]; let h = 0; for (const c of name) h = (h * 31 + c.charCodeAt(0)) >>> 0; return HUES[h % HUES.length]; };
-  const polFill = n => `hsl(${hashHue(n)} var(--pol-s) var(--pol-l))`;
+  // the same hash as scripts/build_flags.py, which leaves out every tint that equals it
+  const hashHue = name => { let h = 0; for (const c of name) h = (h * 31 + c.charCodeAt(0)) >>> 0; return HUES[h % HUES.length]; };
   const warColor = w => `hsl(${hashHue(w.id + 'x')} 55% 48%)`;
+
+  // ---------- flags ----------
+  // data/flags.json (scripts/build_flags.py) holds each state's flags year by year, a sprite of small flags, and the
+  // map's tints: each state takes a colour from its own flag that no neighbour wears, border file by border file
+  // ('g' for the simplified map's groups, 'n' for every state). A colony flies its ruler's flag; a people or state with
+  // no known flag or banner shows none. Until the file loads (or if it fails), tints come from the name alone.
+  let FLG = null, flgFile = null, flgIdx = -1;
+  opt('flags.json').then(d => { if (!d) return; FLG = d; styleMap(); drawLabels(); if (S.selected) renderPanel(); });
+  function hueOf(name, mode) {
+    if (!FLG) return name in FIXED ? FIXED[name] : hashHue(name);
+    const t = FLG.tints[mode][name];
+    if (t == null) return hashHue(name);
+    if (typeof t === 'number') return t;
+    if (flgFile !== S.file) { flgFile = S.file; flgIdx = FLG.files.indexOf(S.file); }
+    let h = t[0][1];
+    for (const [i, v] of t) { if (i > flgIdx) break; h = v; }
+    return h;
+  }
+  const polFill = (n, mode = simple() ? 'g' : 'n') => `hsl(${hueOf(n, mode)} var(--pol-s) var(--pol-l))`;
+  // the flag a name flies in year y, as [flag id, from, to], from that name's own flag history
+  function flagIn(name, y) {
+    const tl = FLG && name && FLG.names[name];
+    if (tl) for (const e of tl) if ((e[0] == null || y >= e[0]) && (e[1] == null || y <= e[1])) return e;
+    return null;
+  }
+  // a state's own flag, else its overlord's (a colony, a member of a larger realm, an empire's home state)
+  function flagOf(f, name = f.properties.name, y = S.year) {
+    const p = f.properties;
+    for (const n of [name, HOME[name], p.sub, p.part]) { const e = flagIn(n, y); if (e) return { e, by: n }; }
+    return null;
+  }
+  const flagTitle = id => FLG.flags[id][1];
+  const flagYears = e => e[0] != null ? (e[1] != null ? fmtSpan(e[0], e[1]) : 'since ' + fmtYear(e[0])) : e[1] != null ? 'until ' + fmtYear(e[1]) : '';
+  const KIND = { banner: 'Banner', standard: 'Standard', emblem: 'Emblem' };
+  const flagImg = id => 'data/flags/' + id.replace(':', '-') + '.webp';
+  // a flag cut from the sprite at w×(3/4 w) px, as a CSS background
+  function flagThumb(id, w) {
+    const s = FLG.sprite, i = FLG.flags[id][0], z = w / s.w;
+    return `background-image:url(data/${s.src});background-size:${s.cols * s.w * z}px ${Math.ceil(s.n / s.cols) * s.h * z}px;` +
+      `background-position:${-(i % s.cols) * s.w * z}px ${-Math.floor(i / s.cols) * s.h * z}px;width:${w}px;height:${w * s.h / s.w}px`;
+  }
+  // the selected state's flag this year and what it was; for a state's own flags, the flags it flew over time, each of
+  // which moves the map to a year when that flag flew and the state was on the map
+  function flagBlock(f) {
+    const p = f.properties, r = FLG && flagOf(f);
+    if (!r) return '';
+    const id = r.e[2], m = FLG.flags[id], yrs = flagYears(r.e), own = r.by === p.name;
+    const sub = [KIND[m[2]], yrs && (m[2] === 'flag' ? 'flown ' : 'used ') + yrs, own ? '' : 'flag of ' + r.by].filter(Boolean).join(' · ');
+    let html = `<div class="flagcard"><img src="${flagImg(id)}" alt="" width="96" height="72"><div><b>${esc(m[1])}</b>` +
+      `<span class="s">${esc(sub)}</span>${m[3] ? `<span class="note">${esc(m[3])}</span>` : ''}</div></div>`;
+    const seen = own && FLG.seen[p.name], runs = [];
+    if (!seen) return html;
+    for (const e of FLG.names[p.name]) {
+      const l = runs[runs.length - 1];
+      if (l && l.id === e[2] && l.to != null && e[0] === l.to + 1) l.to = e[1]; else runs.push({ id: e[2], from: e[0], to: e[1] });
+    }
+    if (runs.length < 2) return html;
+    const y = S.year;
+    return html + '<div class="sec"><h3>Flags over time</h3><div class="flagrow">' + runs.map(x => {
+      const jump = Math.max(x.from ?? seen[0], seen[0]), ok = jump <= Math.min(x.to ?? seen[1], seen[1]);
+      const now = (x.from == null || y >= x.from) && (x.to == null || y <= x.to);
+      const tip = flagTitle(x.id) + (flagYears([x.from, x.to]) ? ', ' + flagYears([x.from, x.to]) : '') + (ok ? '' : ' (before this state is on the map)');
+      return `<button type="button" class="${now ? 'now' : ''}${ok ? '' : ' off'}" data-flagyear="${ok ? jump : ''}" title="${esc(tip)}"><span class="ft" style="${flagThumb(x.id, 32)}"></span>${esc(x.from != null ? fmtYear(x.from) : 'to ' + fmtYear(x.to))}</button>`;
+    }).join('') + '</div></div>';
+  }
+  $('panelBody').addEventListener('click', e => { const b = e.target.closest('[data-flagyear]'); if (b && b.dataset.flagyear) setYear(+b.dataset.flagyear); });
 
   // ---------- religion ----------
   // Each state takes the religion of its place ("zone"): the zone anchor inside it nearest its centre, else the nearest anchor.
@@ -775,6 +877,11 @@ details[open] summary { margin-bottom: 6px; }
       const cx = T.x + l.x * k, cy = T.y + l.y * k, hw = halfW(l, k) + 3, hh = lblPx(l, k) * .62;
       taken.push([cx - hw, cy - hh, cx + hw, cy + hh]);
     }
+    for (const d of shownFlags) {
+      const cx = T.x + d.l.x * k, cy = T.y + d.l.y * k;
+      taken.push([cx - d.fw / 2 - 3, cy - d.gap - d.fh - 3, cx + d.fw / 2 + 3, cy]);
+    }
+    for (const d of shownCities) taken.push(...d.boxes);
     const hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
     const list = [];
     const cand = GEO.labels.filter(d => size >= d.k * .94 && inYears(d, y) && (!detail || d.c === 'ocean' || d.c === 'sea' || d.c === 'sea2' || d.c === 'strait'))
@@ -860,8 +967,171 @@ details[open] summary { margin-bottom: 6px; }
       .attr('stroke-width', 3 / k).text(d => d.name);
     shownLabels = new Map(vis.map(l => [l.name, l]));
     drawBadges(vis);
+    drawFlags(vis);
     drawLeaders();
+    drawCities();
     drawGeo();
+  }
+  // In Borders, a small flag stands over each name, cut from one sprite. The biggest states go first; a flag that would
+  // cover another name or flag is left out. When a state's flag changes as the years pass, the new one fades in.
+  let shownFlags = [];
+  const lastFlag = new Map();
+  function drawFlags(vis) {
+    const k = S.k, T = S.t, list = [];
+    if (FLG && W && S.mode === 'map' && !S.detail) {
+      const box = l => { const px = lblPx(l, k), hw = halfW(l, k), x = T.x + l.x * k, y = T.y + l.y * k; return [x - hw, y - px * .45, x + hw, y + px * .45]; };
+      const names = vis.map(box), placed = [];
+      const over = (b, o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1];
+      for (const i of d3.range(vis.length).sort((a, b) => vis[b].a - vis[a].a)) {
+        const l = vis[i], r = flagOf(l.f, l.name); if (!r) continue;
+        const px = lblPx(l, k), fw = Math.round(px * 1.3), fh = fw * .75, gap = px * .5 + 2.5;
+        const x = T.x + l.x * k, y = T.y + l.y * k, b = [x - fw / 2 - 1.5, y - gap - fh - 1.5, x + fw / 2 + 1.5, y - gap + 1];
+        if (names.some((o, j) => j !== i && over(b, o)) || placed.some(o => over(b, o))) continue;
+        placed.push(b);
+        list.push({ l, id: r.e[2], e: r.e, by: r.by, fw, fh, gap });
+      }
+    }
+    shownFlags = list;
+    if (!FLG) return;
+    const sp = FLG.sprite;
+    flagG.selectAll('g.flag').data(list, d => d.l.name).join(enter => {
+      const g = enter.append('g').attr('class', 'flag')
+        .on('click', (e, d) => { e.stopPropagation(); hideTip(); onPolity(d.l.f); })
+        .on('mousemove', (e, d) => showTip(e, flagTitle(d.id), flagTip(d))).on('mouseleave', hideTip);
+      const fi = g.append('g').attr('class', 'fi');
+      fi.append('rect').attr('class', 'halo');
+      fi.append('svg').attr('preserveAspectRatio', 'none')
+        .append('image').attr('href', 'data/' + sp.src).attr('width', sp.cols * sp.w).attr('height', Math.ceil(sp.n / sp.cols) * sp.h);
+      fi.append('rect').attr('class', 'edge');
+      return g;
+    }).attr('transform', d => `translate(${d.l.x},${d.l.y}) scale(${1 / k})`)
+      .each(function (d) {
+        const fi = d3.select(this).select('g.fi'), i = FLG.flags[d.id][0], x = -d.fw / 2, y = -d.gap - d.fh;
+        fi.selectAll('rect').attr('x', x).attr('y', y).attr('width', d.fw).attr('height', d.fh);
+        fi.select('svg').attr('x', x).attr('y', y).attr('width', d.fw).attr('height', d.fh)
+          .attr('viewBox', `${(i % sp.cols) * sp.w} ${Math.floor(i / sp.cols) * sp.h} ${sp.w} ${sp.h}`);
+        const prev = lastFlag.get(d.l.name);
+        if (prev && prev !== d.id && !reduce()) { fi.classed('new', false); this.getBoundingClientRect(); fi.classed('new', true); }
+        lastFlag.set(d.l.name, d.id);
+      });
+  }
+  function flagTip(d) {
+    const m = FLG.flags[d.id], yrs = flagYears(d.e);
+    return [KIND[m[2]], yrs && (m[2] === 'flag' ? 'flown ' : 'used ') + yrs, d.by !== d.l.name ? 'flag of ' + d.by : ''].filter(Boolean).join(' · ');
+  }
+  // ---------- cities ----------
+  // Each city stands on the map as a small silhouette of the landmark it was known for in that age (Hagia Sophia, then
+  // Hagia Sophia with minarets; Notre-Dame, then the Eiffel Tower), with the name it went by then. Rank 1 cities show on
+  // the whole world, rank 2 once you zoom to a region, rank 3 closer in (data/cities.json, from scripts/build_cities.py).
+  // States' names, flags and rulers come first: a landmark that would cover one steps aside (a dot and a thin line keep
+  // the spot) or stays off the map, and a name that would cover one is left out.
+  let CTY = null;
+  opt('cities.json').then(d => {
+    if (!d) return;
+    defs.node().insertAdjacentHTML('beforeend', Object.entries(d.icons).map(([k, v]) => `<symbol id="lm-${k}" viewBox="0 0 100 100"><path d="${v}"/></symbol>`).join(''));
+    CTY = d.cities; drawLabels();
+  });
+  const stepAt = (a, y) => { let v = null; for (const e of a) { if (e[0] > y) break; v = e; } return v; };
+  const CITY_AT = [0, .85, 1.7, 3.2];    // how big the world must look (its width / 1000px) for each rank's landmark to show
+  const CITY_NAME = [0, 1.5, 2.6, 4.6];  // ... and for its name
+  const CITY_PX = [0, 27, 23, 19];       // landmark height on screen, growing a little as you zoom in
+  let shownCities = [];
+  const lastLandmark = new Map();
+  function drawCities() {
+    const list = [];
+    if (CTY && W && !S.detail && S.mode !== 'wars') {
+      const k = S.k, T = S.t, y = S.year, size = worldPx() / 1000, ph = isPhone() ? .85 : 1;
+      // the room taken by states' names (and the faith badge after each), flags and rulers' portraits, in screen px
+      const taken = [];
+      for (const l of shownLabels.values()) {
+        const cx = T.x + l.x * k, cy = T.y + l.y * k, px = lblPx(l, k), hw = halfW(l, k) + 2;
+        taken.push([cx - hw, cy - px * .55, cx + hw + px * .95 + 4, cy + px * .55]);
+      }
+      for (const d of shownFlags) { const cx = T.x + d.l.x * k, cy = T.y + d.l.y * k; taken.push([cx - d.fw / 2 - 2, cy - d.gap - d.fh - 2, cx + d.fw / 2 + 2, cy - d.gap + 2]); }
+      // a ruler's portrait is a disc of radius 15 drawn at its group's translate and scale (read without forcing a layout)
+      leadG.selectAll('g.leader').each(function () {
+        const m = this.transform.baseVal.consolidate(); if (!m) return;
+        const { a, e, f } = m.matrix, x = T.x + e * k, yy = T.y + f * k, r = 16 * a * k;
+        taken.push([x - r, yy - r, x + r, yy + r]);
+      });
+      const hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
+      const cand = [], pk = proj.scale() + ',' + proj.translate();
+      for (const c of CTY) {
+        if (y < c.y[0] || (c.y[1] != null && y > c.y[1])) continue;
+        const r = stepAt(c.r, y)[1];
+        if (!r || size < CITY_AT[r] * (isPhone() ? .8 : 1)) continue;
+        if (c.pk !== pk) { c.pk = pk; c.p = proj(c.at); }
+        const p = c.p; if (!p) continue;
+        const sx = T.x + p[0] * k, sy = T.y + p[1] * k;
+        if (sx < -30 || sy < -10 || sx > W + 30 || sy > H + 40) continue;
+        cand.push({ c, r, p, sx, sy });
+      }
+      cand.sort((a, b) => a.r - b.r);
+      for (const d of cand) {
+        // a plain walled town is drawn smaller than a real landmark, so the famous buildings stand out
+        const lm = stepAt(d.c.lm, y), plain = !lm[2];
+        const s = Math.round(CITY_PX[d.r] * ph * (plain ? .78 : 1) * clamp(1 + .14 * Math.log2(size / CITY_AT[d.r]), 1, 1.4));
+        // the landmark stands on its city; if that would cover a name or flag it steps aside, with a dot and a thin line to the spot
+        const side = s * .42 + 3, spots = [[0, 0], [side, s * .38], [-side, s * .38], [0, s * .96 + 3], [0, -s * .6], [0, s * 1.5 + 4], [side * 1.9, s * .38], [-side * 1.9, s * .38]];
+        let at = null, icon;
+        for (const [dx, dy] of spots) {
+          const x = d.sx + dx, b = d.sy + dy;
+          icon = [x - s * .42, b - s * .9, x + s * .42, b];
+          if (!hit(icon)) { at = [dx, dy]; break; }
+        }
+        if (!at) continue;
+        const boxes = [icon], name = stepAt(d.c.n, y)[1], fs = d.r === 1 ? 12.5 : d.r === 2 ? 11.5 : 10.5;
+        let named = false;
+        if (size >= CITY_NAME[d.r] * (isPhone() ? .8 : 1)) {
+          const w = name.length * fs * .27 + 2, x = d.sx + at[0], b = d.sy + at[1], nb = [x - w, b + 1, x + w, b + fs + 3];
+          if (!hit(nb)) { boxes.push(nb); named = true; }
+        }
+        taken.push(...boxes);
+        list.push({ c: d.c, r: d.r, x: d.p[0], y: d.p[1], at, s, fs, name: named ? name : '', full: name, lm, plain, boxes });
+      }
+    }
+    shownCities = list;
+    const k = S.k;
+    cityG.selectAll('g.city').data(list, d => d.c.id).join(enter => {
+      const g = enter.append('g').attr('class', 'city')
+        .on('click', (e, d) => { e.stopPropagation(); hideTip(); const f = stateAt(d.c.at); if (f) onPolity(f); })
+        .on('mousemove', (e, d) => showTip(e, d.full, cityTip(d))).on('mouseleave', hideTip);
+      g.append('line').attr('class', 'tie');
+      g.append('circle').attr('class', 'dot').attr('r', 2.2);
+      g.append('rect').attr('class', 'hit');
+      g.append('use');
+      g.append('text');
+      return g;
+    }).attr('class', d => 'city r' + d.r + (d.plain ? ' plain' : ''))
+      .attr('transform', d => `translate(${d.x},${d.y}) scale(${1 / k})`)
+      .each(function (d) {
+        const id = d.lm[1], [dx, dy] = d.at, key = [id, d.s, dx, dy, d.name, d.fs].join('|');
+        if (this.__key === key) return;   // only the zoom changed: the transform above is enough
+        this.__key = key;
+        const g = d3.select(this), u = g.select('use');
+        u.attr('href', '#lm-' + id).attr('x', dx - d.s / 2).attr('y', dy - d.s * .96).attr('width', d.s).attr('height', d.s).style('stroke-width', 2.4 * 100 / d.s);
+        g.select('rect.hit').attr('x', dx - d.s * .42).attr('y', dy - d.s * .9).attr('width', d.s * .84).attr('height', d.s * .9);
+        // the nearest point of the landmark's box to the city, for the line that ties a landmark that stepped aside
+        const tx = clamp(0, dx - d.s * .3, dx + d.s * .3), ty = clamp(0, dy - d.s * .85, dy), far = Math.hypot(tx, ty) > 5;
+        g.select('circle.dot').style('display', dx || dy ? null : 'none');
+        g.select('line.tie').style('display', far ? null : 'none').attr('x2', tx).attr('y2', ty);
+        g.select('text').attr('x', dx).attr('y', dy + d.fs * .95 + 1).style('font-size', d.fs + 'px').text(d.name);
+        const prev = lastLandmark.get(d.c.id);
+        if (prev && prev !== id && !reduce()) { u.classed('new', false); this.getBoundingClientRect(); u.classed('new', true); }
+        lastLandmark.set(d.c.id, id);
+      });
+  }
+  // the state a city lies in; a port the simplified borders leave just offshore takes the state beside it
+  function stateAt([lon, lat]) {
+    const fs = S.features.filter(f => !simple() || f.major);
+    for (const [a, b] of [[0, 0], [.2, 0], [-.2, 0], [0, .2], [0, -.2], [.4, .4], [-.4, -.4], [.4, -.4], [-.4, .4]]) {
+      const f = fs.find(f => d3.geoContains(f, [lon + a, lat + b])); if (f) return f;
+    }
+    return null;
+  }
+  function cityTip(d) {
+    const now = d.c.now || d.c.n[d.c.n.length - 1][1];
+    return [d.lm[2], now !== d.full ? 'now ' + now : ''].filter(Boolean).join(' · ');
   }
   // a small faith symbol after each name, in Borders and Religions; it flashes when the land changes faith
   const lastFaith = new Map();
@@ -1170,7 +1440,7 @@ details[open] summary { margin-bottom: 6px; }
     const d = S.detail, side = sideMap() || overviewSides(), sm = simple(), y = S.year;
     polGroup.selectAll('path').each(function (f) {
       const p = f.properties, el = d3.select(this);
-      let fill = polFill(sm ? f.group : p.name), muted = false, faith = false, war = false, other = false;
+      let fill = polFill(sm ? f.group : p.name, sm ? 'g' : 'n'), muted = false, faith = false, war = false, other = false;
       if (d && d.kind === 'war' || (!d && S.mode === 'wars')) {
         const sd = side.get(p.name);
         if (sd) { fill = sd.color; war = true; } else muted = true;
@@ -1630,10 +1900,11 @@ details[open] summary { margin-bottom: 6px; }
       const f = S.features.find(x => x.properties.name === S.selected);
       if (f) {
         const p = f.properties, fa = faithAt(f, S.year);
-        const sw = S.mode === 'religions' && fa ? fa.color : polFill(p.name);
+        const sw = S.mode === 'religions' && fa ? fa.color : simple() ? polFill(f.group, 'g') : polFill(p.name, 'n');
         for (const ld of rulersOf(f)) html += `<button type="button" class="card" data-person="${ld.p.id}" style="padding:6px 8px"><span class="ruler"><span class="ph">${imgOf(ld.p) ? `<img src="${esc(imgOf(ld.p))}" alt="">` : esc(initials(ld.p.name))}</span><span><b>${esc(ld.p.name)}</b><span class="s">${esc(ld.s.label || ld.p.role)}, ${fmtSpan(ld.s.from, ld.s.to)}</span><span class="syn" style="display:block;font-size:14.5px;margin-top:4px">${esc(ld.p.why)}</span></span></span></button>`;
         html += `<div class="focus"><h2><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</h2>` +
           (p.sub ? `<div class="sub">Part of ${esc(p.sub)}</div>` : '') + (fa ? `<div class="sub">Main faith: ${esc(fa.name)}</div>` : '') + '</div>';
+        html += flagBlock(f);
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
         html += regionBlock(p.regions[0], true);
