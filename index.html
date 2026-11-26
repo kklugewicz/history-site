@@ -287,7 +287,7 @@ details[open] summary { margin-bottom: 6px; }
 .face.story img, .ph.story img { border-radius: 50%; }
 .face.story:hover, .ph.story:hover { transform: scale(1.06); }
 .people .face.story { width: 36px; height: 36px; margin: -3px; }
-.mv .face { background: var(--fc, var(--line)); }
+.mv .face:not(.story) { background: var(--fc, var(--line)); }
 .mv .face.story { width: 32px; height: 32px; margin: -3px; }
 .ruler .ph.story { width: 74px; height: 74px; margin: -5px; border-width: 3px; padding: 2px; }
 .ruler.big .ph.story { width: 98px; height: 98px; }
@@ -343,9 +343,11 @@ details[open] summary { margin-bottom: 6px; }
 #svTapPrev { left: 0; width: 30%; }
 #svTapNext { right: 0; width: 70%; }
 .sv-tap:focus-visible { outline: 2px solid rgba(255,255,255,.5); outline-offset: -8px; border-radius: 12px; }
-.sv-body { position: relative; z-index: 3; flex: none; max-height: 66%; overflow: hidden; padding: 14px 22px 24px; pointer-events: none; }
+.sv-body { position: relative; z-index: 3; flex: 0 1 auto; max-height: 66%; overflow: hidden; padding: 14px 22px 24px; pointer-events: none; }
+.sv-card.tight .sv-media { min-height: 15%; }
+.sv-card.tight .sv-body { max-height: none; }
 .sv-card::after { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(rgba(6,8,10,0) 40%, rgba(6,8,10,.55) 75%, rgba(6,8,10,.7)); pointer-events: none; }
-.sv-card.solo .sv-body { flex: 1 1 auto; max-height: none; margin-top: 70px; display: flex; flex-direction: column; justify-content: center; }
+.sv-card.solo .sv-body { flex: 1 1 auto; max-height: none; margin-top: 70px; display: flex; flex-direction: column; justify-content: center; justify-content: safe center; }
 .sv-body a, .sv-body button { pointer-events: auto; }
 .sv-body.k-life { --kc: rgba(255,255,255,.78); }
 .sv-body.k-made { --kc: #8fd6ec; }
@@ -1138,17 +1140,20 @@ details[open] summary { margin-bottom: 6px; }
     const back = pic || cover;
     svBg.style.backgroundImage = back ? `url("${String(back).replace(/"/g, '%22')}")` : 'none';
     svMedia.classList.toggle('wait', wait);
-    svCard.classList.toggle('solo', !pic && !wait);
+    SV.solo = !pic && !wait; svCard.classList.toggle('solo', SV.solo);
     if (pic) { if (svImg.getAttribute('src') !== pic) { svImg.classList.remove('on'); svImg.src = pic; } svImg.alt = pg.cap || (pg.k === 'cover' ? 'Portrait of ' + p.name : pg.t); }
     else { svImg.removeAttribute('src'); svImg.classList.remove('on'); svImg.alt = ''; }
   }
   svImg.onload = () => svImg.classList.add('on');
-  svImg.onerror = () => { if (!svImg.getAttribute('src')) return; svImg.classList.remove('on'); svImg.removeAttribute('src'); svCard.classList.add('solo'); svFit(); };
-  // long pages step the type down until they fit
+  svImg.onerror = () => { if (!svImg.getAttribute('src')) return; svImg.classList.remove('on'); svImg.removeAttribute('src'); SV.solo = true; svCard.classList.add('solo'); svFit(); };
+  // long pages step the type down until they fit; on a short screen the picture then shrinks, and at last steps aside
   function svFit() {
-    svBody.classList.remove('dense', 'denser');
-    if (svBody.scrollHeight > svBody.clientHeight + 2) svBody.classList.add('dense');
-    if (svBody.scrollHeight > svBody.clientHeight + 2) svBody.classList.add('denser');
+    svBody.classList.remove('dense', 'denser'); svCard.classList.remove('tight'); svCard.classList.toggle('solo', !!SV.solo);
+    const over = () => svBody.scrollHeight > svBody.clientHeight + 2;
+    if (over()) svBody.classList.add('dense');
+    if (over()) svBody.classList.add('denser');
+    if (over() && !SV.solo) svCard.classList.add('tight');
+    if (over() && !SV.solo) { svCard.classList.remove('tight'); svCard.classList.add('solo'); }
   }
   function svPageHtml(pg, p) {
     if (pg.k === 'cover') {
@@ -2055,7 +2060,7 @@ details[open] summary { margin-bottom: 6px; }
         // a general worth knowing gets a face and a name; any other army is listed by what it was
         const o = m.commander && cmdr[m.commander], c = w.sides[m.side]?.color || 'var(--line)';
         const name = o ? m.commander : (m.label || m.commander), sub = o && m.label && m.label !== m.commander ? ', ' + esc(m.label) : '';
-        return `<div class="mv">${o ? faceHtml(o, m.commander).replace(/class="face([^"]*)"/, `class="face$1" style="background:${c}"`) : `<span class="face plain" style="background:${c}">${ico(m.sea ? 'anchor' : 'arrow')}</span>`}<span><b>${esc(name)}</b>${sub}${m.sea ? ' <span class="ev-k">by sea</span>' : ''}</span></div>`;
+        return `<div class="mv">${o ? faceHtml(o, m.commander).replace(/class="face([^"]*)"/, `class="face$1" style="--fc:${c}"`) : `<span class="face plain" style="background:${c}">${ico(m.sea ? 'anchor' : 'arrow')}</span>`}<span><b>${esc(name)}</b>${sub}${m.sea ? ' <span class="ev-k">by sea</span>' : ''}</span></div>`;
       }).join('') + '</div></div>';
       if (st.events?.length) html += '<div class="sec"><h3>Key moments</h3><div class="list">' + st.events.map(b =>
         `<div class="battle" style="border-color:${w.sides[b.winner]?.color || 'var(--line)'}"><span class="ev-k">${esc(b.sea ? 'sea ' + b.kind : b.kind)}</span> <b>${esc(b.name)}</b> <span class="win">${fmtYear(b.year)}${b.winner != null && w.sides[b.winner] ? ' · ' + sideName(b.winner) + (b.kind === 'battle' || b.kind === 'siege' ? ' victory' : '') : ''}</span><div>${esc(b.text)}</div></div>`).join('') + '</div></div>';

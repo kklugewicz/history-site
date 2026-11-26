@@ -54,5 +54,5 @@ story('leonardo-da-vinci', 'The painter of the Mona Lisa, who filled notebooks w
            'Painted the Mona Lisa and The Last Supper',
            'Notebooks of machines centuries ahead of their time',
            'Studied the body and nature by looking closely',
-           img='Leonardo da Vinci'),
+           img='Lady with an Ermine', cap='Lady with an Ermine, one of the few paintings surely his'),
 )
