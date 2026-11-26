@@ -1,3 +1,4 @@
+A Letter Concerning Toleration
 Abbasid Caliphate
 Abbaye aux Hommes
 Abraham Lincoln
@@ -6,6 +7,8 @@ Abul-Abbas
 Acropolis of Athens
 Adoration of the Magi (Botticelli, 1475)
 Agoge
+Agra Fort
+Akbarnama
 Akhenaten
 Akkadian Empire
 Akkadian language
@@ -14,16 +17,20 @@ Al-Kamil
 Al-Masjid an-Nabawi
 Albertus Magnus
 Alexander Mosaic
+Alexei Petrovich, Tsarevich of Russia
+Algiers
 Algorithm
 Alhambra
 Alhambra Decree
 Allegory of the cave
 Ambrose
+An Essay Concerning Human Understanding
 An Lushan rebellion
 Analects
 Anaxagoras
 Ancient Agora of Athens
 Anne Boleyn
+Anthony Ashley Cooper, 1st Earl of Shaftesbury
 Antonine Plague
 Antony and Cleopatra
 Appian Way
@@ -32,6 +39,7 @@ Arabic numerals
 Archimedes Palimpsest
 Archimedes' screw
 Aristotle
+Armada Portrait
 Aryabhata (satellite)
 Aryabhatiya
 Aspasia
@@ -44,7 +52,9 @@ Augustus of Prima Porta
 Avicenna Mausoleum
 Aztec Empire
 Babylon
+Badshahi Mosque
 Balkh
+Ballet Royal de la Nuit
 Bamboo and wooden slips
 Baptism of Jesus
 Barmakids
@@ -61,12 +71,16 @@ Battle of Hastings
 Battle of Hattin
 Battle of Kadesh
 Battle of Lake Trasimene
+Battle of Lepanto
 Battle of Mactan
 Battle of Marathon
 Battle of Mohács
+Battle of Naseby
 Battle of Pavia
 Battle of Pharsalus
 Battle of Philippi
+Battle of Poltava
+Battle of Sekigahara
 Battle of Talas
 Battle of Thermopylae
 Battle of Zama
@@ -75,11 +89,14 @@ Battle of the Hydaspes
 Battle of the Milvian Bridge
 Battle of the Teutoburg Forest
 Bayeux Tapestry
+Beard tax
 Beatrice Portinari
 Beethoven House
 Behistun Inscription
 Belisarius
 Bibi-Khanym Mosque
+Binary number
+Birbal
 Black pepper
 Boadicea and Her Daughters
 Bonfire of the vanities
@@ -93,7 +110,11 @@ Burning of books and burying of scholars
 Caesarion
 Cairo
 Cairo Citadel
+Calculus
 Calicut
+Camera obscura
+Campo de Criptana
+Candide
 Canticle of the Sun
 Cape Bojador
 Cape of Good Hope
@@ -101,10 +122,12 @@ Caprese Michelangelo
 Caravel
 Carolingian Empire
 Carolingian minuscule
+Cartesian coordinate system
 Carthage
 Catalan Atlas
 Catholic Monarchs
 Cesare Borgia
+Christina, Queen of Sweden
 Church of the Nativity
 Château de Chinon
 Château de Falaise
@@ -112,6 +135,7 @@ Château du Clos Lucé
 Cilician pirates
 Code of Hammurabi
 Codex Atlanticus
+Cogito, ergo sum
 Colossus of Constantine
 Column of Marcus Aurelius
 Confessions (Augustine)
@@ -128,37 +152,52 @@ Cuneiform
 Curse of the pharaohs
 Cusco
 Cyrus Cylinder
+Cádiz
 Córdoba Synagogue
 Dante's tomb
+Dara Shikoh
 Dardanelles Gun
 David (Michelangelo)
 De revolutionibus orbium coelestium
 Death of Alexander the Great
 Death of Cleopatra
+Delft
 Dendera Temple complex
 Denial of Peter
+Dental plaque
 Dhamek Stupa
 Dhauli
+Dialogue Concerning the Two Chief World Systems
 Diary of Merer
 Diet of Worms
+Dieterich Buxtehude
 Diocletian
 Dionysius I of Syracuse
 Divine Comedy
 Djinguereber Mosque
 Domesday Book
 Domrémy-la-Pucelle
+Don Quixote
 Donations of Alexandria
 Donato Bramante
 Drinking Alone by Moonlight
+Edict of Fontainebleau
 Edict of Milan
 Edicts of Ashoka
 Edirne
+Edo Castle
 Edward the Confessor
 Egyptian–Hittite peace treaty
+Eisenach
+El Escorial
+Elizabeth I
+Elizabethan Religious Settlement
+Elizabethan era
 Emperor Gaozong of Tang
 Emperor Taizong of Tang
 Emperor Wu of Han
 Emperor Xuanzong of Tang
+English Civil War
 English Reformation
 Enheduanna
 Ephesus
@@ -168,12 +207,15 @@ Erik the Red
 Euclid's Elements
 Euphrates
 Eureka (word)
+Execution of Charles I
 Fall of Constantinople
 Fall of Tenochtitlan
+Fatehpur Sikri
 Feeding the multitude
 Ferdinand II of Aragon
 Ferghana horse
 First Council of Nicaea
+First Folio
 First Triumvirate
 Florence Baptistery
 Florence Cathedral
@@ -181,8 +223,11 @@ Fossanova Abbey
 Fra Filippo Lippi
 Franciscans
 Frombork Cathedral
+Fronde
 Fujiwara no Shōshi
 Fustat
+Galilean moons
+Galileo affair
 Galileo's Leaning Tower of Pisa experiment
 Geneva
 Genghis Khan Equestrian Statue
@@ -192,11 +237,17 @@ Gentile Bellini
 Georg Joachim Rheticus
 Ghent
 Giant Wild Goose Pagoda
+Girl with a Pearl Earring
 Gladiator
 Global spread of the printing press
+Globe Theatre
+Glorious Revolution
 Gobi Desert
+Golden Hind
 Golden Temple
 Gordian Knot
+Grand Embassy of Peter the Great
+Great Comet of 1577
 Great Mosque of Kufa
 Great Plague of London
 Great Pyramid of Giza
@@ -210,10 +261,14 @@ Gwanghwamun Plaza
 Hadrian
 Hagia Sophia
 Hall of Worthies
+Hamlet
+Han van Meegeren
 Hangu Pass
 Hangul
 Hangzhou
 Hannibal's crossing of the Alps
+Hanover
+Hatfield House
 Heian-kyō
 Heiligenstadt Testament
 Heliocentrism
@@ -226,25 +281,31 @@ History of Animals
 History of chocolate
 History of paper
 House of Wisdom
+Humayun
 Hunminjeongeum
 Hunnic Empire
 Huns
 Hurrem Sultan
+Ibadat Khana
 Iceni
 Imam Ali Shrine
 Imperial examination
 Inca Empire
+Inclined plane
 Inferno (Dante)
 Institutes of the Christian Religion
 Isabella I of Castile
+Isthmus of Panama
 Italian language
 Jabal Thawr
 Jabal al-Nour
+Jahangir
 Jang Yeong-sil
 Jaya Sri Maha Bodhi
 Jerónimos Monastery
 Jesus walking on water
 Jing Ke
+John Hawkins
 Joseph Haydn
 Journey to the West
 Julian calendar
@@ -256,6 +317,7 @@ Kaaba
 Kalinga War
 Katharina von Bora
 Kayseri
+Kepler's laws of planetary motion
 Keys of Heaven
 Khadija bint Khuwaylid
 Khufu ship
@@ -273,6 +335,9 @@ Land of Punt
 Langar (Sikhism)
 Last Supper
 Legend of St. Francis
+Leibniz–Newton calculus controversy
+Leiden
+Leipzig
 Leonardo da Vinci
 Leonardo's horse
 Leonidas at Thermopylae
@@ -289,6 +354,7 @@ Lunar eclipse
 Luoyang
 Machu Picchu
 Madonna of the Meadow
+Magnifying glass
 Mahabodhi Temple
 Mainz
 Maldives
@@ -298,7 +364,9 @@ Manuel I of Portugal
 Marcus Licinius Crassus
 Marcus Vipsanius Agrippa
 Mari, Syria
+Mary I of England
 Mary Rose
+Mary, Queen of Scots
 Masjid al-Haram
 Mask of Tutankhamun
 Masnavi
@@ -312,10 +380,12 @@ Method of Fluxions
 Mevlana Museum
 Mevlevi Order
 Michael Servetus
+Microorganism
 Middle Way
 Mihrimah Sultan Mosque (Edirnekapı)
 Mishneh Torah
 Mogao Caves
+Molière
 Molon labe
 Mona Lisa
 Monastery of Yuste
@@ -324,8 +394,13 @@ Mongol invasion of the Khwarazmian Empire
 Mongol invasions of Japan
 Mongolian steppe
 Mortuary Temple of Hatshepsut
+Moscow Kremlin
 Mount Nebo
 Mount Vesuvius
+Mughal Empire
+Mumtaz Mahal
+Museo Galileo
+Mysterium Cosmographicum
 Nahj al-Balagha
 Nalanda
 Nankana Sahib
@@ -333,9 +408,11 @@ Nativity scene
 Newton (Blake)
 Newtonian telescope
 Night Attack at Târgoviște
+Nikkō Tōshō-gū
 Nile
 Ninety-five Theses
 Noyon
+Okazaki Castle
 Olaf Tryggvason
 One Thousand and One Nights
 Onon River
@@ -344,6 +421,7 @@ Organon
 Ottoman Empire
 Pacific Ocean
 Padrão dos Descobrimentos
+Palace of Versailles
 Palatine Chapel, Aachen
 Palazzo Vecchio
 Pantheon, Rome
@@ -362,13 +440,17 @@ Pericles' Funeral Oration
 Peripatetic school
 Persepolis
 Perspective (graphical)
+Peter the Great
+Philippines
 Philosophiæ Naturalis Principia Mathematica
 Pi
 Pietà (Michelangelo)
+Pisa Cathedral
 Plague of Athens
 Plague of Justinian
 Plagues of Egypt
 Platonic Academy
+Plymouth Hoe
 Pope Leo III
 Primavera (Botticelli)
 Prime number
@@ -389,36 +471,50 @@ Quiet Night Thought
 Quipu
 Qutb Minar
 Rashidun Caliphate
+Red Fort
 Red Pyramid
 Reims Cathedral
+Rembrandt House Museum
 Republic (Plato)
 Resurrection of Jesus
 Richard I of England
 Rihla
+Robert Dudley, 1st Earl of Leicester
 Roccasecca
 Roman Forum
 Roman cavalry
+Romeo and Juliet
 Round city of Baghdad
 Royal Mint
 Royal Road
+Royal Society
 Rubicon
 Sacsayhuamán
 Sagres
 Sahara
 Saint Monica
+Saint Petersburg
 Saint Stephen
 Saladin
 Samanid Empire
 Samos
 San Damiano
 Santa María (ship)
+Saskia van Uylenburgh
 Sea of Galilee
+Second Battle of Panipat
+Self-portraits by Rembrandt
 Selimiye Mosque
 Sermon on the Mount
 Seville
+Shah Jahan
 Shahrisabz
+Shakespeare's Birthplace
 Shams Tabrizi
 Shangdu
+Shivaji
+Sidereus Nuncius
+Siege of Drogheda
 Siege of Jerusalem (1187)
 Siege of Jerusalem (63 BC)
 Siege of Orléans
@@ -432,13 +528,18 @@ Sistine Chapel ceiling
 Sistine Madonna
 Small seal script
 Socratic method
+Somnium (novel)
 Sorghaghtani Beki
+Spanish Armada
 Spanish Empire
 Spanish conquest of the Aztec Empire
 Sphinx of Hatshepsut
 Spring and Autumn period
+St Matthew Passion
 St. Peter's Basilica
+St. Thomas Church, Leipzig
 Stagira (ancient city)
+Stepped reckoner
 Strait of Magellan
 Sultanpur Lodhi
 Summa Theologica
@@ -448,6 +549,7 @@ Symphony No. 9 (Beethoven)
 Syracuse, Sicily
 Süleymaniye Mosque
 Taejong of Joseon
+Taj Mahal
 Tangier
 Tao Te Ching
 Taoism
@@ -456,6 +558,7 @@ Temple of Confucius, Qufu
 Templo Mayor
 Ten Commandments
 Terracotta Army
+The Anatomy Lesson of Dr. Nicolaes Tulp
 The Art of War
 The Banquet of Cleopatra (Tiepolo)
 The Baptism of Christ (Verrocchio and Leonardo)
@@ -469,7 +572,10 @@ The Guide for the Perplexed
 The Last Judgment (Michelangelo)
 The Last Supper (Leonardo)
 The Meeting of Leo the Great and Attila
+The Milkmaid (Vermeer)
+The Night Watch
 The Prince
+The Protectorate
 The School of Athens
 The Song of Roland
 The Tale of Genji
@@ -481,33 +587,46 @@ Third Servile War
 Thutmose III
 Tikrit
 Timurid Empire
+Tokugawa shogunate
 Toluid Civil War
 Tomb of Cyrus
 Tomb of Maimonides
 Topkapı Palace
 Toruń
 Tower of London
+Toyotomi Hideyoshi
 Trabzon
+Traitors' Gate
 Treasure voyages
 Trial of Joan of Arc
 Trial of Socrates
 Tribute Giraffe with Attendant
+Two Treatises of Government
+Tycho Brahe
 Târgoviște
 University of Geneva
 University of Paris
 Urbino
+Valladolid
+Van Leeuwenhoek's microscopes
 Vasco Núñez de Balboa
 Venice
 Vicia faba
 Victoria (ship)
+View of Delft
 Vinci, Tuscany
 Vinland
 Vitis riparia
 Vitruvian Man
 Walls of Constantinople
+War of the Spanish Succession
 Wartburg
 Water clock
+Weimar
 Westminster Abbey
+Westminster Hall
+Westminster School
+William Adams (sailor, born 1564)
 William Farel
 Wittenberg
 Wives of Henry VIII
@@ -524,8 +643,11 @@ Yuan dynasty
 Yunnan
 Zhou dynasty
 Zulfiqar
+audio: Brandenburg Concertos
+audio: Cello Suites (Bach) | prelude
 audio: Für Elise
 audio: Pastime with Good Company
 audio: Piano Sonata No. 14 (Beethoven) | adagio sostenuto
 audio: Symphony No. 5 (Beethoven) | allegro con brio
+audio: Toccata and Fugue in D minor, BWV 565
 Şehzade Mosque
