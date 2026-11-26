@@ -103,7 +103,7 @@ P('Lê Lợi', 'Emperor of Đại Việt', (1385, 1433), 3, 'rule war',
 P('Cosimo de\' Medici', 'Banker and ruler of Florence', (1389, 1464), 3, 'rule art',
   "Europe's richest banker, who ruled Florence from behind the scenes and paid for its Renaissance.",
   G(1434, 1464, 'First citizen of Florence', 'florence'))
-P('Filippo Brunelleschi', 'Florentine architect', (1377, 1446), 3, 'art mind',
+P('Filippo Brunelleschi', 'Florentine architect', (1377, 1446), 2, 'art mind',
   'Built the great dome of Florence cathedral and worked out the rules of perspective.',
   G(1418, 1446, 'Builds the dome of Florence', 'florence'))
 P('John Hunyadi', 'Hungarian general', (1406, 1456), 3, 'war',
@@ -137,7 +137,7 @@ P('Sunni Ali', 'King of Songhai', (1420, 1492), 3, 'rule war',
 P('Lorenzo de\' Medici', 'Ruler of Florence', (1449, 1492), 2, 'rule art',
   "'The Magnificent': patron of Botticelli and the young Michelangelo at the height of the Florentine Renaissance.",
   G(1469, 1492, 'Lord of Florence', 'florence'))
-P('Sandro Botticelli', 'Florentine painter', (1445, 1510), 3, 'art',
+P('Sandro Botticelli', 'Florentine painter', (1445, 1510), 2, 'art',
   'Painted The Birth of Venus and Primavera for the Medici circle.',
   G(1470, 1510, 'Painter in Florence', 'florence'))
 P('Isabella I of Castile', 'Queen of Castile', (1451, 1504), 1, 'rule',
@@ -192,7 +192,7 @@ P('Michelangelo', 'Italian sculptor and painter', (1475, 1564), 1, 'art',
   "Carved David, painted the Sistine Chapel ceiling and designed the dome of St Peter's.",
   G(1488, 1504, 'Florence, carves David', 'florence'), G(1505, 1515, 'Rome, the Sistine Chapel', 'rome'),
   G(1516, 1533, 'Florence', 'florence'), G(1534, 1564, "Rome, St Peter's", 'rome'))
-P('Raphael', 'Italian painter', (1483, 1520), 3, 'art',
+P('Raphael', 'Italian painter', (1483, 1520), 2, 'art',
   "Painted the School of Athens in the Pope's apartments.",
   G(1508, 1520, 'Painter in Rome', 'rome'))
 P('Nicolaus Copernicus', 'Polish astronomer', (1473, 1543), 1, 'mind',
@@ -314,7 +314,7 @@ P('Ivan the Terrible', 'First tsar of Russia', (1530, 1584), 2, 'rule war',
 P('Akbar', 'Mughal emperor', (1542, 1605), 1, 'rule',
   'Built the Mughal Empire across north India and invited Hindus, Muslims, Jains and Christians to debate at his court.',
   G(1571, 1585, 'Court at Fatehpur Sikri', 'fatehpur_sikri'), R(1556, 1605, 'Mughal emperor', 'Mughal Empire', at='agra'))
-P('Mimar Sinan', 'Ottoman architect', (1490, 1588), 3, 'art',
+P('Mimar Sinan', 'Ottoman architect', (1490, 1588), 2, 'art',
   "Built more than 300 buildings, including the great mosques of Istanbul and Edirne.",
   G(1539, 1588, 'Chief architect of the empire', 'constantinople', 'edirne', 'constantinople'))
 P('Philip II of Spain', 'King of Spain', (1527, 1598), 1, 'rule',

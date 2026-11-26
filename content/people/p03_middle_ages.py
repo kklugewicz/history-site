@@ -360,7 +360,7 @@ P('Wu Zetian', 'Empress of China', (624, 705), 2, 'rule',
 P('Emperor Xuanzong of Tang', 'Emperor of Tang China', (685, 762), 3, 'rule',
   'Ruled the high Tang golden age until the An Lushan rebellion drove him from his capital.',
   R(712, 756, 'Emperor of Tang', 'Tang Empire', at='changan'))
-P('Li Bai', 'Chinese poet', (701, 762), 3, 'art',
+P('Li Bai', 'Chinese poet', (701, 762), 2, 'art',
   "China's most loved poet of wine, moonlight and wandering.",
   G(742, 744, 'Poet at the Tang court', 'changan'), G(745, 762, 'Wanderings', 'luoyang', 'nanjing', (118.5, 31.55)))
 P('Du Fu', 'Chinese poet', (712, 770), 3, 'art',
