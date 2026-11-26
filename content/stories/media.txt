@@ -3,6 +3,7 @@ A Christmas Carol
 A Letter Concerning Toleration
 Abbasid Caliphate
 Abbaye aux Hommes
+Abbey Road
 Abraham Lincoln
 Abraham Lincoln Birthplace National Historical Park
 Abu Simbel temples
@@ -40,14 +41,17 @@ Anaxagoras
 Ancient Agora of Athens
 Anna Karenina
 Anne Boleyn
+Anne Frank House
 Annus mirabilis papers
 Anthony Ashley Cooper, 1st Earl of Shaftesbury
 Anthrax vaccine
 Antonine Plague
 Antony and Cleopatra
 Anıtkabir
+Apollo 11
 Appeal of 18 June
 Appian Way
+Apple II
 Ara Pacis
 Arabic numerals
 Arc de Triomphe
@@ -172,6 +176,7 @@ Centrifugal governor
 Cesare Borgia
 Charkha
 Chartwell
+Chernobyl disaster
 Chiang Kai-shek Memorial Hall
 Chimborazo
 Christina, Queen of Sweden
@@ -196,6 +201,7 @@ Constantinople
 Constanze Mozart
 Contour line
 Conversion of Paul the Apostle
+Coronation of Elizabeth II
 Coronation of Queen Victoria
 Corpus Juris Civilis
 Cosmos (Humboldt)
@@ -204,6 +210,8 @@ Croesus
 Crown of Castile
 Crucifixion of Jesus
 Crucifixion of Saint Peter (Caravaggio)
+Cuban Missile Crisis
+Cuban Revolution
 Cubism
 Cultural Revolution
 Cuneiform
@@ -286,6 +294,7 @@ Eureka (word)
 Execution of Charles I
 Fall of Constantinople
 Fall of Tenochtitlan
+Fall of the Berlin Wall
 Fatehpur Sikri
 Feeding the multitude
 Ferdinand II of Aragon
@@ -408,12 +417,15 @@ Hunminjeongeum
 Hunnic Empire
 Huns
 Hurrem Sultan
+IPhone (1st generation)
+IPod
 Ibadat Khana
 Iceni
 Imam Ali Shrine
 Imperial examination
 Impression, Sunrise
 Inauguration of George Washington
+Inauguration of John F. Kennedy
 Inca Empire
 Incandescent light bulb
 Inclined plane
@@ -450,6 +462,7 @@ Karl Marx House
 Katharina von Bora
 Kayseri
 Kealakekua Bay
+Kennedy–Nixon debates
 Kensington Palace
 Kepler's laws of planetary motion
 Kettle
@@ -504,6 +517,7 @@ Lumbini
 Lunar eclipse
 Luoyang
 Machu Picchu
+Macintosh 128K
 Madonna of the Meadow
 Magnifying glass
 Mahabodhi Temple
@@ -514,6 +528,7 @@ Manichaeism
 Manuel I of Portugal
 Manuela Sáenz
 March on Rome
+March on Washington for Jobs and Freedom
 Marcus Licinius Crassus
 Marcus Vipsanius Agrippa
 Mari, Syria
@@ -559,9 +574,11 @@ Mongol invasion of the Khwarazmian Empire
 Mongol invasions of Japan
 Mongolian steppe
 Monte Sacro (Rome)
+Montgomery bus boycott
 Monticello
 Mortuary Temple of Hatshepsut
 Moscow Kremlin
+Motor Torpedo Boat PT-109
 Mount Nebo
 Mount Vernon
 Mount Vesuvius
@@ -575,7 +592,9 @@ Nalanda
 Nankana Sahib
 Napoleonic Code
 Narrative of the Life of Frederick Douglass, an American Slave
+National Civil Rights Museum
 Nativity scene
+NeXT Computer
 Nebular hypothesis
 New Deal
 Newton (Blake)
@@ -586,6 +605,7 @@ Nile
 Ninety-five Theses
 Nobel Prize
 Norge (airship)
+North American X-15
 Northern Expedition
 Noyon
 October Revolution
@@ -647,6 +667,7 @@ Plymouth Hoe
 Poor Richard's Almanack
 Pope Leo III
 Portrait of Antoine-Laurent Lavoisier and his Wife
+Potala Palace
 Potato
 Primavera (Botticelli)
 Prime number
@@ -679,11 +700,13 @@ Republic (Plato)
 Resurrection of Jesus
 Richard I of England
 Rihla
+Robben Island
 Robert Dudley, 1st Earl of Leicester
 Roccasecca
 Roman Forum
 Roman cavalry
 Romeo and Juliet
+Rosa Parks bus
 Rosetta Stone
 Round city of Baghdad
 Royal Institution
@@ -717,9 +740,11 @@ Self-Portrait with Bandaged Ear
 Self-portraits by Rembrandt
 Selimiye Barracks
 Selimiye Mosque
+Selma to Montgomery marches
 Sermon on the Mount
 Seven Years' War
 Seville
+Sgt. Pepper's Lonely Hearts Club Band
 Shah Jahan
 Shahrisabz
 Shakespeare's Birthplace
@@ -759,6 +784,7 @@ St Matthew Passion
 St Thomas' Hospital
 St Thomas's Abbey, Brno
 St. Peter's Basilica
+St. Peter's Square
 St. Thomas Church, Leipzig
 Stagira (ancient city)
 Stepped reckoner
@@ -789,12 +815,14 @@ The Banquet of Cleopatra (Tiepolo)
 The Baptism of Christ (Verrocchio and Leonardo)
 The Birth of Venus
 The Canon of Medicine
+The Cavern Club
 The Clouds
 The Communist Manifesto
 The Compendious Book on Calculation by Completion and Balancing
 The Coronation of Napoleon
 The Death of Socrates
 The Diary of Lady Murasaki
+The Diary of a Young Girl
 The Flying Dutchman (opera)
 The Guide for the Perplexed
 The Hunchback of Notre-Dame
@@ -861,6 +889,7 @@ Tycho Brahe
 Târgoviște
 Underground Railroad
 Unfinished portrait of Franklin D. Roosevelt
+Union Buildings
 United States Declaration of Independence
 University of Geneva
 University of Glasgow
@@ -881,6 +910,7 @@ Virginia Statute for Religious Freedom
 Visva-Bharati University
 Vitis riparia
 Vitruvian Man
+Vostok 1
 Walls of Constantinople
 War and Peace
 War of the Spanish Succession
@@ -906,6 +936,7 @@ Wittenberg
 Wives of Henry VIII
 Woman with a Parasol – Madame Monet and Her Son
 Woolsthorpe Manor
+World Wide Web
 Wright Cycle Company
 Wright Flyer
 Wu (state)
