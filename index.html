@@ -212,6 +212,9 @@ body { background: var(--bg); color: var(--ink); font-family: var(--f-body); fon
 .mig-who .s { color: var(--ink-soft); font-size: 13.5px; }
 .mv .face.plain svg { width: 20px; height: 20px; }
 @media (prefers-reduced-motion: reduce) { .mh .mh-ring { animation: none; display: none; } }
+/* the pulsing rings on the map rest with the sea and the traffic (see "the clock" in the script): a ring that keeps
+   pulsing makes the browser paint the map again every frame */
+.map-rest .pulse, .map-rest .mh-ring { animation-play-state: paused; }
 .theater { cursor: pointer; }
 
 /* reading panel */
@@ -264,6 +267,18 @@ body { background: var(--bg); color: var(--ink); font-family: var(--f-body); fon
 .tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
 .row { display: flex; gap: 6px; flex-wrap: wrap; }
 .places button { padding: 5px 9px; }
+.laybtn { display: inline-flex; align-items: center; gap: 6px; }
+.laybtn svg { width: 15px; height: 15px; }
+.laybtn[aria-expanded="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.places .layers-p { display: none; }
+.layers { display: grid; gap: 2px; min-width: 240px; padding: 8px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); }
+.layers[hidden] { display: none; }
+.layers h3 { margin: 2px 6px 4px; font-size: 11.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; }
+.layers label { display: flex; align-items: center; gap: 10px; padding: 6px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+.layers label:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.layers input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); }
+.layers .all { margin-top: 4px; border-top: 1px solid var(--line); padding-top: 6px; display: flex; gap: 6px; }
+.layers .all button { flex: 1; padding: 4px 8px; font-size: 13px; box-shadow: none; }
 button { font: inherit; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; cursor: pointer; box-shadow: var(--shadow); }
 button:hover { border-color: var(--ink-soft); }
 button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -377,11 +392,13 @@ details[open] summary { margin-bottom: 6px; }
   .syn { font-size: 15px; }
   .ticks span.minor, .band.short { color: transparent; }
   .tabs button { padding: 6px 8px; flex: none; font-size: 14px; }
-  .tabs { max-width: calc(100vw - 132px); overflow-x: auto; scrollbar-width: none; }
+  .tabs { max-width: calc(100vw - 74px); overflow-x: auto; scrollbar-width: none; }
   .tabs::-webkit-scrollbar { display: none; }
   .top { gap: 6px; left: 10px; max-width: calc(100% - 20px); }
   .top h1, .top > .when, .top > .row:not(.places) { display: none; }
-  .places { flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 20px); padding: 2px 2px 8px; margin: -2px -2px -8px; scrollbar-width: none; }
+  .places .layers-p { display: inline-flex; }
+  .layers { max-width: calc(100vw - 20px); }
+  .places { flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 74px); padding: 2px 2px 8px; margin: -2px -2px -8px; scrollbar-width: none; }
   .places button { flex: none; font-size: 14px; padding: 4px 9px; box-shadow: 0 1px 4px rgba(60,42,20,.16); }
   /* a story button at the top right, where the year card was */
   #stories { display: grid; place-items: center; position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: 10px; width: 44px; height: 44px;
@@ -688,22 +705,12 @@ details[open] summary { margin-bottom: 6px; }
   #discoverP, #leadersP { display: grid; place-items: center; position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: 62px; width: 44px; height: 44px;
     padding: 0; border-radius: 50%; border: 2.5px solid transparent; box-shadow: var(--shadow); color: var(--story-a);
     background: linear-gradient(var(--paper), var(--paper)) padding-box, var(--story-ring) border-box; }
-  #leadersP { right: 114px; }
+  /* on a phone, Discovery and Leaders stand in a column under the stories button, so the tabs and places keep the row */
+  #discoverP, #leadersP { right: 10px; }
   #discoverP svg, #leadersP svg { width: 21px; height: 21px; }
   #discoverP[aria-expanded="true"], #leadersP[aria-expanded="true"] { background: var(--story-ring); color: #fff; }
-  /* three round buttons beside the map-view tabs: on a narrow phone, all a little smaller so they clear them */
-  @media (max-width: 383px) {
-    .tabs button { padding: 6px 8px; }
-    #stories, #discoverP, #leadersP { width: 40px; height: 40px; }
-    #discoverP { right: 56px; }
-    #leadersP { right: 102px; }
-  }
-  @media (max-width: 345px) {
-    .tabs button { padding: 6px 7px; font-size: 13.5px; }
-    #stories, #discoverP, #leadersP { width: 38px; height: 38px; }
-    #discoverP { right: 53px; }
-    #leadersP { right: 96px; }
-  }
+  #discoverP { top: calc(64px + env(safe-area-inset-top, 0px)); }
+  #leadersP { top: calc(116px + env(safe-area-inset-top, 0px)); }
   /* the list fills the screen: its head, a strip of centuries, then the names */
   .dc-card { width: 100vw; height: 100vh; border: 0; border-radius: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr); }
   @supports (height: 1dvh) { .dc-card { height: 100dvh; } }
@@ -749,8 +756,9 @@ details[open] summary { margin-bottom: 6px; }
       <button type="button" class="discbtn" id="discover" aria-haspopup="dialog" aria-expanded="false" title="The great scientists, mathematicians, inventors, philosophers and artists, century by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6M10 21h4M12 2.8a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.4 1.2 2.3v.2h5v-.2c0-.9.5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Discovery</button>
       <button type="button" class="discbtn" id="leaders" aria-haspopup="dialog" aria-expanded="false" title="The rulers, conquerors, generals, statesmen, revolutionaries and reformers, century by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 17.2L3.3 7.6l5 4.1L12 4.6l3.7 7.1 5-4.1-1.3 9.6zM5.2 20.4h13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Leaders</button>
       </div>
-      <div class="row places" id="places" aria-label="Zoom to"><button type="button" data-place="World">World</button><button type="button" data-place="Europe">Europe</button><button type="button" data-place="Asia">Asia</button><button type="button" data-place="Africa">Africa</button><button type="button" data-place="North America">North America</button><button type="button" data-place="South America">South America</button><button type="button" data-place="Oceania">Oceania</button></div>
-      <div class="row"><button id="btnDetail" type="button" aria-pressed="false" title="Show every state and people, not just the main civilizations">Detailed borders</button></div>
+      <div class="row places" id="places" aria-label="Zoom to"><button type="button" data-place="World">World</button><button type="button" data-place="Europe">Europe</button><button type="button" data-place="Asia">Asia</button><button type="button" data-place="Africa">Africa</button><button type="button" data-place="North America">North America</button><button type="button" data-place="South America">South America</button><button type="button" data-place="Oceania">Oceania</button><button type="button" class="laybtn layers-p" id="btnLayersP" aria-haspopup="true" aria-expanded="false" aria-controls="layers">Layers</button></div>
+      <div class="row"><button id="btnDetail" type="button" aria-pressed="false" title="Show every state and people, not just the main civilizations">Detailed borders</button><button id="btnLayers" class="laybtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="layers" title="Choose what the map shows"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 14.5 5.5 8 9 1.5 5.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M2.6 8.4 8 11.3l5.4-2.9M2.6 11.1 8 14l5.4-2.9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Layers</button></div>
+      <div class="layers" id="layers" role="group" aria-label="Show on the map" hidden></div>
     </div>
     <button type="button" id="stories" aria-pressed="false" aria-label="Stories from this year" title="Stories from this year"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2l10 6-10 6z" fill="currentColor"/></svg></button>
     <button type="button" id="discoverP" aria-haspopup="dialog" aria-expanded="false" aria-label="Discovery: great minds by century" title="Discovery: great minds by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6M10 21h4M12 2.8a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.4 1.2 2.3v.2h5v-.2c0-.9.5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -1280,17 +1288,29 @@ details[open] summary { margin-bottom: 6px; }
   // ---------- state ----------
   let detailed = false;
   try { detailed = localStorage.getItem('wtt-detailed') === '1'; } catch (e) {}
+  // Layers: what the map draws over the states, each switched on and off from the Layers button and remembered in this
+  // browser. Anything switched off is not drawn at all, so it costs nothing.
+  const LAYERS = [
+    ['people', 'People and rulers'], ['cities', 'Cities and landmarks'], ['geo', 'Names of seas, rivers and mountains'],
+    ['flags', 'Flags'], ['faith', 'Faith symbols'], ['traffic', 'Ships, caravans and armies'], ['motion', 'Moving sea and pulses'],
+  ];
+  const LAY = Object.fromEntries(LAYERS.map(([k]) => [k, true]));
+  try { Object.assign(LAY, JSON.parse(localStorage.getItem('wtt-layers') || '{}')); } catch (e) {}
   // line: the country whose own timeline the slider is on (null on the world timeline); lineIdx: its period now
   const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, selAt: null, person: null, faithSel: null, sheet: null,
     line: null, lineIdx: -1, features: [], fc: null, file: null, k: 1, t: d3.zoomIdentity, playing: false, speed: 1 };
   // simplified drawing applies everywhere except inside a war, where every involved state must show
   const simple = () => !detailed && !(S.detail && S.detail.kind === 'war');
-  let W = 0, H = 0, dpr = 1;
+  // dpr: the screen's pixels per CSS pixel (at most 2), which the map's own drawing and its land pictures use. The two
+  // canvases (the sea with its waves, and the moving traffic above it) are soft and redrawn many times a second, so they
+  // draw at no more than 1.5, and so does the painted sea they copy each frame (a copy at the same size is the cheap kind).
+  // The sea pictures are chosen for 1 pixel per CSS pixel: they are soft, and that keeps sharper ones from loading.
+  let W = 0, H = 0, dpr = 1, cdpr = 1, sdpr = 1;
 
   function layout() {
     const r = svg.node().getBoundingClientRect(); W = r.width; H = r.height;
-    dpr = Math.min(2, devicePixelRatio || 1);
-    for (const cv of [seaCv, fxCv]) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); }
+    dpr = Math.min(2, devicePixelRatio || 1); cdpr = Math.min(1.5, dpr); sdpr = Math.min(1, dpr);
+    for (const cv of [seaCv, fxCv]) { cv.width = Math.round(W * cdpr); cv.height = Math.round(H * cdpr); }
     proj.fitExtent([[4, 4], [W - 4, H - 4]], { type: 'Sphere' });
     grat.attr('d', path(d3.geoGraticule10()));
     landG.attr('d', path(land));
@@ -1302,9 +1322,17 @@ details[open] summary { margin-bottom: 6px; }
     prepRoutes(); drawAmbient(true);
   }
 
+  // The map itself moves at once; everything that is laid out again for the new view (tiles, names, faces, war marks, the
+  // sea) is redrawn once per frame however many wheel or touch events arrive in it. rAF runs before the frame is painted,
+  // so both land in the same frame.
+  let zoomRaf = 0;
+  function zoomRedraw() {
+    zoomRaf = 0;
+    drawTerrain(); styleWater(); drawPeople(); drawLabels(); scaleOverlay(); placeSwords(); zoomMigrations(); drawAmbient(true);
+  }
   const zoom = d3.zoom().scaleExtent([.5, 60]).on('zoom', e => {
     root.attr('transform', e.transform); S.t = e.transform; S.k = e.transform.k;
-    drawTerrain(); styleWater(); drawPeople(); drawLabels(); scaleOverlay(); placeSwords(); zoomMigrations(); drawAmbient(true);
+    if (!zoomRaf) zoomRaf = requestAnimationFrame(zoomRedraw);
   });
   svg.call(zoom).on('dblclick.zoom', null);
   // the part of the map left free to look at: left of the reading panel on a big screen; on a phone, below the buttons at
@@ -1333,54 +1361,84 @@ details[open] summary { margin-bottom: 6px; }
   const TER = { man: null };
   let seaKey = '';
   const seaImgs = new Map(), seaCache = document.createElement('canvas');
-  opt('terrain/manifest.json').then(m => { if (!m) return; TER.man = m; drawTerrain(); seaKey = ''; drawAmbient(true); });
+  // the half-size world pictures (manifest "small") come first: enough for a phone, and for the soft painted sea
+  opt('terrain/manifest.json').then(m => {
+    if (!m) return;
+    TER.man = m; TER.land = m.small ? [m.small.land, ...m.land] : m.land; TER.sea = m.small ? [m.small.sea, ...m.sea] : m.sea;
+    drawTerrain(); seaKey = ''; drawAmbient(true);
+  });
   const sphereBox = () => { const b = path.bounds({ type: 'Sphere' }); return { x: b[0][0], y: b[0][1], w: b[1][0] - b[0][0], h: b[1][1] - b[0][1] }; };
-  // the level whose pixels best match the screen, and its tiles that are in view (map units)
-  function tilesInView(levels) {
-    const sb = sphereBox(), k = S.k, T = S.t, need = sb.w * k * dpr;
+  // The level whose pixels best match the screen (res: device pixels per CSS pixel), and its tiles that are in view (map
+  // units). A tile not yet loaded is stood in for by the loaded tiles of the nearest other level that cover it, coarser
+  // ones first; once it has loaded they go. So only one level is kept in memory and drawn, rather than every coarser
+  // level stacked under the sharp one.
+  function tilesInView(levels, res, have) {
+    const sb = sphereBox(), k = S.k, T = S.t, need = sb.w * k * res;
     let lv = 0;
     while (levels[lv + 1] && need > levels[lv].w * 1.15) lv++;
-    const vx0 = -T.x / k, vy0 = -T.y / k, vx1 = (W - T.x) / k, vy1 = (H - T.y) / k, out = [];
-    for (let L = 0; L <= lv; L++) {
-      const m = levels[L], sx = sb.w / m.w, sy = sb.h / m.h;
+    const vx0 = -T.x / k, vy0 = -T.y / k, vx1 = (W - T.x) / k, vy1 = (H - T.y) / k;
+    const inView = L => {
+      const m = levels[L], sx = sb.w / m.w, sy = sb.h / m.h, out = [];
       for (const t of m.tiles) {
         const x = sb.x + t.x * sx, y = sb.y + t.y * sy, w = t.w * sx, h = t.h * sy;
         if (x > vx1 || x + w < vx0 || y > vy1 || y + h < vy0) continue;
-        out.push({ f: t.f, L, x, y, w, h });
+        out.push({ f: t.f, L, x, y, w, h, whole: m.tiles.length === 1 });
+      }
+      return out;
+    };
+    const want = inView(lv), out = new Map(want.map(t => [t.f, t])), missing = want.filter(t => !have(t.f));
+    if (missing.length) {
+      const order = [];
+      for (let L = lv - 1; L >= 0; L--) order.push(L);
+      for (let L = lv + 1; L < levels.length; L++) order.push(L);
+      for (const t of missing) for (const L of order) {
+        const cover = inView(L).filter(u => have(u.f) && u.x < t.x + t.w && u.x + u.w > t.x && u.y < t.y + t.h && u.y + u.h > t.y);
+        if (cover.length) { cover.forEach(u => out.set(u.f, u)); break; }
       }
     }
-    return out;
+    return [...out.values()].sort((a, b) => (a.L === lv) - (b.L === lv) || a.L - b.L);
   }
+  // land pictures that have loaded and are still in the map
+  const landHave = new Set();
+  let terrTimer = 0;
   function drawTerrain() {
     if (!TER.man || !W) return;
-    terrG.selectAll('image').data(tilesInView(TER.man.land), d => d.f).join(enter => enter.append('image')
+    terrG.selectAll('image').data(tilesInView(TER.land, dpr, f => landHave.has(f)), d => d.f).join(enter => enter.append('image')
       .attr('class', 'fresh').attr('preserveAspectRatio', 'none')
       .each(function (d) {
-        this.addEventListener('load', () => { this.classList.remove('fresh'); if (!d.L) landG.style('display', 'none'); }, { once: true });
+        this.addEventListener('load', () => {
+          this.classList.remove('fresh'); landHave.add(d.f); if (d.whole) landG.style('display', 'none');
+          // once it has faded in, the pictures standing in for it can go
+          clearTimeout(terrTimer); terrTimer = setTimeout(drawTerrain, 600);
+        }, { once: true });
         this.setAttribute('href', 'data/terrain/' + d.f);
-      }))
+      }), update => update, exit => exit.each(d => landHave.delete(d.f)).remove())
       .attr('x', d => d.x).attr('y', d => d.y).attr('width', d => d.w).attr('height', d => d.h)
-      .sort((a, b) => a.L - b.L);
+      .order();
   }
-  // the painted sea, redrawn into a cache only when the view moves
+  // the painted sea, redrawn into a cache only when the view moves; sea pictures no longer in use are let go
   function seaImage(f) {
     let im = seaImgs.get(f);
     if (!im) { im = new Image(); im.onload = () => { seaKey = ''; drawAmbient(true); }; im.src = 'data/terrain/' + f; seaImgs.set(f, im); }
     return im.complete && im.naturalWidth ? im : null;
   }
+  const seaHave = f => { const im = seaImgs.get(f); return !!(im && im.complete && im.naturalWidth); };
   function paintSea() {
-    const T = S.t, key = [W, H, dpr, T.x, T.y, T.k].join();
+    const T = S.t, key = [W, H, cdpr, T.x, T.y, T.k].join();
     if (key === seaKey) return seaCache.width > 0;
     seaKey = key;
     if (!TER.man) return false;
     const c = seaCache.getContext('2d');
     if (seaCache.width !== seaCv.width || seaCache.height !== seaCv.height) { seaCache.width = seaCv.width; seaCache.height = seaCv.height; }
     c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, seaCache.width, seaCache.height);
-    c.setTransform(dpr * T.k, 0, 0, dpr * T.k, dpr * T.x, dpr * T.y);
+    c.setTransform(cdpr * T.k, 0, 0, cdpr * T.k, cdpr * T.x, cdpr * T.y);
     c.save(); c.beginPath(); d3.geoPath(proj, c)({ type: 'Sphere' }); c.clip();
     c.imageSmoothingQuality = 'high';
-    for (const t of tilesInView(TER.man.sea)) { const im = seaImage(t.f); if (im) c.drawImage(im, t.x, t.y, t.w, t.h); }
+    const tiles = tilesInView(TER.sea, sdpr, seaHave);
+    for (const t of tiles) { const im = seaImage(t.f); if (im) c.drawImage(im, t.x, t.y, t.w, t.h); }
     c.restore();
+    const used = new Set(tiles.map(t => t.f));
+    for (const f of [...seaImgs.keys()]) if (!used.has(f)) { seaImgs.get(f).onload = null; seaImgs.delete(f); }
     return true;
   }
 
@@ -1427,7 +1485,7 @@ details[open] summary { margin-bottom: 6px; }
   function prepCurrents() { for (const c of GEO.cur) c.p = prepPath(c.ll, false); }
   // the great currents flow on the sea as moving dashes: warm ones red, cold ones blue
   function drawCurrents(c, t) {
-    if (!GEO.cur.length || S.detail) return;
+    if (!GEO.cur.length || S.detail || !LAY.geo) return;
     const k = S.k, T = S.t, still = reduce(), fade = clamp(1.15 - worldPx() / 12000, .3, .9);
     c.lineCap = 'round'; c.lineJoin = 'round';
     for (const cu of GEO.cur) {
@@ -1471,7 +1529,7 @@ details[open] summary { margin-bottom: 6px; }
     taken.push(...peopleBoxes());
     const hit = b => taken.some(t => b[0] < t[2] && b[2] > t[0] && b[1] < t[3] && b[3] > t[1]);
     const list = [];
-    const cand = GEO.labels.filter(d => size >= d.k * .94 && inYears(d, y) && (!detail || d.c === 'ocean' || d.c === 'sea' || d.c === 'sea2' || d.c === 'strait'))
+    const cand = !LAY.geo ? [] : GEO.labels.filter(d => size >= d.k * .94 && inYears(d, y) && (!detail || d.c === 'ocean' || d.c === 'sea' || d.c === 'sea2' || d.c === 'strait'))
       .sort((a, b) => geoRank(a) - geoRank(b));
     for (const d of cand) {
       const p = proj([d.lon, d.lat]); if (!p) continue;
@@ -1583,7 +1641,7 @@ details[open] summary { margin-bottom: 6px; }
   const lastFlag = new Map();
   function drawFlags(vis) {
     const k = S.k, T = S.t, list = [];
-    if (FLG && W && S.mode === 'map' && !S.detail) {
+    if (LAY.flags && FLG && W && S.mode === 'map' && !S.detail) {
       const box = l => { const px = lblPx(l, k), hw = halfW(l, k), x = T.x + l.x * k, y = T.y + l.y * k; return [x - hw, y - px * .45, x + hw, y + px * .45]; };
       const names = vis.map(box), placed = [];
       const over = (b, o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1];
@@ -1653,7 +1711,7 @@ details[open] summary { margin-bottom: 6px; }
   }
   function drawCities() {
     const list = [];
-    if (CTY && W && !S.detail && S.mode !== 'wars') {
+    if (LAY.cities && CTY && W && !S.detail && S.mode !== 'wars') {
       const k = S.k, T = S.t, y = S.year, size = worldPx() / 1000, ph = isPhone() ? .85 : 1;
       // the room taken by states' names (and the faith badge after each), flags, rulers' portraits and people, in screen px
       const taken = [];
@@ -1752,7 +1810,7 @@ details[open] summary { margin-bottom: 6px; }
   // a small faith symbol after each name, in Borders and Religions; it flashes when the land changes faith
   const lastFaith = new Map();
   function drawBadges(vis) {
-    const k = S.k, on = !S.detail && S.mode !== 'wars';
+    const k = S.k, on = LAY.faith && !S.detail && S.mode !== 'wars';
     const list = on ? vis.map(l => ({ l, fa: faithAt(l.f, S.year) })).filter(d => d.fa) : [];
     fbG.selectAll('g.fb').data(list, d => d.l.name).join(enter => {
       const g = enter.append('g').attr('class', 'fb')
@@ -2417,7 +2475,7 @@ details[open] summary { margin-bottom: 6px; }
   }
   function svClose() {
     if (!SV.open) return;
-    SV.open = false; SV.token++; SV.fade++; SV.hold = false;
+    SV.open = false; SV.token++; SV.fade++; SV.hold = false; wake();
     if (SV.audio) SV.audio.pause();
     const id = SV.id;
     const done = () => {
@@ -2652,7 +2710,7 @@ details[open] summary { margin-bottom: 6px; }
     // a portrait only appears once you've zoomed in past the whole-world view, and only beside a name
     // that is showing; it shrinks as the state gets smaller on screen. Up to two per state.
     const k = S.k, by = new Map();
-    const list = (S.mode !== 'map' || S.detail || k < 2) ? [] : rulersNow().sort((a, b) => (a.p.rank || 3) - (b.p.rank || 3)).filter(x => {
+    const list = (!LAY.people || S.mode !== 'map' || S.detail || k < 2) ? [] : rulersNow().sort((a, b) => (a.p.rank || 3) - (b.p.rank || 3)).filter(x => {
       const L = leaderLabel(x.s, x.f), l = L && shownLabels.get(L.name);
       if (!l) return false;
       const big = Math.sqrt(l.a * k * k);
@@ -2689,7 +2747,7 @@ details[open] summary { margin-bottom: 6px; }
   let shownPeople = [];
   function drawPeople() {
     const k = S.k, t = S.t, minK = isPhone() ? 2.2 : 1.7;
-    const cand = k < minK ? [] : peopleNow().map(d => {
+    const cand = !LAY.people || k < minK ? [] : peopleNow().map(d => {
       const w = whereAt(d.s, S.yf), xy = proj(w.pt);
       return { ...d, w, xy, sx: t.applyX(xy[0]), sy: t.applyY(xy[1]) };
     }).filter(d => d.sx > -40 && d.sx < W + 40 && d.sy > -40 && d.sy < H + 40 && (d.p.rank || 3) <= (k < 2.6 ? 1 : k < 4 ? 2 : 3))
@@ -2762,8 +2820,10 @@ details[open] summary { margin-bottom: 6px; }
           const f = borderWant, data = await loadBorders(f);
           if (borderWant !== f) continue;
           swapBorders(f, data);
-          // keep the neighbours warm so playing and scrubbing don't wait on the network
+          // keep the neighbours warm so playing and scrubbing don't wait on the network, and let go of snapshots more
+          // than two away: each one is a few MB once drawn, and the browser keeps the files to load them again quickly
           const i = timeline.borderFiles.indexOf(f);
+          for (const k of Object.keys(cache)) if (Math.abs(timeline.borderFiles.indexOf(k) - i) > 2) delete cache[k];
           [i + 1, i - 1, i + 2].forEach(j => { const nf = timeline.borderFiles[j]; if (nf) setTimeout(() => loadBorders(nf), 300); });
         }
       } finally { borderLoop = null; }
@@ -3944,7 +4004,10 @@ details[open] summary { margin-bottom: 6px; }
       xy.push(proj(ll[i]));
       if (i) { const jump = Math.abs(ll[i][0] - ll[i - 1][0]) > 180; cum.push(cum[i - 1] + (jump ? 0 : Math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]))); }
     }
-    return { xy, cum, len: cum[cum.length - 1], ll };
+    // the path's box in map units, so the traffic on a route out of view can be skipped
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    for (const [x, y] of xy) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+    return { xy, cum, len: cum[cum.length - 1], ll, box: [x0, y0, x1, y1] };
   }
   function pointOn(g, at) {
     const c = g.cum; at = ((at % g.len) + g.len) % g.len;
@@ -4053,9 +4116,9 @@ details[open] summary { margin-bottom: 6px; }
     const c = seaCtx, k = S.k, T = S.t;
     c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, seaCv.width, seaCv.height);
     if (paintSea()) c.drawImage(seaCache, 0, 0);
-    c.setTransform(dpr * k, 0, 0, dpr * k, dpr * T.x, dpr * T.y);
+    c.setTransform(cdpr * k, 0, 0, cdpr * k, cdpr * T.x, cdpr * T.y);
     c.beginPath(); d3.geoPath(proj, c)({ type: 'Sphere' }); c.save(); c.clip();
-    c.setTransform(dpr, 0, 0, dpr, 0, 0);
+    c.setTransform(cdpr, 0, 0, cdpr, 0, 0);
     drawCurrents(c, t);
     const lvl = Math.pow(2, Math.floor(Math.log2(Math.max(1, k)))), g = (isPhone() ? 46 : 36) / lvl;
     const x0 = -T.x / k, y0 = -T.y / k, x1 = (W - T.x) / k, y1 = (H - T.y) / k;
@@ -4075,13 +4138,18 @@ details[open] summary { margin-bottom: 6px; }
   function drawFx(t, dt) {
     const c = fxCtx, k = S.k, T = S.t, y = S.year, still = reduce();
     c.setTransform(1, 0, 0, 1, 0, 0); c.clearRect(0, 0, fxCv.width, fxCv.height);
-    c.setTransform(dpr, 0, 0, dpr, 0, 0);
+    c.setTransform(cdpr, 0, 0, cdpr, 0, 0);
     const sx = p => T.x + k * p[0], sy = p => T.y + k * p[1];
     const sz = clamp(5 * Math.sqrt(k), 5.5, 15) * (isPhone() ? .9 : 1);
+    // what is out of view (say, the rest of the world while you look at one country) keeps its place along its route
+    // but is not drawn: only routes whose box meets the view, with a margin for the sprites, are stroked and walked
+    const m = 30 / k, vx0 = -T.x / k - m, vy0 = -T.y / k - m, vx1 = (W - T.x) / k + m, vy1 = (H - T.y) / k + m;
+    const inView = g => g.box[0] < vx1 && g.box[2] > vx0 && g.box[1] < vy1 && g.box[3] > vy0;
     // trade routes of this age: a faint dotted road and the traffic on it
-    if (!S.detail && S.mode !== 'wars' && S.mode !== 'migrations') {
+    if (LAY.traffic && !S.detail && S.mode !== 'wars' && S.mode !== 'migrations') {
       for (const R of fxs.routes) {
         const r = R.r; if (y < r.from || y > r.to) continue;
+        if (!inView(R.g)) { if (!still) R.off += dt * 9 / Math.sqrt(k) * (r.kind === 'plane' ? 3 : r.kind === 'train' ? 2 : 1); continue; }
         const fade = clamp(Math.min(y - r.from, r.to - y) / 15 + .35, .35, 1);
         c.globalAlpha = .38 * fade; c.strokeStyle = r.kind === 'plane' ? 'rgba(120,140,160,.9)' : (r.kind === 'train' ? 'rgba(60,60,60,.9)' : 'rgba(150,100,50,.95)');
         c.lineWidth = r.kind === 'train' ? 1.6 : 1.2; c.setLineDash(r.kind === 'train' ? [6, 3] : [2, 4]);
@@ -4101,11 +4169,12 @@ details[open] summary { margin-bottom: 6px; }
       c.globalAlpha = 1;
     }
     // fleets and armies of the wars being fought now (in Borders and Wars)
-    const items = (S.mode === 'religions' && !S.detail) ? [] : warItems();
+    const items = !LAY.traffic || (S.mode === 'religions' && !S.detail) ? [] : warItems();
     for (const it of items) for (const m of it.st.moves || []) {
       if (!m.path || m.path.length < 2) continue;
       const g = warGeo(m), col = it.w.sides[m.side]?.color || '#888';
       if (!still) g.off += dt * 14 / Math.sqrt(k);
+      if (!inView(g)) continue;
       const n = m.sea ? 2 : 1;
       for (let i = 0; i < n; i++) {
         const along = (g.off + i * g.len / n) % (g.len * 1.15);
@@ -4119,11 +4188,12 @@ details[open] summary { margin-bottom: 6px; }
     }
     // peoples on the move: little bands walking, riding, rowing and steaming along each migration's trail
     const det = S.detail && S.detail.kind === 'migration' ? S.detail.item : null;
-    const mlist = det ? (det.steps[S.step].moves || []).map(mo => ({ mo, g: warGeo(mo), a: 1 })) : migDrawn;
+    const mlist = !LAY.traffic ? [] : det ? (det.steps[S.step].moves || []).map(mo => ({ mo, g: warGeo(mo), a: 1 })) : migDrawn;
     for (const it of mlist) {
       const g = it.g, mo = it.mo; if (!g || !(g.len > 0)) continue;
       const kind = MIG_SPRITE[mo.by] || 'walkers', v = (MIG_SEA.has(mo.by) ? 16 : mo.by === 'train' || mo.by === 'plane' ? 26 : 10) / Math.sqrt(k);
       if (!still) g.off = (g.off || 0) + dt * v;
+      if (!inView(g)) continue;
       const n = clamp(Math.round(g.len * k / 110), 1, det ? 4 : 3);
       for (let i = 0; i < n; i++) {
         const along = ((g.off || 0) + i * g.len / n) % g.len, q = pointOn(g, along), X = sx(q), Y = sy(q);
@@ -4134,7 +4204,7 @@ details[open] summary { margin-bottom: 6px; }
     }
     c.globalAlpha = 1;
     // smoke over this year's battles
-    if (!still) {
+    if (!still && LAY.traffic) {
       for (const e of battleNow) if (Math.random() < dt * 5) { const [px, py] = proj([e.lon, e.lat]); fxs.smoke.push({ x: px, y: py, vx: (Math.random() - .5) * 6, vy: -8 - Math.random() * 8, age: 0, life: 1.6 + Math.random(), r: 2 + Math.random() * 2, fire: Math.random() < .3 }); }
       fxs.smoke = fxs.smoke.filter(p => (p.age += dt) < p.life);
       for (const p of fxs.smoke) {
@@ -4146,21 +4216,71 @@ details[open] summary { margin-bottom: 6px; }
       c.globalAlpha = 1;
     } else fxs.smoke = [];
   }
-  // the clock: ~30 frames a second while anything moves; a single frame on demand otherwise
-  let ambRaf = 0, ambLast = 0;
+  // the clock. The sea, the traffic and the smoke move while someone is using the map (a pointer moving over it, a touch,
+  // a key, the timeline playing), about 30 frames a second on a computer and 20 on a phone. Some seconds after the last
+  // touch everything slows to a halt and the loop stops, so a page left open costs nothing; the next touch eases it all
+  // back into motion. It also rests while a story or the Discovery list covers the map, and when the tab is hidden.
+  // ambT is the clock's own time: it only runs while things move, so nothing jumps when they start again.
+  let ambRaf = 0, ambLast = 0, ambT = 0, ambPace = 0, lastAct = performance.now();
+  const IDLE_MS = () => isPhone() ? 12000 : 20000, EASE_MS = 1500;
+  const covered = () => { try { return SV.open || DC.open; } catch (e) { return false; } };
+  const rest = on => document.documentElement.classList.toggle('map-rest', on);
+  // calm: reduced motion asked for by the system, or "Moving sea and pulses" switched off under Layers
+  const calm = () => reduce() || !LAY.motion;
+  function wake() { lastAct = performance.now(); if (!ambRaf && !calm() && !document.hidden) { rest(false); ambRaf = requestAnimationFrame(loop); } }
   function drawAmbient(now) {
-    if (now) { const t = performance.now() / 1000; drawSea(t); drawFx(t, 0); }
-    if (!ambRaf && !reduce()) ambRaf = requestAnimationFrame(loop);
+    if (now) { drawSea(ambT); drawFx(ambT, 0); }
+    if (!ambRaf && !calm() && !document.hidden && performance.now() - lastAct < IDLE_MS()) { rest(false); ambRaf = requestAnimationFrame(loop); }
   }
   function loop(ts) {
     ambRaf = 0;
-    if (document.hidden) { ambRaf = requestAnimationFrame(loop); return; }
-    if (ts - ambLast >= 32) {
+    if (document.hidden || calm()) { ambLast = 0; rest(true); return; }
+    const idle = performance.now() - lastAct, left = (S.playing ? Infinity : IDLE_MS()) - idle;
+    // the pace eases in over half a second and out over the last 1.5 s before the map rests
+    const want = covered() ? 0 : clamp(left / EASE_MS, 0, 1);
+    if (ts - ambLast >= (isPhone() ? 46 : 30)) {
       const dt = ambLast ? Math.min(.1, (ts - ambLast) / 1000) : 0; ambLast = ts;
-      const t = ts / 1000; drawSea(t); drawFx(t, dt);
+      ambPace = want > ambPace ? Math.min(want, ambPace + dt * 2) : want;
+      ambT += dt * ambPace; drawSea(ambT); drawFx(ambT, dt * ambPace);
+      if (ambPace === 0 && want === 0) { ambLast = 0; rest(true); return; }   // at rest: the last frame stays on screen
     }
-    if (!reduce()) ambRaf = requestAnimationFrame(loop);
+    ambRaf = requestAnimationFrame(loop);
   }
+  // anything the person does on the page wakes the map; one listener each, passive, and cheap (a time stamp)
+  for (const ev of ['pointermove', 'pointerdown', 'wheel', 'keydown', 'touchstart']) addEventListener(ev, wake, { passive: true, capture: true });
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) wake(); });
+
+  // ---------- layers ----------
+  // The Layers button opens a short list of what the map draws over the states. Each box is remembered in this browser.
+  const layEl = $('layers'), layBtns = [$('btnLayers'), $('btnLayersP')];
+  function layRender() {
+    layEl.innerHTML = '<h3>Show on the map</h3>' + LAYERS.map(([k, t]) =>
+      `<label><input type="checkbox" id="lay-${k}" data-k="${k}"${LAY[k] ? ' checked' : ''}>${t}</label>`).join('') +
+      '<div class="all"><button type="button" data-all="1">Show all</button><button type="button" data-all="0">Just the borders</button></div>';
+  }
+  function layApply() {
+    try { localStorage.setItem('wtt-layers', JSON.stringify(LAY)); } catch (e) {}
+    drawPeople(); drawLabels();
+    if (calm()) rest(true); else wake();
+    drawAmbient(true);
+  }
+  function layOpen(on) {
+    layEl.hidden = !on; layBtns.forEach(b => b.setAttribute('aria-expanded', on));
+    if (on) layRender();
+  }
+  layBtns.forEach(b => b.onclick = e => { e.stopPropagation(); layOpen(layEl.hidden); });
+  layEl.addEventListener('change', e => { const k = e.target.dataset.k; if (!k) return; LAY[k] = e.target.checked; layApply(); });
+  layEl.addEventListener('click', e => {
+    e.stopPropagation();
+    const a = e.target.closest('[data-all]'); if (!a) return;
+    // "Just the borders" keeps the motion as it was: it is about what is drawn, not whether the sea moves
+    for (const [k] of LAYERS) if (k !== 'motion') LAY[k] = a.dataset.all === '1';
+    if (a.dataset.all === '1') LAY.motion = true;
+    layRender(); layApply();
+  });
+  document.addEventListener('pointerdown', e => { if (!layEl.hidden && !layEl.contains(e.target) && !layBtns.some(b => b.contains(e.target))) layOpen(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !layEl.hidden) { layOpen(false); layBtns[isPhone() ? 1 : 0].focus(); } });
+  if (calm()) rest(true);
 
   // ---------- discovery and leaders ----------
   // Two lists of the people with a story, century by century, in one dialog over the map. Discovery has the great
@@ -4330,7 +4450,7 @@ details[open] summary { margin-bottom: 6px; }
   }
   function dcClose(now) {
     if (!DC.open) return;
-    DC.open = false; dcL().year = S.year; dcL().top = dcBody.scrollTop;
+    DC.open = false; dcL().year = S.year; dcL().top = dcBody.scrollTop; wake();
     dcExpanded(false);
     const done = () => {
       if (DC.open) return;   // opened again while it was closing
