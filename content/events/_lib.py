@@ -63,11 +63,12 @@ PAGE_KINDS = ('scene', 'battle', 'turn', 'figure', 'cost', 'made', 'work', 'song
 EVENTS = {}
 
 
-def event(eid, name, kind, years, hook, *pages, states=(), war=None, wiki=None, img=None, at=None, where=None, label=None):
+def event(eid, name, kind, years, hook, *pages, states=(), drop=(), war=None, wiki=None, img=None, at=None, where=None, label=None):
     if eid in EVENTS:
         raise SystemExit(f'event {eid} written twice')
     EVENTS[eid] = {'id': eid, 'name': name, 'kind': kind, 'years': years, 'hook': hook, 'pages': list(pages),
-                   'states': list(states), 'war': war, 'wiki': wiki, 'img': img, 'at': at, 'where': where, 'label': label}
+                   'states': list(states), 'drop': list(drop), 'war': war, 'wiki': wiki, 'img': img, 'at': at, 'where': where,
+                   'label': label}
 
 
 def _page(kind, title, text, **kw):
@@ -104,7 +105,7 @@ def legacy(text, *points, **kw):
 
 # places the event stories need that the people's and the stories' tables do not have
 C.update({
-    'guanahani': (-74.48, 24.05), 'la_navidad': (-72.1, 19.75), 'santa_fe_gr': (-3.72, 37.19), 'canary_gomera': (-17.2, 28.1),
+    'guanahani': (-74.48, 24.05), 'gibara': (-76.13, 21.11), 'la_navidad': (-72.1, 19.75), 'santa_fe_gr': (-3.72, 37.19), 'canary_gomera': (-17.2, 28.1),
     'pompeii': (14.49, 40.75), 'herculaneum': (14.35, 40.81), 'misenum': (14.08, 40.78), 'vesuvius': (14.43, 40.82),
     'yarmouk': (35.95, 32.8), 'qadisiyyah': (44.43, 31.79), 'camulodunum': (0.9, 51.89), 'mona': (-4.35, 53.25),
     'milvian_bridge': (12.47, 41.94), 'catalaunian_plains': (4.37, 48.95), 'ferghana': (71.78, 40.39),

@@ -37,7 +37,7 @@ event('columbus-first-voyage', "Columbus's first voyage", 'voyage', (1492, 1493)
             'Sure he was off the coast of Asia, Columbus sailed on to Cuba, which he took for part of China, and sent two men '
             'inland with letters for the Great Khan. They found villages, and people smoking rolled leaves. On Hispaniola '
             'the chief Guacanagarí traded gold ornaments, and Columbus was certain great riches lay close by.',
-            img='Hispaniola', y=1492, at='hispaniola'),
+            img='Gibara', cap='Gibara, on the north coast of Cuba', y=1492, at='gibara'),
       tale('Shipwreck on Christmas Eve',
            'On Christmas Eve, with a ship\'s boy at the helm, the Santa María ran onto a reef and broke up. Guacanagarí\'s '
            'people helped save her cargo. Columbus built a fort from her timbers, La Navidad, and left 39 men there. When '

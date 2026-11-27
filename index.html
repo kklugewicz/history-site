@@ -1884,13 +1884,28 @@ details[open] summary { margin-bottom: 6px; }
     try { const line = typeof lineageOf === 'function' ? lineageOf(n) : null; if (line && line.names) for (const x of line.names) if (!out.includes(x)) out.push(x); } catch (e) {}
     return out;
   }
+  // the countries an event happened in, as country timelines: those whose land its places are on today ("tc", which
+  // content/events/build_events.py finds on the latest border snapshot), remembered once the timelines have loaded
+  function evLines(e) {
+    if (e._tl) return e._tl;
+    const last = fileYear(timeline.borderFiles[timeline.borderFiles.length - 1]), s = new Set();
+    for (const n of e.tc || []) { const l = homeOf(n, last); if (l) s.add(l); }
+    if (LIN) e._tl = s;
+    return s;
+  }
   // a clicked state's wars and events, as items for its row of stories (countryStories, in the people's stories, sorts
   // them in with its people): { id, y: the event's year nearest the shown one, now: going on then, w: 1 (an event's
-  // place among equals), title, html: the inside of its button }
+  // place among equals), title, html: the inside of its button }. An event is the country's when one of its states was
+  // one of the country's in the event's years, or when it happened there, on the country's land today. A people the
+  // map draws across several of today's countries counts only for its home country, so Caesar's Gallic Wars, which list
+  // the Celts, are not Ireland's for a click on its Celts, but are France's, where they were fought.
   function eventStoryItems(f) {
-    const names = new Set(evNamesOf(f)), y = S.year, out = [];
+    const own = f.properties.name, names = new Set(evNamesOf(f)), y = S.year, out = [];
+    const line = LIN && typeof lineageOf === 'function' ? lineageOf(own) : null;
     for (const e of evList) {
-      if (!e.st.some(n => names.has(n))) continue;
+      const ty = clamp(y, e.from, e.to);
+      if (!(line ? e.st.some(n => names.has(n) && homeOf(n, ty) === line) || evLines(e).has(line)
+        : e.st.includes(own) || (e.tc || []).includes(own))) continue;
       const now = e.from <= y && y <= e.to;
       out.push({ id: 'ev:' + e.id, y: clamp(y, e.from, e.to), now, w: 1, title: e.name + ': ' + e.hook, html: evInner(e, evYear(e, now)) });
     }

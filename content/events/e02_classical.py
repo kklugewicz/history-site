@@ -164,7 +164,7 @@ event('gallic-wars', "Caesar's Gallic Wars", 'wars', (-58, -50),
             'He also crossed to Britain, twice, in 55 and 54 BC, the first Roman army to go there. Storms wrecked his ships, '
             'and the Britons fought from chariots, which the Romans had not faced for generations. He took hostages and '
             'promises of tribute, and left.',
-            y=-54),
+            y=-54, at=(1.38, 51.27), where='The coast of Kent'),
       figure('vercingetorix', 'One leader for all Gaul',
              'In 52 BC the Gauls rose together under a young noble of the Arverni, Vercingetorix. He had towns and farms '
              'burned so that the Romans could find no food, and beat Caesar at Gergovia, the worst defeat Caesar himself '

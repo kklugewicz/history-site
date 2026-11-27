@@ -571,7 +571,10 @@ event('edward-i-conquest-of-wales', 'Edward I\'s conquest of Wales', 'conquest',
              'Two English invasions, 1277 and 1282',
              'Llywelyn was killed in December 1282',
              'Edward ringed Wales with castles'),
-      war='edward-i-conquest-of-wales', wiki='Conquest of Wales by Edward I', at='caernarfon')
+      war='edward-i-conquest-of-wales', wiki='Conquest of Wales by Edward I', at='caernarfon',
+      # the map of 1200 draws Wales and Gaelic Ireland as one state, the Celtic kingdoms, which the country timelines give
+      # to Ireland; Wales is Britain's, by the story's places
+      drop=('Celtic kingdoms',))
 
 event('siamese-khmer-wars', 'The fall of Angkor', 'war', (1350, 1431),
       'The new Thai kingdom of Ayutthaya fought the old Khmer Empire, and in 1431 sacked its great capital, Angkor.',

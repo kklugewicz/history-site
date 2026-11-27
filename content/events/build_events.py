@@ -2,8 +2,9 @@
 
 Run from the repository root:  python3 content/events/build_events.py
 Writes data/events/<event id>.json (one story's pages, loaded when it is opened), data/events/index.json (every
-event: name, kind, years, hook, cover, war, place and the states it belongs to) and content/events/media.txt (every
-Wikipedia title and recording page the stories ask for, to check from a machine that can reach Wikipedia).
+event: name, kind, years, hook, cover, war, place, the states it belongs to, and "tc", the countries of today its
+places are in) and content/events/media.txt (every Wikipedia title and recording page the stories ask for, to check
+from a machine that can reach Wikipedia).
 Checks: 5 to 12 pages of a known kind, legacy last and only there, with 2 to 4 points; lengths that fit the card;
 places that resolve; sane years; people who exist; states spelled as in the border files of the event's years;
 wars that exist in data/wars.json.
@@ -37,6 +38,48 @@ def file_for(y):
     return ok[-1] if ok else files[0]
 
 
+# Today's countries, from the latest border snapshot: a story belongs as well to the countries its places are in today
+# (the page finds each one's country timeline), so the Gallic Wars are France's and the Crusades Israel's whatever the
+# map called those lands then. A point just off a simplified coast, or on an island too small to draw, takes the land
+# close by, as the page's todayAt does for a click.
+_today = []
+for x in json.load(open(os.path.join(DATA, f'borders_{files[-1]}.json')))['features']:
+    g = x['geometry']
+    for poly in (g['coordinates'] if g['type'] == 'MultiPolygon' else [g['coordinates']]):
+        xs, ys = [c[0] for c in poly[0]], [c[1] for c in poly[0]]
+        _today.append((min(xs), min(ys), max(xs), max(ys), poly, x['properties']['name']))
+NEARBY = ((0, 0), (.2, 0), (-.2, 0), (0, .2), (0, -.2), (.4, .4), (-.4, -.4), (.4, -.4), (-.4, .4))
+# places that snapshot puts in the wrong country or in none (it is coarse, and draws no Switzerland)
+TODAY_FIX = {
+    'geneva': 'Switzerland', 'lausanne': 'Switzerland', 'strasbourg': 'France', 'malplaquet': 'France', 'roncevaux': 'Spain',
+    'als': 'Denmark', 'dybbol': 'Denmark', 'narva': 'Estonia', 'goma': 'Zaire', 'ciudad_juarez': 'Mexico', 'martin_garcia': 'Argentina',
+    'chios': 'Greece', 'mactan': 'Philippines', 'tsushima': 'Japan', 'simeulue': 'Indonesia',
+}
+
+
+def _in_ring(x, y, r):
+    c, j = False, len(r) - 1
+    for i in range(len(r)):
+        (xi, yi), (xj, yj) = r[i][:2], r[j][:2]
+        if (yi > y) != (yj > y) and x < (xj - xi) * (y - yi) / (yj - yi) + xi:
+            c = not c
+        j = i
+    return c
+
+
+def today_at(lon, lat):
+    for a, b in NEARBY:
+        x, y = lon + a, lat + b
+        for x0, y0, x1, y1, poly, n in _today:
+            if x0 <= x <= x1 and y0 <= y <= y1 and _in_ring(x, y, poly[0]) and not any(_in_ring(x, y, h) for h in poly[1:]):
+                return n
+    return None
+
+
+def today_of(at, xy):
+    return TODAY_FIX[at] if isinstance(at, str) and at in TODAY_FIX else today_at(*xy)
+
+
 def files_over(a, b, slack=1):
     """the border files in use from year a to year b, and `slack` files either side"""
     i, j = files.index(file_for(a)), files.index(file_for(b))
@@ -45,7 +88,7 @@ def files_over(a, b, slack=1):
 
 # place names written on the card, where the key spelled out would be wrong (the people's stories have more)
 PRETTY = {
-    'guanahani': 'Guanahani, Bahamas', 'la_navidad': 'La Navidad, Hispaniola', 'santa_fe_gr': 'Santa Fe, Granada',
+    'guanahani': 'Guanahani, Bahamas', 'gibara': 'Gibara, Cuba', 'la_navidad': 'La Navidad, Hispaniola', 'santa_fe_gr': 'Santa Fe, Granada',
     'canary_gomera': 'La Gomera, Canary Islands',
     'muhlberg': 'Mühlberg', 'pheasant_island': 'Pheasant Island', 'stuhlingen': 'Stühlingen', 'wurzburg': 'Würzburg',
     'muhlhausen': 'Mühlhausen', 'frankenhausen': 'Bad Frankenhausen', 'concepcion': 'Concepción', 'canete': 'Cañete',
@@ -158,9 +201,14 @@ for eid, ev in _lib.EVENTS.items():
                             st.append(n)
             if not (w['start'] - 2 <= a and b <= w['end'] + 2):
                 warns.append(f'{who}: years {a} to {b} go beyond its war, {w["start"]} to {w["end"]}')
+    for n in ev['drop']:   # a state its war lists that stands for other lands as well
+        if n in st:
+            st.remove(n)
+        else:
+            errs.append(f'{who}: drop= names {n}, which it does not list')
     if not st:
         errs.append(f'{who}: belongs to no state (give states= or war=)')
-    res = []
+    res, tc = [], set()
     for i, pg in enumerate(pages):
         at = f'{who} page {i + 1} ({pg["k"]} "{pg.get("t", "")[:30]}")'
         if pg['k'] not in _lib.PAGE_KINDS:
@@ -211,6 +259,7 @@ for eid, ev in _lib.EVENTS.items():
             xy, wh = place(pg['at'], pg.get('where'), at)
             if xy:
                 q['at'], q['wh'] = xy, wh
+                tc.add(today_of(pg['at'], xy))
         elif pg.get('where'):
             errs.append(f'{at}: where= without at=')
         if pg['k'] == 'song' and not (pg.get('au') or pg.get('listen')):
@@ -228,9 +277,13 @@ for eid, ev in _lib.EVENTS.items():
         xy, wh = place(ev['at'], ev['where'], who)
         if xy:
             row['at'], row['wh'] = xy, wh
+            tc.add(today_of(ev['at'], xy))
     elif not war:
         warns.append(f'{who}: no at= (the story cannot show where it happened)')
     row['st'] = st
+    tc.discard(None)
+    if tc:
+        row['tc'] = sorted(tc)
     index.append(row)
     media.append(ev['img'] or ev['wiki'])
     out[eid] = {'id': eid, 'pages': res}
