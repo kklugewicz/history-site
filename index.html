@@ -1824,12 +1824,14 @@ details[open] summary { margin-bottom: 6px; }
     if (line && line.periods) for (const p of line.periods) for (const s of p.states || []) if (s[0] !== '~' && !out.includes(s)) out.push(s);
     return out;
   }
-  // Whether a country's timeline borrows a state in a year, or in the period before (the border snapshots lag the
-  // dates, so Florence is still drawn in the Holy Roman Empire after 1494, when Italy's timeline stops borrowing it).
-  function borrowsNear(l, name, y) {
-    const ps = l.periods || [], b = '~' + name, i = ps.findIndex((p, j) => j + 1 === ps.length || ps[j + 1].from > y);
-    return ps.slice(Math.max(0, i - 1), i + 1).some(p => (p.states || []).includes(b));
+  // Whether a country's timeline lists a state in a year, or in the period before (the border snapshots lag the dates,
+  // so Florence is still drawn in the Holy Roman Empire after 1494, when Italy's timeline stops borrowing it): as one it
+  // borrows ("~"), or at all.
+  function listsNear(l, name, y, borrowed) {
+    const ps = l.periods || [], i = ps.findIndex((p, j) => j + 1 === ps.length || ps[j + 1].from > y);
+    return ps.slice(Math.max(0, i - 1), i + 1).some(p => (p.states || []).some(s => s === '~' + name || (!borrowed && s === name)));
   }
+  const borrowsNear = (l, name, y) => listsNear(l, name, y, true);
   // A place someone lived in, in a state at home in another country, on land that is now this country's (a tie's place
   // today and its point: [state, from, to, 'h', state there today, lon, lat]). Leonardo's Florence was drawn inside the
   // Holy Roman Empire, Germany's, while Italy's timeline borrows the Empire: Florence makes him one of Italy's. For the
@@ -1841,6 +1843,19 @@ details[open] summary { margin-bottom: 6px; }
   function livedElsewhere(t, line, ty) {
     const b = t[3] === 'h' ? todayLine(t) : null;
     return !!b && b !== line && borrowsNear(b, t[0], ty) && coreGap(b, t) < 0.85 * coreGap(line, t);
+  }
+  // A people or loose label the map draws across several of today's countries (the timelines' "shared" names: the
+  // Celts, the Taíno, the Greek city-states) is no one country's state, so a tie to one counts by where it was: for the
+  // country whose land its place is today, when that country's timeline lists the name then, and for the name's home
+  // country, there only while they are there when the place is clearly nearer the other's heartland. A click on Ireland's
+  // Celts leaves out Caesar, who landed in Kent, and one on Sicily's Greek city-states leaves out Socrates, while
+  // Archimedes' Syracuse is Italy's and still Greece's. Gives the tie's kind for this country, or null.
+  const isShared = n => { try { return !!(LIN && LIN.shared && LIN.shared.has(n)); } catch (e) { return false; } };
+  function sharedKind(t, line, ty) {
+    const b = t[3] === 'h' ? todayLine(t) : null, here = b && listsNear(b, t[0], ty) ? b : null;
+    if (here === line) return t[3];
+    if (lineageOf(t[0], ty, null) !== line) return null;
+    return here && coreGap(here, t) < 0.85 * coreGap(line, t) ? 'p' : t[3];
   }
   // A row item: { id: what openStory takes, y: the year it is shown at (this year when now), now: whether it belongs to
   // this year, w: order among equals (0 a ruler of the state, 1 an event, 2 and up anyone else, by rank), title, html:
@@ -1856,7 +1871,9 @@ details[open] summary { margin-bottom: 6px; }
       for (const t of storyTies[id] || []) {   // [state, from, to, 'r' ruled it, 'h' lived or stopped there, 'p' there in passing]
         const ty = clamp(y, t[1], t[2]);
         let k = t[3];
-        if (names.has(t[0]) && (!line || t[0] === own || lineageOf(t[0], ty) === line)) {   // not a name another country used in those years
+        if (line && isShared(t[0])) {
+          if (!(k = sharedKind(t, line, ty))) continue;
+        } else if (names.has(t[0]) && (!line || t[0] === own || lineageOf(t[0], ty) === line)) {   // not a name another country used in those years
           if (line && livedElsewhere(t, line, ty)) k = 'p';
         } else if (!line || !borrowedHere(t, line, ty)) continue;
         const d = y < t[1] ? t[1] - y : y > t[2] ? y - t[2] : 0;
