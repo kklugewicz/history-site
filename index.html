@@ -16,7 +16,8 @@ body { margin: 0; }
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Alegreya+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: full-bleed map with a painted sea below it and a layer of moving things above it; title, year and mode tabs
-   top-left, reading panel on the right (bottom sheet on phones), timeline docked at the bottom with play controls.
+   top-left, reading panel on the right (on phones, a pop-up card only when something is picked), timeline docked at the
+   bottom with play controls.
    Theme, "explorer's atlas": the world is a painted physical map (relief, deserts, forests, ice, sea depths), states are
    washes of ink over it in their flag's colour, and the chrome is a parchment atlas page in sepia ink. */
 :root {
@@ -322,24 +323,73 @@ details[open] summary { margin-bottom: 6px; }
 #tip { position: absolute; pointer-events: none; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; font-size: 13px; box-shadow: var(--shadow); white-space: nowrap; max-width: 360px; }
 #tip .t2 { display: block; color: var(--ink-soft); font-size: 12px; white-space: normal; }
 
+.pop-x, .pop-grip, .tl-year, #stories { display: none; }
+/* Phones: the map takes the whole screen. There is no reading panel; tapping a country (or a person, a faith or a war)
+   brings up a pop-up card from the bottom that closes with its x, a swipe down or a tap on the sea. The year moves from
+   the card at the top left into the timeline, which becomes a scrubber: play and the year above, a big-thumbed slider
+   over a strip of era colours below, with the wars or faiths in lanes just above it. */
 @media (max-width: 760px) {
-  .panel { top: auto; left: 8px; right: 8px; bottom: 8px; width: auto; max-height: 44%; }
+  .panel { top: auto; left: 8px; right: 8px; bottom: 8px; width: auto; max-height: 48%; border-radius: 16px; display: none;
+    box-shadow: 0 -2px 30px rgba(40,28,12,.28); z-index: 5; }
+  .panel.pop { display: flex; animation: popup .28s cubic-bezier(.2,.8,.25,1); }
+  @keyframes popup { from { transform: translateY(40px); opacity: 0; } }
+  .panel.full { max-height: calc(100% - 16px); }
   .panel.collapsed .panel-body { display: none; }
+  .panel-head { position: relative; padding: 16px 48px 10px 16px; cursor: pointer; touch-action: none; }
+  .panel.collapsed .panel-head { border-bottom: 0; }
+  .pop-grip { display: block; position: absolute; top: 6px; left: calc(50% - 18px); width: 36px; height: 4px; border-radius: 2px; background: var(--line); }
+  .pop-x { display: grid; place-items: center; position: absolute; top: 8px; right: 8px; width: 36px; height: 36px; padding: 0; border-radius: 50%;
+    box-shadow: none; border: 0; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); z-index: 1; }
+  .pop-x svg { width: 16px; height: 16px; }
   .period { font-size: 24px; }
-  .panel-head { padding: 10px 14px 8px; cursor: pointer; }
-  .panel-body { padding: 10px 14px 14px; }
+  .period .swatch { width: 16px; height: 16px; margin-right: 8px; vertical-align: 2px; }
+  .kicker { font-size: 11px; margin-bottom: 2px; }
+  .meta { margin-top: 4px; }
+  .panel-body { padding: 10px 16px 16px; gap: 14px; }
+  .syn { font-size: 15px; }
   .ticks span.minor, .band.short { color: transparent; }
-  .tabs button { padding: 5px 10px; }
-  .top { gap: 6px; }
-  .top h1 { display: none; }
-  .when { padding: 4px 10px 6px; min-width: 0; }
-  .when .y { font-size: 30px; }
-  .when .sub { display: none; }
-  .places { flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 32px); padding: 2px 2px 8px; margin: -2px -2px -8px; scrollbar-width: none; }
-  .places button { flex: none; font-size: 14px; padding: 4px 9px; }
-  .timeline { padding: 6px 10px calc(8px + env(safe-area-inset-bottom, 0px)); gap: 4px 6px; }
-  .step { width: 30px; height: 30px; }
-  .play { width: 34px; height: 34px; }
+  .tabs button { padding: 6px 12px; }
+  .top { gap: 6px; left: 10px; max-width: calc(100% - 20px); }
+  .top h1, .top > .when, .top > .row:not(.places) { display: none; }
+  .places { flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 20px); padding: 2px 2px 8px; margin: -2px -2px -8px; scrollbar-width: none; }
+  .places button { flex: none; font-size: 14px; padding: 4px 9px; box-shadow: 0 1px 4px rgba(60,42,20,.16); }
+  /* a story button at the top right, where the year card was */
+  #stories { display: grid; place-items: center; position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: 10px; width: 44px; height: 44px;
+    padding: 0; border-radius: 50%; border: 2.5px solid transparent; box-shadow: var(--shadow);
+    background: linear-gradient(var(--paper), var(--paper)) padding-box, var(--story-ring) border-box; color: var(--story-a); }
+  #stories svg { width: 18px; height: 18px; margin-left: 2px; }
+  #stories[aria-pressed="true"] { background: var(--story-ring); color: #fff; }
+
+  /* the timeline as a scrubber */
+  .timeline { grid-template-columns: 40px 1fr 36px; gap: 2px 6px; padding: 8px 10px calc(6px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -4px 16px rgba(40,28,12,.08); }
+  .play { grid-row: 1; grid-column: 1; width: 40px; height: 40px; }
+  .tl-head { grid-row: 1; grid-column: 2 / 4; min-height: 40px; gap: 8px; flex-wrap: nowrap; overflow: hidden; }
+  .tl-head .tl-hint { display: none; }
+  .tl-head > span:not(.grow):not(.tl-year) { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .tl-year { display: flex; align-items: baseline; gap: 6px; min-width: 0; white-space: nowrap; color: var(--ink-soft); }
+  .tl-year b { font-family: var(--f-display); font-weight: 400; font-size: 30px; line-height: 1; color: var(--ink); font-variant-numeric: lining-nums; }
+  .tl-year .ad { font-size: 12px; letter-spacing: .08em; }
+  .tl-year .tl-era { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--accent); overflow: hidden; text-overflow: ellipsis; }
+  .tl-head button { flex: none; padding: 6px 10px; font-size: 13px; border-radius: 99px; }
+  #back { padding: 6px 12px 6px 9px; }
+  .step { grid-row: 2; width: 36px; height: 36px; border-radius: 50%; align-self: end; margin-bottom: 14px; }
+  #prev { grid-column: 1; justify-self: center; }
+  #next { grid-column: 3; }
+  .track { grid-row: 2; grid-column: 2; --th: 26px; }
+  .bands { height: 8px; order: 0; }
+  .band { height: 6px; top: 1px; border-radius: 3px; padding: 0; font-size: 0; }
+  .band.cur { box-shadow: 0 0 0 1.5px var(--ink); }
+  .warbar { height: 4px; border-radius: 2px; min-width: 4px; }
+  .pin { width: 14px; height: 14px; top: 1px; }
+  #slider { -webkit-appearance: none; appearance: none; background: transparent; height: 34px; touch-action: none; cursor: pointer; }
+  #slider::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--ink) 16%, transparent); }
+  #slider::-webkit-slider-thumb { -webkit-appearance: none; width: 26px; height: 26px; margin-top: -10px; border-radius: 50%; background: var(--accent); border: 3px solid var(--paper); box-shadow: 0 1px 6px rgba(0,0,0,.35); }
+  #slider::-moz-range-track { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--ink) 16%, transparent); }
+  #slider::-moz-range-progress { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--accent) 55%, transparent); }
+  #slider::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: var(--accent); border: 3px solid var(--paper); box-shadow: 0 1px 6px rgba(0,0,0,.35); }
+  #slider:focus-visible { outline: none; }
+  #slider:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .ticks { height: 14px; margin-top: -4px; font-size: 10px; }
 }
 @media (prefers-reduced-motion: reduce) { .pol { transition: none; } .bm .pulse { animation: none; } .fb.flash > circle { animation: none; } }
 /* stories: the most important people's lives told a page at a time, like a story on a phone. A ring round a face
@@ -528,7 +578,10 @@ details[open] summary { margin-bottom: 6px; }
       <div class="row places" id="places" aria-label="Zoom to"><button type="button" data-place="World">World</button><button type="button" data-place="Europe">Europe</button><button type="button" data-place="Asia">Asia</button><button type="button" data-place="Africa">Africa</button><button type="button" data-place="North America">North America</button><button type="button" data-place="South America">South America</button><button type="button" data-place="Oceania">Oceania</button></div>
       <div class="row"><button id="btnDetail" type="button" aria-pressed="false" title="Show every state and people, not just the main civilizations">Detailed borders</button></div>
     </div>
+    <button type="button" id="stories" aria-pressed="false" aria-label="Stories from this year" title="Stories from this year"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2l10 6-10 6z" fill="currentColor"/></svg></button>
     <aside class="panel" id="panel" aria-live="polite">
+      <span class="pop-grip" aria-hidden="true"></span>
+      <button type="button" class="pop-x" id="popX" aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
       <div class="panel-head" id="panelHead"></div>
       <div class="panel-body" id="panelBody"></div>
     </aside>
@@ -738,7 +791,7 @@ details[open] summary { margin-bottom: 6px; }
   const fmtYear = y => y < 0 ? (-y) + ' BC' : (y < 1000 ? 'AD ' + y : '' + y);
   const fmtSpan = (a, b) => a === b ? fmtYear(a) : fmtYear(a) + ' to ' + fmtYear(b);
   const lifeText = p => { const [b, d] = p.life || []; return b != null && d != null ? fmtSpan(b, d) : b != null ? 'born ' + fmtYear(b) : d != null ? 'died ' + fmtYear(d) : ''; };
-  const xcss = (p, max) => `calc(${p / max} * (100% - 16px) + 8px)`;
+  const xcss = (p, max) => `calc(${p / max} * (100% - var(--th, 16px)) + var(--th, 16px) / 2)`;
 
   // ---------- eras ----------
   const ERAS = [
@@ -895,7 +948,7 @@ details[open] summary { margin-bottom: 6px; }
   // ---------- state ----------
   let detailed = false;
   try { detailed = localStorage.getItem('wtt-detailed') === '1'; } catch (e) {}
-  const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, person: null, faithSel: null,
+  const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, person: null, faithSel: null, sheet: null,
     features: [], fc: null, file: null, k: 1, t: d3.zoomIdentity, playing: false, speed: 1 };
   // simplified drawing applies everywhere except inside a war, where every involved state must show
   const simple = () => !detailed && !(S.detail && S.detail.kind === 'war');
@@ -921,12 +974,20 @@ details[open] summary { margin-bottom: 6px; }
     drawTerrain(); styleWater(); drawPeople(); drawLabels(); scaleOverlay(); placeSwords(); drawAmbient(true);
   });
   svg.call(zoom).on('dblclick.zoom', null);
+  // the part of the map left free to look at: left of the reading panel on a big screen; on a phone, below the buttons at
+  // the top and, while the pop-up card is up, above it
+  const popOpen = () => isPhone() && !!(S.detail || S.person || S.selected || S.faithSel || S.sheet);
+  function viewArea() {
+    if (!isPhone()) return [0, 0, W - (Math.min(380, W * .34) + 32), H];
+    const st = $('stage').getBoundingClientRect(), tb = document.querySelector('.top').getBoundingClientRect();
+    const y0 = clamp(tb.bottom - st.top + 4, 0, H * .3), y1 = popOpen() ? H * .52 - 8 : H;
+    return [0, y0, W, Math.max(80, y1 - y0)];
+  }
   function zoomToBounds(b, maxK = 40, dur = 750) {
     const [[x0, y0], [x1, y1]] = b;
-    const panelW = isPhone() ? 0 : Math.min(380, W * .34) + 32;
-    const vw = W - panelW, vh = isPhone() ? H * .52 : H;
+    const [vx, vy, vw, vh] = viewArea();
     const s = Math.min(maxK, .9 / Math.max((x1 - x0) / vw, (y1 - y0) / vh));
-    const t = d3.zoomIdentity.translate(vw / 2, vh / 2).scale(s).translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
+    const t = d3.zoomIdentity.translate(vx + vw / 2, vy + vh / 2).scale(s).translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
     svg.transition().duration(reduce() ? 0 : dur).call(zoom.transform, t);
   }
   const ptsBounds = pts => path.bounds({ type: 'MultiPoint', coordinates: pts });
@@ -1453,9 +1514,15 @@ details[open] summary { margin-bottom: 6px; }
   }
   opt('stories/index.json').then(j => { if (!j || !j.ids) return; storyIdx = j.ids; drawLeaders(); drawPeople(); refreshGenerals(); renderPanel(); });
   // a ringed face on the map opens that person's story; the others on screen with a story come after it
+  // on a phone, a face tapped low on the map slides up out from under the pop-up card
+  function keepAbovePop(e) {
+    if (!isPhone() || !e || e.clientY == null || !popOpen()) return;
+    const y = e.clientY - $('stage').getBoundingClientRect().top, [, vy, , vh] = viewArea();
+    if (y > vy + vh - 24) svg.transition().duration(reduce() ? 0 : 450).call(zoom.translateBy, 0, (vy + vh / 2 - y) / S.k);
+  }
   function personClick(p, e) {
-    if (!hasStory(p.id)) return selectPerson(p);
-    if (!S.detail) selectPerson(p);
+    if (!hasStory(p.id)) { selectPerson(p); keepAbovePop(e); return; }
+    if (!S.detail) { selectPerson(p); keepAbovePop(e); }
     const q = [p.id], on = [], box = svg.node().getBoundingClientRect();
     const seen = n => { const r = n.getBoundingClientRect(); return r.right > box.left && r.left < box.right && r.bottom > box.top && r.top < box.bottom; };
     leadG.selectAll('g.leader').each(function (d) { if (seen(this)) on.push(d.p); });
@@ -2486,7 +2553,7 @@ details[open] summary { margin-bottom: 6px; }
     if (file !== S.file) await showBorders(file);
     if (S.detail && S.detail.item === it && S.step === n) { computeLabels(); styleMap(); drawLabels(); drawWarLayer(); drawOverlay(true); }
   }
-  function exitDetail() { const back = S.detail.back; S.detail = null; computeLabels(); setYear(back, { force: true }); drawOverlay(false); }
+  function exitDetail() { stopPlay(); const back = S.detail.back; S.detail = null; computeLabels(); setYear(back, { force: true }); renderTimeline(); drawOverlay(false); }
 
   // ---------- the year ----------
   let yearRaf = 0, panelTimer = 0, lastRender = 0;
@@ -2524,12 +2591,18 @@ details[open] summary { margin-bottom: 6px; }
     const wait = Math.max(S.playing ? 0 : 120, (S.playing ? 1000 : 150) - (performance.now() - lastPanel));
     panelTimer = setTimeout(renderPanel, wait);
   }
+  // on a phone the year sits in the timeline, over the slider
+  function fillTlYear() {
+    const e = $('tlYear'), y = S.year; if (!e) return;
+    e.innerHTML = `<b>${y < 0 ? (y < -3000 ? 'c. ' : '') + (-y) : y}</b><span class="ad">${y < 0 ? 'BC' : 'AD'}</span><span class="tl-era">${esc(eraName(y))}</span>`;
+  }
   function renderWhen() {
     const d = S.detail, y = S.year;
     const big = y < 0 ? `${(y < -3000 ? 'c. ' : '') + (-y)}<small>BC</small>` : `${y}<small>AD</small>`;
     $('yNum').innerHTML = big;
     $('yAge').textContent = eraName(y);
     $('ySub').textContent = d ? d.item.name : snaps[S.idx].label + ' · ' + snaps[S.idx].century;
+    fillTlYear();
   }
   let hashTimer = 0;
   function saveHash() {
@@ -2571,8 +2644,8 @@ details[open] summary { margin-bottom: 6px; }
   let panelKey = '';
   function renderPanel() {
     clearTimeout(panelTimer); panelTimer = 0; lastPanel = performance.now();
-    const s = snaps[S.idx], d = S.detail, era = eraOf(S.idx);
-    let head = '', html = '';
+    const s = snaps[S.idx], d = S.detail, era = eraOf(S.idx), phone = isPhone();
+    let head = '', html = '', pop = true, sheet = false;
     if (d && d.kind === 'war') {
       const w = d.item, st = w.steps[S.step];
       const sideName = i => w.sides[i] ? esc(w.sides[i].name) : '';
@@ -2604,6 +2677,13 @@ details[open] summary { margin-bottom: 6px; }
       else html += `<p class="hint">Not on the map in ${esc(fmtYear(S.year))}. Pick a moment below to see where they were.</p>`;
       html += `<div class="sec"><h3>Life on the map</h3><ul class="hist">${p.stints.map((st, i) => [st, i]).sort((a, b) => a[0].from - b[0].from || b[0].to - a[0].to).map(([st, i]) => `<li><button type="button" data-stint="${i}" class="${st === now ? 'now' : ''}"><i class="swatch" style="background:${tagColor(p)}"></i><span><b>${esc(st.label || p.role)}</b> <span class="when">${fmtSpan(st.from, st.to)}</span></span><span class="note">${st.rule ? 'Leads ' + esc(st.rule[0]) : st.path.length > 1 ? 'On the move' : 'Based here'}</span></button></li>`).join('')}</ul></div>`;
       if (p.wiki) html += `<p class="hint"><a href="https://en.wikipedia.org/wiki/${encodeURIComponent(p.wiki.replace(/ /g, '_'))}" target="_blank" rel="noopener">Read more on Wikipedia</a></p>`;
+    } else if (phone && !S.features.some(x => x.properties.name === S.selected) && !(S.mode === 'religions' && S.faithSel && faithById[S.faithSel])) {
+      // a phone has no reading panel: with nothing picked there is no card, unless the stories button asked for one
+      pop = sheet = S.sheet === 'stories';
+      if (pop) {
+        head = `<p class="kicker">${esc(era[0])}</p><p class="period">People of ${esc(fmtYear(S.year))}</p>`;
+        html += storyTray() + peopleBlock(8);
+      }
     } else {
       head = `<p class="kicker">${esc(era[0])}</p><p class="period">${esc(s.label)}</p><div class="meta">${esc(s.century)} · borders ${esc(S.file ? 'c. ' + fmtYear(fileYear(S.file)) : s.borders)}</div>`;
       const f = S.features.find(x => x.properties.name === S.selected);
@@ -2611,8 +2691,10 @@ details[open] summary { margin-bottom: 6px; }
         const p = f.properties, fa = faithAt(f, S.year);
         const sw = S.mode === 'religions' && fa ? fa.color : simple() ? polFill(f.group, 'g') : polFill(p.name, 'n');
         for (const ld of rulersOf(f)) html += `<button type="button" class="card" data-person="${ld.p.id}" style="padding:6px 8px"><span class="ruler"><span class="ph">${imgOf(ld.p) ? `<img src="${esc(imgOf(ld.p))}" alt="">` : esc(initials(ld.p.name))}</span><span><b>${esc(ld.p.name)}</b><span class="s">${esc(ld.s.label || ld.p.role)}, ${fmtSpan(ld.s.from, ld.s.to)}</span><span class="syn" style="display:block;font-size:14.5px;margin-top:4px">${esc(ld.p.why)}</span></span></span></button>`;
-        html += `<div class="focus"><h2><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</h2>` +
-          (p.sub ? `<div class="sub">Part of ${esc(p.sub)}</div>` : '') + (fa ? `<div class="sub">Main faith: ${esc(fa.name)}</div>` : '') + '</div>';
+        const subs = (p.sub ? `<div class="sub">Part of ${esc(p.sub)}</div>` : '') + (fa ? `<div class="sub">Main faith: ${esc(fa.name)}</div>` : '');
+        // on a phone the country's name heads its pop-up card
+        if (phone) head = `<p class="kicker">${esc(fmtYear(S.year))} · ${esc(era[0])}</p><p class="period"><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</p>${subs}`;
+        else html += `<div class="focus"><h2><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</h2>` + subs + '</div>';
         html += flagBlock(f);
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
@@ -2664,8 +2746,14 @@ details[open] summary { margin-bottom: 6px; }
     const key = d ? d.kind + d.item.id + ':' + S.step : S.person ? 'p' + S.person : S.selected ? 's' + S.selected : S.faithSel ? 'f' + S.faithSel : S.mode;
     const body = $('panelBody'), top = key === panelKey ? body.scrollTop : 0;
     panelKey = key;
+    if (!sheet) S.sheet = null;
+    const panel = $('panel');
+    if (!(phone && pop)) panel.classList.remove('full', 'collapsed');
+    panel.classList.toggle('pop', phone && pop);
+    $('stories').setAttribute('aria-pressed', String(phone && S.sheet === 'stories'));
+    $('stories').hidden = !!d;
     $('panelHead').innerHTML = head;
-    body.innerHTML = html + credit;
+    body.innerHTML = pop ? html + credit : '';
     ringPanelFaces(body);
     body.scrollTop = top;
   }
@@ -2709,6 +2797,16 @@ details[open] summary { margin-bottom: 6px; }
   }
   $('panelBody').addEventListener('click', onPick);
   $('lanes').addEventListener('click', onPick);
+  // on a phone the war bars and faith dots are small, so a tap picks the nearest one
+  $('lanes').addEventListener('click', e => {
+    if (!isPhone() || e.target.closest('[data-war],[data-story]')) return;
+    let best = null, bd = 20;
+    for (const b of $('lanes').querySelectorAll('[data-war],[data-story]')) {
+      const r = b.getBoundingClientRect(), d = Math.hypot(Math.max(0, r.left - e.clientX, e.clientX - r.right), Math.max(0, r.top - e.clientY, e.clientY - r.bottom));
+      if (d < bd) { bd = d; best = b; }
+    }
+    if (best) best.click();
+  }, true);
 
   // ---------- timeline ----------
   const slider = $('slider');
@@ -2719,7 +2817,7 @@ details[open] summary { margin-bottom: 6px; }
       const it = d.item, n = it.steps.length;
       slider.max = n - 1; slider.step = 1; slider.value = S.step;
       slider.setAttribute('aria-label', it.name + ' timeline');
-      head.innerHTML = `<button type="button" id="back">&#8249; Back to ${esc(fmtYear(d.back))}</button><span><b>${esc(it.name)}</b> · press play to watch it unfold</span>`;
+      head.innerHTML = `<button type="button" id="back">&#8249; Back to ${esc(fmtYear(d.back))}</button><span><b>${esc(it.name)}</b><span class="tl-hint"> · press play to watch it unfold</span></span>`;
       $('back').onclick = exitDetail;
       bands.style.display = 'none'; lanes.innerHTML = ''; lanes.style.height = '0';
       // long step labels ("Dec 1941 to Jun 1942") collide, so show every k-th one that fits
@@ -2732,21 +2830,24 @@ details[open] summary { margin-bottom: 6px; }
     }
     slider.max = N; slider.step = 'any'; slider.value = S.pos; slider.setAttribute('aria-label', 'Year');
     slider.setAttribute('aria-valuetext', fmtYear(S.year));
-    head.innerHTML = (S.mode === 'wars' ? '<span><b>Wars:</b> each coloured bar is a major war. Click one to follow it.</span>'
-      : S.mode === 'religions' ? '<span><b>Religions:</b> each dot marks when a faith began. Click one to follow its spread.</span>'
-      : `<span>Era: <b id="eraName"></b></span>`) + `<span class="grow"></span><button type="button" id="speed" title="Playback speed">Speed ${S.speed}×</button>`;
-    $('speed').onclick = () => { S.speed = S.speed >= 4 ? .5 : S.speed * 2; $('speed').textContent = 'Speed ' + S.speed + '×'; };
+    head.innerHTML = '<span class="tl-year" id="tlYear"></span>' + (S.mode === 'wars' ? '<span class="tl-hint"><b>Wars:</b> each coloured bar is a major war. Click one to follow it.</span>'
+      : S.mode === 'religions' ? '<span class="tl-hint"><b>Religions:</b> each dot marks when a faith began. Click one to follow its spread.</span>'
+      : `<span class="tl-hint">Era: <b id="eraName"></b></span>`) + `<span class="grow"></span><button type="button" id="speed" title="Playback speed"></button>`;
+    const speedTxt = () => $('speed').innerHTML = `<span class="tl-hint">Speed </span>${S.speed}×`;
+    speedTxt();
+    $('speed').onclick = () => { S.speed = S.speed >= 4 ? .5 : S.speed * 2; speedTxt(); };
+    fillTlYear();
     bands.style.display = '';
     bands.className = 'bands' + (S.mode === 'map' ? '' : ' dim');
-    bands.innerHTML = ERAS.map(e => `<div class="band${e[2] - e[1] < 1 ? ' short' : ''}" data-era="${e[1]}" title="${esc(e[0])}" style="--h:${e[3]};left:${xcss(e[1], N)};width:calc(${(e[2] + 1 - e[1]) / N} * (100% - 16px) - 1px)">${esc(e[0])}</div>`).join('');
+    bands.innerHTML = ERAS.map(e => `<div class="band${e[2] - e[1] < 1 ? ' short' : ''}" data-era="${e[1]}" title="${esc(e[0])}" style="--h:${e[3]};left:${xcss(e[1], N)};width:calc(${(e[2] + 1 - e[1]) / N} * (100% - var(--th, 16px)) - 1px)">${esc(e[0])}</div>`).join('');
     if (S.mode === 'wars') {
-      const laneEnd = []; let html = '';
+      const laneEnd = [], pitch = isPhone() ? 5 : 8; let html = '';
       wars.slice().sort((a, b) => a.start - b.start).forEach(w => {
         const l = posOfYear(w.start), r = Math.max(posOfYear(w.end) + 1 / 40, l + .25);
         let lane = laneEnd.findIndex(x => x < l - .05); if (lane < 0) { lane = laneEnd.length; laneEnd.push(r); } else laneEnd[lane] = r;
-        html += `<button type="button" class="warbar" data-war="${w.id}" title="${esc(w.name)} (${fmtSpan(w.start, w.end)})" aria-label="${esc(w.name)}" style="background:${warColor(w)};top:${2 + lane * 8}px;left:${xcss(l, N)};width:calc(${(r - l) / N} * (100% - 16px))"></button>`;
+        html += `<button type="button" class="warbar" data-war="${w.id}" title="${esc(w.name)} (${fmtSpan(w.start, w.end)})" aria-label="${esc(w.name)}" style="background:${warColor(w)};top:${2 + lane * pitch}px;left:${xcss(l, N)};width:calc(${(r - l) / N} * (100% - var(--th, 16px)))"></button>`;
       });
-      lanes.innerHTML = html; lanes.style.height = (laneEnd.length * 8 + 4) + 'px';
+      lanes.innerHTML = html; lanes.style.height = (laneEnd.length * pitch + 4) + 'px';
     } else if (S.mode === 'religions') {
       lanes.innerHTML = rel.stories.map(st => `<button type="button" class="pin" data-story="${st.id}" title="${esc(st.name)}, founded ${esc(st.founded)}" aria-label="${esc(st.name)}" style="background:${st.color};left:${xcss(posOfYear(st.steps[0].year), N)}"></button>`).join('');
       lanes.style.height = '18px';
@@ -2843,16 +2944,63 @@ details[open] summary { margin-bottom: 6px; }
     computeLabels(); drawLabels(); styleMap(); renderPanel();
   };
   svg.on('click', () => {
-    if (S.detail || !(S.selected || S.faithSel || S.person)) return;
-    S.selected = S.faithSel = S.person = null; styleMap(); drawPeople(); renderPanel();
+    if (S.detail || !(S.selected || S.faithSel || S.person || S.sheet)) return;
+    S.selected = S.faithSel = S.person = S.sheet = null; styleMap(); drawPeople(); renderPanel();
   });
-  $('panelHead').onclick = () => { if (isPhone()) $('panel').classList.toggle('collapsed'); };
+  // the phone's pop-up card: tap its head to fold it down to the title, swipe it down to fold or close it, x to close
+  function closePop() {
+    S.sheet = null;
+    if (S.detail) exitDetail();
+    else if (S.selected || S.faithSel || S.person) { S.selected = S.faithSel = S.person = null; styleMap(); drawPeople(); }
+    renderPanel();
+  }
+  $('popX').onclick = e => { e.stopPropagation(); closePop(); };
+  let swipe = null, swiped = 0;
+  const pHead = $('panelHead'), panelEl = $('panel');
+  pHead.addEventListener('touchstart', e => { if (isPhone()) swipe = { y: e.touches[0].clientY }; }, { passive: true });
+  pHead.addEventListener('touchmove', e => {
+    if (!swipe) return;
+    const dy = e.touches[0].clientY - swipe.y;
+    panelEl.style.transition = 'none'; panelEl.style.transform = dy > 0 ? `translateY(${dy}px)` : '';
+  }, { passive: true });
+  const endSwipe = e => {
+    if (!swipe) return;
+    const dy = (e.changedTouches[0] || {}).clientY - swipe.y; swipe = null;
+    panelEl.style.transform = ''; panelEl.style.transition = '';
+    if (!(Math.abs(dy) >= 36)) return;
+    swiped = performance.now();
+    const cl = panelEl.classList;
+    if (dy < 0) { if (cl.contains('collapsed')) cl.remove('collapsed'); else cl.add('full'); }
+    else if (cl.contains('full')) cl.remove('full');
+    else if (cl.contains('collapsed') || dy > 140) { cl.remove('collapsed'); closePop(); }
+    else cl.add('collapsed');
+  };
+  pHead.addEventListener('touchend', endSwipe);
+  pHead.addEventListener('touchcancel', endSwipe);
+  pHead.onclick = () => { if (isPhone() && performance.now() - swiped > 400) { panelEl.classList.remove('full'); panelEl.classList.toggle('collapsed'); } };
+  $('stories').onclick = () => {
+    if (S.sheet) return closePop();
+    if (S.detail) exitDetail();
+    S.selected = S.faithSel = S.person = null; S.sheet = 'stories';
+    styleMap(); drawPeople(); renderPanel(); openPanel();
+  };
   addEventListener('keydown', e => {
     if (e.key === 'Escape' && S.detail) { exitDetail(); return; }
     const tag = (e.target.tagName || '').toLowerCase();
     if (e.key === ' ' && tag !== 'button' && tag !== 'a' && tag !== 'summary') { e.preventDefault(); S.playing ? stopPlay() : startPlay(); }
   });
-  addEventListener('resize', () => { layout(); renderTimeline(); });
+  // on a phone "Detailed borders" joins the scrolling row of places
+  const detailHome = detailBtn.parentNode;
+  function placeDetailBtn() {
+    if (isPhone()) { if (detailBtn.parentNode !== $('places')) $('places').appendChild(detailBtn); }
+    else if (detailBtn.parentNode !== detailHome) detailHome.appendChild(detailBtn);
+  }
+  placeDetailBtn();
+  let wasPhone = isPhone();
+  addEventListener('resize', () => {
+    layout(); renderTimeline();
+    if (isPhone() !== wasPhone) { wasPhone = isPhone(); placeDetailBtn(); renderPanel(); }
+  });
   document.addEventListener('visibilitychange', () => { if (document.hidden) stopPlay(); });
 
   // ---------- ambient life ----------
@@ -3057,6 +3205,8 @@ details[open] summary { margin-bottom: 6px; }
   S.year = startYear; S.idx = periodOf(startYear); S.pos = posOfYear(startYear);
   layout();
   worldView(0);
+  // a phone starts on the Old World, big enough to touch, rather than the whole world in a strip
+  if (isPhone()) zoomToBounds(boxBounds([-28, -38, 150, 70]), 40, 0);
   renderTimeline();
   setYear(startYear, { force: true });
   await showBorders(fileForYear(startYear));
