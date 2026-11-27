@@ -7,7 +7,8 @@ Sources (public domain), fetched into <source dir> when missing:
   - Natural Earth cross-blended hypsometric shaded relief (shadedrelief.jpg) and NASA Blue Marble (bmng.jpg),
     both shipped in the basemap-data package on PyPI
 
-Writes data/terrain/: land<L>[_c_r].webp (land only, transparent sea), sea<L>[_c_r].jpg and manifest.json.
+Writes data/terrain/: land<L>[_c_r].webp (land only, transparent sea), sea<L>[_c_r].jpg and manifest.json, then the
+half-size world pictures land_s.webp and sea_s.jpg (build_small_world.py).
 Level 0 is the whole world in one image, deeper levels are split into tiles that the page loads as you zoom in.
 Needs numpy, scipy and Pillow (with WebP)."""
 import json, os, sys, subprocess, urllib.request, zipfile, time
@@ -267,3 +268,7 @@ if __name__ == '__main__':
         if only and 'sea%d' % lv not in only: continue
         print('sea level', lv); man['sea'][lv] = build_sea(lv, W, tl)
     json.dump(man, open(man_path, 'w'), separators=(',', ':'))
+    # the half-size world pictures in front of the levels (see build_small_world.py)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from build_small_world import build_small
+    build_small(OUT)
