@@ -24,9 +24,21 @@ once per country:
 
 Periods follow each other: on the timeline each one ends where the next begins, whatever its own end year says, so an
 overlap (the Jin dynasty began before the Three Kingdoms ended) shows in the years given, not in the bands.
+
+  shared(*names)   (l00_shared.py)
+    peoples and loose labels that the border files draw across the land of several of today's countries, rather than one
+    state: the Taíno on Cuba, Jamaica, Hispaniola and Puerto Rico, the Celts in Britain and Ireland. A click on one
+    opens the timeline of the country whose land the click is on today, when that country's story lists the name then
+    (own or "~"), and its home country's otherwise. A state, even an empire over many countries, is never shared: a
+    click on the Roman Empire opens Rome's timeline wherever it lands.
 """
 
 LINEAGES = []
+SHARED = []
+
+
+def shared(*names):
+    SHARED.extend(names)
 
 
 def P(name, start, end, *states, short=None, note=None):

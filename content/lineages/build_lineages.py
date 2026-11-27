@@ -13,7 +13,8 @@ first; a click on one shows its own years.
 
 Output: {lineages: [{id, name, region, core, periods: [{name, short, from, to, note, states}]}],
          names: {state: id or [[id, from, to], ...] when it is at home in different countries in different years},
-         seen: {state: [from, to]}: the years each state with no country is on the map (to null: still there)}
+         seen: {state: [from, to]}: the years each state with no country is on the map (to null: still there),
+         shared: [the peoples and loose labels a click resolves by the land it falls on today (see _lib.shared)]}
 """
 import json, math, os, re, sys, glob, importlib.util, collections
 from shapely.geometry import shape, Point
@@ -220,6 +221,16 @@ for n in names:
         if not any(n in {s.lstrip('~') for s in ps[k]['states']} for k in near):
             warns.append(f"{lid}: {n!r} is drawn in {FILES[j]} but listed in no period near then")
 
+# the shared peoples and labels: each on the map, and in at least two countries' stories (else sharing changes nothing)
+listed = collections.defaultdict(set)
+for l in _lib.LINEAGES:
+    for p in l['periods']:
+        for s in p['states']: listed[s.lstrip('~')].add(l['id'])
+for n in sorted(set(_lib.SHARED)):
+    if n not in present: errs.append(f'shared {n!r}: no state is called that in the border files')
+    elif len(listed[n]) < 2: errs.append(f"shared {n!r}: listed by {', '.join(sorted(listed[n])) or 'no country'} only")
+if len(_lib.SHARED) != len(set(_lib.SHARED)): errs.append('shared: a name listed twice')
+
 for w in warns: print('warning:', w)
 for e in errs: print('ERROR:', e)
 
@@ -253,6 +264,8 @@ for l in _lib.LINEAGES:
         ps.append(e)
     out.append(dict(id=l['id'], name=l['name'], region=l['region'], core=l['core'], periods=ps))
 with open(os.path.join(DATA, 'lineages.json'), 'w') as fh:
-    json.dump(dict(lineages=out, names=names, seen=seen), fh, ensure_ascii=False, separators=(',', ':'))
+    json.dump(dict(lineages=out, names=names, seen=seen, shared=sorted(set(_lib.SHARED))), fh,
+              ensure_ascii=False, separators=(',', ':'))
 print(f"{len(out)} countries, {sum(len(l['periods']) for l in out)} periods, {len(names)} states with a country, "
-      f"{len(seen)} without; {len(warns)} warnings; {os.path.getsize(os.path.join(DATA, 'lineages.json')) // 1024} KB")
+      f"{len(seen)} without, {len(set(_lib.SHARED))} shared; {len(warns)} warnings; "
+      f"{os.path.getsize(os.path.join(DATA, 'lineages.json')) // 1024} KB")

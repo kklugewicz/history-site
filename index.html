@@ -995,17 +995,47 @@ details[open] summary { margin-bottom: 6px; }
   }
   opt('lineages.json').then(d => {
     if (!d) return;
-    LIN = { byId: {}, names: d.names || {}, seen: d.seen || {}, own: {} };
+    LIN = { byId: {}, names: d.names || {}, seen: d.seen || {}, own: {}, shared: new Set(d.shared || []), today: null };
     for (const l of d.lineages) LIN.byId[l.id] = prepLine(l);
     // a state clicked while the file was still loading gets its country's timeline now
-    if (S.selected && !S.line && !S.detail) { const l = lineFor(S.selected); if (l) { enterLine(l); styleMap(); } }
+    const reopen = () => { if (S.selected && !S.detail) { const l = lineFor(S.selected); if (l && l !== S.line) { enterLine(l); styleMap(); } } };
+    if (!S.line) reopen();
     if (S.selected) renderPanel();
+    // today's countries, from the latest border snapshot, for a click on a people drawn across several of them
+    if (LIN.shared.size) loadBorders(timeline.borderFiles[timeline.borderFiles.length - 1]).then(fc => {
+      LIN.today = fc;
+      if (LIN.shared.has(S.selected) && S.selAt) { reopen(); renderPanel(); }
+    }).catch(() => {});
   });
   const segIn = (l, y) => { if (y === 0) y = 1; const sp = l.spans; for (let i = 0; i < sp.length; i++) if (y <= sp[i][1]) return i; return sp.length - 1; };
-  // the country a state belongs to in a year (null for a state with none, and until the file has loaded). A name at
+  // The country a state belongs to in a year (null for a state with none, and until the file has loaded). A name at
   // home in several countries in different years goes to the one whose years come nearest those of the border snapshot
-  // drawn in that year, since its shape is that snapshot's, and then nearest the year itself.
-  function lineageOf(name, y = S.year) {
+  // drawn in that year, since its shape is that snapshot's, and then nearest the year itself. A people or loose label
+  // the map draws across several of today's countries ("shared": the Taíno on Cuba, Jamaica and Hispaniola, the Celts in
+  // Britain and Ireland) belongs, at a point, to the country whose land that is today when that country's story lists
+  // it then, and to its home otherwise: a click on Cuba opens Cuba's timeline. The selected state's point is where it
+  // was clicked, or the core of the country whose timeline picked it.
+  function lineageOf(name, y = S.year, at = name === S.selected ? S.selAt : null) {
+    const l = homeOf(name, y);
+    if (!at || !LIN || !LIN.shared.has(name)) return l;
+    const t = todayAt(at);
+    return t && t !== l && y >= t.lo && y <= t.hi && rankIn(t, name, y) < 9 ? t : l;
+  }
+  // the country of today whose land a point is on, by the latest border snapshot (remembered for the last point)
+  let todayMemo = null;
+  function todayAt(at) {
+    if (!LIN.today) return null;
+    if (todayMemo && todayMemo.at === at) return todayMemo.l;
+    const fs = LIN.today.features, last = fileYear(timeline.borderFiles[timeline.borderFiles.length - 1]);
+    let l = null;
+    for (const [a, b] of [[0, 0], [.2, 0], [-.2, 0], [0, .2], [0, -.2], [.4, .4], [-.4, -.4], [.4, -.4], [-.4, .4]]) {
+      const f = fs.find(f => d3.geoContains(f, [at[0] + a, at[1] + b]));
+      if (f) { l = homeOf(f.properties.name, last); break; }
+    }
+    todayMemo = { at, l };
+    return l;
+  }
+  function homeOf(name, y) {
     const h = LIN && name ? LIN.names[name] : null;
     if (h == null) return null;
     if (typeof h === 'string') return LIN.byId[h] || null;
@@ -1209,7 +1239,7 @@ details[open] summary { margin-bottom: 6px; }
   let detailed = false;
   try { detailed = localStorage.getItem('wtt-detailed') === '1'; } catch (e) {}
   // line: the country whose own timeline the slider is on (null on the world timeline); lineIdx: its period now
-  const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, person: null, faithSel: null, sheet: null,
+  const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, selAt: null, person: null, faithSel: null, sheet: null,
     line: null, lineIdx: -1, features: [], fc: null, file: null, k: 1, t: d3.zoomIdentity, playing: false, speed: 1 };
   // simplified drawing applies everywhere except inside a war, where every involved state must show
   const simple = () => !detailed && !(S.detail && S.detail.kind === 'war');
@@ -1638,7 +1668,7 @@ details[open] summary { margin-bottom: 6px; }
     const k = S.k;
     cityG.selectAll('g.city').data(list, d => d.c.id).join(enter => {
       const g = enter.append('g').attr('class', 'city')
-        .on('click', (e, d) => { e.stopPropagation(); hideTip(); const f = stateAt(d.c.at); if (f) onPolity(f); })
+        .on('click', (e, d) => { e.stopPropagation(); hideTip(); const f = stateAt(d.c.at); if (f) onPolity(f, d.c.at); })
         .on('mousemove', (e, d) => showTip(e, d.full, cityTip(d))).on('mouseleave', hideTip);
       g.append('line').attr('class', 'tie');
       g.append('circle').attr('class', 'dot').attr('r', 2.2);
@@ -2672,7 +2702,7 @@ details[open] summary { margin-bottom: 6px; }
     polGroup = polWrap.append('g').attr('class', 'pols').style('opacity', fade ? 0 : 1);
     polGroup.selectAll('path').data(S.features).join('path')
       .attr('class', 'pol').attr('d', path)
-      .on('click', (e, d) => { e.stopPropagation(); onPolity(d); })
+      .on('click', (e, d) => { e.stopPropagation(); onPolity(d, clickAt(e)); })
       .on('mousemove', (e, d) => showTip(e, polTip(d.properties, d)))
       .on('mouseleave', hideTip);
     if (old) {
@@ -2743,7 +2773,11 @@ details[open] summary { margin-bottom: 6px; }
   }
   function hideTip() { tip.hidden = true; }
 
-  function onPolity(f) {
+  // the longitude and latitude a click on the map points at
+  const clickAt = e => { const p = proj.invert(d3.pointer(e, root.node())); return p && isFinite(p[0]) && isFinite(p[1]) ? p : null; };
+  // a click on a state, at a point of it when the click gives one (a people drawn across several countries opens the
+  // country whose land that is)
+  function onPolity(f, at = null) {
     if (S.detail) return;
     if (S.mode === 'wars') {
       const sd = overviewSides().get(f.properties.name);
@@ -2755,7 +2789,7 @@ details[open] summary { margin-bottom: 6px; }
       styleMap(); renderPanel(); openPanel();
       return;
     }
-    S.selected = f.properties.name; S.person = null;
+    S.selected = f.properties.name; S.selAt = at; S.person = null;
     const l = lineFor(f.properties.name);
     if (l) enterLine(l); else leaveLine();
     styleMap(); drawPeople();
@@ -2794,7 +2828,7 @@ details[open] summary { margin-bottom: 6px; }
     }
     const n = best ? best.properties.name : null;
     if (n === S.selected) return false;
-    S.selected = n; return true;
+    S.selected = n; S.selAt = l.core || null; return true;
   }
 
   // ---------- wars on the map ----------
