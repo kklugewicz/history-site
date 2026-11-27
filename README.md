@@ -4,6 +4,8 @@ An interactive world history map: borders from 4000 BC to today, a timeline buil
 
 The map is drawn as an old atlas (a night chart in dark mode): painted relief, deserts, forests and ice under the states, seas shaded by depth with their names of each age and the great currents, and rivers and lakes that come and go with the years. Each state flies a small flag over its name, the flag of that year, and the map's colours are taken from the flags. About 120 cities stand on the map as the landmark they were known for at the time: Byzantium's walls, then Hagia Sophia, then Hagia Sophia with minarets.
 
+The Discovery button lists the great scientists, mathematicians, inventors, philosophers and artists among the ringed people, century by century, each a tap away from their story.
+
 Live at https://www.kyle-klugewicz.com/history-site/
 
 It is a static site with no build step. Open `index.html` through any local web server, for example `python3 -m http.server`, and visit http://localhost:8000.
@@ -24,6 +26,7 @@ It is a static site with no build step. Open `index.html` through any local web 
 - `scripts/build_geo.py`: rivers, lakes and canals with the years they existed (`data/water.json`), and the names of oceans, seas, straits, mountains, deserts and peaks plus the ocean currents (`data/geo.json`): `python3 scripts/build_geo.py <source dir> data` (needs shapely and numpy).
 - `content/flags/`: `flags.py` says which flag each state flies, year by year, with a note on each; `svg.py` draws the historical flags that flag-icons doesn't have. `python3 scripts/build_flags.py <source dir> data` writes `data/flags.json` (flags, timelines and the map tint of every state in every border file, taken from its flag so neighbours differ), the sprite `data/flags/sprite.webp` and one picture per flag for the side panel (needs node with Playwright, numpy, shapely and Pillow).
 - `content/cities/`: `cities.py` lists the cities, each with its names over time, how important it was in each age and which landmark stood for it when; `icons.py` draws the landmarks with the small kit in `draw.py`. `python3 scripts/build_cities.py` checks them and writes `data/cities.json`.
+- `content/stories/discovery.py`: the Discovery list of great minds. Each entry gives a person's fields (scientist, mathematician, inventor, philosopher, artist), what they were, what they are known for and the year of it, which sets their century. `python3 content/stories/build_discovery.py` checks it against the people and their stories and writes `data/discovery.json`; anyone listed before their story exists stays off the page until it does.
 
 ## Credits
 

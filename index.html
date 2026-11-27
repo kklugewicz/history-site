@@ -583,6 +583,101 @@ details[open] summary { margin-bottom: 6px; }
   .face.story, .ph.story { transition: none; }
   .spin .pulse { animation: none; }
 }
+
+/* Discovery: the great scientists, mathematicians, inventors, philosophers and artists, century by century. A button
+   beside the map-view tabs (on a phone, a round one beside the stories button) opens the list over the map, at the
+   map's own century; a name opens that person's story. */
+.modes { display: flex; gap: 8px; align-items: center; }
+.discbtn { display: inline-flex; align-items: center; gap: 7px; padding: 7px 16px 7px 11px; border-radius: 99px; font-weight: 700;
+  border: 2px solid transparent; background: linear-gradient(var(--paper), var(--paper)) padding-box, var(--story-ring) border-box; }
+.discbtn svg { width: 18px; height: 18px; flex: none; color: var(--story-a); }
+.discbtn:hover { background: linear-gradient(color-mix(in srgb, var(--story-a) 10%, var(--paper)), color-mix(in srgb, var(--story-a) 10%, var(--paper))) padding-box,
+  var(--story-ring) border-box; }
+#discoverP { display: none; }
+.dc { position: fixed; inset: 0; z-index: 40; display: grid; place-items: center; font-family: var(--f-body); color: var(--ink); }
+.dc-dim { position: absolute; inset: 0; background: rgba(28, 20, 10, .5); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+.dc-card { position: relative; width: min(960px, calc(100vw - 48px)); height: min(88vh, 920px); display: grid; grid-template-columns: 136px 1fr;
+  grid-template-rows: auto minmax(0, 1fr); overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+  box-shadow: 0 24px 70px rgba(30, 20, 8, .4); outline: none; }
+.dc-head { grid-column: 1 / -1; position: relative; padding: 18px 64px 14px 24px; border-bottom: 1px solid var(--line); }
+.dc-head h2 { margin: 2px 0 4px; font-family: var(--f-display); font-weight: 400; font-size: 32px; line-height: 1.05; text-wrap: balance; }
+.dc-sub { margin: 0 0 12px; max-width: 66ch; color: var(--ink-soft); font-size: 14px; line-height: 1.4; }
+.dc-x { position: absolute; top: 14px; right: 14px; width: 38px; height: 38px; padding: 0; border: 0; border-radius: 50%; box-shadow: none;
+  display: grid; place-items: center; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+.dc-x:hover { background: color-mix(in srgb, var(--ink) 14%, transparent); }
+.dc-x svg { width: 16px; height: 16px; }
+.dc-fil { display: flex; flex-wrap: wrap; gap: 6px; }
+.dc-fil button { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px 5px 10px; border-radius: 99px; box-shadow: none; font-size: 14px; }
+.dc-fil svg { width: 17px; height: 17px; flex: none; color: var(--accent); }
+.dc-fil .n { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); }
+.dc-fil button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.dc-fil button[aria-pressed="true"] svg, .dc-fil button[aria-pressed="true"] .n { color: color-mix(in srgb, var(--paper) 78%, transparent); }
+.dc-rail { position: relative; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 1px; padding: 12px 10px 18px 12px; border-right: 1px solid var(--line); scrollbar-width: none; }
+.dc-rail::-webkit-scrollbar { display: none; }
+.dc-rail h4 { margin: 4px 8px 6px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); }
+.dc-rail button { all: unset; box-sizing: border-box; flex: none; display: flex; align-items: center; gap: 6px; padding: 5px 8px; border-radius: 6px; cursor: pointer;
+  font-size: 13.5px; color: var(--ink-soft); white-space: nowrap; }
+.dc-rail button .n { margin-left: auto; font-family: var(--f-mono); font-size: 10.5px; opacity: .8; }
+.dc-rail button:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); color: var(--ink); }
+.dc-rail button[aria-current="true"] { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--ink); font-weight: 700; }
+.dc-rail button.map::after { content: ""; order: 1; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; }
+.dc-rail button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.dc-body { position: relative; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 22px; }
+.dc-body:focus { outline: none; }
+.dc-c h3 { position: sticky; top: 0; z-index: 1; margin: 0; padding: 14px 4px 8px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  background: var(--paper); border-bottom: 1px solid var(--line); font-family: var(--f-display); font-weight: 400; font-size: 24px; line-height: 1.1; }
+.dc-c h3 small { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); }
+.dc-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 2px 14px; padding: 8px 0 10px; }
+.dc-p { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: center; padding: 8px 10px 8px 8px;
+  border-radius: 10px; cursor: pointer; }
+.dc-p:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.dc-p:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.dc-p .face { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font-weight: 700; font-size: 16px;
+  color: var(--ink-soft); }
+.dc-p .face:not(.story) { background: var(--line); }
+.dc-p .face img { width: 100%; height: 100%; object-fit: cover; }
+.dc-p .face.story { border-width: 2.5px; padding: 2px; }
+.dc-t { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.dc-t b { font-size: 15.5px; line-height: 1.2; }
+.dc-as { font-size: 12.5px; line-height: 1.3; color: var(--ink-soft); }
+.dc-k { margin-top: 2px; font-size: 13.5px; line-height: 1.32; }
+.dc-k .yr { margin-right: 3px; white-space: nowrap; }
+.dc-end { margin: 0; padding: 18px 4px 28px; color: var(--ink-soft); font-size: 13px; text-align: center; }
+/* a short window: more of it for the names */
+@media (max-height: 700px) {
+  .dc-card { height: calc(100vh - 32px); }
+  .dc-sub { display: none; }
+}
+@media (max-width: 760px) {
+  #discover { display: none; }
+  /* on a phone, a round button to the left of the stories button */
+  #discoverP { display: grid; place-items: center; position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: 62px; width: 44px; height: 44px;
+    padding: 0; border-radius: 50%; border: 2.5px solid transparent; box-shadow: var(--shadow); color: var(--story-a);
+    background: linear-gradient(var(--paper), var(--paper)) padding-box, var(--story-ring) border-box; }
+  #discoverP svg { width: 21px; height: 21px; }
+  #discoverP[aria-expanded="true"] { background: var(--story-ring); color: #fff; }
+  /* the list fills the screen: its head, a strip of centuries, then the names */
+  .dc-card { width: 100vw; height: 100vh; border: 0; border-radius: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr); }
+  @supports (height: 1dvh) { .dc-card { height: 100dvh; } }
+  .dc-head { padding: calc(12px + env(safe-area-inset-top, 0px)) 58px 10px 16px; }
+  .dc-head .kicker { margin-bottom: 0; }
+  .dc-head h2 { font-size: 25px; margin-bottom: 10px; }
+  .dc-sub { display: none; }
+  .dc-x { top: calc(10px + env(safe-area-inset-top, 0px)); right: 10px; }
+  .dc-fil { flex-wrap: nowrap; overflow-x: auto; margin: 0 -58px 0 -16px; padding: 0 16px 2px; scrollbar-width: none; }
+  .dc-fil::-webkit-scrollbar { display: none; }
+  .dc-fil button { flex: none; }
+  .dc-rail { flex-direction: row; gap: 4px; overflow-x: auto; overflow-y: hidden; padding: 8px 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .dc-rail h4 { display: none; }
+  .dc-rail button { padding: 5px 11px; border-radius: 99px; border: 1px solid var(--line); }
+  .dc-rail button .n { display: none; }
+  .dc-rail button[aria-current="true"] { border-color: transparent; }
+  .dc-body { padding: 0 8px calc(8px + env(safe-area-inset-bottom, 0px)); }
+  .dc-c h3 { font-size: 21px; padding: 11px 8px 6px; }
+  .dc-list { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 4px 0 8px; }
+  .dc-p { grid-template-columns: 50px 1fr; gap: 11px; padding: 7px 8px; }
+  .dc-p .face { width: 50px; height: 50px; }
+}
 </style>
 </head>
 <body>
@@ -595,15 +690,19 @@ details[open] summary { margin-bottom: 6px; }
     <div class="top">
       <h1>World Through Time</h1>
       <div class="when" id="when" aria-live="off"><div class="y" id="yNum"></div><div class="age" id="yAge"></div><div class="sub" id="ySub"></div></div>
+      <div class="modes">
       <div class="tabs" role="tablist" aria-label="Map view">
         <button type="button" role="tab" data-mode="map" aria-selected="true">Borders</button>
         <button type="button" role="tab" data-mode="wars" aria-selected="false">Wars</button>
         <button type="button" role="tab" data-mode="religions" aria-selected="false">Religions</button>
       </div>
+      <button type="button" class="discbtn" id="discover" aria-haspopup="dialog" aria-expanded="false" title="The great scientists, mathematicians, inventors, philosophers and artists, century by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6M10 21h4M12 2.8a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.4 1.2 2.3v.2h5v-.2c0-.9.5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Discovery</button>
+      </div>
       <div class="row places" id="places" aria-label="Zoom to"><button type="button" data-place="World">World</button><button type="button" data-place="Europe">Europe</button><button type="button" data-place="Asia">Asia</button><button type="button" data-place="Africa">Africa</button><button type="button" data-place="North America">North America</button><button type="button" data-place="South America">South America</button><button type="button" data-place="Oceania">Oceania</button></div>
       <div class="row"><button id="btnDetail" type="button" aria-pressed="false" title="Show every state and people, not just the main civilizations">Detailed borders</button></div>
     </div>
     <button type="button" id="stories" aria-pressed="false" aria-label="Stories from this year" title="Stories from this year"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2l10 6-10 6z" fill="currentColor"/></svg></button>
+    <button type="button" id="discoverP" aria-haspopup="dialog" aria-expanded="false" aria-label="Discovery: great minds by century" title="Discovery: great minds by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6M10 21h4M12 2.8a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.4 1.2 2.3v.2h5v-.2c0-.9.5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <aside class="panel" id="panel" aria-live="polite">
       <span class="pop-grip" aria-hidden="true"></span>
       <button type="button" class="pop-x" id="popX" aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
@@ -650,6 +749,22 @@ details[open] summary { margin-bottom: 6px; }
     </div>
     <button type="button" class="sv-nav" id="svNextS" aria-label="Next story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   </div>
+</div>
+
+<!-- Discovery: the great minds of each century, each a story -->
+<div class="dc" id="dc" hidden>
+  <div class="dc-dim" id="dcDim"></div>
+  <section class="dc-card" id="dcCard" role="dialog" aria-modal="true" aria-labelledby="dcTitle" tabindex="-1">
+    <header class="dc-head">
+      <p class="kicker">Discovery</p>
+      <h2 id="dcTitle">Great minds, century by century</h2>
+      <p class="dc-sub">The scientists, mathematicians, inventors, philosophers and artists with a story on the map, each in the century of their best-known work. Pick a name to watch their story.</p>
+      <div class="dc-fil" id="dcFil" role="group" aria-label="Show"></div>
+      <button type="button" class="dc-x" id="dcX" aria-label="Close Discovery"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </header>
+    <nav class="dc-rail" id="dcRail" aria-label="Centuries"></nav>
+    <div class="dc-body" id="dcBody" tabindex="-1"></div>
+  </section>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
@@ -1497,6 +1612,7 @@ details[open] summary { margin-bottom: 6px; }
       try { localStorage.setItem('wtt-portraits2', JSON.stringify(portraits)); } catch (e) {}
       drawLeaders(); drawPeople(); if (S.detail || S.mode === 'wars') refreshGenerals();
       renderPanelSoon();
+      dcFaces();
     }).catch(() => {}).finally(() => { if (wantPortraits.size) fetchPortraits(); });
   }
   // the name under a face: a long name keeps the part before ', ', ' of ' or ' the ', then a regnal number, then the surname with its particles
@@ -3444,6 +3560,178 @@ details[open] summary { margin-bottom: 6px; }
       const t = ts / 1000; drawSea(t); drawFx(t, dt);
     }
     if (!reduce()) ambRaf = requestAnimationFrame(loop);
+  }
+
+  // ---------- discovery ----------
+  // The great scientists, mathematicians, inventors, philosophers and artists among the people with a story, century by
+  // century. data/discovery.json (content/stories/build_discovery.py) lists each with their fields, what they were, what
+  // they are known for and the year of it, which puts them in their century. The Discovery button opens the list over
+  // the map at the map's own century; a name opens that person's story, and "next story" carries on down the list.
+  // Anyone listed whose story is not there yet is left out until it is.
+  const DC = { open: false, list: [], fields: {}, f: fromStore('wtt-disc-f', '"all"'), year: null, top: 0, raf: 0, back: null };
+  const dcEl = $('dc'), dcCard = $('dcCard'), dcBody = $('dcBody'), dcRail = $('dcRail'), dcFil = $('dcFil');
+  const gearPath = 'M' + d3.range(8).flatMap(i => [[6.3, -17], [8.9, -10], [8.9, 10], [6.3, 17]].map(([r, o]) => {
+    const a = i * Math.PI / 4 + o * Math.PI / 180; return (12 + r * Math.cos(a)).toFixed(2) + ' ' + (12 + r * Math.sin(a)).toFixed(2);
+  })).join('L') + 'z';
+  const LN = 'fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"';
+  const FIELD_ICO = {
+    sci: `<path ${LN} stroke-width="1.8" d="M9.5 3h5M10.5 3v6.2L5 18.6a1.8 1.8 0 0 0 1.6 2.7h10.8a1.8 1.8 0 0 0 1.6-2.7L13.5 9.2V3M7.6 15h8.8"/>`,
+    math: `<path ${LN} stroke-width="2" d="M4.5 8.2c1.3-2 2.9-2.6 4.9-2.6h10.1M10 5.6v7.6c0 3.1-1.1 5.3-2.8 6.9M15.4 5.6v10.2c0 2.4.9 3.9 3.1 3.9"/>`,
+    inv: `<path ${LN} stroke-width="1.6" d="${gearPath}"/><circle ${LN} stroke-width="1.6" cx="12" cy="12" r="2.7"/>`,
+    phil: `<path ${LN} stroke-width="1.7" d="M3.8 8.4L12 3.9l8.2 4.5zM5 10.4h14M6.8 12.4v5.6M10.3 12.4v5.6M13.7 12.4v5.6M17.2 12.4v5.6M4.2 20.2h15.6"/>`,
+    art: `<path ${LN} stroke-width="1.7" d="M12 3.2a8.8 8.8 0 1 0 0 17.6c1.1 0 1.9-.8 1.9-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.8-.5-1.2 0-1 .8-1.8 1.8-1.8h2.1a4 4 0 0 0 4-4c0-4.3-3.9-7.6-8.8-7.6z"/><g fill="currentColor"><circle cx="7.4" cy="11.6" r="1.4"/><circle cx="9.6" cy="7.4" r="1.4"/><circle cx="14.4" cy="7.2" r="1.4"/></g>`,
+  };
+  // centuries as numbers that keep time's order: -6 is the 6th century BC (600 to 501 BC), 17 the 1600s
+  const ordinal = n => n + (n % 100 > 10 && n % 100 < 14 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
+  const centOf = y => y < 0 ? -Math.ceil(-y / 100) : Math.floor(y / 100) + 1;
+  const centName = c => ordinal(Math.abs(c)) + ' century' + (c < 0 ? ' BC' : '');
+  const centShort = c => ordinal(Math.abs(c)) + (c < 0 ? ' BC' : '');
+  const centSpan = c => c < 0 ? `${-c * 100} to ${-c * 100 - 99} BC` : c === 1 ? 'AD 1 to 99' : (c < 11 ? 'AD ' : '') + (c - 1) * 100 + 's';
+  const dcWhen = e => e.when != null ? e.when : (e.c ? 'c. ' : '') + fmtYear(e.y);
+  opt('discovery.json').then(j => {
+    if (!j || !j.people || !j.people.length) return;
+    DC.list = j.people; DC.fields = j.fields || {};
+    if (DC.f !== 'all' && !DC.fields[DC.f]) DC.f = 'all';
+    $('discover').hidden = $('discoverP').hidden = false;
+  });
+  const dcAll = () => DC.list.filter(e => personById[e.id] && hasStory(e.id));
+  function dcFilters(all) {
+    dcFil.innerHTML = [['all', 'All', all.length]].concat(Object.entries(DC.fields).map(([f, name]) => [f, name, all.filter(e => e.f.includes(f)).length]))
+      .filter(([f, , n]) => n || f === 'all').map(([f, name, n]) => `<button type="button" data-f="${esc(f)}" aria-pressed="${DC.f === f}">` +
+        `${FIELD_ICO[f] ? `<svg viewBox="0 0 24 24" aria-hidden="true">${FIELD_ICO[f]}</svg>` : ''}${esc(name)} <span class="n">${n}</span></button>`).join('');
+  }
+  // the list for the chosen field, a section per century; the rail beside it (on a phone, the strip above it) jumps to one
+  function dcList(all) {
+    const shown = all.filter(e => DC.f === 'all' || e.f.includes(DC.f)), groups = d3.groups(shown, e => centOf(e.y)), mapC = centOf(S.year);
+    dcRail.innerHTML = '<h4>Century</h4>' + groups.map(([c, es]) => `<button type="button" data-c="${c}" aria-label="${esc(centName(c))}: ${es.length}"${c === mapC ? ` class="map" title="The map is in the ${esc(centName(c))}"` : ''}>${esc(centShort(c))}<span class="n">${es.length}</span></button>`).join('');
+    dcBody.dataset.queue = shown.map(e => e.id).join(' ');
+    dcBody.innerHTML = groups.map(([c, es]) => `<section class="dc-c" data-c="${c}" aria-labelledby="dcc${c}"><h3 id="dcc${c}">${esc(centName(c))} <small>${esc(centSpan(c))}</small></h3><div class="dc-list">` +
+      es.map(e => {
+        const p = personById[e.id], w = dcWhen(e);
+        return `<button type="button" class="dc-p" data-story-person="${esc(e.id)}" title="${esc(p.name)}: ${esc(storyIdx[e.id])}">${faceHtml(p, p.name).replace('<span ', '<span aria-hidden="true" ')}` +
+          `<span class="dc-t"><b>${esc(p.name)}</b><span class="dc-as">${esc(e.as)}</span><span class="dc-k">${w ? `<span class="yr">${esc(w)}</span> ` : ''}${esc(e.k)}</span></span></button>`;
+      }).join('') + '</div></section>').join('') +
+      `<p class="dc-end" id="dcEnd">${!all.length ? 'The stories are still loading.' : DC.f === 'all'
+        ? `${shown.length} of the ${Object.keys(storyIdx).length} people with a story on the map. The others are rulers, explorers, generals, leaders and more; every ringed face on the map has a story.`
+        : `${shown.length} of the ${all.length} great minds here are ${esc((DC.fields[DC.f] || '').toLowerCase())}.`}</p>`;
+    dcTail();
+  }
+  // room after the last century, so that a jump to it brings its heading to the top like any other
+  function dcTail() {
+    const end = $('dcEnd'), secs = dcBody.querySelectorAll('.dc-c'), last = secs[secs.length - 1];
+    if (end) end.style.minHeight = last ? Math.max(0, dcBody.clientHeight - last.offsetHeight) + 'px' : '';
+  }
+  const dcSecs = () => [...dcBody.querySelectorAll('.dc-c')].map(s => [+s.dataset.c, s]);
+  // the century at the top of the list, and the one to show for a century: itself, or the nearest earlier one listed
+  function dcAt() { let c = null; for (const [x, s] of dcSecs()) { if (s.offsetTop <= dcBody.scrollTop + 4 || c == null) c = x; else break; } return c; }
+  function dcNear(c) { let best = null; for (const [x] of dcSecs()) { if (best == null || x <= c) best = x; else break; } return best; }
+  function dcGoTo(c, smooth) {
+    const s = dcBody.querySelector(`.dc-c[data-c="${c}"]`); if (!s) return;
+    const top = s.offsetTop, d = top - dcBody.scrollTop, h = dcBody.clientHeight;
+    if (!smooth || reduce()) return void (dcBody.scrollTop = top);
+    if (Math.abs(d) > 2 * h) dcBody.scrollTop = top - Math.sign(d) * h;   // a long way: most of it at once, the rest smoothly
+    dcBody.scrollTo({ top, behavior: 'smooth' });
+  }
+  // mark the century in view on the rail, and keep it in sight there
+  function dcSpy() {
+    DC.raf = 0;
+    const c = dcAt();
+    for (const b of dcRail.querySelectorAll('button')) {
+      const on = +b.dataset.c === c;
+      if (on === (b.getAttribute('aria-current') === 'true')) continue;
+      if (!on) { b.removeAttribute('aria-current'); continue; }
+      b.setAttribute('aria-current', 'true');
+      const r = dcRail, beh = reduce() ? 'auto' : 'smooth';
+      if (r.scrollWidth > r.clientWidth + 1) r.scrollTo({ left: b.offsetLeft - (r.clientWidth - b.offsetWidth) / 2, behavior: beh });
+      else if (b.offsetTop < r.scrollTop || b.offsetTop + b.offsetHeight > r.scrollTop + r.clientHeight) r.scrollTo({ top: b.offsetTop - (r.clientHeight - b.offsetHeight) / 2, behavior: beh });
+    }
+  }
+  // bring a name into view below its century's heading
+  function dcShowRow(b) {
+    const top = b.offsetTop, h = b.offsetHeight, head = 64;
+    if (top < dcBody.scrollTop + head) dcBody.scrollTop = top - head;
+    else if (top + h > dcBody.scrollTop + dcBody.clientHeight) dcBody.scrollTop = top + h - dcBody.clientHeight + 8;
+  }
+  const dcStill = () => [dcCard, $('dcDim')].forEach(el => el.getAnimations().forEach(a => a.cancel()));
+  function dcOpen() {
+    if (DC.open || !DC.list.length) return;
+    stopPlay(); hideTip();
+    DC.open = true; DC.back = document.activeElement;
+    dcStill();   // it was still closing
+    dcEl.hidden = false; document.querySelector('.app').inert = true;
+    $('discover').setAttribute('aria-expanded', 'true'); $('discoverP').setAttribute('aria-expanded', 'true');
+    const all = dcAll(); dcFilters(all); dcList(all);
+    // back where the list was left if the map has not moved since; otherwise at the map's century
+    if (DC.year === S.year && DC.top) dcBody.scrollTop = DC.top; else dcGoTo(dcNear(centOf(S.year)));
+    dcSpy();
+    if (!reduce()) {
+      dcCard.animate(isPhone() ? [{ transform: 'translateY(48px)', opacity: 0 }, { transform: 'none', opacity: 1 }] : [{ transform: 'scale(.96)', opacity: 0 }, { transform: 'none', opacity: 1 }],
+        { duration: 260, easing: 'cubic-bezier(.2,.85,.25,1)' });
+      $('dcDim').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220 });
+    }
+    dcBody.focus({ preventScroll: true });
+    if (!all.length) setTimeout(function wait() {   // the stories' own list was still loading
+      if (!DC.open) return;
+      const a = dcAll(); if (!a.length) return void setTimeout(wait, 300);
+      dcFilters(a); dcList(a); dcGoTo(dcNear(centOf(S.year))); dcSpy();
+    }, 300);
+  }
+  function dcClose(now) {
+    if (!DC.open) return;
+    DC.open = false; DC.year = S.year; DC.top = dcBody.scrollTop;
+    $('discover').setAttribute('aria-expanded', 'false'); $('discoverP').setAttribute('aria-expanded', 'false');
+    const done = () => {
+      if (DC.open) return;   // opened again while it was closing
+      dcEl.hidden = true; dcStill();
+      if (!SV.open) document.querySelector('.app').inert = false;
+      const b = DC.back; if (!now && b && b !== document.body && b.isConnected && b.focus) b.focus({ preventScroll: true });
+    };
+    if (now === true || reduce()) return done();
+    dcCard.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: isPhone() ? 'translateY(40px)' : 'scale(.97)' }], { duration: 160, easing: 'ease-in', fill: 'forwards' }).onfinish = done;
+    $('dcDim').animate([{ opacity: 1 }, { opacity: 0 }], { duration: 160, fill: 'forwards' });
+  }
+  $('discover').onclick = $('discoverP').onclick = () => DC.open ? dcClose() : dcOpen();
+  $('dcX').onclick = () => dcClose();
+  $('dcDim').onclick = () => dcClose();
+  dcFil.addEventListener('click', e => {
+    const b = e.target.closest('[data-f]'); if (!b || b.dataset.f === DC.f) return;
+    const at = dcAt();
+    DC.f = b.dataset.f; toStore('wtt-disc-f', DC.f);
+    dcFil.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.f === DC.f)));
+    dcList(dcAll()); dcGoTo(dcNear(at != null ? at : centOf(S.year))); dcSpy();
+  });
+  dcRail.addEventListener('click', e => { const b = e.target.closest('[data-c]'); if (b) dcGoTo(+b.dataset.c, true); });
+  dcBody.addEventListener('click', e => {
+    const b = e.target.closest('[data-story-person]'); if (!b) return;
+    openStory(b.dataset.storyPerson, { queue: (dcBody.dataset.queue || '').split(' ').filter(Boolean), from: e });
+  });
+  dcBody.addEventListener('scroll', () => { if (!DC.raf) DC.raf = requestAnimationFrame(dcSpy); }, { passive: true });
+  addEventListener('resize', () => { if (DC.open) { dcTail(); dcSpy(); } });
+  addEventListener('keydown', e => {
+    if (!DC.open || SV.open) return;
+    if (e.key === 'Escape') { e.preventDefault(); e.stopImmediatePropagation(); dcClose(); }
+    // space scrolls the list, and doesn't play the map behind it
+    else if (e.key === ' ' && !(e.target.closest && e.target.closest('button, a, input, summary'))) e.stopImmediatePropagation();
+  }, true);
+  // a story opened from the list: when it closes, the list is still there, its rings up to date and the last story's
+  // name in view. A story that sends the reader to the map (a page's place, "see them on the map", or an event story's
+  // war or place) closes the list too.
+  new MutationObserver(() => {
+    if (!svEl.hidden || !DC.open) return;
+    document.querySelector('.app').inert = true;   // closing the story woke the map behind the list
+    for (const b of dcBody.querySelectorAll('.dc-p')) { const f = b.querySelector('.face'); if (f) f.classList.toggle('seen', seenStories.has(b.dataset.storyPerson)); }
+    const b = SV.id && [...dcBody.querySelectorAll('.dc-p')].find(x => x.dataset.storyPerson === SV.id);
+    if (b) { dcShowRow(b); b.focus({ preventScroll: true }); }
+  }).observe(svEl, { attributes: true, attributeFilter: ['hidden'] });
+  $('svWho').addEventListener('click', () => dcClose(true));
+  svBody.addEventListener('click', e => { if (e.target.closest('[data-sv="map"], [data-sv="person"], [data-sv="war"], [data-sv="place"]')) dcClose(true); });
+  // portraits that arrive while the list is open
+  function dcFaces() {
+    if (!DC.open) return;
+    for (const b of dcBody.querySelectorAll('.dc-p')) {
+      const f = b.querySelector('.face'), src = imgOf(personById[b.dataset.storyPerson]);
+      if (f && src && !f.querySelector('img')) f.innerHTML = `<img src="${esc(src)}" alt="" loading="lazy">`;
+    }
   }
 
   // ---------- start ----------
