@@ -9,7 +9,7 @@ show no year at all, for someone whose dates are only tradition)
   year    the year of the first thing named in "known for", the work they are best known for. It puts them in their
           century: 6th century BC is 600 to 501 BC, and from AD 1 the 1600s are the 17th century.
 Only people with a story belong here, and not all of them: rulers, generals, explorers and founders of religions stay
-out unless the work is their own (Marcus Aurelius's Meditations, Sejong's alphabet; not Shah Jahan's Taj Mahal), and
+out (the leaders have their own list, leaders.py) unless the work is their own (Marcus Aurelius's Meditations, Sejong's alphabet; not Shah Jahan's Taj Mahal), and
 Anne Frank's diary is told on the map as history rather than listed with the artists.
 """
 
