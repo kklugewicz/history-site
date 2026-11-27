@@ -954,8 +954,12 @@ details[open] summary { margin-bottom: 6px; }
   }
   const entryAt = (z, y) => { let e = z.history[0]; for (const h of z.history) if (h.from <= y) e = h; return e; };
   const zoneFaith = (z, y) => faithById[entryAt(z, y).faith] || null;
+  // the few states whose land outvotes their people (see STATE_FAITH in merge_religions.py) take their faith from that list
+  const stateFaith = rel.states || {};
   function faithAt(f, y) {
     if (f._fy === y) return f._fa;
+    const own = (stateFaith[f.properties.name] || []).filter(h => h.from <= y).pop();
+    if (own) { f._fy = y; f._fa = faithById[own.faith] || null; return f._fa; }
     const zw = zoneWeights(f);
     let top = null;
     if (zw.length === 1) top = zoneFaith(zw[0][0], y);
