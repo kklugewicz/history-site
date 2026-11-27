@@ -434,6 +434,26 @@ details[open] summary { margin-bottom: 6px; }
 .storybtn:hover { background: linear-gradient(color-mix(in srgb, var(--story-a) 10%, var(--paper)), color-mix(in srgb, var(--story-a) 10%, var(--paper))) padding-box,
   var(--story-ring) border-box; }
 .storybtn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+/* a war's or an event's face is a rounded square (a person's is round), showing its icon until its picture loads */
+.face.ev { border-radius: 13px; }
+.face.ev img { border-radius: 9px; }
+.tray .face.ev { border-radius: 17px; }
+.tray .face.ev img { border-radius: 12px; }
+.face.ev .evi { width: 56%; height: 56%; color: #fff; }
+.sv-av.ev { border-radius: 9px; background: var(--fc, rgba(255,255,255,.16)); }
+.sv-av .evi { width: 62%; height: 62%; color: #fff; }
+.sv-sides { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 9px; margin: -4px 0 12px; font-size: 13.5px; line-height: 1.3; color: rgba(255,255,255,.88); }
+.sv-sides span { display: inline-flex; align-items: center; gap: 6px; }
+.sv-sides i { width: 10px; height: 10px; border-radius: 3px; flex: none; box-shadow: 0 0 0 1px rgba(255,255,255,.55); }
+.sv-sides b { font-family: var(--f-mono); font-size: 10.5px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+.sv-num { margin: 0 0 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.sv-num b { font-family: var(--f-display); font-weight: 400; font-size: 46px; line-height: 1; color: #fff; }
+.sv-num span { font-size: 15px; line-height: 1.3; color: var(--kc); }
+.sv-body.k-scene { --kc: rgba(255,255,255,.78); }
+.sv-body.k-battle { --kc: #ff9e80; }
+.sv-body.k-turn { --kc: #f0c25a; }
+.sv-body.k-figure { --kc: #9fd3ff; }
+.sv-body.k-cost { --kc: #f4a3a3; }
 .spin { pointer-events: none; }
 .spin .dot { fill: var(--story-a); stroke: var(--paper); stroke-width: 2.2; }
 .spin .pulse { fill: none; stroke: var(--story-a); stroke-width: 2.4; transform-box: fill-box; transform-origin: center; animation: pulse 1.8s ease-out infinite; }
@@ -536,6 +556,7 @@ details[open] summary { margin-bottom: 6px; }
 .sv-body.dense .sv-t { font-size: 26px; margin-bottom: 8px; } .sv-body.dense .sv-t.big { font-size: 36px; }
 .sv-body.dense .sv-x { font-size: 15px; line-height: 1.45; } .sv-body.dense .sv-fx p, .sv-body.dense .sv-pts li { font-size: 14px; }
 .sv-body.denser .sv-t { font-size: 23px; } .sv-body.denser .sv-x { font-size: 14px; line-height: 1.4; } .sv-body.denser .sv-fx p, .sv-body.denser .sv-pts li { font-size: 13px; }
+.sv-body.dense .sv-num b { font-size: 38px; } .sv-body.denser .sv-num b { font-size: 32px; } .sv-body.denser .sv-sides { font-size: 12.5px; margin-bottom: 9px; }
 .sv-body.in > * { animation: svin .42s cubic-bezier(.2,.8,.25,1) both; }
 .sv-body.in > :nth-child(2) { animation-delay: .04s; } .sv-body.in > :nth-child(3) { animation-delay: .08s; } .sv-body.in > :nth-child(n+4) { animation-delay: .12s; }
 @keyframes svin { from { opacity: 0; transform: translateY(12px); } }
@@ -562,6 +583,101 @@ details[open] summary { margin-bottom: 6px; }
   .face.story, .ph.story { transition: none; }
   .spin .pulse { animation: none; }
 }
+
+/* Discovery: the great scientists, mathematicians, inventors, philosophers and artists, century by century. A button
+   beside the map-view tabs (on a phone, a round one beside the stories button) opens the list over the map, at the
+   map's own century; a name opens that person's story. */
+.modes { display: flex; gap: 8px; align-items: center; }
+.discbtn { display: inline-flex; align-items: center; gap: 7px; padding: 7px 16px 7px 11px; border-radius: 99px; font-weight: 700;
+  border: 2px solid transparent; background: linear-gradient(var(--paper), var(--paper)) padding-box, var(--story-ring) border-box; }
+.discbtn svg { width: 18px; height: 18px; flex: none; color: var(--story-a); }
+.discbtn:hover { background: linear-gradient(color-mix(in srgb, var(--story-a) 10%, var(--paper)), color-mix(in srgb, var(--story-a) 10%, var(--paper))) padding-box,
+  var(--story-ring) border-box; }
+#discoverP { display: none; }
+.dc { position: fixed; inset: 0; z-index: 40; display: grid; place-items: center; font-family: var(--f-body); color: var(--ink); }
+.dc-dim { position: absolute; inset: 0; background: rgba(28, 20, 10, .5); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+.dc-card { position: relative; width: min(960px, calc(100vw - 48px)); height: min(88vh, 920px); display: grid; grid-template-columns: 136px 1fr;
+  grid-template-rows: auto minmax(0, 1fr); overflow: hidden; background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+  box-shadow: 0 24px 70px rgba(30, 20, 8, .4); outline: none; }
+.dc-head { grid-column: 1 / -1; position: relative; padding: 18px 64px 14px 24px; border-bottom: 1px solid var(--line); }
+.dc-head h2 { margin: 2px 0 4px; font-family: var(--f-display); font-weight: 400; font-size: 32px; line-height: 1.05; text-wrap: balance; }
+.dc-sub { margin: 0 0 12px; max-width: 66ch; color: var(--ink-soft); font-size: 14px; line-height: 1.4; }
+.dc-x { position: absolute; top: 14px; right: 14px; width: 38px; height: 38px; padding: 0; border: 0; border-radius: 50%; box-shadow: none;
+  display: grid; place-items: center; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+.dc-x:hover { background: color-mix(in srgb, var(--ink) 14%, transparent); }
+.dc-x svg { width: 16px; height: 16px; }
+.dc-fil { display: flex; flex-wrap: wrap; gap: 6px; }
+.dc-fil button { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px 5px 10px; border-radius: 99px; box-shadow: none; font-size: 14px; }
+.dc-fil svg { width: 17px; height: 17px; flex: none; color: var(--accent); }
+.dc-fil .n { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); }
+.dc-fil button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.dc-fil button[aria-pressed="true"] svg, .dc-fil button[aria-pressed="true"] .n { color: color-mix(in srgb, var(--paper) 78%, transparent); }
+.dc-rail { position: relative; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 1px; padding: 12px 10px 18px 12px; border-right: 1px solid var(--line); scrollbar-width: none; }
+.dc-rail::-webkit-scrollbar { display: none; }
+.dc-rail h4 { margin: 4px 8px 6px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); }
+.dc-rail button { all: unset; box-sizing: border-box; flex: none; display: flex; align-items: center; gap: 6px; padding: 5px 8px; border-radius: 6px; cursor: pointer;
+  font-size: 13.5px; color: var(--ink-soft); white-space: nowrap; }
+.dc-rail button .n { margin-left: auto; font-family: var(--f-mono); font-size: 10.5px; opacity: .8; }
+.dc-rail button:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); color: var(--ink); }
+.dc-rail button[aria-current="true"] { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--ink); font-weight: 700; }
+.dc-rail button.map::after { content: ""; order: 1; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; }
+.dc-rail button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.dc-body { position: relative; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0 22px; }
+.dc-body:focus { outline: none; }
+.dc-c h3 { position: sticky; top: 0; z-index: 1; margin: 0; padding: 14px 4px 8px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  background: var(--paper); border-bottom: 1px solid var(--line); font-family: var(--f-display); font-weight: 400; font-size: 24px; line-height: 1.1; }
+.dc-c h3 small { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); }
+.dc-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 2px 14px; padding: 8px 0 10px; }
+.dc-p { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: center; padding: 8px 10px 8px 8px;
+  border-radius: 10px; cursor: pointer; }
+.dc-p:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.dc-p:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.dc-p .face { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font-weight: 700; font-size: 16px;
+  color: var(--ink-soft); }
+.dc-p .face:not(.story) { background: var(--line); }
+.dc-p .face img { width: 100%; height: 100%; object-fit: cover; }
+.dc-p .face.story { border-width: 2.5px; padding: 2px; }
+.dc-t { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.dc-t b { font-size: 15.5px; line-height: 1.2; }
+.dc-as { font-size: 12.5px; line-height: 1.3; color: var(--ink-soft); }
+.dc-k { margin-top: 2px; font-size: 13.5px; line-height: 1.32; }
+.dc-k .yr { margin-right: 3px; white-space: nowrap; }
+.dc-end { margin: 0; padding: 18px 4px 28px; color: var(--ink-soft); font-size: 13px; text-align: center; }
+/* a short window: more of it for the names */
+@media (max-height: 700px) {
+  .dc-card { height: calc(100vh - 32px); }
+  .dc-sub { display: none; }
+}
+@media (max-width: 760px) {
+  #discover { display: none; }
+  /* on a phone, a round button to the left of the stories button */
+  #discoverP { display: grid; place-items: center; position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: 62px; width: 44px; height: 44px;
+    padding: 0; border-radius: 50%; border: 2.5px solid transparent; box-shadow: var(--shadow); color: var(--story-a);
+    background: linear-gradient(var(--paper), var(--paper)) padding-box, var(--story-ring) border-box; }
+  #discoverP svg { width: 21px; height: 21px; }
+  #discoverP[aria-expanded="true"] { background: var(--story-ring); color: #fff; }
+  /* the list fills the screen: its head, a strip of centuries, then the names */
+  .dc-card { width: 100vw; height: 100vh; border: 0; border-radius: 0; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto minmax(0, 1fr); }
+  @supports (height: 1dvh) { .dc-card { height: 100dvh; } }
+  .dc-head { padding: calc(12px + env(safe-area-inset-top, 0px)) 58px 10px 16px; }
+  .dc-head .kicker { margin-bottom: 0; }
+  .dc-head h2 { font-size: 25px; margin-bottom: 10px; }
+  .dc-sub { display: none; }
+  .dc-x { top: calc(10px + env(safe-area-inset-top, 0px)); right: 10px; }
+  .dc-fil { flex-wrap: nowrap; overflow-x: auto; margin: 0 -58px 0 -16px; padding: 0 16px 2px; scrollbar-width: none; }
+  .dc-fil::-webkit-scrollbar { display: none; }
+  .dc-fil button { flex: none; }
+  .dc-rail { flex-direction: row; gap: 4px; overflow-x: auto; overflow-y: hidden; padding: 8px 12px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .dc-rail h4 { display: none; }
+  .dc-rail button { padding: 5px 11px; border-radius: 99px; border: 1px solid var(--line); }
+  .dc-rail button .n { display: none; }
+  .dc-rail button[aria-current="true"] { border-color: transparent; }
+  .dc-body { padding: 0 8px calc(8px + env(safe-area-inset-bottom, 0px)); }
+  .dc-c h3 { font-size: 21px; padding: 11px 8px 6px; }
+  .dc-list { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 4px 0 8px; }
+  .dc-p { grid-template-columns: 50px 1fr; gap: 11px; padding: 7px 8px; }
+  .dc-p .face { width: 50px; height: 50px; }
+}
 </style>
 </head>
 <body>
@@ -574,15 +690,19 @@ details[open] summary { margin-bottom: 6px; }
     <div class="top">
       <h1>World Through Time</h1>
       <div class="when" id="when" aria-live="off"><div class="y" id="yNum"></div><div class="age" id="yAge"></div><div class="sub" id="ySub"></div></div>
+      <div class="modes">
       <div class="tabs" role="tablist" aria-label="Map view">
         <button type="button" role="tab" data-mode="map" aria-selected="true">Borders</button>
         <button type="button" role="tab" data-mode="wars" aria-selected="false">Wars</button>
         <button type="button" role="tab" data-mode="religions" aria-selected="false">Religions</button>
       </div>
+      <button type="button" class="discbtn" id="discover" aria-haspopup="dialog" aria-expanded="false" title="The great scientists, mathematicians, inventors, philosophers and artists, century by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6M10 21h4M12 2.8a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.4 1.2 2.3v.2h5v-.2c0-.9.5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Discovery</button>
+      </div>
       <div class="row places" id="places" aria-label="Zoom to"><button type="button" data-place="World">World</button><button type="button" data-place="Europe">Europe</button><button type="button" data-place="Asia">Asia</button><button type="button" data-place="Africa">Africa</button><button type="button" data-place="North America">North America</button><button type="button" data-place="South America">South America</button><button type="button" data-place="Oceania">Oceania</button></div>
       <div class="row"><button id="btnDetail" type="button" aria-pressed="false" title="Show every state and people, not just the main civilizations">Detailed borders</button></div>
     </div>
     <button type="button" id="stories" aria-pressed="false" aria-label="Stories from this year" title="Stories from this year"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2l10 6-10 6z" fill="currentColor"/></svg></button>
+    <button type="button" id="discoverP" aria-haspopup="dialog" aria-expanded="false" aria-label="Discovery: great minds by century" title="Discovery: great minds by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6M10 21h4M12 2.8a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.4 1.2 2.3v.2h5v-.2c0-.9.5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     <aside class="panel" id="panel" aria-live="polite">
       <span class="pop-grip" aria-hidden="true"></span>
       <button type="button" class="pop-x" id="popX" aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
@@ -629,6 +749,22 @@ details[open] summary { margin-bottom: 6px; }
     </div>
     <button type="button" class="sv-nav" id="svNextS" aria-label="Next story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   </div>
+</div>
+
+<!-- Discovery: the great minds of each century, each a story -->
+<div class="dc" id="dc" hidden>
+  <div class="dc-dim" id="dcDim"></div>
+  <section class="dc-card" id="dcCard" role="dialog" aria-modal="true" aria-labelledby="dcTitle" tabindex="-1">
+    <header class="dc-head">
+      <p class="kicker">Discovery</p>
+      <h2 id="dcTitle">Great minds, century by century</h2>
+      <p class="dc-sub">The scientists, mathematicians, inventors, philosophers and artists with a story on the map, each in the century of their best-known work. Pick a name to watch their story.</p>
+      <div class="dc-fil" id="dcFil" role="group" aria-label="Show"></div>
+      <button type="button" class="dc-x" id="dcX" aria-label="Close Discovery"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </header>
+    <nav class="dc-rail" id="dcRail" aria-label="Centuries"></nav>
+    <div class="dc-body" id="dcBody" tabindex="-1"></div>
+  </section>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
@@ -934,8 +1070,12 @@ details[open] summary { margin-bottom: 6px; }
   }
   const entryAt = (z, y) => { let e = z.history[0]; for (const h of z.history) if (h.from <= y) e = h; return e; };
   const zoneFaith = (z, y) => faithById[entryAt(z, y).faith] || null;
+  // the few states whose land outvotes their people (see STATE_FAITH in merge_religions.py) take their faith from that list
+  const stateFaith = rel.states || {};
   function faithAt(f, y) {
     if (f._fy === y) return f._fa;
+    const own = (stateFaith[f.properties.name] || []).filter(h => h.from <= y).pop();
+    if (own) { f._fy = y; f._fa = faithById[own.faith] || null; return f._fa; }
     const zw = zoneWeights(f);
     let top = null;
     if (zw.length === 1) top = zoneFaith(zw[0][0], y);
@@ -1192,6 +1332,10 @@ details[open] summary { margin-bottom: 6px; }
   // one in HOME), not on its biggest colony; colonies over a million km² keep their own names.
   const HOME = { 'Spanish Habsburg': 'Spain', 'Mongol Empire': 'Great Khanate', 'Italy': 'Kingdom of Italy', 'Russia': 'Russian Empire' };
   const COLONY_KM2 = 1e6;
+  // Russia's name stands at the middle of the whole state, deep in Siberia, off the screen when you look at Europe. Zoomed
+  // in, the name of Russia (and of the Muscovy, empire and Soviet Union before it, when their middle lies east of 55°E)
+  // moves to European Russia, south-east of Moscow, where most of its people lived.
+  const RUSSIAS = new Set(['Tsardom of Muscovy', 'Russian Empire', 'USSR', 'Russia']), EURO_RUSSIA = [41, 53.7];
   let labelsByName = new Map();
   function computeLabels() {
     const sm = simple(), byName = new Map(), home = new Map();
@@ -1203,7 +1347,8 @@ details[open] summary { margin-bottom: 6px; }
       let best = null, ba = -1;
       for (const poly of f.geometry.coordinates) { const g = { type: 'Polygon', coordinates: poly }; const a = path.area(g); if (a > ba) { ba = a; best = g; } }
       const [x, y] = path.centroid(best); const b = path.bounds(best);
-      if (isFinite(x) && !(byName.get(name)?.a > ba)) byName.set(name, { name, x, y, a: ba, w: b[1][0] - b[0][0], f });
+      const west = RUSSIAS.has(name) && proj.invert([x, y])[0] > 55 && d3.geoContains(best, EURO_RUSSIA) ? proj(EURO_RUSSIA) : null;
+      if (isFinite(x) && !(byName.get(name)?.a > ba)) byName.set(name, { name, x, y, a: ba, w: b[1][0] - b[0][0], f, home: [x, y], west });
     }
     labels = [...byName.values()];
     labelsByName = byName;
@@ -1212,10 +1357,23 @@ details[open] summary { margin-bottom: 6px; }
   const lblPx = (l, k) => Math.min(15, 12 * Math.max(.85, Math.sqrt(l.a * k * k) / 140));
   // half the on-screen width of a label, in px (the display face averages ~.54em per letter)
   const halfW = (l, k) => l.name.length * lblPx(l, k) * .27;
+  // Russia's name goes to its European spot once zoomed in (the world three times as wide as the view) and stays at the
+  // middle of the whole state before that; when that spot is out of view and the other is in it, the name takes the other,
+  // so it stays in Siberia when that is where you look
+  function placeRussia(k) {
+    const T = S.t, [vx, vy, vw, vh] = isPhone() ? [0, 0, W, H] : viewArea(), zoomed = worldPx() > 3 * vw;
+    for (const l of labels) if (l.west) {
+      const mx = halfW(l, k), my = lblPx(l, k);
+      const seen = p => { const x = T.x + p[0] * k, y = T.y + p[1] * k; return x > vx + mx && x < vx + vw - mx && y > vy + my && y < vy + vh - my; };
+      const [a, b] = zoomed ? [l.west, l.home] : [l.home, l.west];
+      [l.x, l.y] = seen(a) || !seen(b) ? a : b;
+    }
+  }
   let shownLabels = new Map();
   function drawLabels() {
     const k = S.k;
     const side = sideMap();
+    placeRussia(k);
     // the simplified map has few shapes, so it can afford to label smaller ones
     const [minA, perCh] = simple() ? [700, 4.4] : [2200, 5.4];
     const vis = S.detail && !side ? [] : labels.filter(l => (!side || side.has(l.name)) && l.a * k * k > minA && l.w * k > l.name.length * perCh);
@@ -1454,6 +1612,7 @@ details[open] summary { margin-bottom: 6px; }
       try { localStorage.setItem('wtt-portraits2', JSON.stringify(portraits)); } catch (e) {}
       drawLeaders(); drawPeople(); if (S.detail || S.mode === 'wars') refreshGenerals();
       renderPanelSoon();
+      dcFaces();
     }).catch(() => {}).finally(() => { if (wantPortraits.size) fetchPortraits(); });
   }
   // the name under a face: a long name keeps the part before ', ', ' of ' or ' the ', then a regnal number, then the surname with its particles
@@ -1502,7 +1661,14 @@ details[open] summary { margin-bottom: 6px; }
   // Pictures are the lead images of the Wikipedia articles a page names; a song page plays a free recording that it
   // finds on the Wikipedia article for the piece, from Wikimedia Commons.
   let storyIdx = {};
-  const hasStory = id => !!(id && storyIdx[id]);
+  // Wars and great events (Columbus's first voyage, the Black Death, the fall of the Berlin Wall) have stories too, told
+  // the same way. data/events/index.json lists them with their years and the states each belongs to; a story's pages load
+  // from data/events/<id>.json when it opens (content/events/build_events.py writes them). In the viewer and in a queue
+  // an event's id is "ev:" and its own id, so one row of stories can hold people and events alike.
+  let evList = [], evById = {}, evOfWar = {};
+  const isEv = id => typeof id === 'string' && id.startsWith('ev:');
+  const evOf = id => isEv(id) ? evById[id.slice(3)] || null : null;
+  const hasStory = id => !!(id && (isEv(id) ? evOf(id) : storyIdx[id]));
   const storyIdOf = o => !o ? null : o.stints ? o.id : (o.person || null);   // a person, or a general linked to one
   const fromStore = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || d); } catch (e) { return JSON.parse(d); } };
   const toStore = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
@@ -1517,6 +1683,88 @@ details[open] summary { margin-bottom: 6px; }
     gr.append('stop').attr('offset', 1).style('stop-color', 'var(--story-a)');
   }
   opt('stories/index.json').then(j => { if (!j || !j.ids) return; storyIdx = j.ids; drawLeaders(); drawPeople(); refreshGenerals(); renderPanel(); });
+  opt('events/index.json').then(j => {
+    if (!j || !j.events) return;
+    evList = j.events; evById = Object.fromEntries(evList.map(e => [e.id, e])); evOfWar = {};
+    for (const e of evList) if (e.war) evOfWar[e.war] = e;
+    renderPanel();
+  });
+  // who or what a story is about: a person, or an event
+  function subj(id) {
+    const e = evOf(id);
+    if (e) return { id, e, name: e.name, short: e.name, role: e.lb, life: fmtSpan(e.from, e.to), wiki: e.wiki, pic: e.img || e.wiki };
+    const p = personById[id];
+    return p ? { id, p, name: p.name, short: shortName(p), role: p.role, life: lifeText(p), wiki: p.wiki, pic: p.wiki } : null;
+  }
+  // An event's face is a rounded square, so a row can hold people and events: its picture inside the story ring, or
+  // until that loads its icon on a colour of its kind (the small pictures come with the portraits, from Wikipedia)
+  const EVI = {
+    swords: '<g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M-7.6-7.6L5 5M7.6-7.6L-5 5"/><path d="M2.4 7.6l5.2-5.2M-2.4 7.6l-5.2-5.2"/><path d="M5.6 5.6l2.6 2.6M-5.6 5.6l-2.6 2.6"/></g>',
+    tower: '<path fill="currentColor" d="M-6 9V-3H-7.6V-8.6h3.1v2.5h2.1V-8.6h3v2.5h2.1V-8.6h3.1V-3H6V9H1.9V4.6a1.9 1.9 0 0 0-3.8 0V9z"/>',
+    ship: '<path fill="currentColor" d="M-9.4 2.6H9.4L6.4 8H-6.6z M-.8-9.4H.8v12h-1.6z M1.7-8.6c4.6 2.4 5.8 6 5.4 10.2H1.7z M-1.7-7.2c-3.9 2.5-5 5.6-4.6 8.8h4.6z"/>',
+    compass: '<circle r="8.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="currentColor" d="M0-6.6L2.6 0H-2.6z"/><path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" d="M0 6.6L2.6 0H-2.6z"/>',
+    flame: '<path fill="currentColor" d="M0-9.2C3.8-5.1 7.1-1.3 5.4 3.8 4.4 7 2 8.6 0 8.6S-4.4 7-5.4 3.8C-6.7-.7-2.9-2.7-2.4-6-.7-4.3-.2-6.9 0-9.2z"/>',
+    flag: '<path fill="currentColor" d="M-6.6-9.2h1.8V9.2h-1.8z M-4.2-8.6c3.1-1.5 5.8 1.5 10.2 0V2c-4.4 1.5-7.1-1.5-10.2 0z"/>',
+    wave: '<path fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" d="M-9.2 1.6c2.3-3 4.6-3 6.1 0s3.8 3 6.1 0 4.6-3 6.1 0M-9.2 6.8c2.3-3 4.6-3 6.1 0s3.8 3 6.1 0 4.6-3 6.1 0"/><path fill="currentColor" d="M-6.6-3.4L-1.6-9.6 1.6-5.6 3.4-7.6 7.4-3.4z"/>',
+    virus: '<circle r="4.8" fill="currentColor"/><g stroke="currentColor" stroke-width="1.7" stroke-linecap="round">' + d3.range(8).map(i => { const a = i * Math.PI / 4, c = Math.cos(a), s = Math.sin(a); return `<path d="M${(5.6 * c).toFixed(2)} ${(5.6 * s).toFixed(2)}L${(7.6 * c).toFixed(2)} ${(7.6 * s).toFixed(2)}"/>`; }).join('') + '</g>' + d3.range(8).map(i => { const a = i * Math.PI / 4; return `<circle fill="currentColor" cx="${(8.6 * Math.cos(a)).toFixed(2)}" cy="${(8.6 * Math.sin(a)).toFixed(2)}" r="1.25"/>`; }).join(''),
+    wheat: '<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M0 9.4V-8.6"/><g fill="currentColor">' + [-6.4, -2.6, 1.2].map(y => `<ellipse cx="-2.6" cy="${y}" rx="1.6" ry="3.1" transform="rotate(-32 -2.6 ${y})"/><ellipse cx="2.6" cy="${y}" rx="1.6" ry="3.1" transform="rotate(32 2.6 ${y})"/>`).join('') + '</g>',
+    candle: '<path fill="currentColor" d="M-3.2-1.2h6.4V9.2h-6.4z M0-9.6c1.9 2.1 2.8 3.8 2.8 5.3a2.8 2.8 0 0 1-5.6 0c0-1.5.9-3.2 2.8-5.3z"/>',
+    chain: '<g fill="none" stroke="currentColor" stroke-width="2.2"><rect x="-9.4" y="-3.8" width="10.4" height="7.6" rx="3.8" transform="rotate(-35)"/><rect x="-1" y="-3.8" width="10.4" height="7.6" rx="3.8" transform="rotate(-35)"/></g>',
+    bolt: '<path fill="currentColor" d="M2.2-9.8L-6.6 1.6h5.1L-2.6 9.8 6.6-2h-5.1z"/>',
+    star: '<path fill="currentColor" d="' + d3.range(10).map(i => { const a = i * Math.PI / 5 - Math.PI / 2, r = i % 2 ? 3.9 : 9.2; return (i ? 'L' : 'M') + (r * Math.cos(a)).toFixed(2) + ' ' + (r * Math.sin(a)).toFixed(2); }).join('') + 'z"/>',
+    scroll: '<rect x="-6.4" y="-9" width="12.8" height="18" rx="1.8" fill="currentColor"/><path d="M-3.6-4.6h7.2M-3.6-1h7.2M-3.6 2.6h4.6" stroke="rgba(0,0,0,.38)" stroke-width="1.4" stroke-linecap="round"/>',
+    column: '<path fill="currentColor" d="M0-9.6L9.2-4.6H-9.2z M-8.2-3.6H8.2v1.6H-8.2z M-7.2-1.2h2.1v7.2h-2.1z M-2.7-1.2h2.1v7.2h-2.1z M.6-1.2h2.1v7.2H.6z M5.1-1.2h2.1v7.2H5.1z M-9 6.8H9v2.2H-9z"/>',
+    rocket: '<path fill="currentColor" d="M0-10.2c3.3 2.7 4.7 6.6 4.1 11.3l2.9 3.7v3.6L3.3 6.2h-6.6l-3.7 2.2V4.8l2.9-3.7C-4.7-3.6-3.3-7.5 0-10.2z"/><circle r="1.9" cy="-2.6" fill="rgba(0,0,0,.35)"/>',
+    gear: '<path fill="currentColor" fill-rule="evenodd" d="' + d3.range(16).map(i => { const a = (i + .5) * Math.PI / 8, r = i % 2 ? 6.4 : 9; return (i ? 'L' : 'M') + (r * Math.cos(a)).toFixed(2) + ' ' + (r * Math.sin(a)).toFixed(2); }).join('') + 'z M0-2.8a2.8 2.8 0 1 0 0 5.6a2.8 2.8 0 1 0 0-5.6z"/>',
+  };
+  for (const [k, v] of Object.entries(EVI)) defs.append('symbol').attr('id', 'ev-' + k).attr('viewBox', '-12 -12 24 24').html(v);
+  const EV_TINT = { swords: '#8f3d30', tower: '#6e5a45', ship: '#2f5d86', compass: '#2d6e72', flame: '#b2532b', flag: '#2f7a50', wave: '#2c6384', virus: '#6b4f8a',
+    wheat: '#8a6c28', candle: '#4c4759', chain: '#5c4a3e', bolt: '#80591c', star: '#8a6b1c', scroll: '#7a6236', column: '#6a6357', rocket: '#3c4f7c', gear: '#5c5e62' };
+  const evIco = ic => `<svg class="evi" viewBox="-12 -12 24 24" aria-hidden="true"><use href="#ev-${EV_TINT[ic] ? ic : 'star'}" x="-12" y="-12" width="24" height="24"/></svg>`;
+  function evFace(e, cls = 'face ev') {
+    const o = { wiki: e.img || e.wiki }, src = imgOf(o), id = 'ev:' + e.id; if (!src) needPortrait(o);
+    return `<span class="${cls} story${seenStories.has(id) ? ' seen' : ''}" style="--fc:${EV_TINT[e.ic] || EV_TINT.star}">${src ? `<img src="${esc(src)}" alt="" loading="lazy">` : evIco(e.ic)}</span>`;
+  }
+  // a story button's inside, as the people's stories write theirs: the face, the name, then the year (or "now")
+  const evYear = (e, now) => `<span class="y${now ? ' now' : ''}">${now ? 'now' : esc(fmtYear(e.from))}</span>`;
+  const evInner = (e, yl = '') => `${evFace(e)}<span class="n">${esc(e.name)}</span>${yl}`;
+  const evButton = (e, yl) => `<button type="button" data-story-person="ev:${e.id}" title="${esc(e.name)}: ${esc(e.hook)}">${evInner(e, yl)}</button>`;
+  // the names a clicked state goes by: its own, then the others of its country through time once the country lineages
+  // are in (the people's stories in the same row use the same rule, countryNames)
+  function evNamesOf(f) {
+    if (typeof countryNames === 'function') return countryNames(f);
+    const n = f.properties.name, out = [n];
+    try { const line = typeof lineageOf === 'function' ? lineageOf(n) : null; if (line && line.names) for (const x of line.names) if (!out.includes(x)) out.push(x); } catch (e) {}
+    return out;
+  }
+  // a clicked state's wars and events, as items for its row of stories (countryStories, in the people's stories, sorts
+  // them in with its people): { id, y: the event's year nearest the shown one, now: going on then, w: 1 (an event's
+  // place among equals), title, html: the inside of its button }
+  function eventStoryItems(f) {
+    const names = new Set(evNamesOf(f)), y = S.year, out = [];
+    for (const e of evList) {
+      if (!e.st.some(n => names.has(n))) continue;
+      const now = e.from <= y && y <= e.to;
+      out.push({ id: 'ev:' + e.id, y: clamp(y, e.from, e.to), now, w: 1, title: e.name + ': ' + e.hook, html: evInner(e, evYear(e, now)) });
+    }
+    return out;
+  }
+  // without the people's stories row, the events get a row of their own, sorted the same way
+  function eventStoryRow(f) {
+    if (typeof countryStories === 'function') return '';
+    const y = S.year, items = eventStoryItems(f).sort((a, b) => (b.now - a.now) || Math.abs(a.y - y) - Math.abs(b.y - y) || a.y - b.y).slice(0, 40);
+    if (!items.length) return '';
+    let name = f.properties.name;
+    try { const line = typeof lineageOf === 'function' ? lineageOf(name) : null; if (line && line.name) name = line.name; } catch (e) {}
+    return `<div class="sec"><h3>Stories from ${esc(name)}</h3><div class="tray country" data-queue="${items.map(x => x.id).join(' ')}">` +
+      items.map(x => `<button type="button" data-story-person="${x.id}" title="${esc(x.title)}">${x.html}</button>`).join('') + '</div></div>';
+  }
+  // the events going on in a year, then those just before or after it (within a twentieth of its period), nearest first
+  function eventsNear(y) {
+    const w = Math.max(1, Math.round(spanLen(periodOf(y)) / 20));
+    return evList.map(e => ({ e, gap: y < e.from ? e.from - y : y > e.to ? y - e.to : 0 })).filter(x => x.gap <= w)
+      .sort((a, b) => a.gap - b.gap || (a.e.to - a.e.from) - (b.e.to - b.e.from)).map(x => x.e);
+  }
   // a ringed face on the map opens that person's story; the others on screen with a story come after it
   // on a phone, a face tapped low on the map slides up out from under the pop-up card
   function keepAbovePop(e) {
@@ -1543,20 +1791,21 @@ details[open] summary { margin-bottom: 6px; }
       if (st) { f.dataset.storyPerson = id; f.title = 'Watch the story of ' + personById[id].name; }
     });
   }
-  // the row of story faces in the default view: people at work this year, then the others alive, then the nearest in time
+  // the row of story faces in the default view: the wars and events of the year, then people at work this year, then
+  // the others alive, then the nearest in time
   function storyTray() {
-    const y = S.year, list = [];
+    const y = S.year, list = [], evs = eventsNear(y).slice(0, 6);
     for (const p of people) {
       if (!hasStory(p.id)) continue;
       const [b, d] = p.life || [], lo = b != null ? b : p.stints[0].from, hi = d != null ? d : Math.max(...p.stints.map(s => s.to));
       list.push({ p, on: !!stintAt(p, y, S.yf), gap: y < lo ? lo - y : y > hi ? y - hi : 0 });
     }
-    if (!list.length) return '';
+    if (!list.length && !evs.length) return '';
     list.sort((a, b) => (b.on - a.on) || (a.gap - b.gap) || (a.p.rank || 3) - (b.p.rank || 3) || a.p.name.localeCompare(b.p.name));
-    const pick = list.filter((x, i) => x.gap === 0 || i < 8).slice(0, 18), ids = pick.map(x => x.p.id);
-    const title = pick.some(x => x.gap === 0) ? 'Stories from ' + fmtYear(y) : 'Stories from the nearest years';
-    return `<div class="sec"><h3>${esc(title)}</h3><div class="tray" data-queue="${ids.join(' ')}">` + ids.map(id => {
-      const p = personById[id];
+    const pick = list.filter((x, i) => x.gap === 0 || i < 8).slice(0, 18), ids = evs.map(e => 'ev:' + e.id).concat(pick.map(x => x.p.id));
+    const title = evs.length || pick.some(x => x.gap === 0) ? 'Stories from ' + fmtYear(y) : 'Stories from the nearest years';
+    return `<div class="sec"><h3>${esc(title)}</h3><div class="tray" data-queue="${ids.join(' ')}">` + evs.map(e => evButton(e, e.from <= y && y <= e.to ? '' : evYear(e))).join('') + pick.map(x => {
+      const p = x.p, id = p.id;
       return `<button type="button" data-story-person="${id}" title="${esc(p.name)}: ${esc(storyIdx[id])}">${faceHtml(p, p.name)}<span class="n">${esc(shortName(p))}</span></button>`;
     }).join('') + '</div></div>';
   }
@@ -1634,7 +1883,9 @@ details[open] summary { margin-bottom: 6px; }
     loading: false, token: 0, recs: {}, dur: 6, muted: fromStore('wtt-mute', 'false') === true, audio: null, opener: null, tapAt: 0, fade: 0 };
   const svEl = $('sv'), svCard = $('svCard'), svBg = $('svBg'), svBars = $('svBars'), svImg = $('svImg'), svMedia = $('svMedia'), svBody = $('svBody');
   const storyFiles = {};
-  const loadStory = id => storyFiles[id] || (storyFiles[id] = get('stories/' + id + '.json').catch(e => { delete storyFiles[id]; throw e; }));
+  const loadStory = id => storyFiles[id] || (storyFiles[id] = get(isEv(id) ? 'events/' + id.slice(3) + '.json' : 'stories/' + id + '.json').catch(e => { delete storyFiles[id]; throw e; }));
+  // the picture a page shows: its own, or for someone who was there, their portrait
+  const pagePic = pg => pg.img || (pg.k === 'figure' && personById[pg.who] ? personById[pg.who].wiki : null);
   const getJSON = u => fetch(u).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   const WAPI = 'https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&redirects=1&';
   const wikiUrl = (t, site = 'en.wikipedia.org') => `https://${site}/wiki/` + encodeURIComponent(String(t).replace(/ /g, '_')).replace(/%3A/g, ':').replace(/%2F/g, '/');
@@ -1732,7 +1983,16 @@ details[open] summary { margin-bottom: 6px; }
     muted: '<path fill="currentColor" d="M3.5 9h4l5-4.2v14.4l-5-4.2h-4z"/><path d="M15.5 9.2l5.5 5.6M21 9.2l-5.5 5.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
   };
   const svIco = k => SVI[k] ? `<svg viewBox="0 0 24 24" aria-hidden="true">${SVI[k]}</svg>` : '';
-  const KICK = { life: 'Life', win: 'Major achievement', made: 'Breakthrough', work: 'Work', song: 'Music', tale: 'Story time', legacy: 'Legacy' };
+  const KICK = { life: 'Life', win: 'Major achievement', made: 'Breakthrough', work: 'Work', song: 'Music', tale: 'Story time', legacy: 'Legacy',
+    scene: 'What happened', battle: 'Battle', turn: 'Turning point', figure: 'Who was there', cost: 'The cost' };
+  // an event's pages: a chapter, a battle, a turning point, someone who was there, the cost
+  Object.assign(SVI, {
+    scene: '<path fill="currentColor" d="M3 4.2h7.6c.8 0 1.4.6 1.4 1.4v14.2c0-.8-.6-1.4-1.4-1.4H3z M21 4.2h-7.6c-.8 0-1.4.6-1.4 1.4v14.2c0-.8.6-1.4 1.4-1.4H21z"/>',
+    battle: '<g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M4.4 4.4L16.6 16.6M19.6 4.4L7.4 16.6"/><path d="M13.8 19.4l5.6-5.6M10.2 19.4l-5.6-5.6"/><path d="M17.2 17.2l2.6 2.6M6.8 17.2l-2.6 2.6"/></g>',
+    turn: '<path fill="currentColor" d="M5 2.5h2v19H5z M8 3.2c3.6-1.7 6.6 1.7 11.6 0v10.4c-5 1.7-8-1.7-11.6 0z"/>',
+    figure: '<circle cx="12" cy="7.6" r="4.4" fill="currentColor"/><path fill="currentColor" d="M3.4 21.4c.6-4.9 4.1-7.8 8.6-7.8s8 2.9 8.6 7.8z"/>',
+    cost: '<path fill="currentColor" d="M8.6 9.6h6.8v11.8H8.6z M12 1.8c2.2 2.4 3.2 4.4 3.2 6a3.2 3.2 0 0 1-6.4 0c0-1.6 1-3.6 3.2-6z"/>',
+  });
   $('svClose').innerHTML = svIco('close');
 
   function svPausedNow() { return SV.paused || SV.hold || SV.ended || SV.loading || document.hidden || !SV.open; }
@@ -1796,15 +2056,15 @@ details[open] summary { margin-bottom: 6px; }
     b.firstElementChild.onanimationend = () => { if (SV.open && !SV.loading) svNext(true); };
   }
   function svPic() {
-    const pg = SV.pages[SV.i], p = SV.p; if (!pg) return;
-    const cover = picOf(p.wiki) || imgOf(p);
-    const pic = pg.k === 'cover' ? cover : picOf(pg.img);
-    const wait = !pic && (pg.k === 'cover' ? picPending(p.wiki) : picPending(pg.img));
+    const pg = SV.pages[SV.i], s = SV.s; if (!pg) return;
+    const cover = picOf(s.pic) || (s.p ? imgOf(s.p) : null), own = pg.k === 'cover' ? s.pic : pagePic(pg);
+    const pic = pg.k === 'cover' ? cover : picOf(own);
+    const wait = !pic && picPending(own);
     const back = pic || cover;
     svBg.style.backgroundImage = back ? `url("${String(back).replace(/"/g, '%22')}")` : 'none';
     svMedia.classList.toggle('wait', wait);
     SV.solo = !pic && !wait; svCard.classList.toggle('solo', SV.solo);
-    if (pic) { if (svImg.getAttribute('src') !== pic) { svImg.classList.remove('on'); svImg.src = pic; } svImg.alt = pg.cap || (pg.k === 'cover' ? 'Portrait of ' + p.name : pg.t); }
+    if (pic) { if (svImg.getAttribute('src') !== pic) { svImg.classList.remove('on'); svImg.src = pic; } svImg.alt = pg.cap || (pg.k === 'cover' ? (s.p ? 'Portrait of ' + s.name : s.name) : pg.t); }
     else { svImg.removeAttribute('src'); svImg.classList.remove('on'); svImg.alt = ''; }
   }
   svImg.onload = () => svImg.classList.add('on');
@@ -1818,34 +2078,41 @@ details[open] summary { margin-bottom: 6px; }
     if (over() && !SV.solo) svCard.classList.add('tight');
     if (over() && !SV.solo) { svCard.classList.remove('tight'); svCard.classList.add('solo'); }
   }
-  function svPageHtml(pg, p) {
+  function svPageHtml(pg, s) {
+    const e = s.e;
     if (pg.k === 'cover') {
-      const marks = SV.pages.filter(q => q.k === 'win' || q.k === 'made' || q.k === 'work' || q.k === 'song').slice(0, 6);
-      const src = simg[p.wiki];
-      return `<div class="sv-k"><span>${esc(p.role)}</span></div><h2 class="sv-t big">${esc(p.name)}</h2><div class="sv-life">${esc(lifeText(p))}</div>` +
-        `<p class="sv-x">${esc(pg.x)}</p>` + (marks.length ? `<div class="sv-wins" aria-label="Known for">${marks.map(q => `<span>${svIco(q.k)}${esc(q.t)}</span>`).join('')}</div>` : '') +
-        (src ? `<div class="sv-row"><a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">Portrait credit</a></div>` : '');
+      const marks = SV.pages.filter(q => (e ? q.k === 'battle' || q.k === 'turn' : q.k === 'win') || q.k === 'made' || q.k === 'work' || q.k === 'song').slice(0, 6);
+      const src = simg[s.pic], w = e && e.war && warById[e.war];
+      return `<div class="sv-k">${e ? evIco(e.ic) : ''}<span>${esc(s.role)}</span></div><h2 class="sv-t big">${esc(s.name)}</h2><div class="sv-life">${esc(s.life)}</div>` +
+        (w ? `<div class="sv-sides">${w.sides.map(x => `<span><i style="background:${x.color}"></i>${esc(x.name)}</span>`).join('<b>vs</b>')}</div>` : '') +
+        `<p class="sv-x">${esc(pg.x)}</p>` + (marks.length ? `<div class="sv-wins" aria-label="${e ? 'Key moments' : 'Known for'}">${marks.map(q => `<span>${svIco(q.k)}${esc(q.t)}</span>`).join('')}</div>` : '') +
+        (src ? `<div class="sv-row"><a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">${e ? 'Picture' : 'Portrait'} credit</a></div>` : '');
     }
-    const kick = pg.kick || KICK[pg.k], when = pg.y != null ? fmtYear(pg.y) : '';
+    const kick = pg.kick || KICK[pg.k], when = pg.y != null ? fmtYear(pg.y) : '', who = pg.k === 'figure' && personById[pg.who];
     let h = `<div class="sv-k">${svIco(pg.k)}<span>${esc(kick)}</span>${when ? `<span class="sv-y">${esc(when)}</span>` : ''}</div>`;
-    h += `<h2 class="sv-t${pg.k === 'work' ? ' it' : ''}">${esc(pg.k === 'legacy' ? 'Why they matter' : pg.t)}</h2><p class="sv-x">${esc(pg.x)}</p>`;
+    h += `<h2 class="sv-t${pg.k === 'work' ? ' it' : ''}">${esc(pg.k === 'legacy' ? (e ? 'Why it matters' : 'Why they matter') : pg.t)}</h2>`;
+    if (who) h += `<div class="sv-life">${esc(who.name)}${lifeText(who) ? ', ' + esc(lifeText(who)) : ''}</div>`;
+    if (pg.k === 'cost' && pg.num) h += `<p class="sv-num"><b>${esc(pg.num)}</b>${pg.of ? `<span>${esc(pg.of)}</span>` : ''}</p>`;
+    h += `<p class="sv-x">${esc(pg.x)}</p>`;
     if (pg.k === 'made' && pg.fx) h += `<div class="sv-fx"><b>What it changed</b><p>${esc(pg.fx)}</p></div>`;
     if (pg.k === 'legacy' && pg.pts && pg.pts.length) h += `<ul class="sv-pts">${pg.pts.map(t => `<li>${svIco('legacy')}<span>${esc(t)}</span></li>`).join('')}</ul>`;
-    if (pg.k === 'song') h += svSongHtml(pg, p);
-    const row = [], src = pg.img && simg[pg.img];
+    if (pg.k === 'song') h += svSongHtml(pg, s);
+    if (who && hasStory(who.id) && who.id !== s.id) h += `<div class="sv-row"><button type="button" class="sv-listen" data-sv="who">${svIco('play')}<span>Watch their story</span></button></div>`;
+    const row = [], pt = pagePic(pg), src = pt && simg[pt];
     if (pg.at) row.push(`<button type="button" class="sv-place" data-sv="map" title="Show this on the map">${globeSvg(pg.at)}<span>${esc(pg.wh || 'On the map')}</span></button>`);
     if (pg.cap && src) row.push(`<span class="sv-cap">${esc(pg.cap)}</span>`);
-    if (src) row.push(`<a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">Picture credit</a>`);
+    if (src) row.push(`<a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">${pg.img ? 'Picture' : 'Portrait'} credit</a>`);
     if (row.length) h += `<div class="sv-row">${row.join('')}</div>`;
     if (pg.k === 'legacy') {
-      const nx = personById[SV.queue[SV.qi + 1]];
-      h += `<div class="sv-end">${nx ? `<button type="button" class="pri" data-sv="next">Next: ${esc(shortName(nx))}</button>` : ''}<button type="button" data-sv="again">Watch again</button>` +
-        `<button type="button" data-sv="person">See them on the map</button>${p.wiki ? `<a href="${esc(wikiUrl(p.wiki))}" target="_blank" rel="noopener">Read more</a>` : ''}</div>`;
+      const nx = subj(SV.queue[SV.qi + 1]);
+      const map = !e ? `<button type="button" data-sv="person">See them on the map</button>` : e.war && warById[e.war] ? `<button type="button" data-sv="war">Follow the war on the map</button>` : e.at ? `<button type="button" data-sv="place">See it on the map</button>` : '';
+      h += `<div class="sv-end">${nx ? `<button type="button" class="pri" data-sv="next">Next: ${esc(nx.short)}</button>` : ''}<button type="button" data-sv="again">Watch again</button>` +
+        `${map}${s.wiki ? `<a href="${esc(wikiUrl(s.wiki))}" target="_blank" rel="noopener">Read more</a>` : ''}</div>`;
     }
     return h;
   }
-  function svSongHtml(pg, p) {
-    const elsewhere = `<a class="sv-listen" href="${esc(pg.listen || 'https://www.youtube.com/results?search_query=' + encodeURIComponent(p.name + ' ' + pg.t))}" target="_blank" rel="noopener">${svIco('song')}<span>Listen to it</span></a>`;
+  function svSongHtml(pg, s) {
+    const elsewhere = `<a class="sv-listen" href="${esc(pg.listen || 'https://www.youtube.com/results?search_query=' + encodeURIComponent(s.name + ' ' + pg.t))}" target="_blank" rel="noopener">${svIco('song')}<span>Listen to it</span></a>`;
     if (!pg.au) return `<div class="sv-au">${elsewhere}<span class="sv-aut">Still under copyright, so it plays on another site.</span></div>`;
     const r = SV.recs[SV.i];
     if (r === undefined) return `<div class="sv-au"><span class="sv-eq off"><i></i><i></i><i></i><i></i><i></i></span><span class="sv-aut">Finding a recording…</span></div>`;
@@ -1854,41 +2121,43 @@ details[open] summary { margin-bottom: 6px; }
       `<span class="sv-eq"><i></i><i></i><i></i><i></i><i></i></span><span class="sv-aut">${SV.muted ? 'Sound is off' : 'Playing'} · a free recording from <a href="${esc(wikiUrl(r.file, 'commons.wikimedia.org'))}" target="_blank" rel="noopener">Wikimedia Commons</a></span></div>`;
   }
   function svRender(anim = true) {
-    const pg = SV.pages[SV.i], p = SV.p; if (!pg) return;
+    const pg = SV.pages[SV.i], s = SV.s; if (!pg) return;
     SV.ended = false;
     svCard.dataset.k = pg.k;
     svBody.className = 'sv-body k-' + pg.k;
     svPic();
-    svBody.innerHTML = svPageHtml(pg, p);
+    svBody.innerHTML = svPageHtml(pg, s);
     svFit();
     if (anim && !reduce()) { void svBody.offsetWidth; svBody.classList.add('in'); }
-    $('svCount').textContent = `${p.name}, page ${SV.i + 1} of ${SV.pages.length}`;
-    const nx = SV.pages[SV.i + 1], ns = nx && picOf(nx.img); if (ns) new Image().src = ns;
+    $('svCount').textContent = `${s.name}, page ${SV.i + 1} of ${SV.pages.length}`;
+    const nx = SV.pages[SV.i + 1], ns = nx && picOf(pagePic(nx)); if (ns) new Image().src = ns;
     svSound(pg);
     SV.dur = svDur(pg);
     svStartBar(); svSync();
   }
-  function svHead(p) {
-    const src = imgOf(p) || picOf(p.wiki);
-    $('svAv').innerHTML = src ? `<img src="${esc(src)}" alt="">` : esc(initials(p.name));
-    $('svName').textContent = p.name; $('svLife').textContent = lifeText(p);
+  function svHead(s) {
+    const e = s.e, src = e ? picOf(s.pic) || imgOf({ wiki: s.pic }) : imgOf(s.p) || picOf(s.pic);
+    $('svAv').innerHTML = src ? `<img src="${esc(src)}" alt="">` : e ? evIco(e.ic) : esc(initials(s.name));
+    $('svAv').classList.toggle('ev', !!e); $('svAv').style.setProperty('--fc', e ? EV_TINT[e.ic] || EV_TINT.star : '');
+    $('svName').textContent = s.name; $('svLife').textContent = s.life;
+    $('svWho').title = e ? (e.war || e.at ? 'Show it on the map' : '') : 'Show them on the map';
     $('svMute').hidden = !SV.pages.some(pg => pg.k === 'song' && pg.au);
-    const pv = personById[SV.queue[SV.qi - 1]], nx = personById[SV.queue[SV.qi + 1]];
+    const pv = subj(SV.queue[SV.qi - 1]), nx = subj(SV.queue[SV.qi + 1]);
     $('svPrevS').classList.toggle('off', !pv); $('svNextS').classList.toggle('off', !nx);
     $('svPrevS').title = pv ? 'Previous story: ' + pv.name : ''; $('svNextS').title = nx ? 'Next story: ' + nx.name : '';
   }
   async function svLoad(id, start = 0) {
-    const p = personById[id], tok = ++SV.token;
-    SV.id = id; SV.p = p; SV.recs = {}; SV.i = 0; SV.loading = true;
-    SV.pages = [{ k: 'cover', t: p.name, x: storyIdx[id] || p.why }];
-    svHead(p); svBarsHtml(); svRender(false);
+    const s = subj(id), p = s.p || null, tok = ++SV.token;
+    SV.id = id; SV.s = s; SV.p = p; SV.recs = {}; SV.i = 0; SV.loading = true;
+    SV.pages = [{ k: 'cover', t: s.name, x: s.e ? s.e.hook : storyIdx[id] || p.why }];
+    svHead(s); svBarsHtml(); svRender(false);
     const fresh = () => {   // pictures came in: show the one for this page, and its credit
       if (tok !== SV.token || !SV.open) return;
-      svHead(p);
+      svHead(s);
       const pg = SV.pages[SV.i]; if (!pg) return;
-      svPic(); svBody.classList.remove('in'); svBody.innerHTML = svPageHtml(pg, p); svFit();
+      svPic(); svBody.classList.remove('in'); svBody.innerHTML = svPageHtml(pg, s); svFit();
     };
-    storyImages([p.wiki]).then(fresh);
+    storyImages([s.pic]).then(fresh);
     let d;
     try { d = await loadStory(id); } catch (e) {
       if (tok !== SV.token) return;
@@ -1897,20 +2166,20 @@ details[open] summary { margin-bottom: 6px; }
       return;
     }
     if (tok !== SV.token) return;
-    SV.pages = [{ k: 'cover', t: p.name, x: d.hook }].concat(d.pages);
+    SV.pages = [{ k: 'cover', t: s.name, x: d.hook || SV.pages[0].x }].concat(d.pages);
     SV.loading = false; markSeen(id);
     SV.pages.forEach((pg, i) => { if (pg.k === 'song' && pg.au) findRecording(pg.au).then(r => { if (tok === SV.token && SV.recs[i] === undefined) SV.recs[i] = r; }); });
-    const titles = [...new Set([p.wiki, ...SV.pages.map(pg => pg.img)].filter(Boolean))];
+    const titles = [...new Set([s.pic, ...SV.pages.map(pagePic)].filter(Boolean))];
     storyImages(titles.slice(0, 3)).then(fresh).then(() => storyImages(titles)).then(fresh);
     SV.i = clamp(start, 0, SV.pages.length - 1);
-    svHead(p); svBarsHtml(); svRender();
+    svHead(s); svBarsHtml(); svRender();
     const nx = SV.queue[SV.qi + 1]; if (nx) loadStory(nx).catch(() => {});
   }
   function openStory(id, o = {}) {
-    if (!hasStory(id) || !personById[id]) return;
+    if (!hasStory(id) || !subj(id)) return;
     stopPlay(); hideTip();
-    const q = [...new Set((o.queue || [id]).filter(x => hasStory(x) && personById[x]))]; if (!q.includes(id)) q.unshift(id);
-    SV.queue = q; SV.qi = q.indexOf(id);
+    const q = [...new Set((o.queue || [id]).filter(x => hasStory(x) && subj(x)))]; if (!q.includes(id)) q.unshift(id);
+    SV.queue = q; SV.qi = q.indexOf(id); SV.resume = {};
     if (!SV.open) {
       SV.opener = document.activeElement; SV.open = true; SV.paused = false; SV.hold = false;
       svEl.hidden = false; document.querySelector('.app').inert = true;
@@ -1956,7 +2225,7 @@ details[open] summary { margin-bottom: 6px; }
     const qi = SV.qi + dir;
     if (qi < 0 || qi >= SV.queue.length) { if (dir > 0) svClose(); return; }
     SV.qi = qi;
-    const go = () => { if (SV.open) svLoad(SV.queue[qi], 0); };
+    const go = () => { if (SV.open) svLoad(SV.queue[qi], (SV.resume || {})[qi] || 0); };
     if (reduce()) return go();
     svQuiet();
     svCard.animate([{ transform: 'none', opacity: 1 }, { transform: `translateX(${-dir * 40}px)`, opacity: 0 }], { duration: 140, easing: 'ease-in' }).onfinish = () => {
@@ -1968,7 +2237,7 @@ details[open] summary { margin-bottom: 6px; }
     if (SV.audio) SV.audio.muted = SV.muted;
     svSync();
     const au = svBody.querySelector('.sv-au'), pg = SV.pages[SV.i];
-    if (au && pg && pg.k === 'song') au.outerHTML = svSongHtml(pg, SV.p);
+    if (au && pg && pg.k === 'song') au.outerHTML = svSongHtml(pg, SV.s);
   }
   function svToggle() { if (SV.ended) return svGo(0); SV.paused = !SV.paused; svSync(); }
   // a page's place: back on the map, at that year, with a pin
@@ -2036,7 +2305,23 @@ details[open] summary { margin-bottom: 6px; }
   $('svPause').onclick = svToggle;
   $('svMute').onclick = svMute;
   const svToPerson = () => { const p = SV.p; svClose(); if (p) { selectPerson(p); focusPerson(p); } };
-  $('svWho').onclick = svToPerson;
+  // an event's story leads back to the map: its war, followed step by step, or the place and year it happened
+  function svToEvent() {
+    const e = SV.s && SV.s.e; if (!e) return;
+    const w = e.war && warById[e.war];
+    if (w) { svClose(); enterWar(w, 0); }
+    else if (e.at) svShowPlace({ at: e.at, y: e.from, wh: e.wh, t: e.name });
+  }
+  $('svWho').onclick = () => SV.s && SV.s.e ? svToEvent() : svToPerson();
+  // someone in an event's story who has a story of their own: theirs plays next, then the event goes on from the page
+  // after theirs (and going back from their story returns to their page)
+  function svToWho() {
+    const pg = SV.pages[SV.i], id = pg && pg.who; if (!hasStory(id)) return;
+    SV.queue.splice(SV.qi + 1, 0, id, SV.id);
+    const r = {}; for (const k in SV.resume) r[+k > SV.qi ? +k + 2 : k] = SV.resume[k];
+    SV.resume = { ...r, [SV.qi]: SV.i, [SV.qi + 2]: SV.i + 1 };
+    svStory(1);
+  }
   svBody.addEventListener('click', e => {
     const b = e.target.closest('[data-sv]'); if (!b) return;
     const a = b.dataset.sv, pg = SV.pages[SV.i];
@@ -2045,6 +2330,8 @@ details[open] summary { margin-bottom: 6px; }
     else if (a === 'next') svStory(1);
     else if (a === 'again') svGo(0);
     else if (a === 'person') svToPerson();
+    else if (a === 'war' || a === 'place') svToEvent();
+    else if (a === 'who') svToWho();
   });
   addEventListener('keydown', e => {
     if (!SV.open) return;
@@ -2724,6 +3011,8 @@ details[open] summary { margin-bottom: 6px; }
       const sideName = i => w.sides[i] ? esc(w.sides[i].name) : '';
       head = `<p class="kicker">${esc(w.name)} · ${fmtSpan(w.start, w.end)}</p><p class="period">${esc(st.title)}</p><div class="meta">${esc(st.label)} · ${w.kind === 'conflict' ? 'chapter' : 'step'} ${S.step + 1} of ${w.steps.length}</div>`;
       html += `<div class="sides">${w.sides.map(x => `<div class="sd"><i class="swatch" style="background:${x.color}"></i><b>${esc(x.name)}</b>${x.leaders?.length ? `<span class="ld">${x.leaders.map(esc).join(', ')}</span>` : ''}</div>`).join('')}</div>`;
+      const wev = evOfWar[w.id];   // the war told as a story, a page at a time
+      if (wev) html += `<button type="button" class="storybtn" data-story-person="ev:${wev.id}">${svIco('play')}<span>Watch the story of the war</span></button>`;
       html += `<p class="syn">${esc(st.text)}</p>`;
       if (st.moves?.length) html += '<div class="sec"><h3>On the move</h3><div class="list">' + st.moves.map(m => {
         // a general worth knowing gets a face and a name; any other army is listed by what it was
@@ -2772,6 +3061,7 @@ details[open] summary { margin-bottom: 6px; }
         html += flagBlock(f);
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
+        html += eventStoryRow(f);
         html += regionBlock(p.regions[0], true);
         p.regions.slice(1).forEach(r => html += regionBlock(r, false));
         if (storyOf(fa)) html += storyCard(storyOf(fa), 'Follow how this faith spread');
@@ -2842,11 +3132,11 @@ details[open] summary { margin-bottom: 6px; }
     // a ringed face opens that person's story; the other stories in the same list come after it
     const sp = e.target.closest('[data-story-person]');
     if (sp) {
-      const id = sp.dataset.storyPerson, p = personById[id];
-      if (!p || !hasStory(id)) return;
+      const id = sp.dataset.storyPerson, p = personById[id];   // a person, or an event ("ev:...")
+      if (!hasStory(id) || !subj(id)) return;
       const box = sp.closest('[data-queue]');
       const q = box ? box.dataset.queue.split(' ') : [...new Set([...(sp.closest('.people, .list') || $('panelBody')).querySelectorAll('[data-story-person]')].map(x => x.dataset.storyPerson))];
-      if (!box && !S.detail && S.person !== id) { selectPerson(p); focusPerson(p); }
+      if (!box && !S.detail && p && S.person !== id) { selectPerson(p); focusPerson(p); }
       openStory(id, { queue: q, from: e });
       return;
     }
@@ -3270,6 +3560,178 @@ details[open] summary { margin-bottom: 6px; }
       const t = ts / 1000; drawSea(t); drawFx(t, dt);
     }
     if (!reduce()) ambRaf = requestAnimationFrame(loop);
+  }
+
+  // ---------- discovery ----------
+  // The great scientists, mathematicians, inventors, philosophers and artists among the people with a story, century by
+  // century. data/discovery.json (content/stories/build_discovery.py) lists each with their fields, what they were, what
+  // they are known for and the year of it, which puts them in their century. The Discovery button opens the list over
+  // the map at the map's own century; a name opens that person's story, and "next story" carries on down the list.
+  // Anyone listed whose story is not there yet is left out until it is.
+  const DC = { open: false, list: [], fields: {}, f: fromStore('wtt-disc-f', '"all"'), year: null, top: 0, raf: 0, back: null };
+  const dcEl = $('dc'), dcCard = $('dcCard'), dcBody = $('dcBody'), dcRail = $('dcRail'), dcFil = $('dcFil');
+  const gearPath = 'M' + d3.range(8).flatMap(i => [[6.3, -17], [8.9, -10], [8.9, 10], [6.3, 17]].map(([r, o]) => {
+    const a = i * Math.PI / 4 + o * Math.PI / 180; return (12 + r * Math.cos(a)).toFixed(2) + ' ' + (12 + r * Math.sin(a)).toFixed(2);
+  })).join('L') + 'z';
+  const LN = 'fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"';
+  const FIELD_ICO = {
+    sci: `<path ${LN} stroke-width="1.8" d="M9.5 3h5M10.5 3v6.2L5 18.6a1.8 1.8 0 0 0 1.6 2.7h10.8a1.8 1.8 0 0 0 1.6-2.7L13.5 9.2V3M7.6 15h8.8"/>`,
+    math: `<path ${LN} stroke-width="2" d="M4.5 8.2c1.3-2 2.9-2.6 4.9-2.6h10.1M10 5.6v7.6c0 3.1-1.1 5.3-2.8 6.9M15.4 5.6v10.2c0 2.4.9 3.9 3.1 3.9"/>`,
+    inv: `<path ${LN} stroke-width="1.6" d="${gearPath}"/><circle ${LN} stroke-width="1.6" cx="12" cy="12" r="2.7"/>`,
+    phil: `<path ${LN} stroke-width="1.7" d="M3.8 8.4L12 3.9l8.2 4.5zM5 10.4h14M6.8 12.4v5.6M10.3 12.4v5.6M13.7 12.4v5.6M17.2 12.4v5.6M4.2 20.2h15.6"/>`,
+    art: `<path ${LN} stroke-width="1.7" d="M12 3.2a8.8 8.8 0 1 0 0 17.6c1.1 0 1.9-.8 1.9-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.8-.5-1.2 0-1 .8-1.8 1.8-1.8h2.1a4 4 0 0 0 4-4c0-4.3-3.9-7.6-8.8-7.6z"/><g fill="currentColor"><circle cx="7.4" cy="11.6" r="1.4"/><circle cx="9.6" cy="7.4" r="1.4"/><circle cx="14.4" cy="7.2" r="1.4"/></g>`,
+  };
+  // centuries as numbers that keep time's order: -6 is the 6th century BC (600 to 501 BC), 17 the 1600s
+  const ordinal = n => n + (n % 100 > 10 && n % 100 < 14 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
+  const centOf = y => y < 0 ? -Math.ceil(-y / 100) : Math.floor(y / 100) + 1;
+  const centName = c => ordinal(Math.abs(c)) + ' century' + (c < 0 ? ' BC' : '');
+  const centShort = c => ordinal(Math.abs(c)) + (c < 0 ? ' BC' : '');
+  const centSpan = c => c < 0 ? `${-c * 100} to ${-c * 100 - 99} BC` : c === 1 ? 'AD 1 to 99' : (c < 11 ? 'AD ' : '') + (c - 1) * 100 + 's';
+  const dcWhen = e => e.when != null ? e.when : (e.c ? 'c. ' : '') + fmtYear(e.y);
+  opt('discovery.json').then(j => {
+    if (!j || !j.people || !j.people.length) return;
+    DC.list = j.people; DC.fields = j.fields || {};
+    if (DC.f !== 'all' && !DC.fields[DC.f]) DC.f = 'all';
+    $('discover').hidden = $('discoverP').hidden = false;
+  });
+  const dcAll = () => DC.list.filter(e => personById[e.id] && hasStory(e.id));
+  function dcFilters(all) {
+    dcFil.innerHTML = [['all', 'All', all.length]].concat(Object.entries(DC.fields).map(([f, name]) => [f, name, all.filter(e => e.f.includes(f)).length]))
+      .filter(([f, , n]) => n || f === 'all').map(([f, name, n]) => `<button type="button" data-f="${esc(f)}" aria-pressed="${DC.f === f}">` +
+        `${FIELD_ICO[f] ? `<svg viewBox="0 0 24 24" aria-hidden="true">${FIELD_ICO[f]}</svg>` : ''}${esc(name)} <span class="n">${n}</span></button>`).join('');
+  }
+  // the list for the chosen field, a section per century; the rail beside it (on a phone, the strip above it) jumps to one
+  function dcList(all) {
+    const shown = all.filter(e => DC.f === 'all' || e.f.includes(DC.f)), groups = d3.groups(shown, e => centOf(e.y)), mapC = centOf(S.year);
+    dcRail.innerHTML = '<h4>Century</h4>' + groups.map(([c, es]) => `<button type="button" data-c="${c}" aria-label="${esc(centName(c))}: ${es.length}"${c === mapC ? ` class="map" title="The map is in the ${esc(centName(c))}"` : ''}>${esc(centShort(c))}<span class="n">${es.length}</span></button>`).join('');
+    dcBody.dataset.queue = shown.map(e => e.id).join(' ');
+    dcBody.innerHTML = groups.map(([c, es]) => `<section class="dc-c" data-c="${c}" aria-labelledby="dcc${c}"><h3 id="dcc${c}">${esc(centName(c))} <small>${esc(centSpan(c))}</small></h3><div class="dc-list">` +
+      es.map(e => {
+        const p = personById[e.id], w = dcWhen(e);
+        return `<button type="button" class="dc-p" data-story-person="${esc(e.id)}" title="${esc(p.name)}: ${esc(storyIdx[e.id])}">${faceHtml(p, p.name).replace('<span ', '<span aria-hidden="true" ')}` +
+          `<span class="dc-t"><b>${esc(p.name)}</b><span class="dc-as">${esc(e.as)}</span><span class="dc-k">${w ? `<span class="yr">${esc(w)}</span> ` : ''}${esc(e.k)}</span></span></button>`;
+      }).join('') + '</div></section>').join('') +
+      `<p class="dc-end" id="dcEnd">${!all.length ? 'The stories are still loading.' : DC.f === 'all'
+        ? `${shown.length} of the ${Object.keys(storyIdx).length} people with a story on the map. The others are rulers, explorers, generals, leaders and more; every ringed face on the map has a story.`
+        : `${shown.length} of the ${all.length} great minds here are ${esc((DC.fields[DC.f] || '').toLowerCase())}.`}</p>`;
+    dcTail();
+  }
+  // room after the last century, so that a jump to it brings its heading to the top like any other
+  function dcTail() {
+    const end = $('dcEnd'), secs = dcBody.querySelectorAll('.dc-c'), last = secs[secs.length - 1];
+    if (end) end.style.minHeight = last ? Math.max(0, dcBody.clientHeight - last.offsetHeight) + 'px' : '';
+  }
+  const dcSecs = () => [...dcBody.querySelectorAll('.dc-c')].map(s => [+s.dataset.c, s]);
+  // the century at the top of the list, and the one to show for a century: itself, or the nearest earlier one listed
+  function dcAt() { let c = null; for (const [x, s] of dcSecs()) { if (s.offsetTop <= dcBody.scrollTop + 4 || c == null) c = x; else break; } return c; }
+  function dcNear(c) { let best = null; for (const [x] of dcSecs()) { if (best == null || x <= c) best = x; else break; } return best; }
+  function dcGoTo(c, smooth) {
+    const s = dcBody.querySelector(`.dc-c[data-c="${c}"]`); if (!s) return;
+    const top = s.offsetTop, d = top - dcBody.scrollTop, h = dcBody.clientHeight;
+    if (!smooth || reduce()) return void (dcBody.scrollTop = top);
+    if (Math.abs(d) > 2 * h) dcBody.scrollTop = top - Math.sign(d) * h;   // a long way: most of it at once, the rest smoothly
+    dcBody.scrollTo({ top, behavior: 'smooth' });
+  }
+  // mark the century in view on the rail, and keep it in sight there
+  function dcSpy() {
+    DC.raf = 0;
+    const c = dcAt();
+    for (const b of dcRail.querySelectorAll('button')) {
+      const on = +b.dataset.c === c;
+      if (on === (b.getAttribute('aria-current') === 'true')) continue;
+      if (!on) { b.removeAttribute('aria-current'); continue; }
+      b.setAttribute('aria-current', 'true');
+      const r = dcRail, beh = reduce() ? 'auto' : 'smooth';
+      if (r.scrollWidth > r.clientWidth + 1) r.scrollTo({ left: b.offsetLeft - (r.clientWidth - b.offsetWidth) / 2, behavior: beh });
+      else if (b.offsetTop < r.scrollTop || b.offsetTop + b.offsetHeight > r.scrollTop + r.clientHeight) r.scrollTo({ top: b.offsetTop - (r.clientHeight - b.offsetHeight) / 2, behavior: beh });
+    }
+  }
+  // bring a name into view below its century's heading
+  function dcShowRow(b) {
+    const top = b.offsetTop, h = b.offsetHeight, head = 64;
+    if (top < dcBody.scrollTop + head) dcBody.scrollTop = top - head;
+    else if (top + h > dcBody.scrollTop + dcBody.clientHeight) dcBody.scrollTop = top + h - dcBody.clientHeight + 8;
+  }
+  const dcStill = () => [dcCard, $('dcDim')].forEach(el => el.getAnimations().forEach(a => a.cancel()));
+  function dcOpen() {
+    if (DC.open || !DC.list.length) return;
+    stopPlay(); hideTip();
+    DC.open = true; DC.back = document.activeElement;
+    dcStill();   // it was still closing
+    dcEl.hidden = false; document.querySelector('.app').inert = true;
+    $('discover').setAttribute('aria-expanded', 'true'); $('discoverP').setAttribute('aria-expanded', 'true');
+    const all = dcAll(); dcFilters(all); dcList(all);
+    // back where the list was left if the map has not moved since; otherwise at the map's century
+    if (DC.year === S.year && DC.top) dcBody.scrollTop = DC.top; else dcGoTo(dcNear(centOf(S.year)));
+    dcSpy();
+    if (!reduce()) {
+      dcCard.animate(isPhone() ? [{ transform: 'translateY(48px)', opacity: 0 }, { transform: 'none', opacity: 1 }] : [{ transform: 'scale(.96)', opacity: 0 }, { transform: 'none', opacity: 1 }],
+        { duration: 260, easing: 'cubic-bezier(.2,.85,.25,1)' });
+      $('dcDim').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220 });
+    }
+    dcBody.focus({ preventScroll: true });
+    if (!all.length) setTimeout(function wait() {   // the stories' own list was still loading
+      if (!DC.open) return;
+      const a = dcAll(); if (!a.length) return void setTimeout(wait, 300);
+      dcFilters(a); dcList(a); dcGoTo(dcNear(centOf(S.year))); dcSpy();
+    }, 300);
+  }
+  function dcClose(now) {
+    if (!DC.open) return;
+    DC.open = false; DC.year = S.year; DC.top = dcBody.scrollTop;
+    $('discover').setAttribute('aria-expanded', 'false'); $('discoverP').setAttribute('aria-expanded', 'false');
+    const done = () => {
+      if (DC.open) return;   // opened again while it was closing
+      dcEl.hidden = true; dcStill();
+      if (!SV.open) document.querySelector('.app').inert = false;
+      const b = DC.back; if (!now && b && b !== document.body && b.isConnected && b.focus) b.focus({ preventScroll: true });
+    };
+    if (now === true || reduce()) return done();
+    dcCard.animate([{ opacity: 1, transform: 'none' }, { opacity: 0, transform: isPhone() ? 'translateY(40px)' : 'scale(.97)' }], { duration: 160, easing: 'ease-in', fill: 'forwards' }).onfinish = done;
+    $('dcDim').animate([{ opacity: 1 }, { opacity: 0 }], { duration: 160, fill: 'forwards' });
+  }
+  $('discover').onclick = $('discoverP').onclick = () => DC.open ? dcClose() : dcOpen();
+  $('dcX').onclick = () => dcClose();
+  $('dcDim').onclick = () => dcClose();
+  dcFil.addEventListener('click', e => {
+    const b = e.target.closest('[data-f]'); if (!b || b.dataset.f === DC.f) return;
+    const at = dcAt();
+    DC.f = b.dataset.f; toStore('wtt-disc-f', DC.f);
+    dcFil.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.f === DC.f)));
+    dcList(dcAll()); dcGoTo(dcNear(at != null ? at : centOf(S.year))); dcSpy();
+  });
+  dcRail.addEventListener('click', e => { const b = e.target.closest('[data-c]'); if (b) dcGoTo(+b.dataset.c, true); });
+  dcBody.addEventListener('click', e => {
+    const b = e.target.closest('[data-story-person]'); if (!b) return;
+    openStory(b.dataset.storyPerson, { queue: (dcBody.dataset.queue || '').split(' ').filter(Boolean), from: e });
+  });
+  dcBody.addEventListener('scroll', () => { if (!DC.raf) DC.raf = requestAnimationFrame(dcSpy); }, { passive: true });
+  addEventListener('resize', () => { if (DC.open) { dcTail(); dcSpy(); } });
+  addEventListener('keydown', e => {
+    if (!DC.open || SV.open) return;
+    if (e.key === 'Escape') { e.preventDefault(); e.stopImmediatePropagation(); dcClose(); }
+    // space scrolls the list, and doesn't play the map behind it
+    else if (e.key === ' ' && !(e.target.closest && e.target.closest('button, a, input, summary'))) e.stopImmediatePropagation();
+  }, true);
+  // a story opened from the list: when it closes, the list is still there, its rings up to date and the last story's
+  // name in view. A story that sends the reader to the map (a page's place, "see them on the map", or an event story's
+  // war or place) closes the list too.
+  new MutationObserver(() => {
+    if (!svEl.hidden || !DC.open) return;
+    document.querySelector('.app').inert = true;   // closing the story woke the map behind the list
+    for (const b of dcBody.querySelectorAll('.dc-p')) { const f = b.querySelector('.face'); if (f) f.classList.toggle('seen', seenStories.has(b.dataset.storyPerson)); }
+    const b = SV.id && [...dcBody.querySelectorAll('.dc-p')].find(x => x.dataset.storyPerson === SV.id);
+    if (b) { dcShowRow(b); b.focus({ preventScroll: true }); }
+  }).observe(svEl, { attributes: true, attributeFilter: ['hidden'] });
+  $('svWho').addEventListener('click', () => dcClose(true));
+  svBody.addEventListener('click', e => { if (e.target.closest('[data-sv="map"], [data-sv="person"], [data-sv="war"], [data-sv="place"]')) dcClose(true); });
+  // portraits that arrive while the list is open
+  function dcFaces() {
+    if (!DC.open) return;
+    for (const b of dcBody.querySelectorAll('.dc-p')) {
+      const f = b.querySelector('.face'), src = imgOf(personById[b.dataset.storyPerson]);
+      if (f && src && !f.querySelector('img')) f.innerHTML = `<img src="${esc(src)}" alt="" loading="lazy">`;
+    }
   }
 
   // ---------- start ----------
