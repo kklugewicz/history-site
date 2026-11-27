@@ -1568,11 +1568,30 @@ details[open] summary { margin-bottom: 6px; }
   // the names a state goes by: its own, then the other states of its country through time once the country timelines'
   // lineages have loaded, so the Ming Empire's row takes in the rest of China's. Only the country's own states count,
   // not the ones its timeline borrows for a while ("~" names: the British Raj in Burma's, the Great Khanate in
-  // Mongolia's), as most of their people lived elsewhere in them.
+  // Mongolia's), as most of their people lived elsewhere in them; those who lived on the country's own land under one
+  // come in through borrowedHere.
   function countryNames(f) {
     const n = f.properties.name, line = typeof lineageOf === 'function' ? lineageOf(n) : null, out = [n];
     if (line && line.periods) for (const p of line.periods) for (const s of p.states || []) if (s[0] !== '~' && !out.includes(s)) out.push(s);
     return out;
+  }
+  // Whether a country's timeline borrows a state in a year, or in the period before (the border snapshots lag the
+  // dates, so Florence is still drawn in the Holy Roman Empire after 1494, when Italy's timeline stops borrowing it).
+  function borrowsNear(l, name, y) {
+    const ps = l.periods || [], b = '~' + name, i = ps.findIndex((p, j) => j + 1 === ps.length || ps[j + 1].from > y);
+    return ps.slice(Math.max(0, i - 1), i + 1).some(p => (p.states || []).includes(b));
+  }
+  // A place someone lived in, in a state at home in another country, on land that is now this country's (a tie's place
+  // today and its point: [state, from, to, 'h', state there today, lon, lat]). Leonardo's Florence was drawn inside the
+  // Holy Roman Empire, Germany's, while Italy's timeline borrows the Empire: Florence makes him one of Italy's. For the
+  // state's own country such a place only counts while they are there, unless it lies about as near that country's
+  // heartland (Pythagoras' Croton and Archimedes' Syracuse stay Greek, and are Italy's too).
+  const todayLine = t => t[4] ? lineageOf(t[4], fileYear(timeline.borderFiles[timeline.borderFiles.length - 1])) : null;
+  const coreGap = (l, t) => l.core ? Math.hypot((t[5] - l.core[0]) * Math.cos((t[6] + l.core[1]) * Math.PI / 360), t[6] - l.core[1]) : Infinity;   // degrees
+  const borrowedHere = (t, line, ty) => t[3] === 'h' && todayLine(t) === line && borrowsNear(line, t[0], ty);
+  function livedElsewhere(t, line, ty) {
+    const b = t[3] === 'h' ? todayLine(t) : null;
+    return !!b && b !== line && borrowsNear(b, t[0], ty) && coreGap(b, t) < 0.85 * coreGap(line, t);
   }
   // A row item: { id: what openStory takes, y: the year it is shown at (this year when now), now: whether it belongs to
   // this year, w: order among equals (0 a ruler of the state, 1 an event, 2 and up anyone else, by rank), title, html:
@@ -1581,20 +1600,23 @@ details[open] summary { margin-bottom: 6px; }
   const storyYear = (y, now) => `<span class="y${now ? ' now' : ''}">${now ? 'now' : esc(fmtYear(y))}</span>`;
   function personStoryItems(f) {
     const own = f.properties.name, names = new Set(countryNames(f)), y = S.year, out = [];
-    const line = names.size > 1 ? lineageOf(own) : null;
+    const line = typeof lineageOf === 'function' ? lineageOf(own) : null;
     for (const id in storyIdx) {
       const p = personById[id]; if (!p) continue;
-      let best = null, bd = Infinity;
+      let best = null, bk = null, bd = Infinity;
       for (const t of storyTies[id] || []) {   // [state, from, to, 'r' ruled it, 'h' lived or stopped there, 'p' there in passing]
-        if (!names.has(t[0])) continue;
-        if (line && t[0] !== own && lineageOf(t[0], clamp(y, t[1], t[2])) !== line) continue;   // a name another country used in those years
+        const ty = clamp(y, t[1], t[2]);
+        let k = t[3];
+        if (names.has(t[0]) && (!line || t[0] === own || lineageOf(t[0], ty) === line)) {   // not a name another country used in those years
+          if (line && livedElsewhere(t, line, ty)) k = 'p';
+        } else if (!line || !borrowedHere(t, line, ty)) continue;
         const d = y < t[1] ? t[1] - y : y > t[2] ? y - t[2] : 0;
-        if (t[3] === 'p' && d) continue;   // passing through only counts for its own years
-        if (d < bd || (d === bd && KIND_W[t[3]] < KIND_W[best[3]])) { bd = d; best = t; }
+        if (k === 'p' && d) continue;   // passing through only counts for its own years
+        if (d < bd || (d === bd && KIND_W[k] < KIND_W[bk])) { bd = d; best = t; bk = k; }
       }
       if (!best) continue;
       const now = bd === 0, at = now ? y : y < best[1] ? best[1] : best[2];
-      out.push({ id, y: at, now, w: KIND_W[best[3]] + (best[3] === 'r' ? 0 : (p.rank || 3) / 10), title: p.name + ': ' + storyIdx[id],
+      out.push({ id, y: at, now, w: KIND_W[bk] + (bk === 'r' ? 0 : (p.rank || 3) / 10), title: p.name + ': ' + storyIdx[id],
         html: faceHtml(p, p.name) + `<span class="n">${esc(shortName(p))}</span>` + storyYear(at, now) });
     }
     return out;
