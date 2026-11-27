@@ -134,4 +134,6 @@ C.update({
     'portsmouth_nh': (-70.76, 43.07), 'culebra_cut': (-79.65, 9.05), 'belfast': (-5.93, 54.6),
     'southampton': (-1.4, 50.9), 'titanic_wreck': (-49.95, 41.73), 'columbus_nm': (-107.64, 31.83),
     'ladysmith': (29.78, -28.56),
+    'deir_ez_zor': (40.14, 35.33), 'brest_litovsk': (23.69, 52.1), 'camp_funston': (-96.78, 39.07),
+    'dunkirk': (2.38, 51.03),
 })

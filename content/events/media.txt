@@ -10,7 +10,12 @@ Anak Krakatoa
 Ancient Olympic Games
 Ancient Olympic pentathlon
 Arch of Titus
+Armenian genocide
+Armistice of 11 November 1918
 Assassination of Julius Caesar
+Atomic bombings of Hiroshima and Nagasaki
+Attack on Pearl Harbor
+Auschwitz concentration camp
 Baburnama
 Bartolomé de las Casas
 Battle of Actium
@@ -43,6 +48,7 @@ Battle of Sedan
 Battle of Sekigahara
 Battle of Sinop
 Battle of Solferino
+Battle of Stalingrad
 Battle of Tours
 Battle of Trafalgar
 Battle of Tsushima
@@ -52,6 +58,7 @@ Battle of Yarmouk
 Battle of Zama
 Battle of the Alamo
 Battle of the Milvian Bridge
+Battle of the Somme
 Battles of Lexington and Concord
 Bayeux Tapestry
 Bennelong
@@ -62,6 +69,7 @@ Bombyx mori
 Boston Tea Party
 Boxer Rebellion
 Brookes (ship)
+Burma Road
 Burning of Washington
 Caesar's Rhine bridges
 California gold rush
@@ -71,6 +79,8 @@ Caravel
 Cato the Elder
 Charge of the Light Brigade
 Chinampa
+Chinese Civil War
+Christmas truce
 Clay tablet
 Columbian exchange
 Commentarii de Bello Gallico
@@ -88,6 +98,8 @@ Diamond Sutra
 Diary of Merer
 Diet of Worms
 Domesday Book
+Dunkirk evacuation
+Dust Bowl
 Edict of Milan
 Edicts of Ashoka
 Egyptian hieroglyphs
@@ -98,6 +110,7 @@ Epic of Gilgamesh
 Erdapfel
 Execution of Charles I
 Execution of Louis XVI
+Execution of the Romanov family
 Exhumation and reburial of Richard III of England
 Expedition of the Thousand
 Fall of Constantinople
@@ -110,10 +123,13 @@ Five Days of Milan
 Flagellant
 Frankfurt Parliament
 French invasion of Russia
+Gallipoli campaign
+Gareth Jones (journalist)
 Gettysburg Address
 Giuseppe Fiorelli
 Giza pyramid complex
 Gokstad ship
+Great Depression
 Great Enclosure
 Great Famine (Ireland)
 Great Pyramid of Giza
@@ -127,14 +143,17 @@ Hattusa
 Heikegani
 Heinrich Schliemann
 Helen of Troy
+Henry Morgenthau Sr.
 Herculaneum
 Himeji Castle
 Hispaniola
+Holodomor
 Homer
 Horses of Saint Mark
 Hōkūleʻa
 Iliad
 Indian Rebellion of 1857
+International Brigades
 Iwakura Mission
 Janissaries
 Jikji
@@ -143,23 +162,27 @@ John, King of England
 Josephus
 Kindred Spirits (sculpture)
 Krak des Chevaliers
+Kristallnacht
 Landing of Columbus
 Lapulapu
 Laskarina Bouboulina
 Lindisfarne
 Lion Capital of Ashoka
+Long March
 Lord Byron
 Louise Michel
 Luther Bible
 Lysistrata
 Magna Carta
 Mangal Pandey
+Marco Polo Bridge Incident
 Mary Seacole
 Masada
 Medinet Habu
 Meiji Restoration
 Mexican Revolution
 Mexican–American War
+Migrant Mother
 Milo of Croton
 Moai
 Mogao Caves
@@ -169,10 +192,12 @@ Mosque–Cathedral of Córdoba
 Napoleon Crossing the Alps
 Nemesis (1839)
 Ninety-five Theses
+Normandy landings
 Odyssey
 Olaudah Equiano
 Old Summer Palace
 Opening of the Suez Canal
+Operation Barbarossa
 Opium Wars
 Oseberg ship
 Padrão dos Descobrimentos
@@ -195,10 +220,14 @@ Polynesian navigation
 Pombaline style
 Pompeii
 Proclamation of the German Empire
+Proclamation of the People's Republic of China
 Proto-cuneiform
+Raphael Lemkin
+Rescue of the Danish Jews
 Revolutions of 1848
 Richard III (play)
 Romance of the Three Kingdoms
+Russian Revolution
 Russo-Japanese War
 Sack of Rome (410)
 Sack of Rome (455)
@@ -208,9 +237,11 @@ Scramble for Africa
 Sea Peoples
 Second Boer War
 Second Boer War concentration camps
+Second Sino-Japanese War
 Seven Wonders of the Ancient World
 Siege of Jerusalem (1099)
 Siege of Kazan
+Siege of Madrid
 Siege of Paris (1870–1871)
 Siege of Port Arthur
 Siege of Tyre (332 BC)
@@ -219,7 +250,9 @@ Siege of the International Legations
 Silk
 Silk Road
 Spanish Armada
+Spanish Civil War
 Spanish conquest of the Aztec Empire
+Spanish flu
 Spinning jenny
 Star-Spangled Banner (flag)
 Storming of the Bastille
@@ -235,6 +268,7 @@ The Charge of the Light Brigade (poem)
 The Coronation of Napoleon
 The Death of General Wolfe
 The Decameron
+The Holocaust
 The Iron Bridge
 The Massacre at Chios
 The Scream
@@ -257,9 +291,14 @@ Unification of Germany
 Universal Declaration of Human Rights
 Vercingetorix Throws Down His Arms at the Feet of Julius Caesar
 Victoria (ship)
+Wall Street Crash of 1929
 Walls of Constantinople
+Warsaw Ghetto Uprising
 Washington Crossing the Delaware
+Western Front (World War I)
 Western Wall
+Wilfred Owen
+World War II
 Wreck of the Titanic
 Wuchang uprising
 Yang Guifei
