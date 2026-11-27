@@ -47,6 +47,21 @@ SPARSE = {
 for k in set(SPARSE) - {z['id'] for z in zones}: print('  weight for unknown zone', k)
 zones = [{**z, 'history': [{'from': h['from'], 'faith': h['faith']} for h in z['history']],
           **({'w': SPARSE[z['id']]} if z['id'] in SPARSE else {})} for z in zones]
-out = {'denominations': den, 'zones': zones, 'stories': old['stories']}
+# states whose land outvotes their people, so the page shows this faith for them instead of the vote of their zones.
+# Poland-Lithuania and then the Commonwealth: most of its land was the Orthodox Ruthenian east, wide and thinly
+# settled, while its kings and nobles were Catholic and so was its largest church (from 1700 the eastern zones
+# turn Catholic anyway, as Uniates)
+STATE_FAITH = {
+    'Poland-Lithuania': [{'from': 1386, 'faith': 'catholic'}],
+    'Polish–Lithuanian Commonwealth': [{'from': 1386, 'faith': 'catholic'}],
+}
+names = set()
+for f in glob.glob(os.path.join(H, '..', '..', 'data', 'borders_*.json')):
+    names.update(x['properties'].get('name') for x in json.load(open(f))['features'])
+for n, hs in STATE_FAITH.items():
+    if n not in names: print('  faith for a state in no border file:', n)
+    for h in hs:
+        if h['faith'] not in {d['id'] for d in den}: print('  unknown faith', h['faith'], 'for', n)
+out = {'denominations': den, 'zones': zones, 'states': STATE_FAITH, 'stories': old['stories']}
 json.dump(out, open(sys.argv[2], 'w'), separators=(',', ':'), ensure_ascii=False)
 print(len(zones), 'zones', sum(len(z['history']) for z in zones), 'entries')

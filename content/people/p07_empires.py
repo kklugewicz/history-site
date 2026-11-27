@@ -62,10 +62,12 @@ P('Thomas Edison', 'American inventor', (1847, 1931), 2, 'mind',
   G(1876, 1886, 'Menlo Park', (-74.34, 40.57)), G(1887, 1931, 'West Orange', (-74.24, 40.79)))
 P('Alexander Graham Bell', 'Inventor of the telephone', (1847, 1922), 2, 'mind',
   'Scottish-born teacher of the deaf who patented the telephone in 1876.',
+  G(1847, 1869, 'Youth in Edinburgh, then London', 'edinburgh', 'london'), G(1870, 1870, 'Brantford, Canada', (-80.26, 43.14)),
   G(1871, 1922, 'Boston, Washington and Nova Scotia', 'boston', 'washington', (-60.58, 46.1)))
 P('Nikola Tesla', 'Serbian-American inventor', (1856, 1943), 2, 'mind',
   'Invented the alternating-current motor that powers the world, and dreamed of wireless power.',
-  G(1884, 1943, 'New York', 'new_york', (-104.82, 38.83), 'new_york'))
+  G(1856, 1874, 'Youth in Lika, on the Croatian Military Frontier', (15.32, 44.57)), G(1875, 1880, 'Studies at Graz and Prague', (15.44, 47.07), 'prague'),
+  G(1881, 1883, 'Budapest and Paris', 'budapest', 'paris'), G(1884, 1943, 'New York', 'new_york', (-104.82, 38.83), 'new_york'))
 
 # ---------- Europe, 1850-1914 ----------
 P('Florence Nightingale', 'Founder of modern nursing', (1820, 1910), 2, 'reform mind',

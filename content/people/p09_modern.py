@@ -92,6 +92,7 @@ P('Emmanuel Macron', 'President of France', (1977, None), 3, 'rule',
   R(2017, 2026, 'President of France', 'France', at='paris'))
 P('Pope John Paul II', 'Pope', (1920, 2005), 2, 'faith',
   'The first Polish pope, whose visit home in 1979 helped inspire the Solidarity movement.',
+  G(1920, 1937, 'Youth in Wadowice', (19.49, 49.88)), G(1938, 1977, 'Kraków: student, priest, archbishop and cardinal', 'krakow'),
   G(1978, 2005, 'Pope in Rome', 'rome'))
 P('Josip Broz Tito', 'Leader of Yugoslavia', (1892, 1980), 2, 'war rule',
   'Led the partisans who freed Yugoslavia from the Nazis, then defied Stalin.',
@@ -214,7 +215,7 @@ P('Sheikh Mujibur Rahman', 'Founder of Bangladesh', (1920, 1975), 3, 'rule',
   R(1972, 1975, 'Leader of Bangladesh', 'Bangladesh', at='dhaka'))
 P('Mother Teresa', 'Catholic nun', (1910, 1997), 2, 'faith',
   'Albanian nun who cared for the dying poor of Calcutta.',
-  G(1929, 1997, 'Calcutta', 'calcutta'))
+  G(1910, 1928, 'Youth in Skopje', (21.43, 42.0)), G(1929, 1997, 'Calcutta', 'calcutta'))
 P('Malala Yousafzai', "Pakistani campaigner for girls' schooling", (1997, None), 3, 'reform',
   'Shot by the Taliban in 2012 for going to school; the youngest winner of the Nobel peace prize.',
   G(2009, 2012, 'The Swat valley', ((72.36, 34.77, 2009.0)), ((72.36, 34.77, 2012.77)), ('birmingham', 2012.8)))
@@ -398,7 +399,7 @@ P('The Beatles', 'English rock band', (1960, 1970), 2, 'art',
     ('london', 1964.2), ((78.27, 30.12, 1968.15)), ('london', 1968.35), ('london', 1969.99)))
 P('Tim Berners-Lee', 'English computer scientist', (1955, None), 2, 'mind',
   'Invented the World Wide Web at CERN in 1989.',
-  G(1989, 1991, 'Inventing the web at CERN', (6.05, 46.23)))
+  G(1955, 1972, 'Youth in London', 'london'), G(1973, 1976, 'Physics at Oxford', 'oxford'), G(1989, 1991, 'Inventing the web at CERN', (6.05, 46.23)))
 P('Steve Jobs', 'Co-founder of Apple', (1955, 2011), 2, 'mind',
   'Made the personal computer, and then the smartphone, something everyone wanted.',
   G(1976, 2011, 'Apple, in what became Silicon Valley', (-122.03, 37.32)))
