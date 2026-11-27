@@ -56,6 +56,8 @@ P('Leon Trotsky', 'Russian revolutionary', (1879, 1940), 2, 'war rule',
     ((10.75, 59.91, 1936.95)), ((-99.16, 19.35, 1937.05))))
 P('Joseph Stalin', 'Dictator of the Soviet Union', (1878, 1953), 1, 'rule war',
   'Turned the Soviet Union into an industrial and military giant through terror, famine and the Gulag, and beat Hitler.',
+  G(1878, 1893, 'Youth in Gori', 'gori'), G(1894, 1912, 'Seminary student, then revolutionary in Tiflis and Baku', 'tbilisi', 'baku'),
+  G(1913, 1916, 'Exile in Siberia', (87.25, 66.47)), G(1917, 1923, 'Revolution and civil war; party secretary', 'st_petersburg', 'moscow'),
   R(1924, 1953, 'Leader of the Soviet Union', *SOV, at='moscow'))
 P('Mustafa Kemal Atatürk', 'Founder of modern Turkey', (1881, 1938), 1, 'war rule reform',
   'Hero of Gallipoli who won the Turkish War of Independence and made Turkey a secular republic.',
@@ -120,7 +122,8 @@ P('Benito Mussolini', 'Fascist dictator of Italy', (1883, 1945), 1, 'rule war',
   R(1922, 1942, 'Dictator of Italy', *ITA, at='rome'), G(1943, 1945, 'Puppet state at Salò', (10.52, 45.6), (9.28, 46.12)))
 P('Adolf Hitler', 'Nazi dictator of Germany', (1889, 1945), 1, 'rule war',
   'Took Germany into the Second World War and ordered the murder of six million Jews in the Holocaust.',
-  G(1914, 1918, 'Soldier on the Western Front', 'munich', (2.95, 50.75)), G(1919, 1932, 'Munich: the rise of the Nazi party', 'munich'),
+  G(1889, 1906, 'Youth in Braunau and Linz', (13.04, 48.26), (14.29, 48.31)), G(1907, 1912, 'Vienna: turned down by the art academy', 'vienna'),
+  G(1913, 1913, 'Moves to Munich', 'munich'), G(1914, 1918, 'Soldier on the Western Front', 'munich', (2.95, 50.75)), G(1919, 1932, 'Munich: the rise of the Nazi party', 'munich'),
   R(1933, 1945, 'Dictator of Germany', 'Germany', at='berlin'))
 P('Hirohito', 'Emperor of Japan', (1901, 1989), 2, 'rule',
   'Reigned through Japan\'s wars of conquest and its surrender in 1945, then as a constitutional monarch.',

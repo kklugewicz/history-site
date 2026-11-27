@@ -185,6 +185,7 @@ P('Erik the Red', 'Norse explorer', (950, 1003), 3, 'explore',
   G(982, 985, 'Explores Greenland', 'reykjavik', (-40.0, 64.5), 'brattahlid'), G(986, 1003, 'Settler of Greenland', 'brattahlid'))
 P('Leif Erikson', 'Norse explorer', (970, 1020), 2, 'explore',
   'Reached North America around 1000, five centuries before Columbus, and named it Vinland.',
+  G(970, 984, 'Born in Iceland', (-21.6, 65.05)), G(985, 998, 'Youth in Greenland', 'brattahlid'), G(999, 999, "At King Olaf's court in Norway", 'trondheim'),
   G(1000, 1001, 'Voyage to Vinland', 'brattahlid', (-66.0, 66.0), (-60.0, 54.0), 'lanse_aux_meadows', 'brattahlid'))
 P('Stephen I of Hungary', 'First king of Hungary', (975, 1038), 3, 'rule faith',
   'Crowned in 1000 with a crown from the pope, he made the Magyars a Christian kingdom.',

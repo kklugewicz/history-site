@@ -80,6 +80,64 @@ story('benjamin-franklin', 'Printer, scientist, inventor and diplomat: the most 
            "Won France's help for the American Revolution"),
 )
 
+story('leonhard-euler', 'He wrote more mathematics than anyone who ever lived, and much of it after he went blind.',
+    life("A pastor's son in Basel",
+         'Leonhard Euler was born in Basel, Switzerland, in 1707. His father, a pastor, hoped he would be one too. He went '
+         'to the university at 13, where Johann Bernoulli, one of the best mathematicians in Europe, saw his gift, gave him '
+         'lessons on Saturday afternoons and talked his father into letting him study mathematics instead.',
+         img='Johann Bernoulli', cap='Johann Bernoulli, his teacher', y=1720, at='basel'),
+    life('To St Petersburg',
+         'In 1727, aged 20, he took a post at the Academy of Sciences that Peter the Great had founded in St Petersburg. He '
+         'was hired for physiology but was soon doing mathematics, and at 26 he was put in charge of it. In 1734 he married '
+         'Katharina Gsell, the daughter of a Swiss painter; of their 13 children, only five grew up.',
+         img='Kunstkamera', cap="The Kunstkamera, the Academy's home", y=1727, at='st_petersburg'),
+    win('The Basel problem',
+        'For 85 years the best mathematicians, the Bernoullis of Basel among them, had tried to find the exact total of '
+        '1 + 1/4 + 1/9 + 1/16 and so on forever, one over every square number. In 1735 Euler found it: π²/6, about '
+        '1.645. Nobody had expected π, the number of circles, to turn up. It made him famous across Europe.',
+        img='Basel problem', y=1735, at='st_petersburg'),
+    made('The bridges of Königsberg',
+         'People in Königsberg wondered if they could walk through their city crossing each of its seven bridges exactly '
+         'once. In 1736 Euler proved they could not, and showed why: all that counts is how many bridges meet each piece of '
+         'land.',
+         'It was the first problem of graph theory, the mathematics of networks, which today plans delivery routes, maps the '
+         'internet and finds the way on a phone.',
+         img='Seven Bridges of Königsberg', y=1736, at='konigsberg'),
+    life('Berlin, and the Cyclops',
+         'In 1738, after a fever, he lost the sight of his right eye. "Now I will have fewer distractions," he is said to have '
+         'joked. In 1741, with Russia in turmoil, he moved to the Academy of Frederick the Great in Berlin and stayed 25 '
+         'years. The king, who loved clever talk, found the plain, devout Euler dull, and nicknamed him the Cyclops.',
+         img='Frederick the Great', cap='Frederick the Great, his new master', y=1741, at='berlin'),
+    made("Euler's formula",
+         'In 1748 he showed that e^ix = cos x + i sin x, joining the number e of growth, the circles of trigonometry and i, '
+         'the "imaginary" square root of −1. Put in π for x and it becomes e^iπ + 1 = 0: five key numbers in one line.',
+         'It is often called the most beautiful equation in mathematics, and it is everyday work for engineers, who use it '
+         'to calculate alternating current, radio waves and sound.',
+         img="Euler's formula", y=1748, at='berlin'),
+    tale('The fountains of Sanssouci',
+         'Frederick wanted fountains for his palace at Sanssouci, and Euler worked out the pumps. The water never rose, and '
+         'years later the king mocked him in a letter: "Vanity of vanities! Vanity of geometry!" Historians who have checked '
+         "think Euler's sums were probably right, and the fault lay with the work as it was built.",
+         img='Sanssouci', at='potsdam'),
+    life('Blind, and busier than ever',
+         'In 1766 Catherine the Great invited him back to St Petersburg, and soon a cataract took the sight of his other '
+         'eye. When fire swept through his house in 1771, a craftsman from Basel carried him out. Yet he worked on, doing '
+         'long sums in his head and dictating to his sons and helpers: in 1775 he finished about a paper a week.',
+         img='Catherine the Great', cap='Catherine the Great, who brought him back', y=1771, at='st_petersburg'),
+    life('The last afternoon',
+         'On 18 September 1783 he gave a grandson a mathematics lesson, worked out with chalk how the new hot-air balloons '
+         'rise, and talked about Uranus, the planet found two years before. That afternoon he had a stroke, and he died a few '
+         'hours later. In the words of the French mathematician Condorcet, he "ceased to calculate and to live".',
+         img='Uranus', cap='Uranus, the new planet he talked about that day', y=1783, at='st_petersburg'),
+    legacy('Euler wrote more mathematics than anyone else in history: over 800 books and papers, about 80 volumes in all. '
+           'Formulas and theorems named after him run through every part of mathematics. Laplace is said to have told his '
+           'students: "Read Euler, read Euler, he is the master of us all."',
+           'Found that 1 + 1/4 + 1/9 + 1/16 and so on adds up to π²/6',
+           'Founded graph theory with the bridges of Königsberg',
+           'Found e^ix = cos x + i sin x, which gives e^iπ + 1 = 0',
+           'Gave maths the symbols f(x), e, i and Σ'),
+)
+
 story('frederick-the-great', 'The flute-playing soldier king who made Prussia a great power.',
     life('A prince who loved music',
          'Frederick was born in Berlin in 1712. His father, the soldier king Frederick William I, beat and humiliated him '

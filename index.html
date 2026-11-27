@@ -334,6 +334,7 @@ details[open] summary { margin-bottom: 6px; }
   .panel.pop { display: flex; animation: popup .28s cubic-bezier(.2,.8,.25,1); }
   @keyframes popup { from { transform: translateY(40px); opacity: 0; } }
   .panel.full { max-height: calc(100% - 16px); }
+  .panel:not(.full):has(.tray.country) { max-height: max(48%, 288px); }   /* room for a state's whole row of stories on a short phone */
   .panel.collapsed .panel-body { display: none; }
   .panel-head { position: relative; padding: 16px 48px 10px 16px; cursor: pointer; touch-action: none; }
   .panel.collapsed .panel-head { border-bottom: 0; }
@@ -411,6 +412,9 @@ details[open] summary { margin-bottom: 6px; }
 .tray .face.story { border-width: 2.5px; padding: 2px; }
 .tray .n { font-size: 12px; line-height: 1.2; max-width: 66px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .tray button:focus-visible .face { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* a state's row: under each name, the year that person was there, or "now" */
+.tray .y { margin-top: -3px; font-family: var(--f-mono); font-size: 10.5px; line-height: 1.2; color: var(--ink-soft); white-space: nowrap; }
+.tray .y.now { color: var(--accent); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
 .face.story, .ph.story { cursor: pointer; border: 2px solid transparent; padding: 1.5px; transition: transform .15s;
   background: linear-gradient(var(--fc, var(--line)), var(--fc, var(--line))) content-box, linear-gradient(var(--paper), var(--paper)) padding-box,
     var(--story-ring) border-box; }
@@ -1556,6 +1560,75 @@ details[open] summary { margin-bottom: 6px; }
       return `<button type="button" data-story-person="${id}" title="${esc(p.name)}: ${esc(storyIdx[id])}">${faceHtml(p, p.name)}<span class="n">${esc(shortName(p))}</span></button>`;
     }).join('') + '</div></div>';
   }
+  // A clicked state's own row of stories: who ruled it or was there this year first, then the rest of its people, nearest
+  // in time first, each with the year they were there. data/story_states.json (content/stories/build_states.py) says
+  // which states each person was in, year by year, by the same borders and routes the map draws.
+  let storyTies = {};
+  opt('story_states.json').then(j => { if (j && j.ties) { storyTies = j.ties; if (S.selected) renderPanel(); } });
+  // the names a state goes by: its own, then the other states of its country through time once the country timelines'
+  // lineages have loaded, so the Ming Empire's row takes in the rest of China's. Only the country's own states count,
+  // not the ones its timeline borrows for a while ("~" names: the British Raj in Burma's, the Great Khanate in
+  // Mongolia's), as most of their people lived elsewhere in them; those who lived on the country's own land under one
+  // come in through borrowedHere.
+  function countryNames(f) {
+    const n = f.properties.name, line = typeof lineageOf === 'function' ? lineageOf(n) : null, out = [n];
+    if (line && line.periods) for (const p of line.periods) for (const s of p.states || []) if (s[0] !== '~' && !out.includes(s)) out.push(s);
+    return out;
+  }
+  // Whether a country's timeline borrows a state in a year, or in the period before (the border snapshots lag the
+  // dates, so Florence is still drawn in the Holy Roman Empire after 1494, when Italy's timeline stops borrowing it).
+  function borrowsNear(l, name, y) {
+    const ps = l.periods || [], b = '~' + name, i = ps.findIndex((p, j) => j + 1 === ps.length || ps[j + 1].from > y);
+    return ps.slice(Math.max(0, i - 1), i + 1).some(p => (p.states || []).includes(b));
+  }
+  // A place someone lived in, in a state at home in another country, on land that is now this country's (a tie's place
+  // today and its point: [state, from, to, 'h', state there today, lon, lat]). Leonardo's Florence was drawn inside the
+  // Holy Roman Empire, Germany's, while Italy's timeline borrows the Empire: Florence makes him one of Italy's. For the
+  // state's own country such a place only counts while they are there, unless it lies about as near that country's
+  // heartland (Pythagoras' Croton and Archimedes' Syracuse stay Greek, and are Italy's too).
+  const todayLine = t => t[4] ? lineageOf(t[4], fileYear(timeline.borderFiles[timeline.borderFiles.length - 1])) : null;
+  const coreGap = (l, t) => l.core ? Math.hypot((t[5] - l.core[0]) * Math.cos((t[6] + l.core[1]) * Math.PI / 360), t[6] - l.core[1]) : Infinity;   // degrees
+  const borrowedHere = (t, line, ty) => t[3] === 'h' && todayLine(t) === line && borrowsNear(line, t[0], ty);
+  function livedElsewhere(t, line, ty) {
+    const b = t[3] === 'h' ? todayLine(t) : null;
+    return !!b && b !== line && borrowsNear(b, t[0], ty) && coreGap(b, t) < 0.85 * coreGap(line, t);
+  }
+  // A row item: { id: what openStory takes, y: the year it is shown at (this year when now), now: whether it belongs to
+  // this year, w: order among equals (0 a ruler of the state, 1 an event, 2 and up anyone else, by rank), title, html:
+  // the inside of its button, a face then .n (name) and .y (year) lines }. Event stories add theirs with eventStoryItems(f).
+  const KIND_W = { r: 0, h: 2, p: 3 };
+  const storyYear = (y, now) => `<span class="y${now ? ' now' : ''}">${now ? 'now' : esc(fmtYear(y))}</span>`;
+  function personStoryItems(f) {
+    const own = f.properties.name, names = new Set(countryNames(f)), y = S.year, out = [];
+    const line = typeof lineageOf === 'function' ? lineageOf(own) : null;
+    for (const id in storyIdx) {
+      const p = personById[id]; if (!p) continue;
+      let best = null, bk = null, bd = Infinity;
+      for (const t of storyTies[id] || []) {   // [state, from, to, 'r' ruled it, 'h' lived or stopped there, 'p' there in passing]
+        const ty = clamp(y, t[1], t[2]);
+        let k = t[3];
+        if (names.has(t[0]) && (!line || t[0] === own || lineageOf(t[0], ty) === line)) {   // not a name another country used in those years
+          if (line && livedElsewhere(t, line, ty)) k = 'p';
+        } else if (!line || !borrowedHere(t, line, ty)) continue;
+        const d = y < t[1] ? t[1] - y : y > t[2] ? y - t[2] : 0;
+        if (k === 'p' && d) continue;   // passing through only counts for its own years
+        if (d < bd || (d === bd && KIND_W[k] < KIND_W[bk])) { bd = d; best = t; bk = k; }
+      }
+      if (!best) continue;
+      const now = bd === 0, at = now ? y : y < best[1] ? best[1] : best[2];
+      out.push({ id, y: at, now, w: KIND_W[bk] + (bk === 'r' ? 0 : (p.rank || 3) / 10), title: p.name + ': ' + storyIdx[id],
+        html: faceHtml(p, p.name) + `<span class="n">${esc(shortName(p))}</span>` + storyYear(at, now) });
+    }
+    return out;
+  }
+  function countryStories(f) {
+    const y = S.year, line = typeof lineageOf === 'function' ? lineageOf(f.properties.name) : null;
+    const items = personStoryItems(f).concat(typeof eventStoryItems === 'function' ? eventStoryItems(f) || [] : [])
+      .sort((a, b) => (b.now - a.now) || Math.abs(a.y - y) - Math.abs(b.y - y) || (a.w ?? 1) - (b.w ?? 1) || a.y - b.y).slice(0, 40);
+    if (!items.length) return '';
+    return `<div class="sec"><h3>Stories from ${esc(line ? line.name : f.properties.name)}</h3><div class="tray country" data-queue="${esc(items.map(it => it.id).join(' '))}">` +
+      items.map(it => `<button type="button" data-story-person="${esc(it.id)}"${it.title ? ` title="${esc(it.title)}"` : ''}>${it.html}</button>`).join('') + '</div></div>';
+  }
 
   const SV = { open: false, id: null, p: null, pages: [], i: 0, queue: [], qi: 0, paused: false, hold: false, ended: false,
     loading: false, token: 0, recs: {}, dur: 6, muted: fromStore('wtt-mute', 'false') === true, audio: null, opener: null, tapAt: 0, fade: 0 };
@@ -2695,6 +2768,7 @@ details[open] summary { margin-bottom: 6px; }
         // on a phone the country's name heads its pop-up card
         if (phone) head = `<p class="kicker">${esc(fmtYear(S.year))} · ${esc(era[0])}</p><p class="period"><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</p>${subs}`;
         else html += `<div class="focus"><h2><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</h2>` + subs + '</div>';
+        html = phone ? countryStories(f) + html : html + countryStories(f);   // on a phone the stories lead the pop-up card
         html += flagBlock(f);
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
