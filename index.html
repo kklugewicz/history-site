@@ -334,6 +334,7 @@ details[open] summary { margin-bottom: 6px; }
   .panel.pop { display: flex; animation: popup .28s cubic-bezier(.2,.8,.25,1); }
   @keyframes popup { from { transform: translateY(40px); opacity: 0; } }
   .panel.full { max-height: calc(100% - 16px); }
+  .panel:not(.full):has(.tray.country) { max-height: max(48%, 288px); }   /* room for a state's whole row of stories on a short phone */
   .panel.collapsed .panel-body { display: none; }
   .panel-head { position: relative; padding: 16px 48px 10px 16px; cursor: pointer; touch-action: none; }
   .panel.collapsed .panel-head { border-bottom: 0; }
