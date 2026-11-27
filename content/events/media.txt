@@ -2,13 +2,17 @@
 1883 eruption of Krakatoa
 1896 Summer Olympics
 1911 Revolution
+1948 Arab–Israeli War
 Alexander Mosaic
+Algerian War
 Alhambra
 American Civil War
 An Lushan rebellion
 Anak Krakatoa
 Ancient Olympic Games
 Ancient Olympic pentathlon
+Apollo 11
+Apollo–Soyuz
 Arch of Titus
 Armenian genocide
 Armistice of 11 November 1918
@@ -17,6 +21,7 @@ Atomic bombings of Hiroshima and Nagasaki
 Attack on Pearl Harbor
 Auschwitz concentration camp
 Baburnama
+Bangladesh Liberation War
 Bartolomé de las Casas
 Battle of Actium
 Battle of Adwa
@@ -32,6 +37,7 @@ Battle of Dan-no-ura
 Battle of Fort Sumter
 Battle of Gettysburg
 Battle of Gravelines
+Battle of Inchon
 Battle of Isandlwana
 Battle of Königgrätz
 Battle of Marathon
@@ -60,9 +66,12 @@ Battle of the Alamo
 Battle of the Milvian Bridge
 Battle of the Somme
 Battles of Lexington and Concord
+Bay of Pigs Invasion
 Bayeux Tapestry
 Bennelong
+Berlin Blockade
 Berlin Conference
+Berlin Wall
 Bloody Sunday (1905)
 Boadicea and Her Daughters
 Bombyx mori
@@ -73,6 +82,7 @@ Burma Road
 Burning of Washington
 Caesar's Rhine bridges
 California gold rush
+Cambodian genocide
 Capture of Rome
 Caratacus
 Caravel
@@ -89,9 +99,13 @@ Constantinople
 Corvus (boarding device)
 Crimean War
 Cromford Mill
+Cuban Missile Crisis
+Cuban Revolution
 Culebra Cut
+Cultural Revolution
 Cuneiform
 Declaration of the Rights of Man and of the Citizen
+Decolonisation of Africa
 Defenestrations of Prague
 Dhauli
 Diamond Sutra
@@ -100,6 +114,7 @@ Diet of Worms
 Domesday Book
 Dunkirk evacuation
 Dust Bowl
+Earthrise
 Edict of Milan
 Edicts of Ashoka
 Egyptian hieroglyphs
@@ -114,6 +129,8 @@ Execution of the Romanov family
 Exhumation and reburial of Richard III of England
 Expedition of the Thousand
 Fall of Constantinople
+Fall of Saigon
+Fall of the Berlin Wall
 Ferghana horse
 First Battle of Panipat
 First Council of Nicaea
@@ -132,6 +149,7 @@ Gokstad ship
 Great Depression
 Great Enclosure
 Great Famine (Ireland)
+Great Leap Forward
 Great Pyramid of Giza
 Great Wall of China
 Great Zimbabwe
@@ -154,6 +172,8 @@ Hōkūleʻa
 Iliad
 Indian Rebellion of 1857
 International Brigades
+Iran hostage crisis
+Iranian Revolution
 Iwakura Mission
 Janissaries
 Jikji
@@ -161,8 +181,10 @@ Jing Ke
 John, King of England
 Josephus
 Kindred Spirits (sculpture)
+Korean War
 Krak des Chevaliers
 Kristallnacht
+Laika
 Landing of Columbus
 Lapulapu
 Laskarina Bouboulina
@@ -175,6 +197,7 @@ Luther Bible
 Lysistrata
 Magna Carta
 Mangal Pandey
+March on Washington for Jobs and Freedom
 Marco Polo Bridge Incident
 Mary Seacole
 Masada
@@ -189,6 +212,7 @@ Mogao Caves
 Mongol Empire
 Mongol military tactics and organization
 Mosque–Cathedral of Córdoba
+Nakba
 Napoleon Crossing the Alps
 Nemesis (1839)
 Ninety-five Theses
@@ -205,6 +229,7 @@ Panama Canal
 Panama Canal locks
 Paraguayan War
 Paris Commune
+Partition of India
 Peace of Westphalia
 Peloponnesian War
 Pemulwuy
@@ -223,6 +248,7 @@ Proclamation of the German Empire
 Proclamation of the People's Republic of China
 Proto-cuneiform
 Raphael Lemkin
+Red Guards
 Rescue of the Danish Jews
 Revolutions of 1848
 Richard III (play)
@@ -238,6 +264,7 @@ Sea Peoples
 Second Boer War
 Second Boer War concentration camps
 Second Sino-Japanese War
+Selma to Montgomery marches
 Seven Wonders of the Ancient World
 Siege of Jerusalem (1099)
 Siege of Kazan
@@ -249,11 +276,13 @@ Siege of Yorktown
 Siege of the International Legations
 Silk
 Silk Road
+Six-Day War
 Spanish Armada
 Spanish Civil War
 Spanish conquest of the Aztec Empire
 Spanish flu
 Spinning jenny
+Sputnik 1
 Star-Spangled Banner (flag)
 Storming of the Bastille
 Suez Canal
@@ -264,6 +293,7 @@ Templo Mayor
 Tennis Court Oath
 Tenochtitlan
 Terracotta Army
+Tet Offensive
 The Charge of the Light Brigade (poem)
 The Coronation of Napoleon
 The Death of General Wolfe
@@ -285,12 +315,14 @@ Treaty of Guadalupe Hidalgo
 Treaty of Nanking
 Trojan Horse
 Tudor rose
+Tuol Sleng Genocide Museum
 Turtle ship
 Uluburun shipwreck
 Unification of Germany
 Universal Declaration of Human Rights
 Vercingetorix Throws Down His Arms at the Feet of Julius Caesar
 Victoria (ship)
+Vietnam War
 Wall Street Crash of 1929
 Walls of Constantinople
 Warsaw Ghetto Uprising

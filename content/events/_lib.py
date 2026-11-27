@@ -136,4 +136,5 @@ C.update({
     'ladysmith': (29.78, -28.56),
     'deir_ez_zor': (40.14, 35.33), 'brest_litovsk': (23.69, 52.1), 'camp_funston': (-96.78, 39.07),
     'dunkirk': (2.38, 51.03),
+    'panmunjom': (126.68, 37.96), 'golan': (35.75, 33.0), 'xinyang': (114.07, 32.12), 'greensboro': (-79.79, 36.07),
 })
