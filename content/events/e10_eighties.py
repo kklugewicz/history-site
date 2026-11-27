@@ -110,7 +110,7 @@ event('falklands-war', 'The Falklands War', 'war', (1982, 1982),
       'Argentina seized Britain\'s islands in the South Atlantic, and Britain sent a fleet across the world to win them back.',
       scene('Las Malvinas',
             'The Falklands, windswept islands in the South Atlantic, had been British since 1833 and were home to '
-            'about 1,800 people, most of them of British descent. Argentina, 500 kilometres away, has always claimed '
+            'about 1,800 people, most of them of British descent. Argentina, 500 kilometres away, has long claimed '
             'them as Las Malvinas. In 1982 its military rulers, facing anger over a failing economy and the thousands '
             'of people they had made disappear, decided to take them.',
             kick='How it began', y=1982, at='stanley'),
@@ -259,7 +259,7 @@ event('revolutions-of-1989', 'The revolutions of 1989', 'revolution', (1989, 198
              'support of the Polish pope, John Paul II.',
              kick='How it began', y=1980, at='gdansk'),
       figure('mikhail-gorbachev', 'No more tanks',
-             'Soviet tanks had crushed every earlier revolt in Eastern Europe: East Germany in 1953, Hungary in 1956, '
+             'Soviet tanks had crushed earlier revolts in Eastern Europe: East Germany in 1953, Hungary in 1956, '
              'Czechoslovakia in 1968. Mikhail Gorbachev made it clear that this time they would not come. His '
              'spokesman joked that the old rule had given way to the Sinatra Doctrine: each country could now do it '
              'its way.',
@@ -359,7 +359,7 @@ event('fall-of-the-soviet-union', 'The end of the Soviet Union', 'fall', (1989, 
 event('apartheid', 'Apartheid and its end', 'change', (1948, 1994),
       'For nearly fifty years South Africa\'s white rulers kept its peoples apart by law, until Mandela walked free.',
       scene('Apartness',
-            'In 1948 the National Party won an election in which only white people could vote, and began building '
+            'In 1948 the National Party won an election in which nearly all the voters were white, and began building '
             'apartheid, Afrikaans for apartness. Every South African was classed by race: white, coloured, Indian or '
             'Black. Marriage between races was banned, and towns were carved up so that each race lived apart, with '
             'the best land kept for whites.',
@@ -367,7 +367,7 @@ event('apartheid', 'Apartheid and its end', 'change', (1948, 1994),
       figure('hendrik-verwoerd', 'Grand apartheid',
              'Hendrik Verwoerd, the system\'s chief architect and prime minister from 1958, planned to strip Black '
              'South Africans of their citizenship, making them citizens of homelands, scattered patches of poor land. '
-             'More than three million people were forced from their homes. Black schools, he said, should not teach '
+             'Over the years more than three million people were forced from their homes. Black schools, he said, should not teach '
              'children to hope for more than certain kinds of labour.',
              y=1958, at='pretoria'),
       cost('Sharpeville',

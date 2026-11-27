@@ -4,6 +4,8 @@
 1911 Revolution
 1948 Arab–Israeli War
 1989 Tiananmen Square protests and massacre
+2004 Indian Ocean earthquake and tsunami
+2008 financial crisis
 Alexander Mosaic
 Algerian War
 Alhambra
@@ -15,6 +17,7 @@ Ancient Olympic pentathlon
 Apartheid
 Apollo 11
 Apollo–Soyuz
+Arab Spring
 Arch of Titus
 Armenian genocide
 Armistice of 11 November 1918
@@ -83,6 +86,7 @@ Boxer Rebellion
 Brookes (ship)
 Burma Road
 Burning of Washington
+COVID-19 pandemic
 Caesar's Rhine bridges
 California gold rush
 Cambodian genocide
@@ -148,6 +152,7 @@ Frankfurt Parliament
 French invasion of Russia
 Gallipoli campaign
 Gareth Jones (journalist)
+Gaza war
 Gettysburg Address
 Giuseppe Fiorelli
 Giza pyramid complex
@@ -161,6 +166,7 @@ Great Pyramid of Giza
 Great Wall of China
 Great Zimbabwe
 Greek War of Independence
+Gulf War
 Gutenberg Bible
 Hagia Sophia
 Haitian Revolution
@@ -182,6 +188,7 @@ International Brigades
 Iran hostage crisis
 Iranian Revolution
 Iran–Iraq War
+Iraq War
 Iwakura Mission
 Janissaries
 Jikji
@@ -265,6 +272,8 @@ Richard III (play)
 Romance of the Three Kingdoms
 Russian Revolution
 Russo-Japanese War
+Russo-Ukrainian war
+Rwandan genocide
 Sack of Rome (410)
 Sack of Rome (455)
 Saint Basil's Cathedral
@@ -275,6 +284,7 @@ Second Boer War
 Second Boer War concentration camps
 Second Sino-Japanese War
 Selma to Montgomery marches
+September 11 attacks
 Seven Wonders of the Ancient World
 Siege of Jerusalem (1099)
 Siege of Kazan
@@ -297,6 +307,7 @@ Sputnik 1
 Star-Spangled Banner (flag)
 Storming of the Bastille
 Suez Canal
+Syrian civil war
 Taiping Rebellion
 Taj Mahal
 Taíno
@@ -336,6 +347,7 @@ Victoria (ship)
 Vietnam War
 Wall Street Crash of 1929
 Walls of Constantinople
+War in Afghanistan (2001–2021)
 Warsaw Ghetto Uprising
 Washington Crossing the Delaware
 Western Front (World War I)
@@ -346,6 +358,7 @@ Wreck of the Titanic
 Wuchang uprising
 Yang Guifei
 Yersinia pestis
+Yugoslav Wars
 Zimbabwe Bird
 audio: Symphony No. 3 (Beethoven) | allegro con brio
 audio: The Battle Hymn of the Republic | Battle Hymn Republic
