@@ -32,6 +32,8 @@ P('Gian Lorenzo Bernini', 'Italian sculptor and architect', (1598, 1680), 3, 'ar
   G(1623, 1680, 'Sculptor and architect in Rome', 'rome'))
 P('René Descartes', 'French philosopher and mathematician', (1596, 1650), 2, 'mind',
   "'I think, therefore I am': founder of modern philosophy and of coordinate geometry.",
+  G(1596, 1617, 'Youth in France: school at La Flèche, law at Poitiers', (0.68, 46.97, 1596), (-0.07, 47.7, 1607), ('poitiers', 1616)),
+  G(1618, 1620, 'Soldier: Breda and the German war', (4.78, 51.59), (10.0, 48.4)), G(1622, 1627, 'Paris', 'paris'),
   G(1628, 1649, 'Life in the Dutch Republic', 'amsterdam', 'leiden', 'utrecht'), G(1649, 1650, 'Tutor to Queen Christina', 'stockholm'))
 P('Thomas Hobbes', 'English philosopher', (1588, 1679), 3, 'mind',
   "Wrote Leviathan: without a strong state, life is 'nasty, brutish and short'.",
@@ -151,7 +153,8 @@ P('Montesquieu', 'French political philosopher', (1689, 1755), 3, 'mind',
   G(1721, 1755, 'Bordeaux and Paris', 'bordeaux', 'paris'))
 P('Jean-Jacques Rousseau', 'Genevan philosopher', (1712, 1778), 2, 'mind',
   "'Man is born free, and everywhere he is in chains': The Social Contract inspired the French Revolution.",
-  G(1742, 1762, 'Paris', 'paris'), G(1762, 1767, 'Flight to Switzerland and England', (6.65, 46.9), 'london'), G(1770, 1778, 'Paris', 'paris'))
+  G(1712, 1727, 'Youth in Geneva', 'geneva'), G(1742, 1762, 'Paris', 'paris'), G(1762, 1767, 'Flight to Switzerland and England', (6.65, 46.9), 'london'),
+  G(1770, 1778, 'Paris', 'paris'))
 P('Denis Diderot', 'French philosopher', (1713, 1784), 3, 'mind',
   'Edited the Encyclopédie, which tried to gather all human knowledge in 28 volumes.',
   G(1747, 1772, 'The Encyclopédie in Paris', 'paris'), G(1773, 1774, 'Guest of Catherine the Great', 'st_petersburg'))
@@ -194,6 +197,7 @@ P('Qianlong Emperor', 'Emperor of Qing China', (1711, 1799), 2, 'rule',
   R(1735, 1796, 'Emperor of Qing China', *QING, at='beijing'))
 P('Catherine the Great', 'Empress of Russia', (1729, 1796), 1, 'rule',
   'German princess who overthrew her husband, took Crimea and much of Poland, and wrote to Voltaire.',
+  G(1729, 1743, 'Princess Sophie of Anhalt-Zerbst, youth in Stettin', (14.55, 53.43)), G(1744, 1761, 'Grand Duchess at the Russian court', 'st_petersburg'),
   R(1762, 1796, 'Empress of Russia', *RUS, at='st_petersburg'))
 P('Yemelyan Pugachev', 'Cossack rebel', (1742, 1775), 3, 'war',
   "Claimed to be the dead tsar and led Russia's largest peasant revolt.",

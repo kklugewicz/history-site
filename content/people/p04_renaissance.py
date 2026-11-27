@@ -154,6 +154,8 @@ P('Bartolomeu Dias', 'Portuguese explorer', (1450, 1500), 3, 'explore',
   G(1487, 1488, 'Rounds the Cape of Good Hope', 'lisbon', (12.0, -15.0), 'cape_good_hope', (26.5, -33.8), 'cape_good_hope', 'lisbon'))
 P('Christopher Columbus', 'Explorer for Spain', (1451, 1506), 1, 'explore',
   'Sailed west in 1492 looking for Asia and reached the Americas, linking the two halves of the world for good.',
+  G(1451, 1475, 'Youth in Genoa', 'genoa'), G(1476, 1484, 'Sailor for Portugal: Lisbon and Madeira', 'lisbon', (-16.91, 32.65)),
+  G(1485, 1491, 'At the Spanish court, seeking backing', (-4.78, 37.88), (-3.69, 37.18)),
   G(1492, 1493, 'First voyage', ('palos', 1492.6), ((-15.4, 28.1, 1492.7)), ('san_salvador_bh', 1492.78), ((-75.8, 21.2, 1492.85)), ('hispaniola', 1492.95),
     ((-31.0, 37.5, 1493.15)), ('palos', 1493.2), ('barcelona', 1493.3)),
   G(1493, 1496, 'Second voyage', ('cadiz', 1493.73), ((-61.5, 16.2, 1493.85)), ('puerto_rico', 1493.88), ('hispaniola', 1493.92), ((-77.3, 18.1, 1494.4)),
@@ -227,9 +229,10 @@ P('Moctezuma II', 'Emperor of the Aztecs', (1466, 1520), 2, 'rule',
   R(1502, 1520, 'Huey tlatoani of the Aztecs', 'Aztec Empire', at='tenochtitlan'))
 P('Hernán Cortés', 'Spanish conquistador', (1485, 1547), 1, 'war explore',
   'With a few hundred Spaniards and many native allies, he brought down the Aztec Empire.',
+  G(1485, 1503, 'Youth in Medellín', (-5.96, 38.96)), G(1504, 1518, 'Hispaniola and Cuba', 'santo_domingo', (-75.82, 20.02)),
   G(1519, 1521, 'Conquest of the Aztec Empire', ('havana', 1519.1), ((-86.9, 20.5, 1519.2)), ((-92.9, 18.4, 1519.25)), ('veracruz', 1519.3),
     ('tlaxcala', 1519.7), ('cholula', 1519.8), ('tenochtitlan', 1519.85), ('tenochtitlan', 1520.5), ('tlaxcala', 1520.6), ('tenochtitlan', 1521.4), ('tenochtitlan', 1521.6)),
-  G(1522, 1528, 'Governor of New Spain', 'mexico_city'))
+  G(1522, 1528, 'Governor of New Spain', 'mexico_city'), G(1541, 1547, 'Last years in Spain', 'seville'))
 P('La Malinche', "Cortés's interpreter", (1500, 1529), 3, 'explore',
   'Nahua woman given to the Spaniards who became their interpreter and adviser in the conquest.',
   G(1519, 1521, 'Interpreter for Cortés', 'veracruz', 'tlaxcala', 'tenochtitlan'))
@@ -238,6 +241,9 @@ P('Cuauhtémoc', 'Last Aztec emperor', (1497, 1525), 3, 'rule war',
   G(1520, 1521, 'Defence of Tenochtitlan', 'tenochtitlan'))
 P('Ferdinand Magellan', 'Portuguese explorer for Spain', (1480, 1521), 1, 'explore',
   'Led the first voyage round the world; killed in the Philippines, but his ship made it home.',
+  G(1480, 1504, 'Youth in Portugal, page at the court in Lisbon', 'porto', 'lisbon'),
+  G(1505, 1512, "In Portugal's service in India and Malacca", 'lisbon', 'cochin', 'malacca', 'cochin'),
+  G(1513, 1516, 'Fighting in Morocco, then Lisbon', (-8.34, 33.25), 'lisbon'), G(1517, 1518, 'Seville, planning the voyage', 'seville'),
   G(1519, 1521, 'Voyage round the world', ('seville', 1519.6), ((-16.25, 28.47, 1519.75)), ('rio', 1519.95), ((-58.0, -35.0, 1520.05)), ((-67.7, -49.3, 1520.25)),
     ('strait_magellan', 1520.82), ((-80.0, -35.0, 1520.95)), ((-110.0, -15.0, 1521.05)), ('guam', 1521.18), ('cebu', 1521.3), ('mactan', 1521.32)))
 P('Juan Sebastián Elcano', 'Basque navigator', (1476, 1526), 3, 'explore',
@@ -271,7 +277,8 @@ P('Krishnadevaraya', 'Emperor of Vijayanagara', (1471, 1529), 3, 'rule',
   R(1509, 1529, 'Emperor of Vijayanagara', 'Vijayanagara', at='hampi'))
 P('Francisco Pizarro', 'Spanish conquistador', (1478, 1541), 1, 'war explore',
   "Captured the Inca emperor Atahualpa at Cajamarca and conquered the Inca Empire.",
-  G(1524, 1528, 'Voyages down the Pacific coast', 'panama', 'tumbes', 'panama'),
+  G(1478, 1501, 'Youth in Trujillo', (-5.88, 39.47)), G(1502, 1523, 'Hispaniola, then Panama with Balboa', 'santo_domingo', 'panama'),
+  G(1524, 1528, 'Voyages down the Pacific coast', 'panama', 'tumbes', 'panama'), G(1529, 1530, "To Spain for the king's licence to conquer Peru", (-4.02, 39.86)),
   G(1531, 1533, 'Conquest of the Inca Empire', ('panama', 1531.05), ('tumbes', 1532.3), ('cajamarca', 1532.87), ('cajamarca', 1533.6), ('cuzco', 1533.88)),
   G(1535, 1541, 'Founder of Lima', 'lima'))
 P('Atahualpa', 'Last Sapa Inca', (1502, 1533), 2, 'rule',
@@ -383,7 +390,9 @@ P('Galileo Galilei', 'Italian astronomer and physicist', (1564, 1642), 1, 'mind'
   G(1633, 1633, 'Trial in Rome', 'florence', 'rome'), G(1634, 1642, 'House arrest at Arcetri', (11.25, 43.75)))
 P('Johannes Kepler', 'German astronomer', (1571, 1630), 2, 'mind',
   'Found that the planets move in ellipses, laying the ground for Newton.',
-  G(1600, 1611, 'Imperial mathematician at Prague', 'prague'), G(1612, 1626, 'Linz', (14.29, 48.31)))
+  G(1571, 1588, 'Youth in Weil der Stadt', (8.87, 48.75)), G(1589, 1593, 'Student at Tübingen', (9.06, 48.52)),
+  G(1594, 1599, 'Teacher at Graz', (15.44, 47.07)), G(1600, 1611, 'Imperial mathematician at Prague', 'prague'), G(1612, 1626, 'Linz', (14.29, 48.31)),
+  G(1627, 1630, 'Ulm, Sagan and death at Regensburg', (9.99, 48.4), (15.32, 51.62), 'regensburg'))
 P('Naresuan', 'King of Ayutthaya', (1555, 1605), 3, 'rule war',
   'Freed Siam from Burmese rule and killed the Burmese crown prince in an elephant duel.',
   R(1590, 1605, 'King of Ayutthaya', 'Ayutthaya', at='ayutthaya'))
