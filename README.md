@@ -45,4 +45,5 @@ The page should cost nothing while nobody is using it, since it is often left op
 - The sea, the ships, caravans and armies, the battle smoke and the pulsing rings on the map move while someone is using the page, and slow to a halt 20 seconds (12 on a phone) after the last pointer move, touch or key. Anything animated that never stops (a CSS animation with `infinite`) should pause under `.map-rest` like the others.
 - The two canvases draw at no more than 1.5 pixels per CSS pixel. Only one level of terrain pictures stays in the map: coarser ones stand in only until the sharper ones have loaded.
 - Only the five border snapshots nearest the shown year stay in memory.
+- The Layers button lets a reader hide people, cities, names, flags, faith symbols, traffic or motion; the choice is kept in `localStorage` (`wtt-layers`). With motion off the map never animates. Ships, caravans and armies outside the view are not drawn.
 
