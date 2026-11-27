@@ -195,6 +195,12 @@ P('Friedrich Engels', 'German philosopher', (1820, 1895), 3, 'mind reform',
 P('George Stephenson', 'English railway engineer', (1781, 1848), 3, 'mind',
   "Built the first public steam railways, the 'father of railways'.",
   G(1825, 1830, 'Stockton and Darlington, then Liverpool and Manchester', (-1.32, 54.57), (-1.55, 54.52), 'liverpool', 'manchester'))
+P('Carl Friedrich Gauss', 'German mathematician', (1777, 1855), 2, 'mind',
+  'The Prince of Mathematicians: number theory, the bell curve, the lost planet Ceres found again, and the first electric telegraph.',
+  G(1777, 1795, 'Childhood in Brunswick', 'brunswick'), G(1795, 1798, 'Student at Göttingen', 'gottingen'),
+  G(1798, 1807, "Back in Brunswick, paid by its duke", 'brunswick'), G(1807, 1820, 'Director of the Göttingen Observatory', 'gottingen'),
+  G(1821, 1825, 'Surveying the Kingdom of Hanover', ('gottingen', 1821.4), ((10.41, 53.25, 1823.6)), ('gottingen', 1825.8)),
+  G(1826, 1855, 'Göttingen: magnetism and the telegraph', 'gottingen'))
 P('Michael Faraday', 'English scientist', (1791, 1867), 2, 'mind',
   'Bookbinder\'s apprentice who discovered electromagnetic induction, the basis of every electric generator.',
   G(1813, 1867, 'Royal Institution in London', 'london'))

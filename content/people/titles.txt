@@ -342,6 +342,7 @@ Cao Cao
 Caratacus
 Cardinal Mazarin
 Cardinal Richelieu
+Carl Friedrich Gauss
 Carl Gustaf Emil Mannerheim
 Carl Linnaeus
 Carl XVI Gustaf
@@ -1070,6 +1071,7 @@ John VI Kantakouzenos
 John VI of Portugal
 John VIII Palaiologos
 John Zápolya
+John von Neumann
 John, King of Denmark
 John, King of England
 Joko Widodo

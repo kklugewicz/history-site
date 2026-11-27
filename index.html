@@ -194,6 +194,24 @@ body { background: var(--bg); color: var(--ink); font-family: var(--f-body); fon
 .mark text { font-family: var(--f-display); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
 .mark.past { opacity: .45; }
 .mark .dot { stroke: var(--paper); stroke-width: 1.5; }
+/* migrations: a trail in the people's colour over a soft paper halo, a dashed tail while it is still being walked, and a
+   round badge at the head with the people's name; little travellers move along it on the canvas above */
+.mg path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.mg .mg-halo { stroke: var(--paper); opacity: .55; pointer-events: none; }
+.mg .mg-line { pointer-events: none; }
+.mg .mg-hit { stroke: transparent; pointer-events: stroke; cursor: pointer; }
+.mh { cursor: pointer; }
+.mh circle { stroke: var(--paper); stroke-width: 1.8; }
+.mh .mh-ring { fill: none; stroke: currentColor; stroke-width: 1.2; opacity: .5; transform-box: fill-box; transform-origin: center; animation: mhpulse 2.4s ease-out infinite; }
+@keyframes mhpulse { from { transform: scale(.9); opacity: .55; } to { transform: scale(1.9); opacity: 0; } }
+.mh text { font-family: var(--f-display); font-style: italic; fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-linejoin: round; pointer-events: none; }
+.mh:hover circle.mh-dot { stroke: var(--ink); }
+#map.migmode .polwrap { opacity: .6; }
+.mig-who { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.mig-who .swatch { align-self: center; }
+.mig-who .s { color: var(--ink-soft); font-size: 13.5px; }
+.mv .face.plain svg { width: 20px; height: 20px; }
+@media (prefers-reduced-motion: reduce) { .mh .mh-ring { animation: none; display: none; } }
 .theater { cursor: pointer; }
 
 /* reading panel */
@@ -358,7 +376,9 @@ details[open] summary { margin-bottom: 6px; }
   .panel-body { padding: 10px 16px 16px; gap: 14px; }
   .syn { font-size: 15px; }
   .ticks span.minor, .band.short { color: transparent; }
-  .tabs button { padding: 6px 12px; }
+  .tabs button { padding: 6px 8px; flex: none; font-size: 14px; }
+  .tabs { max-width: calc(100vw - 132px); overflow-x: auto; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
   .top { gap: 6px; left: 10px; max-width: calc(100% - 20px); }
   .top h1, .top > .when, .top > .row:not(.places) { display: none; }
   .places { flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 20px); padding: 2px 2px 8px; margin: -2px -2px -8px; scrollbar-width: none; }
@@ -724,6 +744,7 @@ details[open] summary { margin-bottom: 6px; }
         <button type="button" role="tab" data-mode="map" aria-selected="true">Borders</button>
         <button type="button" role="tab" data-mode="wars" aria-selected="false">Wars</button>
         <button type="button" role="tab" data-mode="religions" aria-selected="false">Religions</button>
+        <button type="button" role="tab" data-mode="migrations" aria-selected="false">Migrations</button>
       </div>
       <button type="button" class="discbtn" id="discover" aria-haspopup="dialog" aria-expanded="false" title="The great scientists, mathematicians, inventors, philosophers and artists, century by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6M10 21h4M12 2.8a6.2 6.2 0 0 0-3.7 11.2c.7.5 1.2 1.4 1.2 2.3v.2h5v-.2c0-.9.5-1.8 1.2-2.3A6.2 6.2 0 0 0 12 2.8z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Discovery</button>
       <button type="button" class="discbtn" id="leaders" aria-haspopup="dialog" aria-expanded="false" title="The rulers, conquerors, generals, statesmen, revolutionaries and reformers, century by century" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 17.2L3.3 7.6l5 4.1L12 4.6l3.7 7.1 5-4.1-1.3 9.6zM5.2 20.4h13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Leaders</button>
@@ -819,6 +840,7 @@ details[open] summary { margin-bottom: 6px; }
   const waterG = root.append('g').attr('class', 'water');    // rivers, canals and lakes, over the states
   const neatG = root.append('path').attr('class', 'neat');   // the edge of the world
   const wlG = root.append('g');                // war lines: fronts and borders between warring sides
+  const migG = root.append('g');               // migration trails
   const geoG = root.append('g').attr('class', 'geo');        // names of seas, straits, rivers, mountains; peaks; currents' names
   const cityG = root.append('g');              // cities, each drawn as the landmark it was known for
   const lblG = root.append('g');
@@ -826,6 +848,7 @@ details[open] summary { margin-bottom: 6px; }
   const fbG = root.append('g');                // faith badges beside names
   const trailG = root.append('g');             // routes travelled by people on the move
   const ovG = root.append('g');                // Wars tab and story overlays: arrows, generals, sites
+  const migHG = root.append('g');              // the head of each migration: a badge and the people's name
   const wmG = root.append('g');                // swords on war lines, battle markers
   const leadG = root.append('g');              // rulers beside their state's name
   const peopleG = root.append('g');            // people where they were
@@ -1275,13 +1298,13 @@ details[open] summary { margin-bottom: 6px; }
     seaKey = ''; drawTerrain();
     polWrap.selectAll('path').attr('d', path);
     projectWater(); prepCurrents();
-    computeLabels(); drawPeople(); drawLabels(); drawWarLayer(); drawOverlay(false);
+    computeLabels(); drawPeople(); drawLabels(); drawWarLayer(); drawOverlay(false); drawMigrations();
     prepRoutes(); drawAmbient(true);
   }
 
   const zoom = d3.zoom().scaleExtent([.5, 60]).on('zoom', e => {
     root.attr('transform', e.transform); S.t = e.transform; S.k = e.transform.k;
-    drawTerrain(); styleWater(); drawPeople(); drawLabels(); scaleOverlay(); placeSwords(); drawAmbient(true);
+    drawTerrain(); styleWater(); drawPeople(); drawLabels(); scaleOverlay(); placeSwords(); zoomMigrations(); drawAmbient(true);
   });
   svg.call(zoom).on('dblclick.zoom', null);
   // the part of the map left free to look at: left of the reading panel on a big screen; on a phone, below the buttons at
@@ -2767,6 +2790,7 @@ details[open] summary { margin-bottom: 6px; }
     renderPanelSoon();
   }
   function styleMap() {
+    svg.classed('migmode', S.mode === 'migrations');
     if (!polGroup) return;
     const d = S.detail, side = sideMap() || overviewSides(), sm = simple(), y = S.year;
     polGroup.selectAll('path').each(function (f) {
@@ -2889,7 +2913,7 @@ details[open] summary { margin-bottom: 6px; }
   function warItems() {
     const d = S.detail;
     if (d && d.kind === 'war') return [{ w: d.item, si: S.step, st: d.item.steps[S.step], detail: true }];
-    if (d || S.mode === 'religions') return [];
+    if (d || S.mode === 'religions' || S.mode === 'migrations') return [];
     return activeWarsAt(S.year).map(w => { const si = stepIndexAt(w, S.year); return { w, si, st: w.steps[si] }; });
   }
   const curve = d3.line().curve(d3.curveCatmullRom.alpha(.5));
@@ -3010,6 +3034,13 @@ details[open] summary { margin-bottom: 6px; }
       w.steps.slice(0, S.step).forEach(s => (s.events || []).forEach(b => mark(b, b.winner != null ? sc(b.winner) : 'var(--ink-soft)', true)));
       (st.moves || []).forEach((m, i) => move(m, w, animate, i, false, true));
       (st.events || []).forEach(b => mark(b, b.winner != null ? sc(b.winner) : 'var(--ink-soft)', false));
+    }
+    if (d && d.kind === 'migration') {
+      const m = d.item, st = m.steps[S.step];
+      m.steps.slice(0, S.step).forEach(s => (s.moves || []).forEach(mo => ovG.append('path').attr('class', 'move ghost').attr('d', line(mo.path.map(p => proj(p)), mo.path)).attr('stroke', m.color).attr('data-w', 2.6)));
+      m.steps.slice(0, S.step).forEach(s => (s.sites || []).forEach(x => mark(x, m.color, true, 'site')));
+      (st.moves || []).forEach((mo, i) => plainMove(mo.path, m.color, mo.label || '', animate, i));
+      (st.sites || []).forEach(x => mark(x, m.color, false, 'site'));
     }
     if (d && d.kind === 'religion') {
       const r = d.item, st = r.steps[S.step];
@@ -3146,7 +3177,7 @@ details[open] summary { margin-bottom: 6px; }
   async function showStep(n) {
     const it = S.detail.item; S.step = n;
     const st = it.steps[n];
-    const b = stepBounds(st, S.detail.kind === 'war' ? 5 : 10);
+    const b = stepBounds(st, S.detail.kind === 'war' ? 5 : S.detail.kind === 'migration' ? 6 : 10);
     if (b) zoomToBounds(b, 10);
     S.year = st.year; S.yf = st.year + .5;
     renderWhen(); renderTimeline(); renderPanel();
@@ -3159,6 +3190,165 @@ details[open] summary { margin-bottom: 6px; }
     stopPlay(); const back = S.detail.back; S.detail = null;
     if (S.line) { S.year = back; followLine(); styleMap(); }   // back on a country's timeline: pick its state again
     computeLabels(); setYear(back, { force: true }); renderTimeline(); drawOverlay(false);
+  }
+
+  // ---------- migrations ----------
+  // Peoples on the move: folk migrations, steppe nomads, seafarers, settlers, the enslaved and the deported, exiles,
+  // refugees and emigrants. data/migrations.json (content/migrations/build_migrations.py) tells each in steps, like a war,
+  // and each step's moves are routes of [lon, lat, year] points. On the map a move's trail grows behind its head as the
+  // years pass and stays a while after it arrives (until its "until" year, for routes travelled again and again, like the
+  // slave ships' crossings), while little bands walk, ride, row or steam along it. Borders shows the great migrations
+  // quietly (the rest once zoomed in); the Migrations tab shows them all with their names; a click follows one step by step.
+  let MIGS = [], migById = {};
+  const MOVES = [];
+  const MIG_KIND = { folk: 'A people on the move', nomads: 'Nomads', seafarers: 'Seafarers', settlers: 'Settlers', forced: 'Forced migration',
+    exiles: 'Exiles', refugees: 'Refugees', emigrants: 'Emigrants' };
+  const MIG_SEA = new Set(['canoe', 'galley', 'longship', 'sail', 'steam']);
+  const MIG_SPRITE = { foot: 'walkers', wagon: 'wagon', horse: 'rider', river: 'canoe', canoe: 'canoe', galley: 'galley', longship: 'longship', sail: 'sail',
+    steam: 'steam', train: 'train', plane: 'plane' };
+  // the badge icon for how the lead group travels
+  const MIG_ICON = { foot: 'mg-foot', wagon: 'mg-wagon', horse: 'mg-horse', river: 'mg-boat', canoe: 'mg-boat', galley: 'mg-boat', longship: 'mg-boat',
+    sail: 'mg-boat', steam: 'mg-steam', train: 'mg-train', plane: 'mg-plane' };
+  defs.node().insertAdjacentHTML('beforeend', [
+    ['mg-foot', '<circle cx="1" cy="-7.2" r="2.1"/><path d="M-1.4-4.6h3.6l2.4 4.2-1.5.9-1.6-2.6-.3 3.6 2.6 6.6-1.9.8-2.6-6.2-1.7 6.2-2-.5 2-7.5.3-3.2-1.4 1.2-1.3 3.5-1.8-.6 1.6-4.4z"/>'],
+    ['mg-wagon', '<path d="M-7.6 2.2V-1.6C-7.6-6.4-3.6-8.4 0-8.4S7.6-6.4 7.6-1.6V2.2z"/><path d="M-8.4 2.2h16.8v1.6H-8.4z"/><circle cx="-4.6" cy="6" r="2.3"/><circle cx="4.6" cy="6" r="2.3"/>'],
+    ['mg-horse', '<path d="M-7.8 1.8C-8.4-1.8-6-3.4-3.4-3.4H2.6L5.4-7.6 7.8-6.4 6.4-4.6 8.4-3.6 7.8-2.2 5.4-2.6 4.4 1.8 5.6 7.4H3.8L2.4 3H-3L-4.6 7.4H-6.4L-5.6 2.6Z"/><circle cx="-0.4" cy="-6.4" r="1.6"/><path d="M-1.8-5h2.8l.4 3h-3.6z"/>'],
+    ['mg-boat', '<path d="M-8.4 2.6H8.4L5.8 6.8H-6z"/><path d="M-.6 2V-8.6h1.3V2z"/><path d="M1.4-8Q7.2-3.4 1.4 1.4z M-1.6-6.8Q-6.8-3 -1.6 1z"/>'],
+    ['mg-steam', '<path d="M-9 2.4H9L7 6.6H-7.6z"/><path d="M-5.6 2.4V-.8H4.6v3.2z M-3.4-.8V-3.6h5.2v2.8z"/><path d="M-1.1-3.6V-7.4h2.2v3.8z"/>'],
+    ['mg-train', '<path d="M-6.2-7.4h12.4a1.6 1.6 0 0 1 1.6 1.6V3.4a1.6 1.6 0 0 1-1.6 1.6H-6.2a1.6 1.6 0 0 1-1.6-1.6V-5.8a1.6 1.6 0 0 1 1.6-1.6zM-5.4-5v4.2H5.4V-5z"/><circle cx="-4" cy="2.2" r="1.1" fill="currentColor"/><circle cx="4" cy="2.2" r="1.1" fill="currentColor"/><path d="M-5.6 5l-2 3.4h2.2L-4 6h8l1.4 2.4h2.2l-2-3.4z"/>'],
+    ['mg-plane', '<path d="M8.6-.1C8.6-1.4 7.4-1.6 6-1.6H2.2L-2.2-8.4H-4.4L-2.2-1.6H-5.6L-7.4-4.2H-8.8L-7.6 0-8.8 4.2H-7.4L-5.6 1.6H-2.2L-4.4 8.4H-2.2L2.2 1.6H6C7.4 1.6 8.6 1.2 8.6-.1z"/>'],
+  ].map(([id, d]) => `<symbol id="${id}" viewBox="-10 -10 20 20" overflow="visible"><g fill="#fff">${d}</g></symbol>`).join(''));
+  opt('migrations.json').then(j => {
+    if (!j || !j.migrations) return;
+    MIGS = j.migrations; migById = Object.fromEntries(MIGS.map(m => [m.id, m]));
+    for (const m of MIGS) m.steps.forEach((st, si) => (st.moves || []).forEach((mo, mi) => {
+      const p = mo.path, t0 = p[0][2], t1 = p[p.length - 1][2];
+      Object.assign(mo, { m, si, key: m.id + ':' + si + ':' + mi, t0, t1, gc: p.some((q, i) => i && Math.abs(q[0] - p[i - 1][0]) > 180),
+        end: mo.until != null ? mo.until : t1 + clamp((t1 - t0) * .35, 4, 60) });
+      MOVES.push(mo);
+    }));
+    for (const m of MIGS) m.last = Math.max(m.end, ...MOVES.filter(mo => mo.m === m).map(mo => mo.end));
+    drawMigrations(); if (S.mode === 'migrations') renderTimeline(); renderPanelSoon();
+  });
+  const migStepAt = (m, y) => { let si = 0; m.steps.forEach((st, i) => { if (st.year <= y) si = i; }); return si; };
+  const moveLive = (mo, y) => mo.t0 <= y && y <= mo.end;
+  // the migrations under way in a year: any of their moves on the road or just arrived
+  const migsAt = y => MIGS.filter(m => MOVES.some(mo => mo.m === m && moveLive(mo, y)));
+  const migCard = m => `<button type="button" class="card" data-mig="${m.id}"><i class="swatch" style="background:${m.color}"></i><span><b>${esc(m.name)}</b><span class="s">${esc(MIG_KIND[m.kind] || '')}, ${fmtSpan(m.start, m.end)}</span></span></button>`;
+  const migTip = m => (MIG_KIND[m.kind] || '') + ', ' + fmtSpan(m.start, m.end) + (S.detail ? '' : ' · click to follow');
+  // the overview is drawn in Borders (the great migrations, and the rest once zoomed in) and in the Migrations tab
+  const migAll = () => S.mode === 'migrations' || S.k >= 2.5;
+  function migMovesNow() {
+    if (S.detail || !(S.mode === 'map' || S.mode === 'migrations') || !MOVES.length) return [];
+    const y = S.yf, all = migAll();
+    return MOVES.filter(mo => moveLive(mo, y) && (all || mo.m.rank === 1));
+  }
+  // how far along its route a move's head is at year y: the last point it has passed, and the fraction to the next
+  function migHead(mo, y) {
+    const p = mo.path; if (y >= mo.t1) return { i: p.length - 1, u: 0, done: true };
+    let i = 0; while (i < p.length - 2 && p[i + 1][2] <= y) i++;
+    const a = p[i][2], b = p[i + 1][2];
+    return { i, u: b > a ? clamp((y - a) / (b - a), 0, 1) : 1, done: false };
+  }
+  // the trail behind the head, as [lon, lat] points ending at the head
+  function migTrail(mo, h) {
+    const p = mo.path, pts = p.slice(0, h.i + 1).map(q => [q[0], q[1]]);
+    if (!h.done && h.u > 0) {
+      const a = p[h.i], b = p[h.i + 1];
+      if (mo.gc) pts.push(d3.geoInterpolate([a[0], a[1]], [b[0], b[1]])(h.u));
+      else { const A = proj(a), B = proj(b), q = proj.invert([A[0] + (B[0] - A[0]) * h.u, A[1] + (B[1] - A[1]) * h.u]); if (q) pts.push(q); }
+    }
+    return pts;
+  }
+  let migDrawn = [], migHeads = [], migAllWas = null;
+  function drawMigrations() {
+    const y = S.yf, tab = S.mode === 'migrations';
+    migAllWas = migAll();
+    const items = [];
+    for (const mo of migMovesNow()) {
+      const h = migHead(mo, y), ll = migTrail(mo, h);
+      if (ll.length < 2) continue;
+      // after it arrives a trail fades, slowly for a route that stays in use
+      const left = mo.end - Math.max(y, mo.t1), span = Math.max(1, mo.end - mo.t1);
+      const a = !h.done ? 1 : mo.until != null ? clamp(left / Math.min(span, 12), .3, .9) : clamp(.25 + .75 * left / span, .25, 1);
+      const g = prepPath(ll, false); g.off = (migDrawn.find(d => d.mo === mo) || {}).g?.off ?? Math.random() * 200;
+      items.push({ mo, h, ll, a, g, key: mo.key });
+    }
+    migDrawn = items;
+    migG.selectAll('g.mg').data(items, d => d.key).join(enter => {
+      const g = enter.append('g').attr('class', 'mg');
+      g.append('path').attr('class', 'mg-halo'); g.append('path').attr('class', 'mg-line'); g.append('path').attr('class', 'mg-hit')
+        .on('click', (e, d) => { e.stopPropagation(); enterMigration(d.mo.m, migStepAt(d.mo.m, S.year)); })
+        .on('mousemove', (e, d) => showTip(e, (d.mo.label || d.mo.m.people) + ' · ' + d.mo.m.name, migTip(d.mo.m))).on('mouseleave', hideTip);
+      return g;
+    }).each(function (d) {
+      const g = d3.select(this), dd = line(d.ll.map(q => proj(q)), d.ll), c = d.mo.m.color;
+      g.style('opacity', d.a).classed('tab', tab).classed('moving', !d.h.done);
+      g.select('.mg-halo').attr('d', dd); g.select('.mg-hit').attr('d', dd);
+      g.select('.mg-line').attr('d', dd).attr('stroke', c).attr('marker-end', d.h.done ? `url(#${marker(c)})` : null);
+    });
+    // one badge per migration, at the head of its newest group still on the road (or its newest trail)
+    const lead = new Map();
+    for (const d of items) {
+      const o = lead.get(d.mo.m);
+      if (!o || (o.h.done && !d.h.done) || (o.h.done === d.h.done && d.mo.t0 >= o.mo.t0)) lead.set(d.mo.m, d);
+    }
+    migHeads = [...lead.values()].map(d => ({ d, m: d.mo.m, xy: proj(d.ll[d.ll.length - 1]) })).sort((a, b) => a.m.rank - b.m.rank || a.m.start - b.m.start);
+    migHG.selectAll('g.mh').data(migHeads, x => x.m.id).join(enter => {
+      const g = enter.append('g').attr('class', 'mh')
+        .on('click', (e, x) => { e.stopPropagation(); enterMigration(x.m, migStepAt(x.m, S.year)); })
+        .on('mousemove', (e, x) => showTip(e, x.m.name, migTip(x.m))).on('mouseleave', hideTip);
+      g.append('circle').attr('class', 'mh-ring');
+      g.append('circle').attr('class', 'mh-dot');
+      g.append('use');
+      g.append('text');
+      return g;
+    }).each(function (x) {
+      const g = d3.select(this), moving = !x.d.h.done;
+      g.attr('data-x', x.xy[0]).attr('data-y', x.xy[1]).style('color', x.m.color).style('opacity', moving ? 1 : Math.max(.55, x.d.a));
+      g.select('.mh-dot').style('fill', x.m.color);
+      g.select('.mh-ring').style('display', moving && !reduce() ? null : 'none');
+      g.select('use').attr('href', '#' + (MIG_ICON[x.d.mo.by] || 'mg-foot'));
+      g.select('text').text(x.m.people);
+    });
+    scaleMigrations();
+  }
+  // widths and badges follow the zoom; names are placed biggest migrations first and skipped where they would collide
+  function scaleMigrations() {
+    const k = S.k, tab = S.mode === 'migrations', T = S.t, w = tab ? 2.6 : 1.8;
+    migG.selectAll('.mg-line').attr('stroke-width', w / k).attr('stroke-dasharray', function () { return this.parentNode.classList.contains('moving') ? null : `${6 / k} ${3.5 / k}`; });
+    migG.selectAll('.mg-halo').attr('stroke-width', (w + 2.8) / k);
+    migG.selectAll('.mg-hit').attr('stroke-width', 12 / k);
+    const r = tab ? 10 : isPhone() ? 8.5 : 7.5, names = tab || k >= 1.8, boxes = [];
+    migHG.selectAll('g.mh').each(function (x) {
+      const g = d3.select(this), X = T.x + k * x.xy[0], Y = T.y + k * x.xy[1];
+      g.attr('transform', `translate(${x.xy[0]},${x.xy[1]}) scale(${1 / k})`);
+      g.select('.mh-dot').attr('r', r); g.select('.mh-ring').attr('r', r);
+      g.select('use').attr('x', -r * .78).attr('y', -r * .78).attr('width', r * 1.56).attr('height', r * 1.56);
+      const t = g.select('text'), fs = tab ? 13.5 : 12.5, txt = t.text(), bw = txt.length * fs * .5 + 6;
+      const box = [X + r + 3, Y - fs * .7, X + r + 3 + bw, Y + fs * .45];
+      const ok = names && !boxes.some(b => b[0] < box[2] && box[0] < b[2] && b[1] < box[3] && box[1] < b[3]);
+      if (ok) boxes.push(box);
+      t.style('display', ok ? null : 'none').attr('x', r + 4).attr('y', 4.5).attr('font-size', fs).attr('stroke-width', 3);
+    });
+  }
+  function zoomMigrations() { if (migAll() !== migAllWas) drawMigrations(); else scaleMigrations(); }
+  function enterMigration(m, n = 0) {
+    stopPlay(); hideTip();
+    S.detail = { kind: 'migration', item: m, back: S.year }; S.step = n; S.selected = null; S.person = null;
+    if (S.mode !== 'migrations') setMode('migrations', true); else drawMigrations();
+    showStep(n); openPanel();
+  }
+  // the migrations whose groups are in a state this year: on the road through it or arrived there
+  function migsIn(f) {
+    if (!MOVES.length) return [];
+    const y = S.yf, out = new Set();
+    for (const mo of MOVES) {
+      if (!moveLive(mo, y) || out.has(mo.m)) continue;
+      const h = migHead(mo, y), ll = migTrail(mo, h);
+      if (d3.geoContains(f, ll[ll.length - 1]) || (h.done && d3.geoContains(f, ll[0]))) out.add(mo.m);
+    }
+    return [...out];
   }
 
   // ---------- the year ----------
@@ -3191,7 +3381,7 @@ details[open] summary { margin-bottom: 6px; }
     yearRaf = setTimeout(() => requestAnimationFrame(() => {
       yearRaf = 0; lastRender = performance.now();
       if (S.detail) return;
-      styleMap(); styleWater(); drawPeople(); drawLabels(); drawWarLayer(); drawOverlay(true);
+      styleMap(); styleWater(); drawPeople(); drawLabels(); drawWarLayer(); drawOverlay(true); drawMigrations();
     }), wait);
   }
   let peopleRaf = 0;
@@ -3238,7 +3428,7 @@ details[open] summary { margin-bottom: 6px; }
     if (open) return `<div class="sec"><h3>${esc(r)}${held}</h3>${body}</div>`;
     return `<details><summary>${esc(r)} ${held}</summary><div class="sec">${body}</div></details>`;
   }
-  const credit = '<p class="credit">Events come from your World History timeline; synopses, wars, religions and people were written for this map. Portraits load from Wikipedia. Borders are approximate, from <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> (A. Ourednik, GPL-3.0), using the closest earlier year.</p>';
+  const credit = '<p class="credit">Events come from your World History timeline; synopses, wars, religions, migrations and people were written for this map. Portraits load from Wikipedia. Borders are approximate, from <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">historical-basemaps</a> (A. Ourednik, GPL-3.0), using the closest earlier year.</p>';
   const warCard = w => `<button type="button" class="card" data-war="${w.id}"><i class="swatch" style="background:${warColor(w)}"></i><span><b>${esc(w.name)}</b><span class="s">${fmtSpan(w.start, w.end)}</span></span></button>`;
   const storyCard = (st, sub) => `<button type="button" class="card" data-story="${st.id}"><i class="swatch" style="background:${st.color}"></i><span><b>${esc(st.name)}</b><span class="s">${esc(sub)}</span></span></button>`;
   const personBtn = (p, sub) => `<button type="button" data-person="${p.id}">${faceHtml(p, p.name)}<span><b>${esc(p.name)}</b><span class="s">${esc(sub)}</span></span></button>`;
@@ -3275,6 +3465,17 @@ details[open] summary { margin-bottom: 6px; }
       if (st.events?.length) html += '<div class="sec"><h3>Key moments</h3><div class="list">' + st.events.map(b =>
         `<div class="battle" style="border-color:${w.sides[b.winner]?.color || 'var(--line)'}"><span class="ev-k">${esc(b.sea ? 'sea ' + b.kind : b.kind)}</span> <b>${esc(b.name)}</b> <span class="win">${fmtYear(b.year)}${b.winner != null && w.sides[b.winner] ? ' · ' + sideName(b.winner) + (b.kind === 'battle' || b.kind === 'siege' ? ' victory' : '') : ''}</span><div>${esc(b.text)}</div></div>`).join('') + '</div></div>';
       html += `<details${S.step === 0 ? ' open' : ''}><summary>About this ${w.kind === 'conflict' ? 'conflict' : 'war'}</summary><p class="syn" style="font-size:15px">${esc(w.summary)}</p></details>`;
+    } else if (d && d.kind === 'migration') {
+      const m = d.item, st = m.steps[S.step];
+      head = `<p class="kicker">${esc(m.name)} · ${fmtSpan(m.start, m.end)}</p><p class="period">${esc(st.title)}</p><div class="meta">${esc(st.label)} · step ${S.step + 1} of ${m.steps.length}</div>`;
+      html += `<div class="mig-who"><i class="swatch" style="background:${m.color}"></i><b>${esc(MIG_KIND[m.kind] || '')}</b>${m.numbers ? `<span class="s">${esc(m.numbers)}</span>` : ''}</div>`;
+      if (m.story && hasStory(m.story)) html += `<button type="button" class="storybtn" data-story-person="${esc(m.story)}">${svIco('play')}<span>Watch the story: ${esc(evOf(m.story)?.name || m.name)}</span></button>`;
+      html += `<p class="syn">${esc(st.text)}</p>`;
+      if (st.moves?.length) html += '<div class="sec"><h3>On the move</h3><div class="list">' + st.moves.map(mo =>
+        `<div class="mv"><span class="face plain" style="background:${m.color}"><svg viewBox="-10 -10 20 20" aria-hidden="true"><use href="#${MIG_ICON[mo.by] || 'mg-foot'}" x="-10" y="-10" width="20" height="20"/></svg></span><span><b>${esc(mo.label || m.people)}</b> <span class="win">${fmtSpan(mo.t0, mo.t1)}</span>${MIG_SEA.has(mo.by) ? ' <span class="ev-k">by sea</span>' : mo.by === 'train' ? ' <span class="ev-k">by rail</span>' : mo.by === 'plane' ? ' <span class="ev-k">by air</span>' : mo.by === 'river' ? ' <span class="ev-k">by river</span>' : ''}</span></div>`).join('') + '</div></div>';
+      if (st.sites?.length) html += '<div class="sec"><h3>Key places</h3><ul>' + st.sites.map(x => `<li><b>${esc(x.name)}</b> <span class="win">${fmtYear(x.year)}</span>: ${esc(x.text)}</li>`).join('') + '</ul></div>';
+      if (m.war && warById[m.war]) html += `<div class="sec"><h3>The war</h3><div class="list">${warCard(warById[m.war])}</div></div>`;
+      html += `<details${S.step === 0 ? ' open' : ''}><summary>About ${esc(m.name)}</summary><p class="syn" style="font-size:15px">${esc(m.summary)}</p></details>`;
     } else if (d && d.kind === 'religion') {
       const r = d.item, st = r.steps[S.step];
       head = `<p class="kicker">${esc(r.name)} · founded ${esc(r.founded)}</p><p class="period">${esc(st.title)}</p><div class="meta">${esc(st.label)} · step ${S.step + 1} of ${r.steps.length}</div>`;
@@ -3316,6 +3517,8 @@ details[open] summary { margin-bottom: 6px; }
         if (lp && lp.note) html += `<p class="syn lnote">${esc(lp.note)}</p>`;
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
+        const onMove = migsIn(f);
+        if (onMove.length) html += `<div class="sec"><h3>Peoples on the move</h3><div class="list">${onMove.map(migCard).join('')}</div></div>`;
         html += eventStoryRow(f);
         html += regionBlock(p.regions[0], true);
         p.regions.slice(1).forEach(r => html += regionBlock(r, false));
@@ -3343,6 +3546,13 @@ details[open] summary { margin-bottom: 6px; }
         if (more.length) html += `<div class="sec"><h3>Also in ${esc(s.label)}</h3><div class="list">${more.map(warCard).join('')}</div></div>`;
         const byEra = ERAS.map(e => [e[0], wars.filter(w => eraOf(periodOf(w.start)) === e)]).filter(x => x[1].length);
         html += `<details><summary>All ${wars.length} wars</summary><div class="list">${byEra.map(([n, ws]) => `<h4>${esc(n)}</h4>` + ws.map(warCard).join('')).join('')}</div></details>`;
+      } else if (S.mode === 'migrations') {
+        const act = migsAt(S.year), inPeriod = MIGS.filter(m => m.start <= s.span[1] && m.last >= s.span[0] && !act.includes(m));
+        html += `<p class="hint">Peoples on the move in ${esc(fmtYear(S.year))}: migrating peoples and nomads, settlers, the enslaved and the deported, exiles and refugees. Each trail grows as the years pass; a dashed trail has arrived. Click a badge or a trail to follow it step by step.</p>`;
+        html += `<div class="sec"><h3>On the move in ${esc(fmtYear(S.year))}</h3>${act.length ? '<div class="list">' + act.map(migCard).join('') + '</div>' : '<p class="hint">None of the great migrations on this map is under way this year.</p>'}</div>`;
+        if (inPeriod.length) html += `<div class="sec"><h3>Also in ${esc(s.label)}</h3><div class="list">${inPeriod.map(migCard).join('')}</div></div>`;
+        const byEra = ERAS.map(e => [e[0], MIGS.filter(m => eraOf(periodOf(m.start)) === e)]).filter(x => x[1].length);
+        if (MIGS.length) html += `<details><summary>All ${MIGS.length} migrations</summary><div class="list">${byEra.map(([n, ms]) => `<h4>${esc(n)}</h4>` + ms.map(migCard).join('')).join('')}</div></details>`;
       } else if (S.mode === 'religions') {
         const fa = S.faithSel && faithById[S.faithSel];
         if (fa) {
@@ -3366,9 +3576,11 @@ details[open] summary { margin-bottom: 6px; }
         }
       } else {
         html += `<p class="hint">Press play or drag the timeline to move through the years. Click any state to read what was going on there, and zoom in to meet the people of the time. ${detailed ? 'Showing every state and people.' : 'Showing the main civilizations; turn on Detailed borders to see every state.'}</p>`;
-        html += `<div class="legend"><span>${ico('swords')} war front or battle</span><span>${ico('ship')} war at sea</span><span>${ico('tower')} siege</span><span><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10" fill="#3a63c8"/><use href="#fs-cross" x="-7.6" y="-7.6" width="15.2" height="15.2"/></svg> main faith</span></div>`;
+        html += `<div class="legend"><span>${ico('swords')} war front or battle</span><span>${ico('ship')} war at sea</span><span>${ico('tower')} siege</span><span><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10" fill="#3a63c8"/><use href="#fs-cross" x="-7.6" y="-7.6" width="15.2" height="15.2"/></svg> main faith</span><span><svg viewBox="-10 -10 20 20" aria-hidden="true"><circle r="10" fill="#8e5a2b"/><use href="#mg-wagon" x="-8" y="-8" width="16" height="16"/></svg> a people on the move</span></div>`;
         const act = activeWarsAt(S.year);
         if (act.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${act.map(warCard).join('')}</div></div>`;
+        const mg = migsAt(S.year);
+        if (mg.length) html += `<div class="sec"><h3>On the move in ${esc(fmtYear(S.year))}</h3><div class="list">${mg.map(migCard).join('')}</div></div>`;
         html += storyTray();
         html += peopleBlock(8);
         if (s.world['Key Events']) html += `<div class="sec"><h3>World in ${esc(s.label)}</h3>${events(s.world['Key Events'])}</div>`;
@@ -3418,6 +3630,8 @@ details[open] summary { margin-bottom: 6px; }
     if (pb) { const p = personById[pb.dataset.person]; if (p) { selectPerson(p); focusPerson(p); } return; }
     const sb = e.target.closest('[data-stint]');
     if (sb) { const p = personById[S.person], st = p && p.stints[+sb.dataset.stint]; if (st) { if (S.detail) S.detail = null; const a = st.path && st.path[0].length > 2 ? st.path[0][2] : st.from; setYear(st.from, { yf: Math.max(st.from, a) + .01 }); focusPerson(p, st); } return; }
+    const mgb = e.target.closest('[data-mig]');
+    if (mgb) { const m = migById[mgb.dataset.mig]; if (m) enterMigration(m, m.start <= S.year && S.year <= m.last && mgb.closest('#panelBody') ? migStepAt(m, S.year) : 0); return; }
     const b = e.target.closest('[data-war],[data-story]'); if (!b) return;
     if (b.dataset.war) { const w = warById[b.dataset.war]; enterWar(w, w.start <= S.year && S.year <= w.end && b.closest('#panelBody') ? stepIndexAt(w, S.year) : 0); }
     else enterReligion(storyById[b.dataset.story]);
@@ -3433,9 +3647,9 @@ details[open] summary { margin-bottom: 6px; }
   $('lanes').addEventListener('click', onPick);
   // on a phone the war bars and faith dots are small, so a tap picks the nearest one
   $('lanes').addEventListener('click', e => {
-    if (!isPhone() || e.target.closest('[data-war],[data-story]')) return;
+    if (!isPhone() || e.target.closest('[data-war],[data-story],[data-mig]')) return;
     let best = null, bd = 20;
-    for (const b of $('lanes').querySelectorAll('[data-war],[data-story]')) {
+    for (const b of $('lanes').querySelectorAll('[data-war],[data-story],[data-mig]')) {
       const r = b.getBoundingClientRect(), d = Math.hypot(Math.max(0, r.left - e.clientX, e.clientX - r.right), Math.max(0, r.top - e.clientY, e.clientY - r.bottom));
       if (d < bd) { bd = d; best = b; }
     }
@@ -3467,6 +3681,7 @@ details[open] summary { margin-bottom: 6px; }
     slider.setAttribute('aria-valuetext', fmtYear(S.year));
     head.innerHTML = '<span class="tl-year" id="tlYear"></span>' + (S.mode === 'wars' ? '<span class="tl-hint"><b>Wars:</b> each coloured bar is a major war. Click one to follow it.</span>'
       : S.mode === 'religions' ? '<span class="tl-hint"><b>Religions:</b> each dot marks when a faith began. Click one to follow its spread.</span>'
+      : S.mode === 'migrations' ? '<span class="tl-hint"><b>Migrations:</b> each coloured bar is a people on the move. Click one to follow it.</span>'
       : `<span class="tl-hint">Era: <b id="eraName"></b></span>`) + `<span class="grow"></span><button type="button" id="speed" title="Playback speed"></button>`;
     const speedTxt = () => $('speed').innerHTML = `<span class="tl-hint">Speed </span>${S.speed}×`;
     speedTxt();
@@ -3486,6 +3701,14 @@ details[open] summary { margin-bottom: 6px; }
     } else if (S.mode === 'religions') {
       lanes.innerHTML = rel.stories.map(st => `<button type="button" class="pin" data-story="${st.id}" title="${esc(st.name)}, founded ${esc(st.founded)}" aria-label="${esc(st.name)}" style="background:${st.color};left:${xcss(posOfYear(st.steps[0].year), N)}"></button>`).join('');
       lanes.style.height = '18px';
+    } else if (S.mode === 'migrations') {
+      const laneEnd = [], pitch = isPhone() ? 5 : 8; let html = '';
+      MIGS.slice().sort((a, b) => a.start - b.start).forEach(m => {
+        const l = posOfYear(m.start), r = Math.max(posOfYear(m.end) + 1 / 40, l + .25);
+        let lane = laneEnd.findIndex(x => x < l - .05); if (lane < 0) { lane = laneEnd.length; laneEnd.push(r); } else laneEnd[lane] = r;
+        html += `<button type="button" class="warbar" data-mig="${m.id}" title="${esc(m.name)} (${fmtSpan(m.start, m.end)})" aria-label="${esc(m.name)}" style="background:${m.color};top:${2 + lane * pitch}px;left:${xcss(l, N)};width:calc(${(r - l) / N} * (100% - var(--th, 16px)))"></button>`;
+      });
+      lanes.innerHTML = html; lanes.style.height = (laneEnd.length * pitch + 4) + 'px';
     } else { lanes.innerHTML = ''; lanes.style.height = '0'; }
     ticks.innerHTML = TICKS.map(([y, t], i) => `<span class="${i === 0 || i === TICKS.length - 1 || y === 1300 ? '' : 'minor'}" style="left:${xcss(i === TICKS.length - 1 ? N : posOfYear(y), N)}">${esc(t)}</span>`).join('');
     markEra();
@@ -3615,9 +3838,10 @@ details[open] summary { margin-bottom: 6px; }
   function setMode(m, keepDetail) {
     S.mode = m; S.faithSel = null; if (m === 'wars') S.person = null;
     document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x.dataset.mode === m));
+    { const sel = document.querySelector('.tabs button[aria-selected="true"]'), bar = sel && sel.parentNode; if (bar && bar.scrollWidth > bar.clientWidth) bar.scrollLeft = Math.max(0, sel.offsetLeft - (bar.clientWidth - sel.offsetWidth) / 2); }
     if (S.detail && !keepDetail) { S.detail = null; computeLabels(); setYear(S.year, { force: true }); }
     followLine();
-    styleMap(); drawWarLayer(); drawOverlay(false); renderTimeline(); renderPanel(); drawPeople(); drawLabels();
+    styleMap(); drawWarLayer(); drawOverlay(false); drawMigrations(); renderTimeline(); renderPanel(); drawPeople(); drawLabels();
   }
   document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { const back = S.detail ? S.detail.back : null; if (back != null) { S.detail = null; S.year = back; } setMode(b.dataset.mode); });
   const worldView = (dur = 750) => zoomToBounds(path.bounds({ type: 'Sphere' }), 40, dur);
@@ -3771,6 +3995,30 @@ details[open] summary { margin-bottom: 6px; }
     plane(c, s, col) { c.fillStyle = '#f4f6f7'; c.strokeStyle = 'rgba(30,42,49,.6)'; c.lineWidth = Math.max(.5, s * .05);
       c.beginPath(); c.moveTo(1.1 * s, 0); c.quadraticCurveTo(.9 * s, -.12 * s, .4 * s, -.1 * s); c.lineTo(.1 * s, -.9 * s); c.lineTo(-.15 * s, -.9 * s); c.lineTo(0, -.1 * s); c.lineTo(-.7 * s, -.08 * s); c.lineTo(-.95 * s, -.4 * s); c.lineTo(-1.08 * s, -.4 * s); c.lineTo(-.95 * s, 0);
       c.lineTo(-1.08 * s, .4 * s); c.lineTo(-.95 * s, .4 * s); c.lineTo(-.7 * s, .08 * s); c.lineTo(0, .1 * s); c.lineTo(-.15 * s, .9 * s); c.lineTo(.1 * s, .9 * s); c.lineTo(.4 * s, .1 * s); c.quadraticCurveTo(.9 * s, .12 * s, 1.1 * s, 0); c.fill(); c.stroke(); },
+    // a band on foot: three walkers, the first in the people's colour, with a bundle
+    walkers(c, s, col, t) {
+      for (let i = 0; i < 3; i++) {
+        const x = -i * .62 * s, ph = t * 7 + i * 1.7, b = Math.abs(Math.sin(ph)) * .07 * s, sw = Math.sin(ph) * .16 * s;
+        c.fillStyle = c.strokeStyle = i ? '#6b5a45' : col; c.lineWidth = Math.max(.6, .1 * s);
+        c.beginPath(); c.arc(x, -1.02 * s - b, .16 * s, 0, Math.PI * 2); c.fill();
+        c.fillRect(x - .12 * s, -.86 * s - b, .24 * s, .5 * s);
+        c.beginPath(); c.moveTo(x, -.4 * s - b); c.lineTo(x + sw, 0); c.moveTo(x, -.4 * s - b); c.lineTo(x - sw, 0); c.stroke();
+        if (!i) { c.fillStyle = '#c9b48a'; c.beginPath(); c.ellipse(x - .2 * s, -.95 * s - b, .2 * s, .16 * s, 0, 0, Math.PI * 2); c.fill(); }
+      }
+    },
+    // a horseman of the steppe at a canter
+    rider(c, s, col, t) {
+      for (let i = 0; i < 2; i++) {
+        const x = -i * 1.25 * s, ph = t * 9 + i * 2.1, b = Math.abs(Math.sin(ph)) * .09 * s, lg = Math.sin(ph) * .2 * s;
+        c.fillStyle = c.strokeStyle = i ? '#7a5a3a' : '#5a3d24'; c.lineWidth = Math.max(.6, .1 * s);
+        c.beginPath(); c.ellipse(x, -.55 * s - b, .5 * s, .2 * s, 0, 0, Math.PI * 2); c.fill();
+        c.beginPath(); c.moveTo(x + .35 * s, -.62 * s - b); c.lineTo(x + .72 * s, -.98 * s - b); c.lineTo(x + .86 * s, -.88 * s - b); c.lineTo(x + .5 * s, -.48 * s - b); c.fill();
+        c.beginPath(); c.moveTo(x + .3 * s, -.45 * s - b); c.lineTo(x + .3 * s + lg, 0); c.moveTo(x - .32 * s, -.45 * s - b); c.lineTo(x - .32 * s - lg, 0);
+        c.moveTo(x - .48 * s, -.6 * s - b); c.lineTo(x - .7 * s, -.35 * s - b); c.stroke();
+        c.fillStyle = i ? '#6b5a45' : col; c.fillRect(x - .1 * s, -1.12 * s - b, .22 * s, .4 * s);
+        c.beginPath(); c.arc(x + .01 * s, -1.24 * s - b, .13 * s, 0, Math.PI * 2); c.fill();
+      }
+    },
     army(c, s, col, t) { c.fillStyle = col; c.strokeStyle = paperC; c.lineWidth = Math.max(.6, s * .1);
       for (let i = 0; i < 4; i++) { const x = (-i * .42) * s, b = Math.abs(Math.sin(t * 8 + i)) * .1 * s; c.beginPath(); c.arc(x, -.55 * s - b, .16 * s, 0, Math.PI * 2); c.fill(); c.stroke(); c.fillRect(x - .12 * s, -.42 * s - b, .24 * s, .42 * s); }
       c.strokeStyle = inkC; c.lineWidth = Math.max(.6, s * .07); c.beginPath(); c.moveTo(.25 * s, 0); c.lineTo(.25 * s, -1.25 * s); c.stroke(); c.fillStyle = col; c.beginPath(); c.moveTo(.25 * s, -1.25 * s); c.lineTo(.85 * s, -1.08 * s); c.lineTo(.25 * s, -.9 * s); c.fill(); },
@@ -3795,7 +4043,7 @@ details[open] summary { margin-bottom: 6px; }
     if (kind === 'plane') c.rotate(ang);
     else { const left = Math.cos(ang) < 0; let tilt = left ? Math.atan2(-Math.sin(ang), -Math.cos(ang)) : ang; tilt = clamp(tilt, -.35, .35); if (left && flipOK) { c.scale(-1, 1); c.rotate(-tilt); } else c.rotate(tilt); }
     // small bob on water
-    if (kind !== 'plane' && kind !== 'train' && kind !== 'caravan' && kind !== 'llama' && kind !== 'wagon' && kind !== 'army') c.translate(0, Math.sin(t * 2.2 + x * .05) * s * .06);
+    if (kind !== 'plane' && kind !== 'train' && kind !== 'caravan' && kind !== 'llama' && kind !== 'wagon' && kind !== 'army' && kind !== 'walkers' && kind !== 'rider') c.translate(0, Math.sin(t * 2.2 + x * .05) * s * .06);
     (SPR[kind] || SPR.sail)(c, s, col, t);
     c.restore();
   }
@@ -3831,7 +4079,7 @@ details[open] summary { margin-bottom: 6px; }
     const sx = p => T.x + k * p[0], sy = p => T.y + k * p[1];
     const sz = clamp(5 * Math.sqrt(k), 5.5, 15) * (isPhone() ? .9 : 1);
     // trade routes of this age: a faint dotted road and the traffic on it
-    if (!S.detail && S.mode !== 'wars') {
+    if (!S.detail && S.mode !== 'wars' && S.mode !== 'migrations') {
       for (const R of fxs.routes) {
         const r = R.r; if (y < r.from || y > r.to) continue;
         const fade = clamp(Math.min(y - r.from, r.to - y) / 15 + .35, .35, 1);
@@ -3869,6 +4117,22 @@ details[open] summary { margin-bottom: 6px; }
       }
       c.globalAlpha = 1;
     }
+    // peoples on the move: little bands walking, riding, rowing and steaming along each migration's trail
+    const det = S.detail && S.detail.kind === 'migration' ? S.detail.item : null;
+    const mlist = det ? (det.steps[S.step].moves || []).map(mo => ({ mo, g: warGeo(mo), a: 1 })) : migDrawn;
+    for (const it of mlist) {
+      const g = it.g, mo = it.mo; if (!g || !(g.len > 0)) continue;
+      const kind = MIG_SPRITE[mo.by] || 'walkers', v = (MIG_SEA.has(mo.by) ? 16 : mo.by === 'train' || mo.by === 'plane' ? 26 : 10) / Math.sqrt(k);
+      if (!still) g.off = (g.off || 0) + dt * v;
+      const n = clamp(Math.round(g.len * k / 110), 1, det ? 4 : 3);
+      for (let i = 0; i < n; i++) {
+        const along = ((g.off || 0) + i * g.len / n) % g.len, q = pointOn(g, along), X = sx(q), Y = sy(q);
+        if (X < -30 || X > W + 30 || Y < -30 || Y > H + 30) continue;
+        c.globalAlpha = it.a * clamp(Math.min(along, g.len - along) / Math.max(4, g.len * .08), 0, 1);
+        sprite(c, kind, X, Y, q[2], sz * (kind === 'walkers' ? .9 : 1), mo.m.color, t);
+      }
+    }
+    c.globalAlpha = 1;
     // smoke over this year's battles
     if (!still) {
       for (const e of battleNow) if (Math.random() < dt * 5) { const [px, py] = proj([e.lon, e.lat]); fxs.smoke.push({ x: px, y: py, vx: (Math.random() - .5) * 6, vy: -8 - Math.random() * 8, age: 0, life: 1.6 + Math.random(), r: 2 + Math.random() * 2, fire: Math.random() < .3 }); }
