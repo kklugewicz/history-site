@@ -121,6 +121,7 @@ body { background: var(--bg); color: var(--ink); font-family: var(--f-body); fon
 .pol.faith { fill-opacity: var(--faith-op); }
 .pol.faith.other { fill-opacity: .16; }
 .pol.sel { stroke: var(--sel); stroke-width: 2.2; }
+.pol.lin { stroke: var(--sel); stroke-width: 1.3; stroke-dasharray: 5 3; }
 .pol.side { fill-opacity: var(--side-op); }
 .pol.minor { fill: transparent !important; stroke: none; pointer-events: none; }
 .pols.old { pointer-events: none; }
@@ -272,6 +273,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .sub { color: var(--ink-soft); font-size: 13px; margin-top: 3px; }
 .hint { color: var(--ink-soft); font-size: 14px; margin: 0; }
 .syn { margin: 0; font-size: 16px; line-height: 1.5; }
+/* what a period of a country's history was, under the state's name */
+.syn.lnote { font-size: 15px; color: var(--ink-soft); border-left: 3px solid var(--line); padding-left: 10px; }
 .sec h3 { margin: 0 0 6px; font-size: 11.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .held { font-family: var(--f-mono); text-transform: none; letter-spacing: 0; font-weight: 500; font-size: 11px; color: var(--accent); border: 1px solid currentColor; border-radius: 999px; padding: 0 7px; }
 .sec ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
@@ -307,6 +310,12 @@ details[open] summary { margin-bottom: 6px; }
 .band { position: absolute; top: 0; height: 18px; border-radius: 3px; font-size: 10.5px; line-height: 18px; padding: 0 4px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--ink); background: hsl(var(--h) var(--era-s) var(--era-l)); }
 .band.cur { box-shadow: inset 0 0 0 1.5px var(--ink); }
 .dim .band { opacity: .35; }
+/* a country's own timeline: one band per period of its history, each a click away */
+.bands.line .band { cursor: pointer; }
+.bands.line .band:hover { box-shadow: inset 0 0 0 1px var(--ink-soft); }
+.bands.line .band.cur { box-shadow: inset 0 0 0 1.5px var(--ink); }
+.bands.line .band.tiny { color: transparent; padding: 0; }
+.tl-line { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .lanes { position: relative; }
 .warbar { position: absolute; height: 6px; border-radius: 3px; padding: 0; border: 0; box-shadow: none; cursor: pointer; min-width: 6px; }
 .warbar:hover { outline: 2px solid var(--ink); }
@@ -372,7 +381,10 @@ details[open] summary { margin-bottom: 6px; }
   .tl-year .ad { font-size: 12px; letter-spacing: .08em; }
   .tl-year .tl-era { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--accent); overflow: hidden; text-overflow: ellipsis; }
   .tl-head button { flex: none; padding: 6px 10px; font-size: 13px; border-radius: 99px; }
-  #back { padding: 6px 12px 6px 9px; }
+  #back, #lineBack { padding: 6px 12px 6px 9px; }
+  /* on a country's timeline the year keeps the left, and the way back sits at the right beside the speed */
+  .tl-head > .tl-year { order: -2; }
+  .tl-head > .grow { order: -1; }
   .step { grid-row: 2; width: 36px; height: 36px; border-radius: 50%; align-self: end; margin-bottom: 14px; }
   #prev { grid-column: 1; justify-self: center; }
   #next { grid-column: 3; }
@@ -868,6 +880,9 @@ details[open] summary { margin-bottom: 6px; }
   const cmdr = commanders || {};
   const routes = (ambient && ambient.routes) || [];
   const snaps = timeline.snapshots, N = snaps.length;
+  // the timeline ends this year, not at the end of its decade
+  const thisYear = new Date().getFullYear();
+  if (snaps[N - 1].span[0] <= thisYear && thisYear < snaps[N - 1].span[1]) snaps[N - 1].span[1] = thisYear;
   const faithById = Object.fromEntries(rel.denominations.map(f => [f.id, f]));
   const storyById = Object.fromEntries(rel.stories.map(s => [s.id, s]));
   const warById = Object.fromEntries(wars.map(w => [w.id, w]));
@@ -909,24 +924,35 @@ details[open] summary { margin-bottom: 6px; }
   const fileForYear = y => timeline.borderFiles.reduce((best, f) => fileYear(f) <= y ? f : best, timeline.borderFiles[0]);
 
   // ---------- time ----------
-  // The slider is continuous. Each period of the spreadsheet gets the same width, so recent centuries get more room;
-  // inside a period time runs evenly. Years step singly from the Middle Ages on and in coarser steps in deep time.
-  const spanLen = i => snaps[i].span[1] - snaps[i].span[0] + 1;
+  // The slider is continuous and runs on a scale: spans of years laid end to end, each given a width, with time running
+  // evenly inside a span. On the world timeline each period of the spreadsheet gets the same width, so recent centuries
+  // get more room. A country's own timeline (see "a country's own timeline" below) has one span per period of its
+  // history instead. Years step singly from the Middle Ages on and in coarser steps in deep time.
+  function makeScale(spans, w) {
+    const cum = [0]; for (const x of w) cum.push(cum[cum.length - 1] + x);
+    return { spans, w, cum, max: cum[cum.length - 1], lo: spans[0][0], hi: spans[spans.length - 1][1] };
+  }
+  const WORLD = makeScale(snaps.map(s => s.span), snaps.map(() => 1));
+  let TL = WORLD;   // the scale the slider is on now
+  const spanLen = i => TL.spans[i][1] - TL.spans[i][0] + 1;
+  // the span of the slider's scale a year falls in; the world period a year falls in (the spreadsheet's rows)
+  function segOf(y) { if (y === 0) y = 1; const sp = TL.spans; for (let i = 0; i < sp.length; i++) if (y <= sp[i][1]) return i; return sp.length - 1; }
   function periodOf(y) { if (y === 0) y = 1; for (let i = 0; i < N; i++) if (y <= snaps[i].span[1]) return i; return N - 1; }
-  const posOfYear = y => { const i = periodOf(y); return i + clamp((y - snaps[i].span[0]) / spanLen(i), 0, .999999); };
-  const yearFloatOfPos = p => { p = clamp(p, 0, N - 1e-6); const i = Math.floor(p); return snaps[i].span[0] + (p - i) * spanLen(i); };
+  const segOfPos = p => { let i = 0; while (i < TL.w.length - 1 && TL.cum[i + 1] <= p) i++; return i; };
+  const posOfYear = y => { const i = segOf(y); return TL.cum[i] + TL.w[i] * clamp((y - TL.spans[i][0]) / spanLen(i), 0, .999999); };
+  const yearFloatOfPos = p => { p = clamp(p, 0, TL.max - 1e-6); const i = segOfPos(p); return TL.spans[i][0] + (p - TL.cum[i]) / TL.w[i] * spanLen(i); };
   const gran = i => { const L = spanLen(i); return L >= 5000 ? 50 : L >= 1000 ? 10 : L >= 300 ? 5 : 1; };
   function yearOfPos(p) {
-    p = clamp(p, 0, N - 1e-6); const i = Math.floor(p), [a, b] = snaps[i].span, g = gran(i);
+    p = clamp(p, 0, TL.max - 1e-6); const i = segOfPos(p), [a, b] = TL.spans[i], g = gran(i);
     const y = clamp(a + Math.floor((yearFloatOfPos(p) - a) / g) * g, a, b);
     return y === 0 ? 1 : y;
   }
-  // the arrows move ten steps per period: single years in the 1900s, decades in the Middle Ages, centuries in the Bronze Age
+  // the arrows move ten steps per span: single years in the 1900s, decades in the Middle Ages, centuries in the Bronze Age
   const NICE = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000];
   const tick = i => NICE.find(n => n >= spanLen(i) / 10 * .8) || 1000;
   function stepYear(y, dir) {
-    if (dir > 0) { const t = tick(periodOf(y)); let n = (Math.floor(y / t) + 1) * t; if (n === 0) n = 1; return Math.min(n, snaps[N - 1].span[1]); }
-    const t = tick(periodOf(y === 1 ? -1 : y - 1)); let n = (Math.ceil(y / t) - 1) * t; if (n === 0) n = -1; return Math.max(n, snaps[0].span[0]);
+    if (dir > 0) { const t = tick(segOf(y)); let n = (Math.floor(y / t) + 1) * t; if (n === 0) n = 1; return Math.min(n, TL.hi); }
+    const t = tick(segOf(y === 1 ? -1 : y - 1)); let n = (Math.ceil(y / t) - 1) * t; if (n === 0) n = -1; return Math.max(n, TL.lo);
   }
   const fmtYear = y => y < 0 ? (-y) + ' BC' : (y < 1000 ? 'AD ' + y : '' + y);
   const fmtSpan = (a, b) => a === b ? fmtYear(a) : fmtYear(a) + ' to ' + fmtYear(b);
@@ -942,6 +968,126 @@ details[open] summary { margin-bottom: 6px; }
     ['World Wars', 34, 37, 355], ['Cold War', 38, 41, 225], ['Information Age', 42, 45, 170]];
   const eraOf = i => ERAS.find(e => i >= e[1] && i <= e[2]);
   const eraName = y => eraOf(periodOf(y))[0];
+
+  // ---------- a country's own timeline ----------
+  // Clicking a state switches the timeline to the history of the country it belongs to, told as its periods: China's
+  // dynasties, Japan's eras, France's kingdoms and republics. data/lineages.json (content/lineages/build_lineages.py)
+  // lists each country's periods with the names its states go by in the border files; "names" gives each state its
+  // home country (by years, when a name is reused), and "seen" the years of every state that has none, whose timeline
+  // is then its own years. On the country's timeline each period gets a width that grows with its length, but slowly,
+  // so a short dynasty can still be found. The selected state follows the country as the years move: scrub from the
+  // Ming back to the Tang and the Tang is picked.
+  let LIN = null;
+  const HI = snaps[N - 1].span[1];
+  const lineScale = spans => {
+    const w = spans.map(([a, b]) => Math.sqrt(Math.min(b - a + 1, 1000)) + 3), m = w.reduce((s, x) => s + x, 0) / w.length;
+    return makeScale(spans, w.map(x => x / m));
+  };
+  function prepLine(l) {
+    const ps = l.periods, n = ps.length;
+    // each period lasts until the next one begins (there is no year 0)
+    l.spans = ps.map((p, i) => [p.from, i + 1 < n ? (ps[i + 1].from === 1 ? -1 : ps[i + 1].from - 1) : Math.min(p.to == null ? HI : p.to, HI)]);
+    l.lo = l.spans[0][0]; l.hi = l.spans[n - 1][1];
+    l.sets = ps.map(p => { const own = new Set(), bor = new Set(); for (const s of p.states) if (s[0] === '~') bor.add(s.slice(1)); else own.add(s); return { own, bor }; });
+    l.names = new Set(l.sets.flatMap(x => [...x.own, ...x.bor]));   // every state that is part of its story
+    l.scale = lineScale(l.spans);
+    return l;
+  }
+  opt('lineages.json').then(d => {
+    if (!d) return;
+    LIN = { byId: {}, names: d.names || {}, seen: d.seen || {}, own: {}, shared: new Set(d.shared || []), today: null };
+    for (const l of d.lineages) LIN.byId[l.id] = prepLine(l);
+    // a state clicked while the file was still loading gets its country's timeline now
+    const reopen = () => { if (S.selected && !S.detail) { const l = lineFor(S.selected); if (l && l !== S.line) { enterLine(l); styleMap(); } } };
+    if (!S.line) reopen();
+    if (S.selected) renderPanel();
+    // today's countries, from the latest border snapshot, for a click on a people drawn across several of them
+    if (LIN.shared.size) loadBorders(timeline.borderFiles[timeline.borderFiles.length - 1]).then(fc => {
+      LIN.today = fc;
+      if (LIN.shared.has(S.selected) && S.selAt) { reopen(); renderPanel(); }
+    }).catch(() => {});
+  });
+  const segIn = (l, y) => { if (y === 0) y = 1; const sp = l.spans; for (let i = 0; i < sp.length; i++) if (y <= sp[i][1]) return i; return sp.length - 1; };
+  // The country a state belongs to in a year (null for a state with none, and until the file has loaded). A name at
+  // home in several countries in different years goes to the one whose years come nearest those of the border snapshot
+  // drawn in that year, since its shape is that snapshot's, and then nearest the year itself. A people or loose label
+  // the map draws across several of today's countries ("shared": the Taíno on Cuba, Jamaica and Hispaniola, the Celts in
+  // Britain and Ireland) belongs, at a point, to the country whose land that is today when that country's story lists
+  // it then, and to its home otherwise: a click on Cuba opens Cuba's timeline. The selected state's point is where it
+  // was clicked, or the core of the country whose timeline picked it.
+  function lineageOf(name, y = S.year, at = name === S.selected ? S.selAt : null) {
+    const l = homeOf(name, y);
+    if (!at || !LIN || !LIN.shared.has(name)) return l;
+    const t = todayAt(at);
+    return t && t !== l && y >= t.lo && y <= t.hi && rankIn(t, name, y) < 9 ? t : l;
+  }
+  // the country of today whose land a point is on, by the latest border snapshot (remembered for the last point)
+  let todayMemo = null;
+  function todayAt(at) {
+    if (!LIN.today) return null;
+    if (todayMemo && todayMemo.at === at) return todayMemo.l;
+    const fs = LIN.today.features, last = fileYear(timeline.borderFiles[timeline.borderFiles.length - 1]);
+    let l = null;
+    for (const [a, b] of [[0, 0], [.2, 0], [-.2, 0], [0, .2], [0, -.2], [.4, .4], [-.4, -.4], [.4, -.4], [-.4, .4]]) {
+      const f = fs.find(f => d3.geoContains(f, [at[0] + a, at[1] + b]));
+      if (f) { l = homeOf(f.properties.name, last); break; }
+    }
+    todayMemo = { at, l };
+    return l;
+  }
+  function homeOf(name, y) {
+    const h = LIN && name ? LIN.names[name] : null;
+    if (h == null) return null;
+    if (typeof h === 'string') return LIN.byId[h] || null;
+    const bf = timeline.borderFiles, f = fileForYear(y), i = bf.indexOf(f);
+    const a = fileYear(f), b = i + 1 < bf.length ? fileYear(bf[i + 1]) - 1 : Infinity;
+    const gap = (lo, hi, from, to) => from != null && hi < from ? from - hi : to != null && lo > to ? lo - to : 0;
+    let best = h[0], bd = Infinity;
+    for (const e of h) { const d = gap(a, b, e[1], e[2]) * 1e5 + gap(y, y, e[1], e[2]); if (d < bd) { bd = d; best = e; } }
+    return LIN.byId[best[0]] || null;
+  }
+  const periodAt = (l, y = S.year) => l.periods[segIn(l, y)];
+  // How surely a state is the country this year: 0 one of its own states in this period, 1 one of its own states in the
+  // period the border snapshot was drawn for or a neighbouring period (the map lags the dates a little), 2 a state that
+  // is part of its story in this period but at home elsewhere, 3 one from those other periods while the map still draws
+  // it over the country's heartland (Rome is not yet Gaul's in 400 BC); 9 not part of it now.
+  function rankIn(l, name, y = S.year) {
+    const P = l.sets, i = segIn(l, y);
+    if (P[i].own.has(name)) return 0;
+    const near = [S.file ? segIn(l, fileYear(S.file)) : i, i - 1, i + 1].filter(j => j >= 0 && j < P.length);
+    if (near.some(j => P[j].own.has(name))) return 1;
+    if (P[i].bor.has(name)) return 2;
+    return near.some(j => P[j].bor.has(name)) && holdsCore(l, name) ? 3 : 9;
+  }
+  // whether this border snapshot draws a state over a country's core (remembered for the snapshot)
+  function holdsCore(l, name) {
+    if (!l.core || !S.features) return false;
+    if (!l.cores || l.cores.file !== S.file) l.cores = { file: S.file, m: new Map() };
+    let v = l.cores.m.get(name);
+    if (v === undefined) l.cores.m.set(name, v = S.features.some(f => f.properties.name === name && d3.geoContains(f, l.core)));
+    return v;
+  }
+  const inLineage = (l, name, y = S.year) => rankIn(l, name, y) < 9;
+  // the timeline a click on a state opens: its country's, or else (no country, or a map that still draws the state
+  // after its country's history has ended) its own years on the map
+  function lineFor(name, y = S.year) {
+    if (!LIN || !name) return null;
+    const l = lineageOf(name, y); if (l && y >= l.lo && y <= l.hi) return l;
+    if (NOT_STATE.test(name)) return null;
+    if (LIN.own[name]) return LIN.own[name];
+    let yrs = LIN.seen[name];
+    if (!yrs) {
+      // on the map in one snapshot only: the years that snapshot stands for
+      const bf = timeline.borderFiles, i = bf.indexOf(S.file);
+      if (i < 0) return null;
+      yrs = [fileYear(S.file), i + 1 < bf.length ? fileYear(bf[i + 1]) - 1 : null];
+    }
+    const f = S.fc && S.fc.byName.get(name);
+    return (LIN.own[name] = prepLine({ id: 'own:' + name, name, own: true, region: f ? f.properties.regions[0] : null,
+      periods: [{ name, from: yrs[0], to: yrs[1], states: [name] }] }));
+  }
+  const periodYears = p => p.to == null ? 'since ' + fmtYear(p.from) : fmtSpan(p.from, p.to);
+  const lineLabel = (l, y = S.year) => l.own ? l.name : l.name + ' · ' + periodAt(l, y).name;
 
   // ---------- colour ----------
   const HUES = [8, 24, 40, 62, 95, 140, 168, 192, 212, 236, 262, 292, 322, 345];
@@ -1092,8 +1238,9 @@ details[open] summary { margin-bottom: 6px; }
   // ---------- state ----------
   let detailed = false;
   try { detailed = localStorage.getItem('wtt-detailed') === '1'; } catch (e) {}
-  const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, person: null, faithSel: null, sheet: null,
-    features: [], fc: null, file: null, k: 1, t: d3.zoomIdentity, playing: false, speed: 1 };
+  // line: the country whose own timeline the slider is on (null on the world timeline); lineIdx: its period now
+  const S = { mode: 'map', detail: null, year: 1715, yf: 1715.5, pos: 0, idx: 0, step: 0, selected: null, selAt: null, person: null, faithSel: null, sheet: null,
+    line: null, lineIdx: -1, features: [], fc: null, file: null, k: 1, t: d3.zoomIdentity, playing: false, speed: 1 };
   // simplified drawing applies everywhere except inside a war, where every involved state must show
   const simple = () => !detailed && !(S.detail && S.detail.kind === 'war');
   let W = 0, H = 0, dpr = 1;
@@ -1120,7 +1267,7 @@ details[open] summary { margin-bottom: 6px; }
   svg.call(zoom).on('dblclick.zoom', null);
   // the part of the map left free to look at: left of the reading panel on a big screen; on a phone, below the buttons at
   // the top and, while the pop-up card is up, above it
-  const popOpen = () => isPhone() && !!(S.detail || S.person || S.selected || S.faithSel || S.sheet);
+  const popOpen = () => isPhone() && !!(S.detail || S.person || S.selected || S.faithSel || S.sheet || S.line);
   function viewArea() {
     if (!isPhone()) return [0, 0, W - (Math.min(380, W * .34) + 32), H];
     const st = $('stage').getBoundingClientRect(), tb = document.querySelector('.top').getBoundingClientRect();
@@ -1521,7 +1668,7 @@ details[open] summary { margin-bottom: 6px; }
     const k = S.k;
     cityG.selectAll('g.city').data(list, d => d.c.id).join(enter => {
       const g = enter.append('g').attr('class', 'city')
-        .on('click', (e, d) => { e.stopPropagation(); hideTip(); const f = stateAt(d.c.at); if (f) onPolity(f); })
+        .on('click', (e, d) => { e.stopPropagation(); hideTip(); const f = stateAt(d.c.at); if (f) onPolity(f, d.c.at); })
         .on('mousemove', (e, d) => showTip(e, d.full, cityTip(d))).on('mouseleave', hideTip);
       g.append('line').attr('class', 'tie');
       g.append('circle').attr('class', 'dot').attr('r', 2.2);
@@ -2555,7 +2702,7 @@ details[open] summary { margin-bottom: 6px; }
     polGroup = polWrap.append('g').attr('class', 'pols').style('opacity', fade ? 0 : 1);
     polGroup.selectAll('path').data(S.features).join('path')
       .attr('class', 'pol').attr('d', path)
-      .on('click', (e, d) => { e.stopPropagation(); onPolity(d); })
+      .on('click', (e, d) => { e.stopPropagation(); onPolity(d, clickAt(e)); })
       .on('mousemove', (e, d) => showTip(e, polTip(d.properties, d)))
       .on('mouseleave', hideTip);
     if (old) {
@@ -2563,6 +2710,7 @@ details[open] summary { margin-bottom: 6px; }
       if (fade) polGroup.transition().duration(500).ease(d3.easeCubicOut).style('opacity', 1).on('end', () => old.remove());
       else old.remove();
     }
+    followLine();
     if (S.selected && !S.features.some(f => f.properties.name === S.selected && (!simple() || f.major))) { S.selected = null; renderPanel(); }
     computeLabels(); styleMap(); drawLabels(); drawWarLayer(); drawOverlay(false);
     renderPanelSoon();
@@ -2584,10 +2732,13 @@ details[open] summary { margin-bottom: 6px; }
       }
       // inside a merged group, paint the shared edges in the group colour so the empire reads as one shape
       const merged = sm && f.major && !d && S.mode === 'map' && f.group !== p.name;
-      el.style('fill', fill).style('stroke', merged && p.name !== S.selected ? fill : null).classed('minor', sm && !f.major && !war)
+      // on a country's own timeline its other states this year are outlined too (the Liao and Xixia beside the Song)
+      const lin = !!S.line && !d && p.name !== S.selected && (!sm || f.major) && rankIn(S.line, p.name, y) < 9;
+      el.style('fill', fill).style('stroke', merged && p.name !== S.selected && !lin ? fill : null).classed('minor', sm && !f.major && !war)
         .classed('muted', muted).classed('faith', faith).classed('other', other).classed('side', war)
-        .classed('sel', p.name === S.selected);
+        .classed('sel', p.name === S.selected).classed('lin', lin);
     });
+    polGroup.selectAll('path.lin').raise();
     polGroup.selectAll('path.sel').raise();
   }
   // polity name -> {side, color} for the war being read (null outside a war)
@@ -2622,7 +2773,11 @@ details[open] summary { margin-bottom: 6px; }
   }
   function hideTip() { tip.hidden = true; }
 
-  function onPolity(f) {
+  // the longitude and latitude a click on the map points at
+  const clickAt = e => { const p = proj.invert(d3.pointer(e, root.node())); return p && isFinite(p[0]) && isFinite(p[1]) ? p : null; };
+  // a click on a state, at a point of it when the click gives one (a people drawn across several countries opens the
+  // country whose land that is)
+  function onPolity(f, at = null) {
     if (S.detail) return;
     if (S.mode === 'wars') {
       const sd = overviewSides().get(f.properties.name);
@@ -2630,15 +2785,51 @@ details[open] summary { margin-bottom: 6px; }
     }
     if (S.mode === 'religions') {
       const fa = faithAt(f, S.year);
-      S.faithSel = fa ? fa.id : null; S.selected = null; S.person = null;
+      S.faithSel = fa ? fa.id : null; S.selected = null; S.person = null; leaveLine();
       styleMap(); renderPanel(); openPanel();
       return;
     }
-    S.selected = f.properties.name; S.person = null; styleMap(); drawPeople();
+    S.selected = f.properties.name; S.selAt = at; S.person = null;
+    const l = lineFor(f.properties.name);
+    if (l) enterLine(l); else leaveLine();
+    styleMap(); drawPeople();
     zoomToBounds(path.bounds(f));
     renderPanel(); openPanel();
   }
   const openPanel = () => $('panel').classList.remove('collapsed');
+  // switch the slider to a country's own timeline, or back to the world's; the year stays where it is
+  function enterLine(l) {
+    if (S.line === l) return;
+    S.line = l; TL = l.scale; S.lineIdx = segOf(S.year); S.pos = posOfYear(S.year);
+    if (!S.detail) { renderTimeline(); renderWhen(); }
+  }
+  function leaveLine() {
+    if (!S.line) return;
+    S.line = null; S.lineIdx = -1; TL = WORLD; S.pos = posOfYear(S.year);
+    if (!S.detail) { renderTimeline(); renderWhen(); }
+  }
+  // the world timeline again, with nothing picked: the back button and Escape
+  function closeLine() { S.selected = null; leaveLine(); styleMap(); drawPeople(); renderPanel(); }
+  // On a country's timeline the selected state follows the country through the years: the user's own pick while it is
+  // still drawn and still part of the country, else the state that is most surely the country now, the biggest if several
+  // (of the empires that ruled it from elsewhere, the one the map draws over its heartland: Safavid, not Ottoman, Baku).
+  // Returns whether the selection changed.
+  function followLine() {
+    const l = S.line; if (!l || S.detail || S.person) return false;
+    const sm = simple(), y = S.year, ok = f => !sm || f.major;
+    if (S.selected && S.features.some(f => f.properties.name === S.selected && ok(f)) && rankIn(l, S.selected, y) < 9) return false;
+    let best = null, br = 9, bc = false;
+    for (const f of S.features) {
+      if (!ok(f)) continue;
+      const r = rankIn(l, f.properties.name, y);
+      if (r === 9 || r > br) continue;
+      const c = r >= 2 && holdsCore(l, f.properties.name);
+      if (r < br || c > bc || (c === bc && f.area > best.area)) { best = f; br = r; bc = c; }
+    }
+    const n = best ? best.properties.name : null;
+    if (n === S.selected) return false;
+    S.selected = n; S.selAt = l.core || null; return true;
+  }
 
   // ---------- wars on the map ----------
   const activeWarsAt = y => wars.filter(w => w.start <= y && w.end >= y);
@@ -2716,7 +2907,7 @@ details[open] summary { margin-bottom: 6px; }
   const evIcon = e => e.sea ? (e.year >= 1850 ? '#ic-steamship' : '#ic-ship') : e.kind === 'siege' ? '#ic-tower' : e.kind === 'treaty' ? '#ic-treaty' : e.kind === 'battle' ? '#ic-swords' : '#ic-star';
   // battles of the war's current chapter that have happened by this year; this year's pulse
   function drawBattles(items) {
-    const y = S.year, g0 = gran(periodOf(y)), list = [];
+    const y = S.year, g0 = gran(segOf(y)), list = [];
     if (!S.detail) for (const it of items) for (const e of it.st.events || []) {
       if (e.year > y || (e.kind !== 'battle' && e.kind !== 'siege' && !e.sea)) continue;
       list.push({ key: it.w.id + ':' + e.name, it, e, now: y - e.year < Math.max(1, g0) });
@@ -2913,20 +3104,29 @@ details[open] summary { margin-bottom: 6px; }
     if (file !== S.file) await showBorders(file);
     if (S.detail && S.detail.item === it && S.step === n) { computeLabels(); styleMap(); drawLabels(); drawWarLayer(); drawOverlay(true); }
   }
-  function exitDetail() { stopPlay(); const back = S.detail.back; S.detail = null; computeLabels(); setYear(back, { force: true }); renderTimeline(); drawOverlay(false); }
+  function exitDetail() {
+    stopPlay(); const back = S.detail.back; S.detail = null;
+    if (S.line) { S.year = back; followLine(); styleMap(); }   // back on a country's timeline: pick its state again
+    computeLabels(); setYear(back, { force: true }); renderTimeline(); drawOverlay(false);
+  }
 
   // ---------- the year ----------
   let yearRaf = 0, panelTimer = 0, lastRender = 0;
   function setYear(y, o = {}) {
     if (S.detail && !o.force) return;
+    // a year outside the country's history (a person's life, a story) goes back to the world timeline
+    if (S.line && (y < S.line.lo || y > S.line.hi)) leaveLine();
     const yf = o.yf != null ? o.yf : y + .5;
     const changed = y !== S.year;
     S.year = y; S.yf = yf; S.pos = o.pos != null ? o.pos : posOfYear(y);
     const i = periodOf(y), periodChanged = i !== S.idx;
     S.idx = i;
+    const li = S.line ? segOf(y) : -1, lineChanged = li !== S.lineIdx;
+    S.lineIdx = li;
     if (!o.fromSlider) slider.value = S.pos;
+    if (lineChanged && followLine()) styleMap();
     renderWhen();
-    if (periodChanged || o.force) { markEra(); renderPanelSoon(); }
+    if (periodChanged || lineChanged || o.force) { markEra(); renderPanelSoon(); }
     const file = fileForYear(y);
     if (file !== S.file) showBorders(file);
     if (changed || o.force) { scheduleYear(); if (!S.detail) renderPanelSoon(); }
@@ -2954,14 +3154,15 @@ details[open] summary { margin-bottom: 6px; }
   // on a phone the year sits in the timeline, over the slider
   function fillTlYear() {
     const e = $('tlYear'), y = S.year; if (!e) return;
-    e.innerHTML = `<b>${y < 0 ? (y < -3000 ? 'c. ' : '') + (-y) : y}</b><span class="ad">${y < 0 ? 'BC' : 'AD'}</span><span class="tl-era">${esc(eraName(y))}</span>`;
+    const lp = S.line && !S.line.own && periodAt(S.line, y);   // on a country's timeline, its period instead of the world's era
+    e.innerHTML = `<b>${y < 0 ? (y < -3000 ? 'c. ' : '') + (-y) : y}</b><span class="ad">${y < 0 ? 'BC' : 'AD'}</span><span class="tl-era">${esc(lp ? lp.short || lp.name : eraName(y))}</span>`;
   }
   function renderWhen() {
     const d = S.detail, y = S.year;
     const big = y < 0 ? `${(y < -3000 ? 'c. ' : '') + (-y)}<small>BC</small>` : `${y}<small>AD</small>`;
     $('yNum').innerHTML = big;
     $('yAge').textContent = eraName(y);
-    $('ySub').textContent = d ? d.item.name : snaps[S.idx].label + ' · ' + snaps[S.idx].century;
+    $('ySub').textContent = d ? d.item.name : S.line ? lineLabel(S.line, y) : snaps[S.idx].label + ' · ' + snaps[S.idx].century;
     fillTlYear();
   }
   let hashTimer = 0;
@@ -3039,7 +3240,7 @@ details[open] summary { margin-bottom: 6px; }
       else html += `<p class="hint">Not on the map in ${esc(fmtYear(S.year))}. Pick a moment below to see where they were.</p>`;
       html += `<div class="sec"><h3>Life on the map</h3><ul class="hist">${p.stints.map((st, i) => [st, i]).sort((a, b) => a[0].from - b[0].from || b[0].to - a[0].to).map(([st, i]) => `<li><button type="button" data-stint="${i}" class="${st === now ? 'now' : ''}"><i class="swatch" style="background:${tagColor(p)}"></i><span><b>${esc(st.label || p.role)}</b> <span class="when">${fmtSpan(st.from, st.to)}</span></span><span class="note">${st.rule ? 'Leads ' + esc(st.rule[0]) : st.path.length > 1 ? 'On the move' : 'Based here'}</span></button></li>`).join('')}</ul></div>`;
       if (p.wiki) html += `<p class="hint"><a href="https://en.wikipedia.org/wiki/${encodeURIComponent(p.wiki.replace(/ /g, '_'))}" target="_blank" rel="noopener">Read more on Wikipedia</a></p>`;
-    } else if (phone && !S.features.some(x => x.properties.name === S.selected) && !(S.mode === 'religions' && S.faithSel && faithById[S.faithSel])) {
+    } else if (phone && !S.line && !S.features.some(x => x.properties.name === S.selected) && !(S.mode === 'religions' && S.faithSel && faithById[S.faithSel])) {
       // a phone has no reading panel: with nothing picked there is no card, unless the stories button asked for one
       pop = sheet = S.sheet === 'stories';
       if (pop) {
@@ -3053,18 +3254,36 @@ details[open] summary { margin-bottom: 6px; }
         const p = f.properties, fa = faithAt(f, S.year);
         const sw = S.mode === 'religions' && fa ? fa.color : simple() ? polFill(f.group, 'g') : polFill(p.name, 'n');
         for (const ld of rulersOf(f)) html += `<button type="button" class="card" data-person="${ld.p.id}" style="padding:6px 8px"><span class="ruler"><span class="ph">${imgOf(ld.p) ? `<img src="${esc(imgOf(ld.p))}" alt="">` : esc(initials(ld.p.name))}</span><span><b>${esc(ld.p.name)}</b><span class="s">${esc(ld.s.label || ld.p.role)}, ${fmtSpan(ld.s.from, ld.s.to)}</span><span class="syn" style="display:block;font-size:14.5px;margin-top:4px">${esc(ld.p.why)}</span></span></span></button>`;
-        const subs = (p.sub ? `<div class="sub">Part of ${esc(p.sub)}</div>` : '') + (fa ? `<div class="sub">Main faith: ${esc(fa.name)}</div>` : '');
+        const lp = S.line && !S.line.own ? periodAt(S.line) : null;
+        const subs = (lp ? `<div class="sub">${S.line.name !== p.name ? esc(S.line.name) + ' · ' : ''}${esc(lp.name)}, ${periodYears(lp)}</div>` : '') +
+          (p.sub ? `<div class="sub">Part of ${esc(p.sub)}</div>` : '') + (fa ? `<div class="sub">Main faith: ${esc(fa.name)}</div>` : '');
         // on a phone the country's name heads its pop-up card
         if (phone) head = `<p class="kicker">${esc(fmtYear(S.year))} · ${esc(era[0])}</p><p class="period"><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</p>${subs}`;
         else html += `<div class="focus"><h2><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</h2>` + subs + '</div>';
         html = phone ? countryStories(f) + html : html + countryStories(f);   // on a phone the stories lead the pop-up card
         html += flagBlock(f);
+        if (lp && lp.note) html += `<p class="syn lnote">${esc(lp.note)}</p>`;
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
         html += eventStoryRow(f);
         html += regionBlock(p.regions[0], true);
         p.regions.slice(1).forEach(r => html += regionBlock(r, false));
         if (storyOf(fa)) html += storyCard(storyOf(fa), 'Follow how this faith spread');
+      } else if (S.line) {
+        // a country none of whose states is drawn this year (Korea under Japanese rule): its period and its region
+        const l = S.line, lp = periodAt(l), y = S.year, sm = simple();
+        if (!l.hold || l.hold.file !== S.file) {
+          const h = l.core && S.features.filter(x => d3.geoContains(x, l.core)).sort((a, b) => b.major - a.major || b.area - a.area)[0];
+          l.hold = { file: S.file, f: h || null };
+        }
+        const h = l.hold.f, mine = h && rankIn(l, h.properties.name, y) < 9;
+        head = `<p class="kicker">${esc(fmtYear(y))} · ${esc(era[0])}</p><p class="period">${esc(l.name)}</p>${l.own ? '' : `<div class="sub">${esc(lp.name)}, ${periodYears(lp)}</div>`}`;
+        if (lp.note) html += `<p class="syn lnote">${esc(lp.note)}</p>`;
+        html += `<p class="hint">${mine && sm ? `Not picked out on the simplified map in ${esc(fmtYear(y))}: turn on Detailed borders to see it.`
+          : h && !mine ? `Not drawn as a state of its own in ${esc(fmtYear(y))}: the map shows its heartland as part of <b>${esc(sm ? h.group : h.properties.name)}</b>.`
+          : `Not on the map in ${esc(fmtYear(y))}.`} Drag the timeline through its history, or go back to the world timeline.</p>`;
+        const r = l.region || (h && h.properties.regions[0]);
+        if (r && timeline.regions.includes(r)) html += regionBlock(r, true);
       } else if (S.mode === 'wars') {
         const act = activeWarsAt(S.year), inPeriod = wars.filter(w => w.start <= s.span[1] && w.end >= s.span[0]);
         html += `<p class="hint">Each war being fought in ${esc(fmtYear(S.year))} colours its sides. Arrows are the armies on the move, led by their generals; crossed swords mark the front and the battles. Click any of them to follow the war.</p>`;
@@ -3107,7 +3326,7 @@ details[open] summary { margin-bottom: 6px; }
       }
     }
     // the same view a moment later (the year moved on) keeps its scroll position
-    const key = d ? d.kind + d.item.id + ':' + S.step : S.person ? 'p' + S.person : S.selected ? 's' + S.selected : S.faithSel ? 'f' + S.faithSel : S.mode;
+    const key = d ? d.kind + d.item.id + ':' + S.step : S.person ? 'p' + S.person : S.selected ? 's' + S.selected : S.faithSel ? 'f' + S.faithSel : S.line ? 'l' + S.line.id : S.mode;
     const body = $('panelBody'), top = key === panelKey ? body.scrollTop : 0;
     panelKey = key;
     if (!sheet) S.sheet = null;
@@ -3174,7 +3393,7 @@ details[open] summary { margin-bottom: 6px; }
 
   // ---------- timeline ----------
   const slider = $('slider');
-  const TICKS = [[-10000, '10,000 BC'], [-1000, '1000 BC'], [1, 'AD 1'], [300, '300'], [800, '800'], [1300, '1300'], [1700, '1700'], [1850, '1850'], [1920, '1920'], [1970, '1970'], [2029, 'Now']];
+  const TICKS = [[-10000, '10,000 BC'], [-1000, '1000 BC'], [1, 'AD 1'], [300, '300'], [800, '800'], [1300, '1300'], [1700, '1700'], [1850, '1850'], [1920, '1920'], [1970, '1970'], [snaps[N - 1].span[1], 'Now']];
   function renderTimeline() {
     const d = S.detail, bands = $('bands'), lanes = $('lanes'), ticks = $('ticks'), head = $('tlHead');
     if (d) {
@@ -3192,6 +3411,7 @@ details[open] summary { margin-bottom: 6px; }
       ticks.innerHTML = shown.map(i => `<span class="${i === 0 || i === n - 1 ? '' : 'minor'}" style="left:${xcss(i, Math.max(1, n - 1))}">${esc(it.steps[i].label)}</span>`).join('');
       return;
     }
+    if (S.line) return renderLine();
     slider.max = N; slider.step = 'any'; slider.value = S.pos; slider.setAttribute('aria-label', 'Year');
     slider.setAttribute('aria-valuetext', fmtYear(S.year));
     head.innerHTML = '<span class="tl-year" id="tlYear"></span>' + (S.mode === 'wars' ? '<span class="tl-hint"><b>Wars:</b> each coloured bar is a major war. Click one to follow it.</span>'
@@ -3219,12 +3439,71 @@ details[open] summary { margin-bottom: 6px; }
     ticks.innerHTML = TICKS.map(([y, t], i) => `<span class="${i === 0 || i === TICKS.length - 1 || y === 1300 ? '' : 'minor'}" style="left:${xcss(i === TICKS.length - 1 ? N : posOfYear(y), N)}">${esc(t)}</span>`).join('');
     markEra();
   }
+  // a country's own timeline: a band for each period of its history (click one to go to its start), the years its
+  // periods began below where they fit, and in the Wars tab the wars it fought
+  const LINE_HUES = i => HUES[(i * 5 + 3) % HUES.length];
+  function renderLine() {
+    const l = S.line, ps = l.periods, M = TL.max, n = ps.length, bands = $('bands'), lanes = $('lanes');
+    slider.max = M; slider.step = 'any'; slider.value = S.pos; slider.setAttribute('aria-label', l.name + ' timeline');
+    $('tlHead').innerHTML = '<span class="tl-year" id="tlYear"></span>' +
+      `<button type="button" id="lineBack" title="Back to the world timeline (Esc)">&#8249; World<span class="tl-hint"> timeline</span></button>` +
+      `<span class="tl-hint tl-line"><b>${esc(l.name)}</b>${l.own ? '' : ' · <span id="linePeriod"></span>'}</span>` +
+      `<span class="grow"></span><button type="button" id="speed" title="Playback speed"></button>`;
+    $('lineBack').onclick = closeLine;
+    const speedTxt = () => $('speed').innerHTML = `<span class="tl-hint">Speed </span>${S.speed}×`;
+    speedTxt();
+    $('speed').onclick = () => { S.speed = S.speed >= 4 ? .5 : S.speed * 2; speedTxt(); };
+    fillTlYear();
+    const room = Math.max(200, ($('track').clientWidth || 600) - 16);
+    bands.style.display = '';
+    bands.className = 'bands line' + (S.mode === 'map' ? '' : ' dim');
+    bands.innerHTML = ps.map((p, i) => `<div class="band" data-seg="${i}" title="${esc(p.name)}, ${esc(periodYears(p))}" style="--h:${LINE_HUES(i)};left:${xcss(TL.cum[i], M)};width:calc(${TL.w[i] / M} * (100% - var(--th, 16px)) - 1px)">${esc(p.short || p.name)}</div>`).join('');
+    // a period too short for its name keeps its colour and shows the name on hover
+    for (const b of bands.children) if (b.scrollWidth > b.clientWidth + 1) b.classList.add('tiny');
+    if (S.mode === 'wars') {
+      // the wars any of its states fought, inside its years
+      l.wars ||= wars.filter(w => w.end >= l.lo && w.start <= l.hi && w.steps.some(st => (st.territories || []).some(t => t.polities.some(x => l.names.has(x)))));
+      const laneEnd = [], pitch = isPhone() ? 5 : 8; let html = '';
+      l.wars.slice().sort((a, b) => a.start - b.start).forEach(w => {
+        const a = posOfYear(Math.max(w.start, l.lo)), b = Math.max(posOfYear(Math.min(w.end, l.hi)) + 1 / 40, a + .25);
+        let lane = laneEnd.findIndex(x => x < a - .05); if (lane < 0) { lane = laneEnd.length; laneEnd.push(b); } else laneEnd[lane] = b;
+        html += `<button type="button" class="warbar" data-war="${w.id}" title="${esc(w.name)} (${fmtSpan(w.start, w.end)})" aria-label="${esc(w.name)}" style="background:${warColor(w)};top:${2 + lane * pitch}px;left:${xcss(a, M)};width:calc(${(b - a) / M} * (100% - var(--th, 16px)))"></button>`;
+      });
+      lanes.innerHTML = html; lanes.style.height = (laneEnd.length * pitch + 4) + 'px';
+    } else if (S.mode === 'religions') {
+      lanes.innerHTML = rel.stories.filter(st => st.steps[0].year >= l.lo && st.steps[0].year <= l.hi).map(st => `<button type="button" class="pin" data-story="${st.id}" title="${esc(st.name)}, founded ${esc(st.founded)}" aria-label="${esc(st.name)}" style="background:${st.color};left:${xcss(posOfYear(st.steps[0].year), M)}"></button>`).join('');
+      lanes.style.height = '18px';
+    } else { lanes.innerHTML = ''; lanes.style.height = '0'; }
+    // the year each period began, where there is room; the first and the last always
+    const lab = i => i === n ? (l.hi >= HI ? 'Now' : fmtYear(l.hi)) : fmtYear(TL.spans[i][0]);
+    const at = i => (i === n ? M : TL.cum[i]) / M * room, wd = i => lab(i).length * 6.4 + 12;
+    const keep = [0], endW = wd(n);
+    for (let i = 1; i < n; i++) {
+      const k = keep[keep.length - 1], right = k === 0 ? wd(0) : at(k) + wd(k) / 2;
+      if (at(i) - wd(i) / 2 >= right + 6 && at(i) + wd(i) / 2 <= room - endW - 6) keep.push(i);
+    }
+    keep.push(n);
+    $('ticks').innerHTML = keep.map(i => `<span class="${i === 0 || i === n ? '' : 'minor'}" style="left:${xcss(i === n ? M : TL.cum[i], M)}">${esc(lab(i))}</span>`).join('');
+    markEra();
+  }
   function markEra() {
+    if (S.line && !S.detail) {
+      const i = segOf(S.year), p = S.line.periods[i];
+      document.querySelectorAll('#bands .band').forEach(b => b.classList.toggle('cur', +b.dataset.seg === i));
+      const lp = $('linePeriod'); if (lp) lp.textContent = p.name + ', ' + periodYears(p);
+      slider.setAttribute('aria-valuetext', fmtYear(S.year) + (S.line.own ? '' : ', ' + p.name));
+      return;
+    }
     const era = eraOf(S.idx);
     document.querySelectorAll('#bands .band').forEach(b => b.classList.toggle('cur', +b.dataset.era === era[1]));
     const en = $('eraName'); if (en) en.textContent = era[0];
     slider.setAttribute('aria-valuetext', fmtYear(S.year));
   }
+  // a click on one of a country's periods goes to the year it began
+  $('bands').addEventListener('click', e => {
+    const b = e.target.closest('[data-seg]'); if (!b || !S.line || S.detail) return;
+    stopPlay(); setYear(TL.spans[+b.dataset.seg][0]);
+  });
   const go = v => S.detail ? showStep(v) : setYear(v);
   slider.addEventListener('input', () => {
     if (S.detail) { showStep(Math.round(+slider.value)); return; }
@@ -3237,10 +3516,11 @@ details[open] summary { margin-bottom: 6px; }
     const k = e.key;
     if (k === 'ArrowLeft' || k === 'ArrowDown' || k === 'ArrowRight' || k === 'ArrowUp' || k === 'PageUp' || k === 'PageDown' || k === 'Home' || k === 'End') {
       e.preventDefault(); stopPlay();
-      if (k === 'Home') return setYear(snaps[0].span[0]);
-      if (k === 'End') return setYear(snaps[N - 1].span[1]);
+      if (k === 'Home') return setYear(TL.lo);
+      if (k === 'End') return setYear(TL.hi);
       const dir = (k === 'ArrowRight' || k === 'ArrowUp' || k === 'PageUp') ? 1 : -1;
-      if (k.startsWith('Page')) { const i = clamp(S.idx + dir, 0, N - 1); return setYear(dir > 0 || S.year === snaps[S.idx].span[0] ? snaps[i].span[0] : snaps[S.idx].span[0]); }
+      // a page is a period: of the world's timeline, or of the country's
+      if (k.startsWith('Page')) { const sp = TL.spans, c = segOf(S.year), i = clamp(c + dir, 0, sp.length - 1); return setYear(dir > 0 || S.year === sp[c][0] ? sp[i][0] : sp[c][0]); }
       setYear(stepYear(S.year, dir));
     }
   });
@@ -3249,7 +3529,8 @@ details[open] summary { margin-bottom: 6px; }
 
   // ---------- play ----------
   // Playing moves the timeline at a steady pace: about four seconds a period at 1×, so deep time races and the
-  // twentieth century ticks year by year. Inside a war or faith story it turns the pages every few seconds.
+  // twentieth century ticks year by year (on a country's timeline, about four seconds a dynasty or era). Inside a war or
+  // faith story it turns the pages every few seconds.
   const playIcon = () => $('play').innerHTML = S.playing ? '<svg viewBox="0 0 16 16"><path d="M3 2h3.6v12H3zM9.4 2H13v12H9.4z"/></svg>' : '<svg viewBox="0 0 16 16"><path d="M4 2l10 6-10 6z"/></svg>';
   let playRaf = 0, playLast = 0, storyTimer = 0;
   function startPlay() {
@@ -3260,13 +3541,13 @@ details[open] summary { margin-bottom: 6px; }
       storyTimer = setTimeout(turn, 2600 / S.speed);
       return;
     }
-    if (S.pos >= N - .002) setYear(snaps[0].span[0]);
+    if (S.pos >= TL.max - .002) setYear(TL.lo);
     playLast = performance.now();
     const frame = now => {
       if (!S.playing) return;
       const dt = Math.min(.1, (now - playLast) / 1000); playLast = now;
       const p = S.pos + dt * .25 * S.speed;
-      if (p >= N - 1e-6) { setYear(snaps[N - 1].span[1], { pos: N - 1e-6 }); return stopPlay(); }
+      if (p >= TL.max - 1e-6) { setYear(TL.hi, { pos: TL.max - 1e-6 }); return stopPlay(); }
       setYear(yearOfPos(p), { pos: p, yf: yearFloatOfPos(p) });
       playRaf = requestAnimationFrame(frame);
     };
@@ -3284,6 +3565,7 @@ details[open] summary { margin-bottom: 6px; }
     S.mode = m; S.faithSel = null; if (m === 'wars') S.person = null;
     document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-selected', x.dataset.mode === m));
     if (S.detail && !keepDetail) { S.detail = null; computeLabels(); setYear(S.year, { force: true }); }
+    followLine();
     styleMap(); drawWarLayer(); drawOverlay(false); renderTimeline(); renderPanel(); drawPeople(); drawLabels();
   }
   document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { const back = S.detail ? S.detail.back : null; if (back != null) { S.detail = null; S.year = back; } setMode(b.dataset.mode); });
@@ -3305,17 +3587,18 @@ details[open] summary { margin-bottom: 6px; }
     try { localStorage.setItem('wtt-detailed', detailed ? '1' : '0'); } catch (e) {}
     const f = S.features.find(x => x.properties.name === S.selected);
     if (f && simple() && !f.major) S.selected = null;
+    followLine();
     computeLabels(); drawLabels(); styleMap(); renderPanel();
   };
   svg.on('click', () => {
-    if (S.detail || !(S.selected || S.faithSel || S.person || S.sheet)) return;
-    S.selected = S.faithSel = S.person = S.sheet = null; styleMap(); drawPeople(); renderPanel();
+    if (S.detail || !(S.selected || S.faithSel || S.person || S.sheet || S.line)) return;
+    S.selected = S.faithSel = S.person = S.sheet = null; leaveLine(); styleMap(); drawPeople(); renderPanel();
   });
   // the phone's pop-up card: tap its head to fold it down to the title, swipe it down to fold or close it, x to close
   function closePop() {
     S.sheet = null;
     if (S.detail) exitDetail();
-    else if (S.selected || S.faithSel || S.person) { S.selected = S.faithSel = S.person = null; styleMap(); drawPeople(); }
+    else if (S.selected || S.faithSel || S.person || S.line) { S.selected = S.faithSel = S.person = null; leaveLine(); styleMap(); drawPeople(); }
     renderPanel();
   }
   $('popX').onclick = e => { e.stopPropagation(); closePop(); };
@@ -3345,11 +3628,13 @@ details[open] summary { margin-bottom: 6px; }
   $('stories').onclick = () => {
     if (S.sheet) return closePop();
     if (S.detail) exitDetail();
-    S.selected = S.faithSel = S.person = null; S.sheet = 'stories';
+    S.selected = S.faithSel = S.person = null; S.sheet = 'stories'; leaveLine();
     styleMap(); drawPeople(); renderPanel(); openPanel();
   };
   addEventListener('keydown', e => {
     if (e.key === 'Escape' && S.detail) { exitDetail(); return; }
+    // Escape on a country's timeline goes back to the world's (unless it is closing a story)
+    if (e.key === 'Escape' && S.line && svEl.hidden && !(e.target.closest && e.target.closest('#sv'))) { closeLine(); return; }
     const tag = (e.target.tagName || '').toLowerCase();
     if (e.key === ' ' && tag !== 'button' && tag !== 'a' && tag !== 'summary') { e.preventDefault(); S.playing ? stopPlay() : startPlay(); }
   });
