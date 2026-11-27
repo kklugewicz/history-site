@@ -112,4 +112,9 @@ C.update({
     'castillon': (-0.04, 44.85), 'tlatelolco': (-99.14, 19.45), 'runnymede': (-0.56, 51.44), 'dan_no_ura': (130.96, 33.96),
     'ichi_no_tani': (135.1, 34.65), 'onon': (108.9, 48.8), 'las_navas': (-3.58, 38.29), 'valencia': (-0.38, 39.47),
     'rapa_nui': (-109.35, -27.12), 'mawei': (108.2, 34.3), 'sarnath': (83.02, 25.38),
+    'bosworth': (-1.41, 52.59), 'leicester': (-1.14, 52.63), 'towton': (-1.27, 53.84), 'diu': (70.99, 20.71),
+    'sanlucar': (-6.35, 36.78), 'tilbury': (0.37, 51.46), 'isker': (68.4, 58.1), 'panipat': (76.97, 29.39),
+    'nagashino': (137.56, 34.92), 'tanegashima': (130.98, 30.6), 'mohacs': (18.68, 45.99), 'chaldiran': (44.0, 39.05),
+    'kosovo_polje': (21.08, 42.7), 'ankara': (32.86, 39.93), 'bursa': (29.06, 40.19), 'gallipoli': (26.67, 40.41),
+    'myeongnyang': (126.31, 34.57), 'noryang': (127.87, 34.94),
 })

@@ -6,6 +6,7 @@ Ancient Olympic Games
 Ancient Olympic pentathlon
 Arch of Titus
 Assassination of Julius Caesar
+Baburnama
 Bartolomé de las Casas
 Battle of Actium
 Battle of Agincourt
@@ -13,9 +14,12 @@ Battle of Alesia
 Battle of Cannae
 Battle of Crécy
 Battle of Dan-no-ura
+Battle of Gravelines
 Battle of Marathon
+Battle of Mohács
 Battle of Red Cliffs
 Battle of Salamis
+Battle of Sekigahara
 Battle of Tours
 Battle of Yarmouk
 Battle of Zama
@@ -23,8 +27,10 @@ Battle of the Milvian Bridge
 Bayeux Tapestry
 Boadicea and Her Daughters
 Bombyx mori
+Brookes (ship)
 Caesar's Rhine bridges
 Caratacus
+Caravel
 Cato the Elder
 Chinampa
 Clay tablet
@@ -36,6 +42,7 @@ Cuneiform
 Dhauli
 Diamond Sutra
 Diary of Merer
+Diet of Worms
 Domesday Book
 Edict of Milan
 Edicts of Ashoka
@@ -43,8 +50,10 @@ Egyptian hieroglyphs
 Enheduanna
 Epic of Gilgamesh
 Erdapfel
+Exhumation and reburial of Richard III of England
 Fall of Constantinople
 Ferghana horse
+First Battle of Panipat
 First Council of Nicaea
 Flagellant
 Giuseppe Fiorelli
@@ -61,19 +70,23 @@ Heikegani
 Heinrich Schliemann
 Helen of Troy
 Herculaneum
+Himeji Castle
 Hispaniola
 Homer
 Horses of Saint Mark
 Hōkūleʻa
 Iliad
+Janissaries
 Jikji
 Jing Ke
 John, King of England
 Josephus
 Krak des Chevaliers
 Landing of Columbus
+Lapulapu
 Lindisfarne
 Lion Capital of Ashoka
+Luther Bible
 Lysistrata
 Magna Carta
 Masada
@@ -84,10 +97,14 @@ Mogao Caves
 Mongol Empire
 Mongol military tactics and organization
 Mosque–Cathedral of Córdoba
+Ninety-five Theses
 Odyssey
+Olaudah Equiano
 Oseberg ship
+Padrão dos Descobrimentos
 Peloponnesian War
 Persepolis
+Philip II of Spain
 Phoenician alphabet
 Plague of Athens
 Plague of Justinian
@@ -96,16 +113,21 @@ Pliny the Younger
 Polynesian navigation
 Pompeii
 Proto-cuneiform
+Richard III (play)
 Romance of the Three Kingdoms
 Sack of Rome (410)
 Sack of Rome (455)
+Saint Basil's Cathedral
 Santa María (ship)
 Sea Peoples
 Seven Wonders of the Ancient World
 Siege of Jerusalem (1099)
+Siege of Kazan
 Siege of Tyre (332 BC)
 Silk
 Silk Road
+Spanish Armada
+Spanish conquest of the Aztec Empire
 Taíno
 Templo Mayor
 Tenochtitlan
@@ -115,9 +137,12 @@ The Tale of the Heike
 The Triumph of Death
 Theodosius I
 Trojan Horse
+Tudor rose
+Turtle ship
 Uluburun shipwreck
 Universal Declaration of Human Rights
 Vercingetorix Throws Down His Arms at the Feet of Julius Caesar
+Victoria (ship)
 Walls of Constantinople
 Western Wall
 Yang Guifei
