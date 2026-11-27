@@ -129,8 +129,8 @@ story('leonhard-euler', 'He wrote more mathematics than anyone who ever lived, a
          'rise, and talked about Uranus, the planet found two years before. That afternoon he had a stroke, and he died a few '
          'hours later. In the words of the French mathematician Condorcet, he "ceased to calculate and to live".',
          img='Uranus', cap='Uranus, the new planet he talked about that day', y=1783, at='st_petersburg'),
-    legacy('Euler wrote more mathematics than anyone else in history: over 800 books and papers, about 80 volumes in all. '
-           'Formulas and theorems named after him run through every part of mathematics. Laplace is said to have told his '
+    legacy('Euler wrote more mathematics than anyone else in history: over 800 books and papers. Formulas and theorems '
+           'named after him run through every part of mathematics. Laplace is said to have told his '
            'students: "Read Euler, read Euler, he is the master of us all."',
            'Found that 1 + 1/4 + 1/9 + 1/16 and so on adds up to π²/6',
            'Founded graph theory with the bridges of Königsberg',

@@ -437,3 +437,75 @@ story('alan-turing', 'The codebreaker who helped win the Second World War and im
            'Broke the Enigma code',
            'Started the field of artificial intelligence'),
 )
+
+story('john-von-neumann', 'The Budapest prodigy who founded game theory, helped build the atomic bomb and designed the modern computer.',
+    life("A banker's son in Budapest",
+         'Neumann János was born in Budapest in 1903, the eldest son of a rich Jewish banker. In 1913 the emperor Franz '
+         'Joseph made his father a noble, so the son later wrote his name John von Neumann. At six, his family said, he '
+         'joked with his father in ancient Greek and divided eight-digit numbers in his head.',
+         img='Budapest', cap='Budapest, his home city', y=1903, at='budapest'),
+    tale('The boy who read world history',
+         'As a boy he read all 46 volumes of a German history of the world, and could still recite pages of it decades '
+         'later. At Princeton he startled historians with what he knew of the Byzantine Empire, and friends found he could '
+         'repeat books he had read years before, word for word.',
+         img='Byzantine Empire', y=1914, at='budapest'),
+    life('A teacher in tears',
+         'At school his tutor Gábor Szegő, later a famous mathematician himself, came home from their first lesson with '
+         'tears in his eyes at the boy\'s gift. His father wanted a safe career, so from 1921 he studied chemistry in '
+         'Berlin and Zurich, and at the same time earned a mathematics doctorate in Budapest. He finished both in 1926, '
+         'aged 22.',
+         img='ETH Zurich', cap='ETH Zurich, where he trained as a chemist', y=1921, at='zurich'),
+    win('The mathematics of quantum physics',
+        'In 1926 he went to Göttingen to work with David Hilbert, the leading mathematician of the age, just as quantum '
+        'physics was being born, and then became the youngest lecturer Berlin had ever had. His book of 1932 gave the new, '
+        'strange physics of atoms the firm mathematical ground it still stands on.',
+        img='David Hilbert', cap='David Hilbert, his mentor at Göttingen', y=1927, at='gottingen'),
+    made('Game theory',
+         'In 1928 he proved that in any game for two where one side\'s gain is the other\'s loss, each player has a best '
+         'strategy, which may mean bluffing at random, as in poker. In 1944, with the economist Oskar Morgenstern, he '
+         'built on it a theory of economics.',
+         'Game theory became a tool of economists, of Cold War nuclear strategy, of biologists studying evolution, and of '
+         'the design of auctions and of computer programs that play.',
+         img='Poker', cap='Poker, where the best play includes bluffing', y=1928, at='berlin'),
+    life('Princeton',
+         'From 1930 he taught at Princeton, and in 1933, as Hitler took power and Jewish scholars lost their posts in '
+         'Germany, he became one of the first professors of the new Institute for Advanced Study, beside Einstein. He wore '
+         'a banker\'s three-piece suit everywhere, threw famous parties, played loud German marches in his office, and '
+         'crashed car after car.',
+         img='Albert Einstein', cap='Einstein, his colleague at the Institute', y=1933, at='princeton'),
+    tale('The fly and the trains',
+         'Two trains 20 miles apart head for each other at 10 mph; a fly zips between them at 15 mph until they meet. How '
+         'far does it fly? The trick is that the trains meet in an hour, so 15 miles. Von Neumann answered at once. Told '
+         'that most people try to add up every leg of the trip, he looked puzzled: "What trick? I summed the series."',
+         img='Fly', y=1940, at='princeton'),
+    made('The implosion bomb',
+         'At Los Alamos he helped solve the hardest problem of the Manhattan Project: how to squeeze a ball of plutonium '
+         'evenly from all sides, with carefully shaped explosives, until it explodes.',
+         'The design worked at the Trinity test, which he watched in July 1945, and destroyed Nagasaki weeks later. Nearly '
+         'every nuclear weapon since has been built on it.',
+         img='Fat Man', y=1945, at=(-106.48, 33.68), where='Trinity site'),
+    made('The stored-program computer',
+         'In 1945, drawing on talks with the team that built ENIAC, he wrote the report that described a computer which keeps '
+         'its program in its memory, beside its data, so a new task needs no rewiring.',
+         'Almost every computer and phone since works this way, the "von Neumann architecture". His IAS machine at Princeton '
+         'was copied around the world, and his team made the first computer weather forecast in 1950.',
+         img='IAS machine', cap='With the IAS machine at Princeton', y=1945, at='princeton'),
+    life('Cold warrior',
+         'After the war he feared the Soviet Union, urged the building of the hydrogen bomb and pushed for long-range '
+         'missiles. In 1955 he joined the Atomic Energy Commission in Washington. In spare hours he imagined machines that '
+         'could build copies of themselves, and with Stanisław Ulam invented the Monte Carlo method of solving problems '
+         'with random numbers.',
+         img='Ivy Mike', cap='Ivy Mike, the first hydrogen bomb, in 1952', y=1955, at='washington'),
+    life('The last months',
+         'In 1955 he was found to have cancer, perhaps from the radiation of the bomb tests he had watched. In 1956 '
+         'President Eisenhower gave him the Medal of Freedom as he sat in a wheelchair. In hospital in Washington, soldiers '
+         'guarded his bed in case he let slip secrets. He died in February 1957, aged 53.',
+         img='Walter Reed Army Medical Center', cap='Walter Reed hospital, where he died', y=1957, at='washington'),
+    legacy('Von Neumann left his mark on pure mathematics, quantum physics, economics, nuclear weapons and weather '
+           'forecasting, and above all on computing: the design he described in 1945 runs inside almost every computer and '
+           'phone today.',
+           'Put quantum mechanics on firm mathematical ground',
+           'Founded game theory',
+           'Worked out the implosion design of the atomic bomb',
+           'Described the stored-program computer'),
+)

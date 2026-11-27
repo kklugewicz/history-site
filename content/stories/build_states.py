@@ -45,6 +45,7 @@ def file_for(y):  # the latest snapshot at or before the year, as the page picks
 # draws none, the right one or None for no state). The right one need not be drawn in that snapshot: it only names the
 # place for the rows.
 GENEVA, ROYAL_PRUSSIA, HAITI = (5.9, 46.12, 6.35, 46.35), (18.5, 53.6, 20.8, 54.45), (-74.5, 17.9, -71.7, 20.1)
+BRUNSWICK = (10.3, 51.95, 10.85, 52.45)
 CAUCASUS = [((40.0, 39.8, 47.0, 43.6), 'Persia', 'Russian Empire'), ((47.0, 39.3, 50.5, 42.0), 'Persia', 'Russian Empire')]
 FIXES = {
     # Sinai and the Gulf of Suez, Egypt's in the time of Moses, not the Levant's "state societies"
@@ -60,7 +61,9 @@ FIXES = {
     '1530': [(ROYAL_PRUSSIA, 'Prussia', 'Poland-Lithuania'), (GENEVA, 'Savoy', 'Geneva')],   # Calvin's Geneva
     # St Petersburg and Ingria were Russia's from 1703 (Euler and the Academy, Catherine the Great's court); Ferney,
     # Voltaire's home beside Geneva, was French
-    '1715': [((27.8, 59.0, 31.6, 60.8), 'Sweden', 'Tsardom of Muscovy'), ((5.9, 46.22, 6.2, 46.35), 'Sardinia-Piedmont', 'France')],
+    # Brunswick and Wolfenbüttel, the duchy of Brunswick (Gauss's home town), drawn in Hanover
+    '1715': [((27.8, 59.0, 31.6, 60.8), 'Sweden', 'Tsardom of Muscovy'), ((5.9, 46.22, 6.2, 46.35), 'Sardinia-Piedmont', 'France'),
+             (BRUNSWICK, 'Hanover', 'Brunswick')],
     # Belgium (Marx in Brussels, Waterloo) was never the Austrian Empire's, and Strasbourg was French (Pasteur)
     '1815': [((2.5, 49.4, 6.5, 51.55), 'Austrian Empire', 'Belgium'), ((7.6, 48.4, 7.85, 48.7), 'Baden', 'France')],
     # Gallipoli was Ottoman (Mustafa Kemal's battle)
@@ -77,7 +80,9 @@ FIXES = {
     # Iceland, settled from 874, with its own Althing from 930 (Leif Erikson's birthplace)
     '900': [((-25.0, 63.0, -13.0, 67.0), None, 'Icelandic Commonwealth')],
     # Saint-Domingue, Toussaint Louverture's Haiti, drawn as no state until 1815
-    '1783': [(HAITI, None, 'Haiti')], '1800': [(HAITI, None, 'Haiti')],
+    # and the Electorate of Hanover labelled Mecklenburg-Strelitz in 1783 and 1800, its Brunswick with it
+    '1783': [(HAITI, None, 'Haiti'), (BRUNSWICK, 'Mecklenburg-Strelitz', 'Brunswick')],
+    '1800': [(HAITI, None, 'Haiti'), (BRUNSWICK, 'Mecklenburg-Strelitz', 'Brunswick')],
     # Georgia and the rest of the Caucasus north of the Aras were Russia's from the 1800s, not Persia's (Stalin's Gori)
     '1878': CAUCASUS, '1880': CAUCASUS, '1900': CAUCASUS,
 }
