@@ -5,9 +5,11 @@ Run from the repository root:  python3 content/lineages/build_lineages.py [--rep
 Checks, as errors: periods in order and inside the slider's years (10,000 BC to the end of the 2020s; the page ends the
 timeline at the current year), every state name present in the border files, and no state at home in two countries for
 the same years. Warnings: a state listed for a period it is never on the map near; a border snapshot in which none of a
-country's states is drawn; and the state that held a country's core in a snapshot when it isn't one of that country's
-states (a sign of a missing name). --report also lists the states the simplified map shows that belong to no country,
-biggest first; a click on one shows its own years.
+country's states is drawn; the state that held a country's core in a snapshot when it isn't one of that country's
+states (a sign of a missing name); a state drawn wholly outside its country's years (a click on it there shows its own
+years); and a state drawn in a snapshot that no period of its country near then lists (the country's timeline would
+not keep it picked). --report also lists the states the simplified map shows that belong to no country, biggest
+first; a click on one shows its own years.
 
 Output: {lineages: [{id, name, region, core, periods: [{name, short, from, to, note, states}]}],
          names: {state: id or [[id, from, to], ...] when it is at home in different countries in different years},
@@ -159,6 +161,19 @@ for n, hs in homes.items():
         merged[0][1] = None; merged[-1][2] = None
         names[n] = [[i, a, b] for i, a, b in merged]
 
+
+def gap(lo, hi, a, b): return a - hi if a is not None and hi < a else lo - b if b is not None and lo > b else 0
+
+
+def home_in(n, j):
+    """the country a click on state n in snapshot j opens: for a name at home in several, the one whose years come
+    nearest the snapshot's, as the page's lineageOf picks it (its tie-break, the year shown, is the snapshot's first here)"""
+    h = names[n]
+    if isinstance(h, str): return h
+    a, b = file_span(j)
+    return min(h, key=lambda e: gap(a, b, e[1], e[2]) * 1e5 + gap(a, a, e[1], e[2]))[0]
+
+
 # which state held each country's core, snapshot by snapshot, and the snapshots that draw none of its states
 for l in _lib.LINEAGES:
     ps, lid = l['periods'], l['id']
@@ -168,15 +183,42 @@ for l in _lib.LINEAGES:
     for i in range(len(FILES)):
         a, b = file_span(i)
         if b < lo or a > hi or YEARS[i] < lo - 1: continue
-        # the periods the snapshot touches, and their neighbours
+        # the states the page counts as the country's in this snapshot (its rankIn): those of the periods the snapshot
+        # touches, the own states of the periods either side, and a borrowed state of theirs only while it holds the core
         idx = [k for k, p in enumerate(ps) if p['span'][1] >= max(a, lo) and p['span'][0] <= min(b, hi)]
-        near = {s.lstrip('~') for k in range(max(0, idx[0] - 1), min(len(ps), idx[-1] + 2)) for s in ps[k]['states']}
-        if not any(r['name'] in near for r in snap[i]): empty.append(FILES[i])
+        side = [s for k in range(max(0, idx[0] - 1), min(len(ps), idx[-1] + 2)) for s in ps[k]['states']]
         h = holder(i, l['core'])
+        near = {s.lstrip('~') for k in idx for s in ps[k]['states']} | {s for s in side if s[0] != '~'}
+        if h and '~' + h['name'] in side: near.add(h['name'])
+        if not any(r['name'] in near for r in snap[i]): empty.append(FILES[i])
         if h and h['name'] not in near and not NOT_STATE.search(h['name']):
             held[h['name'] + (f" (in {h['group']})" if h['group'] != h['name'] else '')].append(FILES[i])
     if empty: warns.append(f"{lid}: none of its states is drawn in {', '.join(empty)}")
+    # a state at home here drawn in a snapshot wholly outside the country's years opens its own years instead
+    outside = sorted({f"{n} in {FILES[j]}" for n in names for j in present[n]
+                      if (file_span(j)[1] < lo or file_span(j)[0] > hi) and home_in(n, j) == lid})
+    if outside: warns.append(f"{lid}: drawn outside its years: {', '.join(outside)}")
     for n, fs in held.items(): warns.append(f"{lid}: its core is held by {n!r} in {', '.join(fs)}")
+
+# a state clicked in a snapshot opens the timeline of the country it is at home in (for a name at home in several, the
+# one whose years come nearest the snapshot's, as the page picks it); it stays picked there only while a period of that
+# country near the year lists it, so one drawn in years its country's periods don't cover would hand the pick over
+def seg_in(ps, y):
+    y = 1 if y == 0 else y
+    return next((k for k, p in enumerate(ps) if y <= p['span'][1]), len(ps) - 1)
+
+
+for n in names:
+    for j in present[n]:
+        a, b = file_span(j)
+        lid = home_in(n, j)
+        ps = byid[lid]['periods']
+        lo, hi = ps[0]['span'][0], ps[-1]['span'][1]
+        if b < lo or a > hi: continue   # outside the country's years: reported above
+        y = max(a, lo); i = seg_in(ps, y)
+        near = {seg_in(ps, a), *(k for k in (i - 1, i, i + 1) if 0 <= k < len(ps))}
+        if not any(n in {s.lstrip('~') for s in ps[k]['states']} for k in near):
+            warns.append(f"{lid}: {n!r} is drawn in {FILES[j]} but listed in no period near then")
 
 for w in warns: print('warning:', w)
 for e in errs: print('ERROR:', e)

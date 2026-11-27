@@ -862,32 +862,47 @@ details[open] summary { margin-bottom: 6px; }
     if (S.selected) renderPanel();
   });
   const segIn = (l, y) => { if (y === 0) y = 1; const sp = l.spans; for (let i = 0; i < sp.length; i++) if (y <= sp[i][1]) return i; return sp.length - 1; };
-  // the country a state belongs to in a year (null for a state with none, and until the file has loaded)
+  // the country a state belongs to in a year (null for a state with none, and until the file has loaded). A name at
+  // home in several countries in different years goes to the one whose years come nearest those of the border snapshot
+  // drawn in that year, since its shape is that snapshot's, and then nearest the year itself.
   function lineageOf(name, y = S.year) {
     const h = LIN && name ? LIN.names[name] : null;
     if (h == null) return null;
     if (typeof h === 'string') return LIN.byId[h] || null;
+    const bf = timeline.borderFiles, f = fileForYear(y), i = bf.indexOf(f);
+    const a = fileYear(f), b = i + 1 < bf.length ? fileYear(bf[i + 1]) - 1 : Infinity;
+    const gap = (lo, hi, from, to) => from != null && hi < from ? from - hi : to != null && lo > to ? lo - to : 0;
     let best = h[0], bd = Infinity;
-    for (const e of h) { const d = e[1] != null && y < e[1] ? e[1] - y : e[2] != null && y > e[2] ? y - e[2] : 0; if (d < bd) { bd = d; best = e; } }
+    for (const e of h) { const d = gap(a, b, e[1], e[2]) * 1e5 + gap(y, y, e[1], e[2]); if (d < bd) { bd = d; best = e; } }
     return LIN.byId[best[0]] || null;
   }
   const periodAt = (l, y = S.year) => l.periods[segIn(l, y)];
   // How surely a state is the country this year: 0 one of its own states in this period, 1 one of its own states in the
-  // period the border snapshot was drawn for or a neighbouring period (the map lags the dates a little), 2 and 3 the same
-  // for a state that is part of its story but at home elsewhere; 9 not part of it now.
+  // period the border snapshot was drawn for or a neighbouring period (the map lags the dates a little), 2 a state that
+  // is part of its story in this period but at home elsewhere, 3 one from those other periods while the map still draws
+  // it over the country's heartland (Rome is not yet Gaul's in 400 BC); 9 not part of it now.
   function rankIn(l, name, y = S.year) {
     const P = l.sets, i = segIn(l, y);
     if (P[i].own.has(name)) return 0;
     const near = [S.file ? segIn(l, fileYear(S.file)) : i, i - 1, i + 1].filter(j => j >= 0 && j < P.length);
     if (near.some(j => P[j].own.has(name))) return 1;
     if (P[i].bor.has(name)) return 2;
-    return near.some(j => P[j].bor.has(name)) ? 3 : 9;
+    return near.some(j => P[j].bor.has(name)) && holdsCore(l, name) ? 3 : 9;
+  }
+  // whether this border snapshot draws a state over a country's core (remembered for the snapshot)
+  function holdsCore(l, name) {
+    if (!l.core || !S.features) return false;
+    if (!l.cores || l.cores.file !== S.file) l.cores = { file: S.file, m: new Map() };
+    let v = l.cores.m.get(name);
+    if (v === undefined) l.cores.m.set(name, v = S.features.some(f => f.properties.name === name && d3.geoContains(f, l.core)));
+    return v;
   }
   const inLineage = (l, name, y = S.year) => rankIn(l, name, y) < 9;
-  // the timeline a click on a state opens: its country's, or else its own years on the map
+  // the timeline a click on a state opens: its country's, or else (no country, or a map that still draws the state
+  // after its country's history has ended) its own years on the map
   function lineFor(name, y = S.year) {
     if (!LIN || !name) return null;
-    const l = lineageOf(name, y); if (l) return l;
+    const l = lineageOf(name, y); if (l && y >= l.lo && y <= l.hi) return l;
     if (NOT_STATE.test(name)) return null;
     if (LIN.own[name]) return LIN.own[name];
     let yrs = LIN.seen[name];
@@ -2402,17 +2417,20 @@ details[open] summary { margin-bottom: 6px; }
   // the world timeline again, with nothing picked: the back button and Escape
   function closeLine() { S.selected = null; leaveLine(); styleMap(); drawPeople(); renderPanel(); }
   // On a country's timeline the selected state follows the country through the years: the user's own pick while it is
-  // still drawn and still part of the country, else the state that is most surely the country now, the biggest if several.
+  // still drawn and still part of the country, else the state that is most surely the country now, the biggest if several
+  // (of the empires that ruled it from elsewhere, the one the map draws over its heartland: Safavid, not Ottoman, Baku).
   // Returns whether the selection changed.
   function followLine() {
     const l = S.line; if (!l || S.detail || S.person) return false;
     const sm = simple(), y = S.year, ok = f => !sm || f.major;
     if (S.selected && S.features.some(f => f.properties.name === S.selected && ok(f)) && rankIn(l, S.selected, y) < 9) return false;
-    let best = null, br = 9;
+    let best = null, br = 9, bc = false;
     for (const f of S.features) {
       if (!ok(f)) continue;
       const r = rankIn(l, f.properties.name, y);
-      if (r < br || (r === br && r < 9 && f.area > best.area)) { best = f; br = r; }
+      if (r === 9 || r > br) continue;
+      const c = r >= 2 && holdsCore(l, f.properties.name);
+      if (r < br || c > bc || (c === bc && f.area > best.area)) { best = f; br = r; bc = c; }
     }
     const n = best ? best.properties.name : null;
     if (n === S.selected) return false;
@@ -2863,7 +2881,7 @@ details[open] summary { margin-bottom: 6px; }
         const h = l.hold.f, mine = h && rankIn(l, h.properties.name, y) < 9;
         head = `<p class="kicker">${esc(fmtYear(y))} · ${esc(era[0])}</p><p class="period">${esc(l.name)}</p>${l.own ? '' : `<div class="sub">${esc(lp.name)}, ${periodYears(lp)}</div>`}`;
         if (lp.note) html += `<p class="syn lnote">${esc(lp.note)}</p>`;
-        html += `<p class="hint">${mine && sm ? `Too small for the simplified map in ${esc(fmtYear(y))}: turn on Detailed borders to see it.`
+        html += `<p class="hint">${mine && sm ? `Not picked out on the simplified map in ${esc(fmtYear(y))}: turn on Detailed borders to see it.`
           : h && !mine ? `Not drawn as a state of its own in ${esc(fmtYear(y))}: the map shows its heartland as part of <b>${esc(sm ? h.group : h.properties.name)}</b>.`
           : `Not on the map in ${esc(fmtYear(y))}.`} Drag the timeline through its history, or go back to the world timeline.</p>`;
         const r = l.region || (h && h.properties.regions[0]);

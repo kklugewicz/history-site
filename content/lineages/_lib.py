@@ -15,6 +15,9 @@ once per country:
     a period of its history: a dynasty, a kingdom, a republic, a colonial era. end None: it lasts to today.
     states  the names its states go by in the border files. A name written "~Name" belongs to this country's story but
             is at home in another country's timeline (the Roman Empire in Italy's), so a click on it opens that one.
+            Borrow only a state that ruled this country's land in the period (an empire; a colony's metropole when the
+            map draws the colony inside it), never a neighbour: while none of the country's own states is drawn, its
+            timeline follows the borrowed state, the one over its core first.
     short   the label on the timeline band, when the name is long ("Han" for "Han dynasty"; " dynasty" and " period"
             are dropped on their own)
     note    a sentence or two on what the period was
