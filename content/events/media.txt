@@ -49,6 +49,7 @@ Battle of Königgrätz
 Battle of Marathon
 Battle of Mohács
 Battle of Mukden
+Battle of Muye
 Battle of Naseby
 Battle of Navarino
 Battle of New Orleans
@@ -86,6 +87,7 @@ Boxer Rebellion
 Brookes (ship)
 Burma Road
 Burning of Washington
+Byzantine conquest of Bulgaria
 COVID-19 pandemic
 Caesar's Rhine bridges
 California gold rush
@@ -95,6 +97,7 @@ Caratacus
 Caravel
 Cato the Elder
 Charge of the Light Brigade
+Charlemagne
 Chernobyl disaster
 Chinampa
 Chinese Civil War
@@ -149,6 +152,8 @@ First Serbian Uprising
 Five Days of Milan
 Flagellant
 Frankfurt Parliament
+French Revolutionary Wars
+French Wars of Religion
 French invasion of Russia
 Gallipoli campaign
 Gareth Jones (journalist)
@@ -181,6 +186,7 @@ Hispaniola
 Holodomor
 Homer
 Horses of Saint Mark
+Hussite Wars
 Hōkūleʻa
 Iliad
 Indian Rebellion of 1857
@@ -189,6 +195,7 @@ Iran hostage crisis
 Iranian Revolution
 Iran–Iraq War
 Iraq War
+Italian Wars
 Iwakura Mission
 Janissaries
 Jikji
@@ -210,6 +217,7 @@ Lord Byron
 Louise Michel
 Luther Bible
 Lysistrata
+Maccabean Revolt
 Magna Carta
 Mangal Pandey
 March on Washington for Jobs and Freedom
@@ -264,6 +272,7 @@ Proclamation of the German Empire
 Proclamation of the People's Republic of China
 Proto-cuneiform
 Raphael Lemkin
+Rebellion of Túpac Amaru II
 Red Guards
 Rescue of the Danish Jews
 Revolutions of 1848
@@ -283,6 +292,7 @@ Sea Peoples
 Second Boer War
 Second Boer War concentration camps
 Second Sino-Japanese War
+Seljuk Empire
 Selma to Montgomery marches
 September 11 attacks
 Seven Wonders of the Ancient World
@@ -329,6 +339,8 @@ The Third of May 1808
 The Triumph of Death
 The Valley of the Shadow of Death (photograph)
 Theodosius I
+Third Battle of Panipat
+Timurid conquests and invasions
 Titanic
 Trail of Tears
 Transition from Ming to Qing
@@ -348,6 +360,7 @@ Vietnam War
 Wall Street Crash of 1929
 Walls of Constantinople
 War in Afghanistan (2001–2021)
+War of the Spanish Succession
 Warsaw Ghetto Uprising
 Washington Crossing the Delaware
 Western Front (World War I)
@@ -360,6 +373,7 @@ Yang Guifei
 Yersinia pestis
 Yugoslav Wars
 Zimbabwe Bird
+audio: La Marseillaise
 audio: Symphony No. 3 (Beethoven) | allegro con brio
 audio: The Battle Hymn of the Republic | Battle Hymn Republic
 audio: The Internationale | Internationale
