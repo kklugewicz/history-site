@@ -434,6 +434,26 @@ details[open] summary { margin-bottom: 6px; }
 .storybtn:hover { background: linear-gradient(color-mix(in srgb, var(--story-a) 10%, var(--paper)), color-mix(in srgb, var(--story-a) 10%, var(--paper))) padding-box,
   var(--story-ring) border-box; }
 .storybtn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+/* a war's or an event's face is a rounded square (a person's is round), showing its icon until its picture loads */
+.face.ev { border-radius: 13px; }
+.face.ev img { border-radius: 9px; }
+.tray .face.ev { border-radius: 17px; }
+.tray .face.ev img { border-radius: 12px; }
+.face.ev .evi { width: 56%; height: 56%; color: #fff; }
+.sv-av.ev { border-radius: 9px; background: var(--fc, rgba(255,255,255,.16)); }
+.sv-av .evi { width: 62%; height: 62%; color: #fff; }
+.sv-sides { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 9px; margin: -4px 0 12px; font-size: 13.5px; line-height: 1.3; color: rgba(255,255,255,.88); }
+.sv-sides span { display: inline-flex; align-items: center; gap: 6px; }
+.sv-sides i { width: 10px; height: 10px; border-radius: 3px; flex: none; box-shadow: 0 0 0 1px rgba(255,255,255,.55); }
+.sv-sides b { font-family: var(--f-mono); font-size: 10.5px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+.sv-num { margin: 0 0 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.sv-num b { font-family: var(--f-display); font-weight: 400; font-size: 46px; line-height: 1; color: #fff; }
+.sv-num span { font-size: 15px; line-height: 1.3; color: var(--kc); }
+.sv-body.k-scene { --kc: rgba(255,255,255,.78); }
+.sv-body.k-battle { --kc: #ff9e80; }
+.sv-body.k-turn { --kc: #f0c25a; }
+.sv-body.k-figure { --kc: #9fd3ff; }
+.sv-body.k-cost { --kc: #f4a3a3; }
 .spin { pointer-events: none; }
 .spin .dot { fill: var(--story-a); stroke: var(--paper); stroke-width: 2.2; }
 .spin .pulse { fill: none; stroke: var(--story-a); stroke-width: 2.4; transform-box: fill-box; transform-origin: center; animation: pulse 1.8s ease-out infinite; }
@@ -536,6 +556,7 @@ details[open] summary { margin-bottom: 6px; }
 .sv-body.dense .sv-t { font-size: 26px; margin-bottom: 8px; } .sv-body.dense .sv-t.big { font-size: 36px; }
 .sv-body.dense .sv-x { font-size: 15px; line-height: 1.45; } .sv-body.dense .sv-fx p, .sv-body.dense .sv-pts li { font-size: 14px; }
 .sv-body.denser .sv-t { font-size: 23px; } .sv-body.denser .sv-x { font-size: 14px; line-height: 1.4; } .sv-body.denser .sv-fx p, .sv-body.denser .sv-pts li { font-size: 13px; }
+.sv-body.dense .sv-num b { font-size: 38px; } .sv-body.denser .sv-num b { font-size: 32px; } .sv-body.denser .sv-sides { font-size: 12.5px; margin-bottom: 9px; }
 .sv-body.in > * { animation: svin .42s cubic-bezier(.2,.8,.25,1) both; }
 .sv-body.in > :nth-child(2) { animation-delay: .04s; } .sv-body.in > :nth-child(3) { animation-delay: .08s; } .sv-body.in > :nth-child(n+4) { animation-delay: .12s; }
 @keyframes svin { from { opacity: 0; transform: translateY(12px); } }
@@ -934,8 +955,12 @@ details[open] summary { margin-bottom: 6px; }
   }
   const entryAt = (z, y) => { let e = z.history[0]; for (const h of z.history) if (h.from <= y) e = h; return e; };
   const zoneFaith = (z, y) => faithById[entryAt(z, y).faith] || null;
+  // the few states whose land outvotes their people (see STATE_FAITH in merge_religions.py) take their faith from that list
+  const stateFaith = rel.states || {};
   function faithAt(f, y) {
     if (f._fy === y) return f._fa;
+    const own = (stateFaith[f.properties.name] || []).filter(h => h.from <= y).pop();
+    if (own) { f._fy = y; f._fa = faithById[own.faith] || null; return f._fa; }
     const zw = zoneWeights(f);
     let top = null;
     if (zw.length === 1) top = zoneFaith(zw[0][0], y);
@@ -1520,7 +1545,14 @@ details[open] summary { margin-bottom: 6px; }
   // Pictures are the lead images of the Wikipedia articles a page names; a song page plays a free recording that it
   // finds on the Wikipedia article for the piece, from Wikimedia Commons.
   let storyIdx = {};
-  const hasStory = id => !!(id && storyIdx[id]);
+  // Wars and great events (Columbus's first voyage, the Black Death, the fall of the Berlin Wall) have stories too, told
+  // the same way. data/events/index.json lists them with their years and the states each belongs to; a story's pages load
+  // from data/events/<id>.json when it opens (content/events/build_events.py writes them). In the viewer and in a queue
+  // an event's id is "ev:" and its own id, so one row of stories can hold people and events alike.
+  let evList = [], evById = {}, evOfWar = {};
+  const isEv = id => typeof id === 'string' && id.startsWith('ev:');
+  const evOf = id => isEv(id) ? evById[id.slice(3)] || null : null;
+  const hasStory = id => !!(id && (isEv(id) ? evOf(id) : storyIdx[id]));
   const storyIdOf = o => !o ? null : o.stints ? o.id : (o.person || null);   // a person, or a general linked to one
   const fromStore = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || d); } catch (e) { return JSON.parse(d); } };
   const toStore = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
@@ -1535,6 +1567,88 @@ details[open] summary { margin-bottom: 6px; }
     gr.append('stop').attr('offset', 1).style('stop-color', 'var(--story-a)');
   }
   opt('stories/index.json').then(j => { if (!j || !j.ids) return; storyIdx = j.ids; drawLeaders(); drawPeople(); refreshGenerals(); renderPanel(); });
+  opt('events/index.json').then(j => {
+    if (!j || !j.events) return;
+    evList = j.events; evById = Object.fromEntries(evList.map(e => [e.id, e])); evOfWar = {};
+    for (const e of evList) if (e.war) evOfWar[e.war] = e;
+    renderPanel();
+  });
+  // who or what a story is about: a person, or an event
+  function subj(id) {
+    const e = evOf(id);
+    if (e) return { id, e, name: e.name, short: e.name, role: e.lb, life: fmtSpan(e.from, e.to), wiki: e.wiki, pic: e.img || e.wiki };
+    const p = personById[id];
+    return p ? { id, p, name: p.name, short: shortName(p), role: p.role, life: lifeText(p), wiki: p.wiki, pic: p.wiki } : null;
+  }
+  // An event's face is a rounded square, so a row can hold people and events: its picture inside the story ring, or
+  // until that loads its icon on a colour of its kind (the small pictures come with the portraits, from Wikipedia)
+  const EVI = {
+    swords: '<g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M-7.6-7.6L5 5M7.6-7.6L-5 5"/><path d="M2.4 7.6l5.2-5.2M-2.4 7.6l-5.2-5.2"/><path d="M5.6 5.6l2.6 2.6M-5.6 5.6l-2.6 2.6"/></g>',
+    tower: '<path fill="currentColor" d="M-6 9V-3H-7.6V-8.6h3.1v2.5h2.1V-8.6h3v2.5h2.1V-8.6h3.1V-3H6V9H1.9V4.6a1.9 1.9 0 0 0-3.8 0V9z"/>',
+    ship: '<path fill="currentColor" d="M-9.4 2.6H9.4L6.4 8H-6.6z M-.8-9.4H.8v12h-1.6z M1.7-8.6c4.6 2.4 5.8 6 5.4 10.2H1.7z M-1.7-7.2c-3.9 2.5-5 5.6-4.6 8.8h4.6z"/>',
+    compass: '<circle r="8.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="currentColor" d="M0-6.6L2.6 0H-2.6z"/><path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" d="M0 6.6L2.6 0H-2.6z"/>',
+    flame: '<path fill="currentColor" d="M0-9.2C3.8-5.1 7.1-1.3 5.4 3.8 4.4 7 2 8.6 0 8.6S-4.4 7-5.4 3.8C-6.7-.7-2.9-2.7-2.4-6-.7-4.3-.2-6.9 0-9.2z"/>',
+    flag: '<path fill="currentColor" d="M-6.6-9.2h1.8V9.2h-1.8z M-4.2-8.6c3.1-1.5 5.8 1.5 10.2 0V2c-4.4 1.5-7.1-1.5-10.2 0z"/>',
+    wave: '<path fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" d="M-9.2 1.6c2.3-3 4.6-3 6.1 0s3.8 3 6.1 0 4.6-3 6.1 0M-9.2 6.8c2.3-3 4.6-3 6.1 0s3.8 3 6.1 0 4.6-3 6.1 0"/><path fill="currentColor" d="M-6.6-3.4L-1.6-9.6 1.6-5.6 3.4-7.6 7.4-3.4z"/>',
+    virus: '<circle r="4.8" fill="currentColor"/><g stroke="currentColor" stroke-width="1.7" stroke-linecap="round">' + d3.range(8).map(i => { const a = i * Math.PI / 4, c = Math.cos(a), s = Math.sin(a); return `<path d="M${(5.6 * c).toFixed(2)} ${(5.6 * s).toFixed(2)}L${(7.6 * c).toFixed(2)} ${(7.6 * s).toFixed(2)}"/>`; }).join('') + '</g>' + d3.range(8).map(i => { const a = i * Math.PI / 4; return `<circle fill="currentColor" cx="${(8.6 * Math.cos(a)).toFixed(2)}" cy="${(8.6 * Math.sin(a)).toFixed(2)}" r="1.25"/>`; }).join(''),
+    wheat: '<path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M0 9.4V-8.6"/><g fill="currentColor">' + [-6.4, -2.6, 1.2].map(y => `<ellipse cx="-2.6" cy="${y}" rx="1.6" ry="3.1" transform="rotate(-32 -2.6 ${y})"/><ellipse cx="2.6" cy="${y}" rx="1.6" ry="3.1" transform="rotate(32 2.6 ${y})"/>`).join('') + '</g>',
+    candle: '<path fill="currentColor" d="M-3.2-1.2h6.4V9.2h-6.4z M0-9.6c1.9 2.1 2.8 3.8 2.8 5.3a2.8 2.8 0 0 1-5.6 0c0-1.5.9-3.2 2.8-5.3z"/>',
+    chain: '<g fill="none" stroke="currentColor" stroke-width="2.2"><rect x="-9.4" y="-3.8" width="10.4" height="7.6" rx="3.8" transform="rotate(-35)"/><rect x="-1" y="-3.8" width="10.4" height="7.6" rx="3.8" transform="rotate(-35)"/></g>',
+    bolt: '<path fill="currentColor" d="M2.2-9.8L-6.6 1.6h5.1L-2.6 9.8 6.6-2h-5.1z"/>',
+    star: '<path fill="currentColor" d="' + d3.range(10).map(i => { const a = i * Math.PI / 5 - Math.PI / 2, r = i % 2 ? 3.9 : 9.2; return (i ? 'L' : 'M') + (r * Math.cos(a)).toFixed(2) + ' ' + (r * Math.sin(a)).toFixed(2); }).join('') + 'z"/>',
+    scroll: '<rect x="-6.4" y="-9" width="12.8" height="18" rx="1.8" fill="currentColor"/><path d="M-3.6-4.6h7.2M-3.6-1h7.2M-3.6 2.6h4.6" stroke="rgba(0,0,0,.38)" stroke-width="1.4" stroke-linecap="round"/>',
+    column: '<path fill="currentColor" d="M0-9.6L9.2-4.6H-9.2z M-8.2-3.6H8.2v1.6H-8.2z M-7.2-1.2h2.1v7.2h-2.1z M-2.7-1.2h2.1v7.2h-2.1z M.6-1.2h2.1v7.2H.6z M5.1-1.2h2.1v7.2H5.1z M-9 6.8H9v2.2H-9z"/>',
+    rocket: '<path fill="currentColor" d="M0-10.2c3.3 2.7 4.7 6.6 4.1 11.3l2.9 3.7v3.6L3.3 6.2h-6.6l-3.7 2.2V4.8l2.9-3.7C-4.7-3.6-3.3-7.5 0-10.2z"/><circle r="1.9" cy="-2.6" fill="rgba(0,0,0,.35)"/>',
+    gear: '<path fill="currentColor" fill-rule="evenodd" d="' + d3.range(16).map(i => { const a = (i + .5) * Math.PI / 8, r = i % 2 ? 6.4 : 9; return (i ? 'L' : 'M') + (r * Math.cos(a)).toFixed(2) + ' ' + (r * Math.sin(a)).toFixed(2); }).join('') + 'z M0-2.8a2.8 2.8 0 1 0 0 5.6a2.8 2.8 0 1 0 0-5.6z"/>',
+  };
+  for (const [k, v] of Object.entries(EVI)) defs.append('symbol').attr('id', 'ev-' + k).attr('viewBox', '-12 -12 24 24').html(v);
+  const EV_TINT = { swords: '#8f3d30', tower: '#6e5a45', ship: '#2f5d86', compass: '#2d6e72', flame: '#b2532b', flag: '#2f7a50', wave: '#2c6384', virus: '#6b4f8a',
+    wheat: '#8a6c28', candle: '#4c4759', chain: '#5c4a3e', bolt: '#80591c', star: '#8a6b1c', scroll: '#7a6236', column: '#6a6357', rocket: '#3c4f7c', gear: '#5c5e62' };
+  const evIco = ic => `<svg class="evi" viewBox="-12 -12 24 24" aria-hidden="true"><use href="#ev-${EV_TINT[ic] ? ic : 'star'}" x="-12" y="-12" width="24" height="24"/></svg>`;
+  function evFace(e, cls = 'face ev') {
+    const o = { wiki: e.img || e.wiki }, src = imgOf(o), id = 'ev:' + e.id; if (!src) needPortrait(o);
+    return `<span class="${cls} story${seenStories.has(id) ? ' seen' : ''}" style="--fc:${EV_TINT[e.ic] || EV_TINT.star}">${src ? `<img src="${esc(src)}" alt="" loading="lazy">` : evIco(e.ic)}</span>`;
+  }
+  // a story button's inside, as the people's stories write theirs: the face, the name, then the year (or "now")
+  const evYear = (e, now) => `<span class="y${now ? ' now' : ''}">${now ? 'now' : esc(fmtYear(e.from))}</span>`;
+  const evInner = (e, yl = '') => `${evFace(e)}<span class="n">${esc(e.name)}</span>${yl}`;
+  const evButton = (e, yl) => `<button type="button" data-story-person="ev:${e.id}" title="${esc(e.name)}: ${esc(e.hook)}">${evInner(e, yl)}</button>`;
+  // the names a clicked state goes by: its own, then the others of its country through time once the country lineages
+  // are in (the people's stories in the same row use the same rule, countryNames)
+  function evNamesOf(f) {
+    if (typeof countryNames === 'function') return countryNames(f);
+    const n = f.properties.name, out = [n];
+    try { const line = typeof lineageOf === 'function' ? lineageOf(n) : null; if (line && line.names) for (const x of line.names) if (!out.includes(x)) out.push(x); } catch (e) {}
+    return out;
+  }
+  // a clicked state's wars and events, as items for its row of stories (countryStories, in the people's stories, sorts
+  // them in with its people): { id, y: the event's year nearest the shown one, now: going on then, w: 1 (an event's
+  // place among equals), title, html: the inside of its button }
+  function eventStoryItems(f) {
+    const names = new Set(evNamesOf(f)), y = S.year, out = [];
+    for (const e of evList) {
+      if (!e.st.some(n => names.has(n))) continue;
+      const now = e.from <= y && y <= e.to;
+      out.push({ id: 'ev:' + e.id, y: clamp(y, e.from, e.to), now, w: 1, title: e.name + ': ' + e.hook, html: evInner(e, evYear(e, now)) });
+    }
+    return out;
+  }
+  // without the people's stories row, the events get a row of their own, sorted the same way
+  function eventStoryRow(f) {
+    if (typeof countryStories === 'function') return '';
+    const y = S.year, items = eventStoryItems(f).sort((a, b) => (b.now - a.now) || Math.abs(a.y - y) - Math.abs(b.y - y) || a.y - b.y).slice(0, 40);
+    if (!items.length) return '';
+    let name = f.properties.name;
+    try { const line = typeof lineageOf === 'function' ? lineageOf(name) : null; if (line && line.name) name = line.name; } catch (e) {}
+    return `<div class="sec"><h3>Stories from ${esc(name)}</h3><div class="tray country" data-queue="${items.map(x => x.id).join(' ')}">` +
+      items.map(x => `<button type="button" data-story-person="${x.id}" title="${esc(x.title)}">${x.html}</button>`).join('') + '</div></div>';
+  }
+  // the events going on in a year, then those just before or after it (within a twentieth of its period), nearest first
+  function eventsNear(y) {
+    const w = Math.max(1, Math.round(spanLen(periodOf(y)) / 20));
+    return evList.map(e => ({ e, gap: y < e.from ? e.from - y : y > e.to ? y - e.to : 0 })).filter(x => x.gap <= w)
+      .sort((a, b) => a.gap - b.gap || (a.e.to - a.e.from) - (b.e.to - b.e.from)).map(x => x.e);
+  }
   // a ringed face on the map opens that person's story; the others on screen with a story come after it
   // on a phone, a face tapped low on the map slides up out from under the pop-up card
   function keepAbovePop(e) {
@@ -1561,20 +1675,21 @@ details[open] summary { margin-bottom: 6px; }
       if (st) { f.dataset.storyPerson = id; f.title = 'Watch the story of ' + personById[id].name; }
     });
   }
-  // the row of story faces in the default view: people at work this year, then the others alive, then the nearest in time
+  // the row of story faces in the default view: the wars and events of the year, then people at work this year, then
+  // the others alive, then the nearest in time
   function storyTray() {
-    const y = S.year, list = [];
+    const y = S.year, list = [], evs = eventsNear(y).slice(0, 6);
     for (const p of people) {
       if (!hasStory(p.id)) continue;
       const [b, d] = p.life || [], lo = b != null ? b : p.stints[0].from, hi = d != null ? d : Math.max(...p.stints.map(s => s.to));
       list.push({ p, on: !!stintAt(p, y, S.yf), gap: y < lo ? lo - y : y > hi ? y - hi : 0 });
     }
-    if (!list.length) return '';
+    if (!list.length && !evs.length) return '';
     list.sort((a, b) => (b.on - a.on) || (a.gap - b.gap) || (a.p.rank || 3) - (b.p.rank || 3) || a.p.name.localeCompare(b.p.name));
-    const pick = list.filter((x, i) => x.gap === 0 || i < 8).slice(0, 18), ids = pick.map(x => x.p.id);
-    const title = pick.some(x => x.gap === 0) ? 'Stories from ' + fmtYear(y) : 'Stories from the nearest years';
-    return `<div class="sec"><h3>${esc(title)}</h3><div class="tray" data-queue="${ids.join(' ')}">` + ids.map(id => {
-      const p = personById[id];
+    const pick = list.filter((x, i) => x.gap === 0 || i < 8).slice(0, 18), ids = evs.map(e => 'ev:' + e.id).concat(pick.map(x => x.p.id));
+    const title = evs.length || pick.some(x => x.gap === 0) ? 'Stories from ' + fmtYear(y) : 'Stories from the nearest years';
+    return `<div class="sec"><h3>${esc(title)}</h3><div class="tray" data-queue="${ids.join(' ')}">` + evs.map(e => evButton(e, e.from <= y && y <= e.to ? '' : evYear(e))).join('') + pick.map(x => {
+      const p = x.p, id = p.id;
       return `<button type="button" data-story-person="${id}" title="${esc(p.name)}: ${esc(storyIdx[id])}">${faceHtml(p, p.name)}<span class="n">${esc(shortName(p))}</span></button>`;
     }).join('') + '</div></div>';
   }
@@ -1652,7 +1767,9 @@ details[open] summary { margin-bottom: 6px; }
     loading: false, token: 0, recs: {}, dur: 6, muted: fromStore('wtt-mute', 'false') === true, audio: null, opener: null, tapAt: 0, fade: 0 };
   const svEl = $('sv'), svCard = $('svCard'), svBg = $('svBg'), svBars = $('svBars'), svImg = $('svImg'), svMedia = $('svMedia'), svBody = $('svBody');
   const storyFiles = {};
-  const loadStory = id => storyFiles[id] || (storyFiles[id] = get('stories/' + id + '.json').catch(e => { delete storyFiles[id]; throw e; }));
+  const loadStory = id => storyFiles[id] || (storyFiles[id] = get(isEv(id) ? 'events/' + id.slice(3) + '.json' : 'stories/' + id + '.json').catch(e => { delete storyFiles[id]; throw e; }));
+  // the picture a page shows: its own, or for someone who was there, their portrait
+  const pagePic = pg => pg.img || (pg.k === 'figure' && personById[pg.who] ? personById[pg.who].wiki : null);
   const getJSON = u => fetch(u).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   const WAPI = 'https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*&redirects=1&';
   const wikiUrl = (t, site = 'en.wikipedia.org') => `https://${site}/wiki/` + encodeURIComponent(String(t).replace(/ /g, '_')).replace(/%3A/g, ':').replace(/%2F/g, '/');
@@ -1750,7 +1867,16 @@ details[open] summary { margin-bottom: 6px; }
     muted: '<path fill="currentColor" d="M3.5 9h4l5-4.2v14.4l-5-4.2h-4z"/><path d="M15.5 9.2l5.5 5.6M21 9.2l-5.5 5.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>',
   };
   const svIco = k => SVI[k] ? `<svg viewBox="0 0 24 24" aria-hidden="true">${SVI[k]}</svg>` : '';
-  const KICK = { life: 'Life', win: 'Major achievement', made: 'Breakthrough', work: 'Work', song: 'Music', tale: 'Story time', legacy: 'Legacy' };
+  const KICK = { life: 'Life', win: 'Major achievement', made: 'Breakthrough', work: 'Work', song: 'Music', tale: 'Story time', legacy: 'Legacy',
+    scene: 'What happened', battle: 'Battle', turn: 'Turning point', figure: 'Who was there', cost: 'The cost' };
+  // an event's pages: a chapter, a battle, a turning point, someone who was there, the cost
+  Object.assign(SVI, {
+    scene: '<path fill="currentColor" d="M3 4.2h7.6c.8 0 1.4.6 1.4 1.4v14.2c0-.8-.6-1.4-1.4-1.4H3z M21 4.2h-7.6c-.8 0-1.4.6-1.4 1.4v14.2c0-.8.6-1.4 1.4-1.4H21z"/>',
+    battle: '<g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M4.4 4.4L16.6 16.6M19.6 4.4L7.4 16.6"/><path d="M13.8 19.4l5.6-5.6M10.2 19.4l-5.6-5.6"/><path d="M17.2 17.2l2.6 2.6M6.8 17.2l-2.6 2.6"/></g>',
+    turn: '<path fill="currentColor" d="M5 2.5h2v19H5z M8 3.2c3.6-1.7 6.6 1.7 11.6 0v10.4c-5 1.7-8-1.7-11.6 0z"/>',
+    figure: '<circle cx="12" cy="7.6" r="4.4" fill="currentColor"/><path fill="currentColor" d="M3.4 21.4c.6-4.9 4.1-7.8 8.6-7.8s8 2.9 8.6 7.8z"/>',
+    cost: '<path fill="currentColor" d="M8.6 9.6h6.8v11.8H8.6z M12 1.8c2.2 2.4 3.2 4.4 3.2 6a3.2 3.2 0 0 1-6.4 0c0-1.6 1-3.6 3.2-6z"/>',
+  });
   $('svClose').innerHTML = svIco('close');
 
   function svPausedNow() { return SV.paused || SV.hold || SV.ended || SV.loading || document.hidden || !SV.open; }
@@ -1814,15 +1940,15 @@ details[open] summary { margin-bottom: 6px; }
     b.firstElementChild.onanimationend = () => { if (SV.open && !SV.loading) svNext(true); };
   }
   function svPic() {
-    const pg = SV.pages[SV.i], p = SV.p; if (!pg) return;
-    const cover = picOf(p.wiki) || imgOf(p);
-    const pic = pg.k === 'cover' ? cover : picOf(pg.img);
-    const wait = !pic && (pg.k === 'cover' ? picPending(p.wiki) : picPending(pg.img));
+    const pg = SV.pages[SV.i], s = SV.s; if (!pg) return;
+    const cover = picOf(s.pic) || (s.p ? imgOf(s.p) : null), own = pg.k === 'cover' ? s.pic : pagePic(pg);
+    const pic = pg.k === 'cover' ? cover : picOf(own);
+    const wait = !pic && picPending(own);
     const back = pic || cover;
     svBg.style.backgroundImage = back ? `url("${String(back).replace(/"/g, '%22')}")` : 'none';
     svMedia.classList.toggle('wait', wait);
     SV.solo = !pic && !wait; svCard.classList.toggle('solo', SV.solo);
-    if (pic) { if (svImg.getAttribute('src') !== pic) { svImg.classList.remove('on'); svImg.src = pic; } svImg.alt = pg.cap || (pg.k === 'cover' ? 'Portrait of ' + p.name : pg.t); }
+    if (pic) { if (svImg.getAttribute('src') !== pic) { svImg.classList.remove('on'); svImg.src = pic; } svImg.alt = pg.cap || (pg.k === 'cover' ? (s.p ? 'Portrait of ' + s.name : s.name) : pg.t); }
     else { svImg.removeAttribute('src'); svImg.classList.remove('on'); svImg.alt = ''; }
   }
   svImg.onload = () => svImg.classList.add('on');
@@ -1836,34 +1962,41 @@ details[open] summary { margin-bottom: 6px; }
     if (over() && !SV.solo) svCard.classList.add('tight');
     if (over() && !SV.solo) { svCard.classList.remove('tight'); svCard.classList.add('solo'); }
   }
-  function svPageHtml(pg, p) {
+  function svPageHtml(pg, s) {
+    const e = s.e;
     if (pg.k === 'cover') {
-      const marks = SV.pages.filter(q => q.k === 'win' || q.k === 'made' || q.k === 'work' || q.k === 'song').slice(0, 6);
-      const src = simg[p.wiki];
-      return `<div class="sv-k"><span>${esc(p.role)}</span></div><h2 class="sv-t big">${esc(p.name)}</h2><div class="sv-life">${esc(lifeText(p))}</div>` +
-        `<p class="sv-x">${esc(pg.x)}</p>` + (marks.length ? `<div class="sv-wins" aria-label="Known for">${marks.map(q => `<span>${svIco(q.k)}${esc(q.t)}</span>`).join('')}</div>` : '') +
-        (src ? `<div class="sv-row"><a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">Portrait credit</a></div>` : '');
+      const marks = SV.pages.filter(q => (e ? q.k === 'battle' || q.k === 'turn' : q.k === 'win') || q.k === 'made' || q.k === 'work' || q.k === 'song').slice(0, 6);
+      const src = simg[s.pic], w = e && e.war && warById[e.war];
+      return `<div class="sv-k">${e ? evIco(e.ic) : ''}<span>${esc(s.role)}</span></div><h2 class="sv-t big">${esc(s.name)}</h2><div class="sv-life">${esc(s.life)}</div>` +
+        (w ? `<div class="sv-sides">${w.sides.map(x => `<span><i style="background:${x.color}"></i>${esc(x.name)}</span>`).join('<b>vs</b>')}</div>` : '') +
+        `<p class="sv-x">${esc(pg.x)}</p>` + (marks.length ? `<div class="sv-wins" aria-label="${e ? 'Key moments' : 'Known for'}">${marks.map(q => `<span>${svIco(q.k)}${esc(q.t)}</span>`).join('')}</div>` : '') +
+        (src ? `<div class="sv-row"><a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">${e ? 'Picture' : 'Portrait'} credit</a></div>` : '');
     }
-    const kick = pg.kick || KICK[pg.k], when = pg.y != null ? fmtYear(pg.y) : '';
+    const kick = pg.kick || KICK[pg.k], when = pg.y != null ? fmtYear(pg.y) : '', who = pg.k === 'figure' && personById[pg.who];
     let h = `<div class="sv-k">${svIco(pg.k)}<span>${esc(kick)}</span>${when ? `<span class="sv-y">${esc(when)}</span>` : ''}</div>`;
-    h += `<h2 class="sv-t${pg.k === 'work' ? ' it' : ''}">${esc(pg.k === 'legacy' ? 'Why they matter' : pg.t)}</h2><p class="sv-x">${esc(pg.x)}</p>`;
+    h += `<h2 class="sv-t${pg.k === 'work' ? ' it' : ''}">${esc(pg.k === 'legacy' ? (e ? 'Why it matters' : 'Why they matter') : pg.t)}</h2>`;
+    if (who) h += `<div class="sv-life">${esc(who.name)}${lifeText(who) ? ', ' + esc(lifeText(who)) : ''}</div>`;
+    if (pg.k === 'cost' && pg.num) h += `<p class="sv-num"><b>${esc(pg.num)}</b>${pg.of ? `<span>${esc(pg.of)}</span>` : ''}</p>`;
+    h += `<p class="sv-x">${esc(pg.x)}</p>`;
     if (pg.k === 'made' && pg.fx) h += `<div class="sv-fx"><b>What it changed</b><p>${esc(pg.fx)}</p></div>`;
     if (pg.k === 'legacy' && pg.pts && pg.pts.length) h += `<ul class="sv-pts">${pg.pts.map(t => `<li>${svIco('legacy')}<span>${esc(t)}</span></li>`).join('')}</ul>`;
-    if (pg.k === 'song') h += svSongHtml(pg, p);
-    const row = [], src = pg.img && simg[pg.img];
+    if (pg.k === 'song') h += svSongHtml(pg, s);
+    if (who && hasStory(who.id) && who.id !== s.id) h += `<div class="sv-row"><button type="button" class="sv-listen" data-sv="who">${svIco('play')}<span>Watch their story</span></button></div>`;
+    const row = [], pt = pagePic(pg), src = pt && simg[pt];
     if (pg.at) row.push(`<button type="button" class="sv-place" data-sv="map" title="Show this on the map">${globeSvg(pg.at)}<span>${esc(pg.wh || 'On the map')}</span></button>`);
     if (pg.cap && src) row.push(`<span class="sv-cap">${esc(pg.cap)}</span>`);
-    if (src) row.push(`<a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">Picture credit</a>`);
+    if (src) row.push(`<a class="sv-src" href="${esc(wikiUrl(src.f))}" target="_blank" rel="noopener">${pg.img ? 'Picture' : 'Portrait'} credit</a>`);
     if (row.length) h += `<div class="sv-row">${row.join('')}</div>`;
     if (pg.k === 'legacy') {
-      const nx = personById[SV.queue[SV.qi + 1]];
-      h += `<div class="sv-end">${nx ? `<button type="button" class="pri" data-sv="next">Next: ${esc(shortName(nx))}</button>` : ''}<button type="button" data-sv="again">Watch again</button>` +
-        `<button type="button" data-sv="person">See them on the map</button>${p.wiki ? `<a href="${esc(wikiUrl(p.wiki))}" target="_blank" rel="noopener">Read more</a>` : ''}</div>`;
+      const nx = subj(SV.queue[SV.qi + 1]);
+      const map = !e ? `<button type="button" data-sv="person">See them on the map</button>` : e.war && warById[e.war] ? `<button type="button" data-sv="war">Follow the war on the map</button>` : e.at ? `<button type="button" data-sv="place">See it on the map</button>` : '';
+      h += `<div class="sv-end">${nx ? `<button type="button" class="pri" data-sv="next">Next: ${esc(nx.short)}</button>` : ''}<button type="button" data-sv="again">Watch again</button>` +
+        `${map}${s.wiki ? `<a href="${esc(wikiUrl(s.wiki))}" target="_blank" rel="noopener">Read more</a>` : ''}</div>`;
     }
     return h;
   }
-  function svSongHtml(pg, p) {
-    const elsewhere = `<a class="sv-listen" href="${esc(pg.listen || 'https://www.youtube.com/results?search_query=' + encodeURIComponent(p.name + ' ' + pg.t))}" target="_blank" rel="noopener">${svIco('song')}<span>Listen to it</span></a>`;
+  function svSongHtml(pg, s) {
+    const elsewhere = `<a class="sv-listen" href="${esc(pg.listen || 'https://www.youtube.com/results?search_query=' + encodeURIComponent(s.name + ' ' + pg.t))}" target="_blank" rel="noopener">${svIco('song')}<span>Listen to it</span></a>`;
     if (!pg.au) return `<div class="sv-au">${elsewhere}<span class="sv-aut">Still under copyright, so it plays on another site.</span></div>`;
     const r = SV.recs[SV.i];
     if (r === undefined) return `<div class="sv-au"><span class="sv-eq off"><i></i><i></i><i></i><i></i><i></i></span><span class="sv-aut">Finding a recording…</span></div>`;
@@ -1872,41 +2005,43 @@ details[open] summary { margin-bottom: 6px; }
       `<span class="sv-eq"><i></i><i></i><i></i><i></i><i></i></span><span class="sv-aut">${SV.muted ? 'Sound is off' : 'Playing'} · a free recording from <a href="${esc(wikiUrl(r.file, 'commons.wikimedia.org'))}" target="_blank" rel="noopener">Wikimedia Commons</a></span></div>`;
   }
   function svRender(anim = true) {
-    const pg = SV.pages[SV.i], p = SV.p; if (!pg) return;
+    const pg = SV.pages[SV.i], s = SV.s; if (!pg) return;
     SV.ended = false;
     svCard.dataset.k = pg.k;
     svBody.className = 'sv-body k-' + pg.k;
     svPic();
-    svBody.innerHTML = svPageHtml(pg, p);
+    svBody.innerHTML = svPageHtml(pg, s);
     svFit();
     if (anim && !reduce()) { void svBody.offsetWidth; svBody.classList.add('in'); }
-    $('svCount').textContent = `${p.name}, page ${SV.i + 1} of ${SV.pages.length}`;
-    const nx = SV.pages[SV.i + 1], ns = nx && picOf(nx.img); if (ns) new Image().src = ns;
+    $('svCount').textContent = `${s.name}, page ${SV.i + 1} of ${SV.pages.length}`;
+    const nx = SV.pages[SV.i + 1], ns = nx && picOf(pagePic(nx)); if (ns) new Image().src = ns;
     svSound(pg);
     SV.dur = svDur(pg);
     svStartBar(); svSync();
   }
-  function svHead(p) {
-    const src = imgOf(p) || picOf(p.wiki);
-    $('svAv').innerHTML = src ? `<img src="${esc(src)}" alt="">` : esc(initials(p.name));
-    $('svName').textContent = p.name; $('svLife').textContent = lifeText(p);
+  function svHead(s) {
+    const e = s.e, src = e ? picOf(s.pic) || imgOf({ wiki: s.pic }) : imgOf(s.p) || picOf(s.pic);
+    $('svAv').innerHTML = src ? `<img src="${esc(src)}" alt="">` : e ? evIco(e.ic) : esc(initials(s.name));
+    $('svAv').classList.toggle('ev', !!e); $('svAv').style.setProperty('--fc', e ? EV_TINT[e.ic] || EV_TINT.star : '');
+    $('svName').textContent = s.name; $('svLife').textContent = s.life;
+    $('svWho').title = e ? (e.war || e.at ? 'Show it on the map' : '') : 'Show them on the map';
     $('svMute').hidden = !SV.pages.some(pg => pg.k === 'song' && pg.au);
-    const pv = personById[SV.queue[SV.qi - 1]], nx = personById[SV.queue[SV.qi + 1]];
+    const pv = subj(SV.queue[SV.qi - 1]), nx = subj(SV.queue[SV.qi + 1]);
     $('svPrevS').classList.toggle('off', !pv); $('svNextS').classList.toggle('off', !nx);
     $('svPrevS').title = pv ? 'Previous story: ' + pv.name : ''; $('svNextS').title = nx ? 'Next story: ' + nx.name : '';
   }
   async function svLoad(id, start = 0) {
-    const p = personById[id], tok = ++SV.token;
-    SV.id = id; SV.p = p; SV.recs = {}; SV.i = 0; SV.loading = true;
-    SV.pages = [{ k: 'cover', t: p.name, x: storyIdx[id] || p.why }];
-    svHead(p); svBarsHtml(); svRender(false);
+    const s = subj(id), p = s.p || null, tok = ++SV.token;
+    SV.id = id; SV.s = s; SV.p = p; SV.recs = {}; SV.i = 0; SV.loading = true;
+    SV.pages = [{ k: 'cover', t: s.name, x: s.e ? s.e.hook : storyIdx[id] || p.why }];
+    svHead(s); svBarsHtml(); svRender(false);
     const fresh = () => {   // pictures came in: show the one for this page, and its credit
       if (tok !== SV.token || !SV.open) return;
-      svHead(p);
+      svHead(s);
       const pg = SV.pages[SV.i]; if (!pg) return;
-      svPic(); svBody.classList.remove('in'); svBody.innerHTML = svPageHtml(pg, p); svFit();
+      svPic(); svBody.classList.remove('in'); svBody.innerHTML = svPageHtml(pg, s); svFit();
     };
-    storyImages([p.wiki]).then(fresh);
+    storyImages([s.pic]).then(fresh);
     let d;
     try { d = await loadStory(id); } catch (e) {
       if (tok !== SV.token) return;
@@ -1915,20 +2050,20 @@ details[open] summary { margin-bottom: 6px; }
       return;
     }
     if (tok !== SV.token) return;
-    SV.pages = [{ k: 'cover', t: p.name, x: d.hook }].concat(d.pages);
+    SV.pages = [{ k: 'cover', t: s.name, x: d.hook || SV.pages[0].x }].concat(d.pages);
     SV.loading = false; markSeen(id);
     SV.pages.forEach((pg, i) => { if (pg.k === 'song' && pg.au) findRecording(pg.au).then(r => { if (tok === SV.token && SV.recs[i] === undefined) SV.recs[i] = r; }); });
-    const titles = [...new Set([p.wiki, ...SV.pages.map(pg => pg.img)].filter(Boolean))];
+    const titles = [...new Set([s.pic, ...SV.pages.map(pagePic)].filter(Boolean))];
     storyImages(titles.slice(0, 3)).then(fresh).then(() => storyImages(titles)).then(fresh);
     SV.i = clamp(start, 0, SV.pages.length - 1);
-    svHead(p); svBarsHtml(); svRender();
+    svHead(s); svBarsHtml(); svRender();
     const nx = SV.queue[SV.qi + 1]; if (nx) loadStory(nx).catch(() => {});
   }
   function openStory(id, o = {}) {
-    if (!hasStory(id) || !personById[id]) return;
+    if (!hasStory(id) || !subj(id)) return;
     stopPlay(); hideTip();
-    const q = [...new Set((o.queue || [id]).filter(x => hasStory(x) && personById[x]))]; if (!q.includes(id)) q.unshift(id);
-    SV.queue = q; SV.qi = q.indexOf(id);
+    const q = [...new Set((o.queue || [id]).filter(x => hasStory(x) && subj(x)))]; if (!q.includes(id)) q.unshift(id);
+    SV.queue = q; SV.qi = q.indexOf(id); SV.resume = {};
     if (!SV.open) {
       SV.opener = document.activeElement; SV.open = true; SV.paused = false; SV.hold = false;
       svEl.hidden = false; document.querySelector('.app').inert = true;
@@ -1974,7 +2109,7 @@ details[open] summary { margin-bottom: 6px; }
     const qi = SV.qi + dir;
     if (qi < 0 || qi >= SV.queue.length) { if (dir > 0) svClose(); return; }
     SV.qi = qi;
-    const go = () => { if (SV.open) svLoad(SV.queue[qi], 0); };
+    const go = () => { if (SV.open) svLoad(SV.queue[qi], (SV.resume || {})[qi] || 0); };
     if (reduce()) return go();
     svQuiet();
     svCard.animate([{ transform: 'none', opacity: 1 }, { transform: `translateX(${-dir * 40}px)`, opacity: 0 }], { duration: 140, easing: 'ease-in' }).onfinish = () => {
@@ -1986,7 +2121,7 @@ details[open] summary { margin-bottom: 6px; }
     if (SV.audio) SV.audio.muted = SV.muted;
     svSync();
     const au = svBody.querySelector('.sv-au'), pg = SV.pages[SV.i];
-    if (au && pg && pg.k === 'song') au.outerHTML = svSongHtml(pg, SV.p);
+    if (au && pg && pg.k === 'song') au.outerHTML = svSongHtml(pg, SV.s);
   }
   function svToggle() { if (SV.ended) return svGo(0); SV.paused = !SV.paused; svSync(); }
   // a page's place: back on the map, at that year, with a pin
@@ -2054,7 +2189,23 @@ details[open] summary { margin-bottom: 6px; }
   $('svPause').onclick = svToggle;
   $('svMute').onclick = svMute;
   const svToPerson = () => { const p = SV.p; svClose(); if (p) { selectPerson(p); focusPerson(p); } };
-  $('svWho').onclick = svToPerson;
+  // an event's story leads back to the map: its war, followed step by step, or the place and year it happened
+  function svToEvent() {
+    const e = SV.s && SV.s.e; if (!e) return;
+    const w = e.war && warById[e.war];
+    if (w) { svClose(); enterWar(w, 0); }
+    else if (e.at) svShowPlace({ at: e.at, y: e.from, wh: e.wh, t: e.name });
+  }
+  $('svWho').onclick = () => SV.s && SV.s.e ? svToEvent() : svToPerson();
+  // someone in an event's story who has a story of their own: theirs plays next, then the event goes on from the page
+  // after theirs (and going back from their story returns to their page)
+  function svToWho() {
+    const pg = SV.pages[SV.i], id = pg && pg.who; if (!hasStory(id)) return;
+    SV.queue.splice(SV.qi + 1, 0, id, SV.id);
+    const r = {}; for (const k in SV.resume) r[+k > SV.qi ? +k + 2 : k] = SV.resume[k];
+    SV.resume = { ...r, [SV.qi]: SV.i, [SV.qi + 2]: SV.i + 1 };
+    svStory(1);
+  }
   svBody.addEventListener('click', e => {
     const b = e.target.closest('[data-sv]'); if (!b) return;
     const a = b.dataset.sv, pg = SV.pages[SV.i];
@@ -2063,6 +2214,8 @@ details[open] summary { margin-bottom: 6px; }
     else if (a === 'next') svStory(1);
     else if (a === 'again') svGo(0);
     else if (a === 'person') svToPerson();
+    else if (a === 'war' || a === 'place') svToEvent();
+    else if (a === 'who') svToWho();
   });
   addEventListener('keydown', e => {
     if (!SV.open) return;
@@ -2742,6 +2895,8 @@ details[open] summary { margin-bottom: 6px; }
       const sideName = i => w.sides[i] ? esc(w.sides[i].name) : '';
       head = `<p class="kicker">${esc(w.name)} · ${fmtSpan(w.start, w.end)}</p><p class="period">${esc(st.title)}</p><div class="meta">${esc(st.label)} · ${w.kind === 'conflict' ? 'chapter' : 'step'} ${S.step + 1} of ${w.steps.length}</div>`;
       html += `<div class="sides">${w.sides.map(x => `<div class="sd"><i class="swatch" style="background:${x.color}"></i><b>${esc(x.name)}</b>${x.leaders?.length ? `<span class="ld">${x.leaders.map(esc).join(', ')}</span>` : ''}</div>`).join('')}</div>`;
+      const wev = evOfWar[w.id];   // the war told as a story, a page at a time
+      if (wev) html += `<button type="button" class="storybtn" data-story-person="ev:${wev.id}">${svIco('play')}<span>Watch the story of the war</span></button>`;
       html += `<p class="syn">${esc(st.text)}</p>`;
       if (st.moves?.length) html += '<div class="sec"><h3>On the move</h3><div class="list">' + st.moves.map(m => {
         // a general worth knowing gets a face and a name; any other army is listed by what it was
@@ -2790,6 +2945,7 @@ details[open] summary { margin-bottom: 6px; }
         html += flagBlock(f);
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
+        html += eventStoryRow(f);
         html += regionBlock(p.regions[0], true);
         p.regions.slice(1).forEach(r => html += regionBlock(r, false));
         if (storyOf(fa)) html += storyCard(storyOf(fa), 'Follow how this faith spread');
@@ -2860,11 +3016,11 @@ details[open] summary { margin-bottom: 6px; }
     // a ringed face opens that person's story; the other stories in the same list come after it
     const sp = e.target.closest('[data-story-person]');
     if (sp) {
-      const id = sp.dataset.storyPerson, p = personById[id];
-      if (!p || !hasStory(id)) return;
+      const id = sp.dataset.storyPerson, p = personById[id];   // a person, or an event ("ev:...")
+      if (!hasStory(id) || !subj(id)) return;
       const box = sp.closest('[data-queue]');
       const q = box ? box.dataset.queue.split(' ') : [...new Set([...(sp.closest('.people, .list') || $('panelBody')).querySelectorAll('[data-story-person]')].map(x => x.dataset.storyPerson))];
-      if (!box && !S.detail && S.person !== id) { selectPerson(p); focusPerson(p); }
+      if (!box && !S.detail && p && S.person !== id) { selectPerson(p); focusPerson(p); }
       openStory(id, { queue: q, from: e });
       return;
     }
