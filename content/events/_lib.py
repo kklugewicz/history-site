@@ -163,4 +163,10 @@ C.update({
     'el_geneina': (22.45, 13.45), 'el_fasher': (25.35, 13.63), 'lausanne': (6.63, 46.52), 'sakarya': (32.15, 39.58),
     'dumlupinar': (30.0, 38.86), 'evian': (6.59, 46.4), 'sabra_shatila': (35.5, 33.86), 'suez_canal': (32.34, 30.45),
     'kumanovo': (21.71, 42.13), 'vlore': (19.49, 40.47),
+    'samaria': (35.19, 32.28), 'lachish': (34.85, 31.56), 'caudine_forks': (14.6, 41.05), 'sentinum': (12.86, 43.43),
+    'tarentum': (17.24, 40.47), 'beneventum': (14.78, 41.13), 'emporion': (3.12, 42.13), 'sinope': (35.15, 42.03),
+    'panticapaeum': (36.47, 45.36), 'eran': (78.17, 24.09), 'mandsaur': (75.07, 24.07), 'sakala': (74.53, 32.49),
+    'taginae': (12.78, 43.23), 'bari': (16.87, 41.12), 'mazara': (12.59, 37.65), 'beziers': (3.22, 43.34),
+    'carcassonne': (2.35, 43.21), 'muret': (1.33, 43.46), 'montsegur': (1.83, 42.88), 'caernarfon': (-4.27, 53.14),
+    'cilmeri': (-3.45, 52.15),
 })
