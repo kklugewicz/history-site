@@ -65,8 +65,11 @@ FIXES = {
     '1815': [((2.5, 49.4, 6.5, 51.55), 'Austrian Empire', 'Belgium'), ((7.6, 48.4, 7.85, 48.7), 'Baden', 'France')],
     # Gallipoli was Ottoman (Mustafa Kemal's battle)
     '1914': [((25.8, 39.9, 27.0, 40.7), 'Bulgaria', 'Ottoman Empire')],
-    # the zone the 1920 treaties offered Italy in Anatolia, drawn as Italy's until 1929, was won back by Turkey in 1922
-    '1920': [((28.5, 36.5, 33.5, 40.0), 'Italy', 'Ottoman Sultanate')],
+    # the zones the 1920 treaties gave Italy and Greece in Anatolia, drawn as theirs until 1929, were won back by Turkey
+    # in 1922 (Mustafa Kemal's Smyrna)
+    '1920': [((28.5, 36.5, 33.5, 40.0), 'Italy', 'Ottoman Sultanate'), ((26.9, 37.85, 28.6, 39.3), 'Greece', 'Ottoman Sultanate')],
+    # Samos, Pythagoras' island, is Greek; today's map leaves it out, so a point there takes the Turkish coast beside it
+    '2010': [((26.5, 37.6, 27.08, 37.85), 'Turkey', 'Greece')],
     # Syracuse, Archimedes' city, a Greek city-state the map leaves out
     'bc300': [((14.8, 36.6, 15.6, 37.4), None, 'Greek city-states')],
     # Roman Britain (Boudica's revolt), which the map for AD 1 has not drawn
