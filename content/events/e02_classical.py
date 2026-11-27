@@ -80,7 +80,7 @@ event('silk-road', 'The Silk Road opens', 'trade', (-138, -60),
             img='Mogao Caves', y=70, at='dunhuang'),
       tale('Who named it',
            'No one at the time spoke of a Silk Road. A German geographer, Ferdinand von Richthofen, made up the name, '
-           'Seidenstrasse, in 1877. It was never one road but a web of routes across land and sea.',
+           'Seidenstraße, in 1877. It was never one road but a web of routes across land and sea.',
            y=1877),
       legacy('For more than 1,500 years the Silk Road joined China, India, Persia, the Arab world and Europe, carrying '
              'goods, faiths, inventions and also diseases such as the Black Death. It tied the old world together long '
