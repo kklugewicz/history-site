@@ -1,4 +1,4 @@
-"""The 200 people who get a story: everyone of rank 1, and the scientists, inventors, artists, writers, thinkers,
+"""The people who get a story (201): everyone of rank 1, and the scientists, inventors, artists, writers, thinkers,
 explorers and leaders whose lives are told most often. build_stories.py checks that each has exactly one story."""
 
 CHOSEN = """
@@ -17,7 +17,7 @@ ho-chi-minh john-f-kennedy martin-luther-king-jr mikhail-gorbachev vladimir-puti
 nelson-mandela fidel-castro
 
 archimedes euclid pythagoras aryabhata al-khwarizmi avicenna cai-lun johannes-kepler rene-descartes
-gottfried-wilhelm-leibniz antonie-van-leeuwenhoek antoine-lavoisier benjamin-franklin james-watt michael-faraday
+gottfried-wilhelm-leibniz antonie-van-leeuwenhoek leonhard-euler antoine-lavoisier benjamin-franklin james-watt michael-faraday
 louis-pasteur gregor-mendel dmitri-mendeleev thomas-edison alexander-graham-bell nikola-tesla wright-brothers henry-ford
 sigmund-freud j-robert-oppenheimer alan-turing tim-berners-lee steve-jobs florence-nightingale alexander-von-humboldt
 

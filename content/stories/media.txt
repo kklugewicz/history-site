@@ -80,6 +80,7 @@ Ballet Royal de la Nuit
 Bamboo and wooden slips
 Baptism of Jesus
 Barmakids
+Basel problem
 Basilica of Saint Paul Outside the Walls
 Basilica of San Vitale
 Bastille
@@ -171,6 +172,7 @@ Cartesian coordinate system
 Carthage
 Casiquiare canal
 Catalan Atlas
+Catherine the Great
 Catholic Monarchs
 Centrifugal governor
 Cesare Borgia
@@ -289,6 +291,7 @@ Equestrian Statue of Marcus Aurelius
 Erfurt
 Erik the Red
 Euclid's Elements
+Euler's formula
 Euphrates
 Eureka (word)
 Execution of Charles I
@@ -314,6 +317,7 @@ Fossanova Abbey
 Fra Filippo Lippi
 Franciscans
 Frederick William I of Prussia
+Frederick the Great
 French invasion of Russia
 Freud Museum
 Friedrich Engels
@@ -448,6 +452,7 @@ Jean Calas
 Jerónimos Monastery
 Jesus walking on water
 Jing Ke
+Johann Bernoulli
 John Hawkins
 Joseph Haydn
 Journey to the West
@@ -476,6 +481,7 @@ Kish (Sumer)
 Kochi
 Konya
 Kublai Khan
+Kunstkamera
 Kyoto Imperial Palace
 Königsberg
 Königsberg Cathedral
@@ -742,6 +748,7 @@ Selimiye Barracks
 Selimiye Mosque
 Selma to Montgomery marches
 Sermon on the Mount
+Seven Bridges of Königsberg
 Seven Years' War
 Seville
 Sgt. Pepper's Lonely Hearts Club Band
@@ -895,6 +902,7 @@ University of Geneva
 University of Glasgow
 University of Paris
 University of Vienna
+Uranus
 Urbino
 Valladolid
 Valley Forge

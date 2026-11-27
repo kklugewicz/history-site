@@ -9,6 +9,7 @@ A person belongs to a state in a year when, in the border snapshot the map shows
 Some of that is only in passing: a journey across a state none of its waypoints is in, or a ruler drawn at their seat
 inside another state because that year's borders don't have their own (Sejong's Korea in the 1400 snapshot). It counts
 for the year it happens, so a face seen inside a state is in its row, but not as one of the state's people in other years.
+Where a snapshot is plainly wrong for the years it is shown (FIXES, below), a point takes the state that really held it.
 Output: {"ties": {person id: [[state name, from, to, kind], ...]}}, a run per state and kind, oldest first, where kind
 is "r" (ruled it), "h" (lived or stopped there) or "p" (there in passing). Years skip 0, as the timeline does (1 BC is
 followed by AD 1).
@@ -35,9 +36,16 @@ def file_for(y):  # the latest snapshot at or before the year, as the page picks
     return best
 
 
+# Places a snapshot gives to the wrong state for the years it is shown: (box, the state the map says, the right one).
+# The 1715 map, shown until 1782, still has Ingria and St Petersburg as Swedish, though Russia took them in 1703 and
+# made St Petersburg its capital (Euler and the Academy, Catherine the Great's court).
+FIXES = {'1715': [((27.8, 59.0, 31.6, 60.8), 'Sweden', 'Tsardom of Muscovy')]}
+
+
 class Borders:
     """One snapshot: each state's polygons with their boxes, for point lookups."""
     def __init__(self, f):
+        self.fixes = FIXES.get(f, [])
         self.feats = []
         for ft in json.load(open(os.path.join(DATA, f'borders_{f}.json')))['features']:
             polys = []
@@ -71,7 +79,10 @@ class Borders:
         # the same small steps the page takes for a port that the simplified borders leave just offshore
         for a, b in ((0, 0), (.2, 0), (-.2, 0), (0, .2), (0, -.2), (.4, .4), (-.4, -.4), (.4, -.4), (-.4, .4)):
             n = self._at(lon + a, lat + b)
-            if n: return n
+            if n:
+                for (x0, y0, x1, y1), was, right in self.fixes:
+                    if n == was and x0 <= lon <= x1 and y0 <= lat <= y1 and right in self.names: return right
+                return n
         return None
 
 

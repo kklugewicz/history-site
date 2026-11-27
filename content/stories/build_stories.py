@@ -4,7 +4,7 @@ Run from the repository root:  python3 content/stories/build_stories.py
 Writes data/stories/<person id>.json (one story, loaded when it is opened), data/stories/index.json (who has a story,
 with the line under their name) and content/stories/media.txt (every Wikipedia title and recording page the stories
 ask for, to check against Wikipedia from a machine that can reach it).
-Checks: each story belongs to one of the 200 people in chosen.py and each of them has one; 5 to 12 pages in a known
+Checks: each story belongs to one of the people in chosen.py and each of them has one; 5 to 12 pages in a known
 kind, legacy last and only there, with 2 to 4 points; lengths that fit the card; places that resolve; sane years.
 """
 import json, os, sys, glob, importlib.util, re
@@ -67,7 +67,7 @@ out = {}
 for pid, st in _lib.STORIES.items():
     who = pid
     if pid not in chosen:
-        errs.append(f'{who}: not one of the 200 in chosen.py')
+        errs.append(f'{who}: not one of the people in chosen.py')
     p = people.get(pid)
     if not p:
         errs.append(f'{who}: no such person'); continue
@@ -151,7 +151,7 @@ for pid, st in _lib.STORIES.items():
 
 missing = [pid for pid in CHOSEN if pid not in _lib.STORIES]
 if missing:
-    warns.append(f'{len(missing)} of the 200 have no story yet: {" ".join(missing[:12])}{" ..." if len(missing) > 12 else ""}')
+    warns.append(f'{len(missing)} of the {len(CHOSEN)} have no story yet: {" ".join(missing[:12])}{" ..." if len(missing) > 12 else ""}')
 for e in errs:
     print('ERROR', e)
 for w in warns:

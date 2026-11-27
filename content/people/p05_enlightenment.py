@@ -158,6 +158,10 @@ P('Denis Diderot', 'French philosopher', (1713, 1784), 3, 'mind',
 P('Carl Linnaeus', 'Swedish botanist', (1707, 1778), 3, 'mind',
   'Gave every plant and animal a two-part Latin name, like Homo sapiens.',
   G(1741, 1778, 'Professor at Uppsala', 'uppsala'))
+P('Leonhard Euler', 'Swiss mathematician', (1707, 1783), 2, 'mind',
+  'The most prolific mathematician ever: founded graph theory, found the formula behind e^iπ + 1 = 0 and gave maths the symbols e, i and f(x).',
+  G(1720, 1727, 'Student of Johann Bernoulli in Basel', 'basel'), G(1727, 1741, 'Academy of Sciences in St Petersburg', 'st_petersburg'),
+  G(1741, 1766, "Frederick the Great's Academy in Berlin", 'berlin'), G(1766, 1783, 'Back in St Petersburg, nearly blind', 'st_petersburg'))
 P('Frederick the Great', 'King of Prussia', (1712, 1786), 1, 'rule war',
   'Flute-playing philosopher king and brilliant general who made Prussia a great power.',
   R(1740, 1786, 'King of Prussia', 'Prussia', at='potsdam'))
