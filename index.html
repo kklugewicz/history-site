@@ -1564,11 +1564,14 @@ details[open] summary { margin-bottom: 6px; }
   // which states each person was in, year by year, by the same borders and routes the map draws.
   let storyTies = {};
   opt('story_states.json').then(j => { if (j && j.ties) { storyTies = j.ties; if (S.selected) renderPanel(); } });
-  // the names a state goes by: its own, then every other name of its line through time once the country timelines'
-  // lineages have loaded, so the Ming Empire's row takes in the rest of China's
+  // the names a state goes by: its own, then the other states of its country through time once the country timelines'
+  // lineages have loaded, so the Ming Empire's row takes in the rest of China's. Only the country's own states count,
+  // not the ones its timeline borrows for a while ("~" names: the British Raj in Burma's, the Great Khanate in
+  // Mongolia's), as most of their people lived elsewhere in them.
   function countryNames(f) {
-    const n = f.properties.name, line = typeof lineageOf === 'function' ? lineageOf(n) : null;
-    return line ? [n, ...[...line.names].filter(x => x !== n)] : [n];
+    const n = f.properties.name, line = typeof lineageOf === 'function' ? lineageOf(n) : null, out = [n];
+    if (line && line.periods) for (const p of line.periods) for (const s of p.states || []) if (s[0] !== '~' && !out.includes(s)) out.push(s);
+    return out;
   }
   // A row item: { id: what openStory takes, y: the year it is shown at (this year when now), now: whether it belongs to
   // this year, w: order among equals (0 a ruler of the state, 1 an event, 2 and up anyone else, by rank), title, html:
@@ -1576,12 +1579,14 @@ details[open] summary { margin-bottom: 6px; }
   const KIND_W = { r: 0, h: 2, p: 3 };
   const storyYear = (y, now) => `<span class="y${now ? ' now' : ''}">${now ? 'now' : esc(fmtYear(y))}</span>`;
   function personStoryItems(f) {
-    const names = new Set(countryNames(f)), y = S.year, out = [];
+    const own = f.properties.name, names = new Set(countryNames(f)), y = S.year, out = [];
+    const line = names.size > 1 ? lineageOf(own) : null;
     for (const id in storyIdx) {
       const p = personById[id]; if (!p) continue;
       let best = null, bd = Infinity;
       for (const t of storyTies[id] || []) {   // [state, from, to, 'r' ruled it, 'h' lived or stopped there, 'p' there in passing]
         if (!names.has(t[0])) continue;
+        if (line && t[0] !== own && lineageOf(t[0], clamp(y, t[1], t[2])) !== line) continue;   // a name another country used in those years
         const d = y < t[1] ? t[1] - y : y > t[2] ? y - t[2] : 0;
         if (t[3] === 'p' && d) continue;   // passing through only counts for its own years
         if (d < bd || (d === bd && KIND_W[t[3]] < KIND_W[best[3]])) { bd = d; best = t; }

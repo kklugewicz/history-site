@@ -3,12 +3,13 @@ opens when a state is clicked. Writes data/story_states.json.
 
 Run from the repository root, after content/people/build_people.py:  python3 content/stories/build_states.py
 A person belongs to a state in a year when, in the border snapshot the map shows for that year:
-  - they rule it: a "rule" stint, under the first of its names that is on the map (as the page ties a ruler to a label);
+  - they rule it: a "rule" stint, under the first of its names that is on the map (as the page ties a ruler to a label).
+    In a year whose borders lack all of its names, the page draws them at their seat, inside some other state (Sejong's
+    Korea in the 1400 snapshot); they still belong to the state they rule, under its first name, not to that one;
   - or they are in it: where the map puts them in the middle of the year, and every waypoint of a journey that falls
     in that year (the places they actually stopped). A point just offshore takes the state beside it, as cities do.
-Some of that is only in passing: a journey across a state none of its waypoints is in, or a ruler drawn at their seat
-inside another state because that year's borders don't have their own (Sejong's Korea in the 1400 snapshot). It counts
-for the year it happens, so a face seen inside a state is in its row, but not as one of the state's people in other years.
+A journey across a state none of its waypoints is in is only in passing: it counts for the year it happens, so a face
+seen crossing a state is in its row then, but not as one of the state's people in other years.
 Where a snapshot is plainly wrong for the years it is shown (FIXES, below), a point takes the state that really held it.
 Output: {"ties": {person id: [[state name, from, to, kind], ...]}}, a run per state and kind, oldest first, where kind
 is "r" (ruled it), "h" (lived or stopped there) or "p" (there in passing). Years skip 0, as the timeline does (1 BC is
@@ -147,9 +148,7 @@ for pid in CHOSEN:
         if s.get('rule'):
             for y in years(s['from'], s['to']):
                 b = borders(y)
-                n = next((n for n in s['rule'] if n in b.names), None)
-                if n: tie(n, y, 'r')
-                elif s.get('at'): tie(b.state_at(*s['at'][:2]), y, 'p')   # drawn at their seat: their state is not on the map
+                tie(next((n for n in s['rule'] if n in b.names), s['rule'][0]), y, 'r')
             continue
         pts, t = prep(s)
         span, stops = s['to'] - s['from'] + 1, set()
