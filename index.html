@@ -1188,6 +1188,10 @@ details[open] summary { margin-bottom: 6px; }
   // one in HOME), not on its biggest colony; colonies over a million km² keep their own names.
   const HOME = { 'Spanish Habsburg': 'Spain', 'Mongol Empire': 'Great Khanate', 'Italy': 'Kingdom of Italy', 'Russia': 'Russian Empire' };
   const COLONY_KM2 = 1e6;
+  // Russia's name stands at the middle of the whole state, deep in Siberia, off the screen when you look at Europe. Zoomed
+  // in, the name of Russia (and of the Muscovy, empire and Soviet Union before it, when their middle lies east of 55°E)
+  // moves to European Russia, south-east of Moscow, where most of its people lived.
+  const RUSSIAS = new Set(['Tsardom of Muscovy', 'Russian Empire', 'USSR', 'Russia']), EURO_RUSSIA = [40.5, 54.4];
   let labelsByName = new Map();
   function computeLabels() {
     const sm = simple(), byName = new Map(), home = new Map();
@@ -1199,7 +1203,8 @@ details[open] summary { margin-bottom: 6px; }
       let best = null, ba = -1;
       for (const poly of f.geometry.coordinates) { const g = { type: 'Polygon', coordinates: poly }; const a = path.area(g); if (a > ba) { ba = a; best = g; } }
       const [x, y] = path.centroid(best); const b = path.bounds(best);
-      if (isFinite(x) && !(byName.get(name)?.a > ba)) byName.set(name, { name, x, y, a: ba, w: b[1][0] - b[0][0], f });
+      const west = RUSSIAS.has(name) && proj.invert([x, y])[0] > 55 && d3.geoContains(best, EURO_RUSSIA) ? proj(EURO_RUSSIA) : null;
+      if (isFinite(x) && !(byName.get(name)?.a > ba)) byName.set(name, { name, x, y, a: ba, w: b[1][0] - b[0][0], f, home: [x, y], west });
     }
     labels = [...byName.values()];
     labelsByName = byName;
@@ -1208,10 +1213,23 @@ details[open] summary { margin-bottom: 6px; }
   const lblPx = (l, k) => Math.min(15, 12 * Math.max(.85, Math.sqrt(l.a * k * k) / 140));
   // half the on-screen width of a label, in px (the display face averages ~.54em per letter)
   const halfW = (l, k) => l.name.length * lblPx(l, k) * .27;
+  // Russia's name goes to its European spot once zoomed in (the world three times as wide as the view) and stays at the
+  // middle of the whole state before that; when that spot is out of view and the other is in it, the name takes the other,
+  // so it stays in Siberia when that is where you look
+  function placeRussia(k) {
+    const T = S.t, [vx, vy, vw, vh] = isPhone() ? [0, 0, W, H] : viewArea(), zoomed = worldPx() > 3 * vw;
+    for (const l of labels) if (l.west) {
+      const mx = halfW(l, k), my = lblPx(l, k);
+      const seen = p => { const x = T.x + p[0] * k, y = T.y + p[1] * k; return x > vx + mx && x < vx + vw - mx && y > vy + my && y < vy + vh - my; };
+      const [a, b] = zoomed ? [l.west, l.home] : [l.home, l.west];
+      [l.x, l.y] = seen(a) || !seen(b) ? a : b;
+    }
+  }
   let shownLabels = new Map();
   function drawLabels() {
     const k = S.k;
     const side = sideMap();
+    placeRussia(k);
     // the simplified map has few shapes, so it can afford to label smaller ones
     const [minA, perCh] = simple() ? [700, 4.4] : [2200, 5.4];
     const vis = S.detail && !side ? [] : labels.filter(l => (!side || side.has(l.name)) && l.a * k * k > minA && l.w * k > l.name.length * perCh);
