@@ -72,6 +72,15 @@ P('Neil Armstrong', 'American astronaut', (1930, 2012), 2, 'explore',
 P('J. Robert Oppenheimer', 'American physicist', (1904, 1967), 2, 'mind war',
   "Led the Los Alamos laboratory that built the atomic bomb: 'Now I am become Death, the destroyer of worlds.'",
   G(1943, 1945, 'Los Alamos', ('los_alamos', 1943.2), ('los_alamos', 1945.5), ((-106.48, 33.68, 1945.54)), ('los_alamos', 1945.6)))
+P('John von Neumann', 'Hungarian-American mathematician', (1903, 1957), 2, 'mind war',
+  'Perhaps the quickest mind of his century: game theory, the bomb, and the design inside nearly every computer.',
+  G(1903, 1921, 'Childhood in Budapest', 'budapest'),
+  G(1921, 1926, 'Chemistry in Berlin and Zurich, maths in Budapest', ('berlin', 1921.8), ('berlin', 1923.6), ('zurich', 1923.8), ('zurich', 1926.6)),
+  G(1926, 1927, 'With David Hilbert in Göttingen', 'gottingen'), G(1927, 1929, 'Youngest lecturer in Berlin', 'berlin'),
+  G(1930, 1942, 'Princeton, and the Institute for Advanced Study', 'princeton'),
+  G(1943, 1945, 'The Manhattan Project', ('princeton', 1943.6), ('los_alamos', 1943.72), ('los_alamos', 1944.5), ('princeton', 1944.7),
+    ('los_alamos', 1945.4), ((-106.48, 33.68, 1945.54)), ('princeton', 1945.7)),
+  G(1946, 1954, 'Princeton: the IAS computer', 'princeton'), G(1955, 1957, 'Atomic Energy Commission in Washington', 'washington'))
 P('Margaret Thatcher', 'British prime minister', (1925, 2013), 2, 'rule',
   "The 'Iron Lady', Britain's first woman prime minister, who won the Falklands War and remade the economy.",
   R(1979, 1990, 'Prime minister', *UK, at='london'))
