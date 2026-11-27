@@ -146,8 +146,8 @@ for eid, ev in _lib.EVENTS.items():
                     for n in t['polities']:
                         if n not in st:
                             st.append(n)
-            if not (w['start'] - 2 <= a <= w['start'] + 2 and w['end'] - 2 <= b <= w['end'] + 2):
-                warns.append(f'{who}: years {a} to {b}, its war {w["start"]} to {w["end"]}')
+            if not (w['start'] - 2 <= a and b <= w['end'] + 2):
+                warns.append(f'{who}: years {a} to {b} go beyond its war, {w["start"]} to {w["end"]}')
     if not st:
         errs.append(f'{who}: belongs to no state (give states= or war=)')
     res = []

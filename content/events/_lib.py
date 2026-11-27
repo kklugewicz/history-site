@@ -55,6 +55,7 @@ KINDS = {
     'turning': ('Turning point', 'star'), 'treaty': ('Treaty', 'scroll'), 'law': ('Law', 'scroll'),
     'feat': ('Great feat', 'star'), 'building': ('Great work', 'column'), 'founding': ('Founding', 'column'),
     'games': ('Games', 'star'), 'space': ('Space', 'rocket'), 'change': ('Great change', 'gear'), 'fall': ('Fall', 'column'),
+    'invention': ('Invention', 'scroll'), 'legend': ('Legend', 'star'), 'trade': ('Trade', 'compass'),
 }
 PAGE_KINDS = ('scene', 'battle', 'turn', 'figure', 'cost', 'made', 'work', 'song', 'tale', 'legacy')
 
