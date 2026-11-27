@@ -47,6 +47,16 @@ def files_over(a, b, slack=1):
 PRETTY = {
     'guanahani': 'Guanahani, Bahamas', 'la_navidad': 'La Navidad, Hispaniola', 'santa_fe_gr': 'Santa Fe, Granada',
     'canary_gomera': 'La Gomera, Canary Islands',
+    'muhlberg': 'Mühlberg', 'pheasant_island': 'Pheasant Island', 'stuhlingen': 'Stühlingen', 'wurzburg': 'Würzburg',
+    'muhlhausen': 'Mühlhausen', 'frankenhausen': 'Bad Frankenhausen', 'concepcion': 'Concepción', 'canete': 'Cañete',
+    'mataquito': 'Mataquito river', 'quillin': 'Quillín', 'ganghwa': 'Ganghwa Island', 'czestochowa': 'Częstochowa',
+    'als': 'Als, Denmark', 'mughan': 'Mughan plain', 'ili': 'Ili valley', 'sidi_ferruch': 'Sidi Fredj',
+    'dahra': 'Dahra mountains', 'ak_mechet': 'Ak-Mechet', 'geok_tepe': 'Geok Tepe', 'pakozd': 'Pákozd',
+    'segesvar': 'Segesvár', 'vilagos': 'Világos', 'anton_lizardo': 'Antón Lizardo', 'da_nang': 'Da Nang',
+    'carhue': 'Carhué', 'nahuel_huapi': 'Lake Nahuel Huapi', 'martin_garcia': 'Martín García Island',
+    'junin_de_los_andes': 'Junín de los Andes', 'michoacan': 'Michoacán', 'ciudad_juarez': 'Ciudad Juárez',
+    'san_fernando_tamaulipas': 'San Fernando, Tamaulipas', 'apatzingan': 'Apatzingán', 'culiacan': 'Culiacán',
+    'al_udeid': 'Al Udeid, Qatar',
 }
 _stories_build = os.path.join(os.path.dirname(HERE), 'stories', 'build_stories.py')
 for m in re.finditer(r"'([a-z0-9_]+)': (\"[^\"]*\"|'[^']*')", open(_stories_build).read().split('PRETTY = {', 1)[1].split('\n}', 1)[0]):

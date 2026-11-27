@@ -24,9 +24,11 @@ Apollo 11
 Apollo–Soyuz
 Appian Way
 Arab Spring
+Arauco War
 Arch of Titus
 Armenian genocide
 Armistice of 11 November 1918
+Artúr Görgei
 Assassination of Julius Caesar
 Assyrian conquest of Egypt
 Atomic bombings of Hiroshima and Nagasaki
@@ -55,6 +57,7 @@ Battle of Gravelines
 Battle of Inchon
 Battle of Isandlwana
 Battle of Königgrätz
+Battle of Lepanto
 Battle of Marathon
 Battle of Mohács
 Battle of Mukden
@@ -109,7 +112,9 @@ Capture of Rome
 Caratacus
 Caravel
 Cato the Elder
+Caupolicán
 Central American crisis
+Cerro Rico
 Charge of the Light Brigade
 Charlemagne
 Chernobyl disaster
@@ -121,10 +126,12 @@ Columbian exchange
 Commentarii de Bello Gallico
 Congo Free State
 Conquest of Wales by Edward I
+Conquest of the Desert
 Constantinople
 Corvus (boarding device)
 Crimean War
 Cromford Mill
+Crown Prince Sohyeon
 Cuban Missile Crisis
 Cuban Revolution
 Culebra Cut
@@ -134,6 +141,7 @@ Cyrus Cylinder
 Declaration of the Rights of Man and of the Citizen
 Decolonisation of Africa
 Defenestrations of Prague
+Deluge (history)
 Dhauli
 Diamond Sutra
 Diary of Merer
@@ -142,14 +150,17 @@ Dissolution of the Soviet Union
 Domesday Book
 Dunkirk evacuation
 Dust Bowl
+Dzungar genocide
 Earthrise
 Edict of Milan
 Edicts of Ashoka
 Egyptian hieroglyphs
 Eight-Nation Alliance
+El Chapo
 Eliza Lynch
 Enheduanna
 Epic of Gilgamesh
+Equestrian Portrait of Charles V
 Erdapfel
 Execution of Charles I
 Execution of Louis XVI
@@ -172,15 +183,20 @@ Flagellant
 Frankfurt Parliament
 French Revolutionary Wars
 French Wars of Religion
+French conquest of Algeria
+French conquest of Vietnam
 French invasion of Russia
 Gallipoli campaign
 Gareth Jones (journalist)
 Gaza war
+German Peasants' War
 Gettysburg Address
+Giuseppe Castiglione
 Giuseppe Fiorelli
 Giza pyramid complex
 Goddess of Democracy
 Gokstad ship
+Gonzalo Fernández de Córdoba
 Great Depression
 Great Enclosure
 Great Famine (Ireland)
@@ -191,6 +207,7 @@ Great Zimbabwe
 Greek War of Independence
 Gulf War
 Gutenberg Bible
+Götz von Berlichingen
 Hagia Sophia
 Haitian Revolution
 Han conquest of Nanyue
@@ -204,11 +221,14 @@ Himeji Castle
 Hispaniola
 Holodomor
 Homer
+Horace Vernet
 Horses of Saint Mark
+Hungarian Revolution of 1848
 Hungarian Revolution of 1956
 Hussite Wars
 Hōkūleʻa
 Iliad
+Inacayal
 Indian Rebellion of 1857
 International Brigades
 Iran hostage crisis
@@ -223,16 +243,22 @@ Jing Ke
 John, King of England
 Josephus
 Kindred Spirits (sculpture)
+Koh-i-Noor
+Konstantin Petrovich von Kaufmann
 Korean War
 Krak des Chevaliers
 Kristallnacht
+La Araucana
 Laika
 Landing of Columbus
 Lapulapu
 Laskarina Bouboulina
+Lautaro
 Lebanese Civil War
+Leonardo Márquez
 Lindisfarne
 Lion Capital of Ashoka
+Liu Yongfu
 Llywelyn ap Gruffudd
 Long March
 Lord Byron
@@ -250,6 +276,7 @@ Mau Mau rebellion
 Medinet Habu
 Meiji Restoration
 Mexican Revolution
+Mexican drug war
 Mexican–American War
 Migrant Mother
 Miguel Grau Seminario
@@ -261,7 +288,9 @@ Mogao Caves
 Mongol Empire
 Mongol military tactics and organization
 Mosque–Cathedral of Córdoba
+Nader Shah
 Nakba
+Namhansanseong
 Napoleon Crossing the Alps
 Nemesis (1839)
 Nigerian Civil War
@@ -298,9 +327,11 @@ Pripyat
 Proclamation of the German Empire
 Proclamation of the People's Republic of China
 Proto-cuneiform
+Qing invasion of Joseon
 Raphael Lemkin
 Rebellion of Túpac Amaru II
 Red Guards
+Reform War
 Rescue of the Danish Jews
 Revolutions of 1848
 Revolutions of 1989
@@ -309,6 +340,7 @@ Robert Guiscard
 Roman conquest of the Iberian Peninsula
 Romance of the Three Kingdoms
 Russian Revolution
+Russian conquest of Central Asia
 Russo-Japanese War
 Russo-Turkish War (1877–1878)
 Russo-Ukrainian war
@@ -316,6 +348,7 @@ Rwandan genocide
 Sack of Rome (410)
 Sack of Rome (455)
 Saint Basil's Cathedral
+Samjeondo Monument
 Santa María (ship)
 Scramble for Africa
 Sea Peoples
@@ -327,6 +360,7 @@ Seljuk Empire
 Selma to Montgomery marches
 September 11 attacks
 Seven Wonders of the Ancient World
+Siege of Jasna Góra
 Siege of Jerusalem (1099)
 Siege of Kazan
 Siege of Madrid
@@ -352,6 +386,7 @@ Storming of the Bastille
 Sudanese civil war (2023–present)
 Suez Canal
 Syrian civil war
+Sándor Petőfi
 Taharqa
 Taiping Rebellion
 Taj Mahal
@@ -359,22 +394,28 @@ Taíno
 Templo Mayor
 Tennis Court Oath
 Tenochtitlan
+Tercio
 Terracotta Army
 Tet Offensive
+The Apotheosis of War
 The Charge of the Light Brigade (poem)
 The Coronation of Napoleon
 The Death of General Wolfe
 The Decameron
+The Deluge (novel)
 The Holocaust
 The Iron Bridge
 The Massacre at Chios
 The Scream
+The Surrender of Breda
 The Tale of the Heike
 The Third of May 1808
 The Triumph of Death
 The Valley of the Shadow of Death (photograph)
 Theodosius I
 Third Battle of Panipat
+Thomas Müntzer
+Thomas Robert Bugeaud
 Tigray war
 Timurid conquests and invasions
 Titanic
@@ -389,6 +430,9 @@ Tudor rose
 Tuol Sleng Genocide Museum
 Turkish War of Independence
 Turtle ship
+Twelve Articles
+Twelve-Day War
+Tự Đức
 Uluburun shipwreck
 Unification of Germany
 Universal Declaration of Human Rights
@@ -416,6 +460,7 @@ Yom Kippur War
 Yugoslav Wars
 Zimbabwe Bird
 audio: La Marseillaise
+audio: Poland Is Not Yet Lost | instrumental
 audio: Symphony No. 3 (Beethoven) | allegro con brio
 audio: The Battle Hymn of the Republic | Battle Hymn Republic
 audio: The Internationale | Internationale
