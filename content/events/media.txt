@@ -14,6 +14,8 @@ An Lushan rebellion
 Anak Krakatoa
 Ancient Olympic Games
 Ancient Olympic pentathlon
+Andrés Avelino Cáceres
+Anglo-Zulu War
 Apartheid
 Apollo 11
 Apollo–Soyuz
@@ -26,6 +28,7 @@ Atomic bombings of Hiroshima and Nagasaki
 Attack on Pearl Harbor
 Auschwitz concentration camp
 Baburnama
+Balkan Wars
 Baltic Way
 Bangladesh Liberation War
 Bartolomé de las Casas
@@ -96,6 +99,7 @@ Capture of Rome
 Caratacus
 Caravel
 Cato the Elder
+Central American crisis
 Charge of the Light Brigade
 Charlemagne
 Chernobyl disaster
@@ -148,7 +152,9 @@ Ferghana horse
 First Battle of Panipat
 First Council of Nicaea
 First Fleet
+First Indochina War
 First Serbian Uprising
+First Sino-Japanese War
 Five Days of Milan
 Flagellant
 Frankfurt Parliament
@@ -186,6 +192,7 @@ Hispaniola
 Holodomor
 Homer
 Horses of Saint Mark
+Hungarian Revolution of 1956
 Hussite Wars
 Hōkūleʻa
 Iliad
@@ -210,6 +217,7 @@ Laika
 Landing of Columbus
 Lapulapu
 Laskarina Bouboulina
+Lebanese Civil War
 Lindisfarne
 Lion Capital of Ashoka
 Long March
@@ -224,11 +232,13 @@ March on Washington for Jobs and Freedom
 Marco Polo Bridge Incident
 Mary Seacole
 Masada
+Mau Mau rebellion
 Medinet Habu
 Meiji Restoration
 Mexican Revolution
 Mexican–American War
 Migrant Mother
+Miguel Grau Seminario
 Milo of Croton
 Moai
 Mogao Caves
@@ -238,6 +248,7 @@ Mosque–Cathedral of Córdoba
 Nakba
 Napoleon Crossing the Alps
 Nemesis (1839)
+Nigerian Civil War
 Ninety-five Theses
 Normandy landings
 Odyssey
@@ -281,6 +292,7 @@ Richard III (play)
 Romance of the Three Kingdoms
 Russian Revolution
 Russo-Japanese War
+Russo-Turkish War (1877–1878)
 Russo-Ukrainian war
 Rwandan genocide
 Sack of Rome (410)
@@ -291,6 +303,7 @@ Scramble for Africa
 Sea Peoples
 Second Boer War
 Second Boer War concentration camps
+Second Italo-Ethiopian War
 Second Sino-Japanese War
 Seljuk Empire
 Selma to Montgomery marches
@@ -312,10 +325,12 @@ Spanish Armada
 Spanish Civil War
 Spanish conquest of the Aztec Empire
 Spanish flu
+Spanish–American War
 Spinning jenny
 Sputnik 1
 Star-Spangled Banner (flag)
 Storming of the Bastille
+Sudanese civil war (2023–present)
 Suez Canal
 Syrian civil war
 Taiping Rebellion
@@ -340,6 +355,7 @@ The Triumph of Death
 The Valley of the Shadow of Death (photograph)
 Theodosius I
 Third Battle of Panipat
+Tigray war
 Timurid conquests and invasions
 Titanic
 Trail of Tears
@@ -350,6 +366,7 @@ Treaty of Nanking
 Trojan Horse
 Tudor rose
 Tuol Sleng Genocide Museum
+Turkish War of Independence
 Turtle ship
 Uluburun shipwreck
 Unification of Germany
@@ -360,6 +377,7 @@ Vietnam War
 Wall Street Crash of 1929
 Walls of Constantinople
 War in Afghanistan (2001–2021)
+War of the Pacific
 War of the Spanish Succession
 Warsaw Ghetto Uprising
 Washington Crossing the Delaware
@@ -370,7 +388,9 @@ World War II
 Wreck of the Titanic
 Wuchang uprising
 Yang Guifei
+Yemeni civil war (2014–present)
 Yersinia pestis
+Yom Kippur War
 Yugoslav Wars
 Zimbabwe Bird
 audio: La Marseillaise
