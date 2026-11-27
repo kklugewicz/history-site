@@ -104,4 +104,12 @@ def legacy(text, *points, **kw):
 # places the event stories need that the people's and the stories' tables do not have
 C.update({
     'guanahani': (-74.48, 24.05), 'la_navidad': (-72.1, 19.75), 'santa_fe_gr': (-3.72, 37.19), 'canary_gomera': (-17.2, 28.1),
+    'pompeii': (14.49, 40.75), 'herculaneum': (14.35, 40.81), 'misenum': (14.08, 40.78), 'vesuvius': (14.43, 40.82),
+    'yarmouk': (35.95, 32.8), 'qadisiyyah': (44.43, 31.79), 'camulodunum': (0.9, 51.89), 'mona': (-4.35, 53.25),
+    'milvian_bridge': (12.47, 41.94), 'catalaunian_plains': (4.37, 48.95), 'ferghana': (71.78, 40.39),
+    'pelusium': (32.57, 31.04), 'mons_graupius': (-2.6, 57.3),
+    'stamford_bridge': (-0.91, 53.99), 'pevensey': (0.33, 50.82), 'caffa': (35.38, 45.03), 'messina': (15.55, 38.19),
+    'castillon': (-0.04, 44.85), 'tlatelolco': (-99.14, 19.45), 'runnymede': (-0.56, 51.44), 'dan_no_ura': (130.96, 33.96),
+    'ichi_no_tani': (135.1, 34.65), 'onon': (108.9, 48.8), 'las_navas': (-3.58, 38.29), 'valencia': (-0.38, 39.47),
+    'rapa_nui': (-109.35, -27.12), 'mawei': (108.2, 34.3), 'sarnath': (83.02, 25.38),
 })

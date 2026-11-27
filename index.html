@@ -2850,9 +2850,9 @@ details[open] summary { margin-bottom: 6px; }
         if (phone) head = `<p class="kicker">${esc(fmtYear(S.year))} · ${esc(era[0])}</p><p class="period"><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</p>${subs}`;
         else html += `<div class="focus"><h2><span class="swatch" style="background:${sw}"></span>${esc(p.name)}</h2>` + subs + '</div>';
         html += flagBlock(f);
-        html += eventStoryRow(f);
         const atWar = activeWarsAt(S.year).filter(w => w.steps[stepIndexAt(w, S.year)].territories?.some(t => t.polities.includes(p.name)));
         if (atWar.length) html += `<div class="sec"><h3>At war in ${esc(fmtYear(S.year))}</h3><div class="list">${atWar.map(warCard).join('')}</div></div>`;
+        html += eventStoryRow(f);
         html += regionBlock(p.regions[0], true);
         p.regions.slice(1).forEach(r => html += regionBlock(r, false));
         if (storyOf(fa)) html += storyCard(storyOf(fa), 'Follow how this faith spread');
