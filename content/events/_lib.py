@@ -56,6 +56,7 @@ KINDS = {
     'feat': ('Great feat', 'star'), 'building': ('Great work', 'column'), 'founding': ('Founding', 'column'),
     'games': ('Games', 'star'), 'space': ('Space', 'rocket'), 'change': ('Great change', 'gear'), 'fall': ('Fall', 'column'),
     'invention': ('Invention', 'scroll'), 'legend': ('Legend', 'star'), 'trade': ('Trade', 'compass'),
+    'unification': ('Unification', 'flag'),
 }
 PAGE_KINDS = ('scene', 'battle', 'turn', 'figure', 'cost', 'made', 'work', 'song', 'tale', 'legacy')
 
@@ -121,4 +122,16 @@ C.update({
     'shanhai_pass': (119.75, 40.0), 'bender': (29.48, 46.83), 'cromford': (-1.56, 53.11), 'coalbrookdale': (-2.49, 52.64),
     'varennes': (5.03, 49.23), 'jumonville_glen': (-79.65, 39.88), 'karlowitz': (19.94, 45.2), 'burhanpur': (76.23, 21.31),
     'worcester': (-2.22, 52.19), 'yangzhou': (119.41, 32.39), 'nystad': (21.41, 60.8),
+    'berezina': (28.35, 54.32), 'balaklava': (33.6, 44.5), 'marsala': (12.44, 37.8), 'teano': (14.07, 41.25),
+    'navarino': (21.67, 36.92), 'missolonghi': (21.42, 38.37), 'skibbereen': (-9.27, 51.55), 'humen': (113.67, 22.82),
+    'fort_sumter': (-79.87, 32.75), 'chios': (26.14, 38.37), 'barrackpore': (88.38, 22.76), 'guayaquil': (-79.89, -2.19),
+    'ipiranga': (-46.61, -23.59), 'solferino': (10.57, 45.37), 'combahee': (-80.65, 32.6), 'chapultepec': (-99.18, 19.42),
+    'orasac': (20.58, 44.33), 'tripolitsa': (22.37, 37.51), 'nafplio': (22.8, 37.57), 'moraviantown': (-81.89, 42.58),
+    'new_echota': (-84.91, 34.54), 'tahlequah': (-94.97, 35.91), 'alamo': (-98.49, 29.43), 'coloma': (-120.89, 38.8),
+    'sinop': (35.15, 42.03), 'gwalior': (78.18, 26.22), 'jintian': (110.1, 23.5), 'cerro_gordo': (-96.7, 19.45),
+    'cerro_cora': (-56.03, -22.63), 'dybbol': (9.74, 54.91), 'bad_ems': (7.71, 50.33), 'ismailia': (32.27, 30.6),
+    'krakatoa': (105.42, -6.1), 'mafeking': (25.64, -25.85), 'vereeniging': (27.93, -26.67), 'tsushima': (129.8, 34.4),
+    'portsmouth_nh': (-70.76, 43.07), 'culebra_cut': (-79.65, 9.05), 'belfast': (-5.93, 54.6),
+    'southampton': (-1.4, 50.9), 'titanic_wreck': (-49.95, 41.73), 'columbus_nm': (-107.64, 31.83),
+    'ladysmith': (29.78, -28.56),
 })

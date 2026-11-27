@@ -1,8 +1,12 @@
 1755 Lisbon earthquake
+1883 eruption of Krakatoa
 1896 Summer Olympics
+1911 Revolution
 Alexander Mosaic
 Alhambra
+American Civil War
 An Lushan rebellion
+Anak Krakatoa
 Ancient Olympic Games
 Ancient Olympic pentathlon
 Arch of Titus
@@ -10,42 +14,72 @@ Assassination of Julius Caesar
 Baburnama
 Bartolomé de las Casas
 Battle of Actium
+Battle of Adwa
 Battle of Agincourt
 Battle of Alesia
+Battle of Austerlitz
+Battle of Ayacucho
+Battle of Boyacá
 Battle of Cannae
+Battle of Chapultepec
 Battle of Crécy
 Battle of Dan-no-ura
+Battle of Fort Sumter
+Battle of Gettysburg
 Battle of Gravelines
+Battle of Isandlwana
+Battle of Königgrätz
 Battle of Marathon
 Battle of Mohács
+Battle of Mukden
 Battle of Naseby
+Battle of Navarino
+Battle of New Orleans
 Battle of Poltava
+Battle of Queenston Heights
 Battle of Red Cliffs
 Battle of Salamis
+Battle of Sedan
 Battle of Sekigahara
+Battle of Sinop
+Battle of Solferino
 Battle of Tours
+Battle of Trafalgar
+Battle of Tsushima
 Battle of Vienna
+Battle of Waterloo
 Battle of Yarmouk
 Battle of Zama
+Battle of the Alamo
 Battle of the Milvian Bridge
 Battles of Lexington and Concord
 Bayeux Tapestry
 Bennelong
+Berlin Conference
+Bloody Sunday (1905)
 Boadicea and Her Daughters
 Bombyx mori
 Boston Tea Party
+Boxer Rebellion
 Brookes (ship)
+Burning of Washington
 Caesar's Rhine bridges
+California gold rush
+Capture of Rome
 Caratacus
 Caravel
 Cato the Elder
+Charge of the Light Brigade
 Chinampa
 Clay tablet
 Columbian exchange
 Commentarii de Bello Gallico
+Congo Free State
 Constantinople
 Corvus (boarding device)
+Crimean War
 Cromford Mill
+Culebra Cut
 Cuneiform
 Declaration of the Rights of Man and of the Citizen
 Defenestrations of Prague
@@ -57,25 +91,35 @@ Domesday Book
 Edict of Milan
 Edicts of Ashoka
 Egyptian hieroglyphs
+Eight-Nation Alliance
+Eliza Lynch
 Enheduanna
 Epic of Gilgamesh
 Erdapfel
 Execution of Charles I
 Execution of Louis XVI
 Exhumation and reburial of Richard III of England
+Expedition of the Thousand
 Fall of Constantinople
 Ferghana horse
 First Battle of Panipat
 First Council of Nicaea
 First Fleet
+First Serbian Uprising
+Five Days of Milan
 Flagellant
+Frankfurt Parliament
+French invasion of Russia
+Gettysburg Address
 Giuseppe Fiorelli
 Giza pyramid complex
 Gokstad ship
 Great Enclosure
+Great Famine (Ireland)
 Great Pyramid of Giza
 Great Wall of China
 Great Zimbabwe
+Greek War of Independence
 Gutenberg Bible
 Hagia Sophia
 Haitian Revolution
@@ -90,32 +134,52 @@ Homer
 Horses of Saint Mark
 Hōkūleʻa
 Iliad
+Indian Rebellion of 1857
+Iwakura Mission
 Janissaries
 Jikji
 Jing Ke
 John, King of England
 Josephus
+Kindred Spirits (sculpture)
 Krak des Chevaliers
 Landing of Columbus
 Lapulapu
+Laskarina Bouboulina
 Lindisfarne
 Lion Capital of Ashoka
+Lord Byron
+Louise Michel
 Luther Bible
 Lysistrata
 Magna Carta
+Mangal Pandey
+Mary Seacole
 Masada
 Medinet Habu
+Meiji Restoration
+Mexican Revolution
+Mexican–American War
 Milo of Croton
 Moai
 Mogao Caves
 Mongol Empire
 Mongol military tactics and organization
 Mosque–Cathedral of Córdoba
+Napoleon Crossing the Alps
+Nemesis (1839)
 Ninety-five Theses
 Odyssey
 Olaudah Equiano
+Old Summer Palace
+Opening of the Suez Canal
+Opium Wars
 Oseberg ship
 Padrão dos Descobrimentos
+Panama Canal
+Panama Canal locks
+Paraguayan War
+Paris Commune
 Peace of Westphalia
 Peloponnesian War
 Pemulwuy
@@ -130,48 +194,79 @@ Pliny the Younger
 Polynesian navigation
 Pombaline style
 Pompeii
+Proclamation of the German Empire
 Proto-cuneiform
+Revolutions of 1848
 Richard III (play)
 Romance of the Three Kingdoms
+Russo-Japanese War
 Sack of Rome (410)
 Sack of Rome (455)
 Saint Basil's Cathedral
 Santa María (ship)
+Scramble for Africa
 Sea Peoples
+Second Boer War
+Second Boer War concentration camps
 Seven Wonders of the Ancient World
 Siege of Jerusalem (1099)
 Siege of Kazan
+Siege of Paris (1870–1871)
+Siege of Port Arthur
 Siege of Tyre (332 BC)
 Siege of Yorktown
+Siege of the International Legations
 Silk
 Silk Road
 Spanish Armada
 Spanish conquest of the Aztec Empire
 Spinning jenny
+Star-Spangled Banner (flag)
 Storming of the Bastille
+Suez Canal
+Taiping Rebellion
 Taj Mahal
 Taíno
 Templo Mayor
 Tennis Court Oath
 Tenochtitlan
 Terracotta Army
+The Charge of the Light Brigade (poem)
+The Coronation of Napoleon
 The Death of General Wolfe
 The Decameron
 The Iron Bridge
+The Massacre at Chios
+The Scream
 The Tale of the Heike
+The Third of May 1808
 The Triumph of Death
+The Valley of the Shadow of Death (photograph)
 Theodosius I
+Titanic
+Trail of Tears
 Transition from Ming to Qing
+Treaties of Tilsit
+Treaty of Guadalupe Hidalgo
+Treaty of Nanking
 Trojan Horse
 Tudor rose
 Turtle ship
 Uluburun shipwreck
+Unification of Germany
 Universal Declaration of Human Rights
 Vercingetorix Throws Down His Arms at the Feet of Julius Caesar
 Victoria (ship)
 Walls of Constantinople
 Washington Crossing the Delaware
 Western Wall
+Wreck of the Titanic
+Wuchang uprising
 Yang Guifei
 Yersinia pestis
 Zimbabwe Bird
+audio: Symphony No. 3 (Beethoven) | allegro con brio
+audio: The Battle Hymn of the Republic | Battle Hymn Republic
+audio: The Internationale | Internationale
+audio: The Star-Spangled Banner | instrumental band
+audio: Va, pensiero | Va pensiero
