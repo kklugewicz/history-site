@@ -117,4 +117,8 @@ C.update({
     'nagashino': (137.56, 34.92), 'tanegashima': (130.98, 30.6), 'mohacs': (18.68, 45.99), 'chaldiran': (44.0, 39.05),
     'kosovo_polje': (21.08, 42.7), 'ankara': (32.86, 39.93), 'bursa': (29.06, 40.19), 'gallipoli': (26.67, 40.41),
     'myeongnyang': (126.31, 34.57), 'noryang': (127.87, 34.94),
+    'magdeburg': (11.63, 52.13), 'white_mountain': (14.32, 50.08), 'munster': (7.63, 51.96), 'naseby': (-0.99, 52.4),
+    'shanhai_pass': (119.75, 40.0), 'bender': (29.48, 46.83), 'cromford': (-1.56, 53.11), 'coalbrookdale': (-2.49, 52.64),
+    'varennes': (5.03, 49.23), 'jumonville_glen': (-79.65, 39.88), 'karlowitz': (19.94, 45.2), 'burhanpur': (76.23, 21.31),
+    'worcester': (-2.22, 52.19), 'yangzhou': (119.41, 32.39), 'nystad': (21.41, 60.8),
 })
