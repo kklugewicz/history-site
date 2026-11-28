@@ -111,7 +111,7 @@ for i, c in enumerate(range(3, 49)):
 # extra border years used only by war/religion step views (no slider stop of their own)
 EXTRA_FILES = ['bc2000', 'bc1000', 'bc300', '1200', '1400', '1500', '1600', '1700', '1800', '1930']
 # border years between 1815 and 1878 that historical-basemaps lacks, built by scripts/build_midcentury.py from 1815 and 1878
-MID_FILES = ['1822', '1823', '1825', '1831', '1836', '1840', '1846', '1848', '1854', '1861', '1867', '1871']
+MID_FILES = ['1822', '1823', '1825', '1831', '1836', '1840', '1846', '1848', '1854', '1861', '1865', '1867', '1871']
 ALL_FILES = sorted(set(SNAP_FILES.values()) | set(EXTRA_FILES) | set(MID_FILES), key=lambda f: -int(f[2:]) if f.startswith('bc') else int(f))
 json.dump({'snapshots': snapshots, 'regions': list(REGIONS), 'borderFiles': ALL_FILES},
           open(os.path.join(OUT, 'timeline.json'), 'w'), ensure_ascii=False)

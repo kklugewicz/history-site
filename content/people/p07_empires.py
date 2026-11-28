@@ -30,7 +30,7 @@ P('Abraham Lincoln', 'Sixteenth President of the United States', (1809, 1865), 1
   G(1837, 1860, 'Lawyer in Springfield', (-89.65, 39.8)), R(1861, 1865, 'President of the United States', *USA, at='washington'))
 P('Jefferson Davis', 'President of the Confederacy', (1808, 1889), 3, 'rule',
   'President of the slave states that broke away in 1861.',
-  G(1861, 1865, 'President of the Confederate States', (-86.3, 32.38), 'richmond'))
+  R(1861, 1865, 'President of the Confederate States', 'Confederate States of America', at='richmond'))
 P('Ulysses S. Grant', 'Union general and president', (1822, 1885), 2, 'war rule',
   'Took Vicksburg, wore down Lee in Virginia and accepted his surrender at Appomattox; later president.',
   G(1861, 1863, 'War in the West', ((-89.18, 37.0, 1861.7)), ((-87.86, 36.5, 1862.12)), ((-88.32, 35.15, 1862.27)), ((-90.88, 32.35, 1863.5)), ((-85.31, 35.05, 1863.9))),
