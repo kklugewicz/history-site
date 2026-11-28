@@ -372,7 +372,7 @@ K('Gerald Ford', PUS, (1913, 2006), 1974, 1977,
   'The only president never elected president or vice-president, who pardoned Nixon.', *USA, at='washington')
 
 # ---------- Mexico and Central America ----------
-MX = ('Mexico',)
+MX = ('Mexico', 'Mexican Empire')
 PMX = 'President of Mexico'
 P('Agustín de Iturbide', 'Emperor of Mexico', (1783, 1824), 3, 'war rule',
   'Royalist officer who switched sides, won Mexico its independence in 1821 and crowned himself emperor; overthrown, he came back from exile and was shot.',
@@ -469,7 +469,7 @@ K('Nayib Bukele', 'President of El Salvador', (1981, None), 2019, 2026,
   'El Salvador', at=(-89.19, 13.69))
 
 # ---------- South America ----------
-BR = ('Brazil', 'Kingdom of Brazil')
+BR = ('Brazil', 'Empire of Brazil')
 PBR = 'President of Brazil'
 K('Deodoro da Fonseca', PBR, (1827, 1892), 1889, 1891,
   'Marshal who overthrew Emperor Pedro II in 1889 and became the first president of Brazil.', *BR, at='rio')
@@ -527,7 +527,7 @@ K('Michel Temer', PBR, (1940, None), 2016, 2018,
   "Rousseff's vice-president, who took over when she was removed.", *BR, at='brasilia')
 K('Jair Bolsonaro', PBR, (1955, None), 2019, 2022,
   'Former army captain who was later sentenced to 27 years in prison for plotting a coup to stay in power.', *BR, at='brasilia')
-AR = ('Argentina',)
+AR = ('Argentina', 'United Provinces of the Río de la Plata', 'Argentine Confederation')
 PAR = 'President of Argentina'
 K('Bartolomé Mitre', PAR, (1821, 1906), 1862, 1868,
   'First president of a united Argentina, who led it into the Paraguayan War and founded the newspaper La Nación.', *AR,
@@ -617,7 +617,7 @@ P('Nicolás Maduro', 'President of Venezuela', (1962, None), 3, 'rule',
   G(2026, 2026, 'Seized and flown to New York', ('caracas', 2026.0), ('new_york', 2026.01), ('new_york', 2026.9)))
 K('Delcy Rodríguez', 'Acting president of Venezuela', (1969, None), 2026, 2026,
   "Maduro's vice-president, who took over after his capture.", *VE, at='caracas')
-CO = ('Colombia',)
+CO = ('Colombia', 'Gran Colombia', 'Republic of New Granada', 'United States of Colombia')
 P('Francisco de Paula Santander', 'President of New Granada', (1792, 1840), 3, 'war rule',
   "Bolívar's general and rival, who ran Gran Colombia while Bolívar fought in Peru and later led the country that became Colombia.",
   R(1819, 1826, 'Vice-president of Gran Colombia', *CO, at='bogota'), R(1832, 1837, 'President of New Granada', *CO, at='bogota'))
@@ -634,7 +634,7 @@ K('Juan Manuel Santos', 'President of Colombia', (1951, None), 2010, 2018,
   'Made peace with the FARC and won the Nobel Peace Prize in 2016.', *CO, at='bogota')
 K('Gustavo Petro', 'President of Colombia', (1960, None), 2022, 2026,
   "Former guerrilla and Colombia's first left-wing president.", *CO, at='bogota')
-PE = ('Peru',)
+PE = ('Peru', 'Peru–Bolivian Confederation')
 P('Ramón Castilla', 'President of Peru', (1797, 1867), 3, 'rule reform',
   "Freed Peru's slaves and ended the tribute paid by its Indigenous people, paying for it with money from guano.",
   R(1845, 1851, 'President of Peru', *PE, at='lima'), R(1855, 1862, 'President of Peru', *PE, at='lima'))

@@ -565,7 +565,7 @@ event('hungarian-revolution-1848', 'The Hungarian Revolution of 1848', 'revoluti
              'Hungary won its own government in 1848',
              'Crushed by Austria and Russia in 1849',
              'Self-rule came back in 1867'),
-      states=('Austria Hungary',), war='hungarian-revolution-1848', wiki='Hungarian Revolution of 1848', at='budapest')
+      states=('Austrian Empire',), war='hungarian-revolution-1848', wiki='Hungarian Revolution of 1848', at='budapest')
 
 event('reform-war', 'The Reform War', 'civil-war', (1857, 1861),
       "Mexico's liberals and conservatives fought a civil war over the power of the Church, and Benito Juárez won it.",

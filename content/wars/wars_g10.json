@@ -1616,16 +1616,7 @@
        "Hamburg",
        "Bremen",
        "Lübeck",
-       "Kingdom of Sardinia",
-       "Lombardy",
-       "Tuscany",
-       "Modena",
-       "Parma",
-       "Lucca",
-       "Massa",
-       "Fivizzano",
-       "Pontremoli",
-       "Kingdom of the Two Sicilies"
+       "Italy"
       ]
      },
      {
@@ -1816,32 +1807,10 @@
      {
       "side": 0,
       "polities": [
-       "Prussia",
-       "Hohenzollern",
-       "Wetzlar",
-       "Schleswig",
-       "Holstein",
-       "Mecklenburg-Schwerin",
-       "Mecklenburg-Strelitz",
-       "Oldenburg",
-       "Brunswick",
-       "Anhalt",
-       "Waldeck",
-       "Lippe-Detmold",
-       "Schaumburg-Lippe",
-       "Hamburg",
-       "Bremen",
-       "Lübeck",
-       "Hanover",
-       "Electoral Hesse",
-       "Nassau",
-       "Saxony",
-       "Thuringia",
+       "North German Confederation",
        "Bavaria",
-       "Palatinate",
        "Württemberg",
-       "Baden",
-       "Grand Duchy of Hesse"
+       "Baden"
       ]
      },
      {
@@ -2034,32 +2003,10 @@
      {
       "side": 0,
       "polities": [
-       "Prussia",
-       "Hohenzollern",
-       "Wetzlar",
-       "Schleswig",
-       "Holstein",
-       "Mecklenburg-Schwerin",
-       "Mecklenburg-Strelitz",
-       "Oldenburg",
-       "Brunswick",
-       "Anhalt",
-       "Waldeck",
-       "Lippe-Detmold",
-       "Schaumburg-Lippe",
-       "Hamburg",
-       "Bremen",
-       "Lübeck",
-       "Hanover",
-       "Electoral Hesse",
-       "Nassau",
-       "Saxony",
-       "Thuringia",
+       "North German Confederation",
        "Bavaria",
-       "Palatinate",
        "Württemberg",
-       "Baden",
-       "Grand Duchy of Hesse"
+       "Baden"
       ]
      },
      {
@@ -2226,32 +2173,7 @@
      {
       "side": 0,
       "polities": [
-       "Prussia",
-       "Hohenzollern",
-       "Wetzlar",
-       "Schleswig",
-       "Holstein",
-       "Mecklenburg-Schwerin",
-       "Mecklenburg-Strelitz",
-       "Oldenburg",
-       "Brunswick",
-       "Anhalt",
-       "Waldeck",
-       "Lippe-Detmold",
-       "Schaumburg-Lippe",
-       "Hamburg",
-       "Bremen",
-       "Lübeck",
-       "Hanover",
-       "Electoral Hesse",
-       "Nassau",
-       "Saxony",
-       "Thuringia",
-       "Bavaria",
-       "Palatinate",
-       "Württemberg",
-       "Baden",
-       "Grand Duchy of Hesse"
+       "Germany"
       ]
      },
      {
@@ -4283,7 +4205,7 @@
      {
       "side": 0,
       "polities": [
-       "Viceroyalty of New Spain"
+       "Mexico"
       ]
      }
     ],
@@ -4650,8 +4572,7 @@
      {
       "side": 0,
       "polities": [
-       "Cochin China",
-       "Cambodia"
+       "French Indochina"
       ]
      },
      {
@@ -4744,8 +4665,7 @@
      {
       "side": 0,
       "polities": [
-       "Cochin China",
-       "Cambodia"
+       "French Indochina"
       ]
      },
      {
@@ -5622,14 +5542,14 @@
      {
       "side": 0,
       "polities": [
-       "Russian Empire",
-       "central Asian khanates"
+       "Russian Empire"
       ]
      },
      {
       "side": 1,
       "polities": [
-       "Turan"
+       "Bokhara Khanate",
+       "central Asian khanates"
       ]
      }
     ],
@@ -5754,14 +5674,14 @@
      {
       "side": 0,
       "polities": [
-       "Russian Empire",
-       "central Asian khanates"
+       "Russian Empire"
       ]
      },
      {
       "side": 1,
       "polities": [
-       "Turan"
+       "Bokhara Khanate",
+       "central Asian khanates"
       ]
      }
     ],
@@ -5894,14 +5814,14 @@
      {
       "side": 0,
       "polities": [
-       "Russian Empire",
-       "central Asian khanates"
+       "Russian Empire"
       ]
      },
      {
       "side": 1,
       "polities": [
-       "Turan"
+       "Bokhara Khanate",
+       "central Asian khanates"
       ]
      }
     ],
@@ -6161,7 +6081,7 @@
      {
       "side": 0,
       "polities": [
-       "Viceroyalty of Brazil"
+       "Empire of Brazil"
       ]
      },
      {
@@ -6246,8 +6166,9 @@
      {
       "side": 0,
       "polities": [
-       "Viceroyalty of Brazil",
-       "United Provinces of the Río de la Plata"
+       "Empire of Brazil",
+       "Argentina",
+       "Uruguay"
       ]
      },
      {
@@ -6387,8 +6308,9 @@
      {
       "side": 0,
       "polities": [
-       "Viceroyalty of Brazil",
-       "United Provinces of the Río de la Plata"
+       "Empire of Brazil",
+       "Argentina",
+       "Uruguay"
       ]
      },
      {
@@ -6510,8 +6432,9 @@
      {
       "side": 0,
       "polities": [
-       "Viceroyalty of Brazil",
-       "United Provinces of the Río de la Plata"
+       "Empire of Brazil",
+       "Argentina",
+       "Uruguay"
       ]
      },
      {
@@ -6641,8 +6564,9 @@
      {
       "side": 0,
       "polities": [
-       "Viceroyalty of Brazil",
-       "United Provinces of the Río de la Plata"
+       "Empire of Brazil",
+       "Argentina",
+       "Uruguay"
       ]
      },
      {
@@ -6764,8 +6688,9 @@
      {
       "side": 0,
       "polities": [
-       "Viceroyalty of Brazil",
-       "United Provinces of the Río de la Plata"
+       "Empire of Brazil",
+       "Argentina",
+       "Uruguay"
       ]
      },
      {

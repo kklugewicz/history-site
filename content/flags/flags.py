@@ -438,6 +438,16 @@ D('hawaii', 'Flag of the Kingdom of Hawaii', hs(WHITE, '#c8102e', '#1f3f99', WHI
   'Eight stripes for the eight islands, with the Union Flag, 1845-1893.')
 D('mx-1821', 'Flag of the First Mexican Empire', vs('#006847', WHITE, '#ce1126') + emblem('eagle', '#8a6a2a', 30, 22.5, 12) + emblem('crown', '#c79a10', 30, 15, 5),
   'flag', 'The crowned eagle of Agustín de Iturbide, 1821-1823.')
+D('gran-colombia', 'Flag of Gran Colombia', hs(YELLOW, '#003893', '#ce1126'), 'flag',
+  'Francisco de Miranda\'s yellow, blue and red, flown by Bolívar\'s republic, 1821-1831.')
+D('new-granada', 'Flag of the Republic of New Granada', vs('#ce1126', '#003893', YELLOW), 'flag',
+  'The same colours set upright, 1834-1861.')
+D('central-america', 'Flag of the Federal Republic of Central America', hs('#0046ad', WHITE, '#0046ad') +
+  poly('#2e7d32', [(30, 17), (35.5, 27.5), (24.5, 27.5)]), 'flag', 'Blue, white and blue, still the colours of its five republics, 1823-1841.')
+D('pe-bo-confederation', 'Flag of the Peru-Bolivian Confederation', rect('#c8102e') + emblem('shield', YELLOW, 30, 22.5, 16) +
+  emblem('shield', WHITE, 17, 22.5, 11) + emblem('shield', WHITE, 43, 22.5, 11), 'flag', 'Red, with the arms of its three states, 1836-1839.')
+D('texas', 'Flag of the Republic of Texas', rect(WHITE, 20, 0, 40, 22.5) + rect('#bf0a30', 20, 22.5, 40, 22.5) + rect('#002868', 0, 0, 20, 45) +
+  star(WHITE, 10, 22.5, 6.5), 'flag', 'The Lone Star flag, adopted in 1839 and still the flag of Texas.')
 D('ht-1806', 'Flag of Haiti', hs('#00209f', '#d21034'), 'flag', 'Blue over red, from 1806 (the arms were added later).')
 D('ht-1964', 'Flag of Duvalier\'s Haiti', vs(BLACK, '#d21034'), 'flag', 'Black and red, 1964-1986.')
 D('sv-1865', 'Flag of El Salvador, 1865-1912', hs(*(['#0047ab', WHITE] * 4 + ['#0047ab'])) + rect('#c8102e', 0, 0, 24, 25) +
@@ -612,6 +622,7 @@ TL = {
     'Helvetic Republic': [(N, N, 'helvetic')], 'Geneva': [(1500, 1798, 'geneva'), (1814, N, 'geneva')], 'Hamburg': [(1300, N, 'hamburg')],
     'Prussia': [(1230, 1524, 'teutonic'), (1525, 1918, 'prussia')], 'Brandenburg': [(1157, 1700, 'brandenburg'), (1701, 1918, 'prussia')],
     'East Prussia': '=Germany',
+    'North German Confederation': '=Germany', 'United Kingdom of the Netherlands': '=Netherlands',
     'Bavaria': [(1180, 1918, 'bavaria')], 'Saxony': [(1806, 1918, 'saxony')], 'Hanover': [(1814, 1866, 'hanover')],
     'German Empire': '=Germany', 'East Germany': [(1949, 1958, 'iso:de'), (1959, 1990, 'ddr')], 'West Germany': [(1949, N, 'iso:de')],
     'Austria': [(1918, 1937, 'iso:at'), (1938, 1945, 'de-nazi'), (1946, N, 'iso:at')],
@@ -666,7 +677,11 @@ TL = {
     'Dominion of Newfoundland': '=United Kingdom',
     'Kingdom of Hawaii': [(1845, 1898, 'hawaii'), (1899, N, '=United States')],
     'Mexico': [(N, 1820, '=Spain'), (1821, 1823, 'mx-1821'), (1824, N, 'iso:mx')],
-    'Brazil': [(N, 1821, '=Portugal'), (1822, 1889, 'br-empire'), (1890, N, 'iso:br')], 'Kingdom of Brazil': '=Brazil',
+    'Mexican Empire': '=Mexico', 'Republic of Texas': [(1836, 1845, 'texas')], 'Empire of Brazil': '=Brazil',
+    'Federal Republic of Central America': [(1823, 1841, 'central-america')], 'Gran Colombia': [(1821, 1831, 'gran-colombia')],
+    'Republic of New Granada': [(1831, 1860, 'new-granada')], 'United States of Colombia': '=Colombia',
+    'Peru–Bolivian Confederation': [(1836, 1839, 'pe-bo-confederation')], 'Argentine Confederation': '=Argentina',
+    'Brazil': [(N, 1821, '=Portugal'), (1822, 1889, 'br-empire'), (1890, N, 'iso:br')],
     'United Provinces of the Río de la Plata': [(1816, N, 'iso:ar')], 'Argentina': [(1816, N, 'iso:ar')],
     'Chile': [(1817, N, 'iso:cl')], 'Peru': [(1825, N, 'iso:pe')], 'Bolivia': [(1851, N, 'iso:bo')], 'Paraguay': [(1842, N, 'iso:py')],
     'Uruguay': [(1830, N, 'iso:uy')], 'Colombia': [(1861, N, 'iso:co')], 'Venezuela': [(1811, N, 'iso:ve')], 'Ecuador': [(1860, N, 'iso:ec')],

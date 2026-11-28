@@ -45,7 +45,7 @@ event('paraguayan-war', 'The Paraguayan War', 'war', (1864, 1870),
              'Paraguay fought three neighbours, 1864 to 1870',
              'The deadliest war in South American history',
              'López died at Cerro Corá in 1870'),
-      states=('Kingdom of Brazil', 'Argentina', 'Uruguay'), war='paraguayan-war', wiki='Paraguayan War')
+      states=('Empire of Brazil', 'Argentina', 'Uruguay'), war='paraguayan-war', wiki='Paraguayan War')
 
 event('german-unification', 'The unification of Germany', 'unification', (1864, 1871),
       "In three short wars Prussia's Bismarck united Germany by blood and iron, and crowned its king emperor in France.",

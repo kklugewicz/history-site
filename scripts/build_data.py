@@ -110,7 +110,9 @@ for i, c in enumerate(range(3, 49)):
         'regions': {n: timeline[n][c] for n in REGIONS if timeline[n][c]['text'] or timeline[n][c]['held']}})
 # extra border years used only by war/religion step views (no slider stop of their own)
 EXTRA_FILES = ['bc2000', 'bc1000', 'bc300', '1200', '1400', '1500', '1600', '1700', '1800', '1930']
-ALL_FILES = sorted(set(SNAP_FILES.values()) | set(EXTRA_FILES), key=lambda f: -int(f[2:]) if f.startswith('bc') else int(f))
+# border years between 1815 and 1878 that historical-basemaps lacks, built by scripts/build_midcentury.py from 1815 and 1878
+MID_FILES = ['1822', '1823', '1825', '1831', '1836', '1840', '1846', '1848', '1854', '1861', '1867', '1871']
+ALL_FILES = sorted(set(SNAP_FILES.values()) | set(EXTRA_FILES) | set(MID_FILES), key=lambda f: -int(f[2:]) if f.startswith('bc') else int(f))
 json.dump({'snapshots': snapshots, 'regions': list(REGIONS), 'borderFiles': ALL_FILES},
           open(os.path.join(OUT, 'timeline.json'), 'w'), ensure_ascii=False)
 
@@ -145,6 +147,7 @@ PARENT_FIX = {
 anchors = [(r, Point(p)) for r, ps in REGIONS.items() for p in ps]
 order = list(REGIONS)
 for f in ALL_FILES:
+    if f in MID_FILES: continue
     d = json.load(open(os.path.join(GEO, 'world_%s.geojson' % f)))
     groups = {}
     for ft in d['features']:

@@ -204,8 +204,9 @@ event('latin-american-independence', 'Latin America breaks free', 'independence'
              'San Martín crossed the Andes in 1817',
              'Brazil broke away from Portugal in 1822',
              'Ayacucho ended Spanish rule in South America, 1824'),
-      states=('Viceroyalty of Brazil', 'Kingdom of Brazil', 'Paraguay', 'Mexico', 'Guatemala', 'Colombia', 'Venezuela',
-              'Ecuador', 'Peru', 'Bolivia', 'Chile', 'Argentina', 'Uruguay'),
+      states=('Viceroyalty of Brazil', 'Empire of Brazil', 'Paraguay', 'Mexican Empire', 'Mexico', 'Federal Republic of Central America',
+              'Gran Colombia', 'Republic of New Granada', 'Venezuela', 'Ecuador', 'Peru', 'Bolivia', 'Chile',
+              'United Provinces of the Río de la Plata', 'Uruguay'),
       war='spanish-american-independence', wiki='Latin American wars of independence', img='Battle of Boyacá')
 
 event('trail-of-tears', 'The Trail of Tears', 'migration', (1830, 1850),
@@ -249,7 +250,7 @@ event('trail-of-tears', 'The Trail of Tears', 'migration', (1830, 1850),
              'The Cherokee were marched west in 1838 and 1839',
              'Thousands died on the way',
              'Sequoyah gave the Cherokee their writing'),
-      states=('United States', 'United States of America'), wiki='Trail of Tears', at='new_echota',
+      states=('United States',), wiki='Trail of Tears', at='new_echota',
       label='Forced removal')
 
 event('opium-wars', 'The Opium Wars', 'wars', (1839, 1860),
@@ -385,7 +386,7 @@ event('mexican-american-war', 'The Mexican-American War', 'war', (1846, 1848),
              'Mexico City fell in September 1847',
              'Mexico gave up about half its land in 1848',
              'The new lands reopened the fight over slavery'),
-      states=('Mexico', 'United States of America'), war='mexican-american-war', wiki='Mexican–American War')
+      states=('Mexico', 'United States'), war='mexican-american-war', wiki='Mexican–American War')
 
 event('revolutions-of-1848', 'The revolutions of 1848', 'revolution', (1848, 1849),
       'In a few weeks of 1848 revolution swept from Paris to Berlin, Vienna and Budapest. Within two years most had failed.',
@@ -587,7 +588,7 @@ event('indian-rebellion-1857', 'The Indian Rebellion of 1857', 'uprising', (1857
              'Ended both the Company and the Mughals',
              'India passed to the British Crown in 1858',
              'Called the First War of Independence in India'),
-      states=('British Raj', 'Maratha Confederacy'), war='indian-rebellion-1857', wiki='Indian Rebellion of 1857')
+      states=('British East India Company', 'Oudh', 'British Raj'), war='indian-rebellion-1857', wiki='Indian Rebellion of 1857')
 
 event('american-civil-war', 'The American Civil War', 'civil-war', (1861, 1865),
       'Eleven slave states broke away from the United States. Four years and over 600,000 deaths later, slavery was over.',

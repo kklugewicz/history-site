@@ -5,7 +5,7 @@ UK = ('United Kingdom of Great Britain and Ireland', 'United Kingdom')
 RUS = ('Russian Empire',)
 OTT = ('Ottoman Empire',)
 USA = ('United States', 'United States of America')
-GER = ('Prussia', 'Germany', 'German Empire')
+GER = ('Prussia', 'North German Confederation', 'Germany', 'German Empire')
 JAPAN = ('Japan', 'Imperial Japan', 'Empire of Japan')
 QING = ('Manchu Empire', 'Qing Empire')
 
@@ -230,7 +230,7 @@ P('Maximilian I of Mexico', 'Emperor of Mexico', (1832, 1867), 3, 'rule',
   G(1864, 1867, 'Emperor of Mexico', 'mexico_city', (-100.39, 20.59)))
 P('Pedro II of Brazil', 'Emperor of Brazil', (1825, 1891), 3, 'rule',
   'Bookish emperor who ruled Brazil for 49 years and saw slavery abolished before he was deposed.',
-  R(1840, 1889, 'Emperor of Brazil', 'Kingdom of Brazil', at='rio'), G(1889, 1891, 'Exile in Paris', 'paris'))
+  R(1840, 1889, 'Emperor of Brazil', 'Empire of Brazil', at='rio'), G(1889, 1891, 'Exile in Paris', 'paris'))
 P('Francisco Solano López', 'President of Paraguay', (1827, 1870), 3, 'rule war',
   'Led Paraguay into a war with Brazil, Argentina and Uruguay that killed most of its men.',
   R(1862, 1870, 'President of Paraguay', 'Paraguay', at='asuncion'))
