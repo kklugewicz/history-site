@@ -248,6 +248,8 @@ AUSTRIA66 = ['Austrian Empire', 'Venetia', 'Saxony', 'Bavaria', 'Palatinate', 'W
              'Electoral Hesse', 'Grand Duchy of Hesse', 'Nassau']
 GERMANY70 = NORTH + ['Hanover', 'Electoral Hesse', 'Nassau', 'Saxony', 'Thuringia', 'Bavaria', 'Palatinate',
                      'Württemberg', 'Baden', 'Grand Duchy of Hesse']
+# the border years of 1867 and 1871 draw the North German Confederation and then the German Empire
+GERMANY70 = ['North German Confederation', 'Bavaria', 'Württemberg', 'Baden']
 PARIS_RING = [[2.12, 48.97], [2.45, 49.0], [2.62, 48.86], [2.45, 48.72], [2.2, 48.74], [2.1, 48.85], [2.12, 48.97]]
 WARS.append(war(
     'wars-of-german-unification', 'Wars of German Unification', 1864, 1871, 'conflict',
@@ -282,7 +284,7 @@ WARS.append(war(
              "at Königgrätz on 3 July. Italy, Prussia's ally, was beaten at Custoza but still gained Venetia, and the "
              "Peace of Prague let Prussia annex Hanover, Hesse-Kassel, Nassau and Frankfurt and lead a new North German "
              "Confederation without Austria.",
-             terr((0, NORTH + ITALY), (1, AUSTRIA66)),
+             terr((0, NORTH + ['Italy']), (1, AUSTRIA66)),
              [fr('Austrian line at Königgrätz, 3 Jul', [[15.72, 50.38], [15.76, 50.3], [15.8, 50.22]])],
              [mv(0, 'Herwarth von Bittenfeld', 'Elbe Army', [[13.74, 51.05], [14.6, 50.6], [15.35, 50.44], [15.68, 50.3]]),
               mv(0, 'Prince Friedrich Karl', 'First Army', [[14.99, 51.15], [15.05, 50.77], [15.35, 50.44], [15.7, 50.33]]),
@@ -334,7 +336,7 @@ WARS.append(war(
              "north, but they could not break through. On 18 January 1871 Wilhelm I was proclaimed German Emperor in the "
              "Hall of Mirrors at Versailles, Paris capitulated ten days later, and the Treaty of Frankfurt gave Alsace and "
              "much of Lorraine to the new German Empire.",
-             terr((0, GERMANY70), (1, ['France'])),
+             terr((0, ['Germany']), (1, ['France'])),
              [fr('Siege of Paris', PARIS_RING),
               fr('Loire front, Dec 1870', [[0.2, 48.0], [1.2, 47.85], [1.9, 47.85], [2.7, 47.95]])],
              [mv(0, 'Crown Prince Friedrich Wilhelm', 'March on Paris', [[4.94, 49.7], [4.03, 49.26], [3.4, 49.05], [2.62, 48.86]]),
@@ -570,7 +572,7 @@ WARS.append(war(
              "Miramón fled abroad, Liberal troops entered Mexico City on Christmas Day and Juárez returned in January "
              "1861. Conservative guerrillas under Márquez and Mejía fought on, and Mexico's empty treasury soon invited "
              "European intervention.",
-             terr((0, ['Viceroyalty of New Spain'])), [],
+             terr((0, ['Mexico'])), [],
              [mv(1, 'Miguel Miramón', 'Last Conservative army', [[-99.13, 19.43], [-99.4, 19.7], [-99.6, 19.97]]),
               mv(0, 'Jesús González Ortega', 'March on the capital', [[-101.43, 20.94], [-100.39, 20.59], [-99.6, 19.97], [-99.13, 19.43]]),
               mv(0, 'Benito Juárez', 'Return to Mexico City', [[-96.13, 19.19], [-97.1, 18.85], [-98.2, 19.04], [-99.13, 19.43]])],
@@ -623,7 +625,7 @@ WARS.append(war(
              "1867 Admiral de La Grandière seized the three western provinces of the Mekong delta without a fight, and "
              "their governor Phan Thanh Gian took poison. All of the south was now the French colony of Cochinchina, and "
              "a French expedition was exploring the Mekong as a trade route to China.",
-             terr((0, ['Cochin China', 'Cambodia']), (1, ['Annam'])), [],
+             terr((0, ['French Indochina']), (1, ['Annam'])), [],
              [mv(0, 'Pierre de La Grandière', 'Seizure of the western provinces', [[106.7, 10.78], [105.97, 10.25], [105.12, 10.7], [104.48, 10.38]]),
               mv(0, 'Doudart de Lagrée', 'Mekong expedition', [[104.92, 11.56], [105.8, 15.1], [102.6, 17.97], [102.14, 19.89], [100.8, 22.0]])],
              [ev('Cambodian protectorate', 'treaty', 104.75, 11.8, 1863, 0,
@@ -635,7 +637,7 @@ WARS.append(war(
              "with a few hundred men he stormed the citadel of Hanoi and seized the delta towns. In December Liu Yongfu's "
              "Black Flags, Chinese irregulars working for the Vietnamese court, ambushed and killed him outside Hanoi. "
              "France disowned the venture and withdrew, but the 1874 treaty opened the Red River to trade.",
-             terr((0, ['Cochin China', 'Cambodia']), (1, ['Annam'])), [],
+             terr((0, ['French Indochina']), (1, ['Annam'])), [],
              [mv(0, 'Francis Garnier', 'Expedition to Hanoi', [[106.7, 10.78], [109.3, 12.3], [108.9, 15.5], [107.0, 19.8], [106.68, 20.86], [105.85, 21.03]]),
               mv(1, 'Liu Yongfu', 'Black Flags from Son Tay', [[105.5, 21.14], [105.7, 21.07], [105.8, 21.03]])],
              [ev('Capture of the Hanoi citadel', 'siege', 105.84, 21.035, 1873, 0,
@@ -750,7 +752,7 @@ WARS.append(war(
              "Kaufman, first governor-general of Turkestan, marched up the Zeravshan valley and took Samarkand, "
              "Tamerlane's old capital, in May 1868, then beat the emir on the Zerabulak heights while a small garrison "
              "held Samarkand against a rising. Bukhara became a Russian protectorate, shorn of Samarkand.",
-             terr((0, RU + ['central Asian khanates']), (1, ['Turan'])),
+             terr((0, RU), (1, ['Bokhara Khanate', 'central Asian khanates'])),
              [fr('Zeravshan front, Jun 1868', [[66.0, 40.2], [66.3, 39.8], [66.5, 39.3]])],
              [mv(0, 'Dmitry Romanovsky', 'Irjar campaign, 1866', [[69.24, 41.3], [68.9, 40.75], [68.7, 40.4]]),
               mv(0, 'Konstantin von Kaufman', 'Up the Zeravshan', [[69.24, 41.3], [67.84, 40.12], [66.96, 39.65], [66.3, 39.8]]),
@@ -766,7 +768,7 @@ WARS.append(war(
              "column from Krasnovodsk had to turn back for lack of water, but the others met outside Khiva, which "
              "surrendered in May 1873. Khan Muhammad Rahim II signed a treaty making Khiva a Russian protectorate, "
              "freeing its slaves and ceding the right bank of the Amu Darya.",
-             terr((0, RU + ['central Asian khanates']), (1, ['Turan'])), [],
+             terr((0, RU), (1, ['Bokhara Khanate', 'central Asian khanates'])), [],
              [mv(0, 'Konstantin von Kaufman', 'Turkestan column', [[69.24, 41.3], [67.84, 40.12], [64.0, 41.5], [61.4, 41.6], [60.36, 41.38]]),
               mv(0, 'Nikolai Veryovkin', 'Orenburg column', [[55.1, 51.77], [58.5, 47.0], [59.0, 44.5], [58.9, 43.07], [60.36, 41.38]]),
               mv(0, 'Nikolai Lomakin', 'Mangyshlak column', [[50.25, 44.52], [55.0, 43.5], [58.9, 43.07], [60.3, 41.45]]),
@@ -779,7 +781,7 @@ WARS.append(war(
              "A revolt against Khudayar Khan, the Russian-backed ruler of Kokand, turned into a holy war against Russia in "
              "1875. Kaufman and the young Mikhail Skobelev beat the rebels at Makhram and stormed their strongholds in the "
              "Fergana valley. In February 1876 Russia abolished the khanate and annexed it as the province of Fergana.",
-             terr((0, RU + ['central Asian khanates']), (1, ['Turan'])), [],
+             terr((0, RU), (1, ['Bokhara Khanate', 'central Asian khanates'])), [],
              [mv(0, 'Konstantin von Kaufman', 'Into the Fergana valley', [[69.24, 41.3], [69.62, 40.28], [69.95, 40.42], [70.94, 40.53]]),
               mv(0, 'Mikhail Skobelev', 'Storm of Andijan', [[70.94, 40.53], [71.8, 40.7], [72.34, 40.78]])],
              [ev('Battle of Makhram', 'battle', 69.95, 40.42, 1875, 0,
@@ -805,7 +807,7 @@ WARS.append(war(
     ]))
 
 # ---------------------------------------------------------------- 8. Paraguayan War
-ALLIES = ['Viceroyalty of Brazil', 'United Provinces of the Río de la Plata']
+ALLIES = ['Empire of Brazil', 'Argentina', 'Uruguay']
 HUMAITA = [[-58.62, -27.13], [-58.5, -27.18], [-58.38, -27.2], [-58.28, -27.17]]
 WARS.append(war(
     'paraguayan-war', 'Paraguayan War', 1864, 1870, 'war',
@@ -823,7 +825,7 @@ WARS.append(war(
              "government, Paraguay's ally, and besieged Paysandú. López answered by seizing a Brazilian steamer on the "
              "Paraguay River and sending an expedition upriver that overran Brazil's lightly held province of Mato Grosso "
              "in December. Paysandú fell in January 1865 and Flores took power in Montevideo.",
-             terr((0, ['Viceroyalty of Brazil']), (1, ['Paraguay'])), [],
+             terr((0, ['Empire of Brazil']), (1, ['Paraguay'])), [],
              [mv(0, 'Venancio Flores and Admiral Tamandaré', 'Into Uruguay', [[-57.09, -29.76], [-57.96, -31.38], [-58.08, -32.32]]),
               mv(1, 'Vicente Barrios', 'Expedition up the Paraguay River', [[-57.64, -25.28], [-57.9, -22.1], [-57.75, -19.92], [-57.65, -19.0]])],
              [ev('Siege of Paysandú', 'siege', -58.08, -32.32, 1865, 0,

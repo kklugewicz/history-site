@@ -3238,15 +3238,18 @@
       "side": 0,
       "polities": [
        "United Provinces of the Río de la Plata",
-       "Viceroyalty of New Granada",
-       "Viceroyalty of New Spain",
-       "Viceroyalty of Peru"
+       "Gran Colombia",
+       "Mexico",
+       "Federal Republic of Central America",
+       "Peru",
+       "Chile"
       ]
      },
      {
       "side": 1,
       "polities": [
-       "Spain"
+       "Spain",
+       "Viceroyalty of Peru"
       ]
      }
     ],
@@ -5251,7 +5254,7 @@
       "side": 0,
       "polities": [
        "France",
-       "Algiers"
+       "Algeria (FR)"
       ]
      },
      {
@@ -5385,7 +5388,7 @@
      {
       "side": 1,
       "polities": [
-       "Viceroyalty of New Spain"
+       "Mexico"
       ]
      }
     ],
@@ -5500,7 +5503,7 @@
      {
       "side": 1,
       "polities": [
-       "Viceroyalty of New Spain"
+       "Mexico"
       ]
      }
     ],
@@ -5625,7 +5628,7 @@
      {
       "side": 1,
       "polities": [
-       "Viceroyalty of New Spain"
+       "Mexico"
       ]
      }
     ],
@@ -5723,7 +5726,7 @@
      {
       "side": 1,
       "polities": [
-       "Viceroyalty of New Spain"
+       "Mexico"
       ]
      }
     ],
@@ -5825,7 +5828,7 @@
      {
       "side": 1,
       "polities": [
-       "Viceroyalty of New Spain"
+       "Mexico"
       ]
      }
     ],

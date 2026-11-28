@@ -17,6 +17,8 @@ shared('Andronovo', 'Karasuk culture', 'Oxus', 'Saces', 'Oghuz Turks', 'Oghuz', 
        'Indus valley civilization', 'Dravidians', 'Vedic Aryans', 'Hindu kingdoms', 'Hindu kingdoms and republics',
        'Kushan Principalities', 'Hindu states', 'Rajput kingdoms', 'Islamic states', 'Islamic and Hindu states',
        'Mahratta states', 'Rajputs', 'Sikhs', 'Tibetans', 'Proto-Tibetan cultures')
+# the Oregon Country (1818-1846), held jointly by Britain and the United States
+shared('Oregon Country')
 # South-East Asia
 shared('Austronesians', 'Malays', 'Malay', 'Papuan neolithic farmers', 'Papuan', 'Mon-Khmer', 'Thai Kingdoms',
        'minor states under Indian influence', 'minor Hindu kingdoms', 'minor Hindu and Buddhist states',
