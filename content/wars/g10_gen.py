@@ -353,6 +353,7 @@ WARS.append(war(
 
 # ---------------------------------------------------------------- 4. American Civil War
 US = ['United States']
+CSA = ['Confederate States of America']
 WARS.append(war(
     'american-civil-war', 'American Civil War', 1861, 1865, 'war',
     "Eleven Southern slave states seceded after Abraham Lincoln's election and formed the Confederacy, which fought the "
@@ -368,7 +369,7 @@ WARS.append(war(
              "prompting four more states to secede while the border states of Kentucky, Missouri and Maryland were held "
              "for the Union. The first major battle, at Bull Run near Manassas, ended in a Union rout and showed the war "
              "would be long.",
-             terr((0, US)),
+             terr((0, US), (1, CSA)),
              [fr('Union and Confederate line, 1861', [[-76.3, 37.9], [-77.2, 38.7], [-78.5, 38.9], [-80.5, 38.0], [-82.6, 37.6],
                                                      [-85.0, 36.7], [-89.2, 36.8], [-91.5, 36.5], [-94.6, 36.5]])],
              [mv(0, 'Irvin McDowell', 'Army from Washington', [[-77.04, 38.9], [-77.43, 38.84], [-77.52, 38.81]]),
@@ -382,7 +383,7 @@ WARS.append(war(
              "Ulysses S. Grant captured Forts Henry and Donelson, opening Tennessee to Union armies, and survived a "
              "Confederate surprise attack at Shiloh. A Union fleet under David Farragut ran past the forts below New "
              "Orleans and took the South's largest city.",
-             terr((0, US)),
+             terr((0, US), (1, CSA)),
              [fr('Front, spring 1862', [[-76.3, 37.9], [-77.4, 38.6], [-78.5, 38.6], [-80.5, 37.8], [-83.0, 36.9], [-85.5, 35.6],
                                         [-88.3, 35.0], [-89.6, 35.3], [-90.6, 35.5], [-94.5, 36.0]])],
              [mv(0, 'Ulysses S. Grant', 'Forts Henry and Donelson', [[-89.18, 37.0], [-88.6, 37.08], [-88.05, 36.5], [-87.86, 36.49]]),
@@ -400,7 +401,7 @@ WARS.append(war(
              "the Seven Days Battles and then beat another Union army at Second Bull Run. Lee invaded Maryland and was "
              "checked at Antietam, the bloodiest single day in American history, after which Lincoln issued the "
              "Emancipation Proclamation.",
-             terr((0, US)),
+             terr((0, US), (1, CSA)),
              [fr('Front, summer 1862', [[-76.3, 37.6], [-77.2, 38.4], [-78.0, 39.2], [-80.0, 38.3], [-82.5, 37.4], [-85.0, 35.8],
                                         [-88.4, 34.9], [-90.1, 35.1], [-91.5, 35.0], [-94.5, 35.6]])],
              [mv(0, 'George McClellan', 'By sea to Fort Monroe', [[-77.05, 38.8], [-77.0, 38.4], [-76.3, 38.05], [-76.2, 37.6], [-76.31, 37.02]]),
@@ -416,7 +417,7 @@ WARS.append(war(
              "Lee won his greatest victory at Chancellorsville and invaded Pennsylvania, but was defeated at Gettysburg in "
              "three days of fighting. A day later Vicksburg surrendered to Grant after a brilliant campaign and siege, "
              "giving the Union control of the Mississippi and splitting the Confederacy in two.",
-             terr((0, US)),
+             terr((0, US), (1, CSA)),
              [fr('Eastern and central front', [[-76.3, 37.6], [-77.46, 38.3], [-78.3, 38.7], [-80.3, 38.0], [-82.5, 37.0], [-84.5, 35.7],
                                                [-86.4, 35.6], [-88.3, 34.9]]),
               fr('Union-held Mississippi', [[-90.0, 35.0], [-90.88, 32.35], [-91.2, 31.0], [-91.6, 30.5]])],
@@ -433,7 +434,7 @@ WARS.append(war(
              "Rosecrans manoeuvred the Confederates out of Chattanooga, but Bragg, reinforced by Longstreet's corps sent "
              "by rail from Virginia, routed him at Chickamauga. Grant took command, broke the siege of Chattanooga at "
              "Missionary Ridge and opened the gateway to Georgia.",
-             terr((0, US)),
+             terr((0, US), (1, CSA)),
              [fr('Front, autumn 1863', [[-76.3, 37.6], [-77.9, 38.4], [-80.3, 37.8], [-83.0, 36.5], [-85.3, 35.0], [-86.6, 34.7],
                                         [-88.5, 34.5], [-90.2, 33.5]]),
               fr('Union-held Mississippi', [[-90.0, 35.0], [-90.88, 32.35], [-91.2, 31.0], [-91.6, 30.5]])],
@@ -448,7 +449,7 @@ WARS.append(war(
              "Grant, now commanding all Union armies, attacked Lee relentlessly in Virginia, suffering huge losses at the "
              "Wilderness, Spotsylvania and Cold Harbor but never retreating. He swung south of Richmond and pinned Lee in "
              "a long siege at Petersburg, while Sherman began his advance from Chattanooga towards Atlanta.",
-             terr((0, US)),
+             terr((0, US), (1, CSA)),
              [fr('Richmond and Petersburg lines', [[-77.2, 37.75], [-77.33, 37.5], [-77.4, 37.2]]),
               fr('Front in Georgia', [[-83.8, 34.6], [-84.7, 34.3], [-85.6, 34.0], [-87.5, 34.6], [-90.2, 33.5]])],
              [mv(0, 'Ulysses S. Grant', 'Overland Campaign', [[-77.8, 38.42], [-77.73, 38.31], [-77.59, 38.2], [-77.28, 37.59], [-77.4, 37.23]]),
@@ -464,7 +465,7 @@ WARS.append(war(
              "Sherman captured Atlanta in September, helping secure Lincoln's re-election. He then cut loose from his "
              "supply lines and marched to Savannah, destroying railways and property, while Union forces under Thomas "
              "destroyed Hood's army at Franklin and Nashville.",
-             terr((0, US)),
+             terr((0, US), (1, CSA)),
              [fr('Richmond and Petersburg lines', [[-77.2, 37.75], [-77.33, 37.5], [-77.4, 37.2]])],
              [mv(0, 'William T. Sherman', 'Atlanta Campaign', [[-85.31, 35.05], [-84.97, 34.77], [-84.6, 33.98], [-84.39, 33.75]]),
               mv(0, 'William T. Sherman', 'March to the Sea', [[-84.39, 33.75], [-83.23, 33.08], [-81.95, 32.8], [-81.09, 32.08]]),
@@ -738,7 +739,7 @@ WARS.append(war(
              "Chernyaev then attacked Tashkent, the largest city of Central Asia, without clear orders; its Kokandi "
              "defender Alimqul was killed, and the city fell after street fighting in June 1865. St Petersburg accepted "
              "the conquest and made Tashkent the centre of a new Turkestan province.",
-             terr((0, RU + ['central Asian khanates']), (1, ['Turan'])),
+             terr((0, RU), (1, ['Turan'])),
              [fr('New Kokand line, 1864', [[66.8, 44.3], [68.27, 43.3], [69.6, 42.32], [71.37, 42.9], [74.5, 43.0]])],
              [mv(0, 'Mikhail Chernyaev', 'From Verny to Tashkent', [[76.95, 43.25], [71.37, 42.9], [69.6, 42.32], [69.24, 41.3]]),
               mv(0, 'Nikolai Veryovkin', 'Up the Syr Darya', [[65.5, 44.85], [68.27, 43.3], [69.6, 42.32]]),
@@ -752,7 +753,7 @@ WARS.append(war(
              "Kaufman, first governor-general of Turkestan, marched up the Zeravshan valley and took Samarkand, "
              "Tamerlane's old capital, in May 1868, then beat the emir on the Zerabulak heights while a small garrison "
              "held Samarkand against a rising. Bukhara became a Russian protectorate, shorn of Samarkand.",
-             terr((0, RU), (1, ['Bokhara Khanate', 'central Asian khanates'])),
+             terr((0, RU), (1, ['Bokhara Khanate', 'Khiva Khanate', 'Khanate of Kokand', 'central Asian khanates'])),
              [fr('Zeravshan front, Jun 1868', [[66.0, 40.2], [66.3, 39.8], [66.5, 39.3]])],
              [mv(0, 'Dmitry Romanovsky', 'Irjar campaign, 1866', [[69.24, 41.3], [68.9, 40.75], [68.7, 40.4]]),
               mv(0, 'Konstantin von Kaufman', 'Up the Zeravshan', [[69.24, 41.3], [67.84, 40.12], [66.96, 39.65], [66.3, 39.8]]),
@@ -768,7 +769,7 @@ WARS.append(war(
              "column from Krasnovodsk had to turn back for lack of water, but the others met outside Khiva, which "
              "surrendered in May 1873. Khan Muhammad Rahim II signed a treaty making Khiva a Russian protectorate, "
              "freeing its slaves and ceding the right bank of the Amu Darya.",
-             terr((0, RU), (1, ['Bokhara Khanate', 'central Asian khanates'])), [],
+             terr((0, RU), (1, ['Bokhara Khanate', 'Khiva Khanate', 'Khanate of Kokand', 'central Asian khanates'])), [],
              [mv(0, 'Konstantin von Kaufman', 'Turkestan column', [[69.24, 41.3], [67.84, 40.12], [64.0, 41.5], [61.4, 41.6], [60.36, 41.38]]),
               mv(0, 'Nikolai Veryovkin', 'Orenburg column', [[55.1, 51.77], [58.5, 47.0], [59.0, 44.5], [58.9, 43.07], [60.36, 41.38]]),
               mv(0, 'Nikolai Lomakin', 'Mangyshlak column', [[50.25, 44.52], [55.0, 43.5], [58.9, 43.07], [60.3, 41.45]]),
@@ -781,7 +782,7 @@ WARS.append(war(
              "A revolt against Khudayar Khan, the Russian-backed ruler of Kokand, turned into a holy war against Russia in "
              "1875. Kaufman and the young Mikhail Skobelev beat the rebels at Makhram and stormed their strongholds in the "
              "Fergana valley. In February 1876 Russia abolished the khanate and annexed it as the province of Fergana.",
-             terr((0, RU), (1, ['Bokhara Khanate', 'central Asian khanates'])), [],
+             terr((0, RU), (1, ['Bokhara Khanate', 'Khiva Khanate', 'Khanate of Kokand', 'central Asian khanates'])), [],
              [mv(0, 'Konstantin von Kaufman', 'Into the Fergana valley', [[69.24, 41.3], [69.62, 40.28], [69.95, 40.42], [70.94, 40.53]]),
               mv(0, 'Mikhail Skobelev', 'Storm of Andijan', [[70.94, 40.53], [71.8, 40.7], [72.34, 40.78]])],
              [ev('Battle of Makhram', 'battle', 69.95, 40.42, 1875, 0,

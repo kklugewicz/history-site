@@ -448,6 +448,18 @@ D('pe-bo-confederation', 'Flag of the Peru-Bolivian Confederation', rect('#c8102
   emblem('shield', WHITE, 17, 22.5, 11) + emblem('shield', WHITE, 43, 22.5, 11), 'flag', 'Red, with the arms of its three states, 1836-1839.')
 D('texas', 'Flag of the Republic of Texas', rect(WHITE, 20, 0, 40, 22.5) + rect('#bf0a30', 20, 22.5, 40, 22.5) + rect('#002868', 0, 0, 20, 45) +
   star(WHITE, 10, 22.5, 6.5), 'flag', 'The Lone Star flag, adopted in 1839 and still the flag of Texas.')
+D('csa', 'First flag of the Confederate States of America', hs('#bf0a30', WHITE, '#bf0a30') + rect('#002868', 0, 0, 22, 30) +
+  star(WHITE, 11.00, 7.00, 1.9) +
+  star(WHITE, 15.33, 8.27, 1.9) +
+  star(WHITE, 18.28, 11.68, 1.9) +
+  star(WHITE, 18.92, 16.14, 1.9) +
+  star(WHITE, 17.05, 20.24, 1.9) +
+  star(WHITE, 13.25, 22.68, 1.9) +
+  star(WHITE, 8.75, 22.68, 1.9) +
+  star(WHITE, 4.95, 20.24, 1.9) +
+  star(WHITE, 3.08, 16.14, 1.9) +
+  star(WHITE, 3.72, 11.68, 1.9) +
+  star(WHITE, 6.67, 8.27, 1.9), 'flag', 'The Stars and Bars, the first national flag of the Confederacy, with a star for each of its eleven states; the Stainless Banner replaced it in 1863.')
 D('ht-1806', 'Flag of Haiti', hs('#00209f', '#d21034'), 'flag', 'Blue over red, from 1806 (the arms were added later).')
 D('ht-1964', 'Flag of Duvalier\'s Haiti', vs(BLACK, '#d21034'), 'flag', 'Black and red, 1964-1986.')
 D('sv-1865', 'Flag of El Salvador, 1865-1912', hs(*(['#0047ab', WHITE] * 4 + ['#0047ab'])) + rect('#c8102e', 0, 0, 24, 25) +
@@ -677,7 +689,8 @@ TL = {
     'Dominion of Newfoundland': '=United Kingdom',
     'Kingdom of Hawaii': [(1845, 1898, 'hawaii'), (1899, N, '=United States')],
     'Mexico': [(N, 1820, '=Spain'), (1821, 1823, 'mx-1821'), (1824, N, 'iso:mx')],
-    'Mexican Empire': '=Mexico', 'Republic of Texas': [(1836, 1845, 'texas')], 'Empire of Brazil': '=Brazil',
+    'Mexican Empire': '=Mexico', 'Republic of Texas': [(1836, 1845, 'texas')], 'Confederate States of America': [(1861, 1865, 'csa')],
+    'New South Wales': '=United Kingdom', 'Empire of Brazil': '=Brazil',
     'Federal Republic of Central America': [(1823, 1841, 'central-america')], 'Gran Colombia': [(1821, 1831, 'gran-colombia')],
     'Republic of New Granada': [(1831, 1860, 'new-granada')], 'United States of Colombia': '=Colombia',
     'Peru–Bolivian Confederation': [(1836, 1839, 'pe-bo-confederation')], 'Argentine Confederation': '=Argentina',

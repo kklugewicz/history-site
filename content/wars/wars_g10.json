@@ -2416,6 +2416,12 @@
       "polities": [
        "United States"
       ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Confederate States of America"
+      ]
      }
     ],
     "fronts": [
@@ -2551,6 +2557,12 @@
       "side": 0,
       "polities": [
        "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Confederate States of America"
       ]
      }
     ],
@@ -2728,6 +2740,12 @@
       "polities": [
        "United States"
       ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Confederate States of America"
+      ]
      }
     ],
     "fronts": [
@@ -2892,6 +2910,12 @@
       "side": 0,
       "polities": [
        "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Confederate States of America"
       ]
      }
     ],
@@ -3071,6 +3095,12 @@
       "polities": [
        "United States"
       ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Confederate States of America"
+      ]
      }
     ],
     "fronts": [
@@ -3232,6 +3262,12 @@
       "polities": [
        "United States"
       ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Confederate States of America"
+      ]
      }
     ],
     "fronts": [
@@ -3389,6 +3425,12 @@
       "side": 0,
       "polities": [
        "United States"
+      ]
+     },
+     {
+      "side": 1,
+      "polities": [
+       "Confederate States of America"
       ]
      }
     ],
@@ -5411,8 +5453,7 @@
      {
       "side": 0,
       "polities": [
-       "Russian Empire",
-       "central Asian khanates"
+       "Russian Empire"
       ]
      },
      {
@@ -5549,6 +5590,8 @@
       "side": 1,
       "polities": [
        "Bokhara Khanate",
+       "Khiva Khanate",
+       "Khanate of Kokand",
        "central Asian khanates"
       ]
      }
@@ -5681,6 +5724,8 @@
       "side": 1,
       "polities": [
        "Bokhara Khanate",
+       "Khiva Khanate",
+       "Khanate of Kokand",
        "central Asian khanates"
       ]
      }
@@ -5821,6 +5866,8 @@
       "side": 1,
       "polities": [
        "Bokhara Khanate",
+       "Khiva Khanate",
+       "Khanate of Kokand",
        "central Asian khanates"
       ]
      }

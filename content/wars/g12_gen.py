@@ -37,11 +37,11 @@ W1914 = [[2.75, 51.13], [2.88, 50.85], [2.78, 50.29], [2.7, 49.95], [3.0, 49.58]
          [4.95, 49.2], [5.39, 49.2], [5.54, 48.9], [6.05, 48.9], [6.6, 48.55], [7.1, 48.0], [7.17, 47.5]]
 E1915 = [[23.9, 57.0], [24.3, 56.8], [26.5, 55.9], [26.8, 54.8], [26.0, 53.1], [26.0, 52.1], [25.5, 51.0],
          [25.4, 50.0], [25.4, 49.3], [26.0, 48.3]]
-A1 = ["France", "United Kingdom of Great Britain and Ireland", "Russian Empire", "Finland", "Georgia", "Armenia",
-      "Azerbaijan", "Sakhalin (RU)", "Belgium", "Serbia", "Montenegro", "Empire of Japan", "Canada", "Australia",
+A1 = ["France", "United Kingdom of Great Britain and Ireland", "Russian Empire", "Finland",
+      "Sakhalin (RU)", "Belgium", "Serbia", "Montenegro", "Empire of Japan", "Canada", "Australia",
       "New Zealand", "South Africa", "British Raj", "Egypt"]
 C1 = ["German Empire", "Austro-Hungarian Empire"]
-RUS = ["Russian Empire", "Finland", "Georgia", "Armenia", "Azerbaijan", "Sakhalin (RU)"]
+RUS = ["Russian Empire", "Finland", "Sakhalin (RU)"]
 A2 = minus(A1, ["Belgium"]); C2 = C1 + ["Belgium", "Ottoman Empire"]
 A3 = A2 + ["Kingdom of Italy"]; C3 = C2 + ["Bulgaria"]
 A4 = minus(A3, ["Serbia", "Montenegro"]); C4 = C3 + ["Serbia", "Montenegro"]
